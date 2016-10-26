@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-Acpi" guid="c514638f-7723-485b-bcfc-96565d735d4a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="Microsoft-Windows-Kernel-Acpi" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Kernel-Acpi/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="ResourceTranslation" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GpeEventHandling" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TemperatureNotification" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TripPointNotification" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ActiveCoolingDevicePower" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AmlMethodTrace" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceActiveCooling" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevicePassiveCooling" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceCoolingRundown" value="108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TemperatureChange" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThermalZoneRundown" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FanRundown" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FanPowerStateChange" value="112" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FanStatusChange" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ActiveCoolingConstraint" value="114" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ActiveCoolingConstraintRundown" value="115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PassiveCoolingConstraint" value="116" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PassiveCoolingConstraintRundown" value="117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceReset" value="118" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AcpiOverride" value="119" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AMLIError" value="120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="acpi:Diagnostic" mask="1" message="">
+    </keyword>
+    <keyword name="acpi:Thermal" mask="2" message="">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="100" keywords="0x8000000000000001" message="A memory range descriptor has been marked as reserved.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000001" message="Unexpected GPE event was fired on GPE bits that should be disabled.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="102" keywords="0x8000000000000002" message="A temperature change notification (Notify(thermal_zone, 0x80)) for ACPI thermal zone %2 has been received.             
+_TMP = %3K             
+_PSV = %4K             
+_AC0 = %5K             
+_AC1 = %6K             
+_AC2 = %7K             
+_AC3 = %8K             
+_AC4 = %9K             
+_AC5 = %10K             
+_AC6 = %11K             
+_AC7 = %12K             
+_AC8 = %13K             
+_AC9 = %14K             
+_HOT = %15K             
+_CRT = %16K">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="103" keywords="0x8000000000000002" message="A trip point change notification (Notify(thermal_zone, 0x81)) for ACPI thermal zone %2 has been received.             
+_TMP = %3K             
+_PSV = %4K             
+_AC0 = %5K             
+_AC1 = %6K             
+_AC2 = %7K             
+_AC3 = %8K             
+_AC4 = %9K             
+_AC5 = %10K             
+_AC6 = %11K             
+_AC7 = %12K             
+_AC8 = %13K             
+_AC9 = %14K             
+_HOT = %15K             
+_CRT = %16K">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="104" keywords="0x8000000000000002" message="The active cooling device %6 has been turned %8.             
+Thermal zone device instance: %2             
+Active cooling package: _AC%3             
+Namespace object: _AL%4">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="104" keywords="0x8000000000000002" message="The active cooling device %6 has been turned %7.             
+Thermal zone device instance: %2             
+Active cooling package: _AC%3             
+Namespace object: _AL%4">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="105" keywords="0x8000000000000001" message="ACPI method %2 evaluation has %3.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="106" keywords="0x8000000000000002" message="The active cooling device %2 has been turned %3.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="107" keywords="0x8000000000000002" message="The passive cooling device %2 throttle has changed to %3 percent.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="108" keywords="0x8000000000000002" message="The device %2 has the following cooling state.             
+Active cooling: %3             
+Passive cooling: %4 percent">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="109" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="110" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="12" version="1" opcode="0" channel="16" level="4" task="110" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="12" version="2" opcode="0" channel="16" level="4" task="110" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="12" version="3" opcode="0" channel="16" level="4" task="110" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="111" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="112" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="113" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="4" task="114" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="4" task="115" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="116" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="4" task="117" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="4" task="118" keywords="0x8000200000000001" message="ACPI device %2 is undergoing %3. Status %4.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="4" task="119" keywords="0x8000200000000001" message="ACPI device OverRide - %1">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="2" task="120" keywords="0x8000000000000001" message="Error occured while interpreting AML code: scope %1, object %2. Status %3.">
+    </event>
+  </events>
+</provider>

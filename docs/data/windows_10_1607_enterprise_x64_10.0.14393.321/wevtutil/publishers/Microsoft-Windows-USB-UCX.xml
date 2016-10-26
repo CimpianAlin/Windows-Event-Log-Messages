@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-USB-UCX" guid="36da592d-e43a-4e28-af6f-4bc57c5a11e8" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ucx01000.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\ucx01000.sys" messageFileName="C:\Windows\system32\drivers\ucx01000.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-USB-UCX-Analytic" id="16" flags="0" message="This is the Analytic channel to which internal Analytic events from the UCX driver are sent.">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="START" value="655360" message="Start">
+    </opcode>
+    <opcode name="COMPLETE" value="720896" message="Complete">
+    </opcode>
+    <opcode name="INFORMATION" value="786432" message="Information">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="UCX_RUNDOWN" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Driver Rundown">
+    </task>
+    <task name="UCX_CONTROLLER_RUNDOWN" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Controler Rundown">
+    </task>
+    <task name="UCX_ROOTHUB_RUNDOWN" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX RootHub Rundown">
+    </task>
+    <task name="UCX_DEVICE_RUNDOWN" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Device Rundown">
+    </task>
+    <task name="UCX_ENDPOINT_RUNDOWN" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Endpoint Rundown">
+    </task>
+    <task name="UCX_STATIC_STREAM_RUNDOWN" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Static Stream Rundown">
+    </task>
+    <task name="UCX_CONTROLLER_CREATE" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Controller Create">
+    </task>
+    <task name="UCX_CONTROLLER_DELETE" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Controller Delete">
+    </task>
+    <task name="UCX_ROOTHUB_CREATE" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX RootHub Create">
+    </task>
+    <task name="UCX_ROOTHUB_DELETE" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX RootHub Delete">
+    </task>
+    <task name="UCX_ROOTHUB_PREPARE" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX RootHub Prepare Hardware">
+    </task>
+    <task name="UCX_ROOTHUB_RELEASE" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX RootHub Release Hardware">
+    </task>
+    <task name="UCX_DEVICE_CREATE" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Device Create">
+    </task>
+    <task name="UCX_DEVICE_DELETE" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Device Delete">
+    </task>
+    <task name="UCX_ENDPOINT_CREATE" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Endpoint Create">
+    </task>
+    <task name="UCX_ENDPOINT_DELETE" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Endpoint Delete">
+    </task>
+    <task name="UCX_STATIC_STREAM_CREATE" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Static Stream Create">
+    </task>
+    <task name="UCX_STATIC_STREAM_DELETE" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX Static Stream Delete">
+    </task>
+    <task name="UCX_URB_FUNCTION_CONTROL_TRANSFER" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_CONTROL_TRANSFER">
+    </task>
+    <task name="UCX_URB_FUNCTION_CONTROL_TRANSFER_EX" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_CONTROL_TRANSFER_EX">
+    </task>
+    <task name="UCX_URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER">
+    </task>
+    <task name="UCX_URB_FUNCTION_ISOCH_TRANSFER" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_ISOCH_TRANSFER">
+    </task>
+    <task name="UCX_URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE">
+    </task>
+    <task name="UCX_URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE">
+    </task>
+    <task name="UCX_URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT">
+    </task>
+    <task name="UCX_URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE">
+    </task>
+    <task name="UCX_URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE">
+    </task>
+    <task name="UCX_URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT">
+    </task>
+    <task name="UCX_URB_FUNCTION_SET_FEATURE_TO_DEVICE" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_SET_FEATURE_TO_DEVICE">
+    </task>
+    <task name="UCX_URB_FUNCTION_SET_FEATURE_TO_INTERFACE" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_SET_FEATURE_TO_INTERFACE">
+    </task>
+    <task name="UCX_URB_FUNCTION_SET_FEATURE_TO_ENDPOINT" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_SET_FEATURE_TO_ENDPOINT">
+    </task>
+    <task name="UCX_URB_FUNCTION_SET_FEATURE_TO_OTHER" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_SET_FEATURE_TO_OTHER">
+    </task>
+    <task name="UCX_URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE">
+    </task>
+    <task name="UCX_URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE">
+    </task>
+    <task name="UCX_URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT">
+    </task>
+    <task name="UCX_URB_FUNCTION_CLEAR_FEATURE_TO_OTHER" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_CLEAR_FEATURE_TO_OTHER">
+    </task>
+    <task name="UCX_URB_FUNCTION_GET_STATUS_FROM_DEVICE" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_GET_STATUS_FROM_DEVICE">
+    </task>
+    <task name="UCX_URB_FUNCTION_GET_STATUS_FROM_INTERFACE" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_GET_STATUS_FROM_INTERFACE">
+    </task>
+    <task name="UCX_URB_FUNCTION_GET_STATUS_FROM_ENDPOINT" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_GET_STATUS_FROM_ENDPOINT">
+    </task>
+    <task name="UCX_URB_FUNCTION_GET_STATUS_FROM_OTHER" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_GET_STATUS_FROM_OTHER">
+    </task>
+    <task name="UCX_URB_FUNCTION_CLASS_DEVICE" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_CLASS_DEVICE">
+    </task>
+    <task name="UCX_URB_FUNCTION_CLASS_INTERFACE" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_CLASS_INTERFACE">
+    </task>
+    <task name="UCX_URB_FUNCTION_CLASS_ENDPOINT" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_CLASS_ENDPOINT">
+    </task>
+    <task name="UCX_URB_FUNCTION_CLASS_OTHER" value="44" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_CLASS_OTHER">
+    </task>
+    <task name="UCX_URB_FUNCTION_VENDOR_DEVICE" value="45" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_VENDOR_DEVICE">
+    </task>
+    <task name="UCX_URB_FUNCTION_VENDOR_INTERFACE" value="46" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_VENDOR_INTERFACE">
+    </task>
+    <task name="UCX_URB_FUNCTION_VENDOR_ENDPOINT" value="47" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_VENDOR_ENDPOINT">
+    </task>
+    <task name="UCX_URB_FUNCTION_VENDOR_OTHER" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_VENDOR_OTHER">
+    </task>
+    <task name="UCX_URB_FUNCTION_GET_CONFIGURATION" value="49" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_GET_CONFIGURATION">
+    </task>
+    <task name="UCX_URB_FUNCTION_GET_INTERFACE" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_GET_INTERFACE">
+    </task>
+    <task name="UCX_URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR">
+    </task>
+    <task name="UCX_ENDPOINT_STATE_MACHINE_TRANSITION" value="52" eventGUID="00000000-0000-0000-0000-000000000000" message="ENDPOINT_STATE_MACHINE_TRANSITION">
+    </task>
+    <task name="UCX_ENDPOINT_STATE_MACHINE_EVENT" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="ENDPOINT_STATE_MACHINE_EVENT">
+    </task>
+    <task name="UCX_CONTROLLER_STATE_MACHINE_TRANSITION" value="54" eventGUID="00000000-0000-0000-0000-000000000000" message="CONTROLLER_STATE_MACHINE_TRANSITION">
+    </task>
+    <task name="UCX_CONTROLLER_STATE_MACHINE_EVENT" value="55" eventGUID="00000000-0000-0000-0000-000000000000" message="CONTROLLER_STATE_MACHINE_EVENT">
+    </task>
+    <task name="UCX_ROOTHUB_INITIATING_WAKE" value="56" eventGUID="00000000-0000-0000-0000-000000000000" message="UCX RootHub Initiating Wake">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Default" mask="1" message="">
+    </keyword>
+    <keyword name="USBError" mask="2" message="">
+    </keyword>
+    <keyword name="IRP" mask="4" message="">
+    </keyword>
+    <keyword name="Power" mask="8" message="">
+    </keyword>
+    <keyword name="PnP" mask="10" message="">
+    </keyword>
+    <keyword name="Performance" mask="20" message="">
+    </keyword>
+    <keyword name="HeadersBusTrace" mask="40" message="">
+    </keyword>
+    <keyword name="PartialDataBusTrace" mask="80" message="">
+    </keyword>
+    <keyword name="FullDataBusTrace" mask="100" message="">
+    </keyword>
+    <keyword name="StateMachine" mask="200" message="">
+    </keyword>
+    <keyword name="Enumeration" mask="400" message="">
+    </keyword>
+    <keyword name="VerifyDriver" mask="800" message="">
+    </keyword>
+    <keyword name="HWVerifyHost" mask="1000" message="">
+    </keyword>
+    <keyword name="HWVerifyHub" mask="2000" message="">
+    </keyword>
+    <keyword name="HWVerifyDevice" mask="4000" message="">
+    </keyword>
+    <keyword name="Rundown" mask="8000" message="">
+    </keyword>
+    <keyword name="Device" mask="10000" message="">
+    </keyword>
+    <keyword name="Hub" mask="20000" message="">
+    </keyword>
+    <keyword name="Compat" mask="40000" message="">
+    </keyword>
+    <keyword name="ControllerCommand" mask="80000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000008001" message="Start Rundown">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000008001" message="Complete Rundown">
+    </event>
+    <event value="3" version="0" opcode="12" channel="16" level="4" task="2" keywords="0x8000000000008001" message="UCX Controller Information">
+    </event>
+    <event value="4" version="0" opcode="12" channel="16" level="4" task="3" keywords="0x8000000000008001" message="UCX RootHub Information">
+    </event>
+    <event value="5" version="0" opcode="12" channel="16" level="4" task="4" keywords="0x8000000000008001" message="UCX Device Information">
+    </event>
+    <event value="6" version="0" opcode="12" channel="16" level="4" task="5" keywords="0x8000000000008001" message="UCX Endpoint Information">
+    </event>
+    <event value="7" version="0" opcode="12" channel="16" level="4" task="6" keywords="0x8000000000008001" message="UCX Static Stream Information">
+    </event>
+    <event value="8" version="0" opcode="12" channel="16" level="4" task="7" keywords="0x8000400000000001" message="UCX Controller Create">
+    </event>
+    <event value="9" version="0" opcode="12" channel="16" level="4" task="8" keywords="0x8000400000000001" message="UCX Controller Delete">
+    </event>
+    <event value="10" version="0" opcode="12" channel="16" level="4" task="9" keywords="0x8000400000000001" message="UCX RootHub Create">
+    </event>
+    <event value="11" version="0" opcode="12" channel="16" level="4" task="10" keywords="0x8000400000000001" message="UCX RootHub Delete">
+    </event>
+    <event value="12" version="0" opcode="12" channel="16" level="4" task="11" keywords="0x8000000000000001" message="UCX RootHub Prepare Hardware">
+    </event>
+    <event value="13" version="0" opcode="12" channel="16" level="4" task="12" keywords="0x8000000000000001" message="UCX RootHub Release Hardware">
+    </event>
+    <event value="14" version="0" opcode="12" channel="16" level="4" task="13" keywords="0x8000400000000001" message="UCX Device Create">
+    </event>
+    <event value="15" version="0" opcode="12" channel="16" level="4" task="14" keywords="0x8000400000000001" message="UCX Device Delete">
+    </event>
+    <event value="16" version="0" opcode="12" channel="16" level="4" task="15" keywords="0x8000000000000001" message="UCX Endpoint Create">
+    </event>
+    <event value="17" version="0" opcode="12" channel="16" level="4" task="16" keywords="0x8000000000000001" message="UCX Endpoint Delete">
+    </event>
+    <event value="18" version="0" opcode="12" channel="16" level="4" task="17" keywords="0x8000000000000001" message="UCX Static Stream Create">
+    </event>
+    <event value="19" version="0" opcode="12" channel="16" level="4" task="18" keywords="0x8000000000000001" message="UCX Static Stream Delete">
+    </event>
+    <event value="20" version="0" opcode="1" channel="16" level="4" task="19" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_CONTROL_TRANSFER">
+    </event>
+    <event value="21" version="0" opcode="2" channel="16" level="4" task="19" keywords="0x8000000000000040" message="Complete URB_FUNCTION_CONTROL_TRANSFER">
+    </event>
+    <event value="22" version="0" opcode="2" channel="16" level="4" task="19" keywords="0x8000000000000180" message="Complete URB_FUNCTION_CONTROL_TRANSFER with data">
+    </event>
+    <event value="23" version="0" opcode="1" channel="16" level="4" task="20" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_CONTROL_TRANSFER_EX">
+    </event>
+    <event value="24" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000040" message="Complete URB_FUNCTION_CONTROL_TRANSFER_EX">
+    </event>
+    <event value="25" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000180" message="Complete URB_FUNCTION_CONTROL_TRANSFER_EX with data">
+    </event>
+    <event value="26" version="0" opcode="1" channel="16" level="4" task="21" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER">
+    </event>
+    <event value="27" version="0" opcode="2" channel="16" level="4" task="21" keywords="0x8000000000000040" message="Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER">
+    </event>
+    <event value="28" version="0" opcode="2" channel="16" level="4" task="21" keywords="0x8000000000000080" message="Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with partial data">
+    </event>
+    <event value="29" version="0" opcode="2" channel="16" level="4" task="21" keywords="0x8000000000000100" message="Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with full data">
+    </event>
+    <event value="30" version="0" opcode="1" channel="16" level="4" task="22" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_ISOCH_TRANSFER">
+    </event>
+    <event value="31" version="0" opcode="2" channel="16" level="4" task="22" keywords="0x80000000000001c0" message="Complete URB_FUNCTION_ISOCH_TRANSFER">
+    </event>
+    <event value="32" version="0" opcode="2" channel="16" level="4" task="22" keywords="0x8000000000000080" message="Complete URB_FUNCTION_ISOCH_TRANSFER with partial data">
+    </event>
+    <event value="33" version="0" opcode="2" channel="16" level="4" task="22" keywords="0x8000000000000100" message="Complete URB_FUNCTION_ISOCH_TRANSFER with full data">
+    </event>
+    <event value="34" version="0" opcode="1" channel="16" level="4" task="23" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE">
+    </event>
+    <event value="35" version="0" opcode="1" channel="16" level="4" task="24" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE">
+    </event>
+    <event value="36" version="0" opcode="1" channel="16" level="4" task="25" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT">
+    </event>
+    <event value="37" version="0" opcode="1" channel="16" level="4" task="26" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE">
+    </event>
+    <event value="38" version="0" opcode="1" channel="16" level="4" task="27" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE">
+    </event>
+    <event value="39" version="0" opcode="1" channel="16" level="4" task="28" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT">
+    </event>
+    <event value="40" version="0" opcode="1" channel="16" level="4" task="29" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_SET_FEATURE_TO_DEVICE">
+    </event>
+    <event value="41" version="0" opcode="1" channel="16" level="4" task="30" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_SET_FEATURE_TO_INTERFACE">
+    </event>
+    <event value="42" version="0" opcode="1" channel="16" level="4" task="31" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_SET_FEATURE_TO_ENDPOINT">
+    </event>
+    <event value="43" version="0" opcode="1" channel="16" level="4" task="32" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_SET_FEATURE_TO_OTHER">
+    </event>
+    <event value="44" version="0" opcode="1" channel="16" level="4" task="33" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE">
+    </event>
+    <event value="45" version="0" opcode="1" channel="16" level="4" task="34" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE">
+    </event>
+    <event value="46" version="0" opcode="1" channel="16" level="4" task="35" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT">
+    </event>
+    <event value="47" version="0" opcode="1" channel="16" level="4" task="36" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_OTHER">
+    </event>
+    <event value="48" version="0" opcode="1" channel="16" level="4" task="37" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_GET_STATUS_FROM_DEVICE">
+    </event>
+    <event value="49" version="0" opcode="1" channel="16" level="4" task="38" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_GET_STATUS_FROM_INTERFACE">
+    </event>
+    <event value="50" version="0" opcode="1" channel="16" level="4" task="39" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_GET_STATUS_FROM_ENDPOINT">
+    </event>
+    <event value="51" version="0" opcode="1" channel="16" level="4" task="40" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_GET_STATUS_FROM_OTHER">
+    </event>
+    <event value="52" version="0" opcode="1" channel="16" level="4" task="41" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_CLASS_DEVICE">
+    </event>
+    <event value="53" version="0" opcode="1" channel="16" level="4" task="42" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_CLASS_INTERFACE">
+    </event>
+    <event value="54" version="0" opcode="1" channel="16" level="4" task="43" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_CLASS_ENDPOINT">
+    </event>
+    <event value="55" version="0" opcode="1" channel="16" level="4" task="44" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_CLASS_OTHER">
+    </event>
+    <event value="56" version="0" opcode="1" channel="16" level="4" task="45" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_VENDOR_DEVICE">
+    </event>
+    <event value="57" version="0" opcode="1" channel="16" level="4" task="46" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_VENDOR_INTERFACE">
+    </event>
+    <event value="58" version="0" opcode="1" channel="16" level="4" task="47" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_VENDOR_ENDPOINT">
+    </event>
+    <event value="59" version="0" opcode="1" channel="16" level="4" task="48" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_VENDOR_OTHER">
+    </event>
+    <event value="60" version="0" opcode="1" channel="16" level="4" task="49" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_GET_CONFIGURATION">
+    </event>
+    <event value="61" version="0" opcode="1" channel="16" level="4" task="50" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_GET_INTERFACE">
+    </event>
+    <event value="62" version="0" opcode="1" channel="16" level="4" task="51" keywords="0x80000000000001c0" message="Dispatch URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR">
+    </event>
+    <event value="63" version="0" opcode="12" channel="16" level="4" task="52" keywords="0x8000000000000200" message="Endpoint State Machine Transition">
+    </event>
+    <event value="64" version="0" opcode="12" channel="16" level="4" task="53" keywords="0x8000000000000200" message="Endpoint State Machine Event">
+    </event>
+    <event value="65" version="0" opcode="12" channel="16" level="4" task="5" keywords="0x8000000000008200" message="Rundown Endpoint State Machine Transition">
+    </event>
+    <event value="66" version="0" opcode="12" channel="16" level="4" task="5" keywords="0x8000000000008200" message="Rundown Endpoint State Machine Event">
+    </event>
+    <event value="67" version="0" opcode="12" channel="16" level="4" task="54" keywords="0x8000000000000200" message="Controller State Machine Transition">
+    </event>
+    <event value="68" version="0" opcode="12" channel="16" level="4" task="55" keywords="0x8000000000000200" message="Controller State Machine Event">
+    </event>
+    <event value="69" version="0" opcode="12" channel="16" level="4" task="2" keywords="0x8000000000008200" message="Rundown Controller State Machine Transition">
+    </event>
+    <event value="70" version="0" opcode="12" channel="16" level="4" task="2" keywords="0x8000000000008200" message="Rundown Controller State Machine Event">
+    </event>
+    <event value="71" version="0" opcode="12" channel="16" level="4" task="56" keywords="0x8000000000000001" message="UCX RootHub Initiating Wake">
+    </event>
+  </events>
+</provider>

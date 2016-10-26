@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-RemoteDesktopServices-RemoteFX-Manager" guid="10d520e2-205c-4c22-b25c-ac7a779c55b2" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=rdvgm.exe&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\rdvgm.exe" messageFileName="C:\Windows\system32\rdvgm.exe" message="Microsoft-Windows-RemoteDesktopServices-RemoteFX-Manager" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-RemoteDesktopServices-RemoteFX-Manager/Admin" id="16" flags="0" message="Admin">
+    </channel>
+    <channel name="Microsoft-Windows-RemoteDesktopServices-RemoteFX-Manager/Operational" id="17" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-RemoteDesktopServices-RemoteFX-Manager/Counters" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="Initialize" value="720896" message="Initialize">
+    </opcode>
+    <opcode name="Terminate" value="786432" message="Terminate">
+    </opcode>
+    <opcode name="RDP_RFX_HOST_TOKEN_OPCODE" value="851968" message="">
+    </opcode>
+    <opcode name="RDP_RFX_HOST_CAPTURE_OPCODE" value="917504" message="">
+    </opcode>
+    <opcode name="RDP_RFX_HOST_RENDER_OPCODE" value="983040" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="GVMapp" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="GVM">
+    </task>
+    <task name="VMBus" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="VM Bus">
+    </task>
+    <task name="RDV_RFX_VGPU_HOST_TOKEN_START_TASK" value="3" eventGUID="f6962448-5a08-453a-b343-3de95c70044f" message="">
+    </task>
+    <task name="RDV_RFX_VGPU_HOST_TOKEN_END_TASK" value="4" eventGUID="f6c69a4e-a443-4a6a-b716-51c3973d4ac2" message="">
+    </task>
+    <task name="RDV_RFX_VGPU_HOST_CAPTURE_START_TASK" value="5" eventGUID="f234c5e5-35f4-4b73-aa60-08b632f0561c" message="">
+    </task>
+    <task name="RDV_RFX_VGPU_HOST_CAPTURE_END_TASK" value="6" eventGUID="211c5065-efd8-4537-b540-f19a26d343ae" message="">
+    </task>
+    <task name="RDV_RFX_VGPU_HOST_RENDER_START_TASK" value="7" eventGUID="82191c5b-69eb-4586-8aa0-3c2fd7e7b7dc" message="">
+    </task>
+    <task name="RDV_RFX_VGPU_HOST_RENDER_END_TASK" value="8" eventGUID="7c538f0d-d1b0-4b38-8775-a5cc8d24f923" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="RDP_RFX_HOST_TOKEN_KEYWORD" mask="1" message="">
+    </keyword>
+    <keyword name="RDP_RFX_HOST_CAPTURE_KEYWORD" mask="2" message="">
+    </keyword>
+    <keyword name="RDP_RFX_HOST_RENDER_KEYWORD" mask="4" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The RemoteFX Manager process stopped because of a critical error. A restart of the process will be attempted. You may need to restart the virtual machine or server. More details are available in the status code. [VM Name: %1,  VM ID: %2, Status: %3, Code: %4, Data=%5]">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The server and the virtual machine are running different versions of RemoteFX. The system may not work correctly. [VM Name: %1,  VM ID: %2]">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The RemoteFX Manager process stopped because the display driver is not responding. A restart of the process will be attempted. More details are available in the status code. [VM Name: %1,  VM ID: %2, Status: %3, Code: %4, Data=%5]">
+    </event>
+    <event value="9" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The RemoteFX Manager process stopped because the virtual machine is shutting down or saved. A restart of the process will be attempted when the virtual machine is running. More details are available in the status code. [VM Name: %1,  VM ID: %2, Status: %3, Code: %4, Data=%5]">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The RemoteFX Manager process stopped because a TDR event was detected. A restart of the process will be attempted. More details are available in the status code. [VM Name: %1,  VM ID: %2, Status: %3, Code: %4, Data=%5]">
+    </event>
+    <event value="12" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="An error in the protocol has occurred in communicating with the virtual machine. The VM will automatically be reconnected. [VM Name: %1, VM ID: %2, Endpoint Type: %3, Status: %4, Data=%5]">
+    </event>
+    <event value="13" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="An error has occurred in communicating with the virtual machine. The VM will automatically be reconnected. [VM Name: %1, VM ID: %2, Status: %3]">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Invalid Monitor settings were passed to the virtual machine.  The VM will function with these parameters:  horizontal resolution = %3, vertical resolution = %4, number of monitors = %5. The maximum supported resolution is %6 x %7.  The maximum number of monitors supported is %8. [VM Name: %1, VM ID: %2]">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The RemoteFX Manager failed to negotiate a protocol ( %3.%4 ) with the virtual machine.  [VM Name: %1, VM ID: %2]">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The RemoteFX Manager successfully negotiated a protocol with the virtual machine. [VM Name: %1, VM ID: %2]">
+    </event>
+    <event value="20" version="0" opcode="13" channel="18" level="4" task="3" keywords="0x2000000000000001" message="Title:RFX host token Start,Help:Each event corresponds to the start of a Token,Message:Counter - Vm Name : %1 (ID : %2) Activity (Token) Type: %3, ID : %4, Guest Process Id : %6">
+    </event>
+    <event value="21" version="0" opcode="13" channel="18" level="4" task="4" keywords="0x2000000000000001" message="Title:RFX host token End,Help:Each event corresponds to the end of a Token,Message:Counter - Vm Name : %1 (ID: %2) Activity (Token) Type: %3, ID : %4, Guest Process Id : %6">
+    </event>
+    <event value="22" version="0" opcode="14" channel="18" level="4" task="5" keywords="0x2000000000000002" message="Title:RFX host capture activity Start,Help:Each event corresponds to the start of a capture activity,Message:Counter - Vm Name : %1 (ID : %2) Activity Type: %3, ID : %4">
+    </event>
+    <event value="23" version="0" opcode="14" channel="18" level="4" task="6" keywords="0x2000000000000002" message="Title:RFX host capture activity End,Help:Each event corresponds to the end of a capture activity,Message:Counter - Vm Name : %1 (ID: %2) Activity Type: %3, ID : %4">
+    </event>
+    <event value="24" version="0" opcode="14" channel="18" level="4" task="5" keywords="0x2000000000000002" message="Title:RFX host CMP activity Start,Help:Each event corresponds to the start of a host CMP activity,Message:Counter - Vm Name : %1 (ID : %2) Activity Type: %3, ID : %4, (Channel : %6)">
+    </event>
+    <event value="25" version="0" opcode="14" channel="18" level="4" task="6" keywords="0x2000000000000002" message="Title:RFX host CMP activity End,Help:Each event corresponds to the end of a Host CMP activity,Message:Counter - Vm Name : %1 (ID: %2) Activity Type: %3, ID : %4, (Channel : %6)">
+    </event>
+    <event value="26" version="0" opcode="14" channel="18" level="4" task="5" keywords="0x2000000000000002" message="Title:RFX host CMP Transport activity Start,Help:Each event corresponds to the start of a host CMP Transport activity,Message:Counter - Vm Name : %1 (ID : %2) Activity Type: %3, ID : %4">
+    </event>
+    <event value="27" version="0" opcode="14" channel="18" level="4" task="6" keywords="0x2000000000000002" message="Title:RFX host CMP Transport activity End,Help:Each event corresponds to the end of a Host CMP Transport activity,Message:Counter - Vm Name : %1 (ID: %2) Activity Type: %3, ID : %4">
+    </event>
+    <event value="28" version="0" opcode="15" channel="18" level="4" task="7" keywords="0x2000000000000004" message="Title:RFX host Render activity Start,Help:Each event corresponds to the start of a host Render activity,Message:Counter - Vm Name : %1 (ID : %2) Activity Type: %3, ID : %4, (Device : %6)">
+    </event>
+    <event value="29" version="0" opcode="15" channel="18" level="4" task="8" keywords="0x2000000000000004" message="Title:RFX host Render activity End,Help:Each event corresponds to the end of a Host Render activity,Message:Counter - Vm Name : %1 (ID: %2) Activity Type: %3, ID : %4, (Device : %6)">
+    </event>
+    <event value="99" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The RemoteFX Graphics Device within the virtual machine stopped responding and has successfully recovered. [VM Name: %1, VM ID: %2]">
+    </event>
+    <event value="100" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The RemoteFX Manager process stopped because process run out of memory. A restart of the process will be attempted. More details are available in the status code. [VM Name: %1,  VM ID: %2, Status: %3, Code: %4, Data=%5]">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The RemoteFX Manager could not load the OpenCL runtime. OpenCL functionality is unavailable within the virtual machine. [VM Name: %1,  VM ID: %2, Status: %3]">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The RemoteFX Manager could not find any OpenCL capable platforms. OpenCL functionality is unavailable within the virtual machine. [VM Name: %1,  VM ID: %2]">
+    </event>
+  </events>
+</provider>

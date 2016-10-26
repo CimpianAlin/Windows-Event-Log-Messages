@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-HttpService" guid="dd5ef90a-6398-47a4-ad34-4dcecdef795f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=HTTP.SYS&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\HTTP.SYS" parameterFileName="C:\Windows\system32\drivers\HTTP.SYS" messageFileName="C:\Windows\system32\drivers\HTTP.SYS" message="Microsoft-Windows-HttpService" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-HttpService/Trace" id="16" flags="0" message="HTTP Service Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="HTTP_OPCODE_RECEIVE_REQUEST" value="720896" message="RecvReq">
+    </opcode>
+    <opcode name="HTTP_OPCODE_PARSE" value="786432" message="Parse">
+    </opcode>
+    <opcode name="HTTP_OPCODE_DELIVER" value="851968" message="Deliver">
+    </opcode>
+    <opcode name="HTTP_OPCODE_RECEIVE_RESPONSE" value="917504" message="RecvResp">
+    </opcode>
+    <opcode name="HTTP_OPCODE_RECEIVE_RESPONSE_LAST" value="983040" message="RecvRespLast">
+    </opcode>
+    <opcode name="HTTP_OPCODE_RECEIVE_BODY" value="1048576" message="RecvBody">
+    </opcode>
+    <opcode name="HTTP_OPCODE_RECEIVE_BODY_LAST" value="1114112" message="RecvBodyLast">
+    </opcode>
+    <opcode name="HTTP_OPCODE_FAST_RESPONSE_LAST" value="1179648" message="FastRespLast">
+    </opcode>
+    <opcode name="HTTP_OPCODE_FAST_RESPONSE" value="1245184" message="FastResp">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CACHED_AND_SEND" value="1310720" message="CachedAndSend">
+    </opcode>
+    <opcode name="HTTP_OPCODE_FAST_SEND" value="1376256" message="FastSend">
+    </opcode>
+    <opcode name="HTTP_OPCODE_ZERO_SEND" value="1441792" message="ZeroSend">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SEND_ERROR" value="1507328" message="SndError">
+    </opcode>
+    <opcode name="HTTP_OPCODE_COMPLETE_SEND_ERROR" value="1572864" message="LastSndError">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SERVED_FROM_CACHE" value="1638400" message="SrvdFrmCache">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CACHE_NOT_MODIFIED" value="1703936" message="CachedNotModified">
+    </opcode>
+    <opcode name="HTTP_OPCODE_RESERVATION" value="1769472" message="ResvUrl">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CONNECT" value="1835008" message="ConnConnect">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CLOSE" value="1900544" message="ConnClose">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CLEANUP" value="1966080" message="ConnCleanup">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SET_URL_GROUP" value="2031616" message="ChgUrlGrpProp">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SET_SERVER_SESSION" value="2097152" message="ChgSrvSesProp">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SET_REQUEST_QUEUE" value="2162688" message="ChgReqQueueProp">
+    </opcode>
+    <opcode name="HTTP_OPCODE_ADD_URL" value="2228224" message="AddUrl">
+    </opcode>
+    <opcode name="HTTP_OPCODE_REMOVE_URL" value="2293760" message="RemUrl">
+    </opcode>
+    <opcode name="HTTP_OPCODE_REMOVE_ALL_URLS" value="2359296" message="RemAllUrls">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CACHE_ENTRY_ADDED" value="2424832" message="AddedCacheEntry">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CACHE_ENTRY_ADD_FAILED" value="2490368" message="AddCacheEntryFailed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CACHE_ENTRY_FLUSHED" value="2555904" message="FlushedCache">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_CONNECT" value="2621440" message="SslConnEvent">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_HANDSHAKE_INITIATE" value="2686976" message="SslInitiateHandshake">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_HANDSHAKE_COMPLETE" value="2752512" message="SslHandshakeComplete">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_RECEIVE_CLIENT_CERT_INITIATE" value="2818048" message="SslInititateSslRcvClientCert">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_RECEIVE_CLIENT_CERT_COMPLETE" value="2883584" message="SslRcvClientCertFailed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_RECEIVE_RAW_DATA" value="2949120" message="SslRcvdRawData">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_DELIVER_STREAM_DATA" value="3014656" message="SslDlvrdStreamData">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_ACCEPT_STREAM_DATA" value="3080192" message="SslAcceptStreamData">
+    </opcode>
+    <opcode name="HTTP_OPCODE_IP_LISTEN_LIST_ENTRY_READ" value="3211264" message="ReadIpListEntry">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_CREDENTIAL_CREATED" value="3276800" message="CreatedSslCred">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SEND_COMPLETE" value="3342336" message="SendComplete">
+    </opcode>
+    <opcode name="HTTP_OPCODE_AUTH_SSPI" value="3407872" message="SspiCall">
+    </opcode>
+    <opcode name="HTTP_OPCODE_AUTH_CACHE_ENTRY_ADDED" value="3473408" message="AuthCacheEntryAdded">
+    </opcode>
+    <opcode name="HTTP_OPCODE_AUTH_CACHE_ENTRY_FREED" value="3538944" message="AuthCacheEntryFreed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CONNECT_ID" value="3604480" message="ConnIdAssgn">
+    </opcode>
+    <opcode name="HTTP_OPCODE_QOS_FLOW_SET" value="3670016" message="QosFlowSetReset">
+    </opcode>
+    <opcode name="HTTP_OPCODE_LOGGING_CONFIG_FAILED" value="3735552" message="LoggingConfigFailed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_LOGGING_CONFIG" value="3801088" message="LoggingConfig">
+    </opcode>
+    <opcode name="HTTP_OPCODE_LOGGING_CREATE_FAILURE" value="3866624" message="LogFileCreateFailed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_LOGGING_CREATE" value="3932160" message="LogFileCreate">
+    </opcode>
+    <opcode name="HTTP_OPCODE_LOGGING_WRITE" value="3997696" message="LogFileWrite">
+    </opcode>
+    <opcode name="HTTP_OPCODE_PARSE_FAILURE" value="4063232" message="ParseRequestFailed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_TIMEOUT" value="4128768" message="ConnTimedOut">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_ACH_FAILURE" value="4325376" message="SslEndpointCreationFailed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_DISCONNECT" value="4390912" message="SslDisconnEvent">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_DISCONNECT_REQUEST" value="4456448" message="SslDisconnReq">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_UNSEAL_MESSAGE" value="4521984" message="SslUnsealMsg">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_QUERY_CONN_INFO_FAILURE" value="4587520" message="SslQueryConnInfoFailed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_ENDPOINT_CONFIG_NOT_FOUND" value="4653056" message="SslEndpointConfigNotFound">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_ASC_RESULT" value="4718592" message="SslAsc">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_SEAL_MESSAGE" value="4784128" message="SslSealMsg">
+    </opcode>
+    <opcode name="HTTP_OPCODE_REQUEST_REJECTED" value="4849664" message="RequestRejected">
+    </opcode>
+    <opcode name="HTTP_OPCODE_REQUEST_CANCELLED" value="4915200" message="RequestCancelled">
+    </opcode>
+    <opcode name="HTTP_OPCODE_HOTADD_PROC_FAILURE" value="4980736" message="HotAddProcFailed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_HOTADD_PROC_SUCCESS" value="5046272" message="HotAddProcSucceeded">
+    </opcode>
+    <opcode name="HTTP_OPCODE_INIT_USER_RESPONSE_FLOW" value="5111808" message="UserResponseFlowInit">
+    </opcode>
+    <opcode name="HTTP_OPCODE_INIT_CACHED_RESPONSE_FLOW" value="5177344" message="CachedResponseFlowInit">
+    </opcode>
+    <opcode name="HTTP_OPCODE_INIT_FLOW_FAILED" value="5242880" message="FlowInitFailed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SET_CONNECTION_FLOW" value="5308416" message="SetConnectionFlow">
+    </opcode>
+    <opcode name="HTTP_OPCODE_REQUEST_ON_CONFIG_FLOW" value="5373952" message="RequestAssociatedToConfigurationFlow">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CONNECTION_FLOW_FAILURE" value="5439488" message="ConnectionFlowFailed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_RESPONSE_RANGE_PROCESSING_OK" value="5505024" message="ResponseRangeProcessingOK">
+    </opcode>
+    <opcode name="HTTP_OPCODE_BEGIN_BUILDING_SLICES" value="5570560" message="BeginBuildingSlices">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SEND_SLICE_CACHE_CONTENT" value="5636096" message="SendSliceCacheContent">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CACHED_SLICES_MATCH_RANGES" value="5701632" message="CachedSlicesMatchContent">
+    </opcode>
+    <opcode name="HTTP_OPCODE_MERGE_SLICES_TO_CACHE" value="5767168" message="MergeSlicesToCache">
+    </opcode>
+    <opcode name="HTTP_OPCODE_FLAT_CACHE_RANGE_SEND" value="5832704" message="FlatCacheRangeSend">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CHANNEL_BIND_ASC_PARAMETERS" value="5898240" message="ChannelBindAscParams">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SERVICE_BIND_CHECK_COMPLETE" value="5963776" message="ServiceBindCheckComplete">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CHANNEL_BIND_CONFIG_CAPTURE" value="6029312" message="ChannelBindConfigCapture">
+    </opcode>
+    <opcode name="HTTP_OPCODE_CHANNEL_BIND_RESPONSE_CONFIG" value="6094848" message="ChannelBindPerResponseConfig">
+    </opcode>
+    <opcode name="HTTP_OPCODE_POLICY_FLOW" value="6160384" message="UsePolicyBasedQoSFlow">
+    </opcode>
+    <opcode name="HTTP_OPCODE_THREADPOOL_EXTENSION" value="6225920" message="ThreadPoolExtension">
+    </opcode>
+    <opcode name="HTTP_OPCODE_THREAD_READY" value="6291456" message="ThreadReady">
+    </opcode>
+    <opcode name="HTTP_OPCODE_THREADPOOL_TRIM" value="6356992" message="ThreadPoolTrim">
+    </opcode>
+    <opcode name="HTTP_OPCODE_THREAD_GONE" value="6422528" message="ThreadGone">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SNI_PARSED" value="6488064" message="SniParsed">
+    </opcode>
+    <opcode name="HTTP_OPCODE_OPAQUE" value="6553600" message="InitiateOpaqueMode">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_AUTO_ENDPOINT_CREATED" value="6619136" message="EndpointAutoGenerated">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_AUTO_ENDPOINT_DELETED" value="6684672" message="AutoGeneratedEndpointDeleted">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_ENDPOINT_CONFIG_FOUND" value="6750208" message="SslEndpointConfigFound">
+    </opcode>
+    <opcode name="HTTP_OPCODE_SSL_ENDPOINT_CONFIG_REJECTED" value="6815744" message="SslEndpointConfigRejected">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="HTTP_TASK_REQUEST" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Request Trace Task">
+    </task>
+    <task name="HTTP_TASK_SETUP" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Setup Trace Task">
+    </task>
+    <task name="HTTP_TASK_CONNECTION" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Connection Trace Task">
+    </task>
+    <task name="HTTP_TASK_PROPERTY" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Configuration Property Trace Task">
+    </task>
+    <task name="HTTP_TASK_AUTHENTICATION" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Authentication Trace Task">
+    </task>
+    <task name="HTTP_TASK_SSL" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP SSL Trace Task">
+    </task>
+    <task name="HTTP_TASK_CACHE" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Cache Trace Task">
+    </task>
+    <task name="HTTP_TASK_LOGGING" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Logging Trace Task">
+    </task>
+    <task name="HTTP_TASK_TIMEOUT" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Timeout Trace Task">
+    </task>
+    <task name="HTTP_TASK_DRIVER_SETTING" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Driver Global Settings Task">
+    </task>
+    <task name="HTTP_TASK_THREAD_POOL" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Thread Pool">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="HTTP_KEYWORD_SETUP" mask="1" message="Flagged on all HTTP events dealing with service setup">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_REQUEST" mask="2" message="Flagged on all HTTP events dealing with request processing">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_RESPONSE" mask="4" message="Flagged on all HTTP events dealing with response handling">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_ENDPOINT" mask="8" message="Flagged on all HTTP events dealing with endpoints">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_CONNECTION" mask="10" message="Flagged on all HTTP events occurring on a connection">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_CACHE" mask="20" message="Flagged on all HTTP events dealing with URI cache">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_URL_GROUP" mask="40" message="Flagged on all HTTP events triggered on a URL group">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_SERVER_SESSION" mask="80" message="Flagged on all HTTP events triggered on a server session">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_REQUEST_QUEUE" mask="100" message="Flagged on all HTTP events triggered on a request queue">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_SSL" mask="200" message="Flagged on all HTTP events handling SSL interactions">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_AUTHENTICATION" mask="400" message="Flagged on all HTTP events handling authentication (SSPI) and authentication cache">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_LOGGING" mask="800" message="Flagged on all HTTP events dealing with error log activities">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_TIMEOUT" mask="1000" message="Flagged on all HTTP events setting/resetting/triggering timeouts">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_DRIVER_SETTING" mask="2000" message="Flagged on all HTTP events dealing with global driver settings">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_THREAD_POOL" mask="4000" message="Flagged on all HTTP events in thread pool">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000000102" message="Request received (request ID %1) on connection (connection ID %2) from remote address %4.">
+    </event>
+    <event value="2" version="0" opcode="12" channel="16" level="4" task="1" keywords="0x8000000000000002" message="Parsed request (request pointer %1, method %2) with URI %3.">
+    </event>
+    <event value="3" version="0" opcode="13" channel="16" level="4" task="1" keywords="0x8000000000000102" message="Delivered request to server application (request pointer %1, request ID %2, site ID %3) from request queue %4 for URI %5 with status %6.">
+    </event>
+    <event value="4" version="0" opcode="14" channel="16" level="4" task="1" keywords="0x8000000000000006" message="Server application passed response (request ID %1, connection ID %2, method %4, header length %5, number of entity chunks %6, cache policy %7) with status code %3.">
+    </event>
+    <event value="5" version="0" opcode="15" channel="16" level="4" task="1" keywords="0x8000000000000006" message="Server application passed the last response (corresponding to request ID %1).">
+    </event>
+    <event value="6" version="0" opcode="16" channel="16" level="4" task="1" keywords="0x8000000000000006" message="Server application passed entity body for request ID %1 (connection ID %2).">
+    </event>
+    <event value="7" version="0" opcode="17" channel="16" level="4" task="1" keywords="0x8000000000000006" message="Server application passed the last entity body for request ID %1.">
+    </event>
+    <event value="8" version="0" opcode="19" channel="16" level="4" task="1" keywords="0x8000000000000006" message="Server application passed response (request ID %1, connection ID %2, method %4, header length %5, number of entity chunks %6, cache policy %7) with status code %3.">
+    </event>
+    <event value="9" version="0" opcode="18" channel="16" level="4" task="1" keywords="0x8000000000000006" message="Server application passed the last response (corresponding to request ID %1).">
+    </event>
+    <event value="10" version="0" opcode="51" channel="16" level="4" task="1" keywords="0x8000000000000016" message="Response ready for send (corresponding to request ID %1) with status code %2.">
+    </event>
+    <event value="11" version="0" opcode="20" channel="16" level="4" task="1" keywords="0x8000000000000024" message="Cached the response (corresponding to request ID %1) with status code %2. Response to be sent.">
+    </event>
+    <event value="12" version="0" opcode="21" channel="16" level="4" task="1" keywords="0x8000000000000006" message="Queued last response (corresponding to request ID %1) for sending. Status code is %2.">
+    </event>
+    <event value="13" version="0" opcode="22" channel="16" level="4" task="1" keywords="0x8000000000000016" message="Response sent (corresponding to request ID %1) with status code %2. If disconnect is required, a TCP FIN has been sent.">
+    </event>
+    <event value="14" version="0" opcode="24" channel="16" level="2" task="1" keywords="0x8000000000000006" message="Error occurred while sending the last response (corresponding to request ID %1) with status code %2. A TCP Reset has been sent.">
+    </event>
+    <event value="15" version="0" opcode="23" channel="16" level="2" task="1" keywords="0x8000000000000006" message="Error %3 occurred while sending (corresponding to request ID %1). A TCP Reset will be sent.">
+    </event>
+    <event value="16" version="0" opcode="25" channel="16" level="4" task="1" keywords="0x8000000000000024" message="Response (request pointer %1, site ID %2, number of bytes %3) queued for sending from the cache.">
+    </event>
+    <event value="16" version="1" opcode="25" channel="16" level="4" task="1" keywords="0x8000000000000024" message="Response (request pointer %1, corresponding to request ID %4, site ID %2, number of bytes %3, encoding %5) queued for sending from the cache.">
+    </event>
+    <event value="17" version="0" opcode="26" channel="16" level="4" task="1" keywords="0x8000000000000024" message="Response (request pointer %1, site ID %2, number of bytes %3) queued for sending with status code 304 (cache not modified).">
+    </event>
+    <event value="17" version="1" opcode="26" channel="16" level="4" task="1" keywords="0x8000000000000024" message="Response (request pointer %1, site ID %2, number of bytes %3, encoding %5) queued for sending with status code 304 (cache not modified).">
+    </event>
+    <event value="18" version="0" opcode="27" channel="16" level="4" task="3" keywords="0x8000000000000001" message="Attempted to reserve URL (%1). Status %2.">
+    </event>
+    <event value="19" version="0" opcode="49" channel="16" level="4" task="3" keywords="0x8000000000000001" message="Successfully read the IP listen list for IP address %1.">
+    </event>
+    <event value="20" version="0" opcode="50" channel="16" level="4" task="3" keywords="0x8000000000000201" message="SSL credentials for IP address and port %3 successfully created.">
+    </event>
+    <event value="20" version="1" opcode="50" channel="16" level="4" task="3" keywords="0x8000000000000201" message="SSL credentials for endpoint %2 successfully created.">
+    </event>
+    <event value="21" version="0" opcode="28" channel="16" level="4" task="4" keywords="0x8000000000000010" message="New connection created (local IP address %3 and remote address %5).">
+    </event>
+    <event value="22" version="0" opcode="55" channel="16" level="4" task="4" keywords="0x8000000000000012" message="Connection ID (%2) assigned to connection and request (request ID %1) will be parsed.">
+    </event>
+    <event value="23" version="0" opcode="29" channel="16" level="4" task="4" keywords="0x8000000000000010" message="Client closed the connection (connection pointer %1). Status of whether closed by TCP Reset: %2.">
+    </event>
+    <event value="24" version="0" opcode="30" channel="16" level="4" task="4" keywords="0x8000000000000010" message="Connection (connection pointer %1) cleanup started due to either the sending of a TCP Reset, receiving of a TCP Reset, or after the mutual exchange of TCP Fins.">
+    </event>
+    <event value="25" version="0" opcode="37" channel="16" level="4" task="8" keywords="0x8000000000000020" message="Successfully added entry (URI %1) to cache.">
+    </event>
+    <event value="25" version="1" opcode="37" channel="16" level="4" task="8" keywords="0x8000000000000020" message="Successfully added entry (URI %1) to cache (Encoding %7).">
+    </event>
+    <event value="26" version="0" opcode="38" channel="16" level="2" task="8" keywords="0x8000000000000020" message="Failed to add an entry (URI %1) to the cache. Status: %2.">
+    </event>
+    <event value="26" version="1" opcode="38" channel="16" level="2" task="8" keywords="0x8000000000000020" message="Failed to add an entry (URI %1) to the cache. Status: %2. Encoding: %3.">
+    </event>
+    <event value="27" version="0" opcode="39" channel="16" level="4" task="8" keywords="0x8000000000000020" message="Flushed entry (URI %1) from the cache.">
+    </event>
+    <event value="28" version="0" opcode="31" channel="16" level="4" task="5" keywords="0x8000000000000040" message="Attempted to set URL group property: %1. Status: %2.">
+    </event>
+    <event value="29" version="0" opcode="32" channel="16" level="4" task="5" keywords="0x8000000000000080" message="Attempted to set server session property: %1. Status: %2.">
+    </event>
+    <event value="30" version="0" opcode="33" channel="16" level="4" task="5" keywords="0x8000000000000100" message="Attempted to set request queue property: %1. Status: %2.">
+    </event>
+    <event value="31" version="0" opcode="34" channel="16" level="4" task="5" keywords="0x8000000000000040" message="Attempted to add URL (%2) to URL group (%1). Status: %3.">
+    </event>
+    <event value="32" version="0" opcode="35" channel="16" level="4" task="5" keywords="0x8000000000000040" message="Removed URL (%2) from URL group (%1).">
+    </event>
+    <event value="33" version="0" opcode="36" channel="16" level="4" task="5" keywords="0x8000000000000040" message="Removed all URLs from URL group %1.">
+    </event>
+    <event value="34" version="0" opcode="40" channel="16" level="4" task="7" keywords="0x8000000000000210" message="Initiating SSL connection.">
+    </event>
+    <event value="35" version="0" opcode="41" channel="16" level="4" task="7" keywords="0x8000000000000200" message="Initiating SSL handshake.">
+    </event>
+    <event value="36" version="0" opcode="42" channel="16" level="4" task="7" keywords="0x8000000000000200" message="SSL handshake completed with status: %1.">
+    </event>
+    <event value="37" version="0" opcode="43" channel="16" level="4" task="7" keywords="0x8000000000000200" message="Server application is attempting to receive the SSL client certificate, which will be provided if available. If the client certificate is not available, a renegotiation will be initiated.">
+    </event>
+    <event value="38" version="0" opcode="44" channel="16" level="2" task="7" keywords="0x8000000000000200" message="Attempt by server application to receive client certificate failed with status: %1.">
+    </event>
+    <event value="39" version="0" opcode="45" channel="16" level="4" task="7" keywords="0x8000000000000212" message="Raw SSL data is available for processing.">
+    </event>
+    <event value="40" version="0" opcode="46" channel="16" level="4" task="7" keywords="0x8000000000000202" message="Decrypted SSL data is available for processing.">
+    </event>
+    <event value="41" version="0" opcode="47" channel="16" level="4" task="7" keywords="0x8000000000000206" message="Passed plaintext data for encryption.">
+    </event>
+    <event value="43" version="0" opcode="52" channel="16" level="4" task="6" keywords="0x8000000000000400" message="Attempt (on connection ID %1) to authenticate client completed. Authentication type %2. Security status: %3.">
+    </event>
+    <event value="43" version="1" opcode="52" channel="16" level="4" task="6" keywords="0x8000000000000400" message="Attempt (on connection ID %1) to authenticate client completed. Authentication type %2. Security status: %3.">
+    </event>
+    <event value="44" version="0" opcode="53" channel="16" level="4" task="6" keywords="0x8000000000000400" message="Attempted to add entry to the %2 authentication cache. Status: %4.">
+    </event>
+    <event value="45" version="0" opcode="54" channel="16" level="4" task="6" keywords="0x8000000000000400" message="Entry successfully removed from the authentication cache.">
+    </event>
+    <event value="46" version="0" opcode="56" channel="16" level="4" task="4" keywords="0x8000000000000010" message="Successfully associated QoS flow with connection (connection ID %1). Bandwidth throttled to: %2 Bytes per second.">
+    </event>
+    <event value="47" version="0" opcode="57" channel="16" level="2" task="9" keywords="0x8000000000000800" message="Failed to configure the %2 logging (directory %4), Status: %1.">
+    </event>
+    <event value="48" version="0" opcode="58" channel="16" level="4" task="9" keywords="0x8000000000000800" message="Successfully configured %2 logging (directory %5).">
+    </event>
+    <event value="49" version="0" opcode="59" channel="16" level="2" task="9" keywords="0x8000000000000800" message="Failed to create %2 log file %5. Status: %1.">
+    </event>
+    <event value="50" version="0" opcode="60" channel="16" level="4" task="9" keywords="0x8000000000000800" message="Successfully created new %2 log file %5.">
+    </event>
+    <event value="51" version="0" opcode="61" channel="16" level="4" task="9" keywords="0x8000000000000800" message="Entry has been written to %3 log file.">
+    </event>
+    <event value="52" version="0" opcode="62" channel="16" level="2" task="1" keywords="0x8000000000000002" message="Parsing of request (request ID %2) failed due to reason: %3. Request may not be compliant with HTTP/1.1.">
+    </event>
+    <event value="53" version="0" opcode="63" channel="16" level="3" task="10" keywords="0x8000000000001010" message="HTTP timer %3 expired. The connection will be reset.">
+    </event>
+    <event value="56" version="0" opcode="66" channel="16" level="2" task="7" keywords="0x8000000000000201" message="Failed to acquire handle for SSL credentials. Failure will be event logged. Security status: %2.">
+    </event>
+    <event value="57" version="0" opcode="67" channel="16" level="4" task="7" keywords="0x8000000000000210" message="SSL connection will be disconnected as initiated by the client.">
+    </event>
+    <event value="58" version="0" opcode="68" channel="16" level="4" task="7" keywords="0x8000000000000210" message="SSL connection will be disconnected as initiated by the server application. Status: %2.">
+    </event>
+    <event value="59" version="0" opcode="69" channel="16" level="4" task="7" keywords="0x8000000000000202" message="Attempt to decrypt SSL data failed. Security status: %2.">
+    </event>
+    <event value="60" version="0" opcode="70" channel="16" level="2" task="7" keywords="0x8000000000000210" message="Query for SSL connection parameters failed. Security status: %2. Connection will be reset.">
+    </event>
+    <event value="61" version="0" opcode="71" channel="16" level="2" task="7" keywords="0x8000000000000208" message="Cannot find SSL endpoint for inbound connection for local IP address and port %3.">
+    </event>
+    <event value="62" version="0" opcode="72" channel="16" level="4" task="7" keywords="0x8000000000000200" message="Attempt to perform SSL handshake failed. Security status: %2.">
+    </event>
+    <event value="63" version="0" opcode="73" channel="16" level="4" task="7" keywords="0x8000000000000204" message="Attempt to encrypt SSL data failed. Security status: %2.">
+    </event>
+    <event value="64" version="0" opcode="74" channel="16" level="2" task="1" keywords="0x8000000000000102" message="Request (request ID %1) rejected due to reason: %2.">
+    </event>
+    <event value="65" version="0" opcode="75" channel="16" level="2" task="1" keywords="0x8000000000000102" message="Server application canceled the processing of its request (request ID %1).">
+    </event>
+    <event value="66" version="0" opcode="76" channel="16" level="2" task="11" keywords="0x8000000000002000" message="Http.sys failed to process CPU hot-add. Processor number: %1, reason: %2, status: %3.">
+    </event>
+    <event value="67" version="0" opcode="77" channel="16" level="4" task="11" keywords="0x8000000000002000" message="Hot-add information: Current UxNumberOfProcessors: %1, comment: %2.">
+    </event>
+    <event value="68" version="0" opcode="78" channel="16" level="4" task="1" keywords="0x8000000000000006" message="Initialized QoS flow: FlowHandle %1, bandwidth %2, peak bandwidth %3, burst size %4">
+    </event>
+    <event value="69" version="0" opcode="79" channel="16" level="4" task="1" keywords="0x8000000000000026" message="Initialized QoS flow: FlowHandle %1, bandwidth %2, peak bandwidth %3, burst size %4">
+    </event>
+    <event value="70" version="0" opcode="80" channel="16" level="2" task="1" keywords="0x8000000000000006" message="QoS flow initialization failed: bandwidth %1, peak bandwidth %2, burst size %3, status %4">
+    </event>
+    <event value="71" version="0" opcode="81" channel="16" level="4" task="4" keywords="0x8000000000000010" message="Setting flow: Connection %1, FlowHandle %2">
+    </event>
+    <event value="72" version="0" opcode="82" channel="16" level="4" task="4" keywords="0x8000000000000012" message="Assign to Configuration QoS Flow: FlowHandle %1">
+    </event>
+    <event value="73" version="0" opcode="83" channel="16" level="2" task="4" keywords="0x8000000000000010" message="[re]Setting QoS Flow failed: Connection %1, FlowHandle %2, status %3">
+    </event>
+    <event value="74" version="0" opcode="84" channel="16" level="4" task="1" keywords="0x8000000000000004" message="Response range processing done. Req. %1, response content size %2, ranges %3 (%4-%5, %6-%7,...)">
+    </event>
+    <event value="75" version="0" opcode="85" channel="16" level="4" task="8" keywords="0x8000000000000024" message="Begin building slices. Req. %1, slices %2 (%3,%4,...), ranges %5 (%6-%7, %8-%9,...)">
+    </event>
+    <event value="76" version="0" opcode="86" channel="16" level="4" task="8" keywords="0x8000000000000020" message="Send cached slices. Req. %1, CacheEntry %2, slices %3 (%4,%5,...), ranges %6 (%7-%8, %9-%10,...)">
+    </event>
+    <event value="77" version="0" opcode="87" channel="16" level="4" task="8" keywords="0x8000000000000020" message="Cached slices match content. Req. %1, CacheEntry %2, slices %3 (%4,%5,...), ranges %6 (%7-%8, %9-%10,...)">
+    </event>
+    <event value="78" version="0" opcode="88" channel="16" level="4" task="8" keywords="0x8000000000000020" message="Merge slices to cache. CacheEntry %1, slices to merge %2, slices to cache %3">
+    </event>
+    <event value="79" version="0" opcode="89" channel="16" level="4" task="8" keywords="0x8000000000000020" message="Sending range from flat cache entry. CacheEntry %1, range %2-%3">
+    </event>
+    <event value="80" version="0" opcode="90" channel="16" level="4" task="6" keywords="0x8000000000000400" message="Channel bind ASC parameters: connection %1, buffers %2, flags %3">
+    </event>
+    <event value="81" version="0" opcode="91" channel="16" level="4" task="6" keywords="0x8000000000000400" message="Service bind check done. Connection %1, Context %2-%3, status %4, target %5">
+    </event>
+    <event value="82" version="0" opcode="92" channel="16" level="4" task="6" keywords="0x8000000000000400" message="Captured channel bind config. Hardening %1, flags %2, service count %3">
+    </event>
+    <event value="83" version="0" opcode="93" channel="16" level="4" task="6" keywords="0x8000000000000400" message="Channel bind response config overwrites %1">
+    </event>
+    <event value="84" version="0" opcode="94" channel="16" level="4" task="4" keywords="0x8000000000000012" message="Policy-Based QoS: Connection %1, FlowHandle %2">
+    </event>
+    <event value="85" version="0" opcode="95" channel="16" level="4" task="12" keywords="0x8000000000004000" message="Thread pool extension. Pool type: %1, active pools: %2.">
+    </event>
+    <event value="86" version="0" opcode="96" channel="16" level="4" task="12" keywords="0x8000000000004000" message="Thread ready. Pool type: %1, active pools: %2, thread count: %3">
+    </event>
+    <event value="87" version="0" opcode="97" channel="16" level="4" task="12" keywords="0x8000000000004000" message="Thread pool trim. Pool type: %1, active pools: %2.">
+    </event>
+    <event value="88" version="0" opcode="98" channel="16" level="4" task="12" keywords="0x8000000000004000" message="Thread gone. Pool type: %1, active pools: %2, thread count: %3">
+    </event>
+    <event value="89" version="0" opcode="99" channel="16" level="4" task="7" keywords="0x8000000000000208" message="SNI parsed for connection: %1 with status: %2">
+    </event>
+    <event value="90" version="0" opcode="100" channel="16" level="4" task="1" keywords="0x8000000000000012" message="Request %1 has initated opaque mode">
+    </event>
+    <event value="91" version="0" opcode="101" channel="16" level="4" task="7" keywords="0x8000000000000208" message="Endpoint auto-generated for %2">
+    </event>
+    <event value="92" version="0" opcode="102" channel="16" level="4" task="7" keywords="0x8000000000000208" message="Deleted auto-generated endpoint for %2">
+    </event>
+    <event value="93" version="0" opcode="103" channel="16" level="4" task="7" keywords="0x8000000000000208" message="Inbound connection for IP: %3, SNI: %4. SSL endpoint found: %5">
+    </event>
+    <event value="94" version="0" opcode="104" channel="16" level="2" task="7" keywords="0x8000000000000208" message="SSL connection with local IP address and port %2 rejected due to configuration policy.">
+    </event>
+  </events>
+</provider>

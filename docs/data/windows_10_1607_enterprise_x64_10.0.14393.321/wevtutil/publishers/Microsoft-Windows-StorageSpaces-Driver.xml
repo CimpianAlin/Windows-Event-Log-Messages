@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-StorageSpaces-Driver" guid="595f7f52-c90a-4026-a125-8eb5e083f15e" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\spaceport.sys" messageFileName="C:\Windows\system32\drivers\spaceport.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-StorageSpaces-Driver/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-StorageSpaces-Driver/Diagnostic" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-StorageSpaces-Driver/Performance" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Io" mask="1" message="">
+    </keyword>
+    <keyword name="Flush" mask="2" message="">
+    </keyword>
+    <keyword name="Dsm" mask="4" message="">
+    </keyword>
+    <keyword name="Log" mask="8" message="">
+    </keyword>
+    <keyword name="Destage" mask="10" message="">
+    </keyword>
+    <keyword name="ReadCache" mask="40" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="102" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Majority of the physical disks of storage pool %1 failed a configuration update, which caused the pool to go into a failed state. Return Code: %2">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The capacity consumption of the storage pool %1 has exceeded the threshold limit set on the pool. Return Code: %2">
+    </event>
+    <event value="104" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The capacity consumption of the storage pool %1 is now below the threshold limit set on the pool. Return Code: %2">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Windows was unable to read the disk header for physical disk %1. If you know the disk is still usable, then resetting the disk health by using command line or GUI may clear this failure condition and enable you to reassign the disk to its storage pool. Return Code: %2">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Physical disk %1 has invalid meta-data. Resetting the health status, using command line or GUI, might resolve the issue. Return Code: %2">
+    </event>
+    <event value="203" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Physical disk %1 failed an IO operation. Return Code: %2. Additional related events may be found in the System event log for Disk %3.                  
+                  
+This disk may need to be replaced. To view its reliability counters, run this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-StorageReliabilityCounter                  
+                  
+This disk may be located using the following information:                  
+                  
+Drive Manufacturer: %4                  
+Drive Model Number: %5                  
+Drive Serial Number: %6                  
+                  
+More information can be obtained using this PowerShell command:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; }                  
+                  
+If this disk is in an enclosure, it may be located using the following information:                  
+                  
+Enclosure Manufacturer: %7                  
+Enclosure Model Number: %8                  
+Enclosure Serial Number: %9                  
+Enclosure Slot: %10                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Enable-PhysicalDiskIndication">
+    </event>
+    <event value="204" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Physical disk %1 is reporting an impending failure. Sense Code (KEY ASC/ASCQ): %2 %3/%4. Additional related events may be found in the System event log for Disk %5.                  
+                  
+This disk may need to be replaced. To view its reliability counters, run this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-StorageReliabilityCounter                  
+                  
+This disk may be located using the following information:                  
+                  
+Drive Manufacturer: %6                  
+Drive Model Number: %7                  
+Drive Serial Number: %8                  
+                  
+More information can be obtained using this PowerShell command:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; }                  
+                  
+If this disk is in an enclosure, it may be located using the following information:                  
+                  
+Enclosure Manufacturer: %9                  
+Enclosure Model Number: %10                  
+Enclosure Serial Number: %11                  
+Enclosure Slot: %12                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Enable-PhysicalDiskIndication">
+    </event>
+    <event value="205" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Windows lost communication with physical disk %1. This can occur if a cable failed or was disconnected, or if the disk itself failed.                  
+                  
+This disk may be located using the following information:                  
+                  
+Drive Manufacturer: %2                  
+Drive Model Number: %3                  
+Drive Serial Number: %4                  
+                  
+If this disk is in an enclosure, it may be located using the following information:                  
+                  
+Enclosure Manufacturer: %5                  
+Enclosure Model Number: %6                  
+Enclosure Serial Number: %7                  
+Enclosure Slot: %8                  
+                  
+More information can be obtained using this PowerShell command:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; }                  
+                  
+To view the virtual disks affected, run this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-VirtualDisk">
+    </event>
+    <event value="206" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Physical disk %1 was auto-retired.">
+    </event>
+    <event value="300" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Physical disk %1 failed to read the configuration or returned corrupt data for virtual disk %2. As a result the in-memory configuration may not be the most recent copy of configuration. Return Code: %3">
+    </event>
+    <event value="301" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="All pool disks failed to read the configuration or returned corrupt data for virtual disk %1. As a result the virtual disk will not attach. Return Code: %2">
+    </event>
+    <event value="302" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Majority of the pool disks hosting space meta-data for virtual disk %1 failed a space meta-data update, which caused the storage pool to go in failed state. Return Code: %2">
+    </event>
+    <event value="303" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Drives hosting data for virtual disk %1 have failed or are missing. As a result, no copy of data is available at offset %3.">
+    </event>
+    <event value="304" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The virtual disk %1 is in a degraded state. This can happen when a physical disk hosting the virtual disk fails, is disconnected, or experiences a write error.                  
+                  
+Windows will attempt to repair the virtual disk. No action is needed at this time.">
+    </event>
+    <event value="305" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Virtual disk %1 is now healthy.">
+    </event>
+    <event value="306" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The attempt to map, or allocate more storage for, the virtual disk %1 has failed. This is because there was a write failure involved in the updating the virtual disk metadata. Return Code: %2">
+    </event>
+    <event value="307" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The attempt to unmap or trim the virtual disk %1 has failed. Return Code: %2">
+    </event>
+    <event value="309" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Virtual disk %1 was detached due to an unexpected error. Return Code: %2">
+    </event>
+    <event value="310" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The attempt to allocate more storage for the virtual disk %1 has failed.                  
+                  
+Check the available capacity of the virutual disk; you may need to add additional                  
+physical capacity to the pool.                  
+                  
+Once you have resolved the condition listed above,                  
+you can online the disk by using the following commands in PowerShell:                  
+                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-Disk | Set-Disk -IsReadOnly $false                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-Disk | Set-Disk -IsOffline  $false">
+    </event>
+    <event value="311" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Virtual disk %1 requires a data integrity scan.                  
+                  
+Data on the disk is out-of-sync and a data integrity scan is required.                  
+To start the scan, run the following command:                  
+                  
+Get-ScheduledTask -TaskName &quot;Data Integrity Scan for Crash Recovery&quot; | Start-ScheduledTask                  
+                  
+Once you have resolved the condition listed above,                  
+you can online the disk by using the following commands in PowerShell:                  
+                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-Disk | Set-Disk -IsReadOnly $false                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-Disk | Set-Disk -IsOffline  $false">
+    </event>
+    <event value="312" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Virtual disk %1 has failed a write operation to all its copies.                  
+                  
+You can online the disk by using the following commands in PowerShell:                  
+                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-Disk | Set-Disk -IsReadOnly $false                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-Disk | Set-Disk -IsOffline  $false">
+    </event>
+    <event value="313" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Virtual disk %1 could not be repaired because there is not enough free space in the storage pool.                  
+                  
+Replace any failed or disconnected physical disks. The virtual disk will then be repaired automatically or you can repair it by running this command in PowerShell:                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Repair-VirtualDisk">
+    </event>
+    <event value="400" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A path to storage enclosure %1 has been detected. The number of available paths is %2.                  
+This enclosure may be located using the following information:                  
+                  
+Manufacturer: %3                  
+Model Number: %4                  
+Serial Number: %5                  
+Firmware Version: %6                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-StorageEnclosure | ?{ $_.ObjectId -Match &quot;%1&quot; }">
+    </event>
+    <event value="401" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A path to storage enclosure %1 has been removed. The number of remaining paths is %2.                  
+This enclosure may be located using the following information:                  
+                  
+Manufacturer: %3                  
+Model Number: %4                  
+Serial Number: %5                  
+Firmware Version: %6">
+    </event>
+    <event value="402" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The health of storage enclosure %1 has changed from %2 to %3.                  
+This enclosure may be located using the following information:                  
+                  
+Manufacturer: %4                  
+Model Number: %5                  
+Serial Number: %6                  
+Firmware Version: %7                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-StorageEnclosure | ?{ $_.ObjectId -Match &quot;%1&quot; }">
+    </event>
+    <event value="403" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A storage enclosure failed to initialize. Return Code: %1.                  
+This enclosure may be located using the following information:                  
+                  
+Manufacturer: %2                  
+Model Number: %3                  
+Serial Number: %4                  
+Firmware Version: %5">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Operation started.">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Operation completed.">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="For internal use.">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="For internal use.">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="For internal use.">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000002" message="For internal use.">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000002" message="For internal use.">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000004" message="For internal use.">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000004" message="For internal use.">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="For internal use.">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="For internal use.">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000002" message="For internal use.">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000002" message="For internal use.">
+    </event>
+    <event value="2010" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000004" message="For internal use.">
+    </event>
+    <event value="2011" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000004" message="For internal use.">
+    </event>
+    <event value="2100" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000008" message="For internal use.">
+    </event>
+    <event value="2101" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000008" message="For internal use.">
+    </event>
+    <event value="2102" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000008" message="For internal use.">
+    </event>
+    <event value="2103" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000008" message="For internal use.">
+    </event>
+    <event value="2104" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000008" message="For internal use.">
+    </event>
+    <event value="2200" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000010" message="For internal use.">
+    </event>
+    <event value="2300" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000040" message="Read cache operation completed.                  
+Id: %1                  
+Operation/Function: %2                  
+Length: %3                  
+Disk Offset: %4                  
+Relative Offset: %5                  
+Cache Offset: %6                  
+Status: %7">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Management-SecureAssessment" guid="a329cf81-57ec-46ed-ab7c-261a52b0754a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Windows.Management.SecureAssessment.Diagnostics.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\Windows.Management.SecureAssessment.Diagnostics.dll" messageFileName="C:\Windows\system32\Windows.Management.SecureAssessment.Diagnostics.dll" message="Microsoft-Windows-Management-SecureAssessment" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SecureAssessment/Operational" id="16" flags="0" message="Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="LockdownTask" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Lockdown">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="SecureAssessment" mask="1" message="SecureAssessment">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000001" message="An error was encountered. (error code = %1; function = %2; line number = %3)">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="A new lockdown request has been received. (enable lockdown = %1; already locked down = %2)">
+    </event>
+    <event value="201" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Creating a lockdown context for the app. (Create new = %1)">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Enrolling the device succeeded. (enrollment ID = %1)">
+    </event>
+    <event value="203" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000001" message="Enrolling the device failed. (error = %1)">
+    </event>
+    <event value="204" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Lockdown policies were successfully applied. (enrollment ID = %1)">
+    </event>
+    <event value="205" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Lockdown is enforced. (enrollment ID = %1; caller ID = %2)">
+    </event>
+    <event value="206" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Lockdown request completed successfully. (Enable = %1)">
+    </event>
+    <event value="207" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Device enrollment was skipped for this lockdown session.">
+    </event>
+    <event value="208" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Unenrollment completed successfully. (enrollment ID = %1)">
+    </event>
+  </events>
+</provider>

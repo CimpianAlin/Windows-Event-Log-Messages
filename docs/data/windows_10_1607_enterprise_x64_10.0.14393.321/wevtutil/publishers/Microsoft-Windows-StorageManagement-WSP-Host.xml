@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-StorageManagement-WSP-Host" guid="595f33ea-d4af-4f4d-b4dd-9dacdd17fc6e" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="smphost.dll" messageFileName="smphost.dll" message="Microsoft-Windows-StorageManagement-WSP-Host" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-StorageManagement/Operational" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-StorageManagement/Debug" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="A Windows Storage Provider failed to load.
+
+Provider:		%1
+Provider DLL:	%2
+Error Code:	%3
+Load Phase:	%4
+
+This failure is indicative of a bad installation, or a missing or corrupt DLL.">
+    </event>
+  </events>
+</provider>

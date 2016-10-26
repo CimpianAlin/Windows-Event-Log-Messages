@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SettingSync-Desktop" guid="579402a2-883c-45d8-b70a-9bc856407751" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=SettingSync.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\SettingSync.dll" messageFileName="C:\Windows\system32\SettingSync.dll" message="Microsoft-Windows-SettingSync" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SettingSync/Operational" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-SettingSync/Debug" id="17" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-SettingSync/Analytic" id="18" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Perf_SettingProfileHandler_OnLoad" value="7001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MouseSettingHandler_GetUnit" value="7003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MouseSettingHandler_ApplyUnit" value="7005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_SyncRequestedByLocalSystem" value="7031" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MicroImageCompression" value="7089" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MicroImageScale" value="7091" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_BackupRequestedByLocalSystem" value="7103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="RoamingSettings" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="5001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The system failed to request a sync for collection %1 (operation: %2, Result: %3).">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The setting unit %1 for collection %2 is invalid. (operation: %3, Result: %4).">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Starting or stopping setting change publisher for %1 failed. (Result: %2)">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to create process &quot;%1&quot; (Result: %2).">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Starting the setting monitor SSO failed.  (Message: %1, Result: %2)">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Starting the WNF listener failed.  (Message: %1, Result: %2)">
+    </event>
+    <event value="5007" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="5008" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="5009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="6001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The sync provider requested that %1 not upload now.  It will retry the upload later.">
+    </event>
+    <event value="6002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Starting or stopping setting change publisher for %1 failed. (Result: %2)">
+    </event>
+    <event value="6501" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Wnf event callback failure. State Name: %1. HRESULT: %2.">
+    </event>
+    <event value="6502" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="StartLayoutSync - Load layout data from stream. (HRESULT: %1)">
+    </event>
+    <event value="6503" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="PicturePasswordPicture image validation failed (HRESULT: %1)">
+    </event>
+    <event value="6504" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="StartLayoutSync - GetUnit() is returning pending remote payload because system is in cloud priority mode.">
+    </event>
+    <event value="6505" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="StartLayoutSync - No download happened during sync session. Switching back to normal mode from cloud priority mode.">
+    </event>
+    <event value="6506" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Monitor SSO Started">
+    </event>
+    <event value="6507" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Monitor SSO Status Changed">
+    </event>
+    <event value="6508" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Monitor SSO Collection Status Changed">
+    </event>
+    <event value="6509" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="6510" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="6511" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="7001" version="0" opcode="1" channel="18" level="4" task="7001" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7002" version="0" opcode="2" channel="18" level="4" task="7001" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7003" version="0" opcode="1" channel="18" level="4" task="7003" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7004" version="0" opcode="2" channel="18" level="4" task="7003" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7005" version="0" opcode="1" channel="18" level="4" task="7005" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7006" version="0" opcode="2" channel="18" level="4" task="7005" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7007" version="0" opcode="2" channel="18" level="4" task="7031" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7008" version="0" opcode="1" channel="18" level="4" task="7089" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7009" version="0" opcode="2" channel="18" level="4" task="7089" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7010" version="0" opcode="1" channel="18" level="4" task="7091" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7011" version="0" opcode="2" channel="18" level="4" task="7089" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7012" version="0" opcode="2" channel="18" level="4" task="7103" keywords="0x2000000000000001" message="">
+    </event>
+  </events>
+</provider>

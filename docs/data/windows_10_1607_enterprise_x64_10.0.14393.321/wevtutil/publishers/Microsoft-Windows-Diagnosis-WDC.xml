@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Diagnosis-WDC" guid="05921578-2261-42c7-a0d3-26ddbce6c50d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wdc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\wdc.dll" messageFileName="C:\Windows\system32\wdc.dll" message="Microsoft-Windows-Diagnosis-WDC" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Diagnosis-WDC/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Update" value="655360" message="">
+    </opcode>
+    <opcode name="Insert" value="720896" message="">
+    </opcode>
+    <opcode name="Delete" value="786432" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ListUpdate" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Launch" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_TabSwitch" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_HandleSearch" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_ColumnSort" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="memory" mask="200" message="">
+    </keyword>
+    <keyword name="list" mask="400" message="">
+    </keyword>
+    <keyword name="error" mask="800" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="5016" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x200" message="">
+    </event>
+    <event value="5017" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x200" message="">
+    </event>
+    <event value="5018" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x200" message="">
+    </event>
+    <event value="5100" version="0" opcode="10" channel="0" level="4" task="100" keywords="0x400" message="">
+    </event>
+    <event value="5101" version="0" opcode="11" channel="0" level="4" task="100" keywords="0x400" message="">
+    </event>
+    <event value="5102" version="0" opcode="12" channel="0" level="4" task="100" keywords="0x400" message="">
+    </event>
+    <event value="5103" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x800" message="">
+    </event>
+    <event value="5200" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5201" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5202" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5203" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5204" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5205" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5206" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5207" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8001000000000000" message="">
+    </event>
+  </events>
+</provider>

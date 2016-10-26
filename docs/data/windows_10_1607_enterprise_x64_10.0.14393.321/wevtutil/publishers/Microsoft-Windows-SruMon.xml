@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SruMon" guid="c8dbf506-e3d3-4822-930d-84c557eb6247" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=srumapi.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\srumapi.dll" messageFileName="C:\Windows\system32\srumapi.dll" message="Microsoft-Windows-SruMon" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SruMon/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TaskSruMonDebugTrace" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="SruMonDebugTrace">
+    </task>
+    <task name="TaskSruMonDebugSequenceTrace" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="SruMonDebugSequenceTrace">
+    </task>
+    <task name="TaskSruMonDebugSequenceErrorTrace" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="SruMonDebugSequenceErrorTrace">
+    </task>
+    <task name="TaskSruMonNWAggregationTrace" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="SruMonNWAggregationTrace">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="KeywordSruMonDebugTrace" mask="1" message="SruMonDebugTrace">
+    </keyword>
+    <keyword name="KeywordSruMonDebugSequenceTrace" mask="2" message="SruMonDebugSequenceTrace">
+    </keyword>
+    <keyword name="KeywordSruMonDebugSequenceErrorTrace" mask="4" message="SruMonDebugSequenceErrorTrace">
+    </keyword>
+    <keyword name="KeywordSruMonDebugDBResetTrace" mask="8" message="SruMonDebugServiceTrace">
+    </keyword>
+    <keyword name="KeywordSruMonNWAggregationTrace" mask="10" message="SruMonNWAggregationTrace">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2001" version="0" opcode="0" channel="16" level="5" task="1001" keywords="0x8000000000000001" message="%1">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="2" task="1001" keywords="0x8000000000000003" message="%1 Failed with %2">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="16" level="2" task="1001" keywords="0x8000000000000003" message="%1 Failed with %2">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="5" task="1001" keywords="0x8000000000000001" message="Accessing database table %1">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="2" task="1001" keywords="0x8000000000000003" message="%1 Failed with %2">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="16" level="5" task="1002" keywords="0x8000000000000006" message="Called at %1">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="16" level="5" task="1002" keywords="0x8000000000000006" message="Called at %1">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="16" level="5" task="1002" keywords="0x8000000000000006" message="%1">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="16" level="2" task="1003" keywords="0x800000000000001c" message="%1">
+    </event>
+    <event value="2010" version="0" opcode="0" channel="16" level="5" task="1004" keywords="0x8000000000000010" message="Called at %1 for Application %2 over InterfaceLuid %3 whose cost is %4 with %5 bytes sent and %6 bytes received">
+    </event>
+    <event value="2011" version="0" opcode="0" channel="16" level="5" task="1004" keywords="0x8000000000000010" message="Called at %1">
+    </event>
+    <event value="2012" version="0" opcode="0" channel="16" level="5" task="1004" keywords="0x8000200000000010" message="InterfaceGUID %1, InterfaceLuid %2, App %3, ProfileId %4, ProfileFlags %5, BytesSent %6, BytesReceived %7">
+    </event>
+  </events>
+</provider>

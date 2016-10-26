@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-EDP-Audit-TCB" guid="287d59b6-79ba-4741-a08b-2fedeede6435" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=edpauditapi.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\edpauditapi.dll" messageFileName="C:\Windows\System32\edpauditapi.dll" message="Microsoft Windows EDP Audit TCB Provider" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-EDP-Audit-TCB/Admin" id="16" flags="0" message="Microsoft Windows EDP Audit TCB Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="EDP-Audit-Keyword-ProtectionRemoved" mask="10" message="EDP Audit Protection Removed Keyword">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="Enterprise %4 tag has been removed (%2) from the file: %5">
+    </event>
+  </events>
+</provider>

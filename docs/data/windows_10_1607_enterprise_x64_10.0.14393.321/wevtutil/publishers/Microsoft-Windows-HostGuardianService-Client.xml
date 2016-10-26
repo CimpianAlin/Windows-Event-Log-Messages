@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-HostGuardianService-Client" guid="7dee1fdc-ffa8-4087-912a-95189d6a2d7f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=HostGuardianServiceClientResources.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\HostGuardianServiceClientResources.dll" messageFileName="C:\Windows\System32\HostGuardianServiceClientResources.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-HostGuardianService-Client/Admin" id="16" flags="0" message="Microsoft-Windows-HostGuardianService-Client/Admin">
+    </channel>
+    <channel name="Microsoft-Windows-HostGuardianService-Client/Operational" id="17" flags="0" message="Microsoft-Windows-HostGuardianService-Client/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-HostGuardianService-Client/Debug" id="18" flags="0" message="Microsoft-Windows-HostGuardianService-Client/Debug">
+    </channel>
+    <channel name="Microsoft-Windows-HostGuardianService-Client/Analytic" id="19" flags="0" message="Microsoft-Windows-HostGuardianService-Client/Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Send" value="589824" message="Send">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Task.API" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="API">
+    </task>
+    <task name="Task.Attest" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Attest">
+    </task>
+    <task name="Task.Http" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Http">
+    </task>
+    <task name="Task.Rtpm" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Rtpm">
+    </task>
+    <task name="Task.Kps" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Kps">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="101" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="102" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="103" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="%1">
+    </event>
+    <event value="104" version="0" opcode="0" channel="19" level="3" task="0" keywords="0x1000000000000000" message="%1">
+    </event>
+    <event value="105" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x1000000000000000" message="%1">
+    </event>
+    <event value="106" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="107" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="108" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="109" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="110" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="111" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="112" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Started operation &apos;%1&apos;.">
+    </event>
+    <event value="113" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Operation &apos;%1&apos; ended with result: &apos;%2&apos;.">
+    </event>
+    <event value="200" version="0" opcode="9" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A new ActivityID has been generated.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Remote attestation initiated.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Remote attestation completed.
+OperationMode: %1
+Status: %2
+Substatus: %3">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="18" level="4" task="3" keywords="0x2000000000000000" message="ClientAttestationHttpRequestSend: HostId %1">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="18" level="4" task="3" keywords="0x2000000000000000" message="ClientAttestationHttpResponseReceived: %1">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000000" message="ClientAttestationHttpError: %1">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because this host is not included in the authorized list of host endorsement keys (EKs) on the attestation server. Error: %1 . To add this host to the authorized list of host EKs, perform the following steps:
+    1. On this host, run the Get-PlatformIdentifier cmdlet to retrieve the host EK in the form of a XML file.
+    2. On the Attestation server, run the  Add-HgsAttestationTpmHost cmdlet, specifying the XML file generated by the Get-PlatformIdentifier cmdlet.
+Event IDs 1007 and 3007 represent the same event.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because the host did not start with Secure Boot enabled or the Secure Boot settings and TPM measurements did not match a valid baseline host. Error: %1. To ensure a successful attestation request, verify that the host configuration matches a valid baseline host. If this is a baseline host, you must first perform the following steps:\r\n    1.  On this host, run the Get-HgsAttestationBaselinePolicy cmdlet to generate a policy file.
+    2. On the attestation server, run the Add-HgsAttestationTpmPolicy cmdlet, specifying the policy file generated by the Get-HgsAttestationBaselinePolicy cmdlet. This adds the policy as a valid baseline TPM policy.
+Event IDs 1008 and 3008 represent the same event.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because this host&apos;s Code Integrity policy does not match a valid Code Integrity policy on the attestation server. Error: %1. To ensure a successful attestation request, verify that this host is configured with a valid Code Integrity policy. For help, refer to http://go.microsoft.com/fwlink/?LinkId=734772
+Event IDs 1009 and 3009 represent the same event.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because this host is not part of an Active Directory host group which is authorized by the attestation server. Error: %1. To ensure a successful attestation request, verify that the host is a member of an authorized Active Directory host group. If the Active Directory host group is not authorized by the Attestation server, you must first perform the following steps:
+    1. On the attestation server, run the Add-HgsAttestationHostGroup cmdlet to add it as a valid Active Directory host group.
+Event IDs 1010 and 3010 represent the same event.">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Determining TPM endorsement key failed. Error: %1">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because of a TPM error. Try clearing and reprovisioning the TPM. Error: %1
+Event IDs 1013 and 3013 represent the same event.">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="19" level="4" task="2" keywords="0x1000000000000000" message="Connection to %1 failed. Reconnecting to another IP.">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Switching to Active Directory attestation mode.">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="19" level="4" task="2" keywords="0x1000000000000000" message="Connecting to Remote Attestation service at %1">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="19" level="4" task="2" keywords="0x1000000000000000" message="Reconnecting to Remote Attestation service at %1">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Remote attestation succeeded and returned a health certificate with the thumbprint %1.">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because the Remote Attestation Service could not be reached.
+Event IDs 1019 and 3019 represent the same event.">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed. Error: %1. For help, see http://go.microsoft.com/fwlink/?LinkId=735076
+Event IDs 1020 and 3020 represent the same event.">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because this host was not booted correctly. Error: %1. To ensure a successful attestation request, verify that the host&apos;s most recent boot was a full boot.
+Event IDs 1021 and 3021 represent the same event.">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because at least one Debug Mode is enabled among Hypervisor, Boot, UEFI, and Kernel.
+Event IDs 1022 and 3022 represent the same event.">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="17" level="3" task="2" keywords="0x4000000000000000" message="Determining TPM endorsement key failed. Switching to Active Directory attestation mode.">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because this host was not configured properly. Error: %1. To ensure a successful attestation request, verify that the host&apos;s configuration contains an attestation service URL that is valid.
+Event IDs 1024 and 3024 represent the same event.">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because Isolated User Mode could not be detected.  Verify that the Isolated User Mode feature is installed and that Virtualization Based Security has not been disabled manually or by local/domain-level policy.
+Event IDs 1025 and 3025 represent the same event.">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because the TPM Measurements were not valid.  This can happen when the host utilizes unsupported TPM configurations, the Host Guardian Service client version is not supported by the server, or an attempt to tamper with the TPM Measurements was made.  Some PXE boot environments can also cause this issue; for help, refer to http://go.microsoft.com/fwlink/?LinkId=734770
+Event IDs 1026 and 3026 represent the same event.">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because it did not return a health certificate, but no reason was offered.
+Event IDs 1027 and 3027 represent the same event.">
+    </event>
+    <event value="1028" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because it did not start with pagefile encryption enabled.
+Event IDs 1028 and 3028 represent the same event.">
+    </event>
+    <event value="1029" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because IOMMU was not required by the hypervisor. Verify that IOMMU is enabled and that it is explicity required for Virtual Secure Mode to launch. For help, refer to http://go.microsoft.com/fwlink/?LinkId=734842
+Event IDs 1029 and 3029 represent the same event.">
+    </event>
+    <event value="1030" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because it did not start with BitLocker enabled.
+Event IDs 1030 and 3030 represent the same event.">
+    </event>
+    <event value="1031" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because code integrity was not required by the hypervisor. Verify that code integrity is enabled and that it is being enforced by the hypervisor. For help, please refer to http://go.microsoft.com/fwlink/?LinkId=734841
+Event IDs 1031 and 3031 represent the same event.">
+    </event>
+    <event value="1032" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed but no reason was given. This typically indicates that the Host Guardian Service has not been fully configured with valid attestation policies.  If policies have been registered with the Host Guardian Service already, verify the functionality of the server and try again.
+Event IDs 1032 and 3032 represent the same event.">
+    </event>
+    <event value="1033" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Switching to TPM attestation mode.">
+    </event>
+    <event value="1034" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because the Host Guardian Service is using TPM-based attestation, but this host lacks the required TPM 2.0 module.
+Event IDs 1034 and 3034 represent the same event.">
+    </event>
+    <event value="1035" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because the Host Guardian Service could not be contacted.  This happens when the request can reach the server but the service either does not respond or responds with an unknown HTTP error.  Verify that the Host Guardian Service is registered, started, and fully operational.
+Error: %1
+Event IDs 1035 and 3035 represent the same event.">
+    </event>
+    <event value="1036" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The remote attestation request failed because it could not authenticate to the Host Guardian Service.  This can occur when using HTTPS with an invalid or untrusted certificate, or when using Active Directory-based attestation without configuring trust between this host&apos;s domain and the Host Guardian Service domain, preventing NTLM and Kerberos authentication from succeeding.
+Error: %1
+Event IDs 1036 and 3036 represent the same event.">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="17" level="2" task="5" keywords="0x4000000000000000" message="The requested WMI operation failed because access is denied.  You must be a member of the local &apos;Administrators&apos; or &apos;NT VIRTUAL MACHINE\Virtual Machines&apos; groups.">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000000" message="The required value &apos;%1&apos; in registry key &apos;%2&apos; was not found.">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000000" message="Successfully opened Shielded VM Local Certificates store.">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000000" message="No health signing certificate was found.  Attempting to generate a new certificate.">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000000" message="Unable to retrieve the VSM IDK while generating a local health certificate: %1">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000000" message="Unable to retrieve the local health certificate: %1">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000000" message="Failed to roll the transport key: %1">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000000" message="No signing certificates were found in the Shielded VM Local Certificates store.">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000000" message="No encryption certificates were found in the Shielded VM Local Certificates store.">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000000" message="Initiating unwrap of key protector.">
+    </event>
+    <event value="2010" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000000" message="Initiating creation of a new of key protector.">
+    </event>
+    <event value="2011" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000000" message="Adding a guardian with signing certificate %1 and encryption certificate %2 to a key protector.">
+    </event>
+    <event value="2012" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000000" message="Initiating privileged unwrap of key protector.">
+    </event>
+    <event value="2013" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000000" message="Instantiating Host Guardian Service client in %1 mode.">
+    </event>
+    <event value="2014" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000000" message="The Host Guardian Service Client failed to unwrap a Key Protector on behalf of a calling process.  This event will normally correspond to a failure to start up a guarded virtual machine.  Consult the description for further details.  This could be related to an attestation issue, a Key Protection Server issue, or a network connectivity issue:
+
+%1">
+    </event>
+    <event value="2015" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="The Host Guardian Service Client successfully unwrapped a Key Protector on behalf of a calling process.">
+    </event>
+    <event value="3007" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because this host is not included in the authorized list of host endorsement keys (EKs) on the attestation server. Error: %1 . To add this host to the authorized list of host EKs, perform the following steps:
+    1. On this host, run the Get-PlatformIdentifier cmdlet to retrieve the host EK in the form of a XML file.
+    2. On the Attestation server, run the  Add-HgsAttestationTpmHost cmdlet, specifying the XML file generated by the Get-PlatformIdentifier cmdlet.
+Event IDs 1007 and 3007 represent the same event.">
+    </event>
+    <event value="3008" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because the host did not start with Secure Boot enabled or the Secure Boot settings and TPM measurements did not match a valid baseline host. Error: %1. To ensure a successful attestation request, verify that the host configuration matches a valid baseline host. If this is a baseline host, you must first perform the following steps:\r\n    1.  On this host, run the Get-HgsAttestationBaselinePolicy cmdlet to generate a policy file.
+    2. On the attestation server, run the Add-HgsAttestationTpmPolicy cmdlet, specifying the policy file generated by the Get-HgsAttestationBaselinePolicy cmdlet. This adds the policy as a valid baseline TPM policy.
+Event IDs 1008 and 3008 represent the same event.">
+    </event>
+    <event value="3009" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because this host&apos;s Code Integrity policy does not match a valid Code Integrity policy on the attestation server. Error: %1. To ensure a successful attestation request, verify that this host is configured with a valid Code Integrity policy. For help, refer to http://go.microsoft.com/fwlink/?LinkId=734772
+Event IDs 1009 and 3009 represent the same event.">
+    </event>
+    <event value="3010" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because this host is not part of an Active Directory host group which is authorized by the attestation server. Error: %1. To ensure a successful attestation request, verify that the host is a member of an authorized Active Directory host group. If the Active Directory host group is not authorized by the Attestation server, you must first perform the following steps:
+    1. On the attestation server, run the Add-HgsAttestationHostGroup cmdlet to add it as a valid Active Directory host group.
+Event IDs 1010 and 3010 represent the same event.">
+    </event>
+    <event value="3013" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because of a TPM error. Try clearing and reprovisioning the TPM. Error: %1
+Event IDs 1013 and 3013 represent the same event.">
+    </event>
+    <event value="3019" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because the Remote Attestation Service could not be reached.
+Event IDs 1019 and 3019 represent the same event.">
+    </event>
+    <event value="3020" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed. Error: %1. For help, see http://go.microsoft.com/fwlink/?LinkId=735076
+Event IDs 1020 and 3020 represent the same event.">
+    </event>
+    <event value="3021" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because this host was not booted correctly. Error: %1. To ensure a successful attestation request, verify that the host&apos;s most recent boot was a full boot.
+Event IDs 1021 and 3021 represent the same event.">
+    </event>
+    <event value="3022" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because at least one Debug Mode is enabled among Hypervisor, Boot, UEFI, and Kernel.
+Event IDs 1022 and 3022 represent the same event.">
+    </event>
+    <event value="3024" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because this host was not configured properly. Error: %1. To ensure a successful attestation request, verify that the host&apos;s configuration contains an attestation service URL that is valid.
+Event IDs 1024 and 3024 represent the same event.">
+    </event>
+    <event value="3025" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because Isolated User Mode could not be detected.  Verify that the Isolated User Mode feature is installed and that Virtualization Based Security has not been disabled manually or by local/domain-level policy.
+Event IDs 1025 and 3025 represent the same event.">
+    </event>
+    <event value="3026" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because the TPM Measurements were not valid.  This can happen when the host utilizes unsupported TPM configurations, the Host Guardian Service client version is not supported by the server, or an attempt to tamper with the TPM Measurements was made.  Some PXE boot environments can also cause this issue; for help, refer to http://go.microsoft.com/fwlink/?LinkId=734770
+Event IDs 1026 and 3026 represent the same event.">
+    </event>
+    <event value="3027" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because it did not return a health certificate, but no reason was offered.
+Event IDs 1027 and 3027 represent the same event.">
+    </event>
+    <event value="3028" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because it did not start with pagefile encryption enabled.
+Event IDs 1028 and 3028 represent the same event.">
+    </event>
+    <event value="3029" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because IOMMU was not required by the hypervisor. Verify that IOMMU is enabled and that it is explicity required for Virtual Secure Mode to launch. For help, refer to http://go.microsoft.com/fwlink/?LinkId=734842
+Event IDs 1029 and 3029 represent the same event.">
+    </event>
+    <event value="3030" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because it did not start with BitLocker enabled.
+Event IDs 1030 and 3030 represent the same event.">
+    </event>
+    <event value="3031" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because code integrity was not required by the hypervisor. Verify that code integrity is enabled and that it is being enforced by the hypervisor. For help, please refer to http://go.microsoft.com/fwlink/?LinkId=734841
+Event IDs 1031 and 3031 represent the same event.">
+    </event>
+    <event value="3032" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed but no reason was given. This typically indicates that the Host Guardian Service has not been fully configured with valid attestation policies.  If policies have been registered with the Host Guardian Service already, verify the functionality of the server and try again.
+Event IDs 1032 and 3032 represent the same event.">
+    </event>
+    <event value="3034" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because the Host Guardian Service is using TPM-based attestation, but this host lacks the required TPM 2.0 module.
+Event IDs 1034 and 3034 represent the same event.">
+    </event>
+    <event value="3035" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because the Host Guardian Service could not be contacted.  This happens when the request can reach the server but the service either does not respond or responds with an unknown HTTP error.  Verify that the Host Guardian Service is registered, started, and fully operational.
+Error: %1
+Event IDs 1035 and 3035 represent the same event.">
+    </event>
+    <event value="3036" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="The remote attestation request failed because it could not authenticate to the Host Guardian Service.  This can occur when using HTTPS with an invalid or untrusted certificate, or when using Active Directory-based attestation without configuring trust between this host&apos;s domain and the Host Guardian Service domain, preventing NTLM and Kerberos authentication from succeeding.
+Error: %1
+Event IDs 1036 and 3036 represent the same event.">
+    </event>
+  </events>
+</provider>

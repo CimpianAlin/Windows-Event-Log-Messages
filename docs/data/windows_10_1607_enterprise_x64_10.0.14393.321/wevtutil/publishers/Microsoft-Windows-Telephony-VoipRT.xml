@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Telephony-VoipRT" guid="bd1a62ed-263b-4a66-a574-1f43c79c64be" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=VoipRT.dll&amp;FileVer=10.0.14393.0" resourceFileName="VoipRT.dll" messageFileName="VoipRT.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CreateVoipShim" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReleaseVoipShim" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IncomingCall" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StartCall" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EndCall" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessMuteStateNotification" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="Debug" mask="4" message="">
+    </keyword>
+    <keyword name="VoipCallCoordinator" mask="8" message="">
+    </keyword>
+    <keyword name="VoipPhoneCall" mask="10" message="">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="[ERROR] originated HRESULT=%1 [%2 @ %3]">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="[ERROR] propagated HRESULT=%1 [%2 @ %3]">
+    </event>
+    <event value="10" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x4" message="%1">
+    </event>
+    <event value="100" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Opening VoIP RPC client">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Opened VoIP RPC client">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="New incoming VoIP call %1">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="New outgoing VoIP call %1">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Made DSS token %1 for file %2">
+    </event>
+    <event value="105" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Outgoing Video call upgrade call: %1, Call upgrade Guid: %2">
+    </event>
+    <event value="106" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="New incoming upgrade video call %1">
+    </event>
+    <event value="120" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Invoking AcceptIncoming for VoIP call %1">
+    </event>
+    <event value="121" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Invoking RejectIncoming for VoIP call %1">
+    </event>
+    <event value="122" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Invoking Hold for VoIP call %1">
+    </event>
+    <event value="123" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Invoking Unhold for VoIP call %1">
+    </event>
+    <event value="124" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Invoking End for VoIP call %1">
+    </event>
+    <event value="200" version="0" opcode="1" channel="0" level="5" task="3" keywords="0x2" message="">
+    </event>
+    <event value="201" version="0" opcode="1" channel="0" level="5" task="4" keywords="0x2" message="">
+    </event>
+    <event value="202" version="0" opcode="2" channel="0" level="5" task="4" keywords="0x2" message="">
+    </event>
+    <event value="203" version="0" opcode="1" channel="0" level="5" task="5" keywords="0x2" message="">
+    </event>
+    <event value="206" version="0" opcode="1" channel="0" level="5" task="7" keywords="0x2" message="">
+    </event>
+    <event value="207" version="0" opcode="1" channel="0" level="5" task="7" keywords="0x2" message="">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-BranchCacheMonitoring" guid="a2f55524-8ebc-45fd-88e4-a1b39f169e08" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=peerdistsvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\peerdistsvc.dll" messageFileName="C:\Windows\system32\peerdistsvc.dll" message="Microsoft-Windows-BranchCacheMonitoring" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-BranchCacheMonitoring/Analytic" id="16" flags="0" message="Microsoft-Windows-BranchCacheMonitoring/Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Component %1 has arrived as a BranchCache Monitoring provider">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Component %1 has departed as a BranchCache Monitoring provider">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MS-PCCRR Statistics Snapshot">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Segment Id=%5 has been published for Content Id=%3">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Content Information has been added for Segment Id=%5 of Content Id=%3">
+    </event>
+    <event value="104" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Content Data has been added for Segment Id=%5 of Content Id=%3">
+    </event>
+    <event value="105" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A StreamRead has been initiated at Content Offset %6, Segment Offset %7 for Segment Id=%5 of Content Id=%3">
+    </event>
+    <event value="106" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A BlockRead has been initiated at Content Offset %6, Segment Offset %7 for Segment Id=%5 of Content Id=%3">
+    </event>
+    <event value="107" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Discovery Request for Segment Id=%2 has been received from peer %3">
+    </event>
+    <event value="108" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Discovery Request for Segment Id=%2 has been sent to %3">
+    </event>
+    <event value="109" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Discovery Response for Segment Id=%2 has been received from peer %3">
+    </event>
+    <event value="110" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Discovery Response for Segment Id=%2 has been sent to peer %3">
+    </event>
+    <event value="111" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="No discovery response for Segment Id=%2 has been received in time to be used for downloading data">
+    </event>
+    <event value="112" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A late discovery response has been received for Segment Id=%2 from peer %3">
+    </event>
+    <event value="113" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A block request for block ID=%3 of Segment=%2 has been received from peer %5">
+    </event>
+    <event value="114" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A block request for block ID=%3 of Segment=%2 has been sent to peer %5">
+    </event>
+    <event value="115" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A block response for block ID=%3 of Segment=%2 with size=%4 has been received from peer %5">
+    </event>
+    <event value="116" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A block response for block ID=%3 of Segment=%2 with size=%4 has been sent to peer %5">
+    </event>
+    <event value="201" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Inbound Non-PeerDist HTTP request for URL %2 from client at address IPv4=%3 IPv6=%4">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Inbound PeerDist HTTP request for URL %2 from client at address IPv4=%3 IPv6=%4">
+    </event>
+    <event value="203" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Inbound PeerDist Missing Data HTTP request for URL %2 from client at address IPv4=%3 IPv6=%4">
+    </event>
+    <event value="204" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Inbound PeerDist Hash HTTP request for URL %2 from client at address IPv4=%3 IPv6=%4">
+    </event>
+    <event value="205" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Outbound Non-PeerDist HTTP response for URL %2 from client at address IPv4=%3 IPv6=%4">
+    </event>
+    <event value="206" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Outbound PeerDist encoded HTTP response for URL %2 from client at address IPv4=%3 IPv6=%4">
+    </event>
+    <event value="207" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Outbound PeerDist encoded HTTP response to a PeerDist Hash-only request for URL %2 from client at address IPv4=%3 IPv6=%4">
+    </event>
+    <event value="208" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Outbound HTTP response to a PeerDist Missing Data request for URL %2 from client at address IPv4=%3 IPv6=%4">
+    </event>
+  </events>
+</provider>

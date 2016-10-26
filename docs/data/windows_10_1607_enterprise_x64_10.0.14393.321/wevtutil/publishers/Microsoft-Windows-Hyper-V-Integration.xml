@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-Integration" guid="2b74a015-3873-4c56-9928-ea80c58b2787" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=vmicvdev.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\vmicvdev.dll" messageFileName="C:\Windows\system32\vmicvdev.dll" message="Microsoft-Windows-Hyper-V-Integration" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Admin" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Analytic" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="3584" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="3585" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="3586" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="3587" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="4000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to connect to virtual machine &apos;%1&apos; because there is no mutually supported protocol for VM: (Virtual machine ID %2). Framework version: %3; Message version: %4.">
+    </event>
+    <event value="4090" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The &apos;Guest Service Interface&apos; integration service is either not enabled, not running or not initialized. (Virtual machine ID %2)">
+    </event>
+    <event value="4091" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="The &apos;Guest Service Interface&apos; integration service is either not enabled, not running or not initialized.">
+    </event>
+    <event value="4092" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The Data Exchange integration service is either not enabled, not running or not initialized. (Virtual machine ID %2)">
+    </event>
+    <event value="4093" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The Volume Shadow Copy integration service is not enabled. (Virtual machine %2)">
+    </event>
+    <event value="4094" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The &apos;Guest Shutdown&apos; integration service is either not enabled, not running or not initialized. (Virtual machine ID %2)">
+    </event>
+    <event value="4095" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="The &apos;Guest Shutdown&apos; integration service is either not enabled, not running or not initialized.">
+    </event>
+    <event value="4097" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The Virtual machine %2 cannot be hot backed up since it has dynamic disks in it">
+    </event>
+    <event value="4098" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The Virtual machine %2 cannot be hot backed up since it has one or more volumes with differencing areas located on different volumes">
+    </event>
+    <event value="4099" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The Virtual machine %2 cannot be hot backed up since it has non-checkpoint capable volumes in it">
+    </event>
+    <event value="4100" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The Volume Shadow Copy integration service is either not running or not initialized. (Virtual machine %2)">
+    </event>
+    <event value="4101" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The Virtual machine %2 cannot be hot backed up since it has storage space disks in it">
+    </event>
+    <event value="4102" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The Virtual machine %2 cannot be hot backed up since its integration components have not been updated. Please update the integration components to enable hot backup of the virtual machine">
+    </event>
+    <event value="4130" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; received a timeout error while applying IP settings on adapter &apos;%3&apos;. Check the guest network configuration to verify whether the settings were correctly applied. (Virtual machine ID %2)">
+    </event>
+    <event value="4132" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; failed to apply IP settings on adapter &apos;%3&apos;: %4 (%5). (Virtual machine ID %2)">
+    </event>
+    <event value="4133" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; successfully applied IP settings on adapter &apos;%3&apos;. (Virtual machine ID %2)">
+    </event>
+    <event value="4134" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The Data Exchange integration service does not support this operation for a VM running in a shielded context. (Virtual machine ID %2)">
+    </event>
+  </events>
+</provider>

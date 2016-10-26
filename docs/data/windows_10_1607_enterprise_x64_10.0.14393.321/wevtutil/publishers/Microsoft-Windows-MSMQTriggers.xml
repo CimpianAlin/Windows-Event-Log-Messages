@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MSMQTriggers" guid="2787cc62-2654-4227-9b35-b53f838507ae" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=5.0.1.1&amp;FileName=mqutil.dll&amp;FileVer=5.0.1.1" resourceFileName="C:\Windows\system32\mqutil.dll" messageFileName="C:\Windows\system32\mqutil.dll" message="Microsoft-Windows-MSMQTriggers" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1073744024" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Triggers started successfully.">
+    </event>
+    <event value="3221227673" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Triggers initialization failed. Error %1: %2">
+    </event>
+    <event value="3221227674" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Triggers failed to create an instance of the Triggers Transactional object. As a result, no transactional retrieval triggers can be invoked. Mqgentr.dll may not be registered or may not exist in the %SystemRoot%\System32 folder. Error %1: %2">
+    </event>
+    <event value="3221227675" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The trigger information cannot be retrieved from the trigger store in registry. At least one trigger is nonfunctional.">
+    </event>
+    <event value="3221227676" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The information for the attached rule cannot be retrieved from the trigger store for trigger %1 (Trigger Name: %2). The trigger is nonfunctional.">
+    </event>
+    <event value="3221227677" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Opening the queue %3 for peeking at or retrieving messages failed. Local users may not have been granted the Peek Message or Receive Message permission for this queue. The trigger %4 is nonfunctional. Error %1: %2">
+    </event>
+    <event value="3221227678" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Opening an internal queue needed by the Triggers service failed. The account under which the Triggers service is running may not have permissions to open this queue, or the queue may have been deleted. To solve this problem, uninstall and reinstall the Triggers service. Error %1: %2">
+    </event>
+    <event value="3221227679" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An instance of a rule handler for the rule %3 with the ID %4 was not created. The rule cannot be evaluated and executed. The MSMQTriggerObjects.MSMQRuleHandler class may not be registered, or your System folder does not contain mqtrig.dll. Error %1: %2">
+    </event>
+    <event value="3221227680" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The action or a condition parameter for the rule %3 with the ID %4 was not parsed. The rule cannot be evaluated and executed. You can remove the rule entry from the Triggers registry and recreate it using local computer management. Error %1: %2">
+    </event>
+    <event value="3221227681" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The action defined by the rule %3 with the ID %4 was not invoked. The COM object may not be registered, or the executable file may not exist in your path. Error %1: %2">
+    </event>
+    <event value="3221227682" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Rule evaluation or execution failed for the transactional trigger %3 with the ID %4. A rule condition or action parameter may be invalid, or the COM object invoked may not be registered correctly. Error %1: %2">
+    </event>
+    <event value="1073744035" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Triggers service stopped.">
+    </event>
+    <event value="3221227684" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The queue %1 was not found. It may have been deleted. The trigger %2 associated with this queue is nonfunctional. Please use Computer Management to remove this trigger.">
+    </event>
+    <event value="3221227685" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="At least one of the required dependencies was not found. Please verify that MSMQ Triggers resources are dependent on Message Queue resources.">
+    </event>
+    <event value="3221227686" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Unable to update EventLog information in registry for &apos;%1&apos;.">
+    </event>
+    <event value="3221227687" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Triggers transactional component could not be registered in COM+. Error %1: %2">
+    </event>
+    <event value="3221227688" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Retrieving messages from a queue located on a remote pre-Windows XP computer is not supported. All triggers associated with the queue %1 are nonfunctional.">
+    </event>
+    <event value="1073744041" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The parameters of the rule %1 with the ID %2 are now valid. The rule was evaluated successfully, and the action defined by it was executed.">
+    </event>
+    <event value="1073744042" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The rules attached to the trigger %1 with the ID %2 are now valid. All the rules were evaluated successfully, and the actions defined by them were executed.">
+    </event>
+    <event value="1073744043" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Triggers service has been set to run under the Network Service account, but this setting will take effect only after the Triggers service is restarted.  If you want the Triggers service to continue to run under the Local Service account (the default for the previous version of Triggers), modify the logon settings  for the Triggers service in Computer Management.">
+    </event>
+    <event value="2147485870" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The change for the Triggers service to run under the Network Service account will not take effect as long as the &quot;Allow service to interact with desktop&quot; check box is selected.  To allow this change to take effect, clear the &quot;Allow service to interact with desktop&quot; check box on the Log On page of the Properties dialog box for Message Queuing Triggers in Computer Management and restart the service.">
+    </event>
+    <event value="3221227695" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Triggers initialization failed to complete in the configured timeout..">
+    </event>
+  </events>
+</provider>

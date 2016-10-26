@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NFC-ClassExtension" guid="85c070e6-f9ae-481f-aacb-bc550bfd35a1" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=nfccx.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\umdf\nfccx.dll" messageFileName="C:\Windows\system32\drivers\umdf\nfccx.dll" message="Microsoft-Windows-NFC-ClassExtension" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NFC-Class-Extension/Analytical" id="16" flags="0" message="Analytical">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="GetNextSubscribedMsg" value="1" eventGUID="e66270bc-281d-4537-bd75-91658e0cdb9c" message="IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE">
+    </task>
+    <task name="GetNextTransmittedMsg" value="2" eventGUID="d2e06b55-67ea-4a4d-9022-e8e1f5f06809" message="IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE">
+    </task>
+    <task name="RfInitialize" value="3" eventGUID="e3026ac6-d84d-452f-9671-d568eca8fe64" message="RF interface initialization.">
+    </task>
+    <task name="RfFirmwareDownload" value="4" eventGUID="ea8cd6a9-7b2a-4df6-a233-c5f039ae29b6" message="RF firmware download.">
+    </task>
+    <task name="RfNdefTagRead" value="5" eventGUID="14e4f567-841f-4be2-a851-f979a68f3fe7" message="RF NDEF tag read.">
+    </task>
+    <task name="RfNdefTagWrite" value="6" eventGUID="3853db9c-84eb-4c95-ad41-67f60f0a7c14" message="RF NDEF tag write.">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Payload" mask="1" message="Payload logging of different types of packets.">
+    </keyword>
+    <keyword name="NCI" mask="2" message="NCI packet events.">
+    </keyword>
+    <keyword name="NFP" mask="4" message="NFP interface events.">
+    </keyword>
+    <keyword name="Power" mask="8" message="Power interface events.">
+    </keyword>
+    <keyword name="RF" mask="10" message="RF interface events.">
+    </keyword>
+    <keyword name="Device" mask="20" message="General device events.">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000003" message="Write NCI packet payload (MessageType: %1, PacketBoundaryFlag: %2, Size: %3).">
+    </event>
+    <event value="2" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000003" message="Received NCI packet payload (MessageType: %1, PacketBoundaryFlag: %2, Size: %3).">
+    </event>
+    <event value="3" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="Write NCI packet (MessageType: %1, PacketBoundaryFlag: %2, Size: %3).">
+    </event>
+    <event value="4" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="Received NCI packet (MessageType: %1, PacketBoundaryFlag: %2, Size: %3).">
+    </event>
+    <event value="101" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="NFP client created (FileObject: %1, Role: %2).">
+    </event>
+    <event value="102" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="NFP client destroyed (FileObject: %1, Role: %2).">
+    </event>
+    <event value="103" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="NFP set payload (FileObject: %1, PayloadSize: %2).">
+    </event>
+    <event value="104" version="1" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000004" message="NFP get next subscribed message start (FileObject: %1).">
+    </event>
+    <event value="105" version="1" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000004" message="NFP get next subscribed message completed (FileObject: %1, Status: %2, Information: %3).">
+    </event>
+    <event value="106" version="1" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000004" message="NFP get next transmitted message start (FileObject: %1).">
+    </event>
+    <event value="107" version="1" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000004" message="NFP get next transmitted message completed (FileObject: %1, Status: %2).">
+    </event>
+    <event value="201" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Power set radio state (RadioIsOn: %1).">
+    </event>
+    <event value="301" version="1" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000010" message="RF interface initialization started.">
+    </event>
+    <event value="302" version="1" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000010" message="RF interface initialization completed (Status: %1).">
+    </event>
+    <event value="303" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="RF firmware version is: %1.">
+    </event>
+    <event value="304" version="1" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000010" message="RF firmware download started (File: %1, ForceDownload: %2).">
+    </event>
+    <event value="305" version="1" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000010" message="RF firmware download completed (Status: %1).">
+    </event>
+    <event value="306" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="RF event: %1.">
+    </event>
+    <event value="307" version="1" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000010" message="RF NDEF tag read start.">
+    </event>
+    <event value="308" version="1" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000010" message="RF NDEF tag read stop (Status: %1, Length: %2).">
+    </event>
+    <event value="309" version="1" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000010" message="RF NDEF tag write start (Length: %1).">
+    </event>
+    <event value="310" version="1" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000010" message="RF NDEF tag write stop (Status: %1).">
+    </event>
+    <event value="401" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="Device registry settings.">
+    </event>
+    <event value="402" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="Device persisted registry settings.">
+    </event>
+  </events>
+</provider>

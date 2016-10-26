@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DisplayColorCalibration" guid="3239eb6f-c7fc-4953-aa15-646829a4ca4c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=dccw.exe&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\dccw.exe" messageFileName="C:\Windows\system32\dccw.exe" message="Microsoft-Windows-DisplayColorCalibration" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DisplayColorCalibration/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-DisplayColorCalibration/Debug" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DISPLAY_COLOR_CALIBRATION" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Display Color Calibration">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Display color calibration started for device %1.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Display color calibration canceled for device %1.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Display color calibration finished for device %1. Color profile %2 created.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000000" message="%1 has been manually adjusted.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000000" message="%1 has been adjusted from %2 to %3.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000000" message="%1 has been adjusted from %2 to %3 with gamma LUTs. See Details pane for new gamma LUT contents.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000000" message="%1 has been adjusted. Adjusted red gain from %2 to %3, green gain from %4 to %5, and blue gain from %6 to %7.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000000" message="%1 has been adjusted with gamma LUTs. Adjusted red gain from %2 to %3, green gain from %4 to %5, and blue gain from %6 to %7. See Details pane for new gamma LUT contents.">
+    </event>
+    <event value="100" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Error: %1">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-Boot" guid="15ca44ff-4d7a-4baa-bba5-0998955e531e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="Microsoft-Windows-Kernel-Boot" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-Boot/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-Boot/Operational" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="InitializeLibrary" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrepareTarget" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RebuildKernelMemoryMap" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FatalError" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PersistMemory" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ClaimPersistedMemory" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FreePersistedMemory" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CleanupPageDatabase" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CancelBoot" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AttachPersistentPageDatabase" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MemoryBlockRundown" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BuildKernelMemoryMap" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GetMemoryMap" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AllocatePhysicalPagesForMdl" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ExecuteTransition" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisconnectHypervisor" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MemoryMapRundown" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PhysicalPageAllocationFailure" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootManager" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PreBoot" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FirmwareBootData" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LoadDrivers" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LoadHive" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootApplicationExecution" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WaitForPartitionsRestored" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MemoryPartitionRestore" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PersistMemoryPartition" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RegisterLoader" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SiPolicyFailure" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootTotalIo" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DirtyBootShutdown" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootMenuPolicy" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootType" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MemoryPartitionsRestored" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryStatistics" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectSecureLoader" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootFileAccess" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RetrieveDriverListTime" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FreePersistedMemoryBlock" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrepareNotification" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PartitionInitialAddMemory" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImageHashCheck" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImageIntegrityCheck" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="SoftRestart" mask="1" message="">
+    </keyword>
+    <keyword name="MemoryPreservation" mask="2" message="">
+    </keyword>
+    <keyword name="MemoryBlockRundown" mask="4" message="">
+    </keyword>
+    <keyword name="PhysicalMemory" mask="8" message="">
+    </keyword>
+    <keyword name="MemoryMapRundown" mask="10" message="">
+    </keyword>
+    <keyword name="MemoryPartitions" mask="20" message="">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+    <keyword name="win:SQM" mask="8000000000000" message="SQM">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="System was booted in %1x%2@%3bpp.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BootUX screen was displayed in %1x%2@%3bpp.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Video bit transfer rate is %1 bytes per ms.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="37" keywords="0x4000000000000000" message="Boot library accessed file %2 on Device %1. Read %3 bytes and wrote %4 bytes.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="30" keywords="0x4000200000000000" message="File IO for boot application %1: Total Bytes Read = %2, Total Bytes Written = %3.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="2" task="43" keywords="0x4000200000000000" message="Image %1 failed IntegrityCheck reason is %3. Image flags are %2. Error ignored due to debugger %4.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="19" keywords="0x4000200000000000" message="Bootmgr duration is %1 milliseconds.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="3" task="42" keywords="0x4000200000000000" message="Image %1 is not self-signed.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000200000000000" message="A device (%1) that was enumerated by the BIOS was inaccessible to the boot environment.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000200000000000" message="The system firmware has allocated a memory region previously determined to be unreliable. This has the potential to cause system instability and/or data corruption.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="20" keywords="0x4000000000000000" message="The time elapsed before Bootmgr, based on the TSC, is %1 ms.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Variable %1 requires %2 bytes and was set with status %3.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000200000000000" message="Element %2 of application %1 was not in policy.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="A Secure Boot Policy update resulted in status %1.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="A Secure Boot Revocation List update resulted in status %1.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Windows failed to resume from hibernate with error status %1.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The boot manager multi OS selection screen was displayed.">
+    </event>
+    <event value="18" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="There are %1 boot options on this system.">
+    </event>
+    <event value="19" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="There are %1 boot tool options on this system.">
+    </event>
+    <event value="20" version="0" opcode="0" channel="8" level="4" task="31" keywords="0x8000000000000000" message="The last shutdown&apos;s success status was %1. The last boot&apos;s success status was %2.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The OS loader advanced options menu was displayed and the user selected option %1.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The OS loader edit options menu was displayed.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The Windows key was pressed during boot.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The F8 key was pressed during boot.">
+    </event>
+    <event value="25" version="0" opcode="0" channel="8" level="4" task="32" keywords="0x8000000000000000" message="The boot menu policy was %1.">
+    </event>
+    <event value="26" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="A one-time boot sequence was used during this boot.">
+    </event>
+    <event value="27" version="0" opcode="0" channel="8" level="4" task="33" keywords="0x8000000000000000" message="The boot type was %1.">
+    </event>
+    <event value="27" version="1" opcode="0" channel="8" level="4" task="33" keywords="0x8000000000000000" message="The boot type was %1.">
+    </event>
+    <event value="28" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="29" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Windows failed fast startup with error status %1.">
+    </event>
+    <event value="30" version="0" opcode="0" channel="8" level="4" task="21" keywords="0x8000000000000000" message="The firmware reported boot metrics.">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Initialization of the firmware crypto hash provider resulted in status %1.">
+    </event>
+    <event value="32" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The bootmgr spent %1 ms waiting for user input.">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000200000000000" message="The firmware update capsule (%1) failed to load with status %2.">
+    </event>
+    <event value="34" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000200000000000" message="The PE/COFF image firmware update capsule (%1) failed to load with status %2.">
+    </event>
+    <event value="35" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000200000000000" message="The Efi UpdateCapsule failed to apply updates with status %1.">
+    </event>
+    <event value="36" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Firmware update supported status is %3. The BitLocker device flags are %1 and the PCR bitmap is %2.">
+    </event>
+    <event value="37" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000200000000000" message="The firmware update capsule (%1) code integrity check failed with status %2.">
+    </event>
+    <event value="38" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000200000000000" message="Windows failed to load the required system file %1 with error status %2.">
+    </event>
+    <event value="39" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000200000000000" message="Windows failed to load the system registry file %1 with error status %2.">
+    </event>
+    <event value="40" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000200000000000" message="Windows failed to initialize the ACPI with error status %1.">
+    </event>
+    <event value="41" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000200000000000" message="Windows failed to load with error status %1.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000200000000000" message="Windows failed to load image %2 imported from %1 with error status %3.">
+    </event>
+    <event value="43" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000200000000000" message="Windows failed to import %2 from image %1 with error status %3.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000000" message="Windows failed to provision VSM Identity Key. Unsealing cached copy status: %1. New key generation status: %2. Measuring to PCR status: %3. Sealing and caching status: %4.">
+    </event>
+    <event value="45" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="VSM Identity Key Provisioning. Unsealing cached copy status: %1. New key generation status: %2. Measuring to PCR status: %3. Sealing and caching status: %4.">
+    </event>
+    <event value="46" version="0" opcode="0" channel="16" level="4" task="38" keywords="0x4000000000000000" message="Retrieving the driver list took %1 milliseconds.">
+    </event>
+    <event value="47" version="0" opcode="0" channel="16" level="4" task="22" keywords="0x4000000000000000" message="Loading the drivers took %1 milliseconds.">
+    </event>
+    <event value="48" version="0" opcode="0" channel="16" level="4" task="23" keywords="0x4000000000000000" message="Loading hive %1 took %2 milliseconds.">
+    </event>
+    <event value="49" version="0" opcode="0" channel="17" level="2" task="29" keywords="0x2000000000000000" message="Windows system integrity policy does not allow to load the required system file %1 with error status %2.">
+    </event>
+    <event value="50" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000000" message="Windows failed to provision VSM Master Encryption Key. Using cached copy status: %1. Unsealing cached copy status: %2. New key generation status: %3. Sealing status: %4. TPM PCR mask: %5. Protector-assisted unseal status: %6. Protector-assisted re-seal status: %7. Protector update status: %8.">
+    </event>
+    <event value="51" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="VSM Master Encryption Key Provisioning. Using cached copy status: %1. Unsealing cached copy status: %2. New key generation status: %3. Sealing status: %4. TPM PCR mask: %5. Protector-assisted unseal status: %6. Protector-assisted re-seal status: %7. Protector update status: %8.">
+    </event>
+    <event value="52" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The time elapsed loading %1 was %2 ms.">
+    </event>
+    <event value="53" version="0" opcode="0" channel="16" level="4" task="24" keywords="0x4000000000000000" message="The time elapsed executing %1 was %2 ms.">
+    </event>
+    <event value="54" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Building chunk table for WIM compressed file %2 failed with status: %1">
+    </event>
+    <event value="55" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Soft Restart failed to prepare target Operating System. Operation status: %1 failure point: %2">
+    </event>
+    <event value="56" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Boot application failed to process persistent data with status: %1">
+    </event>
+    <event value="100" version="0" opcode="1" channel="0" level="4" task="1" keywords="0x1" message="">
+    </event>
+    <event value="100" version="1" opcode="1" channel="0" level="4" task="1" keywords="0x1" message="">
+    </event>
+    <event value="101" version="0" opcode="2" channel="0" level="4" task="1" keywords="0x1" message="">
+    </event>
+    <event value="102" version="0" opcode="1" channel="0" level="4" task="2" keywords="0x1" message="">
+    </event>
+    <event value="102" version="1" opcode="1" channel="0" level="4" task="2" keywords="0x1" message="">
+    </event>
+    <event value="102" version="2" opcode="1" channel="0" level="4" task="2" keywords="0x1" message="">
+    </event>
+    <event value="103" version="0" opcode="2" channel="0" level="4" task="2" keywords="0x1" message="">
+    </event>
+    <event value="104" version="0" opcode="1" channel="0" level="4" task="3" keywords="0x1" message="">
+    </event>
+    <event value="105" version="0" opcode="2" channel="0" level="4" task="3" keywords="0x1" message="">
+    </event>
+    <event value="106" version="0" opcode="1" channel="0" level="4" task="5" keywords="0x2" message="">
+    </event>
+    <event value="107" version="0" opcode="2" channel="0" level="4" task="5" keywords="0x2" message="">
+    </event>
+    <event value="108" version="0" opcode="0" channel="0" level="2" task="4" keywords="0x3" message="">
+    </event>
+    <event value="109" version="0" opcode="1" channel="0" level="4" task="8" keywords="0x3" message="">
+    </event>
+    <event value="110" version="0" opcode="2" channel="0" level="4" task="8" keywords="0x3" message="">
+    </event>
+    <event value="111" version="0" opcode="1" channel="0" level="4" task="7" keywords="0x2" message="">
+    </event>
+    <event value="112" version="0" opcode="2" channel="0" level="4" task="7" keywords="0x2" message="">
+    </event>
+    <event value="113" version="0" opcode="1" channel="0" level="4" task="6" keywords="0x2" message="">
+    </event>
+    <event value="114" version="0" opcode="2" channel="0" level="4" task="6" keywords="0x2" message="">
+    </event>
+    <event value="115" version="0" opcode="1" channel="0" level="3" task="9" keywords="0x1" message="">
+    </event>
+    <event value="116" version="0" opcode="2" channel="0" level="3" task="9" keywords="0x1" message="">
+    </event>
+    <event value="117" version="0" opcode="1" channel="0" level="4" task="10" keywords="0x3" message="">
+    </event>
+    <event value="118" version="0" opcode="2" channel="0" level="4" task="10" keywords="0x3" message="">
+    </event>
+    <event value="119" version="0" opcode="0" channel="0" level="4" task="11" keywords="0x4" message="">
+    </event>
+    <event value="120" version="0" opcode="1" channel="0" level="4" task="12" keywords="0x1" message="">
+    </event>
+    <event value="121" version="0" opcode="2" channel="0" level="4" task="12" keywords="0x1" message="">
+    </event>
+    <event value="122" version="0" opcode="1" channel="0" level="4" task="13" keywords="0x1" message="">
+    </event>
+    <event value="123" version="0" opcode="2" channel="0" level="4" task="13" keywords="0x1" message="">
+    </event>
+    <event value="124" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000400000000000" message="The Virtualization Based Security enablement policy check at phase %1 failed with status: %2">
+    </event>
+    <event value="126" version="0" opcode="1" channel="0" level="4" task="14" keywords="0x9" message="">
+    </event>
+    <event value="127" version="0" opcode="2" channel="0" level="4" task="14" keywords="0x9" message="">
+    </event>
+    <event value="128" version="0" opcode="1" channel="0" level="4" task="15" keywords="0x1" message="">
+    </event>
+    <event value="129" version="0" opcode="1" channel="0" level="4" task="16" keywords="0x1" message="">
+    </event>
+    <event value="130" version="0" opcode="0" channel="0" level="4" task="17" keywords="0x10" message="">
+    </event>
+    <event value="131" version="0" opcode="1" channel="0" level="4" task="17" keywords="0x10" message="">
+    </event>
+    <event value="132" version="0" opcode="2" channel="0" level="4" task="17" keywords="0x10" message="">
+    </event>
+    <event value="133" version="0" opcode="0" channel="17" level="2" task="18" keywords="0x2000000000000009" message="">
+    </event>
+    <event value="134" version="0" opcode="1" channel="0" level="4" task="25" keywords="0x1" message="">
+    </event>
+    <event value="135" version="0" opcode="2" channel="0" level="4" task="25" keywords="0x1" message="">
+    </event>
+    <event value="136" version="0" opcode="0" channel="17" level="2" task="8" keywords="0x2000000000000003" message="Soft Restart failed to complete with status: %1 due to %2 outstanding unclaimed allocations">
+    </event>
+    <event value="137" version="0" opcode="1" channel="0" level="4" task="26" keywords="0x3" message="">
+    </event>
+    <event value="138" version="0" opcode="2" channel="0" level="4" task="26" keywords="0x3" message="">
+    </event>
+    <event value="139" version="0" opcode="0" channel="17" level="2" task="26" keywords="0x2000000000000003" message="Soft Restart failed to restore memory partition %1 with status: %2">
+    </event>
+    <event value="140" version="0" opcode="1" channel="0" level="4" task="27" keywords="0x3" message="">
+    </event>
+    <event value="141" version="0" opcode="2" channel="0" level="4" task="27" keywords="0x3" message="">
+    </event>
+    <event value="142" version="0" opcode="0" channel="17" level="2" task="28" keywords="0x2000000000000001" message="Soft Restart failed to register with Soft Restart extension. The versions are not compatible.">
+    </event>
+    <event value="143" version="0" opcode="0" channel="0" level="4" task="34" keywords="0x3" message="">
+    </event>
+    <event value="144" version="0" opcode="1" channel="0" level="4" task="35" keywords="0x1" message="">
+    </event>
+    <event value="145" version="0" opcode="2" channel="0" level="4" task="35" keywords="0x1" message="">
+    </event>
+    <event value="146" version="0" opcode="0" channel="17" level="2" task="36" keywords="0x2000000000000001" message="Soft Restart failed to establish connection with secure load with status: %1">
+    </event>
+    <event value="147" version="0" opcode="1" channel="0" level="4" task="39" keywords="0x2" message="">
+    </event>
+    <event value="148" version="0" opcode="2" channel="0" level="4" task="39" keywords="0x2" message="">
+    </event>
+    <event value="149" version="0" opcode="1" channel="0" level="4" task="40" keywords="0x1" message="">
+    </event>
+    <event value="150" version="0" opcode="2" channel="0" level="4" task="40" keywords="0x1" message="">
+    </event>
+    <event value="151" version="0" opcode="1" channel="0" level="4" task="41" keywords="0x20" message="">
+    </event>
+    <event value="152" version="0" opcode="2" channel="0" level="4" task="41" keywords="0x20" message="">
+    </event>
+    <event value="153" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The Virtualization Based Security (policies: %3) is %2 with status %1.">
+    </event>
+  </events>
+</provider>

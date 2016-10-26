@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MPS-SRV" guid="5444519f-2484-45a2-991e-953e4b54c8e0" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=mpssvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\mpssvc.dll" parameterFileName="C:\Windows\system32\mpssvc.dll" messageFileName="C:\Windows\system32\mpssvc.dll" message="Microsoft-Windows-Firewall-Service" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-MPS-SRV/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="StartService" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StopService" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Audit_Initialize" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Audit_Shutdown" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AuthApps_Initialize" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AuthApps_Shutdown" value="115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Notify_Initialize" value="117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Notify_Shutdown" value="119" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DynPorts_Initialize" value="121" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DynPorts_Shutdown" value="123" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChangeSource_Initialize" value="125" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChangeSource_Shutdown" value="127" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Writer_Initialize" value="129" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Writer_Shutdown" value="131" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Logger_Initialize" value="133" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Logger_Shutdown" value="135" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DynDataNLA1stPhase_Initialize" value="137" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DynDataNLA1stPhase_Shutdown" value="139" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProfileMgr_Initialize" value="141" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProfileMgr_Shutdown" value="143" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Upcall2ndPhase_Initialize" value="145" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Upcall2ndPhase_Shutdown" value="147" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RpcAPIs_Initialize" value="149" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RpcAPIs_Shutdown" value="151" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ResrcIndicationAPIs_Initialize" value="153" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ResrcIndicationAPIs_Shutdown" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GPMon_Initialize" value="155" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GPMon_Shutdown" value="157" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DynDataNLA2ndPhase_Initialize" value="159" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DynDataNLA2ndPhase_Shutdown" value="161" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ServiceSignalReady" value="163" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Empty_Shutdown" value="165" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Products_Initialize" value="167" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Products_Shutdown" value="169" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="HttpProxy_Initialize" value="171" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="HttpProxy_Shutdown" value="173" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AdhSitesSubnets_Initialize" value="175" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AdhSitesSubnets_Shutdown" value="177" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Moneis_Initialize" value="179" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Moneis_Shutdown" value="181" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MoneisRegistrationApiPhase2_Initialize" value="183" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MoneisRegistrationApiPhase2_Shutdown" value="185" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_RestoreDefaults" value="201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_EnumFirewallRules" value="203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeleteFirewallRule" value="205" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeleteAllFirewallRules" value="207" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_AddFirewallRule" value="209" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_SetFirewallRule" value="211" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_GetConfig" value="213" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_SetConfig" value="215" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_GetGlobalConfig" value="217" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_SetGlobalConfig" value="219" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_OpenPolicyStore" value="221" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_ClosePolicyStore" value="223" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_AddConnectionSecurityRule" value="225" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_SetConnectionSecurityRule" value="227" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeleteConnectionSecurityRule" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeleteAllConnectionSecurityRules" value="229" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_EnumConnectionSecurityRules" value="231" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_AddAuthenticationSet" value="233" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeleteAuthenticationSet" value="235" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_SetAuthenticationSet" value="237" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeleteAllAuthenticationSets" value="239" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_EnumAuthenticationSets" value="241" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_AddCryptoSet" value="243" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_SetCryptoSet" value="245" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeleteCryptoSet" value="247" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeleteAllCryptoSets" value="249" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_EnumCryptoSets" value="251" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_EnumPhase1SAs" value="253" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeletePhase1SAs" value="255" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_EnumPhase2SAs" value="257" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeletePhase2SAs" value="259" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_NotifyUnsupportedAttempt" value="261" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_RegisterProduct" value="263" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_UnregisterProduct" value="265" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_EnumProducts" value="267" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_AddMainModeRule" value="269" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_SetMainModeRule" value="271" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeleteMainModeRule" value="273" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_DeleteAllMainModeRules" value="275" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_EnumMainModeRules" value="277" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_QueryFirewallRules" value="279" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_QueryConnectionSecurityRules" value="281" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_QueryMainModeRules" value="283" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_QueryAuthenticationSets" value="285" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_API_QueryCryptoSets" value="287" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_BFE_EngineOpen" value="301" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_BFE_EngineClose" value="303" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_BFE_TransactionBegin" value="305" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_BFE_TransactionAbort" value="307" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_BFE_TransactionCommit" value="309" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_BFE_ProviderAdd" value="311" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_BFE_SublayerAdd" value="313" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_BFE_FilterAdd" value="315" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_BFE_FilterDeleteByKey" value="317" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MPS_SVC_BFE_FilterDeleteById" value="319" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GPPolicyUpdate" value="400" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlumberPolicyBegin" value="501" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlumberPolicyCommit" value="502" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlumberPolicyAbort" value="503" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Service" mask="10000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="103" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="104" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="105" version="0" opcode="1" channel="16" level="4" task="105" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="106" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="107" version="0" opcode="1" channel="16" level="4" task="107" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="108" version="0" opcode="2" channel="16" level="4" task="107" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="113" version="0" opcode="1" channel="16" level="4" task="113" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="114" version="0" opcode="2" channel="16" level="4" task="113" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="115" version="0" opcode="1" channel="16" level="4" task="115" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="116" version="0" opcode="2" channel="16" level="4" task="115" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="117" version="0" opcode="1" channel="16" level="4" task="117" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="118" version="0" opcode="2" channel="16" level="4" task="117" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="119" version="0" opcode="1" channel="16" level="4" task="119" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="120" version="0" opcode="2" channel="16" level="4" task="119" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="121" version="0" opcode="1" channel="16" level="4" task="121" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="122" version="0" opcode="2" channel="16" level="4" task="121" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="123" version="0" opcode="1" channel="16" level="4" task="123" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="124" version="0" opcode="2" channel="16" level="4" task="123" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="125" version="0" opcode="1" channel="16" level="4" task="125" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="126" version="0" opcode="2" channel="16" level="4" task="125" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="127" version="0" opcode="1" channel="16" level="4" task="127" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="128" version="0" opcode="2" channel="16" level="4" task="127" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="129" version="0" opcode="1" channel="16" level="4" task="129" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="130" version="0" opcode="2" channel="16" level="4" task="129" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="131" version="0" opcode="1" channel="16" level="4" task="131" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="132" version="0" opcode="2" channel="16" level="4" task="131" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="133" version="0" opcode="1" channel="16" level="4" task="133" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="134" version="0" opcode="2" channel="16" level="4" task="133" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="135" version="0" opcode="1" channel="16" level="4" task="135" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="136" version="0" opcode="2" channel="16" level="4" task="135" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="137" version="0" opcode="1" channel="16" level="4" task="137" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="138" version="0" opcode="2" channel="16" level="4" task="137" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="139" version="0" opcode="1" channel="16" level="4" task="139" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="140" version="0" opcode="2" channel="16" level="4" task="139" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="141" version="0" opcode="1" channel="16" level="4" task="141" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="142" version="0" opcode="2" channel="16" level="4" task="141" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="143" version="0" opcode="1" channel="16" level="4" task="143" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="144" version="0" opcode="2" channel="16" level="4" task="143" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="145" version="0" opcode="1" channel="16" level="4" task="145" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="146" version="0" opcode="2" channel="16" level="4" task="145" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="147" version="0" opcode="1" channel="16" level="4" task="147" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="148" version="0" opcode="2" channel="16" level="4" task="147" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="149" version="0" opcode="1" channel="16" level="4" task="149" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="150" version="0" opcode="2" channel="16" level="4" task="149" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="151" version="0" opcode="1" channel="16" level="4" task="151" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="152" version="0" opcode="2" channel="16" level="4" task="151" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="153" version="0" opcode="1" channel="16" level="4" task="153" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="154" version="0" opcode="2" channel="16" level="4" task="153" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="155" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="156" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="157" version="0" opcode="1" channel="16" level="4" task="155" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="158" version="0" opcode="2" channel="16" level="4" task="155" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="159" version="0" opcode="1" channel="16" level="4" task="157" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="160" version="0" opcode="2" channel="16" level="4" task="157" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="161" version="0" opcode="1" channel="16" level="4" task="159" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="162" version="0" opcode="2" channel="16" level="4" task="159" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="163" version="0" opcode="1" channel="16" level="4" task="161" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="164" version="0" opcode="2" channel="16" level="4" task="161" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="165" version="0" opcode="1" channel="16" level="4" task="163" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="166" version="0" opcode="2" channel="16" level="4" task="163" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="167" version="0" opcode="1" channel="16" level="4" task="165" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="168" version="0" opcode="2" channel="16" level="4" task="165" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="169" version="0" opcode="1" channel="16" level="4" task="167" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="170" version="0" opcode="2" channel="16" level="4" task="167" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="171" version="0" opcode="1" channel="16" level="4" task="169" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="172" version="0" opcode="2" channel="16" level="4" task="169" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="173" version="0" opcode="1" channel="16" level="4" task="171" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="174" version="0" opcode="2" channel="16" level="4" task="171" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="175" version="0" opcode="1" channel="16" level="4" task="173" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="176" version="0" opcode="2" channel="16" level="4" task="173" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="177" version="0" opcode="1" channel="16" level="4" task="175" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="178" version="0" opcode="2" channel="16" level="4" task="175" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="179" version="0" opcode="1" channel="16" level="4" task="177" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="180" version="0" opcode="2" channel="16" level="4" task="177" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="181" version="0" opcode="1" channel="16" level="4" task="179" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="182" version="0" opcode="2" channel="16" level="4" task="179" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="183" version="0" opcode="1" channel="16" level="4" task="181" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="184" version="0" opcode="2" channel="16" level="4" task="181" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="185" version="0" opcode="1" channel="16" level="4" task="183" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="186" version="0" opcode="2" channel="16" level="4" task="183" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="187" version="0" opcode="1" channel="16" level="4" task="185" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="188" version="0" opcode="2" channel="16" level="4" task="185" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="200" version="0" opcode="1" channel="16" level="4" task="201" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="201" version="0" opcode="2" channel="16" level="4" task="201" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="202" version="0" opcode="1" channel="16" level="4" task="203" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="203" version="0" opcode="2" channel="16" level="4" task="203" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="204" version="0" opcode="1" channel="16" level="4" task="205" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="205" version="0" opcode="2" channel="16" level="4" task="205" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="206" version="0" opcode="1" channel="16" level="4" task="207" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="207" version="0" opcode="2" channel="16" level="4" task="207" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="208" version="0" opcode="1" channel="16" level="4" task="209" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="209" version="0" opcode="2" channel="16" level="4" task="209" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="210" version="0" opcode="1" channel="16" level="4" task="211" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="211" version="0" opcode="2" channel="16" level="4" task="211" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="212" version="0" opcode="1" channel="16" level="4" task="213" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="213" version="0" opcode="2" channel="16" level="4" task="213" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="214" version="0" opcode="1" channel="16" level="4" task="215" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="215" version="0" opcode="2" channel="16" level="4" task="215" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="216" version="0" opcode="1" channel="16" level="4" task="217" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="217" version="0" opcode="2" channel="16" level="4" task="217" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="218" version="0" opcode="1" channel="16" level="4" task="219" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="219" version="0" opcode="2" channel="16" level="4" task="219" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="220" version="0" opcode="1" channel="16" level="4" task="221" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="221" version="0" opcode="2" channel="16" level="4" task="221" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="222" version="0" opcode="1" channel="16" level="4" task="223" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="223" version="0" opcode="2" channel="16" level="4" task="223" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="224" version="0" opcode="1" channel="16" level="4" task="225" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="225" version="0" opcode="2" channel="16" level="4" task="225" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="226" version="0" opcode="1" channel="16" level="4" task="227" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="227" version="0" opcode="2" channel="16" level="4" task="227" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="228" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="229" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="230" version="0" opcode="1" channel="16" level="4" task="229" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="231" version="0" opcode="2" channel="16" level="4" task="229" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="232" version="0" opcode="1" channel="16" level="4" task="231" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="233" version="0" opcode="2" channel="16" level="4" task="231" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="234" version="0" opcode="1" channel="16" level="4" task="233" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="235" version="0" opcode="2" channel="16" level="4" task="233" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="236" version="0" opcode="1" channel="16" level="4" task="235" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="237" version="0" opcode="2" channel="16" level="4" task="235" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="238" version="0" opcode="1" channel="16" level="4" task="237" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="239" version="0" opcode="2" channel="16" level="4" task="237" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="240" version="0" opcode="1" channel="16" level="4" task="239" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="241" version="0" opcode="2" channel="16" level="4" task="239" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="242" version="0" opcode="1" channel="16" level="4" task="241" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="243" version="0" opcode="2" channel="16" level="4" task="241" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="244" version="0" opcode="1" channel="16" level="4" task="243" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="245" version="0" opcode="2" channel="16" level="4" task="243" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="246" version="0" opcode="1" channel="16" level="4" task="245" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="247" version="0" opcode="2" channel="16" level="4" task="245" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="248" version="0" opcode="1" channel="16" level="4" task="247" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="249" version="0" opcode="2" channel="16" level="4" task="247" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="250" version="0" opcode="1" channel="16" level="4" task="249" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="251" version="0" opcode="2" channel="16" level="4" task="249" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="252" version="0" opcode="1" channel="16" level="4" task="251" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="253" version="0" opcode="2" channel="16" level="4" task="251" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="254" version="0" opcode="1" channel="16" level="4" task="253" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="255" version="0" opcode="2" channel="16" level="4" task="253" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="256" version="0" opcode="1" channel="16" level="4" task="255" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="257" version="0" opcode="2" channel="16" level="4" task="255" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="258" version="0" opcode="1" channel="16" level="4" task="257" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="259" version="0" opcode="2" channel="16" level="4" task="257" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="260" version="0" opcode="1" channel="16" level="4" task="259" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="261" version="0" opcode="2" channel="16" level="4" task="259" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="262" version="0" opcode="1" channel="16" level="4" task="261" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="263" version="0" opcode="2" channel="16" level="4" task="261" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="264" version="0" opcode="1" channel="16" level="4" task="263" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="265" version="0" opcode="2" channel="16" level="4" task="263" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="266" version="0" opcode="1" channel="16" level="4" task="265" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="267" version="0" opcode="2" channel="16" level="4" task="265" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="268" version="0" opcode="1" channel="16" level="4" task="267" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="269" version="0" opcode="2" channel="16" level="4" task="267" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="270" version="0" opcode="1" channel="16" level="4" task="269" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="271" version="0" opcode="2" channel="16" level="4" task="269" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="272" version="0" opcode="1" channel="16" level="4" task="271" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="273" version="0" opcode="2" channel="16" level="4" task="271" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="274" version="0" opcode="1" channel="16" level="4" task="273" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="275" version="0" opcode="2" channel="16" level="4" task="273" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="276" version="0" opcode="1" channel="16" level="4" task="275" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="277" version="0" opcode="2" channel="16" level="4" task="275" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="278" version="0" opcode="1" channel="16" level="4" task="277" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="279" version="0" opcode="2" channel="16" level="4" task="277" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="280" version="0" opcode="1" channel="16" level="4" task="279" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="281" version="0" opcode="2" channel="16" level="4" task="279" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="282" version="0" opcode="1" channel="16" level="4" task="281" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="283" version="0" opcode="2" channel="16" level="4" task="281" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="284" version="0" opcode="1" channel="16" level="4" task="283" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="285" version="0" opcode="2" channel="16" level="4" task="283" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="286" version="0" opcode="1" channel="16" level="4" task="285" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="287" version="0" opcode="2" channel="16" level="4" task="285" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="288" version="0" opcode="1" channel="16" level="4" task="287" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="289" version="0" opcode="2" channel="16" level="4" task="287" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="301" version="0" opcode="1" channel="16" level="4" task="301" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="302" version="0" opcode="2" channel="16" level="4" task="301" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="303" version="0" opcode="1" channel="16" level="4" task="303" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="304" version="0" opcode="2" channel="16" level="4" task="303" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="305" version="0" opcode="1" channel="16" level="4" task="305" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="306" version="0" opcode="2" channel="16" level="4" task="305" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="307" version="0" opcode="1" channel="16" level="4" task="307" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="308" version="0" opcode="2" channel="16" level="4" task="307" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="309" version="0" opcode="1" channel="16" level="4" task="309" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="310" version="0" opcode="2" channel="16" level="4" task="309" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="311" version="0" opcode="1" channel="16" level="4" task="311" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="312" version="0" opcode="2" channel="16" level="4" task="311" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="313" version="0" opcode="1" channel="16" level="4" task="313" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="314" version="0" opcode="2" channel="16" level="4" task="313" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="315" version="0" opcode="1" channel="16" level="4" task="315" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="316" version="0" opcode="2" channel="16" level="4" task="315" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="317" version="0" opcode="1" channel="16" level="4" task="317" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="318" version="0" opcode="2" channel="16" level="4" task="317" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="319" version="0" opcode="1" channel="16" level="4" task="319" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="320" version="0" opcode="2" channel="16" level="4" task="319" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="400" version="0" opcode="1" channel="16" level="4" task="400" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="401" version="0" opcode="2" channel="16" level="4" task="400" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="501" version="0" opcode="1" channel="16" level="4" task="501" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="502" version="0" opcode="2" channel="16" level="4" task="502" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="503" version="0" opcode="2" channel="16" level="4" task="503" keywords="0x8000000000010000" message="">
+    </event>
+  </events>
+</provider>

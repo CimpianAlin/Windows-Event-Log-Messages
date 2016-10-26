@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Data-Pdf" guid="b97561fe-b27a-4c48-aa3e-7d3addc105b1" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Windows.Data.Pdf.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\Windows.Data.Pdf.dll" messageFileName="C:\Windows\System32\Windows.Data.Pdf.dll" message="Microsoft-Windows-Data-Pdf" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Data-Pdf/Debug" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="LoadPage" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UpdatePage" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RenderPage" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EncodePageRendering" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LoadDocument" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Windows.Data.Pdf" mask="10000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000010000" message="Page Load Start">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000010000" message="Page Load Stop">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8001000000010000" message="Page Render Start">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8001000000010000" message="Page Render Stop">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="EncodePageRendering Start">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="EncodePageRendering Stop">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8001000000010000" message="Load Document Start">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8001000000010000" message="Load Document Stop">
+    </event>
+  </events>
+</provider>

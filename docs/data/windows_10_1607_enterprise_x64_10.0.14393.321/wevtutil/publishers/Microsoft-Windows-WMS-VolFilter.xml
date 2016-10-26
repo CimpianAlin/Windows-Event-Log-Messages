@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WMS-VolFilter" guid="f579109f-e93a-452c-8241-5f702fe4a52d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=WmsVolFilter.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\Drivers\WmsVolFilter.sys" messageFileName="C:\Windows\System32\Drivers\WmsVolFilter.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WMS-VolFilter/Operational" id="110" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000000" message="NT_STATUS %1 returned in function %2">
+    </event>
+    <event value="2" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="3" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000000" message="Function %1 succeeded">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SMBDirect" guid="db66ea65-b7bb-4ca9-8748-334cb5c32400" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=smbdirect.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\smbdirect.sys" messageFileName="C:\Windows\system32\drivers\smbdirect.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SMBDirect/Admin" id="16" flags="0" message="Microsoft-Windows-SMBDirect/Admin">
+    </channel>
+    <channel name="Microsoft-Windows-SMBDirect/Debug" id="17" flags="0" message="Microsoft-Windows-SMBDirect/Debug">
+    </channel>
+    <channel name="Microsoft-Windows-SMBDirect/Netmon" id="18" flags="0" message="Microsoft-Windows-SMBDirect/Netmon">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Disconnect" mask="1" message="">
+    </keyword>
+    <keyword name="Connect" mask="2" message="">
+    </keyword>
+    <keyword name="Accept" mask="4" message="">
+    </keyword>
+    <keyword name="Credits" mask="8" message="">
+    </keyword>
+    <keyword name="NDK" mask="10" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The network adapter &apos;%1&apos; is incompatible with SMB Direct. Compatible network adapters are required to support at least %2 SGE(s) per receive queue work request. This adapter supports a maximum of %3 SGE(s) per receive queue work request.">
+    </event>
+    <event value="2" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The network adapter &apos;%1&apos; is incompatible with SMB Direct. Compatible network adapters are required to support at least %2 SGE(s) per send queue work request. This adapter supports a maximum of %3 SGE(s) per send queue work request.">
+    </event>
+    <event value="3" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The network adapter &apos;%1&apos; is incompatible with SMB Direct. Compatible network adapters are required to support at least %2 SGE(s) per RDMA read request. This adapter supports a maximum of %3 SGE(s) per RDMA read request.">
+    </event>
+    <event value="4" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Setting %1\%2 is invalid. Verify that %2 is a DWORD (32-bit) value in the range %3 to %4 (inclusive). The default value of %5 will be used for this setting until the error is corrected.">
+    </event>
+    <event value="5" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The network adapter &apos;%1&apos; does not support a value of %4 for setting %2\%3. The closest adapter supported value of %5 will be used.">
+    </event>
+    <event value="6" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A connection has been terminated because no pending requests to network adapter &apos;%6&apos; have completed in the last %7 milliseconds. Verify that the network is operational and that the peer is responsive. This event may also indicate that there are insufficient send credits to support the workload. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="7" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Settings BaseAffinityNode and MaxAffinityNode (\Registry\Machine\System\CurrentControlSet\Services\SmbDirect\Parameters) must specify a set of NUMA nodes that contain active processors. All of the system&apos;s processors will be eligible to perform SMB Direct processing until the error is corrected.">
+    </event>
+    <event value="300" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000002" message="Starting connect. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="301" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000002" message="Connect succeeded. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="302" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="Connect failed. Socket = %1 Local = %3 Remote = %5 Status = %6">
+    </event>
+    <event value="303" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="Timed out while waiting for connection establishment to complete - cancelling connect. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="304" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000012" message="NdkConnect failed. Socket = %1 Local = %3 Remote = %5 Status = %6">
+    </event>
+    <event value="305" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000012" message="NdkCompleteConnect failed. Socket = %1 Local = %3 Remote = %5 Status = %6">
+    </event>
+    <event value="306" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000006" message="Failed to negotiate a common SMB Direct version with the peer. Socket = %1 Local = %3 Remote = %5 MinVersion = %6 MaxVersion = %7 PeerMinVersion = %8 PeerMaxVersion = %9">
+    </event>
+    <event value="350" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000014" message="Received connect request. ListenSocket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="351" version="1" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000004" message="Rejected connect request - connect backlog limit exceeded. ListenSocket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="352" version="1" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000004" message="Rejected connect request - not enough memory. ListenSocket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="353" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000004" message="Timed-out while waiting to receive a negotiate request - cancelling accept. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="354" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000014" message="NdkAccept failed. Socket = %1 Local = %3 Remote = %5 Status = %6">
+    </event>
+    <event value="355" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000004" message="Accept started. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="356" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000004" message="Accept succeeded. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="357" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000004" message="Accept failed. Socket = %1 Local = %3 Remote = %5 Status = %6">
+    </event>
+    <event value="358" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000004" message="Upper-level driver rejected the connection. Socket = %1 Status = %2">
+    </event>
+    <event value="400" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000011" message="NDK disconnect event. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="401" version="2" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000001" message="Disconnect started. Socket = %1 Local = %3 Remote = %5 State = %6">
+    </event>
+    <event value="402" version="2" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000001" message="Disconnect completed. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="403" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000001" message="Close started. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="404" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000001" message="Close completed. Socket = %1">
+    </event>
+    <event value="450" version="1" opcode="0" channel="17" level="5" task="0" keywords="0x4000000100000008" message="Out of send credits - starting credit grant timer. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="451" version="1" opcode="0" channel="17" level="5" task="0" keywords="0x4000000200000008" message="Peer used their last send credit. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="452" version="1" opcode="0" channel="17" level="5" task="0" keywords="0x4000000100000008" message="Using last send credit. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="453" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000008" message="Timed-out while waiting to receive send credits. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="454" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000200000008" message="Protocol violation - the peer sent a packet but does not have a send credit. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="455" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000200000008" message="Protocol violation - the peer used their last send credit but did not grant a send credit. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="456" version="1" opcode="0" channel="17" level="5" task="0" keywords="0x4000000100000008" message="Granted the peer %6 additional send credits. Socket %1 Local = %3 Remote = %5 PeerSendCredits = %7">
+    </event>
+    <event value="457" version="1" opcode="0" channel="17" level="5" task="0" keywords="0x4000000200000008" message="Received a grant of %6 credits. Socket = %1 Local = %3 Remote = %5 SendCreditsAccepted = %7 SendCredits = %8">
+    </event>
+    <event value="500" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000100000010" message="Failed to post a %6 SQ work request. Socket = %1 Local = %3 Remote = %5 Status = %7">
+    </event>
+    <event value="501" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000100000010" message="%6 SQ work request failed. Socket = %1 Local = %3 Remote = %5 Status = %7">
+    </event>
+    <event value="502" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000200000010" message="Failed to post a Receive work request. Socket = %1 Local = %3 Remote = %5 Status = %6">
+    </event>
+    <event value="503" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000200000010" message="Receive work request failed. Socket = %1 Local = %3 Remote = %5 Status = %6">
+    </event>
+    <event value="1000" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Timed-out out while waiting to receive a keepalive response. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="1001" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000040200000000" message="Protocol violation - received packet is too small or contains at least one invalid value. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="1002" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000040200000000" message="Protocol violation - total fragmented payload is larger than indicated by first fragment. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="1003" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000040200000000" message="Protocol violation - total fragmented payload is smaller than indicated by first fragment. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="1004" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000040200000000" message="Failed to allocate a fragment reassembly buffer. Socket = %1 Local = %3 Remote = %5">
+    </event>
+    <event value="1005" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="%6 operation failed. Socket = %1 Local = %3 Remote = %5 Status = %7">
+    </event>
+    <event value="1006" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Created socket. Socket = %1">
+    </event>
+    <event value="1007" version="1" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Failed to create socket. Socket = %1 Status = %2">
+    </event>
+    <event value="1008" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000006" message="Finished negotiating connection properties. Socket = %1 Local = %3 Remote = %5 ProtocolVersion = %6 MaxReadWriteSize = %7 MaxReceiveSize = %8 MaxFragmentedReceiveSize = %9 MaxSendSize = %10 MaxFragmentedSendSize = %11 IRD = %12 ORD = %13">
+    </event>
+    <event value="1009" version="1" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000001" message="A completion queue has failed and is no longer indicating completions. Socket = %1 Local = %3 Remote = %5 Status = %6">
+    </event>
+    <event value="1010" version="1" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="Updated SCQ interrupt moderation parameters. Socket = %1 Count = %2 IntervalInMicroSeconds = %3">
+    </event>
+    <event value="1011" version="1" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="Updated RCQ interrupt moderation parameters. Socket = %1 Count = %2 IntervalInMicroSeconds = %3">
+    </event>
+    <event value="9500" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Opened network adapter &apos;%1&apos;. NdkMajorVer = %2 NdkMinorVer = %3 VendorId = %4 DeviceId = %5 MaxRegistrationSize = %6 MaxWindowSize = %7 FrmrPageCount = %8 MaxInitiatorRequestSge = %9 MaxReceiveRequestSge = %10 MaxReadRequestSge = %11 MaxTransferLength = %12 MaxInlineDataSize = %13 MaxInboundReadLimit = %14 MaxOutboundReadLimit = %15 MaxReceiveQueueDepth = %16 MaxInitiatorQueueDepth = %17 MaxSrqDepth = %18 MaxCqDepth = %19 LargeRequestThreshold = %20 MaxCallerData = %21 MaxCalleeData = %22 AdapterFlags = %23">
+    </event>
+    <event value="10000" version="1" opcode="0" channel="18" level="4" task="0" keywords="0x2000040200000000" message="Received negotiate request. Socket = %1 Local = %3 Remote = %5 MinVersion = %6 MaxVersion = %7 Reserved = %8 CreditsRequested = %9 PreferredSendSize = %10 MaxReceiveSize = %11 MaxFragmentReassemblyBufferSize = %12">
+    </event>
+    <event value="10001" version="1" opcode="0" channel="18" level="4" task="0" keywords="0x2000040100000000" message="Sending negotiate request. Socket = %1 Local = %3 Remote = %5 MinVersion = %6 MaxVersion = %7 Reserved = %8 CreditsRequested = %9 PreferredSendSize = %10 MaxReceiveSize = %11 MaxFragmentReassemblyBufferSize = %12">
+    </event>
+    <event value="10002" version="1" opcode="0" channel="18" level="4" task="0" keywords="0x2000040200000000" message="Received negotiate response. Socket = %1 Local = %3 Remote = %5 MinVersion = %6 MaxVersion = %7 NegotiatedVersion = %8 Reserved = %9 CreditsRequested = %10 CreditsGranted = %11 Status = %12 MaxReadWriteSize = %13 PreferredSendSize = %14 MaxReceiveSize = %15 MaxFragmentReassemblyBufferSize = %16">
+    </event>
+    <event value="10003" version="1" opcode="0" channel="18" level="4" task="0" keywords="0x2000040100000000" message="Sending negotiate response. Socket = %1 Local = %3 Remote = %5 MinVersion = %6 MaxVersion = %7 NegotiatedVersion = %8 Reserved = %9 CreditsRequested = %10 CreditsGranted = %11 Status = %12 MaxReadWriteSize = %13 PreferredSendSize = %14 MaxReceiveSize = %15 MaxFragmentReassemblyBufferSize = %16">
+    </event>
+    <event value="10004" version="1" opcode="0" channel="18" level="4" task="0" keywords="0x2000040200000000" message="Received data. Socket = %1 Local = %3 Remote = %5 CreditsRequested = %6 CreditsGranted = %7 Flags = %8 Reserved = %9 RemainingDataLength = %10 DataOffset = %11 DataLength = %12">
+    </event>
+    <event value="10005" version="1" opcode="0" channel="18" level="4" task="0" keywords="0x2000040100000000" message="Sending data. Socket = %1 Local = %3 Remote = %5 CreditsRequested = %6 CreditsGranted = %7 Flags = %8 Reserved = %9 RemainingDataLength = %10 DataOffset = %11 DataLength = %12">
+    </event>
+  </events>
+</provider>

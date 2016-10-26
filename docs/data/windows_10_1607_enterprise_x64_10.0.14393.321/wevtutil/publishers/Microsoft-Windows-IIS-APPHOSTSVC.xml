@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IIS-APPHOSTSVC" guid="cac10856-9223-48fe-96ba-2a772274fb53" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Information%20Services&amp;ProdVer=10.0.14393.0&amp;FileName=iisres.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\inetsrv\iisres.dll" messageFileName="C:\Windows\system32\inetsrv\iisres.dll" message="Microsoft-Windows-IIS-APPHOSTSVC" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="3221234472" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error while reading the data for SID mapping.  Please ensure that the application pool name data is correct in the configuration file.  To resolve this issue, please recommit the changes or restart this service.  The data field contains the error number.">
+    </event>
+    <event value="3221234473" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error while adding the mapping for the application pool name &apos;%1&apos; to its SID.  That particular SID is already mapped to another application pool name, causing a conflict.  To resolve this issue, please change the name of this application pool.  The data field contains the error number.">
+    </event>
+    <event value="3221234474" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error while mapping the application pool names to their respective SIDs.  Some app pool SIDs will not be resolved properly under the &apos;IIS APPPOOL&apos; namespace.  To resolve this issue, please recommit the changes or restart the service.  The data field contains the error number.">
+    </event>
+    <event value="3221234475" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error while removing the mapping for the application pool name &apos;%1&apos; to its SID.  To resolve this issue, please recommit the changes or restart the service.  The data field contains the error number.">
+    </event>
+    <event value="3221234476" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error while adding multiple mappings for application pool names to their SIDs.  To resolve this issue, please recommit the changes and restart the service.  The data field contains the error number.">
+    </event>
+    <event value="3221234477" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error while adding the mapping for the application pool name &apos;%1&apos; to its SID.  To resolve this issue, please recommit the changes or restart the service.  The data field contains the error number.">
+    </event>
+    <event value="3221234478" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error trying to process the configuration data for config history.  The feature will be disabled.  To resolve this issue, please confirm that the configuration file is correct, has correct attribute values for config history and recommit the changes.  The feature will be enabled again if the configuration is correct.  The data field contains the error number.">
+    </event>
+    <event value="3221234479" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error trying to read configuration data from file &apos;%1&apos;, line number &apos;%2&apos;.  The error message is: &apos;%3&apos;.  The feature will be disabled.  To resolve this issue, please fix the configuration file and recommit the changes.  The feature will be enabled again if the configuration is correct.  The data field contains the error number.">
+    </event>
+    <event value="3221234480" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error trying to read the property &apos;%1&apos; from configuration data from file &apos;%2&apos;, line number &apos;%3&apos;. The feature will be disabled.  To resolve this issue, please fix the property in the file and recommit the changes.  The feature will be enabled again if the configuration is correct.  The data field contains the error number.">
+    </event>
+    <event value="2147492657" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error trying to delete the history directory &apos;%1&apos;.  The directory will be skipped and ignored.  Note that the directory may still get deleted in the future if the service restarts.  The data field contains the error number.">
+    </event>
+    <event value="3221234482" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service encountered an error trying to access the root history directory &apos;%1&apos;.  The directory either doesn&apos;t exist or the permissions on it don&apos;t allow the history service to access it. The config history feature is disabled for now and will be re-enabled after the issue is resolved. To resolve this issue, please ensure that the directory exists and that the Administrators group have read and write access to it.  The data field contains the error number.">
+    </event>
+    <event value="3221234483" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The directory specified for the root history directory is a UNC path, which is not allowed.  The feature will be disabled.  To resolve this issue, please set it to a local directory.  The feature will be enabled again if the configuration is correct. The data field contains the error number.">
+    </event>
+    <event value="3221234484" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Application Host Helper Service has detected that %1 file doesn&apos;t contain valid configuration. Config history backup feature has been disabled. It will be re-enabled automatically once the configuration file is fixed.">
+    </event>
+  </events>
+</provider>

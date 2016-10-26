@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-StorageManagement-WSP-Spaces" guid="88c09888-118d-48fc-8863-e1c6d39ca4df" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="mispace.dll" messageFileName="mispace.dll" message="Microsoft-Windows-StorageManagement-WSP-Spaces" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-StorageManagement/Operational" id="16" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="2000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows Storage Provider could not start the remote storage subsystem.
+
+Storage Subsystem ID:		%1
+Storage Subsystem URI:	%2
+Username:			%3
+Error Code:			%4
+Error String:			%5
+
+Ensure that the remote storage subsystem is online and connected to the network.
+Check if the user attempting to connect to the subsystem has the necessary permissions.">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Windows Storage Provider has lost its connection to the cluster.">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows Storage Provider has established a connection to the cluster.">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error occurred during method execution.
+
+Class:		%1
+Method:		%2
+ObjectId:	%3
+Error Code:	%4">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="An error was posted by the Windows Storage Provider during the course of an operation.
+
+Message:	%1">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error occurred during storage job execution.
+
+Job Name:	%1
+Error Code:	%2">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error occurred during a get instance operation.
+
+Class:		%1
+ObjectId:	%2
+Error Code:	%3">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error occurred during object enumeration.
+
+Class:		%1
+Error Code:	%2">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error occurred during method execution.
+
+Class:		%1
+Method:		%2
+ObjectId:	%3
+MI_Result:	%4">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error occurred while trying to perform a diagnostic operation.
+
+Computer name: %1
+Error Code: %2
+Secondary Error: %3">
+    </event>
+  </events>
+</provider>

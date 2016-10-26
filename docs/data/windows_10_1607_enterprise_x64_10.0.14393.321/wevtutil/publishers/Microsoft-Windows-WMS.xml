@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WMS" guid="4475be34-3dd2-4d27-ae03-ada6469ea490" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=SRCMessages.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Program Files\Windows MultiPoint Server\SRCMessages.dll" messageFileName="C:\Program Files\Windows MultiPoint Server\SRCMessages.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WMS/Application" id="110" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WMS/Trace" id="111" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WMS/ConfigurationTasks" id="112" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:LogAlways" value="0" message="Log Always">
+    </level>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Setup" mask="1" message="Setup">
+    </keyword>
+    <keyword name="WmsShell" mask="2" message="WmsShell">
+    </keyword>
+    <keyword name="SessionAgent" mask="4" message="SessionAgent">
+    </keyword>
+    <keyword name="Runtime" mask="8" message="Runtime">
+    </keyword>
+    <keyword name="MultipointManager" mask="10" message="MultipointManager">
+    </keyword>
+    <keyword name="MultipointOOBE" mask="20" message="MultipointOOBE">
+    </keyword>
+    <keyword name="AdminUI" mask="40" message="AdminUI">
+    </keyword>
+    <keyword name="MiddleTier" mask="100" message="MiddleTier">
+    </keyword>
+    <keyword name="WmsSvc" mask="200" message="WmsSvc">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="0" channel="111" level="4" task="0" keywords="0x4000000000000008" message="%1">
+    </event>
+    <event value="1" version="0" opcode="0" channel="111" level="0" task="0" keywords="0x4000000000000008" message="%1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="111" level="1" task="0" keywords="0x4000000000000008" message="%1">
+    </event>
+    <event value="3" version="0" opcode="0" channel="111" level="2" task="0" keywords="0x4000000000000008" message="%1">
+    </event>
+    <event value="4" version="0" opcode="0" channel="111" level="3" task="0" keywords="0x4000000000000008" message="%1">
+    </event>
+    <event value="5" version="0" opcode="0" channel="111" level="5" task="0" keywords="0x4000000000000008" message="%1">
+    </event>
+    <event value="100" version="0" opcode="0" channel="112" level="2" task="0" keywords="0x2000000000000001" message="Error: Task %1 failed. For more information, review the MultiPoint Trace logs. [HR=%2]">
+    </event>
+    <event value="102" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Web.config file is invalid. InnerException: %1.">
+    </event>
+    <event value="103" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="Unknown Error happened to Setup component: %1. %2">
+    </event>
+    <event value="104" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="ArgumentOutOfRange error happened to Setup component: %1. %2">
+    </event>
+    <event value="105" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="RDS role is not enabled in this machine to activatelicense server: %1. %2">
+    </event>
+    <event value="106" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="Remote Desktop Licence Server may be activated already: %1. %2">
+    </event>
+    <event value="107" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="User name or password is invalid. %1. %2">
+    </event>
+    <event value="108" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="User name does not exist in the machine. %1.">
+    </event>
+    <event value="109" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="Group name does not exist in the machine. %1.">
+    </event>
+    <event value="110" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="User name does exist in the machine already. %1.">
+    </event>
+    <event value="111" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="User name does not exist in the group. %1.">
+    </event>
+    <event value="112" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="User name does exist in the group already. %1.">
+    </event>
+    <event value="113" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="%1 not allowed for loopbacks, WMI will cause error 70 (bad format): %2">
+    </event>
+    <event value="114" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Loopback object name %1 does not match adapter %2 used in single adapter mode: %3">
+    </event>
+    <event value="115" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="WMI Error - %1: %2">
+    </event>
+    <event value="116" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="IP %1 is already in use by network adapter %2: %3">
+    </event>
+    <event value="117" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Device Installer Setup API returned error %1: %2">
+    </event>
+    <event value="118" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="%1 is not a loopback adapter: %2">
+    </event>
+    <event value="119" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="ERROR_IN_WOW64: Installing a loopback by a 32bit app running in a 64bit environment is not allowed: %1">
+    </event>
+    <event value="120" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="ERROR_IN_WOW64: Deleting a loopback by a 32bit app running in a 64bit environment is not allowed: %1">
+    </event>
+    <event value="121" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="The machine OS is wrong. Please install %1.">
+    </event>
+    <event value="122" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="The machine needs installation of %1.">
+    </event>
+    <event value="123" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="The machine RDS needs installation of %1. All others in RDS must not be installed.">
+    </event>
+    <event value="124" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="LoopbackCollection must be in %1 mode to call this method: %2">
+    </event>
+    <event value="125" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Can not find device instance id %1: %2">
+    </event>
+    <event value="126" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Can not find driver info for id %1, guid %2: %3">
+    </event>
+    <event value="127" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Can not create loopback adapter creation thread: %1">
+    </event>
+    <event value="128" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Loopback adapter creation failed with exception (%1) : %2">
+    </event>
+    <event value="129" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Loopback adapter %1 of %2 failed with exception (%3), aborting creation thread: %4">
+    </event>
+    <event value="130" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Loopback adapter %1 of %2 failed with exception (%3), aborting deletion thread: %4">
+    </event>
+    <event value="131" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Loopback adapter recreation failed with exception (%1) : %2">
+    </event>
+    <event value="132" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="Run command failed with exception (%1) : %2">
+    </event>
+    <event value="133" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="%1 Failed to remove scheduled tasks: %2.">
+    </event>
+    <event value="134" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="%1 Failed to unregister DLLs with exception: %2.">
+    </event>
+    <event value="135" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="%1 Failed to delete file %2 with exception: %3.">
+    </event>
+    <event value="136" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="%1 Failed to delete directory %2 with exception: %3.">
+    </event>
+    <event value="137" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="Failed to copy registry subkey %1 from %2 to %3 with exception: %4">
+    </event>
+    <event value="138" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="%1 Failed to migrate the auto map plugin from %2 to %3 with exception: %4.">
+    </event>
+    <event value="139" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000001" message="%1 Failed to delete registry subkey %2 or its child subkeys with exception: %3.">
+    </event>
+    <event value="140" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="%1 Failed to remove MSI with exception: %2.">
+    </event>
+    <event value="141" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000001" message="%1 Wait %2 milliseconds for the loopback adapters change to be reflected in WMI.">
+    </event>
+    <event value="142" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message="%1 Waited for %2 seconds but failed to see %3 loopback adapters in the Terminal Service Setting.">
+    </event>
+    <event value="143" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message=" %1: Failed to set MTU for connection %2">
+    </event>
+    <event value="144" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message=" %1: Failed to rename connection %2">
+    </event>
+    <event value="145" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message=" %1: Failed to initialize ITfLangBarMgr interface">
+    </event>
+    <event value="146" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message=" %1: Failed to create instance inheriting ITfLangBarMgr interface">
+    </event>
+    <event value="147" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message=" %1: GetShowFloatingStatus() failed with error %2">
+    </event>
+    <event value="148" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000001" message=" %1: ShowFloating() failed with error %2">
+    </event>
+    <event value="149" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Updating service start type.">
+    </event>
+    <event value="150" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Adding firewall rules">
+    </event>
+    <event value="151" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Configuring user settings (WAU, WER, CEIP and computer name).">
+    </event>
+    <event value="152" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Creating the WmsReserved account and enabling PowerShell remoting.">
+    </event>
+    <event value="153" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Creating the WMS RDS listener.">
+    </event>
+    <event value="154" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Creating the MultiPoint accounts.">
+    </event>
+    <event value="155" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Creating the %1 account and enabling Autologon.">
+    </event>
+    <event value="156" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Enabling the WMS RDS listener.">
+    </event>
+    <event value="157" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Enabling tracing.">
+    </event>
+    <event value="158" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Installing drivers.">
+    </event>
+    <event value="159" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Reset the password for both the WmsControl and WmsReserved accounts.">
+    </event>
+    <event value="160" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Setting shell policies.">
+    </event>
+    <event value="162" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Beginning Disk Protection update">
+    </event>
+    <event value="163" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Completing Disk Protection update">
+    </event>
+    <event value="164" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Updating the system policies.">
+    </event>
+    <event value="165" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Setting user policies.">
+    </event>
+    <event value="166" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Updating the previous RAM amount.">
+    </event>
+    <event value="167" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Updating the hibernate file.">
+    </event>
+    <event value="168" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Removing old dmp files.">
+    </event>
+    <event value="169" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Setting %1 shell registry value to %2.">
+    </event>
+    <event value="170" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Configured USB Redirection policy.">
+    </event>
+    <event value="171" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Created tool shortcuts.">
+    </event>
+    <event value="172" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Updated MS OOBE registry settings.">
+    </event>
+    <event value="173" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Removed Force AutoLogon.">
+    </event>
+    <event value="174" version="0" opcode="0" channel="112" level="4" task="0" keywords="0x2000000000000001" message="Switched to multiple station mode.">
+    </event>
+    <event value="201" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000002" message="%1 failed with hr = %2">
+    </event>
+    <event value="202" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000002" message="%1 successfully finished">
+    </event>
+    <event value="300" version="0" opcode="0" channel="111" level="4" task="0" keywords="0x4000000000000004" message="%1">
+    </event>
+    <event value="401" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while reading the registry key required for Auto Logon of SRC Shell User. The exception is %2.">
+    </event>
+    <event value="402" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 Exception is %2 . The number of Licenses is zero. Please register Client Access Licenses.">
+    </event>
+    <event value="403" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while enumerating stations. The exception is %2.">
+    </event>
+    <event value="404" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while saving the user. The exception is %2.">
+    </event>
+    <event value="405" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while terminating the session (Session Id - %3). The exception is %2.">
+    </event>
+    <event value="406" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while disconnecting the session (Session Id - %3). The exception is %2.">
+    </event>
+    <event value="407" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while installing the Retail Purchase License Key Pack. The exception is %2.">
+    </event>
+    <event value="408" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while installing the Agreement License Key Pack. The exception is %2.">
+    </event>
+    <event value="409" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while installing the Volume License Key Pack. The exception is %2.">
+    </event>
+    <event value="410" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while determining System Mode Text. The exception is %2.">
+    </event>
+    <event value="411" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while rebooting the System. The exception is %2.">
+    </event>
+    <event value="412" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while loading OEM Branding Image. The exception is %2.">
+    </event>
+    <event value="413" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while shutting down the System. The exception is %2.">
+    </event>
+    <event value="414" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while determining User Type Text. The exception is %2.">
+    </event>
+    <event value="415" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An error occurred while creating the user. The exception is %2.">
+    </event>
+    <event value="416" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000010" message="%1 An unexpected error occurred. The exception is %2.">
+    </event>
+    <event value="501" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while creating DHCP Adapters. The exception is %2.">
+    </event>
+    <event value="502" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while configuring Multiple Station settings. The exception is %2.">
+    </event>
+    <event value="503" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while writing to Registry. The exception is %2.">
+    </event>
+    <event value="504" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while creating RDP Listener. The exception is %2.">
+    </event>
+    <event value="505" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while logging Off. The exception is %2.">
+    </event>
+    <event value="506" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while aborting DHCP Adapter creation. The exception is %2.">
+    </event>
+    <event value="507" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while shutting down. The exception is %2.">
+    </event>
+    <event value="508" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while loading OEM Branding Image. The exception is %2.">
+    </event>
+    <event value="509" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while reading from Registry. The exception is %2.">
+    </event>
+    <event value="510" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while cleaning up Registry. The exception is %2.">
+    </event>
+    <event value="511" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while creating a user. The exception is %2.">
+    </event>
+    <event value="512" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 Some of the pre requisites required for installing Windows Multipoint Server could not be found. The exception is %2.">
+    </event>
+    <event value="513" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while printing EULA. The exception is %2.">
+    </event>
+    <event value="514" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred while loading EULA. The exception is %2.">
+    </event>
+    <event value="515" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An unexpected error occurred. The exception is %2.">
+    </event>
+    <event value="516" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when installing drivers. The Win32 error code is %2.">
+    </event>
+    <event value="517" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when uninstalling drivers. The Win32 error code is %2.">
+    </event>
+    <event value="518" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when configuring services. The exception is %2.">
+    </event>
+    <event value="519" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when adding Everyone to Remote Desktop Users group. The exception is %2.">
+    </event>
+    <event value="520" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when enabling ETW tracing. The exception is %2.">
+    </event>
+    <event value="521" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when trying to delete then recreate loopback adapters. The exception is %2.">
+    </event>
+    <event value="522" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred in the threads that delete then recreate loopback adapters.">
+    </event>
+    <event value="523" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000020" message="%1 will be changing the computer name from %2 to %3. It is %4 that the requested computer name is already in use on the network.">
+    </event>
+    <event value="524" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when trying to change the computer name. The Windows error code is %2.">
+    </event>
+    <event value="525" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000020" message="%1 An error occurred when trying to get the computer join status. The Windows error code is %2.">
+    </event>
+    <event value="526" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000020" message="%1 An error occurred when updating firewall rules to allow %2 as an exception. The exception is %3.">
+    </event>
+    <event value="527" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000020" message="%1 An error occurred when installing WmsSvc.exe. The exception is %2.">
+    </event>
+    <event value="528" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000020" message="%1 An error occurred when enabling or disabling Windows Error Reporting. The exception is %2.">
+    </event>
+    <event value="529" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000020" message="%1 An error occurred when enabling or disabling Windows Automatic Update. The exception is %2.">
+    </event>
+    <event value="530" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000020" message="%1 An error occurred when enabling or disabling SQM. The exception is %2.">
+    </event>
+    <event value="531" version="0" opcode="0" channel="110" level="3" task="0" keywords="0x8000000000000020" message="%1 An error occurred when registering WMS DLLs. The exception is %2.">
+    </event>
+    <event value="532" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when upgrading from v1 to v2. The exception is %2.">
+    </event>
+    <event value="533" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when enabling local machine remoting. The exception is %2.">
+    </event>
+    <event value="534" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when update default registry hive for start menu options. The exception is %2.">
+    </event>
+    <event value="535" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when disabling APIPA for the loopback adapter. The exception is %2.">
+    </event>
+    <event value="536" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when enabling Multiple Station Mode. The exception is %2.">
+    </event>
+    <event value="538" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when setting MTU for loopback adapter connections. The exception is %2.">
+    </event>
+    <event value="539" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000020" message="%1 An error occurred when renaming loopback adapter connections. The exception is %2.">
+    </event>
+    <event value="1106" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000008" message="Failed to retrieve user SID. Error &apos;%1&apos;">
+    </event>
+    <event value="1400" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000200" message="Starting user-provided software update program %1.">
+    </event>
+    <event value="1401" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000200" message="User-provided software update program %1 finished. exit code = %2">
+    </event>
+    <event value="1402" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000200" message="Failed to execute custom script %1, error code = %2">
+    </event>
+    <event value="1403" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000200" message="User-provided software udpate program %1 timed out after %2 minutes and was terminated.">
+    </event>
+    <event value="1404" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000200" message="User-provided software update program %1 was not executed because the file permisions allow modification by Users, Everyone, Interactive Users, or Authenticated Users.">
+    </event>
+    <event value="1405" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000200" message="Starting Windows Update.">
+    </event>
+    <event value="1406" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000200" message="Windows Update finished.">
+    </event>
+    <event value="1407" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000200" message="Windows Update did not complete successfully.  View the Windows Update history in the Control Panel for details.">
+    </event>
+    <event value="1408" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000200" message="Disk Protection installed.">
+    </event>
+    <event value="1409" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000200" message="Disk Protection uninstalled.">
+    </event>
+    <event value="1410" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000200" message="Disk Protection enabled.">
+    </event>
+    <event value="1411" version="0" opcode="0" channel="110" level="4" task="0" keywords="0x8000000000000200" message="Disk Protection disabled.">
+    </event>
+    <event value="1412" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000200" message="Disk Protection detected a problem with the cache file.  The cache file was rebuilt and the system was restarted.">
+    </event>
+    <event value="1413" version="0" opcode="0" channel="110" level="2" task="0" keywords="0x8000000000000200" message="User %1 was logged off automatically because the system was installing scheduled software updates.">
+    </event>
+  </events>
+</provider>

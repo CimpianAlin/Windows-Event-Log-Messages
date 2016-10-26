@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Crypto-BCrypt" guid="c7e089ac-ba2a-11e0-9af7-68384824019b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=bcrypt.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\bcrypt.dll" messageFileName="C:\Windows\System32\bcrypt.dll" message="Microsoft-Windows-Crypto-BCRYPT" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Crypto-BCRYPT/Analytic" id="16" flags="0" message="Microsoft-Windows-Crypto-BCrypt/Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Open Provider Failure. 
+
+ Cryptographic Parameters:
+ 	Provider Name:	%1
+ 	Algorithm Name:	%2
+ 	Flags:	%3
+ Failure Information:
+ 	Return Code:	%4
+ 	Failure Type:	%5">
+    </event>
+  </events>
+</provider>

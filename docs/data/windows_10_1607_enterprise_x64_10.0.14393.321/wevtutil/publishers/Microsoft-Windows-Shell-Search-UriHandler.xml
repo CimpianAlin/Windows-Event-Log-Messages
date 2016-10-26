@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Shell-Search-UriHandler" guid="606c6fe0-a9dc-4a9d-bdea-830aff6716e7" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.321&amp;FileName=Windows.UI.Search.dll&amp;FileVer=10.0.14393.321" resourceFileName="C:\Windows\system32\Windows.UI.Search.dll" messageFileName="C:\Windows\system32\Windows.UI.Search.dll" message="Microsoft-Shell-Search-UriHandler" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Shell-Search-UriHandler" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Invocation" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Parse" value="200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ParseParameter" value="300" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SearchInvocation" value="400" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000000000000000" message="Search Uri handler has been invoked for Uri %1.">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000000" message="Search Uri handler has finished invocation for Uri %1 with a result of %2.">
+    </event>
+    <event value="201" version="0" opcode="1" channel="16" level="4" task="200" keywords="0x8000000000000000" message="Search Uri handler has started parsing Uri %1.">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="4" task="200" keywords="0x8000000000000000" message="Search Uri handler has found Uri scheme %1.">
+    </event>
+    <event value="203" version="0" opcode="0" channel="16" level="4" task="200" keywords="0x8000000000000000" message="Search Uri handler has found Uri search view %1.">
+    </event>
+    <event value="204" version="0" opcode="2" channel="16" level="4" task="200" keywords="0x8000000000000000" message="Search Uri handler has finished parsing Uri %1 with a result of %2.">
+    </event>
+    <event value="301" version="0" opcode="1" channel="16" level="4" task="300" keywords="0x8000000000000000" message="Search Uri handler has started parsing parameter %1.">
+    </event>
+    <event value="302" version="0" opcode="0" channel="16" level="4" task="300" keywords="0x8000000000000000" message="Search Uri handler has located the parameter %1 in the Uri with a vale of %2.">
+    </event>
+    <event value="303" version="0" opcode="0" channel="16" level="4" task="300" keywords="0x8000000000000000" message="Search Uri handler is using a default value of %2 for the parameter %1 in the Uri.">
+    </event>
+    <event value="304" version="0" opcode="0" channel="16" level="4" task="300" keywords="0x8000000000000000" message="Search Uri handler failed validation for property %1 with original value of %2 with a result of %3.">
+    </event>
+    <event value="305" version="0" opcode="0" channel="16" level="4" task="300" keywords="0x8000000000000000" message="Search Uri handler has morphed the value of property %1 with original value of %2 to %3">
+    </event>
+    <event value="306" version="0" opcode="2" channel="16" level="4" task="300" keywords="0x8000000000000000" message="Search Uri handler has finished parsing Uri %1 with a result of %2.">
+    </event>
+    <event value="401" version="0" opcode="1" channel="16" level="4" task="400" keywords="0x8000000000000000" message="Search Uri handler is beginning search invocation.">
+    </event>
+    <event value="402" version="0" opcode="2" channel="16" level="4" task="400" keywords="0x8000000000000000" message="Search Uri handler is finsiehd invocation of search with a result of %1.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Sensors" guid="d8900e18-36cb-4548-966f-13f068d1f78e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=SensorPerformanceEvents.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\SensorPerformanceEvents.dll" messageFileName="C:\Windows\system32\SensorPerformanceEvents.dll" message="Microsoft-Windows-Sensors" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Sensors/Performance" id="16" flags="0" message="Performance">
+    </channel>
+    <channel name="Microsoft-Windows-Sensors/Debug" id="17" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SensPerf_Task_DeviceStartup" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_EventLatency" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_SetProperties" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_GetPropertyValues" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_GetDataFields" value="1005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_PostDataEvent" value="1006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_PreAsyncRead" value="1007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_RaiseDataEvent" value="1008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_SetState" value="1009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_PowerOn" value="1010" eventGUID="00000000-0000-0000-0000-000000000000" message="Device is being powered up">
+    </task>
+    <task name="SensPerf_Task_PowerOff" value="1011" eventGUID="00000000-0000-0000-0000-000000000000" message="Device is being powered down">
+    </task>
+    <task name="SensPerf_Task_OnDataUpdated" value="1100" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service data updated event">
+    </task>
+    <task name="SensPerf_Task_CollectData" value="1101" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service results from querying a sensor">
+    </task>
+    <task name="SensPerf_Task_Signal" value="1102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_QuadrantAngle" value="1103" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service timer queue callback for orientation, about to write quadrant angle to aggregated sensor">
+    </task>
+    <task name="SensPerf_Task_WorkingSet" value="1104" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service periodic report on memory usage">
+    </task>
+    <task name="SensPerf_Task_CPUUsage" value="1105" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service periodic report on cpu usage">
+    </task>
+    <task name="SensPerf_Task_RotationProcessData_State" value="1106" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service processing sensor data for orientation, sensor state used in processing data">
+    </task>
+    <task name="SensPerf_Task_RotationProcessData_DataRetrieved" value="1107" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service processing sensor data for orientation, reading sensor data successful">
+    </task>
+    <task name="SensPerf_Task_RotationProcessData_PitchAngleTest" value="1108" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service processing sensor data for orientation, pitch angle test result">
+    </task>
+    <task name="SensPerf_Task_RotationProcessData_ThetaCalculation" value="1109" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service processing sensor data for orientation, screen orientation result">
+    </task>
+    <task name="SensPerf_Task_RotationProcessData_ThetaNormalization" value="1110" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service processing sensor data for orientation, theta negative so added 360">
+    </task>
+    <task name="SensPerf_Task_RotationProcessData_QuadrantChangeTest" value="1111" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service processing sensor data for orientation, testing if there was a quadrant change">
+    </task>
+    <task name="SensPerf_Task_RotationProcessData_TimerQueueStatus" value="1112" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service processing sensor data for orientation, status and action taken on timer queue">
+    </task>
+    <task name="SensPerf_Task_RotationTimerCallback_QuadrantChangeTest" value="1113" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service timer queue callback for orientation, testing if there was a quadrant change">
+    </task>
+    <task name="SensPerf_Task_RotationTimerCallback_AngularThresholdTest" value="1114" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service timer queue callback for orientation, testing if the screen rotated past angular threshold into next quadrant">
+    </task>
+    <task name="SensPerf_Task_SetQuadrantAngleInAggregatedSensor" value="1119" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service setting quadrant angle in aggregated sensor">
+    </task>
+    <task name="SensPerf_Task_OnStateChanged" value="1120" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service state changed event">
+    </task>
+    <task name="SensPerf_Task_SetStateInAggregatedSensor" value="1121" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Service setting sensor state in aggregated sensor">
+    </task>
+    <task name="SensPerf_Task_SensorClassExtension_Initialize" value="1201" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Class Extension Initialization">
+    </task>
+    <task name="SensPerf_Task_SensorClassExtension_Uninitialize" value="1202" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Class Extension Uninitialization">
+    </task>
+    <task name="SensPerf_Task_SensorClassExtension_ProcessIoControl" value="1203" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Class Extension ProcessIoControl Handler">
+    </task>
+    <task name="SensPerf_Task_SensorClassExtension_PostEvent" value="1204" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Class Extension PostEvent Handler">
+    </task>
+    <task name="SensPerf_Task_SensorClassExtension_ClientInformation" value="1205" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Class Extension Client Information event">
+    </task>
+    <task name="SensPerf_Task_SensorAPI_Fire_OnDataUpdated" value="1301" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor API call to fire ISensorEvents::OnDataUpdated event">
+    </task>
+    <task name="SensPerf_Task_SensorAPI_GetData" value="1302" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor API call to get sensor data report">
+    </task>
+    <task name="SensPerf_Task_SensorAPI_GetProperty" value="1303" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor API call to get a sensor property value">
+    </task>
+    <task name="SensPerf_Task_SensorAPI_GetProperties" value="1304" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor API call to get sensor property values">
+    </task>
+    <task name="SensPerf_Task_SensorAPI_SetProperties" value="1305" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor API call to set sensor property values">
+    </task>
+    <task name="SensPerf_Task_SensorAPI_Fire_OnStateChanged" value="1306" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor API call to fire ISensorEvents::OnStateChanged event">
+    </task>
+    <task name="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" value="1501" eventGUID="00000000-0000-0000-0000-000000000000" message="Validation failure in HID sensor report descriptor">
+    </task>
+    <task name="SensPerf_Task_SensorsHIDClassDriver_FeatureReport_Failure" value="1502" eventGUID="00000000-0000-0000-0000-000000000000" message="HID sensor feature report failure">
+    </task>
+    <task name="SensPerf_Task_SensorsHIDClassDriver_InputReport_Failure" value="1503" eventGUID="00000000-0000-0000-0000-000000000000" message="HID sensor input report failure">
+    </task>
+    <task name="SensPerf_Task_SensorsHIDClassDriver_DeviceReconnect" value="1504" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SensPerf_Task_LocationProvider_ConsentPrompt" value="2001" eventGUID="00000000-0000-0000-0000-000000000000" message="Perf Markers for time between starting Location API and consent prompt appears">
+    </task>
+    <task name="SensPerf_Task_SensorPlatform_GenericMessage" value="3001" eventGUID="00000000-0000-0000-0000-000000000000" message="Informational Perf Marker for use in outputting a generic message">
+    </task>
+    <task name="SensPerf_Task_SensorPlatform_DataEvent" value="3002" eventGUID="00000000-0000-0000-0000-000000000000" message="Sensor Platform Data Event">
+    </task>
+    <task name="SensPerf_Task_ScreenAutoRotation_e2e_Cancel" value="10001" eventGUID="00000000-0000-0000-0000-000000000000" message="PerfTrack measurement of auto-rotation">
+    </task>
+    <task name="SensPerf_Task_ScreenAutoRotation_DCON" value="10002" eventGUID="00000000-0000-0000-0000-000000000000" message="PerfTrack measurement of auto-rotation">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="SensPerf" mask="1" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="1001" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="16" level="4" task="1001" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1003" version="0" opcode="1" channel="16" level="4" task="1002" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1004" version="0" opcode="2" channel="16" level="4" task="1002" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1005" version="0" opcode="1" channel="16" level="4" task="1003" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1006" version="0" opcode="2" channel="16" level="4" task="1003" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1007" version="0" opcode="1" channel="16" level="4" task="1004" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1008" version="0" opcode="2" channel="16" level="4" task="1004" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1009" version="0" opcode="1" channel="16" level="4" task="1005" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1010" version="0" opcode="2" channel="16" level="4" task="1005" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1011" version="0" opcode="1" channel="16" level="4" task="1006" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1012" version="0" opcode="2" channel="16" level="4" task="1006" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1013" version="0" opcode="1" channel="16" level="4" task="1007" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1014" version="0" opcode="2" channel="16" level="4" task="1007" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="1008" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1016" version="0" opcode="1" channel="16" level="4" task="1009" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1017" version="0" opcode="2" channel="16" level="4" task="1009" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="4" task="1010" keywords="0x8000000000000001" message="Device is being powered up">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="4" task="1011" keywords="0x8000000000000001" message="Device is being powered down">
+    </event>
+    <event value="1100" version="0" opcode="1" channel="16" level="4" task="1100" keywords="0x8000000000000001" message="Sensor Service received a data updated event">
+    </event>
+    <event value="1101" version="0" opcode="2" channel="16" level="4" task="1100" keywords="0x8000000000000001" message="Sensor Service set data and starting to process data">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="16" level="4" task="1104" keywords="0x8000000000000001" message="Sensor Service periodic report on memory usage">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="16" level="4" task="1105" keywords="0x8000000000000001" message="Sensor Service periodic report on cpu usage">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="17" level="4" task="1101" keywords="0x4000000000000001" message="Sensor Service results from querying a sensor">
+    </event>
+    <event value="1105" version="0" opcode="0" channel="17" level="4" task="1103" keywords="0x4000000000000001" message="Sensor Service timer queue callback for orientation, about to write quadrant angle to aggregated sensor">
+    </event>
+    <event value="1106" version="0" opcode="0" channel="17" level="4" task="1106" keywords="0x4000000000000001" message="Sensor Service processing sensor data for orientation, sensor state used in processing data">
+    </event>
+    <event value="1107" version="0" opcode="0" channel="17" level="4" task="1107" keywords="0x4000000000000001" message="Sensor Service processing sensor data for orientation, reading sensor data successful">
+    </event>
+    <event value="1108" version="0" opcode="0" channel="17" level="4" task="1108" keywords="0x4000000000000001" message="Sensor Service processing sensor data for orientation, pitch angle test result">
+    </event>
+    <event value="1109" version="0" opcode="0" channel="17" level="4" task="1109" keywords="0x4000000000000001" message="Sensor Service processing sensor data for orientation, screen orientation result">
+    </event>
+    <event value="1110" version="0" opcode="0" channel="17" level="4" task="1110" keywords="0x4000000000000001" message="Sensor Service processing sensor data for orientation, theta negative so added 360">
+    </event>
+    <event value="1111" version="0" opcode="0" channel="17" level="4" task="1111" keywords="0x4000000000000001" message="Sensor Service processing sensor data for orientation, testing if there was a quadrant change">
+    </event>
+    <event value="1112" version="0" opcode="0" channel="17" level="4" task="1112" keywords="0x4000000000000001" message="Sensor Service processing sensor data for orientation, status and action taken on timer queue">
+    </event>
+    <event value="1113" version="0" opcode="0" channel="17" level="4" task="1113" keywords="0x4000000000000001" message="Sensor Service timer queue callback for orientation, testing if there was a quadrant change">
+    </event>
+    <event value="1114" version="0" opcode="0" channel="17" level="4" task="1114" keywords="0x4000000000000001" message="Sensor Service timer queue callback for orientation, testing if the screen rotated past angular threshold into next quadrant">
+    </event>
+    <event value="1119" version="0" opcode="1" channel="16" level="4" task="1119" keywords="0x8000000000000001" message="Sensor Service setting quadrant angle in aggregated sensor">
+    </event>
+    <event value="1120" version="0" opcode="2" channel="16" level="4" task="1119" keywords="0x8000000000000001" message="Sensor Service setting quadrant angle in aggregated sensor">
+    </event>
+    <event value="1121" version="0" opcode="1" channel="16" level="4" task="1120" keywords="0x8000000000000001" message="Sensor Service received a state changed event">
+    </event>
+    <event value="1122" version="0" opcode="2" channel="16" level="4" task="1120" keywords="0x8000000000000001" message="Sensor Service setting sensor state and starting to process data">
+    </event>
+    <event value="1123" version="0" opcode="1" channel="16" level="4" task="1121" keywords="0x8000000000000001" message="Sensor Service setting sensor state in aggregated sensor">
+    </event>
+    <event value="1124" version="0" opcode="2" channel="16" level="4" task="1121" keywords="0x8000000000000001" message="Sensor Service setting sensor state in aggregated sensor">
+    </event>
+    <event value="1201" version="0" opcode="1" channel="16" level="4" task="1201" keywords="0x8000000000000001" message="Sensor Class Extension Initialization">
+    </event>
+    <event value="1202" version="0" opcode="2" channel="16" level="4" task="1201" keywords="0x8000000000000001" message="Sensor Class Extension Initialization">
+    </event>
+    <event value="1203" version="0" opcode="1" channel="16" level="4" task="1202" keywords="0x8000000000000001" message="Sensor Class Extension Uninitialization">
+    </event>
+    <event value="1204" version="0" opcode="2" channel="16" level="4" task="1202" keywords="0x8000000000000001" message="Sensor Class Extension Uninitialization">
+    </event>
+    <event value="1205" version="0" opcode="1" channel="16" level="4" task="1203" keywords="0x8000000000000001" message="Sensor Class Extension ProcessIoControl Handler">
+    </event>
+    <event value="1206" version="0" opcode="2" channel="16" level="4" task="1203" keywords="0x8000000000000001" message="Sensor Class Extension ProcessIoControl Handler">
+    </event>
+    <event value="1207" version="0" opcode="1" channel="16" level="4" task="1204" keywords="0x8000000000000001" message="Sensor Class Extension PostEvent Handler">
+    </event>
+    <event value="1208" version="0" opcode="2" channel="16" level="4" task="1204" keywords="0x8000000000000001" message="Sensor Class Extension PostEvent Handler">
+    </event>
+    <event value="1209" version="0" opcode="0" channel="16" level="4" task="1205" keywords="0x8000000000000001" message="Sensor Class Extension Client Information event">
+    </event>
+    <event value="1301" version="0" opcode="1" channel="16" level="4" task="1301" keywords="0x8000000000000001" message="Sensor API call to fire ISensorEvents::OnDataUpdated event">
+    </event>
+    <event value="1302" version="0" opcode="2" channel="16" level="4" task="1301" keywords="0x8000000000000001" message="Sensor API call to fire ISensorEvents::OnDataUpdated event">
+    </event>
+    <event value="1303" version="0" opcode="1" channel="16" level="4" task="1302" keywords="0x8000000000000001" message="Sensor API call to get sensor data report">
+    </event>
+    <event value="1304" version="0" opcode="2" channel="16" level="4" task="1302" keywords="0x8000000000000001" message="Sensor API call to get sensor data report">
+    </event>
+    <event value="1305" version="0" opcode="1" channel="16" level="4" task="1303" keywords="0x8000000000000001" message="Sensor API call to get a sensor property value">
+    </event>
+    <event value="1306" version="0" opcode="2" channel="16" level="4" task="1303" keywords="0x8000000000000001" message="Sensor API call to get a sensor property value">
+    </event>
+    <event value="1307" version="0" opcode="1" channel="16" level="4" task="1304" keywords="0x8000000000000001" message="Sensor API call to get sensor property values">
+    </event>
+    <event value="1308" version="0" opcode="2" channel="16" level="4" task="1304" keywords="0x8000000000000001" message="Sensor API call to get sensor property values">
+    </event>
+    <event value="1309" version="0" opcode="1" channel="16" level="4" task="1305" keywords="0x8000000000000001" message="Sensor API call to set sensor property values">
+    </event>
+    <event value="1310" version="0" opcode="2" channel="16" level="4" task="1305" keywords="0x8000000000000001" message="Sensor API call to set sensor property values">
+    </event>
+    <event value="1311" version="0" opcode="1" channel="16" level="4" task="1306" keywords="0x8000000000000001" message="Sensor API call to fire ISensorEvents::OnStateChanged event">
+    </event>
+    <event value="1312" version="0" opcode="2" channel="16" level="4" task="1306" keywords="0x8000000000000001" message="Sensor API call to fire ISensorEvents::OnStateChanged event">
+    </event>
+    <event value="1501" version="0" opcode="0" channel="16" level="2" task="1501" keywords="0x8000000000000001" message="Connection type missing in HID sensor feature report">
+    </event>
+    <event value="1502" version="0" opcode="0" channel="16" level="2" task="1501" keywords="0x8000000000000001" message="Reporting state missing in HID sensor feature report">
+    </event>
+    <event value="1503" version="0" opcode="0" channel="16" level="2" task="1501" keywords="0x8000000000000001" message="Report interval missing in HID sensor feature report">
+    </event>
+    <event value="1504" version="0" opcode="0" channel="16" level="2" task="1501" keywords="0x8000000000000001" message="Change sensitivity missing in HID sensor feature report">
+    </event>
+    <event value="1505" version="0" opcode="0" channel="16" level="2" task="1501" keywords="0x8000000000000001" message="Deprecated field used in HID sensor feature report">
+    </event>
+    <event value="1506" version="0" opcode="0" channel="16" level="2" task="1501" keywords="0x8000000000000001" message="Redundant field used in HID sensor feature report">
+    </event>
+    <event value="1507" version="0" opcode="0" channel="16" level="2" task="1501" keywords="0x8000000000000001" message="Deprecated field used in HID sensor input report">
+    </event>
+    <event value="1508" version="0" opcode="0" channel="16" level="2" task="1501" keywords="0x8000000000000001" message="Redundant field used in HID sensor input report">
+    </event>
+    <event value="1509" version="0" opcode="0" channel="16" level="2" task="1502" keywords="0x8000000000000001" message="Failed to set HID sensor feature report">
+    </event>
+    <event value="1510" version="0" opcode="0" channel="16" level="2" task="1503" keywords="0x8000000000000001" message="Failed to get synchronous HID sensor input report">
+    </event>
+    <event value="1511" version="0" opcode="0" channel="16" level="2" task="1503" keywords="0x8000000000000001" message="Failed to process synchronous HID sensor input report">
+    </event>
+    <event value="1512" version="0" opcode="0" channel="16" level="2" task="1504" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="2001" version="0" opcode="1" channel="16" level="4" task="2001" keywords="0x8000000000000001" message="Perf Markers for time between starting Location API and consent prompt appears">
+    </event>
+    <event value="2002" version="0" opcode="2" channel="16" level="4" task="2001" keywords="0x8000000000000001" message="Perf Markers for time between starting Location API and consent prompt appears">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="16" level="4" task="3001" keywords="0x8000000000000001" message="Informational Perf Marker for use in outputting a generic message">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="16" level="4" task="3002" keywords="0x8000000000000001" message="Sensor Platform Data Event">
+    </event>
+    <event value="10001" version="0" opcode="1" channel="16" level="4" task="10001" keywords="0x8000000000000001" message="PerfTrack measurement of auto-rotation">
+    </event>
+    <event value="10002" version="0" opcode="2" channel="16" level="4" task="10001" keywords="0x8000000000000001" message="PerfTrack measurement of auto-rotation">
+    </event>
+    <event value="10003" version="0" opcode="0" channel="16" level="4" task="10002" keywords="0x8001000000000001" message="PerfTrack measurement of auto-rotation">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DataCollectionService" guid="3b416199-2c3b-4c28-98b8-f7165f5936f0" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=dcpsvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\dcpsvc.dll" messageFileName="C:\Windows\system32\dcpsvc.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CrowdsourcingService_PrepareUpload" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CrowdsourcingService_UploadFiles" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CrowdsourcingService_ReadDataFile" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CrowdsourcingService_PostDataFile" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CrowdsourcingService_RecieveData" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="Error">
+    </keyword>
+    <keyword name="Performance" mask="2" message="Performance">
+    </keyword>
+    <keyword name="Verbose" mask="4" message="Verbose">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="10" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="DCP: Tag:[%1], Error=[%2]
+">
+    </event>
+    <event value="11" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="DCP: Tag:[%1], hr=[%2]
+">
+    </event>
+    <event value="12" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1" message="DCP: Tag:[%1], Error=[%2]
+">
+    </event>
+    <event value="13" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1" message="DCP: Tag:[%1], hr=[%2]
+">
+    </event>
+    <event value="14" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="DCP: Tag:[%1]
+">
+    </event>
+    <event value="15" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="DCP: Tag:[%1], n=[%2]
+">
+    </event>
+    <event value="16" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="DCP: Tag:[%1], str=[%2]
+">
+    </event>
+    <event value="17" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="DCP: Tag:[%1], str=[%2], n=[%3]
+">
+    </event>
+    <event value="18" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="DCP: Tag:[%1], str1=[%2], str2=[%3]
+">
+    </event>
+    <event value="19" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="DCP: Tag:[%1], Error=[%2], str=[%3]
+">
+    </event>
+    <event value="20" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="DCP: Tag:[%1], Error=[%2], n=[%3]
+">
+    </event>
+    <event value="100" version="0" opcode="0" channel="123" level="4" task="0" keywords="0x1000000000000004" message="Enter uploader thread">
+    </event>
+    <event value="101" version="0" opcode="0" channel="123" level="4" task="0" keywords="0x1000000000000004" message="Exit uploader thread">
+    </event>
+    <event value="102" version="0" opcode="0" channel="123" level="4" task="0" keywords="0x1000000000000004" message="Enter Drainer thread">
+    </event>
+    <event value="103" version="0" opcode="0" channel="123" level="4" task="0" keywords="0x1000000000000004" message="Exit Drainer thread">
+    </event>
+    <event value="104" version="0" opcode="0" channel="123" level="4" task="0" keywords="0x1000000000000004" message="Upload session result. Error=%1, FailureReason=%2
+">
+    </event>
+    <event value="105" version="0" opcode="0" channel="123" level="5" task="0" keywords="0x1000000000000004" message="Uploader WinINet connect. Error=%1, ServerName=%2
+">
+    </event>
+    <event value="106" version="0" opcode="0" channel="123" level="2" task="0" keywords="0x1000000000000001" message="Invalid registry setting for %1
+">
+    </event>
+    <event value="120" version="0" opcode="1" channel="123" level="4" task="1" keywords="0x1000000000000002" message="CrowdsourcingService PrepareUpload Start">
+    </event>
+    <event value="121" version="0" opcode="2" channel="123" level="4" task="1" keywords="0x1000000000000002" message="CrowdsourcingService PrepareUpload Stop">
+    </event>
+    <event value="130" version="0" opcode="1" channel="123" level="4" task="2" keywords="0x1000000000000002" message="CrowdsourcingService UploadFiles Start. TriggerSource=%1
+">
+    </event>
+    <event value="131" version="0" opcode="2" channel="123" level="4" task="2" keywords="0x1000000000000002" message="CrowdsourcingService UploadFiles Stop. NumFilesUploaded=%1
+">
+    </event>
+    <event value="132" version="0" opcode="1" channel="123" level="5" task="3" keywords="0x1000000000000002" message="CrowdsourcingService ReadDataFileStart Start. HttpObjectName=%1, FileFullpath=%2
+">
+    </event>
+    <event value="133" version="0" opcode="2" channel="123" level="5" task="3" keywords="0x1000000000000002" message="CrowdsourcingService ReadDataFileStart Stop. Error=%1, FileSize=%2, BytesRead=%3
+">
+    </event>
+    <event value="134" version="0" opcode="1" channel="123" level="5" task="4" keywords="0x1000000000000002" message="CrowdsourcingService PostDataFileStart Start. HttpObjectName=%1, HeaderLength=%2, BodyLength=%3, Headers=%4
+">
+    </event>
+    <event value="135" version="0" opcode="2" channel="123" level="5" task="4" keywords="0x1000000000000002" message="CrowdsourcingService PostDataFileStop  Stop. Error=%1, HttpStatusCode=%2
+">
+    </event>
+    <event value="136" version="0" opcode="1" channel="123" level="5" task="5" keywords="0x1000000000000002" message="CrowdsourcingService Original SessionId=%1, PayloadSize=%2
+">
+    </event>
+  </events>
+</provider>

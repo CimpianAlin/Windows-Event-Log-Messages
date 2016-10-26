@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Security-Vault" guid="e6c92fb8-89d7-4d1f-be46-d56e59804783" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=vaultcli.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\vaultcli.dll" messageFileName="C:\Windows\System32\vaultcli.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Security-Vault/Performance" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CATEGORY_PERF" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Vault Performance">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultAdd start">
+    </event>
+    <event value="101" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultAdd stop">
+    </event>
+    <event value="102" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultRemove start">
+    </event>
+    <event value="103" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultRemove stop">
+    </event>
+    <event value="104" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultRetrieve start">
+    </event>
+    <event value="105" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultRetrieve stop">
+    </event>
+    <event value="106" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultFindAllByResource start">
+    </event>
+    <event value="107" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultFindAllByResource stop">
+    </event>
+    <event value="108" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultFindAllByUserName start">
+    </event>
+    <event value="109" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultFindAllByUserName stop">
+    </event>
+    <event value="110" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultRetrieveAll start">
+    </event>
+    <event value="111" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CPasswordVaultRetrieveAll stop">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-AppV-Client-StreamingUX" guid="28cb46c7-4003-4e50-8bd9-442086762d12" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=appvetwstreamingux.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\appvetwstreamingux.dll" messageFileName="C:\Windows\system32\appvetwstreamingux.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-AppV-Client-Streamingux/Debug" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An attempt to create the streaming UX process failed. Path = %1 ErrorCode = %2">
+    </event>
+    <event value="2" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The streaming ux process was created successfully. Path = %1 Pid = %2">
+    </event>
+    <event value="3" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Stopping the streaming ux process. Pid = %1">
+    </event>
+    <event value="4" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An attempt to stop the streaming ux process failed. Pid = %1 ErrorCode = %2">
+    </event>
+    <event value="5" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The streaming ux process is being created with CreateProcess. Path = %1">
+    </event>
+    <event value="6" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The streaming ux process is being created with CreateProcessAsUser. Path = %1">
+    </event>
+    <event value="9" version="22" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An attempt to stop the data retrieval thread failed. ErrorCode = %1">
+    </event>
+    <event value="9" version="23" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Polling performance counter data has stopped due to all packages primary feature block already being fully loaded.">
+    </event>
+    <event value="9" version="24" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Polling performance counter data has stopped due to data being unchanged in recent polls.">
+    </event>
+    <event value="20" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="An attempt to create the data retrieval stop event failed. ErrorCode = %1">
+    </event>
+    <event value="21" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An attempt to create the thread for performance counter data retrieval failed. ErrorCode = %1">
+    </event>
+    <event value="40" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The current performance counter query state is invalid. ErrorCode = %1">
+    </event>
+    <event value="41" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An attempt to open a live performance counter query failed. ErrorCode = %1">
+    </event>
+    <event value="42" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An attempt to add a performance counter to the query failed. CounterPath = %1 ErrorCode = %2">
+    </event>
+    <event value="43" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An attempt to collect query data failed. ErrorCode = %1">
+    </event>
+    <event value="44" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An attempt to get the raw counter value failed. ErrorCode = %1">
+    </event>
+    <event value="45" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="An attempt to get the formatted counter values failed. ErrorCode = %1">
+    </event>
+    <event value="60" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Package with ID %1 and versionId %2 is being loaded.">
+    </event>
+    <event value="61" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Package with ID %1 and versionId %2 percentage of FB1 downloaded is now %3.">
+    </event>
+    <event value="80" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An attempt to launch the process is the current user&apos;s sesssion failed. ErrorCode = %1">
+    </event>
+    <event value="100" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="An instance of AppVStreamingUX.exe is already running for this user.">
+    </event>
+    <event value="101" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="AppVStreamingUX.exe was unable to register itself for application restart. ErrorCode = %1">
+    </event>
+    <event value="102" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="An attempt to set the appropriate security on the AppVStreamingUX mutex failed. Exception: %1">
+    </event>
+    <event value="120" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Deimpersonation for data retrieval failed. Streaming UX notifications are inactive. ErrorCode = %1">
+    </event>
+    <event value="121" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Reimpersonation for data retrieval failed. Streaming UX notifications are inactive. ErrorCode = %1">
+    </event>
+    <event value="122" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An attempt to start data retrieval failed. Streaming UX notifications are inactive. ErrorCode = %1">
+    </event>
+    <event value="123" version="22" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Data retrieval for performance counter data was started successfully.">
+    </event>
+    <event value="140" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="AppVClientUX.exe failed to launch from the streaming ux.">
+    </event>
+    <event value="150" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Publishing refresh status changed:
+ Server: %1
+ Global: %2
+ Packages: Total %3, Succeeded %4, Failed %5
+ Groups: Total %6, Succeeded %7, Failed %8.">
+    </event>
+  </events>
+</provider>

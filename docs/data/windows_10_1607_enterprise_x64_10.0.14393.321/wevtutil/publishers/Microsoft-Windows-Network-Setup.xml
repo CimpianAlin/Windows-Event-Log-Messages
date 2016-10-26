@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Network-Setup" guid="a111f1c2-5923-47c0-9a68-d0bafb577901" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=NetSetupSvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\NetSetupSvc.dll" messageFileName="C:\Windows\system32\NetSetupSvc.dll" message="Microsoft-Windows-Network-Setup" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Network-Setup/Diagnostic" id="16" flags="0" message="Microsoft-Windows-Network-Setup/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Service" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Run service">
+    </task>
+    <task name="Transaction" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Transaction">
+    </task>
+    <task name="PublicApi" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="External API">
+    </task>
+    <task name="PluginApi" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Plugin callback">
+    </task>
+    <task name="CalculateBindings" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Calculate bindings">
+    </task>
+    <task name="Commit" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Commit changes">
+    </task>
+    <task name="Operation" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Operation">
+    </task>
+    <task name="LegacyApi" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="INetCfg API">
+    </task>
+    <task name="LegacyPlugin" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="INetCfg Notify Object">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Network Setup service is starting">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Network Setup service has started">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="The Network Setup service failed to start with error %1">
+    </event>
+    <event value="110" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Network Setup service will stop due to inactivity">
+    </event>
+    <event value="111" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Network Setup service will stop due to a user request">
+    </event>
+    <event value="112" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Network Setup service is stopping">
+    </event>
+    <event value="113" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Network Setup service has stopped">
+    </event>
+    <event value="200" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="A new transaction has started">
+    </event>
+    <event value="201" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="A transaction has been closed">
+    </event>
+    <event value="202" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000000" message="Network Setup has begun calculating new driver bindings">
+    </event>
+    <event value="203" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000000" message="Network Setup has finished calculating new driver bindings">
+    </event>
+    <event value="204" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Network Setup has begun committing changes to the registry">
+    </event>
+    <event value="205" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Network Setup has finished committing changes to the registry">
+    </event>
+    <event value="300" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Begin API %2 on transaction %1">
+    </event>
+    <event value="301" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000000" message="End API %2 on transaction %1">
+    </event>
+    <event value="400" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Begin calling into plugin %3">
+    </event>
+    <event value="401" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000000" message="End calling into plugin">
+    </event>
+    <event value="500" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000000" message="Begin operation %2 on %3 in transaction %1: %4 on %5:%6">
+    </event>
+    <event value="501" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000000" message="Operation %1 ended with code %2">
+    </event>
+    <event value="600" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000000" message="Begin API %1">
+    </event>
+    <event value="601" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000000" message="End API with status code %1">
+    </event>
+    <event value="700" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8000000000000000" message="Invoking API %2 on Notify Object for %1">
+    </event>
+    <event value="701" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8000000000000000" message="The Notify Object returned with status: %1">
+    </event>
+    <event value="702" version="0" opcode="2" channel="16" level="3" task="9" keywords="0x8000000000000000" message="An error occurred while invoking the Notify Object.  The call was aborted with status: %1.">
+    </event>
+  </events>
+</provider>

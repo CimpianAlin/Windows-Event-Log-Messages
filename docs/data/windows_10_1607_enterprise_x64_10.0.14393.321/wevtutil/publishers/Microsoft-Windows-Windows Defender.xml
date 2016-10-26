@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Windows Defender" guid="11cd958a-c507-4ef3-b3f2-5fd9dfbd2c78" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=4.10.14393.0&amp;FileName=MpEvMsg.dll&amp;FileVer=4.10.14393.0" resourceFileName="C:\Program Files\Windows Defender\MpEvMsg.dll" parameterFileName="C:\Program Files\Windows Defender\MpEvMsg.dll" messageFileName="C:\Program Files\Windows Defender\MpEvMsg.dll" message="Microsoft-Windows-Windows Defender" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Windows Defender/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Windows Defender/WHC" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="0" channel="17" level="0" task="0" keywords="0x4000000000000000" message="Windows Defender state updated to %1.">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 scan has started.
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+ 	Scan Resources: %11
+ 	User: %8\%9">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 scan has finished.
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+ 	User: %8\%9
+ 	Scan Time: %11:%12:%13">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1 scan has been stopped before completion.
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+  	User: %8\%9">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 scan has been paused.
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+ 	User: %8\%9">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 scan has resumed.
+ 	Scan ID: %3
+  	Scan Type: %5
+ 	Scan Parameters: %7
+ 	User: %8\%9">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 scan has encountered an error and terminated.
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+ 	User: %8\%9
+ 	Error Code: %11
+ 	Error description: %12">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1 has detected malware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	Name: %11
+ 	ID: %12
+ 	Severity: %25
+ 	Category: %26
+ 	Path Found: %16
+ 	Detection Type: %22
+ 	Detection Source: %5
+ 	Status: %20
+ 	User: %8\%9
+ 	Process Name: %7
+ 	Signature Version: %27
+ 	Engine Version: %28">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity: %25
+ 	Category: %26
+ 	Action: %20
+ 	Status: %7
+ 	Signature Version: %27
+ 	Engine Version: %28">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error when taking action on malware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity: %25
+ 	Category: %26
+ 	Path: %16
+ 	Action: %20
+ 	Error Code: %21
+ 	Error description: %22
+ 	Status: %7
+ 	Signature Version: %27
+ 	Engine Version: %28">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 has restored an item from quarantine.
+ For more information please see the following:
+%15
+ 	Name: %11
+ 	ID: %12
+ 	Severity: %25
+ 	Category: %26
+ 	User: %8\%9
+ 	Signature Version: %27
+ 	Engine Version: %28">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to restore an item from quarantine.
+ For more information please see the following:
+%15
+ 	Name: %11
+ 	ID: %12
+ 	Severity: %25
+ 	Category: %26
+ 	User: %8\%9
+ 	Error Code: %3
+ 	Error description: %4
+ 	Signature Version: %27
+ 	Engine Version: %28">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 has deleted an item from quarantine.
+ For more information please see the following:
+%15
+ 	Name: %11
+ 	ID: %12
+ 	Severity: %25
+ 	Category: %26
+ 	User: %8\%9
+ 	Signature Version: %27
+ 	Engine Version: %28">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to delete an item from quarantine.
+ For more information please see the following:
+%15
+ 	Name: %11
+ 	ID: %12
+ 	Severity: %25
+ 	Category: %26
+ 	User: %8\%9
+ 	Error Code: %3
+ 	Error description: %4
+ 	Signature Version: %27
+ 	Engine Version: %28">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 has removed history of malware and other potentially unwanted software.
+ 	Time: %3
+ 	User: %8\%9
+">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to remove history of malware and other potentially unwanted software.
+ 	Time: %3
+ 	User: %8\%9
+ 	Error Code: %4
+ 	Error description: %5">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1 has detected a suspicious behavior.
+ 	Name: %11
+ 	ID: %12
+ 	Severity: %25
+ 	Category: %26
+ 	Path Found: %16
+ 	Detection Origin: %18
+ 	Detection Type: %22
+ 	Detection Source: %5
+ 	Status: %20
+ 	User: %8\%9
+ 	Process Name: %7
+ 	Signature ID: %30
+ 	Signature Version: %27
+ 	Engine Version: %28
+ 	Fidelity Label:  %32
+ 	Target File Name:  %36
+">
+    </event>
+    <event value="1116" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1 has detected malware or other potentially unwanted software.
+ For more information please see the following:
+%13
+ 	Name: %8
+ 	ID: %7
+ 	Severity: %10
+ 	Category: %12
+ 	Path: %22
+ 	Detection Origin: %24
+ 	Detection Type: %28
+ 	Detection Source: %18
+ 	User: %20
+ 	Process Name: %19
+ 	Signature Version: %41
+ 	Engine Version: %42">
+    </event>
+    <event value="1117" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+%13
+ 	Name: %8
+ 	ID: %7
+ 	Severity: %10
+ 	Category: %12
+ 	Path: %22
+ 	Detection Origin: %24
+ 	Detection Type: %28
+ 	Detection Source: %18
+ 	User: %39
+ 	Process Name: %19
+ 	Action: %31
+ 	Action Status:  %38
+ 	Error Code: %33
+ 	Error description: %34
+ 	Signature Version: %41
+ 	Engine Version: %42">
+    </event>
+    <event value="1118" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 has encountered a non-critical error when taking action on malware or other potentially unwanted software.
+ For more information please see the following:
+%13
+ 	Name: %8
+ 	ID: %7
+ 	Severity: %10
+ 	Category: %12
+ 	Path: %22
+ 	Detection Origin: %24
+ 	Detection Type: %28
+ 	Detection Source: %18
+ 	User: %39
+ 	Process Name: %19
+ 	Action: %31
+ 	Action Status:  %38
+ 	Error Code: %33
+ 	Error description: %34
+ 	Signature Version: %41
+ 	Engine Version: %42">
+    </event>
+    <event value="1119" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered a critical error when taking action on malware or other potentially unwanted software.
+ For more information please see the following:
+%13
+ 	Name: %8
+ 	ID: %7
+ 	Severity: %10
+ 	Category: %12
+ 	Path: %22
+ 	Detection Origin: %24
+ 	Detection Type: %28
+ 	Detection Source: %18
+ 	User: %39
+ 	Process Name: %19
+ 	Action: %31
+ 	Action Status:  %38
+ 	Error Code: %33
+ 	Error description: %34
+ 	Signature Version: %41
+ 	Engine Version: %42">
+    </event>
+    <event value="1120" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 has deduced the hashes for a threat resource.
+ 	Current Platform Version: %2
+ 	Threat resource path: %4
+ 	Hashes: %5">
+    </event>
+    <event value="1130" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1 blocked a behavior by %4.
+">
+    </event>
+    <event value="1150" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Endpoint Protection client is up and running in a healthy state.
+ 	Platform version: %2
+ 	Engine version: %4
+ 	Signature version: %5
+">
+    </event>
+    <event value="1160" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1 has detected potentially unwanted application(PUA).
+ For more information please see the following:
+%13
+ 	Name: %8
+ 	ID: %7
+ 	Severity: %10
+ 	Category: %12
+ 	Path: %22
+ 	Detection Origin: %24
+ 	Detection Type: %28
+ 	Detection Source: %18
+ 	User: %20
+ 	Process Name: %19
+ 	Signature Version: %41
+ 	Engine Version: %42">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 signature version has been updated.
+ 	Current Signature Version: %3
+ 	Previous Signature Version: %4
+ 	Signature Type: %12
+ 	Update Type: %14
+ 	User: %8\%9
+ 	Current Engine Version: %15
+ 	Previous Engine Version: %16">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to update signatures.
+ 	New Signature Version: %3
+ 	Previous Signature Version: %4
+ 	Update Source: %6
+ 	Signature Type: %12
+ 	Update Type: %14
+ 	User: %8\%9
+ 	Current Engine Version: %15
+ 	Previous Engine Version: %16
+ 	Error code: %17
+ 	Error description: %18">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 engine version has been updated.
+ 	Current Engine Version: %3
+ 	Previous Engine Version: %4
+ 	User: %8\%9">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to update the engine.
+ 	New Engine Version: %3
+ 	Previous Engine Version: %4
+ 	User: %8\%9
+ 	Error Code: %11
+ 	Error description: %12">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to load signatures and will attempt reverting back to a known-good set of signatures.
+ 	Signatures Attempted: %4
+ 	Error Code: %5
+ 	Error description: %6
+ 	Signature version: %9
+ 	Engine version: %10">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1 could not load antimalware engine because current platform version is not supported. %1 will revert back to the last known-good engine and a platform update will be attempted.
+ 	Current Platform Version: %2">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to update the platform.
+ 	Current Platform Version: %2
+ 	Error code: %4
+ 	Error description: %5">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1 will soon require a newer platform version to support future versions of the antimalware engine. Download the latest %1 platform to maintain the best level of protection available.
+ 	Current Platform Version: %2">
+    </event>
+    <event value="2010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 used Dynamic Signature Service to retrieve additional signatures to help protect your machine.
+ 	Current Signature Version: %3
+ 	Signature Type: %12
+ 	User: %8\%9
+ 	Current Engine Version: %15
+ 	Dynamic Signature Type: %23
+ 	Persistence Path: %24
+ 	Dynamic Signature Version: %25
+ 	Dynamic Signature Compilation Timestamp: %26
+ 	Persistence Limit Type: %28
+ 	Persistence Limit: %29">
+    </event>
+    <event value="2011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 used Dynamic Signature Service to discard obsolete signatures.
+ 	Current Signature Version: %3
+ 	Signature Type: %12
+ 	Current Engine Version: %15
+ 	Dynamic Signature Type: %23
+ 	Persistence Path: %24
+ 	Dynamic Signature Version: %25
+ 	Dynamic Signature Compilation Timestamp: %26
+ 	Removal Reason: %31
+ 	Persistence Limit Type: %28
+ 	Persistence Limit: %29">
+    </event>
+    <event value="2012" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to use Dynamic Signature Service.
+ 	Current Signature Version: %3
+ 	Signature Type: %12
+ 	User: %8\%9
+ 	Current Engine Version: %15
+ 	Error code: %17
+ 	Error description: %18 	Dynamic Signature Type: %23
+ 	Persistence Path: %24
+ 	Dynamic Signature Version: %25
+ 	Dynamic Signature Compilation Timestamp: %26
+ 	Persistence Limit Type: %28
+ 	Persistence Limit: %29">
+    </event>
+    <event value="2013" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 discarded all Dynamic Signature Service signatures.
+ 	User: %8\%9
+ 	Current Engine Version: %15">
+    </event>
+    <event value="2020" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 downloaded a clean file.
+ 	Filename: %4
+ 	Current Signature Version: %5
+ 	Current Engine Version: %6">
+    </event>
+    <event value="2021" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to download a clean file.
+ 	Filename: %4
+ 	Current Signature Version: %5
+ 	Current Engine Version: %6
+ 	Error code: %7
+ 	Error description: %8">
+    </event>
+    <event value="2030" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 downloaded and configured Windows Defender Offline to run on the next reboot.">
+    </event>
+    <event value="2031" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to download and configure Windows Defender Offline.
+	Error code: %4
+	Error description: %5">
+    </event>
+    <event value="2040" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The support for your operating system will expire shortly. Running %1 on an out of support operating system is not an adequate solution to protect against threats.
+">
+    </event>
+    <event value="2041" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The support for your operating system has expired. Running %1 on an out of support operating system is not an adequate solution to protect against threats.
+">
+    </event>
+    <event value="2042" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The support for your operating system has expired. %1 is no longer supported on your operating system, has stopped functioning, and is not protecting against malware threats.
+">
+    </event>
+    <event value="2050" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 has uploaded a suspicious file for further analysis.
+ 	Filename: %3
+ 	Sha256: %4
+">
+    </event>
+    <event value="2051" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 has encountered an error trying to upload a suspicious file for further analysis.
+ 	Filename: %3
+ 	Sha256: %4
+ 	Current Signature Version: %5
+ 	Current Engine Version: %6
+ 	Error code: %7
+">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 Real-Time Protection feature has encountered an error and failed.
+ 	Feature: %3
+ 	Error Code: %5
+ 	Error description: %6
+ 	Reason: %4">
+    </event>
+    <event value="3007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 Real-time Protection feature has restarted. It is recommended that you run a full system scan to detect any items that may have been missed while this agent was down.
+ 	Feature: %3
+ 	Reason: %4">
+    </event>
+    <event value="5000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 Real-time Protection scanning for malware and other potentially unwanted software was enabled.">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 Real-time Protection scanning for malware and other potentially unwanted software was disabled.">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 Real-time Protection feature configuration has changed.
+ 	Feature: %3
+ 	Configuration: %4">
+    </event>
+    <event value="5007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware.
+ 	Old value: %3
+ 	New value: %4">
+    </event>
+    <event value="5008" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 engine has been terminated due to an unexpected error.
+ 	Failure Type: %5
+ 	Exception code: %6
+ 	Resource: %3">
+    </event>
+    <event value="5009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 scanning for spyware and other potentially unwanted software has been enabled.">
+    </event>
+    <event value="5010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 scanning for spyware and other potentially unwanted software is disabled.">
+    </event>
+    <event value="5011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 scanning for viruses has been enabled.">
+    </event>
+    <event value="5012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 scanning for viruses is disabled.">
+    </event>
+    <event value="5100" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1 has entered a grace period and will soon expire. After expiration, this program will disable protection against viruses, spyware, and other potentially unwanted software.
+ 	Expiration Reason: %4
+ 	Expiration Date (UTC): %5">
+    </event>
+    <event value="5101" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 grace period has expired. Protection against viruses, spyware, and other potentially unwanted software is disabled.
+ 	Expiration Reason: %4
+ 	Expiration Date (UTC): %5
+ 	Error Code: %6
+ 	Error Description: %7">
+    </event>
+  </events>
+</provider>

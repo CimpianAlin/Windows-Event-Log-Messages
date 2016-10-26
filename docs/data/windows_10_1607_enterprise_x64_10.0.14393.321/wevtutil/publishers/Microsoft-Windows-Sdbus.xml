@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Sdbus" guid="fe28004e-b08f-4407-92b3-bad3a2c51708" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=sdbus.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\sdbus.sys" messageFileName="C:\Windows\system32\drivers\sdbus.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Sdbus/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Sdbus/Debug" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Task.Interrupt" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Interrupt">
+    </task>
+    <task name="Task.CallbackRoutine" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Callback Routine">
+    </task>
+    <task name="Task.Retune" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Retune">
+    </task>
+    <task name="Task.Error" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message=" Error">
+    </task>
+    <task name="Task.HpiIo" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="HPI IO">
+    </task>
+    <task name="Task.PStateRequest" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="P-State Request">
+    </task>
+    <task name="Task.PStateCompletion" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="P-State Completion">
+    </task>
+    <task name="Task.CommandIssued" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Command Issued">
+    </task>
+    <task name="Task.CommandCompleted" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Command Completed">
+    </task>
+    <task name="Task.HpiCmdIssue" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="HPI CMD Issued">
+    </task>
+    <task name="Task.HpiCmdAccepted" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="HPI CMD Accepted">
+    </task>
+    <task name="Task.HpiCmdWorker" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="HPI Worker Process">
+    </task>
+    <task name="Task.PStateUtilization" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="P-State Utilization">
+    </task>
+    <task name="Task.SdbusWorkerDpc" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="SdbusWorkerDpc">
+    </task>
+    <task name="Task.SdbusRequest" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="SdbusRequest">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Interrupt" mask="1" message="Interrupt handling">
+    </keyword>
+    <keyword name="Emmc" mask="2" message="eMMC specific processing">
+    </keyword>
+    <keyword name="Sdio" mask="4" message="SDIO specific processing">
+    </keyword>
+    <keyword name="Sd" mask="8" message="SD specific processing">
+    </keyword>
+    <keyword name="Perf" mask="10" message="Sdbus P-state frequency scaling">
+    </keyword>
+    <keyword name="Error" mask="20" message="SD bus errors">
+    </keyword>
+    <keyword name="Dpc" mask="40" message="SD bus DPC">
+    </keyword>
+    <keyword name="Request" mask="80" message="SD bus request">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Interrupt detected in ISR.
+SD Host Physical Address: %1
+Events (masked): %2">
+    </event>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000004" message="Entering callback routine.
+SD Host Physical Address: %1">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000004" message="Exiting callback routine.
+SD Host Physical Address: %1">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000002" message="Retuning Sequence detected.
+SD Host Physical Address: %1
+Retuning Count: %2">
+    </event>
+    <event value="104" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000002" message="Error in bus transfer.
+SD Host Physical Address: %1
+Error Code: %2
+Error Count: %3">
+    </event>
+    <event value="105" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000002" message="Hpi IO detected.
+SD Host Physical Address: %1
+Hpi Count: %2">
+    </event>
+    <event value="106" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000010" message="P-State change requested.
+PoFx Device Handle: %1
+P-State Requested: %2
+P-State Request Count: %3">
+    </event>
+    <event value="107" version="0" opcode="0" channel="16" level="4" task="7" keywords="0x8000000000000010" message="P-State change requested.
+PoFx Device Handle: %1
+P-State Completed: %2
+P-State Completion Count: %3">
+    </event>
+    <event value="108" version="0" opcode="0" channel="16" level="4" task="8" keywords="0x8000000000000010" message="Command issued.
+SD Host Physical Address: %1
+Command: %2
+Argument: %3
+Size: %4">
+    </event>
+    <event value="109" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000010" message="Command completed.
+SD Host Physical Address: %1
+Command: %2
+Argument: %3
+Size: %4">
+    </event>
+    <event value="110" version="0" opcode="0" channel="16" level="4" task="10" keywords="0x8000000000000002" message="Hpi CMD sent to the hardware. IRP %1">
+    </event>
+    <event value="111" version="0" opcode="0" channel="16" level="4" task="10" keywords="0x8000000000000002" message="Hpi CMD was accepted by the hardware. IRP %1">
+    </event>
+    <event value="112" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000002" message="Hpi CMD worker started. IRP %1">
+    </event>
+    <event value="113" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000002" message="Hpi CMD worker exited. IRP %1 Reason: %2">
+    </event>
+    <event value="114" version="0" opcode="0" channel="16" level="4" task="13" keywords="0x8000000000000010" message="P-State change requested.
+PoFx Device Handle: %1
+P-State Active Percentage: %2
+P-State Active Duration: %3
+P-State Sample Duration: %4
+P-State Current Frequency: %5
+P-State Requested Frequency: %6">
+    </event>
+    <event value="115" version="0" opcode="0" channel="16" level="4" task="14" keywords="0x8000000000000040" message="SdbusWorkerDpcEnter: SD Host Physical Address: %1 Irp: %2 Workpacket Function: %3 CurrentState: %4 FunctionPhase: %5">
+    </event>
+    <event value="116" version="0" opcode="0" channel="16" level="4" task="14" keywords="0x8000000000000040" message="SdbusWorkerDpcExit: SD Host Physical Address: %1 Irp: %2 Workpacket Function: %3 CurrentState: %4 FunctionPhase: %5">
+    </event>
+    <event value="117" version="0" opcode="0" channel="16" level="4" task="15" keywords="0x8000000000000080" message="SdbusRequestStart: SD Host Physical Address: %1 Irp: %2 Cmd: %3 Arg: %4 Status: %5">
+    </event>
+    <event value="118" version="0" opcode="0" channel="16" level="4" task="15" keywords="0x8000000000000080" message="SdbusRequestComplete: SD Host Physical Address: %1 Irp: %2 Cmd: %3 Arg %4 Status %5">
+    </event>
+    <event value="119" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000004" message="Scheduled callback routine.
+SD Host Physical Address: %1">
+    </event>
+    <event value="120" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000004" message="Interrupt DPC scheduled.">
+    </event>
+    <event value="121" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000004" message="Interrupt DPC entered.">
+    </event>
+    <event value="122" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000004" message="Interrupt DPC exited.">
+    </event>
+  </events>
+</provider>

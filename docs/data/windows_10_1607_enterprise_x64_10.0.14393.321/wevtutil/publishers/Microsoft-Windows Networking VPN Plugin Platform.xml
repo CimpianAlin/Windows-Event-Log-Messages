@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows Networking VPN Plugin Platform" guid="e5fc4a0f-7198-492f-9b0f-88fdcbfded48" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=windows.networking.vpn.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\windows.networking.vpn.dll" parameterFileName="C:\Windows\system32\windows.networking.vpn.dll" messageFileName="C:\Windows\system32\windows.networking.vpn.dll" message="Microsoft-Windows-Vpn Plugin Platform" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Windows Networking Vpn Plugin Platform/Operational" id="16" flags="0" message="Microsoft-Windows-Vpn Plugin Platform/Operational">
+    </channel>
+    <channel name="Windows Networking Vpn Plugin Platform/OperationalVerbose" id="17" flags="0" message="Microsoft-Windows-Vpn Plugin Platform/OperationalVerbose">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Vpn Connection Error = %3, Profile name = %2, Plugin SID = %1">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Vpn Plugin Background Task Execution Started">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Vpn Plugin Background Task Execution Exit">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000020000000000" message="Message from VPN App: [%1] %2">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger [%1], device is inside the trusted network boundary [%2]">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger [%1], device is outside the trusted network boundary">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], device is attempting to connect to VPN. Please refer to Microsoft-Windows-VPN channel under WFP for cause of connect">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], device failed to connect to VPN">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], device is connected to VPN">
+    </event>
+    <event value="2010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], device got disconnected from VPN, Redial it">
+    </event>
+    <event value="2011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], profile got activated">
+    </event>
+    <event value="2012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], profile got deactivated">
+    </event>
+    <event value="2013" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], profile got auto disconnected. Please refer to Microsoft-Windows-VPN channel under WFP for cause of disconnect">
+    </event>
+    <event value="2014" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], profile got disconnected as device going to sleep state">
+    </event>
+    <event value="2015" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], device is resumed, Redialling it">
+    </event>
+    <event value="2016" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], profile added">
+    </event>
+    <event value="2017" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], profile deleted">
+    </event>
+    <event value="2018" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1], profile modified">
+    </event>
+    <event value="2019" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Vpn State Machine Status : Invalid, Profile name = %2, Plugin SID = %1">
+    </event>
+    <event value="2020" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Vpn State Machine Status : Connecting, Profile name = %2, Plugin SID = %1">
+    </event>
+    <event value="2021" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Vpn State Machine Status : Connected, Profile name = %2, Plugin SID = %1">
+    </event>
+    <event value="2022" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Vpn State Machine Status : Disconnecting, Profile name = %2, Plugin SID = %1">
+    </event>
+    <event value="2023" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Vpn State Machine Status : Disconnected, Profile name = %2, Plugin SID = %1">
+    </event>
+    <event value="2024" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Vpn State Machine Status : Abort, Profile name = %2, Plugin SID = %1">
+    </event>
+    <event value="2025" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Vpn State Machine Status : Negotiating Network, Profile name = %2, Plugin SID = %1">
+    </event>
+    <event value="2026" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Vpn State Machine Status : Requesting Credentials, Profile name = %2, Plugin SID = %1">
+    </event>
+    <event value="2027" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Vpn State Machine Status : Requesting Credentials using Custom UI, Profile name = %2, Plugin SID = %1">
+    </event>
+    <event value="2028" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Keep Alive event invoked, Profile name = %1">
+    </event>
+    <event value="2029" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: DNS query %1 is made, matching VPN trigger rules">
+    </event>
+    <event value="2030" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="Autotrigger: [%1] Unable to determine internet connectivity, vpn trigger failed">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ScmDisk0101" guid="db1cc2d9-3197-41a7-9988-ae6ecd877b2e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=scmdisk0101.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\scmdisk0101.sys" parameterFileName="C:\Windows\system32\drivers\scmdisk0101.sys" messageFileName="C:\Windows\system32\drivers\scmdisk0101.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-ScmDisk0101/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-ScmDisk0101/Diagnostic" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-ScmDisk0101/Operational" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Hardware_Events" mask="2" message="Hardware events">
+    </keyword>
+    <keyword name="Read" mask="100000000" message="Read request">
+    </keyword>
+    <keyword name="Write" mask="200000000" message="Write request">
+    </keyword>
+    <keyword name="PagingRead" mask="400000000" message="Paging Read request">
+    </keyword>
+    <keyword name="PagingWrite" mask="800000000" message="Paging Write request">
+    </keyword>
+    <keyword name="NonReadWrite" mask="1000000000" message="Non-Read/Write request">
+    </keyword>
+    <keyword name="IOCTL" mask="2000000000" message="Device I/O control request">
+    </keyword>
+    <keyword name="PnP" mask="4000000000" message="PnP request">
+    </keyword>
+    <keyword name="IO_Performance" mask="8000000000" message="IO Performance measurement">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Reported memory resource.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Memory operation duration, in hundreds of nanoseconds.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000008000000000" message="Request servicing time taken by lower driver stack(s).">
+    </event>
+    <event value="101" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000100000000" message="Dispatching a read request.">
+    </event>
+    <event value="102" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000200000000" message="Dispatching a write request.">
+    </event>
+    <event value="103" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000500000000" message="Dispatching a read request.">
+    </event>
+    <event value="104" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000a00000000" message="Dispatching a write request.">
+    </event>
+    <event value="105" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000f00000000" message="Completing an IO (read/write) request.">
+    </event>
+    <event value="106" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000000" message="Dispatching an IOCTL.">
+    </event>
+    <event value="107" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000000" message="Completing a non-read/write request.">
+    </event>
+    <event value="108" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000000" message="Dispatching a PnP request.">
+    </event>
+    <event value="109" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000000" message="Completing a PnP request.">
+    </event>
+    <event value="201" version="0" opcode="0" channel="18" level="1" task="0" keywords="0x1000000000000000" message="Critical metadata on NVDIMM %1 has been corrupted. Windows needs this metadata to start the NVDIMM correctly, so we had to reinitialize it. The data on that NVDIMM may have been lost.                    
+                    
+Consider replacing the NVDIMM.                    
+                    
+This NVDIMM may be located using the following information:                    
+                    
+Slot number: %2                    
+Manufacturer: %3                    
+Model Number: %4                    
+Serial Number: %5">
+    </event>
+    <event value="202" version="0" opcode="0" channel="18" level="1" task="0" keywords="0x1000000000000000" message="NVDIMM %1 failed to start. %6                    
+                    
+This NVDIMM may be located using the following information:                    
+                    
+Slot number: %2                    
+Manufacturer: %3                    
+Model Number: %4                    
+Serial Number: %5">
+    </event>
+    <event value="203" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="NVDIMM %1 started successfully.">
+    </event>
+    <event value="204" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="NVDIMM %1 encountered an error while transferring your data to or from persistent media (see the Details tab for more information). Some of your data may have been lost. As a precaution, this NVDIMM is now in read-only mode. If you want to keep using this NVDIMM, use the Reset-PhysicalDisk command to make it writeable again.                    
+                    
+This NVDIMM may need to be replaced. It can be located using the following information:                    
+                    
+Slot number: %2                    
+Manufacturer: %3                    
+Model Number: %4                    
+Serial Number: %5">
+    </event>
+    <event value="205" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="During a previous boot session, the NVDIMM %1 encountered an error while transferring your data to or from persistent media. Some of your data may have been lost then. As a precaution, Windows made this NVDIMM temporarily read-only. If you want to keep using this NVDIMM, use the Reset-PhysicalDisk command to make it writeable again.                    
+                    
+This NVDIMM may need to be replaced. It can be located using the following information:                    
+                    
+Slot number: %2                    
+Manufacturer: %3                    
+Model Number: %4                    
+Serial Number: %5">
+    </event>
+    <event value="206" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="NVDIMM %1 notified the driver that its health state changed.                    
+                    
+This NVDIMM may be located using the following information:                    
+                    
+Slot number: %2                    
+Manufacturer: %3                    
+Model Number: %4                    
+Serial Number: %5">
+    </event>
+    <event value="207" version="0" opcode="0" channel="18" level="1" task="0" keywords="0x1000000000000000" message="NVDIMM %1 encountered a serious problem and is now in read-only mode. Data that was saved to this NVDIMM may be lost when the computer shuts down or restarts. Consider backing up your data to another disk.                    
+                    
+Use the Get-PhysicalDisk command to get more information about the device’s health status.                    
+                    
+This NVDIMM may need to be replaced. It can be located using the following information:                    
+                    
+Slot number: %2                    
+Manufacturer: %3                    
+Model Number: %4                    
+Serial Number: %5">
+    </event>
+    <event value="208" version="0" opcode="0" channel="18" level="1" task="0" keywords="0x1000000000000000" message="The driver could not confirm that the NVDIMM %1 is healthy. To protect your data, the NVDIMM is now in read-only mode. Consider backing up your data to another disk.                    
+                    
+This NVDIMM may need to be replaced. It can be located using the following information:                    
+                    
+Slot number: %2                    
+Manufacturer: %3                    
+Model Number: %4                    
+Serial Number: %5">
+    </event>
+    <event value="209" version="0" opcode="0" channel="18" level="1" task="0" keywords="0x1000000000000000" message="The computer didn&apos;t assign any memory resources to NVDIMM %1. You won&apos;t be able to access the data on the device, but you can still query its health status by using the Get-PhysicalDisk command.                    
+                    
+This NVDIMM may need to be replaced. It can be located using the following information:                    
+                    
+Slot number: %2                    
+Manufacturer: %3                    
+Model Number: %4                    
+Serial Number: %5">
+    </event>
+    <event value="210" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="Some physical memory locations on NVDIMM %1 are corrupt. In order to protect your computer, Windows will not access those locations and you may see failures trying to read or write to your data. Contact your hardware vendor to learn what recovery steps are available.             
+             
+This NVDIMM may need to be replaced. It can be located using the following information:             
+             
+Slot number: %2             
+Manufacturer: %3             
+Model Number: %4             
+Serial Number: %5">
+    </event>
+    <event value="211" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="The problem with NVDIMM %1 was resolved and it is now back in read-write mode.                    
+                    
+This NVDIMM may be located using the following information:                    
+                    
+Slot number: %2                    
+Manufacturer: %3                    
+Model Number: %4                    
+Serial Number: %5">
+    </event>
+    <event value="212" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x1000000000000000" message="NVDIMM %1 is in a degraded health state and may soon encounter serious problems. Consider backing up your data to another disk. Use the Get-PhysicalDisk command to see more information.                    
+                    
+This NVDIMM may need to be replaced. It can be located using the following information:                    
+                    
+Slot number: %2                    
+Manufacturer: %3                    
+Model Number: %4                    
+Serial Number: %5">
+    </event>
+    <event value="213" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="NVDIMM %1 has encountered %6 uncorrectable memory error(s). Uncorrectable memory errors can cause system instability and data loss. Consider replacing this NVDIMM.             
+             
+This NVDIMM can be located using the following information:             
+             
+Slot number: %2             
+Manufacturer: %3             
+Model Number: %4             
+Serial Number: %5">
+    </event>
+    <event value="214" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x1000000000000000" message="The warning threshold for correctable memory errors on NVDIMM %1 has been exceeded. A large number of correctable memory errors increases the likelihood of an uncorrectable memory error in the future and reduces system performance. Contact your hardware vendor to determine if this NVDIMM needs to be replaced.             
+             
+This NVDIMM can be located using the following information:             
+             
+Slot number: %2             
+Manufacturer: %3             
+Model Number: %4             
+Serial Number: %5">
+    </event>
+    <event value="300" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="NVDIMM %1 is now in read-only mode.  Use the Get-PhysicalDisk command to get the device’s health status.  The Microsoft-Windows-ScmDisk0101/Operational event log may also contain more information.">
+    </event>
+    <event value="301" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="NVDIMM %1 is no longer in read-only mode.">
+    </event>
+    <event value="302" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Windows does not support this configuration: two or more NVDIMMs on this system are part of an interleaved set. Back up the data on the interleaved set to a different drive and then break up the interleaved set. Consider using Storage Spaces if NVDIMM capacity needs to be aggregated.">
+    </event>
+    <event value="900" version="0" opcode="0" channel="17" level="0" task="0" keywords="0x2000000000000000" message="NVDIMM %1 logged:             
+             
+ %2">
+    </event>
+  </events>
+</provider>

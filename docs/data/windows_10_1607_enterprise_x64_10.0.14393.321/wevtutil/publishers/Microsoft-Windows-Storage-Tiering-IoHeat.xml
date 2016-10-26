@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Storage-Tiering-IoHeat" guid="990c55fc-2662-47f6-b7d7-eb3c027cb13f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=microsoft-windows-storage-tiering-events.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\microsoft-windows-storage-tiering-events.dll" messageFileName="C:\Windows\system32\microsoft-windows-storage-tiering-events.dll" message="Microsoft-Windows-Storage-Tiering-IoHeat" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Storage-Tiering-IoHeat/Heat" id="16" flags="0" message="Tiering Heat Measurement Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="HeatInit" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MeasureHeat" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="STORAGE_TIERING_KEYWORD_INIT" mask="10" message="">
+    </keyword>
+    <keyword name="STORAGE_TIERING_KEYWORD_DATA" mask="20" message="">
+    </keyword>
+    <keyword name="STORAGE_TIERING_KEYWORD_READ" mask="40" message="">
+    </keyword>
+    <keyword name="STORAGE_TIERING_KEYWORD_WRITE" mask="80" message="">
+    </keyword>
+    <keyword name="STORAGE_TIERING_KEYWORD_DELETE" mask="100" message="">
+    </keyword>
+    <keyword name="STORAGE_TIERING_KEYWORD_TIERMOVE" mask="200" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000010" message="Volume %1 (ID %2) is measuring I/O heat.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000060" message="READ - Volume: %5 File: %1%2 Offset: %3 Length %4">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x80000000000000a0" message="WRITE - Volume: %5 File: %1%2 Offset: %3 Length %4">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000120" message="DELETE - Volume: %5 File: %1%2">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000220" message="TIERMOVE - Volume: %7 File: %1%2 Offset: %3 Length %4 Source: %5 Destination: %6">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Dism-Api" guid="75b0da21-8b50-42eb-9448-ec48b1729b57" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=DismApi.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\DismApi.dll" messageFileName="C:\Windows\system32\DismApi.dll" message="Deployment Image Servicing And Management API" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Dism-Api/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Dism-Api/InternalAnalytic" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Dism-Api/ExternalAnalytic" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DismInitialize" value="1" eventGUID="0c0be16d-9332-4496-9c6a-4f9171cdeb71" message="">
+    </task>
+    <task name="DismShutdown" value="2" eventGUID="7aee8814-b53c-4dc7-8d36-91b2b40a20e4" message="">
+    </task>
+    <task name="DismOpenSession" value="3" eventGUID="85890b6a-8e81-453b-ab64-64f83d897e60" message="">
+    </task>
+    <task name="DismCloseSession" value="4" eventGUID="09acf879-5db2-4eb0-842f-35901195bb56" message="">
+    </task>
+    <task name="EnqueueCommandObject" value="5" eventGUID="e495235d-19c3-48a6-883e-26cfbf316cce" message="">
+    </task>
+    <task name="DequeueCommandObject" value="6" eventGUID="f8798318-0218-4242-a048-f05494005f1e" message="">
+    </task>
+    <task name="DismMountImage" value="7" eventGUID="496ab889-533f-4f27-9a6c-9ea348da6e35" message="">
+    </task>
+    <task name="DismUnmountImage" value="8" eventGUID="48c0ab53-605c-4612-a13a-cd1e816f032f" message="">
+    </task>
+    <task name="DismSetFirstBootCommandLine" value="12" eventGUID="18d329cd-5572-410c-a77d-848bc7f0af0e" message="">
+    </task>
+    <task name="DismRemountImage" value="13" eventGUID="652880e5-5a5d-49ce-9a3d-32045ffbff53" message="">
+    </task>
+    <task name="DismCommitImage" value="14" eventGUID="07230498-b563-404a-b0b5-22de8ca5a257" message="">
+    </task>
+    <task name="DismGetImageInfo" value="15" eventGUID="ae1a25f7-9c4f-4000-9cd1-6f191dc17d25" message="">
+    </task>
+    <task name="DismGetMountedImageInfo" value="16" eventGUID="b4ea32c2-1d9f-4f57-9e65-7db953c00100" message="">
+    </task>
+    <task name="DismCleanupMountpoints" value="17" eventGUID="626269c4-794a-4ec1-aade-1cb7b9280dc4" message="">
+    </task>
+    <task name="DismAddPackage" value="18" eventGUID="6f5d95b6-c2e3-46e8-9180-020da2409140" message="">
+    </task>
+    <task name="DismRemovePackage" value="19" eventGUID="56d13736-7aab-4023-9769-9735a16db16c" message="">
+    </task>
+    <task name="DismEnableFeature" value="20" eventGUID="42eec866-84a4-46a8-bebf-cdb5d83eb806" message="">
+    </task>
+    <task name="DismDisableFeature" value="21" eventGUID="5482fedb-306b-4dbd-8773-900657d8ce05" message="">
+    </task>
+    <task name="DismGetPackages" value="22" eventGUID="0960993f-baaf-4f2f-9165-9f7d4f2e5f06" message="">
+    </task>
+    <task name="DismGetPackageInfo" value="23" eventGUID="e25be891-c15a-48a0-b37c-09c8308ebb30" message="">
+    </task>
+    <task name="DismGetFeatures" value="24" eventGUID="5f429ba3-9f13-417f-a190-a1f59ac64f4c" message="">
+    </task>
+    <task name="DismGetFeatureInfo" value="25" eventGUID="9ece8778-f587-408f-bc1e-6352017a6134" message="">
+    </task>
+    <task name="DismGetFeatureParent" value="26" eventGUID="7b093801-c86e-4013-b7ce-739c5211774f" message="">
+    </task>
+    <task name="DismApplyUnattend" value="27" eventGUID="a2922d2e-4747-4318-918c-528cc432e856" message="">
+    </task>
+    <task name="DismAddDriver" value="28" eventGUID="8d0e0055-b4d0-4ee1-bed9-eddfab1b9dd4" message="">
+    </task>
+    <task name="DismRemoveDriver" value="29" eventGUID="d97ae8d7-f317-4008-8167-59cae7ba29e5" message="">
+    </task>
+    <task name="DismGetDrivers" value="30" eventGUID="43073d10-0658-4a48-a9c8-565802cace7f" message="">
+    </task>
+    <task name="DismGetDriverInfo" value="31" eventGUID="dd10e9fe-1627-47ad-89c2-38261e040e97" message="">
+    </task>
+    <task name="DismCheckImageHealth" value="32" eventGUID="4d5fae8b-bd04-4eda-aabf-3b765e1dc3b0" message="">
+    </task>
+    <task name="DismRestoreImageHealth" value="33" eventGUID="0ea54438-5779-4bab-86c0-4fe141a6aaa1" message="">
+    </task>
+    <task name="DismSetEdition" value="34" eventGUID="1f3350a5-b44e-44ed-b5a6-637b10b2712f" message="">
+    </task>
+    <task name="DismSetProductKey" value="35" eventGUID="b67a4b09-0ba4-4071-bff1-bb4036c4cc84" message="">
+    </task>
+    <task name="DismGetCurrentEdition" value="36" eventGUID="3401facb-c628-44e5-90aa-1e598dda2dc2" message="">
+    </task>
+    <task name="DismGetTargetEditions" value="37" eventGUID="470e670c-5381-44fb-94ac-2bd45bd70e22" message="">
+    </task>
+    <task name="DismGetFeaturesEx" value="38" eventGUID="e0be5fec-9887-44c3-bc0f-e2010f95965d" message="">
+    </task>
+    <task name="DismAddProvisionedAppxPackage" value="39" eventGUID="d63dfd38-50c4-43f6-b2fe-edabf942ed1b" message="">
+    </task>
+    <task name="DismRemoveProvisionedAppxPackage" value="40" eventGUID="fdb8adae-0029-4567-a9bd-2cc97dc13d1c" message="">
+    </task>
+    <task name="DismGetProvisionedAppxPackages" value="41" eventGUID="97cad138-3cef-4dc0-b046-c4c13e28ec07" message="">
+    </task>
+    <task name="DismExportDriver" value="42" eventGUID="e7a17505-05ea-4de0-b0be-8a10ec9ee82e" message="">
+    </task>
+    <task name="DismOptimizeImage" value="43" eventGUID="49402538-8010-454e-bb05-8b030ebcf284" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="DismApiEvent" mask="1" message="">
+    </keyword>
+    <keyword name="DismApiCommandThreadEvent" mask="2" message="">
+    </keyword>
+    <keyword name="DismApiCommandObjectEvent" mask="4" message="">
+    </keyword>
+    <keyword name="DismApiCommandQueueEvent" mask="8" message="">
+    </keyword>
+    <keyword name="DismApiSessionTableEvent" mask="10" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="13" version="0" opcode="1" channel="17" level="4" task="5" keywords="0x400000000000001a" message="">
+    </event>
+    <event value="14" version="0" opcode="2" channel="17" level="4" task="5" keywords="0x400000000000001a" message="">
+    </event>
+    <event value="15" version="0" opcode="1" channel="17" level="4" task="6" keywords="0x400000000000001a" message="">
+    </event>
+    <event value="16" version="0" opcode="2" channel="17" level="4" task="6" keywords="0x400000000000001a" message="">
+    </event>
+    <event value="23" version="0" opcode="1" channel="16" level="4" task="12" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="24" version="0" opcode="2" channel="16" level="4" task="12" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="25" version="0" opcode="1" channel="16" level="4" task="13" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="26" version="0" opcode="2" channel="16" level="4" task="13" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="27" version="0" opcode="1" channel="16" level="4" task="14" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="28" version="0" opcode="2" channel="16" level="4" task="14" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="29" version="0" opcode="1" channel="16" level="4" task="15" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="30" version="0" opcode="2" channel="16" level="4" task="15" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="31" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="32" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="33" version="0" opcode="1" channel="16" level="4" task="17" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="34" version="0" opcode="2" channel="16" level="4" task="17" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="35" version="0" opcode="1" channel="16" level="4" task="18" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="36" version="0" opcode="2" channel="16" level="4" task="18" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="37" version="0" opcode="1" channel="16" level="4" task="19" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="38" version="0" opcode="2" channel="16" level="4" task="19" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="39" version="0" opcode="1" channel="16" level="4" task="20" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="40" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="41" version="0" opcode="1" channel="16" level="4" task="21" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="42" version="0" opcode="2" channel="16" level="4" task="21" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="43" version="0" opcode="1" channel="16" level="4" task="22" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="44" version="0" opcode="2" channel="16" level="4" task="22" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="45" version="0" opcode="1" channel="16" level="4" task="23" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="46" version="0" opcode="2" channel="16" level="4" task="23" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="47" version="0" opcode="1" channel="16" level="4" task="24" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="48" version="0" opcode="2" channel="16" level="4" task="24" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="49" version="0" opcode="1" channel="16" level="4" task="25" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="50" version="0" opcode="2" channel="16" level="4" task="25" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="51" version="0" opcode="1" channel="16" level="4" task="26" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="52" version="0" opcode="2" channel="16" level="4" task="26" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="53" version="0" opcode="1" channel="16" level="4" task="27" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="54" version="0" opcode="2" channel="16" level="4" task="27" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="55" version="0" opcode="1" channel="16" level="4" task="28" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="56" version="0" opcode="2" channel="16" level="4" task="28" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="57" version="0" opcode="1" channel="16" level="4" task="29" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="58" version="0" opcode="2" channel="16" level="4" task="29" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="59" version="0" opcode="1" channel="16" level="4" task="30" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="60" version="0" opcode="2" channel="16" level="4" task="30" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="61" version="0" opcode="1" channel="16" level="4" task="31" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="62" version="0" opcode="2" channel="16" level="4" task="31" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="63" version="0" opcode="1" channel="16" level="4" task="32" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="64" version="0" opcode="2" channel="16" level="4" task="32" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="65" version="0" opcode="1" channel="16" level="4" task="33" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="66" version="0" opcode="2" channel="16" level="4" task="33" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="67" version="0" opcode="1" channel="16" level="4" task="34" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="68" version="0" opcode="2" channel="16" level="4" task="34" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="69" version="0" opcode="1" channel="16" level="4" task="35" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="70" version="0" opcode="2" channel="16" level="4" task="35" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="71" version="0" opcode="1" channel="16" level="4" task="36" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="72" version="0" opcode="2" channel="16" level="4" task="36" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="73" version="0" opcode="1" channel="16" level="4" task="37" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="74" version="0" opcode="2" channel="16" level="4" task="37" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="75" version="0" opcode="1" channel="16" level="4" task="38" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="76" version="0" opcode="2" channel="16" level="4" task="38" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="77" version="0" opcode="1" channel="16" level="4" task="39" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="78" version="0" opcode="2" channel="16" level="4" task="39" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="79" version="0" opcode="1" channel="16" level="4" task="40" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="80" version="0" opcode="2" channel="16" level="4" task="40" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="81" version="0" opcode="1" channel="16" level="4" task="41" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="82" version="0" opcode="2" channel="16" level="4" task="41" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="83" version="0" opcode="1" channel="16" level="4" task="42" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="84" version="0" opcode="2" channel="16" level="4" task="42" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="85" version="0" opcode="1" channel="16" level="4" task="43" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="86" version="0" opcode="2" channel="16" level="4" task="43" keywords="0x8000000000000001" message="">
+    </event>
+  </events>
+</provider>

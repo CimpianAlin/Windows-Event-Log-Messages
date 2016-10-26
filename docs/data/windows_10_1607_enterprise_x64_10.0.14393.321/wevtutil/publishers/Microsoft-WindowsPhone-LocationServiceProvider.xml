@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-WindowsPhone-LocationServiceProvider" guid="4d13548f-c7b8-4174-bb7a-d7f64bf22d29" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=LocationFramework.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\LocationFramework.dll" messageFileName="C:\Windows\System32\LocationFramework.dll" message="LocationServiceProvider" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-WindowsPhone-LocationServiceProvider/Debug" id="16" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="LocationSession" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="OrionSession" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SuplSession" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CommonPE" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CellPE" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WifiPE" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Crowdsource" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CompositePE" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TraceMessage" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GeofenceTracking" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GeofenceStore" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GeofencePower" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="VenuePE" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Permissions" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Misc" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WebproxyRequest" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WebproxyResponse" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Canceled" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinHttpEvent" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinHttpAPICall" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WebproxyRequestInfo" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WebproxyResponseInfo" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WiFiAdapter" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Geolocation" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Geofencing" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GCWLogEvent" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GCWStateLogEvent" value="61" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CellPEAdvance" value="70" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="Error">
+    </keyword>
+    <keyword name="Performance" mask="2" message="Performance">
+    </keyword>
+    <keyword name="Selfhost" mask="4" message="Selfhost">
+    </keyword>
+    <keyword name="WiFiTracing" mask="8" message="WiFiTracing">
+    </keyword>
+    <keyword name="Init" mask="10" message="Init">
+    </keyword>
+    <keyword name="Position" mask="20" message="Position">
+    </keyword>
+    <keyword name="FixSession" mask="40" message="FixSession">
+    </keyword>
+    <keyword name="CompositePe" mask="80" message="CompositePe">
+    </keyword>
+    <keyword name="Gnss" mask="100" message="Gnss">
+    </keyword>
+    <keyword name="CellPe" mask="200" message="CellPe">
+    </keyword>
+    <keyword name="WifiPe" mask="400" message="WifiPe">
+    </keyword>
+    <keyword name="ClientApi" mask="800" message="ClientApi">
+    </keyword>
+    <keyword name="Orion" mask="1000" message="Orion">
+    </keyword>
+    <keyword name="Supl" mask="2000" message="Supl">
+    </keyword>
+    <keyword name="Crowdsource" mask="4000" message="Crowdsource">
+    </keyword>
+    <keyword name="ManagedApi" mask="8000" message="ManagedApi">
+    </keyword>
+    <keyword name="GeofenceTracking" mask="10000" message="GeofenceTracing">
+    </keyword>
+    <keyword name="GeofenceStore" mask="20000" message="GeofenceStore">
+    </keyword>
+    <keyword name="WebproxyTracing" mask="8000000" message="WebproxyTracing">
+    </keyword>
+    <keyword name="CellPeAdvanceTracing " mask="20000000" message="CellPeAdvanceTracing">
+    </keyword>
+    <keyword name="SpeedEstimatorTracing" mask="40000000" message="SpeedEstimatorTracing">
+    </keyword>
+    <keyword name="VenuePE" mask="80000000" message="VenuePE">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="12" version="0" opcode="0" channel="16" level="0" task="10" keywords="0x8000000000000005" message="">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000005" message="WER Report: ExInfo[0]=%1, ExInfo[1]=%2, Result=%3">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000014" message="Init[%1, %2]: %3 [%4]">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000005" message="hr=%1, file=%2, line=%3">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000005" message="hr=%1, custommessage=%2, function=%3 callingcode=%4 filename=%5 line=%6">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000005" message="context=%1, component=%2, istakeref=%3">
+    </event>
+    <event value="100" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000844" message="LS_REQUEST_LATLON: %1 %2, dwHint=%3 error=%4 ">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000864" message="LS_REPORT_LATLON: error=%8, lat=%1, lon=%2, altitude=%3, hAccuracy=%4, vAccuracy=%5, heading=%6, velocity=%7">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000140" message="GnssError hr=%1, eventType=%2, numBytesTransferred=%3, eventSize=%4">
+    </event>
+    <event value="201" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000140" message="Gnss[id=%1, Adapter] START %2: param=%3">
+    </event>
+    <event value="202" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000140" message="Gnss[id=%1, Adapter] STOP">
+    </event>
+    <event value="203" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000140" message="Gnss[id=%1, Driver] START %2: param=%3">
+    </event>
+    <event value="204" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000140" message="Gnss[id=%1, Driver] STOP">
+    </event>
+    <event value="205" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000160" message="Gnss[id=%1] POS: %3, Intermediate=%4, lat=%5, lon=%6, alt=%7, speed=%8, head=%9, hAccuracy=%10, vAccuracy=%11, speedAcc=%12, HDOP=%13, PDOP=%14, Status=%2">
+    </event>
+    <event value="206" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000140" message="Gnss[id=%1, Driver] MOD %2: param=%3">
+    </event>
+    <event value="207" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000140" message="Gnss[id=%1, Driver] Ioctl=%2, hr=%3, Duration=%4">
+    </event>
+    <event value="208" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000140" message="Gnss[id=%1] SAT: %2">
+    </event>
+    <event value="209" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000140" message="Gnss[id=%1, Driver] FixEventError hr=%2, numBytesTransferred=%3, fixlevelofdetails=%4, expectedMinBytes=%5, expectedMinSatelliteBytes=%6">
+    </event>
+    <event value="210" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000044" message="Session[%1,%2] START %3, IsClient=%9, Acquire[attached=%10, owner=%11], Age=%7, %4, AccuracyValue=%5, VenueMandatory=%8, Param=%6">
+    </event>
+    <event value="211" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000040" message="Session[%1,%2] STOP: hr=%3">
+    </event>
+    <event value="212" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000064" message="Session[%1,%2] POS: %5, Status=%3, SourcePe=%4, Intermediate=%6, lat=%7, lon=%8, HAcc=%9, Speed=%10, Floor=%11, Venue=%12">
+    </event>
+    <event value="213" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000064" message="Session[%1,%2] CallerName=%6, CallerProductId=%3, Sid=%4, PackageId=%5">
+    </event>
+    <event value="220" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000001004" message="Orion ServerTime: hr=%1, Report hr=%2, time=%3">
+    </event>
+    <event value="221" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000001004" message="Orion Agnss: hr=%1, Report hr=%2, BlobSize=%3">
+    </event>
+    <event value="222" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000001004" message="Orion Inference: Winhttp hr=%1, Orion=%2, lat=%3, lon=%4, Accuracy=%5">
+    </event>
+    <event value="230" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000002004" message="SUPL config: hslp=%1 (src=%2), hslp_from_imsi=%3">
+    </event>
+    <event value="231" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000002004" message="V2UPL config: MPC=%1, PDE=%2, AppType=%3">
+    </event>
+    <event value="232" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000002004" message="Set SUPL version: %1.%2">
+    </event>
+    <event value="233" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000002004" message="Cert config: Action=%1, Name=%2, Size=%3">
+    </event>
+    <event value="234" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="Driver cmd=%1, value=%2">
+    </event>
+    <event value="235" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="Agnss Inject: type=%1, status=%2, dataSize=%3">
+    </event>
+    <event value="236" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="NI Request: id=%1, type=%2, NotType=%3, Plane=%4">
+    </event>
+    <event value="237" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="NI Response: id=%1, response=%2">
+    </event>
+    <event value="238" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="Driver: ForceOperationMode=%1">
+    </event>
+    <event value="239" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="Agnss Request: type=%1 %2">
+    </event>
+    <event value="240" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000002114" message="SUPL Reconfig: Trigger=%1, CurrentRegStatus=%2">
+    </event>
+    <event value="241" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="Agnss Clear: type=%1">
+    </event>
+    <event value="242" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="Agnss Position Inject: status=%1, lat=%2, lon=%3, alt=%4, speed=%5, head=%6, hAccuracy=%7">
+    </event>
+    <event value="243" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="Agnss Time Inject: status=%1, Time=%2, Uncertainty=%3">
+    </event>
+    <event value="244" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="Agnss Blob Inject: status=%1, Version=%2, Format=%3, Size=%4">
+    </event>
+    <event value="245" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="GnssAdapt GFAdd Id=[%1:%2], hwId=%3 hr=%4">
+    </event>
+    <event value="246" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="GnssAdapt GFRemove: hwId=%1, hr=%2">
+    </event>
+    <event value="247" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="GnssAdapt GFResetTracking: hr=%1">
+    </event>
+    <event value="248" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="GnssAdapt GFEvent: id=%1, triggerState=%2">
+    </event>
+    <event value="249" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="GnssAdapt GFTrackingStatus: state=%1">
+    </event>
+    <event value="250" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000204" message="SC GSM MCC=%1, MNC=%2, CID=%3, LAC=%4">
+    </event>
+    <event value="251" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000204" message="SC UMTS MCC=%1, MNC=%2, CID=%3, LAC=%4">
+    </event>
+    <event value="252" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000204" message="SC CDMA BaseLat=%1, BaseLong=%2, BSID=%3, NID=%4, SID=%5">
+    </event>
+    <event value="253" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000204" message="SC LTE MCC=%1, MNC=%2, CID=%3">
+    </event>
+    <event value="254" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000204" message="Neighbors: %1">
+    </event>
+    <event value="255" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000204" message="SC TDSCDMA MCC=%1, MNC=%2, LAC=%3, CID=%4">
+    </event>
+    <event value="256" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000204" message="[Cell Adapter]Cell Location update noficiation: Parms = %1, Exe= %2, UiccApp = %3, LAC=%4, TAC = %5, CID=%6">
+    </event>
+    <event value="257" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000204" message="[Cell Adapter]Cell Location update notification Error state, hr =%1">
+    </event>
+    <event value="258" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000204" message="Neighbors Used: %1">
+    </event>
+    <event value="259" version="0" opcode="0" channel="16" level="5" task="70" keywords="0x8000000000000204" message="IsMulticellUsed=%1">
+    </event>
+    <event value="260" version="0" opcode="0" channel="16" level="5" task="40" keywords="0x8000000000000008" message="Mac Address=%1, Signal Strength=%2">
+    </event>
+    <event value="261" version="0" opcode="0" channel="16" level="4" task="40" keywords="0x800000000000000c" message="Wifi Change: Name=%1, State=%2">
+    </event>
+    <event value="262" version="0" opcode="0" channel="16" level="4" task="40" keywords="0x8000000000000008" message="Wifi MACs:%1">
+    </event>
+    <event value="265" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="GnssAdapt GnssError Error=%1, Recoverable=%2, Description=%3">
+    </event>
+    <event value="266" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="GnssAdapt DeviceAvailable = %1, SymbolicLink=%2, DeviceInUse=%3, hr= %4">
+    </event>
+    <event value="267" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="GnssPnPManager Device Arrival SymbolicLink= %1, IsExternal=%2">
+    </event>
+    <event value="268" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="GnssPnPManager Device Removal SymbolicLink= %1, IsExternal=%2">
+    </event>
+    <event value="269" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000114" message="GnssPnPManager Retrying for SymbolicLink= %1">
+    </event>
+    <event value="270" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000604" message="Server Cache IsHit=%1, PE=%2">
+    </event>
+    <event value="271" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000604" message="Tile Cache IsHit=%1, PE=%2">
+    </event>
+    <event value="272" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000604" message="%1 Scan: Result=%2">
+    </event>
+    <event value="273" version="0" opcode="0" channel="16" level="4" task="14" keywords="0x8000000080000004" message="[VenuePE] Id=[%1], Positions:[%2]">
+    </event>
+    <event value="274" version="0" opcode="0" channel="16" level="4" task="14" keywords="0x8000000080000004" message="[VenuePE] IsInsideVenue=%1, Pos[Lat=%2,Lon=%3,Acc=%4,Source=%5]">
+    </event>
+    <event value="280" version="0" opcode="0" channel="16" level="4" task="8" keywords="0x8000000000004004" message="[CS]InitializeDcpProfile: DcpProfile=%1, hr=%2">
+    </event>
+    <event value="281" version="0" opcode="0" channel="16" level="4" task="8" keywords="0x8000000000004004" message="[CS]SubmitData: SizeInBytes=%1, DcpProfile=%2, hr=%3">
+    </event>
+    <event value="282" version="0" opcode="0" channel="16" level="5" task="8" keywords="0x8000000000004004" message="[CS]DataReceived: SourcePE=%1, IsReadyForData=%2, IsValidData=%3, hr=%4">
+    </event>
+    <event value="283" version="0" opcode="0" channel="16" level="5" task="8" keywords="0x8000000000004004" message="[CS]RawDataProcessing begins: DataListSize =%1, IsCollectionActive=%2">
+    </event>
+    <event value="284" version="0" opcode="0" channel="16" level="4" task="8" keywords="0x8000000000004004" message="[CS]State: Level=%1, CollectionType=%2, IsBufferFull=%3 IsBatterySavings=%4 IsUserPresenceOn=%5">
+    </event>
+    <event value="290" version="0" opcode="0" channel="16" level="5" task="9" keywords="0x8000000000000084" message="Acquire[Id=%2, Cpe] SelectedPes: PrimaryPe=%1">
+    </event>
+    <event value="291" version="0" opcode="0" channel="16" level="5" task="9" keywords="0x8000000000000084" message="Acquire[Id=%4, Cpe] StartPrimitivePes with Role=%1, Remaining time=%2, hr=%3">
+    </event>
+    <event value="292" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="Acquire[Id=%4, Cpe] AttemptFallback with best available position Status=%1, Sourcepe=%2, AccuracyValue=%3">
+    </event>
+    <event value="294" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="Acquire[Id=%14, Cpe] DT: Wait: Dist(m)=%1, IsSpeedUnknown=%12, SpeedUsed(m/s)=%2, IsMDUsed=%3, MDPrecision(m)=%4, Speed_Wait(s)=%5, MD_Wait(s)=%6, MinWait_Budget(s)=%7, SelectedWait(s)=%8, TimeBoundApplied=%13 {Cumulative Runningtime(s)=%9, Acqtime(s)=%10, Requests=%11}">
+    </event>
+    <event value="295" version="0" opcode="0" channel="16" level="5" task="9" keywords="0x8000000040000000" message="[Cpe] New SpeedEstimate Speed(m/s)=%1, Bearing=%2, Positions=%3">
+    </event>
+    <event value="296" version="0" opcode="0" channel="16" level="5" task="9" keywords="0x8000000040000000" message="[Cpe] SpeedEstimate Input: Timestamp=%1, Latitude=%2, Longitude=%3, Accuracy=%4">
+    </event>
+    <event value="298" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="Acquire[Id=%5, Cpe] Unreliable position {acc=%1, sourcepe=%2} detected on validation with position{acc=%3, sourcepe=%4} ">
+    </event>
+    <event value="299" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="[Cpe] TotalPeCount=%1, AvailPes=[%2,%3,%4,%5,%6,%7]">
+    </event>
+    <event value="300" version="0" opcode="0" channel="16" level="4" task="20" keywords="0x8000000008001004" message="[%1] [%2], URL=%4, TrackingId=%6">
+    </event>
+    <event value="301" version="0" opcode="0" channel="16" level="4" task="21" keywords="0x8000000008001004" message="[%1] [%2]: Coordinate=[%3, %4], Acc=%7, Floor=%8, VenueId=%9, ServerStatus=[%5], WinHttpStatus=[%6], ProtocolStatus=[%11], OrionSource=[%12]">
+    </event>
+    <event value="303" version="0" opcode="0" channel="16" level="4" task="21" keywords="0x8000000008001004" message="[%1] [%2]: ServerStatus=[%3], WinHttpStatus=[%4], ProtocolStatus=[%6]">
+    </event>
+    <event value="304" version="0" opcode="0" channel="16" level="4" task="21" keywords="0x8000000008001004" message="[%1] [%2]: ServerStatus=[%3], WinHttpStatus=[%4], ProtocolStatus=[%6]">
+    </event>
+    <event value="306" version="0" opcode="0" channel="16" level="4" task="22" keywords="0x8000000008001004" message="[%1] [%2] Canceled By [%3], Status=[%4]">
+    </event>
+    <event value="307" version="0" opcode="0" channel="16" level="5" task="23" keywords="0x8000000008000000" message="[%1]: Request=[%2], WinhttpHandle=[%3], WinHttpEvent=[%4], Status=[%5]">
+    </event>
+    <event value="308" version="0" opcode="0" channel="16" level="5" task="24" keywords="0x8000000008000000" message="[%1]: Request=[%2], WinhttpHandle=[%3], WinHttpAPI=[%4], Status=[%5]">
+    </event>
+    <event value="309" version="0" opcode="0" channel="16" level="5" task="25" keywords="0x8000000008000000" message="Request=[%2]">
+    </event>
+    <event value="310" version="0" opcode="0" channel="16" level="5" task="26" keywords="0x8000000008000000" message="Response=[%2]">
+    </event>
+    <event value="401" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="[Cpe] MD: Start MD, hr=%1, hrwifi=%2, hrcell=%3, wifi{ConnState=%4, ThrottlingOn=%5, Elapsedtime(s)=%6}, cell{ThrottlingOn=%7, Elapsedtime(s)=%8} ActivityDetection{ThrottlingOn=%9, Elapsedtime(s)=%10}">
+    </event>
+    <event value="402" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="[Cpe] MD: Stop MD, hr =%1 ">
+    </event>
+    <event value="403" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="[Cpe] MD: Notify potential movement, hr =%1 ">
+    </event>
+    <event value="404" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="[Cpe] MD: Notify state changed, hr =%1 ">
+    </event>
+    <event value="405" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="[Cpe] MD: Get movementPrecision hr=%1, wifi{ConnState=%2, ThrottlingOn=%3, Elapsedtime=%4}, cell{ThrottlingOn=%5, Elapsedtime=%6} AD={ThrottlingOn=%7, Elapsedtime=%8}">
+    </event>
+    <event value="406" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="Acquire[Id=%3, Cpe] StartTracking on Pe=%1, IsPrimaryNativeTracking=%2">
+    </event>
+    <event value="407" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000084" message="[Cpe] SessionType=%1, IsSupportsNativePT=%2, IsSupportsNativeDT=%3, IsSupportsRequest=%4">
+    </event>
+    <event value="500" version="0" opcode="0" channel="16" level="4" task="50" keywords="0x8000000000000844" message="GeolocationStartOperation[%1] SessionType=%2, Age(ms)=%3, Accuracy(m)=%4, RequestParameter=%5">
+    </event>
+    <event value="501" version="0" opcode="0" channel="16" level="4" task="50" keywords="0x8000000000000844" message="GeolocationStartOperation[%1] Status=%2">
+    </event>
+    <event value="502" version="0" opcode="0" channel="16" level="4" task="50" keywords="0x8000000000000864" message="GeolocationEventHandler[%1] PositionStatus=%2, Latitude=%3, Longitude=%4, HAccuracy=%5, Status=%6">
+    </event>
+    <event value="503" version="0" opcode="0" channel="16" level="4" task="50" keywords="0x8000000000000864" message="GeolocationStopTrackingOperation[%1] Status=%2">
+    </event>
+    <event value="504" version="0" opcode="0" channel="16" level="5" task="50" keywords="0x8000000000000800" message="GeolocationPromptAppState State=%1">
+    </event>
+    <event value="525" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFClient Add Geofence at Index = %1, Lat=%2, Lon=%3, Radius =%4, Starttime=%5, Duration=%6, Dwelltime=%7, SingleUse=%8">
+    </event>
+    <event value="526" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFClient Remove Geofence at Index = %1, Lat=%2, Lon=%3, Radius =%4, Starttime=%5, Duration=%6, Dwelltime=%7, SingleUse=%8">
+    </event>
+    <event value="527" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFClient Clear all Geofences">
+    </event>
+    <event value="528" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFClient Register for %1 changes ">
+    </event>
+    <event value="529" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFClient Unregister for %1 changes">
+    </event>
+    <event value="530" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFClient Read Geofence reports">
+    </event>
+    <event value="531" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFClient Event signalled on client for %1">
+    </event>
+    <event value="532" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFClient Create location trigger ">
+    </event>
+    <event value="533" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFClient Delete location trigger ">
+    </event>
+    <event value="534" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFClient  Geofence: Id=[%1:%2] Lat=%3, Lon=%4, Radius=%5, Starttime=%6, Duration=%7, Dwelltime=%8, SingleUse=%9 ">
+    </event>
+    <event value="550" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GeofenceOperation[%1] Status=%2">
+    </event>
+    <event value="551" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000804" message="GFAppBoundary GeofenceOperation[%1] ClientId=%2, EventId=%3, Status=%4">
+    </event>
+    <event value="552" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000004" message="GFAppBoundary %3 %2 %1Event: PID=%4, AppId=%5, EventId=%6, Status=%7">
+    </event>
+    <event value="553" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000004" message="GFAppBoundary  AddGeofence: CallerName=%11, Id=[%1:%2] Lat=%3, Lon=%4, Radius=%5, Starttime=%6, Duration=%7, Dwelltime=%8, SingleUse=%9, hr=%10">
+    </event>
+    <event value="554" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000004" message="GFAppBoundary  RemoveGeofence: CallerName=%4, Id=[%1:%2], hr = %3">
+    </event>
+    <event value="555" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000004" message="GFAppBoundary  RemoveAllGeofences: CallerName=%3, AppId=%1, hr = %2">
+    </event>
+    <event value="556" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000004" message="GFAppBoundary  ListAllGeofences: AppId=%1, GeofencesCount=%2, hr=%3">
+    </event>
+    <event value="557" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000004" message="GFAppBoundary  ReadGeofenceReports: AppId=%1, GeofenceReportsCount=%2, hr=%3">
+    </event>
+    <event value="558" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000004" message="GFClient  GeofenceReport: GfId=%1, Trigger=%2, RemovalReason=%3, Status=%4, Lat=%5, Lon=%6, HAcc=%7">
+    </event>
+    <event value="559" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000004" message="GFAppBoundary  ForegroundEventFired ForegroundEventType=%1">
+    </event>
+    <event value="560" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000000004" message="GFAppBoundary  BackgroundEventSignalled ClientId=%1, EventId=%2, hr=%3">
+    </event>
+    <event value="600" version="0" opcode="0" channel="16" level="4" task="60" keywords="0x8000000000008844" message="GCW: Instance=[%1], Type=[%2], Source=[%3], Taskhost=[%4], CurrentState=[%5], Timeout=[%6]">
+    </event>
+    <event value="601" version="0" opcode="0" channel="16" level="4" task="61" keywords="0x8000000000008844" message="GCW: Instance=[%1], GeoStatus=[%2], GeoPermission=[%3]">
+    </event>
+    <event value="700" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_RG Trigger: Id=[%1:%2], Trigger=%3, Lat=%4, Lon=%5">
+    </event>
+    <event value="701" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_RG GF State: Tracker=%1, Id=[%2:%3], State=%4, Lat=%5, Lon=%6">
+    </event>
+    <event value="702" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_RG BeginRegionLoad">
+    </event>
+    <event value="703" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_RG EndRegionLoad: Lat=%1, Lon=%2, Radius=%3, Geofences=%4">
+    </event>
+    <event value="704" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_RG Start tracking for: AppId=[%1]">
+    </event>
+    <event value="705" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_RG Stop tracking for: AppId=[%1]">
+    </event>
+    <event value="706" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_%1 Start Tracking: Id=[%2:%3], Lat=%4, Lon=%5, Radius=%6, Dwelltime=%7ms, Start=%8, Duration=%9ms, Singleuse=%10">
+    </event>
+    <event value="707" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_%1 Stop Tracking: Id=[%2:%3]">
+    </event>
+    <event value="708" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_SW Active=%1, Distance=%2, Accuracy=%3">
+    </event>
+    <event value="709" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_RG Not Tracking: Id=[%1:%2], Lat=%3, Lon=%4, Radius=%5, Dwelltime=%6ms, Start=%7, Duration=%8ms, Singleuse=%9">
+    </event>
+    <event value="710" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_RG Tracker State: Tracker=%1, NewState=%2">
+    </event>
+    <event value="711" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_%1 Enable=%2">
+    </event>
+    <event value="712" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_RG Add to Trackers: Id=[%1:%2], Lat=%3, Lon=%4, Radius=%5, Dwelltime=%6ms, Start=%7, Duration=%8ms, Singleuse=%9 {TrackedGeofencesCount=%10,InternalTrackedGeofencesCount=%11}">
+    </event>
+    <event value="713" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000010004" message="TRK_RG Remove from Trackers: Id=[%1:%2] {TrackedGeofencesCount=%3,InternalTrackedGeofencesCount=%4}">
+    </event>
+    <event value="800" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000006" message="Location KPI : [%1]:  , TTFF = %2msec, Accuracy = %3m">
+    </event>
+    <event value="900" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000020004" message="GFStore Add: Id=[%1:%2], hr=%3 ">
+    </event>
+    <event value="901" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000020004" message="GFStore Remove: Id=[%1:%2], hr=%3 ">
+    </event>
+    <event value="902" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000020004" message="GFStore Update: Id=[%1:%2], TriggerState= %3, hr=%4 ">
+    </event>
+    <event value="903" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000020004" message="GFStore Get Id=[%1:%2], hr=%3 ">
+    </event>
+    <event value="904" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000020004" message="GFStore DeleteAll: AppId=%1, hr=%2 ">
+    </event>
+    <event value="905" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000020004" message="GFStore GetAllGeofence: AppId=%1, Count=%2 hr=%3 ">
+    </event>
+    <event value="906" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000020004" message="GFStore GetClosestGeofence: Lat=%1, Lon=%2, AppCount=%3, GFCount=%4 TransGFCount= %5, hr=%6 ">
+    </event>
+    <event value="907" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000020004" message="GFStore DeleteApp: AppId=%1, hr=%2 ">
+    </event>
+    <event value="908" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000020004" message="GFStore Internal: Messsage=%1, hr=%2 ">
+    </event>
+    <event value="909" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000020004" message="GFStore GetAppID: AppContext= %1 AppId=%2, hr=%3 ">
+    </event>
+    <event value="1000" version="0" opcode="1" channel="16" level="4" task="13" keywords="0x8000000000000006" message="Location Geofence Power Scenario: [%1]:  , Start">
+    </event>
+    <event value="1001" version="0" opcode="2" channel="16" level="4" task="13" keywords="0x8000000000000006" message="Location Geofence Power Scenario: [%1]:  , Stop">
+    </event>
+    <event value="1100" version="0" opcode="0" channel="16" level="4" task="15" keywords="0x8000000000000004" message="Permission denied for client = %1. Unconditional = %2, Policy = %3, LegacyPolicy = %4, Master = %5, User = %6, UserLegacyPolicy = %7, App = %8, is app container = %9. UserSid = %10, Package = %11">
+    </event>
+    <event value="1101" version="0" opcode="0" channel="16" level="4" task="15" keywords="0x8000000000000004" message="Permission denied because client was not found, client = %1. User = %2, Package = %3">
+    </event>
+    <event value="1200" version="0" opcode="0" channel="16" level="4" task="16" keywords="0x8000000000000004" message="Disabling geofencing because we are entering into Disconnected standby">
+    </event>
+    <event value="1201" version="0" opcode="0" channel="16" level="4" task="16" keywords="0x8000000000000004" message="Re-enabling geofencing because we are exiting Disconnected standby">
+    </event>
+    <event value="1250" version="0" opcode="0" channel="16" level="4" task="7" keywords="0x800000000000040c" message="WiFiAcquire: Id[0x%1], InferenceResult[%2], PositionSource[%3], PositionStatus[%4]">
+    </event>
+    <event value="1251" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000002114" message="SUPL Reconfig: Trigger=%1, CurrentRegStatus=%2">
+    </event>
+  </events>
+</provider>

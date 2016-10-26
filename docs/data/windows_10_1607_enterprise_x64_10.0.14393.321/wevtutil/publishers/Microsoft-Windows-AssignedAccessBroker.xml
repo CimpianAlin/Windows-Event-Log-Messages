@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-AssignedAccessBroker" guid="f2311b48-32be-4902-a22a-7240371dbb2c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=IoTAssignedAccessLockFramework.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\IoTAssignedAccessLockFramework.dll" messageFileName="C:\Windows\system32\IoTAssignedAccessLockFramework.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-AssignedAccessBroker/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-AssignedAccessBroker/Admin" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ActivateAssignedAccessApplication" value="3000" eventGUID="2c7310a7-4f13-4476-a498-ea65b52e3a89" message="">
+    </task>
+    <task name="WaitForAssignedAccessApplicationToDie" value="3001" eventGUID="c24d664f-c8ef-4a43-b9b5-b245e5f62fa3" message="">
+    </task>
+    <task name="CustomTask" value="3002" eventGUID="c1e052c6-cbb1-40b1-9618-98de4220ab3c" message="">
+    </task>
+    <task name="LockFrameworkQueryTask" value="3003" eventGUID="558aab81-f5b4-4ff7-bddb-96631f61664b" message="">
+    </task>
+    <task name="UnlockTask" value="3004" eventGUID="01d1ffe7-6bd8-460f-85d5-5fd343847889" message="">
+    </task>
+    <task name="LockAppPidTask" value="3005" eventGUID="fd3f5507-0e62-480f-ba95-e6a2e5b4fc4c" message="">
+    </task>
+    <task name="AbovelockToastTask" value="3006" eventGUID="d42ce10d-f15f-4f42-9502-3ead1841b7fd" message="">
+    </task>
+    <task name="SetPowerManagerStatusTask" value="3007" eventGUID="eaf07f81-be42-4122-ba0b-b69213c95a44" message="">
+    </task>
+    <task name="ClosePowerRequestHandleTask" value="3008" eventGUID="633ff652-a7b5-4978-916d-69e6fde8eff7" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="30000" version="0" opcode="0" channel="17" level="4" task="3000" keywords="0x4000000000000000" message="Activated above lock app %1 using interface %2 with return code %3">
+    </event>
+    <event value="30002" version="0" opcode="0" channel="17" level="4" task="3001" keywords="0x4000000000000000" message="Could not find any application running above lock">
+    </event>
+    <event value="30003" version="0" opcode="0" channel="17" level="4" task="3001" keywords="0x4000000000000000" message="Above lock app exited">
+    </event>
+    <event value="30004" version="0" opcode="0" channel="17" level="4" task="3002" keywords="0x4000000000000000" message="This is a custom event, see details for more information">
+    </event>
+    <event value="30005" version="0" opcode="0" channel="17" level="2" task="3003" keywords="0x4000000000000000" message="Failed to get %1 with return code %2">
+    </event>
+    <event value="30006" version="0" opcode="0" channel="17" level="4" task="3004" keywords="0x4000000000000000" message="Detected unlocking event (user pressed Ctrl+Alt+Del), terminating above lock app, and exiting lock app">
+    </event>
+    <event value="30007" version="0" opcode="0" channel="17" level="4" task="3005" keywords="0x4000000000000000" message="%1 failed with return code %2">
+    </event>
+    <event value="30008" version="0" opcode="0" channel="17" level="4" task="3006" keywords="0x4000000000000000" message="Abovelock toast operation %1 failed with return code %2">
+    </event>
+    <event value="30009" version="0" opcode="0" channel="17" level="4" task="3007" keywords="0x4000000000000000" message="Set power manager PowerRequestActiveLockScreenInternal returns status code %1">
+    </event>
+    <event value="30010" version="0" opcode="0" channel="17" level="4" task="3008" keywords="0x4000000000000000" message="Close power request handle returns %1">
+    </event>
+  </events>
+</provider>

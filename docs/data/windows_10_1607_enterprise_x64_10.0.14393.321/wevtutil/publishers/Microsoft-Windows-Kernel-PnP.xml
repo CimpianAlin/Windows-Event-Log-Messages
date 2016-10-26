@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-PnP" guid="9c205a39-1250-487d-abd7-e831c6290539" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=microsoft-windows-kernel-pnp-events.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\microsoft-windows-kernel-pnp-events.dll" messageFileName="C:\Windows\system32\microsoft-windows-kernel-pnp-events.dll" message="Microsoft-Windows-Kernel-PnP" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-PnP/Configuration" id="16" flags="0" message="Device Configuration">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-PnP/Boot Diagnostic" id="17" flags="0" message="Boot Diagnostic Channel">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-PnP/Device Enumeration Diagnostic" id="18" flags="0" message="Device Enumeration Diagnostic Channel">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-PnP/Configuration Diagnostic" id="19" flags="0" message="Configuration Diagnostic Channel">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-PnP/Driver Diagnostic" id="20" flags="0" message="Driver Diagnostic Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="win:Suspend" value="524288" message="Suspend">
+    </opcode>
+    <opcode name="QueryStart" value="655360" message="">
+    </opcode>
+    <opcode name="QueryStop" value="720896" message="">
+    </opcode>
+    <opcode name="ProcessingStart" value="786432" message="">
+    </opcode>
+    <opcode name="ProcessingStop" value="851968" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="BootStart" value="200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemStart" value="202" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="OsLoader" value="204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EarlyLaunchAntiMalware" value="205" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootInit" value="210" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DriverLoad" value="212" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DriverUnload" value="214" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceStart" value="216" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceEnum" value="220" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceEject" value="223" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DriverInit" value="226" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceConfig" value="250" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemStartPnPEnum" value="260" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemStartLegacyEnum" value="262" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootDriverReinit" value="264" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemStartDriverReinit" value="266" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DriverDatabaseLoad" value="270" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DriverDatabaseUnload" value="273" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DriverDatabaseLoaded" value="276" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevQuery_QueryProcessing" value="500" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DriverOverride" value="600" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CfgMgr_DeviceList" value="700" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CfgMgr_DeviceInterfaceList" value="702" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CfgMgr_QueryRemove" value="704" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessNewDevice" value="800" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessDeviceStart" value="803" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessDeviceRestart" value="805" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceAdd" value="807" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReenumerateDeviceTree" value="810" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReenumerateDeviceOnly" value="813" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceRemoval" value="830" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssignResources" value="850" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Rebalance" value="852" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Performance" mask="20" message="">
+    </keyword>
+    <keyword name="BootInit" mask="1000" message="">
+    </keyword>
+    <keyword name="DriverLoad" mask="2000" message="">
+    </keyword>
+    <keyword name="DriverUnload" mask="4000" message="">
+    </keyword>
+    <keyword name="DeviceStart" mask="8000" message="">
+    </keyword>
+    <keyword name="DeviceEnum" mask="10000" message="">
+    </keyword>
+    <keyword name="DriverInit" mask="20000" message="">
+    </keyword>
+    <keyword name="DeviceEject" mask="40000" message="">
+    </keyword>
+    <keyword name="DeviceConfig" mask="80000" message="">
+    </keyword>
+    <keyword name="DriverDatabase" mask="100000" message="">
+    </keyword>
+    <keyword name="DevQuery" mask="200000" message="">
+    </keyword>
+    <keyword name="CfgMgr" mask="400000" message="">
+    </keyword>
+    <keyword name="Enumeration" mask="800000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+    <keyword name="win:SQM" mask="8000000000000" message="SQM">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="200" version="0" opcode="1" channel="17" level="4" task="200" keywords="0x2000000000000020" message="Begin boot start drivers phase">
+    </event>
+    <event value="201" version="0" opcode="2" channel="17" level="4" task="200" keywords="0x2000000000000020" message="End boot start drivers phase">
+    </event>
+    <event value="202" version="0" opcode="1" channel="17" level="4" task="202" keywords="0x2000000000000020" message="Begin system start drivers phase">
+    </event>
+    <event value="203" version="0" opcode="2" channel="17" level="4" task="202" keywords="0x2000000000000020" message="End system start drivers phase">
+    </event>
+    <event value="204" version="0" opcode="0" channel="17" level="4" task="204" keywords="0x2000000000000020" message="OS Loader Start: %1
+OS Loader End: %2">
+    </event>
+    <event value="205" version="0" opcode="1" channel="0" level="4" task="205" keywords="0x20" message="">
+    </event>
+    <event value="206" version="0" opcode="2" channel="0" level="4" task="205" keywords="0x20" message="">
+    </event>
+    <event value="207" version="0" opcode="1" channel="0" level="4" task="205" keywords="0x20" message="">
+    </event>
+    <event value="208" version="0" opcode="2" channel="0" level="4" task="205" keywords="0x20" message="">
+    </event>
+    <event value="209" version="0" opcode="0" channel="0" level="4" task="205" keywords="0x20" message="">
+    </event>
+    <event value="210" version="0" opcode="1" channel="20" level="4" task="210" keywords="0x400000000001020" message="Begin initializing boot start driver %2">
+    </event>
+    <event value="211" version="0" opcode="2" channel="20" level="4" task="210" keywords="0x400000000001020" message="End initializing boot start driver %2.  Status: %3">
+    </event>
+    <event value="212" version="0" opcode="1" channel="20" level="4" task="212" keywords="0x400000000002020" message="Begin loading driver %2">
+    </event>
+    <event value="213" version="0" opcode="2" channel="20" level="4" task="212" keywords="0x400000000002020" message="End loading driver %5.  Status: %3">
+    </event>
+    <event value="214" version="0" opcode="1" channel="20" level="4" task="214" keywords="0x400000000004020" message="Begin unloading driver %2">
+    </event>
+    <event value="215" version="0" opcode="2" channel="20" level="4" task="214" keywords="0x400000000004020" message="End unloading driver %5.  Status: %3">
+    </event>
+    <event value="216" version="0" opcode="1" channel="18" level="4" task="216" keywords="0x1000000000008020" message="Begin starting device %2">
+    </event>
+    <event value="217" version="0" opcode="8" channel="18" level="4" task="216" keywords="0x1000000000008020" message="Pending start of device %2">
+    </event>
+    <event value="218" version="0" opcode="2" channel="18" level="4" task="216" keywords="0x1000000000008020" message="End starting device %2 using driver %5.  Status: %3">
+    </event>
+    <event value="219" version="0" opcode="0" channel="8" level="3" task="212" keywords="0x8000000000000000" message="The driver %5 failed to load for the device %2.">
+    </event>
+    <event value="220" version="0" opcode="1" channel="18" level="4" task="220" keywords="0x1000000000010020" message="Begin querying bus relations for device %2">
+    </event>
+    <event value="221" version="0" opcode="8" channel="18" level="4" task="220" keywords="0x1000000000010020" message="Pending querying bus relations for device %2">
+    </event>
+    <event value="222" version="0" opcode="2" channel="18" level="4" task="220" keywords="0x1000000000010020" message="End querying bus relations for device %2">
+    </event>
+    <event value="223" version="0" opcode="1" channel="18" level="4" task="223" keywords="0x1000000000040000" message="Begin attempting to eject device %2">
+    </event>
+    <event value="224" version="0" opcode="2" channel="18" level="4" task="223" keywords="0x1000000000040000" message="End attempting to eject device %2. Status: %3">
+    </event>
+    <event value="225" version="0" opcode="0" channel="8" level="3" task="223" keywords="0x8000000000000000" message="The application %3 with process id %1 stopped the removal or ejection for the device %5.">
+    </event>
+    <event value="226" version="0" opcode="1" channel="20" level="4" task="226" keywords="0x400000000020020" message="Begin calling driver initialization routine for driver %2">
+    </event>
+    <event value="227" version="0" opcode="2" channel="20" level="4" task="226" keywords="0x400000000020020" message="End calling driver initialization routine for driver %2. Status: %3">
+    </event>
+    <event value="228" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="229" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="230" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="231" version="0" opcode="2" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="232" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="233" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="234" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="235" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="236" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="240" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="A partition unit replace operation has been initiated.">
+    </event>
+    <event value="241" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A partition unit replace operation has failed.">
+    </event>
+    <event value="241" version="1" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A partition unit replace operation has failed.
+
+Cause: %5">
+    </event>
+    <event value="242" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="A partition unit has been successfully replaced.">
+    </event>
+    <event value="250" version="0" opcode="1" channel="19" level="4" task="250" keywords="0x800000000080000" message="Begin configuration of device %2">
+    </event>
+    <event value="251" version="0" opcode="8" channel="19" level="4" task="250" keywords="0x800000000080000" message="Pending configuration of device %2">
+    </event>
+    <event value="252" version="0" opcode="2" channel="19" level="4" task="250" keywords="0x800000000080000" message="End configuration of device %2. Status: %3">
+    </event>
+    <event value="260" version="0" opcode="1" channel="17" level="4" task="260" keywords="0x2000000000000020" message="Begin starting system start drivers part 1">
+    </event>
+    <event value="261" version="0" opcode="2" channel="17" level="4" task="260" keywords="0x2000000000000020" message="End starting system start drivers part 1">
+    </event>
+    <event value="262" version="0" opcode="1" channel="17" level="4" task="262" keywords="0x2000000000000020" message="Begin starting system start drivers part 2">
+    </event>
+    <event value="263" version="0" opcode="2" channel="17" level="4" task="262" keywords="0x2000000000000020" message="End starting system start drivers part 2">
+    </event>
+    <event value="264" version="0" opcode="1" channel="20" level="4" task="264" keywords="0x400000000000020" message="Begin processing reinitialization requests for boot start drivers">
+    </event>
+    <event value="265" version="0" opcode="2" channel="20" level="4" task="264" keywords="0x400000000000020" message="End processing reinitialization requests for boot start drivers">
+    </event>
+    <event value="266" version="0" opcode="1" channel="20" level="4" task="266" keywords="0x400000000000020" message="Begin processing reinitialization requests for system start drivers">
+    </event>
+    <event value="267" version="0" opcode="2" channel="20" level="4" task="266" keywords="0x400000000000020" message="End processing reinitialization requests for system start drivers">
+    </event>
+    <event value="270" version="0" opcode="1" channel="19" level="4" task="270" keywords="0x800000000100000" message="Begin loading driver database %2">
+    </event>
+    <event value="271" version="0" opcode="8" channel="19" level="4" task="270" keywords="0x800000000100000" message="Pending loading driver database %2">
+    </event>
+    <event value="272" version="0" opcode="2" channel="19" level="4" task="270" keywords="0x800000000100000" message="End loading driver database %2">
+    </event>
+    <event value="273" version="0" opcode="1" channel="19" level="4" task="273" keywords="0x800000000100000" message="Begin unloading driver database %2">
+    </event>
+    <event value="274" version="0" opcode="8" channel="19" level="4" task="273" keywords="0x800000000100000" message="Pending unloading driver database %2">
+    </event>
+    <event value="275" version="0" opcode="2" channel="19" level="4" task="273" keywords="0x800000000100000" message="End unloading driver database %2">
+    </event>
+    <event value="276" version="0" opcode="1" channel="0" level="4" task="276" keywords="0x1000000100000" message="">
+    </event>
+    <event value="277" version="0" opcode="2" channel="0" level="4" task="276" keywords="0x1000000100000" message="">
+    </event>
+    <event value="278" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="">
+    </event>
+    <event value="300" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Begin starting initialization of drivers">
+    </event>
+    <event value="301" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="End starting initialization of drivers">
+    </event>
+    <event value="400" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Device %1 was configured.
+
+Driver Name: %2
+Class Guid: %3
+Driver Date: %4
+Driver Version: %5
+Driver Provider: %6
+Driver Section: %8
+Driver Rank: %9
+Matching Device Id: %10
+Outranked Drivers: %11
+Device Updated: %12
+Parent Device: %14">
+    </event>
+    <event value="401" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Device %1 failed configuration
+
+Driver Name: %2
+Class Guid: %3
+Driver Date: %4
+Driver Version: %5
+Driver Provider: %6
+Driver Section: %8
+Driver Rank: %9
+Matching Device Id: %10
+Outranked Drivers: %11
+Device Updated: %12
+Status: %13
+Parent Device: %14">
+    </event>
+    <event value="402" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Device %1 had its configuration blocked by policy.
+
+Driver Name: %2
+Class Guid: %3
+Driver Date: %4
+Driver Version: %5
+Driver Provider: %6
+Driver Section: %8
+Driver Rank: %9
+Matching Device Id: %10
+Outranked Drivers: %11
+Device Updated: %12
+Status: %13
+Parent Device: %14">
+    </event>
+    <event value="403" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Device %1 requires a system reboot to complete configuration.
+
+Driver Name: %2
+Class Guid: %3
+Driver Date: %4
+Driver Version: %5
+Driver Provider: %6
+Driver Section: %8
+Driver Rank: %9
+Matching Device Id: %10
+Outranked Drivers: %11
+Device Updated: %12
+Status: %13
+Parent Device: %14">
+    </event>
+    <event value="410" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Device %1 was started.
+
+Driver Name: %2
+Class Guid: %3
+Service: %4
+Lower Filters: %5
+Upper Filters: %6">
+    </event>
+    <event value="411" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Device %1 had a problem starting.
+
+Driver Name: %2
+Class Guid: %3
+Service: %4
+Lower Filters: %5
+Upper Filters: %6
+Problem: %7
+Problem Status: %8">
+    </event>
+    <event value="412" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Device %1 requires a system reboot before it can be started.
+
+Driver Name: %2
+Class Guid: %3
+Service: %4
+Lower Filters: %5
+Upper Filters: %6
+Problem: %7
+Problem Status: %8">
+    </event>
+    <event value="420" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Device %1 was deleted.
+
+Class Guid: %2">
+    </event>
+    <event value="421" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Device %1 could not be deleted.
+
+Class Guid: %2
+Problem: %3
+Status: %4">
+    </event>
+    <event value="430" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Device %1 requires further installation.">
+    </event>
+    <event value="440" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Device %1 was migrated.
+
+Last Device Instance Id: %2
+Class Guid: %3
+Location Path: %4
+Migration Rank: %5
+Present: %6">
+    </event>
+    <event value="441" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Device %1 could not be migrated.
+
+Last Device Instance Id: %2
+Class Guid: %3
+Location Path: %4
+Migration Rank: %5
+Present: %6
+Status: %7">
+    </event>
+    <event value="500" version="0" opcode="10" channel="0" level="4" task="500" keywords="0x200000" message="">
+    </event>
+    <event value="501" version="0" opcode="12" channel="0" level="4" task="500" keywords="0x200000" message="">
+    </event>
+    <event value="502" version="0" opcode="13" channel="0" level="4" task="500" keywords="0x200000" message="">
+    </event>
+    <event value="503" version="0" opcode="11" channel="0" level="4" task="500" keywords="0x200000" message="">
+    </event>
+    <event value="600" version="0" opcode="0" channel="20" level="4" task="600" keywords="0x400000000000000" message="A start type override of %3 was set for driver %2 in hardware configuration %1">
+    </event>
+    <event value="700" version="0" opcode="1" channel="0" level="4" task="700" keywords="0x400000" message="">
+    </event>
+    <event value="701" version="0" opcode="2" channel="0" level="4" task="700" keywords="0x400000" message="">
+    </event>
+    <event value="702" version="0" opcode="1" channel="0" level="4" task="702" keywords="0x400000" message="">
+    </event>
+    <event value="703" version="0" opcode="2" channel="0" level="4" task="702" keywords="0x400000" message="">
+    </event>
+    <event value="704" version="0" opcode="1" channel="0" level="4" task="704" keywords="0x400000" message="">
+    </event>
+    <event value="705" version="0" opcode="2" channel="0" level="4" task="704" keywords="0x400000" message="">
+    </event>
+    <event value="800" version="0" opcode="1" channel="18" level="4" task="800" keywords="0x1000000000800000" message="Begin processing new device (%1)">
+    </event>
+    <event value="801" version="0" opcode="0" channel="18" level="4" task="800" keywords="0x1000000000800000" message="Processing device %2 (%1)">
+    </event>
+    <event value="802" version="0" opcode="2" channel="18" level="4" task="800" keywords="0x1000000000800000" message="End processing new device (%1)">
+    </event>
+    <event value="803" version="0" opcode="1" channel="0" level="4" task="803" keywords="0x800000" message="Begin processing phase %1 of starting device %2">
+    </event>
+    <event value="804" version="0" opcode="2" channel="0" level="4" task="803" keywords="0x800000" message="End processing phase %1 of starting device %2">
+    </event>
+    <event value="805" version="0" opcode="1" channel="0" level="4" task="805" keywords="0x800000" message="Begin processing phase %1 of restarting device %2">
+    </event>
+    <event value="806" version="0" opcode="2" channel="0" level="4" task="805" keywords="0x800000" message="End processing phase %1 of restarting device %2">
+    </event>
+    <event value="807" version="0" opcode="1" channel="18" level="4" task="807" keywords="0x1000000000800000" message="Begin device add operation for driver %3, device %4">
+    </event>
+    <event value="808" version="0" opcode="2" channel="18" level="4" task="807" keywords="0x1000000000800000" message="End device add, status (%1)">
+    </event>
+    <event value="810" version="0" opcode="0" channel="18" level="4" task="810" keywords="0x1000000000800000" message="Reenumeration of device tree below %1 has been queued.">
+    </event>
+    <event value="811" version="0" opcode="1" channel="18" level="4" task="810" keywords="0x1000000000800000" message="Begin reenumeration of device tree below %1.">
+    </event>
+    <event value="812" version="0" opcode="2" channel="18" level="4" task="810" keywords="0x1000000000800000" message="End reenumeration of device tree below %1.">
+    </event>
+    <event value="813" version="0" opcode="0" channel="18" level="4" task="813" keywords="0x1000000000800000" message="Reenumeration of %1 has been queued.">
+    </event>
+    <event value="814" version="0" opcode="1" channel="18" level="4" task="813" keywords="0x1000000000800000" message="Begin reenumeration of %1.">
+    </event>
+    <event value="815" version="0" opcode="2" channel="18" level="4" task="813" keywords="0x1000000000800000" message="End reenumeration of %1.">
+    </event>
+    <event value="830" version="0" opcode="0" channel="18" level="4" task="830" keywords="0x1000000000800000" message="Removal of %1 has been queued.">
+    </event>
+    <event value="831" version="0" opcode="1" channel="18" level="4" task="830" keywords="0x1000000000800000" message="Begin removal of %1.">
+    </event>
+    <event value="832" version="0" opcode="2" channel="18" level="4" task="830" keywords="0x1000000000800000" message="End removal of %1.">
+    </event>
+    <event value="840" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x1000000000800000" message="Begin resetting device %2.">
+    </event>
+    <event value="841" version="0" opcode="2" channel="18" level="4" task="0" keywords="0x1000000000800000" message="End resetting device %2 with status %3, veto type %4, veto name %6.">
+    </event>
+    <event value="850" version="0" opcode="1" channel="18" level="4" task="850" keywords="0x1000000000800000" message="Begin assigning resources to device tree below %1.">
+    </event>
+    <event value="851" version="0" opcode="2" channel="18" level="4" task="850" keywords="0x1000000000800000" message="End assigning resources to device tree below %1.">
+    </event>
+    <event value="852" version="0" opcode="1" channel="18" level="4" task="852" keywords="0x1000000000800000" message="Begin rebalancing resources for device %2.">
+    </event>
+    <event value="853" version="0" opcode="2" channel="18" level="4" task="852" keywords="0x1000000000800000" message="End rebalancing resources for device %2.">
+    </event>
+  </events>
+</provider>

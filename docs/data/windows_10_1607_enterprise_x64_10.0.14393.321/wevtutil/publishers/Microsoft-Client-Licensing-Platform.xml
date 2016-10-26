@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Client-Licensing-Platform" guid="b6cc0d55-9ecc-49a8-b929-2b9022426f2a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ClipSvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\ClipSvc.dll" messageFileName="C:\Windows\system32\ClipSvc.dll" message="Microsoft-Windows-Client-Licensing" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Client-Licensing-Platform/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Client-Licensing-Platform/Debug" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Client-Licensing-Platform/Admin" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Service_Init" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Service_Stop" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Service_Call" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="SERVICE_KEYWORD" mask="1" message="Service Keyword">
+    </keyword>
+    <keyword name="SERVICE_PERF_KEYWORD" mask="2" message="Service Perf Keyword">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000002" message="[Service] Inititialize started">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000002" message="[Service] Initialize complete">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000002" message="[Service] Shutdown started">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000002" message="[Service] Shutdown complete">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFS">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFD">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFS">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFD">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFS">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFD">
+    </event>
+    <event value="13" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFS">
+    </event>
+    <event value="14" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFD">
+    </event>
+    <event value="15" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFS">
+    </event>
+    <event value="16" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFD">
+    </event>
+    <event value="17" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFS">
+    </event>
+    <event value="18" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] IFD">
+    </event>
+    <event value="19" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] Execute start for id: %1">
+    </event>
+    <event value="20" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000002" message="[ServiceCall] Execute done for id: %1">
+    </event>
+    <event value="100" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="ClipSVC service is starting.  Caller: %1">
+    </event>
+    <event value="101" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="ClipSVC service is running.  Version %1">
+    </event>
+    <event value="102" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="ClipSVC service has shutdown.">
+    </event>
+    <event value="103" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="ClipSVC service initialization failed - result code: %1">
+    </event>
+    <event value="104" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000001" message="ClipSVC was restarted while there is a pending rearm reboot required.  Caller: %1">
+    </event>
+    <event value="106" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="License successfully uninstalled for package %1 (user %2), license Id %3, file Id %4">
+    </event>
+    <event value="107" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="License successfully uninstalled for file Id %1">
+    </event>
+    <event value="110" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="License install failed for license type: %1
+Result code: %2">
+    </event>
+    <event value="111" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="License install failed for license Id %1
+Type: %2
+Package (if available): %3
+User Id (if available): %4
+Result code: %5">
+    </event>
+    <event value="112" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="License install storage failed for license Id %1
+Type: %2
+Package (if available): %3
+User Id(if available): %4
+Result code: %5">
+    </event>
+    <event value="115" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="License successfully installed for package %1.
+User Id (if available): %2
+Type: %3
+License Id: %4
+Associate Id: %5">
+    </event>
+    <event value="116" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="Application license successfully installed.
+Package: %1
+User Id (if available): %2
+License Id: %3
+Associate Id: %4">
+    </event>
+    <event value="117" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="Lease successfully installed.
+License Id: %3
+Associate Id: %4
+Package (if available): %1
+UserId (if available): %2">
+    </event>
+    <event value="118" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="Device license successfully installed.
+License Id: %1
+Associate Id: %2
+Device Id: %3">
+    </event>
+    <event value="150" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="Clip service has been rearmed.  Result code: %1">
+    </event>
+    <event value="151" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="Failed to launch app %1 since no applicable licenses were found">
+    </event>
+    <event value="152" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="The hardware ID in the device license is out of tolerance with the device ID">
+    </event>
+    <event value="153" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="The hardware ID in the device license changed but still with in tolerance with the device hardware ID">
+    </event>
+    <event value="154" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="The device license was updated with a different device ID">
+    </event>
+    <event value="155" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="The device license was removed">
+    </event>
+    <event value="156" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="The required device license could not not be found">
+    </event>
+    <event value="157" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="The license with Id %2 has been archived successfully.  PFM if available: %1">
+    </event>
+    <event value="158" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="The license with Id %2 was not able to be archived successfully.
+Error code: %3
+PFM if available: %1">
+    </event>
+    <event value="159" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="The lease with Id %2 has been archived successfully.  PFM if available: %1">
+    </event>
+    <event value="160" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="The license with Id %2 of type %3 has been archived successfully.  PFM if available: %1">
+    </event>
+  </events>
+</provider>

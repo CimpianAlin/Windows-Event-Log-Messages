@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MediaFoundation-Performance" guid="f404b94e-27e0-4384-bfe8-1d8d390b0aa3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=mfplat.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\mfplat.dll" messageFileName="C:\Windows\system32\mfplat.dll" message="Microsoft-Windows-MediaFoundation-Performance" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="MediaFoundationPerformance" id="16" flags="0" message="Media Foundation Performance">
+    </channel>
+    <channel name="Microsoft-Windows-MediaFoundation-Performance/SARStreamResource" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="op_mfperf_Input" value="655360" message="Input">
+    </opcode>
+    <opcode name="op_mfperf_Output" value="720896" message="Output">
+    </opcode>
+    <opcode name="op_mfperf_Queued" value="786432" message="Queued">
+    </opcode>
+    <opcode name="op_mfperf_Dropped" value="851968" message="Dropped">
+    </opcode>
+    <opcode name="op_mfperf_Start" value="917504" message="Start">
+    </opcode>
+    <opcode name="op_mfperf_Stop" value="983040" message="Stop">
+    </opcode>
+    <opcode name="op_mfperf_Pause" value="1048576" message="Pause">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PerformanceTask" value="200" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Foundation Performance">
+    </task>
+    <task name="Object" value="300" eventGUID="00000000-0000-0000-0000-000000000000" message="Object">
+    </task>
+    <task name="Audio_Starvation" value="301" eventGUID="00000000-0000-0000-0000-000000000000" message="Audio Starvation">
+    </task>
+    <task name="Video_Frame_Glitch" value="302" eventGUID="00000000-0000-0000-0000-000000000000" message="Video Frame Glitch">
+    </task>
+    <task name="Evr_Queue" value="303" eventGUID="00000000-0000-0000-0000-000000000000" message="Evr Queue">
+    </task>
+    <task name="Evr_DWMDequeue" value="304" eventGUID="00000000-0000-0000-0000-000000000000" message="Evr DWMDequeue">
+    </task>
+    <task name="Evr_Present" value="305" eventGUID="00000000-0000-0000-0000-000000000000" message="Evr Present">
+    </task>
+    <task name="Evr_Monitor_Estimate" value="306" eventGUID="00000000-0000-0000-0000-000000000000" message="Evr Monitor Estimate">
+    </task>
+    <task name="Evr_Sleep" value="307" eventGUID="00000000-0000-0000-0000-000000000000" message="Evr Sleep">
+    </task>
+    <task name="Data_Drop" value="308" eventGUID="00000000-0000-0000-0000-000000000000" message="Data Drop">
+    </task>
+    <task name="Clock" value="309" eventGUID="00000000-0000-0000-0000-000000000000" message="Clock">
+    </task>
+    <task name="Predicted_Video_Sample_Time" value="310" eventGUID="00000000-0000-0000-0000-000000000000" message="Predicted Video Sample Time">
+    </task>
+    <task name="New_Stream" value="311" eventGUID="00000000-0000-0000-0000-000000000000" message="New Stream">
+    </task>
+    <task name="Media_Type_Change" value="312" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Type Change">
+    </task>
+    <task name="Transform_Create" value="313" eventGUID="00000000-0000-0000-0000-000000000000" message="Transform Create">
+    </task>
+    <task name="Buffer" value="314" eventGUID="00000000-0000-0000-0000-000000000000" message="Buffer">
+    </task>
+    <task name="Process" value="315" eventGUID="00000000-0000-0000-0000-000000000000" message="Process">
+    </task>
+    <task name="APOProcess" value="316" eventGUID="00000000-0000-0000-0000-000000000000" message="APOProcess">
+    </task>
+    <task name="Unusual_Streaming_Event" value="317" eventGUID="00000000-0000-0000-0000-000000000000" message="Unusual Streaming Event">
+    </task>
+    <task name="File_Open" value="318" eventGUID="00000000-0000-0000-0000-000000000000" message="File Open">
+    </task>
+    <task name="IORead_Request" value="319" eventGUID="00000000-0000-0000-0000-000000000000" message="IORead Request">
+    </task>
+    <task name="IOWrite_Request" value="320" eventGUID="00000000-0000-0000-0000-000000000000" message="IOWrite Request">
+    </task>
+    <task name="Render_Sample_Allocate_Sample" value="321" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample Allocate Sample">
+    </task>
+    <task name="Render_Sample_Receive_Sample" value="322" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample Receive Sample">
+    </task>
+    <task name="Render_Sample_Render" value="323" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample Render">
+    </task>
+    <task name="Render_Sample_Start_Mix" value="324" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample Start Mix">
+    </task>
+    <task name="Render_Sample_Mix" value="325" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample Mix">
+    </task>
+    <task name="Render_Sample_Decode" value="326" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample Decode">
+    </task>
+    <task name="Render_Sample_Deinterlace" value="327" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample Deinterlace">
+    </task>
+    <task name="Render_Sample_Procamp" value="328" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample Procamp">
+    </task>
+    <task name="Render_Sample_FRC" value="329" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample FRC">
+    </task>
+    <task name="Render_Sample_MID_Render" value="330" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample MID Render">
+    </task>
+    <task name="Render_Sample_MAP_Render" value="331" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample MAP Render">
+    </task>
+    <task name="Render_Sample_Actual_Render" value="332" eventGUID="00000000-0000-0000-0000-000000000000" message="Render Sample Actual Render">
+    </task>
+    <task name="Audio_Renderer_Buffer_Fullness" value="333" eventGUID="00000000-0000-0000-0000-000000000000" message="Audio Renderer Buffer Fullness">
+    </task>
+    <task name="State_Change" value="334" eventGUID="00000000-0000-0000-0000-000000000000" message="State Change">
+    </task>
+    <task name="Topo_Loader_Load" value="335" eventGUID="00000000-0000-0000-0000-000000000000" message="Topo Loader Load">
+    </task>
+    <task name="Topo_Loader_Create_MFT" value="336" eventGUID="00000000-0000-0000-0000-000000000000" message="Topo Loader Create MFT">
+    </task>
+    <task name="Packet_Sink_Lost_Packet" value="337" eventGUID="00000000-0000-0000-0000-000000000000" message="Packet Sink Lost Packet">
+    </task>
+    <task name="Packet_Recover_RTX" value="338" eventGUID="00000000-0000-0000-0000-000000000000" message="Packet Recover RTX">
+    </task>
+    <task name="Packet_Recover_FEC" value="339" eventGUID="00000000-0000-0000-0000-000000000000" message="Packet Recover FEC">
+    </task>
+    <task name="Media_Cache_Read_Sample" value="340" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Cache Read Sample">
+    </task>
+    <task name="Media_Cache_Write_Sample" value="341" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Cache Write Sample">
+    </task>
+    <task name="Media_Cache_Seek" value="342" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Cache Seek">
+    </task>
+    <task name="Media_Cache_Trim" value="343" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Cache Trim">
+    </task>
+    <task name="Network_Platform_Get_Host_By_Name" value="344" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Platform Get Host By Name">
+    </task>
+    <task name="Network_Channel_Send_Request" value="345" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Channel Send Request">
+    </task>
+    <task name="Network_Channel_Send_Response" value="346" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Channel Send Response">
+    </task>
+    <task name="Network_Channel_Receive_Request" value="347" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Channel Receive Request">
+    </task>
+    <task name="Network_Channel_Open" value="348" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Channel Open">
+    </task>
+    <task name="Network_Channel_Connect" value="349" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Channel Connect">
+    </task>
+    <task name="Network_Channel_Read" value="350" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Channel Read">
+    </task>
+    <task name="Network_Channel_Write" value="351" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Channel Write">
+    </task>
+    <task name="Network_Session_Send_Request" value="352" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Session Send Request">
+    </task>
+    <task name="Network_Session_Send_Response" value="353" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Session Send Response">
+    </task>
+    <task name="Network_Session_Receive_Request" value="354" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Session Receive Request">
+    </task>
+    <task name="Network_Session_Open" value="355" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Session Open">
+    </task>
+    <task name="Network_Session_Connect" value="356" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Session Connect">
+    </task>
+    <task name="Network_Client_Open" value="357" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Open">
+    </task>
+    <task name="Network_Client_Describe" value="358" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Describe">
+    </task>
+    <task name="Network_Client_Select_Streams" value="359" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Select Streams">
+    </task>
+    <task name="Network_Client_Play" value="360" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Play">
+    </task>
+    <task name="Network_Client_Pause" value="361" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Pause">
+    </task>
+    <task name="Network_Client_Stop" value="362" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Stop">
+    </task>
+    <task name="Network_Client_Send_Log" value="363" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Send Log">
+    </task>
+    <task name="Network_Client_Send_Keep_Alive" value="364" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Send Keep Alive">
+    </task>
+    <task name="Network_Client_Received_Announce" value="365" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Received Announce">
+    </task>
+    <task name="Network_Client_Packet_Pair" value="366" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Packet Pair">
+    </task>
+    <task name="Network_Client_Tear_Down" value="367" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Tear Down">
+    </task>
+    <task name="Network_Client_Received_EOS" value="368" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Received EOS">
+    </task>
+    <task name="Network_Client_Begin_Close" value="369" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client Begin Close">
+    </task>
+    <task name="Network_Client_End_Close" value="370" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client End Close">
+    </task>
+    <task name="Network_Client_GUID" value="371" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Client GUID">
+    </task>
+    <task name="Network_Source_Disconnect" value="372" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source Disconnect">
+    </task>
+    <task name="Network_Source_Begin_Reconnect" value="373" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source Begin Reconnect">
+    </task>
+    <task name="Network_Source_End_Reconnect" value="374" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source End Reconnect">
+    </task>
+    <task name="Network_Source_Announce" value="375" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source Announce">
+    </task>
+    <task name="Network_Source_EOS" value="376" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source EOS">
+    </task>
+    <task name="Network_Source_Stream_Switch" value="377" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source Stream Switch">
+    </task>
+    <task name="Network_Source_Buffering_Start" value="378" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source Buffering Start">
+    </task>
+    <task name="Network_Source_Buffering_Stop" value="379" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source Buffering Stop">
+    </task>
+    <task name="Network_Source_Connect" value="380" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source Connect">
+    </task>
+    <task name="Network_Source_Open" value="381" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source Open">
+    </task>
+    <task name="Network_Source_MCast_Join_Done" value="382" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Source MCast Join Done">
+    </task>
+    <task name="Http_Byte_Stream_Create" value="383" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Byte Stream Create">
+    </task>
+    <task name="Http_Byte_Stream_Delete" value="384" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Byte Stream Delete">
+    </task>
+    <task name="Http_Byte_Stream_Begin_Open" value="385" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Byte Stream Begin Open">
+    </task>
+    <task name="Http_Byte_Stream_End_Open" value="386" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Byte Stream End Open">
+    </task>
+    <task name="Http_Byte_Stream_Time_Seek" value="387" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Byte Stream Time Seek">
+    </task>
+    <task name="Http_Byte_Stream_Begin_Drm_Set_License" value="388" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Byte Stream Begin Drm Set License">
+    </task>
+    <task name="Http_Byte_Stream_End_Drm_Set_License" value="389" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Byte Stream End Drm Set License">
+    </task>
+    <task name="Http_Byte_Stream_Begin_Throttle" value="390" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Byte Stream Begin Throttle">
+    </task>
+    <task name="Http_Byte_Stream_End_Throttle" value="391" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Byte Stream End Throttle">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Create" value="392" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Create">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Delete" value="393" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Delete">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Read" value="394" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Read">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Begin_Read" value="395" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Begin Read">
+    </task>
+    <task name="Base_Remote_Byte_Stream_End_Read" value="396" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream End Read">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Seek" value="397" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Seek">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Close" value="398" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Close">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Configure_Buffering" value="399" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Configure Buffering">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Enable_Buffering" value="400" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Enable Buffering">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Begin_Save" value="401" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Begin Save">
+    </task>
+    <task name="Base_Remote_Byte_Stream_End_Save" value="402" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream End Save">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Cancel_Save" value="403" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Cancel Save">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Fire_Start_Buffering" value="404" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Fire Start Buffering">
+    </task>
+    <task name="Base_Remote_Byte_Stream_Fire_Stop_Buffering" value="405" eventGUID="00000000-0000-0000-0000-000000000000" message="Base Remote Byte Stream Fire Stop Buffering">
+    </task>
+    <task name="Urlmon_Byte_Stream_Create" value="406" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Create">
+    </task>
+    <task name="Urlmon_Byte_Stream_Delete" value="407" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Delete">
+    </task>
+    <task name="Urlmon_Byte_Stream_Read" value="408" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Read">
+    </task>
+    <task name="Urlmon_Byte_Stream_Begin_Read" value="409" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Begin Read">
+    </task>
+    <task name="Urlmon_Byte_Stream_End_Read" value="410" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream End Read">
+    </task>
+    <task name="Urlmon_Byte_Stream_Seek" value="411" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Seek">
+    </task>
+    <task name="Urlmon_Byte_Stream_Close" value="412" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Close">
+    </task>
+    <task name="Urlmon_Byte_Stream_Configure_Buffering" value="413" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Configure Buffering">
+    </task>
+    <task name="Urlmon_Byte_Stream_Enable_Buffering" value="414" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Enable Buffering">
+    </task>
+    <task name="Urlmon_Byte_Stream_Begin_Save" value="415" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Begin Save">
+    </task>
+    <task name="Urlmon_Byte_Stream_End_Save" value="416" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream End Save">
+    </task>
+    <task name="Urlmon_Byte_Stream_Fire_Start_Buffering" value="417" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Fire Start Buffering">
+    </task>
+    <task name="Urlmon_Byte_Stream_Fire_Stop_Buffering" value="418" eventGUID="00000000-0000-0000-0000-000000000000" message="Urlmon Byte Stream Fire Stop Buffering">
+    </task>
+    <task name="Http_Web_Request_Begin_Send_Request" value="419" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request Begin Send Request">
+    </task>
+    <task name="Http_Web_Request_End_Send_Request" value="420" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request End Send Request">
+    </task>
+    <task name="Http_Web_Request_Begin_Receive_Response" value="421" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request Begin Receive Response">
+    </task>
+    <task name="Http_Web_Request_End_Receive_Response" value="422" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request End Receive Response">
+    </task>
+    <task name="Http_Web_Request_Begin_Read_Payload" value="423" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request Begin Read Payload">
+    </task>
+    <task name="Http_Web_Request_End_Read_Payload" value="424" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request End Read Payload">
+    </task>
+    <task name="Http_Web_Request_Close" value="425" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request Close">
+    </task>
+    <task name="Http_Web_Request_Status_Callback" value="426" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request Status Callback">
+    </task>
+    <task name="Http_Web_Request_Create_Cache_Entry" value="427" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request Create Cache Entry">
+    </task>
+    <task name="Http_Web_Request_Load_Cache_Entry" value="428" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request Load Cache Entry">
+    </task>
+    <task name="Http_Web_Request_Delete_Cache_Entry" value="429" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request Delete Cache Entry">
+    </task>
+    <task name="Http_Web_Request_Save_Cache_Entry" value="430" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Web Request Save Cache Entry">
+    </task>
+    <task name="Source_Resolution_Begin_Create" value="431" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Begin Create">
+    </task>
+    <task name="Source_Resolution_End_Create" value="432" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution End Create">
+    </task>
+    <task name="Source_Resolution_Begin_Create_Object_From_URL" value="433" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Begin Create Object From URL">
+    </task>
+    <task name="Source_Resolution_End_Create_Object_From_URL" value="434" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution End Create Object From URL">
+    </task>
+    <task name="Source_Resolution_Begin_Create_Object_From_Byte_Stream" value="435" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Begin Create Object From Byte Stream">
+    </task>
+    <task name="Source_Resolution_End_Create_Object_From_Byte_Stream" value="436" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution End Create Object From Byte Stream">
+    </task>
+    <task name="Source_Resolution_Lookup_Scheme_Handler" value="437" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Lookup Scheme Handler">
+    </task>
+    <task name="Source_Resolution_Lookup_Byte_Stream_Handler" value="438" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Lookup Byte Stream Handler">
+    </task>
+    <task name="Source_Resolution_Scheme_Handler_Begin_Create_Object" value="439" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Scheme Handler Begin Create Object">
+    </task>
+    <task name="Source_Resolution_Scheme_Handler_End_Create_Object" value="440" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Scheme Handler End Create Object">
+    </task>
+    <task name="Source_Resolution_End_Scheme_Handler_End_Create_Object" value="441" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution End Scheme Handler End Create Object">
+    </task>
+    <task name="Source_Resolution_Byte_Stream_Created" value="442" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Byte Stream Created">
+    </task>
+    <task name="Source_Resolution_Byte_Stream_Handler_Begin_Create_Object" value="443" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Byte Stream Handler Begin Create Object">
+    </task>
+    <task name="Source_Resolution_Byte_Stream_Handler_End_Create_Object" value="444" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Byte Stream Handler End Create Object">
+    </task>
+    <task name="Source_Resolution_Media_Source_Created" value="445" eventGUID="00000000-0000-0000-0000-000000000000" message="Source Resolution Media Source Created">
+    </task>
+    <task name="Session_Bitpump_Start_Async_Call" value="446" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Bitpump Start Async Call">
+    </task>
+    <task name="Session_Bitpump_End_Async_Call" value="447" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Bitpump End Async Call">
+    </task>
+    <task name="Session_Bitpump_Receive_Event" value="448" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Bitpump Receive Event">
+    </task>
+    <task name="Session_Bitpump_Error" value="449" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Bitpump Error">
+    </task>
+    <task name="Session_Bitpump_Critical_Error" value="450" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Bitpump Critical Error">
+    </task>
+    <task name="Session_Bitpump_Start_Sync_Call" value="451" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Bitpump Start Sync Call">
+    </task>
+    <task name="Session_Bitpump_End_Sync_Call" value="452" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Bitpump End Sync Call">
+    </task>
+    <task name="Session_Bitpump_Wait_For_Sample" value="453" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Bitpump Wait For Sample">
+    </task>
+    <task name="Session_Bitpump_Details" value="454" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Bitpump Details">
+    </task>
+    <task name="Session_Set_Topology" value="455" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Set Topology">
+    </task>
+    <task name="Session_Start" value="456" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Start">
+    </task>
+    <task name="Session_Stop" value="457" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Stop">
+    </task>
+    <task name="Session_Pause" value="458" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Pause">
+    </task>
+    <task name="Session_Close" value="459" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Close">
+    </task>
+    <task name="Session_Shutdown" value="460" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Shutdown">
+    </task>
+    <task name="Session_Presentation_Switch" value="461" eventGUID="00000000-0000-0000-0000-000000000000" message="Session Presentation Switch">
+    </task>
+    <task name="Sequencer_Source_Start" value="462" eventGUID="00000000-0000-0000-0000-000000000000" message="Sequencer Source Start">
+    </task>
+    <task name="Sequencer_Source_Stop" value="463" eventGUID="00000000-0000-0000-0000-000000000000" message="Sequencer Source Stop">
+    </task>
+    <task name="Sequencer_Source_On_Context_Event" value="464" eventGUID="00000000-0000-0000-0000-000000000000" message="Sequencer Source On Context Event">
+    </task>
+    <task name="Sequencer_Source_Process_Sample" value="465" eventGUID="00000000-0000-0000-0000-000000000000" message="Sequencer Source Process Sample">
+    </task>
+    <task name="Sequencer_Source_On_Stream_Event" value="466" eventGUID="00000000-0000-0000-0000-000000000000" message="Sequencer Source On Stream Event">
+    </task>
+    <task name="Sequencer_Source_Create_Object_From_Node" value="467" eventGUID="00000000-0000-0000-0000-000000000000" message="Sequencer Source Create Object From Node">
+    </task>
+    <task name="Quality_Manager_Set_Quality_Level" value="468" eventGUID="00000000-0000-0000-0000-000000000000" message="Quality Manager Set Quality Level">
+    </task>
+    <task name="Quality_Manager_Set_Drop_Mode" value="469" eventGUID="00000000-0000-0000-0000-000000000000" message="Quality Manager Set Drop Mode">
+    </task>
+    <task name="Quality_Manager_Set_Drop_Time" value="470" eventGUID="00000000-0000-0000-0000-000000000000" message="Quality Manager Set Drop Time">
+    </task>
+    <task name="Media_Processor_Source_Start" value="471" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Processor Source Start">
+    </task>
+    <task name="Media_Processor_Source_Create_Topology" value="472" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Processor Source Create Topology">
+    </task>
+    <task name="Media_Processor_Source_Open" value="473" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Processor Source Open">
+    </task>
+    <task name="Media_Processor_Source_Process_Sample" value="474" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Processor Source Process Sample">
+    </task>
+    <task name="Media_Processor_Source_Send_Event" value="475" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Processor Source Send Event">
+    </task>
+    <task name="Frame_Grabber_Open_Source" value="476" eventGUID="00000000-0000-0000-0000-000000000000" message="Frame Grabber Open Source">
+    </task>
+    <task name="Frame_Grabber_Get_Frame" value="477" eventGUID="00000000-0000-0000-0000-000000000000" message="Frame Grabber Get Frame">
+    </task>
+    <task name="Frame_Grabber_Invoke" value="478" eventGUID="00000000-0000-0000-0000-000000000000" message="Frame Grabber Invoke">
+    </task>
+    <task name="Buffer_Adjust_Sample_Time_One_Shot" value="479" eventGUID="00000000-0000-0000-0000-000000000000" message="Buffer Adjust Sample Time One Shot">
+    </task>
+    <task name="Buffer_Adjust_Sample_Time_Repeat" value="480" eventGUID="00000000-0000-0000-0000-000000000000" message="Buffer Adjust Sample Time Repeat">
+    </task>
+    <task name="Video_Render" value="481" eventGUID="00000000-0000-0000-0000-000000000000" message="Video Render">
+    </task>
+    <task name="Audio_Render" value="482" eventGUID="00000000-0000-0000-0000-000000000000" message="Audio Render">
+    </task>
+    <task name="Metadata_Created" value="483" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata Created">
+    </task>
+    <task name="Metadata_Loaded" value="484" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata Loaded">
+    </task>
+    <task name="Metadata_Get_Count" value="485" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata Get Count">
+    </task>
+    <task name="Metadata_Get_At" value="486" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata Get At">
+    </task>
+    <task name="Metadata_Get_Value" value="487" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata Get Value">
+    </task>
+    <task name="Metadata_Set_Value" value="488" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata Set Value">
+    </task>
+    <task name="Metadata_Flush" value="489" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata Flush">
+    </task>
+    <task name="Metadata_On_Get_Count" value="490" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata On Get Count">
+    </task>
+    <task name="Metadata_On_Get_At" value="491" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata On Get At">
+    </task>
+    <task name="Metadata_On_Get_Value" value="492" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata On Get Value">
+    </task>
+    <task name="Metadata_On_Set_Value" value="493" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata On Set Value">
+    </task>
+    <task name="Metadata_On_Flush" value="494" eventGUID="00000000-0000-0000-0000-000000000000" message="Metadata On Flush">
+    </task>
+    <task name="Muxer_Process_Sample" value="495" eventGUID="00000000-0000-0000-0000-000000000000" message="Muxer Process Sample">
+    </task>
+    <task name="Muxer_Add_Payload" value="496" eventGUID="00000000-0000-0000-0000-000000000000" message="Muxer Add Payload">
+    </task>
+    <task name="Muxer_On_Completed_Packet" value="497" eventGUID="00000000-0000-0000-0000-000000000000" message="Muxer On Completed Packet">
+    </task>
+    <task name="Timer_Late" value="498" eventGUID="00000000-0000-0000-0000-000000000000" message="Timer Late">
+    </task>
+    <task name="MFGraph_Play" value="499" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Play">
+    </task>
+    <task name="MFGraph_Stop" value="500" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Stop">
+    </task>
+    <task name="MFGraph_Pause" value="501" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Pause">
+    </task>
+    <task name="MFGraph_Render" value="502" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Render">
+    </task>
+    <task name="MFGraph_Find_Interface_On_Filter" value="503" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Find Interface On Filter">
+    </task>
+    <task name="MFGraph_Scan" value="504" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Scan">
+    </task>
+    <task name="MFGraph_Set_Rate" value="505" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Set Rate">
+    </task>
+    <task name="MFGraph_Insert_Node" value="506" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Insert Node">
+    </task>
+    <task name="MFGraph_Batch_Insert" value="507" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Batch Insert">
+    </task>
+    <task name="MFGraph_Close" value="508" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Close">
+    </task>
+    <task name="MFGraph_Set_Volume" value="509" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Set Volume">
+    </task>
+    <task name="MFGraph_Set_Stop_Position" value="510" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Set Stop Position">
+    </task>
+    <task name="MFGraph_Set_Current_Position" value="511" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Set Current Position">
+    </task>
+    <task name="MFGraph_Set_Context" value="512" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Set Context">
+    </task>
+    <task name="MFGraph_Queue" value="513" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Queue">
+    </task>
+    <task name="MFGraph_Init" value="514" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Init">
+    </task>
+    <task name="MFGraph_Init_Ex" value="515" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Init Ex">
+    </task>
+    <task name="MFGraph_Get_Type" value="516" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Type">
+    </task>
+    <task name="MFGraph_Is_Reused" value="517" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Is Reused">
+    </task>
+    <task name="MFGraph_Get_URL" value="518" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get URL">
+    </task>
+    <task name="MFGraph_Get_Context" value="519" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Context">
+    </task>
+    <task name="MFGraph_Get_Cookie" value="520" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Cookie">
+    </task>
+    <task name="MFGraph_Set_Cookie" value="521" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Set Cookie">
+    </task>
+    <task name="MFGraph_Get_Open_State" value="522" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Open State">
+    </task>
+    <task name="MFGraph_Get_Rate" value="523" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Rate">
+    </task>
+    <task name="MFGraph_Get_Current_Position" value="524" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Current Position">
+    </task>
+    <task name="MFGraph_Get_Stop_Position" value="525" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Stop Position">
+    </task>
+    <task name="MFGraph_Get_Volume" value="526" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Volume">
+    </task>
+    <task name="MFGraph_Get_Media_Caps" value="527" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Media Caps">
+    </task>
+    <task name="MFGraph_Get_Control_Caps" value="528" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Control Caps">
+    </task>
+    <task name="MFGraph_Get_Seek_Caps" value="529" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Seek Caps">
+    </task>
+    <task name="MFGraph_Get_Jump_Caps" value="530" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Get Jump Caps">
+    </task>
+    <task name="MFGraph_Set_Auto_Rewind" value="531" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Set Auto Rewind">
+    </task>
+    <task name="MFGraph_Find_Plugin" value="532" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Find Plugin">
+    </task>
+    <task name="MFGraph_Handle_Presentation_Switch" value="533" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Handle Presentation Switch">
+    </task>
+    <task name="MFGraph_Notify_State_Change" value="534" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify State Change">
+    </task>
+    <task name="MFGraph_Notify_Playback" value="535" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify Playback">
+    </task>
+    <task name="MFGraph_Notify_Rate_Change" value="536" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify Rate Change">
+    </task>
+    <task name="MFGraph_Notify_Error" value="537" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify Error">
+    </task>
+    <task name="MFGraph_Notify_License" value="538" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify License">
+    </task>
+    <task name="MFGraph_Notify_Cred" value="539" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify Cred">
+    </task>
+    <task name="MFGraph_Notify_Individualization" value="540" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify Individualization">
+    </task>
+    <task name="MFGraph_Notify_Revocation" value="541" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify Revocation">
+    </task>
+    <task name="MFGraph_Notify_Fullscreen" value="542" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify Fullscreen">
+    </task>
+    <task name="MFGraph_Notify_Custom_License" value="543" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify Custom License">
+    </task>
+    <task name="MFGraph_Notify_User_Event" value="544" eventGUID="00000000-0000-0000-0000-000000000000" message="MFGraph Notify User Event">
+    </task>
+    <task name="WMPPlayback_Open" value="545" eventGUID="00000000-0000-0000-0000-000000000000" message="WMPPlayback Open">
+    </task>
+    <task name="WMPPlayback_Queue" value="546" eventGUID="00000000-0000-0000-0000-000000000000" message="WMPPlayback Queue">
+    </task>
+    <task name="WMPPlayback_Start" value="547" eventGUID="00000000-0000-0000-0000-000000000000" message="WMPPlayback Start">
+    </task>
+    <task name="WMPPlayback_Error_Open" value="548" eventGUID="00000000-0000-0000-0000-000000000000" message="WMPPlayback Error Open">
+    </task>
+    <task name="WMPPlayback_Error_Queue" value="549" eventGUID="00000000-0000-0000-0000-000000000000" message="WMPPlayback Error Queue">
+    </task>
+    <task name="PEAuth_Comm_Acquire_Session_Key" value="550" eventGUID="00000000-0000-0000-0000-000000000000" message="PEAuth Comm Acquire Session Key">
+    </task>
+    <task name="PEAuth_Comm_Kernel_State_Inquiry" value="551" eventGUID="00000000-0000-0000-0000-000000000000" message="PEAuth Comm Kernel State Inquiry">
+    </task>
+    <task name="PEAuth_Comm_Reload_GRL" value="552" eventGUID="00000000-0000-0000-0000-000000000000" message="PEAuth Comm Reload GRL">
+    </task>
+    <task name="PEAuth_Comm_Renew_Session_Key" value="553" eventGUID="00000000-0000-0000-0000-000000000000" message="PEAuth Comm Renew Session Key">
+    </task>
+    <task name="PEAuth_Comm_Get_Comp_List" value="554" eventGUID="00000000-0000-0000-0000-000000000000" message="PEAuth Comm Get Comp List">
+    </task>
+    <task name="Cache_Reader" value="555" eventGUID="00000000-0000-0000-0000-000000000000" message="Cache Reader">
+    </task>
+    <task name="Codec_DXVACPUDecode" value="556" eventGUID="00000000-0000-0000-0000-000000000000" message="Codec DXVACPUDecode">
+    </task>
+    <task name="Codec_DXVAGPUDecode" value="557" eventGUID="00000000-0000-0000-0000-000000000000" message="Codec DXVAGPUDecode">
+    </task>
+    <task name="Codec_DXVADisplay" value="558" eventGUID="00000000-0000-0000-0000-000000000000" message="Codec DXVADisplay">
+    </task>
+    <task name="ASFSource_Start" value="559" eventGUID="00000000-0000-0000-0000-000000000000" message="ASFSource Start">
+    </task>
+    <task name="Op_Queue_Operation" value="560" eventGUID="00000000-0000-0000-0000-000000000000" message="Op Queue Operation">
+    </task>
+    <task name="Property_Handler_Init" value="561" eventGUID="00000000-0000-0000-0000-000000000000" message="Property Handler Init">
+    </task>
+    <task name="Property_Handler_Get_Value" value="562" eventGUID="00000000-0000-0000-0000-000000000000" message="Property Handler Get Value">
+    </task>
+    <task name="Property_Handler_Set_Value" value="563" eventGUID="00000000-0000-0000-0000-000000000000" message="Property Handler Set Value">
+    </task>
+    <task name="Property_Handler_Commit" value="564" eventGUID="00000000-0000-0000-0000-000000000000" message="Property Handler Commit">
+    </task>
+    <task name="Property_Handler_With_Key_Init" value="565" eventGUID="00000000-0000-0000-0000-000000000000" message="Property Handler With Key Init">
+    </task>
+    <task name="Property_Handler_With_Key_Get_Value" value="566" eventGUID="00000000-0000-0000-0000-000000000000" message="Property Handler With Key Get Value">
+    </task>
+    <task name="Property_Handler_With_Key_Set_Value" value="567" eventGUID="00000000-0000-0000-0000-000000000000" message="Property Handler With Key Set Value">
+    </task>
+    <task name="Property_Handler_With_Key_Commit" value="568" eventGUID="00000000-0000-0000-0000-000000000000" message="Property Handler With Key Commit">
+    </task>
+    <task name="Transcode_Create_Transcode_Topology" value="569" eventGUID="00000000-0000-0000-0000-000000000000" message="Transcode Create Transcode Topology">
+    </task>
+    <task name="Field_Of_Use_Validate" value="570" eventGUID="00000000-0000-0000-0000-000000000000" message="Field Of Use Validate">
+    </task>
+    <task name="Capture_Source_Start" value="571" eventGUID="00000000-0000-0000-0000-000000000000" message="Capture Source Start">
+    </task>
+    <task name="Capture_Source_Ready_Queue_Empty" value="572" eventGUID="00000000-0000-0000-0000-000000000000" message="Capture Source Ready Queue Empty">
+    </task>
+    <task name="Capture_Source_Ready_Queue_Full" value="573" eventGUID="00000000-0000-0000-0000-000000000000" message="Capture Source Ready Queue Full">
+    </task>
+    <task name="CascadedScalingTask" value="574" eventGUID="00000000-0000-0000-0000-000000000000" message="Cascaded Scaling">
+    </task>
+    <task name="OptimizationFlags_PerformanceTask" value="575" eventGUID="00000000-0000-0000-0000-000000000000" message="Optimization Flags">
+    </task>
+    <task name="PerfTrack_Audio_Capture_Start_Request" value="579" eventGUID="00000000-0000-0000-0000-000000000000" message="PerfTrack: Audio Capture Start Request">
+    </task>
+    <task name="PerfTrack_Audio_Capture_First_Sample_Received" value="580" eventGUID="00000000-0000-0000-0000-000000000000" message="PerfTrack: Audio Capture First Sample Received">
+    </task>
+    <task name="PerfTrack_Video_Capture_Start_Request" value="581" eventGUID="00000000-0000-0000-0000-000000000000" message="PerfTrack: Video Capture Start Request">
+    </task>
+    <task name="PerfTrack_Video_Capture_First_Sample_Received" value="582" eventGUID="00000000-0000-0000-0000-000000000000" message="PerfTrack: Video Capture First Sample Received">
+    </task>
+    <task name="MediaProc_Dynamic_Topology_Change" value="585" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaProc: Dynamic Topology Change">
+    </task>
+    <task name="MediaProc_Dynamic_Transform_Removal" value="586" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaProc: Dynamic Transform Removal">
+    </task>
+    <task name="MediaProc_Dynamic_Transform_Insertion" value="587" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaProc: Dynamic Transform Insertion">
+    </task>
+    <task name="Mem2DAlloc_Create" value="589" eventGUID="00000000-0000-0000-0000-000000000000" message="2D: Create">
+    </task>
+    <task name="Mem2DAlloc_Buffer" value="590" eventGUID="00000000-0000-0000-0000-000000000000" message="2D: Allocate buffer">
+    </task>
+    <task name="Mem2DAlloc_Copy" value="591" eventGUID="00000000-0000-0000-0000-000000000000" message="2D: Copy">
+    </task>
+    <task name="Property_Handler_ThumbnailGeneration" value="592" eventGUID="00000000-0000-0000-0000-000000000000" message="Property Handler Thumbnail Generation">
+    </task>
+    <task name="Property_Handler_ThumbnailGeneration_BestFrame" value="593" eventGUID="00000000-0000-0000-0000-000000000000" message="Property Handler Thumbnail Generation Best Frame">
+    </task>
+    <task name="MFMediaSource_Sample_Received_Task" value="594" eventGUID="00000000-0000-0000-0000-000000000000" message="MFMediaSource sample received">
+    </task>
+    <task name="Audio_Low_Latency" value="596" eventGUID="00000000-0000-0000-0000-000000000000" message="Audio Low Latency">
+    </task>
+    <task name="DXGI_Map" value="597" eventGUID="00000000-0000-0000-0000-000000000000" message="DXGI Map Surface">
+    </task>
+    <task name="CopyImage" value="598" eventGUID="00000000-0000-0000-0000-000000000000" message="MFCopyImage">
+    </task>
+    <task name="MediaProc_SinkTriggered_Format_Change" value="599" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaProc: Sink-triggered format change">
+    </task>
+    <task name="MFMediaDeviceSource-Start" value="600" eventGUID="00000000-0000-0000-0000-000000000000" message="MFMediaDeviceSource Start Task">
+    </task>
+    <task name="MFMediaDeviceStream-SendSinglePhotoTriggerToKS-Task" value="601" eventGUID="00000000-0000-0000-0000-000000000000" message="MFMediaDeviceStream SendSinglePhotoTriggerToKS Task">
+    </task>
+    <task name="Mem2DAlloc_Flush" value="602" eventGUID="00000000-0000-0000-0000-000000000000" message="2D: Create">
+    </task>
+    <task name="MFMediaSink_Sample_Write_To_Disk_Task" value="603" eventGUID="00000000-0000-0000-0000-000000000000" message="MFMediaSink wrote a packet to storage">
+    </task>
+    <task name="NetworkRIO_PendingSends" value="610" eventGUID="00000000-0000-0000-0000-000000000000" message="NetworkRIO_PendingSends">
+    </task>
+    <task name="MFContentProtectionDeviceCreate" value="700" eventGUID="00000000-0000-0000-0000-000000000000" message="MFContentProtectionDeviceCreate Start task">
+    </task>
+    <task name="MFIsContentProtectionDeviceSupported" value="701" eventGUID="00000000-0000-0000-0000-000000000000" message="MFIsContentProtectionDeviceSupported Start task">
+    </task>
+    <task name="MFContentProtectionDeviceCall" value="702" eventGUID="00000000-0000-0000-0000-000000000000" message="MFContentProtectionDeviceCall task">
+    </task>
+    <task name="MFContentDecryptorContextCreate" value="703" eventGUID="00000000-0000-0000-0000-000000000000" message="MFContentDecryptorContextCreate task">
+    </task>
+    <task name="MFContentDecryptorContextInitializeKey" value="704" eventGUID="00000000-0000-0000-0000-000000000000" message="MFContentDecryptorContextInitializeKey task">
+    </task>
+    <task name="EnsureTrust" value="705" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AddDecryptor" value="706" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PreparePresentation" value="707" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="3062" version="0" opcode="0" channel="16" level="4" task="575" keywords="0x8000000000000000" message="Configuration: dwType = %1 dwConfig=%2">
+    </event>
+    <event value="3063" version="0" opcode="0" channel="16" level="4" task="574" keywords="0x8000000000000000" message="VideoSize dwScaled=%1 dwScaleY=%2 dwWindowX=%3 dwWindowY=%4">
+    </event>
+    <event value="3067" version="0" opcode="0" channel="16" level="4" task="579" keywords="0x8001000000000000" message="PerfTrack: Audio Capture Start Request: object=%1">
+    </event>
+    <event value="3068" version="0" opcode="0" channel="16" level="4" task="581" keywords="0x8001000000000000" message="PerfTrack: Video Capture Start Request: object=%1">
+    </event>
+    <event value="3069" version="0" opcode="0" channel="16" level="4" task="580" keywords="0x8001000000000000" message="PerfTrack: Audio Capture First Sample Received: object=%1">
+    </event>
+    <event value="3070" version="0" opcode="0" channel="16" level="4" task="582" keywords="0x8001000000000000" message="PerfTrack: Video Capture First Sample Received: object=%1">
+    </event>
+    <event value="3071" version="0" opcode="1" channel="16" level="4" task="585" keywords="0x8000000000000000" message="MediaProc: Dynamic Topology Change Start: MF_MT_SUBTYPE=%1">
+    </event>
+    <event value="3072" version="0" opcode="2" channel="16" level="4" task="585" keywords="0x8000000000000000" message="MediaProc: Dynamic Topology Change Stop: HRESULT=%1">
+    </event>
+    <event value="3073" version="0" opcode="1" channel="16" level="4" task="586" keywords="0x8000000000000000" message="MediaProc: Dynamic Transform Removal Start: MFT=%1">
+    </event>
+    <event value="3074" version="0" opcode="2" channel="16" level="4" task="586" keywords="0x8000000000000000" message="MediaProc: Dynamic Transform Removal Stop: MFT=%1">
+    </event>
+    <event value="3075" version="0" opcode="0" channel="16" level="4" task="587" keywords="0x8000000000000000" message="MediaProc: Dynamic Transform Insertion: MFT=%1">
+    </event>
+    <event value="3076" version="0" opcode="0" channel="16" level="4" task="599" keywords="0x8000000000000000" message="MediaProc: Sink-triggered format change: Source Node=%1">
+    </event>
+    <event value="4000" version="0" opcode="1" channel="16" level="4" task="300" keywords="0x8000000000000000" message="Object Create Tag=%1 Object %2 Object Type %3">
+    </event>
+    <event value="4001" version="0" opcode="2" channel="16" level="4" task="300" keywords="0x8000000000000000" message="Object Delete Tag=%1 Object %2 Object Type %3">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="16" level="4" task="301" keywords="0x8000000000000000" message="Audio Renderer Starvation Tag=%1 Object %2 ByteCount=%3">
+    </event>
+    <event value="4003" version="0" opcode="0" channel="16" level="4" task="302" keywords="0x8000000000000000" message="Video Frame Glitch Tag=%1 Object=%2 Sample=%3 Timestamp=%4 TargetTime=%5 Offset=%6">
+    </event>
+    <event value="4004" version="0" opcode="0" channel="16" level="4" task="303" keywords="0x8000000000000000" message="EVR Queue Sample Tag=%1 Object=%2 Sample=%3 Target QPC=%4 Submitted QPC=%5">
+    </event>
+    <event value="4005" version="0" opcode="0" channel="16" level="4" task="304" keywords="0x8000000000000000" message="EVR Dequeue DWM Tag=%1 Object=%2 Sample=%3 Original QPC=%4 Target QPC=%5 Submitted QPC=%6 now=%7  PresentTime=%8 Frames Presented=%9 Refresh Starts=%10  Buffers Empty=%11 Refresh Frame Count=%12">
+    </event>
+    <event value="4006" version="0" opcode="0" channel="16" level="4" task="305" keywords="0x8000000000000000" message="EVR Present Tag=%1 Object=%2 cPresentCount=%3 dwFlags=%4 hrResult=%5 llPresentTime=%6">
+    </event>
+    <event value="4007" version="0" opcode="0" channel="16" level="4" task="306" keywords="0x8000000000000000" message="EVR Monitor Estimate Tag=%1 Object=%2 Screen Height=%3 Frame Height (x1000)=%4 Frame Rate (x1000)=%5">
+    </event>
+    <event value="4008" version="0" opcode="0" channel="16" level="4" task="307" keywords="0x8000000000000000" message="EVR Sleep Tag=%1 Object=%2 Thread Handle=%3 Sleep Type=%4 width=%5 height=%6 format=%7 retries=%8">
+    </event>
+    <event value="4009" version="0" opcode="0" channel="16" level="4" task="308" keywords="0x8000000000000000" message="Dropped Data Tag=%1 Object=%2 Data Type=%3 Sample Time=%4 Bytes Dropped=%5 Drop Reasons=%6">
+    </event>
+    <event value="4010" version="0" opcode="0" channel="16" level="5" task="309" keywords="0x8000000000000000" message="Get Clock Time Tag=%1 Object=%2 Time=%3">
+    </event>
+    <event value="4011" version="0" opcode="0" channel="16" level="4" task="310" keywords="0x8000000000000000" message="Predicated Video Sample Time Tag=%1 Object=%2 Time=%3">
+    </event>
+    <event value="4012" version="0" opcode="0" channel="16" level="4" task="311" keywords="0x8000000000000000" message="New Stream Tag=%1 Object=%2 Type=%3">
+    </event>
+    <event value="4013" version="0" opcode="0" channel="16" level="4" task="312" keywords="0x8000000000000000" message="Media Type Change Tag=%1 Object=%2 Stream=%3 Type=%4">
+    </event>
+    <event value="4014" version="0" opcode="0" channel="16" level="4" task="313" keywords="0x8000000000000000" message="Transform Created Tag=%1 Object=%2 CLSID=%3 Transform=%4 User Mode=%5">
+    </event>
+    <event value="4015" version="0" opcode="10" channel="16" level="5" task="314" keywords="0x8000000000000000" message="Buffer Input Tag=%1 Object=%2 Object Category=%3 Stream=%4 Timestamp=%5 Clock=%6 Sample=%7 Buffer Size=%8 Sample Size=%9 Sample Duration=%10">
+    </event>
+    <event value="4016" version="0" opcode="11" channel="16" level="5" task="314" keywords="0x8000000000000000" message="Buffer Output Tag=%1 Object=%2 Object Category=%3 Stream=%4 Timestamp=%5 Clock=%6 Sample=%7 Buffer Size=%8 Sample Size=%9 Sample Duration=%10">
+    </event>
+    <event value="4017" version="0" opcode="12" channel="16" level="5" task="314" keywords="0x8000000000000000" message="Buffer Queued Tag=%1 Object=%2 Object Category=%3 Stream=%4 Timestamp=%5 Clock=%6 Sample=%7 Buffer Size=%8 Sample Size=%9 Sample Duration=%10">
+    </event>
+    <event value="4018" version="0" opcode="13" channel="16" level="4" task="314" keywords="0x8000000000000000" message="Buffer Dropped Tag=%1 Object=%2 Object Category=%3 Stream=%4 Timestamp=%5 Clock=%6 Sample=%7 Buffer Size=%8 Sample Size=%9 Sample Duration=%10">
+    </event>
+    <event value="4019" version="0" opcode="10" channel="16" level="5" task="315" keywords="0x8000000000000000" message="ProcessInput Tag=%1 Object=%2 Object Category=%3 Sample=%4 Buffer Size=%5 Sample Time=%6 Processing Time=%7">
+    </event>
+    <event value="4020" version="0" opcode="11" channel="16" level="5" task="315" keywords="0x8000000000000000" message="ProcessOutput Tag=%1 Object=%2 Object Category=%3 Sample=%4 Buffer Size=%5 Sample Time=%6 Processing Time=%7">
+    </event>
+    <event value="4021" version="0" opcode="0" channel="16" level="4" task="316" keywords="0x8000000000000000" message="APOProcess Tag=%1 Object=%2 Object Category=%3 Sample=%4 Buffer Size=%5 Sample Time=%6 Processing Time=%7">
+    </event>
+    <event value="4022" version="0" opcode="0" channel="16" level="4" task="317" keywords="0x8000000000000000" message="Unusual Streaming Event Tag=%1 Object=%2 Type%3 Event ID=%4">
+    </event>
+    <event value="4023" version="0" opcode="0" channel="16" level="4" task="318" keywords="0x8000000000000000" message="Open File Tag=%1 Object=%2 Name=%4 Handle=%3">
+    </event>
+    <event value="4024" version="0" opcode="1" channel="16" level="4" task="319" keywords="0x8000000000000000" message="IO Read Request Tag=%1 Object=%2 Handle=%3 Offest=%4 Byte Count=%5">
+    </event>
+    <event value="4025" version="0" opcode="1" channel="16" level="4" task="320" keywords="0x8000000000000000" message="IO Write Request Tag=%1 Object=%2 Handle=%3 Offest=%4 Byte Count=%5">
+    </event>
+    <event value="4026" version="0" opcode="2" channel="16" level="4" task="319" keywords="0x8000000000000000" message="Disk IO Read Complete Tag=%1 Object=%2 Handle=%3">
+    </event>
+    <event value="4027" version="0" opcode="2" channel="16" level="4" task="320" keywords="0x8000000000000000" message="Disk IO Write Complete Tag=%1 Object=%2 Handle=%3">
+    </event>
+    <event value="4028" version="0" opcode="0" channel="16" level="4" task="321" keywords="0x8000000000000000" message="Render Sample Allocate Sample Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4029" version="0" opcode="0" channel="16" level="5" task="322" keywords="0x8000000000000000" message="Render Sample Receive Sample Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4030" version="0" opcode="1" channel="16" level="4" task="323" keywords="0x8000000000000000" message="Render Sample Start Render Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4031" version="0" opcode="2" channel="16" level="4" task="323" keywords="0x8000000000000000" message="Render Sample End Render Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4032" version="0" opcode="1" channel="16" level="4" task="324" keywords="0x8000000000000000" message="Render Sample Start Mix Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4033" version="0" opcode="2" channel="16" level="4" task="325" keywords="0x8000000000000000" message="Render Sample End Mix Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4034" version="0" opcode="1" channel="16" level="4" task="326" keywords="0x8000000000000000" message="Render Sample Start Decode Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4035" version="0" opcode="2" channel="16" level="4" task="326" keywords="0x8000000000000000" message="Render Sample End Decode Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4036" version="0" opcode="1" channel="16" level="4" task="327" keywords="0x8000000000000000" message="Render Sample Start Deinterlace Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4037" version="0" opcode="2" channel="16" level="4" task="327" keywords="0x8000000000000000" message="Render Sample End Deinterlace Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4038" version="0" opcode="1" channel="16" level="4" task="328" keywords="0x8000000000000000" message="Render Sample Start Procamp Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4039" version="0" opcode="2" channel="16" level="4" task="328" keywords="0x8000000000000000" message="Render Sample End Procamp Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4040" version="0" opcode="1" channel="16" level="4" task="329" keywords="0x8000000000000000" message="Render Sample Start FRC Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4041" version="0" opcode="2" channel="16" level="4" task="329" keywords="0x8000000000000000" message="Render Sample End FRC Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4042" version="0" opcode="0" channel="16" level="4" task="330" keywords="0x8000000000000000" message="Render Sample MID Render Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4043" version="0" opcode="0" channel="16" level="4" task="331" keywords="0x8000000000000000" message="Render Sample MAP Render Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4044" version="0" opcode="0" channel="16" level="4" task="332" keywords="0x8000000000000000" message="Render Sample Actual Render Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time=%6">
+    </event>
+    <event value="4045" version="0" opcode="0" channel="16" level="4" task="333" keywords="0x8000000000000000" message="Audio Renderer Buffer Fullness Tag=%1 Object=%2 Fullness=%3">
+    </event>
+    <event value="4046" version="0" opcode="14" channel="16" level="4" task="334" keywords="0x8000000000000000" message="State Change to Start Tag=%1 Object=%2">
+    </event>
+    <event value="4047" version="0" opcode="15" channel="16" level="4" task="334" keywords="0x8000000000000000" message="State Change to Stop Tag=%1 Object=%2">
+    </event>
+    <event value="4048" version="0" opcode="16" channel="16" level="4" task="334" keywords="0x8000000000000000" message="State Change to Pause Tag=%1 Object=%2">
+    </event>
+    <event value="4049" version="0" opcode="1" channel="16" level="4" task="335" keywords="0x8000000000000000" message="Topo Loader Start Load Tag=%1 Object=%2">
+    </event>
+    <event value="4050" version="0" opcode="2" channel="16" level="4" task="335" keywords="0x8000000000000000" message="Topo Loader End Load Tag=%1 Object=%2">
+    </event>
+    <event value="4051" version="0" opcode="1" channel="16" level="4" task="336" keywords="0x8000000000000000" message="Topo Loader Start Create MFT Tag=%1 Object=%2">
+    </event>
+    <event value="4052" version="0" opcode="2" channel="16" level="4" task="336" keywords="0x8000000000000000" message="Topo Loader End Create MFT Tag=%1 Object=%2">
+    </event>
+    <event value="4053" version="0" opcode="0" channel="16" level="4" task="337" keywords="0x8000000000000000" message="Packet Sink Lost Tag=%1 Object=%2 RTP Sequence=%3 Packet Number=%4">
+    </event>
+    <event value="4054" version="0" opcode="0" channel="16" level="4" task="338" keywords="0x8000000000000000" message="Packet Recover RTX Tag=%1 Object=%2 RTP Sequence=%3 Packet Number=%4">
+    </event>
+    <event value="4055" version="0" opcode="0" channel="16" level="4" task="339" keywords="0x8000000000000000" message="Packet Recover FEC Tag=%1 Object=%2 RTP Sequence=%3 Packet Number=%4">
+    </event>
+    <event value="4056" version="0" opcode="1" channel="16" level="4" task="340" keywords="0x8000000000000000" message="Media Cache Read Sample Tag=%1 Object=%2 Segment ID=%3 Number Pending=%4 Sample Time=%5 Sample=%6">
+    </event>
+    <event value="4057" version="0" opcode="2" channel="16" level="4" task="340" keywords="0x8000000000000000" message="Media Cache On Read Sample Tag=%1 Object=%2 Segment ID=%3 Number Pending=%4 Sample Time=%5 Sample=%6">
+    </event>
+    <event value="4058" version="0" opcode="1" channel="16" level="4" task="341" keywords="0x8000000000000000" message="Media Cache Write Sample Tag=%1 Object=%2 Segment ID=%3 Number Pending=%4 Sample Time=%5 Sample=%6">
+    </event>
+    <event value="4059" version="0" opcode="2" channel="16" level="4" task="341" keywords="0x8000000000000000" message="Media Cache On Write Sample Tag=%1 Object=%2 Segment ID=%3 Number Pending=%4 Sample Time=%5 Sample=%6">
+    </event>
+    <event value="4060" version="0" opcode="1" channel="16" level="4" task="342" keywords="0x8000000000000000" message="Media Cache Seek Tag=%1 Object=%2 Segment ID=%3 Number Pending=%4 Sample Time=%5 Sample=%6">
+    </event>
+    <event value="4061" version="0" opcode="2" channel="16" level="4" task="342" keywords="0x8000000000000000" message="Media Cache On Seek Tag=%1 Object=%2 Segment ID=%3 Number Pending=%4 Sample Time=%5 Sample=%6">
+    </event>
+    <event value="4062" version="0" opcode="1" channel="16" level="4" task="343" keywords="0x8000000000000000" message="Media Cache Trim Tag=%1 Object=%2 Segment ID=%3 Number Pending=%4 Sample Time=%5 Sample=%6">
+    </event>
+    <event value="4063" version="0" opcode="2" channel="16" level="4" task="343" keywords="0x8000000000000000" message="Media Cache On Trim Tag=%1 Object=%2 Segment ID=%3 Number Pending=%4 Sample Time=%5 Sample=%6">
+    </event>
+    <event value="4064" version="0" opcode="1" channel="16" level="4" task="344" keywords="0x8000000000000000" message="Network Platform - BeginGetHostByName hr=%1">
+    </event>
+    <event value="4065" version="0" opcode="2" channel="16" level="4" task="344" keywords="0x8000000000000000" message="Network Platform - EndGetHostByName hr=%1">
+    </event>
+    <event value="4066" version="0" opcode="1" channel="16" level="4" task="345" keywords="0x8000000000000000" message="Network Channel Begin Send Request Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4067" version="0" opcode="2" channel="16" level="4" task="345" keywords="0x8000000000000000" message="Network Channel End Send Request Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4068" version="0" opcode="1" channel="16" level="4" task="346" keywords="0x8000000000000000" message="Network Channel Begin Send Response Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4069" version="0" opcode="2" channel="16" level="4" task="346" keywords="0x8000000000000000" message="Network Channel End Send Response Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4070" version="0" opcode="1" channel="16" level="4" task="347" keywords="0x8000000000000000" message="Network Channel BeginReceive Request Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4071" version="0" opcode="2" channel="16" level="4" task="347" keywords="0x8000000000000000" message="Network Channel End Receive Request Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4072" version="0" opcode="0" channel="16" level="4" task="347" keywords="0x8000000000000000" message="Network Channel Receive Request Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4073" version="0" opcode="1" channel="16" level="4" task="348" keywords="0x8000000000000000" message="Network Channel Begin Open Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4074" version="0" opcode="2" channel="16" level="4" task="348" keywords="0x8000000000000000" message="Network Channel End Open Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4075" version="0" opcode="1" channel="16" level="4" task="349" keywords="0x8000000000000000" message="Network Channel Begin Connect Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4076" version="0" opcode="2" channel="16" level="4" task="349" keywords="0x8000000000000000" message="Network Channel End Connect Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4077" version="0" opcode="1" channel="16" level="4" task="350" keywords="0x8000000000000000" message="Network Channel Begin Read Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4078" version="0" opcode="2" channel="16" level="4" task="350" keywords="0x8000000000000000" message="Network Channel End Read Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4079" version="0" opcode="1" channel="16" level="4" task="351" keywords="0x8000000000000000" message="Network Channel Begin Write Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4080" version="0" opcode="2" channel="16" level="4" task="351" keywords="0x8000000000000000" message="Network Channel End Write Tag=%1 Object=%2 Byte Count=%3 hr=%4">
+    </event>
+    <event value="4081" version="0" opcode="1" channel="16" level="4" task="352" keywords="0x8000000000000000" message="Network Session Begin Send Request Tag=%1 Object=%2 Byte hr=%3">
+    </event>
+    <event value="4082" version="0" opcode="2" channel="16" level="4" task="352" keywords="0x8000000000000000" message="Network Session End Send Request Tag=%1 Object=%2 Byte hr=%3">
+    </event>
+    <event value="4083" version="0" opcode="1" channel="16" level="4" task="353" keywords="0x8000000000000000" message="Network Session Begin Send ResposeTag=%1 Object=%2 Byte hr=%3">
+    </event>
+    <event value="4084" version="0" opcode="2" channel="16" level="4" task="353" keywords="0x8000000000000000" message="Network Session End Send Respose Tag=%1 Object=%2 Byte hr=%3">
+    </event>
+    <event value="4085" version="0" opcode="1" channel="16" level="4" task="354" keywords="0x8000000000000000" message="Network Session Begin Receive Request Tag=%1 Object=%2 Byte hr=%3">
+    </event>
+    <event value="4086" version="0" opcode="2" channel="16" level="4" task="354" keywords="0x8000000000000000" message="Network Session End Receive Request Tag=%1 Object=%2 Byte hr=%3">
+    </event>
+    <event value="4087" version="0" opcode="1" channel="16" level="4" task="355" keywords="0x8000000000000000" message="Network Session Begin Open Tag=%1 Object=%2 Byte hr=%3">
+    </event>
+    <event value="4088" version="0" opcode="2" channel="16" level="4" task="355" keywords="0x8000000000000000" message="Network Session End Open Tag=%1 Object=%2 Byte hr=%3">
+    </event>
+    <event value="4089" version="0" opcode="1" channel="16" level="4" task="356" keywords="0x8000000000000000" message="Network Session Begin Connect Tag=%1 Object=%2 Byte hr=%3">
+    </event>
+    <event value="4090" version="0" opcode="2" channel="16" level="4" task="356" keywords="0x8000000000000000" message="Network Session End Connect Tag=%1 Object=%2 Byte hr=%3">
+    </event>
+    <event value="4091" version="0" opcode="1" channel="16" level="4" task="357" keywords="0x8000000000000000" message="Network Client Begin Open Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4092" version="0" opcode="2" channel="16" level="4" task="357" keywords="0x8000000000000000" message="Network Client End Open Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4093" version="0" opcode="1" channel="16" level="4" task="358" keywords="0x8000000000000000" message="Network Client Begin Describe Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4094" version="0" opcode="2" channel="16" level="4" task="358" keywords="0x8000000000000000" message="Network Client End Describe Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4095" version="0" opcode="1" channel="16" level="4" task="359" keywords="0x8000000000000000" message="Network Client Begin Select Streams Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4096" version="0" opcode="2" channel="16" level="4" task="359" keywords="0x8000000000000000" message="Network Client End Select Streams Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4097" version="0" opcode="1" channel="16" level="4" task="360" keywords="0x8000000000000000" message="Network Client Begin Play Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4098" version="0" opcode="2" channel="16" level="4" task="360" keywords="0x8000000000000000" message="Network Client End Play Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4099" version="0" opcode="1" channel="16" level="4" task="361" keywords="0x8000000000000000" message="Network Client Begin Pause Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4100" version="0" opcode="2" channel="16" level="4" task="361" keywords="0x8000000000000000" message="Network Client End Pause Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4101" version="0" opcode="1" channel="16" level="4" task="362" keywords="0x8000000000000000" message="Network Client Begin Stop Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4102" version="0" opcode="2" channel="16" level="4" task="362" keywords="0x8000000000000000" message="Network Client End Stop Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4103" version="0" opcode="1" channel="16" level="4" task="363" keywords="0x8000000000000000" message="Network Client Begin Send Log Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4104" version="0" opcode="2" channel="16" level="4" task="363" keywords="0x8000000000000000" message="Network Client End Send Log Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4105" version="0" opcode="0" channel="16" level="4" task="364" keywords="0x8000000000000000" message="Network Client Send Keep Alive Log Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4106" version="0" opcode="0" channel="16" level="4" task="365" keywords="0x8000000000000000" message="Network Client Received Announce Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4107" version="0" opcode="1" channel="16" level="4" task="366" keywords="0x8000000000000000" message="Network Client Begin Packet Pair Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4108" version="0" opcode="2" channel="16" level="4" task="366" keywords="0x8000000000000000" message="Network Client End Packet Pair Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4109" version="0" opcode="1" channel="16" level="4" task="367" keywords="0x8000000000000000" message="Network Client Begin Tear Down Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4110" version="0" opcode="2" channel="16" level="4" task="367" keywords="0x8000000000000000" message="Network Client End Tear Down Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4111" version="0" opcode="0" channel="16" level="4" task="368" keywords="0x8000000000000000" message="Network Client Received EOS Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4112" version="0" opcode="1" channel="16" level="4" task="369" keywords="0x8000000000000000" message="Network Client Begin Close Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4113" version="0" opcode="2" channel="16" level="4" task="370" keywords="0x8000000000000000" message="Network Client End Close Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4114" version="0" opcode="0" channel="16" level="4" task="371" keywords="0x8000000000000000" message="Network Client GUID Tag=%1 Object =%2 GUID=%3">
+    </event>
+    <event value="4115" version="0" opcode="0" channel="16" level="4" task="372" keywords="0x8000000000000000" message="Network Source Disconnect Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4116" version="0" opcode="1" channel="16" level="4" task="373" keywords="0x8000000000000000" message="Network Source Reconnect Start Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4117" version="0" opcode="2" channel="16" level="4" task="374" keywords="0x8000000000000000" message="Network Source Reconnect Stop Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4118" version="0" opcode="0" channel="16" level="4" task="375" keywords="0x8000000000000000" message="Network Source Announce Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4119" version="0" opcode="0" channel="16" level="4" task="376" keywords="0x8000000000000000" message="Network Source EOS Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4120" version="0" opcode="1" channel="16" level="4" task="377" keywords="0x8000000000000000" message="Network Source Stream Switch Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4121" version="0" opcode="2" channel="16" level="4" task="377" keywords="0x8000000000000000" message="Network Source Stream Switch Done Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4122" version="0" opcode="0" channel="16" level="4" task="378" keywords="0x8000000000000000" message="Network Source Stream Buffering Start Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4123" version="0" opcode="0" channel="16" level="4" task="379" keywords="0x8000000000000000" message="Network Source Stream Buffering Stop Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4124" version="0" opcode="1" channel="16" level="4" task="380" keywords="0x8000000000000000" message="Network Source Stream Begin Connect Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4125" version="0" opcode="2" channel="16" level="4" task="380" keywords="0x8000000000000000" message="Network Source Stream End Connect Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4126" version="0" opcode="1" channel="16" level="4" task="381" keywords="0x8000000000000000" message="Network Source Stream Begin Open Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4127" version="0" opcode="2" channel="16" level="4" task="381" keywords="0x8000000000000000" message="Network Source Stream End Open Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4128" version="0" opcode="0" channel="16" level="4" task="382" keywords="0x8000000000000000" message="Network Source MCast Join Done Tag=%1 Object =%2 Arg1=%3 Arg2=%4">
+    </event>
+    <event value="4129" version="0" opcode="0" channel="16" level="4" task="383" keywords="0x8000000000000000" message="HttpByteStream Create Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4130" version="0" opcode="0" channel="16" level="4" task="384" keywords="0x8000000000000000" message="HttpByteStream Delete Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4131" version="0" opcode="1" channel="16" level="4" task="385" keywords="0x8000000000000000" message="HttpByteStream Begin BeginOpen Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4132" version="0" opcode="2" channel="16" level="4" task="385" keywords="0x8000000000000000" message="HttpByteStream EndBeginOpen Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4133" version="0" opcode="1" channel="16" level="4" task="386" keywords="0x8000000000000000" message="HttpByteStream Begin EndOpenTag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4134" version="0" opcode="2" channel="16" level="4" task="386" keywords="0x8000000000000000" message="HttpByteStream End EndOpen Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4135" version="0" opcode="1" channel="16" level="4" task="387" keywords="0x8000000000000000" message="HttpByteStream Begin TimeSeek Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4136" version="0" opcode="2" channel="16" level="4" task="387" keywords="0x8000000000000000" message="HttpByteStream End TimeSeek Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4137" version="0" opcode="1" channel="16" level="4" task="388" keywords="0x8000000000000000" message="HttpByteStream Begin BeginDrmSetLicense Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4138" version="0" opcode="2" channel="16" level="4" task="388" keywords="0x8000000000000000" message="HttpByteStream End BeginDrmSetLicense Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4139" version="0" opcode="1" channel="16" level="4" task="389" keywords="0x8000000000000000" message="HttpByteStream Begin EndDrmSetLicense Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4140" version="0" opcode="2" channel="16" level="4" task="389" keywords="0x8000000000000000" message="HttpByteStream End EndDrmSetLicense Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4141" version="0" opcode="1" channel="16" level="4" task="390" keywords="0x8000000000000000" message="HttpByteStream Begin BeginThrottle Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4142" version="0" opcode="2" channel="16" level="4" task="390" keywords="0x8000000000000000" message="HttpByteStream End BeginThrottle Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4143" version="0" opcode="1" channel="16" level="4" task="391" keywords="0x8000000000000000" message="HttpByteStream Begin EndThrottle Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4144" version="0" opcode="2" channel="16" level="4" task="391" keywords="0x8000000000000000" message="HttpByteStream End EndThrottle Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4145" version="0" opcode="0" channel="16" level="4" task="392" keywords="0x8000000000000000" message="BaseRemoteByteStream Create Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4146" version="0" opcode="0" channel="16" level="4" task="393" keywords="0x8000000000000000" message="BaseRemoteByteStream Delete Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4147" version="0" opcode="1" channel="16" level="4" task="394" keywords="0x8000000000000000" message="BaseRemoteByteStream Begin Read Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4148" version="0" opcode="2" channel="16" level="4" task="394" keywords="0x8000000000000000" message="BaseRemoteByteStream End Read Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4149" version="0" opcode="1" channel="16" level="4" task="395" keywords="0x8000000000000000" message="BaseRemoteByteStream Begin BeginRead Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4150" version="0" opcode="2" channel="16" level="4" task="395" keywords="0x8000000000000000" message="BaseRemoteByteStream End BeginRead Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4151" version="0" opcode="1" channel="16" level="4" task="396" keywords="0x8000000000000000" message="BaseRemoteByteStream Begin EndRead Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4152" version="0" opcode="2" channel="16" level="4" task="396" keywords="0x8000000000000000" message="BaseRemoteByteStream End EndRead Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4153" version="0" opcode="0" channel="16" level="4" task="397" keywords="0x8000000000000000" message="BaseRemoteByteStream Seek Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4154" version="0" opcode="1" channel="16" level="4" task="398" keywords="0x8000000000000000" message="BaseRemoteByteStream Begin Close Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4155" version="0" opcode="2" channel="16" level="4" task="398" keywords="0x8000000000000000" message="BaseRemoteByteStream End Close Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4156" version="0" opcode="0" channel="16" level="4" task="399" keywords="0x8000000000000000" message="BaseRemoteByteStream Config Buffering Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4157" version="0" opcode="0" channel="16" level="4" task="400" keywords="0x8000000000000000" message="BaseRemoteByteStream Enable Buffering Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4158" version="0" opcode="1" channel="16" level="4" task="401" keywords="0x8000000000000000" message="BaseRemoteByteStream Begin BeginSave Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4159" version="0" opcode="2" channel="16" level="4" task="401" keywords="0x8000000000000000" message="BaseRemoteByteStream End BeginSave Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4160" version="0" opcode="1" channel="16" level="4" task="402" keywords="0x8000000000000000" message="BaseRemoteByteStream Begin EndSave Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4161" version="0" opcode="2" channel="16" level="4" task="402" keywords="0x8000000000000000" message="BaseRemoteByteStream End EndSave Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4162" version="0" opcode="0" channel="16" level="4" task="403" keywords="0x8000000000000000" message="BaseRemoteByteStream CancelSave Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4163" version="0" opcode="0" channel="16" level="4" task="404" keywords="0x8000000000000000" message="BaseRemoteByteStream Fire StartBuffering Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4164" version="0" opcode="0" channel="16" level="4" task="405" keywords="0x8000000000000000" message="BaseRemoteByteStream File StopBuffering Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4165" version="0" opcode="0" channel="16" level="4" task="406" keywords="0x8000000000000000" message="UrlmonByteStream Create Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4166" version="0" opcode="0" channel="16" level="4" task="407" keywords="0x8000000000000000" message="UrlmonByteStream Delete Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4167" version="0" opcode="1" channel="16" level="4" task="408" keywords="0x8000000000000000" message="UrlmonByteStream Begin Read Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4168" version="0" opcode="2" channel="16" level="4" task="408" keywords="0x8000000000000000" message="UrlmonByteStream End Read Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4169" version="0" opcode="1" channel="16" level="4" task="409" keywords="0x8000000000000000" message="UrlmonByteStream Begin BeginRead Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4170" version="0" opcode="2" channel="16" level="4" task="409" keywords="0x8000000000000000" message="UrlmonByteStream End BeginRead Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4171" version="0" opcode="1" channel="16" level="4" task="410" keywords="0x8000000000000000" message="UrlmonByteStream Begin EndRead Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4172" version="0" opcode="2" channel="16" level="4" task="410" keywords="0x8000000000000000" message="UrlmonByteStream End EndRead Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4173" version="0" opcode="0" channel="16" level="4" task="411" keywords="0x8000000000000000" message="UrlmonByteStream Seek Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4174" version="0" opcode="1" channel="16" level="4" task="412" keywords="0x8000000000000000" message="UrlmonByteStream Begin Close Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4175" version="0" opcode="2" channel="16" level="4" task="412" keywords="0x8000000000000000" message="UrlmonByteStream End Close Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4176" version="0" opcode="0" channel="16" level="4" task="413" keywords="0x8000000000000000" message="UrlmonByteStream Config Buffering Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4177" version="0" opcode="0" channel="16" level="4" task="414" keywords="0x8000000000000000" message="UrlmonByteStream Enable Buffering Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4178" version="0" opcode="1" channel="16" level="4" task="415" keywords="0x8000000000000000" message="UrlmonByteStream Begin BeginSave Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4179" version="0" opcode="2" channel="16" level="4" task="415" keywords="0x8000000000000000" message="UrlmonByteStream End BeginSave Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4180" version="0" opcode="1" channel="16" level="4" task="416" keywords="0x8000000000000000" message="UrlmonByteStream Begin EndSave Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4181" version="0" opcode="2" channel="16" level="4" task="416" keywords="0x8000000000000000" message="UrlmonByteStream End EndSave Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4182" version="0" opcode="0" channel="16" level="4" task="417" keywords="0x8000000000000000" message="UrlmonByteStream Fire StartBuffering Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4183" version="0" opcode="0" channel="16" level="4" task="418" keywords="0x8000000000000000" message="UrlmonByteStream File StopBuffering Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4184" version="0" opcode="1" channel="16" level="4" task="419" keywords="0x8000000000000000" message="HttpWebRequest Begin BeginSendRequest Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4185" version="0" opcode="2" channel="16" level="4" task="419" keywords="0x8000000000000000" message="HttpWebRequest Begin EndSendRequest Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4186" version="0" opcode="1" channel="16" level="4" task="420" keywords="0x8000000000000000" message="HttpWebRequest Begin EndSendRequest Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4187" version="0" opcode="2" channel="16" level="4" task="420" keywords="0x8000000000000000" message="HttpWebRequest End EndSendRequest Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4188" version="0" opcode="1" channel="16" level="4" task="421" keywords="0x8000000000000000" message="HttpWebRequest Begin BeginReceiveResponse Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4189" version="0" opcode="2" channel="16" level="4" task="421" keywords="0x8000000000000000" message="HttpWebRequest End BeginReceiveResponse Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4190" version="0" opcode="1" channel="16" level="4" task="422" keywords="0x8000000000000000" message="HttpWebRequest Begin EndReceiveResponse Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4191" version="0" opcode="2" channel="16" level="4" task="422" keywords="0x8000000000000000" message="HttpWebRequest End EndReceiveResponse Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4192" version="0" opcode="1" channel="16" level="4" task="423" keywords="0x8000000000000000" message="HttpWebRequest Begin BeginReadPayload Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4193" version="0" opcode="2" channel="16" level="4" task="423" keywords="0x8000000000000000" message="HttpWebRequest End BeginReadPayload Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4194" version="0" opcode="1" channel="16" level="4" task="424" keywords="0x8000000000000000" message="HttpWebRequest Begin EndReadPayload Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4195" version="0" opcode="2" channel="16" level="4" task="424" keywords="0x8000000000000000" message="HttpWebRequest End EndReadPayload Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4196" version="0" opcode="0" channel="16" level="4" task="425" keywords="0x8000000000000000" message="HttpWebRequest Close Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4197" version="0" opcode="1" channel="16" level="4" task="426" keywords="0x8000000000000000" message="HttpWebRequest Begin StatusCallback Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4198" version="0" opcode="2" channel="16" level="4" task="426" keywords="0x8000000000000000" message="HttpWebRequest End StatusCallback Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4199" version="0" opcode="1" channel="16" level="4" task="427" keywords="0x8000000000000000" message="HttpWebRequest Begin CreateCacheEntry Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4200" version="0" opcode="2" channel="16" level="4" task="427" keywords="0x8000000000000000" message="HttpWebRequest End CreateCacheEntry Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4201" version="0" opcode="1" channel="16" level="4" task="428" keywords="0x8000000000000000" message="HttpWebRequest Begin LoadCacheEntry Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4202" version="0" opcode="2" channel="16" level="4" task="428" keywords="0x8000000000000000" message="HttpWebRequest End LoadCacheEntry Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4203" version="0" opcode="1" channel="16" level="4" task="429" keywords="0x8000000000000000" message="HttpWebRequest Begin DeleteCacheEntry Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4204" version="0" opcode="2" channel="16" level="4" task="429" keywords="0x8000000000000000" message="HttpWebRequest End DeleteCacheEntry Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4205" version="0" opcode="1" channel="16" level="4" task="430" keywords="0x8000000000000000" message="HttpWebRequest Begin SaveCacheEntry Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4206" version="0" opcode="2" channel="16" level="4" task="430" keywords="0x8000000000000000" message="HttpWebRequest End SaveCacheEntry Tag=%1 Object=%2 hr=%3 Arg=%4">
+    </event>
+    <event value="4207" version="0" opcode="1" channel="16" level="4" task="431" keywords="0x8000000000000000" message="Source Resolution Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4208" version="0" opcode="2" channel="16" level="4" task="432" keywords="0x8000000000000000" message="Source Resolution Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4209" version="0" opcode="1" channel="16" level="4" task="433" keywords="0x8000000000000000" message="Source Resolution Begin BeginCreateObjectFromURL Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4210" version="0" opcode="2" channel="16" level="4" task="433" keywords="0x8000000000000000" message="Source Resolution End BeginCreateObjectFromURL Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4211" version="0" opcode="1" channel="16" level="4" task="434" keywords="0x8000000000000000" message="Source Resolution Begin EndCreateObjectFromURL Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4212" version="0" opcode="2" channel="16" level="4" task="434" keywords="0x8000000000000000" message="Source Resolution End EndCreateObjectFromURL Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4213" version="0" opcode="1" channel="16" level="4" task="435" keywords="0x8000000000000000" message="Source Resolution Begin BeginCreateObjectFromByteStream Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4214" version="0" opcode="2" channel="16" level="4" task="435" keywords="0x8000000000000000" message="Source Resolution End BeginCreateObjectFromByteStream Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4215" version="0" opcode="1" channel="16" level="4" task="436" keywords="0x8000000000000000" message="Source Resolution Begin EndCreateObjectFromByteStream Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4216" version="0" opcode="2" channel="16" level="4" task="436" keywords="0x8000000000000000" message="Source Resolution End EndCreateObjectFromByteStream Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4217" version="0" opcode="1" channel="16" level="4" task="437" keywords="0x8000000000000000" message="Source Resolution Begin LookupSchemeHandler Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4218" version="0" opcode="2" channel="16" level="4" task="437" keywords="0x8000000000000000" message="Source Resolution End LookupSchemeHandler Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4219" version="0" opcode="1" channel="16" level="4" task="438" keywords="0x8000000000000000" message="Source Resolution Begin LookupByteStreamHandler Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4220" version="0" opcode="2" channel="16" level="4" task="438" keywords="0x8000000000000000" message="Source Resolution End LookupByteStreamHandler Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4221" version="0" opcode="1" channel="16" level="4" task="439" keywords="0x8000000000000000" message="Source Resolution Begin SchemeHandlerBeginCreateObject Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4222" version="0" opcode="2" channel="16" level="4" task="439" keywords="0x8000000000000000" message="Source Resolution End SchemeHandlerBeginCreateObject Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4223" version="0" opcode="1" channel="16" level="4" task="440" keywords="0x8000000000000000" message="Source Resolution Begin SchemeHandlerEndCreateObject Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4224" version="0" opcode="2" channel="16" level="4" task="441" keywords="0x8000000000000000" message="Source Resolution End SchemeHandlerEndCreateObject Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4225" version="0" opcode="0" channel="16" level="4" task="442" keywords="0x8000000000000000" message="Source Resolution ByteStream Created Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4226" version="0" opcode="1" channel="16" level="4" task="443" keywords="0x8000000000000000" message="Source Resolution Begin ByteStreamHandlerBeginCreateObject Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4227" version="0" opcode="2" channel="16" level="4" task="443" keywords="0x8000000000000000" message="Source Resolution End ByteStreamHandlerBeginCreateObject Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4228" version="0" opcode="1" channel="16" level="4" task="444" keywords="0x8000000000000000" message="Source Resolution Begin ByteStreamHandlerEndCreateObject Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4229" version="0" opcode="2" channel="16" level="4" task="444" keywords="0x8000000000000000" message="Source Resolution End ByteStreamHandlerEndCreateObject Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4230" version="0" opcode="0" channel="16" level="4" task="445" keywords="0x8000000000000000" message="Source Resolution Media Source Created Tag=%1 Object=%2 URL=%3 Object Created=%4 hr=%5">
+    </event>
+    <event value="4231" version="0" opcode="1" channel="16" level="4" task="446" keywords="0x8000000000000000" message="Bitpump Start Async Call Tag=%1 Object=%2 State=%3 Context=%4 hr=%5">
+    </event>
+    <event value="4232" version="0" opcode="2" channel="16" level="4" task="447" keywords="0x8000000000000000" message="Bitpump End Async Call Tag=%1 Object=%2 State=%3 Context=%4 hr=%5">
+    </event>
+    <event value="4233" version="0" opcode="0" channel="16" level="5" task="448" keywords="0x8000000000000000" message="Bitpump Receive Event Tag=%1 Object=%2 State=%3 Context=%4 hr=%5">
+    </event>
+    <event value="4234" version="0" opcode="0" channel="16" level="4" task="449" keywords="0x8000000000000000" message="Bitpump Error Tag=%1 Object=%2 State=%3 Context=%4 hr=%5">
+    </event>
+    <event value="4235" version="0" opcode="0" channel="16" level="4" task="450" keywords="0x8000000000000000" message="Bitpump Critical Error Tag=%1 Object=%2 State=%3 Context=%4 hr=%5">
+    </event>
+    <event value="4236" version="0" opcode="1" channel="16" level="4" task="451" keywords="0x8000000000000000" message="Bitpump Start Sync Call Tag=%1 Object=%2 State=%3 Context=%4 hr=%5">
+    </event>
+    <event value="4237" version="0" opcode="2" channel="16" level="4" task="452" keywords="0x8000000000000000" message="Bitpump End Sync Call Tag=%1 Object=%2 State=%3 Context=%4 hr=%5">
+    </event>
+    <event value="4238" version="0" opcode="0" channel="16" level="4" task="453" keywords="0x8000000000000000" message="Bitpump Wait For Sample Tag=%1 Object=%2 State=%3 Context=%4 hr=%5">
+    </event>
+    <event value="4239" version="0" opcode="0" channel="16" level="5" task="454" keywords="0x8000000000000000" message="Bitpump Media Sample Tag=%1 Object=%2 State=%3 Context=%4 hr=%5">
+    </event>
+    <event value="4240" version="0" opcode="1" channel="16" level="4" task="455" keywords="0x8000000000000000" message="Media Session Begin SetTopology Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4241" version="0" opcode="2" channel="16" level="4" task="455" keywords="0x8000000000000000" message="Media Session End SetTopology Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4242" version="0" opcode="1" channel="16" level="4" task="456" keywords="0x8000000000000000" message="Media Session Begin Start Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4243" version="0" opcode="2" channel="16" level="4" task="456" keywords="0x8000000000000000" message="Media Session End Start Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4244" version="0" opcode="1" channel="16" level="4" task="457" keywords="0x8000000000000000" message="Media Session Begin Stop Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4245" version="0" opcode="2" channel="16" level="4" task="457" keywords="0x8000000000000000" message="Media Session End Stop Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4246" version="0" opcode="1" channel="16" level="4" task="458" keywords="0x8000000000000000" message="Media Session Begin Pause Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4247" version="0" opcode="2" channel="16" level="4" task="458" keywords="0x8000000000000000" message="Media Session End Pause Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4248" version="0" opcode="1" channel="16" level="4" task="459" keywords="0x8000000000000000" message="Media Session Begin Close Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4249" version="0" opcode="2" channel="16" level="4" task="459" keywords="0x8000000000000000" message="Media Session End Close Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4250" version="0" opcode="1" channel="16" level="4" task="460" keywords="0x8000000000000000" message="Media Session Begin Shutdown Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4251" version="0" opcode="2" channel="16" level="4" task="460" keywords="0x8000000000000000" message="Media Session End Shutdown Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4252" version="0" opcode="1" channel="16" level="4" task="461" keywords="0x8000000000000000" message="Media Session Begin Presentation Switch Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4253" version="0" opcode="2" channel="16" level="4" task="461" keywords="0x8000000000000000" message="Media Session End Presentation Switch Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4254" version="0" opcode="0" channel="16" level="4" task="462" keywords="0x8000000000000000" message="Sequencer Source Start Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4255" version="0" opcode="0" channel="16" level="4" task="463" keywords="0x8000000000000000" message="Sequencer Source Stop Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4256" version="0" opcode="0" channel="16" level="4" task="464" keywords="0x8000000000000000" message="Sequencer Source OnContextEvent Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4257" version="0" opcode="0" channel="16" level="4" task="465" keywords="0x8000000000000000" message="Sequencer Source ProcessSample Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4258" version="0" opcode="0" channel="16" level="4" task="466" keywords="0x8000000000000000" message="Sequencer Source OnStreamEvent Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4259" version="0" opcode="1" channel="16" level="4" task="467" keywords="0x8000000000000000" message="Sequencer Source BeginCreateObjectFromNode Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4260" version="0" opcode="2" channel="16" level="4" task="467" keywords="0x8000000000000000" message="Sequencer Source EndCreateObjectFromNode Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4261" version="0" opcode="0" channel="16" level="4" task="468" keywords="0x8000000000000000" message="Quality Manager Set Quality Level Tag=%1 Object=%2 Knob ID=%3 Previous Level=%4 New Level=%5 Drop Time=%6">
+    </event>
+    <event value="4262" version="0" opcode="0" channel="16" level="4" task="469" keywords="0x8000000000000000" message="Quality Manager Set Drop Mode Tag=%1 Object=%2 Knob ID=%3 Previous Level=%4 New Level=%5 Drop Time=%6">
+    </event>
+    <event value="4263" version="0" opcode="0" channel="16" level="4" task="470" keywords="0x8000000000000000" message="Quality Manager Set Drop Time Tag=%1 Object=%2 Knob ID=%3 Previous Level=%4 New Level=%5 Drop Time=%6">
+    </event>
+    <event value="4264" version="0" opcode="0" channel="16" level="5" task="471" keywords="0x8000000000000000" message="Media Processor Source Start Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4265" version="0" opcode="0" channel="16" level="4" task="472" keywords="0x8000000000000000" message="Media Processor Source Create Topology Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4266" version="0" opcode="0" channel="16" level="4" task="473" keywords="0x8000000000000000" message="Media Processor Source Open Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4267" version="0" opcode="0" channel="16" level="4" task="474" keywords="0x8000000000000000" message="Media Processor Source ProcessSample Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4268" version="0" opcode="0" channel="16" level="4" task="475" keywords="0x8000000000000000" message="Media Processor Source Send Event Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4269" version="0" opcode="0" channel="16" level="4" task="476" keywords="0x8000000000000000" message="Frame Grabber Open Source Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4270" version="0" opcode="0" channel="16" level="4" task="477" keywords="0x8000000000000000" message="Frame Grabber Get Frame Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4271" version="0" opcode="0" channel="16" level="4" task="478" keywords="0x8000000000000000" message="Frame Grabber Invoke Tag=%1 Object=%2 Event=%3 Time=%4 Parameter=%5 URL=%6">
+    </event>
+    <event value="4272" version="0" opcode="0" channel="16" level="4" task="479" keywords="0x8000000000000000" message="Adjust Sample Time OneShot Tag=%1 Object=%2 Original Time=%3 Adjustment=%4">
+    </event>
+    <event value="4273" version="0" opcode="0" channel="16" level="4" task="480" keywords="0x8000000000000000" message="Adjust Sample Time Repeat Tag=%1 Object=%2 Original Time=%3 Adjustment=%4">
+    </event>
+    <event value="4274" version="0" opcode="0" channel="16" level="4" task="481" keywords="0x8000000000000000" message="Video Render Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Clock Time%6 hwnd=%7 Refresh Rate=%8 Width=%9 Height=%10 Left=%11 Top=%12 Right=%13 Bottom=%14 Left1=%15 Top1=%16 Right1=%17 Bottom1=%18">
+    </event>
+    <event value="4275" version="0" opcode="0" channel="16" level="4" task="482" keywords="0x8000000000000000" message="Audio Render Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=%5 Master Clock Time=%6 Device Clock Time=%7">
+    </event>
+    <event value="4276" version="0" opcode="0" channel="16" level="4" task="483" keywords="0x8000000000000000" message="Metadata Created Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4277" version="0" opcode="0" channel="16" level="4" task="484" keywords="0x8000000000000000" message="Metadata Loaded Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4278" version="0" opcode="0" channel="16" level="4" task="485" keywords="0x8000000000000000" message="Metadata GetCount Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4279" version="0" opcode="0" channel="16" level="4" task="486" keywords="0x8000000000000000" message="Metadata GetAt Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4280" version="0" opcode="0" channel="16" level="4" task="487" keywords="0x8000000000000000" message="Metadata GetValue Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4281" version="0" opcode="0" channel="16" level="4" task="488" keywords="0x8000000000000000" message="Metadata SetValue Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4282" version="0" opcode="0" channel="16" level="4" task="489" keywords="0x8000000000000000" message="Metadata Flush Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4283" version="0" opcode="0" channel="16" level="4" task="490" keywords="0x8000000000000000" message="Metadata OnGetCount Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4284" version="0" opcode="0" channel="16" level="4" task="491" keywords="0x8000000000000000" message="Metadata OnGetAt Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4285" version="0" opcode="0" channel="16" level="4" task="492" keywords="0x8000000000000000" message="Metadata OnGetValue Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4286" version="0" opcode="0" channel="16" level="4" task="493" keywords="0x8000000000000000" message="Metadata OnSetValue Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4287" version="0" opcode="0" channel="16" level="4" task="494" keywords="0x8000000000000000" message="Metadata OnFlush Tag=%1 Object=%2 hr=%3 PropKey=%4 PropVariant=%5">
+    </event>
+    <event value="4288" version="0" opcode="0" channel="16" level="4" task="495" keywords="0x8000000000000000" message="Muxer ProcessSample Tag=%1 Object=%2 Stream Number=%3 Sample Time=%4 Sample Byte Count=%5 Packet Numer=%6 Packet Send Time=%7 Packet Byte Count=%8">
+    </event>
+    <event value="4289" version="0" opcode="0" channel="16" level="4" task="496" keywords="0x8000000000000000" message="Muxer Add Payload Tag=%1 Object=%2 Stream Number=%3 Sample Time=%4 Sample Byte Count=%5 Packet Numer=%6 Packet Send Time=%7 Packet Byte Count=%8">
+    </event>
+    <event value="4290" version="0" opcode="0" channel="16" level="4" task="497" keywords="0x8000000000000000" message="Muxer OnCompletedPacket Tag=%1 Object=%2 Stream Number=%3 Sample Time=%4 Sample Byte Count=%5 Packet Numer=%6 Packet Send Time=%7 Packet Byte Count=%8">
+    </event>
+    <event value="4291" version="0" opcode="0" channel="16" level="4" task="498" keywords="0x8000000000000000" message="Timer Late Tag=%1 Object=%2 Event Time=%3 Late By=%4 Callback=%5">
+    </event>
+    <event value="4292" version="0" opcode="1" channel="16" level="4" task="499" keywords="0x8000000000000000" message="MFGraph Start Play Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4293" version="0" opcode="2" channel="16" level="4" task="499" keywords="0x8000000000000000" message="MFGraph End Play Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4294" version="0" opcode="1" channel="16" level="4" task="500" keywords="0x8000000000000000" message="MFGraph Start Stop Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4295" version="0" opcode="2" channel="16" level="4" task="500" keywords="0x8000000000000000" message="MFGraph End Stop Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4296" version="0" opcode="1" channel="16" level="4" task="501" keywords="0x8000000000000000" message="MFGraph Start Pause Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4297" version="0" opcode="2" channel="16" level="4" task="501" keywords="0x8000000000000000" message="MFGraph End Pause Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4298" version="0" opcode="1" channel="16" level="4" task="502" keywords="0x8000000000000000" message="MFGraph Start Render Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4299" version="0" opcode="2" channel="16" level="4" task="502" keywords="0x8000000000000000" message="MFGraph End Render Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4300" version="0" opcode="1" channel="16" level="4" task="503" keywords="0x8000000000000000" message="MFGraph Start FindInterfaceOnFilter Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4301" version="0" opcode="2" channel="16" level="4" task="503" keywords="0x8000000000000000" message="MFGraph End FindInterfaceOnFilter Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4302" version="0" opcode="1" channel="16" level="4" task="504" keywords="0x8000000000000000" message="MFGraph Start Scan Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4303" version="0" opcode="2" channel="16" level="4" task="504" keywords="0x8000000000000000" message="MFGraph End Scan Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4304" version="0" opcode="1" channel="16" level="4" task="505" keywords="0x8000000000000000" message="MFGraph Start Set Rate Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4305" version="0" opcode="2" channel="16" level="4" task="505" keywords="0x8000000000000000" message="MFGraph End Set Rate Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4306" version="0" opcode="1" channel="16" level="4" task="506" keywords="0x8000000000000000" message="MFGraph Start Insert Node Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4307" version="0" opcode="2" channel="16" level="4" task="506" keywords="0x8000000000000000" message="MFGraph End Insert Node Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4308" version="0" opcode="1" channel="16" level="4" task="507" keywords="0x8000000000000000" message="MFGraph Start Begin Batch Insert Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4309" version="0" opcode="2" channel="16" level="4" task="507" keywords="0x8000000000000000" message="MFGraph End Begin Batch Insert Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4310" version="0" opcode="1" channel="16" level="4" task="507" keywords="0x8000000000000000" message="MFGraph Start End Batch Insert Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4311" version="0" opcode="2" channel="16" level="4" task="507" keywords="0x8000000000000000" message="MFGraph End End Batch Insert Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4312" version="0" opcode="1" channel="16" level="4" task="508" keywords="0x8000000000000000" message="MFGraph Start Close Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4313" version="0" opcode="2" channel="16" level="4" task="508" keywords="0x8000000000000000" message="MFGraph End Close Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4314" version="0" opcode="1" channel="16" level="4" task="509" keywords="0x8000000000000000" message="MFGraph Start Set Volume Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4315" version="0" opcode="2" channel="16" level="4" task="509" keywords="0x8000000000000000" message="MFGraph End Set Volume Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4316" version="0" opcode="1" channel="16" level="4" task="510" keywords="0x8000000000000000" message="MFGraph Start Set Stop Position Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4317" version="0" opcode="2" channel="16" level="4" task="510" keywords="0x8000000000000000" message="MFGraph End Set Stop Position Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4318" version="0" opcode="1" channel="16" level="4" task="511" keywords="0x8000000000000000" message="MFGraph Start Set Current Position Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4319" version="0" opcode="2" channel="16" level="4" task="511" keywords="0x8000000000000000" message="MFGraph End Set Current Position Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4320" version="0" opcode="1" channel="16" level="4" task="512" keywords="0x8000000000000000" message="MFGraph Start Set Context Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4321" version="0" opcode="2" channel="16" level="4" task="512" keywords="0x8000000000000000" message="MFGraph End Set Context Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4322" version="0" opcode="1" channel="16" level="4" task="513" keywords="0x8000000000000000" message="MFGraph Start Queue Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4323" version="0" opcode="2" channel="16" level="4" task="513" keywords="0x8000000000000000" message="MFGraph End Queue Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4324" version="0" opcode="1" channel="16" level="4" task="514" keywords="0x8000000000000000" message="MFGraph Start Init Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4325" version="0" opcode="2" channel="16" level="4" task="514" keywords="0x8000000000000000" message="MFGraph End Init Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4326" version="0" opcode="1" channel="16" level="4" task="515" keywords="0x8000000000000000" message="MFGraph Start InitEx Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4327" version="0" opcode="2" channel="16" level="4" task="515" keywords="0x8000000000000000" message="MFGraph End InitEx Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4328" version="0" opcode="1" channel="16" level="4" task="516" keywords="0x8000000000000000" message="MFGraph Begin Get Type Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4329" version="0" opcode="2" channel="16" level="4" task="516" keywords="0x8000000000000000" message="MFGraph End Get Type Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4330" version="0" opcode="1" channel="16" level="4" task="517" keywords="0x8000000000000000" message="MFGraph Begin IsReused Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4331" version="0" opcode="2" channel="16" level="4" task="517" keywords="0x8000000000000000" message="MFGraph End IsReused Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4332" version="0" opcode="1" channel="16" level="4" task="518" keywords="0x8000000000000000" message="MFGraph Begin GetURL Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4333" version="0" opcode="2" channel="16" level="4" task="518" keywords="0x8000000000000000" message="MFGraph End GetURL Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4334" version="0" opcode="1" channel="16" level="4" task="519" keywords="0x8000000000000000" message="MFGraph Begin Get Context Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4335" version="0" opcode="2" channel="16" level="4" task="519" keywords="0x8000000000000000" message="MFGraph End Get Context Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4336" version="0" opcode="1" channel="16" level="4" task="520" keywords="0x8000000000000000" message="MFGraph Begin Get Cookie Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4337" version="0" opcode="2" channel="16" level="4" task="520" keywords="0x8000000000000000" message="MFGraph End Get Cookie Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4338" version="0" opcode="1" channel="16" level="4" task="521" keywords="0x8000000000000000" message="MFGraph Begin Set Cookie Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4339" version="0" opcode="2" channel="16" level="4" task="521" keywords="0x8000000000000000" message="MFGraph End Set Cookie Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4340" version="0" opcode="1" channel="16" level="4" task="522" keywords="0x8000000000000000" message="MFGraph Begin Get Open State Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4341" version="0" opcode="2" channel="16" level="4" task="522" keywords="0x8000000000000000" message="MFGraph End Get Open State Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4342" version="0" opcode="1" channel="16" level="4" task="523" keywords="0x8000000000000000" message="MFGraph Begin Get Rate Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4343" version="0" opcode="2" channel="16" level="4" task="523" keywords="0x8000000000000000" message="MFGraph End Get Rate Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4344" version="0" opcode="1" channel="16" level="4" task="524" keywords="0x8000000000000000" message="MFGraph Begin Get Current Position Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4345" version="0" opcode="2" channel="16" level="4" task="524" keywords="0x8000000000000000" message="MFGraph End Get Current Position Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4346" version="0" opcode="1" channel="16" level="4" task="525" keywords="0x8000000000000000" message="MFGraph Begin Get Stop Position Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4347" version="0" opcode="2" channel="16" level="4" task="525" keywords="0x8000000000000000" message="MFGraph End Get Stop Position Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4348" version="0" opcode="1" channel="16" level="4" task="526" keywords="0x8000000000000000" message="MFGraph Begin Get Volume Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4349" version="0" opcode="2" channel="16" level="4" task="526" keywords="0x8000000000000000" message="MFGraph End Get Volume Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4350" version="0" opcode="1" channel="16" level="4" task="527" keywords="0x8000000000000000" message="MFGraph Begin Get Media Caps Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4351" version="0" opcode="2" channel="16" level="4" task="527" keywords="0x8000000000000000" message="MFGraph End Get Media Caps Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4352" version="0" opcode="1" channel="16" level="4" task="528" keywords="0x8000000000000000" message="MFGraph Begin Get Control Caps Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4353" version="0" opcode="2" channel="16" level="4" task="528" keywords="0x8000000000000000" message="MFGraph End Get Control Caps Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4354" version="0" opcode="1" channel="16" level="4" task="529" keywords="0x8000000000000000" message="MFGraph Begin Get Seek Caps Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4355" version="0" opcode="2" channel="16" level="4" task="529" keywords="0x8000000000000000" message="MFGraph End Get Seek Caps Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4356" version="0" opcode="1" channel="16" level="4" task="530" keywords="0x8000000000000000" message="MFGraph Begin Get Jump Caps Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4357" version="0" opcode="2" channel="16" level="4" task="530" keywords="0x8000000000000000" message="MFGraph End Get Jump Caps Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4358" version="0" opcode="1" channel="16" level="4" task="531" keywords="0x8000000000000000" message="MFGraph Begin Set AutoRewind Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4359" version="0" opcode="2" channel="16" level="4" task="531" keywords="0x8000000000000000" message="MFGraph End Set AutoRewind Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4360" version="0" opcode="1" channel="16" level="4" task="532" keywords="0x8000000000000000" message="MFGraph Begin Find Plugin Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4361" version="0" opcode="2" channel="16" level="4" task="532" keywords="0x8000000000000000" message="MFGraph End Find Plugin Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4362" version="0" opcode="1" channel="16" level="4" task="533" keywords="0x8000000000000000" message="MFGraph Begin Handle Presentation Switch Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4363" version="0" opcode="2" channel="16" level="4" task="533" keywords="0x8000000000000000" message="MFGraph End Handle Presentation Switch Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4364" version="0" opcode="1" channel="16" level="4" task="534" keywords="0x8000000000000000" message="MFGraph Event Begin Notify State Change Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4365" version="0" opcode="2" channel="16" level="4" task="534" keywords="0x8000000000000000" message="MFGraph Event End Notify State ChangeTag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4366" version="0" opcode="1" channel="16" level="4" task="535" keywords="0x8000000000000000" message="MFGraph Event Begin Notify Playback End Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4367" version="0" opcode="2" channel="16" level="4" task="535" keywords="0x8000000000000000" message="MFGraph Event End Notify Playback End Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4368" version="0" opcode="1" channel="16" level="4" task="536" keywords="0x8000000000000000" message="MFGraph Event Begin Notify Rate Change Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4369" version="0" opcode="2" channel="16" level="4" task="536" keywords="0x8000000000000000" message="MFGraph Event End Notify Rate Change Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4370" version="0" opcode="1" channel="16" level="4" task="537" keywords="0x8000000000000000" message="MFGraph Event Begin Notify Error Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4371" version="0" opcode="2" channel="16" level="4" task="537" keywords="0x8000000000000000" message="MFGraph Event End Notify Error Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4372" version="0" opcode="1" channel="16" level="4" task="538" keywords="0x8000000000000000" message="MFGraph Event Begin Notify License Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4373" version="0" opcode="2" channel="16" level="4" task="538" keywords="0x8000000000000000" message="MFGraph Event End Notify License Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4374" version="0" opcode="1" channel="16" level="4" task="539" keywords="0x8000000000000000" message="MFGraph Event Begin Notify Cred Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4375" version="0" opcode="2" channel="16" level="4" task="539" keywords="0x8000000000000000" message="MFGraph Event End Notify Cred Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4376" version="0" opcode="1" channel="16" level="4" task="540" keywords="0x8000000000000000" message="MFGraph Event Begin Notify Individualization Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4377" version="0" opcode="2" channel="16" level="4" task="540" keywords="0x8000000000000000" message="MFGraph Event End Notify Individualization Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4378" version="0" opcode="1" channel="16" level="4" task="541" keywords="0x8000000000000000" message="MFGraph Event Begin Notify Revocation Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4379" version="0" opcode="2" channel="16" level="4" task="541" keywords="0x8000000000000000" message="MFGraph Event End Notify Revocation Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4380" version="0" opcode="1" channel="16" level="4" task="542" keywords="0x8000000000000000" message="MFGraph Event Begin Notify Fullscreen Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4381" version="0" opcode="2" channel="16" level="4" task="542" keywords="0x8000000000000000" message="MFGraph Event End Notify Fullscreen Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4382" version="0" opcode="1" channel="16" level="4" task="543" keywords="0x8000000000000000" message="MFGraph Event Begin Notify Custom License Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4383" version="0" opcode="2" channel="16" level="4" task="543" keywords="0x8000000000000000" message="MFGraph Event End Notify Custom License Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4384" version="0" opcode="1" channel="16" level="4" task="544" keywords="0x8000000000000000" message="MFGraph Event Begin Notify User Event Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4385" version="0" opcode="2" channel="16" level="4" task="544" keywords="0x8000000000000000" message="MFGraph Event End Notify User Event Tag=%1 Object=%2 Parameter=%3 bstr=%4">
+    </event>
+    <event value="4386" version="0" opcode="0" channel="16" level="4" task="545" keywords="0x8000000000000000" message="Windows Media Player Playback URL=%1 Graph Type=%2 hr=%3">
+    </event>
+    <event value="4387" version="0" opcode="0" channel="16" level="4" task="546" keywords="0x8000000000000000" message="Windows Media Player Playback Open URL=%1 Graph Type=%2 hr=%3">
+    </event>
+    <event value="4388" version="0" opcode="0" channel="16" level="4" task="547" keywords="0x8000000000000000" message="Windows Media Player Playback Queue URL=%1 Graph Type=%2 hr=%3">
+    </event>
+    <event value="4389" version="0" opcode="0" channel="16" level="4" task="548" keywords="0x8000000000000000" message="Windows Media Player Playback ErrorOpen URL=%1 Graph Type=%2 hr=%3">
+    </event>
+    <event value="4390" version="0" opcode="0" channel="16" level="4" task="549" keywords="0x8000000000000000" message="Windows Media Player Playback ErrorQueue URL=%1 Graph Type=%2 hr=%3">
+    </event>
+    <event value="4391" version="0" opcode="1" channel="16" level="4" task="550" keywords="0x8000000000000000" message="PEAuthComm BeginAcquireSessionKey Tag=%1 Object=%2">
+    </event>
+    <event value="4392" version="0" opcode="2" channel="16" level="4" task="550" keywords="0x8000000000000000" message="PEAuthComm EndAcquireSessionKey Tag=%1 Object=%2">
+    </event>
+    <event value="4393" version="0" opcode="1" channel="16" level="4" task="551" keywords="0x8000000000000000" message="PEAuthComm BeginKernelStateInquiry Tag=%1 Object=%2">
+    </event>
+    <event value="4394" version="0" opcode="2" channel="16" level="4" task="551" keywords="0x8000000000000000" message="PEAuthComm EndKernelStateInquiry Tag=%1 Object=%2">
+    </event>
+    <event value="4395" version="0" opcode="1" channel="16" level="4" task="552" keywords="0x8000000000000000" message="PEAuthComm BeginReloadGRL Tag=%1 Object=%2">
+    </event>
+    <event value="4396" version="0" opcode="2" channel="16" level="4" task="552" keywords="0x8000000000000000" message="PEAuthComm EndReloadGRL Tag=%1 Object=%2">
+    </event>
+    <event value="4397" version="0" opcode="1" channel="16" level="4" task="553" keywords="0x8000000000000000" message="PEAuthComm BeginRenewSessionKey Tag=%1 Object=%2">
+    </event>
+    <event value="4398" version="0" opcode="2" channel="16" level="4" task="553" keywords="0x8000000000000000" message="PEAuthComm EndRenewSessionKey Tag=%1 Object=%2">
+    </event>
+    <event value="4399" version="0" opcode="1" channel="16" level="4" task="554" keywords="0x8000000000000000" message="PEAuthComm BeginGetCompList Tag=%1 Object=%2">
+    </event>
+    <event value="4400" version="0" opcode="2" channel="16" level="4" task="554" keywords="0x8000000000000000" message="PEAuthComm EndGetCompList Tag=%1 Object=%2">
+    </event>
+    <event value="4401" version="0" opcode="0" channel="16" level="4" task="555" keywords="0x8000000000000000" message="Cache Reader Tag=%1 Object=%2 Initial Offset=%3 Final Offset=%4 Bytes In Cache=%5 Cache Size=%6 Sector Size=%7">
+    </event>
+    <event value="4402" version="0" opcode="1" channel="16" level="4" task="556" keywords="0x8000000000000000" message="Codec DXVA CPUDecodeStart Tag=%1 Object=%2 Frame Index=%3 Sample Time=%4">
+    </event>
+    <event value="4403" version="0" opcode="2" channel="16" level="4" task="556" keywords="0x8000000000000000" message="Codec DXVA CPUDecodeEnd Tag=%1 Object=%2 Frame Index=%3 Sample Time=%4">
+    </event>
+    <event value="4404" version="0" opcode="1" channel="16" level="4" task="557" keywords="0x8000000000000000" message="Codec DXVA GPUDecodeStart Tag=%1 Object=%2 Frame Index=%3 Sample Time=%4">
+    </event>
+    <event value="4405" version="0" opcode="2" channel="16" level="4" task="557" keywords="0x8000000000000000" message="Codec DXVA GPUDecodeEnd Tag=%1 Object=%2 Frame Index=%3 Sample Time=%4">
+    </event>
+    <event value="4406" version="0" opcode="1" channel="16" level="4" task="558" keywords="0x8000000000000000" message="Codec DXVA DisplayStart Tag=%1 Object=%2 Frame Index=%3 Sample Time=%4">
+    </event>
+    <event value="4407" version="0" opcode="2" channel="16" level="4" task="558" keywords="0x8000000000000000" message="Codec DXVA DisplayEnd Tag=%1 Object=%2 Frame Index=%3 Sample Time=%4">
+    </event>
+    <event value="4408" version="0" opcode="1" channel="16" level="4" task="559" keywords="0x8000000000000000" message="ASF Source Begin Start Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4409" version="0" opcode="2" channel="16" level="4" task="559" keywords="0x8000000000000000" message="ASF Source End Start Tag=%1 Object=%2 Parameter=%3">
+    </event>
+    <event value="4410" version="0" opcode="1" channel="16" level="4" task="560" keywords="0x8000000000000000" message="OP Queue Begin Operation Tag=%1 Object=%2 Operation=%3 hr=%4">
+    </event>
+    <event value="4411" version="0" opcode="2" channel="16" level="4" task="560" keywords="0x8000000000000000" message="OP Queue End Operation Tag=%1 Object=%2 Operation=%3 hr=%4">
+    </event>
+    <event value="4412" version="0" opcode="1" channel="16" level="4" task="561" keywords="0x8000000000000000" message="Property Handler Begin Init Tag=%1 Object=%2 Content Type=%3">
+    </event>
+    <event value="4413" version="0" opcode="2" channel="16" level="4" task="561" keywords="0x8000000000000000" message="Property Handler End Init Tag=%1 Object=%2 Content Type=%3">
+    </event>
+    <event value="4414" version="0" opcode="1" channel="16" level="4" task="562" keywords="0x8000000000000000" message="Property Handler Begin GetValue Tag=%1 Object=%2 Content Type=%3">
+    </event>
+    <event value="4415" version="0" opcode="2" channel="16" level="4" task="562" keywords="0x8000000000000000" message="Property Handler End GetValue Tag=%1 Object=%2 Content Type=%3">
+    </event>
+    <event value="4416" version="0" opcode="1" channel="16" level="4" task="563" keywords="0x8000000000000000" message="Property Handler Begin SetValue Tag=%1 Object=%2 Content Type=%3">
+    </event>
+    <event value="4417" version="0" opcode="2" channel="16" level="4" task="563" keywords="0x8000000000000000" message="Property Handler End SetValue Tag=%1 Object=%2 Content Type=%3">
+    </event>
+    <event value="4418" version="0" opcode="1" channel="16" level="4" task="564" keywords="0x8000000000000000" message="Property Handler Begin Commit Tag=%1 Object=%2 Content Type=%3">
+    </event>
+    <event value="4419" version="0" opcode="2" channel="16" level="4" task="564" keywords="0x8000000000000000" message="Property Handler End Commit Tag=%1 Object=%2 Content Type=%3">
+    </event>
+    <event value="4420" version="0" opcode="1" channel="16" level="4" task="565" keywords="0x8000000000000000" message="Property Handler Begin Init Tag=%1 Object=%2 Content Type=%3 Property Key=%4 fmtID=%5">
+    </event>
+    <event value="4421" version="0" opcode="2" channel="16" level="4" task="565" keywords="0x8000000000000000" message="Property Handler End Init Tag=%1 Object=%2 Content Type=%3 Property Key=%4 fmtID=%5">
+    </event>
+    <event value="4422" version="0" opcode="1" channel="16" level="4" task="566" keywords="0x8000000000000000" message="Property Handler Begin GetValue Tag=%1 Object=%2 Content Type=%3 Property Key=%4 fmtID=%5">
+    </event>
+    <event value="4423" version="0" opcode="2" channel="16" level="4" task="566" keywords="0x8000000000000000" message="Property Handler End GetValue Tag=%1 Object=%2 Content Type=%3 Property Key=%4 fmtID=%5">
+    </event>
+    <event value="4424" version="0" opcode="1" channel="16" level="4" task="567" keywords="0x8000000000000000" message="Property Handler Begin SetValue Tag=%1 Object=%2 Content Type=%3 Property Key=%4 fmtID=%5">
+    </event>
+    <event value="4425" version="0" opcode="2" channel="16" level="4" task="567" keywords="0x8000000000000000" message="Property Handler End SetValue Tag=%1 Object=%2 Content Type=%3 Property Key=%4 fmtID=%5">
+    </event>
+    <event value="4426" version="0" opcode="1" channel="16" level="4" task="568" keywords="0x8000000000000000" message="Property Handler Begin Commit Tag=%1 Object=%2 Content Type=%3 Property Key=%4 fmtID=%5">
+    </event>
+    <event value="4427" version="0" opcode="2" channel="16" level="4" task="568" keywords="0x8000000000000000" message="Property Handler End Commit Tag=%1 Object=%2 Content Type=%3 Property Key=%4 fmtID=%5">
+    </event>
+    <event value="4428" version="0" opcode="1" channel="16" level="4" task="569" keywords="0x8000000000000000" message="Transcode Begin CreateTranscodeTopology Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4429" version="0" opcode="2" channel="16" level="4" task="569" keywords="0x8000000000000000" message="Transcode End CreateTranscodeTopology Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4430" version="0" opcode="1" channel="16" level="4" task="570" keywords="0x8000000000000000" message="Field Of Use Begin Validate Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4431" version="0" opcode="2" channel="16" level="4" task="570" keywords="0x8000000000000000" message="Field Of Use End Validate Tag=%1 Object=%2 hr=%3">
+    </event>
+    <event value="4432" version="0" opcode="0" channel="16" level="4" task="571" keywords="0x8000000000000000" message="Capture Source Start Tag=%1 Object=%2 Duration=%3">
+    </event>
+    <event value="4433" version="0" opcode="0" channel="16" level="4" task="572" keywords="0x8000000000000000" message="Capture Source Ready Queue Empty Tag=%1 Object=%2 Duration=%3">
+    </event>
+    <event value="4434" version="0" opcode="0" channel="16" level="4" task="573" keywords="0x8000000000000000" message="Capture Source Ready Queue Full Tag=%1 Object=%2 Duration=%3">
+    </event>
+    <event value="4441" version="0" opcode="1" channel="16" level="4" task="589" keywords="0x8000000000000000" message="2D Allocate Create: Start pointer=%1 length=%2 type=%3">
+    </event>
+    <event value="4442" version="0" opcode="2" channel="16" level="4" task="589" keywords="0x8000000000000000" message="2D Allocate Create: End pointer=%1 length=%2 type=%3">
+    </event>
+    <event value="4443" version="0" opcode="1" channel="16" level="4" task="590" keywords="0x8000000000000000" message="2D Allocate Buffer: Start buffer=%1 parentAlloc=%2 free=%3">
+    </event>
+    <event value="4444" version="0" opcode="2" channel="16" level="4" task="590" keywords="0x8000000000000000" message="2D Allocate Buffer: End buffer=%1 parentAlloc=%2 free=%3">
+    </event>
+    <event value="4445" version="0" opcode="1" channel="16" level="4" task="591" keywords="0x8000000000000000" message="2D Allocate Copy: Start Pointer=%1 Direction=%2 Width=%3 Height=%4 Format=%5">
+    </event>
+    <event value="4446" version="0" opcode="2" channel="16" level="4" task="591" keywords="0x8000000000000000" message="2D Allocate Copy: End Pointer=%1 Direction=%2 Width=%3 Height=%4 Format=%5">
+    </event>
+    <event value="4447" version="0" opcode="1" channel="16" level="4" task="592" keywords="0x8000000000000000" message="Property Handler Start Thumbnail Generation Object=%1 Content Type=%2">
+    </event>
+    <event value="4448" version="0" opcode="2" channel="16" level="4" task="592" keywords="0x8000000000000000" message="Property Handler End Thumbnail Generation Object=%1 Content Type=%2">
+    </event>
+    <event value="4449" version="0" opcode="0" channel="16" level="4" task="593" keywords="0x8000000000000000" message="Property Handler End Thumbnail Generation Best Frame Object=%1 Content Type=%2 Best Frame Index=%3 Total Decoded Frames=%4 Timeout in 100NS=%5 isTimeout=%6">
+    </event>
+    <event value="4450" version="0" opcode="0" channel="16" level="4" task="594" keywords="0x8000000000000000" message="MFMediaSource video sample received.">
+    </event>
+    <event value="4451" version="0" opcode="0" channel="16" level="4" task="594" keywords="0x8000000000000000" message="MFMediaSource audio sample received.">
+    </event>
+    <event value="4452" version="0" opcode="0" channel="16" level="4" task="482" keywords="0x8000000000000000" message="Audio Renderer Buffer Complete Tag=%1 Object=%2">
+    </event>
+    <event value="4453" version="0" opcode="0" channel="16" level="4" task="482" keywords="0x8000000000000000" message="Audio Renderer Buffer Retry Tag=%1 Object=%2">
+    </event>
+    <event value="4456" version="0" opcode="0" channel="16" level="4" task="596" keywords="0x8000000000000000" message="Audio Low Latency Tag=%1 Object=%2 Setting=%3">
+    </event>
+    <event value="4457" version="0" opcode="0" channel="16" level="4" task="594" keywords="0x8000000000000000" message="MFMediaSource sample dropped.">
+    </event>
+    <event value="4458" version="0" opcode="0" channel="16" level="4" task="301" keywords="0x8000000000000000" message="Audio Renderer Glitch Tag=%1 Object %2 ByteCount=%3 TotalByteCount=%4">
+    </event>
+    <event value="4459" version="0" opcode="0" channel="16" level="4" task="482" keywords="0x8000000000000000" message="Audio Renderer Work Item Canceled Tag=%1 Object %2 IsRetry=%3">
+    </event>
+    <event value="4460" version="0" opcode="1" channel="16" level="4" task="597" keywords="0x8000000000000000" message="DXGI Map Enter Surface=%1">
+    </event>
+    <event value="4461" version="0" opcode="2" channel="16" level="4" task="597" keywords="0x8000000000000000" message="DXGI Map Leave Surface=%1">
+    </event>
+    <event value="4462" version="0" opcode="0" channel="17" level="4" task="482" keywords="0x4000000000000000" message="Audio Renderer: IsLostingHardwareResrouce=%1">
+    </event>
+    <event value="4463" version="0" opcode="0" channel="17" level="4" task="482" keywords="0x4000000000000000" message="Audio Renderer: Dynamic format change request =%1">
+    </event>
+    <event value="4464" version="0" opcode="0" channel="17" level="4" task="482" keywords="0x4000000000000000" message="Audio Renderer: Sound level changed = %1">
+    </event>
+    <event value="4465" version="0" opcode="0" channel="17" level="4" task="482" keywords="0x4000000000000000" message="Audio Renderer: Release stream resource = %1">
+    </event>
+    <event value="4466" version="0" opcode="0" channel="16" level="4" task="482" keywords="0x8000000000000000" message="Audio Buffer Duration Tag=%1 Object=%2 Setting=%3">
+    </event>
+    <event value="4467" version="0" opcode="1" channel="16" level="4" task="598" keywords="0x8000000000000000" message="CopyImage Enter Src=%1 Dst=%2 Width=%3 Height=%4">
+    </event>
+    <event value="4468" version="0" opcode="2" channel="16" level="4" task="598" keywords="0x8000000000000000" message="CopyImage Leave Src=%1 Dst=%2 ReturnCode=%3">
+    </event>
+    <event value="4469" version="0" opcode="1" channel="16" level="4" task="600" keywords="0x8000000000000000" message="MFMediaDeviceSource Start Begin">
+    </event>
+    <event value="4470" version="0" opcode="2" channel="16" level="4" task="600" keywords="0x8000000000000000" message="MFMediaDeviceSource Start End">
+    </event>
+    <event value="4471" version="0" opcode="0" channel="16" level="4" task="601" keywords="0x8000000000000000" message="MFMediaDeviceStream SendSinglePhotoTriggerToKS Event">
+    </event>
+    <event value="4472" version="0" opcode="0" channel="16" level="4" task="602" keywords="0x8000000000000000" message="2D Allocate Flush: Allocator=%1 Sample=%2 Free=%3 Allocated=%4">
+    </event>
+    <event value="4500" version="0" opcode="0" channel="16" level="4" task="610" keywords="0x8000000000000000" message="NetworkRIO_PendingSends_Update: Object=%1 PendingCount=%2 Bytes=%3">
+    </event>
+    <event value="4501" version="0" opcode="1" channel="16" level="4" task="610" keywords="0x8000000000000000" message="NetworkRIO_PendingSends_Start: Object=%1 PendingCount=%2 Bytes=%3">
+    </event>
+    <event value="4502" version="0" opcode="2" channel="16" level="4" task="610" keywords="0x8000000000000000" message="NetworkRIO_PendingSends_Stop: Object=%1 PendingCount=%2 Bytes=%3">
+    </event>
+    <event value="4600" version="0" opcode="1" channel="16" level="4" task="700" keywords="0x8000000000000000" message="MFContentProtectionDeviceCreate_Start system %1">
+    </event>
+    <event value="4601" version="0" opcode="2" channel="16" level="4" task="700" keywords="0x8000000000000000" message="MFContentProtectionDeviceCreate_Stop object %1, hr %2">
+    </event>
+    <event value="4602" version="0" opcode="1" channel="16" level="4" task="701" keywords="0x8000000000000000" message="MFIsContentProtectionDeviceSupported_Start system %1">
+    </event>
+    <event value="4603" version="0" opcode="2" channel="16" level="4" task="701" keywords="0x8000000000000000" message="MFIsContentProtectionDeviceSupported_Stop available %1, hr %2">
+    </event>
+    <event value="4604" version="0" opcode="1" channel="16" level="4" task="702" keywords="0x8000000000000000" message="MFContentProtectionDeviceCall_Start object %1">
+    </event>
+    <event value="4605" version="0" opcode="2" channel="16" level="4" task="702" keywords="0x8000000000000000" message="MFContentProtectionDeviceCall_End object %1, functionID %2, input bytes %3, output bytes %4, TransportTime %5ms, ExecutionTime %6ms, TotalTime %7ms, hr %8">
+    </event>
+    <event value="4606" version="0" opcode="1" channel="16" level="4" task="703" keywords="0x8000000000000000" message="MFContentDecryptorContextCreate system %1, D3D %2">
+    </event>
+    <event value="4607" version="0" opcode="2" channel="16" level="4" task="703" keywords="0x8000000000000000" message="MFContentDecryptorContextCreate object %1, hr %2">
+    </event>
+    <event value="4608" version="0" opcode="0" channel="16" level="4" task="704" keywords="0x8000000000000000" message="MFContentDecryptorContextInitializeKey object %1, hr %2">
+    </event>
+    <event value="4609" version="0" opcode="1" channel="16" level="4" task="705" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4610" version="0" opcode="2" channel="16" level="4" task="705" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4611" version="0" opcode="1" channel="16" level="4" task="706" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4612" version="0" opcode="2" channel="16" level="4" task="706" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4613" version="0" opcode="1" channel="16" level="4" task="707" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4614" version="0" opcode="2" channel="16" level="4" task="707" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4615" version="0" opcode="1" channel="16" level="4" task="603" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4616" version="0" opcode="2" channel="16" level="4" task="603" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

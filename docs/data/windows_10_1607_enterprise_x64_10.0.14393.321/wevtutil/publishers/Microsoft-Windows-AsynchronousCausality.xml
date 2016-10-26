@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-AsynchronousCausality" guid="19a4c69a-28eb-4d4b-8d94-5f19055a1b5c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=combase.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\combase.dll" messageFileName="C:\Windows\system32\combase.dll" message="Microsoft-Windows-AsyncCausality" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-AsynchronousCausality/Causality" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="AsynchronousOperation" mask="1" message="Identifies events for asynchronous operations.">
+    </keyword>
+    <keyword name="SynchronousWorkItem" mask="2" message="Identifies events for synchronous work items.">
+    </keyword>
+    <keyword name="Relation" mask="4" message="Identifies events relating synchronous work items to asynchronous operations.">
+    </keyword>
+    <keyword name="OperationWork" mask="10" message="Identifies events for work done by asynchronous operations.">
+    </keyword>
+    <keyword name="SystemOperation" mask="100" message="Identifies events orginated by system components.">
+    </keyword>
+    <keyword name="LibraryOperation" mask="200" message="Identifies events originated by libraries and language projections.">
+    </keyword>
+    <keyword name="ApplicationOperation" mask="400" message="Identifies events originated by an application.">
+    </keyword>
+    <keyword name="OperationCreate" mask="800" message="Identifies events originated by the creation of an asynchronous operation.">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="4112" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000901" message="Event fired when an asynchronous operation is created.">
+    </event>
+    <event value="4113" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000a01" message="Event fired when an asynchronous operation is created.">
+    </event>
+    <event value="4114" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000c01" message="Event fired when an asynchronous operation is created.">
+    </event>
+    <event value="4144" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000901" message="Event fired when an asynchronous operation is created.">
+    </event>
+    <event value="4145" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000a01" message="Event fired when an asynchronous operation is created.">
+    </event>
+    <event value="4146" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000c01" message="Event fired when an asynchronous operation is created.">
+    </event>
+    <event value="4176" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000901" message="Event fired when an asynchronous operation is created.">
+    </event>
+    <event value="4177" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000a01" message="Event fired when an asynchronous operation is created.">
+    </event>
+    <event value="4178" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000c01" message="Event fired when an asynchronous operation is created.">
+    </event>
+    <event value="8208" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000101" message="Event fired when an asynchronous operation is completed.">
+    </event>
+    <event value="8209" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000201" message="Event fired when an asynchronous operation is completed.">
+    </event>
+    <event value="8210" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000401" message="Event fired when an asynchronous operation is completed.">
+    </event>
+    <event value="8240" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000101" message="Event fired when an asynchronous operation is completed.">
+    </event>
+    <event value="8241" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000201" message="Event fired when an asynchronous operation is completed.">
+    </event>
+    <event value="8242" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000401" message="Event fired when an asynchronous operation is completed.">
+    </event>
+    <event value="8272" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000101" message="Event fired when an asynchronous operation is completed.">
+    </event>
+    <event value="8273" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000201" message="Event fired when an asynchronous operation is completed.">
+    </event>
+    <event value="8274" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000401" message="Event fired when an asynchronous operation is completed.">
+    </event>
+    <event value="12304" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000104" message="Event fired relating a synchronous work items to  an asynchronous operation.">
+    </event>
+    <event value="12305" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000204" message="Event fired relating a synchronous work items to  an asynchronous operation.">
+    </event>
+    <event value="12306" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000404" message="Event fired relating a synchronous work items to  an asynchronous operation.">
+    </event>
+    <event value="12336" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000104" message="Event fired relating a synchronous work items to  an asynchronous operation.">
+    </event>
+    <event value="12337" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000204" message="Event fired relating a synchronous work items to  an asynchronous operation.">
+    </event>
+    <event value="12338" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000404" message="Event fired relating a synchronous work items to  an asynchronous operation.">
+    </event>
+    <event value="12368" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000104" message="Event fired relating a synchronous work items to  an asynchronous operation.">
+    </event>
+    <event value="12369" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000204" message="Event fired relating a synchronous work items to  an asynchronous operation.">
+    </event>
+    <event value="12370" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000404" message="Event fired relating a synchronous work items to  an asynchronous operation.">
+    </event>
+    <event value="16400" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000102" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16401" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000202" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16402" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000402" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16432" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000102" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16433" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000202" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16434" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000402" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16464" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000102" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16465" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000202" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16466" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000402" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16656" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000110" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16657" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000210" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16658" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000410" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16688" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000110" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16689" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000210" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16690" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000410" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16720" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000110" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16721" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000210" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="16722" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000410" message="Event fired when a synchronous work item starts.">
+    </event>
+    <event value="20496" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000102" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20497" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000202" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20498" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000402" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20528" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000102" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20529" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000202" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20530" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000402" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20560" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000102" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20561" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000202" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20562" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000402" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20752" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000110" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20753" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000210" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20754" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000410" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20784" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000110" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20785" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000210" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20786" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000410" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20816" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000110" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20817" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000210" message="Event fired when a synchronous work item completes.">
+    </event>
+    <event value="20818" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000410" message="Event fired when a synchronous work item completes.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Wired-AutoConfig" guid="b92cf7fd-dc10-4c6b-a72d-1613bf25e597" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=dot3svc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\dot3svc.dll" messageFileName="C:\Windows\system32\dot3svc.dll" message="Microsoft-Windows-Wired-AutoConfig" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Wired-AutoConfig/Operational" id="16" flags="0" message="Microsoft-Windows-Wired-AutoConfig/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Wired-AutoConfig/Diagnostic" id="17" flags="0" message="Microsoft-Windows-Wired-AutoConfig/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="DeviceLayer" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="DeviceLayer">
+    </task>
+    <task name="MSM" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="MSM">
+    </task>
+    <task name="AutoConf" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="AutoConf">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="AutoConf" mask="1" message="">
+    </keyword>
+    <keyword name="MSM" mask="2" message="">
+    </keyword>
+    <keyword name="DeviceLayer" mask="4" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="13021" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A pre-logon connection was not attempted.
+
+Result: %1
+Reason: %2
+">
+    </event>
+    <event value="13022" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A pre-logon connection was attempted.
+
+Result: %1
+Interface GUID: %2
+Requested Fields: %3
+">
+    </event>
+    <event value="13031" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A post-logon connection was not attempted.
+
+Result: %1
+Reason: %2
+">
+    </event>
+    <event value="13032" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A post-logon connection was attempted.
+
+Result: %1
+Interface GUID: %2
+">
+    </event>
+    <event value="13033" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The post-logon connection attempt is complete.
+
+Network connection attempt result: %1
+Reason: %2
+Interface GUID: %3
+">
+    </event>
+    <event value="15500" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The network adapter has been unplugged.
+
+	Network Adapter: %2
+	Interface GUID: %1">
+    </event>
+    <event value="15501" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The network adapter has been connected.
+
+	Network Adapter: %2
+	Interface GUID: %1">
+    </event>
+    <event value="15502" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The profile was applied on the network adapter.
+
+	Network Adapter: %2
+	Interface GUID: %1
+	Profile Type: %3
+	Profile Content: %4">
+    </event>
+    <event value="15503" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Wired 802.1X Authentication was started.
+
+	Network Adapter: %2
+	Interface GUID: %1
+	Connection ID: %3">
+    </event>
+    <event value="15504" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Wired 802.1X Authentication was restarted.
+
+	Network Adapter: %2
+	Interface GUID: %1
+	Connection ID: %3
+	Restart Reason: %4">
+    </event>
+    <event value="15505" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Wired 802.1X Authentication succeeded.
+
+	Network Adapter: %2
+	Interface GUID: %1
+	Peer Address: %3
+	Local Address: %4
+	Connection ID: %5
+	Identity: %6
+	User: %7
+	Domain: %8
+	Reason: %9
+	Reason Text: %10
+	Error Code: %11">
+    </event>
+    <event value="15506" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Network authentication attempts have been temporarily suspended on this network adapter.
+
+	Network Adapter: %2
+	Interface GUID: %1
+	Reason Code: %3
+	Length of block timer (seconds): %4">
+    </event>
+    <event value="15507" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Network authentication attempts have been resumed on this network adapter.
+
+	Network Adapter: %2
+	Interface GUID: %1">
+    </event>
+    <event value="15508" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="There has been an NDIS Port state change on this network adapter.
+
+	Network Adapter: %2
+	Interface GUID: %1
+	NDIS Control State: %3
+	NDIS Auth State: %4">
+    </event>
+    <event value="15509" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The operational state on the network adapter was identified.
+
+	Network Adapter: %2
+	Interface GUID: %1
+	Service State: %3">
+    </event>
+    <event value="15510" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A network adapter was added to the system.
+
+	Network Adapter: %2
+	Interface GUID: %1">
+    </event>
+    <event value="15511" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Wired AutoConfig service entered the running state.">
+    </event>
+    <event value="15512" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Wired AutoConfig service entered the stopped state.">
+    </event>
+    <event value="15513" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A network adapter was removed from the system.
+
+	Network Adapter: %2
+	Interface GUID: %1">
+    </event>
+    <event value="15514" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Wired 802.1X Authentication failed.
+
+	Network Adapter: %2
+	Interface GUID: %1
+	Peer Address: %3
+	Local Address: %4
+	Connection ID: %5
+	Identity: %6
+	User: %7
+	Domain: %8
+	Reason: %9
+	Reason Text: %10
+	Error Code: %11">
+    </event>
+    <event value="15515" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Wired AutoConfig service is starting.">
+    </event>
+    <event value="15516" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Wired AutoConfig service is stopping.">
+    </event>
+    <event value="20001" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="No interactive console session to send UI request">
+    </event>
+    <event value="20002" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000002000000001" message="ACM: IntfCompleteTimely failed, error %1">
+    </event>
+    <event value="20003" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="There are no available connections">
+    </event>
+    <event value="20004" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="MSM failed to initialize the interface, error %1.">
+    </event>
+    <event value="20005" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Failed to load profile, error %1.">
+    </event>
+    <event value="20006" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000002000000001" message="No profile found in db, error %1">
+    </event>
+    <event value="20007" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="ACM: UI request could not be sent.">
+    </event>
+    <event value="20008" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="IntfCompletePlap failed, error %1.">
+    </event>
+    <event value="20009" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Interface does not have any available networks">
+    </event>
+    <event value="20010" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Invalid state of the adapter %1.">
+    </event>
+    <event value="20011" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Media is disconnected, SSO can&apos;t be done">
+    </event>
+    <event value="20012" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Failed to make the PLAP runtime state , error %1">
+    </event>
+    <event value="20013" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Failed to make the timely runtime state , error %1.">
+    </event>
+    <event value="20014" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Interface does not have a profile">
+    </event>
+    <event value="20015" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="OneXSetEapUserData failed, error %1.">
+    </event>
+    <event value="20016" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="AcmQueryUserDataProperties failed, error %1.">
+    </event>
+    <event value="20017" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Dot3AcmQueryUserDataByGuid failed, error %1.">
+    </event>
+    <event value="20018" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="DsRoleGetPrimaryDomainInformation failed, error %1">
+    </event>
+    <event value="20019" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000002000000001" message="Adapter is connected , we have a valid IP">
+    </event>
+    <event value="20020" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Don&apos;t have time to wait for DC connectivity. Returning now">
+    </event>
+    <event value="20021" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000002000000001" message="Waiting for DC connectivity">
+    </event>
+    <event value="20022" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000002000000001" message="Wait for ip address change successfully completed">
+    </event>
+    <event value="20024" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Wait for ip address change timed out">
+    </event>
+    <event value="20025" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Wait for ip address change failed with error (%1)">
+    </event>
+    <event value="20026" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000002000000001" message="Waiting for ip address change notification">
+    </event>
+    <event value="20028" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000002000000001" message="Wait for 1x completion successfully completed">
+    </event>
+    <event value="20029" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Adapter not connected. Returning now.">
+    </event>
+    <event value="20030" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="1x completed with a failure %1">
+    </event>
+    <event value="20031" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Wait for 1x completion failed with return code (%1)">
+    </event>
+    <event value="20032" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="Wait for 1x completion timed out">
+    </event>
+    <event value="20033" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="IntfDoTimely took longer than our timeout allows. Returning now">
+    </event>
+    <event value="20034" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000002000000001" message="IntfDoTimely completed successfully">
+    </event>
+    <event value="20035" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="IntfDoTimely failed, error %1">
+    </event>
+    <event value="20036" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000002000000001" message="No TIMELY profiles were found. Completing the timely processing">
+    </event>
+    <event value="20037" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000002000000001" message="Timely1x - Interface %1, profile %3 - Start %4, Stop %5">
+    </event>
+    <event value="20038" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000002000000001" message="FindTimelyIntfAndProfile failed, error %1">
+    </event>
+    <event value="21001" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="DeviceLayerOpenHandle failed, Error %1">
+    </event>
+    <event value="21002" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="DeviceLayerQueryOID failed %1, OID %3">
+    </event>
+    <event value="21003" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="DeviceLayerSetOID failed %1, OID %3">
+    </event>
+    <event value="21004" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="DeviceLayerSendPacket failed, %1">
+    </event>
+    <event value="21005" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="DeviceLayerReceivePacket failed, %1">
+    </event>
+    <event value="21006" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="Packet only %4 bytes, skipped">
+    </event>
+    <event value="21007" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="Invalid packet type %4, skipped">
+    </event>
+    <event value="21008" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="The read request was cancelled">
+    </event>
+    <event value="21009" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="Receiving data error %1">
+    </event>
+    <event value="21010" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="Packet skipped, error %1">
+    </event>
+    <event value="21011" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000002000000004" message="Send data failed, error %1">
+    </event>
+    <event value="21012" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): pAcmConnectionProgress failed %1">
+    </event>
+    <event value="21013" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): pAcmQueryUserData failed %1">
+    </event>
+    <event value="21014" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): pAcmSetMsmProfile failed %1">
+    </event>
+    <event value="21015" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): pAcmSetUserData failed %1">
+    </event>
+    <event value="21016" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): pAcmMsmNotify failed %1">
+    </event>
+    <event value="21017" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): pAcmMediaChange failed, error %1">
+    </event>
+    <event value="21018" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): pAcmUIRequest failed %1">
+    </event>
+    <event value="21019" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): pAcmConnectionCompletionRoutine failed %1">
+    </event>
+    <event value="21020" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="Interface(%1): State Transition %3 --&gt; %4">
+    </event>
+    <event value="21021" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="Interface(%4): Received AuthNotStarted result from 1x">
+    </event>
+    <event value="21022" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): Received AuthInvalid result from 1x">
+    </event>
+    <event value="21023" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="Interface(%1): Start processing event: (%3)">
+    </event>
+    <event value="21024" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="Interface(%1): Completed processing event: (%3)">
+    </event>
+    <event value="21025" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): StartOneXAuth failed %1">
+    </event>
+    <event value="21026" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): SendOneXPacket failed %1">
+    </event>
+    <event value="21027" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="Interface(%4): TIMING OUT 802.1x Authentication">
+    </event>
+    <event value="21028" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="Interface(%4): NOT TIMING OUT 802.1x authentication, next timer in %3 msec">
+    </event>
+    <event value="21029" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): DeviceLayerGetCurrentMediaState failed %1">
+    </event>
+    <event value="21030" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="No 1X port exists. Ignoring the packet received">
+    </event>
+    <event value="21031" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="Interface(%1): Set the SWITCH MAC address to %2">
+    </event>
+    <event value="21032" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): OpenDeviceHandle failed %1">
+    </event>
+    <event value="21033" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="Interface(%1): Start processing event (%3)">
+    </event>
+    <event value="21034" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%1): ProcessDot3MsmEvent:  Dot3MsmPerformStateMachineProcessing FAILed (%4), Event=%3">
+    </event>
+    <event value="21035" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="Interface(%1): Completed processing event (%3)">
+    </event>
+    <event value="21036" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000002000000002" message="Finished initializing a new interface with id = %1 and friendly name = %2">
+    </event>
+    <event value="21037" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Dot3MsmInit failed %1">
+    </event>
+    <event value="21038" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Dot3MSMInitAdapter failed %1">
+    </event>
+    <event value="21039" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Failed to parse original request %1">
+    </event>
+    <event value="21040" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Failed to parse UI Response %1">
+    </event>
+    <event value="21041" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): OneXUIResponse failed %1">
+    </event>
+    <event value="21042" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="Interface(%4): Dot3MsmQueryPendingUIRequest failed %1">
+    </event>
+    <event value="21043" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000002000000002" message="OneXValidateProfile failed %1">
+    </event>
+  </events>
+</provider>

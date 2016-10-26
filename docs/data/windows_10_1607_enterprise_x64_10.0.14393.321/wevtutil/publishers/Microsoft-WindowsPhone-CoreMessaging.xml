@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-WindowsPhone-CoreMessaging" guid="922cdcf3-6123-42da-a877-1a24f23e39c5" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=CoreMessaging.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\CoreMessaging.dll" messageFileName="C:\Windows\system32\CoreMessaging.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ETW_Init" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ETW_Uninit" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="System_OutOfMemory" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CoreUIService_ServerThread_Started" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CoreUIService_ServerThread_Exiting" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CoreUIService_InitializeService" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CoreUIService_UninitializeService" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CoreUIService_ServiceObjectCreated" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CoreUIService_ServiceObjectDestroyed" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CoreUIService_UpdateServiceStatus" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CoreUIService_ServiceObjectServiceMain" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CoreUIService_CoreUIServiceMain_UnknownService" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Session_CoreUICreate" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Session_CoreUICreate_InitializeCnContext" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Session_CoreUICreate_ExportSession" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Session_ConstructThreadContext" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Dispatcher_DispatchLoop" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Dispatcher_DispatchItem" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Dispatcher_WakeLevel_UpdateWakeLevel" value="52" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Dispatcher_DoWait" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Dispatcher_CallDispatchCallback" value="54" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Adapter_ScheduleDispatch" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Adapter_HostModeRun" value="61" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Adapter_OnUserDispatch" value="62" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Adapter_IntegratedLoopWait" value="63" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Adapter_PostMessageError_QueueFull" value="64" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RegistrarClient_Initialize" value="70" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RegistrarClient_ConnectToRegistrarServer" value="71" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_Connect" value="81" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_RegisterThread" value="82" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_RegisterAlpcPort" value="83" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_UnregisterAlpcPort" value="84" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_PrepareConnection" value="85" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_CloseConnection" value="86" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_CompleteCrossProcConnection" value="87" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_CrossProcClientDisconnected" value="88" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_RegisterObject" value="89" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_UnregisterObject" value="90" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_FindObject" value="91" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_CompleteLocalConnection" value="92" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_LocalClientDisconnected" value="93" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_RegisterReverseConnectionPort" value="94" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_UnregisterReverseConnectionPort" value="95" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_FindConversationServer" value="96" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_RegisterConversation" value="97" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_UnregisterConversation" value="98" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_RegisterPendingConversationClient" value="99" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_ConnectPendingConversationClient" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_ReleaseConversationClient" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_FindConversationClient" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoteRegistrarClient_FindCrossProcConnection" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_ConstructMessageSession" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_CreateConnection" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_AllocatedMessage" value="112" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_StreamDirty" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_FlushPendingStreams" value="114" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_LocalReceive" value="115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_InterconnectSend" value="116" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_InterconnectFlush" value="117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_InterconnectReceive" value="118" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_AlpcSend" value="119" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_AlpcFlush" value="120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Messaging_AlpcReceive" value="121" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Formatting_MessageMethod" value="130" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostInfo_ObjectRegistered" value="140" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostInfo_ObjectRevoked" value="141" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostInfo_ConnectionSevered" value="142" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostInfo_OutOfConversationPeerHandles" value="143" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostInfo_MaxConversationClientsConnected" value="144" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostError_ThrownException" value="150" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostError_ObjectNotFound" value="151" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostError_ConnectionFailed" value="152" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostError_DisconnectClient" value="153" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostError_AlpcConnectionFailed" value="154" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelfHostError_ConversationNotFound" value="155" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="Error">
+    </keyword>
+    <keyword name="Performance" mask="2" message="Performance">
+    </keyword>
+    <keyword name="CoreUIService" mask="200000" message="CoreMessaging CoreUIService">
+    </keyword>
+    <keyword name="MessagingPerformance" mask="100000000" message="CoreMessaging MessagingPerformance">
+    </keyword>
+    <keyword name="Session" mask="200000000" message="CoreMessaging Session">
+    </keyword>
+    <keyword name="Dispatcher" mask="400000000" message="CoreMessaging Dispatcher">
+    </keyword>
+    <keyword name="RegistrarClient" mask="800000000" message="CoreMessaging RegistrarClient">
+    </keyword>
+    <keyword name="Messaging" mask="1000000000" message="CoreMessaging Messaging">
+    </keyword>
+    <keyword name="Formatting" mask="2000000000" message="CoreMessaging Formatting">
+    </keyword>
+    <keyword name="SelfHostInfo" mask="40000000000" message="CoreMessaging SelfHostInfo">
+    </keyword>
+    <keyword name="SelfHostError" mask="80000000000" message="CoreMessaging SelfHostError">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="0" level="5" task="1" keywords="0x2" message="CoreUI ETW - Initialized (pid=%1)">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="0" level="5" task="2" keywords="0x2" message="CoreUI ETW - Uninitialized (pid=%1)">
+    </event>
+    <event value="1050" version="0" opcode="0" channel="0" level="2" task="10" keywords="0x1" message="CoreUI System - Out of Memory!">
+    </event>
+    <event value="2900" version="0" opcode="0" channel="0" level="4" task="20" keywords="0x200000" message="CoreUI Service server-thread started (serviceType=%1)">
+    </event>
+    <event value="2901" version="0" opcode="0" channel="0" level="4" task="21" keywords="0x200000" message="CoreUI Service server-thread exiting (serviceType=%1)">
+    </event>
+    <event value="2902" version="0" opcode="0" channel="0" level="4" task="22" keywords="0x200000" message="CoreUI InitializeService called (serviceType=%1)">
+    </event>
+    <event value="2903" version="0" opcode="0" channel="0" level="4" task="23" keywords="0x200000" message="CoreUI UninitializeService called (serviceType=%1)">
+    </event>
+    <event value="2904" version="0" opcode="0" channel="0" level="4" task="24" keywords="0x200000" message="CoreUI ServiceObjectCreated called (serviceType=%1)">
+    </event>
+    <event value="2905" version="0" opcode="0" channel="0" level="4" task="25" keywords="0x200000" message="CoreUI ServiceObjectDestroyed called (serviceType=%1)">
+    </event>
+    <event value="2906" version="0" opcode="0" channel="0" level="4" task="26" keywords="0x200000" message="CoreUI UpdateServiceStatus called (serviceType=%1)">
+    </event>
+    <event value="2907" version="0" opcode="0" channel="0" level="4" task="27" keywords="0x200000" message="CoreUI ServiceObjectServiceMain called (serviceType=%1)">
+    </event>
+    <event value="2908" version="0" opcode="0" channel="0" level="4" task="28" keywords="0x200000" message="CoreUI CoreUI ServiceMain called with unknown service name %1">
+    </event>
+    <event value="3100" version="0" opcode="1" channel="0" level="5" task="40" keywords="0x300000000" message="Session - CoreUICreate - Start">
+    </event>
+    <event value="3101" version="0" opcode="2" channel="0" level="5" task="40" keywords="0x300000000" message="Session - CoreUICreate - Stop">
+    </event>
+    <event value="3102" version="0" opcode="1" channel="0" level="5" task="41" keywords="0x300000000" message="">
+    </event>
+    <event value="3103" version="0" opcode="2" channel="0" level="5" task="41" keywords="0x300000000" message="">
+    </event>
+    <event value="3106" version="0" opcode="1" channel="0" level="5" task="42" keywords="0x300000000" message="">
+    </event>
+    <event value="3107" version="0" opcode="2" channel="0" level="5" task="42" keywords="0x300000000" message="">
+    </event>
+    <event value="3110" version="0" opcode="1" channel="0" level="5" task="43" keywords="0x300000000" message="">
+    </event>
+    <event value="3111" version="0" opcode="2" channel="0" level="5" task="43" keywords="0x300000000" message="">
+    </event>
+    <event value="3210" version="0" opcode="1" channel="0" level="5" task="50" keywords="0x500000000" message="">
+    </event>
+    <event value="3211" version="0" opcode="2" channel="0" level="5" task="50" keywords="0x500000000" message="">
+    </event>
+    <event value="3214" version="0" opcode="1" channel="0" level="5" task="51" keywords="0x500000000" message="Dispatcher - DispatchItem - Start (internalPriority=%1)">
+    </event>
+    <event value="3215" version="0" opcode="2" channel="0" level="5" task="51" keywords="0x500000000" message="Dispatcher - DispatchItem - Stop (internalPriority=%1)">
+    </event>
+    <event value="3216" version="0" opcode="0" channel="0" level="5" task="52" keywords="0x500000000" message="Dispatcher - WakeLevel - UpdateWakeLevel (bits=%1 old=%2 new=%3)">
+    </event>
+    <event value="3220" version="0" opcode="1" channel="0" level="5" task="53" keywords="0x500000000" message="Dispatcher - DoWait - Start (timeout=%1)">
+    </event>
+    <event value="3221" version="0" opcode="2" channel="0" level="5" task="53" keywords="0x500000000" message="Dispatcher - DoWait - Stop (status=%1 handle=%2)">
+    </event>
+    <event value="3222" version="0" opcode="1" channel="0" level="5" task="54" keywords="0x500000000" message="Dispatcher - CallDispatchCallback - Start (awake=%1 reference=%2)">
+    </event>
+    <event value="3223" version="0" opcode="2" channel="0" level="5" task="54" keywords="0x500000000" message="Dispatcher - CallDispatchCallback - Stop            (timeout=%1)">
+    </event>
+    <event value="3224" version="0" opcode="0" channel="0" level="5" task="60" keywords="0x500000000" message="UserAdapter - ScheduleDispatch (threadid=%1 userPriority=%2)">
+    </event>
+    <event value="3225" version="0" opcode="1" channel="0" level="5" task="61" keywords="0x500000000" message="UserAdapter - HostModeRun - Start (runMode=%1 stopping=%2)">
+    </event>
+    <event value="3226" version="0" opcode="2" channel="0" level="5" task="61" keywords="0x500000000" message="UserAdapter - HostModeRun - Stop (stopCookie=%1)">
+    </event>
+    <event value="3227" version="0" opcode="1" channel="0" level="5" task="62" keywords="0x500000000" message="UserAdapter - OnUserDispatch - Start (priority=%1)">
+    </event>
+    <event value="3228" version="0" opcode="2" channel="0" level="5" task="62" keywords="0x500000000" message="UserAdapter - OnUserDispatch - Stop (discarded? %1)">
+    </event>
+    <event value="3229" version="0" opcode="1" channel="0" level="5" task="63" keywords="0x500000000" message="UserAdapter - IntegratedLoopWait - Start">
+    </event>
+    <event value="3230" version="0" opcode="2" channel="0" level="5" task="63" keywords="0x500000000" message="UserAdapter - IntegratedLoopWait - Stop">
+    </event>
+    <event value="3231" version="0" opcode="0" channel="0" level="2" task="64" keywords="0x400000001" message="UserAdapter - PostMessage - Failed due to post message queue full">
+    </event>
+    <event value="3300" version="0" opcode="1" channel="0" level="5" task="70" keywords="0x900000000" message="RegistrarClient - Initialize - Start">
+    </event>
+    <event value="3301" version="0" opcode="2" channel="0" level="5" task="70" keywords="0x900000000" message="RegistrarClient - Initialize - Stop">
+    </event>
+    <event value="3310" version="0" opcode="1" channel="0" level="5" task="71" keywords="0x900000000" message="">
+    </event>
+    <event value="3311" version="0" opcode="2" channel="0" level="5" task="71" keywords="0x900000000" message="">
+    </event>
+    <event value="3400" version="0" opcode="1" channel="0" level="5" task="81" keywords="0x900000000" message="">
+    </event>
+    <event value="3401" version="0" opcode="2" channel="0" level="5" task="81" keywords="0x900000000" message="">
+    </event>
+    <event value="3402" version="0" opcode="1" channel="0" level="5" task="82" keywords="0x900000000" message="">
+    </event>
+    <event value="3403" version="0" opcode="2" channel="0" level="5" task="82" keywords="0x900000000" message="">
+    </event>
+    <event value="3404" version="0" opcode="1" channel="0" level="5" task="83" keywords="0x900000000" message="">
+    </event>
+    <event value="3405" version="0" opcode="2" channel="0" level="5" task="83" keywords="0x900000000" message="">
+    </event>
+    <event value="3406" version="0" opcode="1" channel="0" level="5" task="84" keywords="0x900000000" message="">
+    </event>
+    <event value="3407" version="0" opcode="2" channel="0" level="5" task="84" keywords="0x900000000" message="">
+    </event>
+    <event value="3408" version="0" opcode="1" channel="0" level="5" task="85" keywords="0x900000000" message="">
+    </event>
+    <event value="3409" version="0" opcode="2" channel="0" level="5" task="85" keywords="0x900000000" message="">
+    </event>
+    <event value="3410" version="0" opcode="1" channel="0" level="5" task="86" keywords="0x900000000" message="">
+    </event>
+    <event value="3411" version="0" opcode="2" channel="0" level="5" task="86" keywords="0x900000000" message="">
+    </event>
+    <event value="3412" version="0" opcode="1" channel="0" level="5" task="87" keywords="0x900000000" message="">
+    </event>
+    <event value="3413" version="0" opcode="2" channel="0" level="5" task="87" keywords="0x900000000" message="">
+    </event>
+    <event value="3414" version="0" opcode="1" channel="0" level="5" task="88" keywords="0x900000000" message="">
+    </event>
+    <event value="3415" version="0" opcode="2" channel="0" level="5" task="88" keywords="0x900000000" message="">
+    </event>
+    <event value="3418" version="0" opcode="1" channel="0" level="5" task="89" keywords="0x900000000" message="">
+    </event>
+    <event value="3419" version="0" opcode="2" channel="0" level="5" task="89" keywords="0x900000000" message="">
+    </event>
+    <event value="3420" version="0" opcode="1" channel="0" level="5" task="90" keywords="0x900000000" message="">
+    </event>
+    <event value="3421" version="0" opcode="2" channel="0" level="5" task="90" keywords="0x900000000" message="">
+    </event>
+    <event value="3424" version="0" opcode="1" channel="0" level="5" task="91" keywords="0x900000000" message="">
+    </event>
+    <event value="3425" version="0" opcode="2" channel="0" level="5" task="91" keywords="0x900000000" message="">
+    </event>
+    <event value="3426" version="0" opcode="1" channel="0" level="5" task="92" keywords="0x900000000" message="">
+    </event>
+    <event value="3427" version="0" opcode="2" channel="0" level="5" task="92" keywords="0x900000000" message="">
+    </event>
+    <event value="3428" version="0" opcode="1" channel="0" level="5" task="93" keywords="0x900000000" message="">
+    </event>
+    <event value="3429" version="0" opcode="2" channel="0" level="5" task="93" keywords="0x900000000" message="">
+    </event>
+    <event value="3430" version="0" opcode="1" channel="0" level="5" task="94" keywords="0x900000000" message="">
+    </event>
+    <event value="3431" version="0" opcode="2" channel="0" level="5" task="94" keywords="0x900000000" message="">
+    </event>
+    <event value="3432" version="0" opcode="1" channel="0" level="5" task="95" keywords="0x900000000" message="">
+    </event>
+    <event value="3433" version="0" opcode="2" channel="0" level="5" task="95" keywords="0x900000000" message="">
+    </event>
+    <event value="3434" version="0" opcode="1" channel="0" level="5" task="96" keywords="0x900000000" message="">
+    </event>
+    <event value="3435" version="0" opcode="2" channel="0" level="5" task="96" keywords="0x900000000" message="">
+    </event>
+    <event value="3436" version="0" opcode="1" channel="0" level="5" task="97" keywords="0x900000000" message="">
+    </event>
+    <event value="3437" version="0" opcode="2" channel="0" level="5" task="97" keywords="0x900000000" message="">
+    </event>
+    <event value="3438" version="0" opcode="1" channel="0" level="5" task="98" keywords="0x900000000" message="">
+    </event>
+    <event value="3439" version="0" opcode="2" channel="0" level="5" task="98" keywords="0x900000000" message="">
+    </event>
+    <event value="3440" version="0" opcode="1" channel="0" level="5" task="99" keywords="0x900000000" message="">
+    </event>
+    <event value="3441" version="0" opcode="2" channel="0" level="5" task="99" keywords="0x900000000" message="">
+    </event>
+    <event value="3442" version="0" opcode="1" channel="0" level="5" task="100" keywords="0x900000000" message="">
+    </event>
+    <event value="3443" version="0" opcode="2" channel="0" level="5" task="100" keywords="0x900000000" message="">
+    </event>
+    <event value="3446" version="0" opcode="1" channel="0" level="5" task="101" keywords="0x900000000" message="">
+    </event>
+    <event value="3447" version="0" opcode="2" channel="0" level="5" task="101" keywords="0x900000000" message="">
+    </event>
+    <event value="3450" version="0" opcode="1" channel="0" level="5" task="102" keywords="0x900000000" message="">
+    </event>
+    <event value="3451" version="0" opcode="2" channel="0" level="5" task="102" keywords="0x900000000" message="">
+    </event>
+    <event value="3452" version="0" opcode="1" channel="0" level="5" task="103" keywords="0x900000000" message="">
+    </event>
+    <event value="3453" version="0" opcode="2" channel="0" level="5" task="103" keywords="0x900000000" message="">
+    </event>
+    <event value="4000" version="0" opcode="1" channel="0" level="5" task="110" keywords="0x1100000000" message="">
+    </event>
+    <event value="4001" version="0" opcode="2" channel="0" level="5" task="110" keywords="0x1100000000" message="">
+    </event>
+    <event value="4010" version="0" opcode="1" channel="0" level="5" task="111" keywords="0x1100000000" message="Messaging - CreateConnection - Start (destProcessId=%1; destThreadId=%2)">
+    </event>
+    <event value="4011" version="0" opcode="2" channel="0" level="5" task="111" keywords="0x1100000000" message="Messaging - CreateConnection - Stop (destProcessId=%1; destThreadId=%2)">
+    </event>
+    <event value="4020" version="0" opcode="0" channel="0" level="5" task="112" keywords="0x1100000000" message="Messaging - AllocatedMessage (externalPriority=%1; size=%2; destProcessId=%3; destThreadId=%4)">
+    </event>
+    <event value="4021" version="0" opcode="0" channel="0" level="5" task="113" keywords="0x1100000000" message="Messaging - Message stream dirty (processId=%1 threadId=%2)">
+    </event>
+    <event value="4022" version="0" opcode="1" channel="0" level="5" task="114" keywords="0x1100000000" message="Messaging - FlushPendingStreams - Start (externalPriority=%1)">
+    </event>
+    <event value="4023" version="0" opcode="2" channel="0" level="5" task="114" keywords="0x1100000000" message="Messaging - FlushPendingStreams - Stop">
+    </event>
+    <event value="4030" version="0" opcode="1" channel="0" level="5" task="115" keywords="0x1100000000" message="">
+    </event>
+    <event value="4031" version="0" opcode="2" channel="0" level="5" task="115" keywords="0x1100000000" message="Messaging - LocalReceive - Statistics (messages=%1; size=%2)">
+    </event>
+    <event value="4041" version="0" opcode="0" channel="0" level="5" task="116" keywords="0x1100000000" message="Messaging - InterconnectSend - Statistics (buffers=%1; size=%2)">
+    </event>
+    <event value="4042" version="0" opcode="1" channel="0" level="5" task="117" keywords="0x1100000000" message="Messaging - InterconnectFlush - Start (externalPriority=%1; destProcessId=%2; destThreadId=%3)">
+    </event>
+    <event value="4043" version="0" opcode="2" channel="0" level="5" task="117" keywords="0x1100000000" message="Messaging - InterconnectFlush - Stop (externalPriority=%1; destProcessId=%2; destThreadId=%3)">
+    </event>
+    <event value="4044" version="0" opcode="1" channel="0" level="5" task="118" keywords="0x1100000000" message="">
+    </event>
+    <event value="4045" version="0" opcode="2" channel="0" level="5" task="118" keywords="0x1100000000" message="Messaging - InterconnectReceive - Statistics (senderTid=%1; messages=%2; size=%3)">
+    </event>
+    <event value="4051" version="0" opcode="0" channel="0" level="5" task="119" keywords="0x1100000000" message="Messaging - AlpcSend - Statistics (buffers=%1; size=%2)">
+    </event>
+    <event value="4052" version="0" opcode="1" channel="0" level="5" task="120" keywords="0x1100000000" message="Messaging - AlpcFlush - Start (externalPriority=%1; destProcessId=%2; destThreadId=%3)">
+    </event>
+    <event value="4053" version="0" opcode="2" channel="0" level="5" task="120" keywords="0x1100000000" message="Messaging - AlpcFlush - Stop (externalPriority=%1; destProcessId=%2; destThreadId=%3)">
+    </event>
+    <event value="4054" version="0" opcode="1" channel="0" level="5" task="121" keywords="0x1100000000" message="">
+    </event>
+    <event value="4055" version="0" opcode="2" channel="0" level="5" task="121" keywords="0x1100000000" message="Messaging - AlpcReceive - Statistics (senderPid=%1; senderTid=%2; messages=%3; size=%4)">
+    </event>
+    <event value="5050" version="0" opcode="1" channel="0" level="5" task="130" keywords="0x2100000000" message="Formatting - Message Method (%1)">
+    </event>
+    <event value="5051" version="0" opcode="2" channel="0" level="5" task="130" keywords="0x2100000000" message="">
+    </event>
+    <event value="7000" version="0" opcode="0" channel="0" level="4" task="140" keywords="0x40000000000" message="CoreMessagingRegistrar ObjectRegistered &apos;%1&apos; (type %2 scope %3 pid %4 tid %5)">
+    </event>
+    <event value="7001" version="0" opcode="0" channel="0" level="4" task="141" keywords="0x40000000000" message="CoreMessagingRegistrar ObjectRevoked &apos;%1&apos; (type %2 scope %3 pid %4 tid %5 Orphaned=%6)">
+    </event>
+    <event value="7002" version="0" opcode="0" channel="0" level="4" task="142" keywords="0x40000000000" message="CoreUI server disconnected pid %1 tid %2 id %3">
+    </event>
+    <event value="7003" version="0" opcode="0" channel="0" level="4" task="143" keywords="0x40000000000" message="Conversation %1 has run out of PeerID handles to allocate">
+    </event>
+    <event value="7004" version="0" opcode="0" channel="0" level="4" task="144" keywords="0x40000000000" message="Client connection to conversation &apos;%1&apos; failed, max clients already connected">
+    </event>
+    <event value="20000" version="0" opcode="0" channel="0" level="2" task="150" keywords="0x81f00000000" message="CoreUI SelfHostError - ThrownException (type=%1; hr=%2; message=%3)">
+    </event>
+    <event value="20001" version="0" opcode="0" channel="0" level="2" task="151" keywords="0x80000000000" message="CoreMessagingRegistrar Object &apos;%1&apos; not found (type=%2; scope=%3)">
+    </event>
+    <event value="20002" version="0" opcode="0" channel="0" level="2" task="152" keywords="0x80000000000" message="CoreUI Connection failed to pid %1 tid %2 id %3">
+    </event>
+    <event value="20003" version="0" opcode="0" channel="0" level="2" task="153" keywords="0x80000000000" message="CoreUI forcibly disconnecting client pid %1 tid %2">
+    </event>
+    <event value="20004" version="0" opcode="0" channel="0" level="2" task="154" keywords="0x80000000000" message="CoreUI NtAlpcConnectPort &apos;%1&apos; failed with hr=%2">
+    </event>
+    <event value="20005" version="0" opcode="0" channel="0" level="2" task="155" keywords="0x80000000000" message="CoreMessagingRegistrar Conversation &apos;%1&apos; not found">
+    </event>
+  </events>
+</provider>

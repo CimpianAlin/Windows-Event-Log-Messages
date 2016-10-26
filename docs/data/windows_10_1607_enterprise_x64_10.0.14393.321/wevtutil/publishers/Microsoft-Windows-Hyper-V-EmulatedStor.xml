@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-EmulatedStor" guid="86e15e01-edf1-4ac7-89cf-b19563fd6894" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=VmEmulatedStorage.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\VmEmulatedStorage.dll" messageFileName="C:\Windows\system32\VmEmulatedStorage.dll" message="Microsoft-Windows-Hyper-V-EmulatedStor" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Admin" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Analytic" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="12140" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Failed to open attachment &apos;%3&apos;. Error: &apos;%4&apos; (%5). (Virtual machine ID %2)">
+    </event>
+    <event value="12141" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to open attachment &apos;%3&apos;. Error: &apos;%4&apos;.">
+    </event>
+    <event value="12146" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Failed to open ISO image &apos;%3&apos; because the file is corrupt or is too small. (Virtual machine ID %2)">
+    </event>
+    <event value="12147" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to open ISO image &apos;%3&apos; because the file is corrupt or is too small.">
+    </event>
+    <event value="12148" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Failed to open &apos;%3&apos;: Compressed virtual hard disks are not supported.">
+    </event>
+    <event value="12149" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to open &apos;%3&apos;: Compressed virtual hard disks are not supported.">
+    </event>
+    <event value="12162" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Failed to configure &apos;%3&apos;: The storage where the virtual hard disk is located does not support virtual hard disk sharing.">
+    </event>
+    <event value="12163" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to configure &apos;%3&apos;: The storage where the virtual hard disk is located does not support virtual hard disk sharing.">
+    </event>
+    <event value="12200" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %3: virtual machine is out of Memory Error &apos;%4&apos; (%5). (Virtual machine ID %2)">
+    </event>
+    <event value="12201" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%3: Virtual machine is out of Memory Error &apos;%4&apos;.">
+    </event>
+    <event value="12240" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Attachment &apos;%3&apos; not found. Error: &apos;%4&apos; (%5). (Virtual machine ID %2)">
+    </event>
+    <event value="12241" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Attachment &apos;%3&apos; not found. Error: &apos;%4&apos;.">
+    </event>
+    <event value="12290" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: %6 Account does not have sufficient privilege to open attachment &apos;%3&apos;. Error: &apos;%4&apos; (%5). (Virtual machine ID %2)">
+    </event>
+    <event value="12291" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%6 Account does not have sufficient privilege to open attachment &apos;%3&apos;. Error: &apos;%4&apos;.">
+    </event>
+    <event value="12292" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; encountered an error while calculating the size of the disk chain for &apos;%3&apos;. The error was: &apos;%4&apos; (%5). Maximum disk metric will not be updated for the current disk. (Virtual machine ID %2)">
+    </event>
+    <event value="12293" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="There was an error while calculating the size of the disk chain for disk metrics.">
+    </event>
+    <event value="12300" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Virtual machine=&apos;%1&apos;, File &apos;%3&apos; is not a known floppy image type. (Virtual machine ID %2)">
+    </event>
+    <event value="12301" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="File &apos;%3&apos; is not a known floppy image type.">
+    </event>
+    <event value="12350" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: An error occurred while attempting to start the virtual machine. Cannot open &apos;%3&apos;. The state of the virtual machine cannot be changed because one or more storage media are not accessible. Hyper-V does not support the use of storage media if Encrypting File System has been used to encrypt files. (Virtual machine ID %2)">
+    </event>
+    <event value="12351" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error occurred while attempting to start the virtual machine. Cannot open &apos;%3&apos;.">
+    </event>
+    <event value="12352" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: An error occurred while attaching &apos;%3&apos; to the virtual machine. The file is encrypted. Hyper-V does not support the use of storage media if Encrypting File System has been used to encrypt files. (Virtual machine ID %2)">
+    </event>
+    <event value="12353" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error occurred while attaching &apos;%3&apos; to the virtual machine. The file is encrypted.">
+    </event>
+    <event value="12616" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Physical DVD drives are not supported on SCSI controllers.">
+    </event>
+    <event value="12617" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Physical DVD drives are not supported on SCSI controllers.">
+    </event>
+    <event value="12618" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="DVD drives are not supported on SCSI controllers in Generation 1 virtual machines.">
+    </event>
+    <event value="12619" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="DVD drives are not supported on SCSI controllers in Generation 1 virtual machines.">
+    </event>
+    <event value="12620" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Could not get information for attachment &apos;%3&apos;. (Virtual machine ID %2)">
+    </event>
+    <event value="12621" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Could not get information for attachment &apos;%3&apos;.">
+    </event>
+    <event value="12622" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Unsupported attachment Path &apos;%3&apos; in the drive. (Virtual machine ID %2)">
+    </event>
+    <event value="12623" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unsupported attachment Path &apos;%3&apos; in the drive.">
+    </event>
+    <event value="12625" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Failed to enable virtual hard disk resiliency for the drive &apos;%3&apos; with error &apos;%5&apos; (&apos;%4&apos;)">
+    </event>
+    <event value="12626" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Failed to enable virtual hard disk resiliency for the drive &apos;%3&apos;.">
+    </event>
+    <event value="12628" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Failed to get the recovery status for the drive &apos;%3&apos;. Virtual hard disk resiliency will be suspended for this drive until next reboot. Error: &apos;%5&apos; (&apos;%4&apos;)">
+    </event>
+    <event value="12629" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Failed to get the recovery status for the drive &apos;%3&apos;. Virtual hard disk resiliency will be suspended for this drive until next reboot.">
+    </event>
+    <event value="12630" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Virtual hard disk resiliency failed to recover the drive &apos;%3&apos;. The virtual machine will be powered off. Current status: %4. (Virtual machine ID %2)">
+    </event>
+    <event value="12634" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Virtual hard disk resiliency successfully recovered drive &apos;%3&apos;. Current status: %4. (Virtual machine ID %2)">
+    </event>
+    <event value="12635" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Virtual hard disk &apos;%3&apos; received a resiliency status notification. Current status: %4. (Virtual machine ID %2)">
+    </event>
+    <event value="12636" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Virtual hard disk &apos;%3&apos; has detected a critical error. Current status: %4. (Virtual machine ID %2)">
+    </event>
+    <event value="12637" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Virtual hard disk &apos;%3&apos; has not yet recovered from a previous error. Current status: %4. (Virtual machine ID %2)">
+    </event>
+    <event value="12667" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Could not open file &apos;%3&apos;. It was removed from the drive. (Virtual machine ID %2)">
+    </event>
+    <event value="12668" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Could not open file &apos;%3&apos;. It was removed from the drive.">
+    </event>
+    <event value="12812" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: Enabling change tracking failed for the drive &apos;%3&apos;. (Virtual machine ID %2)">
+    </event>
+    <event value="12817" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: An unrecoverable I/O error occurred on drive &apos;%3&apos; at boot time. The virtual machine will fail to boot. Error: &apos;%5&apos; (&apos;%4&apos;) (Virtual machine ID %2)">
+    </event>
+  </events>
+</provider>

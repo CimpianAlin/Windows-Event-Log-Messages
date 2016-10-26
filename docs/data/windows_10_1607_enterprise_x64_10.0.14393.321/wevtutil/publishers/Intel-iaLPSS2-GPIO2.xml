@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Intel-iaLPSS2-GPIO2" guid="63848cff-3ec7-4ddf-8072-5f95e8c8eb98" helpLink="" resourceFileName="C:\Windows\system32\drivers\iaLPSS2i_GPIO2.sys" messageFileName="C:\Windows\system32\drivers\iaLPSS2i_GPIO2.sys" message="Intel-iaLPSS2-GPIO2" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Intel-iaLPSS2-GPIO2/Debug" id="16" flags="0" message="iaLPSS_GPIO2 Debug channel">
+    </channel>
+    <channel name="Intel-iaLPSS2-GPIO2/Performance" id="17" flags="0" message="iaLPSS_GPIO2 Performance channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="iaLPSS2_GPIO2_Driver" value="1" eventGUID="33cfe465-3945-4fdf-90eb-ed95b7135e06" message="iaLPSS_GPIO2 Driver routines">
+    </task>
+    <task name="iaLPSS2_GPIO2_GpioCxDDI" value="2" eventGUID="6fee0bf2-062e-48fe-b821-1227100740c3" message="iaLPSS_GPIO2 GpioCx DDI calls">
+    </task>
+    <task name="iaLPSS2_GPIO2_GpioCtrl" value="3" eventGUID="69b29770-6279-4a94-b42d-e275b3fd30ab" message="iaLPSS_GPIO2 Controller routines">
+    </task>
+    <task name="iaLPSS2_GPIO2_GpioInt" value="4" eventGUID="a6546bd3-6d62-4607-ada2-df53f27c0b1c" message="iaLPSS_GPIO2 GpioInt routines">
+    </task>
+    <task name="iaLPSS2_GPIO2_GpioIo" value="5" eventGUID="6ee92cdf-2c9d-49f0-9340-5f3c38f93f0a" message="iaLPSS_GPIO2 GpioIo routines">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="ERROR: %1 - STATUS: %2">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="INFO: %1">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="[%1] --&gt;">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="[%1] -&amp;lt;--">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="[%1] -&amp;lt;-- Status = %2">
+    </event>
+    <event value="1011" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="DriverEntry Start">
+    </event>
+    <event value="1012" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="DriverEntry End">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Driver ERROR: WdfDriverCreate() returned status:%1">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Driver ERROR: GPIO_CLX_RegisterClient() returned status:%1">
+    </event>
+    <event value="1015" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="DriverUnload Start">
+    </event>
+    <event value="1016" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="DriverUnload End">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Driver ERROR: GPIO_CLX_UnregisterClient() returned status:%1">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Driver ERROR: CheckSupportedOs() returned status:%1">
+    </event>
+    <event value="1021" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="DeviceAdd Start">
+    </event>
+    <event value="1022" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="DeviceAdd End">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Device ERROR: GPIO_CLX_ProcessAddDevicePreDeviceCreate() returned status:%1">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Device ERROR: GPIO_CLX_ProcessAddDevicePostDeviceCreate() returned status:%1">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Device ERROR: WdfDeviceCreate() returned status:%1">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Device HW profile FOUND: Instance:%1 Version:%2 Revision:%3 Mode:%4">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Device HW profile ERROR: Instance:%1 Version:%2 Revision:%3 Mode:%4">
+    </event>
+    <event value="1031" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="GpioCx DDI: %1">
+    </event>
+    <event value="1032" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="GpioCx DDI ERROR: Controller Context invalid">
+    </event>
+    <event value="1033" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="GpioCx DDI ERROR: Controller Object invalid">
+    </event>
+    <event value="1034" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="GpioCx DDI ERROR: Controller Object allocate error">
+    </event>
+    <event value="1101" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000000" message="ERROR: Invalid bank number: %1">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000000" message="%1: ERROR: Invalid pin number: %2">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000000" message="%1_%2: ERROR: Invalid pin ownership: %3">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000000" message="%1_%2: ERROR: Invalid pin mode: %3">
+    </event>
+    <event value="1107" version="0" opcode="1" channel="17" level="4" task="3" keywords="0x4000000000000000" message="PrepareController Start">
+    </event>
+    <event value="1108" version="0" opcode="2" channel="17" level="4" task="3" keywords="0x4000000000000000" message="PrepareController End">
+    </event>
+    <event value="1109" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000000" message="PrepareController ERROR: Can&apos;t allocate pin table">
+    </event>
+    <event value="1110" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000000" message="PrepareController ERROR: Can&apos;t initialize GPIO layout - STATUS:%1">
+    </event>
+    <event value="1111" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="PrepareController MBAR%1 mapped: PA:%2 LEN:%3 VA:%4">
+    </event>
+    <event value="1112" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000000" message="PrepareController ERROR: Too many MBAR resources IDX:%1 PA:%2 LEN:%3 - STATUS:%4">
+    </event>
+    <event value="1113" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000000" message="PrepareController ERROR: Can&apos;t map MMIO for MBAR%1 PA:%2 LEN:%3 - STATUS:%4">
+    </event>
+    <event value="1114" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="PrepareController INTERRUPT VEC:%1">
+    </event>
+    <event value="1115" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="PrepareController ERROR: Incorrect resource count. MMIO:%1 (exp. %2) INT:%3 (exp. %4) - STATUS:%5">
+    </event>
+    <event value="1116" version="0" opcode="1" channel="17" level="4" task="3" keywords="0x4000000000000000" message="ReleaseController Start">
+    </event>
+    <event value="1117" version="0" opcode="2" channel="17" level="4" task="3" keywords="0x4000000000000000" message="ReleaseController End">
+    </event>
+    <event value="1118" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Controller queried for properties">
+    </event>
+    <event value="1119" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Controller started">
+    </event>
+    <event value="1120" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Controller stopped">
+    </event>
+    <event value="1121" version="0" opcode="0" channel="16" level="2" task="4" keywords="0x8000000000000000" message="%1_%2: ERROR: Interrupt configuration not supported: %3 %4">
+    </event>
+    <event value="1122" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1_%2: Interrupt configured to: %3 %4">
+    </event>
+    <event value="1123" version="0" opcode="0" channel="16" level="3" task="4" keywords="0x8000000000000000" message="%1_%2: WARNING: Pull configuration not supported: %3 - using default">
+    </event>
+    <event value="1124" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1_%2: Pull configured to: %3">
+    </event>
+    <event value="1125" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1_%2: Interrupt enabled">
+    </event>
+    <event value="1126" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1_%2: Interrupt disabled">
+    </event>
+    <event value="1127" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1: Interrupts mask set to:%2 (requested:%3, failed:%4)">
+    </event>
+    <event value="1128" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1_%2: Interrupt unmasked">
+    </event>
+    <event value="1129" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1: Interrupts queried active:%2 (raw:%3, mask:%4)">
+    </event>
+    <event value="1130" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1: Interrupts queried enabled:%2">
+    </event>
+    <event value="1131" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1: Interrupts status cleared with mask:%2 (requested:%3, failed:%4)">
+    </event>
+    <event value="1132" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000000" message="%1_%2: ERROR: Pin already connected in mode %3">
+    </event>
+    <event value="1133" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000000" message="%1_%2: ERROR: Pin not connected">
+    </event>
+    <event value="1134" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="%1_%2: Pin output set %3">
+    </event>
+    <event value="1135" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="%1_%2: Pin output pre-set %3">
+    </event>
+    <event value="1136" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="%1_%2: Pin input get %3">
+    </event>
+    <event value="1137" version="0" opcode="0" channel="16" level="3" task="5" keywords="0x8000000000000000" message="%1_%2: WARNING: Pin mode &apos;%3&apos; not supported. Buffer enable state not changed.">
+    </event>
+    <event value="1138" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="%1_%2: Pin connected in mode %3">
+    </event>
+    <event value="1139" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000000" message="%1_%2: ERROR: Pin connected in mode %3 while disconnect request for mode %4">
+    </event>
+    <event value="1140" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="%1_%2: Pin disconnected - output buffer disabled">
+    </event>
+    <event value="1141" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="%1_%2: Pin disconnected - output buffer left enabled">
+    </event>
+    <event value="1142" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="%1_%2: Pin disconnected - input buffer disabled">
+    </event>
+    <event value="1143" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1_%2: Pin disconnected - input buffer left enabled">
+    </event>
+    <event value="1144" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1_%2: WARNING: Pin mode &apos;%3&apos; not supported. Disconnecting input and output.">
+    </event>
+    <event value="1150" version="0" opcode="0" channel="16" level="5" task="3" keywords="0x8000000000000000" message="%1_%2: Pin context restored">
+    </event>
+    <event value="1151" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="%1: Bank context restored">
+    </event>
+    <event value="1152" version="0" opcode="0" channel="16" level="5" task="3" keywords="0x8000000000000000" message="%1_%2: Pin context saved">
+    </event>
+    <event value="1153" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="%1: Bank context saved">
+    </event>
+    <event value="1200" version="0" opcode="0" channel="16" level="2" task="4" keywords="0x8000000000000000" message="ERROR: Invalid special function number">
+    </event>
+    <event value="1201" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1_%2: Mask APIC interrupt">
+    </event>
+    <event value="1202" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="%1_%2: Unmask APIC interrupt">
+    </event>
+    <event value="1203" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="%1_%2: WriteGpioIo">
+    </event>
+    <event value="1204" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="%1_%2: ReadGpioIo">
+    </event>
+  </events>
+</provider>

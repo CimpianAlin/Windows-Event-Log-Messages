@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ParentalControls" guid="01090065-b467-4503-9b28-533766761087" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wpc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\wpc.dll" messageFileName="C:\Windows\system32\wpc.dll" message="Microsoft-Windows-ParentalControls" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ParentalControls/Operational" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="locate" value="1310720" message="Locate">
+    </opcode>
+    <opcode name="modify" value="1376256" message="Modify">
+    </opcode>
+    <opcode name="apprun" value="1441792" message="Launch">
+    </opcode>
+    <opcode name="system" value="1507328" message="System">
+    </opcode>
+    <opcode name="web" value="1572864" message="Web">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SettingChange" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="SettingChange">
+    </task>
+    <task name="GameStart" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="GameStart">
+    </task>
+    <task name="UrlVisit" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="UrlVisit">
+    </task>
+    <task name="EmailReceived" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="EmailReceived">
+    </task>
+    <task name="EmailSent" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="EmailSent">
+    </task>
+    <task name="MediaPlayback" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaPlayback">
+    </task>
+    <task name="IMInvitation" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="IMInvitation">
+    </task>
+    <task name="IMJoin" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="IMJoin">
+    </task>
+    <task name="IMLeave" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="IMLeave">
+    </task>
+    <task name="FileDownload" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="FileDownload">
+    </task>
+    <task name="IMFeature" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="IMFeature">
+    </task>
+    <task name="Custom" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="Custom">
+    </task>
+    <task name="EmailContact" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="EmailContact">
+    </task>
+    <task name="IMContact" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="IMContact">
+    </task>
+    <task name="AppBlocked" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="Application Blocked">
+    </task>
+    <task name="AppOverride" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="Application Override">
+    </task>
+    <task name="WebOverride" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="WebOverride">
+    </task>
+    <task name="WebsiteVisit" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="WebsiteVisit">
+    </task>
+    <task name="Application" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="Application">
+    </task>
+    <task name="ComputerUsage" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="ComputerUsage">
+    </task>
+    <task name="ContentUsage" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="ContentUsage">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="WPC" mask="10" message="WPC">
+    </keyword>
+    <keyword name="ThirdParty" mask="20" message="ThirdParty">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="21" channel="16" level="4" task="1" keywords="0x8000000000000010" message="A Setting changed inside of the parental controls settings">
+    </event>
+    <event value="2" version="0" opcode="22" channel="16" level="4" task="2" keywords="0x8000000000000030" message="Generated when a game is run">
+    </event>
+    <event value="3" version="0" opcode="24" channel="16" level="4" task="3" keywords="0x8000000000000010" message="Generated when a URL is visited">
+    </event>
+    <event value="4" version="0" opcode="22" channel="16" level="4" task="4" keywords="0x8000000000000030" message="Generated with an Email is Received">
+    </event>
+    <event value="5" version="0" opcode="22" channel="16" level="4" task="5" keywords="0x8000000000000030" message="Generated with an Email is Sent">
+    </event>
+    <event value="6" version="0" opcode="22" channel="16" level="4" task="6" keywords="0x8000000000000030" message="Generated when some media is played">
+    </event>
+    <event value="7" version="0" opcode="22" channel="16" level="4" task="7" keywords="0x8000000000000030" message="Generated when an IM Invitiation is sent">
+    </event>
+    <event value="8" version="0" opcode="22" channel="16" level="4" task="8" keywords="0x8000000000000030" message="Generated when a user Joins an IM conversation">
+    </event>
+    <event value="9" version="0" opcode="22" channel="16" level="4" task="9" keywords="0x8000000000000030" message="Generated when a user leaves an IM conversation">
+    </event>
+    <event value="10" version="0" opcode="24" channel="16" level="4" task="10" keywords="0x8000000000000030" message="Generated when a user downloads a file">
+    </event>
+    <event value="11" version="0" opcode="22" channel="16" level="4" task="11" keywords="0x8000000000000030" message="Generated when one of the IM features is used, like web chat, audio">
+    </event>
+    <event value="13" version="0" opcode="23" channel="16" level="4" task="13" keywords="0x8000000000000030" message="Generated by external apps that want to log parental control information">
+    </event>
+    <event value="14" version="0" opcode="22" channel="16" level="4" task="14" keywords="0x8000000000000030" message="Generated when an email contact is changed">
+    </event>
+    <event value="15" version="0" opcode="22" channel="16" level="4" task="15" keywords="0x8000000000000030" message="Generated when an IM contact is changed">
+    </event>
+    <event value="16" version="0" opcode="22" channel="16" level="4" task="16" keywords="0x8000000000000010" message="Generated when an application is blocked from running">
+    </event>
+    <event value="17" version="0" opcode="22" channel="16" level="4" task="17" keywords="0x8000000000000010" message="Generated when an application override is requested">
+    </event>
+    <event value="18" version="0" opcode="22" channel="16" level="4" task="18" keywords="0x8000000000000010" message="Generated when a url override is requested">
+    </event>
+    <event value="19" version="0" opcode="24" channel="16" level="4" task="19" keywords="0x8000000000000010" message="Generated when a website is visited">
+    </event>
+    <event value="20" version="0" opcode="22" channel="16" level="4" task="20" keywords="0x8000000000000010" message="Generated when an application is started, stopped or blocked">
+    </event>
+    <event value="21" version="0" opcode="23" channel="16" level="4" task="21" keywords="0x8000000000000010" message="Generated when the computer is used">
+    </event>
+    <event value="22" version="0" opcode="23" channel="16" level="4" task="22" keywords="0x8000000000000010" message="Generated when content is used or blocked">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Windows-ApplicationModel-Store-SDK" guid="ff79a477-c45f-4a52-8ae0-2b324346d4e4" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Windows.ApplicationModel.Store.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\Windows.ApplicationModel.Store.dll" messageFileName="C:\Windows\System32\Windows.ApplicationModel.Store.dll" message="Windows-ApplicationModel-Store-SDK" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Store/Operational" id="16" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="Error" value="788433" message="Error">
+    </opcode>
+    <opcode name="Error" value="789433" message="Error">
+    </opcode>
+    <opcode name="Warning" value="853969" message="Warning">
+    </opcode>
+    <opcode name="Warning" value="854969" message="Warning">
+    </opcode>
+    <opcode name="Info" value="919505" message="Info">
+    </opcode>
+    <opcode name="Info" value="920505" message="Info">
+    </opcode>
+    <opcode name="Verbose" value="985041" message="Verbose">
+    </opcode>
+    <opcode name="Verbose" value="986041" message="Verbose">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="StorefrontClientErrorTask" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="StorefrontClient">
+    </task>
+    <task name="StorefrontClientExceptionTask" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="StorefrontClient">
+    </task>
+    <task name="StorefrontClientWarningTask" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="StorefrontClient">
+    </task>
+    <task name="StorefrontClientInformationTask" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="StorefrontClient">
+    </task>
+    <task name="StorefrontClientVerboseTask" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="StorefrontClient">
+    </task>
+    <task name="ModuleLoaded" value="2000" eventGUID="00000000-0000-0000-0000-000000000000" message="Store SDK Module Loaded">
+    </task>
+    <task name="LogMessage" value="2001" eventGUID="00000000-0000-0000-0000-000000000000" message="In-App Purchase">
+    </task>
+    <task name="StorePurchaseAppMessage" value="3001" eventGUID="00000000-0000-0000-0000-000000000000" message="Store Purchase App">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="StorefrontClient" mask="1" message="">
+    </keyword>
+    <keyword name="Messages" mask="2" message="">
+    </keyword>
+    <keyword name="StorePurchaseApp" mask="4" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000001" message="%1
+Error Code: %5
+Function: %4
+Source: %3 (%2)">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="3" task="2" keywords="0x8000000000000001" message="%1
+Exception Details: %5
+Function: %4
+Source: %3 (%2)">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="3" task="3" keywords="0x8000000000000001" message="%1
+Function: %4
+Source: %3 (%2)">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000001" message="%1
+Function: %4
+Source: %3 (%2)">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="5" task="5" keywords="0x8000000000000001" message="%1
+Function: %4
+Source: %3 (%2)">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="16" level="4" task="2000" keywords="0x8000000000000002" message="Process Name: %1
+Module Name: %2
+Build: %3
+">
+    </event>
+    <event value="2001" version="0" opcode="15" channel="16" level="5" task="2001" keywords="0x8000000000000002" message="%1
+Error: %3
+Function: %2
+Source: %4 (%5)">
+    </event>
+    <event value="2002" version="0" opcode="14" channel="16" level="4" task="2001" keywords="0x8000000000000002" message="%1
+Error: %3
+Function: %2
+Source: %4 (%5)">
+    </event>
+    <event value="2003" version="0" opcode="13" channel="16" level="3" task="2001" keywords="0x8000000000000002" message="%1
+Error: %3
+Function: %2
+Source: %4 (%5)">
+    </event>
+    <event value="2004" version="0" opcode="12" channel="16" level="2" task="2001" keywords="0x8000000000000002" message="%1
+Error: %3
+Function: %2
+Source: %4 (%5)">
+    </event>
+    <event value="3001" version="0" opcode="15" channel="16" level="5" task="3001" keywords="0x8000000000000004" message="%1
+Error: %3
+Function: %2
+Source: %4 (%5)">
+    </event>
+    <event value="3002" version="0" opcode="14" channel="16" level="4" task="3001" keywords="0x8000000000000004" message="%1
+Error: %3
+Function: %2
+Source: %4 (%5)">
+    </event>
+    <event value="3003" version="0" opcode="13" channel="16" level="3" task="3001" keywords="0x8000000000000004" message="%1
+Error: %3
+Function: %2
+Source: %4 (%5)">
+    </event>
+    <event value="3004" version="0" opcode="12" channel="16" level="2" task="3001" keywords="0x8000000000000004" message="%1
+Error: %3
+Function: %2
+Source: %4 (%5)">
+    </event>
+  </events>
+</provider>

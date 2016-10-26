@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-PrintService-USBMon" guid="7f812073-b28d-4afc-9ced-b8010f914ef6" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=USBMon.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\USBMon.dll" messageFileName="C:\Windows\system32\USBMon.dll" message="Microsoft-Windows-PrintService-USBMon" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-PrintService-USBMon/Debug" id="16" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="USBMon_Task_ExtensionFile_Load" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Loading a Bidirectional Communication Schema extension file into the USB Port Monitor">
+    </task>
+    <task name="USBMon_Task_JavaScript_Execution" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Executing a JavaScript Extension function within the USB Port Monitor">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The USB Port Monitor encountered an error when trying to load/validate the Bidirectional Communication Schema XML extension file. PrinterName: %1, XML Extension FIle Name: %2">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The USB Port Monitor encountered an error when trying to load/validate the Bidirectional Communication Schema JavaScript extension file. PrinterName: %1, JavaScript Extension FIle Name: %2">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The USB Port Monitor encountered an error when executing a function call within the Bidirectional Communication Schema JavaScript extension file. Execution Error code: %1, Error text: %2, Error line#: %3">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The USB Port Monitor encountered an error when executing a function call within the Bidirectional Communication Schema JavaScript extension file and the function terminated unexpectedly. Execution Error code: %1, Error text: %2.">
+    </event>
+  </events>
+</provider>

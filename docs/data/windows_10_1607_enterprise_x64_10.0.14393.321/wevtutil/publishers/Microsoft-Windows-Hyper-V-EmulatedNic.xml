@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-EmulatedNic" guid="09242393-1349-4f4d-9fd7-59cc79f553ce" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=VmEmulatedNic.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\VmEmulatedNic.dll" messageFileName="C:\Windows\system32\VmEmulatedNic.dll" message="Microsoft-Windows-Hyper-V-EmulatedNic" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Admin" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Analytic" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="VMK_HYPERV_PERF_OUTER" mask="1" message="Hyper-V performance traces (outer operations)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_INNER" mask="2" message="Hyper-V performance traces (inner operations)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_VERBOSE" mask="4" message="Hyper-V performance traces (verbose)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF" mask="1000" message="Hyper-V performance traces">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="12440" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; error &apos;%4&apos; (%5) while opening file &apos;%3&apos; during ethernet device startup. The Hyper-V network service provider may not be installed. (Virtual machine ID %2)">
+    </event>
+    <event value="12530" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; device %3 could not allocate guest physical address space. (Virtual machine ID %2)">
+    </event>
+    <event value="12531" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="Device %3 could not allocate guest physical address space.">
+    </event>
+    <event value="12560" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; Static MAC address %5 for &quot;%4&quot; (%3) is invalid.">
+    </event>
+    <event value="12562" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; Static MAC address %5 for &quot;%4&quot; (%3) conflicts with another adapter.">
+    </event>
+    <event value="12564" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; No available MAC address for &quot;%4&quot;.">
+    </event>
+    <event value="12572" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; Dynamic MAC address for &quot;%4&quot; (%3) was not assigned.  The virtual machine will not have network connectivity until this problem is resolved. To assign a new MAC address, restart the virtual machine.">
+    </event>
+    <event value="12580" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; Dynamic MAC address %5 for %4 (%3) is invalid.">
+    </event>
+    <event value="12581" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Dynamic MAC address %5 for %4 (%3) is invalid.">
+    </event>
+    <event value="12670" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; failed to allocate a connection to a virtual network: %4 (%5) (Virtual Machine ID %2). The Ethernet switch may not exist.">
+    </event>
+    <event value="12671" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to allocate resources while connecting to a virtual network. The Ethernet switch may not exist.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MCCS-DavSyncProvider" guid="5d86c4e2-8fcd-48d7-a713-9a04609c0189" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=DavSyncProvider.dll&amp;FileVer=10.0.14393.0" resourceFileName="DavSyncProvider.dll" messageFileName="DavSyncProvider.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SPERF_TAG_DAV_ATTACHMENT_FETCHING" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="Error">
+    </keyword>
+    <keyword name="Performance" mask="2" message="Performance">
+    </keyword>
+    <keyword name="CommsService" mask="1000000000" message="CommsService">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="Warning">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="StateTransition">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000001" message="Error: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="Error Propagated: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Ignoring unsolicited item in a multi-get response (id: %1).">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Requested item missing from the multi-get response (id: %1).">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Handling download result for an existing item (id: %1, tag: %2, status %3, item data available: %4).">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: The download result for an existing item has successful status and empty data (id: %1, status %2).">
+    </event>
+    <event value="105" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Handled download result with item not found status by deleting the local item (id: %1, status: %2).">
+    </event>
+    <event value="106" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Handled download result for an existing item (id: %1, new tag: %2, result %3).">
+    </event>
+    <event value="107" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Handling download result for a new item (id: %1, tag: %2, status %3, item data available: %4).">
+    </event>
+    <event value="108" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: The download result for a new item has successful status and empty data (id: %1, status %2).">
+    </event>
+    <event value="109" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Handled download result for an existing item (id: %1, new tag: %2, result %3).">
+    </event>
+    <event value="110" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Item added to the download batch (id: %1, server tag: %2, local tag: %3, new item: %4).">
+    </event>
+    <event value="111" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Collection tag changed, downloading server changes (id: %1, server tag: %2, local tag: %3, session id: %4).">
+    </event>
+    <event value="112" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Downloading changed items batch (id: %1, size: %2).">
+    </event>
+    <event value="113" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Deleting all local items which no longer exist on the server (collection id: %1, session id: %2).">
+    </event>
+    <event value="114" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Local item deleted because it no longer exists on the server (id: %1).">
+    </event>
+    <event value="115" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Successfully deleted all local items which no longer exist on the server (collection id: %1, session id: %2).">
+    </event>
+    <event value="116" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Successfully downloaded server changes (id: %1, new tag: %2, session id: %3).">
+    </event>
+    <event value="117" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Deleting the local collection with id: %1.">
+    </event>
+    <event value="118" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Deleted local collection (last collection: %2, id: %1)">
+    </event>
+    <event value="119" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Purging the local collection with id: %1.">
+    </event>
+    <event value="120" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Purged local collection (id: %1).">
+    </event>
+    <event value="121" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Synchronizing the list of collections (session id: %1).">
+    </event>
+    <event value="122" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Local collection created (collection id: %1, description: %2, session id: %3).">
+    </event>
+    <event value="123" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Local collection updated (collection id: %1, description: %2, session id: %3).">
+    </event>
+    <event value="124" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Deleting all local collections which no longer exist on the server (session id: %1).">
+    </event>
+    <event value="125" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Local collection deleted because it no longer exists on the server (collection id: %1).">
+    </event>
+    <event value="126" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Successfully deleted all local collections which no longer exist on the server (session id: %1).">
+    </event>
+    <event value="127" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Successfully synchronized the list of collections (session id: %1).">
+    </event>
+    <event value="128" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: The property status %1 returned for a null property is invalid and was coreced to 404.">
+    </event>
+    <event value="129" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Received a non-successful ctag property response (collection id: %1, status %2).">
+    </event>
+    <event value="130" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Uploading change (item id: %1, type: %2).">
+    </event>
+    <event value="131" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Uploaded change (item id: %1, type: %2, status: %3).">
+    </event>
+    <event value="132" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Deleted successfuly uploaded item because it has the same Uri as a previously downloaded item (item id: %1).">
+    </event>
+    <event value="133" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="DavSyncProvider: Failed to upload change (item id: %1, retry: %2).">
+    </event>
+    <event value="134" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Deleted local tombstone (item id: %1).">
+    </event>
+    <event value="135" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Modification change uploaded successfully (item id: %1, tag: %2).">
+    </event>
+    <event value="136" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: New item uploaded successfully (uid: %1, item id: %2, tag: %3).">
+    </event>
+    <event value="137" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Uploading local changes (collection id: %1).">
+    </event>
+    <event value="138" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Finished uploading the local changes (collection id: %1, uploaded changes: %2).">
+    </event>
+    <event value="161" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Loading CardDav engine.">
+    </event>
+    <event value="162" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Loading CalDav engine.">
+    </event>
+    <event value="166" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Stopping Dav engines.">
+    </event>
+    <event value="168" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Stop syncing Dav account %1 content type: %2.">
+    </event>
+    <event value="171" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Failed to fetch attachment, uri hash %1.">
+    </event>
+    <event value="172" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="DavSyncProvider: Delay uploading item (uri hash: %1) changes.">
+    </event>
+    <event value="201" version="0" opcode="1" channel="0" level="4" task="1" keywords="0x2" message="DavSyncProvider: [Start Marker] [DavSyncProvider_SPERF_TAG_DAV_ATTACHMENT_FETCHING_START] The attachment fetching">
+    </event>
+    <event value="202" version="0" opcode="2" channel="0" level="4" task="1" keywords="0x2" message="DavSyncProvider: [Stop Marker] [DavSyncProvider_SPERF_TAG_DAV_ATTACHMENT_FETCHING_STOP] The attachment fetching">
+    </event>
+  </events>
+</provider>

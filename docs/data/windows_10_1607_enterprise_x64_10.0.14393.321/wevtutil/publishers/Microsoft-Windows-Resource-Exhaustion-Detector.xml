@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Resource-Exhaustion-Detector" guid="9988748e-c2e8-4054-85f6-0c3e1cad2470" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=radardt.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\radardt.dll" messageFileName="C:\Windows\system32\radardt.dll" message="Microsoft-Windows-Resource-Exhaustion-Detector" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Resource-Exhaustion-Detector/Operational" id="16" flags="0" message="Microsoft-Windows-Resource-Exhaustion-Detector/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="RDR_DET_OPCODE_LIFECYCLE_START" value="720896" message="Events logged when the resource exhaustion detector is started.">
+    </opcode>
+    <opcode name="RDR_DET_OPCODE_LIFECYCLE_STOP" value="786432" message="Events logged when the resource exhaustion detector is stopped.">
+    </opcode>
+    <opcode name="RDR_DET_OPCODE_LIFECYCLE_ALLOC" value="851968" message="Events logged after a memory allocation.">
+    </opcode>
+    <opcode name="RDR_DET_OPCODE_DETECTION_START" value="1376256" message="Events logged when exhaustion of a resource is detected.">
+    </opcode>
+    <opcode name="RDR_DET_OPCODE_DETECTION_RESULT" value="1441792" message="Events logged when a problem is detected.">
+    </opcode>
+    <opcode name="RDR_DET_OPCODE_DIAGNOSIS_START" value="1507328" message="Events logged when diagnosis is started.">
+    </opcode>
+    <opcode name="RDR_DET_OPCODE_DIAGNOSIS_STOP" value="2031616" message="Events logged when diagnosis is stopped.">
+    </opcode>
+    <opcode name="RDR_DET_OPCODE_DIAGNOSIS_PROCESSING" value="2097152" message="Events logged during diagnosis.">
+    </opcode>
+    <opcode name="RDR_DET_OPCODE_DIAGNOSIS_RESULT" value="2162688" message="Contains the results of the diagnosis.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="RDR_DET_TASK_LIFECYCLE" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Lifecycle Events">
+    </task>
+    <task name="RDR_DET_TASK_DETECTION" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Resource Exhaustion Detection Events">
+    </task>
+    <task name="RDR_DET_TASK_DIAGNOSIS" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Resource Exhaustion Diagnosis Events">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="RDR_DET_KEYWORD_LIFECYCLE" mask="10000000" message="Events related to lifecycle of resource exhaustion detector.">
+    </keyword>
+    <keyword name="RDR_DET_KEYWORD_MEMORY_EXHAUSTION" mask="20000000" message="Events related to exhaustion of system commit limit (virtual memory).">
+    </keyword>
+    <keyword name="RDR_DET_KEYWORD_HEAP_LEAK_DETECTION" mask="40000000" message="Event generated when heap leak detection is about to be started on a process.">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x4000000010000000" message="The Windows Resource Exhaustion Detector started.">
+    </event>
+    <event value="1002" version="0" opcode="12" channel="16" level="4" task="1" keywords="0x4000000010000000" message="The Windows Resource Exhaustion Detector stopped.">
+    </event>
+    <event value="1003" version="0" opcode="22" channel="16" level="3" task="2" keywords="0x4000000020000000" message="The Windows Resource Exhaustion Detector received a notification that the computer is low on virtual memory.">
+    </event>
+    <event value="1005" version="0" opcode="11" channel="16" level="2" task="1" keywords="0x4000000010000000" message="The Windows Resource Exhaustion Detector failed to start due to an error.">
+    </event>
+    <event value="1006" version="0" opcode="12" channel="16" level="2" task="1" keywords="0x4000000010000000" message="The Windows Resource Exhaustion Detector failed to stop due to an error.">
+    </event>
+    <event value="1007" version="0" opcode="13" channel="16" level="2" task="1" keywords="0x4000000010000000" message="The Windows Resource Exhaustion Detector experienced a memory allocation failure.">
+    </event>
+    <event value="1008" version="0" opcode="33" channel="16" level="2" task="3" keywords="0x4000000020000000" message="Windows failed to diagnose a low virtual memory condition.">
+    </event>
+    <event value="2004" version="0" opcode="33" channel="8" level="3" task="3" keywords="0x8000000020000000" message="Windows successfully diagnosed a low virtual memory condition. The following programs consumed the most virtual memory: %21 (%22) consumed %24 bytes, %28 (%29) consumed %31 bytes, and %35 (%36) consumed %38 bytes.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-RemoteAssistance" guid="5b0a651a-8807-45cc-9656-7579815b6af0" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=msra.exe&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\msra.exe" messageFileName="C:\Windows\system32\msra.exe" message="Microsoft-Windows-RemoteAssistance" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-RemoteAssistance/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-RemoteAssistance/Admin" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-RemoteAssistance/Tracing" id="18" flags="0" message="">
+    </channel>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="ut:Diagnostic" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000400000000000" message="Entering function %1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000400000000000" message="Leaving function %1">
+    </event>
+    <event value="3" version="0" opcode="2" channel="9" level="1" task="0" keywords="0x1000400000000000" message="Application will terminate, a critical error was detected in %1 Line %2 Function %3">
+    </event>
+    <event value="4" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000400000000000" message="Hit exception block of code at %1 Line %2 in function %3">
+    </event>
+    <event value="5" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000400000000000" message="Branching on Line:%2 File:%1 with the string %3">
+    </event>
+    <event value="6" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000400000000000" message="Switching on Line:%2 File:%1 with the value %3">
+    </event>
+    <event value="7" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000400000000000" message="Entering conditional block at Line:%1 File:%2">
+    </event>
+    <event value="8" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000400000000000" message="Exiting conditional block at Line:%1 File:%2">
+    </event>
+    <event value="9" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000400000000000" message="There was a problem interacting with COM object %1.  An outdated version might be installed, or the component might not be installed at all.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="A user tried to use Remote Assistance and send an invitation for help through their default email client, but Remote Assistance failed to successfully send the invitation.  It is possible the email client configured as the default client does not support SMAPI calls, or that the email client is improperly configured.  It is also possible that the user closed the email client without sending the message.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="A user opened a Remote Assistance invitation, but the invitation was closed due to too many bad password attempts to connect to the machine.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="A user tried to use Remote Assistance, group policy requires a session log to be maintained, and a session log couldn&apos;t be created.  Remote Assistance was terminated.  Check the disk to see if there are problems with the disk or if it is full.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="Remote Assistance started with:    %1    as the command line parameters.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="A Remote Assistance Invitation was successfully opened.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="An RDP connection was successfully made.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The Remote Assistance password was verified.  The Remote Assistance session has begun.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The Remote Assistance password provided was incorrect.  The RDP session was terminated.">
+    </event>
+    <event value="17" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The Remote Assistance password provided was incorrect.  The RDP session was terminated, IP address of the connecting machine is %1">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The Remote Assistance session was disconnected remotely.">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The Remote Assistance session was disconnected locally.">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The Remote Assistance invitation was closed, any information concerning it given out is now invalid.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The helper is sharing control.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The helper can now view the screen.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="Remote Assistance detected that it didn&apos;t restore the background and screen settings before shutting down.  An attempt was made to restore these settings.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The time limit of offered invitations has been reached.">
+    </event>
+    <event value="25" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="User setting value currently applied is %1">
+    </event>
+    <event value="26" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The system or GP settings do not allow an Remote Assistance invitation to be created.  This action has been blocked by the application.">
+    </event>
+    <event value="27" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The system or GP settings do not allow a helper to share control.  This action has been blocked by the application.">
+    </event>
+    <event value="28" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The Windows firewall has been checked and it appears that it is configured so that it will stop Remote Assistance from working.">
+    </event>
+    <event value="29" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The error message:    %1    has been shown to the user.">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="Remote Assistance has ended.">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="Remote Assistance COM server has started.">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="Remote Assistance COM server has ended.">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The Remote Assistance ticket contained the following IP addresses: %1">
+    </event>
+    <event value="34" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="A PNRP Node was created at the following address: %1">
+    </event>
+    <event value="35" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="The following PNRP clouds were detected: %1">
+    </event>
+    <event value="36" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="A PNRP Node was released at the following address: %1">
+    </event>
+    <event value="37" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="Started looking for PNRP node with the following address: %1">
+    </event>
+    <event value="38" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="Stopped looking for PNRP node, address: %1">
+    </event>
+    <event value="39" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="There was a problem interacting with the PNRP service.  This component might not be installed correctly. The error code received was: %1">
+    </event>
+    <event value="40" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000400000000000" message="Diagnosis Repro Attempt resulted in a success.">
+    </event>
+    <event value="41" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000400000000000" message="Diagnosis Repro Attempt resulted in a failure.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000400000000000" message="Current time on NTP Server: %1">
+    </event>
+    <event value="43" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000400000000000" message="Remote Assistance troubleshooting rejected problem %1.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000400000000000" message="Remote Assistance troubleshooting has confirmed the problem: %1.">
+    </event>
+    <event value="45" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000400000000000" message="Remote Assistance troubleshooting is starting to repair the identified problem: %1.">
+    </event>
+    <event value="46" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000400000000000" message="Remote Assistance troubleshooting successfully repaired the problem: %1.">
+    </event>
+    <event value="47" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000400000000000" message="Remote Assistance troubleshooting failed to repair the problem: %1.">
+    </event>
+    <event value="100" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000000" message="Remote OS Type : %1.">
+    </event>
+    <event value="101" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000400000000000" message="Remote Assistance connection attempt failed with error code: %1.">
+    </event>
+    <event value="102" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000400000000000" message="Remote Assistance reproduced the problem and created following ticket to verify the problem: %1.">
+    </event>
+  </events>
+</provider>

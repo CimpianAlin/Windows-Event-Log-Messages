@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Wallet" guid="6ed11b00-c1b5-48cb-aecc-ff72ebefbae8" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=WalletService.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\WalletService.dll" messageFileName="C:\Windows\system32\WalletService.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Launch" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Item_Create" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Item_Get" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Item_Delete" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Item_Save" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="List_Get" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="List_Get_Search" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Core_OpenDatabase" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Core_GetList" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Core_GetListWithParams" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Core_GetProperty" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Core_SetProperty" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Core_ProcessPackage" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Core_ProcessGeofencing" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="1" channel="0" level="4" task="1" keywords="0x2" message="Launch Start">
+    </event>
+    <event value="101" version="0" opcode="2" channel="0" level="4" task="1" keywords="0x2" message="Launch Stop">
+    </event>
+    <event value="102" version="0" opcode="1" channel="0" level="4" task="2" keywords="0x2" message="UI: Start: Create Item">
+    </event>
+    <event value="103" version="0" opcode="2" channel="0" level="4" task="2" keywords="0x2" message="UI: Stop : Create Item">
+    </event>
+    <event value="104" version="0" opcode="1" channel="0" level="4" task="3" keywords="0x2" message="UI: Start: Get Item %1">
+    </event>
+    <event value="105" version="0" opcode="2" channel="0" level="4" task="3" keywords="0x2" message="UI: Stop : Get Item %1">
+    </event>
+    <event value="106" version="0" opcode="1" channel="0" level="4" task="4" keywords="0x2" message="UI: Start: Delete Item">
+    </event>
+    <event value="107" version="0" opcode="2" channel="0" level="4" task="4" keywords="0x2" message="UI: Stop : Delete Item">
+    </event>
+    <event value="108" version="0" opcode="1" channel="0" level="4" task="5" keywords="0x2" message="UI: Start: Save Item">
+    </event>
+    <event value="109" version="0" opcode="2" channel="0" level="4" task="5" keywords="0x2" message="UI: Stop : Save Item">
+    </event>
+    <event value="201" version="0" opcode="1" channel="0" level="4" task="6" keywords="0x2" message="UI: Start: Get List %1">
+    </event>
+    <event value="202" version="0" opcode="2" channel="0" level="4" task="6" keywords="0x2" message="UI: Stop : Get List %1">
+    </event>
+    <event value="203" version="0" opcode="1" channel="0" level="4" task="7" keywords="0x2" message="UI: Start: Get Search List %1">
+    </event>
+    <event value="204" version="0" opcode="2" channel="0" level="4" task="7" keywords="0x2" message="UI: Stop : Get Search List %1">
+    </event>
+    <event value="303" version="0" opcode="1" channel="0" level="4" task="8" keywords="0x2" message="Core: Start: OpenDatabase">
+    </event>
+    <event value="304" version="0" opcode="2" channel="0" level="4" task="8" keywords="0x2" message="Core: Stop : OpenDatabase">
+    </event>
+    <event value="305" version="0" opcode="1" channel="0" level="4" task="9" keywords="0x2" message="Core: Start: GetList %1">
+    </event>
+    <event value="306" version="0" opcode="2" channel="0" level="4" task="9" keywords="0x2" message="Core: Stop : GetList %1">
+    </event>
+    <event value="307" version="0" opcode="1" channel="0" level="4" task="10" keywords="0x2" message="Core: Start: GetListWithParams %1">
+    </event>
+    <event value="308" version="0" opcode="2" channel="0" level="4" task="10" keywords="0x2" message="Core: Stop : GetListWithParams %1">
+    </event>
+    <event value="309" version="0" opcode="1" channel="0" level="4" task="11" keywords="0x2" message="Core: Start: GetProperty Item %1 Property %2">
+    </event>
+    <event value="310" version="0" opcode="2" channel="0" level="4" task="11" keywords="0x2" message="Core: Stop : GetProperty Item %1 Property %2">
+    </event>
+    <event value="311" version="0" opcode="1" channel="0" level="4" task="12" keywords="0x2" message="Core: Start: SetProperty Item %1 Property %2">
+    </event>
+    <event value="312" version="0" opcode="2" channel="0" level="4" task="12" keywords="0x2" message="Core: Stop : SetProperty Item %1 Property %2">
+    </event>
+    <event value="313" version="0" opcode="1" channel="0" level="4" task="13" keywords="0x2" message="Core: Start: ProcessPackage">
+    </event>
+    <event value="314" version="0" opcode="2" channel="0" level="4" task="13" keywords="0x2" message="Core: Stop : ProcessPackage">
+    </event>
+    <event value="315" version="0" opcode="1" channel="0" level="4" task="14" keywords="0x2" message="Core: Start: ProcessGeofencing">
+    </event>
+    <event value="316" version="0" opcode="2" channel="0" level="4" task="14" keywords="0x2" message="Core: Stop : ProcessGeofencing">
+    </event>
+  </events>
+</provider>

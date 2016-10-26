@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-BranchCache" guid="7eafcf79-06a7-460b-8a55-bd0a0c9248aa" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=peerdistsvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\peerdistsvc.dll" messageFileName="C:\Windows\system32\peerdistsvc.dll" message="Microsoft-Windows-BranchCache" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-BranchCache/Operational" id="16" flags="0" message="Microsoft-Windows-BranchCache/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="ServiceStartup" value="655360" message="The BranchCache service is starting up.">
+    </opcode>
+    <opcode name="RepublishContent" value="720896" message="Republishing content - making content available to others in the branch office.">
+    </opcode>
+    <opcode name="PublishContent" value="786432" message="Publishing content on the server.">
+    </opcode>
+    <opcode name="DownloadContent" value="851968" message="Downloading content.">
+    </opcode>
+    <opcode name="HostedCacheOffer" value="917504" message="Offering content to hosted cache.">
+    </opcode>
+    <opcode name="CachePublishContent" value="983040" message="Publishing content on the server.">
+    </opcode>
+    <opcode name="CacheLoadPersistContent" value="1048576" message="Loading local cache.">
+    </opcode>
+    <opcode name="CacheSavePersistContent" value="1114112" message="Saving local cache.">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The BranchCache service started successfully.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The BranchCache service stopped successfully.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The BranchCache service detected that this computer roamed to a different location. Group Policy settings will refresh.">
+    </event>
+    <event value="4" version="0" opcode="10" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The BranchCache service failed to start.
+Error: %1 %2">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A BranchCache configuration change was detected.">
+    </event>
+    <event value="6" version="0" opcode="10" channel="16" level="2" task="0" keywords="0x8000000000000000" message="This computer is configured as a Hosted Cache server and it is also configured to use a Hosted Cache. Only one of these options is allowed.">
+    </event>
+    <event value="7" version="0" opcode="10" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A firewall is blocking inbound traffic on UDP port 3702, which is used to discover the availability of cached content on this computer. Other computers on the network cannot discover this client. 
+To create a Windows Firewall rule that allows traffic on UDP port 3702, run the command &quot;Enable-BCDistributed&quot; from an elevated PowerShell command prompt. If a different firewall is used, modify the firewall settings to allow this traffic.">
+    </event>
+    <event value="8" version="0" opcode="10" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A firewall is blocking inbound traffic on TCP port 80, which is used to serve content to requesting computers. As a result, other computers on the network, including the Hosted Cache server, cannot retrieve content from this client. 
+To create a Windows Firewall rule that allows inbound traffic on TCP port 80, run the enable cmdlet appropriate to your service mode from an elevated PowerShell command prompt. If a different firewall is used, modify the firewall settings to allow this traffic.">
+    </event>
+    <event value="9" version="0" opcode="10" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A firewall is blocking inbound traffic on TCP port 443, which is used by the Hosted Cache server for accepting incoming client offers to add content. As a result, clients cannot add content to the Hosted Cache. 
+To create a Windows Firewall rule that allows inbound traffic on TCP port 443, run the command &quot;Enable-BCHostedServer&quot; from an elevated PowerShell command prompt. If a different firewall is used, modify the firewall settings to allow this traffic.">
+    </event>
+    <event value="10" version="0" opcode="10" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The BranchCache service cannot start because the HTTP namespace used for serving content to requesting clients is not reserved. 
+Run the enable cmdlet appropriate to your service mode from an elevated PowerShell command prompt.">
+    </event>
+    <event value="11" version="0" opcode="11" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Content was not cached. BranchCache cannot free enough space in the local cache to accommodate the content being added. 
+The maximum cache size is %1 MB.
+To increase the cache size, run the command &quot;Set-BCCache&quot; from an elevated PowerShell command prompt and ensure that the disk where the local cache is saved has enough free space.">
+    </event>
+    <event value="12" version="0" opcode="15" channel="16" level="2" task="0" keywords="0x8000000000000000" message="BranchCache cannot publish the content at location %1.
+Error: %2 %3
+This might be because the publication directory location is not on an NTFS partition, the path is too long (typically, greater than 190 characters) or does not exist, or the BranchCache service does not have the permissions to write to the directory location. 
+Run the command &quot;Set-BCCache&quot; from an elevated PowerShell command prompt.">
+    </event>
+    <event value="13" version="0" opcode="12" channel="16" level="2" task="0" keywords="0x8000000000000000" message="BranchCache cannot publish the content with content-id: %2 because the publication cache size was exceeded or the disk does not have enough space.
+Error: %3 %4
+Run the command &quot;Set-BCCache&quot; from an elevated PowerShell command prompt to increase the cache size.">
+    </event>
+    <event value="14" version="0" opcode="13" channel="16" level="3" task="0" keywords="0x8000000000000000" message="A request message sent to another BranchCache client failed.
+Error: %6 %7">
+    </event>
+    <event value="15" version="0" opcode="13" channel="16" level="3" task="0" keywords="0x8000000000000000" message="A request message sent to the Hosted Cache server failed.
+Error: %6 %7">
+    </event>
+    <event value="16" version="0" opcode="13" channel="16" level="3" task="0" keywords="0x8000000000000000" message="A BranchCache client or hosted cache server was unresponsive or provided invalid data. For the next %2 minute(s), BranchCache will not attempt to download data from this machine.">
+    </event>
+    <event value="17" version="0" opcode="13" channel="16" level="3" task="0" keywords="0x8000000000000000" message="A request message from another BranchCache client was dropped because it was not valid.
+Remote client address: %1
+Error: %3 %4">
+    </event>
+    <event value="18" version="0" opcode="13" channel="16" level="3" task="0" keywords="0x8000000000000000" message="A content retrieval request from another BranchCache client was denied.
+Remote client address: %1
+Error: %2 %3">
+    </event>
+    <event value="19" version="0" opcode="14" channel="16" level="3" task="0" keywords="0x8000000000000000" message="BranchCache tried to offer content to the Hosted Cache server on %1, but there was an error connecting to the Hosted Cache server. 
+Error: %2 %3 
+Possible reasons for this error:
+-the client has been configured with an incorrect Hosted Cache server name
+-the client has been configured with an incorrect Hosted Cache server port
+-the firewall on the Hosted Cache server is blocking communication
+-the hosted cache server has not been configured with a certificate trusted by the client
+-the client has been configured to use TLS when communicating with the hosted cache, but the hosted cache has not been configured to use TLS
+-the client has been configured to not use TLS when communicating with the hosted cache, but the hosted cache has not been configured to expect TLS
+
+The client can be configured by running the &quot;netsh branchcache set service hostedclient location=[HOSTEDSERVER]&quot; command from an elevated prompt.
+The Hosted Cache server can be configured by running the &quot;netsh branchcache set service hostedserver&quot; command from an elevated prompt.
+
+For advanced configuration and information about certificate deployment on a Hosted Cache server, please see the BranchCache deployment guide.">
+    </event>
+    <event value="20" version="0" opcode="14" channel="16" level="3" task="0" keywords="0x8000000000000000" message="BranchCache tried to offer content to the Hosted Cache server on %1, but the request timed out. The Hosted Cache server might be experiencing heavy loads or might not be reachable because of network or authentication issues.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%2 instance(s) of event id %1 occurred.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows Firewall rules for the BranchCache service are not configured correctly. 
+Run the enable cmdlet appropriate to your service mode from an elevated PowerShell command prompt to set the Windows Firewall configuration correctly.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The BranchCache service could not be started because it has been disabled. 
+Use the Services snap-in console to set the Startup Type for the BranchCache service to &quot;Manual&quot; on client computers and to &quot;Automatic&quot; on server computers.">
+    </event>
+    <event value="24" version="0" opcode="16" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The BranchCache service started, but was unable to load the cache file from disk because the cache file was corrupted or was an incompatible version.
+Sub code: %2
+Error: %1 %3">
+    </event>
+    <event value="25" version="0" opcode="16" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The BranchCache service started and loaded a cache file from disk.">
+    </event>
+    <event value="26" version="0" opcode="17" channel="16" level="4" task="0" keywords="0x8000000000000000" message="BranchCache saved a cache file to disk.">
+    </event>
+    <event value="27" version="0" opcode="17" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The BranchCache service stopped and was unable to save the cache file to disk.
+Error: %1 %2">
+    </event>
+    <event value="28" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The BranchCache service is stopping.">
+    </event>
+    <event value="29" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An SSL certificate is not bound to the port %1 on the Hosted Cache server. As a result, clients cannot add content to the Hosted Cache.
+Run the command &quot;netsh http add sslcert&quot; from an elevated command prompt to bind a certificate.">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="BranchCache cannot initialize the local cache at location %1.
+Error: %2 %3
+Possible reasons are that the local cache directory location is not on an NTFS partition, the path is too long (typically, greater than 190 characters) or does not exist, or the BranchCache service does not have the permissions to write to the directory location. 
+Run the command &quot;Set-BCCache&quot; from an elevated PowerShell command prompt.">
+    </event>
+    <event value="31" version="0" opcode="13" channel="16" level="3" task="0" keywords="0x8000000000000000" message="A request message sent to a Hosted Cache client failed.
+Error: %6 %7">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The size of the republication cache store at %1 is too small. The size %2 bytes was rounded up to %3 bytes.">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The size of the publication cache store at %1 is too small. The size %2 bytes was rounded up to %3 bytes.">
+    </event>
+    <event value="34" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="BranchCache failed to register a service connection point.">
+    </event>
+    <event value="35" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="BranchCache failed to update a service connection point.">
+    </event>
+    <event value="36" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="BranchCache failed to delete a service connection point.">
+    </event>
+    <event value="37" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="BranchCache failed to discover a service connection point.">
+    </event>
+    <event value="38" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="BranchCache completed defragmentation of the republication cache store at %1.
+Error: %2 %3">
+    </event>
+    <event value="39" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="It is recommended that you consider defragmentation of the republication cache store at %1. Defragmentation improves the storage efficiency and performance of BranchCache.
+Configured max size of the cache store: %2 MB
+Actual size of data in the cache store: %3 MB">
+    </event>
+    <event value="40" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Client request was dropped because allowable simultaneous uploads limit was reached.
+
+Remote client address: %1
+Current Uploads: %2
+Maximum Simultaneous Uploads: %3">
+    </event>
+    <event value="41" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="BranchCache cannot start because another application or service is listening on TCP port %1 (HTTP).  BranchCache expects incoming requests for content on this port.">
+    </event>
+  </events>
+</provider>

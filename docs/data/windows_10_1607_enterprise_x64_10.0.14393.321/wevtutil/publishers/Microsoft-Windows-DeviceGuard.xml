@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DeviceGuard" guid="f717d024-f5b4-4f03-9ab9-331b2dc38ffb" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=dggpext.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\dggpext.dll" messageFileName="C:\Windows\system32\dggpext.dll" message="Microsoft-Windows-DeviceGuard" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DeviceGuard/Operational" id="16" flags="0" message="Microsoft-Windows-DeviceGuard/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="7000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Guard successfully processed the Group Policy: Virtualization Based Security  = %1,  Secure Boot = %2, DMA Protection = %3,  Virtualization Based Code Integrity = %4, Credential Guard = %5, Reboot required = %6, Status = %7.">
+    </event>
+    <event value="7001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Guard failed to process the Group Policy to enable Virtualization Based Security (Status = %1): %2">
+    </event>
+    <event value="7002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Guard failed to process the Group Policy to disable Virtualization Based Security (Status = %1): %2">
+    </event>
+    <event value="7010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Guard successfully processed the Group Policy: Configurable Code Integrity Policy = %1,  Policy file path = %2, Reboot required = %3, Status = %4.">
+    </event>
+    <event value="7011" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Guard failed to process the Group Policy to enable Configurable Code Integrity Policy (Status = %1): %2">
+    </event>
+    <event value="7012" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Guard failed to process the Group Policy to disable Configurable Code Integrity Policy (Status = %1): %2">
+    </event>
+    <event value="7013" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Guard is not available in this edition of Windows">
+    </event>
+  </events>
+</provider>

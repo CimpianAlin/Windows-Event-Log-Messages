@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-TerminalServices-ClientActiveXCore" guid="28aa95bb-d444-4719-a36f-40462168127e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=mstscax.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\mstscax.dll" parameterFileName="C:\Windows\system32\mstscax.dll" messageFileName="C:\Windows\system32\mstscax.dll" message="Microsoft-Windows-TerminalServices-ClientActiveXCore" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-RDPClient/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-RDPClient/Analytic" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-RDPClient/Debug" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="Connect" value="655360" message="This event is raised during the connection process">
+    </opcode>
+    <opcode name="Disconnect" value="720896" message="This event is raised during the disconnection process">
+    </opcode>
+    <opcode name="Authenticate" value="786432" message="This event is raised during the authentication process">
+    </opcode>
+    <opcode name="Autoreconnect" value="851968" message="This event is raised while trying to automatically reconnect to the server">
+    </opcode>
+    <opcode name="ResolveName" value="917504" message="This event is raised during resolving the server name">
+    </opcode>
+    <opcode name="License" value="983040" message="This event is raised while trying to get a valid license">
+    </opcode>
+    <opcode name="Gateway" value="1048576" message="This event is raised in the gateway transport">
+    </opcode>
+    <opcode name="RecvServerData" value="1114112" message="This event is raised when data is received from the server">
+    </opcode>
+    <opcode name="SendClientData" value="1179648" message="This event is raised when data is sent to the server">
+    </opcode>
+    <opcode name="StateTransition" value="1245184" message="This event is raised during a state transition.">
+    </opcode>
+    <opcode name="RadcCancelDuringExit" value="1310720" message="This event is raised when the client has not been shutdown cleanly.">
+    </opcode>
+    <opcode name="RadcUserSignOut" value="1376256" message="This event is raised when the user tries to sign out from the OOB client.">
+    </opcode>
+    <opcode name="RadcWorkspaceRefresh" value="1441792" message="This event is raised when the user manually tries to do feed refresh.">
+    </opcode>
+    <opcode name="RadcAdalDifferentUserError" value="1507328" message="This event is raised when the user tries to login in ADAL page using different user name.">
+    </opcode>
+    <opcode name="RadcWorkspaceEventSuccess" value="1572864" message="This event is raised when a workspace event like subscribe/update succeeded.">
+    </opcode>
+    <opcode name="RadcWorkspaceEventFailure" value="1638400" message="This event is raised when a workspace event like subscribe/update failed!">
+    </opcode>
+    <opcode name="RadcDiscoverySuccess" value="1703936" message="This event is raised when feed discovery succeeds">
+    </opcode>
+    <opcode name="RadcDiscoveryFailure" value="1769472" message="This event is raised when feed discovery failed!">
+    </opcode>
+    <opcode name="RadcCacheCorruption" value="1835008" message="This event is raised when the feed cache on the client local machine is missing icons or Rdp files due to cache corruption!">
+    </opcode>
+    <opcode name="RadcConsentStatusUpdateSuccess" value="1900544" message="This event is raised when user has successfully updated the consent status on server side">
+    </opcode>
+    <opcode name="RadcConsentStatusUpdateFailure" value="1966080" message="This event is raised when user is unable to update the consent status on server!">
+    </opcode>
+    <opcode name="RadcClientVersion" value="2031616" message="This event is raised when the client first launches.">
+    </opcode>
+    <opcode name="RadcViewInvites" value="2097152" message="This event is raised when the user manually clicks the view invitations button.">
+    </opcode>
+    <opcode name="RadcUserTimeZone" value="2162688" message="This event is raised when the user starts a new cycle of feed discovery. We log the hashed UPN and timezone information here">
+    </opcode>
+    <opcode name="RadcRefreshTime" value="2228224" message="This event is raised when all the feeds of the user have been subscribed or updated completely. We log the overall time it took to download all feeds in parallel.">
+    </opcode>
+    <opcode name="CloseEvent" value="2293760" message="This event is raised when there is a close operation which will tear down the connection.">
+    </opcode>
+    <opcode name="ClientPipelineProtocolRevision" value="2359296" message="This event is raised when protocol caps are received from the server. We log the version selected, and the client mode and AVC capability.">
+    </opcode>
+    <opcode name="ClientPipelineFrameHWMemory" value="2424832" message="This event is raised when protocol caps are received from the server. We log that hardware resources are being used.">
+    </opcode>
+    <opcode name="ClientPipelineFrameSWMemory" value="2490368" message="This event is raised when protocol caps are received from the server. We log that hardware resources are not being used.">
+    </opcode>
+    <opcode name="RadcDetailedAdalError" value="2555904" message="This event is raised when there is error in acquiring ADAL token.">
+    </opcode>
+    <opcode name="RadcAdalTokenCollected" value="2621440" message="This event is raised when ADAL authentication token is successfully created.">
+    </opcode>
+    <opcode name="RadcAdalCancelled" value="2686976" message="This event is raised when ADAL authentication is cancelled.">
+    </opcode>
+    <opcode name="ClientPipelineError" value="2883584" message="This event is raised if a pipeline error is encountered during execution. We log the faulting component, function, and error code.">
+    </opcode>
+    <opcode name="GenericClientEvent" value="3080192" message="This is a generic event that may be raised by the client.">
+    </opcode>
+    <opcode name="GenericClientError" value="3145728" message="This is a generic error that may be signaled by the client.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="General" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="General">
+    </task>
+    <task name="Connection" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="Connection Sequence">
+    </task>
+    <task name="Autoreconnection" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="Automatic Reconnection Sequence">
+    </task>
+    <task name="GatewayConnection" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="Gateway Connection Sequence">
+    </task>
+    <task name="TransitionStates" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="RDP State Transition">
+    </task>
+    <task name="RdClientRadc" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="RdClient RADC workspace">
+    </task>
+    <task name="RdpClientPipeline" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="RdClient Pipeline workspace">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="AccessDenied" mask="100" message="Access Denied">
+    </keyword>
+    <keyword name="Disconnected" mask="200" message="Client has disconnected">
+    </keyword>
+    <keyword name="AuthFailed" mask="400" message="Authentication Failure">
+    </keyword>
+    <keyword name="LicenseError" mask="800" message="Failed to get a license">
+    </keyword>
+    <keyword name="TimedOut" mask="1000" message="Operation has timed out">
+    </keyword>
+    <keyword name="InvalidState" mask="2000" message="Invalid State">
+    </keyword>
+    <keyword name="GatewayConnectFailed" mask="4000" message="Connection to gateway server failed">
+    </keyword>
+    <keyword name="NetworkUnAvailable" mask="8000" message="Network Unavailable">
+    </keyword>
+    <keyword name="DnsResolutionFailure" mask="10000" message="DNS resolution failure">
+    </keyword>
+    <keyword name="SignVerifFailed" mask="20000" message="Sign verification failed">
+    </keyword>
+    <keyword name="ResourceFailure" mask="40000" message="Resource check failed">
+    </keyword>
+    <keyword name="LogonFailed" mask="80000" message="Logon failed">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="225" version="0" opcode="19" channel="18" level="4" task="104" keywords="0x1000000000000000" message="%1: Transitioned successfully from %3 to %5 in response to %7.">
+    </event>
+    <event value="226" version="0" opcode="19" channel="16" level="3" task="104" keywords="0x4000000000000000" message="%1: An error was encountered when transitioning from %3 to %5 in response to %7 (error code %8).">
+    </event>
+    <event value="227" version="0" opcode="19" channel="18" level="4" task="104" keywords="0x1000000000000000" message="%1: MCS Channel Join Confirmation received: ChannelID = %2, ChannelName = %3.">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="1001" version="0" opcode="10" channel="17" level="5" task="101" keywords="0x2000000000000000" message="RDP ClientActiveX is trying to connect to the server (%2)">
+    </event>
+    <event value="1002" version="0" opcode="10" channel="17" level="4" task="101" keywords="0x2000000000000000" message="RDP ClientActiveX has connected to the server">
+    </event>
+    <event value="1003" version="0" opcode="11" channel="17" level="4" task="101" keywords="0x2000000000000000" message="RDP ClientActiveX has been disconnected (Reason= %2)">
+    </event>
+    <event value="1004" version="0" opcode="10" channel="17" level="4" task="101" keywords="0x2000000000000000" message="Client has logged on to the server (SessionId = %2)">
+    </event>
+    <event value="1005" version="0" opcode="10" channel="17" level="2" task="101" keywords="0x2000000000000000" message="Client failed to logon on to the server (Error = %2)">
+    </event>
+    <event value="1006" version="0" opcode="13" channel="17" level="3" task="101" keywords="0x2000000000000000" message="Client machine has lost network connectivity (Reason= %2)">
+    </event>
+    <event value="1007" version="0" opcode="14" channel="16" level="2" task="101" keywords="0x4000000000000000" message="DNS failed to resolve the server name (Error= %2)">
+    </event>
+    <event value="1008" version="0" opcode="12" channel="17" level="5" task="101" keywords="0x2000000000000000" message="The credentials provided are authenticated by the server">
+    </event>
+    <event value="1009" version="0" opcode="12" channel="16" level="3" task="101" keywords="0x4000000000000000" message="The credentials provided were failed to be authenticated by the server">
+    </event>
+    <event value="1010" version="0" opcode="16" channel="17" level="4" task="103" keywords="0x2000000000000000" message="RDP ClientActiveX is connecting to a gateway server (%1=%2)">
+    </event>
+    <event value="1011" version="0" opcode="16" channel="17" level="4" task="103" keywords="0x2000000000000000" message="RDP ClientActiveX succeeded in connecting to the gateway server">
+    </event>
+    <event value="1012" version="0" opcode="16" channel="17" level="2" task="103" keywords="0x2000000000000000" message="RDP ClientActiveX failed to connect to the gateway server(Error= %2)">
+    </event>
+    <event value="1013" version="0" opcode="13" channel="17" level="4" task="102" keywords="0x2000000000000000" message="RDP ClientActiveX is trying to automatically reconnect to the server (%2)">
+    </event>
+    <event value="1014" version="0" opcode="13" channel="17" level="4" task="102" keywords="0x2000000000000000" message="RDP ClientActiveX succeeded in automatically connecting to the server">
+    </event>
+    <event value="1015" version="0" opcode="13" channel="16" level="2" task="102" keywords="0x4000000000000000" message="RDP ClientActiveX failed to automatically connect to the server (Reason= %1)">
+    </event>
+    <event value="1016" version="0" opcode="15" channel="17" level="5" task="101" keywords="0x2000000000000000" message="Client has a license to connect to the server">
+    </event>
+    <event value="1017" version="0" opcode="15" channel="16" level="3" task="101" keywords="0x4000000000000000" message="Client does not have a license to connect to the server (Error= %2)">
+    </event>
+    <event value="1018" version="0" opcode="10" channel="17" level="2" task="101" keywords="0x2000000000000000" message="RDP ClientActiveX failed to connect to the server (Error = %2)">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="17" level="4" task="100" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="17" level="2" task="100" keywords="0x2000000000000000" message="RDP ClientActiveX has recorded the following error - %2. Check Details.">
+    </event>
+    <event value="1021" version="0" opcode="16" channel="17" level="3" task="103" keywords="0x2000000000000000" message="RDP ClientActiveX&apos;s gateway transport has recorded the following error - %2. Check Details.">
+    </event>
+    <event value="1022" version="0" opcode="16" channel="17" level="4" task="103" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="17" level="4" task="101" keywords="0x2000000000000000" message="RDP Client ActiveX has started using RemoteFX for graphics decoding (decoder type = %2)">
+    </event>
+    <event value="1024" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="RDP ClientActiveX is trying to connect to the server (%2)">
+    </event>
+    <event value="1025" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="RDP ClientActiveX has connected to the server">
+    </event>
+    <event value="1026" version="0" opcode="11" channel="16" level="4" task="101" keywords="0x4000000000000000" message="RDP ClientActiveX has been disconnected (Reason= %2)">
+    </event>
+    <event value="1027" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="Connected to domain (%1) with session %2.">
+    </event>
+    <event value="1028" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="Server supports SSL = %1">
+    </event>
+    <event value="1029" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="Base64(SHA256(UserName)) is = %1">
+    </event>
+    <event value="1030" version="0" opcode="0" channel="17" level="4" task="101" keywords="0x2000000000000000" message="RDP Client build %1 %2 %3 %4 %5">
+    </event>
+    <event value="1031" version="0" opcode="11" channel="16" level="2" task="101" keywords="0x4000000000000000" message="Invalid format error occured when decoding packet of type %1">
+    </event>
+    <event value="1032" version="0" opcode="47" channel="18" level="4" task="100" keywords="0x1000000000000000" message="Component name:%1, :: %2">
+    </event>
+    <event value="1033" version="0" opcode="48" channel="16" level="2" task="100" keywords="0x4000000000000000" message="Component name:%1, :: %2, Error code:%3">
+    </event>
+    <event value="1034" version="0" opcode="47" channel="16" level="4" task="100" keywords="0x4000000000000000" message="Component name:%1, :: %2">
+    </event>
+    <event value="1100" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="The client detected the link latency is %2 milliseconds.">
+    </event>
+    <event value="1101" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="The client detected the bandwidth is %2 kbps/second.">
+    </event>
+    <event value="1102" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="The client has initiated a multi-transport connection to the server %2.">
+    </event>
+    <event value="1103" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="The client has established a multi-transport connection to the server.">
+    </event>
+    <event value="1104" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="The client failed to establish the multi-transport connection.">
+    </event>
+    <event value="1105" version="0" opcode="10" channel="16" level="4" task="101" keywords="0x4000000000000000" message="The multi-transport connection has been disconnected.">
+    </event>
+    <event value="1106" version="0" opcode="35" channel="16" level="4" task="101" keywords="0x4000000000000000" message="Close event, code = %1.">
+    </event>
+    <event value="1107" version="0" opcode="11" channel="16" level="4" task="100" keywords="0x4000000000000000" message="Disconnect trace:%1 &quot;%2&quot;, Error code:%3">
+    </event>
+    <event value="1201" version="0" opcode="20" channel="16" level="4" task="105" keywords="0x4000000000000000" message="The RdClient has been forced exit since cancelling existing workspace job took too long.">
+    </event>
+    <event value="1202" version="0" opcode="21" channel="16" level="4" task="105" keywords="0x4000000000000000" message="The user has clicked sign out on the OOB Client ribbon.">
+    </event>
+    <event value="1203" version="0" opcode="22" channel="16" level="4" task="105" keywords="0x4000000000000000" message="The user has clicked Refresh on the OOB client ribbon.">
+    </event>
+    <event value="1204" version="0" opcode="23" channel="16" level="4" task="105" keywords="0x4000000000000000" message="The user tried to login into ADAL with a different user name than the one he/she subscribed to initially.">
+    </event>
+    <event value="1205" version="0" opcode="24" channel="16" level="4" task="105" keywords="0x4000000000000000" message="%1: Workspace Event succeeded for Tenant = %2 , TotalTimeWithoutAdal = %3 ms, AdalTime = %4 ms. NumberOfResources = %5">
+    </event>
+    <event value="1206" version="0" opcode="25" channel="16" level="2" task="105" keywords="0x4000000000000000" message="%1: Workspace Event failed for Tenant = %2. , TotalTimeWithoutAdal = %3 ms, AdalTime = %4 ms. (Error code %5)">
+    </event>
+    <event value="1207" version="0" opcode="0" channel="17" level="4" task="105" keywords="0x2000000000000000" message="RDP Client build %1 %2 %3 %4 %5">
+    </event>
+    <event value="1208" version="0" opcode="26" channel="16" level="4" task="105" keywords="0x4000000000000000" message="Feed discovery succeeded. TotalTimeWithoutAdal = %1 ms, AdalTime = %2 ms, NumberOfFeeds = %3">
+    </event>
+    <event value="1209" version="0" opcode="27" channel="16" level="2" task="105" keywords="0x4000000000000000" message="Feed discovery failed. TotalTimeWithoutAdal = %1 ms, AdalTime = %2 ms. (Error code = %3)">
+    </event>
+    <event value="1210" version="0" opcode="28" channel="16" level="2" task="105" keywords="0x4000000000000000" message="Feed cache corruption encountered. Tenant = %1, ResourceId = %2, ResourceType = %3, (Error code %4).">
+    </event>
+    <event value="1211" version="0" opcode="29" channel="16" level="4" task="105" keywords="0x4000000000000000" message="Consent status updated successfully. TotalTimeWithoutAdal =  %1, AdalTime = %2.">
+    </event>
+    <event value="1212" version="0" opcode="30" channel="16" level="2" task="105" keywords="0x4000000000000000" message="Consent status update failed. TotalTimeWithoutAdal =  %1, AdalTime = %2. (Error code %3)">
+    </event>
+    <event value="1213" version="0" opcode="32" channel="16" level="4" task="105" keywords="0x4000000000000000" message="The user has clicked view invitations on the OOB client ribbon.">
+    </event>
+    <event value="1214" version="0" opcode="33" channel="16" level="4" task="105" keywords="0x4000000000000000" message="Base64(SHA256(UserName)) = %1, TimeZone Bias = %2, TimeZone Name = %3.">
+    </event>
+    <event value="1215" version="0" opcode="34" channel="16" level="4" task="105" keywords="0x4000000000000000" message="Refresh Time = %1, Number of feeds = %2.">
+    </event>
+    <event value="1216" version="0" opcode="39" channel="16" level="2" task="105" keywords="0x4000000000000000" message="ADAL error code = %1, description = %2">
+    </event>
+    <event value="1217" version="0" opcode="40" channel="16" level="2" task="105" keywords="0x4000000000000000" message="ADAL token collected successfully">
+    </event>
+    <event value="1218" version="0" opcode="41" channel="16" level="2" task="105" keywords="0x4000000000000000" message="ADAL cancelled">
+    </event>
+    <event value="1227" version="0" opcode="19" channel="16" level="4" task="105" keywords="0x4000000000000000" message="%1 entering stage %2">
+    </event>
+    <event value="1228" version="0" opcode="19" channel="16" level="4" task="105" keywords="0x4000000000000000" message="%1 with http event type %2">
+    </event>
+    <event value="1229" version="0" opcode="19" channel="16" level="4" task="105" keywords="0x4000000000000000" message="%1 with http event type %2 and http status code %3">
+    </event>
+    <event value="1230" version="0" opcode="19" channel="16" level="4" task="105" keywords="0x4000000000000000" message="%1 with http event type %2 failed with xresult %3">
+    </event>
+    <event value="1401" version="0" opcode="36" channel="16" level="4" task="106" keywords="0x4000000000000000" message="The server is using version %1 of the RDP graphics protocol (client mode: %2, AVC available: %3).">
+    </event>
+    <event value="1402" version="0" opcode="37" channel="16" level="4" task="106" keywords="0x4000000000000000" message="The client is using hardware memory for the frame buffer.">
+    </event>
+    <event value="1403" version="0" opcode="38" channel="16" level="4" task="106" keywords="0x4000000000000000" message="The client is using software memory for the frame buffer.">
+    </event>
+    <event value="1404" version="0" opcode="44" channel="16" level="2" task="106" keywords="0x4000000000000000" message="The client encountered an issue while decoding and displaying RDP graphics (component: %1, function: %2, error code: %3)">
+    </event>
+    <event value="1501" version="0" opcode="0" channel="17" level="4" task="100" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="1502" version="0" opcode="0" channel="17" level="4" task="100" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="1503" version="0" opcode="0" channel="17" level="4" task="100" keywords="0x2000000000000000" message="%1">
+    </event>
+  </events>
+</provider>

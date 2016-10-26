@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NdisImPlatformEventProvider" guid="11c5d8ad-756a-42c2-8087-eb1b4a72a846" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\NdisImPlatform.sys" messageFileName="C:\Windows\system32\drivers\NdisImPlatform.sys" message="Microsoft-Windows-NdisImPlatform" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NdisImPlatform/Operational" id="16" flags="0" message="Microsoft-Windows-NdisImPlatform/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Received NetPnPEvent %1 from Member %2">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Nic %1 is transitioning into a new power state %2">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Member %1 is doing a status indication. StatusCode = %2">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Member %1 is indicating a new link state. Link State Buffer = %3">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Oid %1 on TeamNic %2 failed due to invalid port number. Oid Buffer = %4">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Forwarding of OID %1 from TeamNic %2 due to Member %3 failed.  Status = %4">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Querying for OID %1 on TeamNic %2 failed. OidBuffer is %4 failed.  Status = %5">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to set OID_GEN_CURRENT_LOOKAHEAD on Member %1. Status = %2">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to set OID_GEN_CURRENT_LOOKAHEAD on TeamNic %1. Status = %2">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="New Packet Filters for TeamNic %1 are %2">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Received new per-port Packet Filters %3 for TeamNic %1 and Member %2">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to set OID_GEN_CURRENT_PACKET_FILTER on Member %1.  Status = %2">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed OID_802_3_MULTICAST_LIST on Member %1 while processing the Oid on TeamNic %2. Status = %3">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed OID_OFFLOAD_ENCAPSULATION on Member %1 while processing the Oid on TeamNic %2. Status = %3">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to set OID %1 on TeamNic %2. Buffer is %4 . Status = %5">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Recalculating Packet Filters on Member %1 failed. Status = %2">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000050000000000" message="Failed Sending as TeamNic %1 is not available">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000050000000000" message="Failed Sending as Member is not found">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000050000000000" message="Aborted Sending on TeamNic %1">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000050000000000" message="Member %1 is not ready to receive.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000050000000000" message="Aborting receive on TeamNic %1 as it is not ready.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000050000000000" message="No matching TeamNic found for packets received from member %1.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000050000000000" message="Aborting sending queued NBLs on TeamNic %1 and Member %2.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Binding to member adapter %1.">
+    </event>
+    <event value="25" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unbinding from member adapter %1.">
+    </event>
+    <event value="26" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Binding to member adapter %1 failed. Status = %2. Potential reason could be inadequate capabilities.">
+    </event>
+    <event value="27" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Creating internal binding between TeamNic %1 and Member %2.">
+    </event>
+    <event value="28" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Creating internal binding between TeamNic %1 and Member %2 failed. Status = %3">
+    </event>
+    <event value="29" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Removed internal binding between TeamNic %1 and Member %2.">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Allocating Port failed for Member %1 on TeamNic %2, Status = %3.">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Creating team %1.">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Creating team %1 failed, Status = %2.">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Removed team %1.">
+    </event>
+    <event value="34" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Added Member %2 to team %1.">
+    </event>
+    <event value="35" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Added Member %2 from team %1.">
+    </event>
+    <event value="36" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Added TeamNic %2 to team %1.">
+    </event>
+    <event value="37" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Removed TeamNic %2 from team %1.">
+    </event>
+    <event value="38" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Creating TeamNic %2 for Team %1.">
+    </event>
+    <event value="39" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Creating TeamNic %2 for Team %1 failed, Status = %3.">
+    </event>
+    <event value="40" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Removed TeamNic %1.">
+    </event>
+    <event value="41" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Indicated new task offload hardware capabilities for TeamNic %1. StatusBuffer = %3.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Indicated new task offload current config for TeamNic %1. StatusBuffer = %3.">
+    </event>
+    <event value="43" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="TeamNic %1 indicated link state change. StatusBuffer = %3.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Support MacOptions for TeamNic %1 reduced from %2 to %3 due to cached capabilities of a member which is currently not bound to the team">
+    </event>
+    <event value="45" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Support MtuSize for TeamNic %1 reduced from %2 to %3 due to cached capabilities of a member which is currently not bound to the team">
+    </event>
+    <event value="46" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="TeamNic %1 being initialized.">
+    </event>
+    <event value="47" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="TeamNic %1 failed to Initialize, Status = %2.">
+    </event>
+    <event value="48" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="TeamNic %1 halted.">
+    </event>
+  </events>
+</provider>

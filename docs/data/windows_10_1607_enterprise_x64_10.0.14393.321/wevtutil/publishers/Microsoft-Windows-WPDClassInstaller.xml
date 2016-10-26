@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WPDClassInstaller" guid="ad5162d8-daf0-4a25-88a7-01cbeb33902e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wpd_ci.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\wpd_ci.dll" messageFileName="C:\Windows\System32\wpd_ci.dll" message="Microsoft-Windows-WPD-ClassInstaller" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WPD-ClassInstaller/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-WPD-ClassInstaller/Analytic" id="17" flags="0" message="Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DriverPerformance" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Performance">
+    </task>
+    <task name="DriverInitialization" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Installation">
+    </task>
+    <task name="DriverSpecialOperation" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Post-Install Configuration">
+    </task>
+    <task name="DriverFailure" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Migration">
+    </task>
+    <task name="DriverMetadataRetrieval" value="64" eventGUID="00000000-0000-0000-0000-000000000000" message="Device Metadata Retrieval">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4001000000000000" message="WPD device installation function (%1, %2) begin.">
+    </event>
+    <event value="101" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4001000000000000" message="WPD device installation function (%1, %2) end with this return code (%3).">
+    </event>
+    <event value="102" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4001000000000000" message="WPD device metadata retrieval for device %1 begin">
+    </event>
+    <event value="103" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4001000000000000" message="WPD device metadata retrieval for device %1 end with this return code (%2).">
+    </event>
+    <event value="104" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="WPD device metadata retrieval for device %1 begin">
+    </event>
+    <event value="105" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="WPD device metadata retrieval for device %1 end with this return code (%2).">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Device marked for reinstallation on subsequent connect.">
+    </event>
+    <event value="201" version="0" opcode="0" channel="16" level="4" task="64" keywords="0x8000000000000000" message="%1: Transfer of metadata (%2, %3) succeeded.">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="4" task="64" keywords="0x8000000000000000" message="%1: Transfer of metadata (%2, %3) skipped. Error code %4.">
+    </event>
+    <event value="203" version="0" opcode="0" channel="16" level="4" task="64" keywords="0x8000000000000000" message="%1: Transfer of metadata (%2, %3) failed. Error code %4.">
+    </event>
+    <event value="204" version="0" opcode="0" channel="16" level="4" task="64" keywords="0x8000000000000000" message="%1: Transfer of metadata failed as the Device Metadata Service could not be accessed. Error code %2.">
+    </event>
+    <event value="205" version="0" opcode="0" channel="16" level="4" task="64" keywords="0x8000000000000000" message="%1: Successfully opened the Device Metadata Service to retrieve metadata: %2.">
+    </event>
+    <event value="206" version="0" opcode="0" channel="16" level="4" task="64" keywords="0x8000000000000000" message="Transfer of metadata (%1, %2) is skipped because the metadata already exists on the system.">
+    </event>
+    <event value="1073831936" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Drivers were successfully installed for device %1.">
+    </event>
+    <event value="1073831937" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Media player and imaging program compatibility layers were successfully registered for device %1. Layer bits %2 were requested, layer bits %3 were registered.">
+    </event>
+    <event value="1073831938" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Autoplay was successfully registered for device %1.">
+    </event>
+    <event value="1073831939" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Autoplay registration was skipped for device %1.">
+    </event>
+    <event value="1073831940" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1: Drivers for %2 device(s) were successfully uninstalled while migrating a dual-mode mass storage class device to Media Transfer Protocol (MTP).">
+    </event>
+    <event value="1073831941" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Media Transfer Protocol (MTP) device.">
+    </event>
+    <event value="1073831942" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Media Transfer Protocol (MTP) device, including any devices that were connected and active.">
+    </event>
+    <event value="1073831943" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Picture Transfer Protocol (PTP) device.">
+    </event>
+    <event value="1073831944" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Picture Transfer Protocol (PTP) device, including any devices that were connected and active.">
+    </event>
+    <event value="1073831945" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1: Drivers were successfully migrated after Plug and Play was enumerated again.">
+    </event>
+    <event value="2147574016" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1: This version of Windows does not support Windows Portable Device drivers, so the drivers were not installed.">
+    </event>
+    <event value="3221316096" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="It was not possible to install drivers for the device %1. Error code %2.">
+    </event>
+    <event value="3221316097" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="It was not possible to access the device (%1) after installing drivers. Error code %2.">
+    </event>
+    <event value="3221316098" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="It was not possible to register media player and imaging program layers for the device %1. Error code %2.">
+    </event>
+    <event value="3221316099" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="It was not possible to register autoplay for device %1. Error code %2.">
+    </event>
+    <event value="3221316100" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1 failed to uninstall drivers when migrating dual-mode devices from mass storage class to Media Transfer Protocol (MTP). Error code %2.">
+    </event>
+    <event value="3221316101" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1 failed to uninstall drivers for single-protocol Media Transfer Protocol (MTP) devices. Error %2.">
+    </event>
+    <event value="3221316102" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1 failed to uninstall drivers for single-protocol Picture Transfer Protocol (PTP) devices. Error %2.">
+    </event>
+    <event value="3221316103" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1: It was not possible to enumerate Plug and Play again after drivers were migrated. Error code %2.">
+    </event>
+  </events>
+</provider>

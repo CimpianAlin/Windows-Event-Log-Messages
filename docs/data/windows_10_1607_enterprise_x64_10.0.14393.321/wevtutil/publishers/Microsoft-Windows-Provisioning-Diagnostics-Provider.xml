@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Provisioning-Diagnostics-Provider" guid="ed8b9bd3-f66e-4ff2-b86b-75c7925f72a9" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=provdiagnostics.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\provdiagnostics.dll" messageFileName="C:\Windows\system32\provdiagnostics.dll" message="Microsoft-Windows-Provisioning-Diagnostics-Provider" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin" id="16" flags="0" message="Admin">
+    </channel>
+    <channel name="Microsoft-Windows-Provisioning-Diagnostics-Provider/Debug" id="17" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="None" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Configuring ProvXML with category &apos;%1&apos;.
+
+ProvXML data:
+%2">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="ProvXML category &apos;%1&apos; completed successfully. %2">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="ProvXML category &apos;%1&apos; failed with &apos;%2&apos; at CSP node &apos;%3&apos;. %4">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Applying package &apos;%1&apos; ID: %2.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Package &apos;%1&apos; has completed.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Package &apos;%1&apos; failed with &apos;%2&apos;.">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Initiating provisioning turn &apos;%1&apos;.">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Provisioning turn &apos;%1&apos; has completed.">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Provisioning turn &apos;%1&apos; failed with &apos;%2&apos;.">
+    </event>
+  </events>
+</provider>

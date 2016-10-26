@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WinINet" guid="43d1a55c-76d6-4f7e-995c-64c711e5cafe" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Explorer&amp;ProdVer=11.0.14393.0&amp;FileName=wininet.dll&amp;FileVer=11.0.14393.0" resourceFileName="C:\Windows\system32\wininet.dll" messageFileName="C:\Windows\system32\wininet.dll" message="Microsoft-Windows-WinINet" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WinINet/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WinINet/UsageLog" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WinINet/WebSocket" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Opcode.Fail" value="720896" message="Fail">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Task.WININET_ROOT_HANDLE_CREATED" value="500" eventGUID="4b02ba7b-579a-4200-b516-5682d125d9e3" message="WININET_ROOT_HANDLE_CREATED">
+    </task>
+    <task name="Task.WININET_OPEN_URL_HANDLE_CREATED" value="501" eventGUID="f573f9f5-7b22-4627-8747-266fd36cc4bd" message="WININET_OPEN_URL_HANDLE_CREATED">
+    </task>
+    <task name="Task.WININET_CONNECT_HANDLE_CREATED" value="502" eventGUID="2e5d07ae-6744-489c-b011-a570a2fd1c67" message="WININET_CONNECT_HANDLE_CREATED">
+    </task>
+    <task name="Task.WININET_HTTP_REQUEST_HANDLE_CREATED" value="503" eventGUID="2609daa9-9f1c-4558-93a7-69766dda9685" message="WININET_HTTP_REQUEST_HANDLE_CREATED">
+    </task>
+    <task name="Task.WININET_HANDLE_CLOSED" value="504" eventGUID="d5c2ce8c-7588-4a6c-b508-3f1766127505" message="WININET_HANDLE_CLOSED">
+    </task>
+    <task name="Task.WININET_HANDLE_CREATE_FAILED" value="505" eventGUID="04ded807-cdb2-4650-af21-b4320abe056a" message="WININET_HANDLE_CREATE_FAILED">
+    </task>
+    <task name="Task.WININET_HANDLE_CLOSE_FAILED" value="506" eventGUID="fdaba980-0ec8-4986-8356-fdabd7053a5c" message="WININET_HANDLE_CLOSE_FAILED">
+    </task>
+    <task name="Task.WININET_HTTP_REQUEST" value="507" eventGUID="a3df4097-d484-4d52-a209-c43e8ba6326f" message="WININET_HTTP_REQUEST">
+    </task>
+    <task name="Task.WININET_HTTP_RESPONSE" value="508" eventGUID="a11f74ee-736d-42a2-b0b6-7b0ae395cea9" message="WININET_HTTP_RESPONSE">
+    </task>
+    <task name="Task.WININET_HTTP_CONNECTION_CLOSED" value="509" eventGUID="38004a40-d1d0-4781-a5de-9a49560f9f8e" message="WININET_HTTP_CONNECTION_CLOSED">
+    </task>
+    <task name="Task.WININET_KEEP_ALIVE_CONNECTION_REUSED" value="510" eventGUID="5c7e02f8-7ab2-48b5-92d7-4027564910ba" message="WININET_KEEP_ALIVE_CONNECTION_REUSED">
+    </task>
+    <task name="Task.WININET_KEEP_ALIVE_CONNECTION_POOLED" value="511" eventGUID="baf37db6-23d8-49fc-8fa6-cf1b7b0f9e21" message="WININET_KEEP_ALIVE_CONNECTION_POOLED">
+    </task>
+    <task name="Task.WININET_KEEP_ALIVE_CONNECTION_CLOSED" value="512" eventGUID="e0467b40-d5e5-45cb-8abf-bb1ca6eeae2f" message="WININET_KEEP_ALIVE_CONNECTION_CLOSED">
+    </task>
+    <task name="Task.WININET_HTTP_RESPONSE_BODY_RECEIVED" value="513" eventGUID="3864a70f-8407-46cc-af52-11a67c636e1a" message="WININET_HTTP_RESPONSE_BODY_RECEIVED">
+    </task>
+    <task name="Task.WININET_TCP_CONNECTION" value="514" eventGUID="5ceb79f1-d7a6-41ee-bb31-82e69ffd11c4" message="WININET_TCP_CONNECTION">
+    </task>
+    <task name="Task.WININET_DNS_QUERY" value="515" eventGUID="b9ccfbb5-e742-454a-a4dd-8380ca888e21" message="WININET_DNS_QUERY">
+    </task>
+    <task name="Task.WININET_NETWORK_CHANGE_DETECTED" value="516" eventGUID="f2f784ac-9cf4-4e49-b0aa-7ae556034bf4" message="WININET_NETWORK_CHANGE_DETECTED">
+    </task>
+    <task name="Task.WININET_COOKIE_HEADER_RECEIVED" value="517" eventGUID="87fc04e7-29fc-46c9-825f-576b71790812" message="WININET_COOKIE_HEADER_RECEIVED">
+    </task>
+    <task name="Task.WININET_COOKIE_STORED" value="518" eventGUID="1142ba7d-3a70-466c-bb94-1c1f204f984d" message="WININET_COOKIE_STORED">
+    </task>
+    <task name="Task.WININET_COOKIE_DELETED" value="519" eventGUID="e1f6c63a-4385-41bc-a468-9f13b33b3bca" message="WININET_COOKIE_DELETED">
+    </task>
+    <task name="Task.WININET_COOKIE_BLOCKED" value="520" eventGUID="a0659ab0-0ff8-43b3-8355-2b48753f4736" message="WININET_COOKIE_BLOCKED">
+    </task>
+    <task name="Task.WININET_COOKIE_P3P_REJECTED" value="521" eventGUID="dd497e9a-9cbc-46c1-8180-557a8466123e" message="WININET_COOKIE_P3P_REJECTED">
+    </task>
+    <task name="Task.WININET_COOKIE_REQUEST_HEADER_CREATED" value="522" eventGUID="15cd9374-ad1f-44dd-b403-26f06ac678fe" message="WININET_COOKIE_REQUEST_HEADER_CREATED">
+    </task>
+    <task name="Task.WININET_COOKIE_ADDED_TO_HEADER" value="523" eventGUID="a1734aef-debb-49f6-96ce-8580fa644307" message="WININET_COOKIE_ADDED_TO_HEADER">
+    </task>
+    <task name="Task.WININET_AUTH_RESPONSE_RECEIVED" value="524" eventGUID="e949a270-2ac2-4468-90bb-d83ee7079d02" message="WININET_AUTH_RESPONSE_RECEIVED">
+    </task>
+    <task name="Task.WININET_AUTH_CLIENT_SETS_USERNAME" value="525" eventGUID="5c28ef8b-11da-4aee-a8be-de3539432f6b" message="WININET_AUTH_CLIENT_SETS_USERNAME">
+    </task>
+    <task name="Task.WININET_AUTH_CLIENT_SETS_PASSWORD" value="526" eventGUID="a86e8ba8-3f57-415d-9cf6-7a0d8f25f326" message="WININET_AUTH_CLIENT_SETS_PASSWORD">
+    </task>
+    <task name="Task.WININET_AUTH_USING_CACHED_CREDS" value="527" eventGUID="34d9bf0f-b2a8-4641-9243-ae50bbd3d2fe" message="WININET_AUTH_USING_CACHED_CREDS">
+    </task>
+    <task name="Task.WININET_AUTH_USING_DEFAULT_CREDS" value="528" eventGUID="cb3e0125-b2b8-4e3e-abe3-505d0d9175d9" message="WININET_AUTH_USING_DEFAULT_CREDS">
+    </task>
+    <task name="Task.WININET_AUTH_CLIENT_ADD_HEADERS" value="529" eventGUID="ef584c25-5247-4ee7-8c60-cb8cdfea711b" message="WININET_AUTH_CLIENT_ADD_HEADERS">
+    </task>
+    <task name="Task.WININET_HTTPS_NEGOTIATION" value="530" eventGUID="bc8c57bf-77bf-4d07-90fd-56bdfca1a5f8" message="WININET_HTTPS_NEGOTIATION">
+    </task>
+    <task name="Task.WININET_HTTPS_SERVER_CERT_ERROR" value="531" eventGUID="70b7650f-a86b-4178-9043-46ade449560a" message="WININET_HTTPS_SERVER_CERT_ERROR">
+    </task>
+    <task name="Task.WININET_HTTPS_SERVER_CERT_VALIDATED" value="532" eventGUID="faeefe5e-588e-46b5-a54e-c0394704da60" message="WININET_HTTPS_SERVER_CERT_VALIDATED">
+    </task>
+    <task name="Task.WININET_HTTPS_CLIENT_CERT_REQUIRED" value="533" eventGUID="02160c88-6372-4136-b2f3-93c8dd51a52b" message="WININET_HTTPS_CLIENT_CERT_REQUIRED">
+    </task>
+    <task name="Task.WININET_HTTPS_CLIENT_CERT_UNAVAILABLE" value="534" eventGUID="90120269-0d93-4a73-bb38-cff54e36601f" message="WININET_HTTPS_CLIENT_CERT_UNAVAILABLE">
+    </task>
+    <task name="Task.WININET_HTTPS_CLIENT_CERT_SELECTED" value="535" eventGUID="711b318a-530c-44a7-b7d4-0c30b84630fa" message="WININET_HTTPS_CLIENT_CERT_SELECTED">
+    </task>
+    <task name="Task.WININET_HTTPS_RENEGOTIATION" value="536" eventGUID="4f1b1d9b-e789-4289-96ca-f721449fa274" message="WININET_HTTPS_RENEGOTIATION">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_SEARCH" value="537" eventGUID="d6cd9cb4-2ace-45b8-88fd-0123effa3680" message="WININET_AUTOPROXY_SEARCH">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_DHCP" value="538" eventGUID="10ba68fa-abdb-4b7f-9161-738f17cba720" message="WININET_AUTOPROXY_DHCP">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_DNS" value="539" eventGUID="0c28ce9c-23eb-4ddc-b498-b485d454877e" message="WININET_AUTOPROXY_DNS">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_DOWNLOAD" value="540" eventGUID="0019e197-5890-4396-9369-4a0a5601455c" message="WININET_AUTOPROXY_DOWNLOAD">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_FIND_INFO_FOR_URL" value="541" eventGUID="1141a787-cf0f-4ec6-b5f0-b048f0e79b75" message="WININET_AUTOPROXY_FIND_INFO_FOR_URL">
+    </task>
+    <task name="Task.WININET_TEST_EVENT" value="542" eventGUID="765cd866-d8dd-40eb-ab3e-214645ca3bff" message="WININET_TEST_EVENT">
+    </task>
+    <task name="Task.WININET_BLOCKING_AUTOPROXY_DETERMINATION" value="543" eventGUID="0244017f-bd84-4842-ae6c-62edd1fcb3dc" message="WININET_BLOCKING_AUTOPROXY_DETERMINATION">
+    </task>
+    <task name="Task.WININET_TRANSFER" value="544" eventGUID="2841d338-b65e-11dd-a808-35c955d89593" message="WININET_TRANSFER">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_SWPAD" value="545" eventGUID="2db3fd4c-e5b8-439e-9ca4-5a832ab7366d" message="WININET_AUTOPROXY_SWPAD">
+    </task>
+    <task name="Task.WININET_REQUEST_HEADER" value="546" eventGUID="2db3fd4c-e5b8-439e-9ca4-5a832ab7366e" message="WININET_REQUEST_HEADER">
+    </task>
+    <task name="Task.WININET_RESPONSE_HEADER" value="547" eventGUID="2db3fd4c-e5b8-439e-9ca4-5a832ab7366f" message="WININET_RESPONSE_HEADER">
+    </task>
+    <task name="Task.WININET_REQUEST_HEADER_OPTIONAL" value="548" eventGUID="2db3fd4c-e5b8-439e-9ca4-5a832ab73670" message="WININET_REQUEST_HEADER_OPTIONAL">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUP" value="580" eventGUID="0244017f-bd84-4842-ae6c-62edd1fcb3dd" message="WININET_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUP">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_PERFTRACK_SWPAD_LOOKUP" value="581" eventGUID="0244017f-bd84-4842-ae6c-62edd1fcb3de" message="WININET_AUTOPROXY_PERFTRACK_SWPAD_LOOKUP">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_PERFTRACK_KNOWN_DETECTION" value="582" eventGUID="0244017f-bd84-4842-ae6c-62edd1fcb3df" message="WININET_AUTOPROXY_PERFTRACK_KNOWN_DETECTION">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTION" value="583" eventGUID="0244017f-bd84-4842-ae6c-62edd1fcb3e0" message="WININET_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTION">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOAD" value="584" eventGUID="0244017f-bd84-4842-ae6c-62edd1fcb3e1" message="WININET_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOAD">
+    </task>
+    <task name="Task.WININET_AUTOPROXY_PERFTRACK_ALL" value="587" eventGUID="0244017f-bd84-4842-ae6c-62edd1fcb3e4" message="WININET_AUTOPROXY_PERFTRACK_ALL">
+    </task>
+    <task name="Task.WININET_HTTP_RESPONSE_BODY_READ_ERROR" value="588" eventGUID="7d1013fc-bca0-461b-ace4-32795a068273" message="WININET_HTTP_RESPONSE_BODY_READ_ERROR">
+    </task>
+    <task name="Task.WININET_STREAM_DATA_INDICATED" value="589" eventGUID="4ad883ab-6a8b-4e5d-9697-8790bf64c509" message="WININET_STREAM_DATA_INDICATED">
+    </task>
+    <task name="Task.WININET_APPLICATION_OFFLINE_CHECK" value="590" eventGUID="844e68d6-2a68-44f6-87e9-1c3ece5e2de8" message="WININET_APPLICATION_OFFLINE_CHECK">
+    </task>
+    <task name="Wininet_SendRequest" value="550" eventGUID="1d2564e9-5dd0-459d-bc61-dda2112cc7b1" message="">
+    </task>
+    <task name="Wininet_OfflineCacheLookup" value="551" eventGUID="cb8a368e-3d08-4b1d-b71c-5eb06f20a9c7" message="">
+    </task>
+    <task name="Wininet_OfflineCacheHit" value="552" eventGUID="e8263b87-b440-41f8-9028-aad4d78c4dc1" message="">
+    </task>
+    <task name="Wininet_OfflineCacheMiss" value="553" eventGUID="103473e0-8bfc-490a-931c-1d6077839e6c" message="">
+    </task>
+    <task name="Wininet_PreNet_CacheLookup" value="554" eventGUID="a038d3ad-2b2a-4f94-9444-be503edbffaf" message="">
+    </task>
+    <task name="Wininet_PreNet_CacheHit" value="555" eventGUID="aef05db5-b818-4a9c-b753-3fce6f554776" message="">
+    </task>
+    <task name="Wininet_PreNet_CacheMiss" value="556" eventGUID="bc22d8c3-2cd0-413e-aa67-ffa645249c5f" message="">
+    </task>
+    <task name="Wininet_PostNet_CacheLookup" value="557" eventGUID="022298ed-be3a-4942-97f0-adcfd9be297b" message="">
+    </task>
+    <task name="Wininet_PostNet_CacheHit" value="558" eventGUID="f64c1ae1-9abc-47e6-a9b6-645599e3b809" message="">
+    </task>
+    <task name="Wininet_PostNet_CacheMiss" value="559" eventGUID="a88f3333-f322-4e06-abb7-11ec2c52fe38" message="">
+    </task>
+    <task name="Wininet_AutodialIfNotLocalHost" value="560" eventGUID="99308757-fd97-4e66-8e78-470ffd075ff7" message="">
+    </task>
+    <task name="Wininet_ResolveHost" value="561" eventGUID="640005e9-f6ac-4ccf-a695-af15e5aaffc5" message="">
+    </task>
+    <task name="Wininet_SendRequest_Main" value="562" eventGUID="8735aad0-3612-46fa-9d09-ef971bfc239f" message="">
+    </task>
+    <task name="Wininet_SendRequest_Extra" value="563" eventGUID="5fadbaf1-59a6-4695-807a-7765b889d270" message="">
+    </task>
+    <task name="Wininet_SendRequest_CRLF" value="564" eventGUID="23d46afc-e223-4d34-924f-a5286e63ac99" message="">
+    </task>
+    <task name="Wininet_ReadData" value="565" eventGUID="93b3f7b1-498f-4c27-bcd8-2e6e349a0952" message="">
+    </task>
+    <task name="Wininet_ReadDataPostReceiveBuf" value="566" eventGUID="ae44912e-b3ce-4507-9a89-438301185433" message="">
+    </task>
+    <task name="Wininet_SendRequest_PostReceiveBuf" value="567" eventGUID="f5efb3f2-b46e-4ef8-bf7e-776e21b5b8bd" message="">
+    </task>
+    <task name="Wininet_DrainResponsePostReceiveBuf" value="568" eventGUID="d2a3bc3e-77cc-42ea-813e-2d64d6f627bb" message="">
+    </task>
+    <task name="Wininet_Connect" value="569" eventGUID="92e53a87-5999-48f0-aa63-05165adaf1ea" message="">
+    </task>
+    <task name="Wininet_LookupConnection" value="570" eventGUID="b4d84cf3-9d15-42a4-9634-29ee03f82dc4" message="">
+    </task>
+    <task name="Wininet_Redirect" value="571" eventGUID="24f5076f-dd64-4d42-984e-ec8ec00d0039" message="">
+    </task>
+    <task name="Wininet_Getaddrinfo" value="572" eventGUID="33693a19-b557-4d17-959a-da0e52fd85a3" message="">
+    </task>
+    <task name="Wininet_DHCP_I252WPAD" value="573" eventGUID="c00791f0-7f96-4e70-a217-531809185265" message="">
+    </task>
+    <task name="Wininet_Select" value="574" eventGUID="7168a4e4-b2e0-425b-88f0-99c89bf2a618" message="">
+    </task>
+    <task name="Wininet_UsageLogRequest" value="575" eventGUID="0f09b1ad-2869-4456-a9b7-77a9d89eca64" message="">
+    </task>
+    <task name="Wininet_UsageLogScavenge" value="576" eventGUID="fe2fd393-70bb-4851-a38e-99859f3846f8" message="">
+    </task>
+    <task name="Wininet_SocketConnect" value="577" eventGUID="db3bd968-bdc0-43ed-9c85-5c245b5c588a" message="">
+    </task>
+    <task name="Wininet_AppCacheLookup" value="578" eventGUID="523d5687-3ee6-4ae8-b1eb-35a621190774" message="">
+    </task>
+    <task name="Wininet_RequestPrioritySet" value="579" eventGUID="6ba53bed-ce64-4671-a085-592e1c21d455" message="">
+    </task>
+    <task name="Wininet_WebSocketUpgrade" value="600" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Wininet_WebSocketSession" value="601" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="WININET_KEYWORD_HANDLES" mask="1" message="Flagged on all WinINet events dealing with creation or destruction of INTERNET handles">
+    </keyword>
+    <keyword name="WININET_KEYWORD_HTTP" mask="2" message="Flagged on all WinINet events dealing with processing of HTTP requests and responses">
+    </keyword>
+    <keyword name="WININET_KEYWORD_CONNECTION" mask="4" message="Flagged on all WinINet events dealing with network operations (TCP, DNS)">
+    </keyword>
+    <keyword name="WININET_KEYWORD_AUTH" mask="8" message="Flagged on all WinINet events dealing with authentication">
+    </keyword>
+    <keyword name="WININET_KEYWORD_HTTPS" mask="10" message="Flagged on all WinINet events dealing with HTTPS">
+    </keyword>
+    <keyword name="WININET_KEYWORD_AUTOPROXY" mask="20" message="Flagged on all WinINet events dealing with AUTOPROXY">
+    </keyword>
+    <keyword name="WININET_KEYWORD_COOKIES" mask="40" message="Flagged on all WinINet events dealing with Cookies">
+    </keyword>
+    <keyword name="WININET_KEYWORD_IE" mask="80" message="Flagged on all WinINet IE events">
+    </keyword>
+    <keyword name="WININET_KEYWORD_AOAC" mask="100" message="">
+    </keyword>
+    <keyword name="WININET_KEYWORD_SEND" mask="100000000" message="Flagged on all WinINet events dealing with sending packet capture ">
+    </keyword>
+    <keyword name="WININET_KEYWORD_RECEIVE" mask="200000000" message="Flagged on all WinINet events dealing with receiving packet capture">
+    </keyword>
+    <keyword name="WININET_KEYWORD_MOBILE" mask="400000000" message="Flagged on all WinINet events relevant only to Mobile SKUs">
+    </keyword>
+    <keyword name="WININET_KEYWORD_PII_PRESENT" mask="20000000000" message="Flagged on all WinINet events dealing with potential personally identifiable information">
+    </keyword>
+    <keyword name="WININET_KEYWORD_PACKET" mask="40000000000" message="Flagged on all WinINet events dealing with packet capture">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="0" channel="16" level="4" task="500" keywords="0x8000000000000001" message="Session handle %1 created: UserAgent=%3, AccessType=%5, ProxyList=%7, ProxyBypassList=%9, Flags=%10">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="4" task="501" keywords="0x8000000000000001" message="Handle %1 created by InternetOpenURL: SessionHandle=%2,URL=%4, Headers=%6, Flags=%7">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="4" task="502" keywords="0x8000000000000001" message="Handle %1 created by InternetConnect: SessionHandle=%2, Server=%4:%5, %7, Flags=%8">
+    </event>
+    <event value="104" version="0" opcode="0" channel="16" level="4" task="503" keywords="0x8000000000000001" message="Request handle %1 created by HttpOpenRequest: ConnectionHandle=%2, %4, Target=%6, Ver=%8, Referrer=%10, Media types=%12, Flags=%13">
+    </event>
+    <event value="105" version="0" opcode="0" channel="16" level="4" task="504" keywords="0x8000000000000001" message="Handle %1 closed successfully">
+    </event>
+    <event value="106" version="0" opcode="0" channel="16" level="2" task="505" keywords="0x8000000000000001" message="Failed to create handle: ParentHandle=%1, Error=%2">
+    </event>
+    <event value="107" version="0" opcode="0" channel="16" level="2" task="506" keywords="0x8000000000000001" message="Handle %1 failed to close: Error=%2">
+    </event>
+    <event value="108" version="0" opcode="0" channel="16" level="4" task="503" keywords="0x8000000000000001" message="Request handle %1 Server Details: Server=%3 Port=%4 Service=%6">
+    </event>
+    <event value="200" version="0" opcode="1" channel="16" level="4" task="507" keywords="0x8000000000000002" message="HTTP request was received from API: RequestHandle=%1">
+    </event>
+    <event value="200" version="1" opcode="1" channel="16" level="4" task="507" keywords="0x8000000000000002" message="HTTP request was received from API: RequestHandle=%1, RequestContext=%2">
+    </event>
+    <event value="201" version="0" opcode="2" channel="16" level="4" task="507" keywords="0x8000000000000002" message="HTTP request was sent successfully: RequestHandle=%1, SocketHandle=%2, %4, CookieSent= %5">
+    </event>
+    <event value="202" version="0" opcode="11" channel="16" level="2" task="507" keywords="0x8000000000000102" message="HTTP request send failed: Handle=%1, Error=%2">
+    </event>
+    <event value="203" version="0" opcode="2" channel="16" level="4" task="508" keywords="0x8000000000000002" message="HTTP response (%1) received: RequestHandle=%2, SocketHandle=%3, %5, ContentLength=%7">
+    </event>
+    <event value="204" version="0" opcode="11" channel="16" level="4" task="508" keywords="0x8000000000000102" message="HTTP response failed: Handle=%1, Error=%2">
+    </event>
+    <event value="205" version="0" opcode="0" channel="16" level="4" task="509" keywords="0x8000000000000002" message="HTTP connection (Handle=%1, SocketHandle=%2) closed due to the following reason: %4">
+    </event>
+    <event value="206" version="0" opcode="0" channel="16" level="4" task="510" keywords="0x8000000000000002" message="Keep-alive connection is re-used: ConnectionHandle=%1, SocketHandle=%2">
+    </event>
+    <event value="207" version="0" opcode="0" channel="16" level="4" task="511" keywords="0x8000000000000002" message="Connection is returned to keep-alive pool: RequestHandle=%1, SocketHandle=%2">
+    </event>
+    <event value="208" version="0" opcode="0" channel="16" level="4" task="512" keywords="0x8000000000000002" message="Keep-alive connection is closed: ConnectionHandle=%1, SocketHandle=%2">
+    </event>
+    <event value="209" version="0" opcode="0" channel="16" level="4" task="513" keywords="0x8000000000000002" message="HTTP response entity body received: RequestHandle=%1">
+    </event>
+    <event value="210" version="0" opcode="0" channel="16" level="5" task="546" keywords="0x8000020000000002" message="HTTP Request Headers RequestHandle=%1 %3">
+    </event>
+    <event value="211" version="0" opcode="0" channel="16" level="5" task="547" keywords="0x8000020000000002" message="HTTP Response Headers RequestHandle=%1 %3">
+    </event>
+    <event value="212" version="0" opcode="0" channel="16" level="5" task="548" keywords="0x8000020000000002" message="HTTP Request Headers OptionalData RequestHandle=%1 %3">
+    </event>
+    <event value="213" version="0" opcode="0" channel="16" level="4" task="588" keywords="0x8000000000000102" message="WinInet::Http response entity body receive failed: Request Handle=%1, Error=%2">
+    </event>
+    <event value="301" version="0" opcode="1" channel="16" level="4" task="514" keywords="0x8000000000000004" message="TCP connection to server %2 established: ConnectionHandle=%3, SocketHandle=%4, LocalPort=%5">
+    </event>
+    <event value="302" version="0" opcode="11" channel="16" level="2" task="514" keywords="0x8000000000000104" message="TCP connection to %2 for connection handle %3 failed: Error=%4">
+    </event>
+    <event value="303" version="0" opcode="2" channel="16" level="4" task="514" keywords="0x8000000000000004" message="TCP connection closed successfully: SocketHandle=%1">
+    </event>
+    <event value="304" version="0" opcode="1" channel="16" level="4" task="515" keywords="0x8000000000000004" message="DNS query for %2 hostname is sent: Handle=%3">
+    </event>
+    <event value="305" version="0" opcode="2" channel="16" level="4" task="515" keywords="0x8000000000000004" message="DNS query for %2 hostname is complete: Handle=%3, Addresses=%5">
+    </event>
+    <event value="306" version="0" opcode="11" channel="16" level="2" task="515" keywords="0x8000000000000104" message="DNS query for %2 hostname failed: Handle=%3 Error=%4">
+    </event>
+    <event value="307" version="0" opcode="2" channel="16" level="4" task="515" keywords="0x8000000000000004" message="Re-used DNS cache, query for %2 hostname is complete: Handle=%3, Addresses=%5">
+    </event>
+    <event value="308" version="0" opcode="0" channel="16" level="4" task="516" keywords="0x8000000000000004" message="A network change was detected: Handle=%1">
+    </event>
+    <event value="400" version="0" opcode="0" channel="18" level="4" task="600" keywords="0x2000020000000000" message="">
+    </event>
+    <event value="401" version="0" opcode="0" channel="18" level="4" task="600" keywords="0x2000020000000000" message="">
+    </event>
+    <event value="402" version="0" opcode="1" channel="18" level="4" task="601" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="403" version="0" opcode="2" channel="18" level="4" task="601" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="404" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000020000000000" message="">
+    </event>
+    <event value="405" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000020000000000" message="">
+    </event>
+    <event value="406" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="407" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="408" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="409" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="410" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="411" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="412" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="413" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="414" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000060100000000" message="">
+    </event>
+    <event value="415" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000060200000000" message="">
+    </event>
+    <event value="416" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000060100000000" message="">
+    </event>
+    <event value="417" version="0" opcode="0" channel="18" level="4" task="601" keywords="0x2000060200000000" message="">
+    </event>
+    <event value="501" version="0" opcode="0" channel="16" level="4" task="517" keywords="0x8000000000000040" message="Received response including a cookie header: URL=%2">
+    </event>
+    <event value="502" version="0" opcode="0" channel="16" level="5" task="518" keywords="0x8000000000000040" message="Client has stored a cookie in the cookie jar: Domain=%2, Path=%4, Name=%6, Value=%8">
+    </event>
+    <event value="503" version="0" opcode="0" channel="16" level="4" task="519" keywords="0x8000000000000040" message="Client has deleted a cookie in the cookie jar: Domain=%2, Path=%4, Name=%6, Value=%8">
+    </event>
+    <event value="504" version="0" opcode="0" channel="16" level="4" task="520" keywords="0x8000000000000040" message="Client has rejected a cookie sent by the server: Domain=%2, Path=%4, Name=%6, Value=%8">
+    </event>
+    <event value="505" version="0" opcode="0" channel="16" level="4" task="521" keywords="0x8000000000000040" message="Server cookie was rejected by the client&apos;s P3P policy: Domain=%2, Path=%4, Name=%6, Value=%8">
+    </event>
+    <event value="506" version="0" opcode="0" channel="16" level="4" task="522" keywords="0x8000000000000040" message="A cookie header was created for the request: URL=%2">
+    </event>
+    <event value="507" version="0" opcode="0" channel="16" level="5" task="523" keywords="0x8000000000000040" message="Cookie added to the request header: Domain=%2, Path=%4, Name=%6, Value=%8">
+    </event>
+    <event value="601" version="0" opcode="0" channel="16" level="4" task="524" keywords="0x8000000000000008" message="Auth response received: RequestHandle=%1, Scheme=%3, IsProxy=%4">
+    </event>
+    <event value="602" version="0" opcode="0" channel="16" level="4" task="525" keywords="0x8000000000000008" message="Client sets username: RequestHandle=%1, IsProxy=%2">
+    </event>
+    <event value="603" version="0" opcode="0" channel="16" level="4" task="526" keywords="0x8000000000000008" message="Client sets password: RequestHandle=%1, IsProxy=%2">
+    </event>
+    <event value="604" version="0" opcode="0" channel="16" level="4" task="527" keywords="0x8000000000000008" message="Using cached credentials: RequestHandle=%1, IsProxy=%2">
+    </event>
+    <event value="605" version="0" opcode="0" channel="16" level="4" task="528" keywords="0x8000000000000008" message="Using default credentials: RequestHandle=%1, IsProxy=%2">
+    </event>
+    <event value="606" version="0" opcode="0" channel="16" level="4" task="529" keywords="0x8000000000000008" message="Client adds authorization headers to an HTTP request: RequestHandle=%1, Scheme=%3, IsProxy=%4">
+    </event>
+    <event value="701" version="0" opcode="1" channel="16" level="4" task="530" keywords="0x8000000000000010" message="Client begins SSL negotiation: RequestHandle=%1">
+    </event>
+    <event value="702" version="0" opcode="2" channel="16" level="4" task="530" keywords="0x8000000000000010" message="SSL negotiation between client and server has completed successfully: RequestHandle=%1">
+    </event>
+    <event value="703" version="0" opcode="11" channel="16" level="2" task="530" keywords="0x8000000000000110" message="SSL negotiation failed: RequestHandle=%1, Error=%2">
+    </event>
+    <event value="704" version="0" opcode="0" channel="16" level="2" task="531" keywords="0x8000000000000110" message="Error validating server certificate (SCHANNEL error): RequestHandle=%1, Error=%2">
+    </event>
+    <event value="705" version="0" opcode="0" channel="16" level="4" task="532" keywords="0x8000000000000010" message="Server certificate validated: RequestHandle=%1, CertHash=%3, WarningFlags=%4">
+    </event>
+    <event value="706" version="0" opcode="0" channel="16" level="4" task="533" keywords="0x8000000000000010" message="Server requires a client certificate for client authorization: RequestHandle=%1">
+    </event>
+    <event value="707" version="0" opcode="0" channel="16" level="2" task="534" keywords="0x8000000000000110" message="There is no client certificate available: RequestHandle=%1">
+    </event>
+    <event value="708" version="0" opcode="0" channel="16" level="4" task="535" keywords="0x8000000000000010" message="The selected client certificate will be used for the SSL transaction: RequestHandle=%1, CertHash=%3">
+    </event>
+    <event value="711" version="0" opcode="1" channel="16" level="4" task="536" keywords="0x8000000000000010" message="Client begins SSL renegotiation: RequestHandle=%1">
+    </event>
+    <event value="712" version="0" opcode="2" channel="16" level="4" task="536" keywords="0x8000000000000010" message="SSL renegotiation between client and server has completed successfully: RequestHandle=%1">
+    </event>
+    <event value="713" version="0" opcode="11" channel="16" level="2" task="536" keywords="0x8000000000000110" message="SSL renegotiation failed: RequestHandle=%1, Error=%2">
+    </event>
+    <event value="801" version="0" opcode="1" channel="16" level="4" task="537" keywords="0x8000000000000020" message="Client begins attempts to locate the WPAD configuration file: ConnectionName=%2, DetectFlags=%3">
+    </event>
+    <event value="801" version="1" opcode="1" channel="16" level="4" task="537" keywords="0x8000000000000020" message="Client begins attempts to locate the WPAD configuration file: ConnectionName=%2, DetectFlags=%3">
+    </event>
+    <event value="802" version="0" opcode="1" channel="16" level="5" task="538" keywords="0x8000000000000020" message="Begin search for configuration file using DHCP: Interface=%2">
+    </event>
+    <event value="802" version="1" opcode="1" channel="16" level="5" task="538" keywords="0x8000000000000020" message="Begin search for configuration file using DHCP: Interface=%2">
+    </event>
+    <event value="803" version="0" opcode="2" channel="16" level="5" task="538" keywords="0x8000000000000020" message="WPAD configuration file found using DHCP: Interface=%2, ConfigurationURL=%4">
+    </event>
+    <event value="803" version="1" opcode="2" channel="16" level="5" task="538" keywords="0x8000000000000020" message="WPAD configuration file found using DHCP: Interface=%2, ConfigurationURL=%4">
+    </event>
+    <event value="804" version="0" opcode="11" channel="16" level="2" task="538" keywords="0x8000000000000120" message="Search for WPAD configuration file using DHCP failed: Interface=%2, ConfigurationURL=%4, Error=%5">
+    </event>
+    <event value="804" version="1" opcode="11" channel="16" level="2" task="538" keywords="0x8000000000000120" message="Search for WPAD configuration file using DHCP failed: Interface=%2, ConfigurationURL=%4, Error=%5">
+    </event>
+    <event value="805" version="0" opcode="1" channel="16" level="5" task="539" keywords="0x8000000000000020" message="Begin search for configuration file using DNS: DetectFlags=%1">
+    </event>
+    <event value="806" version="0" opcode="2" channel="16" level="5" task="539" keywords="0x8000000000000020" message="WPAD configuration file found using DNS: ConfigurationURL=%2, DetectFlags=%3">
+    </event>
+    <event value="806" version="1" opcode="2" channel="16" level="5" task="539" keywords="0x8000000000000020" message="WPAD configuration file found using DNS: ConfigurationURL=%2, DetectFlags=%3">
+    </event>
+    <event value="807" version="0" opcode="11" channel="16" level="2" task="539" keywords="0x8000000000000120" message="Search for WPAD configuration file using DNS failed: DetectFlags=%1, Error=%2">
+    </event>
+    <event value="808" version="0" opcode="11" channel="16" level="2" task="537" keywords="0x8000000000000120" message="Search for WPAD configruation file failed: Error=%1">
+    </event>
+    <event value="809" version="0" opcode="1" channel="16" level="4" task="540" keywords="0x8000000000000020" message="Begin downloading the configuration file from the configuration URL: ConfigurationURL=%2">
+    </event>
+    <event value="809" version="1" opcode="1" channel="16" level="4" task="540" keywords="0x8000000000000020" message="Begin downloading the configuration file from the configuration URL: ConfigurationURL=%2">
+    </event>
+    <event value="810" version="0" opcode="2" channel="16" level="4" task="540" keywords="0x8000000000000020" message="Client successfully downloaded the configuration file from the configuration URL: ConfigurationURL=%2">
+    </event>
+    <event value="810" version="1" opcode="2" channel="16" level="4" task="540" keywords="0x8000000000000020" message="Client successfully downloaded the configuration file from the configuration URL: ConfigurationURL=%2">
+    </event>
+    <event value="811" version="0" opcode="11" channel="16" level="2" task="540" keywords="0x8000000000000120" message="Downloading the configuration file from the configuration URL failed: ConfigurationURL=%2, Error=%3">
+    </event>
+    <event value="811" version="1" opcode="11" channel="16" level="2" task="540" keywords="0x8000000000000120" message="Downloading the configuration file from the configuration URL failed: ConfigurationURL=%2, Error=%3">
+    </event>
+    <event value="812" version="0" opcode="11" channel="16" level="2" task="540" keywords="0x8000000000000120" message="The downloaded configuration file could not be used: ConfigurationURL=%2, MIMEType=%4, Error=%5">
+    </event>
+    <event value="812" version="1" opcode="11" channel="16" level="2" task="540" keywords="0x8000000000000120" message="The downloaded configuration file could not be used: ConfigurationURL=%2, MIMEType=%4, Error=%5">
+    </event>
+    <event value="813" version="0" opcode="1" channel="16" level="4" task="541" keywords="0x8000000000000020" message="Searching for Proxy Information for the URL: URL=%2">
+    </event>
+    <event value="813" version="1" opcode="1" channel="16" level="4" task="541" keywords="0x8000000000000020" message="Searching for Proxy Information for the URL: URL=%2">
+    </event>
+    <event value="814" version="0" opcode="2" channel="16" level="4" task="541" keywords="0x8000000000000020" message="Client has successfully retrieved proxy data for accessing a specified resource: URL=%2, ProxyString=%4">
+    </event>
+    <event value="814" version="1" opcode="2" channel="16" level="4" task="541" keywords="0x8000000000000020" message="Client has successfully retrieved proxy data for accessing a specified resource: URL=%2, ProxyString=%4">
+    </event>
+    <event value="815" version="0" opcode="11" channel="16" level="2" task="541" keywords="0x8000000000000120" message="Error locating proxy information for the URL: URL=%2, Error=%3">
+    </event>
+    <event value="815" version="1" opcode="11" channel="16" level="2" task="541" keywords="0x8000000000000120" message="Error locating proxy information for the URL: URL=%2, Error=%3">
+    </event>
+    <event value="816" version="0" opcode="1" channel="16" level="4" task="543" keywords="0x8001000000000020" message="Blocking autoproxy determination started">
+    </event>
+    <event value="817" version="0" opcode="2" channel="16" level="4" task="543" keywords="0x8001000000000020" message="Blocking autoproxy determination stopped">
+    </event>
+    <event value="818" version="0" opcode="0" channel="16" level="4" task="544" keywords="0x8000000000000001" message="WinInet Activity Transfer Event">
+    </event>
+    <event value="819" version="0" opcode="0" channel="16" level="4" task="545" keywords="0x8000000000000020" message="AutoProxy SWPAD Decision (%1) NumConnections (%2)">
+    </event>
+    <event value="820" version="0" opcode="1" channel="16" level="4" task="580" keywords="0x8001000000000020" message="Autoproxy host IP lookup started">
+    </event>
+    <event value="821" version="0" opcode="2" channel="16" level="4" task="580" keywords="0x8001000000000020" message="Autoproxy host IP lookup stopped">
+    </event>
+    <event value="822" version="0" opcode="1" channel="16" level="4" task="581" keywords="0x8001000000000020" message="Autoproxy SWPAD lookup started">
+    </event>
+    <event value="823" version="0" opcode="2" channel="16" level="4" task="581" keywords="0x8001000000000020" message="Autoproxy SWPAD lookup stopped">
+    </event>
+    <event value="824" version="0" opcode="1" channel="16" level="4" task="582" keywords="0x8001000000000020" message="Autoproxy Detection with SWPAD ON started">
+    </event>
+    <event value="825" version="0" opcode="2" channel="16" level="4" task="582" keywords="0x8001000000000020" message="Autoproxy Detection with SWPAD ON stopped">
+    </event>
+    <event value="826" version="0" opcode="1" channel="16" level="4" task="583" keywords="0x8001000000000020" message="Autoproxy Detection with SWPAD UNKNOWN started">
+    </event>
+    <event value="827" version="0" opcode="2" channel="16" level="4" task="583" keywords="0x8001000000000020" message="Autoproxy Detection with SWPAD UNKNOWN stopped">
+    </event>
+    <event value="828" version="0" opcode="1" channel="16" level="4" task="584" keywords="0x8001000000000020" message="Autoproxy Script Download Started">
+    </event>
+    <event value="829" version="0" opcode="2" channel="16" level="4" task="584" keywords="0x8001000000000020" message="Autoproxy Script Download Stopped">
+    </event>
+    <event value="834" version="0" opcode="1" channel="16" level="4" task="587" keywords="0x8001000000000020" message="Autoproxy full scenario started">
+    </event>
+    <event value="835" version="0" opcode="2" channel="16" level="4" task="587" keywords="0x8001000000000020" message="Autoproxy full scenario stopped">
+    </event>
+    <event value="901" version="0" opcode="1" channel="16" level="4" task="590" keywords="0x8000000400000000" message="Application offline check started">
+    </event>
+    <event value="902" version="0" opcode="2" channel="16" level="4" task="590" keywords="0x8000000400000000" message="Application offline check complete">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="542" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="1007" version="0" opcode="1" channel="16" level="4" task="550" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1008" version="0" opcode="2" channel="16" level="4" task="550" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="551" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="4" task="552" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="4" task="553" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="554" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="4" task="555" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="4" task="556" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="4" task="557" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="4" task="558" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="4" task="559" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1027" version="0" opcode="1" channel="16" level="4" task="560" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1028" version="0" opcode="2" channel="16" level="4" task="560" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1029" version="0" opcode="1" channel="16" level="4" task="561" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1030" version="0" opcode="2" channel="16" level="4" task="561" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1031" version="0" opcode="0" channel="16" level="4" task="562" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1033" version="0" opcode="0" channel="16" level="4" task="563" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1035" version="0" opcode="0" channel="16" level="4" task="564" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1037" version="0" opcode="0" channel="16" level="4" task="565" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1039" version="0" opcode="0" channel="16" level="4" task="566" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1041" version="0" opcode="0" channel="16" level="4" task="567" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1043" version="0" opcode="0" channel="16" level="4" task="568" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1045" version="0" opcode="1" channel="16" level="4" task="569" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1046" version="0" opcode="2" channel="16" level="4" task="569" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1046" version="1" opcode="2" channel="16" level="4" task="569" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1047" version="0" opcode="1" channel="16" level="4" task="570" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1048" version="0" opcode="2" channel="16" level="4" task="570" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1049" version="0" opcode="0" channel="16" level="4" task="571" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1051" version="0" opcode="1" channel="16" level="4" task="572" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1052" version="0" opcode="2" channel="16" level="4" task="572" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1053" version="0" opcode="1" channel="16" level="4" task="573" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1054" version="0" opcode="2" channel="16" level="4" task="573" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1055" version="0" opcode="1" channel="16" level="4" task="574" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1056" version="0" opcode="2" channel="16" level="4" task="574" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1057" version="0" opcode="0" channel="17" level="4" task="575" keywords="0x4000020000000000" message="Requested URL=%1 Verb=%2 RequestHeaders=%3 ResponseHeaders=%4 Status=%5 Cache=%6">
+    </event>
+    <event value="1058" version="0" opcode="0" channel="17" level="4" task="576" keywords="0x4000020000000000" message="Scavenged URL=%1">
+    </event>
+    <event value="1059" version="0" opcode="1" channel="16" level="4" task="577" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1060" version="0" opcode="2" channel="16" level="4" task="577" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1061" version="0" opcode="1" channel="16" level="4" task="578" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1062" version="0" opcode="2" channel="16" level="4" task="578" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1063" version="0" opcode="0" channel="16" level="4" task="579" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="1064" version="0" opcode="0" channel="16" level="4" task="589" keywords="0x8000000000000080" message="">
+    </event>
+  </events>
+</provider>

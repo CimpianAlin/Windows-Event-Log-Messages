@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SrumTelemetry" guid="48d445a8-2f64-4d49-b093-a5774d8dc531" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=energyprov.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\energyprov.dll" messageFileName="C:\Windows\system32\energyprov.dll" message="Microsoft-Windows-SrumTelemetry" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SrumTelemetry" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:DC_Stop" value="262144" message="DCStop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="E3Rundown" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="E3 History Task">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="E3Rundown1day" mask="1000" message="">
+    </keyword>
+    <keyword name="E3Rundown3day" mask="2000" message="">
+    </keyword>
+    <keyword name="E3Rundown7day" mask="4000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8001000000000000" message="BatteryDrainRate (%1), PowerBitpack (%2), Duration (%3), AppCpuCyclesBitpack (%4), TimeStamp (%5).">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8001000000000000" message="BatteryDrainRate (%1), PowerBitpack (%2), Duration (%3), AppCpuCyclesBitpack (%4), TimeStamp (%5).">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8001000000000000" message="PowerInMilliwatts (%1), CpuStatsBitpack (%2), DiskAndNetStatsBitPack (%3), DurationBitPack(%4), ModernAppPackageName (%5).">
+    </event>
+    <event value="3003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="PreviousBrightnessLevel (%1), PreviousBrightnessDurationInSeconds (%2), NewBrightnessLevel (%3)">
+    </event>
+    <event value="3004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="CurrentBrightnessLevel (%1)">
+    </event>
+    <event value="3005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8001000000000000" message="PreviousStateDurationInSections (%1), NewEnergySaverState (%2)">
+    </event>
+    <event value="3006" version="0" opcode="4" channel="16" level="4" task="1" keywords="0x8000000000000000" message="E3 History Rundown">
+    </event>
+  </events>
+</provider>

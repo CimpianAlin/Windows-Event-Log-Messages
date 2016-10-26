@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Ras-AgileVpn" guid="b5325cd6-438e-4ec1-aa46-14f46f2570e4" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=agilevpn.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\agilevpn.sys" messageFileName="C:\Windows\system32\drivers\agilevpn.sys" message="Microsoft-Windows-RRAS-AGILEVPN-Provider" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-RasAgileVpn/Debug" id="16" flags="0" message="Notification Channel">
+    </channel>
+    <channel name="Microsoft-Windows-RasAgileVpn/Operational" id="17" flags="0" message="Debug Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="AGILEVPN" mask="1" message="">
+    </keyword>
+    <keyword name="AGILEVPN_ADMIN" mask="2" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2100" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="%1">
+    </event>
+    <event value="2101" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000002" message="%1">
+    </event>
+    <event value="2102" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="%1">
+    </event>
+    <event value="2103" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000002" message="%1">
+    </event>
+    <event value="3100" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000001" message="%1">
+    </event>
+    <event value="3101" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="%1">
+    </event>
+    <event value="3102" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000001" message="%1">
+    </event>
+    <event value="3103" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="%1">
+    </event>
+    <event value="3104" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000001" message="%1 %2">
+    </event>
+    <event value="3105" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="%1 %2">
+    </event>
+    <event value="3106" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="%1 IPAddress: %2">
+    </event>
+    <event value="3201" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="(Packet(s):Number of packets:%1 Source Address:%2 Destination Address:%3 Source Port:%4 Destination Port:%5 Next Protocol:%6)">
+    </event>
+    <event value="3202" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000001" message="(Packet(s)Drop Reason %1 :Number of packets:%2 Source Address:%3 Destination Address:%4 Source Port:%5 Destination Port:%6 Next Protocol:%7)">
+    </event>
+    <event value="3203" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="AddressFamily:%1 Start Port:%2 End Port:%3 ProtocolID:%4 Start Address:%5 End Address:%6">
+    </event>
+    <event value="3204" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="UpdateTsInfo: for TS ID :%1 (fDelete:%2)">
+    </event>
+    <event value="3205" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="AgileVpnCmIncomingCallComplete called for tunnel ID %1: %2">
+    </event>
+  </events>
+</provider>

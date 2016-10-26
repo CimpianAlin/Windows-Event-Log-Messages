@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Input-HIDCLASS" guid="6465da78-e7a0-4f39-b084-8f53c7c30dc6" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=hidclass.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\hidclass.sys" messageFileName="C:\Windows\system32\drivers\hidclass.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Input-HIDCLASS-Analytic" id="16" flags="0" message="This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="INFORMATION" value="655360" message="Information">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="HIDCLASS_RUNDOWN" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="HIDCLASS Rundown">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Default" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Start Rundown">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Complete Rundown">
+    </event>
+    <event value="3" version="0" opcode="10" channel="16" level="4" task="0" keywords="0x8000000000000001" message="HIDCLASS device information">
+    </event>
+  </events>
+</provider>

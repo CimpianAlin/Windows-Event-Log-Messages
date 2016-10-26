@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-CloudStorageWizard" guid="9fc66dd7-98c7-4b83-8293-46a18439b03b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=CloudStorageWizard.exe&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\CloudStorageWizard.exe" messageFileName="C:\Windows\system32\CloudStorageWizard.exe" message="Microsoft-Windows-CloudStorageWizard" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-CloudStorageWizard/Operational" id="16" flags="0" message="Microsoft-Windows-CloudStorageWizard/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-CloudStorageWizard/Analytic" id="17" flags="0" message="Microsoft-Windows-CloudStorageWizard/Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ShowWizard" value="6001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UserInteraction" value="6002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShowBrowser" value="6003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Authentication" value="6004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Authentication_WaitForUser" value="6005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Authentication_RequestTicket" value="6006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="CloudStorageWizard" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="5001" version="0" opcode="1" channel="16" level="4" task="6001" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="5002" version="0" opcode="2" channel="16" level="4" task="6001" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="5003" version="0" opcode="1" channel="17" level="4" task="6001" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="5004" version="0" opcode="2" channel="16" level="4" task="6001" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="16" level="4" task="6002" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="17" level="4" task="6003" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="5007" version="0" opcode="1" channel="17" level="4" task="6001" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="5008" version="0" opcode="2" channel="17" level="4" task="6001" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="5009" version="0" opcode="1" channel="17" level="4" task="6004" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="5010" version="0" opcode="2" channel="17" level="4" task="6004" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="5011" version="0" opcode="1" channel="17" level="4" task="6005" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="5012" version="0" opcode="2" channel="17" level="4" task="6005" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="5013" version="0" opcode="1" channel="17" level="4" task="6006" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="5014" version="0" opcode="2" channel="17" level="4" task="6006" keywords="0x4000000000000001" message="">
+    </event>
+  </events>
+</provider>

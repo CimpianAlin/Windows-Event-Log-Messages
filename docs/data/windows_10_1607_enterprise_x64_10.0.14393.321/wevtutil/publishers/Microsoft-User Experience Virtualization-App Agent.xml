@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-User Experience Virtualization-App Agent" guid="1ed6976a-4171-4764-b415-7ea08bc46c51" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Microsoft.Uev.EventLogMessages.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\Microsoft.Uev.EventLogMessages.dll" messageFileName="C:\Windows\system32\Microsoft.Uev.EventLogMessages.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-User Experience Virtualization-App Agent/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-User Experience Virtualization-App Agent/Debug" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-User Experience Virtualization-App Agent/Analytic" id="18" flags="0" message="Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:LogAlways" value="0" message="Log Always">
+    </level>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="TemplateConsole" value="655360" message="">
+    </opcode>
+    <opcode name="UevGenerator" value="983040" message="UE-V Generator">
+    </opcode>
+    <opcode name="AppAgent" value="1048576" message="App Agent">
+    </opcode>
+    <opcode name="TrayApp" value="1114112" message="">
+    </opcode>
+    <opcode name="TemplateService" value="1179648" message="Template Service">
+    </opcode>
+    <opcode name="AgentService" value="1441792" message="Agent Service">
+    </opcode>
+    <opcode name="ApplySettingsLocationTemplateCatalog" value="1507328" message="Apply Settings Location Template Catalog">
+    </opcode>
+    <opcode name="CscTool" value="1638400" message="CSC Tool">
+    </opcode>
+    <opcode name="SyncController" value="1703936" message="Synchronization Controller">
+    </opcode>
+    <opcode name="AppMonitor" value="1769472" message="Application Monitor">
+    </opcode>
+    <opcode name="AppManagementConfiguration" value="2228224" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Install-Log-Task" value="10" eventGUID="a090ef76-eea0-4bd4-a7c3-82ca6eafc888" message="Install/uninstall, bootstrap parameters">
+    </task>
+    <task name="Agent-Runtime" value="20" eventGUID="9b568fc9-a798-4017-8e47-7710169ed80a" message="App Agent runtime">
+    </task>
+    <task name="Packager" value="30" eventGUID="ffc66045-6916-48eb-a2ba-ce8603dfc74d" message="Packager">
+    </task>
+    <task name="Synchronization" value="40" eventGUID="a7c22fbf-9b9c-4197-af1c-78762a593e5a" message="Local/remote change manager, offline files">
+    </task>
+    <task name="AgentService" value="50" eventGUID="e4fa07e8-35fb-42eb-afba-5d039e26b862" message="">
+    </task>
+    <task name="Configuration" value="60" eventGUID="3e841148-b238-4911-b349-f0511cf213ed" message="Configuration">
+    </task>
+    <task name="Injection" value="70" eventGUID="61c89927-4216-4bb6-851c-66a8c1b5680e" message="Code Injection">
+    </task>
+    <task name="ServiceControl" value="110" eventGUID="02cc2762-c83f-46b1-a689-faa433cbd08d" message="Service Control">
+    </task>
+    <task name="TemplateProcessing" value="80" eventGUID="6cb57a15-c9f9-4b4d-bd21-4491bff45356" message="">
+    </task>
+    <task name="SettingsTemplateCatalogProcessing" value="90" eventGUID="771a38bf-ab52-434f-becc-31b889070f1c" message="Settings Template Catalog Processing">
+    </task>
+    <task name="Orchestrator" value="120" eventGUID="1cc44327-6fef-4031-a7d1-1c760bce39e0" message="Orchestrator">
+    </task>
+    <task name="SynchronizationToFilesystem" value="1" eventGUID="8ae85121-52b2-4890-a2ed-7a9705e637e5" message="Synchronization to filesystem">
+    </task>
+    <task name="SettingsDiscovery" value="130" eventGUID="21b5a23e-f55e-484e-a591-a342da8c63fa" message="UEVGenerator">
+    </task>
+    <task name="LocalStore" value="140" eventGUID="12ed7dc1-3a4b-487a-a794-dac591acea9f" message="LocalStore">
+    </task>
+    <task name="OfflineFilesOperations" value="150" eventGUID="c84c2af7-773c-4218-a239-f9bb98ff3fab" message="Offline Files Operations">
+    </task>
+    <task name="DBG-AppAgent" value="1001" eventGUID="6670ba77-ccc3-49f1-9990-bf17621a9e52" message="AppAgent">
+    </task>
+    <task name="DBG-AgentService" value="1002" eventGUID="01013e9a-b13a-4092-b18e-a1e7fc89af8a" message="AgentService">
+    </task>
+    <task name="DBG-AppAgentCommon" value="1003" eventGUID="75cada97-58a4-499c-963a-0d749d101782" message="AppAgentCommon">
+    </task>
+    <task name="DBG-UevCommon" value="1004" eventGUID="44878c5b-a7b9-443f-8991-52a204cf0538" message="UevCommon">
+    </task>
+    <task name="DBG-ChangeManager" value="1005" eventGUID="916bbd7c-ea0f-47c1-b6c5-1b0cc5214edf" message="ChangeManager">
+    </task>
+    <task name="DBG-Configuration" value="1006" eventGUID="55077306-ce97-4489-afe1-41e23ae5029d" message="Configuration">
+    </task>
+    <task name="DBG-CscChangeManager" value="1007" eventGUID="f67af0f4-7588-4fd0-af4e-3fdd4310a5d9" message="CscChangeManager">
+    </task>
+    <task name="DBG-CscTool" value="1008" eventGUID="b6d8a9ee-a9b7-415a-afd0-55227196cf0f" message="CscTool">
+    </task>
+    <task name="DBG-LocalStore" value="1009" eventGUID="cd2ae62d-19ae-411d-a9de-f025a272bd19" message="LocalStore">
+    </task>
+    <task name="DBG-Orchestrator" value="1010" eventGUID="2f8cd704-93bf-4679-a0a2-53eaf4ad1fa1" message="Orchestrator">
+    </task>
+    <task name="DBG-Packager" value="1011" eventGUID="f634fe44-63bc-419f-80e3-41308260078f" message="Packager">
+    </task>
+    <task name="DBG-TemplateService" value="1012" eventGUID="2f2d3539-ec1b-428c-aa00-259acc013637" message="TemplateService">
+    </task>
+    <task name="SqmSaveSessionData" value="10000" eventGUID="c76d062f-3368-4f22-ae81-b71da68d09f8" message="Task to save in-memory SQM session data to a file.">
+    </task>
+    <task name="DBG-SyncProvider" value="1013" eventGUID="00c3753b-8064-40b8-bb8c-6b1bedc1de8b" message="SyncProvider">
+    </task>
+    <task name="DBG-SyncController" value="1014" eventGUID="bca66254-7914-4cc5-ba72-36fd9104bc7a" message="SyncController">
+    </task>
+    <task name="SyncController" value="160" eventGUID="9287b854-1006-474e-accc-d82f86103cc4" message="SyncController">
+    </task>
+    <task name="DBG-AppMonitor" value="1015" eventGUID="fe642815-1d4c-41a0-89aa-09b16b8a7453" message="AppMonitor">
+    </task>
+    <task name="AppMonitor" value="170" eventGUID="d6ff723a-d3fa-471b-959b-bdfb92eca364" message="AppMonitor">
+    </task>
+    <task name="TemplateConsole" value="1016" eventGUID="6c7bf418-1bc1-4b51-9405-0df534ded5bb" message="TemplateConsole">
+    </task>
+    <task name="DBG-TemplateConsole" value="1017" eventGUID="70cb86f5-a8cb-47a3-af5a-d88bf9ee0765" message="TemplateConsole">
+    </task>
+    <task name="DBG-TrayApp" value="1018" eventGUID="9a744e4b-0425-4c6a-a854-a3b6135fe3f1" message="TrayApp">
+    </task>
+    <task name="DBG-CommonWinRT" value="1019" eventGUID="9ad138ff-afea-40e2-bb10-adcafd3d5a3a" message="CommonWinRT">
+    </task>
+    <task name="IPCMessage" value="180" eventGUID="fdc826f8-2bde-4161-84e8-2d0282df42a2" message="IPCMessage">
+    </task>
+    <task name="EnableDisableUev" value="200" eventGUID="63b0d83a-9959-4c79-8379-20c929c5f42c" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="DebugTrace" mask="1" message="Debug Out Messages.">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="2" version="0" opcode="16" channel="17" level="5" task="1001" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="3" version="0" opcode="22" channel="17" level="5" task="1002" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="4" version="0" opcode="16" channel="17" level="5" task="1003" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="5" version="0" opcode="16" channel="17" level="5" task="1004" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="6" version="0" opcode="16" channel="17" level="5" task="1005" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="7" version="0" opcode="16" channel="17" level="5" task="1006" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="8" version="0" opcode="16" channel="17" level="5" task="1007" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="9" version="0" opcode="25" channel="17" level="5" task="1008" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="10" version="0" opcode="16" channel="17" level="5" task="1009" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="11" version="0" opcode="16" channel="17" level="5" task="1010" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="12" version="0" opcode="16" channel="17" level="5" task="1011" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="13" version="0" opcode="18" channel="17" level="5" task="1012" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="14" version="0" opcode="26" channel="17" level="5" task="1013" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="15" version="0" opcode="26" channel="17" level="5" task="1014" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="16" version="0" opcode="27" channel="17" level="5" task="1015" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="17" version="0" opcode="10" channel="17" level="5" task="1017" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="18" version="0" opcode="17" channel="17" level="5" task="1018" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="19" version="0" opcode="26" channel="17" level="5" task="1019" keywords="0x4000000000000001" message="%1">
+    </event>
+    <event value="501" version="0" opcode="16" channel="16" level="5" task="20" keywords="0x8000000000000000" message="The user&apos;s session is ending; saving OS settings.">
+    </event>
+    <event value="502" version="0" opcode="16" channel="16" level="5" task="20" keywords="0x8000000000000000" message="The monitored application threw a UE-V exception.">
+    </event>
+    <event value="503" version="0" opcode="16" channel="16" level="5" task="20" keywords="0x8000000000000000" message="The monitored application threw a C++ exception of type std::exception.">
+    </event>
+    <event value="504" version="0" opcode="16" channel="16" level="3" task="20" keywords="0x8000000000000000" message="The UE-V Agent encountered an error while attempting to detour the process&apos;s exit functions. The application or Windows OS settings will probably not synchronize when the process ends.">
+    </event>
+    <event value="505" version="0" opcode="16" channel="16" level="3" task="20" keywords="0x8000000000000000" message="An error occurred while registering for user session events. Windows OS settings will not be uploaded or downloaded for the current user session.">
+    </event>
+    <event value="506" version="0" opcode="16" channel="16" level="3" task="20" keywords="0x8000000000000000" message="A critical shutdown was detected. OS Settings will not be synchronized to the settings storage location.">
+    </event>
+    <event value="507" version="0" opcode="16" channel="16" level="4" task="20" keywords="0x8000000000000000" message="The synchronization process failed with error %1. Settings data may not have been synchronized with the settings storage location. Try running the synchronization process again by launching it using the &quot;Company Settings Center&quot; console.">
+    </event>
+    <event value="508" version="0" opcode="18" channel="16" level="3" task="20" keywords="0x8000000000000000" message="Timed out waiting for the synchronization process to complete. The synchronization process will continue to run in the background.">
+    </event>
+    <event value="509" version="0" opcode="16" channel="16" level="2" task="20" keywords="0x8000000000000000" message="The synchronization process failed to start. Error %1 was returned because &quot;%2&quot;. Settings data was not synchronized with the settings storage location. Try running the synchronization process again by launching it using the &quot;Company Settings Center&quot; console.">
+    </event>
+    <event value="550" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Entering DLL_PROCESS_ATTACH for the AppAgent.">
+    </event>
+    <event value="551" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Exiting DLL_PROCESS_ATTACH for the AppAgent.">
+    </event>
+    <event value="552" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Entering AppAgent&apos;s ExeMain detour.">
+    </event>
+    <event value="553" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="The AppAgent is calling the application&apos;s real ExeMain function.">
+    </event>
+    <event value="554" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="The real ExeMain has returned back to the AppAgent.">
+    </event>
+    <event value="555" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Exiting from the ExeMain detour (application ends).">
+    </event>
+    <event value="556" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Entering the ExitProcess detour (called by the application).">
+    </event>
+    <event value="557" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Exiting the ExitProcess detour.">
+    </event>
+    <event value="558" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Entering the TerminateProcess detour (called by the application).">
+    </event>
+    <event value="559" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Exiting the TerminateProcess detour.">
+    </event>
+    <event value="560" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Entering Shell end session.">
+    </event>
+    <event value="561" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Exiting Shell end session.">
+    </event>
+    <event value="562" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Entering modern app sync.">
+    </event>
+    <event value="563" version="0" opcode="16" channel="18" level="4" task="20" keywords="0x2000000000000000" message="Exiting modern app sync.">
+    </event>
+    <event value="690" version="0" opcode="22" channel="17" level="0" task="1002" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="691" version="0" opcode="22" channel="17" level="1" task="1002" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="692" version="0" opcode="22" channel="17" level="2" task="1002" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="693" version="0" opcode="22" channel="17" level="3" task="1002" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="694" version="0" opcode="22" channel="17" level="4" task="1002" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="695" version="0" opcode="22" channel="17" level="5" task="1002" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="700" version="0" opcode="22" channel="16" level="5" task="110" keywords="0x8000000000000000" message="The Agent Service started successfully.">
+    </event>
+    <event value="701" version="0" opcode="22" channel="16" level="2" task="110" keywords="0x8000000000000000" message="The UE-V Agent service failed to start.
+Service-specific error code %1. Try to restart the service and check the Windows service event log for more information.">
+    </event>
+    <event value="702" version="0" opcode="22" channel="16" level="5" task="110" keywords="0x8000000000000000" message="The Agent Service was stopped.">
+    </event>
+    <event value="703" version="0" opcode="22" channel="16" level="3" task="70" keywords="0x8000000000000000" message="The UE-V Agent service timed out waiting to attach to the application or Windows operating system process %1.
+The application or Windows operating system settings might not synchronize.">
+    </event>
+    <event value="704" version="0" opcode="22" channel="16" level="3" task="70" keywords="0x8000000000000000" message="The UE-V Agent service failed to attach to process %1. The application or Windows operating system settings cannot synchronize.">
+    </event>
+    <event value="705" version="0" opcode="22" channel="16" level="2" task="70" keywords="0x8000000000000000" message="One or more of the UE-V components is missing a valid signature.
+The application or Windows operating system settings cannot be synchronized %1.">
+    </event>
+    <event value="706" version="0" opcode="22" channel="16" level="2" task="110" keywords="0x8000000000000000" message="The UE-V evaluation period has expired.  Please uninstall the evaluation version and install the full version of UE-V.">
+    </event>
+    <event value="707" version="0" opcode="22" channel="16" level="3" task="110" keywords="0x8000000000000000" message="SLAPI check failed. Please report this to Microsoft. HRESULT = %1">
+    </event>
+    <event value="708" version="0" opcode="22" channel="16" level="2" task="110" keywords="0x8000000000000000" message="The UE-V Agent service cannot be started due to reboot required.">
+    </event>
+    <event value="709" version="0" opcode="22" channel="16" level="2" task="110" keywords="0x8000000000000000" message="The UE-V Agent service cannot be started due to UE-V being disabled.">
+    </event>
+    <event value="1001" version="0" opcode="16" channel="17" level="4" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="1002" version="0" opcode="16" channel="16" level="5" task="60" keywords="0x8000000000000000" message="Unable to open the registry key containing the settings location template index.
+[System error code %1].">
+    </event>
+    <event value="1003" version="0" opcode="16" channel="16" level="5" task="60" keywords="0x8000000000000000" message="Unable to query information for a settings location template index subkey in the registry.
+[System error code %1].">
+    </event>
+    <event value="1004" version="0" opcode="16" channel="16" level="5" task="60" keywords="0x8000000000000000" message="Unable to enumerate one of the settings location template index subkeys in the registry.
+[System error code %1].">
+    </event>
+    <event value="1005" version="0" opcode="16" channel="16" level="5" task="60" keywords="0x8000000000000000" message="Unable to delete the existing settings location template index subtree in the registry.
+This may result in programs continuing to be monitored after their settings location template has been deleted.
+[System error %1].">
+    </event>
+    <event value="1006" version="0" opcode="16" channel="16" level="5" task="60" keywords="0x8000000000000000" message="You do not have sufficient rights to be able to access the settings location template index key (or one of its subkeys) in the registry.
+Please ensure that you have Administrator access rights as they are required by the Template Service.
+[System error code %1]">
+    </event>
+    <event value="1007" version="0" opcode="16" channel="16" level="5" task="60" keywords="0x8000000000000000" message="Unable to create the settings location template index key in the Registry.
+[System error code %1].">
+    </event>
+    <event value="1008" version="0" opcode="16" channel="16" level="5" task="60" keywords="0x8000000000000000" message="Unable to create the settings location template index subkey for the program and template ID combination &apos;%1&apos;.
+[System error code %2].">
+    </event>
+    <event value="1009" version="0" opcode="22" channel="16" level="3" task="80" keywords="0x8000000000000000" message="Error while determining enabled/disabled state for template ID &apos;%1&apos;.
+[System error code %2].">
+    </event>
+    <event value="1010" version="0" opcode="18" channel="16" level="2" task="80" keywords="0x8000000000000000" message="Unable to determine which template should be used for a particular process. Settings cannot be synchronized for this process.">
+    </event>
+    <event value="1011" version="0" opcode="18" channel="16" level="3" task="80" keywords="0x8000000000000000" message="Error while setting enabled/disabled state for template ID &apos;%1&apos;.
+[System error code %2].">
+    </event>
+    <event value="1012" version="0" opcode="18" channel="16" level="3" task="80" keywords="0x8000000000000000" message="%1.">
+    </event>
+    <event value="1013" version="0" opcode="16" channel="16" level="2" task="80" keywords="0x8000000000000000" message="Error determining Microsoft account connection status with error code %1">
+    </event>
+    <event value="1014" version="0" opcode="18" channel="16" level="3" task="80" keywords="0x8000000000000000" message="Error %1 occurred while retrieving the associated profile for settings template %2. Settings data will not be synchronized for this settings template.">
+    </event>
+    <event value="1501" version="0" opcode="23" channel="16" level="3" task="90" keywords="0x8000000000000000" message="The settings template catalog folder (%1) cannot be found or read. Confirm that the settings template catalog location exists and that the user has the necessary permissions.">
+    </event>
+    <event value="1502" version="0" opcode="23" channel="16" level="5" task="90" keywords="0x8000000000000000" message="An unknown exception occurred while applying the settings template catalog.">
+    </event>
+    <event value="1503" version="0" opcode="23" channel="16" level="5" task="80" keywords="0x8000000000000000" message="An exception occurred while applying the settings template catalog: %1">
+    </event>
+    <event value="1504" version="0" opcode="23" channel="16" level="5" task="90" keywords="0x8000000000000000" message="An exception occurred while processing the file &lt;%1&gt; from the settings template catalog: %2">
+    </event>
+    <event value="1505" version="0" opcode="23" channel="16" level="5" task="90" keywords="0x8000000000000000" message="More than one settings location template with id &lt;%1&gt; was found in the settings template catalog.">
+    </event>
+    <event value="1506" version="0" opcode="23" channel="16" level="5" task="90" keywords="0x8000000000000000" message="Unable to get process token for elevation check (Error code %1).">
+    </event>
+    <event value="1507" version="0" opcode="23" channel="16" level="5" task="90" keywords="0x8000000000000000" message="Unable to get process token information for elevation check (Error code %1).">
+    </event>
+    <event value="1508" version="0" opcode="23" channel="16" level="3" task="90" keywords="0x8000000000000000" message="The ApplySettingsTemplateCatalog utility requires administrator privileges.">
+    </event>
+    <event value="1509" version="0" opcode="23" channel="16" level="2" task="90" keywords="0x8000000000000000" message="An error occurred in the ApplySettingsTemplateCatalog utility.">
+    </event>
+    <event value="1510" version="0" opcode="23" channel="16" level="5" task="90" keywords="0x8000000000000000" message="A change in the settings template catalog has been found. Settings location template &quot;%1&quot; has been successfully added.">
+    </event>
+    <event value="1511" version="0" opcode="23" channel="16" level="5" task="90" keywords="0x8000000000000000" message="A change in the settings template catalog has been found. Settings location template &quot;%1&quot; has been successfully removed.">
+    </event>
+    <event value="1512" version="0" opcode="23" channel="16" level="5" task="90" keywords="0x8000000000000000" message="A change in the settings template catalog has been found. Settings location template &quot;%1&quot; has been successfully updated.">
+    </event>
+    <event value="1513" version="0" opcode="23" channel="16" level="5" task="90" keywords="0x8000000000000000" message="The settings location template, &quot;%1&quot;, was found in the settings template catalog. This template was ignored because UE-V was installed with the RegisterMSTemplates parameter set to true.  For information on how to change this setting, see &quot;Planning for Custom Template Deployment&quot; in the UE-V Administrator&apos;s Guide.">
+    </event>
+    <event value="1514" version="0" opcode="23" channel="16" level="3" task="90" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="2000" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="The current request terminated abnormally while processing the settings package for setting location template &quot;%1&quot;.">
+    </event>
+    <event value="2001" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="A thread exception occurred while processing the settings package for settings location template &quot;%1&quot;. Exception Message: &quot;%2&quot; Error code: &quot;%3&quot;">
+    </event>
+    <event value="2002" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="An unknown exception has occurred while processing the settings package for settings location template &quot;%1&quot;. Exception message: &quot;%2&quot;">
+    </event>
+    <event value="2004" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="Could not initialize COM while processing the settings package for settings location template &quot;%1&quot;. Error code: &quot;%2&quot;">
+    </event>
+    <event value="2005" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="An exception has occurred while processing the settings package for settings location template &quot;%1&quot;. Exception message: &quot;%2&quot; Error code: &quot;%3&quot;.">
+    </event>
+    <event value="2006" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="An unknown exception has occurred while processing the settings package for settings location template &quot;%1&quot;. Exception message: &quot;%2&quot;">
+    </event>
+    <event value="2008" version="0" opcode="16" channel="16" level="4" task="120" keywords="0x8000000000000000" message="The settings for settings location template &quot;%1&quot; could not be applied to the computer because the operation took too long. Allow time for the UE-V Agent to download the settings from the settings storage path and then restart the application.">
+    </event>
+    <event value="2009" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="User settings for the settings location template named &quot;%1&quot; have been successfully applied to the local machine.">
+    </event>
+    <event value="2010" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="User settings for the settings location template &quot;%1&quot; have been successfully uploaded to the settings storage location.">
+    </event>
+    <event value="2014" version="0" opcode="16" channel="16" level="3" task="120" keywords="0x8000000000000000" message="An attempt to restore user settings for settings location template &quot;%1&quot; failed with error code &quot;%2&quot;.">
+    </event>
+    <event value="2015" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="User settings for settings location template &quot;%1&quot; could not be uploaded to the remote settings storage location because a user settings reset request is pending.">
+    </event>
+    <event value="2016" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="User settings could not be restored for settings location template &quot;%1&quot; because the initial settings package could not be found.">
+    </event>
+    <event value="2018" version="0" opcode="16" channel="16" level="3" task="120" keywords="0x8000000000000000" message="An error &quot;%2&quot; occurred while creating the initial settings package for setting location template &quot;%1&quot;. You cannot restore the settings for this settings template.">
+    </event>
+    <event value="2020" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="An invalid settings package for settings location template &quot;%1&quot; was downloaded from the settings storage location. This settings package will be replaced with a new copy when the application is closed or the user logs off from the current session.">
+    </event>
+    <event value="2021" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="The initial settings package for settings location template &quot;%1&quot; is invalid. The initial settings package will be replaced with a new copy.">
+    </event>
+    <event value="2022" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="The current settings package for settings location template &quot;%1&quot; is invalid. The current settings package will be replaced with a new copy.">
+    </event>
+    <event value="2024" version="0" opcode="16" channel="16" level="3" task="120" keywords="0x8000000000000000" message="Failed in clearing the restore flag for the user settings defined in the settings location template &quot;%1&quot;. Error code = %2. The user settings will not be restored. An attempt will be made to clear this flag the next time the application is run.">
+    </event>
+    <event value="2025" version="0" opcode="16" channel="16" level="3" task="120" keywords="0x8000000000000000" message="Changes to the user settings cannot upload to the settings storage location because an earlier error occurred while downloading the settings package for the settings location template &quot;%1&quot;.">
+    </event>
+    <event value="2026" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="An older version of the setting location template exists for &quot;%1&quot;. The settings package has been updated for the local machine, but will not be uploaded to the remote settings storage location until the setting location template is updated to the new version.">
+    </event>
+    <event value="2027" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="Error %1 occurred when signaling that the upload or download of a settings package was complete.">
+    </event>
+    <event value="2028" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="The application has been allowed to start while additional settings packages are downloaded and applied to the local machine.">
+    </event>
+    <event value="2029" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="A timeout occurred while waiting for a previous download request to complete.">
+    </event>
+    <event value="2030" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="A timeout occurred while waiting for a previous download request to complete">
+    </event>
+    <event value="2031" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="A timeout occurred while waiting for a previous upload request to complete.">
+    </event>
+    <event value="2033" version="0" opcode="16" channel="16" level="4" task="120" keywords="0x8000000000000000" message="UE-V is either currently offline or the application being closed has been running longer than %1 day(s). UE-V will prevent the settings package &quot;%2&quot; from overwriting newer settings on the settings storage location.">
+    </event>
+    <event value="2039" version="0" opcode="16" channel="16" level="4" task="120" keywords="0x8000000000000000" message="Skipped synchronization of the settings package for settings location template &quot;%1&quot;. The last application using the template will perform the synchronization.">
+    </event>
+    <event value="2040" version="0" opcode="16" channel="16" level="2" task="120" keywords="0x8000000000000000" message="Error &quot;%1&quot; occurred while rolling back the application settings from a failed attempt to apply settings to the local machine (template: &quot;%2&quot;).">
+    </event>
+    <event value="2041" version="0" opcode="16" channel="16" level="2" task="120" keywords="0x8000000000000000" message="Error &quot;%1&quot; occurred while rolling back the initial package from a failed attempt to apply settings to the local machine (template &quot;%2&quot;).">
+    </event>
+    <event value="2042" version="0" opcode="16" channel="16" level="2" task="120" keywords="0x8000000000000000" message="Error &quot;%1&quot; occurred while attempting to apply settings to the local machine. (template &quot;%2&quot;)">
+    </event>
+    <event value="2045" version="0" opcode="16" channel="16" level="3" task="120" keywords="0x8000000000000000" message="Failed in reading the restore flag for the user settings defined the settings location template &quot;%1&quot;. Error code = %2. The user settings will not be restored. Ensure that the restore flag in the registry is readable for the current user.">
+    </event>
+    <event value="2046" version="0" opcode="16" channel="16" level="3" task="120" keywords="0x8000000000000000" message="The settings package restore flag for settings location template &quot;%1&quot; has expired but could not be cleared. Error code = %2. An attempt will be made to clear this flag the next time the application is run.">
+    </event>
+    <event value="2048" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="An exception has occurred while processing the settings package for settings location template &quot;%1&quot;. Exception message: &quot;%2&quot; Error code: &quot;%3&quot;.">
+    </event>
+    <event value="2049" version="0" opcode="16" channel="16" level="5" task="120" keywords="0x8000000000000000" message="Settings data update check has been completed.">
+    </event>
+    <event value="3000" version="0" opcode="16" channel="16" level="3" task="30" keywords="0x8000000000000000" message="Error %3 occurred while resetting file attributes 0x%2 on file %1. The file attributes will have to be reset manually on the file.">
+    </event>
+    <event value="4000" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="A settings file failed to synchronize to the settings storage.
+
+Settings storage location: [%1]
+File: [%2]
+SyncID: [%3]
+HRESULT: [%4]">
+    </event>
+    <event value="4004" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="Failed to copy settings package from staging location to settings storage.
+
+Settings location template ID: [%1]
+Settings file to copy: [%2]
+Settings storage location: [%3]
+HRESULT: [%4]">
+    </event>
+    <event value="4005" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="Unable to create COM instance of offline files cache. File synchronization will not be able to succeed.
+
+HRESULT = [%1]">
+    </event>
+    <event value="4006" version="0" opcode="16" channel="16" level="2" task="1" keywords="0x8000000000000000" message="File synchronization will not be able to succeed because the Sync Center (for offline files support) is not currently enabled for offline files support.
+Please enable offline files through the Sync Center&apos;s &apos;manage offline files&apos; option.">
+    </event>
+    <event value="4009" version="0" opcode="16" channel="16" level="5" task="40" keywords="0x8000000000000000" message="A package could not be synchronized to the settings storage because an invalid settings location template ID was provided.
+
+Parameter: Template ID: [%1]">
+    </event>
+    <event value="4010" version="0" opcode="16" channel="16" level="5" task="40" keywords="0x8000000000000000" message="A settings package could not be synchronized to the settings storage because the path to the package is invalid.
+
+Parameter: filePath
+Value: [%1]">
+    </event>
+    <event value="4017" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="Unable to get the file type for a file within the settings storage.
+
+File: [%1]
+HRESULT: [%2]">
+    </event>
+    <event value="4018" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="Change Manager was not able to get the parent directory item for a path in the settings storage.
+
+Path: [%1]
+HRESULT: [%2]">
+    </event>
+    <event value="4020" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="Change Manager failed to get the OfflineFilesConnectInfo interface for a requested file.
+
+File: [%1]
+HRESULT: [%2]">
+    </event>
+    <event value="4025" version="0" opcode="16" channel="16" level="2" task="1" keywords="0x8000000000000000" message="The UE-V Agent was unable to access the settings storage location [%1]
+HRESULT: [%2].">
+    </event>
+    <event value="4026" version="0" opcode="16" channel="16" level="2" task="1" keywords="0x8000000000000000" message="The UE-V Agent was unable to create a directory in the settings storage location.
+
+Current settings storage location: [%1]
+HRESULT: [%2]; Check that the user has the necessary permission on the settings storage location.">
+    </event>
+    <event value="4027" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="A settings package could not be synchronized from the settings storage because an invalid settings location template ID was provided.
+
+Parameter: Template ID: [%1]">
+    </event>
+    <event value="4028" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="A settings file failed to synchronize from the settings storage.
+
+Settings storage location: [%1]
+File: [%2]
+SyncID: [%3]
+HRESULT: [%4]">
+    </event>
+    <event value="4041" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="Failed to sync a settings package to the settings storage.
+
+Settings location template ID: [%1]
+Package Path: [%2]
+HRESULT: [%3]">
+    </event>
+    <event value="4042" version="0" opcode="16" channel="16" level="5" task="40" keywords="0x8000000000000000" message="Failed to sync settings from the settings storage.
+
+Settings location template ID: [%1]
+HRESULT: [%2]">
+    </event>
+    <event value="4044" version="0" opcode="16" channel="16" level="2" task="40" keywords="0x8000000000000000" message="The UE-V Agent was unable to reset the offline files cache. The offline files cache must be reset before changes to the user settings will upload to the settings storage location.
+HRESULT: [%1]
+">
+    </event>
+    <event value="4045" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="A call was made to the Remote Change Manager before it was initialized.">
+    </event>
+    <event value="4046" version="0" opcode="16" channel="16" level="2" task="1" keywords="0x8000000000000000" message="An error occurred while attempting to copy a settings package to the settings storage location.
+
+Message: [%1]
+Task: [%2]">
+    </event>
+    <event value="4047" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Change Manager was not able to determine a settings package file size. The system was not able to notify of if the package exceeded the allowable package size.
+Package: [%1]
+Error Description: [%2]">
+    </event>
+    <event value="4048" version="0" opcode="16" channel="16" level="3" task="1" keywords="0x8000000000000000" message="A settings package exceeded the allowable package size. Evaluate the settings location template to see if unnecessary settings or data are being packaged.
+Package: [%1]
+Package Size: [%2]
+Allowable Size: [%3]">
+    </event>
+    <event value="4050" version="0" opcode="16" channel="16" level="3" task="1" keywords="0x8000000000000000" message="The settings storage location cannot be found. The user settings cannot synchronize. Ensure that the settings storage location exists and that the user has necessary permissions.">
+    </event>
+    <event value="4051" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="Attempt to expand supplied settings storage path &apos;%1&apos; failed.  Reason:  %2">
+    </event>
+    <event value="4059" version="0" opcode="16" channel="16" level="2" task="1" keywords="0x8000000000000000" message="The UE-V Agent was unable to set attributes [%1] on the settings storage path [%2]. Error Code: [%3]
+ Check that the user has the necessary permission on the settings storage location.">
+    </event>
+    <event value="4060" version="0" opcode="16" channel="16" level="3" task="1" keywords="0x8000000000000000" message="The UE-V Agent cannot use the Active Directory-defined path for the settings storage location.
+Path: %1
+Error Code: %2
+Confirm that the path defined in Active Directory is configured correctly.">
+    </event>
+    <event value="4061" version="0" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Active Directory settings storage path changed.
+Old value: [%1]
+New value: [%2]">
+    </event>
+    <event value="4063" version="0" opcode="16" channel="16" level="2" task="1" keywords="0x8000000000000000" message="The UE-V Agent was unable to create the following settings storage folder: [%1] Reason: [%2]
+Check that the settings storage path is valid and the user has read/write access to the folder.">
+    </event>
+    <event value="4064" version="0" opcode="16" channel="16" level="5" task="40" keywords="0x8000000000000000" message="Failed to delete a setting file from the settings storage.
+
+Settings location template ID: [%1]
+File name: [%2]
+HRESULT: [%3]">
+    </event>
+    <event value="4065" version="0" opcode="16" channel="16" level="5" task="40" keywords="0x8000000000000000" message="An error occurred while attempting to delete a setting file from the settings storage.
+
+Message: [%1]
+Task: [%2]">
+    </event>
+    <event value="4066" version="0" opcode="16" channel="16" level="2" task="1" keywords="0x8000000000000000" message="UE-V was unable to set the last-writer-wins policy settings for offline file collisions.
+Path: %1
+Error Code: %2.">
+    </event>
+    <event value="4070" version="0" opcode="16" channel="16" level="5" task="40" keywords="0x8000000000000000" message="Failed to copy settings package from settings storage to staging location.
+
+Settings location template ID: [%1]
+Settings file to copy: [%2]
+Local staging directory: [%3]
+HRESULT: [%4]">
+    </event>
+    <event value="4071" version="0" opcode="16" channel="16" level="5" task="40" keywords="0x8000000000000000" message="Change Manager was failed while verifying existence of a settings package in the settings storage. Settings location template ID: [%1]
+HRESULT: [%2]">
+    </event>
+    <event value="4073" version="0" opcode="16" channel="16" level="5" task="40" keywords="0x8000000000000000" message="A background synchronization operation has timed out. Source: [%1] Destination [%2]">
+    </event>
+    <event value="4074" version="0" opcode="16" channel="16" level="5" task="40" keywords="0x8000000000000000" message="An error occurred while copying a file from the central storage location. 
+Source: [%1] 
+Error message: [%2]
+Error code: [%3]">
+    </event>
+    <event value="4075" version="0" opcode="16" channel="16" level="2" task="1" keywords="0x8000000000000000" message="The currently logged on user is not the owner of the settings storage path folder %1. To correct this problem, delete the hidden folder %2 in path %3 and log off the current session and then log on again.">
+    </event>
+    <event value="5000" version="0" opcode="16" channel="16" level="3" task="30" keywords="0x8000000000000000" message="The settings directory for the settings location template %1 cannot be created. The error %2 was returned.
+
+Additional error data: %3.
+Ensure that the user has permission to create directories in the remote settings location.">
+    </event>
+    <event value="5001" version="0" opcode="16" channel="16" level="5" task="30" keywords="0x8000000000000000" message="The settings package for settings location template %1 could not be copied to the local package folder for current settings.  Error %2 was returned. Additional data: %3.">
+    </event>
+    <event value="5002" version="0" opcode="16" channel="16" level="5" task="30" keywords="0x8000000000000000" message="The path to a local settings package for settings location template %1 could not be retrieved. Error %2 was returned. Additional data: %3.">
+    </event>
+    <event value="5003" version="0" opcode="16" channel="16" level="5" task="30" keywords="0x8000000000000000" message="The path to a local last known good meta data for settings location template %1 could not be retrieved. Error %2 was returned. Additional data: %3.">
+    </event>
+    <event value="5312" version="0" opcode="16" channel="16" level="5" task="30" keywords="0x8000000000000000" message="The settings package for settings location template %1 could not be copied to the local package folder for initial settings.  Error %2 was returned. Additional data: %3.">
+    </event>
+    <event value="5313" version="0" opcode="16" channel="16" level="5" task="30" keywords="0x8000000000000000" message="The settings package was created by an earlier version of the product and is not compatible with the current version. Please delete the settings package file and retry the operation. 
+Settings location template ID: %1. 
+Settings package Version: %2.">
+    </event>
+    <event value="5314" version="0" opcode="16" channel="16" level="3" task="30" keywords="0x8000000000000000" message="The imported package with template ID %1 contains a setting that uses an unresolvable environment variable: %2. Ensure that the template on this machine is up to date and the user environment variables are properly defined.">
+    </event>
+    <event value="8000" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="The process executable (%1) was added to the settings location template, but does not actually exist. Was unable to find the required information for this process executable, and will not add it to the final template.">
+    </event>
+    <event value="8010" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="This version is invalid and did not get constructed. The Major version range does not exclusively have a min and a max version. It is required that all versions have a major version range of size 2. Size of Major range = %1">
+    </event>
+    <event value="8020" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Not enough processes to make a valid settings location template. You must have at least one process added to the template, %1. ">
+    </event>
+    <event value="8030" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Not enough versions for the process, %1, to make a valid settings location template. This process information will not be added to the template.">
+    </event>
+    <event value="8100" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to initialize the COM library. Export of the settings location template has been cancelled. HRESULT = %1">
+    </event>
+    <event value="8110" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to create the XML Document Parser. Export of the settings location template has been cancelled. HRESULT = %1">
+    </event>
+    <event value="8200" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to create an element %1 from the XML parser. Export of the settings location template has been cancelled. HRESULT = %2">
+    </event>
+    <event value="8210" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to set the attribute(%1) of the current element(%2). Export of the settings location template has been cancelled. HRESULT = %3">
+    </event>
+    <event value="8220" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to insert the text, %1, into this element(%2). Export of the settings location template has been cancelled. HRESULT = %3">
+    </event>
+    <event value="8230" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to append the child element(%1) to the parent element(%2). Export of the settings location template has been cancelled. HRESULT = %3">
+    </event>
+    <event value="8240" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="TemplateIO was unable to save this settings location template at the file location %1. Export of the template has been cancelled. HRESULT = %2">
+    </event>
+    <event value="8300" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to retrieve the node name from this element. This probably means the element is actually empty or does not exist. Import of this settings location template has been cancelled. HRESULT = %1">
+    </event>
+    <event value="8310" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to retrieve the text from the element %1. Import of settings location template has been cancelled. HRESULT = %2">
+    </event>
+    <event value="8320" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to select the element, %1, from its parent. Import of settings location template was cancelled. HRESULT = %2">
+    </event>
+    <event value="8330" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to get the length of the list of elements. Import of settings location template has been cancelled.  HRESULT = %1">
+    </event>
+    <event value="8340" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to get the item at index %1 from the list of nodes of size %2. Import of settings location template has been cancelled. HRESULT = %3">
+    </event>
+    <event value="8350" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to retrieve child nodes of the element %1. This probably means the parent element is actually empty or does not exist. Import of this settings location template has been cancelled.  HRESULT = %2">
+    </event>
+    <event value="8360" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="Was unable to get the list of nodes with the xpath %1 from element %2. Import of settings location template has been cancelled. HRESULT = %3">
+    </event>
+    <event value="8370" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="TemplateIO was unable to load the xml file %1. Check that it exists and is an xml document. Import of settings location template has been cancelled. HRESULT = %2">
+    </event>
+    <event value="8400" version="0" opcode="15" channel="16" level="2" task="130" keywords="0x8000000000000000" message="The format of the string %1, is not acceptable by the CLSIDFromString method. Verify that the data in the xml document confines to these rules. HRESULT = %2">
+    </event>
+    <event value="9001" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to open registry key: %1.">
+    </event>
+    <event value="9002" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to find file or folder path: %1.">
+    </event>
+    <event value="9003" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to find registry value: %1.">
+    </event>
+    <event value="9004" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="File IO exception occurred: %1.">
+    </event>
+    <event value="9005" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="File IO exception occurred: %1.">
+    </event>
+    <event value="9006" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Registry IO exception occurred: %1.">
+    </event>
+    <event value="9007" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to read registry value from: %1.">
+    </event>
+    <event value="9008" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Registry type value not recognized for key: %1.">
+    </event>
+    <event value="9009" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to query registry key information for: %1.">
+    </event>
+    <event value="9010" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to enumerate registry keys from: %1.">
+    </event>
+    <event value="9011" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to delete registry key or value: %1.">
+    </event>
+    <event value="9012" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to create registry key: %1.">
+    </event>
+    <event value="9013" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to set registry key value: %1.">
+    </event>
+    <event value="9014" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to create destination folder path: %1.">
+    </event>
+    <event value="9015" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to copy file to the destination path: %1.">
+    </event>
+    <event value="9016" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to open folder path to process files: %1.">
+    </event>
+    <event value="9017" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to read all subfolders or files from the folder path: %1.">
+    </event>
+    <event value="9018" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to initialize COM library to parse OS settings mapping file: %1.">
+    </event>
+    <event value="9019" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to create MSXML document object for OS settings mapping file: %1.">
+    </event>
+    <event value="9020" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to load XML document for OS settings mapping: %1.">
+    </event>
+    <event value="9021" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to read OS settings mapping file: %1.">
+    </event>
+    <event value="9022" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to find root node (OSSettingsList) in OS settings mapping file: %1.">
+    </event>
+    <event value="9023" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to find &quot;Path&quot; node in OS settings mapping file: %1.">
+    </event>
+    <event value="9024" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to find the &quot;Name&quot; attribute in &quot;MainSetting&quot; node in OS settings mapping file: %1.">
+    </event>
+    <event value="9025" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to find &quot;Win7&quot; node in OS settings mapping file: %1.">
+    </event>
+    <event value="9026" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to find OS setting details for: %1.">
+    </event>
+    <event value="9027" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to create MSXML schema cache object for OS Mapping file: %1.">
+    </event>
+    <event value="9028" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to add schema for OS mapping file: %1.">
+    </event>
+    <event value="9029" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to set XML schema cache for OS mapping file: %1.">
+    </event>
+    <event value="9030" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to validate OS mapping file %1 to schema. Reason: %2.">
+    </event>
+    <event value="9031" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to find the &quot;Version&quot; attribute in &quot;MainSetting&quot; node in OS settings mapping file: %1.">
+    </event>
+    <event value="9032" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Unsupported OS version found in OS mapping file: %1.">
+    </event>
+    <event value="9033" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="DOM operation failed while reading OS mapping file: %1.">
+    </event>
+    <event value="9034" version="0" opcode="16" channel="16" level="5" task="140" keywords="0x8000000000000000" message="Failed to access OS system setting: %1. Setting enumerator: %2. GetLastError returned %3.">
+    </event>
+    <event value="10000" version="0" opcode="25" channel="16" level="5" task="150" keywords="0x8000000000000000" message="The settings storage location is transitioning from offline to online.">
+    </event>
+    <event value="10001" version="0" opcode="25" channel="16" level="5" task="150" keywords="0x8000000000000000" message="The settings storage location is transitioning from online to offline.">
+    </event>
+    <event value="12001" version="0" opcode="1" channel="18" level="4" task="10000" keywords="0x2000000000000000" message="Saving SQM session data begins.">
+    </event>
+    <event value="12002" version="0" opcode="2" channel="18" level="4" task="10000" keywords="0x2000000000000000" message="Saving SQM session data ends.">
+    </event>
+    <event value="12003" version="0" opcode="0" channel="18" level="4" task="10000" keywords="0x2000000000000000" message="Duration of the SQM save session time">
+    </event>
+    <event value="13000" version="0" opcode="26" channel="16" level="3" task="160" keywords="0x8000000000000000" message="An exception has occurred while synchronizing settings packages. Exception message: &quot;%1&quot;.">
+    </event>
+    <event value="13001" version="0" opcode="26" channel="16" level="3" task="160" keywords="0x8000000000000000" message="The UE-V synchronization controller could not get a list of registered templates. Settings data will not be synchronized for any of the applications specified in the installed templates. The cause of the failure is: &quot;%1&quot;.">
+    </event>
+    <event value="13002" version="0" opcode="26" channel="16" level="3" task="160" keywords="0x8000000000000000" message="The UE-V synchronization controller could not get a list of installed modern applications. Settings data will not be synchronized for any of the installed modern applications. The cause of the failure is: &quot;%1&quot;.">
+    </event>
+    <event value="13005" version="0" opcode="26" channel="18" level="4" task="160" keywords="0x2000000000000000" message="Start of the synchronization process.">
+    </event>
+    <event value="13006" version="0" opcode="26" channel="18" level="4" task="160" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="13007" version="0" opcode="26" channel="16" level="3" task="160" keywords="0x8000000000000000" message="Cannot get settings storage path for template %1. Settings data will not be synchronized.">
+    </event>
+    <event value="13008" version="0" opcode="26" channel="16" level="3" task="160" keywords="0x8000000000000000" message="Error %1 was returned while initializing sync provider for template %2">
+    </event>
+    <event value="13009" version="0" opcode="26" channel="16" level="3" task="160" keywords="0x8000000000000000" message="The local and remote settings storage paths are equal. Please specify a new remote setting storage path. Settings will not be synchronized for template %1.">
+    </event>
+    <event value="14000" version="0" opcode="27" channel="16" level="3" task="170" keywords="0x8000000000000000" message="An exception has occurred while synchronizing Windows App settings. Exception message: &quot;%1&quot;.">
+    </event>
+    <event value="15000" version="0" opcode="10" channel="16" level="2" task="1016" keywords="0x8000000000000000" message="Sync Now failed with error code: %1">
+    </event>
+    <event value="15002" version="0" opcode="10" channel="16" level="3" task="1016" keywords="0x8000000000000000" message="Not all of the templates are in the same state. This usually means that template state has been modified outside the Company Settings Center UI.">
+    </event>
+    <event value="15003" version="0" opcode="10" channel="16" level="2" task="1016" keywords="0x8000000000000000" message="Enable\Disable of template %1 failed with exception %2">
+    </event>
+    <event value="16000" version="0" opcode="0" channel="16" level="3" task="180" keywords="0x8000000000000000" message="The IPC event message listener cannot be started. IPC events will be unavailable.">
+    </event>
+    <event value="16001" version="0" opcode="0" channel="16" level="4" task="180" keywords="0x8000000000000000" message="The IPC message %1 could not be sent.">
+    </event>
+    <event value="17000" version="0" opcode="34" channel="16" level="2" task="200" keywords="0x8000000000000000" message="Enable Uev failed with error %1.">
+    </event>
+    <event value="17001" version="0" opcode="34" channel="16" level="2" task="200" keywords="0x8000000000000000" message="Disable Uev failed with error %1.">
+    </event>
+  </events>
+</provider>

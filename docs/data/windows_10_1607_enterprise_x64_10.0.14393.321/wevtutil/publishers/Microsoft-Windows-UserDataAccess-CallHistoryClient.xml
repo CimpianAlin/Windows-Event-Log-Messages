@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-UserDataAccess-CallHistoryClient" guid="f5988abb-323a-4098-8a34-85a3613d4638" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=CallHistoryClient.dll&amp;FileVer=10.0.14393.0" resourceFileName="CallHistoryClient.dll" messageFileName="CallHistoryClient.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="CommsDataModel" mask="4" message="">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Error: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Error Propagated: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="3" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1" message="Object {p:%1, type:%2, id:%3} property %4 not yet fetched">
+    </event>
+    <event value="4" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Async RPC call failed with %1 (output value %2)">
+    </event>
+    <event value="5" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Start cancelling task. Remote: %1">
+    </event>
+    <event value="6" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Task Cancelled. Remote: %1">
+    </event>
+  </events>
+</provider>

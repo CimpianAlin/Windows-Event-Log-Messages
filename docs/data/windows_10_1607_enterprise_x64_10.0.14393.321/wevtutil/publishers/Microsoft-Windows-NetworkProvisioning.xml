@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NetworkProvisioning" guid="93a19ab3-fb2c-46eb-91ef-56b0a318b983" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=provcore.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\provcore.dll" messageFileName="C:\Windows\system32\provcore.dll" message="Microsoft-Windows-NetworkProvisioning" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NetworkProvisioning/Analytic" id="16" flags="0" message="Microsoft-Windows-NetworkProvisioning/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-NetworkProvisioning/Operational" id="17" flags="0" message="Microsoft-Windows-NetworkProvisioning/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CreateDocument" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Create Document">
+    </task>
+    <task name="ProvisionDocument" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Provisioning Document">
+    </task>
+    <task name="InvokeHandlers" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Invoke Handlers">
+    </task>
+    <task name="RefreshTask" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Refresh Task">
+    </task>
+    <task name="ApplyProfiles" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Apply Profiles">
+    </task>
+    <task name="ActivationTask" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Activation Task">
+    </task>
+    <task name="ProvisioningAgent" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Provisioning Agent">
+    </task>
+    <task name="Notifications" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Notifications">
+    </task>
+    <task name="PurgeTask" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Purge Task">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="XmlValidation" mask="1" message="">
+    </keyword>
+    <keyword name="XmlProcessing" mask="2" message="">
+    </keyword>
+    <keyword name="Purge" mask="4" message="">
+    </keyword>
+    <keyword name="Diagnostics" mask="8" message="">
+    </keyword>
+    <keyword name="Service" mask="10" message="">
+    </keyword>
+    <keyword name="Profile" mask="20" message="">
+    </keyword>
+    <keyword name="Metadata" mask="40" message="">
+    </keyword>
+    <keyword name="ActivationTask" mask="80" message="">
+    </keyword>
+    <keyword name="ProvisioningAgent" mask="100" message="">
+    </keyword>
+    <keyword name="Notifications" mask="200" message="">
+    </keyword>
+    <keyword name="PurgeTask" mask="400" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001004000000001" message="Creating provisioning document (%1 bytes)">
+    </event>
+    <event value="1001" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001004000000001" message="Finished creating provisioning document (Result=%1)">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000004000000001" message="XML parsing completed (Result=%1)">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000004000000001" message="XML schema validation completed (Result=%1)">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000004000000001" message="XML signature verification completed (Result=%1)
+
+[Details]
+Carrier Id: %2
+Subscriber Id: %3
+DeviceId: %4
+Signer: %5
+CertificateIssuer: %6
+CertificateSubject: %7">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000004000000001" message="XML stream rejected because the size exceeded the limit (%1 &gt; %2)">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000004000000001" message="XML stream rejected because of a parse error
+
+[Details]
+Error code: %1
+Error Message: %2
+Description: %3">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000004000000001" message="XML stream rejected because schema validation failed
+
+[Details]
+Error code: %1
+Line: %2
+Line Pos: %3
+Reason: %4">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000004000000001" message="XML stream rejected because signature verification failed (%1)">
+    </event>
+    <event value="2000" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8001004000000002" message="Provisioning document started">
+    </event>
+    <event value="2001" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8001004000000002" message="Finished provisioning document (Result=%1 ErrorOccured=%2)">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000004000000002" message="Certificate verification completed (bool=%1)">
+    </event>
+    <event value="4001" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000004000000002" message="Trigger to refresh task completed (Result=%1)">
+    </event>
+    <event value="5000" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000004000000080" message="Activation method %1 has been started
+
+[Details]
+Carrier Id: %2
+Subscriber Id: %3
+Params: %4">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000004000000080" message="Activation method %1 has finished 
+
+[Details]
+ICarrier Id: %2
+Subscriber Id: %3
+Params: %4
+Result: %5">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="17" level="3" task="7" keywords="0x4000004000000080" message="The radio is already off on interface %1; assuming the user has switched it off; aborting activation method">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="17" level="2" task="7" keywords="0x4000004000000080" message="Unable to turn the radio %2 on interface %1 (error=%3)">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="17" level="2" task="7" keywords="0x4000004000000080" message="Interface %1 is not registered to the home network; aborting connection attempt (register state = %2)">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="17" level="2" task="7" keywords="0x4000004000000080" message="Cannot locate the %2 profile on interface %1 (error=%3)">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="17" level="2" task="7" keywords="0x4000004000000080" message="Connection to profile %2 failed on interface %1 (error=%3)">
+    </event>
+    <event value="5007" version="0" opcode="0" channel="17" level="2" task="7" keywords="0x4000004000000080" message="Unable to disconnect interface %1 from network (error=%2)">
+    </event>
+    <event value="6000" version="0" opcode="0" channel="17" level="4" task="10" keywords="0x4000004000000400" message="Purge task has been started">
+    </event>
+    <event value="6001" version="0" opcode="0" channel="17" level="4" task="10" keywords="0x4000004000000400" message="Purge task has finished
+
+Result: %1">
+    </event>
+    <event value="6002" version="0" opcode="0" channel="17" level="4" task="10" keywords="0x4000004000000400" message="Calling Purge
+
+[Details]
+Carrier Id: %1
+Subscriber Id: %2
+AppId: %3">
+    </event>
+    <event value="9000" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000004000000002" message="Handler %1: provision (start)">
+    </event>
+    <event value="9001" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000004000000002" message="Handler %1: provision (stop) [result: %2]">
+    </event>
+    <event value="9100" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000004000000004" message="Handler %1: purge (start)">
+    </event>
+    <event value="9101" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000004000000004" message="Handler %1: purge (stop)">
+    </event>
+    <event value="10000" version="0" opcode="0" channel="17" level="3" task="6" keywords="0x4000004000000018" message="Failed to connect to the %1: %2">
+    </event>
+    <event value="10001" version="0" opcode="0" channel="17" level="3" task="6" keywords="0x4000004000000000" message="Failed to set WLAN profile %2 on interface %1 with error code %3 (reason=%4)">
+    </event>
+    <event value="10002" version="0" opcode="0" channel="17" level="3" task="6" keywords="0x4000004000000028" message="Failed to set WWAN profile %2 on interface %1 with error code %3 (reason=%4)">
+    </event>
+    <event value="10003" version="0" opcode="0" channel="17" level="3" task="6" keywords="0x4000004000000068" message="Failed to apply metadata to profile %2 on interface %1 with error code %3 (param=%4)">
+    </event>
+    <event value="11000" version="0" opcode="0" channel="17" level="3" task="9" keywords="0x4000004000000208" message="The message rule at position %1 failed validation.
+Xml:%2
+Reason:%3">
+    </event>
+    <event value="20000" version="0" opcode="0" channel="17" level="4" task="8" keywords="0x4000004000000108" message="Provisioning results for caller application (AppId %1): [%2]">
+    </event>
+  </events>
+</provider>

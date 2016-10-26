@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-Chipset" guid="de9ba731-7f33-4f44-98c9-6cac856b9f83" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=vmchipset.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\vmchipset.dll" parameterFileName="C:\Windows\system32\wbem\wmiutils.dll" messageFileName="C:\Windows\system32\vmchipset.dll" message="Microsoft-Windows-Hyper-V-Chipset" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Admin" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Analytic" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1500" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="1510" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="1520" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="1530" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="12530" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; device %3 could not allocate guest physical address space. (Virtual machine ID %2)">
+    </event>
+    <event value="12531" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="Device %3 could not allocate guest physical address space.">
+    </event>
+    <event value="12722" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The SMBIOS tables contain data for CPU information that is not valid. Please contact your computer manufacturer for a BIOS update.">
+    </event>
+    <event value="12723" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The SMBIOS tables contain data for CPU information that is not valid. Please contact your computer manufacturer for a BIOS update.">
+    </event>
+    <event value="12724" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The virtual machine &apos;%1&apos; cannot start because secure boot is off. Enable secure boot to start a shielded virtual machine. (Virtual machine ID %2)">
+    </event>
+    <event value="12725" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The virtual machine &apos;%1&apos; cannot start because secure boot is off.">
+    </event>
+    <event value="18600" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; has encountered a watchdog timeout and was reset. If the problem persists, contact Product Support for the guest operating system. (Virtual machine ID %2)">
+    </event>
+    <event value="18601" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; successfully booted an operating system. (Virtual machine ID %2)">
+    </event>
+    <event value="18602" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; successfully booted an operating system, but at least one boot source failed secure boot validation. (Virtual machine ID %2)">
+    </event>
+    <event value="18603" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; failed to boot an operating system. (Virtual machine ID %2)">
+    </event>
+    <event value="18604" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; failed to boot an operating system. At least one boot source failed secure boot validation. (Virtual machine ID %2)">
+    </event>
+    <event value="18605" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; No bootable devices are configured. Use Hyper-V Manager to configure a bootable device. (Virtual machine ID %2)">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-AAD" guid="4de9bc9c-b27a-43c9-8994-0915f1a5e24f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=aadcloudAP.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\aadcloudAP.dll" messageFileName="C:\Windows\system32\aadcloudAP.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-AAD/Analytic" id="16" flags="0" message="Microsoft-Windows-AAD/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-AAD/Operational" id="17" flags="0" message="Microsoft-Windows-AAD/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="AadCloudAPPlugin" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="AadCloudAPPlugin Operation">
+    </task>
+    <task name="CredentialProvider" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="CredentialProvider Operation">
+    </task>
+    <task name="AadTokenBrokerPlugin" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="AadTokenBrokerPlugin Operation">
+    </task>
+    <task name="AadAdalrt" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="AadAdalrt Operation">
+    </task>
+    <task name="AadAadtb" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="AadAadtb Operation">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Telemetry" mask="1" message="Telemetry trigger events">
+    </keyword>
+    <keyword name="Error" mask="2" message="Error">
+    </keyword>
+    <keyword name="Analytic" mask="4" message="Analytic">
+    </keyword>
+    <keyword name="Function" mask="8" message="Function">
+    </keyword>
+    <keyword name="Operational" mask="10" message="Operational">
+    </keyword>
+    <keyword name="Warning" mask="20" message="Warning">
+    </keyword>
+    <keyword name="Critical" mask="40" message="Critical">
+    </keyword>
+    <keyword name="AadCloudAPPlugin" mask="100" message="AadCloudAPPlugin">
+    </keyword>
+    <keyword name="AadCredProv" mask="200" message="aadcredprov">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin Initialize Start">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin Initialize Stop.
+Status: %1">
+    </event>
+    <event value="1003" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin Uninitialize Start">
+    </event>
+    <event value="1004" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin ValidateUserInfo Start">
+    </event>
+    <event value="1005" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin ValidateUserInfo Stop.
+Status: %1">
+    </event>
+    <event value="1006" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetToken Start">
+    </event>
+    <event value="1007" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetToken Stop.
+Status: %1">
+    </event>
+    <event value="1008" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetKeys Start">
+    </event>
+    <event value="1009" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetKeys Stop.
+Status: %1">
+    </event>
+    <event value="1010" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetUnlockKey Start">
+    </event>
+    <event value="1011" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetUnlockKey Stop.
+Status: %1">
+    </event>
+    <event value="1012" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin PersistSSOTokens Start">
+    </event>
+    <event value="1013" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin PersistSSOTokens Stop.
+Status: %1">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin Realm discovery response: %1.
+Request status: %2">
+    </event>
+    <event value="1016" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin device is cloud domain joined">
+    </event>
+    <event value="1017" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin device is domain joined">
+    </event>
+    <event value="1018" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetToken Correlation ID: %1.
+">
+    </event>
+    <event value="1019" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetKeys Correlation ID: %1.
+">
+    </event>
+    <event value="1020" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin loaded as surrogate">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin MEX request status: %1">
+    </event>
+    <event value="1022" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="Endpoint Uri: %1">
+    </event>
+    <event value="1023" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="NGC UserID Key: %1">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="2" task="101" keywords="0x8000000000000004" message="Http request status: %1">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="2" task="101" keywords="0x8000000000000004" message="Http request status: %1. Method: %2 Endpoint Uri: %3 Correlation ID: %4">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000004" message="Credential type: %1 Correlation ID: %2">
+    </event>
+    <event value="1027" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin managed logon flow for federated NGC user.">
+    </event>
+    <event value="1028" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin RefreshToken Start">
+    </event>
+    <event value="1029" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin RefreshToken Stop.
+Status: %1">
+    </event>
+    <event value="1030" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin RefreshToken Correlation ID: %1.
+">
+    </event>
+    <event value="1031" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin encrypted OAuth response received">
+    </event>
+    <event value="1032" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000004" message="Number of groups received: %1">
+    </event>
+    <event value="1033" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000004" message="Validation needed: %1">
+    </event>
+    <event value="1034" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GenericCallPkg Start">
+    </event>
+    <event value="1035" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GenericCallPkg Stop.
+Status: %1">
+    </event>
+    <event value="1081" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="OAuth response error: %1
+Error description: %2
+CorrelationID: %3
+">
+    </event>
+    <event value="1082" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Key error: %1
+Error description: %2
+CorrelationID: %3
+">
+    </event>
+    <event value="1083" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Protected key error: %1
+Error description: %2
+CorrelationID: %3
+">
+    </event>
+    <event value="1084" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Http transport error. Status: %1 Correlation ID: %2">
+    </event>
+    <event value="1085" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Logon failure. Status: %1 Correlation ID: %2">
+    </event>
+    <event value="1086" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Get user realm failure. Status: %1 Correlation ID: %2">
+    </event>
+    <event value="1087" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Get credential keys failure. Status: %1 Correlation ID: %2">
+    </event>
+    <event value="1088" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="WSTrust response error: %1
+Error description: %2">
+    </event>
+    <event value="1089" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Device is not cloud domain joined: %1">
+    </event>
+    <event value="1090" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="NGC nonce response error: %1
+Error description: %2
+CorrelationID: %3
+">
+    </event>
+    <event value="1091" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="NGC auth ticket is not defined. Error: %1">
+    </event>
+    <event value="1092" version="0" opcode="0" channel="17" level="3" task="101" keywords="0x4000000000000030" message="OAuth request retry. Correlation ID: %1 Retry: %2">
+    </event>
+    <event value="1093" version="0" opcode="0" channel="17" level="3" task="101" keywords="0x4000000000000030" message="NGC call %1 returned error: %2">
+    </event>
+    <event value="1094" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Refresh token failure. Status: %1 Correlation ID: %2">
+    </event>
+    <event value="1095" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Refresh token user SIDs don&apos;t match. Correlation ID: %1">
+    </event>
+    <event value="1096" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Refresh token is expired. Correlation ID: %1">
+    </event>
+    <event value="1097" version="0" opcode="0" channel="17" level="3" task="103" keywords="0x4000000000000030" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1098" version="0" opcode="0" channel="17" level="2" task="103" keywords="0x4000000000000012" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1099" version="0" opcode="0" channel="16" level="4" task="103" keywords="0x8000000000000004" message="Code: %1 %2
+%3">
+    </event>
+    <event value="1100" version="0" opcode="0" channel="17" level="3" task="104" keywords="0x4000000000000030" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1101" version="0" opcode="0" channel="17" level="2" task="104" keywords="0x4000000000000012" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="16" level="4" task="104" keywords="0x8000000000000004" message="Code: %1 %2
+%3">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Can&apos;t decrypt OAuth response. Error: %1">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="AAD Cloud AP plugin call %1 returned error: %2">
+    </event>
+    <event value="1105" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Device registration API call %1 returned error: %2">
+    </event>
+    <event value="1106" version="0" opcode="0" channel="17" level="3" task="101" keywords="0x4000000000000030" message="Number of security groups received %1. CorrelationID: %2">
+    </event>
+    <event value="1107" version="0" opcode="0" channel="16" level="3" task="103" keywords="0x8000000000000024" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1108" version="0" opcode="0" channel="16" level="2" task="103" keywords="0x8000000000000006" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1109" version="0" opcode="0" channel="16" level="3" task="104" keywords="0x8000000000000024" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1110" version="0" opcode="0" channel="16" level="2" task="104" keywords="0x8000000000000006" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1111" version="0" opcode="0" channel="17" level="3" task="105" keywords="0x4000000000000030" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1112" version="0" opcode="0" channel="17" level="2" task="105" keywords="0x4000000000000012" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1113" version="0" opcode="0" channel="16" level="4" task="105" keywords="0x8000000000000004" message="Code: %1 %2
+%3">
+    </event>
+    <event value="1114" version="0" opcode="0" channel="16" level="3" task="105" keywords="0x8000000000000024" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1115" version="0" opcode="0" channel="16" level="2" task="105" keywords="0x8000000000000006" message="Error: %1 %2
+%3">
+    </event>
+    <event value="1116" version="0" opcode="0" channel="16" level="3" task="101" keywords="0x8000000000000024" message="Get Enterprise STS OAuth Info failure. Status: %1 Correlation ID: %2">
+    </event>
+    <event value="1117" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Enterprise STS Refresh token failure. Status: %1 Correlation ID: %2">
+    </event>
+    <event value="1118" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Enterprise STS Logon failure. Status: %1 Correlation ID: %2">
+    </event>
+    <event value="1119" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000004" message="Enterprise STS OAuth Info response: %1.
+Request status: %2">
+    </event>
+    <event value="1120" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Enterprise STS Refresh token is expired. Correlation ID: %1">
+    </event>
+    <event value="1121" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="Enterprise STS RefreshToken Correlation ID: %1.
+">
+    </event>
+    <event value="1122" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Refresh token subject don&apos;t match. Correlation ID: %1">
+    </event>
+    <event value="1123" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="AadCloudAPPlugin smart card logon for non-federated user.">
+    </event>
+    <event value="1124" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Device is DRS joined but Enterprise STS is disabled: %1">
+    </event>
+    <event value="1125" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin loaded as surrogate, no key recovery">
+    </event>
+    <event value="1126" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin device is Enterprise joined">
+    </event>
+    <event value="1127" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin device P2P certificate update thread started">
+    </event>
+    <event value="1128" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin device P2P certificate update thread stopped">
+    </event>
+    <event value="1129" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin Uninitialize Stop">
+    </event>
+    <event value="1130" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin DeviceP2PCertificateUpdate Correlation ID: %1.
+">
+    </event>
+    <event value="1131" version="0" opcode="0" channel="17" level="3" task="101" keywords="0x4000000000000030" message="Update P2P device certificate failure. Status: %1 Correlation ID: %2">
+    </event>
+    <event value="1132" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetCertificateFromCred Correlation ID: %1.
+">
+    </event>
+    <event value="1133" version="0" opcode="0" channel="17" level="3" task="101" keywords="0x4000000000000030" message="Update P2P user certificate failure. Status: %1 Correlation ID: %2">
+    </event>
+    <event value="1134" version="0" opcode="0" channel="16" level="3" task="101" keywords="0x8000000000000004" message="AAD Cloud AP plugin call %1 returned error: %2">
+    </event>
+    <event value="1135" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin RenewCertificate Correlation ID: %1.
+">
+    </event>
+    <event value="1136" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin AcceptPeerCertificate Start">
+    </event>
+    <event value="1137" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin AcceptPeerCertificate Stop.
+Status: %1">
+    </event>
+    <event value="1138" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin RenewCertificate Start">
+    </event>
+    <event value="1139" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin RenewCertificate Stop.
+Status: %1">
+    </event>
+    <event value="1140" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetCertificateFromCred Start">
+    </event>
+    <event value="1141" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin GetCertificateFromCred Stop.
+Status: %1">
+    </event>
+    <event value="1142" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="Get token user names don&apos;t match. Correlation ID: %1">
+    </event>
+    <event value="1143" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000004" message="Generic Call Packate call type: %1. Correlation ID: %2">
+    </event>
+    <event value="1144" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000004" message="Realm discovery for: %1 authority: %2">
+    </event>
+    <event value="1145" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AAD Cloud AP plugin token needs refresh reason: %1">
+    </event>
+    <event value="1146" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000004" message="Token is not refreshed. token time: %1 update time: %2">
+    </event>
+    <event value="1147" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin AssembleOpaqueData Start">
+    </event>
+    <event value="1148" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin AssembleOpaqueData Stop.
+Status: %1">
+    </event>
+    <event value="1149" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin DisassembleOpaqueData Start">
+    </event>
+    <event value="1150" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="AadCloudAPPlugin DisassembleOpaqueData Stop.
+Status: %1">
+    </event>
+    <event value="1151" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="AadCloudAPPlugin P2P device certificate update error: %1">
+    </event>
+  </events>
+</provider>

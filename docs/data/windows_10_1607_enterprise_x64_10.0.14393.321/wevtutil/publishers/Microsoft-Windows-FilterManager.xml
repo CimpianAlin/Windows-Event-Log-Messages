@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-FilterManager" guid="f3c5e28e-63f6-49c7-a204-e48a1bc4b09d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=fltmgr.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\fltmgr.sys" parameterFileName="C:\Windows\system32\drivers\fltmgr.sys" messageFileName="C:\Windows\system32\drivers\fltmgr.sys" message="Microsoft-Windows-FilterManager" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="File System Filter &apos;%5&apos; (Version %2.%3, %6) unloaded successfully.">
+    </event>
+    <event value="1" version="1" opcode="0" channel="8" level="4" task="0" keywords="0x8000400000000000" message="File System Filter &apos;%5&apos; (Version %2.%3, %6) unloaded successfully.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Name caching for File System Filters has been disabled on volume &apos;%3&apos;.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Filter Manager failed to attach to volume &apos;%3&apos;.  This volume will be unavailable for filtering until a reboot.  The final status was %1.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="File System Filter &apos;%5&apos; (Version %2.%3, %6) failed to attach to volume &apos;%8&apos;.  The filter returned a non-standard final status of %1.  This filter and/or its supporting applications should handle this condition.  If this condition persists, contact the vendor.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="File System Filter &apos;%5&apos; (Version %2.%3, %6) failed to register with Filter Manager.  The final status for this operation was %1.">
+    </event>
+    <event value="5" version="1" opcode="0" channel="8" level="3" task="0" keywords="0x8000400000000000" message="File System Filter &apos;%5&apos; (Version %2.%3, %6) failed to register with Filter Manager.  The final status for this operation was %1.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="File System Filter &apos;%5&apos; (%2.%3, %6) has successfully loaded and registered with Filter Manager.">
+    </event>
+    <event value="6" version="1" opcode="0" channel="8" level="4" task="0" keywords="0x8000400000000000" message="File System Filter &apos;%5&apos; (%2.%3, %6) has successfully loaded and registered with Filter Manager.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="File System Filter &apos;%5&apos; (Version %2.%3, %6) failed to start filtering.  The final status for this operation was %1.">
+    </event>
+    <event value="7" version="1" opcode="0" channel="8" level="3" task="0" keywords="0x8000400000000000" message="File System Filter &apos;%5&apos; (Version %2.%3, %6) failed to start filtering.  The final status for this operation was %1.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Filter Manager successfully attached to volume &apos;%3&apos;.">
+    </event>
+    <event value="8" version="1" opcode="0" channel="8" level="4" task="0" keywords="0x8000400000000000" message="Filter Manager successfully attached to volume &apos;%3&apos;.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Filter Manager failed to attach to file system control device object (CDO) &apos;%3&apos;.  All volumes associated with this file system will be unavailable for filtering until a reboot. The final status was %1.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Filter Manager successfully attached to file system &apos;%3&apos;.">
+    </event>
+  </events>
+</provider>

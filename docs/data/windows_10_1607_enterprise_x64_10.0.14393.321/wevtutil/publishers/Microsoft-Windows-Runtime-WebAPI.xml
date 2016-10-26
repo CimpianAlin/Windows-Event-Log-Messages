@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Runtime-WebAPI" guid="6bd96334-dc49-441a-b9c4-41425ba628d8" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=windows.web.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\windows.web.dll" messageFileName="C:\Windows\system32\windows.web.dll" message="Microsoft-Windows-Runtime-WebAPI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Runtime-WebAPI/Tracing" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="opcodes.ApiEnter" value="655360" message="API Enter">
+    </opcode>
+    <opcode name="opcodes.ApiExit" value="720896" message="API Exit">
+    </opcode>
+    <opcode name="opcodes.AsyncOperationStarted" value="786432" message="Async operation start">
+    </opcode>
+    <opcode name="opcodes.AsyncOperationCompleted" value="851968" message="Async operation complete">
+    </opcode>
+    <opcode name="opcodes.AsyncOperationFailure" value="917504" message="Async operation failure">
+    </opcode>
+    <opcode name="opcodes.AsyncOperationCancelled" value="983040" message="Async operation abort">
+    </opcode>
+    <opcode name="opcodes.AsyncOperationClosed" value="1048576" message="Async operation close">
+    </opcode>
+    <opcode name="opcodes.AsyncOperationFireCompletion" value="1114112" message="Async operation completion">
+    </opcode>
+    <opcode name="opcodes.AsyncOperationFireProgress" value="1179648" message="Async operation progress">
+    </opcode>
+    <opcode name="opcodes.Http" value="1245184" message="HTTP operation">
+    </opcode>
+    <opcode name="opcodes.ParseCategoryDocument" value="1310720" message="Parse category document">
+    </opcode>
+    <opcode name="opcodes.CheckRequiredElement" value="1376256" message="Check required element">
+    </opcode>
+    <opcode name="opcodes.CheckRequiredAttribute" value="1441792" message="Check required attribute">
+    </opcode>
+    <opcode name="opcodes.CheckDuplicatedElement" value="1507328" message="Check duplicated element">
+    </opcode>
+    <opcode name="opcodes.UriParsing" value="1572864" message="Parse URI">
+    </opcode>
+    <opcode name="opcodes.DateTimeParsing" value="1638400" message="Parse date time string">
+    </opcode>
+    <opcode name="opcodes.IntegerParsing" value="1703936" message="Parse integer">
+    </opcode>
+    <opcode name="opcodes.DocumentParsing" value="1769472" message="Parse XML">
+    </opcode>
+    <opcode name="opcodes.CheckCustomAttribute" value="1835008" message="Check custom attribute">
+    </opcode>
+    <opcode name="opcodes.CheckCustomElement" value="1900544" message="Check custom element">
+    </opcode>
+    <opcode name="opcodes.JsonParsing" value="1966080" message="Parse JSON string">
+    </opcode>
+    <opcode name="opcodes.AddDefault" value="2031616" message="Add default value">
+    </opcode>
+    <opcode name="opcodes.AddFirst" value="2097152" message="Add first value">
+    </opcode>
+    <opcode name="opcodes.IgnoreUnexpected" value="2162688" message="Ignore unexpected content">
+    </opcode>
+    <opcode name="opcodes.AddCustomAttribute" value="2228224" message="Add custom attribute">
+    </opcode>
+    <opcode name="opcodes.AddCustomElement" value="2293760" message="Add custom element">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tasks.API" value="1" eventGUID="3185df41-02a2-498c-b3cb-3bf4a3f964ec" message="APIs">
+    </task>
+    <task name="tasks.Parse" value="2" eventGUID="67766316-a276-4a97-abfe-da3e04e2c56e" message="Parse">
+    </task>
+    <task name="tasks.Serialize" value="3" eventGUID="6a493837-740b-4403-aebd-ee1460ca1cf2" message="Serialize">
+    </task>
+    <task name="tasks.AsyncIO" value="4" eventGUID="63c2439e-ebab-45d4-b50b-dc3eb59ec31e" message="Async I/O">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="keywords.API" mask="1" message="API">
+    </keyword>
+    <keyword name="keywords.AtomPub" mask="2" message="AtomPub">
+    </keyword>
+    <keyword name="keywords.Json" mask="4" message="JSON">
+    </keyword>
+    <keyword name="keywords.Format" mask="8" message="Format">
+    </keyword>
+    <keyword name="keywords.AsyncOperation" mask="10" message="AsyncOperation">
+    </keyword>
+    <keyword name="keywords.Http" mask="20" message="HTTP">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="12" channel="16" level="4" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 started.">
+    </event>
+    <event value="2" version="0" opcode="14" channel="16" level="2" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 failed to start. The error code is %3: %4">
+    </event>
+    <event value="3" version="0" opcode="13" channel="16" level="4" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 completed successfully.">
+    </event>
+    <event value="4" version="0" opcode="14" channel="16" level="2" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 failed with error code %3: %4.">
+    </event>
+    <event value="5" version="0" opcode="15" channel="16" level="4" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 was cancelled.">
+    </event>
+    <event value="6" version="0" opcode="16" channel="16" level="4" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 was closed.">
+    </event>
+    <event value="7" version="0" opcode="17" channel="16" level="4" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 called completion callback at %3.">
+    </event>
+    <event value="8" version="0" opcode="18" channel="16" level="4" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 called progress callback at %3.">
+    </event>
+    <event value="9" version="0" opcode="14" channel="16" level="2" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 failed to remove handler from GIT. The error code is %3: %4">
+    </event>
+    <event value="10" version="0" opcode="14" channel="16" level="2" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 failed to register handler at GIT. The error code is %3: %4">
+    </event>
+    <event value="11" version="0" opcode="14" channel="16" level="2" task="4" keywords="0x8000000000000010" message="Async operation %1 at %2 failed to retrieve handler from GIT. The error code is %3: %4">
+    </event>
+    <event value="12" version="0" opcode="24" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Failed to parse URI &apos;%1&apos;.">
+    </event>
+    <event value="13" version="0" opcode="24" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Failed to create URI with base URI &apos;%1&apos; and relative URI &apos;%2&apos;.">
+    </event>
+    <event value="14" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Add HTTP header &apos;%1: %2&apos;.">
+    </event>
+    <event value="15" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Start to connect to &apos;%1&apos; with credential of &apos;%2&apos;.">
+    </event>
+    <event value="16" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Start to connect to &apos;%1&apos; with default credential.">
+    </event>
+    <event value="17" version="0" opcode="19" channel="16" level="2" task="4" keywords="0x8000000000000020" message="Failed to connect to &apos;%1&apos; at port %2. The last error is %3: %4">
+    </event>
+    <event value="18" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Opening request to &apos;%1&apos; to &apos;%2&apos; with flags %3.">
+    </event>
+    <event value="19" version="0" opcode="19" channel="16" level="2" task="4" keywords="0x8000000000000020" message="Failed to open request to &apos;%1&apos;. The last error is %2: %3">
+    </event>
+    <event value="20" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Request context %1 has request handle %2 to &apos;%3&apos;.">
+    </event>
+    <event value="21" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Set HTTP send and receive timeout to %2ms on request handle %1.">
+    </event>
+    <event value="22" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Start to send to request handle %1 with content length %2.">
+    </event>
+    <event value="23" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Request handle %1 completed synchronously.">
+    </event>
+    <event value="24" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Request context %1 completed send asynchronously.">
+    </event>
+    <event value="25" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Writing %2 bytes to request handle %1.">
+    </event>
+    <event value="26" version="0" opcode="19" channel="16" level="2" task="4" keywords="0x8000000000000020" message="Failed to send entity body to request handle %1. The last error is %2: %3">
+    </event>
+    <event value="27" version="0" opcode="19" channel="16" level="5" task="4" keywords="0x8000000000000020" message="Sent HTTP request at request handle %1: %2">
+    </event>
+    <event value="28" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Start to receive response from request handle %1.">
+    </event>
+    <event value="29" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Received HTTP response from request handle %1 with status code %2 and status description &apos;%3&apos;.">
+    </event>
+    <event value="30" version="0" opcode="19" channel="16" level="5" task="4" keywords="0x8000000000000020" message="Receive HTTP response from request handle %1: %2">
+    </event>
+    <event value="31" version="0" opcode="19" channel="16" level="2" task="4" keywords="0x8000000000000020" message="Failed to receive HTTP response from request handle %1. The last error is %2: %3">
+    </event>
+    <event value="32" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Request context %1 received HTTP response of %2 bytes, which is over the %3 limit.">
+    </event>
+    <event value="33" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Request context %1 resubmiting the request.">
+    </event>
+    <event value="34" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Reusing the request handle %1 for server &apos;%2&apos;.">
+    </event>
+    <event value="35" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Request context %1 was aborted.">
+    </event>
+    <event value="36" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000020" message="Progress to &apos;%1&apos;: %2 bytes sent; %3 total bytes to send; %4 bytes received; %5 total bytes to receive.">
+    </event>
+    <event value="37" version="0" opcode="19" channel="16" level="2" task="4" keywords="0x8000000000000020" message="HTTP request to &apos;%1&apos; completed. The error code is %2: %3">
+    </event>
+    <event value="38" version="0" opcode="19" channel="16" level="2" task="2" keywords="0x8000000000000008" message="Async operation %1 at %2 failed to process HTTP response &apos;%3&apos;. The error code is %4: %5">
+    </event>
+    <event value="39" version="0" opcode="10" channel="16" level="5" task="1" keywords="0x8000000000000001" message="%1::%2 is called.">
+    </event>
+    <event value="40" version="0" opcode="11" channel="16" level="5" task="1" keywords="0x8000000000000001" message="%1::%2 returned successfully.">
+    </event>
+    <event value="41" version="0" opcode="11" channel="16" level="2" task="1" keywords="0x8000000000000001" message="%1::%2 failed with HRESULT %3: %4">
+    </event>
+    <event value="42" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000002" message="Start downloading category document at &apos;%1&apos;.">
+    </event>
+    <event value="43" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000002" message="Category document downloaded successfully at &apos;%1&apos;.">
+    </event>
+    <event value="44" version="0" opcode="19" channel="16" level="3" task="4" keywords="0x8000000000000002" message="Failed to download category document at &apos;%1&apos;. The error code is %2: %3">
+    </event>
+    <event value="45" version="0" opcode="19" channel="16" level="4" task="4" keywords="0x8000000000000002" message="Failed to download category document at &apos;%1&apos;. The HTTP status code was %2.">
+    </event>
+    <event value="46" version="0" opcode="20" channel="16" level="3" task="4" keywords="0x8000000000000002" message="Failed to parse category document downloaded from &apos;%1&apos;. The error code is %2: %3.">
+    </event>
+    <event value="47" version="0" opcode="21" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Required element &apos;%1&apos; is missing.">
+    </event>
+    <event value="48" version="0" opcode="22" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Required attribute &apos;%1&apos; is missing on element &apos;%2&apos;.">
+    </event>
+    <event value="49" version="0" opcode="23" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Duplicated element &apos;%1&apos; found.">
+    </event>
+    <event value="50" version="0" opcode="31" channel="16" level="3" task="3" keywords="0x8000000000000008" message="Required element &apos;%1&apos; is missing. Add one with default value.">
+    </event>
+    <event value="51" version="0" opcode="31" channel="16" level="3" task="3" keywords="0x8000000000000008" message="Required attribute &apos;%1&apos; is missing on element &apos;%2&apos;. Add it with empty value.">
+    </event>
+    <event value="52" version="0" opcode="21" channel="16" level="3" task="2" keywords="0x8000000000000008" message="The parsed &apos;feed&apos; element does not have an &apos;author&apos; element.">
+    </event>
+    <event value="53" version="0" opcode="32" channel="16" level="3" task="3" keywords="0x8000000000000008" message="Multiple &apos;%1&apos; elements are found. Use the first and ignore the rest.">
+    </event>
+    <event value="54" version="0" opcode="33" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Ignore the &apos;entry&apos; element found in &apos;source&apos; element.">
+    </event>
+    <event value="55" version="0" opcode="21" channel="16" level="3" task="2" keywords="0x8000000000000008" message="The &apos;entry&apos; element does not have a &apos;content&apos; element or a &apos;link&apos; element with rel=&apos;alternate&apos;. Element XML: %1">
+    </event>
+    <event value="56" version="0" opcode="21" channel="16" level="3" task="2" keywords="0x8000000000000008" message="The &apos;item&apos; element is missing both &apos;title&apos; and &apos;description&apos; elements. Element XML: %1">
+    </event>
+    <event value="57" version="0" opcode="22" channel="16" level="3" task="2" keywords="0x8000000000000008" message="The &apos;link&apos; element with rel=&apos;enclosure&apos; is missing &apos;length&apos; attribute. Element XML: %1">
+    </event>
+    <event value="58" version="0" opcode="33" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Unexpected child element is found in element with XML: %1">
+    </event>
+    <event value="59" version="0" opcode="33" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Unexpected &apos;type&apos; attribute &apos;%1&apos; when &apos;src&apos; attribute is present. Element XML: %2">
+    </event>
+    <event value="60" version="0" opcode="33" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Unexpected &apos;type&apos; attribute &apos;%1&apos; in Atom text content. Only &apos;text&apos;, &apos;html&apos; or &apos;xhtml&apos; is allowed. Element XML: %2">
+    </event>
+    <event value="61" version="0" opcode="33" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Element &apos;%1&apos; should not contain child element or text. Element XML: %2">
+    </event>
+    <event value="62" version="0" opcode="33" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Atom text content with type=&apos;xhtml&apos; must have a single child element &apos;div&apos; in namespace &apos;http://www.w3.org/1999/xhtml&apos;.">
+    </event>
+    <event value="63" version="0" opcode="25" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Failed to parse date time &apos;%1&apos;.">
+    </event>
+    <event value="64" version="0" opcode="26" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Failed to parse integer &apos;%1&apos;.">
+    </event>
+    <event value="65" version="0" opcode="27" channel="16" level="3" task="2" keywords="0x8000000000000008" message="Failed to parse document: &apos;%1&apos;.">
+    </event>
+    <event value="66" version="0" opcode="28" channel="16" level="2" task="2" keywords="0x8000000000000008" message="Failed to create attribute node. The attribute &apos;%1&apos; in namespace &apos;%2&apos; is not a valid XML attribute.">
+    </event>
+    <event value="67" version="0" opcode="29" channel="16" level="2" task="2" keywords="0x8000000000000008" message="Failed to create element node. The element &apos;%1&apos; in namespace &apos;%2&apos; is not a valid XML element.">
+    </event>
+    <event value="68" version="0" opcode="34" channel="16" level="2" task="2" keywords="0x8000000000000008" message="Failed to add attribute &apos;%1&apos; in namespace &apos;%2&apos; in to the element. This may be caused by namespace conflict and may be resolved by setting a different namespace prefix on the attribute name.">
+    </event>
+    <event value="69" version="0" opcode="30" channel="16" level="2" task="2" keywords="0x8000000000000008" message="Failed to parse JSON string &apos;%1&apos;. The error happened near %2.">
+    </event>
+    <event value="70" version="0" opcode="30" channel="16" level="2" task="2" keywords="0x8000000000000008" message="The JSON string exceeded the maximum allowed depth %1.">
+    </event>
+    <event value="71" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Handle %1: HTTP/2 enabled.">
+    </event>
+  </events>
+</provider>

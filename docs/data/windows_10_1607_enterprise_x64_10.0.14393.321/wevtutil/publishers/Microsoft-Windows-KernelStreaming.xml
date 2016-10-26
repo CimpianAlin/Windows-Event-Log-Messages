@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-KernelStreaming" guid="548c4417-ce45-41ff-99dd-528f01ce0fe1" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\ks.sys" messageFileName="C:\Windows\system32\drivers\ks.sys" message="Microsoft-Windows-KernelStreaming" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="WINDOWS_KS_CHANNEL" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="KS_PnpAddDevice" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KS_StreamingRequest" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KS_CameraGrab" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KS_WNF" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KS_WNFNotification" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KS_DisplayOff" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KS_WNFPinState" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KS_IoProbeandLock" value="108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KS_QueryInterface" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="200" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="201" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="202" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="203" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="204" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="205" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="206" version="0" opcode="0" channel="16" level="4" task="104" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="207" version="0" opcode="0" channel="16" level="4" task="104" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="208" version="0" opcode="0" channel="16" level="4" task="107" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="209" version="0" opcode="0" channel="16" level="4" task="105" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="210" version="0" opcode="0" channel="16" level="4" task="106" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="211" version="0" opcode="1" channel="16" level="4" task="108" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="212" version="0" opcode="2" channel="16" level="4" task="108" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="213" version="0" opcode="1" channel="16" level="4" task="109" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="214" version="0" opcode="2" channel="16" level="4" task="109" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

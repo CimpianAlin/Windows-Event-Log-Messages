@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-UserAccountControl" guid="2683b597-3cca-410a-97fe-6f7ee3d09b94" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=UserAccountControlSettings.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\UserAccountControlSettings.dll" messageFileName="C:\Windows\system32\UserAccountControlSettings.dll" message="Microsoft-Windows-UserAccountControl" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-UserAccountControl/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="UserAccountControl_UIReady" value="6000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="16" version="0" opcode="2" channel="16" level="4" task="6000" keywords="0x8001000000000000" message="">
+    </event>
+  </events>
+</provider>

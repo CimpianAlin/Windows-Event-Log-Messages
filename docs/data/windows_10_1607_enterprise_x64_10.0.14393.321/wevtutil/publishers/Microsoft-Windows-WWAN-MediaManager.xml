@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WWAN-MediaManager" guid="f4c9be26-414f-42d7-b540-8bff965e6d32" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=WWanConn.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\WWanConn.dll" messageFileName="C:\Windows\system32\WWanConn.dll" message="Microsoft-Windows-WWAN-MediaManager" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WWAN-MediaManager/Diagnostic" id="16" flags="0" message="Microsoft-Windows-WWAN-MediaManager/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Create_Context_Menu" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Show_Data_Usage" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Hide_Data_Usage" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Change_Network_Cost" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="Start create context menu">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="Stop create context menu">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8001000000000000" message="Show data usage">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8001000000000000" message="Hide data usage">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8001000000000000" message="Change network cost">
+    </event>
+  </events>
+</provider>

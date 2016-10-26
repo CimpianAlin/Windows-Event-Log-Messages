@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Security-SPP-UX" guid="6bdadc96-673e-468c-9f5b-f382f95b2832" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=slui.exe&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\slui.exe" messageFileName="C:\Windows\system32\slui.exe" message="Microsoft-Windows-Security-SPP-UX" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Security-SPP-UX/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Security_SPP_UX_Resolve" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Security_SPP_UX_Activate" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Security_SPP_UX_NotifyUser" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="101" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="200" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="201" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="300" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="301" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

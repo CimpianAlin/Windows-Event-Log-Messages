@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MCCS-SyncUtil" guid="dca074ce-547c-4595-ae90-56229b8e3bd9" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=SYNCUTIL.dll&amp;FileVer=10.0.14393.0" resourceFileName="SYNCUTIL.dll" messageFileName="SYNCUTIL.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SPERF_TAG_UPDATE_TRANSPORT" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_LOAD_XMLDOM" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="Error">
+    </keyword>
+    <keyword name="Performance" mask="2" message="Performance">
+    </keyword>
+    <keyword name="CommsService" mask="1000000000" message="CommsService">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="Warning">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="StateTransition">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Error: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="Error Propagated: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Commsync:[Ctrl] [%1] [%2] %3">
+    </event>
+    <event value="102" version="0" opcode="1" channel="0" level="4" task="1" keywords="0x200000000002" message="">
+    </event>
+    <event value="103" version="0" opcode="2" channel="0" level="4" task="1" keywords="0x200000000002" message="">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x0" message="%1%2%3 %4">
+    </event>
+    <event value="121" version="0" opcode="1" channel="0" level="4" task="2" keywords="0x200000000002" message="SyncUtil: [Start Marker] [SPERF_TAG_LOAD_XMLDOM_START] Start loading xml [%1]">
+    </event>
+    <event value="122" version="0" opcode="2" channel="0" level="4" task="2" keywords="0x200000000002" message="SyncUtil: [Stop Marker] [SPERF_TAG_SYNC_ENGINE_STOP] Done loading xml [%1]">
+    </event>
+    <event value="202" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="SyncUtil: MXSML Error code=%1">
+    </event>
+    <event value="203" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="SyncUtil: MXSML Error reason=%1">
+    </event>
+    <event value="204" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="SyncUtil: MXSML Error url=%1">
+    </event>
+    <event value="205" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="SyncUtil: MXSML Error srcText=%1">
+    </event>
+    <event value="206" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="SyncUtil: MXSML Error offset=%1">
+    </event>
+    <event value="301" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000001" message="SyncUtil: Account attempted to access SyncPersistentObjectManager when NULL">
+    </event>
+    <event value="400" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Backup store %1 %2.  Poom Props: %3, Poom Named Props: %4, Mapi Props: %5, Folders: %6">
+    </event>
+    <event value="401" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Restored store %1 %2. Restored: %3, Store found: %4, RestoreAllInfo: %5">
+    </event>
+    <event value="402" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Got HasFolderHierarchySynced state %1 for store">
+    </event>
+    <event value="403" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Restore store (Network source: %1, Account ID: %2), forget: %3">
+    </event>
+    <event value="600" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Dormant Hint: ACTIVE">
+    </event>
+    <event value="601" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Dormant Hint: DORMANT">
+    </event>
+    <event value="750" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Total AUTD accounts count changed (previous count: %1, new count: %2, AUTD limit: %3).">
+    </event>
+    <event value="751" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="Saving fallback schedule for account %1 (current schedule: %2, requested schedule %2, fallback schedule: %4, AUTD limit: %5).">
+    </event>
+    <event value="752" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="Demoting schedule for account %1 (current schedule: %2, new schedule: %3, AUTD limit: %4).">
+    </event>
+    <event value="753" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="Account %1 schedule changed from %2 to %3.">
+    </event>
+    <event value="800" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x204000000000" message="Received OAuth token of type %1 expiring in %2seconds.">
+    </event>
+    <event value="801" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x204000000000" message="Received OAuth token of type %1 expiring in %2seconds.">
+    </event>
+    <event value="802" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x204000000000" message="Received OAuth token of type %1 expiring in %2seconds.">
+    </event>
+    <event value="803" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000001" message="The SSO Token request failed with status %1">
+    </event>
+    <event value="804" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000001" message="The SSO request failed with a provider error (status: %1, message: %2)">
+    </event>
+    <event value="810" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Cred Vault: DeletePwd Called. Caller: UpdatePasswordForAccount, Partner %1">
+    </event>
+  </events>
+</provider>

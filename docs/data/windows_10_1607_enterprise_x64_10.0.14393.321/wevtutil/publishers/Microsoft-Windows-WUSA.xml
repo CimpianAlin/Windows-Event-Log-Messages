@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WUSA" guid="09608c12-c1da-4104-a6fe-b959cf57560a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wusa.exe&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\wusa.exe" messageFileName="C:\Windows\system32\wusa.exe" message="Microsoft-Windows-WUSA" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Setup" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WUSA/Debug" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:LogAlways" value="0" message="Log Always">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="0" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows update %1 was successfully installed. (Command line: &quot;%2&quot;)">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows update %1 could not be installed because of error %2 &quot;%3&quot; (Command line: &quot;%4&quot;)">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Windows update %1 requires a computer restart to complete the installation. (Command line: &quot;%2&quot;)">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="This computer will restart to complete the installation of Windows update %1 (Command line: &quot;%2&quot;)">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows Modules Installer must be updated before you can install this package (Command line: &quot;%1&quot;)">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows update %1 was successfully uninstalled. (Command line: &quot;%2&quot;)">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows update %1 could not be uninstalled because of error %2 &quot;%3&quot; (Command line: &quot;%4&quot;)">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Windows update %1 requires a computer restart to finish uninstalling. (Command line: &quot;%2&quot;)">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="This computer will restart to finish uninstalling Windows update %1 (Command line: &quot;%2&quot;)">
+    </event>
+  </events>
+</provider>

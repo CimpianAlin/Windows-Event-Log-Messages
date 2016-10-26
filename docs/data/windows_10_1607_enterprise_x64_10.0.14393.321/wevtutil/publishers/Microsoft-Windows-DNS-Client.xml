@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DNS-Client" guid="1c95126e-7eea-49a9-a3fe-a378b03ddb4d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=dnsapi.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\dnsapi.dll" messageFileName="C:\Windows\system32\dnsapi.dll" message="Microsoft-Windows-DNS Client Events" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DNS-Client/Operational" id="16" flags="0" message="Microsoft-Windows-DNS Client Events/Operational">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="ut:Start" value="11796480" message="Start State">
+    </opcode>
+    <opcode name="ut:End" value="11862016" message="End State">
+    </opcode>
+    <opcode name="ut:Closed" value="11927552" message="Closed State">
+    </opcode>
+    <opcode name="ut:Open" value="11993088" message="Open State">
+    </opcode>
+    <opcode name="ut:Connect" value="12058624" message="Connect State">
+    </opcode>
+    <opcode name="ut:Listen" value="12124160" message="Listen State">
+    </opcode>
+    <opcode name="ut:Association" value="12189696" message="Association State">
+    </opcode>
+    <opcode name="ut:Authentication" value="12255232" message="Authentication State">
+    </opcode>
+    <opcode name="ut:Established" value="12320768" message="Established State">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DnsActivityStart" value="60001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsActivityStop" value="60002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsActivityTransfer" value="60003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsNetError" value="60004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsNetWarning" value="60005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsStateTransition" value="60006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsContextUpdate" value="60007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsPolicyReadError" value="60008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsV4Tuple" value="60101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsV6Tuple" value="60102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsInterfaceInfo" value="60103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsNoServerConfigV4" value="1000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsServerForInterface" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsServerQueryChange" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsServerValidationSuccess" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsServerValidationSuccessSystem" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsServerValidationFailure" value="1005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsServerValidationFailureSystem" value="1006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsMissingPrimarySuffix" value="1007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsMissingPrimarySuffixSystem" value="1008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsNonMatchingSuffix" value="1009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsNonMatchingSuffixSystem" value="1010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsHostFileError" value="1011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsHostFileErrorSystem" value="1012" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsAllServersTimeout" value="1013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsAllServersTimeoutSystem" value="1014" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsServerTimeout" value="1015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsNameError" value="1016" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsAuthoritativeResponse" value="1017" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsLinkLocal" value="1018" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsNoServerConfigV6" value="1019" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsReadPolicyTable" value="1020" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsMatchPolicyInfo" value="1021" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsSecureNoFallback" value="1022" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsPolicySystemReadError" value="1023" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsQueryBadXid" value="1024" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsQueryInvalidServerIp" value="1025" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsQueryInvalidQuestion" value="1026" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsQueryVerbose" value="1027" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsRegistration" value="1028" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DnsGenericError" value="1029" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ut:GenericEvent" mask="100" message="">
+    </keyword>
+    <keyword name="ut:DnsAutoLogKeyword" mask="10000000" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:PolicyTable" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ut:PerfCheckPoints" mask="400000000000" message="">
+    </keyword>
+    <keyword name="ut:RegistrationEvent" mask="800000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="There are currently no IPv4 DNS servers configured for any interface on this host. Please configure DNS server settings, or renew your dynamic IP settings.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="1001" keywords="0x8000000000000000" message="Interface: %1 Total DNS Server Count: %2 Index: %3 Address: %6 (%4)">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="1002" keywords="0x8000000000000000" message="The DNS server being queried for interface %1 has changed to %3">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="1003" keywords="0x8000000000000000" message="The following DNS server(s) were successfully validated as active servers that can service this client. %2">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="2" task="1005" keywords="0x8000000000000000" message="The client was unable to validate the following as active DNS server(s) that can service this client. The server(s) may be temporarily unavailable, or may be incorrectly configured. %2">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="2" task="1007" keywords="0x8000000000000000" message="The primary DNS suffix for this machine is missing. In the absence of a primary DNS suffix, short unqualified names may not resolve through DNS">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="8" level="3" task="1008" keywords="0x4000000010000000" message="The primary DNS suffix for this machine is missing. In the absence of a primary DNS suffix, short unqualified names may not resolve through DNS">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="2" task="1009" keywords="0x8000000000000000" message="The primary DNS suffix for this machine (%1) does not match the Active Directory domain (%2) that it is currently joined to.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="8" level="3" task="1010" keywords="0x4000000010000000" message="The primary DNS suffix for this machine (%1) does not match the Active Directory domain (%2) that it is currently joined to.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="2" task="1011" keywords="0x8000000000000000" message="There was an error while attempting to read the local hosts file.">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="8" level="2" task="1012" keywords="0x4000000010000000" message="There was an error while attempting to read the local hosts file.">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="2" task="1013" keywords="0x8000000000000000" message="Name resolution for the name %1 timed out after none of the configured DNS servers responded.">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="8" level="3" task="1014" keywords="0x4000000010000000" message="Name resolution for the name %1 timed out after none of the configured DNS servers responded.">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="1015" keywords="0x8000000000000000" message="Name resolution for the name %1 timed out after the DNS server %3 did not respond.">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="4" task="1016" keywords="0x8000000000000000" message="A name not found error was returned for the name %1. Check to ensure that the name is correct. The response was sent by the server at %3.">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="4" task="1017" keywords="0x8000000000000000" message="The DNS server&apos;s response to a query for name %1 indicates that no records of the type queried are available, but could indicate that other records for the same name are present.">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="4" task="1018" keywords="0x8000000000000000" message="The response for the query %1 was a Link Local IP address %3. The response was sent by the server at %5.">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000000000" message="There are currently no IPv6 DNS servers configured for any interface on this host. Please configure DNS server settings, or renew your dynamic IP settings.">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="4" task="1020" keywords="0x8000200000000000" message="Read DNS Name Resolution Policy Table: Key Name %1: DNSSEC Settings: DnsSecValidationRequired %2, DnsQueryOverIPSec %3, DnsEncryption %4 Direct Access Settings: DirectAccessServerList %5, EnableRemoteIPSEC %6  RemoteEncryption %7 ProxyType %8 ProxyName %9">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="4" task="1021" keywords="0x8000200000000000" message="Matched Effective policy for query name %1: Key Name %2: DnsSecValidationRequired %3, DnsQueryOverIPSec %4, DnsEncryption %5 DirectAccessServerList %6, ProxyType %7 ProxyName %8">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="4" task="1022" keywords="0x8000200000000000" message="Name resolution for the name, %1, will not fall back to LLMNR or NetBIOS">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="8" level="2" task="1023" keywords="0x4000000010000000" message="Name resolution policy table has been corrupted. DNS resolution will fail until it is fixed. Contact your network administrator. For more information: read policy table for rule %1 failed with error %2">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="4" task="1024" keywords="0x8000000000000000" message="Transaction ID of the response for query %1 from server %3 did not match">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="4" task="1025" keywords="0x8000000000000000" message="The DNS server IP %3 of the response for query %1 is not configured on the client">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="4" task="1026" keywords="0x8000000000000000" message="The question (%2) in the response from server %4 does not match the original question %1">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000200000000000" message="DNS Name resolution for the name, %1, failed because the client was unable to contact DNS servers. At least one of the interfaces is not in a private network and name resolution will not fall back to LLMNR or NetBIOS">
+    </event>
+    <event value="1028" version="0" opcode="0" channel="16" level="4" task="1021" keywords="0x8000200000000000" message="Matched effective policy for query name %1: Key Name %2: DnsSecValidationRequired %3, DnsQueryOverIPSec %4, DnsEncryption %5 DirectAccessServerList %6, ProxyType %7 ProxyName %8 GenericServerList %9 IdnConfig %10">
+    </event>
+    <event value="3000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000400000000000" message="DNS Query is initiated for the name %1 and for the type %2 with query options %3">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000400000000000" message="DNS Query operation is completed with result %1">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000400000000000" message="DNS Cache lookup is initiated for the name %1 and for the type %2 with query options %3">
+    </event>
+    <event value="3003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000400000000000" message="DNS Cache lookup operation for the name %1 and for the type %2 is completed with result %3">
+    </event>
+    <event value="3004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000400000000000" message="DNS FQDN Query is initiated for the name %1 and for the type %2 with query options %3">
+    </event>
+    <event value="3005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000400000000000" message="DNS FQDN Query operation for the name %1 and for the type %2 is completed with result %3">
+    </event>
+    <event value="3006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DNS query is called for the name %1, type %2, query options %3, Server List %4, isNetwork query %5, network index %6, interface index %7, is asynchronous query %8">
+    </event>
+    <event value="3007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DnsQueryEx for the name %1 is pending">
+    </event>
+    <event value="3008" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DNS query is completed for the name %1, type %2, query options %3 with status %4 Results %5">
+    </event>
+    <event value="3009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Network query initiated for the name %1 (is parallel query %2) on network index %3 with interface count %4 with first interface name %5, local addresses %6 and Dns Servers %7">
+    </event>
+    <event value="3010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DNS Query sent to DNS Server %3 for name %1 and type %2">
+    </event>
+    <event value="3011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Received response from DNS Server %3 for name %1 and type %2 with response status %4">
+    </event>
+    <event value="3012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="NETBIOS query is initiated for name %1 on network index %2 with inteface count %3 with first interface name %4 and local addresses %5">
+    </event>
+    <event value="3013" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="NETBIOS query is completed for name %1 with status %2 and results %3">
+    </event>
+    <event value="3014" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="NETBIOS query for the name %1 is pending">
+    </event>
+    <event value="3015" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DnsQueryEx is canceled for the name %1">
+    </event>
+    <event value="3016" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Cache lookup called for name %1, type %2, options %3 and interface index %4">
+    </event>
+    <event value="3018" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Cache lookup for name %1, type %2 and option %3 returned %4 with results %5">
+    </event>
+    <event value="3019" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Query wire called for name %1, type %2, interface index %3 and network index %4">
+    </event>
+    <event value="3020" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Query response for name %1, type %2, interface index %3 and network index %4 returned %5 with results %6">
+    </event>
+    <event value="8001" version="0" opcode="0" channel="8" level="2" task="1029" keywords="0x4000000010000000" message="Unable to start DNS Client service. Could not start the Remote Procedure Call (RPC) interface for this service. To correct the problem, you may restart the RPC and DNS Client services. To do so, use the following commands at a command prompt: (1) type &apos;net start rpc&apos; to start the RPC service, and (2) type &apos;net start dnscache&apos; to start the DNS Client service. See event details for specific error code information.">
+    </event>
+    <event value="8002" version="0" opcode="0" channel="8" level="2" task="1029" keywords="0x4000000010000000" message="Unable to start DNS Client service because the system failed to allocate memory and may be out of available memory. Try closing any applications not in use or reboot the computer. See event details for specific error code information.">
+    </event>
+    <event value="8003" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS Server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The cause of this DNS registration failure was because the DNS update request timed out after being sent to the specified DNS Server. This is probably because the authoritative DNS server for the name being updated is not running.
+
+You can manually retry registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still  persist, contact your network systems administrator to verify network conditions.">
+    </event>
+    <event value="8004" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The cause of this DNS registration failure was because of DNS server failure. This may be due to a zone transfer that has locked the DNS server for the applicable zone that your computer needs to register itself with.
+
+(The applicable zone should typically correspond to the Adapter-specific Domain Suffix that was indicated above.) You can manually retry registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your network systems administrator to verify network conditions.">
+    </event>
+    <event value="8005" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason it could not register was because either: (a) the DNS server does not support the DNS dynamic update protocol, or (b) the primary zone authoritative for the registering names does not currently accept dynamic updates.
+
+To add or register a DNS host (A or AAAA) resource record using the specific DNS name for this adapter, contact your DNS server or network systems administrator.">
+    </event>
+    <event value="8006" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason it could not register was because the DNS server refused the dynamic update request. This could happen for the following reasons: (a) current DNS update policies do not allow this computer to update the DNS domain name configured for this adapter, or (b) the authoritative DNS server for this DNS domain name does not support the DNS dynamic update protocol.
+
+To register a DNS host (A or AAAA) resource record using the specific DNS domain name for this adapter, contact your DNS server or network systems administrator.">
+    </event>
+    <event value="8007" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The system could not register the DNS update request because of a security related problem. This could happen for the following reasons: (a) the DNS domain name that your computer is trying to register could not be updated because your computer does not have the right permissions, or (b) there might have been a problem negotiating valid credentials with the DNS server to update.
+
+You can manually retry DNS registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your DNS server or network systems administrator. See event details for specific error code information.">
+    </event>
+    <event value="8008" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason the DNS update request could not be completed was because of a system problem. You can manually retry DNS registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your DNS server or network systems administrator. See event details for specific error code information.">
+    </event>
+    <event value="8009" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to register pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The reason that the system could not register these RRs was because the update request that was sent to the specified DNS server timed out. This is probably because the authoritative DNS server for the name being registered is not running.
+
+You can manually retry DNS registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your DNS server or network systems administrator. See event details for specific error code information.">
+    </event>
+    <event value="8010" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to register pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The cause was DNS server failure. This may be because the reverse lookup zone is busy or missing on the DNS server that your computer needs to update. In most cases, this is a minor problem because it does not affect normal (forward) name resolution.
+
+If reverse (address-to-name) resolution is required for your computer, you can manually retry DNS registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your DNS server or network systems administrator. See event details for specific error code information.">
+    </event>
+    <event value="8011" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to register pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The reason that the system could not register these RRs was because (a) either the DNS server does not support the DNS dynamic update protocol, or (b) the authoritative zone where these records are to be registered does not allow dynamic updates.
+
+To register DNS pointer (PTR) resource records using the specific DNS domain name and IP addresses for this adapter, contact your DNS server or network systems administrator.">
+    </event>
+    <event value="8012" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to register pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The reason that the system could not register these RRs was because the DNS server refused the update request. The cause of this could be (a) your computer is not allowed to update the adapter-specified DNS domain name, or (b) because the DNS server authoritative for the specified name does not support the DNS dynamic update protocol.
+
+To register the DNS pointer (PTR) resource records using the specific DNS domain name and IP addresses for this adapter, contact your DNS server or network systems administrator.">
+    </event>
+    <event value="8013" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to register pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The reason that the system could not register these RRs was because of a security related problem. The cause of this could be (a) your computer does not have permissions to register and update the specific DNS domain name set for this adapter, or (b) there might have been a problem negotiating valid credentials with the DNS server during the processing of the update request.
+
+You can manually retry DNS registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your DNS server or network systems administrator.">
+    </event>
+    <event value="8014" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to register pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The reason the system could not register these RRs during the update request was because of a system problem. You can manually retry DNS registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your DNS server or network systems administrator. See event details for specific error code information.">
+    </event>
+    <event value="8015" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason the system could not register these RRs was because the update request it sent to the DNS server timed out. The most likely cause of this is that the DNS server authoritative for the name it was attempting to register or update is not running at this time.
+
+You can manually retry DNS registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your DNS server or network systems administrator.">
+    </event>
+    <event value="8016" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason the system could not register these RRs was because the DNS server failed the update request. The most likely cause of this is that the authoritative DNS server required to process this update request has a lock in place on the zone, probably because a zone transfer is in progress.
+
+You can manually retry DNS registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your DNS server or network systems administrator.">
+    </event>
+    <event value="8017" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register host (A or AAAA) resource records for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+Either the DNS server does not support the DNS dynamic update protocol or the authoritative zone for the specified DNS domain name does not accept dynamic updates.
+
+To register the DNS host (A or AAAA) resource records using the specific DNS domain name and IP addresses for this adapter, contact your DNS server or network systems administrator.">
+    </event>
+    <event value="8018" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason the system could not register these RRs was because the DNS server contacted refused the update request. The reasons for this might be (a) you are not allowed to update the specified DNS domain name, or (b) because the DNS server authoritative for this name does not support the DNS dynamic update protocol.
+
+To register the DNS host (A or AAAA) resource records using the specific DNS domain name and IP addresses for this adapter, contact your DNS server or network systems administrator.">
+    </event>
+    <event value="8019" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason the system could not register these RRs was because of a security related problem. The cause of this could be (a) your computer does not have permissions to register and update the specific DNS domain name set for this adapter, or (b) there might have been a problem negotiating valid credentials with the DNS server during the processing of the update request.
+
+You can manually retry DNS registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your DNS server or network systems administrator. See event details for specific error code information.">
+    </event>
+    <event value="8020" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to register host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason the system could not register these RRs during the update request was because of a system problem. You can manually retry DNS registration of the network adapter and its settings by typing &apos;ipconfig /registerdns&apos; at the command prompt. If problems still persist, contact your DNS server or network systems administrator. See event details for specific error code information.">
+    </event>
+    <event value="8021" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove registration for the network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason for this failure is because the DNS server it sent the update request to timed out. The most likely cause of this failure is that the DNS server authoritative for the zone where the registration was originally made is either not running or unreachable through the network at this time.">
+    </event>
+    <event value="8022" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove registration for the network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason for this failure is because the DNS server it sent the update to failed the update request. A possible cause of this failure is that the DNS server required to process this update request has a lock in place on the zone, probably because a zone transfer is in progress.
+
+">
+    </event>
+    <event value="8023" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove registration for the network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason for this failure is because the DNS server sent the update either (a) does not support the DNS dynamic update protocol, or (b) the authoritative zone for the specified DNS domain name does not currently accept DNS dynamic updates.">
+    </event>
+    <event value="8024" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove registration for the network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason the system could not perform the update request was the DNS server contacted refused update request. The cause of this is (a) this computer is not allowed to update the specified DNS domain name, or (b) because the DNS server authoritative for the zone that requires updating does not support the DNS dynamic update protocol.">
+    </event>
+    <event value="8025" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove registration for the network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason the system could not perform the update request was because of a security related problem. The cause of this could be (a) your computer does not have permissions to register and update the specific DNS domain name set for this adapter, or (b) there might have been a problem negotiating valid credentials with the DNS server during the processing of the update request.
+
+See event details for specific error code information.">
+    </event>
+    <event value="8026" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove the DNS registration for the network adapter with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The system could not update to remove this DNS registration because of a system problem. See event details for specific error code information.">
+    </event>
+    <event value="8027" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The system could not remove these PTR RRs because the update request timed out while awaiting a response from the DNS server. This is probably because the DNS server authoritative for the zone that requires update is not running.">
+    </event>
+    <event value="8028" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address : %6
+
+The system could not remove these PTR RRs because the DNS server failed the update request. A possible cause is that a zone transfer is in progress, causing a lock for the zone at the DNS server authorized to perform the updates for these RRs.">
+    </event>
+    <event value="8029" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The system could not remove these PTR RRs because either the DNS server does not support the DNS dynamic update protocol or the authoritative zone that contains these RRs does not accept dynamic updates.">
+    </event>
+    <event value="8030" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The system could not remove these PTR RRs because the DNS server refused the update request. The cause of this might be (a) this computer is not allowed to update the specified DNS domain name specified by these settings, or (b) because the DNS server authorized to perform updates for the zone that contains these RRs does not support the DNS dynamic update protocol.">
+    </event>
+    <event value="8031" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The system could not remove these PTR RRs because of a security related problem. The cause of this could be that (a) your computer does not have permissions to remove and update the specific DNS domain name or IP addresses configured for this adapter, or (b) there might have been a problem negotiating valid credentials with the DNS server during the processing of the update request. See event details for specific error code information.">
+    </event>
+    <event value="8032" version="0" opcode="0" channel="8" level="4" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove pointer (PTR) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Adapter-specific Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address :
+             %6
+
+The system could not remove these PTR RRs because because of a system problem. See event details for specific error code information.">
+    </event>
+    <event value="8033" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+         The system could not remove these host (A or AAAA) RRs because the update request timed out while awaiting a response from the DNS server. This is probably because the DNS server authoritative for the zone where these RRs need to be updated is either not currently running or reachable on the network.">
+    </event>
+    <event value="8034" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The system could not remove these host (A or AAAA) RRs because the DNS server failed the update request. A possible cause is that a zone transfer is in progress, causing a lock for the zone at the DNS server authorized to perform the updates for these RRs.">
+    </event>
+    <event value="8035" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason for this failure is because the DNS server sent the update either (a) does not support the DNS dynamic update protocol, or (b) the authoritative zone for the DNS domain name specified in these host (A or AAAA) RRs does not currently accept DNS dynamic updates.">
+    </event>
+    <event value="8036" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The request to remove these records failed because the DNS server refused the update request. The cause of this might be that either (a) this computer is not allowed to update the DNS domain name specified by these settings, or (b) because the DNS server authorized to perform updates for the zone that contains these RRs does not support the DNS dynamic update protocol.">
+    </event>
+    <event value="8037" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason for this failure was because of a security related problem. The cause of this could be that (a) your computer does not have permissions to remove and update the specific DNS domain name or IP addresses configured for this adapter, or (b) there might have been a problem negotiating valid credentials with the DNS server during the processing of the update request. See event details for specific error code information.">
+    </event>
+    <event value="8038" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x4000000000000000" message="The system failed to update and remove host (A or AAAA) resource records (RRs) for network adapter
+with settings:
+
+           Adapter Name : %1
+           Host Name : %2
+           Primary Domain Suffix : %3
+           DNS server list :
+             %4
+           Sent update to server : %5
+           IP Address(es) :
+             %6
+
+The reason the update request failed was because of a system problem. See event details for specific error code information.">
+    </event>
+    <event value="60004" version="0" opcode="0" channel="16" level="2" task="60004" keywords="0x8000000000000000" message="Error: %1 Location: %2 Context: %3">
+    </event>
+    <event value="60005" version="0" opcode="0" channel="16" level="3" task="60005" keywords="0x8000000000000000" message="Warning: %1 Location: %2 Context: %3">
+    </event>
+    <event value="60006" version="0" opcode="0" channel="16" level="4" task="60006" keywords="0x8000000000000000" message="Transitioned to State: %1 Context: %2">
+    </event>
+    <event value="60007" version="0" opcode="0" channel="16" level="4" task="60007" keywords="0x8000000000000000" message="Updated Context: %1 Update Reason: %2">
+    </event>
+    <event value="60008" version="0" opcode="0" channel="16" level="2" task="60008" keywords="0x8000000000000000" message="Name resolution policy table has been corrupted. DNS resolution will fail until it is fixed. Contact your network administrator. For more information: read policy table for rule %1 failed with error %2">
+    </event>
+    <event value="60101" version="0" opcode="0" channel="16" level="4" task="60101" keywords="0x8000000000000000" message="SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6">
+    </event>
+    <event value="60102" version="0" opcode="0" channel="16" level="4" task="60102" keywords="0x8000000000000000" message="SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6">
+    </event>
+    <event value="60103" version="0" opcode="0" channel="16" level="4" task="60103" keywords="0x8000000000000000" message="Interface Guid: %1 IfIndex: %2 Interface Luid: %3 ReferenceContext: %4">
+    </event>
+  </events>
+</provider>

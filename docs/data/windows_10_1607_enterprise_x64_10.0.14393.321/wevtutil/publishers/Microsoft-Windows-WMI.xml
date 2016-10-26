@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WMI" guid="1edeee53-0afe-4609-b846-d8c0b2075b1f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=WinMgmtR.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\wbem\WinMgmtR.dll" messageFileName="C:\Windows\system32\wbem\WinMgmtR.dll" message="Microsoft-Windows-WMI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="3221225476" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Error %1 encountered when trying to load MOF %2 while recovering .MOF file marked with autorecover.">
+    </event>
+    <event value="4" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Error %1 encountered when trying to load MOF %2 while recovering .MOF file marked with autorecover.">
+    </event>
+    <event value="3221225482" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Event filter with query &quot;%2&quot; could not be reactivated in namespace &quot;%1&quot; because of error %3. Events cannot be delivered through this filter until the problem is corrected.">
+    </event>
+    <event value="10" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Event filter with query &quot;%2&quot; could not be reactivated in namespace &quot;%1&quot; because of error %3. Events cannot be delivered through this filter until the problem is corrected.">
+    </event>
+    <event value="3221225493" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Event provider %1 attempted to register a syntactically invalid query &quot;%2&quot;. The query will be ignored. The query can be corrected by examining the WMI repository with CIM studio and updating the permanent subscriptions for the listed provider and query. If the permanent subscription is created with MOF file coming with an installed product, the application vendor must be contacted to correct the faulty registration.">
+    </event>
+    <event value="21" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Event provider %1 attempted to register a syntactically invalid query &quot;%2&quot;. The query will be ignored. The query can be corrected by examining the WMI repository with CIM studio and updating the permanent subscriptions for the listed provider and query. If the permanent subscription is created with MOF file coming with an installed product, the application vendor must be contacted to correct the faulty registration.">
+    </event>
+    <event value="3221225494" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Event provider %1 attempted to register an intrinsic event query &quot;%2&quot; in %3 namespace for which the set of target object classes could not be determined. The query will be ignored.">
+    </event>
+    <event value="22" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Event provider %1 attempted to register an intrinsic event query &quot;%2&quot; in %3 namespace for which the set of target object classes could not be determined. The query will be ignored.">
+    </event>
+    <event value="3221225495" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Event provider %1 attempted to register query &quot;%2&quot; in %3 namespace which is too broad.  Event providers cannot provide events that are provided by the system. The query will be ignored. Contact the application vendor.">
+    </event>
+    <event value="23" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Event provider %1 attempted to register query &quot;%2&quot; in %3 namespace which is too broad.  Event providers cannot provide events that are provided by the system. The query will be ignored. Contact the application vendor.">
+    </event>
+    <event value="3221225496" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Event provider %1 attempted to register query &quot;%2&quot; whose target class &quot;%3&quot; in %4 namespace does not exist. The query will be ignored.">
+    </event>
+    <event value="24" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Event provider %1 attempted to register query &quot;%2&quot; whose target class &quot;%3&quot; in %4 namespace does not exist. The query will be ignored.">
+    </event>
+    <event value="3221225497" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Event provider %1 attempted to register query &quot;%2&quot; whose target class &quot;%3&quot; is not an event class. The query will be ignored. Contact the application vendor.">
+    </event>
+    <event value="25" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Event provider %1 attempted to register query &quot;%2&quot; whose target class &quot;%3&quot; is not an event class. The query will be ignored. Contact the application vendor.">
+    </event>
+    <event value="3221225500" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed to Initialize WMI Core or Provider SubSystem or Event SubSystem with error number %1. This could be due to a badly installed version of WMI, WMI repository upgrade failure, insufficient disk space or insufficient memory.">
+    </event>
+    <event value="28" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to Initialize WMI Core or Provider SubSystem or Event SubSystem with error number %1. This could be due to a badly installed version of WMI, WMI repository upgrade failure, insufficient disk space or insufficient memory.">
+    </event>
+    <event value="3221225501" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Error number %1 was returned in trying to initialize Windows Management Instrumentation Service. This could be due to a badly installed version of WMI, WMI repository upgrade failure, insufficient disk space or insufficient memory.">
+    </event>
+    <event value="29" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Error number %1 was returned in trying to initialize Windows Management Instrumentation Service. This could be due to a badly installed version of WMI, WMI repository upgrade failure, insufficient disk space or insufficient memory.">
+    </event>
+    <event value="3221225515" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Management Instrumentation ADAP failed to connect to namespace %1 with the following error %2">
+    </event>
+    <event value="43" version="2" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows Management Instrumentation ADAP failed to connect to namespace %1 with the following error %2">
+    </event>
+    <event value="3221225520" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Management Instrumentation ADAP was unable to save object %1 in namespace %2 because of the following error %3">
+    </event>
+    <event value="48" version="2" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows Management Instrumentation ADAP was unable to save object %1 in namespace %2 because of the following error %3">
+    </event>
+    <event value="3221225530" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Management Instrumentation ADAP was unable to create the Win32_Perf base class in %1:Result=%2">
+    </event>
+    <event value="58" version="2" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows Management Instrumentation ADAP was unable to create the Win32_Perf base class in %1:Result=%2">
+    </event>
+    <event value="3221225531" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Management Instrumentation ADAP was unable to create the Win32_PerfRawData base class %1">
+    </event>
+    <event value="59" version="2" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows Management Instrumentation ADAP was unable to create the Win32_PerfRawData base class %1">
+    </event>
+    <event value="2147483711" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A provider, %1, has been registered in the Windows Management Instrumentation namespace %2 to use the LocalSystem account. This account is privileged and the provider may cause a security violation if it does not correctly impersonate user requests.">
+    </event>
+    <event value="63" version="2" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="A provider, %1, has been registered in the Windows Management Instrumentation namespace %2 to use the LocalSystem account. This account is privileged and the provider may cause a security violation if it does not correctly impersonate user requests.">
+    </event>
+    <event value="3221225537" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Management Instrumentation (WMI) Service is starting to restore the WMI repository">
+    </event>
+    <event value="65" version="2" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows Management Instrumentation (WMI) Service is starting to restore the WMI repository">
+    </event>
+    <event value="3221225538" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows Management Instrumentation Service has recovered from the following backup repository: %1.">
+    </event>
+    <event value="66" version="2" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="The Windows Management Instrumentation Service has recovered from the following backup repository: %1.">
+    </event>
+    <event value="67" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="The Windows Management Instrumentation (WMI) Service is starting the backup operation for the WMI repository and is copying data to the following file: %1">
+    </event>
+    <event value="3221225539" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows Management Instrumentation (WMI) Service is starting the backup operation for the WMI repository and is copying data to the following file: %1">
+    </event>
+    <event value="68" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="The Windows Management Instrumentation repository backup operation completed copying data to %1 with error %2.">
+    </event>
+    <event value="3221225540" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows Management Instrumentation repository backup operation completed copying data to %1 with error %2.">
+    </event>
+    <event value="1073747424" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows Management Instrumentation (WMI) service detected an inconsistency with the WMI repository in the following directory: %windir%\system32\wbem\repository. The WMI service was not able to recover the repository.  The WMI repository will now be deleted and a new repository will be created based on the auto-recovery mechanism.">
+    </event>
+    <event value="5600" version="2" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="The Windows Management Instrumentation (WMI) service detected an inconsistency with the WMI repository in the following directory: %windir%\system32\wbem\repository. The WMI service was not able to recover the repository.  The WMI repository will now be deleted and a new repository will be created based on the auto-recovery mechanism.">
+    </event>
+    <event value="3221231073" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows Management Instrumentation Service failed to load the repository files under the directory %windir%\system32\wbem\repository.  This can be caused by a corruption in the repository files, security settings on this directory, lack of disk space, or other system resource issues like lack of memory.  If this error happens every time the machine is rebooted then the administrator on this machine may need to stop WMI Service, review the security setting on this folder and files under this folder, and run WMIDiag to validate the health of Windows Management Instrumentation">
+    </event>
+    <event value="5601" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="The Windows Management Instrumentation Service failed to load the repository files under the directory %windir%\system32\wbem\repository.  This can be caused by a corruption in the repository files, security settings on this directory, lack of disk space, or other system resource issues like lack of memory.  If this error happens every time the machine is rebooted then the administrator on this machine may need to stop WMI Service, review the security setting on this folder and files under this folder, and run WMIDiag to validate the health of Windows Management Instrumentation">
+    </event>
+    <event value="3221231074" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows Management Instrumentation service detected an inconsistency in the following backup file: %1.">
+    </event>
+    <event value="5602" version="2" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="The Windows Management Instrumentation service detected an inconsistency in the following backup file: %1.">
+    </event>
+    <event value="3221231076" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows Management Instrumentation service encountered the error %2 and was not able to restore from the following backup repository: %1.">
+    </event>
+    <event value="5604" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="The Windows Management Instrumentation service encountered the error %2 and was not able to restore from the following backup repository: %1.">
+    </event>
+    <event value="3221231077" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The %1 namespace is marked with the RequiresEncryption flag. Access to this namespace might be denied if the script or application does not have the appropriate authentication level. Change the authentication level to Pkt_Privacy and run the script or application again.">
+    </event>
+    <event value="5605" version="2" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="The %1 namespace is marked with the RequiresEncryption flag. Access to this namespace might be denied if the script or application does not have the appropriate authentication level. Change the authentication level to Pkt_Privacy and run the script or application again.">
+    </event>
+    <event value="3221231078" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Management Instrumentation Service could not deliver results asynchronously for %1 namespace.  The namespace is marked with RequiresEncryption but WinMgmt could not establish a secure connection back to the client computer.  Ensure there is a trust relationship between the client and server computers so that the client recognizes the server computer account.">
+    </event>
+    <event value="5606" version="2" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows Management Instrumentation Service could not deliver results asynchronously for %1 namespace.  The namespace is marked with RequiresEncryption but WinMgmt could not establish a secure connection back to the client computer.  Ensure there is a trust relationship between the client and server computers so that the client recognizes the server computer account.">
+    </event>
+    <event value="3221231083" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows Management Instrumentation service has detected an inconsistent system shutdown.">
+    </event>
+    <event value="5611" version="2" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="The Windows Management Instrumentation service has detected an inconsistent system shutdown.">
+    </event>
+    <event value="3221231084" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Management Instrumentation has stopped WMIPRVSE.EXE because a quota reached a warning value. Quota: %1  Value: %2 Maximum value: %3 WMIPRVSE PID: %4 Providers hosted in this process: %5">
+    </event>
+    <event value="5612" version="2" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows Management Instrumentation has stopped WMIPRVSE.EXE because a quota reached a warning value. Quota: %1  Value: %2 Maximum value: %3 WMIPRVSE PID: %4 Providers hosted in this process: %5">
+    </event>
+    <event value="3221231086" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="During the service startup, the Windows Management Instrumentation service was unable to locate the repository files. A new repository will be created based on the auto-recovery mechanism.">
+    </event>
+    <event value="5614" version="2" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="During the service startup, the Windows Management Instrumentation service was unable to locate the repository files. A new repository will be created based on the auto-recovery mechanism.">
+    </event>
+    <event value="3221231087" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Management Instrumentation Service started sucessfully">
+    </event>
+    <event value="5615" version="2" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Windows Management Instrumentation Service started sucessfully">
+    </event>
+    <event value="3221231088" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows Management Instrumentation (WMI) repository was successfully re-created by the auto-recovery mechanism.">
+    </event>
+    <event value="5616" version="2" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="The Windows Management Instrumentation (WMI) repository was successfully re-created by the auto-recovery mechanism.">
+    </event>
+    <event value="3221231089" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Management Instrumentation Service subsystems initialized successfully">
+    </event>
+    <event value="5617" version="2" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Windows Management Instrumentation Service subsystems initialized successfully">
+    </event>
+    <event value="3221231103" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="WMI interop namespace class &quot;%1&quot; has been overwritten. Some of the Interop scenarios might not work properly. Please issue following commands from elevated command prompt to restore the behavior.&quot;mofcomp %windir%\system32\wbem\interop.mof&quot; and similarly mofcomp all the interop.mfl under %windir%\system32\wbem and its subdirectories.">
+    </event>
+    <event value="5631" version="2" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="WMI interop namespace class &quot;%1&quot; has been overwritten. Some of the Interop scenarios might not work properly. Please issue following commands from elevated command prompt to restore the behavior.&quot;mofcomp %windir%\system32\wbem\interop.mof&quot; and similarly mofcomp all the interop.mfl under %windir%\system32\wbem and its subdirectories.">
+    </event>
+  </events>
+</provider>

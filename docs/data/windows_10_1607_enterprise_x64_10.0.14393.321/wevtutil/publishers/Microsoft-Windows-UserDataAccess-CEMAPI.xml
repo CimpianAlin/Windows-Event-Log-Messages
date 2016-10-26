@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-UserDataAccess-CEMAPI" guid="83a9277a-d2fc-4b34-bf81-8ceb4407824f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=cemapi.dll&amp;FileVer=10.0.14393.0" resourceFileName="cemapi.dll" messageFileName="cemapi.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="FOLDER_EMPTYFOLDER" value="4001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FOLDER_CREATEMESSAGE" value="4002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FOLDER_DELETEMESSAGES" value="4003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FOLDER_COPYMESSAGES" value="4004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FOLDER_GETHIERARCHYTABLE" value="4005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FOLDER_GETCONTENTSTABLE" value="4006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FOLDER_DELETEFOLDER" value="4007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FOLDER_COPYFOLDER" value="4008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FOLDER_CREATEFOLDER" value="4009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QUERYROWS_ATTACHMENTS" value="4100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QUERYROWS_RECIPIENTS" value="4101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QUERYROWS_FOLDERCONTENTS" value="4102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QUERYROWS_FOLDERHIERARCHY" value="4103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QUERYROWS_SEARCHFOLDER" value="4104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QUERYROWS_STORES" value="4105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QUERYROWS_CONVERSATIONS" value="4106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="STORE_GETIDSFROMNAMES" value="4200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="STORE_OPENFOLDER" value="4201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="STORE_OPENMESSAGE" value="4202" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="STORE_ISANCESTOR" value="4203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="STORE_CREATESPECIALFOLDERS" value="4204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="STORE_LOADRULESLIST" value="4205" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="STORE_RUNRULES" value="4206" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MAPILOGONEX" value="4300" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_GETSTOREMANAGER" value="4301" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_CREATESESSION" value="4302" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_CREATEINSTANCE" value="4303" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_INITMESSAGESTORES" value="4304" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_CREATESMSSTORE" value="4305" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_LOADDEFAULTMESSAGESTORE" value="4306" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_CREATEMESSAGESTORE" value="4307" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_OPENENTRY" value="4308" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_ADVISE" value="4309" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_UNADVISE" value="4310" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_INITSTORESINK" value="4311" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_GETSTOREBYID" value="4312" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_GETSTOREFROMDATABASE" value="4313" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_OPENMSGSTORE" value="4314" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_DELETEMSGSTORE" value="4315" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CTX_REFRESHRULECLIENTS" value="4316" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_CREATEATTACH" value="4400" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_DELETEATTACH" value="4401" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_OPENATTACH" value="4402" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_GETATTACHTABLE" value="4403" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_MODIFYRECIPIENTS" value="4404" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_SUBMITMESSAGE" value="4405" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_DELETERECIPIENTS" value="4406" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_ADDRECIPIENTS" value="4407" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_UPDATERECIPIENTTABLE" value="4408" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_PREPROCESSWRITE" value="4409" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSG_POSTPROCESSWRITE" value="4410" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SETPROPS" value="4500" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GETPROPS" value="4501" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DELETEPROPS" value="4502" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="OPENSTREAMPROPERTY" value="4503" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RUNRULE" value="4504" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SESSION_GETSTORESTABLE" value="4505" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SINK_ONNOTIFY" value="4506" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SINK_ONNOTIFYWRAPPER" value="4507" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CONVERSATION_DELETE" value="4600" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CONVERSATION_SOFTDELETE" value="4601" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CONVERSATION_MSGPROPSET" value="4602" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CONVERSATION_MSGPROPDELETE" value="4603" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CONVERSATION_DELETEMESSAGES" value="4604" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CONVERSATIONID_SET" value="4605" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CONVERSATIONID_CREATEHASH" value="4606" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SHARECONTENT" value="4700" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="tracemessage" value="4800" eventGUID="00000000-0000-0000-0000-000000000000" message="Trace">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="CEMAPI" mask="4" message="">
+    </keyword>
+    <keyword name="debug" mask="100" message="Debug">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="Warning">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Error: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Error Propagated: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="3" version="0" opcode="0" channel="0" level="5" task="4800" keywords="0x100" message="">
+    </event>
+    <event value="4011" version="0" opcode="1" channel="0" level="5" task="4001" keywords="0x2" message="">
+    </event>
+    <event value="4012" version="0" opcode="2" channel="0" level="5" task="4001" keywords="0x2" message="">
+    </event>
+    <event value="4013" version="0" opcode="1" channel="0" level="5" task="4002" keywords="0x2" message="">
+    </event>
+    <event value="4014" version="0" opcode="2" channel="0" level="5" task="4002" keywords="0x2" message="">
+    </event>
+    <event value="4015" version="0" opcode="1" channel="0" level="5" task="4003" keywords="0x2" message="">
+    </event>
+    <event value="4016" version="0" opcode="2" channel="0" level="5" task="4003" keywords="0x2" message="">
+    </event>
+    <event value="4017" version="0" opcode="1" channel="0" level="5" task="4004" keywords="0x2" message="">
+    </event>
+    <event value="4018" version="0" opcode="2" channel="0" level="5" task="4004" keywords="0x2" message="">
+    </event>
+    <event value="4019" version="0" opcode="1" channel="0" level="5" task="4005" keywords="0x2" message="">
+    </event>
+    <event value="4020" version="0" opcode="2" channel="0" level="5" task="4005" keywords="0x2" message="">
+    </event>
+    <event value="4021" version="0" opcode="1" channel="0" level="5" task="4006" keywords="0x2" message="">
+    </event>
+    <event value="4022" version="0" opcode="2" channel="0" level="5" task="4006" keywords="0x2" message="">
+    </event>
+    <event value="4023" version="0" opcode="1" channel="0" level="5" task="4007" keywords="0x2" message="">
+    </event>
+    <event value="4024" version="0" opcode="2" channel="0" level="5" task="4007" keywords="0x2" message="">
+    </event>
+    <event value="4025" version="0" opcode="1" channel="0" level="5" task="4008" keywords="0x2" message="">
+    </event>
+    <event value="4026" version="0" opcode="2" channel="0" level="5" task="4008" keywords="0x2" message="">
+    </event>
+    <event value="4027" version="0" opcode="1" channel="0" level="5" task="4009" keywords="0x2" message="">
+    </event>
+    <event value="4028" version="0" opcode="2" channel="0" level="5" task="4009" keywords="0x2" message="">
+    </event>
+    <event value="4100" version="0" opcode="1" channel="0" level="5" task="4100" keywords="0x2" message="">
+    </event>
+    <event value="4101" version="0" opcode="2" channel="0" level="5" task="4100" keywords="0x2" message="">
+    </event>
+    <event value="4102" version="0" opcode="1" channel="0" level="5" task="4101" keywords="0x2" message="">
+    </event>
+    <event value="4103" version="0" opcode="2" channel="0" level="5" task="4101" keywords="0x2" message="">
+    </event>
+    <event value="4104" version="0" opcode="1" channel="0" level="5" task="4102" keywords="0x2" message="">
+    </event>
+    <event value="4105" version="0" opcode="2" channel="0" level="5" task="4102" keywords="0x2" message="">
+    </event>
+    <event value="4106" version="0" opcode="1" channel="0" level="5" task="4103" keywords="0x2" message="">
+    </event>
+    <event value="4107" version="0" opcode="2" channel="0" level="5" task="4103" keywords="0x2" message="">
+    </event>
+    <event value="4108" version="0" opcode="1" channel="0" level="5" task="4104" keywords="0x2" message="">
+    </event>
+    <event value="4109" version="0" opcode="2" channel="0" level="5" task="4104" keywords="0x2" message="">
+    </event>
+    <event value="4110" version="0" opcode="1" channel="0" level="5" task="4105" keywords="0x2" message="">
+    </event>
+    <event value="4111" version="0" opcode="2" channel="0" level="5" task="4105" keywords="0x2" message="">
+    </event>
+    <event value="4112" version="0" opcode="1" channel="0" level="5" task="4106" keywords="0x2" message="">
+    </event>
+    <event value="4113" version="0" opcode="2" channel="0" level="5" task="4106" keywords="0x2" message="">
+    </event>
+    <event value="4200" version="0" opcode="1" channel="0" level="5" task="4200" keywords="0x2" message="">
+    </event>
+    <event value="4201" version="0" opcode="2" channel="0" level="5" task="4200" keywords="0x2" message="">
+    </event>
+    <event value="4202" version="0" opcode="1" channel="0" level="5" task="4201" keywords="0x2" message="">
+    </event>
+    <event value="4203" version="0" opcode="2" channel="0" level="5" task="4201" keywords="0x2" message="">
+    </event>
+    <event value="4204" version="0" opcode="1" channel="0" level="5" task="4202" keywords="0x2" message="">
+    </event>
+    <event value="4205" version="0" opcode="2" channel="0" level="5" task="4202" keywords="0x2" message="">
+    </event>
+    <event value="4206" version="0" opcode="1" channel="0" level="5" task="4203" keywords="0x2" message="">
+    </event>
+    <event value="4207" version="0" opcode="2" channel="0" level="5" task="4203" keywords="0x2" message="">
+    </event>
+    <event value="4208" version="0" opcode="1" channel="0" level="5" task="4204" keywords="0x2" message="">
+    </event>
+    <event value="4209" version="0" opcode="2" channel="0" level="5" task="4204" keywords="0x2" message="">
+    </event>
+    <event value="4210" version="0" opcode="1" channel="0" level="5" task="4205" keywords="0x2" message="">
+    </event>
+    <event value="4211" version="0" opcode="2" channel="0" level="5" task="4205" keywords="0x2" message="">
+    </event>
+    <event value="4212" version="0" opcode="1" channel="0" level="5" task="4206" keywords="0x2" message="">
+    </event>
+    <event value="4213" version="0" opcode="2" channel="0" level="5" task="4206" keywords="0x2" message="">
+    </event>
+    <event value="4300" version="0" opcode="1" channel="0" level="5" task="4300" keywords="0x2" message="">
+    </event>
+    <event value="4301" version="0" opcode="2" channel="0" level="5" task="4300" keywords="0x2" message="">
+    </event>
+    <event value="4302" version="0" opcode="1" channel="0" level="5" task="4301" keywords="0x2" message="">
+    </event>
+    <event value="4303" version="0" opcode="2" channel="0" level="5" task="4301" keywords="0x2" message="">
+    </event>
+    <event value="4304" version="0" opcode="1" channel="0" level="5" task="4302" keywords="0x2" message="">
+    </event>
+    <event value="4305" version="0" opcode="2" channel="0" level="5" task="4302" keywords="0x2" message="">
+    </event>
+    <event value="4306" version="0" opcode="1" channel="0" level="5" task="4303" keywords="0x2" message="">
+    </event>
+    <event value="4307" version="0" opcode="2" channel="0" level="5" task="4303" keywords="0x2" message="">
+    </event>
+    <event value="4308" version="0" opcode="1" channel="0" level="5" task="4304" keywords="0x2" message="">
+    </event>
+    <event value="4309" version="0" opcode="2" channel="0" level="5" task="4304" keywords="0x2" message="">
+    </event>
+    <event value="4310" version="0" opcode="1" channel="0" level="5" task="4305" keywords="0x2" message="">
+    </event>
+    <event value="4311" version="0" opcode="2" channel="0" level="5" task="4305" keywords="0x2" message="">
+    </event>
+    <event value="4312" version="0" opcode="1" channel="0" level="5" task="4306" keywords="0x2" message="">
+    </event>
+    <event value="4313" version="0" opcode="2" channel="0" level="5" task="4306" keywords="0x2" message="">
+    </event>
+    <event value="4314" version="0" opcode="1" channel="0" level="5" task="4307" keywords="0x2" message="">
+    </event>
+    <event value="4315" version="0" opcode="2" channel="0" level="5" task="4307" keywords="0x2" message="">
+    </event>
+    <event value="4316" version="0" opcode="1" channel="0" level="5" task="4308" keywords="0x2" message="">
+    </event>
+    <event value="4317" version="0" opcode="2" channel="0" level="5" task="4308" keywords="0x2" message="">
+    </event>
+    <event value="4318" version="0" opcode="1" channel="0" level="5" task="4309" keywords="0x2" message="">
+    </event>
+    <event value="4319" version="0" opcode="2" channel="0" level="5" task="4309" keywords="0x2" message="">
+    </event>
+    <event value="4320" version="0" opcode="1" channel="0" level="5" task="4310" keywords="0x2" message="">
+    </event>
+    <event value="4321" version="0" opcode="2" channel="0" level="5" task="4310" keywords="0x2" message="">
+    </event>
+    <event value="4322" version="0" opcode="1" channel="0" level="5" task="4311" keywords="0x2" message="">
+    </event>
+    <event value="4323" version="0" opcode="2" channel="0" level="5" task="4311" keywords="0x2" message="">
+    </event>
+    <event value="4324" version="0" opcode="1" channel="0" level="5" task="4312" keywords="0x2" message="">
+    </event>
+    <event value="4325" version="0" opcode="2" channel="0" level="5" task="4312" keywords="0x2" message="">
+    </event>
+    <event value="4326" version="0" opcode="1" channel="0" level="5" task="4313" keywords="0x2" message="">
+    </event>
+    <event value="4327" version="0" opcode="2" channel="0" level="5" task="4313" keywords="0x2" message="">
+    </event>
+    <event value="4328" version="0" opcode="1" channel="0" level="5" task="4314" keywords="0x2" message="">
+    </event>
+    <event value="4329" version="0" opcode="2" channel="0" level="5" task="4314" keywords="0x2" message="">
+    </event>
+    <event value="4330" version="0" opcode="1" channel="0" level="5" task="4315" keywords="0x2" message="">
+    </event>
+    <event value="4331" version="0" opcode="2" channel="0" level="5" task="4315" keywords="0x2" message="">
+    </event>
+    <event value="4332" version="0" opcode="1" channel="0" level="5" task="4316" keywords="0x2" message="">
+    </event>
+    <event value="4333" version="0" opcode="2" channel="0" level="5" task="4316" keywords="0x2" message="">
+    </event>
+    <event value="4400" version="0" opcode="1" channel="0" level="5" task="4400" keywords="0x2" message="">
+    </event>
+    <event value="4401" version="0" opcode="2" channel="0" level="5" task="4400" keywords="0x2" message="">
+    </event>
+    <event value="4402" version="0" opcode="1" channel="0" level="5" task="4401" keywords="0x2" message="">
+    </event>
+    <event value="4403" version="0" opcode="2" channel="0" level="5" task="4401" keywords="0x2" message="">
+    </event>
+    <event value="4404" version="0" opcode="1" channel="0" level="5" task="4402" keywords="0x2" message="">
+    </event>
+    <event value="4405" version="0" opcode="2" channel="0" level="5" task="4402" keywords="0x2" message="">
+    </event>
+    <event value="4406" version="0" opcode="1" channel="0" level="5" task="4403" keywords="0x2" message="">
+    </event>
+    <event value="4407" version="0" opcode="2" channel="0" level="5" task="4403" keywords="0x2" message="">
+    </event>
+    <event value="4408" version="0" opcode="1" channel="0" level="5" task="4404" keywords="0x2" message="">
+    </event>
+    <event value="4409" version="0" opcode="2" channel="0" level="5" task="4404" keywords="0x2" message="">
+    </event>
+    <event value="4410" version="0" opcode="1" channel="0" level="5" task="4405" keywords="0x2" message="">
+    </event>
+    <event value="4411" version="0" opcode="2" channel="0" level="5" task="4405" keywords="0x2" message="">
+    </event>
+    <event value="4412" version="0" opcode="1" channel="0" level="5" task="4406" keywords="0x2" message="">
+    </event>
+    <event value="4413" version="0" opcode="2" channel="0" level="5" task="4406" keywords="0x2" message="">
+    </event>
+    <event value="4414" version="0" opcode="1" channel="0" level="5" task="4407" keywords="0x2" message="">
+    </event>
+    <event value="4415" version="0" opcode="2" channel="0" level="5" task="4407" keywords="0x2" message="">
+    </event>
+    <event value="4416" version="0" opcode="1" channel="0" level="5" task="4408" keywords="0x2" message="">
+    </event>
+    <event value="4417" version="0" opcode="2" channel="0" level="5" task="4408" keywords="0x2" message="">
+    </event>
+    <event value="4418" version="0" opcode="1" channel="0" level="5" task="4409" keywords="0x2" message="">
+    </event>
+    <event value="4419" version="0" opcode="2" channel="0" level="5" task="4409" keywords="0x2" message="">
+    </event>
+    <event value="4420" version="0" opcode="1" channel="0" level="5" task="4410" keywords="0x2" message="">
+    </event>
+    <event value="4421" version="0" opcode="2" channel="0" level="5" task="4410" keywords="0x2" message="">
+    </event>
+    <event value="4500" version="0" opcode="1" channel="0" level="5" task="4500" keywords="0x2" message="">
+    </event>
+    <event value="4501" version="0" opcode="2" channel="0" level="5" task="4500" keywords="0x2" message="">
+    </event>
+    <event value="4502" version="0" opcode="1" channel="0" level="5" task="4501" keywords="0x2" message="">
+    </event>
+    <event value="4503" version="0" opcode="2" channel="0" level="5" task="4501" keywords="0x2" message="">
+    </event>
+    <event value="4504" version="0" opcode="1" channel="0" level="5" task="4502" keywords="0x2" message="">
+    </event>
+    <event value="4505" version="0" opcode="2" channel="0" level="5" task="4502" keywords="0x2" message="">
+    </event>
+    <event value="4506" version="0" opcode="1" channel="0" level="5" task="4503" keywords="0x2" message="">
+    </event>
+    <event value="4507" version="0" opcode="2" channel="0" level="5" task="4503" keywords="0x2" message="">
+    </event>
+    <event value="4508" version="0" opcode="1" channel="0" level="5" task="4504" keywords="0x2" message="">
+    </event>
+    <event value="4509" version="0" opcode="2" channel="0" level="5" task="4504" keywords="0x2" message="">
+    </event>
+    <event value="4510" version="0" opcode="1" channel="0" level="5" task="4505" keywords="0x2" message="">
+    </event>
+    <event value="4511" version="0" opcode="2" channel="0" level="5" task="4505" keywords="0x2" message="">
+    </event>
+    <event value="4512" version="0" opcode="1" channel="0" level="5" task="4506" keywords="0x2" message="">
+    </event>
+    <event value="4513" version="0" opcode="2" channel="0" level="5" task="4506" keywords="0x2" message="">
+    </event>
+    <event value="4514" version="0" opcode="1" channel="0" level="5" task="4507" keywords="0x2" message="">
+    </event>
+    <event value="4515" version="0" opcode="2" channel="0" level="5" task="4507" keywords="0x2" message="">
+    </event>
+    <event value="4600" version="0" opcode="1" channel="0" level="5" task="4600" keywords="0x2" message="">
+    </event>
+    <event value="4601" version="0" opcode="2" channel="0" level="5" task="4600" keywords="0x2" message="">
+    </event>
+    <event value="4602" version="0" opcode="1" channel="0" level="5" task="4601" keywords="0x2" message="">
+    </event>
+    <event value="4603" version="0" opcode="2" channel="0" level="5" task="4601" keywords="0x2" message="">
+    </event>
+    <event value="4604" version="0" opcode="1" channel="0" level="5" task="4602" keywords="0x2" message="">
+    </event>
+    <event value="4605" version="0" opcode="2" channel="0" level="5" task="4602" keywords="0x2" message="">
+    </event>
+    <event value="4606" version="0" opcode="1" channel="0" level="5" task="4603" keywords="0x2" message="">
+    </event>
+    <event value="4607" version="0" opcode="2" channel="0" level="5" task="4603" keywords="0x2" message="">
+    </event>
+    <event value="4608" version="0" opcode="1" channel="0" level="5" task="4604" keywords="0x2" message="">
+    </event>
+    <event value="4609" version="0" opcode="2" channel="0" level="5" task="4604" keywords="0x2" message="">
+    </event>
+    <event value="4610" version="0" opcode="1" channel="0" level="5" task="4605" keywords="0x2" message="">
+    </event>
+    <event value="4611" version="0" opcode="2" channel="0" level="5" task="4605" keywords="0x2" message="">
+    </event>
+    <event value="4612" version="0" opcode="1" channel="0" level="5" task="4606" keywords="0x2" message="">
+    </event>
+    <event value="4613" version="0" opcode="2" channel="0" level="5" task="4606" keywords="0x2" message="">
+    </event>
+    <event value="4700" version="0" opcode="1" channel="0" level="5" task="4700" keywords="0x2" message="">
+    </event>
+    <event value="4701" version="0" opcode="2" channel="0" level="5" task="4700" keywords="0x2" message="">
+    </event>
+    <event value="4800" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x4" message="MAPI Context is being deleted">
+    </event>
+    <event value="4801" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="MAPI Event is lost">
+    </event>
+    <event value="4802" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="MAPI Event data error">
+    </event>
+    <event value="4803" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="Unknown prop tag seen in ConvertDatabasePropertyTagsToMapiTags: %1">
+    </event>
+  </events>
+</provider>

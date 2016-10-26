@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-OneCore-OnlineSetup" guid="41862974-da3b-4f0b-97d5-bb29fbb9b71e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=setupetw.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\setupetw.dll" messageFileName="C:\Windows\system32\setupetw.dll" message="Microsoft-OneCore-OnlineSetup" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-OneCore-Setup/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Setup" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tskRunOneCoreSetup" value="1000" eventGUID="49616aee-29a5-4d6b-806e-cec2629f31bc" message="Run Setup Specialization">
+    </task>
+    <task name="tskOneCoreSetupProcessUnattend" value="2000" eventGUID="635ba866-36a3-464c-b06d-feb76af08f26" message="Setup Process Unattend">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="keyPerformance" mask="1" message="Performance">
+    </keyword>
+    <keyword name="keyDiagnostic" mask="2" message="Diagnostic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="1000" keywords="0x8000000000000001" message="Setup.exe is running with command line &quot;%1&quot;.">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="16" level="4" task="1000" keywords="0x8000000000000001" message="Setup.exe exiting with status %1.">
+    </event>
+    <event value="2001" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000001" message="Executing unattend settings pass &quot;%1&quot;.">
+    </event>
+    <event value="2002" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000001" message="Finished executing unattend pass with status %1.">
+    </event>
+    <event value="2003" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000001" message="Failed to execute unattend pass with status %1.">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="4" task="2000" keywords="0x8000000000000002" message="Using unattend file &quot;%2&quot; for pass &quot;%1&quot;.">
+    </event>
+  </events>
+</provider>

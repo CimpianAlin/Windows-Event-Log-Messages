@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Energy-Estimation-Engine" guid="ddcc3826-a68a-4e0d-bcfd-9c06c27c6948" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=eeprov.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\eeprov.dll" messageFileName="C:\Windows\system32\eeprov.dll" message="Microsoft-Windows-Energy-Estimation-Engine" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Energy-Estimation-Engine/Trace" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Energy-Estimation-Engine/EventLog" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="EnergyEstimate" value="655360" message="">
+    </opcode>
+    <opcode name="CpuPowerInfo" value="720896" message="">
+    </opcode>
+    <opcode name="ProcessInfo" value="786432" message="">
+    </opcode>
+    <opcode name="AppPerfInfo" value="851968" message="">
+    </opcode>
+    <opcode name="EnergyDelta" value="917504" message="">
+    </opcode>
+    <opcode name="MonitorPowerState" value="983040" message="">
+    </opcode>
+    <opcode name="PolicyBrightness" value="1048576" message="">
+    </opcode>
+    <opcode name="ActualBrightness" value="1114112" message="">
+    </opcode>
+    <opcode name="ResidualEnergy" value="1179648" message="">
+    </opcode>
+    <opcode name="BatteryState" value="1245184" message="">
+    </opcode>
+    <opcode name="MapProcessToApp" value="1310720" message="">
+    </opcode>
+    <opcode name="AppForegroundTime" value="1376256" message="">
+    </opcode>
+    <opcode name="EnergyNotification" value="1441792" message="">
+    </opcode>
+    <opcode name="StandbyActivationTime" value="1507328" message="">
+    </opcode>
+    <opcode name="StandbyDripsTime" value="1572864" message="">
+    </opcode>
+    <opcode name="UnknownEnergy" value="1638400" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="InitializeProvider" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UninitializeProvider" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryStats" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MergeStats" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IndexToAppId" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IndexToUserId" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryColumnInfo" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FreeMemory" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayEnergy" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppInteractivityState" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AisResidencyDelta" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EnergyNotification" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StandbyActivationTime" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StandbyDripsTime" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UnknownEnergy" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CommittedStats" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="CodePath" mask="1" message="">
+    </keyword>
+    <keyword name="SystemInformation" mask="2" message="">
+    </keyword>
+    <keyword name="EnergyEstimation" mask="4" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="4" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="5" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="6" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="7" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="7" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="8" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="12" version="0" opcode="10" channel="16" level="4" task="3" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="13" version="0" opcode="10" channel="16" level="4" task="4" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="14" version="0" opcode="11" channel="16" level="4" task="3" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="15" version="0" opcode="12" channel="16" level="4" task="3" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="16" version="0" opcode="13" channel="16" level="4" task="3" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="17" version="0" opcode="14" channel="16" level="4" task="3" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="18" version="0" opcode="14" channel="16" level="4" task="3" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="19" version="0" opcode="15" channel="16" level="4" task="9" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="20" version="0" opcode="16" channel="16" level="4" task="9" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="21" version="0" opcode="17" channel="16" level="4" task="9" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="22" version="0" opcode="18" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="23" version="0" opcode="18" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="24" version="0" opcode="19" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="25" version="0" opcode="20" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="26" version="0" opcode="21" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="27" version="0" opcode="21" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="28" version="0" opcode="0" channel="16" level="4" task="10" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="29" version="0" opcode="0" channel="16" level="4" task="10" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="32" version="0" opcode="22" channel="16" level="4" task="12" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="34" version="0" opcode="23" channel="16" level="4" task="13" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="35" version="0" opcode="24" channel="16" level="4" task="14" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="36" version="0" opcode="25" channel="16" level="4" task="15" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="37" version="0" opcode="10" channel="16" level="4" task="3" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="38" version="0" opcode="10" channel="16" level="4" task="4" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="39" version="0" opcode="10" channel="16" level="4" task="16" keywords="0x8000000000000004" message="">
+    </event>
+  </events>
+</provider>

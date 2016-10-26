@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NDIS" guid="cdead503-17f5-4a3e-b7ae-df8cc2902eb9" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ndis.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\ndis.sys" messageFileName="C:\Windows\system32\drivers\ndis.sys" message="Microsoft-Windows-NDIS" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NDIS/Operational" id="16" flags="0" message="Microsoft-Windows-NDIS/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-NDIS/Diagnostic" id="17" flags="0" message="Microsoft-Windows-NDIS/Diagnostic">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="ut:Start" value="11796480" message="Start State">
+    </opcode>
+    <opcode name="ut:End" value="11862016" message="End State">
+    </opcode>
+    <opcode name="ut:Closed" value="11927552" message="Closed State">
+    </opcode>
+    <opcode name="ut:Open" value="11993088" message="Open State">
+    </opcode>
+    <opcode name="ut:Connect" value="12058624" message="Connect State">
+    </opcode>
+    <opcode name="ut:Listen" value="12124160" message="Listen State">
+    </opcode>
+    <opcode name="ut:Association" value="12189696" message="Association State">
+    </opcode>
+    <opcode name="ut:Authentication" value="12255232" message="Authentication State">
+    </opcode>
+    <opcode name="ut:Established" value="12320768" message="Established State">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Request" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Request">
+    </task>
+    <task name="PnP" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="PnP">
+    </task>
+    <task name="Init" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Init">
+    </task>
+    <task name="Bind" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Bind">
+    </task>
+    <task name="Power" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Power">
+    </task>
+    <task name="WMI" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="WMI">
+    </task>
+    <task name="Interface" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Interface">
+    </task>
+    <task name="Port" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Port">
+    </task>
+    <task name="WorkItem" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkItem">
+    </task>
+    <task name="Indication" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Indication">
+    </task>
+    <task name="SendM" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="SendM">
+    </task>
+    <task name="Protocol" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="Protocol">
+    </task>
+    <task name="Log" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="Log">
+    </task>
+    <task name="ReceiveThrottling" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="ReceiveThrottling">
+    </task>
+    <task name="RefRundown" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="Refcount rundown">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Request" mask="1" message="">
+    </keyword>
+    <keyword name="PnP" mask="2" message="">
+    </keyword>
+    <keyword name="Init" mask="4" message="">
+    </keyword>
+    <keyword name="Bind" mask="8" message="">
+    </keyword>
+    <keyword name="Power" mask="10" message="">
+    </keyword>
+    <keyword name="WMI" mask="20" message="">
+    </keyword>
+    <keyword name="Interface" mask="40" message="">
+    </keyword>
+    <keyword name="Port" mask="80" message="">
+    </keyword>
+    <keyword name="WorkItem" mask="100" message="">
+    </keyword>
+    <keyword name="Indication" mask="200" message="">
+    </keyword>
+    <keyword name="SendM" mask="400" message="">
+    </keyword>
+    <keyword name="Protocol" mask="800" message="">
+    </keyword>
+    <keyword name="Log" mask="1000" message="">
+    </keyword>
+    <keyword name="ReceiveThrottling" mask="2000" message="">
+    </keyword>
+    <keyword name="LwtDiagnostic" mask="4000" message="">
+    </keyword>
+    <keyword name="SleepStudy" mask="8000" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="10000" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Aborting Request %4 on Filter %5">
+    </event>
+    <event value="10001" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Aborting Request %4 on Miniport %5">
+    </event>
+    <event value="10002" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000008000000002" message="Add Device Miniport %1">
+    </event>
+    <event value="10003" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000008000004002" message="Add Device Failed %1">
+    </event>
+    <event value="10004" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Add PnP Device: %1">
+    </event>
+    <event value="10005" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000004" message="Allocate Adapter Channel Failed %1">
+    </event>
+    <event value="10006" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000008" message="Initialize Binding - Protocol: %4, Adapter: %1, Result: %5">
+    </event>
+    <event value="10007" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000004004" message="Miniport %1, Calling miniport reset">
+    </event>
+    <event value="10008" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Filter %1, Aborting Request %4">
+    </event>
+    <event value="10009" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, Successfully canceled wake irp">
+    </event>
+    <event value="10010" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Miniport %1, Aborting Request %4">
+    </event>
+    <event value="10011" version="0" opcode="0" channel="17" level="2" task="6" keywords="0x4000000000000020" message="Miniport %1, Failed to set the new information on the miniport">
+    </event>
+    <event value="10012" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000000000000040" message="Compartment change notification, compartment %1">
+    </event>
+    <event value="10013" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000000000000040" message="Interface change notification, interface IfType %1, NetLuid index %2">
+    </event>
+    <event value="10014" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000000000000040" message="Interface change notification, interface IfType %1, NetLuid index %2">
+    </event>
+    <event value="10015" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000000000000040" message="Network change notification, network %1">
+    </event>
+    <event value="10016" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000001" message="Request Clearing Processing Request Miniport %1">
+    </event>
+    <event value="10017" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000008" message="Protocol %4 is closing Miniport %1">
+    </event>
+    <event value="10018" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000001" message="Completing Request %4 to Filter %1">
+    </event>
+    <event value="10019" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, WaitWakeIrp %4">
+    </event>
+    <event value="10020" version="0" opcode="0" channel="17" level="4" task="8" keywords="0x4000000000000080" message="Miniport %1, activating default port">
+    </event>
+    <event value="10021" version="0" opcode="0" channel="17" level="4" task="8" keywords="0x4000000000000080" message="Miniport %1, deactivating default port">
+    </event>
+    <event value="10022" version="0" opcode="0" channel="17" level="2" task="7" keywords="0x4000000000000040" message="Failed to deregister interface IfBlock %3">
+    </event>
+    <event value="10023" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="DevicePowerStateChange Miniport %1, Going to device state %5">
+    </event>
+    <event value="10024" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Dispatch PnP Irp Miniport %1, MinorFunction: %4">
+    </event>
+    <event value="10025" version="0" opcode="0" channel="17" level="4" task="6" keywords="0x4000000000000020" message="Dispatch WMI Irp Miniport %1, MinorFunction %4">
+    </event>
+    <event value="10026" version="0" opcode="0" channel="17" level="2" task="6" keywords="0x4000000000000020" message="Miniport %1, Failed to execute WMI method (%6) on the miniport">
+    </event>
+    <event value="10027" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000004" message="Failed to indicate filter arrival">
+    </event>
+    <event value="10028" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Miniport %1, Filter %4 changed media type from %7 to %8">
+    </event>
+    <event value="10029" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000008000000004" message="Filter Registration Failed %1 - %2">
+    </event>
+    <event value="10030" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000004" message="Failed to indicate filter removal">
+    </event>
+    <event value="10031" version="0" opcode="0" channel="17" level="2" task="6" keywords="0x4000000000000020" message="Failed to indicate adapter removal">
+    </event>
+    <event value="10032" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000004004" message="Miniport %1, InitializeAdapter status - %4 (%5)">
+    </event>
+    <event value="10033" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000004004" message="Miniport %1, InitializeAdapter error - %4 (%5)">
+    </event>
+    <event value="10034" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000002" message="Could not read Bind/Export for %4: %1">
+    </event>
+    <event value="10035" version="0" opcode="0" channel="17" level="2" task="5" keywords="0x4000000000000010" message="Miniport %1, Not a system state! Type: %4. State: %5.">
+    </event>
+    <event value="10037" version="0" opcode="0" channel="17" level="2" task="4" keywords="0x4000000000000008" message="IoSetDeviceInterfaceState failed: Miniport %1, Status %4">
+    </event>
+    <event value="10038" version="0" opcode="0" channel="17" level="2" task="6" keywords="0x4000000000000020" message="IoWMIWriteEvent failed %1">
+    </event>
+    <event value="10039" version="0" opcode="0" channel="17" level="2" task="5" keywords="0x4000000000000010" message="DeviceObject %3, IRP_MN_SET_POWER failed!">
+    </event>
+    <event value="10040" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Keeping the fake handlers on Filter %1, State flags %4">
+    </event>
+    <event value="10041" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Keeping the fake handlers on Miniport %1, State flags %4">
+    </event>
+    <event value="10042" version="0" opcode="0" channel="17" level="2" task="4" keywords="0x4000000000000008" message="Open %3 is already getting unbind">
+    </event>
+    <event value="10043" version="0" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000000100" message="Miniport %1 is %4">
+    </event>
+    <event value="10044" version="0" opcode="0" channel="17" level="2" task="5" keywords="0x4000000000004010" message="Miniport %1 - MiniportInitialize handler failed, Status %4">
+    </event>
+    <event value="10045" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Miniport %1, Ethernet Address %4">
+    </event>
+    <event value="10046" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, DeviceState[%5]">
+    </event>
+    <event value="10047" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, Powering up the Miniport">
+    </event>
+    <event value="10048" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Miniport %1, SystemPowerState[%4] DevicePowerState[%5]">
+    </event>
+    <event value="10049" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Miniport %1, SystemState[%5]">
+    </event>
+    <event value="10050" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000004" message="Failed to restart miniport %1. Status %4">
+    </event>
+    <event value="10052" version="0" opcode="0" channel="17" level="3" task="2" keywords="0x4000000000000002" message="Error querying %4 : %5">
+    </event>
+    <event value="10053" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000008" message="Failing open because the miniport is not started, Miniport %1, Open %4">
+    </event>
+    <event value="10054" version="0" opcode="0" channel="17" level="2" task="8" keywords="0x4000000000004080" message="Port Activation Failed Miniport %1 %4">
+    </event>
+    <event value="10055" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, Disabling wake-up on the miniport">
+    </event>
+    <event value="10056" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000010" message="Miniport %1, Failed to power the device down">
+    </event>
+    <event value="10057" version="0" opcode="0" channel="17" level="2" task="5" keywords="0x4000000000000010" message="Miniport %1, failed to power down but we are not able to reinitialize it.">
+    </event>
+    <event value="10058" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Miniport %1, Halt the miniport">
+    </event>
+    <event value="10059" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, System is either entering hibernate or shutting down.">
+    </event>
+    <event value="10060" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="DeviceObject %1, Going to system power state %2">
+    </event>
+    <event value="10061" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1 is not started yet.">
+    </event>
+    <event value="10062" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1 is being removed">
+    </event>
+    <event value="10063" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, MagicPacket and pattern match are not enabled.">
+    </event>
+    <event value="10064" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, Place legacy or PM disabled device in D3">
+    </event>
+    <event value="10065" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, SystemState %4, DeviceState %5">
+    </event>
+    <event value="10066" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000010" message="Miniport %1, shutting down">
+    </event>
+    <event value="10067" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, Device power wake is not enabled (%4)">
+    </event>
+    <event value="10068" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000010" message="Miniport %1, Waking up the device">
+    </event>
+    <event value="10069" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000008000000008" message="BIND (%1) %2 to %3">
+    </event>
+    <event value="10070" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000008000000008" message="UNBIND(%1) %2 to %3">
+    </event>
+    <event value="10071" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000002" message="Miniport %1, IRP_MN_QUERY_PNP_DEVICE_STATE device failed">
+    </event>
+    <event value="10072" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, Bus Driver returned %4 for QueryPower.">
+    </event>
+    <event value="10073" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, Bus Driver returned %4 for QueryPower.">
+    </event>
+    <event value="10074" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, failed power Oid %5, Set = %6 with error %4">
+    </event>
+    <event value="10075" version="0" opcode="0" channel="17" level="2" task="4" keywords="0x4000000000000008" message="ndisReferenceProtocolByName failed %1">
+    </event>
+    <event value="10076" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000004" message="Miniport %1 failed to register for interrupts">
+    </event>
+    <event value="10077" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000004" message="DriverObject %3, Miniport Driver should register both a DirectRequest and CancelDirectRequest handler or neither one">
+    </event>
+    <event value="10078" version="0" opcode="0" channel="17" level="5" task="11" keywords="0x4000000000000400" message="SendPacketCompleteToOpen Open %1, Packet %2">
+    </event>
+    <event value="10079" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="ndisSetEnableWakeUp Completed">
+    </event>
+    <event value="10080" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000000000000001" message="SetMiniportEthMulticastList Failed Miniport %1, Request %6">
+    </event>
+    <event value="10081" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000000000000001" message="SetMiniportRSSCaps Failed Miniport %1, Request %6, Status %4">
+    </event>
+    <event value="10082" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000000000000001" message="SetOpenEthAddDeleteMulticast Failed, Miniport = %1, Open = %6, Status = %4">
+    </event>
+    <event value="10083" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000000000000001" message="SetOpenEthMulticastList failed - Miniport %1, Open %6">
+    </event>
+    <event value="10084" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000000000000001" message="SetOpenFunctional - Invalid media type">
+    </event>
+    <event value="10085" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000000000000001" message="SetOpenGroupAddress - Invalid media type">
+    </event>
+    <event value="10086" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x4000000000000001" message="SetOpenRSSCaps: Miniport %1, Open %6, Status %4">
+    </event>
+    <event value="10087" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, Going to system power state %5">
+    </event>
+    <event value="10088" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000002" message="Transport %4 failed the PnP event: %5 for Miniport %1 with Status %6">
+    </event>
+    <event value="10089" version="0" opcode="0" channel="17" level="3" task="2" keywords="0x4000000000000002" message="Miniport %1, This version of NDIS does not support Arcnet, FDDI, IP1394, or Token Ring">
+    </event>
+    <event value="10090" version="0" opcode="0" channel="17" level="2" task="12" keywords="0x4000000000000800" message="%1, %2">
+    </event>
+    <event value="10091" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, Wake irp was complete due to wake event">
+    </event>
+    <event value="10092" version="0" opcode="0" channel="17" level="2" task="5" keywords="0x4000000000000010" message="WaitWakeIrpFailed Miniport %1, WAIT_WAKE irp failed or cancelled. Status %4">
+    </event>
+    <event value="10093" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000010" message="Miniport %1 woke up the system.">
+    </event>
+    <event value="10094" version="0" opcode="0" channel="17" level="2" task="13" keywords="0x4000000000001000" message="Error Log Entry : Miniport %1 (%4) Error %5">
+    </event>
+    <event value="10095" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Aborting Request %4">
+    </event>
+    <event value="10096" version="0" opcode="0" channel="17" level="2" task="8" keywords="0x4000000000000080" message="Port Deactivation Failed Miniport %1 %4">
+    </event>
+    <event value="10097" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, PoRequestPowerIrp for device state returned %4">
+    </event>
+    <event value="10098" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Miniport %1, failed query power">
+    </event>
+    <event value="10099" version="0" opcode="0" channel="17" level="2" task="5" keywords="0x4000000000004010" message="DevicePowerOn failed Miniport %1, status %4">
+    </event>
+    <event value="10100" version="0" opcode="0" channel="17" level="2" task="5" keywords="0x4000000000000010" message="Power policy - Unable to enter requested state">
+    </event>
+    <event value="10101" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000001" message="Miniport %1: Oid %7, Completed by NDIS on behalf of miniport with Status %6: %5">
+    </event>
+    <event value="10102" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000001" message="Completing Request %4 to Miniport %1">
+    </event>
+    <event value="10103" version="0" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000000100" message="Filter %1 entering state %2">
+    </event>
+    <event value="10104" version="0" opcode="0" channel="17" level="4" task="10" keywords="0x4000000000004200" message="Miniport %1, NDIS_STATUS_MEDIA_CONNECT, Flags: %4, PnpFlags %5, DevicePowerState %6">
+    </event>
+    <event value="10105" version="0" opcode="0" channel="17" level="4" task="10" keywords="0x4000000000004200" message="Miniport %1, NDIS_STATUS_MEDIA_DISCONNECT, Flags: %4, PnpFlags %5, DevicePowerState %6">
+    </event>
+    <event value="10106" version="0" opcode="0" channel="17" level="4" task="10" keywords="0x4000000000000200" message="Miniport %1, NDIS_STATUS_OPER_STATUS, OperationalStatus: %4, OperationalStatusFlags: %5">
+    </event>
+    <event value="10107" version="0" opcode="0" channel="17" level="4" task="10" keywords="0x4000000000000200" message="Miniport %1, NDIS_STATUS_OPER_STATUS, OperationalStatus: %4, OperationalStatusFlags: %5">
+    </event>
+    <event value="10108" version="0" opcode="0" channel="17" level="4" task="10" keywords="0x4000000000000200" message="Miniport %1, NDIS_STATUS_NETWORK_CHANGE, Change Type: %4">
+    </event>
+    <event value="10109" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Filter %1, Aborting Request %4">
+    </event>
+    <event value="10110" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Miniport %1, Aborting Request %4">
+    </event>
+    <event value="10111" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000001" message="Completing Request %4 to Filter %1">
+    </event>
+    <event value="10112" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000001" message="Completing Request %4 to Miniport %1">
+    </event>
+    <event value="10113" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Aborting Request %4">
+    </event>
+    <event value="10114" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Aborting Request %4 on Filter %5">
+    </event>
+    <event value="10115" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Aborting Request %4 on Miniport %5">
+    </event>
+    <event value="10200" version="0" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000002000" message="DPC/OtherDispatchRoutine Start">
+    </event>
+    <event value="10201" version="0" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000002000" message="DPC/OtherDispatchRoutine End">
+    </event>
+    <event value="10202" version="0" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000002000" message="Queued Receive Indication Start">
+    </event>
+    <event value="10203" version="0" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000002000" message="Queued Receive Indication End">
+    </event>
+    <event value="10204" version="0" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000002000" message="Miniport %1 on processor %2 has an RST limit change from %5 to %6 NBLs per indication (NumNbls: %3, Duration: %4, Individual: %7, Cummulative: %8)">
+    </event>
+    <event value="10300" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="The network adapter is idle and can be suspended now.
+Interface Luid: %1">
+    </event>
+    <event value="10301" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="The network adapter declined to enter a suspended state.
+Interface Luid: %1
+Status code: %2">
+    </event>
+    <event value="10302" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="The network adapter must be resumed.
+Interface Luid: %1
+Resume reason: %2">
+    </event>
+    <event value="10303" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="NIC Active state is acquired.
+Interface Luid: %1
+Component ID: %2
+Component Ref Count: %3
+Interface Ref Count: %4">
+    </event>
+    <event value="10304" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="NIC Active state is released.
+Interface Luid: %1
+Component ID: %2
+Component Ref Count: %3
+Interface Ref Count: %4">
+    </event>
+    <event value="10305" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="The network adapter indicated a wake signal.
+Interface Luid: %1
+Wake reason: %2">
+    </event>
+    <event value="10306" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Working power state is requested for network adapter. 
+Interface Luid: %3">
+    </event>
+    <event value="10307" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Working power request is completed for network adapter. 
+Interface Luid: %3 
+Status: %4">
+    </event>
+    <event value="10308" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000010" message="Low power state is requested for network adapter. 
+Interface Luid: %3">
+    </event>
+    <event value="10309" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Low power request is completed for network adapter. 
+Interface Luid: %3 
+Status: %4">
+    </event>
+    <event value="10310" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Wait/Wake IRP is completed for network adapter. 
+Interface Luid: %3">
+    </event>
+    <event value="10311" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000004016" message="Miniport %4, %1, had event %5">
+    </event>
+    <event value="10312" version="0" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000000100" message="Filter %1 entering state %2 (FriendlyName: %7)">
+    </event>
+    <event value="10313" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Entering Connected Standby">
+    </event>
+    <event value="10314" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Exiting Connected Standby. Duration %1 sec.">
+    </event>
+    <event value="10315" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Miniport %2: CS active %3 seconds, %4 power transitions.">
+    </event>
+    <event value="10316" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Component %2: CS active %3 seconds, Miniport %1.">
+    </event>
+    <event value="10317" version="0" opcode="0" channel="8" level="2" task="2" keywords="0x2000000000004016" message="Miniport %4, %1, had event %5">
+    </event>
+    <event value="10320" version="0" opcode="1" channel="17" level="4" task="15" keywords="0x4000000000004010" message="Refcount rundown for miniport %3 will follow">
+    </event>
+    <event value="10321" version="0" opcode="0" channel="17" level="4" task="15" keywords="0x4000000000004010" message="Refcount rundown for miniport %1: component %2 has refcount %3">
+    </event>
+    <event value="10322" version="0" opcode="2" channel="17" level="4" task="15" keywords="0x4000000000004010" message="Refcount rundown for miniport %1: stop flags %2
+Rundown complete">
+    </event>
+    <event value="10323" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004010" message="Power transition for Miniport %2 in CS (%3 to %4). %3 traffic (In-Out): Unicast Packets (%5-%6), Multicast Packets (%7-%8), Broadcast Packets (%9-%10).">
+    </event>
+    <event value="10324" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000008000" message="Miniport PDO information for Sleepstudy">
+    </event>
+    <event value="10400" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x2000000000000000" message="The network interface &quot;%4&quot; has begun resetting.  There will be a momentary disruption in network connectivity while the hardware resets.
+Reason: %5.
+This network interface has reset %6 time(s) since it was last initialized.">
+    </event>
+    <event value="60001" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Error: %1 Location: %2 Context: %3">
+    </event>
+    <event value="60002" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Warning: %1 Location: %2 Context: %3">
+    </event>
+    <event value="60003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000200000000000" message="Transitioned to State: %1 Context: %2">
+    </event>
+    <event value="60004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Updated Context: %1 Update Reason: %2">
+    </event>
+    <event value="60101" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6">
+    </event>
+    <event value="60102" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6">
+    </event>
+    <event value="60103" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Interface Guid: %1 IfIndex: %2 Interface Luid: %3 ReferenceContext: %4">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Security-UserConsentVerifier" guid="40783728-8921-45d0-b231-919037b4b4fd" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Windows.Security.Credentials.UI.UserConsentVerifier.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\Windows.Security.Credentials.UI.UserConsentVerifier.dll" messageFileName="C:\Windows\System32\Windows.Security.Credentials.UI.UserConsentVerifier.dll" message="Microsoft-Windows-Security-UserConsentVerifier" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Security-UserConsentVerifier/Audit" id="16" flags="0" message="Microsoft-Windows-Security-UserConsentVerifier/Audit">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="AuditResultOpcode" value="655360" message="Result">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="VerificationTask" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Verification">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="UCV" mask="1" message="User Consent Verification">
+    </keyword>
+    <keyword name="Biometrics" mask="2" message="Biometrics">
+    </keyword>
+    <keyword name="Fingerprint" mask="4" message="Fingerprint">
+    </keyword>
+    <keyword name="win:AuditFailure" mask="10000000000000" message="Audit Failure">
+    </keyword>
+    <keyword name="win:AuditSuccess" mask="20000000000000" message="Audit Success">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="10" channel="16" level="4" task="1" keywords="0x8020000000000007" message="A user consent verification request using a biometric fingerprint succeeded.
+
+Application: %1
+Purpose for consent: %2">
+    </event>
+    <event value="101" version="0" opcode="10" channel="16" level="2" task="1" keywords="0x8010000000000007" message="A user consent verification request using a biometric fingerprint failed.
+
+Application: %1
+Purpose for consent: %2
+Reason for consent failure: %3">
+    </event>
+  </events>
+</provider>

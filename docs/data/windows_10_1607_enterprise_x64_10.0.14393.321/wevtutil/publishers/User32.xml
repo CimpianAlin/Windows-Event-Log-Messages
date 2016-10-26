@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="User32" guid="b0aa8734-56f7-41cc-b2f4-de228e98b946" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=user32.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\user32.dll" messageFileName="C:\Windows\system32\user32.dll" message="User32" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2147484721" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x80000000000000" message="The attempt by user %2 to restart/shutdown computer %1 failed">
+    </event>
+    <event value="2147484722" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x80000000000000" message="The process %1 has initiated the %5 of computer %2 on behalf of user %7 for the following reason: %3
+ Reason Code: %4
+ Shutdown Type: %5
+ Comment: %6">
+    </event>
+    <event value="2147484723" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x80000000000000" message="The last restart/shutdown request of computer %1 was aborted by user %2
+">
+    </event>
+    <event value="2147484724" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x80000000000000" message="The reason supplied by user %6 for the last unexpected shutdown of this computer is: %1
+ Reason Code: %2
+ Problem ID: %3
+ Bugcheck String: %4
+ Comment: %5">
+    </event>
+    <event value="2147484725" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x80000000000000" message="The attempt by user %2 to logoff computer %1 failed">
+    </event>
+  </events>
+</provider>

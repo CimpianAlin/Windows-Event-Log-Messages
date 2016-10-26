@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ReFS-v1" guid="059f0f37-910e-4ff0-a7ee-ae8d49dd319b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=refsv1.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\refsv1.sys" parameterFileName="C:\Windows\system32\drivers\refsv1.sys" messageFileName="C:\Windows\system32\drivers\refsv1.sys" message="ReFSv1" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:SQM" mask="8000000000000" message="SQM">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="130" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The file system structure on volume %2 has now been repaired.">
+    </event>
+    <event value="131" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The file system structure on volume %2 cannot be corrected.">
+    </event>
+    <event value="132" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The file system detected a checksum error and was able to correct it. The name of the file or folder is &quot;%2&quot;.">
+    </event>
+    <event value="133" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The file system detected a checksum error and was not able to correct it. The name of the file or folder is &quot;%2&quot;.">
+    </event>
+    <event value="134" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The file system was unable to write metadata to the media backing volume %2. A write failed with status &quot;%3&quot; ReFS will take the volume offline. It may be mounted again automatically.">
+    </event>
+    <event value="135" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Volume %2 is formatted as ReFS but ReFS is unable to mount it; ReFS encountered status %3.">
+    </event>
+    <event value="136" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Volume &quot;%2&quot; was mounted in an older version of Windows. Some features may be lost.">
+    </event>
+    <event value="237" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="238" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="272" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="273" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="274" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="513" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The file system detected a corruption on a file. The file has been removed from the file system namespace. The name of the file is &quot;%2&quot;.">
+    </event>
+    <event value="514" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The file system detected a corruption on a file. The file system may have failed to remove it from the file system namespace. The name of the file is &quot;%2&quot;.">
+    </event>
+    <event value="515" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The file system detected a corruption on a folder. Contents of the folder have been removed from the file system namespace. The name of the folder is &quot;%2&quot;.">
+    </event>
+    <event value="516" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The file system detected a corruption on a folder. The file system may have failed to remove contents of the folder from the file system namespace. The name of the folder is &quot;%2&quot;.">
+    </event>
+    <event value="519" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The file system detected a corruption on file system metadata. The name of the stream is &quot;%2&quot;.">
+    </event>
+    <event value="520" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The file system detected a corruption on file system metadata. The name of the stream is &quot;%2&quot;.">
+    </event>
+    <event value="521" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Volume &quot;%2&quot; detected a corruption on file system metadata. It will lose self-healing features.">
+    </event>
+  </events>
+</provider>

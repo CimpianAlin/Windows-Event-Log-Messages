@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SPB-ClassExtension" guid="72cd9ff7-4af8-4b89-aede-5f26fda13567" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=SpbCx.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\SpbCx.sys" messageFileName="C:\Windows\system32\drivers\SpbCx.sys" message="Microsoft-Windows-SPB-ClassExtension" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SPB-ClassExtension/Analytic" id="16" flags="0" message="Analytic">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="IoStart" value="655360" message="">
+    </opcode>
+    <opcode name="IoDispatchToTarget" value="720896" message="">
+    </opcode>
+    <opcode name="IoForwardToControllerQueue" value="786432" message="">
+    </opcode>
+    <opcode name="IoDispatchToController" value="851968" message="">
+    </opcode>
+    <opcode name="IoPresentToDriver" value="917504" message="">
+    </opcode>
+    <opcode name="IoComplete" value="983040" message="">
+    </opcode>
+    <opcode name="IoStop" value="1048576" message="">
+    </opcode>
+    <opcode name="IoSpbDirection" value="1114112" message="">
+    </opcode>
+    <opcode name="IoSpbData" value="1179648" message="">
+    </opcode>
+    <opcode name="IoLockWatchdogTimeout" value="1245184" message="">
+    </opcode>
+    <opcode name="DIrpPreprocess" value="1310720" message="">
+    </opcode>
+    <opcode name="IoSpbPayloadStart" value="1376256" message="">
+    </opcode>
+    <opcode name="IoSpbPayloadTdStart" value="1441792" message="">
+    </opcode>
+    <opcode name="IoSpbPayloadTdBuffer" value="1507328" message="">
+    </opcode>
+    <opcode name="IoSpbPayloadTdStop" value="1572864" message="">
+    </opcode>
+    <opcode name="IoSpbPayloadStop" value="1638400" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SPB_CX_Startup" value="1" eventGUID="ce2aa58f-7987-4171-921b-4fa19f5dbd35" message="Startup of the SPB class extension">
+    </task>
+    <task name="SPB_CX_Unload" value="2" eventGUID="1d30144b-e1d8-4702-80b6-e408d6ac0cda" message="Unload of the SPB class extension">
+    </task>
+    <task name="SPB_CX_IO" value="3" eventGUID="9e09927e-ef09-4ee3-a425-afe2b31073d7" message="I/O operation flow through SPBCx">
+    </task>
+    <task name="SPB_CX_DIRP" value="4" eventGUID="60c91a13-1925-4547-ac32-80f9acced3bb" message="D-state transition for SPB controller driver">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1000" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Simple Peripheral Bus WDF class extension has started.  The control object name is %1.">
+    </event>
+    <event value="1001" version="1" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="The Simple Peripheral Bus WDF class extension failed to start (error %2).  The control object name is %1.">
+    </event>
+    <event value="1002" version="1" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Simple Peripheral Bus WDF class extension has unloaded.">
+    </event>
+    <event value="1010" version="1" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1011" version="1" opcode="11" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1012" version="1" opcode="12" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1013" version="1" opcode="13" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1014" version="1" opcode="14" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1015" version="1" opcode="15" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1016" version="1" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1018" version="1" opcode="17" channel="16" level="5" task="3" keywords="0x8000000000000000" message="Direction: %1">
+    </event>
+    <event value="1019" version="1" opcode="19" channel="16" level="3" task="3" keywords="0x8000000000000000" message="Target %2 has exceeded the locked IO watchdog period.">
+    </event>
+    <event value="1020" version="1" opcode="20" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Preprocessing %2 IRP in SPBCx for controller %1.">
+    </event>
+    <event value="1021" version="1" opcode="21" channel="16" level="5" task="3" keywords="0x8000000000000000" message="Payload begin: TotalByteCount = %1, TransferCount = %2">
+    </event>
+    <event value="1022" version="1" opcode="22" channel="16" level="5" task="3" keywords="0x8000000000000000" message="Transfer descriptor begin: Index = %1, Direction = %2, TotalByteCount = %3">
+    </event>
+    <event value="1023" version="1" opcode="23" channel="16" level="5" task="3" keywords="0x8000000000000000" message="Transfer buffer: Index = %1, ByteCount = %2">
+    </event>
+    <event value="1024" version="1" opcode="24" channel="16" level="5" task="3" keywords="0x8000000000000000" message="Transfer descriptor end.">
+    </event>
+    <event value="1025" version="1" opcode="25" channel="16" level="5" task="3" keywords="0x8000000000000000" message="Payload end.">
+    </event>
+  </events>
+</provider>

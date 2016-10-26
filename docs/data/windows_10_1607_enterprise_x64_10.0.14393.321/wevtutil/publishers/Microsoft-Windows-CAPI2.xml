@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-CAPI2" guid="5bbca4a8-b209-48dc-a8c7-b23d3e5216fb" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=crypt32.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\crypt32.dll" messageFileName="C:\Windows\System32\crypt32.dll" message="Microsoft-Windows-CAPI2" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-CAPI2/Operational" id="16" flags="0" message="Microsoft-Windows-CAPI2/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-CAPI2/Catalog Database Debug" id="17" flags="0" message="Microsoft-Windows-CAPI2/Catalog Database Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CertGetCertificateChain" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="Build Chain">
+    </task>
+    <task name="CertAIAUrlRetrievalCache" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="Retrieve Issuer Certificate from Cache">
+    </task>
+    <task name="CertAIAUrlRetrievalWire" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="Retrieve Issuer Certificate from Network">
+    </task>
+    <task name="CertRejectAIAUrlRetrieval" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="Inhibit Issuer Certificate Retrieval">
+    </task>
+    <task name="CertAutoRootUrlRetrievalCache" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="Retrieve Third-Party Root Certificate from Cache">
+    </task>
+    <task name="CertAutoRootUrlRetrievalWire" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="Retrieve Third-Party Root Certificate from Network">
+    </task>
+    <task name="CertCrossCertUrlRetrievalCache" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="Retrieve Cross Certificate from Cache">
+    </task>
+    <task name="CertCrossCertUrlRetrievalWire" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="Retrieve Cross Certificate from Network">
+    </task>
+    <task name="CertVerifyCertificateChainPolicy" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="Verify Chain Policy">
+    </task>
+    <task name="CertVerifyRevocation" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="Verify Revocation">
+    </task>
+    <task name="CertRejectedRevocationInfo" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="Reject Revocation Information">
+    </task>
+    <task name="CryptRetrieveObjectByUrlCache" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="Retrieve Object from Cache">
+    </task>
+    <task name="CryptRetrieveObjectByUrlWire" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="Retrieve Object from Network">
+    </task>
+    <task name="CertOpenStore" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="Open Store">
+    </task>
+    <task name="CryptAcquireCertificatePrivateKey" value="70" eventGUID="00000000-0000-0000-0000-000000000000" message="Acquire Certificate Private Key">
+    </task>
+    <task name="CryptSignCertificate" value="71" eventGUID="00000000-0000-0000-0000-000000000000" message="Sign Certificate">
+    </task>
+    <task name="WinVerifyTrust" value="80" eventGUID="00000000-0000-0000-0000-000000000000" message="Verify Trust">
+    </task>
+    <task name="CryptCATAdminEnumCatalogFromHash" value="82" eventGUID="00000000-0000-0000-0000-000000000000" message="Find Security Catalog for File">
+    </task>
+    <task name="X509Objects" value="90" eventGUID="00000000-0000-0000-0000-000000000000" message="X509 Objects">
+    </task>
+    <task name="CatDBAddCatalog" value="500" eventGUID="00000000-0000-0000-0000-000000000000" message="Add a Security Catalog to the Catalog Database">
+    </task>
+    <task name="CatDBRemoveCatalog" value="501" eventGUID="00000000-0000-0000-0000-000000000000" message="Remove a Security Catalog from the Catalog Database">
+    </task>
+    <task name="CatDBSyncCatalog" value="502" eventGUID="00000000-0000-0000-0000-000000000000" message="Sync a Security Catalog with the Catalog Database">
+    </task>
+    <task name="CatDBRebuildDatabase" value="503" eventGUID="00000000-0000-0000-0000-000000000000" message="Rebuild a subsystem of the Catalog Database">
+    </task>
+    <task name="CatDBEnumCatalogFromHash" value="504" eventGUID="00000000-0000-0000-0000-000000000000" message="Search for Security Catalogs in the Catalog Database that contain the hash">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="PathValidation" mask="1" message="Path Validation">
+    </keyword>
+    <keyword name="PathDiscovery" mask="2" message="Path Discovery">
+    </keyword>
+    <keyword name="Revocation" mask="4" message="Revocation">
+    </keyword>
+    <keyword name="Cache" mask="8" message="Cache">
+    </keyword>
+    <keyword name="Retrieval" mask="10" message="Retrieval">
+    </keyword>
+    <keyword name="AutoRootUpdate" mask="20" message="Automatic Root Update">
+    </keyword>
+    <keyword name="WinVerifyTrust" mask="40" message="Trust Verification">
+    </keyword>
+    <keyword name="PrivateKey" mask="80" message="Private Key">
+    </keyword>
+    <keyword name="CertificateStore" mask="100" message="Certificate Store">
+    </keyword>
+    <keyword name="CertificateDetails" mask="200" message="Certificate Details">
+    </keyword>
+    <keyword name="Catalog" mask="400" message="Catalog">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="10" version="0" opcode="1" channel="16" level="4" task="11" keywords="0x4000000000000003" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="11" version="0" opcode="2" channel="16" level="4" task="11" keywords="0x4000000000000003" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="12" version="0" opcode="1" channel="16" level="4" task="13" keywords="0x400000000000000a" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="13" version="0" opcode="2" channel="16" level="4" task="13" keywords="0x400000000000000a" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="14" version="0" opcode="1" channel="16" level="4" task="15" keywords="0x4000000000000012" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="15" version="0" opcode="2" channel="16" level="4" task="15" keywords="0x4000000000000012" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="2" task="16" keywords="0x400000000000001a" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="17" version="0" opcode="1" channel="16" level="4" task="18" keywords="0x400000000000002a" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="18" version="0" opcode="2" channel="16" level="4" task="18" keywords="0x400000000000002a" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="19" version="0" opcode="1" channel="16" level="4" task="20" keywords="0x4000000000000032" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="20" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x4000000000000032" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="21" version="0" opcode="1" channel="16" level="4" task="22" keywords="0x400000000000000a" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="22" version="0" opcode="2" channel="16" level="4" task="22" keywords="0x400000000000000a" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="23" version="0" opcode="1" channel="16" level="4" task="24" keywords="0x4000000000000012" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="24" version="0" opcode="2" channel="16" level="4" task="24" keywords="0x4000000000000012" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="4" task="30" keywords="0x4000000000000001" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="40" version="0" opcode="1" channel="16" level="4" task="41" keywords="0x4000000000000005" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="41" version="0" opcode="2" channel="16" level="4" task="41" keywords="0x4000000000000005" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="42" version="0" opcode="0" channel="16" level="2" task="42" keywords="0x4000000000000005" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="50" version="0" opcode="1" channel="16" level="4" task="51" keywords="0x400000000000002e" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="51" version="0" opcode="2" channel="16" level="4" task="51" keywords="0x400000000000002e" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="52" version="0" opcode="1" channel="16" level="4" task="53" keywords="0x4000000000000036" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="53" version="0" opcode="2" channel="16" level="4" task="53" keywords="0x4000000000000036" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="60" version="0" opcode="0" channel="16" level="5" task="60" keywords="0x4000000000000100" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="70" version="0" opcode="0" channel="16" level="4" task="70" keywords="0x4000000000000080" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="71" version="0" opcode="0" channel="16" level="4" task="71" keywords="0x4000000000000080" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="80" version="0" opcode="1" channel="16" level="4" task="80" keywords="0x4000000000000040" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="81" version="0" opcode="2" channel="16" level="4" task="80" keywords="0x4000000000000040" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="82" version="0" opcode="0" channel="16" level="4" task="82" keywords="0x4000000000000400" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="90" version="0" opcode="0" channel="16" level="4" task="90" keywords="0x4000000000000200" message="For more details for this event, please refer to the &quot;Details&quot; section">
+    </event>
+    <event value="256" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="The Cryptographic Services service failed to initialize the Catalog Database. The error was: %1 : %2.">
+    </event>
+    <event value="257" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="The Cryptographic Services service failed to initialize the Catalog Database. The ESENT error was: %1.">
+    </event>
+    <event value="512" version="0" opcode="0" channel="9" level="1" task="0" keywords="0x8000000000000000" message="The Cryptographic Services service failed to initialize the VSS backup &quot;System Writer&quot; object.%1.">
+    </event>
+    <event value="513" version="0" opcode="0" channel="9" level="1" task="0" keywords="0x8000000000000000" message="Cryptographic Services failed while processing the OnIdentity() call in the System Writer Object.%1.">
+    </event>
+    <event value="4097" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successful auto update of third-party root certificate:: Subject: &lt;%1&gt; Sha1 thumbprint: &lt;%2&gt;.">
+    </event>
+    <event value="4098" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successful auto update retrieval of third-party root list cab from: &lt;%1&gt;.">
+    </event>
+    <event value="4099" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed auto update retrieval of third-party root list cab from: &lt;%1&gt; with error: %2.">
+    </event>
+    <event value="4100" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successful auto update retrieval of third-party root certificate from: &lt;%1&gt;.">
+    </event>
+    <event value="4101" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed auto update retrieval of third-party root certificate from: &lt;%1&gt; with error: %2.">
+    </event>
+    <event value="4102" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Reached crypt32 threshold of %1 events and will suspend logging for %2 minutes.">
+    </event>
+    <event value="4103" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successful auto update retrieval of third-party root list sequence number from: &lt;%1&gt;.">
+    </event>
+    <event value="4104" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed auto update retrieval of third-party root list sequence number from: &lt;%1&gt; with error: %2.">
+    </event>
+    <event value="4105" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Untrusted root certificate:: Subject: &lt;%1&gt; Sha1 thumbprint: &lt;%2&gt;.">
+    </event>
+    <event value="4106" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Partial Chain:: Issuer: &lt;%1&gt; Subject Sha1 thumbprint: &lt;%2&gt;.">
+    </event>
+    <event value="4107" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed extract of third-party root list from auto update cab at: &lt;%1&gt; with error: %2.">
+    </event>
+    <event value="4108" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successful auto delete of third-party root certificate:: Subject: &lt;%1&gt; Sha1 thumbprint: &lt;%2&gt;.">
+    </event>
+    <event value="4109" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successful auto property update of third-party root certificate:: Subject: &lt;%1&gt; Sha1 thumbprint: &lt;%2&gt;.">
+    </event>
+    <event value="4110" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to add certificate to Third-Party Root Certification Authorities store with error: %2">
+    </event>
+    <event value="4111" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successful auto update of third-party root list with effective date: %1.">
+    </event>
+    <event value="4112" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successful auto update of disallowed certificate list with effective date: %1.">
+    </event>
+    <event value="4113" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successful auto update of pin rules with effective date: %1.">
+    </event>
+    <event value="4114" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Server: %1 has unexpected certificates under trusted authority: &lt;%2&gt; with thumbprint: %3.
+
+Mismatch of pin rules for domain: %4 with effective date: %5 and sequence number: %6.
+
+Certificates saved to: &lt;%7&gt;.">
+    </event>
+    <event value="4128" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successful pre-fetch of certificate revocation list from: &lt;%1&gt;.">
+    </event>
+    <event value="4129" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed pre-fetch of certificate revocation list from: &lt;%1&gt; with error: %2.">
+    </event>
+    <event value="4176" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="PFX operation failed as AuthSafes count doesn&apos;t lie in expected range. Maximum permissible value: %1. Erroneous value: %2.">
+    </event>
+    <event value="4177" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="PFX operation failed as Iteration count doesn&apos;t lie in expected range. Maximum permissible value: %1. Erroneous value: %2.">
+    </event>
+    <event value="4178" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="PFX operation failed as SafeBags count doesn&apos;t lie in expected range. Maximum permissible value: %1. Erroneous value: %2.">
+    </event>
+    <event value="8192" version="0" opcode="1" channel="17" level="4" task="500" keywords="0x2000000000000400" message="The catalog file %2 is being added to subsystem %1.">
+    </event>
+    <event value="8193" version="0" opcode="2" channel="17" level="4" task="500" keywords="0x2000000000000400" message="Addition of the catalog file completed. Status %1.">
+    </event>
+    <event value="8194" version="0" opcode="1" channel="17" level="4" task="501" keywords="0x2000000000000400" message="The catalog file %2 is being removed from the subsystem %1.">
+    </event>
+    <event value="8195" version="0" opcode="2" channel="17" level="4" task="501" keywords="0x2000000000000400" message="Removal of the catalog file completed. Status %1.">
+    </event>
+    <event value="8196" version="0" opcode="1" channel="17" level="5" task="502" keywords="0x2000000000000400" message="The catalog file %2 is being synced to the subsystem %1.">
+    </event>
+    <event value="8197" version="0" opcode="2" channel="17" level="5" task="502" keywords="0x2000000000000400" message="Sync of the catalog file completed. Status %1.">
+    </event>
+    <event value="8198" version="0" opcode="1" channel="17" level="4" task="503" keywords="0x2000000000000400" message="The Catalog Database is being rebuilt for subsystem %1.">
+    </event>
+    <event value="8199" version="0" opcode="2" channel="17" level="4" task="503" keywords="0x2000000000000400" message="Rebuild of the Catalog Database for the chosen subsystem has completed. Status %1.">
+    </event>
+    <event value="8200" version="0" opcode="1" channel="17" level="4" task="504" keywords="0x2000000000000400" message="A hash of type %2, length %3 and value %4 is being searched for in subsystem %1.">
+    </event>
+    <event value="8201" version="0" opcode="2" channel="17" level="4" task="504" keywords="0x2000000000000400" message="The hash search completed and was found in %2 catalogs. Status %1.">
+    </event>
+    <event value="8202" version="0" opcode="1" channel="17" level="4" task="502" keywords="0x2000000000000400" message="Sync of subsystem %1 has started.">
+    </event>
+    <event value="8203" version="0" opcode="2" channel="17" level="4" task="502" keywords="0x2000000000000400" message="Sync of the subsystem completed. Status %1.">
+    </event>
+  </events>
+</provider>

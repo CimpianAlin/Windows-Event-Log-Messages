@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-CorruptedFileRecovery-Client" guid="ba093605-3909-4345-990b-26b746adee0a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=cofiredm.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\cofiredm.dll" messageFileName="C:\Windows\system32\cofiredm.dll" message="Microsoft-Windows-CorruptedFileRecovery-Client" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-CorruptedFileRecovery-Client/Operational" id="16" flags="0" message="Microsoft-Windows-CorruptedFileRecovery-Client/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="The system file %1 may be corrupted, which may have caused the application %2 to stop working. Windows could not repair this file automatically (error code %3). Run the command &quot;sfc /scannow&quot; at an administrative command prompt to check for errors and to repair the file if necessary.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The system file %1 may be corrupted, which may have caused the application %2 to stop working. Windows attempted to repair the file, but the operation was disabled by group policy.  Run the command &quot;sfc /scannow&quot; at an administrative command prompt to check for errors and to repair the file if necessary.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The system file %1 is corrupted, which may have caused the application %2 to stop working. Windows could not attempt to repair %1 because the operation was disabled by group policy.  Run the command &quot;sfc /scannow&quot; at an administrative command prompt to check for errors and to repair the file if necessary.">
+    </event>
+  </events>
+</provider>

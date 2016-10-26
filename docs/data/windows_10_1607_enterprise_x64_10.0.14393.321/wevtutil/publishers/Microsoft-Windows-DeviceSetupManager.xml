@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DeviceSetupManager" guid="fcbb06bb-6a2a-46e3-abaa-246cb4e508b2" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=DeviceSetupManager.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\DeviceSetupManager.dll" messageFileName="C:\Windows\System32\DeviceSetupManager.dll" message="Microsoft-Windows-DeviceSetupManager" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DeviceSetupManager/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-DeviceSetupManager/Admin" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-DeviceSetupManager/Debug" id="18" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-DeviceSetupManager/Analytic" id="19" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="DeviceUxReady" value="655360" message="">
+    </opcode>
+    <opcode name="DeviceSetupComplete" value="720896" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DeviceSetupTask" value="500" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DownloadDriverTask" value="501" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BuildDriverListTask" value="502" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InstallDriverTask" value="503" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MetadataInstallTask" value="504" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SearchWindowsUpdate" value="7022" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DownloadFromWindowsUpdate" value="7023" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="DSM service start, mode is %1, last session (or boot) was %2 seconds ago">
+    </event>
+    <event value="101" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="DSM Service shutting down. Service uptime was %1 seconds, active worktime was %2 MilliSeconds.">
+    </event>
+    <event value="102" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="DSM Service dll has loaded.">
+    </event>
+    <event value="103" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="DSM Service dll is unloading.">
+    </event>
+    <event value="104" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="DSM Service failed to start, result=%1">
+    </event>
+    <event value="105" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="DSM Service is entering a retry sequence because soft (retryable) errors were encountered">
+    </event>
+    <event value="106" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="DSM Service is leaving the retry state, there have been %1 retry cycles in this session">
+    </event>
+    <event value="108" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="The DSM service has entered service state &apos;%1&apos;">
+    </event>
+    <event value="109" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The DSM service has entered service mode &apos;%1&apos;">
+    </event>
+    <event value="110" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job (%2) has started for device container &apos;%1&apos;, type=%3">
+    </event>
+    <event value="111" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job (%2) has completed for device container &apos;%1&apos;, status=%3">
+    </event>
+    <event value="112" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Device &apos;%1&apos; (%2) has been serviced, processed %3 tasks, wrote %4 properties, active worktime was %5 milliseconds.">
+    </event>
+    <event value="120" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Driver update %1 has been downloaded from Windows Update, download time was %2 milliseconds">
+    </event>
+    <event value="121" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Driver install failed, result=%2 for devnode &apos;%1&apos;">
+    </event>
+    <event value="122" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Access to drivers on Windows Update was blocked by policy">
+    </event>
+    <event value="123" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The DSM service was delayed by %1 seconds for a driver query/download/install on device &apos;%2&apos;">
+    </event>
+    <event value="124" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Driver %1 was installed on device %2, install time was %3 milliseconds">
+    </event>
+    <event value="125" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Installation of a driver on device %1 was blocked by PnP restriction policy">
+    </event>
+    <event value="130" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Metadata package %1 has been staged for container %2, time was %3 milliseconds">
+    </event>
+    <event value="131" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Metadata staging failed, result=%2 for container &apos;%1&apos;">
+    </event>
+    <event value="150" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The device &apos;%1&apos; with container ID %2, has been removed.">
+    </event>
+    <event value="151" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The device &apos;%1&apos; with container ID %2, failed to respond to a device remove request.">
+    </event>
+    <event value="152" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Removal of device node &apos;%1&apos; failed with error code %2.">
+    </event>
+    <event value="200" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="A connection to the Windows Update service could not be established.">
+    </event>
+    <event value="201" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="A connection to the Windows Metadata and Internet Services (WMIS) could not be established.">
+    </event>
+    <event value="202" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The Network List Manager reports no connectivity to the internet.">
+    </event>
+    <event value="203" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Network List Manager reports connection to the internet has been established.">
+    </event>
+    <event value="220" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Registered the handler %3 for the app %2 to handle notifications from the device container %1.">
+    </event>
+    <event value="221" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="A handler for the app %2 was already registered for the device container %1.">
+    </event>
+    <event value="222" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000000" message="The device container %1 and the app %2 specify background task information, but we failed to register with error %3.">
+    </event>
+    <event value="223" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Unregistered for the Print background task after uninstalling the app %1.">
+    </event>
+    <event value="224" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Unregistered for the Mobile Operator background task after uninstalling the app %1.">
+    </event>
+    <event value="230" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Made the request to the store to download the app %2 for device %1.">
+    </event>
+    <event value="231" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Successfully installed the app %2 from the store for device %1.">
+    </event>
+    <event value="232" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="There was an error trying to install app %2 from the store for device %1.  This operation will be retried when the device is reconnected or the user logs on again.">
+    </event>
+    <event value="233" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="There was an error trying to install app %2 from the store for device %1.">
+    </event>
+    <event value="300" version="0" opcode="10" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The device container &apos;%1&apos; has entered the ready state">
+    </event>
+    <event value="301" version="0" opcode="11" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device setup for container &apos;%1&apos; has been completed.">
+    </event>
+    <event value="302" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device metadata that contains an extension namespace has been parsed for container &apos;%1&apos;, ExtensionNamespace = &apos;%2&apos;, Culture = &apos;%3&apos;">
+    </event>
+    <event value="400" version="0" opcode="1" channel="19" level="4" task="500" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="401" version="0" opcode="2" channel="19" level="4" task="500" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="402" version="0" opcode="1" channel="19" level="4" task="501" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="403" version="0" opcode="2" channel="19" level="4" task="501" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="404" version="0" opcode="1" channel="19" level="4" task="502" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="405" version="0" opcode="2" channel="19" level="4" task="502" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="406" version="0" opcode="1" channel="19" level="4" task="503" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="407" version="0" opcode="2" channel="19" level="4" task="503" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="408" version="0" opcode="1" channel="19" level="4" task="504" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="409" version="0" opcode="2" channel="19" level="4" task="504" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="7710" version="0" opcode="1" channel="19" level="4" task="7022" keywords="0x1001000000000000" message="ENTER: Searching WU for driver updates.">
+    </event>
+    <event value="7711" version="0" opcode="2" channel="19" level="4" task="7022" keywords="0x1001000000000000" message="EXIT: Searching WU for driver updates.">
+    </event>
+    <event value="7712" version="0" opcode="1" channel="19" level="4" task="7023" keywords="0x1001000000000000" message="ENTER: Downloading driver update from WU.">
+    </event>
+    <event value="7713" version="0" opcode="2" channel="19" level="4" task="7023" keywords="0x1001000000000000" message="EXIT: Downloading driver update from WU.">
+    </event>
+  </events>
+</provider>

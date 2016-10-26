@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-AppV-ServiceLog" guid="9cc69d1c-7917-4acd-8066-6bf8b63e551b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=AppvClientEventLog.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\AppvClientEventLog.dll" messageFileName="C:\Windows\system32\AppvClientEventLog.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-AppV-Client/Debug" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="Service" value="655360" message="AppV Client Service">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DBG-AppVClient" value="1" eventGUID="c79aa2ce-84eb-4f7a-97c6-ba0e8eaf643c" message="Debug AppV Client">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="DebugTrace" mask="1" message="Debug Out Messages.">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000001" message="%1">
+    </event>
+    <event value="2" version="0" opcode="10" channel="16" level="5" task="1" keywords="0x8000000000000001" message="%1">
+    </event>
+    <event value="3" version="0" opcode="10" channel="16" level="5" task="1" keywords="0x8000000000000001" message="%1 [%2; %3]">
+    </event>
+  </events>
+</provider>

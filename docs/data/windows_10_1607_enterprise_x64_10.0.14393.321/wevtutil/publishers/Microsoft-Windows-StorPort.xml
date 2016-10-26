@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-StorPort" guid="c4636a1e-7986-4646-bf10-7bc3b4a76e8e" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\storport.sys" messageFileName="C:\Windows\system32\drivers\storport.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-StorPort/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Storage-Storport/Diagnose" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Storage-Storport/Debug" id="18" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Storage-Storport/Analytic" id="19" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Storage-Storport/Operational" id="20" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Storage-Storport/Admin" id="21" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="OpCodeLUReset" value="720896" message="">
+    </opcode>
+    <opcode name="OpCodeTargetReset" value="786432" message="">
+    </opcode>
+    <opcode name="OpCodeBusReset" value="851968" message="">
+    </opcode>
+    <opcode name="OpCodeResetDetected" value="917504" message="">
+    </opcode>
+    <opcode name="OpCodeLinkDown" value="983040" message="">
+    </opcode>
+    <opcode name="OpCodeLinkUp" value="1048576" message="">
+    </opcode>
+    <opcode name="OpCodeRequestTimerCall" value="1114112" message="">
+    </opcode>
+    <opcode name="OpCodePortPause" value="1179648" message="">
+    </opcode>
+    <opcode name="OpCodePortResume" value="1245184" message="">
+    </opcode>
+    <opcode name="OpCodePortPauseDevice" value="1310720" message="">
+    </opcode>
+    <opcode name="OpCodePortResumeDevice" value="1376256" message="">
+    </opcode>
+    <opcode name="OpCodeBusChangeDetected" value="1441792" message="">
+    </opcode>
+    <opcode name="OpCodeMiniportIORequestServiceTime" value="1507328" message="">
+    </opcode>
+    <opcode name="OpCodeStateChangeDetected" value="1572864" message="">
+    </opcode>
+    <opcode name="OpCodeTargetedReenumeration" value="1638400" message="">
+    </opcode>
+    <opcode name="Dispatch" value="6553600" message="Dispatching of request.">
+    </opcode>
+    <opcode name="Completion" value="6619136" message="Completion of request.">
+    </opcode>
+    <opcode name="Timeout" value="6684672" message="Request timeout handling.">
+    </opcode>
+    <opcode name="Error" value="6750208" message="Request error handling.">
+    </opcode>
+    <opcode name="Retry" value="6815744" message="Retry handling.">
+    </opcode>
+    <opcode name="Miniport" value="6881280" message="Miniport handling of request.">
+    </opcode>
+    <opcode name="Queue" value="6946816" message="Event Queue related operation.">
+    </opcode>
+    <opcode name="StateTransition" value="7012352" message="State transition.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TaskLUReset" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Logical Unit reset">
+    </task>
+    <task name="TaskTargetReset" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Target reset">
+    </task>
+    <task name="TaskBusReset" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Bus reset">
+    </task>
+    <task name="TaskResetDetected" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Reset detected notification">
+    </task>
+    <task name="TaskLinkDown" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Link down notification">
+    </task>
+    <task name="TaskLinkUp" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Link Up notification">
+    </task>
+    <task name="TaskRequestTimerCall" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Request Timer notification">
+    </task>
+    <task name="TaskPortPause" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Port pause">
+    </task>
+    <task name="TaskPortResume" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Port resume">
+    </task>
+    <task name="TaskPortPauseDevice" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Port pause device">
+    </task>
+    <task name="TaskPortResumeDevice" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="Port resume device">
+    </task>
+    <task name="TaskBusChangeDetected" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="Bus change detect notification">
+    </task>
+    <task name="TaskMiniportIORequestServiceTime" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="Miniport IO Request Service Time">
+    </task>
+    <task name="TaskStateChangeDetected" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="State change detect notification">
+    </task>
+    <task name="TaskTargetedReenumeration" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="Targeted reenumeration">
+    </task>
+    <task name="Port" value="201" eventGUID="00000000-0000-0000-0000-000000000000" message="Port">
+    </task>
+    <task name="Dpc" value="202" eventGUID="00000000-0000-0000-0000-000000000000" message="Dpc">
+    </task>
+    <task name="Isr" value="203" eventGUID="00000000-0000-0000-0000-000000000000" message="Isr">
+    </task>
+    <task name="win:None" value="0" eventGUID="00000000-0000-0000-0000-000000000000" message="None">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Reset" mask="1" message="">
+    </keyword>
+    <keyword name="PortNotification" mask="2" message="">
+    </keyword>
+    <keyword name="PauseResume" mask="4" message="">
+    </keyword>
+    <keyword name="IoPerfNotification" mask="8" message="IO Performance Notification from Miniport">
+    </keyword>
+    <keyword name="Config" mask="10" message="">
+    </keyword>
+    <keyword name="Perf" mask="20" message="">
+    </keyword>
+    <keyword name="DeviceState" mask="40" message="Device state">
+    </keyword>
+    <keyword name="Logo_Performance" mask="80000" message="Logo Performance measurement">
+    </keyword>
+    <keyword name="IO_Performance" mask="100000" message="IO Performance measurement">
+    </keyword>
+    <keyword name="Read" mask="200000" message="Read request">
+    </keyword>
+    <keyword name="Write" mask="400000" message="Write request">
+    </keyword>
+    <keyword name="PagingRead" mask="800000" message="Paging Read request">
+    </keyword>
+    <keyword name="PagingWrite" mask="1000000" message="Paging Write request">
+    </keyword>
+    <keyword name="LowMemoryRead" mask="2000000" message="Low memory Read request">
+    </keyword>
+    <keyword name="LowMemoryWrite" mask="4000000" message="Low memory write request">
+    </keyword>
+    <keyword name="NonReadWrite" mask="8000000" message="Non-Read/Write request">
+    </keyword>
+    <keyword name="PassThrough" mask="10000000" message="Pass-Through request">
+    </keyword>
+    <keyword name="Flush" mask="20000000" message="Flush request">
+    </keyword>
+    <keyword name="IOCTL" mask="40000000" message="Device I/O control request">
+    </keyword>
+    <keyword name="WMI" mask="80000000" message="WMI request">
+    </keyword>
+    <keyword name="Power" mask="100000000" message="Power request">
+    </keyword>
+    <keyword name="PnP" mask="200000000" message="PnP request">
+    </keyword>
+    <keyword name="Enum" mask="400000000" message="Device enumeration handling">
+    </keyword>
+    <keyword name="Queue" mask="800000000" message="Queue-related operation">
+    </keyword>
+    <keyword name="ISR" mask="1000000000" message="Interrupt Service Routine processing">
+    </keyword>
+    <keyword name="DPC" mask="2000000000" message="Deferred Procedure Call handling">
+    </keyword>
+    <keyword name="Timer" mask="4000000000" message="Timer-related operation">
+    </keyword>
+    <keyword name="Protocol" mask="8000000000" message="Bus protocol specific operation">
+    </keyword>
+    <keyword name="Target" mask="10000000000" message="Target-related operation">
+    </keyword>
+    <keyword name="Adapter" mask="20000000000" message="Controller or Host Bus Adapter related operation">
+    </keyword>
+    <keyword name="Retry" mask="40000000000" message="Retry handling">
+    </keyword>
+    <keyword name="Timeout" mask="80000000000" message="Timeout handling">
+    </keyword>
+    <keyword name="ReSet" mask="100000000000" message="Reset handling">
+    </keyword>
+    <keyword name="Miniport" mask="200000000000" message="Event logged by Miniport">
+    </keyword>
+    <keyword name="Test" mask="800000000000" message="Testing-specific processing">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="11" channel="16" level="2" task="1" keywords="0x8000000000000001" message="Logical Unit reset">
+    </event>
+    <event value="2" version="1" opcode="12" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Target reset">
+    </event>
+    <event value="4" version="1" opcode="14" channel="16" level="4" task="4" keywords="0x8000000000000002" message="Reset detected notification">
+    </event>
+    <event value="5" version="1" opcode="15" channel="16" level="4" task="5" keywords="0x8000000000000002" message="Link down notification">
+    </event>
+    <event value="6" version="1" opcode="16" channel="16" level="4" task="6" keywords="0x8000000000000002" message="Link Up notification">
+    </event>
+    <event value="7" version="1" opcode="17" channel="16" level="4" task="7" keywords="0x8000000000000002" message="Request Timer notification">
+    </event>
+    <event value="8" version="1" opcode="18" channel="16" level="4" task="8" keywords="0x8000000000000004" message="Port pause">
+    </event>
+    <event value="9" version="1" opcode="19" channel="16" level="4" task="9" keywords="0x8000000000000004" message="Port resume">
+    </event>
+    <event value="10" version="1" opcode="20" channel="16" level="4" task="10" keywords="0x8000000000000004" message="Port pause device">
+    </event>
+    <event value="11" version="1" opcode="21" channel="16" level="4" task="11" keywords="0x8000000000000004" message="Port resume device">
+    </event>
+    <event value="12" version="1" opcode="22" channel="16" level="4" task="12" keywords="0x8000000000000002" message="Bus change detect notification">
+    </event>
+    <event value="13" version="1" opcode="23" channel="16" level="4" task="13" keywords="0x8000000000000008" message="Miniport IO Request Service Time">
+    </event>
+    <event value="14" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="Port configuration setting changed">
+    </event>
+    <event value="15" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="Set LUN queue depth">
+    </event>
+    <event value="16" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="Set adapter resource list">
+    </event>
+    <event value="17" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="Increase adapter resource list">
+    </event>
+    <event value="18" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000010" message="Adapter resource list failure">
+    </event>
+    <event value="19" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="Initial perf configuration data">
+    </event>
+    <event value="20" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="Final perf configuration data">
+    </event>
+    <event value="21" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="HW_INITIALIZATION_DATA data">
+    </event>
+    <event value="22" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="Initial PORT_CONFIGURATION_INFORMATION data">
+    </event>
+    <event value="23" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="Final PORT_CONFIGURATION_INFORMATION data">
+    </event>
+    <event value="24" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="Operation duration">
+    </event>
+    <event value="25" version="1" opcode="24" channel="16" level="4" task="14" keywords="0x8000000000000002" message="State change detect notification">
+    </event>
+    <event value="26" version="1" opcode="25" channel="16" level="4" task="15" keywords="0x8000000400000000" message="Targeted reenumeration">
+    </event>
+    <event value="200" version="2" opcode="0" channel="19" level="4" task="201" keywords="0x1000000000100000" message="Request servicing time taken by target device.">
+    </event>
+    <event value="201" version="2" opcode="0" channel="19" level="4" task="201" keywords="0x1000000000100000" message="Request servicing time taken by lower driver stack(s).">
+    </event>
+    <event value="202" version="2" opcode="100" channel="17" level="4" task="201" keywords="0x4000000000200000" message="Dispatching a read request.">
+    </event>
+    <event value="203" version="2" opcode="100" channel="17" level="4" task="201" keywords="0x4000000000400000" message="Dispatching a write request.">
+    </event>
+    <event value="204" version="2" opcode="100" channel="17" level="4" task="201" keywords="0x4000000000a00000" message="Dispatching a read request.">
+    </event>
+    <event value="205" version="2" opcode="100" channel="17" level="4" task="201" keywords="0x4000000001400000" message="Dispatching a write request.">
+    </event>
+    <event value="206" version="2" opcode="100" channel="17" level="4" task="201" keywords="0x4000000002200000" message="Dispatching a read request.">
+    </event>
+    <event value="207" version="2" opcode="100" channel="17" level="4" task="201" keywords="0x4000000004400000" message="Dispatching a write request.">
+    </event>
+    <event value="208" version="1" opcode="101" channel="17" level="4" task="201" keywords="0x4000000007e00000" message="Completing an IO (read/write) request.">
+    </event>
+    <event value="209" version="1" opcode="104" channel="17" level="4" task="201" keywords="0x4000000007e00000" message="Retrying an IO (read/write) request.">
+    </event>
+    <event value="210" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000000020000000" message="Flush request.">
+    </event>
+    <event value="211" version="1" opcode="101" channel="17" level="4" task="201" keywords="0x4000000020000000" message="Flush request.">
+    </event>
+    <event value="212" version="1" opcode="100" channel="17" level="4" task="201" keywords="0x4000000040000000" message="Dispatching an IOCTL.">
+    </event>
+    <event value="213" version="1" opcode="100" channel="17" level="4" task="201" keywords="0x4000000080000000" message="Dispatching a WMI request.">
+    </event>
+    <event value="214" version="1" opcode="101" channel="17" level="4" task="201" keywords="0x40000000c0000000" message="Completing a non-read/write request.">
+    </event>
+    <event value="215" version="2" opcode="100" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Dispatching an adapter power request.">
+    </event>
+    <event value="216" version="2" opcode="101" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Completing a unit power request.">
+    </event>
+    <event value="217" version="1" opcode="100" channel="17" level="4" task="201" keywords="0x4000000200000000" message="Dispatching a PnP request.">
+    </event>
+    <event value="218" version="1" opcode="101" channel="17" level="4" task="201" keywords="0x4000000200000000" message="Completing a PnP request.">
+    </event>
+    <event value="219" version="1" opcode="101" channel="17" level="4" task="201" keywords="0x4000000600000000" message="Completing a PnP enumeration request.">
+    </event>
+    <event value="220" version="1" opcode="106" channel="17" level="4" task="201" keywords="0x4000000800000000" message="Performing a queue-related operation.">
+    </event>
+    <event value="221" version="1" opcode="100" channel="17" level="4" task="201" keywords="0x4000000050000000" message="Dispatching a PassThrough request.">
+    </event>
+    <event value="222" version="1" opcode="0" channel="19" level="4" task="201" keywords="0x1000000000080000" message="Request servicing time taken by target device.">
+    </event>
+    <event value="223" version="1" opcode="0" channel="19" level="4" task="201" keywords="0x1000000000080000" message="Request servicing time taken by lower driver stack(s).">
+    </event>
+    <event value="224" version="1" opcode="101" channel="19" level="4" task="202" keywords="0x1000002000000000" message="Dpc completion">
+    </event>
+    <event value="225" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit power required notification received.">
+    </event>
+    <event value="226" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit power required completed.">
+    </event>
+    <event value="227" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit power not required notification received.">
+    </event>
+    <event value="228" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit power not required completed.">
+    </event>
+    <event value="229" version="2" opcode="0" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit registered with the runtime power framework">
+    </event>
+    <event value="230" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit idle state notification received.">
+    </event>
+    <event value="231" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit idle state notification completed.">
+    </event>
+    <event value="232" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit active condition notification received.">
+    </event>
+    <event value="233" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit active condition notification completed.">
+    </event>
+    <event value="234" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit idle condition notification received.">
+    </event>
+    <event value="235" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit idle condition notification completed.">
+    </event>
+    <event value="236" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter power required notification received.">
+    </event>
+    <event value="237" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter power required completed.">
+    </event>
+    <event value="238" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter power not required notification received.">
+    </event>
+    <event value="239" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter power not required completed.">
+    </event>
+    <event value="240" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter registered with the runtime power framework">
+    </event>
+    <event value="241" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter idle state notification received.">
+    </event>
+    <event value="242" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter idle state notification completed.">
+    </event>
+    <event value="243" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter active condition notification received.">
+    </event>
+    <event value="244" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter active condition notification completed.">
+    </event>
+    <event value="245" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter idle condition notification received.">
+    </event>
+    <event value="246" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter idle condition notification completed.">
+    </event>
+    <event value="247" version="1" opcode="106" channel="17" level="4" task="201" keywords="0x4000000800000000" message="Performing a queue-related operation.">
+    </event>
+    <event value="248" version="1" opcode="101" channel="19" level="4" task="203" keywords="0x1000001000000000" message="Isr completion">
+    </event>
+    <event value="250" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000200000000000" message="The miniport logged an event.">
+    </event>
+    <event value="251" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000200000000000" message="The miniport logged an event.">
+    </event>
+    <event value="252" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000200000000000" message="The miniport logged an event.">
+    </event>
+    <event value="253" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000200000000000" message="The miniport logged an event.">
+    </event>
+    <event value="254" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000200000000000" message="The miniport logged an event.">
+    </event>
+    <event value="255" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000200000000000" message="The miniport logged an event.">
+    </event>
+    <event value="256" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000200000000000" message="The miniport logged an event.">
+    </event>
+    <event value="257" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000200000000000" message="The miniport logged an event.">
+    </event>
+    <event value="258" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000200000000000" message="The miniport logged an event.">
+    </event>
+    <event value="259" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit idle state notification queued because the adapter is inactive.">
+    </event>
+    <event value="260" version="1" opcode="101" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Completing an adapter power request.">
+    </event>
+    <event value="261" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000000100000000" message="The idle timeout value for the adapter has changed.">
+    </event>
+    <event value="262" version="1" opcode="100" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Dispatching a unit power request.">
+    </event>
+    <event value="263" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit has performed %5 power cycles out of a possible %6.">
+    </event>
+    <event value="264" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Unit idle timeout value has changed from %5 to %6.">
+    </event>
+    <event value="265" version="1" opcode="0" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Adapter system power hint changed.">
+    </event>
+    <event value="267" version="1" opcode="1" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Host-initiated unit maintenance time has started.">
+    </event>
+    <event value="268" version="1" opcode="2" channel="17" level="4" task="201" keywords="0x4000000100000000" message="Host-initiated unit maintenance time has ended.">
+    </event>
+    <event value="269" version="1" opcode="101" channel="17" level="4" task="201" keywords="0x4000000050000000" message="Completing a (PassThrough) Protocol Command request.">
+    </event>
+    <event value="500" version="2" opcode="0" channel="20" level="2" task="0" keywords="0x800080000000000" message="A request timed out for Storport Device (Port = %1, Path = %2, Target = %3, Lun = %4).                    
+Corresponding Class Disk Device Guid is %5.">
+    </event>
+    <event value="501" version="1" opcode="13" channel="20" level="2" task="3" keywords="0x800000000000001" message="Bus reset occured on storport adapter (Port Number: %1)">
+    </event>
+    <event value="502" version="1" opcode="0" channel="20" level="2" task="0" keywords="0x800000000000040" message="Storport Device (Port = %1, Path = %2, Target = %3, Lun = %4) was marked unresponsive due to reason : (%6).                    
+Corresponding Class Disk Device Guid is %5.">
+    </event>
+    <event value="503" version="1" opcode="0" channel="20" level="4" task="0" keywords="0x800000000000040" message="Storport Device (Port = %1, Path = %2, Target = %3, Lun = %4) was marked responsive.                    
+Trigger was %6.                    
+Corresponding Class Disk Device Guid is %5.">
+    </event>
+    <event value="504" version="1" opcode="0" channel="20" level="4" task="201" keywords="0x800000000600000" message="This is one of the first few unique errors seen during this time period                      
+on Storport Device (Port = %1, Path = %2, Target = %3, Lun = %4) whose Corresponding Class Disk Device Guid is %5:                     
+The request opcode was %8 and completed with SrbStatus %9 and ScsiStatus %10.                     
+The sense code was (%11,%12,%13).                     
+The io latency was %6 ms.">
+    </event>
+    <event value="505" version="1" opcode="0" channel="20" level="4" task="201" keywords="0x800000000600000" message="Performance summary for Storport Device (Port = %1, Path = %2, Target = %3, Lun = %4) whose Corresponding Class Disk Device Guid is %5:                 
+For latency buckets of %7, the IO counts are %8, %9, %10, %11, %12.">
+    </event>
+    <event value="506" version="1" opcode="0" channel="20" level="4" task="201" keywords="0x800000000000040" message="QoS summary for Storport Device (Port = %1, Path = %2, Target = %3, Lun = %4) whose Corresponding Class Disk Device Guid is %5:                    
+Number of QoS requests that exceeded %8 seconds is %7 in this period.                    
+SW timeout count for Unit and Adapter queues were %9 and %10 respectively during this period.                    
+Max Depth of Unit and Adapter queues at the time of SW timeout were %12 and %13 respectively.                    
+HwTimeout count was %11 in this period.">
+    </event>
+    <event value="507" version="1" opcode="0" channel="20" level="2" task="0" keywords="0x800200000000000" message="Miniport bug detected for %1 : A pending request was not completed by miniport for below storage device even after successful reset operation.                    
+Storport Device (Port = %2, Path = %3, Target = %4, Lun = %5).                    
+Corresponding Class Disk Device Guid is %6.">
+    </event>
+    <event value="508" version="1" opcode="0" channel="20" level="2" task="0" keywords="0x800200000000000" message="Miniport bug detected for %1 : A pending request was not completed by miniport for below storage device even after successful abort operation.                    
+Storport Device (Port = %2, Path = %3, Target = %4, Lun = %5).                    
+Corresponding Class Disk Device Guid is %6.">
+    </event>
+    <event value="509" version="1" opcode="0" channel="20" level="2" task="0" keywords="0x800080000000000" message="An abort request timed out for Storport Device (Port = %1, Path = %2, Target = %3, Lun = %4).                    
+Corresponding Class Disk Device Guid is %5.">
+    </event>
+    <event value="510" version="1" opcode="0" channel="20" level="4" task="201" keywords="0x800000000000040" message="SMART statistics for Storport Device (Port = %1, Path = %2, Target = %3, Lun = %4).                    
+Corresponding Class Disk Device Guid is %5.">
+    </event>
+    <event value="511" version="1" opcode="0" channel="20" level="4" task="201" keywords="0x800000000000040" message="ATA Device Statistics Logs for Storport Device (Port = %1, Path = %2, Target = %3, Lun = %4).                    
+Corresponding Class Disk Device Guid is %5.">
+    </event>
+    <event value="512" version="1" opcode="0" channel="20" level="4" task="201" keywords="0x800000000000040" message="NVMe Health Information Log for Storport Device (Port = %1, Path = %2, Target = %3, Lun = %4).                    
+Corresponding Class Disk Device Guid is %5.">
+    </event>
+  </events>
+</provider>

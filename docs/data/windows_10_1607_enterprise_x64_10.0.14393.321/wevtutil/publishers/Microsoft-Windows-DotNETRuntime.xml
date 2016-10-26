@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DotNETRuntime" guid="e13c0d23-ccbc-4e12-931b-d9cc2eee27e4" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20.NET%20Framework&amp;ProdVer=4.0.30319.0&amp;FileName=clretwrc.dll&amp;FileVer=4.6.1586.0" resourceFileName="C:\Windows\Microsoft.NET\Framework\v4.0.30319\clretwrc.dll" messageFileName="C:\Windows\Microsoft.NET\Framework\v4.0.30319\clretwrc.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:LogAlways" value="0" message="Log Always">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="GCSuspendEEBegin" value="655361" message="SuspendEEStart">
+    </opcode>
+    <opcode name="ModuleRangeLoad" value="655380" message="ModuleRangeLoad">
+    </opcode>
+    <opcode name="BulkType" value="655381" message="BulkType">
+    </opcode>
+    <opcode name="GCAllocationTick" value="720897" message="AllocationTick">
+    </opcode>
+    <opcode name="Enqueue" value="720919" message="Enqueue">
+    </opcode>
+    <opcode name="Creating" value="720920" message="Creating">
+    </opcode>
+    <opcode name="GCCreateConcurrentThread" value="786433" message="CreateConcurrentThread">
+    </opcode>
+    <opcode name="Dequeue" value="786455" message="Dequeue">
+    </opcode>
+    <opcode name="Running" value="786456" message="Running">
+    </opcode>
+    <opcode name="GCTerminateConcurrentThread" value="851969" message="TerminateConcurrentThread">
+    </opcode>
+    <opcode name="IOEnqueue" value="851991" message="IOEnqueue">
+    </opcode>
+    <opcode name="DCStartComplete" value="917513" message="DCStartCompleteV2">
+    </opcode>
+    <opcode name="IODequeue" value="917527" message="IODequeue">
+    </opcode>
+    <opcode name="GCFinalizersEnd" value="983041" message="FinalizersStop">
+    </opcode>
+    <opcode name="DCEndComplete" value="983049" message="DCEndCompleteV2">
+    </opcode>
+    <opcode name="IOPack" value="983063" message="IOPack">
+    </opcode>
+    <opcode name="GCFinalizersBegin" value="1245185" message="FinalizersStart">
+    </opcode>
+    <opcode name="GCBulkRootEdge" value="1310721" message="GCBulkRootEdge">
+    </opcode>
+    <opcode name="GCBulkRootConditionalWeakTableElementEdge" value="1376257" message="GCBulkRootConditionalWeakTableElementEdge">
+    </opcode>
+    <opcode name="GCBulkNode" value="1441793" message="GCBulkNode">
+    </opcode>
+    <opcode name="GCBulkEdge" value="1507329" message="GCBulkEdge">
+    </opcode>
+    <opcode name="GCSampledObjectAllocation" value="1572865" message="GCSampledObjectAllocation">
+    </opcode>
+    <opcode name="GCBulkSurvivingObjectRanges" value="1638401" message="GCBulkSurvivingObjectRanges">
+    </opcode>
+    <opcode name="GCBulkMovedObjectRanges" value="1703937" message="GCBulkMovedObjectRanges">
+    </opcode>
+    <opcode name="GCGenerationRange" value="1769473" message="GCGenerationRange">
+    </opcode>
+    <opcode name="GCMarkStackRoots" value="1835009" message="MarkStackRoots">
+    </opcode>
+    <opcode name="GCMarkFinalizeQueueRoots" value="1900545" message="MarkFinalizeQueueRoots">
+    </opcode>
+    <opcode name="GCMarkHandles" value="1966081" message="MarkHandles">
+    </opcode>
+    <opcode name="GCMarkOlderGenerationRoots" value="2031617" message="MarkCards">
+    </opcode>
+    <opcode name="FinalizeObject" value="2097153" message="FinalizeObject">
+    </opcode>
+    <opcode name="SetGCHandle" value="2162689" message="SetGCHandle">
+    </opcode>
+    <opcode name="MethodLoad" value="2162697" message="Load">
+    </opcode>
+    <opcode name="ModuleLoad" value="2162698" message="ModuleLoad">
+    </opcode>
+    <opcode name="DestroyGCHandle" value="2228225" message="DestoryGCHandle">
+    </opcode>
+    <opcode name="MethodUnload" value="2228233" message="Unload">
+    </opcode>
+    <opcode name="ModuleUnload" value="2228234" message="ModuleUnload">
+    </opcode>
+    <opcode name="Triggered" value="2293761" message="Triggered">
+    </opcode>
+    <opcode name="MethodDCStart" value="2293769" message="DCStartV2">
+    </opcode>
+    <opcode name="ModuleDCStart" value="2293770" message="ModuleDCStartV2">
+    </opcode>
+    <opcode name="PinObjectAtGCTime" value="2359297" message="PinObjectAtGCTime">
+    </opcode>
+    <opcode name="MethodDCEnd" value="2359305" message="DCStopV2">
+    </opcode>
+    <opcode name="ModuleDCEnd" value="2359306" message="ModuleDCStopV2">
+    </opcode>
+    <opcode name="MethodLoadVerbose" value="2424841" message="LoadVerbose">
+    </opcode>
+    <opcode name="AssemblyLoad" value="2424842" message="AssemblyLoad">
+    </opcode>
+    <opcode name="GCBulkRootCCW" value="2490369" message="GCBulkRootCCW">
+    </opcode>
+    <opcode name="MethodUnloadVerbose" value="2490377" message="UnloadVerbose">
+    </opcode>
+    <opcode name="AssemblyUnload" value="2490378" message="AssemblyUnload">
+    </opcode>
+    <opcode name="GCBulkRCW" value="2555905" message="GCBulkRCW">
+    </opcode>
+    <opcode name="MethodDCStartVerbose" value="2555913" message="DCStartVerboseV2">
+    </opcode>
+    <opcode name="GCBulkRootStaticVar" value="2621441" message="GCBulkRootStaticVar">
+    </opcode>
+    <opcode name="MethodDCEndVerbose" value="2621449" message="DCStopVerboseV2">
+    </opcode>
+    <opcode name="AppDomainLoad" value="2686986" message="AppDomainLoad">
+    </opcode>
+    <opcode name="MethodJittingStarted" value="2752521" message="JittingStarted">
+    </opcode>
+    <opcode name="AppDomainUnload" value="2752522" message="AppDomainUnload">
+    </opcode>
+    <opcode name="DomainModuleLoad" value="2949130" message="DomainModuleLoad">
+    </opcode>
+    <opcode name="AppDomainMemAllocated" value="3145742" message="MemAllocated">
+    </opcode>
+    <opcode name="AppDomainMemSurvived" value="3211278" message="MemSurvived">
+    </opcode>
+    <opcode name="ThreadCreated" value="3276814" message="ThreadCreated">
+    </opcode>
+    <opcode name="ThreadTerminated" value="3342350" message="ThreadTerminated">
+    </opcode>
+    <opcode name="ThreadDomainEnter" value="3407886" message="DomainEnter">
+    </opcode>
+    <opcode name="CLRStackWalk" value="5373963" message="Walk">
+    </opcode>
+    <opcode name="JitInliningSucceeded" value="5439497" message="InliningSucceeded">
+    </opcode>
+    <opcode name="JitInliningFailed" value="5505033" message="InliningFailed">
+    </opcode>
+    <opcode name="JitTailCallSucceeded" value="5570569" message="TailCallSucceeded">
+    </opcode>
+    <opcode name="JitTailCallFailed" value="5636105" message="TailCallFailed">
+    </opcode>
+    <opcode name="MethodILToNativeMap" value="5701641" message="MethodILToNativeMap">
+    </opcode>
+    <opcode name="ILStubGenerated" value="5767183" message="StubGenerated">
+    </opcode>
+    <opcode name="ILStubCacheHit" value="5832719" message="StubCacheHit">
+    </opcode>
+    <opcode name="Wait" value="5898256" message="Wait">
+    </opcode>
+    <opcode name="Sample" value="6553618" message="Sample">
+    </opcode>
+    <opcode name="Adjustment" value="6619154" message="Adjustment">
+    </opcode>
+    <opcode name="Stats" value="6684690" message="Stats">
+    </opcode>
+    <opcode name="GCRestartEEEnd" value="8650753" message="RestartEEStop">
+    </opcode>
+    <opcode name="GCHeapStats" value="8716289" message="HeapStats">
+    </opcode>
+    <opcode name="GCCreateSegment" value="8781825" message="CreateSegment">
+    </opcode>
+    <opcode name="GCFreeSegment" value="8847361" message="FreeSegment">
+    </opcode>
+    <opcode name="GCRestartEEBegin" value="8912897" message="RestartEEStart">
+    </opcode>
+    <opcode name="GCSuspendEEEnd" value="8978433" message="SuspendEEStop">
+    </opcode>
+    <opcode name="IncreaseMemoryPressure" value="13107201" message="IncreaseMemoryPressure">
+    </opcode>
+    <opcode name="DecreaseMemoryPressure" value="13172737" message="DecreaseMemoryPressure">
+    </opcode>
+    <opcode name="GCMarkWithType" value="13238273" message="Mark">
+    </opcode>
+    <opcode name="GCJoin" value="13303809" message="GCJoin">
+    </opcode>
+    <opcode name="GCPerHeapHistory" value="13369345" message="PerHeapHistory">
+    </opcode>
+    <opcode name="GCGlobalHeapHistory" value="13434881" message="GlobalHeapHistory">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="GarbageCollection" value="1" eventGUID="044973cd-251f-4dff-a3e9-9d6307286b05" message="GC">
+    </task>
+    <task name="WorkerThreadCreation" value="2" eventGUID="cfc4ba53-fb42-4757-8b70-5f5d51fee2f4" message="WorkerThreadCreationV2">
+    </task>
+    <task name="IOThreadCreation" value="3" eventGUID="c71408de-42cc-4f81-9c93-b8912abf2a0f" message="IOThreadCreation">
+    </task>
+    <task name="WorkerThreadRetirement" value="4" eventGUID="efdf1eac-1d5d-4e84-893a-19b80f692176" message="WorkerThreadRetirementV2">
+    </task>
+    <task name="IOThreadRetirement" value="5" eventGUID="840c8456-6457-4eb7-9cd0-d28f01c64f5e" message="IOThreadRetirement">
+    </task>
+    <task name="ThreadpoolSuspension" value="6" eventGUID="c424b3e3-2ae0-416e-a039-410c5d8e5f14" message="ThreadpoolSuspensionV2">
+    </task>
+    <task name="Exception" value="7" eventGUID="300ce105-86d1-41f8-b9d2-83fcbff32d99" message="Exception">
+    </task>
+    <task name="ExceptionCatch" value="27" eventGUID="5bbf9499-1715-4658-88dc-afd7690a8711" message="ExceptionCatch">
+    </task>
+    <task name="ExceptionFinally" value="28" eventGUID="9565bc31-300f-4ea2-a532-30bce9a14199" message="ExceptionFinally">
+    </task>
+    <task name="ExceptionFilter" value="29" eventGUID="72e72606-bb71-4290-a242-d5f36ce5312e" message="ExceptionFilter">
+    </task>
+    <task name="Contention" value="8" eventGUID="561410f5-a138-4ab3-945e-516483cddfbc" message="Contention">
+    </task>
+    <task name="CLRMethod" value="9" eventGUID="3044f61a-99b0-4c21-b203-d39423c73b00" message="Method">
+    </task>
+    <task name="CLRLoader" value="10" eventGUID="d00792da-07b7-40f5-97eb-5d974e054740" message="Loader">
+    </task>
+    <task name="CLRStack" value="11" eventGUID="d3363dc0-243a-4620-a4d0-8a07d772f533" message="ClrStack">
+    </task>
+    <task name="CLRStrongNameVerification" value="12" eventGUID="15447a14-b523-46ae-b75b-023f900b4393" message="StrongNameVerification">
+    </task>
+    <task name="CLRAuthenticodeVerification" value="13" eventGUID="b17304d9-5afa-4da6-9f7b-5a4fa73129b6" message="AuthenticodeVerification">
+    </task>
+    <task name="AppDomainResourceManagement" value="14" eventGUID="88e83959-6185-4e0b-95b8-0e4a35df6122" message="AppDomainResourceManagement">
+    </task>
+    <task name="CLRILStub" value="15" eventGUID="d00792da-07b7-40f5-0000-5d974e054740" message="ILStub">
+    </task>
+    <task name="ThreadPoolWorkerThread" value="16" eventGUID="8a9a44ab-f681-4271-8810-830dab9f5621" message="ThreadPoolWorkerThread">
+    </task>
+    <task name="ThreadPoolWorkerThreadRetirement" value="17" eventGUID="402ee399-c137-4dc0-a5ab-3c2dea64ac9c" message="ThreadPoolWorkerThreadRetirement">
+    </task>
+    <task name="ThreadPoolWorkerThreadAdjustment" value="18" eventGUID="94179831-e99a-4625-8824-23ca5e00ca7d" message="ThreadPoolWorkerThreadAdjustment">
+    </task>
+    <task name="CLRRuntimeInformation" value="19" eventGUID="cd7d3e32-65fe-40cd-9225-a2577d203fc3" message="Runtime">
+    </task>
+    <task name="CLRPerfTrack" value="20" eventGUID="eac685f6-2104-4dec-88fd-91e4254221ec" message="ClrPerfTrack">
+    </task>
+    <task name="Type" value="21" eventGUID="003e5a9b-4757-4d3e-b4a1-e47bfb489408" message="Type">
+    </task>
+    <task name="ThreadPoolWorkingThreadCount" value="22" eventGUID="1b032b96-767c-42e4-8481-cb528a66d7bd" message="ThreadPoolWorkingThreadCount">
+    </task>
+    <task name="ThreadPool" value="23" eventGUID="ead685f6-2104-4dec-88fd-91e4254221e9" message="ThreadPool">
+    </task>
+    <task name="Thread" value="24" eventGUID="641994c5-16f2-4123-91a7-a2999dd7bfc3" message="Thread">
+    </task>
+    <task name="DebugIPCEvent" value="25" eventGUID="ec2f3703-8321-4301-bd51-2cb9a09f31b1" message="DebugIPCEvent">
+    </task>
+    <task name="DebugExceptionProcessing" value="26" eventGUID="c4412198-ef03-47f1-9bd1-11c6637a2062" message="DebugExceptionProcessing">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="GCKeyword" mask="1" message="GC">
+    </keyword>
+    <keyword name="GCHandleKeyword" mask="2" message="GCHandle">
+    </keyword>
+    <keyword name="FusionKeyword" mask="4" message="Binder">
+    </keyword>
+    <keyword name="LoaderKeyword" mask="8" message="Loader">
+    </keyword>
+    <keyword name="JitKeyword" mask="10" message="Jit">
+    </keyword>
+    <keyword name="NGenKeyword" mask="20" message="NGen">
+    </keyword>
+    <keyword name="StartEnumerationKeyword" mask="40" message="StartEnumeration">
+    </keyword>
+    <keyword name="EndEnumerationKeyword" mask="80" message="StopEnumeration">
+    </keyword>
+    <keyword name="SecurityKeyword" mask="400" message="Security">
+    </keyword>
+    <keyword name="AppDomainResourceManagementKeyword" mask="800" message="AppDomainResourceManagement">
+    </keyword>
+    <keyword name="JitTracingKeyword" mask="1000" message="JitTracing">
+    </keyword>
+    <keyword name="InteropKeyword" mask="2000" message="Interop">
+    </keyword>
+    <keyword name="ContentionKeyword" mask="4000" message="Contention">
+    </keyword>
+    <keyword name="ExceptionKeyword" mask="8000" message="Exception">
+    </keyword>
+    <keyword name="ThreadingKeyword" mask="10000" message="Threading">
+    </keyword>
+    <keyword name="JittedMethodILToNativeMapKeyword" mask="20000" message="JittedMethodILToNativeMap">
+    </keyword>
+    <keyword name="OverrideAndSuppressNGenEventsKeyword" mask="40000" message="OverrideAndSuppressNGenEvents">
+    </keyword>
+    <keyword name="TypeKeyword" mask="80000" message="Type">
+    </keyword>
+    <keyword name="GCHeapDumpKeyword" mask="100000" message="GCHeapDump">
+    </keyword>
+    <keyword name="GCSampledObjectAllocationHighKeyword" mask="200000" message="GCSampledObjectAllocationHigh">
+    </keyword>
+    <keyword name="GCHeapSurvivalAndMovementKeyword" mask="400000" message="GCHeapSurvivalAndMovement">
+    </keyword>
+    <keyword name="GCHeapCollectKeyword" mask="800000" message="GCHeapCollect">
+    </keyword>
+    <keyword name="GCHeapAndTypeNamesKeyword" mask="1000000" message="GCHeapAndTypeNames">
+    </keyword>
+    <keyword name="GCSampledObjectAllocationLowKeyword" mask="2000000" message="GCSampledObjectAllocationLow">
+    </keyword>
+    <keyword name="PerfTrackKeyword" mask="20000000" message="PerfTrack">
+    </keyword>
+    <keyword name="StackKeyword" mask="40000000" message="Stack">
+    </keyword>
+    <keyword name="ThreadTransferKeyword" mask="80000000" message="ThreadTransfer">
+    </keyword>
+    <keyword name="DebuggerKeyword" mask="100000000" message="Debugger">
+    </keyword>
+    <keyword name="MonitoringKeyword" mask="200000000" message="Monitoring">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="0" level="4" task="1" keywords="0x1" message="Count=%1;
+Reason=%2">
+    </event>
+    <event value="1" version="1" opcode="1" channel="0" level="4" task="1" keywords="0x1" message="Count=%1;
+Depth=%2;
+Reason=%3;
+Type=%4;
+ClrInstanceID=%5">
+    </event>
+    <event value="1" version="2" opcode="1" channel="0" level="4" task="1" keywords="0x1" message="Count=%1;
+Depth=%2;
+Reason=%3;
+Type=%4;
+ClrInstanceID=%5;
+ClientSequenceNumber=%6">
+    </event>
+    <event value="2" version="0" opcode="2" channel="0" level="4" task="1" keywords="0x1" message="Count=%1;
+Depth=%2">
+    </event>
+    <event value="2" version="1" opcode="2" channel="0" level="4" task="1" keywords="0x1" message="Count=%1;
+Depth=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="3" version="0" opcode="132" channel="0" level="4" task="1" keywords="0x1" message="NONE">
+    </event>
+    <event value="3" version="1" opcode="132" channel="0" level="4" task="1" keywords="0x1" message="ClrInstanceID=%1">
+    </event>
+    <event value="4" version="0" opcode="133" channel="0" level="4" task="1" keywords="0x1" message="GenerationSize0=%1;
+TotalPromotedSize0=%2;
+GenerationSize1=%3;
+TotalPromotedSize1=%4;
+GenerationSize2=%5;
+TotalPromotedSize2=%6;
+GenerationSize3=%7;
+TotalPromotedSize3=%8;
+FinalizationPromotedSize=%9;
+FinalizationPromotedCount=%10;
+PinnedObjectCount=%11;
+SinkBlockCount=%12;
+GCHandleCount=%13">
+    </event>
+    <event value="4" version="1" opcode="133" channel="0" level="4" task="1" keywords="0x1" message="GenerationSize0=%1;
+TotalPromotedSize0=%2;
+GenerationSize1=%3;
+TotalPromotedSize1=%4;
+GenerationSize2=%5;
+TotalPromotedSize2=%6;
+GenerationSize3=%7;
+TotalPromotedSize3=%8;
+FinalizationPromotedSize=%9;
+FinalizationPromotedCount=%10;
+PinnedObjectCount=%11;
+SinkBlockCount=%12;
+GCHandleCount=%13;
+ClrInstanceID=%14">
+    </event>
+    <event value="5" version="0" opcode="134" channel="0" level="4" task="1" keywords="0x1" message="Address=%1;
+Size=%2;
+Type=%3">
+    </event>
+    <event value="5" version="1" opcode="134" channel="0" level="4" task="1" keywords="0x1" message="Address=%1;
+Size=%2;
+Type=%3;
+ClrInstanceID=%4">
+    </event>
+    <event value="6" version="0" opcode="135" channel="0" level="4" task="1" keywords="0x1" message="Address=%1">
+    </event>
+    <event value="6" version="1" opcode="135" channel="0" level="4" task="1" keywords="0x1" message="Address=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="7" version="0" opcode="136" channel="0" level="4" task="1" keywords="0x1" message="NONE">
+    </event>
+    <event value="7" version="1" opcode="136" channel="0" level="4" task="1" keywords="0x1" message="ClrInstanceID=%1">
+    </event>
+    <event value="8" version="0" opcode="137" channel="0" level="4" task="1" keywords="0x1" message="NONE">
+    </event>
+    <event value="8" version="1" opcode="137" channel="0" level="4" task="1" keywords="0x1" message="ClrInstanceID=%1">
+    </event>
+    <event value="9" version="0" opcode="10" channel="0" level="4" task="1" keywords="0x1" message="Reason=%1">
+    </event>
+    <event value="9" version="1" opcode="10" channel="0" level="4" task="1" keywords="0x1" message="Reason=%1;
+Count=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="10" version="0" opcode="11" channel="0" level="5" task="1" keywords="0x1" message="Amount=%1;
+Kind=%2">
+    </event>
+    <event value="10" version="1" opcode="11" channel="0" level="5" task="1" keywords="0x1" message="Amount=%1;
+Kind=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="10" version="2" opcode="11" channel="0" level="5" task="1" keywords="0x1" message="Amount=%1;
+Kind=%2;
+ClrInstanceID=%3;Amount64=%4;
+TypeID=%5;
+TypeName=%6;
+HeapIndex=%7">
+    </event>
+    <event value="10" version="3" opcode="11" channel="0" level="5" task="1" keywords="0x1" message="Amount=%1;
+Kind=%2;
+ClrInstanceID=%3;Amount64=%4;
+TypeID=%5;
+TypeName=%6;
+HeapIndex=%7;
+Address=%8">
+    </event>
+    <event value="11" version="0" opcode="12" channel="0" level="4" task="1" keywords="0x1" message="NONE">
+    </event>
+    <event value="11" version="1" opcode="12" channel="0" level="4" task="1" keywords="0x10001" message="ClrInstanceID=%1">
+    </event>
+    <event value="12" version="0" opcode="13" channel="0" level="4" task="1" keywords="0x1" message="NONE">
+    </event>
+    <event value="12" version="1" opcode="13" channel="0" level="4" task="1" keywords="0x10001" message="ClrInstanceID=%1">
+    </event>
+    <event value="13" version="0" opcode="15" channel="0" level="4" task="1" keywords="0x1" message="Count=%1">
+    </event>
+    <event value="13" version="1" opcode="15" channel="0" level="4" task="1" keywords="0x1" message="Count=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="14" version="0" opcode="19" channel="0" level="4" task="1" keywords="0x1" message="NONE">
+    </event>
+    <event value="14" version="1" opcode="19" channel="0" level="4" task="1" keywords="0x1" message="ClrInstanceID=%1">
+    </event>
+    <event value="15" version="0" opcode="10" channel="0" level="4" task="21" keywords="0x80000" message="Count=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="16" version="0" opcode="20" channel="0" level="4" task="1" keywords="0x100000" message="ClrInstanceID=%1;
+Index=%2;
+Count=%3">
+    </event>
+    <event value="17" version="0" opcode="21" channel="0" level="4" task="1" keywords="0x100000" message="ClrInstanceID=%1;
+Index=%2;
+Count=%3">
+    </event>
+    <event value="18" version="0" opcode="22" channel="0" level="4" task="1" keywords="0x100000" message="ClrInstanceID=%1;
+Index=%2;
+Count=%3">
+    </event>
+    <event value="19" version="0" opcode="23" channel="0" level="4" task="1" keywords="0x100000" message="ClrInstanceID=%1;
+Index=%2;
+Count=%3">
+    </event>
+    <event value="20" version="0" opcode="24" channel="0" level="4" task="1" keywords="0x200000" message="High:ClrInstanceID=%1;
+Address=%2;
+TypeID=%3;
+ObjectCountForTypeSample=%4;
+TotalSizeForTypeSample=%5">
+    </event>
+    <event value="21" version="0" opcode="25" channel="0" level="4" task="1" keywords="0x400000" message="ClrInstanceID=%1;
+Index=%2;
+Count=%3">
+    </event>
+    <event value="22" version="0" opcode="26" channel="0" level="4" task="1" keywords="0x400000" message="ClrInstanceID=%1;
+Index=%2;
+Count=%3">
+    </event>
+    <event value="23" version="0" opcode="27" channel="0" level="4" task="1" keywords="0x400000" message="ClrInstanceID=%1;
+Generation=%2;
+RangeStart=%3;
+RangeUsedLength=%4;
+RangeReservedLength=%5">
+    </event>
+    <event value="25" version="0" opcode="28" channel="0" level="4" task="1" keywords="0x1" message="HeapNum=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="26" version="0" opcode="29" channel="0" level="4" task="1" keywords="0x1" message="HeapNum=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="27" version="0" opcode="30" channel="0" level="4" task="1" keywords="0x1" message="HeapNum=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="28" version="0" opcode="31" channel="0" level="4" task="1" keywords="0x1" message="HeapNum=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="29" version="0" opcode="32" channel="0" level="5" task="1" keywords="0x1" message="TypeID=%1;
+ObjectID=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="30" version="0" opcode="33" channel="0" level="4" task="1" keywords="0x2" message="HandleID=%1;
+ObjectID=%2;
+Kind=%3;
+Generation=%4;
+AppDomainID=%5;
+ClrInstanceID=%6">
+    </event>
+    <event value="31" version="0" opcode="34" channel="0" level="4" task="1" keywords="0x2" message="HandleID=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="32" version="0" opcode="24" channel="0" level="4" task="1" keywords="0x2000000" message="Low:ClrInstanceID=%1;
+Address=%2;
+TypeID=%3;
+ObjectCountForTypeSample=%4;
+TotalSizeForTypeSample=%5">
+    </event>
+    <event value="33" version="0" opcode="36" channel="0" level="5" task="1" keywords="0x1" message="HandleID=%1;
+ObjectID=%2;
+ObjectSize=%3;
+TypeName=%4;
+;
+ClrInstanceID=%5">
+    </event>
+    <event value="35" version="0" opcode="35" channel="0" level="4" task="1" keywords="0x1" message="Reason=%1">
+    </event>
+    <event value="36" version="0" opcode="38" channel="0" level="4" task="1" keywords="0x100000" message="ClrInstanceID=%1;
+Index=%2;
+Count=%3">
+    </event>
+    <event value="37" version="0" opcode="39" channel="0" level="4" task="1" keywords="0x100000" message="ClrInstanceID=%1;
+Index=%2;
+Count=%3">
+    </event>
+    <event value="38" version="0" opcode="40" channel="0" level="4" task="1" keywords="0x100000" message="ClrInstanceID=%1;
+Index=%2;
+Count=%3">
+    </event>
+    <event value="40" version="0" opcode="1" channel="0" level="4" task="2" keywords="0x10000" message="WorkerThreadCount=%1;
+RetiredWorkerThreads=%2">
+    </event>
+    <event value="41" version="0" opcode="2" channel="0" level="4" task="2" keywords="0x10000" message="WorkerThreadCount=%1;
+RetiredWorkerThreads=%2">
+    </event>
+    <event value="42" version="0" opcode="1" channel="0" level="4" task="4" keywords="0x10000" message="WorkerThreadCount=%1;
+RetiredWorkerThreads=%2">
+    </event>
+    <event value="43" version="0" opcode="2" channel="0" level="4" task="4" keywords="0x10000" message="WorkerThreadCount=%1;
+RetiredWorkerThreads=%2">
+    </event>
+    <event value="44" version="0" opcode="1" channel="0" level="4" task="3" keywords="0x10000" message="IOThreadCount=%1;
+RetiredIOThreads=%2">
+    </event>
+    <event value="44" version="1" opcode="1" channel="0" level="4" task="3" keywords="0x10000" message="IOThreadCount=%1;
+RetiredIOThreads=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="45" version="0" opcode="2" channel="0" level="4" task="3" keywords="0x10000" message="IOThreadCount=%1;
+RetiredIOThreads=%2">
+    </event>
+    <event value="45" version="1" opcode="2" channel="0" level="4" task="3" keywords="0x10000" message="IOThreadCount=%1;
+RetiredIOThreads=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="46" version="0" opcode="1" channel="0" level="4" task="5" keywords="0x10000" message="IOThreadCount=%1;
+RetiredIOThreads=%2">
+    </event>
+    <event value="46" version="1" opcode="1" channel="0" level="4" task="5" keywords="0x10000" message="IOThreadCount=%1;
+RetiredIOThreads=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="47" version="0" opcode="2" channel="0" level="4" task="5" keywords="0x10000" message="IOThreadCount=%1;
+RetiredIOThreads=%2">
+    </event>
+    <event value="47" version="1" opcode="2" channel="0" level="4" task="5" keywords="0x10000" message="IOThreadCount=%1;
+RetiredIOThreads=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="48" version="0" opcode="1" channel="0" level="4" task="6" keywords="0x10000" message="ClrThreadID=%1;
+CPUUtilization=%2">
+    </event>
+    <event value="49" version="0" opcode="2" channel="0" level="4" task="6" keywords="0x10000" message="ClrThreadID=%1;
+CPUUtilization=%2">
+    </event>
+    <event value="50" version="0" opcode="1" channel="0" level="4" task="16" keywords="0x10000" message="WorkerThreadCount=%1;
+RetiredWorkerThreadCount=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="51" version="0" opcode="2" channel="0" level="4" task="16" keywords="0x10000" message="WorkerThreadCount=%1;
+RetiredWorkerThreadCount=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="52" version="0" opcode="1" channel="0" level="4" task="17" keywords="0x10000" message="WorkerThreadCount=%1;
+RetiredWorkerThreadCount=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="53" version="0" opcode="2" channel="0" level="4" task="17" keywords="0x10000" message="WorkerThreadCount=%1;
+RetiredWorkerThreadCount=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="54" version="0" opcode="100" channel="0" level="4" task="18" keywords="0x10000" message="Throughput=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="55" version="0" opcode="101" channel="0" level="4" task="18" keywords="0x10000" message="AverageThroughput=%1;
+NewWorkerThreadCount=%2;
+Reason=%3;
+ClrInstanceID=%4">
+    </event>
+    <event value="56" version="0" opcode="102" channel="0" level="5" task="18" keywords="0x10000" message="Duration=%1;
+Throughput=%2;
+ThreadWave=%3;
+ThroughputWave=%4;
+ThroughputErrorEstimate=%5;
+AverageThroughputErrorEstimate=%6;
+ThroughputRatio=%7;
+Confidence=%8;
+NewControlSetting=%9;
+NewThreadWaveMagnitude=%10;
+ClrInstanceID=%11">
+    </event>
+    <event value="57" version="0" opcode="90" channel="0" level="4" task="16" keywords="0x10000" message="WorkerThreadCount=%1;
+RetiredWorkerThreadCount=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="60" version="0" opcode="1" channel="0" level="5" task="22" keywords="0x10000" message="Count=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="61" version="0" opcode="11" channel="0" level="5" task="23" keywords="0x80010000" message="WorkID=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="62" version="0" opcode="12" channel="0" level="5" task="23" keywords="0x80010000" message="WorkID=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="63" version="0" opcode="13" channel="0" level="5" task="23" keywords="0x80010000" message="WorkID=%1;
+MultiDequeues=%4
+ClrInstanceID=%3">
+    </event>
+    <event value="64" version="0" opcode="14" channel="0" level="5" task="23" keywords="0x80010000" message="WorkID=%1;
+ClrInstanceID=%3">
+    </event>
+    <event value="65" version="0" opcode="15" channel="0" level="5" task="23" keywords="0x10000" message="WorkID=%1;
+ClrInstanceID=%3">
+    </event>
+    <event value="70" version="0" opcode="11" channel="0" level="4" task="24" keywords="0x80010000" message="ID=%1;
+ClrInstanceID=%s">
+    </event>
+    <event value="71" version="0" opcode="12" channel="0" level="4" task="24" keywords="0x80010000" message="ID=%1;
+ClrInstanceID=%s">
+    </event>
+    <event value="80" version="0" opcode="1" channel="0" level="4" task="7" keywords="0x0" message="NONE">
+    </event>
+    <event value="80" version="1" opcode="1" channel="0" level="2" task="7" keywords="0x200008000" message="ExceptionType=%1;
+ExceptionMessage=%2;
+ExceptionEIP=%3;
+ExceptionHRESULT=%4;
+ExceptionFlags=%5;
+ClrInstanceID=%6">
+    </event>
+    <event value="81" version="0" opcode="1" channel="0" level="4" task="8" keywords="0x0" message="NONE">
+    </event>
+    <event value="81" version="1" opcode="1" channel="0" level="4" task="8" keywords="0x4000" message="ContentionFlags=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="82" version="0" opcode="82" channel="0" level="0" task="11" keywords="0x40000000" message="ClrInstanceID=%1;
+Reserved1=%2;
+Reserved2=%3;
+FrameCount=%4;
+Stack=%5">
+    </event>
+    <event value="83" version="0" opcode="48" channel="0" level="4" task="14" keywords="0x800" message="AppDomainID=%1;
+Allocated=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="84" version="0" opcode="49" channel="0" level="4" task="14" keywords="0x800" message="AppDomainID=%1;
+Survived=%2;
+ProcessSurvived=%3;
+ClrInstanceID=%4">
+    </event>
+    <event value="85" version="0" opcode="50" channel="0" level="4" task="14" keywords="0x10800" message="ManagedThreadID=%1;
+AppDomainID=%2;
+Flags=%3;
+ManagedThreadIndex=%4;
+OSThreadID=%5;
+ClrInstanceID=%6">
+    </event>
+    <event value="86" version="0" opcode="51" channel="0" level="4" task="14" keywords="0x10800" message="ManagedThreadID=%1;
+AppDomainID=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="87" version="0" opcode="52" channel="0" level="4" task="14" keywords="0x10800" message="ManagedThreadID=%1;
+AppDomainID=%2;
+ClrInstanceID=%3">
+    </event>
+    <event value="88" version="0" opcode="88" channel="0" level="4" task="15" keywords="0x2000" message="ClrInstanceID=%1;
+ModuleID=%2;
+StubMethodID=%3;
+StubFlags=%4;
+ManagedInteropMethodToken=%5;
+ManagedInteropMethodNamespace=%6;
+ManagedInteropMethodName=%7;
+ManagedInteropMethodSignature=%8;
+NativeMethodSignature=%9;
+StubMethodSignature=%10;
+StubMethodILCode=%11">
+    </event>
+    <event value="89" version="0" opcode="89" channel="0" level="4" task="15" keywords="0x2000" message="ClrInstanceID=%1;
+ModuleID=%2;
+StubMethodID=%3;
+ManagedInteropMethodToken=%4;
+ManagedInteropMethodNamespace=%5;
+ManagedInteropMethodName=%6;
+ManagedInteropMethodSignature=%7">
+    </event>
+    <event value="91" version="0" opcode="2" channel="0" level="4" task="8" keywords="0x4000" message="ContentionFlags=%1;
+ClrInstanceID=%2">
+    </event>
+    <event value="135" version="0" opcode="14" channel="0" level="4" task="9" keywords="0x30" message="NONE">
+    </event>
+    <event value="136" version="0" opcode="15" channel="0" level="4" task="9" keywords="0x30" message="NONE">
+    </event>
+    <event value="137" version="0" opcode="35" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6">
+    </event>
+    <event value="138" version="0" opcode="36" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6">
+    </event>
+    <event value="139" version="0" opcode="39" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6">
+    </event>
+    <event value="140" version="0" opcode="40" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9">
+    </event>
+    <event value="141" version="0" opcode="33" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6">
+    </event>
+    <event value="141" version="1" opcode="33" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+ClrInstanceID=%7">
+    </event>
+    <event value="141" version="2" opcode="33" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+ClrInstanceID=%7;
+ReJITID=%8">
+    </event>
+    <event value="142" version="0" opcode="34" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6">
+    </event>
+    <event value="142" version="1" opcode="34" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+ClrInstanceID=%7">
+    </event>
+    <event value="142" version="2" opcode="34" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+ClrInstanceID=%7;
+ReJITID=%8">
+    </event>
+    <event value="143" version="0" opcode="37" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9">
+    </event>
+    <event value="143" version="1" opcode="37" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9;
+ClrInstanceID=%10">
+    </event>
+    <event value="143" version="2" opcode="37" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9;
+ClrInstanceID=%10;
+ReJITID=%11">
+    </event>
+    <event value="144" version="0" opcode="38" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9">
+    </event>
+    <event value="144" version="1" opcode="38" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9;
+ClrInstanceID=%10">
+    </event>
+    <event value="144" version="2" opcode="38" channel="0" level="4" task="9" keywords="0x30" message="MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9;
+ClrInstanceID=%10;
+ReJITID=%11">
+    </event>
+    <event value="145" version="0" opcode="42" channel="0" level="5" task="9" keywords="0x10" message="MethodID=%1;
+ModuleID=%2;
+MethodToken=%3;
+MethodILSize=%4;
+MethodNamespace=%5;
+MethodName=%6;
+MethodSignature=%7">
+    </event>
+    <event value="145" version="1" opcode="42" channel="0" level="5" task="9" keywords="0x10" message="MethodID=%1;
+ModuleID=%2;
+MethodToken=%3;
+MethodILSize=%4;
+MethodNamespace=%5;
+MethodName=%6;
+MethodSignature=%7;
+ClrInstanceID=%8">
+    </event>
+    <event value="149" version="0" opcode="35" channel="0" level="4" task="10" keywords="0x8" message="ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;ModuleILPath=%4;
+ModuleNativePath=%5">
+    </event>
+    <event value="150" version="0" opcode="36" channel="0" level="4" task="10" keywords="0x8" message="ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;ModuleILPath=%4;
+ModuleNativePath=%5">
+    </event>
+    <event value="151" version="0" opcode="45" channel="0" level="4" task="10" keywords="0x8" message="ModuleID=%1;
+AssemblyID=%2;
+AppDomainID=%3;
+ModuleFlags=%4;
+ModuleILPath=%5;ModuleNativePath=%6">
+    </event>
+    <event value="151" version="1" opcode="45" channel="0" level="4" task="10" keywords="0x8" message="ModuleID=%1;
+AssemblyID=%2;
+AppDomainID=%3;
+ModuleFlags=%4;
+ModuleILPath=%5;ModuleNativePath=%6;
+ClrInstanceID=%7">
+    </event>
+    <event value="152" version="0" opcode="33" channel="0" level="4" task="10" keywords="0x8" message="ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;ModuleILPath=%4;
+ModuleNativePath=%5">
+    </event>
+    <event value="152" version="1" opcode="33" channel="0" level="4" task="10" keywords="0x20000008" message="ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;
+ModuleILPath=%4;
+ModuleNativePath=%5;
+ClrInstanceID=%6">
+    </event>
+    <event value="152" version="2" opcode="33" channel="0" level="4" task="10" keywords="0x20000008" message="ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;
+ModuleILPath=%4;
+ModuleNativePath=%5;
+ClrInstanceID=%6;
+ManagedPdbSignature=%7;
+ManagedPdbAge=%8;
+ManagedPdbBuildPath=%9;
+NativePdbSignature=%10;
+NativePdbAge=%11;
+NativePdbBuildPath=%12">
+    </event>
+    <event value="153" version="0" opcode="34" channel="0" level="4" task="10" keywords="0x8" message="ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;ModuleILPath=%4;
+ModuleNativePath=%5">
+    </event>
+    <event value="153" version="1" opcode="34" channel="0" level="4" task="10" keywords="0x20000008" message="ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;
+ModuleILPath=%4;
+ModuleNativePath=%5;
+ClrInstanceID=%6">
+    </event>
+    <event value="153" version="2" opcode="34" channel="0" level="4" task="10" keywords="0x20000008" message="ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;
+ModuleILPath=%4;
+ModuleNativePath=%5;
+ClrInstanceID=%6;
+ManagedPdbSignature=%7;
+ManagedPdbAge=%8;
+ManagedPdbBuildPath=%9;
+NativePdbSignature=%10;
+NativePdbAge=%11;
+NativePdbBuildPath=%12">
+    </event>
+    <event value="154" version="0" opcode="37" channel="0" level="4" task="10" keywords="0x8" message="AssemblyID=%1;
+AppDomainID=%2;
+AssemblyFlags=%3;
+FullyQualifiedAssemblyName=%4">
+    </event>
+    <event value="154" version="1" opcode="37" channel="0" level="4" task="10" keywords="0x8" message="AssemblyID=%1;
+AppDomainID=%2;
+AssemblyFlags=%3;
+FullyQualifiedAssemblyName=%4;
+ClrInstanceID=%5">
+    </event>
+    <event value="155" version="0" opcode="38" channel="0" level="4" task="10" keywords="0x8" message="AssemblyID=%1;
+AppDomainID=%2;
+AssemblyFlags=%3;
+FullyQualifiedAssemblyName=%4">
+    </event>
+    <event value="155" version="1" opcode="38" channel="0" level="4" task="10" keywords="0x8" message="AssemblyID=%1;
+AppDomainID=%2;
+AssemblyFlags=%3;
+FullyQualifiedAssemblyName=%4;
+ClrInstanceID=%5">
+    </event>
+    <event value="156" version="0" opcode="41" channel="0" level="4" task="10" keywords="0x8" message="AppDomainID=%1;
+AppDomainFlags=%2;
+AppDomainName=%3">
+    </event>
+    <event value="156" version="1" opcode="41" channel="0" level="4" task="10" keywords="0x8" message="AppDomainID=%1;
+AppDomainFlags=%2;
+AppDomainName=%3;
+AppDomainIndex=%4;
+ClrInstanceID=%5">
+    </event>
+    <event value="157" version="0" opcode="42" channel="0" level="4" task="10" keywords="0x8" message="AppDomainID=%1;
+AppDomainFlags=%2;
+AppDomainName=%3">
+    </event>
+    <event value="157" version="1" opcode="42" channel="0" level="4" task="10" keywords="0x8" message="AppDomainID=%1;
+AppDomainFlags=%2;
+AppDomainName=%3;
+AppDomainIndex=%4;
+ClrInstanceID=%5">
+    </event>
+    <event value="158" version="0" opcode="10" channel="0" level="4" task="20" keywords="0x20000000" message="ClrInstanceID=%1;%ModuleID=%2;
+RangeBegin=%3;
+RangeSize=%4;
+RangeType=%5">
+    </event>
+    <event value="181" version="0" opcode="1" channel="0" level="5" task="12" keywords="0x400" message="VerificationFlags=%1;
+ErrorCode=%2;
+FullyQualifiedAssemblyName=%3">
+    </event>
+    <event value="181" version="1" opcode="1" channel="0" level="5" task="12" keywords="0x400" message="VerificationFlags=%1;
+ErrorCode=%2;
+FullyQualifiedAssemblyName=%3;
+ClrInstanceID=%4">
+    </event>
+    <event value="182" version="0" opcode="2" channel="0" level="4" task="12" keywords="0x400" message="VerificationFlags=%1;
+ErrorCode=%2;
+FullyQualifiedAssemblyName=%3">
+    </event>
+    <event value="182" version="1" opcode="2" channel="0" level="4" task="12" keywords="0x400" message="VerificationFlags=%1;
+ErrorCode=%2;
+FullyQualifiedAssemblyName=%3;
+ClrInstanceID=%4">
+    </event>
+    <event value="183" version="0" opcode="1" channel="0" level="5" task="13" keywords="0x400" message="VerificationFlags=%1;
+ErrorCode=%2;
+ModulePath=%3">
+    </event>
+    <event value="183" version="1" opcode="1" channel="0" level="5" task="13" keywords="0x400" message="VerificationFlags=%1;
+ErrorCode=%2;
+ModulePath=%3;
+ClrInstanceID=%4">
+    </event>
+    <event value="184" version="0" opcode="2" channel="0" level="4" task="13" keywords="0x400" message="VerificationFlags=%1;
+ErrorCode=%2;
+ModulePath=%3">
+    </event>
+    <event value="184" version="1" opcode="2" channel="0" level="4" task="13" keywords="0x400" message="VerificationFlags=%1;
+ErrorCode=%2;
+ModulePath=%3;
+ClrInstanceID=%4">
+    </event>
+    <event value="185" version="0" opcode="83" channel="0" level="5" task="9" keywords="0x1000" message="MethodBeingCompiledNamespace=%1;
+MethodBeingCompiledName=%2;
+MethodBeingCompiledNameSignature=%3;
+InlinerNamespace=%4;
+InlinerName=%5;
+InlinerNameSignature=%6;
+InlineeNamespace=%7;
+InlineeName=%8;
+InlineeNameSignature=%9;
+ClrInstanceID=%10">
+    </event>
+    <event value="186" version="0" opcode="84" channel="0" level="5" task="9" keywords="0x1000" message="MethodBeingCompiledNamespace=%1;
+MethodBeingCompiledName=%2;
+MethodBeingCompiledNameSignature=%3;
+InlinerNamespace=%4;
+InlinerName=%5;
+InlinerNameSignature=%6;
+InlineeNamespace=%7;
+InlineeName=%8;
+InlineeNameSignature=%9;
+FailAlways=%10;
+FailReason=%11;
+ClrInstanceID=%12">
+    </event>
+    <event value="187" version="0" opcode="1" channel="0" level="4" task="19" keywords="0x0" message="ClrInstanceID=%1;
+SKU=%2;
+BclMajorVersion=%3;
+BclMinorVersion=%4;
+BclBuildNumber=%5;
+BclQfeNumber=%6;
+VMMajorVersion=%7;
+VMMinorVersion=%8;
+VMBuildNumber=%9;
+VMQfeNumber=%10;
+StartupFlags=%11;
+StartupMode=%12;
+CommandLine=%13;
+ComObjectGUID=%14;
+RuntimeDllPath=%15">
+    </event>
+    <event value="188" version="0" opcode="85" channel="0" level="5" task="9" keywords="0x1000" message="MethodBeingCompiledNamespace=%1;
+MethodBeingCompiledName=%2;
+MethodBeingCompiledNameSignature=%3;
+CallerNamespace=%4;
+CallerName=%5;
+CallerNameSignature=%6;
+CalleeNamespace=%7;
+CalleeName=%8;
+CalleeNameSignature=%9;
+TailPrefix=%10;
+TailCallType=%11;
+ClrInstanceID=%12">
+    </event>
+    <event value="189" version="0" opcode="86" channel="0" level="5" task="9" keywords="0x1000" message="MethodBeingCompiledNamespace=%1;
+MethodBeingCompiledName=%2;
+MethodBeingCompiledNameSignature=%3;
+CallerNamespace=%4;
+CallerName=%5;
+CallerNameSignature=%6;
+CalleeNamespace=%7;
+CalleeName=%8;
+CalleeNameSignature=%9;
+TailPrefix=%10;
+FailReason=%11;
+ClrInstanceID=%12">
+    </event>
+    <event value="190" version="0" opcode="87" channel="0" level="5" task="9" keywords="0x20000" message="MethodID=%1;
+ReJITID=%2;
+MethodExtent=%3;
+CountOfMapEntries=%4;
+ClrInstanceID=%5">
+    </event>
+    <event value="200" version="0" opcode="200" channel="0" level="5" task="1" keywords="0x1" message="BytesAllocated=%1;
+;
+ClrInstanceID=%2">
+    </event>
+    <event value="201" version="0" opcode="201" channel="0" level="5" task="1" keywords="0x1" message="BytesFreed=%1;
+;
+ClrInstanceID=%2">
+    </event>
+    <event value="202" version="0" opcode="202" channel="0" level="4" task="1" keywords="0x1" message="HeapNum=%1;
+ClrInstanceID=%2;
+Type=%3;
+Bytes=%4">
+    </event>
+    <event value="203" version="2" opcode="203" channel="0" level="5" task="1" keywords="0x1" message="Heap=%1;
+JoinTime=%2;
+JoinType=%3;
+ClrInstanceID=%4;
+JoinID=%5">
+    </event>
+    <event value="204" version="3" opcode="204" channel="0" level="4" task="1" keywords="0x1" message="ClrInstanceID=%1;
+FreeListAllocated=%2;
+FreeListRejected=%3;
+EndOfSegAllocated=%4;
+CondemnedAllocated=%5;
+PinnedAllocated=%6;
+PinnedAllocatedAdvance=%7;%RunningFreeListEfficiency=%8;
+CondemnReasons0=%9;
+CondemnReasons1=%10;
+CompactMechanisms=%11;
+ExpandMechanisms=%12;
+HeapIndex=%13;
+ExtraGen0Commit=%14;
+Count=%15">
+    </event>
+    <event value="205" version="2" opcode="205" channel="0" level="4" task="1" keywords="0x1" message="FinalYoungestDesired=%1;
+NumHeaps=%2;
+CondemnedGeneration=%3;
+Gen0ReductionCountD=%4;
+Reason=%5;
+GlobalMechanisms=%6;
+ClrInstanceID=%7;
+PauseMode=%8;
+MemoryPressure=%9">
+    </event>
+    <event value="240" version="0" opcode="1" channel="0" level="4" task="25" keywords="0x100000000" message="">
+    </event>
+    <event value="241" version="0" opcode="2" channel="0" level="4" task="25" keywords="0x100000000" message="">
+    </event>
+    <event value="242" version="0" opcode="1" channel="0" level="4" task="26" keywords="0x100000000" message="">
+    </event>
+    <event value="243" version="0" opcode="2" channel="0" level="4" task="26" keywords="0x100000000" message="">
+    </event>
+    <event value="250" version="0" opcode="1" channel="0" level="4" task="27" keywords="0x8000" message="EntryEIP=%1;
+MethodID=%2;
+MethodName=%3;
+ClrInstanceID=%4">
+    </event>
+    <event value="251" version="0" opcode="2" channel="0" level="4" task="27" keywords="0x8000" message="NONE">
+    </event>
+    <event value="252" version="0" opcode="1" channel="0" level="4" task="28" keywords="0x8000" message="EntryEIP=%1;
+MethodID=%2;
+MethodName=%3;
+ClrInstanceID=%4">
+    </event>
+    <event value="253" version="0" opcode="2" channel="0" level="4" task="28" keywords="0x8000" message="NONE">
+    </event>
+    <event value="254" version="0" opcode="1" channel="0" level="4" task="29" keywords="0x8000" message="EntryEIP=%1;
+MethodID=%2;
+MethodName=%3;
+ClrInstanceID=%4">
+    </event>
+    <event value="255" version="0" opcode="2" channel="0" level="4" task="29" keywords="0x8000" message="NONE">
+    </event>
+    <event value="256" version="0" opcode="2" channel="0" level="4" task="7" keywords="0x8000" message="NONE">
+    </event>
+  </events>
+</provider>

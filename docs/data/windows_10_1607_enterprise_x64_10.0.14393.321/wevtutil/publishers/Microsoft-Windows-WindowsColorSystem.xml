@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WindowsColorSystem" guid="d53270e3-c8cf-4707-958a-dad20c90073c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=mscms.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\mscms.dll" messageFileName="C:\Windows\system32\mscms.dll" message="Microsoft-Windows-WindowsColorSystem" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WindowsColorSystem/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WindowsColorSystem/Debug" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PROFILE_MANAGEMENT" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Profile Management">
+    </task>
+    <task name="TRANSFORM_CREATION" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Transform Creation">
+    </task>
+    <task name="COLOR_TRANSLATION" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Color Translation">
+    </task>
+    <task name="COLOR_CALIBRATION" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Color Calibration">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="wcse:Lino" mask="1" message="CMM for ICC profiles">
+    </keyword>
+    <keyword name="wcse:Cite" mask="2" message="CMM for WCS profiles">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Installed color profile %1.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Uninstalled color profile %1.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Associated color profile %1 with device %2 in %3 scope.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Disassociated color profile %1 from device %2 in %3 scope.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Set default profile to %1 for device %2 in %3 scope.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Set the &quot;use per-user profiles&quot; setting for device %1 to %2.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Set the default rendering intent to %1 in %2 scope.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Unset the default rendering intent in %1 scope. The system-wide default rendering intent will now be used.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Set the default profile for %1 rendering intent to %2 in %3 scope.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Unset the default profile for %1 rendering intent in %2 scope. This rendering intent will now use the corresponding system-wide default profile.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Set the default profile for working space &apos;%1&apos; to %2 in %3 scope.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Unset the default profile for working space &apos;%1&apos; in %2 scope. This working space will now use the corresponding system-wide default profile.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Set the default CAMP profile to %1 in %2 scope.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Unset the default CAMP profile in %1 scope. The system-wide default CAMP profile will now be used.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="WCS profile %1 is invalid: %2">
+    </event>
+    <event value="19" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000001" message="V4 LUT elements in &apos;%1&apos; tag: B curves %2, Matrix %3, M curves %4, CLUT %5, A curves %6.">
+    </event>
+    <event value="20" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000001" message="Adjust black point from legacy encoding to V4 encoding.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000001" message="Adjust black point from V4 encoding to legacy encoding.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000001" message="Adjust LAB from legacy encoding to V4 encoding.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000001" message="Adjust LAB from V4 encoding to legacy encoding.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000001" message="Convert LAB to XYZ.">
+    </event>
+    <event value="25" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000001" message="Convert XYZ  to LAB.">
+    </event>
+    <event value="26" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Device has extended range: ([%1, %2], [%3, %4], [%5, %6]).">
+    </event>
+    <event value="27" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Destination device lightness range: [%1, %2].">
+    </event>
+    <event value="28" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Creating gamut map model for %1 intent.">
+    </event>
+    <event value="29" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Created standard gamut map model for %1 intent.">
+    </event>
+    <event value="31" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000002" message="Failed to create gamut map model: error %1.">
+    </event>
+    <event value="32" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Opening color profile(CDMP = &apos;%2&apos; (%1), CAMP = &apos;%4&apos; (%3), GMMP = &apos;%6&apos; (%5), desired access = %7, share mode = %8, creation mode = %9).">
+    </event>
+    <event value="33" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Color profile successfully opened.">
+    </event>
+    <event value="34" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="Failed to open color profile: error %1.">
+    </event>
+    <event value="35" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="ICC profile information: size = %1 bytes, version = %2, class = &apos;%3&apos;, data color space = &apos;%4&apos;, profile connection space = &apos;%5&apos;.">
+    </event>
+    <event value="36" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Extracted WCS profile from ICC profile.">
+    </event>
+    <event value="37" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="CITE color transform optimization: %1.">
+    </event>
+    <event value="38" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000002" message="Selected %1 LUT.">
+    </event>
+    <event value="39" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000001" message="Selected &apos;%1&apos; tag to create %2 LUT for &apos;%3&apos; class profile with %4 rendering intent.">
+    </event>
+    <event value="40" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Creating color transform(LCS type = %1, intent = %2, source profile = &apos;%3&apos;, destination profile = &apos;%5&apos; (%4), target profile = &apos;%7&apos; (%6), flags = %8).">
+    </event>
+    <event value="41" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Creating multi-profile color transform(%1 profiles, %2 intents, flags = %3).">
+    </event>
+    <event value="42" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Color transform successfully created: hxform = %1.">
+    </event>
+    <event value="43" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="Color transform creation failed: error %1.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Translating colors(hxform = %1, %2 input colors, input color type = %3, output color type = %4).">
+    </event>
+    <event value="45" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000000" message="WCS translating colors(hxform = %1, %2 input colors, %3 input channels, input data type = %4, %5 input bytes, %6 output channels, output data type = %7, %8 output bytes).">
+    </event>
+    <event value="46" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Translating bitmap bits(hxform = %1, input bitmap format = %2, width = %3, height = %4, input stride = %5, output bitmap format = %6, output stride = %7).">
+    </event>
+    <event value="47" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Colors successfully translated">
+    </event>
+    <event value="48" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000000" message="Color translation failed: error %1.">
+    </event>
+    <event value="49" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Calibration refresh invoked. Windows calibration state management enabled = %1.">
+    </event>
+    <event value="50" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Refreshing calibration for device &apos;%1&apos;. Color profile exists and contains calibration data = %2.">
+    </event>
+    <event value="51" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Calibration refresh finished, return code = %1.">
+    </event>
+    <event value="52" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Applying calibration adjustments.  Adapter gamma adjustments = %1, monitor adjustments = %2.">
+    </event>
+    <event value="53" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Setting Windows calibration state management to %1.">
+    </event>
+    <event value="54" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Not refreshing display calibration because Windows calibration management is not enabled.">
+    </event>
+    <event value="55" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Not refreshing display calibration because the session is a remote session.">
+    </event>
+    <event value="56" version="0" opcode="0" channel="17" level="2" task="4" keywords="0x4000000000000000" message="Not refreshing display calibration on a device for which multiple physical monitors exist.">
+    </event>
+    <event value="57" version="0" opcode="0" channel="17" level="2" task="4" keywords="0x4000000000000000" message="Loading calibration data from color profile %1 failed with error %2.">
+    </event>
+    <event value="58" version="0" opcode="0" channel="17" level="2" task="4" keywords="0x4000000000000000" message="Applying calibration data failed with error %1.">
+    </event>
+  </events>
+</provider>

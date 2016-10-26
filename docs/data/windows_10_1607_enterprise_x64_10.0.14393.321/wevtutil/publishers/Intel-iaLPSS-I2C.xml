@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Intel-iaLPSS-I2C" guid="d4aeac44-ad44-456e-9c90-33f8cdced6af" helpLink="" resourceFileName="C:\Windows\system32\drivers\iaLPSSi_I2C.sys" messageFileName="C:\Windows\system32\drivers\iaLPSSi_I2C.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Intel-iaLPSS-I2C/Analytic" id="16" flags="0" message="Analytic Channel">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="I2C_Enumeration" value="1" eventGUID="d4aeac44-ad44-456e-9c90-33f8cdced6af" message="Enumeration of SPBCx driver">
+    </task>
+    <task name="I2C_Power" value="2" eventGUID="d1ceaed4-0c69-4504-ba7f-cc591a9fe4f5" message="Device Power Flow ">
+    </task>
+    <task name="I2C_Io" value="3" eventGUID="163dff34-9c89-44b9-b59a-76d5455648d9" message="IO Flows Through SPBCx driver">
+    </task>
+    <task name="I2C_Interrupt" value="4" eventGUID="26baa3d5-e806-41b7-a2f9-b0790c75275f" message="Task to Track Interrupt Routine">
+    </task>
+    <task name="I2C_Dpc" value="5" eventGUID="6aaff888-7007-451d-884b-7538c5e97b6b" message="Task to track DPC">
+    </task>
+    <task name="I2C_Dma" value="6" eventGUID="9e427ce3-e670-4a6c-b2c6-4e72902b4025" message="Task to track DMA Transactions">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1001" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Created WDFDEVICE %1 ">
+    </event>
+    <event value="1002" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="WDFDEVICE %1 mapped to vAddr %2 (MMIO Addr %3)">
+    </event>
+    <event value="1003" version="1" opcode="0" channel="8" level="2" task="1" keywords="0x4000000000000000" message="%1. WDFDEVICE %3">
+    </event>
+    <event value="1004" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Resource for %1 Released">
+    </event>
+    <event value="1005" version="1" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="D0 Entrty Start for WDFDEVICE %1 (MMIO %3)">
+    </event>
+    <event value="1006" version="1" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="D0 Entry End for WDFDEVICE %1 (MMIO %3)">
+    </event>
+    <event value="1007" version="1" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="D0 Exit Start for WDFDEVICE %1 (MMIO %3)">
+    </event>
+    <event value="1008" version="1" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="D0 Exit End for WDFDEVICE %1 (MMIO %3)">
+    </event>
+    <event value="1009" version="1" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000000" message="SpbRequest %1 (Type %4) received. WDFDEVICE %2 (MMIO %6). Target %3 (Address %5)">
+    </event>
+    <event value="1010" version="1" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000000" message="SpbRequest %1 Completed Status %2">
+    </event>
+    <event value="1011" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000000" message="ISR For WDFDEVICE %1 (MMIO %2) Begin">
+    </event>
+    <event value="1012" version="1" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000000" message="ISR For WDFDEVICE %1 (MMIO %2) End Interrupt Status %3">
+    </event>
+    <event value="1013" version="1" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000000" message="DPC for WDFDEVICE %1 (MMIO %2) Start">
+    </event>
+    <event value="1014" version="1" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000000" message="DPC for WDFDEVICE %1 (MMIO %2) End">
+    </event>
+    <event value="1015" version="1" opcode="1" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DriverEntry Start">
+    </event>
+    <event value="1016" version="1" opcode="2" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DriverEntry End">
+    </event>
+    <event value="1017" version="1" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="DeviceAdd Start">
+    </event>
+    <event value="1018" version="1" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="DeviceAdd End">
+    </event>
+    <event value="1019" version="1" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="OnPrepareHardware Start">
+    </event>
+    <event value="1020" version="1" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="OnPrepareHardware End">
+    </event>
+    <event value="1021" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="DMA Configurations %5 for WDFDEVICE %3 (MMIO %4)">
+    </event>
+    <event value="1022" version="1" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Monitor State %1. Idle Timeout %2. WDFDEVICE %3 (MMIO %4)">
+    </event>
+    <event value="1023" version="1" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Cancel SpbRequest %1 received. WDFDEVICE %2 (MMIO %6). Target %3 %3 (Address %5)">
+    </event>
+    <event value="1024" version="1" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Cancel Start">
+    </event>
+    <event value="1025" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Cancel End">
+    </event>
+    <event value="1026" version="1" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000000" message="DMA Txn Start. Direction %1 # of MDL %2 #bytes %3 WDFDEVICE %4 (MMIO %5)">
+    </event>
+    <event value="1027" version="1" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000000" message="DMA Txn End. Direction %1 DmaStatus %4 #bytes %5 WDFDEVICE %2 (MMIO %3)">
+    </event>
+    <event value="1029" version="1" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Cancel Timer Expired WDFDEVICE %1 (MMIO %2)">
+    </event>
+    <event value="1030" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DriverUnloaded">
+    </event>
+  </events>
+</provider>

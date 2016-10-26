@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-UserDataAccess-UnifiedStore" guid="56f519ab-9df6-4345-8491-a4ba21ac825b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=unistore.dll&amp;FileVer=10.0.14393.0" resourceFileName="unistore.dll" messageFileName="unistore.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tracemessage" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Trace">
+    </task>
+    <task name="UNIFIED_STORE_VOLUME_MOUNT" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UnifiedStore_OnBoot_UpdateIndexes" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="Unified_Store" mask="4" message="">
+    </keyword>
+    <keyword name="Notification" mask="8" message="">
+    </keyword>
+    <keyword name="RPC" mask="10" message="">
+    </keyword>
+    <keyword name="ChangeTracking" mask="20" message="">
+    </keyword>
+    <keyword name="debug" mask="100" message="Debug">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="Error: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="Error Propagated: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="50" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Info: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x8000000001" message="Error: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="3" task="0" keywords="0xc000000000" message="Error Propagated: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="0" level="5" task="10" keywords="0x100" message="">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400000000000" message="Tombstone cleanup completed: store [%1], iterations [%2], duration [%3 s]">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400000000000" message="Terminated suspended app [%2]: result [%1]">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x400000000000" message="App lost change tracking [%1]: current rev [%2], deleted item rev [%3]">
+    </event>
+    <event value="3000" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Updating DB LCID, Invalidating all open sessions and handles">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="Unified store lock was held for %1 seconds. ReleaseFunc = %2">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="Unified store lock type %1 was not released even after %2 seconds. Lock Owner Process Id: %3">
+    </event>
+    <event value="3003" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="CeSeekDatabaseEx failed, Handle: %1, HR: %2 SeekType: %3">
+    </event>
+    <event value="3004" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="CeWriteRecordProps failed, Handle: %1, HR: %2, OIDRecord: %3">
+    </event>
+    <event value="3005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="CeReadRecordPropsEx failed, Handle: %1, HR: %2, Flags: %3">
+    </event>
+    <event value="3006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="Closed handle before refcount was 0, Handle: %1, Outstanding refCount: %2">
+    </event>
+    <event value="3007" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Missed Event Notification Dispatched">
+    </event>
+    <event value="3009" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="Mutex acquire failed, WaitResult = %1, HR = %2">
+    </event>
+    <event value="3010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="Deserialize Knowledge failed, HR = %1, cbKnowledge = %2, cbKnowledgeLogged = %3">
+    </event>
+    <event value="3011" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="Opening Table %1 without any index.">
+    </event>
+    <event value="3012" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="Restriction Type = %1">
+    </event>
+    <event value="3013" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="PropertyRestriction: Operation %1, Property id %2.">
+    </event>
+    <event value="3014" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="BitMaskRestriction: Operation %1, Property id %2">
+    </event>
+    <event value="3015" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="Seeked and read %1 rows before finding row with matching index">
+    </event>
+    <event value="3016" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="Count %1: Property ids: %2">
+    </event>
+    <event value="3017" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000004" message="MountDeviceVolume Error: %1">
+    </event>
+    <event value="3018" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Remote notification dispatched, Event type: %1, Object type: %2, Object Id: %3">
+    </event>
+    <event value="3019" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Remote notification published, Event type: %1, Object type: %2, Object Id: %3">
+    </event>
+    <event value="3020" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Missed Event Notification Published">
+    </event>
+    <event value="3021" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="UnifiedStore delete store id = %1">
+    </event>
+    <event value="3022" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="UnifiedStore delete folder types = %1, store = %2, id = %3">
+    </event>
+    <event value="3023" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="Table: %1">
+    </event>
+    <event value="3024" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="Failed to commit transaction, attempting rollback recovery (error %1, session %2)">
+    </event>
+    <event value="3025" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="Failed to rollback transaction (error %1, session %2)">
+    </event>
+    <event value="3026" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x4" message="Recovery complete (error %1, session %2)">
+    </event>
+    <event value="3027" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000004" message="Failed to open table handle">
+    </event>
+    <event value="3028" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x14" message="Unified Store RPC Call: %1">
+    </event>
+    <event value="3029" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="Failed to set property ID %1, error %2">
+    </event>
+    <event value="3030" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="Process %1 underflowed its suspend/resume count, now is %2">
+    </event>
+    <event value="3031" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Process %1 suspended its message queue, count %2">
+    </event>
+    <event value="3032" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Process %1 resumed its message queue, count %2">
+    </event>
+    <event value="3033" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Process with rundown identifier %1 aborted %2 transactions">
+    </event>
+    <event value="3034" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="Client process %1 has lost events">
+    </event>
+    <event value="3035" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Client process %1 has resumed fetching events">
+    </event>
+    <event value="3036" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Property should be added in schema. table: %1, id: %2">
+    </event>
+    <event value="3037" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="Advisee in service process (vtable %1) has lost events">
+    </event>
+    <event value="3038" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="Notification Queue lost events">
+    </event>
+    <event value="3039" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4" message="Final transaction rollback attempt failed, Error: %1">
+    </event>
+    <event value="3040" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Closing active table id: %1">
+    </event>
+    <event value="3041" version="0" opcode="1" channel="0" level="4" task="11" keywords="0x8000000004" message="">
+    </event>
+    <event value="3042" version="0" opcode="2" channel="0" level="4" task="11" keywords="0x8000000004" message="">
+    </event>
+    <event value="3043" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Unified store process identifier %1 created for process">
+    </event>
+    <event value="3044" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Process exit callback for process with identifier %1">
+    </event>
+    <event value="3045" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Unified store rundown for process %1 with identifier %2">
+    </event>
+    <event value="3046" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Store id: %1 Supported Types changed to: %2">
+    </event>
+    <event value="3047" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x408000000001" message="DBSession::_UpgradeDatabase Error: %1">
+    </event>
+    <event value="3048" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x408000000001" message="JetAttachDatabase Error: %1">
+    </event>
+    <event value="3049" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x8000000004" message="Upgrading database, lcidChanged: %1, storeVersionChanged: %2, isIndexCorrupt: %3">
+    </event>
+    <event value="3050" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Creating Missing indexes, table ID: %1, count: %2">
+    </event>
+    <event value="3051" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x8000000004" message="Number of indexes changed unexpectedly, table ID: %1, numExistingIndex: %2">
+    </event>
+    <event value="3052" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x408000000001" message="The database was corrupted, and recovered">
+    </event>
+    <event value="3053" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x408000000001" message="Simulation of database corruption">
+    </event>
+    <event value="3070" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x24" message="Attempting to defragment scope knowledge. Partner id: %1, scope id: %2, exceptions: %3 positive and %4 negative, min vector size: %5, max vector size: %6, starting tick count: %7">
+    </event>
+    <event value="3071" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x24" message="Defragmented scope knowledge. Partner id: %1, scope id: %2, original size: %3, defragmented size: %4, exceptions: %5">
+    </event>
+    <event value="3072" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x24" message="Done defragmenting scope knowledge. Partner id: %1, scope id: %2, succeeded: %3">
+    </event>
+    <event value="3073" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x24" message="Attempting to defragment partner knowledge. Partner id: %1, size: %2, defragmentation threshold: %3">
+    </event>
+    <event value="3074" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x24" message="The knowledge for partner id %1 has %2 scopes, %3 positive exceptions, %4 negative exceptions, min vector size: %5 and max vector size: %6">
+    </event>
+    <event value="3075" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x24" message="Successfully defragmented %2 scopes out of %3 for partner id %1.">
+    </event>
+    <event value="3076" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x24" message="Defragmented partner knowledge. Partner id: %1, original size: %2, defragmented size: %3">
+    </event>
+    <event value="3077" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x24" message="Done defragmenting partner knowledge. Partner id: %1, succeeded: %2">
+    </event>
+    <event value="3078" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x25" message="Failed to reduce the knowledge size for partner id %1 below %2%% of the maximum size (size: %3, maximum size: %4).">
+    </event>
+    <event value="3079" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000024" message="The knowledge size for partner id %1 exceeds %3%% of the maximum size (size: %2, maximum size: %4). The synchronization may exhibit degraded performance">
+    </event>
+    <event value="3080" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x25" message="The knowledge size for partner id %1 exceeds %3%% of the maximum size (size: %2, maximum size: %4). The synchronization may start failing if the knowledge size keeps increasing">
+    </event>
+    <event value="3081" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x25" message="The knowledge size for partner id %1 exceeds the maximum size (size: %2, maximum size: %3). The synchronization will fail">
+    </event>
+    <event value="3100" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Closing stale notify context %2 on behalf of rundown id %1">
+    </event>
+    <event value="3101" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Closing stale object %2 on behalf of rundown id %1">
+    </event>
+    <event value="3110" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="[store upgrade] The current store version is %1">
+    </event>
+    <event value="3112" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x8000000004" message="[store upgrade] Performing upgrade task %1">
+    </event>
+    <event value="3113" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x8000000004" message="[store upgrade] %1 appointments updated">
+    </event>
+    <event value="4001" version="0" opcode="1" channel="0" level="4" task="12" keywords="0x2" message="">
+    </event>
+    <event value="4002" version="0" opcode="2" channel="0" level="4" task="12" keywords="0x2" message="">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider" guid="3da494e4-0fe2-415c-b895-fb5265c5c83b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=dmenterprisediagnostics.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\dmenterprisediagnostics.dll" messageFileName="C:\Windows\system32\dmenterprisediagnostics.dll" message="Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin" id="16" flags="0" message="Admin">
+    </channel>
+    <channel name="Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Debug" id="17" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="None" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Debug" mask="2" message="">
+    </keyword>
+    <keyword name="Trace" mask="4" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Enroll: Certificate policy request sent successfully.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Certificate policy request sending failed. Result: (%1).">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Enroll: Certificate policy response processed successfully.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Failed to receive or parse certificate response. Result: (%1).">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Enroll: Certificate enrollment request sent successfully.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Certificate enrollment request sending failed. Result: (%1).">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Enroll: Certificate enrollment response parsed successfully.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Failed to receive or parse certificate enroll response. Result: (%1).">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Failed to install client certificate. Result: (%1).">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Enroll: OMA-DM client configuration succeeds.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: OMA-DM client configuration failed. RAWResult: (%1) Result: (%2).">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: OMA-DM polling schedule set up failed. Result: (%1).">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: OMA-DM polling auxiliary schedule set up failed. Result: (%1).">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: OMA-DM polling second auxiliary schedule set up failed. Result: (%1).">
+    </event>
+    <event value="25" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Client failed to set up the manual MDM client certificate renewal schedule. Result: (%1).">
+    </event>
+    <event value="26" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Certificate renew failed. Result: (%1).">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="SCEP: Certificate enroll failed. Result: (%1).">
+    </event>
+    <event value="36" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="SCEP: Certificate request generated successfully. Enhanced Key Usage: (%1), NDES URL: (%2), Container Name: (%3), KSP Setting: (%4), Store Location: (%5).">
+    </event>
+    <event value="37" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="SCEP: Certificate request sent successfully.">
+    </event>
+    <event value="38" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="SCEP: Certificate response received successfully.">
+    </event>
+    <event value="39" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="SCEP: Certificate installed successfully.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Push: Failed to create WNS Push Channel for MDM Push Sessions. Result: (%1).">
+    </event>
+    <event value="43" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Push: Successfully created WNS Push Channel for MDM Push Sessions.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Push: Failed to renew WNS Push Channel for MDM Push Sessions. Result: (%1).">
+    </event>
+    <event value="45" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Push: Successfully renewed WNS Push Channel for MDM Push Sessions.">
+    </event>
+    <event value="46" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Push: Failed to upgrade WNS Push Channel for MDM Push Sessions. Result: (%1).">
+    </event>
+    <event value="47" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Push: Successfully upgraded WNS Push Channel for MDM Push Sessions.">
+    </event>
+    <event value="48" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Unenroll: Unenroll alert sent to server.">
+    </event>
+    <event value="49" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Unenroll: Error sending unenroll alert to server. Result: (%1).">
+    </event>
+    <event value="52" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Server Returned Fault/Code/Subcode/Value=(%1) Fault/Reason/Text=(%2).">
+    </event>
+    <event value="53" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Authentication failed. Failed to get token from STS. Result: (%1).">
+    </event>
+    <event value="54" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Enroll: Authentication successful: Got token from STS.">
+    </event>
+    <event value="55" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Enrollment via UX failed. Result: (%1).">
+    </event>
+    <event value="56" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Failed to parse server provisioning XML. Result: (%1).">
+    </event>
+    <event value="57" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Provisioning failed. Result: (%1).">
+    </event>
+    <event value="58" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Enroll: Provisioning succeeded.">
+    </event>
+    <event value="59" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Server context (%1).">
+    </event>
+    <event value="60" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Unenroll: Unenrollment initiated by server (%1).">
+    </event>
+    <event value="61" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Unenroll: Unenrollment initiated by user through UI. Enrolled server (%1).">
+    </event>
+    <event value="62" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="MDM Enroll: Server specifed hashAlgorithmOIDReference (%1) is a OID of group (%2), expected an OID in group CRYPT_HASH_ALG_OID_GROUP_ID.">
+    </event>
+    <event value="63" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="MDM Enroll: Unable to acquire private key for newly installed cert. Result: (%1).">
+    </event>
+    <event value="64" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Unenroll: Changing dmwappushservice startup type to demand-start. Result: (%1).">
+    </event>
+    <event value="65" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Unenroll: Changing dmwappushservice startup type to demand-start failed. Result: (%1).">
+    </event>
+    <event value="66" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll WAP Node Filtering: removed non-supported node (%1).">
+    </event>
+    <event value="67" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Unenroll: Failed to delete account. Result: (%1).">
+    </event>
+    <event value="68" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: /GetPoliciesResponse/response/policies/policy/attributes/policySchema invalid, got (%1) expected (3), ignoring certificate policy, using defaults and switching to backwards compatibility mode.">
+    </event>
+    <event value="69" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Got a SOAP fault from the server, but couldn&apos;t parse it. Was looking for /Fault/Code/Subcode/Value or (From http://schemas.microsoft.com/windows/pki/2009/01/enrollment) /Fault/Detail/DeviceEnrollmentServiceError/ErrorType">
+    </event>
+    <event value="70" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll WAP Node Filtering: failed to remove non-supported node (%1).">
+    </event>
+    <event value="71" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Enroll: Failed (%1)">
+    </event>
+    <event value="72" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Enroll: Succeeded">
+    </event>
+    <event value="73" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Unenroll: Finished user independant unenroll">
+    </event>
+    <event value="74" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Unenroll: Succeeded">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Session: OMA-DM message sent.">
+    </event>
+    <event value="201" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Session: OMA-DM message failed to be sent. Result: (%1).">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Session: OMA-DM server message received and parsed successfully.">
+    </event>
+    <event value="203" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Session: OMA-DM server message parsing failed. Result: (%1).">
+    </event>
+    <event value="204" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Session: OMA-DM client failed to connect to the server. Result: (%1).">
+    </event>
+    <event value="205" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MDM Session: OMA-DM client started.">
+    </event>
+    <event value="206" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Session: OMA-DM session started for user: (%1).">
+    </event>
+    <event value="207" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Session: Alert type (%1) and event type (%2) sent to server to indicate user login status.">
+    </event>
+    <event value="208" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Session: OMA-DM session started for EnrollmentID (%1) with server: (%2), Server version: (%3), Client Version: (%4), Origin: (%5), Initiator: (%6), Mode: (%7), SessionID: (%8), Authentication Type: (%9).">
+    </event>
+    <event value="209" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Session: OMA-DM session ended with status: (%1).">
+    </event>
+    <event value="210" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MDM Session: OMA-DM client stopped with status: (%1).">
+    </event>
+    <event value="301" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="SCEP: Failed CspCreateInstance of Node : (%1) Result : (%2).  ">
+    </event>
+    <event value="302" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="SCEP: Failed CspAddNode : (%1) Result : (%2).  ">
+    </event>
+    <event value="303" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="SCEP: Failed CspDeleteChild for Node : (%1) Result : (%2).  ">
+    </event>
+    <event value="304" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="SCEP: Failed CspGetValue for Node : (%1) Result : (%2).  ">
+    </event>
+    <event value="305" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="SCEP: Failed CspSetValue for Node : (%1) Result : (%2).  ">
+    </event>
+    <event value="306" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="SCEP: CspExecute for UniqueId : (%1) InstallUserSid : (%2) InstallLocation : (%3) NodePath : (%4)  KeyProtection: (%5) Result : (%6).  ">
+    </event>
+    <event value="307" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="SCEP: Failed LogError Message : (%1) ">
+    </event>
+    <event value="308" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="SCEP: Failed to send Server request. ServerUrl : (%1) Result : (%2) ">
+    </event>
+    <event value="309" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="SCEP: InstallFromRegEntries. CorrelationGuid : (%1) UniqueId : (%2) Certificate Thumbprint : (%3) Respondent Server : (%4) Install Status : (%5) Current Retry Count :  (%6) Result : (%7) ">
+    </event>
+    <event value="400" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM ConfigurationManager: Command failure status. Configuration Source ID: (%1), Enrollment Name: (%2), Provider Name: (%3), Command Type: (%4), CSP URI: (%5), Result: (%6).">
+    </event>
+    <event value="401" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MDM ConfigurationManager: CSP Node Operation. Configuration Source ID: (%1), Enrollment Name: (%2), Provider Name: (%3), Operation: (%4), CSP URI: (%5), Child URI: (%6), Result: (%7).">
+    </event>
+    <event value="402" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MDM ConfigurationManager: License check. URI: (%1), SKU: (%2), Result: (%3).">
+    </event>
+    <event value="403" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MDM ConfigurationManager: CSP Allow check. URI: (%1), Allowed: (%2), Result: (%3).">
+    </event>
+    <event value="450" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM ConfigurationManager: Command failure status. Configuration Source ID: (%1), Enrollment Name: (%2), Provider Name: (%3), Command Type: (%4), CSP URI: (%5), Result: (%6).">
+    </event>
+    <event value="451" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MDM ConfigurationManager: CSP Node Operation. Configuration Source ID: (%1), Enrollment Name: (%2), Provider Name: (%3), Operation: (%4), CSP URI: (%5), Child URI: (%6), Result: (%7).">
+    </event>
+    <event value="452" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MDM ConfigurationManager: License check. URI: (%1), SKU: (%2), Result: (%3).">
+    </event>
+    <event value="453" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MDM ConfigurationManager: CSP Allow check. URI: (%1), Allowed: (%2), Result: (%3).">
+    </event>
+    <event value="600" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MDM ResourceManager: Resource URI: (%1), Result: (%2).">
+    </event>
+    <event value="700" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Registration: Unregister device invoked by exe: (%1), Result: (%2).">
+    </event>
+    <event value="800" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Dedicated notification (WNF): (%2, %3) published for Policy: (%1).">
+    </event>
+    <event value="801" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Dedicated notification (WNF): (%2, %3) published for Policy: (%1), Result:(%4) %5.">
+    </event>
+    <event value="802" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Area notification (WNF): (%2, %3) published for Area: (%1).">
+    </event>
+    <event value="803" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Area notification (WNF): (%2, %3) published for Area: (%1), Result:(%4) %5.">
+    </event>
+    <event value="804" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Dedicated notification (WNF) WNF_ENTR_REQUIRE_DEVICE_ENCRYPTION_POLICY_VALUE_CHANGED published.">
+    </event>
+    <event value="805" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Dedicated notification (WNF) WNF_ENTR_REQUIRE_DEVICE_ENCRYPTION_POLICY_VALUE_CHANGED published. Result:(%1) %2.">
+    </event>
+    <event value="806" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Merge string, Area: (%1), Policy: (%2), EnrollmentID requesting merge: (%3), Result:(%4) %5.">
+    </event>
+    <event value="807" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Merge binary, Area: (%1), Policy: (%2), EnrollmentID requesting merge: (%3), Result:(%4) %5.">
+    </event>
+    <event value="808" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Merge int, Area: (%1), Policy: (%2), EnrollmentID requesting merge: (%3), Result:(%4) %5.">
+    </event>
+    <event value="809" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Set policy int, Policy: (%1), Area: (%2), EnrollmentID requesting set: (%3), Current User: (%4), Int: (%5), Enrollment Type: (%6), Scope: (%7), Result:(%8) %9.">
+    </event>
+    <event value="810" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Set policy string, Policy: (%1), Area: (%2), EnrollmentID requesting set: (%3), Current User: (%4), String: (%5), Enrollment Type: (%6), Scope: (%7), Result:(%8) %9.">
+    </event>
+    <event value="811" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Set policy binary, Policy: (%1), Area: (%2), EnrollmentID requesting set: (%3), Current User: (%4), Enrollment Type: (%5), Scope: (%6), Result:(%7) %8.">
+    </event>
+    <event value="812" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Set policy, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), Scope: (%5), Result:(%6) %7.">
+    </event>
+    <event value="813" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Set policy int, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), Int: (%5), Enrollment Type: (%6), Scope: (%7).">
+    </event>
+    <event value="814" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Set policy string, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), String: (%5), Enrollment Type: (%6), Scope: (%7).">
+    </event>
+    <event value="815" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Set policy binary, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), Enrollment Type: (%5), Scope: (%6).">
+    </event>
+    <event value="817" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Merge policy precheck apply call. Policy: (%1), Area: (%2), int value: (%3) Result:(%4) %5.">
+    </event>
+    <event value="818" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Delete policy, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), Scope: (%5), Result:(%6) %7.">
+    </event>
+    <event value="819" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Delete policy, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), Scope: (%5).">
+    </event>
+    <event value="820" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Set policy precheck precheck call. Policy: (%1), Area: (%2), int value: (%3) Result:(%4) %5.">
+    </event>
+    <event value="821" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Merge of policy did not complete successfully, Policy: (%1), Area: (%2), Result:(%3) %4.">
+    </event>
+    <event value="822" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Acquiring the merge lock, Policy: (%1), Area: (%2), Result:(%3) %4.">
+    </event>
+    <event value="823" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Create dynamic policy metadata, Policy: (%1), Area: (%2), Result:(%3) %4.">
+    </event>
+    <event value="824" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Per user policy has device wide scope specified, Policy: (%1), Area: (%2), Result:(%3) %4.">
+    </event>
+    <event value="825" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Device wide policy has user wide scope specified, Policy: (%1), Area: (%2), Result:(%3) %4.">
+    </event>
+    <event value="826" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: SLAPI data not found, Policy: (%1), Area: (%2), Result:(%3) %4.">
+    </event>
+    <event value="827" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Policy is rejected by licensing, Policy: (%1), Area: (%2), Result:(%3) %4.">
+    </event>
+    <event value="828" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Policy is rejected by DoNotAllow flag, Policy: (%1), Area: (%2), Result:(%3) %4.">
+    </event>
+    <event value="829" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Dedicated cached delayed notification (WNF): (%3, %4) published for Policy: (%1) in Area (%2).">
+    </event>
+    <event value="830" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Dedicated cached delayed notification (WNF): (%3, %4) published for Policy: (%1) in Area (%2), Result:(%5) %6.">
+    </event>
+    <event value="831" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Dedicated non-cached delayed notification (WNF): (%3, %4) published for Policy: (%1) in Area (%2).">
+    </event>
+    <event value="832" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Dedicated non-cached delayed notification (WNF): (%3, %4) published for Policy: (%1) in Area (%2), Result:(%5) %6.">
+    </event>
+    <event value="833" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Evaluator notification (WNF): (%2, %3) published for Evaluator: (%1).">
+    </event>
+    <event value="834" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Evaluator notification (WNF): (%2, %3) published for Evaluator: (%1), Result:(%4) %5.">
+    </event>
+    <event value="835" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Set Policy (%1) in Area (%2) is Evaluator policy. Add Evaluator (%3) to Evaluator WNF list to publish area Evaluator WNF on CSP unload.">
+    </event>
+    <event value="836" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Set Policy (%1) in Area (%2) is Evaluator policy. Add Evaluator (%3) to Evaluator WNF list to publish area Evaluator WNF on CSP unload, Result:(%4) %5.">
+    </event>
+    <event value="837" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Delete Policy (%1) in Area (%2) is Evaluator policy. Add Evaluator (%3) to Evaluator WNF list to publish area Evaluator WNF on CSP unload.">
+    </event>
+    <event value="838" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Delete Policy (%1) in Area (%2) is Evaluator policy. Add Evaluator (%3) to Evaluator WNF list to publish area Evaluator WNF on CSP unload, Result:(%4) %5.">
+    </event>
+    <event value="839" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Delete provider (%1). Add Evaluator (%2) to Evaluator WNF list to publish area Evaluator WNF on CSP unload.">
+    </event>
+    <event value="840" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Delete provider (%1). Add Evaluator (%2) to Evaluator WNF list to publish area Evaluator WNF on CSP unload, Result:(%3) %4.">
+    </event>
+    <event value="841" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Delete area (%2) in provider (%1). Add Evaluator (%3) to Evaluator WNF list to publish Evaluator WNF on CSP unload.">
+    </event>
+    <event value="842" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Delete area (%2) in provider (%1). Add Evaluator (%3) to Evaluator WNF list to publish Evaluator WNF on CSP unload, Result:(%4) %5.">
+    </event>
+    <event value="843" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Load of the precheck DLL (%4) did not complete successfully, Policy: (%2), Area: (%1), Precheck: (%3),  Result:(%5) %6.">
+    </event>
+    <event value="844" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Found bad enrollment (%1) during merge. Deleting policies for the enrollment. Enrollment state is (%2).">
+    </event>
+    <event value="845" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM PolicyManager: Cannot delete the policy hive for bad enrollment (%1). Enrollment state is (%2). Result:(%3) %4.">
+    </event>
+    <event value="900" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Getting Diagnostics Information from (%1). Result: (%2).">
+    </event>
+    <event value="901" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Creating Diagnostic report at (%1). Result: (%2).">
+    </event>
+    <event value="902" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Adding redirected reg keys to Policy Manager diagnostic data failed. Result: (%1).">
+    </event>
+    <event value="903" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Opening redirected reg keys (%1) in Policy Manager diagnostic data failed. Result: (%2).">
+    </event>
+    <event value="904" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Opening redirected reg value (%1) in Policy Manager diagnostic data failed. Result: (%2).">
+    </event>
+    <event value="905" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Appending redirected reg key or Group Policy values in Policy Manager diagnostic report failed. Result: (%1).">
+    </event>
+    <event value="906" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Parsing input XML failed. Result: (%1).">
+    </event>
+    <event value="907" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Getting data out of top level key (%1) failed. Result: (%2).">
+    </event>
+    <event value="908" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Getting data out of registry keys (%1) failed. Result: (%2).">
+    </event>
+    <event value="909" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Getting data out of registry values (%1) failed. Result: (%2).">
+    </event>
+    <event value="910" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Check for whether directory (%1) exists and create if not failed. Result: (%2).">
+    </event>
+    <event value="911" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MDM Diagnostics: Removing PII from ActiveSync data failed. Result (%1).">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Phone Reset: Phone reset initiated.">
+    </event>
+    <event value="1100" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Retrieving the node via Get command failed with (%1).">
+    </event>
+    <event value="1101" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management session not requested after account creation.">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management session requested after DM account creation by server: (%1).">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management session kick-off request ignored for enterprise enrollment type: (%1). Result: (%2).">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management session kick-off request denied for enrollment type: (%1). Result: (%2).">
+    </event>
+    <event value="1105" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Invalid enrollment type. Enrollment type: (%1). Result: (%2).">
+    </event>
+    <event value="1106" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management session kick-off request failed. Result: (%1).">
+    </event>
+    <event value="1107" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Notifying configuration manager notification failed. Result: (%1).">
+    </event>
+    <event value="1108" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Retrieving the session variable: (%1), value: (%2) failed. Result: (%3).">
+    </event>
+    <event value="1109" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Retrieved the session variable: (%1), value: (%2). Result: (%3).">
+    </event>
+    <event value="1110" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Creating an instance of Device Management Account CSP failed. Result: (%1).">
+    </event>
+    <event value="1111" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: An instance of the Device Management Account CSP was initialized for AccountUID: (%1), session&apos;s Enrollment ID: (%2), initialized account&apos;s Enrollment ID: (%3), number of segments: (%4). Result: (%5).">
+    </event>
+    <event value="1112" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Failed to initialize an instance of the Device Management Account CSP for AccountUID: (%1), session&apos;s Enrollment ID: (%2), initialized account&apos;s Enrollment ID: (%3), number of segments: (%4). Result: (%5).">
+    </event>
+    <event value="1113" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Enumerating the children nodes failed. Result: (%1).">
+    </event>
+    <event value="1114" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management account for a different Enterprise enrollment denied. AccountUID: (%1), session&apos;s Enrollment ID: (%2), referenced account&apos;s Enrollment ID: (%3). Result: (%4).">
+    </event>
+    <event value="1115" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management account being created for Mobile Operator. New Enrollment ID: (%1). Result: (%2).">
+    </event>
+    <event value="1116" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Creating new enrollment for mobile operator failed. New Enrollment ID: (%1). Result: (%2).">
+    </event>
+    <event value="1117" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Creating new enrollment for mobile operator failed. New Enrollment ID: (%1). Result: (%2).">
+    </event>
+    <event value="1118" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management account added. Provider ID: (%1), session Enrollment ID: (%2), new Enrollment ID: (%3), Result: (%4).">
+    </event>
+    <event value="1119" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Adding device management account failed. Provider ID: (%1), session Enrollment ID: (%2), new Enrollment ID: (%3), Result: (%4).">
+    </event>
+    <event value="1120" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management account deleted. Session&apos;s Enrollment ID: (%1), referenced account&apos;s Enrollment ID: (%2). Result: (%3).">
+    </event>
+    <event value="1121" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management account deletion failed. Session&apos;s Enrollment ID: (%1), referenced account&apos;s Enrollment ID: (%2). Result: (%3).">
+    </event>
+    <event value="1122" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management account clear failed. Result: (%1).">
+    </event>
+    <event value="1123" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management account moved. Session&apos;s Enrollment ID: (%1), Old AccountUID: (%2), New AccountUID: (%3), Result: (%4).">
+    </event>
+    <event value="1124" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management account move failed. Session&apos;s Enrollment ID: (%1), Old AccountUID: (%2), New AccountUID: (%3), Result: (%4).">
+    </event>
+    <event value="1125" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management account check. Enrollment ID: (%1), AccountUID of account being accessed: (%2), AccountUID of account used to run the session: (%3), Result: (%4).">
+    </event>
+    <event value="1126" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management account check failed. Session&apos;s Enrollment ID: (%1), AccountUID of account being accessed: (%2), AccountUID of account used to run the session: (%3), Result: (%4).">
+    </event>
+    <event value="1127" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: Device Management session kick-off request ignored since there are multiple accounts being created. Number of accounts: (%1), Result: (%2).">
+    </event>
+    <event value="1128" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Device Management Account CSP: MO trying to access a non-MO Device Management account. Enrollment type: (%1), EnrollmentID being accessed: (%2), Result: (%3).">
+    </event>
+    <event value="1500" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000002" message="WiFiConfigurationServiceProvider: New node initialized, type: (%1), name: (%2).">
+    </event>
+    <event value="1501" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000002" message="WiFiConfigurationServiceProvider: Children queried, type: (%1), count: (%2).">
+    </event>
+    <event value="1502" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000002" message="WiFiConfigurationServiceProvider: Node added, type: (%1), uri: (%2), result: (%3).">
+    </event>
+    <event value="1503" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000002" message="WiFiConfigurationServiceProvider: Node delete child, type: (%1), uri: (%2), result: (%3).">
+    </event>
+    <event value="1504" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000002" message="WiFiConfigurationServiceProvider: Node clear, type: (%1), Result: (%2).">
+    </event>
+    <event value="1505" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000002" message="WiFiConfigurationServiceProvider: Node get value, type: (%1), Result: (%2).">
+    </event>
+    <event value="1506" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000002" message="WiFiConfigurationServiceProvider: Node set value, type: (%1), Result: (%2).">
+    </event>
+    <event value="1507" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000001" message="WiFiConfigurationServiceProvider: Node set value failed to set the wlan profile, error: (%1).">
+    </event>
+    <event value="1508" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000004" message="WiFiConfigurationServiceProvider: Node destructed, type: (%1).">
+    </event>
+    <event value="1509" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000002" message="WiFiConfigurationServiceProvider: Get Node, Result: (%1).">
+    </event>
+    <event value="1510" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000001" message="WiFiConfigurationServiceProvider: Node set value failed to set proxy, dwError: (%1).">
+    </event>
+    <event value="1511" version="0" opcode="0" channel="17" level="5" task="1" keywords="0x4000000000000002" message="WiFiConfigurationServiceProvider: Node initialize, segments: (%1), uri: (%2), Result: (%3).">
+    </event>
+    <event value="1600" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DMClient Configuration Service Provider: Server initiated unenroll started. Enrollment ID: (%1).">
+    </event>
+    <event value="1601" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="DMClient Configuration Service Provider: Server initiated unenroll failed. Enrollment ID: (%1), Result: (%2).">
+    </event>
+    <event value="1650" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Enterprise Data Protection configuration changed: Previous State: (%1), Current State: (%2), Result: (%3).">
+    </event>
+    <event value="1651" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Enterprise Data Protection dependency check result: Dependency Name: (%1), State: (%2), IsDependencySatisfied: (%3), Result: (%3).">
+    </event>
+    <event value="1652" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Enterprise Data Protection missing mandatory policy: Area: (%1), Name: (%2).">
+    </event>
+    <event value="1653" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MDM Evaluator Scenario Evaluate Result: Scenario: (%1), Previous State: (%2), Last Dependency: (%3), Final State: (%4), Result: (%5).">
+    </event>
+    <event value="1700" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="System Migration Task Started.">
+    </event>
+    <event value="1701" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="System Migration Task Deleted. Result: (%1).">
+    </event>
+    <event value="1702" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="System Upgrade Alert scheduled. Result: (%1).">
+    </event>
+    <event value="1703" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="User Upgrade Alert scheduled. Result: (%1).">
+    </event>
+    <event value="1704" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="User Migration Task Started.">
+    </event>
+    <event value="1705" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="User Migration Task Deleted. Result: (%1).">
+    </event>
+    <event value="1706" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Resource Manager Keys Migrated. Result: (%1).">
+    </event>
+    <event value="1707" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Schedules Created. Result: (%1).">
+    </event>
+    <event value="1708" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Impersonation result. Result: (%1).">
+    </event>
+    <event value="1709" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="No Migration needed, not an upgrade.">
+    </event>
+    <event value="1800" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Get Node&apos;s Value. NodeId: (%1), TokenName: (%2).">
+    </event>
+    <event value="1801" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows Defender Advanced Threat Protection CSP: Failed to Get Node&apos;s Value. NodeId: (%1), TokenName: (%2), Result: (%3).">
+    </event>
+    <event value="1802" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Defender Advanced Threat Protection CSP: Get Node&apos;s Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).">
+    </event>
+    <event value="1803" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Get Last Connected value complete. Result (%1), IsDefault: (%2).">
+    </event>
+    <event value="1804" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Get Org ID value complete. Result: (%1), IsDefault: (%2).">
+    </event>
+    <event value="1805" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Get Sense Is Running value complete. Result: (%1).">
+    </event>
+    <event value="1806" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Get Onboarding State value complete. Result: (%1), IsDefault: (%2).">
+    </event>
+    <event value="1807" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Get Onboarding value complete. IsDefault: (%1).">
+    </event>
+    <event value="1808" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Get Offboarding value complete. IsDefault: (%1).">
+    </event>
+    <event value="1809" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Get Sample Sharing value complete. Result: (%1), IsDefault: (%2).">
+    </event>
+    <event value="1810" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Onboarding process. Started.">
+    </event>
+    <event value="1811" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Onboarding process. Delete Offboarding blob complete. Result: (%1).">
+    </event>
+    <event value="1812" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Onboarding process. Write Onboarding blob complete. Result: (%1)">
+    </event>
+    <event value="1813" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Onboarding process. The service started successfully.">
+    </event>
+    <event value="1814" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Onboarding process. Pending service running state complete. Result: (%1).">
+    </event>
+    <event value="1815" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Set Sample Sharing value complete. New Value: (%1), Result: (%2).">
+    </event>
+    <event value="1816" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Offboarding process. Delete Onboarding blob complete. Result (%1).">
+    </event>
+    <event value="1817" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Offboarding process. Write Offboarding blob complete. Result (%1).">
+    </event>
+    <event value="1818" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000002" message="Windows Defender Advanced Threat Protection CSP: Set Node&apos;s Value started. NodeId: (%1), TokenName: (%2).">
+    </event>
+    <event value="1819" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows Defender Advanced Threat Protection CSP: Failed to Set Node&apos;s Value. NodeId: (%1), TokenName: (%2), Result: (%3).">
+    </event>
+    <event value="1820" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Defender Advanced Threat Protection CSP: Set Node&apos;s Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).">
+    </event>
+    <event value="1901" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: A node instance of was created successfully.  MSI ProductCode: %1, MSI UpgradeCode: %2, User SID: (%3).">
+    </event>
+    <event value="1902" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: A node instance failed to be created.  MSI ProductCode: %1,  MSI UpgradeCode: %2, User SID: (%3), Result: (%4).">
+    </event>
+    <event value="1903" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: An app which was previously installed is no longer installed on this device.  MSI ProductCode: %1, User SID: (%2).">
+    </event>
+    <event value="1904" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: MDMAppInstaller task has started.">
+    </event>
+    <event value="1905" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: Application content download started. MSI ProductCode: %1, User SID: (%2), BITS job: (%3).">
+    </event>
+    <event value="1906" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: Application content download completed. MSI ProductCode: %1, User SID: (%2), BITS job: (%3).">
+    </event>
+    <event value="1907" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: Application content download failed.  MSI ProductCode: %1, User SID: (%2), BITS job: (%3), Error message: (%4), Error code: (%5).">
+    </event>
+    <event value="1908" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: Unable to start the application content download. MSI ProductCode: %1, User SID: (%2), Result: (%3).">
+    </event>
+    <event value="1909" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: Unable to start the application installation action because the user is not logged in. User SID: (%1), MSI ProductCode: %2.">
+    </event>
+    <event value="1910" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: Another instance of the MDMAppInstaller process is already running. This instance will terminate.">
+    </event>
+    <event value="1911" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: The MDMAppInstaller process is terminating with an error. Result: (%1).">
+    </event>
+    <event value="1912" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: The MDMAppInstaller process is terminating with no errors.">
+    </event>
+    <event value="1913" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: Creation of the MSI app install job failed. MSI ProductCode: %1, User SID: (%2), Result: (%3).">
+    </event>
+    <event value="1914" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: Creation of the MSI app uninstall job failed. MSI ProductCode: %1, User SID: (%2), Result: (%3).">
+    </event>
+    <event value="1915" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: The MDMAppInstaller process could not be started to process MSI app install. MSI ProductCode: %1, User SID: (%2), Result: (%3).">
+    </event>
+    <event value="1916" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: The MDMAppInstaller process could not be started to process MSI app uninstall. MSI ProductCode: %1, User SID: (%2), Result: (%3).">
+    </event>
+    <event value="1920" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: An application install has started. MSI ProductCode: %1, User SID: (%2).">
+    </event>
+    <event value="1921" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: An application uninstall has started. MSI ProductCode: %1, User SID: (%2).">
+    </event>
+    <event value="1922" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: An application install has succeeded. MSI ProductCode: %1, User SID: (%2), Result: (%3).">
+    </event>
+    <event value="1923" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: An application uninstall has succeeded. MSI ProductCode: %1, User SID: (%2), Result: (%3).">
+    </event>
+    <event value="1924" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: An application install has failed. Examine the MSI log (%1) for more details.  Install command: (%2), MSI ProductCode: %3, User SID: (%4), Result: (%5).">
+    </event>
+    <event value="1925" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: An application uninstall has failed. Examine the MSI log (%1) for more details.  Uninstall command: (%2), MSI ProductCode: %3, User SID: (%4), Result: (%5).">
+    </event>
+    <event value="1926" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: An application installation action has exceeded the expected run time. Command: (%1), MSI ProductCode: %2, User SID: (%3).">
+    </event>
+    <event value="1927" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: An application status alert was sent to the device management service. LocURI: (%1), Alert Data: (%2).">
+    </event>
+    <event value="1928" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: An application status alert failed to be sent to the device management service. LocURI: (%1), Alert Data: (%2), Result: (%3).">
+    </event>
+    <event value="1930" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="EnterpriseDesktopAppManagement CSP: The MDMAppInstaller has been configured for restart by scheduled task (Resume App Installation Actions).  System startup trigger: (%1), User logon trigger: (%2).">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-UI-Search" guid="d8965fcf-7397-4e0e-b750-21a4580bd880" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.321&amp;FileName=Windows.UI.Search.dll&amp;FileVer=10.0.14393.321" resourceFileName="C:\Windows\system32\Windows.UI.Search.dll" messageFileName="C:\Windows\system32\Windows.UI.Search.dll" message="Microsoft-Windows-UI-Search" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SearchUI/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-SearchUI/Operational" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="XamlViewStartup" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perftrack_SearchPaneViewSetup" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ASTAThread" value="200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ResourceManager" value="300" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="XAMLContent" value="400" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ViewServiceInit" value="500" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ViewServiceSubscribe" value="501" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="XamlViewShutdown" value="600" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="XamlHostCreateWindow" value="800" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TemplateManager_XAMLCallbackException" value="907" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="XamlHostWindow_VisibilityChanged" value="1000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GetSearchLaunchModeForWindow_Result" value="1836" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SearchPane_QueryChanged" value="1851" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_SearchPaneOpen" value="3000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000000000000000" message="The XAML view %1 is starting up.">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000000" message="The XAML view %1 has completed starting up with result %2.">
+    </event>
+    <event value="103" version="0" opcode="1" channel="16" level="4" task="110" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="104" version="0" opcode="2" channel="16" level="4" task="110" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="201" version="0" opcode="1" channel="16" level="4" task="200" keywords="0x8000000000000000" message="A search thread has started %1.">
+    </event>
+    <event value="202" version="0" opcode="2" channel="16" level="4" task="200" keywords="0x8000000000000000" message="A search thread has stopped %1.">
+    </event>
+    <event value="301" version="0" opcode="1" channel="16" level="4" task="300" keywords="0x8000000000000000" message="Resource manager initialization has started.">
+    </event>
+    <event value="302" version="0" opcode="2" channel="16" level="4" task="300" keywords="0x8000000000000000" message="Resource manager initialization has completed with result %1.">
+    </event>
+    <event value="401" version="0" opcode="1" channel="16" level="4" task="400" keywords="0x8000000000000000" message="XAML content initialization has started.">
+    </event>
+    <event value="402" version="0" opcode="2" channel="16" level="4" task="400" keywords="0x8000000000000000" message="The XAML content initialization has completed with result %1.">
+    </event>
+    <event value="501" version="0" opcode="1" channel="16" level="4" task="500" keywords="0x8000000000000000" message="The view service with index %1 has started initialization.">
+    </event>
+    <event value="502" version="0" opcode="2" channel="16" level="4" task="500" keywords="0x8000000000000000" message="The view service with index %1 has completed initialization with result %2.">
+    </event>
+    <event value="503" version="0" opcode="1" channel="16" level="4" task="501" keywords="0x8000000000000000" message="The view service with index %1 has started subscription.">
+    </event>
+    <event value="504" version="0" opcode="2" channel="16" level="4" task="501" keywords="0x8000000000000000" message="The view service with index %1 has completed with subcription result %2.">
+    </event>
+    <event value="601" version="0" opcode="1" channel="16" level="4" task="600" keywords="0x8000000000000000" message="The XAML view %1 is shutting down.">
+    </event>
+    <event value="602" version="0" opcode="2" channel="16" level="4" task="600" keywords="0x8000000000000000" message="The XAML view %1 has completed shutdown up with result %2.">
+    </event>
+    <event value="709" version="0" opcode="1" channel="16" level="4" task="800" keywords="0x8000000000000000" message="The host window is being created.">
+    </event>
+    <event value="710" version="0" opcode="2" channel="16" level="4" task="800" keywords="0x8000000000000000" message="The host window was created with result %1.">
+    </event>
+    <event value="711" version="0" opcode="0" channel="16" level="4" task="1851" keywords="0x8000000000000000" message="Search query has changed: &quot;%1&quot;">
+    </event>
+    <event value="910" version="0" opcode="0" channel="16" level="4" task="907" keywords="0x8000000000000000" message="XAML callback handled exception. Result: %1. Message: %2.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="The XAML host window visibility is now %1.">
+    </event>
+    <event value="1836" version="0" opcode="0" channel="16" level="4" task="1836" keywords="0x8000000000000000" message="Launch mode for browser is %2 (Result %1).">
+    </event>
+    <event value="3001" version="0" opcode="1" channel="16" level="4" task="3000" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="3002" version="0" opcode="2" channel="16" level="4" task="3000" keywords="0x8001000000000000" message="">
+    </event>
+  </events>
+</provider>

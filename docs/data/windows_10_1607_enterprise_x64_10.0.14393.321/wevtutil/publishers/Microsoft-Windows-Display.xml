@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Display" guid="6ece3302-fee1-4ea9-8b88-086d459ed976" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=display.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\display.dll" messageFileName="C:\Windows\System32\display.dll" message="Microsoft-Windows-DisplayCpl" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="RestartPromptShow" value="2228224" message="Show restart prompt">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DisplayCpl_InitializePage" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_OpenCustomDPIDialog" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_ApplyButtonClicked" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_SettingsPage_EnumAllDisplays" value="120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_EnumerateStereo3DModes" value="129" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="DisplayCPL" mask="10000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="1" channel="0" level="4" task="101" keywords="0x1000000000000" message="Initializing Display CPL Page - Start">
+    </event>
+    <event value="102" version="0" opcode="2" channel="0" level="4" task="101" keywords="0x1000000000000" message="Initializing Display CPL Page - Finish">
+    </event>
+    <event value="105" version="0" opcode="1" channel="0" level="4" task="105" keywords="0x10000" message="Opening Custom DPI Dialog - Start">
+    </event>
+    <event value="106" version="0" opcode="2" channel="0" level="4" task="105" keywords="0x10000" message="Opening Custom DPI Dialog - Finish">
+    </event>
+    <event value="113" version="0" opcode="1" channel="0" level="4" task="113" keywords="0x10000" message="Apply Button Clicked - Start">
+    </event>
+    <event value="114" version="0" opcode="34" channel="0" level="4" task="113" keywords="0x10000" message="Apply Button Clicked - Show the Restart prompt">
+    </event>
+    <event value="115" version="0" opcode="2" channel="0" level="4" task="113" keywords="0x10000" message="Apply Button Clicked - Finish">
+    </event>
+    <event value="120" version="0" opcode="1" channel="0" level="4" task="120" keywords="0x10000" message="Display Settings Page Enumerating Displays - Start">
+    </event>
+    <event value="121" version="0" opcode="2" channel="0" level="4" task="120" keywords="0x10000" message="Display Settings Page Enumerating Displays - Finish">
+    </event>
+    <event value="129" version="0" opcode="1" channel="0" level="4" task="129" keywords="0x10000" message="Enumerate Stereoscopic 3D Modes - Start">
+    </event>
+    <event value="130" version="0" opcode="2" channel="0" level="4" task="129" keywords="0x10000" message="Enumerate Stereoscopic 3D Modes - Finish">
+    </event>
+  </events>
+</provider>

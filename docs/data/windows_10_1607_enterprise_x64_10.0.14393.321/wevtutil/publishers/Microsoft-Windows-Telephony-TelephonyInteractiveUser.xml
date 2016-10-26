@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Telephony-TelephonyInteractiveUser" guid="088a803b-578d-41b1-9402-92b7ceb380c8" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=TelephonyInteractiveUser.dll&amp;FileVer=10.0.14393.0" resourceFileName="TelephonyInteractiveUser.dll" messageFileName="TelephonyInteractiveUser.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="MISC" mask="1000" message="">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="[ERROR] originated HRESULT=%1 [%2 @ %3]">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="[ERROR] propagated HRESULT=%1 [%2 @ %3]">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[Incoming Call Toast] Show, callId: %1">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[Incoming Call Toast] Hide, callId: %1">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[Incoming Call Toast] Activated, arguments: %1">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[Incoming Call Toast] Post, aumId: %1, tag: %2, group: %3, xml: %4">
+    </event>
+    <event value="105" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[Incoming Call Toast] Remove, aumId: %1, tag: %2, group: %3">
+    </event>
+    <event value="106" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[Incoming Call Toast] Invoked, callId: %1, status: %2">
+    </event>
+    <event value="201" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[App Launcher] Handle Launch Async, aumId: %1, arguments: %2">
+    </event>
+    <event value="202" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[App Launcher] Activate Application">
+    </event>
+    <event value="203" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[App Launcher] Activate Application above lock">
+    </event>
+    <event value="204" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[App Launcher] Unlock device">
+    </event>
+    <event value="205" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[App Launcher] Device unlocked">
+    </event>
+    <event value="206" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[App Launcher] Launch app for call, callId: %1">
+    </event>
+    <event value="207" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[App Launcher] Call Not Found">
+    </event>
+    <event value="208" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[App Launcher] Call is in Idle state">
+    </event>
+    <event value="209" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="[App Launcher] User unlocked device within time period: %1">
+    </event>
+  </events>
+</provider>

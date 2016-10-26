@@ -1,0 +1,2523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Immersive-Shell" guid="315a8872-923e-4ea2-9889-33cd4754bf64" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=twinui.appcore.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\twinui.appcore.dll" messageFileName="C:\Windows\system32\twinui.appcore.dll" message="Microsoft-Windows-Apps" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-TWinUI/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-TWinUI/Operational" id="17" flags="0" message="">
+    </channel>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ImmersiveShellStartup" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellShutdown" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellComponentStartup" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellAppManagerModeNotification" value="120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellAppManagerZbandNotification" value="123" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellAppManagerZbandChanged" value="125" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellAppManagerModeChanged" value="140" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellAppManagerStartup" value="145" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellAppManagerSetActiveProcess" value="147" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellLayoutUpdate" value="150" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellLayoutInitialize" value="151" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellLayoutInvalidate" value="152" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellIHMNotification" value="160" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellAppIHMNotification" value="161" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellAppManagerApplicationStateChange" value="170" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellAppManagerWindowTitleChange" value="172" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellUIDrag" value="180" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveApplicationManagerForegroundBoost" value="7700" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TileXML_ProcessMRTResource" value="1013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TileXML_AllContentClipped" value="1027" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveShellBadgeParseXML" value="1200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppLayoutItem" value="1310" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LayoutCache_LayoutShown" value="1315" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SwitchToAppByIdWithArguments" value="1317" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackstackManager_GetBackstack" value="1400" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackstackManager_ClearBackstack" value="1404" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackstackManager_RemoveApp" value="1407" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DropFeedback_Show" value="1460" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DropFeedback_Hide" value="1461" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DropFeedbackItem_Show" value="1462" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DropFeedbackItem_Update" value="1463" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DragVisual_Show" value="1470" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DragVisual_AppChange" value="1471" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DragVisual_ModeChange" value="1472" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DragVisual_Hide" value="1473" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DragVisual_Destroy" value="1474" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DragVisual_TargetChanged" value="1476" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LauncherTip_ContextMenuHash" value="1477" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolder_ParseDisplayName" value="1601" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolder_EnumObjects" value="1603" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolder_GetDetailsEx" value="1605" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolder_GetPropertyStore" value="1609" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolder_GetPropertyStoreForKeys" value="1611" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolder_ImmersiveApp_OpenVerb" value="1613" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolderItemState_NotifyChange" value="1615" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolder_DualModeVerb" value="1617" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolderItemState_Enqueue" value="1619" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolderItemState_Commit" value="1621" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolderItemState_DoCommit" value="1623" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Uninstall_StartingThread" value="1625" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Uninstall_RemovePackage" value="1627" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppsFolder_ImmersiveApp_InstallRequest" value="1630" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TileNotifications_PauseNotifications" value="1830" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TileNotifications_ResumeNotifications" value="1833" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Tiles_MRT" value="1843" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TileNotifications_InitializeWPNFailure" value="1858" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TileNotifications_ImageDownloadFailed" value="1864" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TileNotifications_PresentNotificationFailed" value="1865" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_PickerLaunched" value="2100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_PickerReady" value="2102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_NavigationStart" value="2104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_View_ItemToggled" value="2106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_Basket_Ready" value="2108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_ActionButton_EnabledChanged" value="2110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_JumpBar_MenuInvoked" value="2112" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_ActionButton_ContentChanged" value="2114" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_BusyState_Shown" value="2116" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_WaitForApplications" value="2118" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_Application_Signalled" value="2120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_LocationLabel_Updated" value="2124" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_NavigateLocal_Responsive" value="2126" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_NavigateLocal_ViewComplete" value="2128" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_Launch_Open_Tile_Responsive" value="2130" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_Launch_Open_Tile_ViewComplete" value="2132" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_Launch_Open_Thumbnail_Responsive" value="2134" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_Launch_Open_Thumbnail_ViewComplete" value="2136" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_Launch_Save_Tile_Responsive" value="2138" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_Launch_Save_Tile_ViewComplete" value="2140" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_NavigateHG_Responsive" value="2146" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_NavigateHG_ViewComplete" value="2148" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_NavigateUNC_Responsive" value="2150" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Picker_NavigateUNC_ViewComplete" value="2152" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_AppInstanceView_HostedApplication" value="2160" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_AppInstanceView_Closing" value="2163" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_AppInstanceView_Commit" value="2164" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_AppInstanceView_StartFileUpdate" value="2165" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_AppInstanceView_ProvideSaveFile" value="2166" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_AppInstanceView_CompleteFileUpdate" value="2167" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_CachedFileUpdater_UIRequested" value="2169" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_CachedFileUpdater_FileUpdateRequested" value="2172" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_CachedFileUpdater_FileUpdateRequest" value="2174" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_FileSavePickerUI_FileNameChanged" value="2179" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_FileSavePickerUI_TargetFileRequest" value="2180" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Picker_FileOpenPickerUI_Closing" value="2184" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_InitSharing" value="2200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_GetSharableItemCount" value="2202" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_GetSharableItemDescription" value="2204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_GetSharableItemData" value="2206" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_SelectSharableItem" value="2208" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_GetQuickShareTargetCount" value="2214" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_GetQuickShareTarget" value="2216" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_ActivateTarget" value="2218" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingTargetCallback_DoneTransfer" value="2222" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QuickShareTargetList_SaveQuickShareTarget" value="2224" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingTargetAppList_QueryTargets" value="2226" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QuickShareTargetList_QueryTargets" value="2228" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Share_ShowFailure" value="2232" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Share_LoadDUIFailure" value="2235" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Share_ShowErrorUI" value="2236" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Share_InitUI" value="2238" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Share_TransitionContent" value="2240" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Share_ViewToRunningShares" value="2241" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Share_RunningSharesToView" value="2242" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Share_ShowFlow" value="2245" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Share_TimeToApp" value="2246" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Share_ShowFetchProgress" value="2250" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Share_RunningShareEntry" value="2252" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_GetSharableItemDisplayInfo" value="2254" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Share_TransitionView" value="2256" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Share_InvokeToApplistShown" value="2258" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_Share_InvokeToErrorShown" value="2260" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_RetrievePackageFamilyName" value="2262" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_RetrieveSquare30x30Logo" value="2264" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_RetrieveLogoBackgroundColor" value="2266" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_RetrieveSourceAppName" value="2268" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharingManager_RetrieveAppListingUri" value="2270" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Apps_Show" value="2302" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Apps_Hide" value="2305" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_OnSearch" value="2313" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Apps_ViewChange" value="2315" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Apps_SwitchToAllAppsViewFromSearch" value="2320" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Apps_SwitchToAllAppsViewFromStart" value="2324" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_DesktopToLauncherTransition" value="2326" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Scenario" value="2335" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_OrientationChange" value="2338" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Dismiss_Explicit_ToDesktop" value="2341" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Dismiss_Explicit_ToImmersiveMode" value="2342" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Show_FromImmersiveMode" value="2343" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launcher_Apps_SwitchToStartViewFromAllAppsView" value="2344" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_AppSearch_ViewComplete" value="2361" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_PLM_SuspendApplication" value="2400" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_PLM_ResumeApplication" value="2405" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_PLM_HungApplication_Activation" value="2406" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_ApplicationStateChange" value="2407" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_PSM_WakeCounterChange" value="2408" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_MemoryPolicy" value="2409" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_TerminateApp_API" value="2410" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_TerminateApp" value="2411" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_UserLogoff" value="2412" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_ConnectedStandby" value="2413" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_ApplicationLaunch" value="2414" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_TaskCompletion" value="2415" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_PLM_WakeOnRPC" value="2416" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_PriorityChanged" value="2417" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_GpuThrottling" value="2418" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_StartUp_PsmRegisterFailure" value="2419" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_QuiesceHangReport" value="2420" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_ActivationHangReport" value="2421" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_PLM_ResumeApplication_EndToEnd" value="2422" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_ExecutionReason" value="2423" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PLM_JobError" value="2424" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UserTile_Flyout_Launch" value="2500" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_UserSwitching" value="2504" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_SettingsLaunch" value="2600" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_SettingsLoadAppWidgetsBG" value="2606" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_SettingsLoadAppElements" value="2610" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_PermissionsLaunch" value="2613" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_PermissionsLoadItems" value="2616" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_SettingsFlow" value="2624" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_SettingsLifetime" value="2630" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_PermissionsLifetime" value="2633" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_HotkeyInvoke" value="2666" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_GetAppCommands" value="2670" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_Launch_SettingsCommand" value="2678" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_Launch_Permissions" value="2681" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_Launch_RateAndReview" value="2684" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_Flow_Broker_Show" value="2687" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_Launch_Accounts" value="2691" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_Launch_PrivacyPolicy" value="2693" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TileUI_TileActivatedEvent_Fired" value="2803" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TileUI_CrossSlide" value="2814" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Tile_ImageLoad_WrongFormat" value="2823" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Tile_ImageLoad_BadSize" value="2824" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Tile_ImageLoad_BadPath" value="2825" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Tile_ImageLoad_BadProtocol" value="2827" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Tile_ImageLoad_Success" value="2829" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Tile_ImageLoad_FileName" value="2850" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TDBN_AudioFlyout_Display" value="2922" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Watermark_Register_Licensing_Event_Error" value="3000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Watermark_Window_Creation_Error" value="3001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Watermark_GenuineImage_Load_Error" value="3002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Watermark_GenuineImage_Blend_Error" value="3003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Watermark_Render_Error" value="3004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Watermark_Failed_To_Get_Genuine_Status" value="3005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveAutoPlay_DeviceAutoPlay" value="3101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Prompt_Show" value="3103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_DialogThread" value="3105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_DialogNoContentThread" value="3107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Broker_Device" value="3111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Calculate_Response_Time" value="3113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Volume_FirstConnect_ToUI" value="3150" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Volume_FirstConnect_ToDefaultLaunch" value="3151" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Volume_NthConnect_ToUI" value="3152" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Volume_NthConnect_ToDefaultLaunch" value="3153" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Device_FirstConnect_ToUI" value="3154" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Device_FirstConnect_ToDefaultLaunch" value="3155" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Device_NthConnect_ToUI" value="3156" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AutoPlay_Device_NthConnect_ToDefaultLaunch" value="3157" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EdgeUi_Invoke_Continuous_Start" value="3200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EdgeUi_Invoke_Continuous_Commit" value="3201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EdgeUi_Invoke_Continuous_Cancel" value="3202" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EdgeUi_Invoke_Discrete" value="3203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EdgeUi_Invoke_Continuous_ExtendedStart" value="3204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EdgeUi_Invoke_Mouse_HitSingleEdge" value="3205" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EdgeUi_Inputs_Layout_Complete" value="3206" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_ServerInitialization" value="4006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_FileLaunch_UnsupportedFileExtension" value="4015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_FileLaunch_MissingFileExtension" value="4016" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_FileLaunch_DesktopAppsDisabled" value="4017" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_UriLaunch_UnsupportedScheme" value="4018" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_UriLaunch_DesktopAppsDisabled" value="4019" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_UriLaunch_UnsupportedFileExtension" value="4020" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_UriLaunch_MissingFileExtension" value="4021" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_UriLaunch_LocalZoneBlocked" value="4022" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_UriLaunch_MissingIntranetCapability" value="4023" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssociationLaunch_UriLaunch_UntrustedFileBlocked" value="4024" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveMonitorAdded" value="4300" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveMonitorHandleDisplayChange" value="4312" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveMonitorConnectObject" value="4316" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveMonitorReconcileMonitors" value="4318" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveMonitorCreatePerMonitorComponents" value="4325" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveMonitorDestroyPerMonitorComponents" value="4326" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Tiles_Cache_Data_CRC_Failure" value="4668" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Tiles_Cache_Entry_CRC_Failure" value="4669" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Tiles_Cache_Remap_Failed" value="4677" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_AppActivation_Activate" value="5901" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_ActivateApplicationForContract" value="5903" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_ActivateApplicationForContractByAppID" value="5905" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_ActivateExtensionForContract" value="5907" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_UnresponsiveApplicationCheck" value="5909" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_MinimumResolutionCheck" value="5911" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_CompositionEnabledCheck" value="5913" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_RPCTimeoutSet" value="5915" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_SplashScreenFactoried" value="5917" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_PackageActivationSettings" value="5919" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_ErrorDialogDisplayed" value="5921" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_ErrorDialogDismissed" value="5922" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_RPCTimeout" value="5924" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_RPCTimeout_Wait" value="5927" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_ActivateApplicationForComponentUIByAUMID" value="5929" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_Success" value="5950" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_NotRegistered" value="5951" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_MultipleExtensions" value="5952" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_MultiplePackages" value="5953" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_UACDisabled" value="5954" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_FullAdmin" value="5955" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_Elevated" value="5956" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_DWMDisabled" value="5958" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_TimedOut" value="5959" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_Remediation" value="5960" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_GenericFailure" value="5961" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_DisabledByPolicy" value="5963" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_AppManagerNotRunning" value="5964" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_AppSpinupStep" value="5965" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_RemediationBinaryInformation" value="5970" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_GlobalAppLog_FailedActivation" value="5973" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_TemporaryLicenseError" value="5974" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_PackageUpdating" value="5975" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppActivation_Log_LicenseExpired" value="5976" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_ModernApp_LaunchVisibleComplete" value="5977" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_ModernApp_LaunchResponsive" value="5978" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_ModernApp_ResumeVisibleComplete" value="5979" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_ModernApp_ResumeResponsive" value="5980" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_ModernApp_ResizeVisibleComplete" value="5981" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_ModernApp_ResizeResponsive" value="5982" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AccessibilityDocking_GetAvailableSize" value="6200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AccessibilityDocking_ReserveDockingSpace" value="6201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AccessibilityDocking_DockWindow" value="6202" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AccessibilityDocking_UndockWindow" value="6203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AccessibilityDocking_QueryWorkArea" value="6204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SplashScreen_ImageLoad" value="6252" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SplashScreen_Activation" value="6256" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppList_PopulateElementWithExtensionTiles" value="6400" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppList_CreateExtensionList" value="6402" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppList_GetFilteredAndSortedExtensionList" value="6404" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppList_PinItem" value="6406" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppList_UnpinItem" value="6408" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppList_HideItem" value="6410" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppList_UnhideItem" value="6412" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WPNSettings_PermissionsUI" value="6500" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_Print" value="6600" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_PrintTargetsEnum" value="6605" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_Play" value="6610" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_PlayTargetsEnum" value="6615" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_Project" value="6620" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_ProximitySendDisplayUi" value="6630" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_ProximitySendSupportCheck" value="6635" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_DisplayUI" value="6640" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_DisplayHierarchyUI" value="6641" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_PrintSourceEvaluate" value="6643" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_PlaytoSourceEvaluate" value="6646" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectCharm_DisplayUI_EndToEnd" value="6649" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevicesCharm_PrintTaskRequestTimedOut" value="6690" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevicesCharm_PlaySourceRequestTimedOut" value="6691" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTile_FlyoutDisplayed" value="6714" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTile_FlyoutReadyToDisplay" value="6716" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTile_FlyoutPreviewResult" value="6718" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveOpenWithUI_CreateAndShow" value="6720" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveOpenWithUI_Mode" value="6722" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveOpenWithUI_InvokeApp" value="6723" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockScreen_AddInvoked" value="6820" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockScreen_AddOperation" value="6821" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockScreen_AddDialogDisplayed" value="6822" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockScreen_AddContentionFlyoutDisplayed" value="6823" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockScreen_AddReturnedCachedValue" value="6824" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTile_FlyoutShowing" value="6840" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTile_FlyoutFlipViewButtonPress" value="6844" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileQuota_CheckQuotaUsage" value="6850" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileQuota_EnforceQuota" value="6852" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileQuota_CleanupOrphanFiles" value="6855" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockscreenApplications_LoadPopup" value="7130" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_Settings_SafeSearch" value="7150" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_Settings_LocationAwareness" value="7151" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_Settings_UseConnectedSearch" value="7152" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_Settings_DeleteOnlineHistory" value="7153" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_Settings_DeleteLocalHistory" value="7154" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_Settings_MeteredConnection" value="7155" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_Settings_ShareHistory" value="7156" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_BadSignature" value="7157" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_BadCertificate" value="7158" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_ResourceMissing" value="7159" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_DeletingInvalidTemplate" value="7160" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LoadTemplate" value="7161" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_BlockingTemplateDownload" value="7162" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogPerfTemplateRequest" value="7163" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogPerfImagesLoading" value="7164" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogPrefetchImagesComplete" value="7165" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogPerfColdStart" value="7166" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_SetTracingData" value="7167" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perftrack_ConnectedSearch_PageLoadWithImages" value="7169" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_SetScope" value="7170" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_ServiceLoad" value="7200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogWebClick" value="7204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogWebClickBG" value="7205" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogLocalClick" value="7206" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogLocalClickBG" value="7207" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogClickPayload" value="7208" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_UploadEventEnqueued" value="7209" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_UploadEventDequeued" value="7210" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_InstrumentationUpload" value="7211" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_ConnectionEstablished" value="7212" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_SentUploadRequest" value="7213" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_Authentication" value="7214" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_AuthenticationSuccess" value="7215" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_AuthenticationFailure" value="7216" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_AuthenticationGettingTokenFailure" value="7218" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_HTTPRequestFailure" value="7219" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogScroll" value="7220" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogScrollBG" value="7221" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogScrollPayload" value="7222" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogWebLayout" value="7223" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogWebLayoutBG" value="7224" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogLocalLayout" value="7225" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogLocalLayoutBG" value="7226" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogLayoutPayload" value="7227" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAppVisibility" value="7228" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAppVisibilityBG" value="7229" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAppResize" value="7230" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAppResizeBG" value="7231" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAppResizePayload" value="7232" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAppVisibilityPayload" value="7233" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_Unauthentication" value="7234" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_UnauthenticationFailure" value="7236" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_UnauthenticationSuccessAllCookiesCleared" value="7237" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_DirectQueryInst" value="7238" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogSuggestion" value="7239" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogSuggestionBG" value="7240" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogParsingErrorBG" value="7241" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogHttpError" value="7242" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogHttpErrorBG" value="7243" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogHttpErrorPayload" value="7244" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_RetryTimerScheduled" value="7245" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_RetryTimerCallback" value="7246" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_ErrorInstDroppedRetry" value="7247" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_ErrorInstDroppedOverflow" value="7248" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_AttributionVisibility" value="7249" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_AttributionVisibilityBG" value="7250" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_AppBarClick" value="7251" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_AppBarClickBG" value="7252" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LocalSuggestionPayload" value="7253" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_PerfPayload" value="7254" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogDetailArrowVisibilityPayload" value="7255" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAttributionVisibilityPayload" value="7256" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAppBarClickPayload" value="7257" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_DetailsViewVisibility" value="7258" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_DetailsViewVisibilityBG" value="7259" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_UploadPerfPing" value="7260" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_UploadPerfPingBG" value="7261" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogRequestStart" value="7262" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogResponseReceived" value="7263" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogRequestSent" value="7264" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogRenderComplete" value="7265" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogImagesComplete" value="7266" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogPerfAbandoned" value="7267" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_TemplateWrittenToDisk" value="7268" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogTemplateFallbackPayload" value="7269" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogTemplateFallbackBG" value="7270" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogTemplateErrorBG" value="7271" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogTemplateRequestInfoPayload" value="7272" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_DetailArrowClickBG" value="7282" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAttributionClick" value="7283" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAttributionClickBG" value="7284" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogDetailArrowClickPayload" value="7285" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogAttributionClickPayload" value="7286" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_TemplateDownloadEvent" value="7287" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_DetailArrowClick" value="7288" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogParsingErrorEvent" value="7289" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_SetActiveImpression" value="7290" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogTemplateError" value="7291" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogTemplateFallback" value="7292" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_ImageDownloaderPreFetchTask" value="7293" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_ImageDownloaderDeferredPreFetchTask" value="7294" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_ImageDownloaderDownloadUrl" value="7295" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perftrack_ConnectedSearch_ImageDownload" value="7296" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_DomainRedirection" value="7297" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogTemplateRequestInfo" value="7298" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectedSearch_LogTemplateRequestInfoBG" value="7299" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WallpaperBackground_SceneInitialization" value="7380" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ActionsFramework_Contacts_MRU_Initialize" value="8001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ActionsFramework_Contacts_MRU_Update" value="8004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppointmentActions_AddAppointment" value="8007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppointmentActions_RemoveAppointment" value="8008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ContactManager_InitializeActionControls" value="8010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ContactsProvider_QueryContactServiceInformation" value="8011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppointmentActions_ExecuteAction" value="8024" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppointmentActions_ReplaceAppointment" value="8026" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackStackMusicPlay_Invoke_MusicSuggestion" value="8204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackStackMusicPlay_Mark_Interactive" value="8206" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackStackMusicPlay_Show_MTC_UI" value="8208" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackStackMusicPlay_Proffer_Data_Source_Service" value="8210" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackStackMusicPlay_Revoke_Data_Source_Service" value="8212" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackStackMusicPlay_Activate_App" value="8214" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackStackMusicPlay_Playback_Session_Changed" value="8217" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackStackMusicPlay_Playback_Started" value="8219" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackStackMusicPlay_Mark_NonInteractive" value="8221" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TWinUICreateInstance_SxS" value="9950" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DllGetClassObject_SxS" value="9951" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Accounts_LoadAppWidgets" value="11201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Accounts_Launch_ProviderCommand" value="11204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Accounts_Launch_AccountCommand" value="11206" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Accounts_Launch_CredentialCommand" value="11208" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Accounts_Launch_Command" value="11210" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Accounts_GetProviderCommands" value="11212" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Accounts_GetAccountCommands" value="11213" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Accounts_GetCredentialCommands" value="11214" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Accounts_GetCommands" value="11215" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockScreenCallBroker_StartCall" value="11301" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockScreenCallBroker_EndCall" value="11303" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockScreenCallBroker_AppLaunched" value="11305" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockScreenCallBroker_VisualsChanged" value="11306" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockScreenCallBroker_CallTitleChanged" value="11307" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WindowLayoutChange" value="10001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ExperienceManager_ShellExperienceHost_Killed" value="11536" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="PLMComponent" mask="2" message="Process Lifetime Manager">
+    </keyword>
+    <keyword name="NotificationE2E" mask="4" message="Notifications end-to-end">
+    </keyword>
+    <keyword name="wpndebug_TileParsingErrors" mask="8" message="Developer Debug: Debugging Tile or Badge XML Parsing Errors">
+    </keyword>
+    <keyword name="wpndebug_LocalImageErrors" mask="10" message="Developer Debug: Debugging Tile or Toast Local Image Rendering Errors">
+    </keyword>
+    <keyword name="wpndebug_ToastParsingErrors" mask="20" message="Developer Debug: Debugging Toast XML Parsing Errors">
+    </keyword>
+    <keyword name="LwNetDiag" mask="40" message="">
+    </keyword>
+    <keyword name="LockScreenCallBroker" mask="80" message="">
+    </keyword>
+    <keyword name="PLMComponentCostly" mask="100" message="">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000400000000000" message="The shell is starting up.">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000400000000000" message="The shell startup sequence completed with result %1.">
+    </event>
+    <event value="105" version="0" opcode="0" channel="17" level="4" task="104" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="111" version="0" opcode="1" channel="16" level="4" task="110" keywords="0x8001000000000000" message="The shell is starting up, the shell component with table index %1 is %2, current result (%3).">
+    </event>
+    <event value="112" version="0" opcode="2" channel="16" level="4" task="110" keywords="0x8001000000000000" message="The shell is starting up, the shell component with table index %1 is %2, current result (%3).">
+    </event>
+    <event value="121" version="0" opcode="1" channel="16" level="4" task="120" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="122" version="0" opcode="2" channel="16" level="4" task="120" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="123" version="0" opcode="1" channel="16" level="4" task="123" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="124" version="0" opcode="2" channel="16" level="4" task="123" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="125" version="0" opcode="1" channel="16" level="4" task="125" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="126" version="0" opcode="2" channel="16" level="4" task="125" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="141" version="0" opcode="1" channel="16" level="4" task="140" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="142" version="0" opcode="2" channel="16" level="4" task="140" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="145" version="0" opcode="1" channel="16" level="4" task="145" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="146" version="0" opcode="2" channel="16" level="4" task="145" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="147" version="0" opcode="1" channel="16" level="4" task="147" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="148" version="0" opcode="2" channel="16" level="4" task="147" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="151" version="0" opcode="1" channel="16" level="4" task="150" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="152" version="0" opcode="2" channel="16" level="4" task="150" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="153" version="0" opcode="0" channel="16" level="4" task="150" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="154" version="0" opcode="1" channel="16" level="4" task="151" keywords="0x8000000000000000" message="Layout Manager: Initialization">
+    </event>
+    <event value="155" version="0" opcode="2" channel="16" level="4" task="151" keywords="0x8000000000000000" message="Layout Manager: Initialization">
+    </event>
+    <event value="156" version="0" opcode="0" channel="16" level="4" task="152" keywords="0x8000000000000000" message="Layout Manager Invalidation has occurred">
+    </event>
+    <event value="161" version="0" opcode="1" channel="16" level="4" task="160" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="162" version="0" opcode="2" channel="16" level="4" task="160" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="163" version="0" opcode="1" channel="16" level="4" task="160" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="164" version="0" opcode="2" channel="16" level="4" task="160" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="165" version="0" opcode="1" channel="16" level="4" task="161" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="166" version="0" opcode="2" channel="16" level="4" task="161" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="171" version="0" opcode="0" channel="16" level="4" task="170" keywords="0x8000200000000000" message="Application state change for %1: %2.">
+    </event>
+    <event value="173" version="0" opcode="0" channel="16" level="4" task="172" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="181" version="0" opcode="0" channel="16" level="4" task="180" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1013" version="0" opcode="2" channel="16" level="4" task="1013" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="17" level="2" task="1027" keywords="0x400000000000000c" message="All payload content was clipped at the current tile size.">
+    </event>
+    <event value="1201" version="0" opcode="1" channel="16" level="4" task="1200" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1202" version="0" opcode="2" channel="16" level="4" task="1200" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1203" version="0" opcode="0" channel="17" level="2" task="1200" keywords="0x4000000000000004" message="The parsing of the badge notification XML payload has failed.">
+    </event>
+    <event value="1310" version="0" opcode="0" channel="16" level="4" task="1310" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1315" version="0" opcode="1" channel="16" level="4" task="1315" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1316" version="0" opcode="2" channel="16" level="4" task="1315" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1317" version="0" opcode="1" channel="16" level="4" task="1317" keywords="0x8000400000000000" message="">
+    </event>
+    <event value="1318" version="0" opcode="2" channel="16" level="4" task="1317" keywords="0x8000400000000000" message="">
+    </event>
+    <event value="1401" version="0" opcode="1" channel="16" level="4" task="1400" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1402" version="0" opcode="0" channel="16" level="4" task="1400" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1403" version="0" opcode="2" channel="16" level="4" task="1400" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1405" version="0" opcode="1" channel="16" level="4" task="1404" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1406" version="0" opcode="2" channel="16" level="4" task="1404" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1408" version="0" opcode="0" channel="16" level="4" task="1407" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1460" version="0" opcode="0" channel="16" level="4" task="1460" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1461" version="0" opcode="0" channel="16" level="4" task="1461" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1462" version="0" opcode="0" channel="16" level="4" task="1462" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1463" version="0" opcode="0" channel="16" level="4" task="1463" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1470" version="0" opcode="0" channel="16" level="4" task="1470" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1471" version="0" opcode="0" channel="16" level="4" task="1471" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1472" version="0" opcode="0" channel="16" level="4" task="1472" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1473" version="0" opcode="0" channel="16" level="4" task="1473" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1474" version="0" opcode="0" channel="16" level="4" task="1474" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1476" version="0" opcode="0" channel="16" level="4" task="1476" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1477" version="0" opcode="0" channel="16" level="4" task="1477" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1601" version="0" opcode="1" channel="16" level="4" task="1601" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1602" version="0" opcode="2" channel="16" level="4" task="1601" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1603" version="0" opcode="1" channel="16" level="4" task="1603" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1604" version="0" opcode="2" channel="16" level="4" task="1603" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1605" version="0" opcode="1" channel="16" level="4" task="1605" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1606" version="0" opcode="2" channel="16" level="4" task="1605" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1609" version="0" opcode="1" channel="16" level="4" task="1609" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1610" version="0" opcode="2" channel="16" level="4" task="1609" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1611" version="0" opcode="1" channel="16" level="4" task="1611" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1612" version="0" opcode="2" channel="16" level="4" task="1611" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1613" version="0" opcode="1" channel="16" level="4" task="1613" keywords="0x8000400000000000" message="">
+    </event>
+    <event value="1614" version="0" opcode="2" channel="16" level="4" task="1613" keywords="0x8000400000000000" message="">
+    </event>
+    <event value="1615" version="0" opcode="0" channel="16" level="4" task="1615" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1617" version="0" opcode="1" channel="16" level="4" task="1617" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1618" version="0" opcode="2" channel="16" level="4" task="1617" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1619" version="0" opcode="0" channel="16" level="4" task="1617" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1621" version="0" opcode="0" channel="17" level="4" task="1613" keywords="0x4000400000000000" message="Activation of app %1 attempted. Execution state: %2, %3, %4.">
+    </event>
+    <event value="1622" version="0" opcode="0" channel="16" level="4" task="1619" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1623" version="0" opcode="0" channel="16" level="4" task="1621" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1624" version="0" opcode="0" channel="16" level="4" task="1623" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1625" version="0" opcode="0" channel="16" level="4" task="1625" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1626" version="0" opcode="0" channel="17" level="4" task="1613" keywords="0x4000000000000000" message="Activation of app %1 will be attempted with refreshed data, result %2">
+    </event>
+    <event value="1627" version="0" opcode="1" channel="17" level="4" task="1627" keywords="0x4000000000000000" message="Starting to remove package with full name %1.">
+    </event>
+    <event value="1628" version="0" opcode="2" channel="17" level="4" task="1627" keywords="0x4000000000000000" message="Removing package with family name %1 completed with result %2.">
+    </event>
+    <event value="1630" version="0" opcode="0" channel="16" level="4" task="1630" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1631" version="0" opcode="0" channel="16" level="4" task="1630" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1830" version="0" opcode="0" channel="16" level="4" task="1830" keywords="0x8000000000000004" message="Notifications have been paused for this tile.">
+    </event>
+    <event value="1833" version="0" opcode="0" channel="16" level="4" task="1833" keywords="0x8000000000000004" message="Notifications have been resumed for this tile.">
+    </event>
+    <event value="1844" version="0" opcode="0" channel="16" level="4" task="1843" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1845" version="0" opcode="0" channel="16" level="4" task="1843" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1858" version="0" opcode="0" channel="17" level="2" task="1858" keywords="0x4000000000000000" message="The Windows Notification platform has failed initialization.  Notifications will not work until after a restart.">
+    </event>
+    <event value="1864" version="0" opcode="0" channel="17" level="2" task="1864" keywords="0x4000000000000004" message="Failed to download image for tile notification.">
+    </event>
+    <event value="1865" version="0" opcode="0" channel="17" level="2" task="1865" keywords="0x4000000000000004" message="Failed to present the notification for this tile.">
+    </event>
+    <event value="2100" version="0" opcode="0" channel="16" level="4" task="2100" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2102" version="0" opcode="0" channel="16" level="2" task="2102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2104" version="0" opcode="0" channel="16" level="2" task="2104" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2106" version="0" opcode="0" channel="16" level="2" task="2106" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2108" version="0" opcode="0" channel="16" level="4" task="2108" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2110" version="0" opcode="0" channel="16" level="4" task="2110" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2112" version="0" opcode="1" channel="16" level="4" task="2112" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2113" version="0" opcode="2" channel="16" level="4" task="2112" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2114" version="0" opcode="0" channel="16" level="4" task="2114" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2116" version="0" opcode="1" channel="16" level="4" task="2116" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2117" version="0" opcode="2" channel="16" level="4" task="2116" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2118" version="0" opcode="1" channel="16" level="4" task="2118" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2119" version="0" opcode="2" channel="16" level="4" task="2118" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2120" version="0" opcode="0" channel="16" level="4" task="2120" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2124" version="0" opcode="0" channel="16" level="4" task="2124" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2126" version="0" opcode="1" channel="16" level="4" task="2126" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2127" version="0" opcode="2" channel="16" level="4" task="2126" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2128" version="0" opcode="1" channel="16" level="4" task="2128" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2129" version="0" opcode="2" channel="16" level="4" task="2128" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2130" version="0" opcode="1" channel="16" level="4" task="2130" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2131" version="0" opcode="2" channel="16" level="4" task="2130" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2132" version="0" opcode="1" channel="16" level="4" task="2132" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2133" version="0" opcode="2" channel="16" level="4" task="2132" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2134" version="0" opcode="1" channel="16" level="4" task="2134" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2135" version="0" opcode="2" channel="16" level="4" task="2134" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2136" version="0" opcode="1" channel="16" level="4" task="2136" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2137" version="0" opcode="2" channel="16" level="4" task="2136" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2138" version="0" opcode="1" channel="16" level="4" task="2138" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2139" version="0" opcode="2" channel="16" level="4" task="2138" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2140" version="0" opcode="1" channel="16" level="4" task="2140" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2141" version="0" opcode="2" channel="16" level="4" task="2140" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2146" version="0" opcode="1" channel="16" level="4" task="2146" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2147" version="0" opcode="2" channel="16" level="4" task="2146" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2148" version="0" opcode="1" channel="16" level="4" task="2148" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2149" version="0" opcode="2" channel="16" level="4" task="2148" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2150" version="0" opcode="1" channel="16" level="4" task="2150" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2151" version="0" opcode="2" channel="16" level="4" task="2150" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2152" version="0" opcode="1" channel="16" level="4" task="2152" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2153" version="0" opcode="2" channel="16" level="4" task="2152" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2160" version="0" opcode="0" channel="16" level="4" task="2160" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2163" version="0" opcode="0" channel="16" level="4" task="2163" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2164" version="0" opcode="0" channel="16" level="4" task="2164" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2165" version="0" opcode="0" channel="16" level="4" task="2165" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2166" version="0" opcode="0" channel="16" level="4" task="2166" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2167" version="0" opcode="0" channel="16" level="4" task="2167" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2168" version="0" opcode="0" channel="16" level="4" task="2167" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2169" version="0" opcode="0" channel="16" level="4" task="2169" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2170" version="0" opcode="0" channel="16" level="4" task="2169" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2171" version="0" opcode="0" channel="16" level="4" task="2169" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2172" version="0" opcode="0" channel="16" level="4" task="2172" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2173" version="0" opcode="0" channel="16" level="4" task="2172" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2174" version="0" opcode="0" channel="16" level="4" task="2174" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2175" version="0" opcode="0" channel="16" level="4" task="2174" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2176" version="0" opcode="0" channel="16" level="4" task="2174" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2177" version="0" opcode="1" channel="16" level="4" task="2174" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2178" version="0" opcode="2" channel="16" level="4" task="2174" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2179" version="0" opcode="0" channel="16" level="4" task="2179" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2180" version="0" opcode="0" channel="16" level="4" task="2180" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2184" version="0" opcode="1" channel="16" level="4" task="2184" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2185" version="0" opcode="2" channel="16" level="4" task="2184" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2200" version="0" opcode="1" channel="16" level="4" task="2200" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2201" version="0" opcode="2" channel="16" level="4" task="2200" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2202" version="0" opcode="1" channel="16" level="4" task="2202" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2203" version="0" opcode="2" channel="16" level="4" task="2202" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2204" version="0" opcode="1" channel="16" level="4" task="2204" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2205" version="0" opcode="2" channel="16" level="4" task="2204" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2206" version="0" opcode="1" channel="16" level="4" task="2206" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2207" version="0" opcode="2" channel="16" level="4" task="2206" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2208" version="0" opcode="1" channel="16" level="4" task="2208" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2209" version="0" opcode="2" channel="16" level="4" task="2208" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2214" version="0" opcode="1" channel="16" level="4" task="2214" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2215" version="0" opcode="2" channel="16" level="4" task="2214" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2216" version="0" opcode="1" channel="16" level="4" task="2216" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2217" version="0" opcode="2" channel="16" level="4" task="2216" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2218" version="0" opcode="1" channel="16" level="4" task="2218" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2219" version="0" opcode="2" channel="16" level="4" task="2218" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2222" version="0" opcode="1" channel="16" level="4" task="2222" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2223" version="0" opcode="2" channel="16" level="4" task="2222" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2224" version="0" opcode="1" channel="16" level="4" task="2224" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2225" version="0" opcode="2" channel="16" level="4" task="2224" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2226" version="0" opcode="1" channel="16" level="4" task="2226" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2227" version="0" opcode="2" channel="16" level="4" task="2226" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2228" version="0" opcode="1" channel="16" level="4" task="2228" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2229" version="0" opcode="2" channel="16" level="4" task="2228" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2232" version="0" opcode="0" channel="16" level="4" task="2232" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2235" version="0" opcode="0" channel="16" level="4" task="2235" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2236" version="0" opcode="0" channel="16" level="4" task="2236" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2238" version="0" opcode="1" channel="16" level="4" task="2238" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2239" version="0" opcode="2" channel="16" level="4" task="2238" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2240" version="0" opcode="1" channel="16" level="4" task="2240" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2241" version="0" opcode="2" channel="16" level="4" task="2240" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2244" version="0" opcode="0" channel="16" level="4" task="2242" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2245" version="0" opcode="0" channel="16" level="4" task="2241" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2246" version="0" opcode="1" channel="16" level="4" task="2245" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2247" version="0" opcode="2" channel="16" level="4" task="2245" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2248" version="0" opcode="1" channel="16" level="4" task="2246" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2249" version="0" opcode="2" channel="16" level="4" task="2246" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2250" version="0" opcode="1" channel="16" level="4" task="2250" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2251" version="0" opcode="2" channel="16" level="4" task="2250" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2252" version="0" opcode="0" channel="16" level="4" task="2252" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2253" version="0" opcode="0" channel="16" level="4" task="2252" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2254" version="0" opcode="1" channel="16" level="4" task="2254" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2255" version="0" opcode="2" channel="16" level="4" task="2254" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2256" version="0" opcode="1" channel="16" level="4" task="2256" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2257" version="0" opcode="2" channel="16" level="4" task="2256" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2258" version="0" opcode="1" channel="16" level="4" task="2258" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2259" version="0" opcode="2" channel="16" level="4" task="2258" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2260" version="0" opcode="2" channel="16" level="4" task="2260" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2262" version="0" opcode="1" channel="16" level="4" task="2262" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2263" version="0" opcode="2" channel="16" level="4" task="2262" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2264" version="0" opcode="1" channel="16" level="4" task="2264" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2265" version="0" opcode="2" channel="16" level="4" task="2264" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2266" version="0" opcode="1" channel="16" level="4" task="2266" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2267" version="0" opcode="2" channel="16" level="4" task="2266" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2268" version="0" opcode="1" channel="16" level="4" task="2268" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2269" version="0" opcode="2" channel="16" level="4" task="2268" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2270" version="0" opcode="1" channel="16" level="4" task="2270" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2271" version="0" opcode="2" channel="16" level="4" task="2270" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2302" version="0" opcode="1" channel="16" level="4" task="2302" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2303" version="0" opcode="2" channel="16" level="4" task="2302" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2305" version="0" opcode="1" channel="16" level="4" task="2305" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2306" version="0" opcode="2" channel="16" level="4" task="2305" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2313" version="0" opcode="1" channel="16" level="4" task="2313" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2314" version="0" opcode="2" channel="16" level="4" task="2313" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2315" version="0" opcode="1" channel="16" level="4" task="2315" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2316" version="0" opcode="2" channel="16" level="4" task="2315" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2324" version="0" opcode="1" channel="16" level="4" task="2324" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2325" version="0" opcode="2" channel="16" level="4" task="2324" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2326" version="0" opcode="1" channel="16" level="4" task="2326" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2327" version="0" opcode="2" channel="16" level="4" task="2326" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2335" version="0" opcode="1" channel="16" level="4" task="2335" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2336" version="0" opcode="2" channel="16" level="4" task="2335" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2356" version="0" opcode="1" channel="16" level="4" task="2338" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2357" version="0" opcode="2" channel="16" level="4" task="2338" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2361" version="0" opcode="1" channel="16" level="4" task="2341" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2362" version="0" opcode="2" channel="16" level="4" task="2341" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2363" version="0" opcode="1" channel="16" level="4" task="2342" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2364" version="0" opcode="2" channel="16" level="4" task="2342" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2365" version="0" opcode="1" channel="16" level="4" task="2343" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2366" version="0" opcode="2" channel="16" level="4" task="2343" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2368" version="0" opcode="1" channel="16" level="4" task="2344" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2369" version="0" opcode="2" channel="16" level="4" task="2344" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2373" version="0" opcode="1" channel="16" level="4" task="2361" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2374" version="0" opcode="2" channel="16" level="4" task="2361" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2382" version="0" opcode="2" channel="16" level="4" task="2361" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2450" version="1" opcode="1" channel="16" level="4" task="2400" keywords="0x8001200000000002" message="">
+    </event>
+    <event value="2451" version="1" opcode="2" channel="16" level="4" task="2400" keywords="0x8001200000000002" message="">
+    </event>
+    <event value="2453" version="0" opcode="0" channel="16" level="0" task="2412" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2454" version="0" opcode="0" channel="16" level="0" task="2413" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2463" version="1" opcode="1" channel="16" level="4" task="2405" keywords="0x8001200000000002" message="">
+    </event>
+    <event value="2464" version="1" opcode="2" channel="16" level="4" task="2405" keywords="0x8001200000000002" message="">
+    </event>
+    <event value="2468" version="0" opcode="0" channel="16" level="4" task="2409" keywords="0x8001000000000002" message="">
+    </event>
+    <event value="2472" version="0" opcode="0" channel="16" level="4" task="2405" keywords="0x8000200000000002" message="">
+    </event>
+    <event value="2473" version="0" opcode="0" channel="16" level="4" task="2407" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2474" version="0" opcode="0" channel="16" level="4" task="2408" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2480" version="0" opcode="1" channel="16" level="4" task="2410" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2481" version="0" opcode="2" channel="16" level="4" task="2410" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2482" version="0" opcode="1" channel="16" level="4" task="2411" keywords="0x8000200000000002" message="">
+    </event>
+    <event value="2483" version="0" opcode="2" channel="16" level="4" task="2411" keywords="0x8000200000000002" message="">
+    </event>
+    <event value="2484" version="1" opcode="0" channel="9" level="2" task="2400" keywords="0x2000000000000042" message="Package %1 was terminated because it took too long to suspend.">
+    </event>
+    <event value="2486" version="1" opcode="0" channel="9" level="2" task="2414" keywords="0x2000000000000042" message="App %1 did not launch within its allotted time.">
+    </event>
+    <event value="2491" version="0" opcode="0" channel="16" level="4" task="2415" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2492" version="0" opcode="0" channel="16" level="4" task="2415" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2493" version="0" opcode="0" channel="16" level="4" task="2413" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2494" version="0" opcode="0" channel="16" level="4" task="2413" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2495" version="0" opcode="0" channel="16" level="4" task="2413" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="2499" version="0" opcode="0" channel="16" level="4" task="2416" keywords="0x8001000000000002" message="">
+    </event>
+    <event value="2500" version="0" opcode="1" channel="16" level="4" task="2500" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2501" version="0" opcode="2" channel="16" level="4" task="2500" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2504" version="0" opcode="1" channel="16" level="4" task="2504" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2601" version="0" opcode="1" channel="16" level="4" task="2600" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2602" version="0" opcode="2" channel="16" level="4" task="2600" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2607" version="0" opcode="1" channel="16" level="4" task="2606" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2608" version="0" opcode="0" channel="16" level="4" task="2606" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2609" version="0" opcode="2" channel="16" level="4" task="2606" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2611" version="0" opcode="1" channel="16" level="4" task="2610" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2612" version="0" opcode="2" channel="16" level="4" task="2610" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2614" version="0" opcode="1" channel="16" level="4" task="2613" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2615" version="0" opcode="2" channel="16" level="4" task="2613" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2617" version="0" opcode="1" channel="16" level="4" task="2616" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2618" version="0" opcode="0" channel="16" level="4" task="2616" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2619" version="0" opcode="2" channel="16" level="4" task="2616" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2625" version="0" opcode="1" channel="16" level="4" task="2624" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="2626" version="0" opcode="2" channel="16" level="4" task="2624" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2631" version="0" opcode="1" channel="16" level="4" task="2630" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2632" version="0" opcode="2" channel="16" level="4" task="2630" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2634" version="0" opcode="1" channel="16" level="4" task="2633" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2635" version="0" opcode="2" channel="16" level="4" task="2633" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2667" version="0" opcode="0" channel="16" level="4" task="2666" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2671" version="0" opcode="0" channel="16" level="4" task="2670" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2679" version="0" opcode="1" channel="16" level="4" task="2678" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2680" version="0" opcode="2" channel="16" level="4" task="2678" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2682" version="0" opcode="1" channel="16" level="4" task="2681" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2683" version="0" opcode="2" channel="16" level="4" task="2681" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2685" version="0" opcode="1" channel="16" level="4" task="2684" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2686" version="0" opcode="2" channel="16" level="4" task="2684" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2688" version="0" opcode="1" channel="16" level="4" task="2687" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2690" version="0" opcode="2" channel="16" level="4" task="2687" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2691" version="0" opcode="1" channel="16" level="4" task="2691" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2692" version="0" opcode="2" channel="16" level="4" task="2691" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2694" version="0" opcode="1" channel="16" level="4" task="2693" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2695" version="0" opcode="2" channel="16" level="4" task="2693" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2806" version="0" opcode="0" channel="16" level="4" task="2803" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2823" version="0" opcode="0" channel="17" level="2" task="2823" keywords="0x4000000000000014" message="The image could not be loaded because it is not a PNG or JPEG">
+    </event>
+    <event value="2824" version="0" opcode="0" channel="17" level="2" task="2824" keywords="0x4000000000000014" message="The image could not be loaded because it is too large">
+    </event>
+    <event value="2825" version="0" opcode="0" channel="17" level="2" task="2825" keywords="0x4000000000000014" message="The image could not be loaded because the provided path does not exist">
+    </event>
+    <event value="2827" version="0" opcode="0" channel="17" level="2" task="2827" keywords="0x4000000000000014" message="The image could not be loaded because the protocol handler used is invalid">
+    </event>
+    <event value="2829" version="0" opcode="0" channel="16" level="4" task="2829" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="2836" version="0" opcode="0" channel="16" level="4" task="2814" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2850" version="0" opcode="0" channel="17" level="4" task="2850" keywords="0x4000000000000004" message="A tile has attempted to load an image off disk.">
+    </event>
+    <event value="2924" version="0" opcode="1" channel="16" level="4" task="2922" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2930" version="0" opcode="2" channel="16" level="4" task="2922" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3000" version="0" opcode="0" channel="17" level="2" task="3000" keywords="0x4000000000000000" message="Failed to register for licensing policy change event. Error code is %1.">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="17" level="2" task="3001" keywords="0x4000000000000000" message="Failed to create the watermark window. Error code is %1.">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="17" level="2" task="3002" keywords="0x4000000000000000" message="Failed to load the genuine licensing image. Error code is %1.">
+    </event>
+    <event value="3003" version="0" opcode="0" channel="17" level="2" task="3003" keywords="0x4000000000000000" message="Failed to blend the genuine licensing image. Error code is %1.">
+    </event>
+    <event value="3004" version="0" opcode="0" channel="17" level="2" task="3004" keywords="0x4000000000000000" message="Failed to render the watermark. Error code is %1.">
+    </event>
+    <event value="3005" version="0" opcode="0" channel="17" level="2" task="3005" keywords="0x4000000000000000" message="Failed to get genuine status. Error code is %1.">
+    </event>
+    <event value="3101" version="0" opcode="1" channel="16" level="4" task="3101" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3102" version="0" opcode="2" channel="16" level="4" task="3101" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3103" version="0" opcode="1" channel="16" level="4" task="3103" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3104" version="0" opcode="2" channel="16" level="4" task="3103" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3105" version="0" opcode="1" channel="16" level="4" task="3105" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3106" version="0" opcode="2" channel="16" level="4" task="3105" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3107" version="0" opcode="1" channel="16" level="4" task="3107" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3108" version="0" opcode="2" channel="16" level="4" task="3107" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3111" version="0" opcode="1" channel="16" level="4" task="3111" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3112" version="0" opcode="2" channel="16" level="4" task="3111" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3113" version="0" opcode="1" channel="16" level="4" task="3113" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3114" version="0" opcode="2" channel="16" level="4" task="3113" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3150" version="0" opcode="0" channel="0" level="4" task="3150" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3151" version="0" opcode="0" channel="0" level="4" task="3151" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3152" version="0" opcode="0" channel="0" level="4" task="3152" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3153" version="0" opcode="0" channel="0" level="4" task="3153" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3154" version="0" opcode="0" channel="0" level="4" task="3154" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3155" version="0" opcode="0" channel="0" level="4" task="3155" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3156" version="0" opcode="0" channel="0" level="4" task="3156" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3157" version="0" opcode="0" channel="0" level="4" task="3157" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3200" version="0" opcode="0" channel="16" level="4" task="3200" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3201" version="0" opcode="0" channel="16" level="4" task="3201" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3202" version="0" opcode="0" channel="16" level="4" task="3202" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3203" version="0" opcode="0" channel="16" level="4" task="3203" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3204" version="0" opcode="0" channel="16" level="4" task="3204" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3205" version="0" opcode="0" channel="16" level="4" task="3205" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3206" version="0" opcode="0" channel="16" level="4" task="3206" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4007" version="0" opcode="1" channel="16" level="4" task="4006" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4008" version="0" opcode="2" channel="16" level="4" task="4006" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4015" version="0" opcode="0" channel="17" level="2" task="4015" keywords="0x4000000000000000" message="Windows.System.Launcher.LaunchFileAsync failed because the file extension %1 is not supported by this API.">
+    </event>
+    <event value="4016" version="0" opcode="0" channel="17" level="2" task="4016" keywords="0x4000000000000000" message="Windows.System.Launcher.LaunchFileAsync failed because the launched file has no file extension.">
+    </event>
+    <event value="4017" version="0" opcode="0" channel="17" level="2" task="4017" keywords="0x4000000000000000" message="Windows.System.Launcher.LaunchFileAsync failed because the current group policy settings prohibit launching desktop programs through this API.">
+    </event>
+    <event value="4018" version="0" opcode="0" channel="17" level="2" task="4018" keywords="0x4000000000000000" message="Windows.System.Launcher.LaunchUriAsync failed because the URI scheme %1 is not supported by this API.">
+    </event>
+    <event value="4019" version="0" opcode="0" channel="17" level="2" task="4019" keywords="0x4000000000000000" message="Windows.System.Launcher.LaunchUriAsync failed because the current group policy settings prohibit launching desktop programs through this API.">
+    </event>
+    <event value="4020" version="0" opcode="0" channel="17" level="2" task="4020" keywords="0x4000000000000000" message="Windows.System.Launcher.LaunchUriAsync failed because the file extension %1 is not supported by this API.">
+    </event>
+    <event value="4021" version="0" opcode="0" channel="17" level="2" task="4021" keywords="0x4000000000000000" message="Windows.System.Launcher.LaunchUriAsync failed because file URI has no file extension.">
+    </event>
+    <event value="4022" version="0" opcode="0" channel="17" level="2" task="4022" keywords="0x4000000000000000" message="Windows.System.Launcher.LaunchUriAsync failed because URI %1 points to a local resource. Local zone URIs are not supported by this API.">
+    </event>
+    <event value="4023" version="0" opcode="0" channel="17" level="2" task="4023" keywords="0x4000000000000000" message="Windows.System.Launcher.LaunchUriAsync failed because URI %1 points to an intranet network resource. In order to launch intranet URIs the app must have the privateNetworkClientServer capability.">
+    </event>
+    <event value="4024" version="0" opcode="0" channel="17" level="2" task="4024" keywords="0x4000000000000000" message="Windows.System.Launcher.LaunchUriAsync failed because file URI %1 points to an untrusted resource.">
+    </event>
+    <event value="4302" version="0" opcode="1" channel="16" level="4" task="4300" keywords="0x8000000000000000" message="The Monitor Manager is adding a new display with identity %1.">
+    </event>
+    <event value="4312" version="0" opcode="1" channel="16" level="4" task="4312" keywords="0x8000000000000000" message="The Monitor Manager is handling a display change notification.">
+    </event>
+    <event value="4313" version="0" opcode="2" channel="16" level="4" task="4312" keywords="0x8000000000000000" message="The Monitor Manager is handling a display change notification.">
+    </event>
+    <event value="4316" version="0" opcode="1" channel="16" level="4" task="4316" keywords="0x8000000000000000" message="An object is being connected to the Monitor %1.">
+    </event>
+    <event value="4317" version="0" opcode="2" channel="16" level="4" task="4316" keywords="0x8000000000000000" message="An object is being connected to the Monitor %1.">
+    </event>
+    <event value="4318" version="0" opcode="1" channel="16" level="4" task="4318" keywords="0x8000000000000000" message="The Monitor manager is reconciling monitors">
+    </event>
+    <event value="4319" version="0" opcode="2" channel="16" level="4" task="4318" keywords="0x8000000000000000" message="The Monitor manager is reconciling monitors">
+    </event>
+    <event value="4320" version="0" opcode="0" channel="16" level="2" task="4318" keywords="0x8000000000000000" message="The Monnitor Manager could not create a monitor identity. Error %1.">
+    </event>
+    <event value="4325" version="0" opcode="0" channel="16" level="4" task="4325" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4326" version="0" opcode="0" channel="16" level="4" task="4326" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4668" version="0" opcode="0" channel="17" level="2" task="4668" keywords="0x4000000000000004" message="The tile cache has suffered a CRC failure for this entry&apos;s data region.">
+    </event>
+    <event value="4669" version="0" opcode="0" channel="17" level="2" task="4669" keywords="0x4000000000000004" message="The tile cache has suffered a CRC failure for this entry&apos;s entry/header region.">
+    </event>
+    <event value="4677" version="0" opcode="0" channel="17" level="2" task="4677" keywords="0x4000000000000000" message="Failed to remap the cache.">
+    </event>
+    <event value="5901" version="1" opcode="1" channel="16" level="4" task="5901" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5902" version="1" opcode="2" channel="16" level="4" task="5901" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5903" version="0" opcode="1" channel="16" level="4" task="5903" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5904" version="0" opcode="2" channel="16" level="4" task="5903" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5905" version="0" opcode="1" channel="16" level="4" task="5905" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5906" version="0" opcode="2" channel="16" level="4" task="5905" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5907" version="0" opcode="1" channel="16" level="4" task="5907" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5908" version="0" opcode="2" channel="16" level="4" task="5907" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5909" version="0" opcode="0" channel="16" level="4" task="5909" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5911" version="0" opcode="0" channel="16" level="4" task="5911" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5913" version="0" opcode="0" channel="16" level="4" task="5913" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5915" version="0" opcode="0" channel="16" level="4" task="5915" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5917" version="0" opcode="0" channel="16" level="4" task="5917" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5919" version="0" opcode="0" channel="16" level="4" task="5919" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5921" version="0" opcode="0" channel="16" level="4" task="5921" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5922" version="0" opcode="0" channel="16" level="4" task="5922" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5924" version="0" opcode="0" channel="16" level="4" task="5924" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5925" version="0" opcode="0" channel="16" level="4" task="5924" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5926" version="0" opcode="0" channel="16" level="4" task="5924" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5927" version="0" opcode="1" channel="16" level="4" task="5927" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5928" version="0" opcode="2" channel="16" level="4" task="5927" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5929" version="0" opcode="1" channel="16" level="4" task="5929" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5930" version="0" opcode="2" channel="16" level="4" task="5929" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5950" version="0" opcode="0" channel="17" level="4" task="5950" keywords="0x4000000000000000" message="The app %1 was activated for the %2 contract successfully.">
+    </event>
+    <event value="5951" version="0" opcode="0" channel="17" level="2" task="5951" keywords="0x4000000000000000" message="The app %1 is not registered for the %2 contract or is not installed.">
+    </event>
+    <event value="5952" version="0" opcode="0" channel="17" level="2" task="5952" keywords="0x4000000000000000" message="The app %1 has more than one extension registered for the %2 contract. Activation by AppUserModelId is ambiguous in this case, so the app was not started.">
+    </event>
+    <event value="5953" version="0" opcode="0" channel="17" level="2" task="5953" keywords="0x4000000000000000" message="The app %1&apos;s package family (%2) has more than one package installed. This is not supported, so the app was not activated for the %3 contract.">
+    </event>
+    <event value="5954" version="0" opcode="0" channel="17" level="2" task="5954" keywords="0x4000000000000000" message="The app %1 could not be activated for the %2 contract because UAC is disabled.">
+    </event>
+    <event value="5955" version="0" opcode="0" channel="17" level="2" task="5955" keywords="0x4000000000000000" message="The app %1 could not be activated for the %2 contract because the current user is an Administrator with a full token. Only split token Administrators can activate apps.">
+    </event>
+    <event value="5956" version="0" opcode="0" channel="17" level="2" task="5956" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract was blocked because the activation attempt occurred in an elevated context. Apps must be activated from Medium-IL.">
+    </event>
+    <event value="5958" version="0" opcode="0" channel="17" level="2" task="5958" keywords="0x4000000000000000" message="The app %1 could not be activated for the %2 contract because Desktop Composition is disabled.">
+    </event>
+    <event value="5959" version="0" opcode="0" channel="17" level="2" task="5959" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract timed out.">
+    </event>
+    <event value="5960" version="0" opcode="0" channel="17" level="2" task="5960" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract was blocked with error %3 because its package is in state: %4.">
+    </event>
+    <event value="5961" version="0" opcode="0" channel="17" level="2" task="5961" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract failed with error: %3.">
+    </event>
+    <event value="5962" version="0" opcode="0" channel="17" level="2" task="5961" keywords="0x4000000000000000" message="Activation of the app failed with error: %1.">
+    </event>
+    <event value="5963" version="0" opcode="0" channel="17" level="2" task="5963" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract was blocked by policy. Contact your administrator for more information.">
+    </event>
+    <event value="5964" version="0" opcode="0" channel="17" level="2" task="5964" keywords="0x4000000000000000" message="The app %1 could not be activated for the %2 contract because the app manager is not running.">
+    </event>
+    <event value="5965" version="0" opcode="0" channel="16" level="4" task="5965" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5966" version="0" opcode="0" channel="16" level="4" task="5965" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5967" version="0" opcode="0" channel="16" level="4" task="5965" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5970" version="0" opcode="0" channel="17" level="2" task="5970" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract was blocked with error %3 because of an issue with application binary %4. This could be because the binary is unsigned, contains an untrusted signature, or has been corrupted or tampered with. Reinstall the application to fix this issue.">
+    </event>
+    <event value="5971" version="0" opcode="0" channel="17" level="2" task="5970" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract was blocked with error %3 because of an issue with Windows binary %4. This could be because the binary is unsigned, contains an untrusted signature, or has been corrupted or tampered with. Refresh your PC to fix this issue.">
+    </event>
+    <event value="5972" version="0" opcode="0" channel="17" level="2" task="5970" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract was blocked with error %3 because of an issue with binary %4. This could be because the binary is unsigned, contains an untrusted signature, or has been corrupted or tampered with. See http://go.microsoft.com/fwlink/?LinkID=246710 for more information.">
+    </event>
+    <event value="5973" version="0" opcode="0" channel="9" level="2" task="5973" keywords="0x2000000000000000" message="Activation of app %1 failed with error: %2 See the Microsoft-Windows-TWinUI/Operational log for additional information.">
+    </event>
+    <event value="5974" version="0" opcode="0" channel="17" level="2" task="5974" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract was blocked because of a temporary issue with its license. Try launching the app again in a moment.">
+    </event>
+    <event value="5975" version="0" opcode="0" channel="17" level="2" task="5975" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract was blocked because its package is being updated.">
+    </event>
+    <event value="5976" version="0" opcode="0" channel="17" level="2" task="5976" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract was blocked because its trial license has expired.">
+    </event>
+    <event value="5977" version="0" opcode="1" channel="16" level="4" task="5977" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5978" version="0" opcode="1" channel="16" level="4" task="5978" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5979" version="0" opcode="1" channel="16" level="4" task="5979" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5980" version="0" opcode="1" channel="16" level="4" task="5980" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5981" version="0" opcode="1" channel="16" level="4" task="5981" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5982" version="0" opcode="1" channel="16" level="4" task="5982" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="5983" version="0" opcode="0" channel="17" level="2" task="5961" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract failed during verifcation and initialization with %3.">
+    </event>
+    <event value="5984" version="0" opcode="0" channel="17" level="2" task="5961" keywords="0x4000000000000000" message="Activation of the app %1 for the %2 contract failed during activation initialization with %3.">
+    </event>
+    <event value="5985" version="0" opcode="0" channel="17" level="2" task="5961" keywords="0x4000000000000000" message="ActivateApplicationForContractByAppIdAsUserWithHost of the app %1 for the %2 contract failed with %3.">
+    </event>
+    <event value="5986" version="0" opcode="0" channel="17" level="2" task="5961" keywords="0x4000000000000000" message="ActivateApplicationForContractByExtensionIdAsUserWithHost of the app %1 for the %2 contract failed with %3.">
+    </event>
+    <event value="5987" version="0" opcode="0" channel="17" level="2" task="5961" keywords="0x4000000000000000" message="ActivateApplicationForContractByAppIdAsUserWithHostReturnsApp of the app %1 for the %2 contract failed with %3.">
+    </event>
+    <event value="5988" version="0" opcode="0" channel="17" level="2" task="5961" keywords="0x4000000000000000" message="ActivateApplicationForContractByAcidAsUserWithHost of the app %1 for the %2 contract failed with %3.">
+    </event>
+    <event value="5989" version="0" opcode="0" channel="17" level="2" task="5961" keywords="0x4000000000000000" message="ActivateApplicationForComponentUIByAUMID of the app %1 for the %2 contract failed with %3.">
+    </event>
+    <event value="5990" version="0" opcode="0" channel="17" level="2" task="5961" keywords="0x4000000000000000" message="Activation via contract helper of the app %1 for the %2 contract failed with %3.">
+    </event>
+    <event value="6200" version="0" opcode="1" channel="16" level="4" task="6200" keywords="0x8000000000000000" message="Docking Service: GetAvailable called.">
+    </event>
+    <event value="6201" version="0" opcode="2" channel="16" level="4" task="6200" keywords="0x8000000000000000" message="Docking Service: GetAvailable called.">
+    </event>
+    <event value="6202" version="0" opcode="1" channel="16" level="4" task="6201" keywords="0x8000000000000000" message="Docking Service: ReserveDockingSpace called.">
+    </event>
+    <event value="6203" version="0" opcode="2" channel="16" level="4" task="6201" keywords="0x8000000000000000" message="Docking Service: ReserveDockingSpace called.">
+    </event>
+    <event value="6204" version="0" opcode="1" channel="16" level="4" task="6202" keywords="0x8000000000000000" message="Docking Service: DockWindow called.">
+    </event>
+    <event value="6205" version="0" opcode="2" channel="16" level="4" task="6202" keywords="0x8000000000000000" message="Docking Service: DockWindow called.">
+    </event>
+    <event value="6206" version="0" opcode="1" channel="16" level="4" task="6203" keywords="0x8000000000000000" message="Docking Service: UndockWindow called.">
+    </event>
+    <event value="6207" version="0" opcode="2" channel="16" level="4" task="6203" keywords="0x8000000000000000" message="Docking Service: UndockWindow called.">
+    </event>
+    <event value="6208" version="0" opcode="1" channel="16" level="4" task="6204" keywords="0x8000000000000000" message="Docking Service: Handling work area / resolution changes.">
+    </event>
+    <event value="6209" version="0" opcode="2" channel="16" level="4" task="6204" keywords="0x8000000000000000" message="Docking Service: Handling work area / resolution changes.">
+    </event>
+    <event value="6252" version="0" opcode="1" channel="16" level="4" task="6252" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6253" version="0" opcode="2" channel="16" level="4" task="6252" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6256" version="0" opcode="1" channel="16" level="4" task="6256" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6257" version="0" opcode="2" channel="16" level="4" task="6256" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6400" version="0" opcode="1" channel="16" level="4" task="6400" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6401" version="0" opcode="2" channel="16" level="4" task="6400" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6402" version="0" opcode="1" channel="16" level="4" task="6402" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6403" version="0" opcode="2" channel="16" level="4" task="6402" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6404" version="0" opcode="1" channel="16" level="4" task="6404" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6405" version="0" opcode="2" channel="16" level="4" task="6404" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6406" version="0" opcode="1" channel="16" level="4" task="6406" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6407" version="0" opcode="2" channel="16" level="4" task="6406" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6408" version="0" opcode="1" channel="16" level="4" task="6408" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6409" version="0" opcode="2" channel="16" level="4" task="6408" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6410" version="0" opcode="1" channel="16" level="4" task="6410" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6411" version="0" opcode="2" channel="16" level="4" task="6410" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6412" version="0" opcode="1" channel="16" level="4" task="6412" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6413" version="0" opcode="2" channel="16" level="4" task="6412" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6501" version="0" opcode="0" channel="16" level="4" task="6500" keywords="0x8000000000000000" message="Setting for AppId: %1 has been changed to %2 from Permissions View">
+    </event>
+    <event value="6502" version="0" opcode="0" channel="16" level="4" task="6500" keywords="0x8000000000000000" message="Setting for AppId: %1 has enabled = %2 in Permissions View">
+    </event>
+    <event value="6503" version="0" opcode="0" channel="16" level="4" task="6500" keywords="0x8000000000000000" message="Setting for AppId: %1 is supported in Permissions View? %2.">
+    </event>
+    <event value="6506" version="0" opcode="0" channel="16" level="4" task="6500" keywords="0x8000000000000000" message="Setting Sync Scheduled for Package: %2 on behalf of AppUserModelId: %1.">
+    </event>
+    <event value="6601" version="0" opcode="1" channel="16" level="4" task="6600" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6606" version="0" opcode="1" channel="16" level="4" task="6605" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6607" version="0" opcode="2" channel="16" level="4" task="6605" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6611" version="0" opcode="1" channel="16" level="4" task="6610" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6612" version="0" opcode="2" channel="16" level="4" task="6610" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6616" version="0" opcode="1" channel="16" level="4" task="6615" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6617" version="0" opcode="2" channel="16" level="4" task="6615" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6621" version="0" opcode="1" channel="16" level="4" task="6620" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6622" version="0" opcode="2" channel="16" level="4" task="6620" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6631" version="0" opcode="1" channel="16" level="4" task="6630" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6632" version="0" opcode="2" channel="16" level="4" task="6630" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6636" version="0" opcode="1" channel="16" level="4" task="6635" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6637" version="0" opcode="2" channel="16" level="4" task="6635" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6641" version="0" opcode="1" channel="16" level="4" task="6640" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6642" version="0" opcode="2" channel="16" level="4" task="6640" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6644" version="0" opcode="1" channel="16" level="4" task="6643" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6645" version="0" opcode="2" channel="16" level="4" task="6643" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6647" version="0" opcode="1" channel="16" level="4" task="6646" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6648" version="0" opcode="2" channel="16" level="4" task="6646" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6650" version="0" opcode="1" channel="16" level="4" task="6649" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6651" version="0" opcode="2" channel="16" level="4" task="6649" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6653" version="0" opcode="1" channel="16" level="4" task="6641" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6654" version="0" opcode="2" channel="16" level="4" task="6641" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6690" version="0" opcode="0" channel="17" level="3" task="6643" keywords="0x4000000000000000" message="The request for a Print Task timed out for application %1.">
+    </event>
+    <event value="6691" version="0" opcode="0" channel="17" level="3" task="6646" keywords="0x4000000000000000" message="The request for a Play Source timed out for application %1.">
+    </event>
+    <event value="6714" version="0" opcode="1" channel="16" level="4" task="6714" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6715" version="0" opcode="2" channel="16" level="4" task="6714" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6716" version="0" opcode="0" channel="16" level="4" task="6716" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6718" version="0" opcode="0" channel="16" level="4" task="6718" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6720" version="0" opcode="1" channel="16" level="4" task="6720" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6721" version="0" opcode="2" channel="16" level="4" task="6720" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6722" version="0" opcode="0" channel="16" level="4" task="6722" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6723" version="0" opcode="0" channel="16" level="4" task="6723" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6820" version="0" opcode="1" channel="16" level="4" task="6820" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6821" version="0" opcode="2" channel="16" level="4" task="6820" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6822" version="0" opcode="1" channel="16" level="4" task="6821" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6823" version="0" opcode="2" channel="16" level="4" task="6821" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6824" version="0" opcode="1" channel="16" level="4" task="6822" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6825" version="0" opcode="2" channel="16" level="4" task="6822" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6826" version="0" opcode="1" channel="16" level="4" task="6823" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6827" version="0" opcode="2" channel="16" level="4" task="6823" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6828" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6841" version="0" opcode="2" channel="16" level="4" task="6840" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6844" version="0" opcode="1" channel="16" level="4" task="6844" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6845" version="0" opcode="2" channel="16" level="4" task="6844" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6850" version="0" opcode="1" channel="17" level="4" task="6850" keywords="0x4000000000000000" message="Checking secondary tile roaming quota.">
+    </event>
+    <event value="6851" version="0" opcode="2" channel="17" level="4" task="6850" keywords="0x4000000000000000" message="Finished checking secondary tile roaming quota with HRESULT %1, quota %2 bytes, current usage %3 bytes.">
+    </event>
+    <event value="6852" version="0" opcode="1" channel="17" level="4" task="6852" keywords="0x4000000000000000" message="Enforcing secondary tile roaming quota - need to reduce %1 bytes.">
+    </event>
+    <event value="6853" version="0" opcode="2" channel="17" level="4" task="6852" keywords="0x4000000000000000" message="Finished enforcing secondary tile roaming quota with HRESULT %1, reclaimed %2 bytes.">
+    </event>
+    <event value="6854" version="0" opcode="0" channel="16" level="4" task="6852" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6855" version="0" opcode="1" channel="16" level="4" task="6855" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6856" version="0" opcode="2" channel="16" level="4" task="6855" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6857" version="0" opcode="0" channel="16" level="4" task="6855" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7039" version="0" opcode="1" channel="16" level="4" task="2320" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7040" version="0" opcode="2" channel="16" level="4" task="2320" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7130" version="0" opcode="1" channel="16" level="4" task="7130" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7131" version="0" opcode="2" channel="16" level="4" task="7130" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7150" version="0" opcode="0" channel="16" level="4" task="7152" keywords="0x8000000000000000" message="Entering SetUseConnectedSearch API.">
+    </event>
+    <event value="7151" version="0" opcode="0" channel="16" level="4" task="7151" keywords="0x8000000000000000" message="Entering SetLocationAwareness API.">
+    </event>
+    <event value="7152" version="0" opcode="0" channel="16" level="4" task="7150" keywords="0x8000000000000000" message="Entering SetSafeSearch API.">
+    </event>
+    <event value="7153" version="0" opcode="0" channel="16" level="4" task="7153" keywords="0x8000000000000000" message="Entering DeleteOnlineSearchHistory API.">
+    </event>
+    <event value="7154" version="0" opcode="0" channel="16" level="4" task="7154" keywords="0x8000000000000000" message="Entering DeleteLocalSearchHistory API.">
+    </event>
+    <event value="7155" version="0" opcode="0" channel="16" level="4" task="7153" keywords="0x8000000000000000" message="Exiting DeleteOnlineHistory API - HRESULT: 0x%1.">
+    </event>
+    <event value="7156" version="0" opcode="0" channel="16" level="4" task="7154" keywords="0x8000000000000000" message="Exiting DeleteLocalHistory API - HRESULT: 0x%1.">
+    </event>
+    <event value="7157" version="0" opcode="0" channel="16" level="4" task="7152" keywords="0x8000000000000000" message="Exiting SetUseConnectedSearch API - ChangeTo: %1. HRESULT: 0x%2.">
+    </event>
+    <event value="7158" version="0" opcode="0" channel="16" level="4" task="7151" keywords="0x8000000000000000" message="Exiting SetLocationAwareness API - ChangeTo: %1. HRESULT: 0x%2.">
+    </event>
+    <event value="7159" version="0" opcode="0" channel="16" level="4" task="7150" keywords="0x8000000000000000" message="Exiting SetSafeSearch API - ChangeTo: %1. HRESULT: 0x%2.">
+    </event>
+    <event value="7160" version="0" opcode="1" channel="16" level="4" task="7288" keywords="0x8000000000000000" message="Entering LogDetailArrowClick API call.">
+    </event>
+    <event value="7161" version="0" opcode="2" channel="16" level="4" task="7288" keywords="0x8000000000000000" message="Exiting LogDetailArrowClick API call.">
+    </event>
+    <event value="7162" version="0" opcode="1" channel="16" level="4" task="7282" keywords="0x8000000000000000" message="Entering LogDetailArrowClick background worker.">
+    </event>
+    <event value="7163" version="0" opcode="2" channel="16" level="4" task="7282" keywords="0x8000000000000000" message="Exiting LogDetailArrowClick background worker.">
+    </event>
+    <event value="7164" version="0" opcode="1" channel="16" level="4" task="7283" keywords="0x8000000000000000" message="Entering LogAttributionClick API call.">
+    </event>
+    <event value="7165" version="0" opcode="2" channel="16" level="4" task="7283" keywords="0x8000000000000000" message="Exiting LogAttributionClick API call.">
+    </event>
+    <event value="7166" version="0" opcode="1" channel="16" level="4" task="7284" keywords="0x8000000000000000" message="Entering LogAttributionClick background worker.">
+    </event>
+    <event value="7167" version="0" opcode="2" channel="16" level="4" task="7284" keywords="0x8000000000000000" message="Exiting LogAttributionClick background worker.">
+    </event>
+    <event value="7168" version="0" opcode="0" channel="16" level="4" task="7285" keywords="0x8000000000000000" message="Detail Arrow Click Properties JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7169" version="0" opcode="0" channel="16" level="4" task="7286" keywords="0x8000000000000000" message="Attribution Click Properties JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7170" version="0" opcode="0" channel="16" level="4" task="7255" keywords="0x8000000000000000" message="Details Visibility JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7171" version="0" opcode="0" channel="16" level="4" task="7256" keywords="0x8000000000000000" message="Attribution Visibility JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7172" version="0" opcode="0" channel="16" level="4" task="7257" keywords="0x8000000000000000" message="App Bar Click JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7173" version="0" opcode="0" channel="16" level="5" task="7288" keywords="0x8000000000000000" message="Detail Arrow Click Event Processing Complete - Error Code: %1, Impression GUID: %2, Telemetry Id: %3, Arrow Direction: %4.">
+    </event>
+    <event value="7174" version="0" opcode="0" channel="16" level="5" task="7258" keywords="0x8000000000000000" message="Detail View Visibility Event Processing Complete - Error Code: %1, Impression GUID: %2, IsVisible?: %3.">
+    </event>
+    <event value="7175" version="0" opcode="0" channel="16" level="5" task="7283" keywords="0x8000000000000000" message="Attribution Overlay Click Event Processing Complete - Error Code: %1, Impression GUID: %2, Telemetry Id: %3.">
+    </event>
+    <event value="7176" version="0" opcode="0" channel="16" level="5" task="7249" keywords="0x8000000000000000" message="Attribution Overlay Visibility Event Processing Complete - Error Code: %1, Impression GUID: %2, IsVisible?: %3.">
+    </event>
+    <event value="7177" version="0" opcode="0" channel="16" level="5" task="7251" keywords="0x8000000000000000" message="App Bar Click Event Processing Complete - Error Code: %1, Impression GUID: %2, Telemetry Id: %3, Command Id: %4.">
+    </event>
+    <event value="7178" version="0" opcode="1" channel="16" level="4" task="7258" keywords="0x8000000000000000" message="Entering LogDetailsViewVisibility API call.">
+    </event>
+    <event value="7179" version="0" opcode="2" channel="16" level="4" task="7258" keywords="0x8000000000000000" message="Exiting LogDetailsViewVisibility API call.">
+    </event>
+    <event value="7180" version="0" opcode="1" channel="16" level="4" task="7259" keywords="0x8000000000000000" message="Entering LogDetailsViewVisibility background worker.">
+    </event>
+    <event value="7181" version="0" opcode="2" channel="16" level="4" task="7259" keywords="0x8000000000000000" message="Exiting LogDetailsViewVisibility background worker.">
+    </event>
+    <event value="7182" version="0" opcode="1" channel="16" level="4" task="7249" keywords="0x8000000000000000" message="Entering LogAttributionVisibility API call.">
+    </event>
+    <event value="7183" version="0" opcode="2" channel="16" level="4" task="7249" keywords="0x8000000000000000" message="Exiting LogAttributionVisibility API call.">
+    </event>
+    <event value="7184" version="0" opcode="1" channel="16" level="4" task="7250" keywords="0x8000000000000000" message="Entering LogAttributionVisibility background worker.">
+    </event>
+    <event value="7185" version="0" opcode="2" channel="16" level="4" task="7250" keywords="0x8000000000000000" message="Exiting LogAttributionVisibility background worker.">
+    </event>
+    <event value="7186" version="0" opcode="1" channel="16" level="4" task="7251" keywords="0x8000000000000000" message="Entering LogAppBarClick API call.">
+    </event>
+    <event value="7187" version="0" opcode="2" channel="16" level="4" task="7251" keywords="0x8000000000000000" message="Exiting LogAppBarClick API call.">
+    </event>
+    <event value="7188" version="0" opcode="1" channel="16" level="4" task="7252" keywords="0x8000000000000000" message="Entering LogAppBarClick background worker.">
+    </event>
+    <event value="7189" version="0" opcode="2" channel="16" level="4" task="7252" keywords="0x8000000000000000" message="Exiting LogAppBarClick background worker.">
+    </event>
+    <event value="7190" version="0" opcode="0" channel="16" level="4" task="7253" keywords="0x8000000000000000" message="Local Suggestion JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7191" version="0" opcode="0" channel="16" level="4" task="7254" keywords="0x8000000000000000" message="Perf Ping JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7192" version="0" opcode="1" channel="16" level="4" task="7238" keywords="0x8000000000000000" message="Entering GetInstrumenationForDirectQuery API call.">
+    </event>
+    <event value="7193" version="0" opcode="2" channel="16" level="4" task="7238" keywords="0x8000000000000000" message="Exiting GetInstrumenationForDirectQuery API call.">
+    </event>
+    <event value="7194" version="0" opcode="0" channel="16" level="5" task="7238" keywords="0x8000000000000000" message="Direct Query Instrumentation Processing Complete - Error Code: %1, Partial Query: %2, Number of Suggestions Shown: %3, Max Query Length With Suggestion: %4, Instrumentation Payload: %5.">
+    </event>
+    <event value="7195" version="0" opcode="1" channel="16" level="4" task="7289" keywords="0x8000000000000000" message="Entering LogParsingError API call.">
+    </event>
+    <event value="7196" version="0" opcode="2" channel="16" level="4" task="7289" keywords="0x8000000000000000" message="Exiting LogParsingError API call.">
+    </event>
+    <event value="7197" version="0" opcode="1" channel="16" level="4" task="7241" keywords="0x8000000000000000" message="Entering LogParsingError background worker.">
+    </event>
+    <event value="7198" version="0" opcode="2" channel="16" level="4" task="7241" keywords="0x8000000000000000" message="Exiting LogParsingError background worker.">
+    </event>
+    <event value="7199" version="0" opcode="0" channel="16" level="5" task="7289" keywords="0x8000000000000000" message="Parsing Error Event Processing Complete - Operation Error Code: %1, Impression GUID: %2, Logged Error Code: %3, Error Url: %4, Error HBT: %5.">
+    </event>
+    <event value="7200" version="0" opcode="0" channel="16" level="4" task="7290" keywords="0x8000000000000000" message="Active Impression GUID has been set - Operation Error Code: %1, Impression GUID: %2.">
+    </event>
+    <event value="7202" version="0" opcode="2" channel="16" level="4" task="7200" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7203" version="0" opcode="0" channel="16" level="5" task="7200" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7204" version="0" opcode="0" channel="16" level="3" task="7290" keywords="0x8000000000000000" message="Instrumentation Payload dropped because Impression Guid was not set - Dropped Instrumentation API: %1.">
+    </event>
+    <event value="7205" version="0" opcode="1" channel="16" level="4" task="7204" keywords="0x8000000000000000" message="Entering LogWebResultClick API call.">
+    </event>
+    <event value="7206" version="0" opcode="2" channel="16" level="4" task="7204" keywords="0x8000000000000000" message="Exiting LogWebResultClick API call.">
+    </event>
+    <event value="7207" version="0" opcode="1" channel="16" level="4" task="7205" keywords="0x8000000000000000" message="Entering LogWebResultClick background worker.">
+    </event>
+    <event value="7208" version="0" opcode="2" channel="16" level="4" task="7205" keywords="0x8000000000000000" message="Exiting LogWebResultClick background worker.">
+    </event>
+    <event value="7209" version="0" opcode="0" channel="16" level="5" task="7204" keywords="0x8000000000000000" message="Click Event Processing Complete - Error Code: %1, Impression GUID: %2, Target ID: %3, Input Method: %4, First Item ID: %5, Last Item ID: %6, Viewport Flags: %7.">
+    </event>
+    <event value="7210" version="0" opcode="0" channel="16" level="4" task="7208" keywords="0x8000000000000000" message="Click Event JSON Serialization Complete - Input Method: %1, Timestamp: %2, IsLandscape: %3, JSON: %4.">
+    </event>
+    <event value="7211" version="0" opcode="0" channel="16" level="4" task="7209" keywords="0x8000000000000000" message="Instrumentation Event Enqueued for Upload - Impression GUID: %1, Timestamp: %2, HRESULT: %3, Url: %4, HBT: %5.">
+    </event>
+    <event value="7212" version="0" opcode="0" channel="16" level="4" task="7210" keywords="0x8000000000000000" message="Instrumentation Event Dequeued for Upload - Impression GUID: %1, Timestamp: %2, JSON: %3.">
+    </event>
+    <event value="7213" version="0" opcode="0" channel="16" level="4" task="7211" keywords="0x8000000000000000" message="Instrumentation Payload uploaded - POST Payload: %1, Query String: %2 Error Code: %3.">
+    </event>
+    <event value="7214" version="0" opcode="0" channel="16" level="4" task="7212" keywords="0x8000000000000000" message="Connection Established to Instrumentation Endpoint - Endpoint Id: %1, Host Name: %2, Object Name: %3, User Agent: %4.">
+    </event>
+    <event value="7215" version="0" opcode="0" channel="16" level="4" task="7213" keywords="0x8000000000000000" message="Upload Request sent to Instrumentation Endpoint - HTTP Response Code: %1, HTTP Request Headers: %2, HTTP Post Payload: %3.">
+    </event>
+    <event value="7216" version="0" opcode="1" channel="16" level="4" task="7214" keywords="0x8000000000000000" message="Authentication has started">
+    </event>
+    <event value="7217" version="0" opcode="2" channel="16" level="4" task="7214" keywords="0x8000000000000000" message="Authentication has stopped">
+    </event>
+    <event value="7218" version="0" opcode="0" channel="16" level="4" task="7215" keywords="0x8000000000000000" message="Authentication has succeeded">
+    </event>
+    <event value="7219" version="0" opcode="0" channel="16" level="2" task="7216" keywords="0x8000000000000000" message="Authentication failed - Error Code: 0x%1.">
+    </event>
+    <event value="7221" version="0" opcode="0" channel="16" level="4" task="7219" keywords="0x8000000000000000" message="HTTP Request failed - Error Code: 0x%1.">
+    </event>
+    <event value="7222" version="0" opcode="1" channel="16" level="4" task="7206" keywords="0x8000000000000000" message="Entering LogLocalResultClick API call.">
+    </event>
+    <event value="7223" version="0" opcode="2" channel="16" level="4" task="7206" keywords="0x8000000000000000" message="Exiting LogLocalResultClick API call.">
+    </event>
+    <event value="7224" version="0" opcode="1" channel="16" level="4" task="7207" keywords="0x8000000000000000" message="Entering LogLocalResultClick background worker.">
+    </event>
+    <event value="7225" version="0" opcode="2" channel="16" level="4" task="7207" keywords="0x8000000000000000" message="Exiting LogLocalResultClick background worker.">
+    </event>
+    <event value="7226" version="0" opcode="1" channel="16" level="4" task="7220" keywords="0x8000000000000000" message="Entering LogScroll API call.">
+    </event>
+    <event value="7227" version="0" opcode="2" channel="16" level="4" task="7220" keywords="0x8000000000000000" message="Exiting LogScroll API call.">
+    </event>
+    <event value="7228" version="0" opcode="1" channel="16" level="4" task="7221" keywords="0x8000000000000000" message="Entering LogScroll background worker.">
+    </event>
+    <event value="7229" version="0" opcode="2" channel="16" level="4" task="7221" keywords="0x8000000000000000" message="Exiting LogScroll background worker.">
+    </event>
+    <event value="7232" version="0" opcode="1" channel="16" level="4" task="7223" keywords="0x8000000000000000" message="Entering LogWebLayoutChange API call.">
+    </event>
+    <event value="7233" version="0" opcode="2" channel="16" level="4" task="7223" keywords="0x8000000000000000" message="Exiting LogWebLayoutChange API call.">
+    </event>
+    <event value="7234" version="0" opcode="1" channel="16" level="4" task="7224" keywords="0x8000000000000000" message="Entering LogWebLayoutChange background worker.">
+    </event>
+    <event value="7235" version="0" opcode="2" channel="16" level="4" task="7224" keywords="0x8000000000000000" message="Exiting LogWebLayoutChange background worker.">
+    </event>
+    <event value="7236" version="0" opcode="1" channel="16" level="4" task="7225" keywords="0x8000000000000000" message="Entering LogLocalLayoutChange API call.">
+    </event>
+    <event value="7237" version="0" opcode="2" channel="16" level="4" task="7225" keywords="0x8000000000000000" message="Exiting LogLocalLayoutChange API call.">
+    </event>
+    <event value="7238" version="0" opcode="1" channel="16" level="4" task="7226" keywords="0x8000000000000000" message="Entering LogLocalLayoutChange background worker.">
+    </event>
+    <event value="7239" version="0" opcode="2" channel="16" level="4" task="7226" keywords="0x8000000000000000" message="Exiting LogLocalLayoutChange background worker.">
+    </event>
+    <event value="7241" version="0" opcode="1" channel="16" level="4" task="7228" keywords="0x8000000000000000" message="Entering LogAppVisibilityChange API call.">
+    </event>
+    <event value="7242" version="0" opcode="2" channel="16" level="4" task="7228" keywords="0x8000000000000000" message="Exiting LogAppVisibilityChange API call.">
+    </event>
+    <event value="7243" version="0" opcode="1" channel="16" level="4" task="7229" keywords="0x8000000000000000" message="Entering LogAppVisibilityChange background worker.">
+    </event>
+    <event value="7244" version="0" opcode="2" channel="16" level="4" task="7229" keywords="0x8000000000000000" message="Exiting LogAppVisibilityChange background worker.">
+    </event>
+    <event value="7245" version="0" opcode="1" channel="16" level="4" task="7230" keywords="0x8000000000000000" message="Entering LogAppResize API call.">
+    </event>
+    <event value="7246" version="0" opcode="2" channel="16" level="4" task="7230" keywords="0x8000000000000000" message="Exiting LogAppResize API call.">
+    </event>
+    <event value="7247" version="0" opcode="1" channel="16" level="4" task="7231" keywords="0x8000000000000000" message="Entering LogAppResize background worker.">
+    </event>
+    <event value="7248" version="0" opcode="2" channel="16" level="4" task="7231" keywords="0x8000000000000000" message="Exiting LogAppResizeChange background worker.">
+    </event>
+    <event value="7249" version="0" opcode="0" channel="16" level="5" task="7220" keywords="0x8000000000000000" message="Scroll Event Processing Complete - Error Code: %1, Impression GUID: %2, Scroll Direction: %3, Input Method: %4, First Item ID: %5, Last Item ID: %6, Viewport Flags: %7.">
+    </event>
+    <event value="7250" version="0" opcode="0" channel="16" level="5" task="7228" keywords="0x8000000000000000" message="App Visibility Event Processing Complete - Error Code: %1, Impression GUID: %2, New Visibility State: %3.">
+    </event>
+    <event value="7251" version="0" opcode="0" channel="16" level="5" task="7230" keywords="0x8000000000000000" message="App Resize Event Processing Complete - Error Code: %1, Impression GUID: %2, Orientation: %3, First Item ID: %4, Last Item ID: %5, Viewport Flags: %6.">
+    </event>
+    <event value="7252" version="0" opcode="0" channel="16" level="5" task="7223" keywords="0x8000000000000000" message="Web Layout Event Processing Complete - Error Code: %1, Impression GUID: %2, Layout Action: %3, Telemetry Id affected: %4.">
+    </event>
+    <event value="7253" version="0" opcode="0" channel="16" level="5" task="7225" keywords="0x8000000000000000" message="Local Layout Event Processing Complete - Error Code: %1, Impression GUID: %2, Layout Action: %3, Item Type: %4.">
+    </event>
+    <event value="7254" version="0" opcode="0" channel="16" level="4" task="7232" keywords="0x8000000000000000" message="CI.ModeChange JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7255" version="0" opcode="0" channel="16" level="4" task="7233" keywords="0x8000000000000000" message="CI.AppExit/CI.AppResume JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7256" version="0" opcode="0" channel="16" level="4" task="7222" keywords="0x8000000000000000" message="CI.Swipe JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7257" version="0" opcode="0" channel="16" level="4" task="7227" keywords="0x8000000000000000" message="L.MergeUpdate JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7258" version="0" opcode="1" channel="16" level="4" task="7234" keywords="0x8000000000000000" message="UnAuthentication has started">
+    </event>
+    <event value="7259" version="0" opcode="2" channel="16" level="4" task="7234" keywords="0x8000000000000000" message="UnAuthentication has stopped">
+    </event>
+    <event value="7261" version="0" opcode="0" channel="16" level="2" task="7236" keywords="0x8000000000000000" message="UnAuthentication failed - Error Code: 0x%1.">
+    </event>
+    <event value="7262" version="0" opcode="0" channel="16" level="4" task="7237" keywords="0x8000000000000000" message="UnAuthentication has succeeded: all cookies are cleared">
+    </event>
+    <event value="7263" version="0" opcode="0" channel="16" level="2" task="7218" keywords="0x8000000000000000" message="Authentication failed in getting the token- Error Code: 0x%1.">
+    </event>
+    <event value="7264" version="0" opcode="1" channel="16" level="4" task="7242" keywords="0x8000000000000000" message="Entering LogHttpError API call.">
+    </event>
+    <event value="7265" version="0" opcode="2" channel="16" level="4" task="7242" keywords="0x8000000000000000" message="Exiting LogHttpError API call.">
+    </event>
+    <event value="7266" version="0" opcode="1" channel="16" level="4" task="7243" keywords="0x8000000000000000" message="Entering LogHttpError background worker.">
+    </event>
+    <event value="7267" version="0" opcode="2" channel="16" level="4" task="7243" keywords="0x8000000000000000" message="Exiting LogHttpError background worker.">
+    </event>
+    <event value="7268" version="0" opcode="0" channel="16" level="5" task="7242" keywords="0x8000000000000000" message="HTTP Error Event Processing Complete - Operation Error Code: %1, Impression GUID: %2, Logged Error Code: %3, Error Url: %4, Error HBT: %5.">
+    </event>
+    <event value="7270" version="0" opcode="1" channel="16" level="4" task="7239" keywords="0x8000000000000000" message="Entering LogSuggestion API call.">
+    </event>
+    <event value="7271" version="0" opcode="2" channel="16" level="4" task="7239" keywords="0x8000000000000000" message="Exiting LogSuggestion API call.">
+    </event>
+    <event value="7272" version="0" opcode="1" channel="16" level="4" task="7240" keywords="0x8000000000000000" message="Entering LogSuggestion background worker.">
+    </event>
+    <event value="7273" version="0" opcode="2" channel="16" level="4" task="7240" keywords="0x8000000000000000" message="Exiting LogSuggestion background worker.">
+    </event>
+    <event value="7274" version="0" opcode="0" channel="16" level="5" task="7239" keywords="0x8000000000000000" message="Suggestion Event Processing Complete - Error Code: %1, Partial Query: %2, Selected Position: %3, Max Query Length With Suggestion: %4, Instrumentation Payload: %5.">
+    </event>
+    <event value="7276" version="0" opcode="0" channel="16" level="4" task="7244" keywords="0x8000000000000000" message="CI.Error JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7277" version="0" opcode="1" channel="16" level="4" task="7260" keywords="0x8000000000000000" message="Entering LogPerfPing API call.">
+    </event>
+    <event value="7278" version="0" opcode="2" channel="16" level="4" task="7260" keywords="0x8000000000000000" message="Exiting LogPerfPing API call.">
+    </event>
+    <event value="7279" version="0" opcode="1" channel="16" level="4" task="7261" keywords="0x8000000000000000" message="Entering LogPerfPing background worker.">
+    </event>
+    <event value="7280" version="0" opcode="2" channel="16" level="4" task="7261" keywords="0x8000000000000000" message="Exiting LogPerfPing background worker.">
+    </event>
+    <event value="7282" version="0" opcode="0" channel="16" level="5" task="7260" keywords="0x8000000000000000" message="Perf Ping Event Processing Complete - Error Code: %1, Impression GUID: %2, Data Center: %3, Was Abandoned?: %4. JSON Payload: %5">
+    </event>
+    <event value="7283" version="0" opcode="1" channel="16" level="4" task="7262" keywords="0x8000000000000000" message="Entering LogPerfRequestStart API call.">
+    </event>
+    <event value="7284" version="0" opcode="2" channel="16" level="4" task="7262" keywords="0x8000000000000000" message="Exiting LogPerfRequestStart API call.">
+    </event>
+    <event value="7285" version="0" opcode="1" channel="16" level="4" task="7263" keywords="0x8000000000000000" message="Entering LogPerfResponseReceived API call.">
+    </event>
+    <event value="7286" version="0" opcode="2" channel="16" level="4" task="7263" keywords="0x8000000000000000" message="Exiting LogPerfResponseReceived API call.">
+    </event>
+    <event value="7287" version="0" opcode="1" channel="16" level="4" task="7287" keywords="0x8000000000000000" message="Template download starting - Query String: %1, Impression GUID: %2.">
+    </event>
+    <event value="7288" version="0" opcode="2" channel="16" level="4" task="7287" keywords="0x8000000000000000" message="Template download finished - Query String: %1, Impression GUID: %2, HRESULT: %3.">
+    </event>
+    <event value="7289" version="0" opcode="0" channel="16" level="4" task="7268" keywords="0x8000000000000000" message="Downloaded template written to disk - Template ID: %1.">
+    </event>
+    <event value="7290" version="0" opcode="0" channel="16" level="5" task="7245" keywords="0x8000000000000000" message="Error Instrumentation Retry Timer has been scheduled">
+    </event>
+    <event value="7291" version="0" opcode="0" channel="16" level="5" task="7246" keywords="0x8000000000000000" message="Error Instrumentation Retry Timer Callback has been fired">
+    </event>
+    <event value="7292" version="0" opcode="0" channel="16" level="5" task="7247" keywords="0x8000000000000000" message="Error Instrumentation Event(s) have been dropped after a maximum number of retries">
+    </event>
+    <event value="7293" version="0" opcode="0" channel="16" level="5" task="7248" keywords="0x8000000000000000" message="Error Instrumentation Event has been dropped due to error overflow.">
+    </event>
+    <event value="7380" version="0" opcode="1" channel="16" level="4" task="7380" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7381" version="0" opcode="2" channel="16" level="4" task="7380" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7400" version="0" opcode="0" channel="16" level="4" task="7269" keywords="0x8000000000000000" message="Template Fallback JSON Payload serialized - Payload: %1.">
+    </event>
+    <event value="7401" version="0" opcode="1" channel="16" level="4" task="7292" keywords="0x8000000000000000" message="Entering LogTemplateFallback API call.">
+    </event>
+    <event value="7402" version="0" opcode="2" channel="16" level="4" task="7292" keywords="0x8000000000000000" message="Exiting LogTemplateFallback API call.">
+    </event>
+    <event value="7403" version="0" opcode="1" channel="16" level="4" task="7270" keywords="0x8000000000000000" message="Entering LogTemplateFallback background worker.">
+    </event>
+    <event value="7404" version="0" opcode="2" channel="16" level="4" task="7270" keywords="0x8000000000000000" message="Exiting LogTemplateFallback background worker.">
+    </event>
+    <event value="7405" version="0" opcode="0" channel="16" level="5" task="7292" keywords="0x8000000000000000" message="Template Fallback Event Processing Complete - Operation Error Code: %1, Impression GUID: %2, Fallback Telemetry ID: %3.">
+    </event>
+    <event value="7406" version="0" opcode="1" channel="16" level="4" task="7291" keywords="0x8000000000000000" message="Entering LogTemplateError API call.">
+    </event>
+    <event value="7407" version="0" opcode="2" channel="16" level="4" task="7291" keywords="0x8000000000000000" message="Exiting LogTemplateError API call.">
+    </event>
+    <event value="7408" version="0" opcode="1" channel="16" level="4" task="7271" keywords="0x8000000000000000" message="Entering LogTemplateError background worker.">
+    </event>
+    <event value="7409" version="0" opcode="2" channel="16" level="4" task="7271" keywords="0x8000000000000000" message="Exiting LogTemplateError background worker.">
+    </event>
+    <event value="7410" version="0" opcode="0" channel="16" level="5" task="7291" keywords="0x8000000000000000" message="Template Error Event Processing Complete - Operation Error Code: %1, Impression GUID: %2, Logged Error Code: %3, Error Template ID: %4, Error Telemetry ID: %5.">
+    </event>
+    <event value="7411" version="0" opcode="0" channel="16" level="4" task="7155" keywords="0x8000000000000000" message="Entering SetSearchOnMeteredConnection API.">
+    </event>
+    <event value="7412" version="0" opcode="0" channel="16" level="4" task="7156" keywords="0x8000000000000000" message="Entering SetShareHistory API.">
+    </event>
+    <event value="7413" version="0" opcode="0" channel="16" level="4" task="7155" keywords="0x8000000000000000" message="Exiting SetSearchOnMeteredConnection API - ChangeTo: %1. HRESULT: 0x%2.">
+    </event>
+    <event value="7414" version="0" opcode="0" channel="16" level="4" task="7156" keywords="0x8000000000000000" message="Exiting SetShareHistory API - ChangeTo: %1. HRESULT: 0x%2.">
+    </event>
+    <event value="7415" version="0" opcode="0" channel="16" level="5" task="7223" keywords="0x8000000000000000" message="App Install State Event Processing Complete - Error Code: %1, Impression GUID: %2, Layout Action: %3, Telemetry Id affected: %4.">
+    </event>
+    <event value="7416" version="0" opcode="1" channel="16" level="5" task="7293" keywords="0x8000000000000000" message="Starting Image Downloader Pre-Fetch Task for Impression GUID: %1.">
+    </event>
+    <event value="7417" version="0" opcode="2" channel="16" level="5" task="7293" keywords="0x8000000000000000" message="Completed Image Downloader Pre-Fetch Task for Impression GUID: %1 with HRESULT: %2.">
+    </event>
+    <event value="7418" version="0" opcode="1" channel="16" level="5" task="7294" keywords="0x8000000000000000" message="Starting Image Downloader Deferred Pre-Fetch Task.">
+    </event>
+    <event value="7419" version="0" opcode="2" channel="16" level="5" task="7294" keywords="0x8000000000000000" message="Completed Image Downloader Deferred Pre-Fetch Task with HRESULT: %1.">
+    </event>
+    <event value="7420" version="0" opcode="1" channel="16" level="5" task="7295" keywords="0x8000000000000000" message="Starting Image Download for URL: %1.">
+    </event>
+    <event value="7421" version="0" opcode="2" channel="16" level="5" task="7295" keywords="0x8000000000000000" message="Completed Image Download for URL: %1 with HRESULT: %2.">
+    </event>
+    <event value="7422" version="0" opcode="1" channel="16" level="4" task="7264" keywords="0x8000000000000000" message="Entering LogPerfRequestSent API call.">
+    </event>
+    <event value="7423" version="0" opcode="2" channel="16" level="4" task="7264" keywords="0x8000000000000000" message="Exiting LogPerfRequestSent API call.">
+    </event>
+    <event value="7424" version="0" opcode="1" channel="16" level="4" task="7265" keywords="0x8000000000000000" message="Entering LogPerfRenderComplete API call.">
+    </event>
+    <event value="7425" version="0" opcode="2" channel="16" level="4" task="7265" keywords="0x8000000000000000" message="Exiting LogPerfRenderComplete API call.">
+    </event>
+    <event value="7426" version="0" opcode="1" channel="16" level="4" task="7266" keywords="0x8000000000000000" message="Entering LogPerfImagesComplete API call.">
+    </event>
+    <event value="7427" version="0" opcode="2" channel="16" level="4" task="7266" keywords="0x8000000000000000" message="Exiting LogPerfImagesComplete API call.">
+    </event>
+    <event value="7428" version="0" opcode="1" channel="16" level="4" task="7267" keywords="0x8000000000000000" message="Entering LogPerfAbandoned API call.">
+    </event>
+    <event value="7429" version="0" opcode="2" channel="16" level="4" task="7267" keywords="0x8000000000000000" message="Exiting LogPerfAbandoned API call.">
+    </event>
+    <event value="7430" version="0" opcode="1" channel="16" level="4" task="7296" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7431" version="0" opcode="2" channel="16" level="4" task="7296" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7432" version="0" opcode="0" channel="16" level="4" task="7297" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7433" version="0" opcode="0" channel="16" level="4" task="7297" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7434" version="0" opcode="0" channel="16" level="4" task="7272" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7435" version="0" opcode="1" channel="16" level="4" task="7298" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7436" version="0" opcode="2" channel="16" level="4" task="7298" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7437" version="0" opcode="1" channel="16" level="4" task="7299" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7438" version="0" opcode="2" channel="16" level="4" task="7299" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7439" version="0" opcode="0" channel="16" level="5" task="7298" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7440" version="0" opcode="0" channel="16" level="4" task="7157" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7441" version="0" opcode="0" channel="16" level="4" task="7158" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7442" version="0" opcode="0" channel="16" level="4" task="7159" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7443" version="0" opcode="0" channel="16" level="4" task="7160" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7444" version="0" opcode="1" channel="16" level="4" task="7161" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7445" version="0" opcode="2" channel="16" level="4" task="7161" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7446" version="0" opcode="1" channel="16" level="4" task="7162" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7447" version="0" opcode="2" channel="16" level="4" task="7162" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7448" version="0" opcode="1" channel="16" level="4" task="7163" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7449" version="0" opcode="2" channel="16" level="4" task="7163" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7451" version="0" opcode="0" channel="16" level="4" task="7164" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7452" version="0" opcode="1" channel="16" level="4" task="7165" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7453" version="0" opcode="2" channel="16" level="4" task="7165" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7454" version="0" opcode="0" channel="16" level="4" task="7166" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7455" version="0" opcode="0" channel="16" level="4" task="7155" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7456" version="0" opcode="0" channel="16" level="4" task="7155" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7457" version="0" opcode="0" channel="16" level="4" task="7167" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7459" version="0" opcode="1" channel="16" level="4" task="7169" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7460" version="0" opcode="2" channel="16" level="4" task="7169" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7461" version="0" opcode="2" channel="16" level="4" task="7169" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7462" version="0" opcode="0" channel="16" level="4" task="7170" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7701" version="0" opcode="0" channel="16" level="4" task="7700" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8002" version="0" opcode="1" channel="16" level="4" task="8001" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8003" version="0" opcode="2" channel="16" level="4" task="8001" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8005" version="0" opcode="1" channel="16" level="4" task="8004" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8006" version="0" opcode="2" channel="16" level="4" task="8004" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8009" version="0" opcode="0" channel="17" level="2" task="8007" keywords="0x4000000000000000" message="The operation to add an appointment failed with %1.">
+    </event>
+    <event value="8010" version="0" opcode="0" channel="17" level="2" task="8008" keywords="0x4000000000000000" message="The operation to remove an appointment failed with %1.">
+    </event>
+    <event value="8025" version="0" opcode="0" channel="17" level="2" task="8024" keywords="0x4000000000000000" message="Appointment action %1 failed with HRESULT %2.">
+    </event>
+    <event value="8027" version="0" opcode="0" channel="17" level="2" task="8026" keywords="0x4000000000000000" message="The operation to replace an appointment failed with %1.">
+    </event>
+    <event value="8028" version="0" opcode="1" channel="16" level="4" task="8010" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8029" version="0" opcode="2" channel="16" level="4" task="8010" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8030" version="0" opcode="1" channel="16" level="4" task="8011" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8031" version="0" opcode="2" channel="16" level="4" task="8011" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8205" version="0" opcode="0" channel="16" level="4" task="8204" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8207" version="0" opcode="0" channel="16" level="4" task="8206" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8209" version="0" opcode="0" channel="16" level="4" task="8208" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8211" version="0" opcode="0" channel="16" level="4" task="8210" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8213" version="0" opcode="0" channel="16" level="4" task="8212" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8215" version="0" opcode="1" channel="16" level="4" task="8214" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8216" version="0" opcode="2" channel="16" level="4" task="8214" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8218" version="0" opcode="0" channel="16" level="4" task="8217" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8220" version="0" opcode="0" channel="16" level="4" task="8219" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8222" version="0" opcode="0" channel="16" level="4" task="8221" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="9950" version="0" opcode="0" channel="16" level="4" task="9950" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="9951" version="0" opcode="0" channel="16" level="4" task="9951" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="10000" version="0" opcode="1" channel="16" level="4" task="10001" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="11100" version="0" opcode="0" channel="16" level="4" task="2417" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="11110" version="0" opcode="0" channel="16" level="4" task="2411" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="11111" version="0" opcode="0" channel="17" level="2" task="2419" keywords="0x4000000000000002" message="">
+    </event>
+    <event value="11115" version="0" opcode="0" channel="16" level="4" task="2420" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="11116" version="0" opcode="0" channel="16" level="4" task="2421" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="11118" version="0" opcode="1" channel="16" level="4" task="2422" keywords="0x8001000000000002" message="">
+    </event>
+    <event value="11119" version="0" opcode="2" channel="16" level="4" task="2422" keywords="0x8001000000000002" message="">
+    </event>
+    <event value="11120" version="0" opcode="1" channel="16" level="4" task="2423" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="11121" version="0" opcode="2" channel="16" level="4" task="2423" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="11122" version="0" opcode="0" channel="16" level="4" task="2423" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="11123" version="0" opcode="0" channel="16" level="2" task="2424" keywords="0x8000000000000002" message="">
+    </event>
+    <event value="11201" version="0" opcode="1" channel="16" level="4" task="11201" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11202" version="0" opcode="0" channel="16" level="4" task="11201" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11203" version="0" opcode="2" channel="16" level="4" task="11201" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11204" version="0" opcode="1" channel="16" level="4" task="11204" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11205" version="0" opcode="2" channel="16" level="4" task="11204" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11206" version="0" opcode="1" channel="16" level="4" task="11206" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11207" version="0" opcode="2" channel="16" level="4" task="11206" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11208" version="0" opcode="1" channel="16" level="4" task="11208" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11209" version="0" opcode="2" channel="16" level="4" task="11208" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11210" version="0" opcode="1" channel="16" level="4" task="11210" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11211" version="0" opcode="2" channel="16" level="4" task="11210" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11212" version="0" opcode="0" channel="16" level="4" task="11212" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11213" version="0" opcode="0" channel="16" level="4" task="11213" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11214" version="0" opcode="0" channel="16" level="4" task="11214" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11215" version="0" opcode="0" channel="16" level="4" task="11215" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11301" version="0" opcode="1" channel="16" level="4" task="11301" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="11302" version="0" opcode="2" channel="16" level="4" task="11301" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="11303" version="0" opcode="1" channel="16" level="4" task="11303" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="11304" version="0" opcode="2" channel="16" level="4" task="11303" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="11305" version="0" opcode="0" channel="16" level="4" task="11305" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="11306" version="0" opcode="0" channel="16" level="4" task="11306" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="11307" version="0" opcode="0" channel="16" level="4" task="11307" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="11537" version="0" opcode="0" channel="17" level="4" task="11536" keywords="0x4000000000000000" message="">
+    </event>
+  </events>
+</provider>

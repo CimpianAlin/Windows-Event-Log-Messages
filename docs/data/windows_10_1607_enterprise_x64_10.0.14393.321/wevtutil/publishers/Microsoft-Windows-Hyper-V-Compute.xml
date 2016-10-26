@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-Compute" guid="17103e3f-3c6e-4677-bb17-3b267eb5be57" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=vmcompute.exe&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\vmcompute.exe" parameterFileName="C:\Windows\system32\ntdll.dll" messageFileName="C:\Windows\system32\vmcompute.exe" message="Microsoft-Windows-Hyper-V-Compute" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Compute-Admin" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Compute-Operational" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Compute-Analytic" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="VMT_DM_ADD" value="768" eventGUID="00000000-0000-0000-0000-000000000000" message="Dynamic memory - add memory">
+    </task>
+    <task name="VMT_DM_REMOVE" value="769" eventGUID="00000000-0000-0000-0000-000000000000" message="Dynamic memory - remove memory">
+    </task>
+    <task name="VMT_DM_SLP_ADD" value="770" eventGUID="00000000-0000-0000-0000-000000000000" message="Dynamic memory - add memory (SLP)">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="VMK_HYPERV_PERF" mask="1" message="Hyper-V performance traces">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_OUTER" mask="2" message="Hyper-V performance traces (outer operations)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_INNER" mask="4" message="Hyper-V performance traces (inner operations)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_VERBOSE" mask="8" message="Hyper-V performance traces (verbose)">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="101" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="102" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="103" version="0" opcode="0" channel="18" level="1" task="0" keywords="0x2000000000000000" message="%1">
+    </event>
+    <event value="500" version="0" opcode="1" channel="18" level="4" task="768" keywords="0x2001000000000003" message="Started DM operation add memory. Balancer requested to add %2 pages. (Virtual machine ID %1)">
+    </event>
+    <event value="501" version="0" opcode="2" channel="18" level="4" task="768" keywords="0x2001000000000003" message="DM operation add memory completed %3 pages were added, time %2 s. (Virtual machine ID %1)">
+    </event>
+    <event value="502" version="0" opcode="1" channel="18" level="4" task="769" keywords="0x2001000000000003" message="Started DM operation remove memory. Balancer requested to remove %2 pages. (Virtual machine ID %1)">
+    </event>
+    <event value="503" version="0" opcode="2" channel="18" level="4" task="769" keywords="0x2001000000000003" message="DM operation remove memory completed %3 pages were removed, time %2 s. (Virtual machine ID %1)">
+    </event>
+    <event value="504" version="0" opcode="1" channel="18" level="4" task="770" keywords="0x2001000000000003" message="Started DM operation add memory (SLP). Balancer requested to add %2 pages. (Virtual machine ID %1)">
+    </event>
+    <event value="505" version="0" opcode="2" channel="18" level="4" task="770" keywords="0x2001000000000003" message="DM operation add memory (SLP) completed %3 pages were added, time %2 s. (Virtual machine ID %1)">
+    </event>
+    <event value="506" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2001000000000003" message="Virtual machine ID %1 : memory pressure %2.">
+    </event>
+    <event value="507" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2001000000000003" message="Virtual machine ID %1 : committed memory %2.">
+    </event>
+    <event value="508" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2001000000000003" message="Virtual machine ID %1 : available memory %2.">
+    </event>
+    <event value="509" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2001000000000003" message="Virtual machine ID %1 : actual total physical memory %2.">
+    </event>
+    <event value="510" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2001000000000003" message="Virtual machine ID %1 : guest visible physical memory %2.">
+    </event>
+    <event value="511" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2001000000000003" message="NUMA node %1: system average pressure: %2.">
+    </event>
+    <event value="512" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2001000000000003" message="NUMA node %1: system available memory: %2 MB.">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Host Compute Service is starting.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Host Compute Service started successfully.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Host Compute Service is shutting down.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Host Compute Service shut down successfully.">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Create compute system, result %2">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Start compute system, result %2">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Shut down compute system, result %2">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Terminate compute system, result %2">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Pause compute system, options &apos;%3&apos;, result %2">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Resume compute system, options &apos;%3&apos;, result %2">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Get compute system properties, query &apos;%3&apos;, result %2">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Modify compute system, settings &apos;%3&apos;, result %2">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Query compute system notification, result %2, notification %3 / %4">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Queue system notification: %2 / %3">
+    </event>
+    <event value="2010" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Create Container, type &apos;%2&apos;, settings &apos;%3&apos;">
+    </event>
+    <event value="2011" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Create Container VM, VM ID %3, result %2">
+    </event>
+    <event value="2012" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Create Container template VM, image path &apos;%4&apos;, VP count %2, memory %3 MB">
+    </event>
+    <event value="2013" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Using template VM &apos;%2&apos;">
+    </event>
+    <event value="2014" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Create Virtual Machine">
+    </event>
+    <event value="2500" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Create process, parameters &apos;%4&apos;, result %2, process ID %3">
+    </event>
+    <event value="2501" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Terminate process, process ID %3, result %2">
+    </event>
+    <event value="2502" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Query process notification, process ID %3, result %2, notification %4 / %5">
+    </event>
+    <event value="2503" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[%1] Queue process notification %3 / %4, process ID %2">
+    </event>
+    <event value="10000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Host Compute Service failed to start:  %1 (%2)">
+    </event>
+    <event value="10001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The dynamic memory balancer failed to start because the host system is not supported.">
+    </event>
+    <event value="10002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Virtual machine &apos;%1&apos; cannot be started on this server. The virtual machine NUMA topology requirements cannot be satisfied by the server NUMA topology. Try to use the server NUMA topology, or enable NUMA spanning. (Virtual machine ID %2).">
+    </event>
+    <event value="10003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Virtual machine &apos;%1&apos; cannot be started on this server.">
+    </event>
+    <event value="10004" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; failed to start worker process: %3 (%4). (Virtual machine ID %2)">
+    </event>
+    <event value="10005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to start worker process: %3 (%4). (Virtual machine ID %2)">
+    </event>
+    <event value="10006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The virtual machine &apos;%1&apos; with RAM size %3 MB failed to reset due to insufficient memory. %4 MB of memory is currently available to Hyper-V to provide both memory and supporting services to starting virtual machines. (Virtual machine ID %2)">
+    </event>
+    <event value="10007" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to reset the virtual machine &apos;%1&apos; (Virtual machine ID %2).">
+    </event>
+    <event value="10008" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The virtual machine &apos;%1&apos; with RAM size %3 MB failed to start due to insufficient memory. %4 MB of memory is currently available to Hyper-V to provide both memory and supporting services to starting virtual machines. (Virtual machine ID %2)">
+    </event>
+    <event value="10009" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to start the virtual machine &apos;%1&apos; (Virtual machine ID %2).">
+    </event>
+    <event value="10010" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The root memory reserve key (HKLM\Software\Microsoft\Windows NT\CurrentVersion\Virtualization\MemoryReserve) is set too low.">
+    </event>
+    <event value="10011" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The root memory reserve key (HKLM\Software\Microsoft\Windows NT\CurrentVersion\Virtualization\MemoryReserve) is set too low.">
+    </event>
+    <event value="10013" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="DM operation add for the virtual machine &apos;%1&apos; took more than %3 seconds (Virtual machine ID %2).">
+    </event>
+    <event value="10014" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="DM operation remove for the virtual machine &apos;%1&apos; took more than %3 seconds (Virtual machine ID %2).">
+    </event>
+    <event value="10015" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The dynamic memory balancer could not balance the system due to high memory pressure.">
+    </event>
+    <event value="10016" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Smart Paging was active for the virtual machine &apos;%1&apos; more than %3 seconds (Virtual machine ID %2).">
+    </event>
+    <event value="10017" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The virtual machine &apos;%1&apos; stopped using Smart Paging after %3 seconds (Virtual machine ID %2).">
+    </event>
+    <event value="10018" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="DM operation add for the virtual machine &apos;%1&apos; failed with error: %3 (%4)  (Virtual machine ID %2).">
+    </event>
+    <event value="10019" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="DM operation remove for the virtual machine &apos;%1&apos; failed with error: %3 (%4)  (Virtual machine ID %2).">
+    </event>
+    <event value="10020" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The dynamic memory balancer could not add memory to the virtual machine &apos;%1&apos; because its configured maximum has been reached (Virtual machine ID %2).">
+    </event>
+    <event value="10021" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to start the virtual machine &apos;%1&apos; (Virtual machine ID %2).">
+    </event>
+    <event value="10022" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The memory specified for the virtual machine cannot be supported by this host. For instance, this can happen when the startup memory for the virtual machine exceeds the total memory on the host.">
+    </event>
+    <event value="11000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The specified compute system configuration is invalid: %1 (%2, &apos;%3&apos;).">
+    </event>
+    <event value="11001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The specified property query is invalid: %1 (%2, &apos;%3&apos;).">
+    </event>
+    <event value="11002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The specified options document is invalid: %1 (%2, &apos;%3&apos;).">
+    </event>
+    <event value="11003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The specified settings document is invalid: %1 (%2, &apos;%3&apos;).">
+    </event>
+    <event value="11004" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Failed to recover compute system (%1): %2 (%3).">
+    </event>
+    <event value="11500" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The specified number of processors is not supported by the system (%3).">
+    </event>
+    <event value="11501" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The specified relative processor weight is out of valid range (%3).">
+    </event>
+    <event value="11502" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The specified limit for the processors usage is out of valid range (%3).">
+    </event>
+    <event value="11503" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The specified Storage Quality of Service settings are not supported on Data Volume &apos;%4&apos;: %2 (%3) (Container ID %1)">
+    </event>
+    <event value="11504" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Storage Quality of Service has been applied to a Container and to one or mode Data Volumes that reside on the same disk. Storage Quality of Service settings applied to this configuration may not be accurately enforced. Storage Quality of Service best practices recommend that Data Volumes reside on different disks than the Container components, including the Page File. (Container ID %1)">
+    </event>
+    <event value="11505" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The specified memory amount is out of valid range (%3).">
+    </event>
+    <event value="11506" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The specified process parameters are invalid: %1 (%2, &apos;%3&apos;).">
+    </event>
+    <event value="11507" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to setup the external credentials for Container &apos;%1&apos;: %2 (%3).">
+    </event>
+    <event value="12000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to create the Virtual Machine for Hyper-V Container &apos;%1&apos;: %2 (%3).">
+    </event>
+    <event value="12001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cannot start Hyper-V Container &apos;%1&apos; since the hypervisor is not running in the host.">
+    </event>
+    <event value="12002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to create the Virtual Machine for Hyper-V Container template &apos;%1&apos;: %2 (%3).">
+    </event>
+    <event value="12003" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Cannot create a template for a Hyper-V Container, reached the maximum number of templates.">
+    </event>
+    <event value="12004" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to setup the template for a Hyper-V Container: %2 (%3).">
+    </event>
+    <event value="12100" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to create network endpoint for Container &apos;%1&apos;: %2 (%3).">
+    </event>
+    <event value="12101" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to delete network endpoint for Container &apos;%1&apos;, network endpoint ID &apos;%4&apos;: %2 (%3).">
+    </event>
+    <event value="12102" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to attach network endpoint to Container &apos;%1&apos;, network endpoint ID &apos;%4&apos;: %2 (%3).">
+    </event>
+    <event value="12103" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to detach network endpoint from Container &apos;%1&apos;, network endpoint ID &apos;%4&apos;: %2 (%3).">
+    </event>
+    <event value="12104" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to query network endpoint properties for Container &apos;%1&apos;, network endpoint ID &apos;%4&apos;: %2 (%3).">
+    </event>
+    <event value="12105" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to create network adapter for Container &apos;%1&apos;, network endpoint ID &apos;%4&apos;: %2 (%3).">
+    </event>
+    <event value="65530" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="--">
+    </event>
+    <event value="65531" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="65532" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1|%2|%3">
+    </event>
+    <event value="65533" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1|%2|%3|%4">
+    </event>
+    <event value="65534" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1|%2|%3|%4">
+    </event>
+    <event value="65535" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1|%2|%3|%4">
+    </event>
+  </events>
+</provider>

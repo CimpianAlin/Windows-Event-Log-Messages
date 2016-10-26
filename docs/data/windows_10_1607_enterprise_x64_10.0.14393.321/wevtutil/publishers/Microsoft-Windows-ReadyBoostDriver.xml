@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ReadyBoostDriver" guid="2a274310-42d5-4019-b816-e4b8c7abe95c" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\rdyboost.sys" messageFileName="C:\Windows\system32\drivers\rdyboost.sys" message="Microsoft-Windows-ReadyBoostDriver" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ReadyBoostDriver/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-ReadyBoostDriver/Operational" id="17" flags="0" message="Microsoft-Windows-ReadyBoostDriver/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="StoreRead" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreAdd" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreRemove" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreCreate" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreDelete" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreRundown" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="VolumeMapRundown" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="VolumeMapCreate" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="VolumeMapRemove" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreIgnoredIO" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReadyBootIO" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreCorruption" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StorePageRundown" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RegionEvict" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RegionWrite" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UnpersistFailure" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UserActive" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreIoStats" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GlobalStats" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreEmpty" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RegionRelease" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RegionCompact" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RegionRundown" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WriteEvict" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CacheTermination" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReadyBootPeriodicStats" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReadyBootCacheOp" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="HbdrvIrpTag" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SyncCall" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="StoreOps" mask="10" message="">
+    </keyword>
+    <keyword name="ReadyBoot" mask="20" message="">
+    </keyword>
+    <keyword name="StoreDiag" mask="40" message="">
+    </keyword>
+    <keyword name="StoreContentsRundown" mask="80" message="">
+    </keyword>
+    <keyword name="win:SQM" mask="8000000000000" message="SQM">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="2" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="2" version="1" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="3" version="2" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="4" version="1" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="5" version="4" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="6" version="1" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="7" version="4" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="8" version="1" opcode="0" channel="16" level="4" task="7" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="9" version="1" opcode="0" channel="16" level="4" task="8" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="10" version="1" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="11" version="1" opcode="0" channel="16" level="4" task="10" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="12" version="2" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="13" version="1" opcode="0" channel="17" level="4" task="12" keywords="0x4000000000000050" message="%5
+
+Virtual Address: %2
+Physical Address: %3
+Corruption Window Size: %4">
+    </event>
+    <event value="14" version="1" opcode="0" channel="16" level="4" task="13" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="15" version="2" opcode="0" channel="16" level="4" task="14" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="16" version="2" opcode="0" channel="16" level="4" task="15" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="17" version="1" opcode="0" channel="17" level="4" task="16" keywords="0x4000000000000050" message="A ReadyBoost cache partially or fully failed to persist across boot. This may happen if the cache device was modified on another computer or if this computer was booted into another operating system.">
+    </event>
+    <event value="18" version="1" opcode="0" channel="16" level="4" task="17" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="19" version="1" opcode="0" channel="16" level="4" task="18" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="20" version="1" opcode="0" channel="16" level="4" task="19" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="21" version="1" opcode="0" channel="16" level="4" task="20" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="22" version="1" opcode="0" channel="16" level="4" task="21" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="23" version="1" opcode="1" channel="16" level="4" task="22" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="24" version="1" opcode="2" channel="16" level="4" task="22" keywords="0x8000000000000010" message="">
+    </event>
+    <event value="25" version="1" opcode="0" channel="16" level="4" task="23" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="26" version="1" opcode="0" channel="16" level="4" task="24" keywords="0x8000000000000080" message="">
+    </event>
+    <event value="27" version="1" opcode="0" channel="17" level="4" task="25" keywords="0x4000000000000050" message="%1
+
+Device name: %4
+Cache path: %6">
+    </event>
+    <event value="28" version="1" opcode="0" channel="16" level="4" task="26" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="29" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="30" version="1" opcode="0" channel="16" level="4" task="27" keywords="0x8000000000000060" message="">
+    </event>
+    <event value="31" version="1" opcode="0" channel="16" level="4" task="28" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="32" version="0" opcode="1" channel="16" level="4" task="29" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="33" version="0" opcode="2" channel="16" level="4" task="29" keywords="0x8000000000000020" message="">
+    </event>
+  </events>
+</provider>

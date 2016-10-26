@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Search-ProtocolHandlers" guid="dab065a9-620f-45ba-b5d6-d6bb8efedee9" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Windows%c2%ae%20Search&amp;ProdVer=7.0.14393.0&amp;FileName=SearchIndexer.exe&amp;FileVer=7.0.14393.0" resourceFileName="C:\Windows\system32\SearchIndexer.exe" messageFileName="C:\Windows\system32\SearchIndexer.exe" message="Microsoft-Windows-Search-ProtocolHandlers" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="MapiEmailItem" value="15" eventGUID="33fab7b7-6050-47cd-9a60-9c0690c1865c" message="">
+    </task>
+    <task name="MapiOpenMessage" value="18" eventGUID="679e4dd7-889c-4da8-8b46-718b42e78c66" message="">
+    </task>
+    <task name="MapiGetAttachmentFromMessage" value="19" eventGUID="8439ab22-06e2-4e74-8bc3-452804d1d5aa" message="">
+    </task>
+    <task name="MapiEnumerateAttachments" value="20" eventGUID="54aa8081-a648-4a5c-b699-b966c8e5e451" message="">
+    </task>
+    <task name="MapiGetMapiFpsPropVals" value="21" eventGUID="39eaf2df-71cf-4882-8158-47c60b987c57" message="">
+    </task>
+    <task name="CSCDocument" value="16" eventGUID="695afecd-87e9-4ce2-8c21-bbb4a366b878" message="">
+    </task>
+    <task name="FilterOplockBreak" value="35" eventGUID="2a05c0bb-cf77-424d-aa53-20f9c76a126d" message="">
+    </task>
+    <task name="FilterOplockFail" value="38" eventGUID="74c5c309-4d37-417e-be16-939799c473ae" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Performance" mask="1" message="Flag for events used for performance measurements">
+    </keyword>
+    <keyword name="Indexing" mask="4" message="Indexing-related high level events">
+    </keyword>
+    <keyword name="IndexingItem" mask="8" message="Events reported per each item indexed">
+    </keyword>
+    <keyword name="IndexingChunk" mask="10" message="Events reported per each chunk">
+    </keyword>
+    <keyword name="MAPIPH" mask="1000000" message="MAPI Protocol Handler">
+    </keyword>
+    <keyword name="FilePH" mask="2000000" message="File Protocol Handler, USN notifications">
+    </keyword>
+    <keyword name="CSCPH" mask="4000000" message="CSC (Client Side Cache) Protocol Handler">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="28" version="0" opcode="1" channel="16" level="4" task="15" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="29" version="0" opcode="2" channel="16" level="4" task="15" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="30" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x8000000004000009" message="">
+    </event>
+    <event value="31" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x8000000004000009" message="">
+    </event>
+    <event value="34" version="0" opcode="1" channel="16" level="4" task="18" keywords="0x8000000001000009" message="">
+    </event>
+    <event value="35" version="0" opcode="2" channel="16" level="4" task="18" keywords="0x8000000001000009" message="">
+    </event>
+    <event value="36" version="0" opcode="1" channel="16" level="4" task="19" keywords="0x8000000001000009" message="">
+    </event>
+    <event value="37" version="0" opcode="2" channel="16" level="4" task="19" keywords="0x8000000001000009" message="">
+    </event>
+    <event value="38" version="0" opcode="1" channel="16" level="4" task="20" keywords="0x8000000001000009" message="">
+    </event>
+    <event value="39" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000001000009" message="">
+    </event>
+    <event value="40" version="0" opcode="1" channel="16" level="4" task="21" keywords="0x8000000001000009" message="">
+    </event>
+    <event value="41" version="0" opcode="2" channel="16" level="4" task="21" keywords="0x8000000001000009" message="">
+    </event>
+    <event value="58" version="0" opcode="0" channel="16" level="4" task="35" keywords="0x8000000002000008" message="">
+    </event>
+    <event value="62" version="0" opcode="0" channel="16" level="2" task="38" keywords="0x8000000002000008" message="">
+    </event>
+  </events>
+</provider>

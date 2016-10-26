@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-TerminalServices-RemoteConnectionManager" guid="c76baa63-ae81-421c-b425-340b4b24157f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=termsrv.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\termsrv.dll" messageFileName="C:\Windows\system32\termsrv.dll" message="Microsoft-Windows-TerminalServices-RemoteConnectionManager" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-RemoteConnectionManager/Admin" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-RemoteConnectionManager/Analytic" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-RemoteConnectionManager/Operational" id="18" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-RemoteConnectionManager/Debug" id="19" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="RCMStartStop" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SessionArbitration" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NotifyLogonToLicensing" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="PerfInstrumentation" mask="10000" message="">
+    </keyword>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x800000000000000" message="%1">
+    </event>
+    <event value="3" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x800000000000000" message="%1">
+    </event>
+    <event value="4" version="0" opcode="0" channel="19" level="3" task="0" keywords="0x800000000000000" message="%1">
+    </event>
+    <event value="5" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x800000000000000" message="%1">
+    </event>
+    <event value="6" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x800000000000000" message="%1">
+    </event>
+    <event value="7" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x800000000000000" message="%1">
+    </event>
+    <event value="8" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x800000000000000" message="%1">
+    </event>
+    <event value="9" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x800000000000000" message="%1">
+    </event>
+    <event value="256" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x2000000000010000" message="Remote Desktop Services Remote Connection Manager is starting up">
+    </event>
+    <event value="257" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x2000000000010000" message="Remote Desktop Services Remote Connection Manager has finished start up. Return code %1">
+    </event>
+    <event value="258" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Listener %1 has started listening">
+    </event>
+    <event value="259" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Listener %1 has stopped listening">
+    </event>
+    <event value="260" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000000" message="Listener %1 failed while listening. Error code %2">
+    </event>
+    <event value="261" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Listener %1 received a connection">
+    </event>
+    <event value="262" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Listener %1 has been asked to stop listening">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The remote desktop client &apos;%1&apos; has provided an invalid license.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop Session Host server cannot issue a client license.  It was unable to issue the license due to a changed (mismatched) client license, insufficient memory, or an internal error. Further details for this problem may have been reported at the client&apos;s computer.">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="The RD Session Host server received large number of incomplete connections.  The system may be under attack.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The remote session could not be established from remote desktop client %1 because its temporary license has expired.">
+    </event>
+    <event value="1073742836" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Remote session from client name %1 exceeded the maximum allowed failed logon attempts. The session was forcibly terminated.">
+    </event>
+    <event value="3221226494" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="TermService clustering failed to redirect a client to an alternate clustered server, ntstatus=%1.">
+    </event>
+    <event value="3221226496" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="TermService clustering failed to initialize because the Session Directory Provider failed to initialize, hresult=%1.">
+    </event>
+    <event value="3221226500" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The remote session could not be established from remote desktop client %1 because its license could not be renewed.">
+    </event>
+    <event value="3221226507" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="RD Session Host Server listener stack was down. The relevant status code %1.">
+    </event>
+    <event value="3221226508" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="RD Session Host Server session creation failed. The relevant status code was %1.">
+    </event>
+    <event value="3221226513" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Autoreconnect failed to reconnect user to session because authentication failed. (%1)">
+    </event>
+    <event value="3221226515" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop Session Host server cannot communicate with the Remote Desktop license server %1. Ensure that the computer account for the Remote Desktop Session Host server is a member of the RDS Endpoint Servers group on the license server.">
+    </event>
+    <event value="3221226518" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed to load RD Session Host Server Profile path. Note that the profile path must be less than 256 characters in length. User Name: %1 Domain: %2">
+    </event>
+    <event value="3221226522" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host Server listener %1 is configured with inconsistent authentication and encryption settings. The Encryption Level is currently set to %2 and Security Layer is set to %3. These settings were automatically corrected to allow connections to proceed. Please change the Security Layer and Encryption Level settings in Group Policy or by using the Remote Desktop Session Host Configuration tool in the Administrative Tools folder.">
+    </event>
+    <event value="3221226523" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host Server is configured to use SSL with user selected certificate, however, no usable certificate was found on the server. The default certificate will be used for RD Session Host Server authentication from now on. Please check the security settings by using the Remote Desktop Session Host Configuration tool in the Administrative Tools folder.">
+    </event>
+    <event value="3221226524" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host Server is configured to use a certificate that will expire in %2 days. %1 The SHA1 hash of the certificate is in the event data. Please check the security settings by using the Remote Desktop Session Host Configuration tool in the Administrative Tools folder.">
+    </event>
+    <event value="3221226525" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host Server is configured to use a certificate that is expired. %1 The SHA1 hash of the certificate is in the event data. The default certificate will be used for RD Session Host Server authentication from now on. Please check the security settings by using the Remote Desktop Session Host Configuration tool in the Administrative Tools folder.">
+    </event>
+    <event value="3221226526" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host Server is configured to use a certificate that does not contain an Enhanced Key Usage attribute of Server Authentication. %1 The SHA1 hash of the certificate is in the event data. The default certificate will be used for RD Session Host Server authentication from now on. Please check the security settings by using the Remote Desktop Session Host Configuration tool in the Administrative Tools folder.">
+    </event>
+    <event value="3221226527" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host Server is configured to use a certificate but is unable to access the private key associated with this certificate. %1 The SHA1 hash of the certificate is in the event data. The default certificate will be used for RD Session Host Server authentication from now on. Please check the security settings by using the Remote Desktop Session Host Configuration tool in the Administrative Tools folder.">
+    </event>
+    <event value="3221226528" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A new self signed certificate to be used for RD Session Host Server authentication on SSL connections was generated. The name on this certificate is %1. The SHA1 hash of the certificate is in the event data.">
+    </event>
+    <event value="3221226529" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host Server has failed to create a new self signed certificate to be used for RD Session Host Server authentication on SSL connections. The relevant status code was %1.">
+    </event>
+    <event value="3221226530" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host Server has failed to replace the expired self signed certificate used for RD Session Host Server authentication on SSL connections. The relevant status code was %1.">
+    </event>
+    <event value="3221226531" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host Server authentication certificate configuration data was invalid and the service reset it. If the computer was configured to use a specific certificate, please verify it is available in the certificate store and use the administrative tools to select it again.">
+    </event>
+    <event value="3221226532" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop Services User Home Directory was not set because the path specified does not exist or not accessible. The default Home Directory Path was used instead. User Name: %1 Domain: %2">
+    </event>
+    <event value="3221226533" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Remote Desktop Session Host server was unable to retrieve users Licensing information from AD. Error %1">
+    </event>
+    <event value="3221226534" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host server is configured to use a template-based certificate for Transport Layer Security (TLS) 1.0\Secure Sockets Layer (SSL) authentication and encryption, but the subject name on the certificate is invalid. %1 The SHA1 hash of the certificate is in the event data. Therefore, the default certificate will be used by the RD Session Host server for authentication. To resolve this issue, make sure that template used to create this certificate is configured to use DNS name as subject name .">
+    </event>
+    <event value="3221226535" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A new template-based certificate to be used by the RD Session Host server for Transport Layer Security (TLS) 1.0\Secure Sockets Layer (SSL) authentication and encryption has been installed. The name for this certificate is %1. The SHA1 hash of the certificate is provided in the event data.">
+    </event>
+    <event value="3221226536" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host server cannot install a new template-based certificate to be used for Transport Layer Security (TLS) 1.0\Secure Sockets Layer (SSL) authentication and encryption. The following error occured: %1.">
+    </event>
+    <event value="3221226537" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The template-based certificate that is being used by the RD Session Host server for Transport Layer Security (TLS) 1.0\Secure Sockets Layer (SSL) authentication and encryption has expired and cannot be replaced by the RD Session Host server. The following error occurred: %1.">
+    </event>
+    <event value="3221226538" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="RD Session Host Server was unable to process session arbitration request. Error %1">
+    </event>
+    <event value="3221226539" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Session Host server cannot register &apos;TERMSRV&apos; Service Principal Name to be used for server authentication. The following error occured: %1.">
+    </event>
+    <event value="1068" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Licensing mode has not been configured.">
+    </event>
+    <event value="1069" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Licensing grace period has expired and Licensing mode for the Remote Desktop Session Host server has not been configured. Licensing mode must be configured for continuous operation.">
+    </event>
+    <event value="3221226542" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A logon request was denied because the RD Session Host server is currently in drain mode and therefore not accepting new user logons. To configure the server to allow new user logons, use the Remote Desktop Services Configuration tool.">
+    </event>
+    <event value="3221226543" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A connection request was denied because the RD Session Host server is currently configured to not accept connections. To configure the server to allow connections, use the chglogon command-line tool.">
+    </event>
+    <event value="3221226600" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Licensing grace period has expired and the service has not registered with a license server with installed licenses. A RD Licensing server is required for continuous operation. A Remote Desktop Session Host server can operate without a license server for 120 days after initial start up.">
+    </event>
+    <event value="3221226601" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Licensing grace period is about to expire on %1 and the service has not registered with a license server with installed licenses. A RD Licensing server is required for continuous operation. A Remote Desktop Session Host server can operate without a license server for 120 days after initial start up.">
+    </event>
+    <event value="3221226602" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop Session Host server does not have a Remote Desktop license server specified. To specify a license server for the Remote Desktop Session Host server, use the Remote Desktop Session Host Configuration tool.">
+    </event>
+    <event value="3221226603" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop Session Host server could not contact the Remote Desktop license server %1. Ensure that the Remote Desktop Licensing service is running on the license server, that the license server is accepting network requests, and that the license server is registered in WINS and DNS.">
+    </event>
+    <event value="3221226604" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop license server %1 does not support the version of the operating system running on the Remote Desktop Session Host server.">
+    </event>
+    <event value="3221226605" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The certificate issued by the Remote Desktop license server to the Remote Desktop Session Host server is not valid. The license server will not issue Remote Desktop Services client access licenses to clients connecting to the Remote Desktop Session Host server. To resolve this issue, delete the certificate on the Remote Desktop Session Host server and then restart the Remote Desktop Services service.">
+    </event>
+    <event value="1136" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="RD Session Host Server role is not installed.">
+    </event>
+    <event value="1137" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="The roaming user profile cache manager for Remote Desktop Services could not start. Error Code: %1">
+    </event>
+    <event value="1138" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="The roaming user profile cache manager for Remote Desktop Services could not start because an incorrect value was specified for the monitoring interval. Error Code: %1">
+    </event>
+    <event value="1139" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="The roaming user profile cache manager for Remote Desktop Services could not start because an incorrect value was specified for the maximum cache size. Error Code: %1">
+    </event>
+    <event value="1140" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="The &quot;Limit the size of the entire roaming user profile cache&quot; Group Policy setting has been enabled, but the roaming user profile cache manager for Remote Desktop Services has encountered a problem. Error Code: %1">
+    </event>
+    <event value="1141" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="The &quot;Limit the size of the entire roaming user profile cache&quot; Group Policy setting has been disabled, but the roaming user profile cache manager for Remote Desktop Services has encountered a problem. Error Code: %1">
+    </event>
+    <event value="1142" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="The &quot;Limit the size of the entire roaming user profile cache&quot; Group Policy setting has been enabled.">
+    </event>
+    <event value="1143" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="The &quot;Limit the size of the entire roaming user profile cache&quot; Group Policy setting has been disabled.">
+    </event>
+    <event value="1144" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="The roaming user profile cache manager for Remote Desktop Services could not delete the roaming user profile for the user %1. The roaming user profile cache might still exceed the %2 gigabyte limit. Error Code: %3">
+    </event>
+    <event value="1145" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="The roaming user profile cache manager for Remote Desktop Services deleted the roaming user profile for the user %1 because the roaming user profile cache exceeded the %2 gigabyte limit.">
+    </event>
+    <event value="1146" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Remote Desktop Services: Remote control session initiated:
+
+%1 initiated a remote control session:
+User: %2
+Domain: %3">
+    </event>
+    <event value="1147" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Remote Desktop Services: Remote control session connection succeeded:
+
+%1 initiated a remote control session:
+User: %2
+Domain: %3">
+    </event>
+    <event value="1148" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Remote Desktop Services: Remote control session connection failed:
+
+%1 initiated a remote control session:
+User: %2
+Domain: %3">
+    </event>
+    <event value="1149" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Remote Desktop Services: User authentication succeeded:
+
+User: %1
+Domain: %2
+Source Network Address: %3">
+    </event>
+    <event value="1150" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Remote Desktop Services: User config data have been merged:
+
+User: %1
+Domain: %2
+Source Network Address: %3">
+    </event>
+    <event value="1151" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="The remote user&apos;s connection was declined by the logged on user.
+
+User Account: %2
+Domain: %1
+Source IP Address: %3">
+    </event>
+    <event value="1152" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="Failed to create KVP sessions string. Error Code %1">
+    </event>
+    <event value="3221226624" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop Virtualization Host server cannot issue a client license.  It was unable to issue the license due to a changed (mismatched) client license, insufficient memory, or an internal error. Further details for this problem may have been reported at the client&apos;s computer.">
+    </event>
+    <event value="1153" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="Failed to write KVP sessions string. Error Code %1">
+    </event>
+    <event value="3221226625" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Licensing grace period has expired and Licensing mode for the Remote Desktop Virtualization Host server has not been configured. Licensing mode must be configured for continuous operation.">
+    </event>
+    <event value="3221226626" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Licensing grace period has expired and the service has not registered with a license server with installed licenses. A RD Licensing server is required for continuous operation. A Remote Desktop Virtualization Host server can operate without a license server for 120 days after initial start up.">
+    </event>
+    <event value="1155" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="The Remote Connection Manager selected Kernel mode RDP protocol stack.">
+    </event>
+    <event value="3221226627" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RD Licensing grace period is about to expire on %1 and the service has not registered with a license server with installed licenses. A RD Licensing server is required for continuous operation. A Remote Desktop Virtualization Host server can operate without a license server for 120 days after initial start up.">
+    </event>
+    <event value="1156" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="The Remote Connection Manager selected User mode RDP protocol stack.">
+    </event>
+    <event value="3221226628" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop Virtualization Host server does not have a Remote Desktop license server specified. To specify a license server for the Remote Desktop Virtualization Host server, use the RDS module for Windows PowerShell.">
+    </event>
+    <event value="1157" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The listener named %1 has modified some configuration settings.">
+    </event>
+    <event value="3221226629" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop Virtualization Host server could not contact the Remote Desktop license server %1. Ensure that the Remote Desktop Licensing service is running on the license server, that the license server is accepting network requests, and that the license server is registered in WINS and DNS.">
+    </event>
+    <event value="1158" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Services accepted a connection from IP address %1.">
+    </event>
+    <event value="3221226630" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop license server %1 does not support the version of the operating system running on the Remote Desktop Virtualization Host server.">
+    </event>
+    <event value="3221226631" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The certificate issued by the Remote Desktop license server to the Remote Desktop Virtualization Host server is not valid. The license server will not issue licenses to clients connecting to the Remote Desktop Virtualization Host server. To resolve this issue, delete the certificate on the Remote Desktop Virtualization Host server and then restart the Remote Desktop Services service.">
+    </event>
+    <event value="3221226632" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Remote Desktop Virtualization Host server cannot communicate with the Remote Desktop license server %1. Ensure that the computer account for the Remote Desktop Virtualization Host server is a member of the RDS Endpoint Servers group on the license server.">
+    </event>
+    <event value="1280" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Configuration service could not remove user %1\%2 from administrators group, error Code: %3">
+    </event>
+    <event value="1281" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Configuration service could not remove user %1\%2 from Remote Desktop Users group, error Code: %3">
+    </event>
+    <event value="1282" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Configuration service could not remove user with SID %1 from administrators group, error Code: %2">
+    </event>
+    <event value="1283" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Configuration service could not remove user with SID %1 from Remote Desktop Users group, error Code: %2">
+    </event>
+    <event value="1284" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Configuration service has added user %1\%2 to administrators group">
+    </event>
+    <event value="1285" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Configuration service has added user %1\%2 to Remote Desktop Users group">
+    </event>
+    <event value="1286" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Configuration service has removed user with SID %1 from administrators group">
+    </event>
+    <event value="1287" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Configuration service has removed user with SID %1 from Remote Desktop Users group">
+    </event>
+    <event value="1288" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Configuration service has removed user %1\%2 from administrators group">
+    </event>
+    <event value="1289" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Configuration service has removed user %1\%2 from Remote Desktop Users group">
+    </event>
+    <event value="2304" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="2305" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="2306" version="0" opcode="1" channel="17" level="4" task="3" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="2307" version="0" opcode="2" channel="17" level="4" task="3" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="20480" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Services Network Fair Share started.">
+    </event>
+    <event value="20481" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Services Network Fair Share stopped.">
+    </event>
+    <event value="20482" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Services Network Fair Share was enabled for the user account %1 with a weight of %2.">
+    </event>
+    <event value="20483" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Service Network Fairshare has been enabled for connection on session %1 with weight of %2.">
+    </event>
+    <event value="20484" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not enable Network Fair Share for the user account %1. The error code is %2.">
+    </event>
+    <event value="20485" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not enable Network Fair Share for the connection on session %1. The error code is %2.">
+    </event>
+    <event value="20486" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not enable Network Fair Share for session %1. The error code is %2.">
+    </event>
+    <event value="20487" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Services Network Fair Share was disabled for the user account %1.">
+    </event>
+    <event value="20488" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Services Network Fair Share was disabled for the connection on session %1.">
+    </event>
+    <event value="20489" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not disable Network Fair Share for the user account %1. The error code is %2.">
+    </event>
+    <event value="20490" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not disable Network Fair Share for the connection on session %1. The error code is %2.">
+    </event>
+    <event value="20491" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not disconnect a user disk for the user account with a SID of %1. The error code is %2.%3">
+    </event>
+    <event value="20492" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not detach a user disk for the user account with a SID of %1. The error code is %2.%3">
+    </event>
+    <event value="20493" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not apply a user desktop for a user account with a SID of %1. A temporary profile was enforced for the user. Verify that the user profile disk settings are correct. The error code is %2.%3">
+    </event>
+    <event value="20494" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not obtain a user profile disk for the user account with a SID of %1. Verify that the user profile disk location is accessible, the server&apos;s computer account has read and write permissions to it, and that the location has a user profile disk template file present. The error code is %2.%3">
+    </event>
+    <event value="20495" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not attach a user profile disk for a user account with a SID of %1. The error code is %2.%3">
+    </event>
+    <event value="20496" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Remote Desktop Services could not apply a user desktop for a user account with a SID of %1. A temporary profile could not be enforced for the user. The user will get a normal profile, and the user&apos;s state will be discarded when the user logs off. Verify that the user profile disk settings are correct. The error code is %2.%3">
+    </event>
+    <event value="20497" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The RD Licensing has taken too long to process the client license">
+    </event>
+    <event value="20498" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Remote Desktop Services has taken too long to complete the client connection">
+    </event>
+    <event value="20499" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Remote Desktop Services has taken too long to load the user configuration from server %1 for user %2">
+    </event>
+    <event value="20500" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Remote Desktop Services took %3 milliseconds to load the user configuration from server %1 for user %2">
+    </event>
+    <event value="20501" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Remote Desktop Services failed to shutdown within the time allocated">
+    </event>
+    <event value="20502" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Remote Desktop Services failed to retrieve information about a connection for session %1 within the time allocated">
+    </event>
+    <event value="20503" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow View Session Started
+
+User %1 on computer %2 viewing user %3 (Session ID: %4)">
+    </event>
+    <event value="20504" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow View Session Stopped
+
+User %1 on computer %2 viewing user %3 (Session ID: %4)">
+    </event>
+    <event value="20506" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow Control Session Started
+
+User %1 on computer %2 controlling user %3 (Session ID: %4)">
+    </event>
+    <event value="20507" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow Control Session Stopped
+
+User %1 on computer %2 controlling user %3 (Session ID: %4)">
+    </event>
+    <event value="20508" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow View Permission Granted
+
+User %1 (Session ID: %3) granted permission to user %2">
+    </event>
+    <event value="20509" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow View Permission Denied
+
+User %1 (Session ID: %3) denied permission to user %2">
+    </event>
+    <event value="20510" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow Control Permission Granted
+
+User %1 (Session ID: %3) granted permission to user %2">
+    </event>
+    <event value="20511" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow Control Permission Denied
+
+User %1 (Session ID: %3) denied permission to user %2">
+    </event>
+    <event value="20512" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="Shadow Session Failure
+
+User %2 encountered error %3 trying to shadow user %1 (Session ID: %4)">
+    </event>
+    <event value="20513" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow Session Failure
+
+User %2 was unable to shadow user %1 (Session ID: %3) because of group policy settings.">
+    </event>
+    <event value="20514" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow Session Failure
+
+User %2 was unable to shadow user %1 (Session ID: %3) because that session is already being shadowed.">
+    </event>
+    <event value="20515" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Session %1 has been idle over its time limit, and was logged off">
+    </event>
+    <event value="20516" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Session %1 has been idle over its time limit, and was disconnected">
+    </event>
+    <event value="20517" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Session %1 has exceeded its time limit, and was logged off">
+    </event>
+    <event value="20518" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Session %1 has exceeded its time limit, and was disconnected">
+    </event>
+    <event value="20519" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Session %1 has exceeded its disconnect time limit, and was logged off">
+    </event>
+    <event value="20520" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="User config info will be loaded from domain controller for this %1 connection">
+    </event>
+    <event value="20521" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="User config info will be loaded from local machine for this %1 connection">
+    </event>
+    <event value="20522" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="Shadow Session Clipboard Copy Request
+
+User %1 on computer %2 controlling user %3 (Session ID: %4) Clipboard format: %5">
+    </event>
+  </events>
+</provider>

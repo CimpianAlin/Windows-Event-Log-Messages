@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IME-TCTIP" guid="d5268c02-6f51-436f-983b-74f2efbfaf3a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=imTcTip.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\IME\IMETC\imTcTip.dll" messageFileName="C:\Windows\system32\IME\IMETC\imTcTip.dll" message="Microsoft-Windows-IME-TCTIP" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IME-TCTIP/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="IME_InvokeCommand" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Invoke Command">
+    </task>
+    <task name="PerfTrack_IME_CHT_HWKBD_CandUIProcess" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME_CHT_HWKBD_CandUIProcess">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="23" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000000" message="EAIME_UI_InvokeCommandStart">
+    </event>
+    <event value="24" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000000" message="EAIME_UI_InvokeCommandEnd">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="4" task="105" keywords="0x8001000000000000" message="EAIME_IME_CHT_HWKBD_CandUIProcess_Info">
+    </event>
+  </events>
+</provider>

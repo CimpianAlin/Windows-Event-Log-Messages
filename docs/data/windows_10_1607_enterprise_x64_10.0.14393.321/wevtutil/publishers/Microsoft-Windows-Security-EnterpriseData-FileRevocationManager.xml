@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager" guid="2cd58181-0bb6-463e-828a-056ff837f966" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=efswrt.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\efswrt.dll" messageFileName="C:\Windows\system32\efswrt.dll" message="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="CreateIdentity" value="655360" message="Protect Identity operation.">
+    </opcode>
+    <opcode name="RevokeIdentity" value="720896" message="Revoke Identity operation.">
+    </opcode>
+    <opcode name="Delegation" value="786432" message="Delegation operation.">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="10" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Application %2 created an enterprise protection key for %1.">
+    </event>
+    <event value="1" version="0" opcode="10" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Application %2 failed to create an enterprise protection key for %1. Error: %3.">
+    </event>
+    <event value="17" version="0" opcode="11" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Application %2 successfully deleted all %1 enterprise protection keys.">
+    </event>
+    <event value="18" version="0" opcode="11" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Application %2 successfully deleted its %1 enterprise protection key.">
+    </event>
+    <event value="19" version="0" opcode="11" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Application %2 failed to delete %1 enterprise protection key(s). Error: %3.">
+    </event>
+    <event value="20" version="0" opcode="12" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The following entry in the Group Policy &quot;Allow Windows Runtime apps to revoke enterprise data&quot; is formatted incorrectly and was ignored:
+%1">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-VolumeControl" guid="07de7879-1c96-41ce-afbd-c659a0e8e643" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=sndvolsso.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\sndvolsso.dll" messageFileName="C:\Windows\System32\sndvolsso.dll" message="Microsoft-Windows-AudioUI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-VolumeControl/Performance" id="16" flags="0" message="Performance">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="op_VolumeLimit_SubscribeWnf" value="720896" message="VolumeLimit_SubscribeWnf">
+    </opcode>
+    <opcode name="op_VolumeLimit_UnsubscribeWnf" value="786432" message="VolumeLimit_UnsubscribeWnf">
+    </opcode>
+    <opcode name="op_VolumeLimit_WnfCallback" value="851968" message="VolumeLimit_WnfCallback">
+    </opcode>
+    <opcode name="op_VolumeLimit_WnfCallback_Skip" value="917504" message="VolumeLimit_WnfCallback_Skip">
+    </opcode>
+    <opcode name="op_VolumeLimit_WnfCallback_ScheduleUI" value="983040" message="VolumeLimit_WnfCallback_ScheduleUI">
+    </opcode>
+    <opcode name="op_VolumeLimit_IsChildAccount" value="1048576" message="VolumeLimit_IsChildAccount">
+    </opcode>
+    <opcode name="op_VolumeLimit_UIThread_PopupWindowFactory" value="1114112" message="VolumeLimit_UIThread_PopupWindowFactory">
+    </opcode>
+    <opcode name="op_VolumeLimit_UIThread_PopupUI" value="1179648" message="VolumeLimit_UIThread_PopupUI">
+    </opcode>
+    <opcode name="op_VolumeLimit_UserSelection" value="1245184" message="VolumeLimit_UserSelection">
+    </opcode>
+    <opcode name="op_VolumeLimit_PropogateToDriver" value="1310720" message="VolumeLimit_PropogateToDriver">
+    </opcode>
+    <opcode name="op_VolumeLimit_UserSelectionPropogationResult" value="1376256" message="VolumeLimit_UserSelectionPropogationResult">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="AudioPerf_Task_LaunchFlyout" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="task_VolumeLimit_UI" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="102" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="103" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="104" version="0" opcode="11" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="105" version="0" opcode="12" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="106" version="0" opcode="13" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="107" version="0" opcode="14" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="108" version="0" opcode="15" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="109" version="0" opcode="16" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="110" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="111" version="0" opcode="17" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="112" version="0" opcode="18" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="113" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="114" version="0" opcode="19" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="115" version="0" opcode="20" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="116" version="0" opcode="21" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

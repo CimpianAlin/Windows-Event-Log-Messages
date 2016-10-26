@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-General" guid="a68ca8b7-004f-d7b6-a698-07e2de0f1f5d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="Microsoft-Windows-Kernel-General" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SystemStart" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemStop" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SoftBootInfo" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootPerformanceData" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemTimeChange" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="KERNEL_GENERAL_KEYWORD_TIME" mask="10" message="Time">
+    </keyword>
+    <keyword name="KERNEL_GENERAL_SECURITY_ACCESSCHECK" mask="20" message="">
+    </keyword>
+    <keyword name="KERNEL_GENERAL_TOKEN_SID_MANAGEMENT" mask="40" message="">
+    </keyword>
+    <keyword name="BootPerformance" mask="80" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000010" message="The system time has changed to %1 from %2.">
+    </event>
+    <event value="1" version="1" opcode="0" channel="8" level="4" task="5" keywords="0x8000000000000010" message="The system time has changed to %1 from %2.
+
+Change Reason: %3.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="License policy-cache corruption detected.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="License policy-cache corruption has been fixed.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="License policy-cache has expired because it was not updated within expected duration.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="{Registry Hive Recovered} Registry hive (file): &apos;%3&apos; was corrupted and it has been recovered. Some data might have been lost.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="An I/O operation initiated by the Registry failed unrecoverably.The Registry could not flush hive (file): &apos;%3&apos;.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="TxR init phase for hive %2 (TM: %3, RM: %4) finished with result=%5 (Internal code=%6).">
+    </event>
+    <event value="12" version="0" opcode="0" channel="8" level="4" task="1" keywords="0x8000000000000080" message="The operating system started at system time %7.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="8" level="4" task="2" keywords="0x8000000000000080" message="The operating system is shutting down at system time %1.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x20" message="">
+    </event>
+    <event value="15" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Hive %2 was reorganized with a starting size of %3 bytes and an ending size of %4 bytes.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The access history in hive %2 was cleared updating %3 keys and creating %4 modified pages.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x40" message="">
+    </event>
+    <event value="18" version="0" opcode="0" channel="8" level="4" task="3" keywords="0x8000000000000080" message="The operating system is starting after soft restart.">
+    </event>
+    <event value="19" version="0" opcode="0" channel="0" level="4" task="4" keywords="0x80" message="">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Wnv" guid="3ad15a04-74f1-4dca-b226-aff89085a05a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wnv.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\wnv.sys" messageFileName="C:\Windows\system32\drivers\wnv.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Wnv/Trace" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WnvVirtualRouteCreate" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvVirtualRouteDelete" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvVirtualRouteModify" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvLocatorAddressCreate" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvLocatorAddressDelete" value="1005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvLocatorRecordCreate" value="1006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvLocatorRecordDelete" value="1007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvLocatorRecordModify" value="1008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvRegisterNotification" value="1009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvPacketProcessingLookupFailure" value="1010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvPacketProcessingLookupSucceeded" value="1011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvPacketDropEvent" value="1012" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvIPsecOidTranslation" value="1013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvIPsecOffloadFailure" value="1014" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvIPsecUploadSA" value="1015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvLocatorAddressModify" value="1016" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvPhysicalRouteCreate" value="1017" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvPhysicalRouteDelete" value="1018" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvPhysicalRouteModify" value="1019" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvDynamicLocatorRecord" value="1020" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvDynamicIpAddressLimit" value="1022" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WnvAddressResolutionPacket" value="1023" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ut:Config" mask="1" message="">
+    </keyword>
+    <keyword name="ut:IPsecOffloadProcessing" mask="2" message="">
+    </keyword>
+    <keyword name="ut:WnvPacketProcessing" mask="4" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="1001" keywords="0x8000000000000001" message="Virtual route create: Dest Prefix: %1/%2, Nexthop: %3, RoutingDomainId: %4, VirtualSubnetId: %5, Metric: %6, Failure Reason: %7, Status: %8 ">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="1002" keywords="0x8000000000000001" message="Virtual route delete: Dest Prefix: %1/%2, Nexthop: %3, RoutingDomainId: %4, VirtualSubnetId: %5, Metric: %6, Failure Reason: %7, Status: %8 ">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="1003" keywords="0x8000000000000001" message="Virtual route modify: Dest Prefix: %1/%2, Nexthop: %3, RoutingDomainId: %4, VirtualSubnetId: %5, Metric: %6, Failure Reason: %7, Status: %8 ">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="1004" keywords="0x8000000000000001" message="Locator address create: Address: %1/%2, InterfaceLuid: %3, VlanId: %4, Failure Reason: %5, Status: %6 ">
+    </event>
+    <event value="1004" version="1" opcode="0" channel="16" level="4" task="1004" keywords="0x8000000000000001" message="Locator address create: Address: %1/%2, InterfaceLuid: %3, VlanId: %4, Failure Reason: %5, Status: %6, PA MAC Address: %7 ">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="1005" keywords="0x8000000000000001" message="Locator address delete: Address: %1/%2, InterfaceLuid: %3, VlanId: %4, Failure Reason: %5, Status: %6 ">
+    </event>
+    <event value="1005" version="1" opcode="0" channel="16" level="4" task="1005" keywords="0x8000000000000001" message="Locator address delete: Address: %1/%2, InterfaceLuid: %3, VlanId: %4, Failure Reason: %5, Status: %6, PA MAC Address: %7 ">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="4" task="1006" keywords="0x8000000000000001" message="Locator record create: CustomerIpAddress: %1, ProviderIpAddress: %2, VirtualSubnetId: %3, CustomerId: %4, CustomerMacAddress: %5, UseVmMACAddress: %6, Description: %7, TranslationMethod: %8, Failure Reason: %9, Status: %10, Type: %12">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="4" task="1007" keywords="0x8000000000000001" message="Locator record delete: CustomerIpAddress: %1, ProviderIpAddress: %2, VirtualSubnetId: %3, CustomerId: %4, CustomerMacAddress: %5, UseVmMACAddress: %6, Description: %7, TranslationMethod: %8, Failure Reason: %9, Status: %10, Type: %12">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="4" task="1008" keywords="0x8000000000000001" message="Locator record modify: ModifyFlags: %11, CustomerIpAddress: %1, ProviderIpAddress: %2, VirtualSubnetId: %3, CustomerId: %4, CustomerMacAddress: %5, UseVmMACAddress: %6, Description: %7, TranslationMethod: %8, Failure Reason: %9, Status: %10, Type: %12">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="1009" keywords="0x8000000000000001" message="Register notification: Notification type: %1, Failure reason: %2, Status: %3">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="1010" keywords="0x8000000000000004" message="%8 packet processing lookup failure: Source IP in packet: %1, Destination IP in packet: %2, Source IP in record: %3, Destination IP in record: %4, VirtualSubnetId: %15, VirtualNexthopIpAddress: %5, ProviderNexthopIpAddress: %6, Failure Reason: %7, SourceCAMac: %9, DestinationCAMac: %10, Source MAC in record: %11, Destination MAC in record: %12, Outer source IP: %13, Outer destination IP: %14">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="5" task="1011" keywords="0x8000000000000004" message="%8 packet processing lookup succeeded: Source IP in packet: %1, Destination IP in packet: %2, Source IP in record: %3, Destination IP in record: %4, VirtualSubnetId: %15, VirtualNexthopIpAddress: %5, ProviderNexthopIpAddress: %6, SourceCAMac: %9, DestinationCAMac: %10, Source MAC in record: %11, Destination MAC in record: %12, Outer source IP: %13, Outer destination IP: %14">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="2" task="1012" keywords="0x8000010000000004" message="%10 %6 packet dropped: Inner source: %1, Inner destination: %2, Outer source: %3, Outer destination: %4, VirtualSubnetId: %11, Drop reason: %5, GreEncap: %12, Transport protocol: %7, Source MAC: %8, Destination MAC: %9 ">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="4" task="1013" keywords="0x8000000000000002" message="IPsec Add SA translation: Original source address: %1, Translated source address: %2, Original destination address: %3, Translated destination address: %4, SPI: %5">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="2" task="1014" keywords="0x8000000000000002" message="IPsec Offload SA Failed: Source address: %1, Destination address %2, Failure Reason: %3">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="1015" keywords="0x8000000000000002" message="Uploaded SA: Reason: %1">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="4" task="1016" keywords="0x8000000000000001" message="Locator address modify: Address: %1/%2, InterfaceLuid: %3, VlanId: %4, Failure Reason: %5, Status: %6 ">
+    </event>
+    <event value="1016" version="1" opcode="0" channel="16" level="4" task="1016" keywords="0x8000000000000001" message="Locator address modify: Address: %1/%2, InterfaceLuid: %3, VlanId: %4, Failure Reason: %5, Status: %6, PA MAC Address: %7 ">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="4" task="1017" keywords="0x8000000000000001" message="Physical route create: Dest Prefix: %1/%2, Nexthop: %3, Net LUID Index: %5, Metric: %6, Failure Reason: %7, Status: %8 ">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="4" task="1018" keywords="0x8000000000000001" message="Physical route delete: Dest Prefix: %1/%2, Nexthop: %3, Net LUID Index: %5, Metric: %6, Failure Reason: %7, Status: %8 ">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000000001" message="Physical route modify: Dest Prefix: %1/%2, Nexthop: %3, Net LUID Index: %5, Metric: %6, Failure Reason: %7, Status: %8 ">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="4" task="1020" keywords="0x8000000000000001" message="Dynamic locator record event type: %1. CustomerIpAddress: %2, VirtualSubnetId: %3, CustomerMacAddress: %4, ProviderIpAddress: %5, IsLocalCA: %6, InGatewayMode: %7, Unusable: %8, Unsynchronized: %9">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="4" task="1022" keywords="0x8000000000000001" message="Dynamic IP address throttled: CustomerIpAddress: %1, VirtualSubnetId: %2, CustomerMacAddress: %3, MaxDynamicIPAddressCount: %4, CurrentDynamicIPAddressCount: %5 ">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="4" task="1022" keywords="0x8000000000000001" message="Dynamic IP addresses impending threshold: CustomerIpAddress: %1, VirtualSubnetId: %2, CustomerMacAddress: %3, MaxDynamicIPAddressCount: %4, CurrentDynamicIPAddressCount: %5 ">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="5" task="1023" keywords="0x8000000000000004" message="%9 Address resolution packet: Source: %1, Destination: %2, Target: %3, Type: %4, Action = %5, Source MAC: %6, VirtualSubnetID: %7, CA Space: %8 ">
+    </event>
+  </events>
+</provider>

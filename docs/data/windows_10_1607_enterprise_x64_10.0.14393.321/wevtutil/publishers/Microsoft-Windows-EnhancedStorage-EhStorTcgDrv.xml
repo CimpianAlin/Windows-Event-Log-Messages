@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-EnhancedStorage-EhStorTcgDrv" guid="aa3aa23b-bb6d-425a-b58c-1d7e37f5d02a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=EhStorTcgDrv.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\Drivers\EhStorTcgDrv.sys" messageFileName="C:\Windows\System32\Drivers\EhStorTcgDrv.sys" message="Microsoft-Windows-EnhancedStorage-EhStorTcgDrv" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-EnhancedStorage-EhStorTcgDrv/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Opcode.General" value="3276800" message="General">
+    </opcode>
+    <opcode name="Opcode.Init" value="3342336" message="Init">
+    </opcode>
+    <opcode name="Opcode.Pnp" value="3407872" message="Pnp">
+    </opcode>
+    <opcode name="Opcode.Power" value="3473408" message="Power">
+    </opcode>
+    <opcode name="Opcode.IoRequest" value="3538944" message="IoRequest">
+    </opcode>
+    <opcode name="Opcode.Ioctl" value="3604480" message="Ioctl">
+    </opcode>
+    <opcode name="Opcode.IoQueue" value="3670016" message="IoQueue">
+    </opcode>
+    <opcode name="Opcode.TcgLib" value="3735552" message="TcgLib">
+    </opcode>
+    <opcode name="Opcode.TcgSilo" value="3801088" message="TcgSilo">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Task.Driver" value="1" eventGUID="ee2803bf-4fd1-4252-98aa-ccd1dd342e81" message="Driver">
+    </task>
+    <task name="Task.GetSiloCaps" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="GetSiloCaps">
+    </task>
+    <task name="Task.ExecuteSiloCmd" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="ExecuteSiloCmd">
+    </task>
+    <task name="Task.Reset" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Reset">
+    </task>
+    <task name="Task.IoctlQueryCaps" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlQueryCapabilities">
+    </task>
+    <task name="Task.IoctlActivate" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlActivate">
+    </task>
+    <task name="Task.IoctlRevert" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlRevert">
+    </task>
+    <task name="Task.IoctlEnumBands" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlEnumerateBands">
+    </task>
+    <task name="Task.IoctlCreateBand" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlCreateBand">
+    </task>
+    <task name="Task.IoctlSetBandLoc" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlSetBandLocation">
+    </task>
+    <task name="Task.IoctlSetBandSec" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlSetBandSecurity">
+    </task>
+    <task name="Task.IoctlDelBand" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlDeleteBand">
+    </task>
+    <task name="Task.IoctlEraseBand" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlEraseBand">
+    </task>
+    <task name="Task.IoctlGetBandMetadata" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlGetBandMetadata">
+    </task>
+    <task name="Task.IoctlSetBandMetadata" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlSetBandMetadata">
+    </task>
+    <task name="Task.IoctlRelinquish" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="IoctlRelinquishSilo">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="50" channel="8" level="2" task="1" keywords="0x8000000000000000" message="An operation has failed (%3, %4, %5, %6).
+%1
+HResult: %2">
+    </event>
+    <event value="2" version="0" opcode="50" channel="8" level="2" task="1" keywords="0x8000000000000000" message="An operation has failed (%3, %4, %5, %6).
+%1
+Win32Error: %2">
+    </event>
+    <event value="3" version="0" opcode="50" channel="8" level="2" task="1" keywords="0x8000000000000000" message="An operation has failed (%3, %4, %5, %6).
+%1
+NTStatus: %2">
+    </event>
+    <event value="4" version="0" opcode="50" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Failed to allocate object.
+Object: %1
+Size: %2">
+    </event>
+    <event value="5" version="0" opcode="50" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Unexpected size.
+Object: %1
+Expected Size: %2
+Actual Size: %3">
+    </event>
+    <event value="6" version="0" opcode="50" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Invalid data.
+Name: %1
+Value: %2">
+    </event>
+    <event value="7" version="0" opcode="50" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Device responded with an error status.
+Status: %1">
+    </event>
+    <event value="8" version="0" opcode="50" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Bad device.
+Device: %1
+Reason: %2">
+    </event>
+    <event value="9" version="0" opcode="50" channel="8" level="2" task="1" keywords="0x8000000000000000" message="The function is not supported.
+Function: %1
+Context: %2">
+    </event>
+    <event value="10" version="0" opcode="57" channel="8" level="2" task="1" keywords="0x8000000000000000" message="A TCG Command has returned an error.
+Desc: %1
+Param1: %2
+Param2: %3
+Param3: %4
+Param4: %5
+Status: %6">
+    </event>
+    <event value="11" version="0" opcode="57" channel="8" level="2" task="1" keywords="0x8000000000000000" message="A TCG Silo Command has returned an error.
+%1
+SiloCommand=%2, SiloStatus=%3
+InvokingID=%4, MethodID=%5">
+    </event>
+    <event value="12" version="0" opcode="50" channel="8" level="4" task="1" keywords="0x8000000000000000" message="A TCG Silo has returned the capabilities value of %1.">
+    </event>
+    <event value="13" version="0" opcode="50" channel="8" level="4" task="1" keywords="0x8000000000000000" message="The system has performed an authentication operation on an Enhanced Storage device.
+BandID=%1
+Authorize=%2
+Status=%3">
+    </event>
+    <event value="100" version="0" opcode="50" channel="8" level="4" task="1" keywords="0x8000000000000000" message="The following informational event has occurred (%2, %3, %4, %5).
+%1">
+    </event>
+    <event value="101" version="0" opcode="50" channel="8" level="3" task="1" keywords="0x8000000000000000" message="The following warning event has occurred (%2, %3, %4, %5).
+%1">
+    </event>
+    <event value="102" version="0" opcode="50" channel="8" level="2" task="1" keywords="0x8000000000000000" message="The following error event has occurred (%2, %3, %4, %5).
+%1">
+    </event>
+    <event value="200" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x4000000000000000" message="Get silo capabilities (SiloCmd=%2).">
+    </event>
+    <event value="201" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x4000000000000000" message="Get silo capabilities returned (SiloCmd=%2, Status=%3).">
+    </event>
+    <event value="202" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x4000000000000000" message="Execute silo command (SiloCmd=%2).">
+    </event>
+    <event value="203" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x4000000000000000" message="Excute silo command returned (SiloCmd=%2, Status=%3).
+InvokingId = %4
+MethodId = %5">
+    </event>
+    <event value="204" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x4000000000000000" message="Silo reset (SiloCmd=%2).">
+    </event>
+    <event value="205" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x4000000000000000" message="Silo reset returned (SiloCmd=%2, Status=%3).">
+    </event>
+    <event value="206" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x4000000000000000" message="Ioctl: QueryCapabilities">
+    </event>
+    <event value="207" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x4000000000000000" message="Ioctl: QueryCapabilities returned (Status=%2).">
+    </event>
+    <event value="208" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x4000000000000000" message="Ioctl: Activate">
+    </event>
+    <event value="209" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x4000000000000000" message="Ioctl: Activate returned (Status=%2).">
+    </event>
+    <event value="210" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x4000000000000000" message="Ioctl: Revert">
+    </event>
+    <event value="211" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x4000000000000000" message="Ioctl: Revert returned (Status=%2).">
+    </event>
+    <event value="212" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x4000000000000000" message="Ioctl: EnumBands">
+    </event>
+    <event value="213" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x4000000000000000" message="Ioctl: EnumBands returned (Status=%2).">
+    </event>
+    <event value="214" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x4000000000000000" message="Ioctl: CreateBand">
+    </event>
+    <event value="215" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x4000000000000000" message="Ioctl: CreateBand returned (Status=%2).">
+    </event>
+    <event value="216" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x4000000000000000" message="Ioctl: SetBandLocation">
+    </event>
+    <event value="217" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x4000000000000000" message="Ioctl: SetBandLocation returned (Status=%2).">
+    </event>
+    <event value="218" version="0" opcode="1" channel="16" level="4" task="11" keywords="0x4000000000000000" message="Ioctl: SetBandSecurity">
+    </event>
+    <event value="219" version="0" opcode="2" channel="16" level="4" task="11" keywords="0x4000000000000000" message="Ioctl: SetBandSecurity returned (Status=%2).">
+    </event>
+    <event value="220" version="0" opcode="1" channel="16" level="4" task="12" keywords="0x4000000000000000" message="Ioctl: DeleteBand">
+    </event>
+    <event value="221" version="0" opcode="2" channel="16" level="4" task="12" keywords="0x4000000000000000" message="Ioctl: DeleteBand returned (Status=%2).">
+    </event>
+    <event value="222" version="0" opcode="1" channel="16" level="4" task="13" keywords="0x4000000000000000" message="Ioctl: EraseBand">
+    </event>
+    <event value="223" version="0" opcode="2" channel="16" level="4" task="13" keywords="0x4000000000000000" message="Ioctl: EraseBand returned (Status=%2).">
+    </event>
+    <event value="224" version="0" opcode="1" channel="16" level="4" task="14" keywords="0x4000000000000000" message="Ioctl: GetBandMetadata">
+    </event>
+    <event value="225" version="0" opcode="2" channel="16" level="4" task="14" keywords="0x4000000000000000" message="Ioctl: GetBandMetadata returned (Status=%2).">
+    </event>
+    <event value="226" version="0" opcode="1" channel="16" level="4" task="15" keywords="0x4000000000000000" message="Ioctl: SetBandMetadata">
+    </event>
+    <event value="227" version="0" opcode="2" channel="16" level="4" task="15" keywords="0x4000000000000000" message="Ioctl: SetBandMetadata returned (Status=%2).">
+    </event>
+    <event value="228" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x4000000000000000" message="Ioctl: RelinquishSilo">
+    </event>
+    <event value="229" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x4000000000000000" message="Ioctl: RelinquishSilo returned (Status=%2).">
+    </event>
+  </events>
+</provider>

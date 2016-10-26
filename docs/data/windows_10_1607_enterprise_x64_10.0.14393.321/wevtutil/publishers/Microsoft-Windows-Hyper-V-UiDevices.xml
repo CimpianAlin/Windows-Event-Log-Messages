@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-UiDevices" guid="339aad0a-4124-4968-8147-4cbbb1f8b3d5" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=VmUiDevices.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\VmUiDevices.dll" parameterFileName="C:\Windows\system32\wbem\wmiutils.dll" messageFileName="C:\Windows\system32\VmUiDevices.dll" message="Microsoft-Windows-Hyper-V-Ui-Devices" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Admin" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Analytic" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1500" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="1510" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="1520" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="1530" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="12460" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; could not initialize machine remoting system. Error: &apos;%3&apos;(%4). (Virtual machine ID %2)">
+    </event>
+    <event value="12461" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Could not initialize machine remoting system. Error: &apos;%3&apos; (%4).">
+    </event>
+    <event value="12480" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; failure in machine remoting system. Error: &apos;%3&apos; (%4). (Virtual machine ID %2)">
+    </event>
+    <event value="12481" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failure in machine remoting system. Error: &apos;%3&apos; (%4).">
+    </event>
+    <event value="12530" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; device %3 could not allocate guest physical address space. (Virtual machine ID %2)">
+    </event>
+    <event value="12531" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="Device %3 could not allocate guest physical address space.">
+    </event>
+    <event value="12540" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; device %3 experienced a protocol error indicative of a deep system problem. (Virtual machine ID %2)">
+    </event>
+    <event value="12541" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="Device %3 experienced a protocol error indicative of a deep system problem.">
+    </event>
+    <event value="12550" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; device %3 found bad data on restoring. (Virtual machine ID %2)">
+    </event>
+    <event value="12551" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Device %3 found bad data on restoring.">
+    </event>
+    <event value="32700" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The %3 device on %1 virtual machine experienced an error %5 when sending a VMBus message. (Virtual machine ID %2)">
+    </event>
+    <event value="32701" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The %3 device on %1 virtual machine experienced an error %5 when processing an incoming message. (Virtual machine ID %2)">
+    </event>
+    <event value="32702" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The %3 device on %1 virtual machine experienced an error %5 when completing an outgoing message. (Virtual machine ID %2)">
+    </event>
+    <event value="32703" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The %3 device on %1 virtual machine experienced a VMBus pipe error %5. (Virtual machine ID %2)">
+    </event>
+    <event value="32704" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The %3 device on %1 virtual machine experienced an error %5 when processing a cursor shape update message. (Virtual machine ID %2)">
+    </event>
+    <event value="32705" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The %3 device on %1 virtual machine experienced an error %5 when processing a dirty region message. (Virtual machine ID %2)">
+    </event>
+    <event value="32706" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The horizontal resolution is below the minimum value of 100.">
+    </event>
+    <event value="32707" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The horizontal resolution is above the maximum value of 7680.">
+    </event>
+    <event value="32708" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The horizontal resolution must be an even number.">
+    </event>
+    <event value="32709" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The vertical resolution is below the minimum value of 100.">
+    </event>
+    <event value="32710" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The vertical resolution is above the maximum value of 7680.">
+    </event>
+    <event value="32711" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The vertical resolution must be an even number.">
+    </event>
+    <event value="32712" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="At least one of horizontal and vertical resolutions must be equal to or larger than 640.">
+    </event>
+    <event value="32713" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="At least one of horizontal and vertical resolutions must be equal to or smaller than 4320.">
+    </event>
+    <event value="32714" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The resolution type must be Maximum (2), Single (3) or Default (4). Please run &apos;Get-Help Set-VMVideo -Detailed&apos; for details.">
+    </event>
+    <event value="32715" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The %1 virtual machine must be turned off when setting resolution type, horizontal resolution or vertical resolution. (Virtual machine ID %2)">
+    </event>
+    <event value="32716" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The configuration version of %1 virtual machine does not support setting resolution type, horizontal resolution or vertical resolution. (Virtual machine ID %2)">
+    </event>
+    <event value="32717" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The configuration version of the virtual machine does not support setting the property LockOnDisconnect to non-default value.">
+    </event>
+    <event value="32718" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HorizontalResolution or VerticalResolution cannot be set when ResolutionType is Default.">
+    </event>
+  </events>
+</provider>

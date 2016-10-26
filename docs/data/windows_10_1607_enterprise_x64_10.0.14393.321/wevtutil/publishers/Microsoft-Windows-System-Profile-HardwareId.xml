@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-System-Profile-HardwareId" guid="3419de6d-5d7f-4668-acc8-f80566814d96" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Windows.System.Profile.HardwareId.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\Windows.System.Profile.HardwareId.dll" messageFileName="C:\Windows\system32\Windows.System.Profile.HardwareId.dll" message="Microsoft-Windows-System-Profile-HardwareId" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-System-Profile-HardwareId/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SystemProfile.Task.GetPackageSpecificToken" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="SYSTEMPROFILE_KEYWORD" mask="1" message="Windows.System.Profile.HardwareId">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="">
+    </event>
+  </events>
+</provider>

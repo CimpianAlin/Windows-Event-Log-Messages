@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WorkFolders" guid="34a3697e-0f10-4e48-af3c-f869b5babebb" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=WorkFoldersSvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\WorkFoldersSvc.dll" messageFileName="C:\Windows\system32\WorkFoldersSvc.dll" message="Microsoft-Windows-WorkFolders" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WorkFolders/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-WorkFolders/Debug" id="17" flags="0" message="Debug">
+    </channel>
+    <channel name="Microsoft-Windows-WorkFolders/Analytic" id="18" flags="0" message="Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-WorkFolders/WHC" id="19" flags="0" message="ManagementAgent">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="ChangeUpdateStart" value="655361" message="">
+    </opcode>
+    <opcode name="DownloadStart" value="720897" message="">
+    </opcode>
+    <opcode name="UploadStart" value="786433" message="">
+    </opcode>
+    <opcode name="ReconciliationStart" value="851969" message="">
+    </opcode>
+    <opcode name="ReconciliationStop" value="917505" message="">
+    </opcode>
+    <opcode name="KnowledgeUploadStart" value="983041" message="">
+    </opcode>
+    <opcode name="DownloadTransferStart" value="1048577" message="">
+    </opcode>
+    <opcode name="ChangeBatchApplyStart" value="1114113" message="">
+    </opcode>
+    <opcode name="KnowledgeDownloadStart" value="1179649" message="">
+    </opcode>
+    <opcode name="ChangeBatchGenStart" value="1245185" message="">
+    </opcode>
+    <opcode name="UploadTransferStart" value="1310721" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="EcsHost_SyncPartnership" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="SyncPartnership">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="SyncPartnership" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows Work Folders service is running.">
+    </event>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows Work Folders service is stopping.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A sync partnership was created between %1 and %2 (%3).">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A sync partnership between %1 and %2 (%3) was deleted.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Resuming sync between %1 and %2 (%3).">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Attempting to apply the following Work Folders Group Policy configuration:
+Work Folders URL: %1
+Force automatic setup: %2">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Attempting to remove the following Work Folders Group Policy configuration:
+Discovery URL: %1 
+Server URL: %2">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Configuring Work Folders through Group Policy with the following options:
+Partnership ID: %1
+Partnership type: %2
+Discovery URL: %3
+Server URL: %4">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Configuration of Work Folders through Group Policy succeeded.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="While applying Work Folders configuration through Group Policy, an existing Work Folders configuration was found. 
+Discovery URL: %1 
+Server URL: %2
+Configured by policy: %3">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Configuration of Work Folders through Group Policy failed. 
+Error: %1.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="There was a problem removing the Work Folders configuration when applying Group Policy. 
+Error: %1">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="There was a problem communicating with the Windows Work Folders service. Confirm that this service is running. 
+Error: %1">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="There was a problem retrieving your Work Folders Group Policy configuration. 
+Error: %1">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="There was a problem retrieving your current Work Folders configuration. 
+Error: %1.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="There was a problem comparing the existing Work Folders configuration to the configuration being applied by Group Policy. 
+Error: %1.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Server discovery on %1 found server %2.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Sync Share discovery succeeded. Server URL: %1; Partnership type: %2; Server partnership id: %3">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The discovery URL was found from the user&apos;s email address. User&apos;s email address: %1; Discovery URL %2">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="This PC is incompatible with the Work Folders server and must be upgraded. Please contact your administrator for instructions on upgrading your PC.">
+    </event>
+    <event value="502" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A sync partnership between %1 and %2 (%3) failed to create with %4.">
+    </event>
+    <event value="503" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A sync partnership between %1 and %2 (%3) failed to delete with %4.">
+    </event>
+    <event value="516" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Server discovery on %1 failed with %2.">
+    </event>
+    <event value="517" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Sync Share discovery failed. Server URL: %1; Partnership type: %2; Error: %3">
+    </event>
+    <event value="518" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Searching for a discovery URL from the user&apos;s email address failed. User&apos;s email address: %1; Error: %2">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Some files cannot be downloaded. Make sure the drive for %1 has at least %2 MB free.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to get an ADFS access token from the server. User: %1. ADFS URI: %2. Error: %3">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Failed to get an ADFS refresh token from the server. User: %1. ADFS URI: %2. Error: %3">
+    </event>
+    <event value="1100" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Work Folders sucessfully uploaded a file. File name:%1; Sync ID: %2">
+    </event>
+    <event value="1101" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Work Folders failed to upload a file. File name:%1; Sync ID: %2; Error: %3">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Work Folders sucessfully downloaded a file. File name:%1; Sync ID: %2">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Work Folders failed to download a file. File name:%1; Sync ID: %2; Error: %3">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Work Folders sucessfully uploaded a change batch. Partnership ID:%1">
+    </event>
+    <event value="1105" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Work Folders failed to upload a change batch. Partnership ID:%1; Error: %2">
+    </event>
+    <event value="1106" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Work Folders sucessfully downloaded a change batch. Partnership ID:%1">
+    </event>
+    <event value="1107" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Work Folders failed to download a change batch. Partnership ID:%1; Error: %2">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Work Folders couldn&apos;t detect changed files using the USN change journal, so it&apos;s scanning all files for changes. No action is required. Path: %1">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Sync started. URI: %1">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Sync completed.  URI: %1">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Sync batch upload completed.
+
+Uploaded %1 file(s) (%2 bytes).
+Failed %3 file(s) (%4 bytes).
+Elapsed time: %5 seconds.
+Rate: %6 KBps.">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Sync batch download completed.
+
+Downloaded %1 file(s) (%2 bytes).
+Failed %3 file(s).
+Elapsed time: %5 seconds.
+Rate: %6 KBps.">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="HTTP request failure.
+
+URI: %1 
+Verb: %2 
+Headers: %3 
+Body Length: %4 
+HTTP Response: %5 
+Server HRESULT: %6">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Work Folders skipped uploading a file because of an error. Sync ID: %1; Error: %2">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Work Folders will skip downloading files because the user doesn&apos;t have enough free space on the drive where Work Folders is located. User: %1">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Couldn&apos;t authenticate the user. User: %1">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Work Folders successfully synchronized an item. Item: %1; Sync ID: %2; Sync action: %3">
+    </event>
+    <event value="2010" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Work Folders failed to synchronize an item. Item: %1; Sync ID: %2; Sync action: %3; Error code: %4">
+    </event>
+    <event value="2011" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Work Folders successfully updated the current state of an item. Item: %1; Sync ID: %2; Update action: %3">
+    </event>
+    <event value="2012" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Work Folders failed to update the current state of an item. Item: %1; Sync ID: %2; Update action: %3; Error code: %4">
+    </event>
+    <event value="2013" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Work Folders detected a conflict on an item and decided a conflict resolution. Concurrency conflict: %1; Source item name: %2; Source sync ID: %3; Destination item name: %4; Destination sync ID: %5; Data winner: %6; Namespace winner: %7; Attributes winner: %8; Tie breaker winner: %9">
+    </event>
+    <event value="2014" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="2015" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="2100" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Sync failed. Work Folders path: %1; Error: %2">
+    </event>
+    <event value="2101" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Work Folders suspended sync. Partnership: %1">
+    </event>
+    <event value="2102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Work Folders resumed syncing. Partnership: %1">
+    </event>
+    <event value="2103" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Work Folders sync stopped because the Enterprise ID for this PC was remotely revoked by the issuing authority. Access to files in Work Folders is blocked on this PC. To resume syncing, in the Work Folders Control Panel, click Stop using Work Folders and then recreate the Work Folders synchronization partnership. Partnership: %1">
+    </event>
+    <event value="2104" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Work Folders detected a database corruption and recovered. Database path: %1">
+    </event>
+    <event value="2105" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Work Folders detected a database corruption and recovery failed. Database path: %1; Error: %2">
+    </event>
+    <event value="2106" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Work Folders detected that the server database has been recreated. Local epoch: %1; Server epoch: %2">
+    </event>
+    <event value="2107" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Work Folders detected that an error occured that requires the database to be recreated. Database path: %1; Error code: %2">
+    </event>
+    <event value="2108" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Work Folders synchronization metadata is stale. It will be automatically rebuild. Work Folders path: %1">
+    </event>
+    <event value="2109" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Work Folders synchronization metadata was created. Work Folders path: %1">
+    </event>
+    <event value="2110" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Work Folders synchronization metadata could not be created. Work Folders path: %1; Error: %2">
+    </event>
+    <event value="2111" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Work Folders synchronization metadata was deleted. Work Folders path: %1">
+    </event>
+    <event value="2112" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Work Folders synchronization metadata could not be deleted. Work Folders path: %1; Error: %2">
+    </event>
+    <event value="2113" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Work Folders failed to update the current state of an item. Item: %1; Sync ID: %2; Update action: %3; Error code: %4">
+    </event>
+    <event value="2114" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Work Folders failed to synchronize an item. Item: %1; Sync ID: %2; Sync action: %3; Error code: %4">
+    </event>
+    <event value="2115" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Work Folders detected a database version that is incompatible and recovered it. Database path: %1">
+    </event>
+    <event value="2116" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Work Folders detected a database version that is incompatible and recovery failed. Database path: %1; Error: %2">
+    </event>
+    <event value="8000" version="0" opcode="1" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Starting sync. Work Folders path: %1">
+    </event>
+    <event value="8001" version="0" opcode="10" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Work Folders is looking for changed files. Work Folders path: %1">
+    </event>
+    <event value="8002" version="0" opcode="11" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Starting to download files. Work Folders path: %1">
+    </event>
+    <event value="8003" version="0" opcode="12" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Starting to upload files. Work Folders path: %1">
+    </event>
+    <event value="8004" version="0" opcode="2" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Finished syncing. Work Folders path: %1">
+    </event>
+    <event value="8005" version="0" opcode="13" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Starting reconciliation sync. Work Folders path: %1">
+    </event>
+    <event value="8006" version="0" opcode="14" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Finished reconciliation sync. Work Folders path: %1">
+    </event>
+    <event value="8007" version="0" opcode="15" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Starting sync knowledge upload. Server partnership id: %1">
+    </event>
+    <event value="8008" version="0" opcode="16" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Starting data transfer for file download. Server partnership id: %1">
+    </event>
+    <event value="8009" version="0" opcode="17" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Applying downloaded files. Work Folders path: %1">
+    </event>
+    <event value="8010" version="0" opcode="18" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Starting sync knowledge download. Server partnership id: %1">
+    </event>
+    <event value="8011" version="0" opcode="19" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Creating a change batch for upload. Work Folders path: %1">
+    </event>
+    <event value="8012" version="0" opcode="20" channel="18" level="4" task="1" keywords="0x2000000000000001" message="Starting data transfer for file upload. Server partnership id: %1">
+    </event>
+    <event value="9001" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="Credentials required for the user.">
+    </event>
+    <event value="9002" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="Work Folders detected a sync error. Check partnership status, network connectivity, and disk space.">
+    </event>
+    <event value="9003" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="Work Folders detected a file error. Check file sizes and types are supported.">
+    </event>
+    <event value="9004" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="Your PC doesn&apos;t comply with your organization&apos;s security policies.">
+    </event>
+  </events>
+</provider>

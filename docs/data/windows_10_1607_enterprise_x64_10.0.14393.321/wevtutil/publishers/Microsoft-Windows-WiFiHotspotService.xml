@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WiFiHotspotService" guid="814182fe-58f7-11e1-853c-78e7d1ca7337" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wifinetworkmanager.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\wifinetworkmanager.dll" messageFileName="C:\Windows\system32\wifinetworkmanager.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="HotspotService" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="HotspotUtils" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MySimpleEvent" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MySimpleError" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MyEventWithData" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MyEventWithFixedBytes" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MyEventWithVariableBytes" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MyTask1" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="Error">
+    </keyword>
+    <keyword name="Performance" mask="2" message="Performance">
+    </keyword>
+    <keyword name="APIs" mask="4" message="APIs">
+    </keyword>
+    <keyword name="Status" mask="8" message="Status">
+    </keyword>
+    <keyword name="Verbose" mask="10" message="Verbose">
+    </keyword>
+    <keyword name="MyKeyword" mask="4000" message="MyKeyword">
+    </keyword>
+    <keyword name="Memory" mask="8000" message="Memory">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="1" channel="0" level="4" task="1" keywords="0x2" message="Service: Launched">
+    </event>
+    <event value="1001" version="0" opcode="2" channel="0" level="4" task="1" keywords="0x2" message="Service: Exiting">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x2" message="ServicePlugin: Initialized">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x1" message="Service: Init: %1 FAILed, Error=%2">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x1" message="Service: LaunchHostProcess - %1 FAILed, Error=%2">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x2" message="Service: LaunchHostProcess SUCCEEDed - hProcess=%1, hThread=%2">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x1" message="Service: RpcClient: %1 FAILed, Error=%2">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x8" message="Service: Notification Event - %1, Value=%2">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x1" message="Service: Notificaton Error - %1 FAILed, Error=%2">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x8" message="Service: Plugin Event - %1, Value=%2">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x1" message="Service: Plugin Error - %1 FAILed, Error=%2">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x8" message="Service: Connect Event - %1, Value=%2">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x1" message="Service: Connect Error - %1 FAILed, Error=%2">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x1" message="Test: S1=%1, S2=%2, D1=%3, D2=%4, D3=%5">
+    </event>
+    <event value="3000" version="0" opcode="0" channel="0" level="4" task="2" keywords="0x1" message="Utils: Allocate Memory FAILed: Error=%1, ByteCount=%2">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="0" level="4" task="2" keywords="0x8000" message="Utils: Allocated Memory: 0x%1 ByteCount=%2">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="0" level="4" task="2" keywords="0x8000" message="Utils: Freeing Memory: 0x%1">
+    </event>
+    <event value="3003" version="0" opcode="0" channel="0" level="4" task="2" keywords="0x1" message="Utils: UuidVector: 0x%1, ByteCount=%2">
+    </event>
+    <event value="3004" version="0" opcode="0" channel="0" level="4" task="2" keywords="0x1" message="Utils: %1 FAILed, Error=%2">
+    </event>
+    <event value="4000" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x8" message=":: %1">
+    </event>
+    <event value="4001" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x8" message="++ %1: [%2]">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x8" message="-- %1: [%2]">
+    </event>
+    <event value="4003" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x8" message="    [%1]: SSID=%2:%3, Auth:Ciph=%4:%5, Flags=%6, CmName=%7">
+    </event>
+    <event value="4004" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x8" message="HotspotConnectionStateChanged: CmName=%1, NewState=%2">
+    </event>
+  </events>
+</provider>

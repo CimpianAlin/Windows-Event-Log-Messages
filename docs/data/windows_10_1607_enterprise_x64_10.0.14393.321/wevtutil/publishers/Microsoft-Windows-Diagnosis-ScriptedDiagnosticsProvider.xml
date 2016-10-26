@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider" guid="9363ccd9-d429-4452-9adb-2501e704b810" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=sdiagprv.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\sdiagprv.dll" messageFileName="C:\Windows\System32\sdiagprv.dll" message="Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational" id="16" flags="0" message="Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug" id="17" flags="0" message="Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="search" mask="100" message="Search">
+    </keyword>
+    <keyword name="cancel" mask="200" message="Cancel">
+    </keyword>
+    <keyword name="errors" mask="400" message="Errors">
+    </keyword>
+    <keyword name="object" mask="800" message="Object">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method succeeded.  The input Culture/Locale was %1.  The size of the result set was %2.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method failed because the system ran out of memory.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method was canceled by the caller.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method failed with error (%1).">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method failed.  The input Culture/Locale, %1, is not a valid Language identifier.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider Cancel method succeeded.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider Cancel method failed with error (%1).">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider failed to cancel the connected diagnostic provider with error (%1).">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider failed to cancel the local diagnostic provider with error (%1).">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider object property QueryRemoteServer is being overridden by Group Policy.  The property will be interpreted as being set to VARIANT_FALSE.">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider object property QueryRemoteServer is being overridden by the Administrator through a System Wide Preference.  The property will be interpreted as being set to VARIANT_FALSE.">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider object property QueryRemoteServer is set to %1.">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method failed because the input IDiagnosticMetadataCollection object was empty.">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The diagnostic package index information was successfully loaded from %1.">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Failed to scan diagnostic package index information from %2, with error (%1).">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Failed to load the resource (%2;%3) with error code (%1).">
+    </event>
+    <event value="3000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Sending request to the remote server %1 at the URL path %2.  Contents of the request are: %3.">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to connect to the remote server %1 at the URL path %2 due to lack of network access.">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to connect to the remote server %1 at the URL path %2 with error %3.">
+    </event>
+    <event value="3003" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Timed out while communicating with the remote server %1 at the URL path %2.">
+    </event>
+    <event value="3004" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Timed out waiting for a response from the remote server %1 at the URL path %2.">
+    </event>
+    <event value="3005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Response from the remote server %1 at the URL path %2 returned the following error response code: %3.">
+    </event>
+    <event value="3006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Received response from the remote server %1 at the URL path %2.">
+    </event>
+    <event value="3007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Parsed valid response from the remote server %1 at the URL path %2.">
+    </event>
+    <event value="3008" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Response received from the remote server %1 at the URL path %2 is invalid for the following reason: %3.">
+    </event>
+    <event value="3009" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Response received from the remote server %1 at the URL path %2 is malformed.">
+    </event>
+    <event value="3010" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Attempting to send data to remote server using the following proxy configuration: Access Type (%1); Proxy Server (%2); Proxy Bypass Server (%3).">
+    </event>
+    <event value="3011" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Failed to send data to remote server using the following proxy configuration: Access Type (%2); Proxy Server (%3); Proxy Bypass Server (%4) because of proxy failure (%1).">
+    </event>
+    <event value="3012" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to send data to remote server because list of proxy servers was exhausted without receiving a response. The error code returned to caller is %1.">
+    </event>
+    <event value="3013" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Connection to remote server has been reset or terminated while waiting for a response.  The error code returned to the caller is %1.">
+    </event>
+    <event value="3014" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The following system configuration will be used when querying content providers: OS Major Version (%1); OS Minor Version (%2); Service Pack Major (%3); Service Pack Minor (%4); Build Number (%5); Product Type (%6); Processor Architecture (%7); Culture (%8); System Type (%9); OEM (%10); Model (%11); IsMobilePc (%12); IsInternal (%13); GeoId (%14); Family (%15); OEM SKU (%16); Version (%17); Base Board OEM (%18); Base Board Model (%19); Base Board Version (%20); BIOS Vendor (%21); BIOS Version (%22); BIOS Release Date (%23); BIOS Major Release (%24); BIOS Minor Release (%25); Embedded Controller Firmware Major Release (%26); Embedded Controller Firmware Minor Release (%27).">
+    </event>
+    <event value="4000" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Starting to scan diagnostic package index information from %1.">
+    </event>
+    <event value="4001" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Finished scanning diagnostic package index information from %1.">
+    </event>
+    <event value="4006" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Starting to query content providers for scripted diagnostic content packages.">
+    </event>
+    <event value="4007" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Finished querying content providers for scripted diagnostic content packages with error code (%1).">
+    </event>
+    <event value="4008" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000200" message="Starting to cancel content providers.">
+    </event>
+    <event value="4009" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000200" message="Finished cancelling content providers with error code (%1).">
+    </event>
+    <event value="4010" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000200" message="Starting to cancel local content provider.">
+    </event>
+    <event value="4011" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000200" message="Finished cancelling local content provider with error code (%1).">
+    </event>
+    <event value="4012" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000200" message="Starting to cancel remote content provider.">
+    </event>
+    <event value="4013" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000200" message="Finished cancelling remove content provider with error code (%1).">
+    </event>
+    <event value="4014" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Starting to gather system configuration necessary for scripted diagnostic content package query.">
+    </event>
+    <event value="4015" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Finished gathering system configuration necessary for scripted diagnostic content package query with error code (%1).">
+    </event>
+    <event value="4016" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Started to connect to remote server %1 using URL path %2.">
+    </event>
+    <event value="4017" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Finished connecting to remote server %1 using URL path %2.  The operation completed with error %3.">
+    </event>
+    <event value="4018" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Sending POST request to the remote server %1 using the URL path: %2 with request body: %3.">
+    </event>
+    <event value="4019" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Response received from remote server.  The HTTP response was %1.  The operation completed with error %2.">
+    </event>
+    <event value="4020" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Starting to parse response from the remote server %1 POST request to the URL path: %2 with request body: %3.">
+    </event>
+    <event value="4021" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Finished parsing response from the remote server %1 POST request to the URL path: %2 with request body: %3 with error %4.">
+    </event>
+    <event value="4022" version="0" opcode="1" channel="17" level="5" task="0" keywords="0x4000000000000100" message="Starting to acquire lock in function %1.">
+    </event>
+    <event value="4023" version="0" opcode="2" channel="17" level="5" task="0" keywords="0x4000000000000100" message="Finished acquiring lock in function %1.">
+    </event>
+    <event value="4024" version="0" opcode="1" channel="17" level="5" task="0" keywords="0x4000000000000100" message="Starting to add result to Diagnostic Collection.">
+    </event>
+    <event value="4025" version="0" opcode="2" channel="17" level="5" task="0" keywords="0x4000000000000100" message="Finished adding result to Diagnostic Collection with error code (%1).">
+    </event>
+    <event value="4026" version="0" opcode="1" channel="17" level="5" task="0" keywords="0x4000000000000100" message="Starting to load resource from %1.">
+    </event>
+    <event value="4027" version="0" opcode="2" channel="17" level="5" task="0" keywords="0x4000000000000100" message="Finished loading resource from %1.">
+    </event>
+    <event value="5000" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.  The corresponding object property was set to %2.">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.  The corresponding object property was set to %2.">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.  The corresponding object property was set to %2.">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.  The output parameter was set to %2.">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.  The output parameter was set to %2.">
+    </event>
+    <event value="5008" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.  The output parameter was set to %2.">
+    </event>
+    <event value="5009" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.  The output parameter was set to %2.">
+    </event>
+    <event value="5010" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000400" message="%1 failed because the system ran out of memory.">
+    </event>
+    <event value="5011" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000400" message="%1 failed with error (%2) because the input parameter, %3, was NULL.">
+    </event>
+    <event value="5012" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000400" message="%1 failed with error (%2).">
+    </event>
+    <event value="5013" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.  The output parameter was set to the item in the collection at index %2.">
+    </event>
+    <event value="5014" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000400" message="%1 failed with error (%2) because the index, %3, is out of bounds of the enumeration or the enumeration is empty.">
+    </event>
+    <event value="5015" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.  The object was added to the collection at index %2.  The new size of the collection is %3.">
+    </event>
+    <event value="5016" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000400" message="%1 failed with error (%2) because the collection already contains an object of type, %3, with value, %4.">
+    </event>
+    <event value="5017" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000400" message="%1 succeeded.  The size of the collection increased by %2 object(s).  The new size of the collection is %3.">
+    </event>
+    <event value="5018" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000400" message="%1 failed with error (%2) because the collection already contains an object of with identifier, %3, and publisher, %4, with a greater version (%5).">
+    </event>
+    <event value="5019" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000100" message="Local Content Diagnostic Provider search parameter: %1 has value: %2.">
+    </event>
+    <event value="5020" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000100" message="Search Result includes a diagnostic with the following identifier %1.  The publisher of the Diagnostic is %2. The version of the Diagnostic is %3.  The URL for the diagnostic is: %4.">
+    </event>
+    <event value="5021" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000100" message="Deserializing diagnostic from index file %2 failed with error code (%1) because the XML does not represent a valid Diagnostic.">
+    </event>
+    <event value="5022" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000800" message="">
+    </event>
+    <event value="5023" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000800" message="">
+    </event>
+    <event value="5024" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000800" message="">
+    </event>
+    <event value="5025" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000800" message="">
+    </event>
+    <event value="5026" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000100" message="Deserializing diagnostic failed index file %2 with error code (%1) because the XML does not contain valid XML.">
+    </event>
+  </events>
+</provider>

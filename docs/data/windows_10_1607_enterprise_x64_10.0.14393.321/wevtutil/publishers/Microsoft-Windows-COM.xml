@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-COM" guid="d4263c98-310c-4d97-ba39-b55354f08584" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="Microsoft-Windows-COM" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-COM/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="COM_CLASSNOTREG_ERROR" mask="10" message="Deprecated COM interfaces">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="Deprecated COM CLSID %1.">
+    </event>
+  </events>
+</provider>

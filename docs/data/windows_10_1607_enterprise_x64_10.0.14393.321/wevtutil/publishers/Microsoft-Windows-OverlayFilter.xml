@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-OverlayFilter" guid="46c78e5c-a213-46a8-8a6b-622f6916201d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wof.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\wof.sys" messageFileName="C:\Windows\system32\drivers\wof.sys" message="Microsoft-Windows-OverlayFilter" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="IntegrityFileOpen" value="6553601" message="">
+    </opcode>
+    <opcode name="EnumVolume" value="6553602" message="">
+    </opcode>
+    <opcode name="IntegrityBlockVerificationFailure" value="6619137" message="">
+    </opcode>
+    <opcode name="ReportHashGenerationToBitlockerError" value="6619138" message="">
+    </opcode>
+    <opcode name="IntegrityInvalidBlock" value="6684673" message="">
+    </opcode>
+    <opcode name="CreateHashFile" value="6684674" message="">
+    </opcode>
+    <opcode name="CompleteHashFile" value="6750210" message="">
+    </opcode>
+    <opcode name="DeleteHashFile" value="6815746" message="">
+    </opcode>
+    <opcode name="ResumeHashFile" value="6881282" message="">
+    </opcode>
+    <opcode name="PauseHashFile" value="6946818" message="">
+    </opcode>
+    <opcode name="GenerateHashFileError" value="7012354" message="">
+    </opcode>
+    <opcode name="DeleteHashFileError" value="7077890" message="">
+    </opcode>
+    <opcode name="FileReadError" value="7143426" message="">
+    </opcode>
+    <opcode name="FileWriteError" value="7208962" message="">
+    </opcode>
+    <opcode name="ActionError" value="7274498" message="">
+    </opcode>
+    <opcode name="ActionGenerateHashes" value="7340034" message="">
+    </opcode>
+    <opcode name="ActionDeleteHashes" value="7405570" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="IntegrityVerification" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="WIM integrity verification">
+    </task>
+    <task name="WofTask" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="The Windows Overlay Task">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="24832" version="0" opcode="100" channel="8" level="1" task="1" keywords="0x8000000000000000" message="The filter failed to open the integrity file for %2 (data source %3) with status %4.">
+    </event>
+    <event value="24833" version="0" opcode="101" channel="8" level="1" task="1" keywords="0x8000000000000000" message="The filter failed to validate block %3 of length %4 from %2.">
+    </event>
+    <event value="24834" version="0" opcode="102" channel="8" level="1" task="1" keywords="0x8000000000000000" message="The filter failed to validate a read from %2 at file offset %3 of length %4.">
+    </event>
+    <event value="24835" version="0" opcode="100" channel="8" level="4" task="2" keywords="0x8000000000000000" message="The task is enumerating Volume %1">
+    </event>
+    <event value="24836" version="0" opcode="101" channel="8" level="2" task="2" keywords="0x8000000000000000" message="The task has failed to report integrity file generation completion to BitLocker. HRESULT = %1">
+    </event>
+    <event value="24837" version="0" opcode="102" channel="8" level="4" task="2" keywords="0x8000000000000000" message="The task has created integrity file %1 for file %2">
+    </event>
+    <event value="24838" version="0" opcode="103" channel="8" level="4" task="2" keywords="0x8000000000000000" message="The task has completed generation of integrity file %1 for file %2">
+    </event>
+    <event value="24839" version="0" opcode="104" channel="8" level="4" task="2" keywords="0x8000000000000000" message="The task has deleted integrity file %1 for file %2">
+    </event>
+    <event value="24840" version="0" opcode="105" channel="8" level="4" task="2" keywords="0x8000000000000000" message="The task is resuming generation of integrity file %1 at file offset %2">
+    </event>
+    <event value="24841" version="0" opcode="106" channel="8" level="4" task="2" keywords="0x8000000000000000" message="The task has paused generation of integrity file %1 at file offset %2">
+    </event>
+    <event value="24842" version="0" opcode="111" channel="8" level="2" task="2" keywords="0x8000000000000000" message="The task has failed to identify encryption/decryption state. HRESULT = %1">
+    </event>
+    <event value="24843" version="0" opcode="107" channel="8" level="2" task="2" keywords="0x8000000000000000" message="The task has failed to generate integrity file %1 for file %2. HRESULT = %3">
+    </event>
+    <event value="24844" version="0" opcode="108" channel="8" level="2" task="2" keywords="0x8000000000000000" message="The task has failed to delete integrity file %1 for file %2. HRESULT = %3">
+    </event>
+    <event value="24845" version="0" opcode="109" channel="8" level="2" task="2" keywords="0x8000000000000000" message="The task has failed to read file at %1. HRESULT = %3">
+    </event>
+    <event value="24846" version="0" opcode="110" channel="8" level="2" task="2" keywords="0x8000000000000000" message="The task has failed to write file at %1. HRESULT = %3">
+    </event>
+    <event value="24847" version="0" opcode="100" channel="8" level="4" task="1" keywords="0x8000000000000000" message="The filter opened the integrity file for %2 (data source %3).">
+    </event>
+    <event value="24848" version="0" opcode="100" channel="8" level="4" task="1" keywords="0x8000000000000000" message="The filter did not open the integrity file for %2 (data source %3) because it is not ready.">
+    </event>
+    <event value="24849" version="0" opcode="112" channel="8" level="4" task="2" keywords="0x8000000000000000" message="The task is generating integrity files">
+    </event>
+    <event value="24850" version="0" opcode="113" channel="8" level="4" task="2" keywords="0x8000000000000000" message="The task is deleting integrity files">
+    </event>
+  </events>
+</provider>

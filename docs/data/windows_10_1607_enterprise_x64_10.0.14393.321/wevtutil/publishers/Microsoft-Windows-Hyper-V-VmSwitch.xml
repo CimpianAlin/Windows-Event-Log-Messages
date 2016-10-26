@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-VmSwitch" guid="67dc0d66-3695-47c0-9642-33f76f7bd7ad" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.206&amp;FileName=vmswitch.sys&amp;FileVer=10.0.14393.206" resourceFileName="C:\Windows\system32\drivers\vmswitch.sys " messageFileName="C:\Windows\system32\drivers\vmswitch.sys" message="Microsoft-Windows-Hyper-V-VmSwitch" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-VmSwitch-Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-VmSwitch-Diagnostic" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ConfigStoreInitialize" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DriverInit" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EnableNIC" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InitializeNIC" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InitializeSwitch" value="1005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreSwitch" value="1006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StorePort" value="1007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StoreNic" value="1008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestoreSwitch" value="1009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestorePort" value="1010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestoreNic" value="1011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BindProtocolNic" value="1012" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UnbindProtocolNic" value="1013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectMedia" value="1014" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisconnectMedia" value="1015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NicOperational" value="1016" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NicNonOperational" value="1017" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MacChange" value="1018" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProtocolVersionNegotiate" value="1019" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MacRelearn" value="1020" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MacConfig" value="1021" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NicConnect" value="1022" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PktDrop" value="1023" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CreatePort" value="1024" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="VmqMove" value="1025" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TrunkModeNotSupported" value="1026" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NicRestore" value="1027" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="VlanPtNicNotSupported" value="1028" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InitializePD" value="1029" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="VmsConfiguration" mask="1" message="">
+    </keyword>
+    <keyword name="VmsDataPath" mask="2" message="">
+    </keyword>
+    <keyword name="VmsOidStatus" mask="4" message="">
+    </keyword>
+    <keyword name="VmsQos" mask="8" message="">
+    </keyword>
+    <keyword name="VmsVmq" mask="10" message="">
+    </keyword>
+    <keyword name="VmsRss" mask="20" message="">
+    </keyword>
+    <keyword name="VmsVerifier" mask="40" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="2" task="1001" keywords="0x8000000000000000" message="Failed to open handle to configuration store root due to error %1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="8" level="2" task="1001" keywords="0x8000000000000000" message="Failed to restore switch. The switch name in the configuration store is corrupted.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="8" level="2" task="1002" keywords="0x8000000000000000" message="Failed to register the control device object for the switch due to error %1.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="8" level="2" task="1002" keywords="0x8000000000000000" message="Failed to initialize VMSwitch driver due to error %1.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="8" level="4" task="1003" keywords="0x8000000000000000" message="Miniport NIC %2 (Friendly Name: %4) successfully enabled">
+    </event>
+    <event value="6" version="0" opcode="0" channel="8" level="2" task="1003" keywords="0x8000000000000000" message="Failed to enable miniport NIC %3 (Friendly Name: %5), status = %1.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="8" level="4" task="1004" keywords="0x8000000000000000" message="Miniport NIC %2 (Friendly Name: %4) successfully initialized.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="8" level="2" task="1004" keywords="0x8000000000000000" message="Failed to initialize miniport NIC %3 (Friendly Name: %5), status = %1.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="8" level="4" task="1005" keywords="0x8000000000000000" message="Switch %2 (Friendly Name: %4) successfully initialized.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="8" level="2" task="1005" keywords="0x8000000000000000" message="Failed to initialize switch %3 (Friendly Name: %5), status = %1, UniqueEvent = %6.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="8" level="2" task="1006" keywords="0x8000000000000000" message="Failed to update configuration for switch %3 (Friendly Name: %5), status = %1, UniqueEvent = %6.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="8" level="2" task="1007" keywords="0x8000000000000000" message="Failed to update configuration for port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9), status = %1.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="8" level="2" task="1008" keywords="0x8000000000000000" message="Failed to update configuration for NIC %3 (Friendly Name: %5), status = %1.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="8" level="2" task="1009" keywords="0x8000000000000000" message="Failed to restore configuration for switch %3 (Friendly Name: %5),  status = %1, UniqueEvent = %6.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="8" level="2" task="1010" keywords="0x8000000000000000" message="Failed to restore configuration for port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9), status = %1.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="8" level="2" task="1011" keywords="0x8000000000000000" message="Failed to restore configuration for NIC %3 (Friendly Name: %5), status = %1.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="8" level="4" task="1012" keywords="0x8000000000000000" message="Protocol NIC %2 (Friendly Name: %4) successfully bound to port %6 (Friendly Name: %8) on switch %10(Friendly Name: %12).">
+    </event>
+    <event value="18" version="0" opcode="0" channel="8" level="2" task="1012" keywords="0x8000000000000000" message="Failed to bind protocol NIC %3 (Friendly Name: %5) to port %7 (Friendly Name: %9) on switch %11 (Friendly Name: %13), status = %1.">
+    </event>
+    <event value="19" version="0" opcode="0" channel="8" level="4" task="1013" keywords="0x8000000000000000" message="Protocol NIC %2 (Friendly Name: %4) successfully unbound.">
+    </event>
+    <event value="20" version="0" opcode="0" channel="8" level="2" task="1013" keywords="0x8000000000000000" message="Failed to unbind protocol NIC %3 (Friendly Name: %5), status = %1.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="8" level="4" task="1014" keywords="0x8000000000000000" message="Media connected on NIC %2 (Friendly Name: %4).">
+    </event>
+    <event value="22" version="0" opcode="0" channel="8" level="3" task="1015" keywords="0x8000000000000000" message="Media disconnected on NIC %2 (Friendly Name: %4).">
+    </event>
+    <event value="23" version="0" opcode="0" channel="8" level="4" task="1016" keywords="0x8000000000000000" message="NIC %2 (Friendly Name: %4) is now operational.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="8" level="4" task="1017" keywords="0x8000000000000000" message="NIC %2 (Friendly Name: %4) is no longer operational.">
+    </event>
+    <event value="25" version="0" opcode="0" channel="8" level="4" task="1018" keywords="0x8000000000000000" message="The MAC address %2 has moved from port %4 (Friendly Name: %6) to port %8 (Friendly Name: %10).">
+    </event>
+    <event value="26" version="0" opcode="0" channel="8" level="2" task="1019" keywords="0x8000000000000000" message="Cannot load networking driver in %2 because there is no mutually supported protocol.  Server version %6  Client version %8 (Virtual machine ID %4).">
+    </event>
+    <event value="28" version="0" opcode="0" channel="8" level="3" task="1020" keywords="0x8000000000000000" message="Port %8 (Friendly Name: %10) was prevented from using MAC address %2 because it is pinned to port %4 (Friendly Name: %6).">
+    </event>
+    <event value="29" version="0" opcode="0" channel="8" level="2" task="1021" keywords="0x8000000000000000" message="Invalid mac address %2 configured for NIC %4 (Friendly Name: %6).">
+    </event>
+    <event value="30" version="0" opcode="0" channel="8" level="3" task="1021" keywords="0x8000000000000000" message="NIC %4 (Friendly Name: %6) was prevented from using MAC address %2 because it is connected to a port that does not allow mac spoofing.">
+    </event>
+    <event value="31" version="0" opcode="0" channel="8" level="4" task="1021" keywords="0x8000000000000000" message="The mac address for NIC %4 (Friendly Name: %6) has been overridden by the VM to %2.">
+    </event>
+    <event value="32" version="0" opcode="0" channel="8" level="2" task="1022" keywords="0x8000000000000000" message="Failed to connect NIC %3 (Friendly Name: %5) to port %7 (Friendly Name: %9) on switch %11 (Friendly Name: %13), status = %1.">
+    </event>
+    <event value="33" version="0" opcode="0" channel="8" level="2" task="1023" keywords="0x8000000000000000" message="One or more packets were dropped on port %8 (Friendly Name: %10) on switch %12 (Friendly Name: %14) because the packet contained spoofed IP address. Connected NIC is %4  (Friendly Name: %6)on VM %2.">
+    </event>
+    <event value="34" version="0" opcode="0" channel="8" level="2" task="1024" keywords="0x8000000000000000" message="Failed to create port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). The task was vetoed by a switch extension, or the switch extension stack is corrupted. Status = %1.">
+    </event>
+    <event value="35" version="0" opcode="0" channel="8" level="2" task="1022" keywords="0x8000000000000000" message="Failed to connect NIC %3 (Friendly Name: %5) to port %7 (Friendly Name: %9) on switch %11 (Friendly Name: %13). The task was vetoed by a switch extension, or the switch extension stack is corrupted. Status = %1.">
+    </event>
+    <event value="36" version="0" opcode="0" channel="17" level="3" task="1023" keywords="0x2000010000000002" message="A packet was dropped on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) because the packet is filtered by Port ACL entry %10.">
+    </event>
+    <event value="37" version="0" opcode="0" channel="17" level="3" task="1023" keywords="0x2000010000000002" message="An IPsec offload inbound packet with destination IP %7 and SPI %8 destined to port %3 (Friendly Name: %5);on switch %5 (Friendly Name: %7) was dropped. Reason: %1">
+    </event>
+    <event value="38" version="0" opcode="0" channel="17" level="3" task="1023" keywords="0x2000010000000002" message="An IPsec offload inbound packet failed crypto on the NIC. Destination IP address: %10, SPI: %11, port %2 (Friendly Name: %4), switch %6 (Friendly Name: %8) This may be a DoS attack since the IP and SPI switch lookup succeeded but the SA packet port did not match. Ignoring the crypto failure and letting the packet through.">
+    </event>
+    <event value="39" version="0" opcode="0" channel="17" level="3" task="1023" keywords="0x2000010000000002" message="An IPsec offload outbound packet was dropped. Offload handle: %9, from port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8)  The packet did not match any existing offload handle on that port. This may be network attack.">
+    </event>
+    <event value="40" version="0" opcode="0" channel="17" level="3" task="1023" keywords="0x2000010000000002" message="An IPsec offload attempt failed. Originating from port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). Reason: %1. NDIS Status: %10 ">
+    </event>
+    <event value="41" version="0" opcode="0" channel="8" level="2" task="1005" keywords="0x8000000000000000" message="Failed to query for switch extensions. The switch data path cannot start. Switch %3 (Friendly Name: %5), status = %1, UniqueEvent = %6.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="8" level="4" task="1005" keywords="0x8000000000000000" message="A forwarding extension is enabled on switch %2 (Friendly Name: %4). Built-in forwarding capability is disabled">
+    </event>
+    <event value="43" version="0" opcode="0" channel="8" level="4" task="1005" keywords="0x8000000000000000" message="A forwarding extension was disabled on switch %2 (Friendly Name: %4). Built-in forwarding capability is enabled">
+    </event>
+    <event value="44" version="0" opcode="0" channel="17" level="5" task="1025" keywords="0x2000000000000020" message="VMQ %5 on switch %2 (Friendly Name: %4) was moved from Processor %6 to Processor %7.">
+    </event>
+    <event value="45" version="0" opcode="0" channel="17" level="3" task="1023" keywords="0x2000010000000002" message="An IPsec offload packet was dropped because it going to be delivered to multiple destinations. From port %2 (Friendly Name: %4) on switch %6  (Friendly Name: %8). The multiple destinations could be because of Port monitoring, Layer 2 Multicast or switch flooding.">
+    </event>
+    <event value="46" version="0" opcode="0" channel="8" level="3" task="1026" keywords="0x8000000000000000" message="The connected NIC does not support VLAN trunk mode on switch %2 (Friendly Name: %4) port %6 (Friendly Name: %8).">
+    </event>
+    <event value="47" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000008" message="CurrentTime= %1 BytesSent= %2 BytesDropped= %3 NewSendWindow= %4 MinSendWindow= %5">
+    </event>
+    <event value="48" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000008" message="NetLuid= %1 CurrentTime= %2 ActiveFlows= %3 ActiveWeight= %4 NewSendWindow= %5">
+    </event>
+    <event value="49" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000008" message="FlowConformanceEventId= %1 CurrentTime= %2 LastConformanceTime= %3 PeakConformanceTime= %4 Tokens= %5 MaxTokens= %6 Rate= %7 LastConformanceCredits= %8">
+    </event>
+    <event value="50" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000008" message="FlowSendQueueEventId= %1 CurrentTime= %2 IdleTime= %3 DelayTime= %4 BytesRequested= %5 BytesSent= %6 BytesQueued= %7">
+    </event>
+    <event value="51" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000008" message="TimerId= %1 EventId= %2 CurrentTime= %3 SetTime= %4 RunTime= %5 FlowsProcessed= %6 NblsSent= %7 NblsDropped= %8 Flags= %9">
+    </event>
+    <event value="52" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000008" message="NetLuid= %1 CurrentTime= %2 BytesRequested= %3 BytesCompleted= %4 BytesInQueue= %5 BufferAvailable= %6 AlphaTerm= %8 BetaTerm= %7 DeltaSendWindow= %9 NewSendWindow= %10">
+    </event>
+    <event value="53" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000010000000008" message="Qos Packet dropped, reason=%1">
+    </event>
+    <event value="54" version="0" opcode="0" channel="17" level="3" task="1023" keywords="0x2000010000000002" message="NBL originating from Nic %2 (Friendly Name: %4) was dropped in switch %6 (Friendly Name: %8), Reason %9">
+    </event>
+    <event value="55" version="0" opcode="0" channel="17" level="3" task="1023" keywords="0x2000010000000002" message="NBL destined to Nic %2 (Friendly Name: %4) was dropped in switch %6 (Friendly Name: %8), Reason %9">
+    </event>
+    <event value="56" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="NBL %9 received from Nic %2 (Friendly Name: %4) in switch %6 (Friendly Name: %8)">
+    </event>
+    <event value="57" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="NBL %13 routed from Nic %2 (Friendly Name: %4) to Nic %6 (Friendly Name: %8) on switch %10 (Friendly Name: %12)">
+    </event>
+    <event value="58" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="NBL %9 delivered to Nic %2 (Friendly Name: %4) in switch %6 (Friendly Name: %8)">
+    </event>
+    <event value="59" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000010000000002" message="Switch extension %2 has vetoed delivery of NBL from Nic %4 (Friendly Name: %6) to Nic %8 (Friendly Name: %10) on switch %12 (Friendly Name: %14)">
+    </event>
+    <event value="60" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000010000000002" message="NBLs were dropped by extension %10 (Friendly Name: %12) in switch %6 (Friendly Name: %8). Source Nic %2 (Friendly Name: %4), Reason %14 ">
+    </event>
+    <event value="61" version="0" opcode="0" channel="8" level="3" task="1027" keywords="0x8000000000000000" message="Saved state restored for NIC %6 (Friendly Name: %8) on Virtual Machine ID %12 (Friendly Name: %10) was not processed. The state %4 was originally saved by Extension %3 (Friendly Name: %2). Restore will continue.">
+    </event>
+    <event value="62" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Switch %2 (Friendly Name: %4) successfully deleted.">
+    </event>
+    <event value="63" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to delete switch %3 (Friendly Name: %5), status = %1, UniqueEvent = %6.">
+    </event>
+    <event value="64" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Switch %2 (Friendly Name: %4) info successfully set.">
+    </event>
+    <event value="65" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to set switch info for switch %3 (Friendly Name: %5), status = %1, UniqueEvent = %6.">
+    </event>
+    <event value="66" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Delete complete for Switch %2 (Friendly Name: %4).">
+    </event>
+    <event value="67" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Port %2 (Friendly Name: %4) successfully created on switch %6 (Friendly Name: %8).">
+    </event>
+    <event value="68" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to create port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). Status = %1.">
+    </event>
+    <event value="69" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Port %2 (Friendly Name: %4) successfully deleted - switch %6 (Friendly Name: %8).">
+    </event>
+    <event value="70" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to delete port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). Status = %1.">
+    </event>
+    <event value="71" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Delete complete for port %2 (Friendly Name: %4).">
+    </event>
+    <event value="72" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to set monitor mode on port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). Status = %1.">
+    </event>
+    <event value="73" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to set VLAN info on port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). Status = %1.">
+    </event>
+    <event value="74" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to set IP spoofing info on port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). Status = %1.">
+    </event>
+    <event value="75" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The operation &apos;%11&apos; failed on port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). Status = %1.">
+    </event>
+    <event value="76" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The operation &apos;%6&apos; failed on nic %3 (Friendly Name: %5). Status = %1.">
+    </event>
+    <event value="77" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to disconnect NIC %3 (Friendly Name: %5), status = %1.">
+    </event>
+    <event value="78" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to complete operation &apos;%13&apos; on port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9) Property Id %10 Instance Id %11. Status = %1.">
+    </event>
+    <event value="79" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Completed operation &apos;%11&apos; on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) Property Id %9 Instance Id %10.">
+    </event>
+    <event value="80" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to complete operation &apos;%9&apos; on switch %3 (Friendly Name: %5) Property Id %6 Instance Id %7. Status = %1.">
+    </event>
+    <event value="81" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Completed operation &apos;%7&apos; on switch %2 (Friendly Name: %4) Property Id %5 Instance Id %6.">
+    </event>
+    <event value="82" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to complete bandwidth policy operation &apos;%16&apos; on port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9) Reservation - %10, Weight - %11, Limit - %12, BurstLimit - %13, BurstSize - %14, Reason - %15, Status = %1.">
+    </event>
+    <event value="83" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000009" message="Completed bandwidth policy operation &apos;%14&apos; on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) Reservation - %9, Weight - %10, Limit - %11, BurstLimit - %12, BurstSize - %13.">
+    </event>
+    <event value="84" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to create default flow on switch %2 (Friendly Name: %4) Reservation - %6, Weight - %7 ,Status = %5.">
+    </event>
+    <event value="85" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000009" message="Successfully created default flow on switch %2 (Friendly Name: %4) Reservation - %6, Weight - %7.">
+    </event>
+    <event value="86" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Failed to complete operation &apos;%13&apos; on port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9) Property Id %10 Instance Id %11. Status = %1.">
+    </event>
+    <event value="87" version="0" opcode="0" channel="8" level="3" task="1028" keywords="0x8000000000000000" message="The connected Nic %6 (Friendly Name: %8) does not support VLAN configuration as it is external. The VLAN configuration on port %2 (Friendly Name: %4) will be ignored.">
+    </event>
+    <event value="88" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to complete security policy operation on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) - AllowMacSpoofing: %9, EnableDhcpGuard: %10, EnableRouterGuard: %11, MonitorMode: %12, AllowIeeePriorityTag: %14, VirtualSubnetId: %15, AllowTeaming: %16, StormLimit: %17, DynamicIPAddressLimit: %18, EnableFixSpeed10G: %19, Reason: %20.">
+    </event>
+    <event value="89" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Completed security policy operation on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) - AllowMacSpoofing: %9, EnableDhcpGuard: %10, EnableRouterGuard: %11, MonitorMode: %12, AllowIeeePriorityTag: %14, VirtualSubnetId: %15, AllowTeaming %16, StormLimit: %17, DynamicIPAddressLimit: %18, EnableFixSpeed10G: %19.">
+    </event>
+    <event value="90" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to complete Port ACL policy operation on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) - Direction: %9, Applicability: %10, AclType: %11, Action: %12, LocalAddress: &apos;%14&apos;, LocalPrefixLength: %15, RemoteAddress: &apos;%17&apos;, RemotePrefixLength: %18. Reason: %19">
+    </event>
+    <event value="91" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Completed Port ACL policy operation on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) - Direction: %9, Applicability: %10, AclType: %11, Action: %12, LocalAddress: &apos;%14&apos;, LocalPrefixLength: %15, RemoteAddress: &apos;%17&apos;, RemotePrefixLength: %18.">
+    </event>
+    <event value="92" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A switch extension blocked the operation &apos;%11&apos; on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) Property Id %9 Instance Id %10.">
+    </event>
+    <event value="93" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A switch extension blocked the operation &apos;%7&apos; on switch %2 (Friendly Name: %4) Property Id %5 Instance Id %6.">
+    </event>
+    <event value="94" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to complete offload policy operation on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) - IPSecOffloadLimit: %9, VMQOffloadWeight: %10, IovOffloadWeight: %11, QueuePairs: %12, InterruptModeration: %13. Reason: %14">
+    </event>
+    <event value="95" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The VLAN configuration being set on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) is invalid. Reason: %9">
+    </event>
+    <event value="96" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="VLAN tagging is configured on port %2 (Friendly Name: %4), connected Nic %6 (Friendly Name: %8). However, the external NIC connected to this switch does not support VLAN or VLAN is disabled. This might lead to external network connectivity issues.">
+    </event>
+    <event value="97" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Failed to retrieve the active extension list from switch %3 (Friendly Name: %5), status = %1, Reason = %6.">
+    </event>
+    <event value="98" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Connectivity has been blocked for NIC %3 (Friendly Name: %5) on port %7 (Friendly Name: %9). Extension %1 is required on the port, but it is not active on switch %11 (Friendly Name: %13).">
+    </event>
+    <event value="99" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Connectivity has been blocked for NIC %2 (Friendly Name: %4) on port %6 (Friendly Name: %8) on switch %10(Friendly Name: %12). An extension feature is required on the port, but it is not registered on the system.">
+    </event>
+    <event value="100" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to complete bandwidth policy operation &apos;%9&apos; on switch %3 (Friendly Name: %5) Reservation - %6, Weight - %7, Reason - %8, Status = %1.">
+    </event>
+    <event value="101" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000009" message="Completed bandwidth policy operation &apos;%7&apos; on switch %2 (Friendly Name: %4) Reservation - %5, Weight - %6.">
+    </event>
+    <event value="102" version="0" opcode="0" channel="8" level="4" task="1019" keywords="0x8000000000000000" message="Networking driver in %2 is loaded and the protocol version is negotiated to the most recent version (Virtual machine ID %4).">
+    </event>
+    <event value="103" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Failed to complete operation &apos;%9&apos; on switch %3 (Friendly Name: %5) Property Id %6 Instance Id %7. Status = %1.">
+    </event>
+    <event value="104" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="The operation &apos;%6&apos; failed on nic %3 (Friendly Name: %5). Status = %1.">
+    </event>
+    <event value="105" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="The operation &apos;%11&apos; failed on port %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). Status = %1.">
+    </event>
+    <event value="106" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Available processor sets of the underlying physical NICs belonging to the LBFO team NIC %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) are not configured correctly. Reason: %9">
+    </event>
+    <event value="107" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="%1. OID (%2) on switch %4 (Friendly Name: %6).">
+    </event>
+    <event value="108" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="%1. OID (%2) on switch %4 (Friendly Name: %6), Result: %7.">
+    </event>
+    <event value="109" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="%1. NIC_REQUEST OID (%2) on switch %4 (Friendly Name: %6) on behalf of NIC %8 (Friendly Name: %10) (Index: %11) to  NIC %13 (Friendly Name: %15) (Index: %16)">
+    </event>
+    <event value="110" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="%1. NIC_REQUEST OID (%2) on switch %4 (Friendly Name: %6) on behalf of NIC %8 (Friendly Name: %10) (Index: %11) to  NIC %13 (Friendly Name: %15) (Index: %16), Result: %17">
+    </event>
+    <event value="111" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="%1. Status (%2) on switch %4 (Friendly Name: %6).">
+    </event>
+    <event value="112" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="%1. NIC_STATUS Status (%2) on switch %4 (Friendly Name: %6) on behalf of NIC %8 (Friendly Name: %10) (Index: %11) to  NIC %13 (Friendly Name: %15) (Index: %16)">
+    </event>
+    <event value="113" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to allocate VMQ for NIC %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). Reason - %10. Status = %1">
+    </event>
+    <event value="114" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000011" message="Failed to allocate VMQ for NIC %3 (Friendly Name: %5) on switch %7 (Friendly Name: %9). Reason - %10. Status = %1">
+    </event>
+    <event value="115" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000011" message="Completed VMQ allocation for NIC %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8).">
+    </event>
+    <event value="116" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Switch Team member connected. NIC %6 (Friendly Name: %8) with NicIndex %9 (NetCfgInstanceId: %10) on switch %2 (Friendly Name: %4). Status = %11">
+    </event>
+    <event value="117" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Switch Team member disconnected. NIC %6 (Friendly Name: %8) with NicIndex %9 (NetCfgInstanceId: %10) on switch %2 (Friendly Name: %4). Status = %11">
+    </event>
+    <event value="118" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="The external NIC %6 (Friendly Name: %8) on switch %2 (Friendly Name: %4) is connected to %9.">
+    </event>
+    <event value="119" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Port %2 (Friendly Name: %4) has MAC address spoofing enabled. This is not supported on the associated switch %6 (Friendly Name: %8) because IOV is enabled. Traffic with a spoofed MAC address will not function properly.">
+    </event>
+    <event value="120" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The configured bandwidth reservation might not be applied on switch %2 (Friendly Name: %4) as the external NIC %6 (Friendly Name: %8)&apos;s link speed is less than the total reservation configured.">
+    </event>
+    <event value="121" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="An extension is attempting to revoke the VF allocated for Port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8).">
+    </event>
+    <event value="122" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="VMQ group creation failed with NIC %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) with status = %9. Reason: %10.">
+    </event>
+    <event value="123" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000011" message="VMQ capabilities received from NIC %2 (Friendly Name: %4): VmqSupported - %6, DynamicVmqSupported - %7.">
+    </event>
+    <event value="124" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="NIC %2 (Friendly Name: %4) restarted.">
+    </event>
+    <event value="125" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Media connected on NIC %2 (Friendly Name: %4).">
+    </event>
+    <event value="126" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Media disconnected on NIC %2 (Friendly Name: %4).">
+    </event>
+    <event value="127" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The Isolation configuration could not be deleted from port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8). Reason: %9">
+    </event>
+    <event value="128" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The Isolation configuration set on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) is invalid. Reason: %9, Ext1: %10, Ext2: %11">
+    </event>
+    <event value="129" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The Routing Domain configuration (Routing Domain: %13, GUID: %11) set on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) is invalid. Reason: %9, Ext1: %14, Ext2: %15">
+    </event>
+    <event value="130" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to complete Extended Port ACL policy operation on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) - Direction: %9, Action: %10, LocalIPAddress: &apos;%12&apos;, RemoteIPAddress: &apos;%14&apos;, LocalPort: &apos;%16&apos;, RemotePort: &apos;%18&apos;, Protocol: %19, Weight: %20, Stateful: %21, IdleSessionTimeout: %22, VirtualSubnetId: %23. Reason: %24">
+    </event>
+    <event value="131" version="0" opcode="0" channel="17" level="3" task="1023" keywords="0x2000010000000002" message="A packet was dropped on port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8) because the packet is filtered by %9 extended port ACL entry with weight %10.">
+    </event>
+    <event value="132" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The extension stack for Switch %3 (Friendly Name: %5) failed to start because an extension failed to Activate.">
+    </event>
+    <event value="133" version="0" opcode="0" channel="17" level="5" task="1025" keywords="0x2000000000000020" message="RSS queue %7 from VMQ %6 of switch %2 (Friendly Name: %4) is marked as a moving candidate of processor %5.">
+    </event>
+    <event value="134" version="0" opcode="0" channel="17" level="5" task="1025" keywords="0x2000000000000020" message="VMQ %6 of switch %2 (Friendly Name: %4) is marked as a moving candidate of processor %5.">
+    </event>
+    <event value="135" version="0" opcode="0" channel="17" level="5" task="1025" keywords="0x2000000000000020" message="Processor %1 is over %2 percent.">
+    </event>
+    <event value="136" version="0" opcode="0" channel="17" level="5" task="1025" keywords="0x2000000000000020" message="Adjusted load of RSS queue %6 from VMQ %5 of switch %2 (Friendly Name: %4) on processor %7 is %8 percent.">
+    </event>
+    <event value="137" version="0" opcode="0" channel="17" level="5" task="1025" keywords="0x2000000000000020" message="Perspective load of RSS queue %6 from VMQ %5 of switch %2 (Friendly Name: %4) on processor %7 is %8 percent.">
+    </event>
+    <event value="138" version="0" opcode="0" channel="17" level="5" task="1025" keywords="0x2000000000000020" message="Adjusted load of VMQ %5 on switch %2 (Friendly Name: %4) on processor %6 is %7 percent.">
+    </event>
+    <event value="139" version="0" opcode="0" channel="17" level="5" task="1025" keywords="0x2000000000000020" message="Perspective load of VMQ %5 on switch %2 (Friendly Name: %4) on processor %6 is %7 percent.">
+    </event>
+    <event value="140" version="0" opcode="0" channel="17" level="5" task="1025" keywords="0x2000000000000020" message="Assigned processor of RSS queue %6 of VMQ %5 on switch %2 (Friendly Name: %4) was updated. The assigned processor for receives was %7, now %9. The assigned channel for sends was %8, now %10.">
+    </event>
+    <event value="141" version="0" opcode="0" channel="17" level="5" task="1025" keywords="0x2000000000000020" message="The RSS queue group of VMQ %6 from switch %2 (Friendly Name: %4) has been %5 on processor %7.">
+    </event>
+    <event value="142" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000020" message="Virtual RSS configuration update failed on NIC %2 (Friendly Name: %4) of switch %6 (Friendly Name: %8) with status %10. Reason: %9.">
+    </event>
+    <event value="143" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000020" message="Virtual RSS configuration update succeeded on NIC %2 (Friendly Name: %4) of switch %6 (Friendly Name: %8).">
+    </event>
+    <event value="144" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000040" message="Driver Verifier failure in vmswitch. Reason: %1.">
+    </event>
+    <event value="145" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Policy configuration failed. Reason: %1">
+    </event>
+    <event value="146" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Ndk adapter failed to open on behalf of virtual NIC %3 (Friendly Name: %5) on external NIC %7 (Friendly Name: %9). Reason: %1.">
+    </event>
+    <event value="147" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Ndk adapter failed to close on behalf of virtual NIC %3 (Friendly Name: %5) on external NIC %7 (Friendly Name: %9). Reason: %1.">
+    </event>
+    <event value="148" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000000" message="Ndk Oid %2 for external NIC %8 (Friendly Name: %10) on behalf of virtual NIC %4 (Friendly Name: %6). Status: %3. Reason: %1.">
+    </event>
+    <event value="149" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000000" message="Ndk PnP event %2 for virtual NIC %4 (Friendly Name: %6). Status: %3. Reason: %1.">
+    </event>
+    <event value="150" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Request RDMA failed for host virtual NIC %3 (Friendly Name: %5) on external NIC %7 (Friendly Name: %9). Reason: %1.">
+    </event>
+    <event value="151" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Nic Switch VPort update failed (for RDMA) on behalf of virtual NIC %3 (Friendly Name: %5) on external NIC %7 (Friendly Name: %9). Reason: %1.">
+    </event>
+    <event value="152" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Replacing Member %1 with new Member %2 for load balancing">
+    </event>
+    <event value="153" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Excluding Member %1 from load balancing">
+    </event>
+    <event value="154" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Using Member %1 for load balancing">
+    </event>
+    <event value="155" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Starting ConnectTimer for Member %1">
+    </event>
+    <event value="156" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Stopping to use Member %1 for load balancing">
+    </event>
+    <event value="157" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Priming Switch for TeamNic %1 using Member %2">
+    </event>
+    <event value="158" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000050000000000" message="Failing NBL send on Member %1">
+    </event>
+    <event value="159" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000050000000000" message="Failing NBL send on TeamNic %1">
+    </event>
+    <event value="160" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000050000000000" message="Dropping NBLs on Member %1">
+    </event>
+    <event value="161" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="DriverEntry exiting, Status = %1">
+    </event>
+    <event value="162" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Member %1 created.">
+    </event>
+    <event value="163" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Aggregator %1 created.">
+    </event>
+    <event value="164" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Member %2 placed in Team %1, Status = %3.">
+    </event>
+    <event value="165" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Indicating new link state for TeamNic %1. StatusBuffer = %3.">
+    </event>
+    <event value="166" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Default Aggregator for TeamNic %1 changed to %2.">
+    </event>
+    <event value="167" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BroadcastReceiver for TeamNic %1 changed to %2.">
+    </event>
+    <event value="168" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Initializing TeamNic %1, Status = %2.">
+    </event>
+    <event value="169" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Removing Aggregator %2 from TeamNic %1.">
+    </event>
+    <event value="170" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Removed Member %2 from TeamNic %1.">
+    </event>
+    <event value="171" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Removing TeamNic %1.">
+    </event>
+    <event value="172" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="MsLbfoProvider driver is unloading.">
+    </event>
+    <event value="173" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Changing Aggregator for Member %1 from %2 to %3.">
+    </event>
+    <event value="174" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="LACP Initializing for Member %1, Status = %2.">
+    </event>
+    <event value="175" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="LACP de-initialized for Member %1.">
+    </event>
+    <event value="176" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Received LACPDU on Member %1. Buffer= %3.">
+    </event>
+    <event value="177" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="LBFO LACP Member %1; ReceiveMachine: %2-&gt;%3.">
+    </event>
+    <event value="178" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="LBFO LACP Member %1; Periodic Transmission Machine: %2-&gt;%3.">
+    </event>
+    <event value="179" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="LBFO LACP Member %1; Mux Machine: %2-&gt;%3.">
+    </event>
+    <event value="180" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Sending LACPDU on Member %1. Buffer= %3.">
+    </event>
+    <event value="181" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="LBFO LACP Member %1; Selected NewAgg: %3, Ready:%4.">
+    </event>
+    <event value="182" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="LBFO LACP Member %1; UnSelected, OldAgg: %2 NewAgg: %3.">
+    </event>
+    <event value="183" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="LBFO LACP Member %1; Churn Type (%2): %3-&gt;%4.">
+    </event>
+    <event value="184" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Member Nic %2 Connected.">
+    </event>
+    <event value="185" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Member Nic %2 Disconnected.">
+    </event>
+    <event value="186" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Connection Timer Started for Member Nic %2. It will be in use shortly.">
+    </event>
+    <event value="187" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="LACP Churn detected on Member Nic %2.">
+    </event>
+    <event value="188" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Use of Vlan detected on non-default Team Nic %2">
+    </event>
+    <event value="189" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="MAC conflict: A port on the virtual switch has the same MAC as one of the underlying team members on Team Nic %2">
+    </event>
+    <event value="190" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to update NIC NDIS QoS with miniport NIC %3 (Friendly Name: %5), status = %1. UniqueEvent = %6">
+    </event>
+    <event value="191" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Successfully updated NIC NDIS QoS with Miniport NIC %2 (Friendly Name: %4)">
+    </event>
+    <event value="192" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Team NIC %2 (Friendly Name: %4) has inconsistent consolidated NDIS QoS settings">
+    </event>
+    <event value="193" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Team NIC %2 (Friendly Name: %4) has consistent consolidated NDIS QoS settings">
+    </event>
+    <event value="194" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="%5 operation failed for NIC %2 (Friendly Name: %4). Reason: %7, Error Code: %6">
+    </event>
+    <event value="195" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Switch Extension %5 operation failed for NIC %2 (Friendly Name: %4). Reason: %7, Error Code: %6">
+    </event>
+    <event value="196" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Switch Extension %5 operation succeeded for NIC %2 (Friendly Name: %4).">
+    </event>
+    <event value="197" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to set filter for VLAN Id %1 on NIC %2 (Friendly Name: %3). Reason - %4">
+    </event>
+    <event value="198" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="VMQ is disabled on the external NIC %2 (Friendly Name: %4). RSS was succesfully enabled.">
+    </event>
+    <event value="199" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000000" message="VMQ is disabled on the external NIC %2 (Friendly Name: %4). RSS could not be enabled. Reason: %6, Error Code: %5">
+    </event>
+    <event value="200" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Neither VMQ nor RSS are supported on the external NIC %2 (Friendly Name: %4).">
+    </event>
+    <event value="201" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000000" message="VMQ is disabled on the external NIC %2 (Friendly Name: %4). The RSS could not be updated to be synchronized with the host. Reason: %6, Error Code: %5">
+    </event>
+    <event value="202" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Team NIC %2 (Friendly Name: %4) failed to indicate status for new NDIS QoS settings">
+    </event>
+    <event value="203" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Team NIC %2 (Friendly Name: %4) successfully indicate status for new NDIS QoS settings">
+    </event>
+    <event value="204" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to set filter %1 on vPort %2 (MAC address=%10, VLAN Id=%8). Status=%3. Parameters: VportsEnabled=%4, team=%5, NicIndex=%6">
+    </event>
+    <event value="205" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to move filter %1 from vPort %2 to vPort %7. Status=%3. Parameters: VportsEnabled=%4, team=%5, NicIndex=%6">
+    </event>
+    <event value="206" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Initialization of switch embedded team succeeded. SwitchName %3 (Friendly Name: %5). Teaming Mode: %6. Load Balancing Algorithm: %7. VmqSumOfQueues: %8">
+    </event>
+    <event value="207" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Initialization of switch embedded team failed. SwitchName %3 (Friendly Name: %5). Teaming Mode: %6. Load Balancing Algorithm: %7. VmqSumOfQueues: %8. Status: %1">
+    </event>
+    <event value="208" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Pause of switch embedded team succeeded. SwitchName %3 (Friendly Name: %5). Teaming Mode: %6. Load Balancing Algorithm: %7. VmqSumOfQueues: %8">
+    </event>
+    <event value="209" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Initialization of switch embedded team failed. SwitchName %3 (Friendly Name: %5). Teaming Mode: %6. Load Balancing Algorithm: %7. VmqSumOfQueues: %8. Status: %1">
+    </event>
+    <event value="210" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Switch embedded team is pre-detached. SwitchName %3 (Friendly Name: %5). Teaming Mode: %6. Load Balancing Algorithm: %7. VmqSumOfQueues: %8">
+    </event>
+    <event value="211" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Switch embedded team is completely detached. SwitchName %3 (Friendly Name: %5). Teaming Mode: %6. Load Balancing Algorithm: %7. VmqSumOfQueues: %8">
+    </event>
+    <event value="212" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="NIC was successfully added to the switch embedded team. SwitchName %3 (Friendly Name: %5). NIC Name: %7 (Friendly Name: %9). NicIndex: %10">
+    </event>
+    <event value="213" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="NIC failed to be addeded to the switch embedded team. SwitchName %3 (Friendly Name: %5). NIC Name: %7 (Friendly Name: %9). NicIndex: %10. Status: %1">
+    </event>
+    <event value="214" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="NIC was removed from the switch embedded team. SwitchName %3 (Friendly Name: %5). NIC Name: %7 (Friendly Name: %9). NicIndex: %10">
+    </event>
+    <event value="215" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to clear filter %1 on vPort %2. Status=%3. Parameters: VportsEnabled=%4, team=%5, NicIndex=%6">
+    </event>
+    <event value="216" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Request RDMA failed for virtual machine NIC %3 (Friendly Name: %5) on external NIC %7 (Friendly Name: %9). Reason: %1.">
+    </event>
+    <event value="217" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000000" message="External NIC sent NDK PnP event but it failed to reach all miniports. Ndk PnP event %2 from physical NIC %4 (Friendly Name: %6). Status: %3. Reason: %1.">
+    </event>
+    <event value="218" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="NIC %2 (Friendly Name: %4) queried isolation information on port %6 (Friendly Name: %8) on switch %10 (Friendly Name: %12). RoutingDomainCount: %13, MultiTenantStackEnabled: %14, Status: %15, Ext1: %16, Ext2: %17">
+    </event>
+    <event value="219" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="NIC %2 (Friendly Name: %4) queried isolation information on port %6 (Friendly Name: %8) on switch %10 (Friendly Name: %12). RoutingDomainCount: %13, MultiTenantStackEnabled: %14, Status: %15, Ext1: %16, Ext2: %17">
+    </event>
+    <event value="220" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Status change (%13) sent to Nic %2 (Friendly Name: %4) on port %6 (Friendly Name: %8) on switch %10 (Friendly Name: %12). NicStatus: %13, Status: %14">
+    </event>
+    <event value="221" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000000" message="Data path usage blocked for Nic %2 (Friendly Name: %4) on port %6 (Friendly Name: %8) on switch %10 (Friendly Name: %12). ObjectState: %13, NicState: %14, NicPaused: %15, BuffersNotReady: %16">
+    </event>
+    <event value="222" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000000" message="Control path usage blocked for Nic %2 (Friendly Name: %4) on port %6 (Friendly Name: %8) on switch %10 (Friendly Name: %12). ObjectState: %13, NicState: %14, NicPaused: %15, BuffersNotReady: %16">
+    </event>
+    <event value="223" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Rundown: Switch %2 (Friendly Name: %4).">
+    </event>
+    <event value="224" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Rundown: Port %2 (Friendly Name: %4) on switch %6 (Friendly Name: %8).">
+    </event>
+    <event value="225" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000020" message="Virtual RSS configuration initialization failed on NIC %2 (Friendly Name: %4) of switch %6 (Friendly Name: %8) with status %10. Reason: %9.">
+    </event>
+    <event value="226" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000020" message="Virtual RSS configuration initialization succeeded on NIC %2 (Friendly Name: %4) of switch %6 (Friendly Name: %8).">
+    </event>
+    <event value="227" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000010" message="Failed to complete offload policy operation &apos;%10&apos; on switch %3 (Friendly Name: %5) DefaultQueueVrssEnabledRequested - %6, DefaultQueueVmmqEnabledRequested - %7, DefaultQueueVmmqQueuePairsRequested - %8, Reason - %9, Status = %1.">
+    </event>
+    <event value="228" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000010" message="Completed offload policy operation &apos;%8&apos; on switch %2 (Friendly Name: %4) DefaultQueueVrssEnabledRequested - %5, DefaultQueueVmmqEnabledRequested - %6, DefaultQueueVmmqQueuePairsRequested - %7">
+    </event>
+    <event value="229" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Syncing TCP offloads for switch embedded teaming failed. HNV might not work correctly. SwitchName %3 (Friendly Name: %5), Physical Adapter %7 (Friendly Name: %9), NicIndex %10, Failure reason: %1.">
+    </event>
+    <event value="230" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Syncing TCP offloads for switch embedded teaming succeeded. SwitchName %2 (Friendly Name: %4).">
+    </event>
+    <event value="231" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="A potentially looped back packet with MAC %2 was indicated to physical adapter %4 (Friendly Name: %6) since %7 ms passed since it was last seen as the source MAC for a virtual NIC connected to the vSwitch.">
+    </event>
+    <event value="232" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="NIC %2 (Friendly Name: %4) successfully connected to port %6 (Friendly Name: %8) on switch %10(Friendly Name: %12).">
+    </event>
+    <event value="233" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The operation &apos;%5&apos; succeeded on nic %2 (Friendly Name: %4).">
+    </event>
+    <event value="234" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="NIC %2 successfully disconnected from port %4.">
+    </event>
+    <event value="235" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="NIC %3 disconnect from port %5 failed. Status = %1, UniqueEvent = %6.">
+    </event>
+    <event value="236" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to allocate virtual function for NIC %3 (Friendly Name: %5), status = %1.">
+    </event>
+    <event value="237" version="0" opcode="0" channel="8" level="2" task="1029" keywords="0x8000000000000000" message="Failed to enable Packet Direct for switch %4. %5">
+    </event>
+    <event value="238" version="0" opcode="0" channel="8" level="2" task="1029" keywords="0x8000000000000000" message="Failed to setup Packet Direct access for virtual NIC %3 (Friendly Name: %5), status = %1.">
+    </event>
+    <event value="239" version="0" opcode="0" channel="8" level="2" task="1029" keywords="0x8000000000000000" message="Failed to setup Packet Direct data path on switch %3 (Friendly Name: %5), status = %1.">
+    </event>
+    <event value="240" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="PD Buffer %9 delivered to Nic %2 (Friendly Name: %4) in switch %6 (Friendly Name: %8)">
+    </event>
+    <event value="241" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="PD Buffer %9 received from Nic %2 (Friendly Name: %4) in switch %6 (Friendly Name: %8)">
+    </event>
+    <event value="242" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="PD Buffer %13 routed from Nic %2 (Friendly Name: %4) to Nic %6 (Friendly Name: %8) on switch %10 (Friendly Name: %12)">
+    </event>
+    <event value="243" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Insufficient number of available MAC address filters for configuring %10 Trunk VLAN IDs on IOV switch %4, NIC %8.">
+    </event>
+    <event value="244" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Insufficient number of available MAC address filters for configuring %10 Routing Domain VLANs on IOV switch %4, NIC %8.">
+    </event>
+    <event value="245" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Successfully set filter %1 on vPort %2 (MAC address=%10, VLAN Id=%8). Parameters: VportsEnabled=%4, team=%5, NicIndex=%6">
+    </event>
+    <event value="246" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Successfully moved filter %1 from vPort %2 to vPort %7. Parameters: VportsEnabled=%4, team=%5, NicIndex=%6">
+    </event>
+    <event value="247" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Successfully cleared filter %1 on vPort %2. Parameters: VportsEnabled=%4, team=%5, NicIndex=%6">
+    </event>
+    <event value="248" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Send spreading was successfully enabled on NIC %2 (Friendly Name: %4).">
+    </event>
+    <event value="249" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="The system is not ready to enable send spreading on NIC %2 (Friendly Name: %4). Reason: %6, Error Code: %5">
+    </event>
+    <event value="250" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Send spreading on NIC %2 (Friendly Name: %4) is not supported. Reason: %6, Error Code: %5">
+    </event>
+    <event value="251" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000000" message="Failed to enable send spreading on NIC %2 (Friendly Name: %4). Reason: %6, Error Code: %5">
+    </event>
+    <event value="252" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Memory allocated for packets in a vRss queue (on CPU %5) on switch %2 (Friendly Name: %4) due to low resource on the physical NIC has increased to %6MB. Packets will be dropped once queue size reaches %7MB.">
+    </event>
+    <event value="253" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Memory allocated for packets in a vRss queue (on CPU %5) on switch %2 (Friendly Name: %4) due to low resource on the physical NIC has reduced to %6MB.">
+    </event>
+  </events>
+</provider>

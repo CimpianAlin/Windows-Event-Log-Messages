@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-StorageVSP" guid="10b3d268-9782-49a4-aacc-a93c5482cb6f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=storvsp.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\storvsp.sys" messageFileName="C:\Windows\system32\drivers\storvsp.sys" message="Microsoft-Windows-Hyper-V-StorageVSP" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-StorageVSP-Admin" id="16" flags="0" message="Microsoft-Hyper-V-StorageVSP-Admin">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="3" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cannot load storage device in &apos;%1&apos; because the version is incompatible with the version expected by the server.  Server version %3 Client version %4 (Virtual machine ID %2). To fix this problem, you must upgrade the integration services.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Storage device &apos;%1&apos; received a recovery status notification. Current device state = %2, Last status = %3, New status = %4.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Storage device &apos;%1&apos; changed recovery state. Previous state = %2, New state = %3.">
+    </event>
+  </events>
+</provider>

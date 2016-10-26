@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Telephony-PhoneOm" guid="e08c85f4-c224-499d-b5b3-c1bce960f096" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=PhoneOm.dll&amp;FileVer=10.0.14393.0" resourceFileName="PhoneOm.dll" messageFileName="PhoneOm.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SimSecEnsureLine" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SimSecGetPinLockState" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SimSecGetPersoCheckState" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SimSecGetPersoDeactivationState" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SimSecEnablePin" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SimSecUnblockPin" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SimSecUnlockPin" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SimSecUnlockPerso" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SimSecChangePin" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StartCall" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SimSecChangePin2" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SimSecUnblockPin2" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="Debug" mask="4" message="">
+    </keyword>
+    <keyword name="PhoneDefault" mask="8" message="">
+    </keyword>
+    <keyword name="CONTROLLER" mask="10" message="">
+    </keyword>
+    <keyword name="CellularProvider" mask="20" message="">
+    </keyword>
+    <keyword name="PHONEUI" mask="40" message="">
+    </keyword>
+    <keyword name="Callhistory" mask="100" message="">
+    </keyword>
+    <keyword name="CDMA" mask="200" message="">
+    </keyword>
+    <keyword name="VVM" mask="400" message="">
+    </keyword>
+    <keyword name="MISC" mask="1000" message="">
+    </keyword>
+    <keyword name="PhoneOM" mask="2000" message="">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="[ERROR] originated HRESULT=%1 [%2 @ %3]">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="[ERROR] propagated HRESULT=%1 [%2 @ %3]">
+    </event>
+    <event value="5" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="%1">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Phone listener endpoint added. Listener: %1 Endpoint: %2">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Phone listener add completed. Listener: %1">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Phone listener endpoint removed. Listener: %1 Endpoint: %2">
+    </event>
+    <event value="105" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Phone listener remove completed. Listener: %1">
+    </event>
+    <event value="106" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Phone client has called PhoneWaitForAPIReady.">
+    </event>
+    <event value="107" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="PhoneWaitForAPIReady exiting successfully. The API should be ready to be used now.">
+    </event>
+    <event value="200" version="0" opcode="1" channel="0" level="5" task="10" keywords="0x2" message="">
+    </event>
+    <event value="201" version="0" opcode="2" channel="0" level="5" task="10" keywords="0x2" message="">
+    </event>
+    <event value="202" version="0" opcode="1" channel="0" level="5" task="11" keywords="0x2" message="">
+    </event>
+    <event value="203" version="0" opcode="2" channel="0" level="5" task="11" keywords="0x2" message="">
+    </event>
+    <event value="204" version="0" opcode="1" channel="0" level="5" task="12" keywords="0x2" message="">
+    </event>
+    <event value="205" version="0" opcode="2" channel="0" level="5" task="12" keywords="0x2" message="">
+    </event>
+    <event value="206" version="0" opcode="1" channel="0" level="5" task="13" keywords="0x2" message="">
+    </event>
+    <event value="207" version="0" opcode="2" channel="0" level="5" task="13" keywords="0x2" message="">
+    </event>
+    <event value="208" version="0" opcode="1" channel="0" level="5" task="14" keywords="0x2" message="">
+    </event>
+    <event value="209" version="0" opcode="2" channel="0" level="5" task="14" keywords="0x2" message="">
+    </event>
+    <event value="210" version="0" opcode="1" channel="0" level="5" task="15" keywords="0x2" message="">
+    </event>
+    <event value="211" version="0" opcode="2" channel="0" level="5" task="15" keywords="0x2" message="">
+    </event>
+    <event value="212" version="0" opcode="1" channel="0" level="5" task="16" keywords="0x2" message="">
+    </event>
+    <event value="213" version="0" opcode="2" channel="0" level="5" task="16" keywords="0x2" message="">
+    </event>
+    <event value="214" version="0" opcode="1" channel="0" level="5" task="17" keywords="0x2" message="">
+    </event>
+    <event value="215" version="0" opcode="2" channel="0" level="5" task="17" keywords="0x2" message="">
+    </event>
+    <event value="216" version="0" opcode="1" channel="0" level="5" task="18" keywords="0x2" message="">
+    </event>
+    <event value="217" version="0" opcode="2" channel="0" level="5" task="18" keywords="0x2" message="">
+    </event>
+    <event value="218" version="0" opcode="1" channel="0" level="5" task="19" keywords="0x2" message="">
+    </event>
+    <event value="219" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="PhoneOM.dll unloading, but Phone API initialize/uninitialize calls mismatched.  InitCount: %1">
+    </event>
+    <event value="220" version="0" opcode="1" channel="0" level="5" task="20" keywords="0x2" message="">
+    </event>
+    <event value="221" version="0" opcode="2" channel="0" level="5" task="20" keywords="0x2" message="">
+    </event>
+    <event value="222" version="0" opcode="1" channel="0" level="5" task="21" keywords="0x2" message="">
+    </event>
+    <event value="223" version="0" opcode="2" channel="0" level="5" task="21" keywords="0x2" message="">
+    </event>
+    <event value="224" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Phone listener added.  HPHONELISTENER: %1">
+    </event>
+    <event value="225" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Phone listener removed.  HPHONELISTENER: %1">
+    </event>
+    <event value="226" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Phone listener detected service restart.  HPHONELISTENER: %1">
+    </event>
+    <event value="227" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Phone listener lost notification.  HPHONELISTENER: %1">
+    </event>
+    <event value="228" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Phone listener failed to retrieve notification.  HPHONELISTENER: %1, result: %2">
+    </event>
+    <event value="229" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Phone Api: %1">
+    </event>
+    <event value="230" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Phone Api: %1, call %2">
+    </event>
+    <event value="231" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Phone Api: %1, call %2, call2 %3">
+    </event>
+    <event value="232" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Phone Api: %1, line %2">
+    </event>
+    <event value="233" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x2000" message="Phone Api: Uninitialize without matching initialize, NOP&apos;d">
+    </event>
+    <event value="234" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="LoadLocalizedAccountFriendlyName: No aumid found for line %1.">
+    </event>
+  </events>
+</provider>

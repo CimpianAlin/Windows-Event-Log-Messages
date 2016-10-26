@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Deduplication" guid="f9fe3908-44b8-48d9-9a32-5a763ff5ed79" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ddputils.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\ddputils.dll" messageFileName="C:\Windows\System32\ddputils.dll" message="Data Deduplication" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Deduplication/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Deduplication/Scrubbing" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Deduplication/Diagnostic" id="18" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Deduplication/Performance" id="19" flags="0" message="">
+    </channel>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Optimization" value="1" eventGUID="3b8b5836-3f25-42d4-8c21-15868ed561b7" message="Data Deduplication Optimization Task">
+    </task>
+    <task name="GarbageCollection" value="2" eventGUID="93779560-849d-46ca-9282-8d9737af21c1" message="Data Deduplication Garbage Collection Task">
+    </task>
+    <task name="Scrubbing" value="3" eventGUID="42729c09-e413-44b6-a089-5fa929493a5c" message="Data Deduplication Scrubbing Task">
+    </task>
+    <task name="Unoptimization" value="4" eventGUID="f539ab35-330b-41b4-bef4-50ed4deee0cc" message="Data Deduplication Unoptimization Task">
+    </task>
+    <task name="StreamStoreOpenStream" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Open stream store stream">
+    </task>
+    <task name="StreamStorePrepareForPagingIO" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Prepare for paging IO">
+    </task>
+    <task name="StreamStoreReadStreamMap" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Read stream map">
+    </task>
+    <task name="StreamStoreReadChunks" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Read chunks">
+    </task>
+    <task name="ChunkStoreComputeChecksum" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Compute checksum">
+    </task>
+    <task name="ChunkStoreGetContainerEntry" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Get container entry">
+    </task>
+    <task name="ChunkStoreGetMaxGenerationForContainer" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="Get maximum generation for container">
+    </task>
+    <task name="ChunkContainerOpen" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="Open chunk container">
+    </task>
+    <task name="ChunkContainerRedirectionTableInit" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="Initialize chunk container redirection table">
+    </task>
+    <task name="ChunkContainerRedirectionTableValidate" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="Validate chunk container redirection table">
+    </task>
+    <task name="ChunkContainerGetValidDataLength" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="Get chunk container valid data length">
+    </task>
+    <task name="ChunkContainerRedirectionTableGetOffset" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="Get offset from chunk container redirection table">
+    </task>
+    <task name="ChunkContainerReadBlock" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="Read chunk container block">
+    </task>
+    <task name="ChunkContainerClearBlock" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="Clear chunk container block">
+    </task>
+    <task name="ChunkContainerCopyChunk" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="Copy chunk">
+    </task>
+    <task name="FileCacheInitialize" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="Initialize file cache">
+    </task>
+    <task name="FileCacheMapData" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="Map file cache data">
+    </task>
+    <task name="FileCacheUnpinData" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="Unpin file cache data">
+    </task>
+    <task name="FileCacheCopyData" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="Copy file cache data">
+    </task>
+    <task name="FileCacheIrpRead" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="Read underlying file cache data">
+    </task>
+    <task name="ChunkContainerGetFileSize" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="Get chunk container file size">
+    </task>
+    <task name="StreamStorePinStreamMap" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="Pin stream map">
+    </task>
+    <task name="ChunkContainerPin" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="Pin chunk container">
+    </task>
+    <task name="ChunkContainerPinChunk" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="Pin chunk">
+    </task>
+    <task name="ChunkContainerAllocatePoolBuffer" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="Allocate pool buffer">
+    </task>
+    <task name="ChunkContainerUnpin" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="Unpin chunk container">
+    </task>
+    <task name="ChunkContainerUnpinChunk" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="Unpin chunk">
+    </task>
+    <task name="FltDedupReadProcessing" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="Dedup read processing">
+    </task>
+    <task name="FltGetFirstStreamMapEntry" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="Get first stream map entry">
+    </task>
+    <task name="FltGetChunkRequest" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="Read chunk metadata">
+    </task>
+    <task name="FltReadChunks" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="Read chunk data">
+    </task>
+    <task name="FltRefTlCacheData" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="Reference TlCache data">
+    </task>
+    <task name="FltStrmStoreReadChunks" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="Read chunk data from stream store">
+    </task>
+    <task name="FltAssembleChunks" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="Assemble chunk data">
+    </task>
+    <task name="FltDecompressChunks" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="Decompress chunk data">
+    </task>
+    <task name="FltCopyDataToUserBuffer" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="Copy chunk data in to user buffer">
+    </task>
+    <task name="FltInsertDataToTlCache" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="Insert chunk data in to tlcache">
+    </task>
+    <task name="FltFsRead" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="Read data from dedup reparse point file">
+    </task>
+    <task name="FltPrepareStreamMap" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="Prepare stream map">
+    </task>
+    <task name="FltPatchCleanRanges" value="44" eventGUID="00000000-0000-0000-0000-000000000000" message="Patch clean ranges">
+    </task>
+    <task name="FltWriteIrp" value="45" eventGUID="00000000-0000-0000-0000-000000000000" message="Writing data to dedup file">
+    </task>
+    <task name="FltQueueWriteIrp" value="46" eventGUID="00000000-0000-0000-0000-000000000000" message="Queue write request on dedup file">
+    </task>
+    <task name="FltDoCowWork" value="47" eventGUID="00000000-0000-0000-0000-000000000000" message="Do copy on write work on dedup file">
+    </task>
+    <task name="FltDoFullRecall" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="Do full recall on dedup file">
+    </task>
+    <task name="FltDoPartialRecall" value="49" eventGUID="00000000-0000-0000-0000-000000000000" message="Do partial recall on dedup file">
+    </task>
+    <task name="FltDoDummyPagingRead" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="Do dummy paging read on dedup file">
+    </task>
+    <task name="FltReadCleanDedupFileForRecall" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="Read clean data for recalling file">
+    </task>
+    <task name="FltWriteCleanDataNormal" value="52" eventGUID="00000000-0000-0000-0000-000000000000" message="Write clean data to dedup file normally">
+    </task>
+    <task name="FltWriteCleanDataPaged" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="Write clean data to dedup file paged">
+    </task>
+    <task name="FltRecallUsingPagingIo" value="54" eventGUID="00000000-0000-0000-0000-000000000000" message="Recall dedup file using paging Io">
+    </task>
+    <task name="FltFlushAfterRecall" value="55" eventGUID="00000000-0000-0000-0000-000000000000" message="Flush dedup file after recall">
+    </task>
+    <task name="FltUpdateBitmap" value="56" eventGUID="00000000-0000-0000-0000-000000000000" message="Update bitmap after recall on dedup file">
+    </task>
+    <task name="FltDeleteReparsePoint" value="57" eventGUID="00000000-0000-0000-0000-000000000000" message="Delete dedup reparse point">
+    </task>
+    <task name="FltOpenFile" value="58" eventGUID="00000000-0000-0000-0000-000000000000" message="Open dedup file">
+    </task>
+    <task name="FltLockBufferForRead" value="59" eventGUID="00000000-0000-0000-0000-000000000000" message="Locking user buffer for read">
+    </task>
+    <task name="FltGetSystemAddressForMdl" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="Get system address for MDL">
+    </task>
+    <task name="FltReadCleanDedupFile" value="61" eventGUID="00000000-0000-0000-0000-000000000000" message="Read clean dedup file">
+    </task>
+    <task name="FltGetRangeState" value="62" eventGUID="00000000-0000-0000-0000-000000000000" message="Get range state">
+    </task>
+    <task name="StreamStoreGetChunkBody" value="63" eventGUID="00000000-0000-0000-0000-000000000000" message="Get chunk body">
+    </task>
+    <task name="StreamStoreReleaseChunk" value="64" eventGUID="00000000-0000-0000-0000-000000000000" message="Release chunk">
+    </task>
+    <task name="FltReleaseDecompressChunkContext" value="65" eventGUID="00000000-0000-0000-0000-000000000000" message="Release decompress chunk context">
+    </task>
+    <task name="FltPrepareDecompressChunkContext" value="66" eventGUID="00000000-0000-0000-0000-000000000000" message="Prepare decompress chunk context">
+    </task>
+    <task name="FltCopyDataToCompressedBuffer" value="67" eventGUID="00000000-0000-0000-0000-000000000000" message="Copy data to compressed buffer">
+    </task>
+    <task name="FltReleaseDataFromTLCache" value="68" eventGUID="00000000-0000-0000-0000-000000000000" message="Release data from TL Cache">
+    </task>
+    <task name="FltQueueReadIrp" value="69" eventGUID="00000000-0000-0000-0000-000000000000" message="Queue async read request">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Reporting" mask="1" message="Reporting">
+    </keyword>
+    <keyword name="Filter" mask="2" message="Filter">
+    </keyword>
+    <keyword name="KmStreamStore" mask="4" message="Kernel mode stream store">
+    </keyword>
+    <keyword name="KmChunkStore" mask="8" message="Kernel mode chunk store">
+    </keyword>
+    <keyword name="KmChunkContainer" mask="10" message="Kernel mode chunk container">
+    </keyword>
+    <keyword name="KmFileCache" mask="20" message="Kernel mode file cache">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="4096" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Volume &quot;%1&quot; appears as disconnected and it is ignored by the service.  You may want to rescan disks.   Error: %2.
+%3">
+    </event>
+    <event value="4097" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The COM Server with CLSID %1 and name &quot;%2&quot; cannot be started on machine &quot;%3&quot;. Most likely the CPU is under heavy load.  Error: %4.
+%5">
+    </event>
+    <event value="4098" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The COM Server with CLSID %1 and name &quot;%2&quot; cannot be started on machine &quot;%3&quot;.  Error: %4.
+%5">
+    </event>
+    <event value="4099" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The COM Server with CLSID %1 and name &quot;%2&quot; cannot be started on machine &quot;%3&quot; during Safe Mode. The Data Deduplication service cannot start while in safe mode.  Error: %4.
+%5">
+    </event>
+    <event value="4100" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A critical component required by Data Deduplication is not registered. This might happen if an error occurred during Windows setup, or if the computer does not have the Windows Server 2012 or later version of Deduplication service installed. The error returned from CoCreateInstance on class with CLSID %1 and Name &quot;%2&quot; on machine &quot;%3&quot; is %4.
+%5">
+    </event>
+    <event value="4101" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Data Deduplication service is shutting down due to idle timeout.
+%1">
+    </event>
+    <event value="4102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Data Deduplication service is shutting down due to shutdown event from the Service Control Manager.
+%1">
+    </event>
+    <event value="4103" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Data Deduplication job of type &quot;%1&quot; on volume &quot;%2&quot; has completed with return code: %3
+%4">
+    </event>
+    <event value="4104" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication error: Unexpected error calling routine %1.  hr = %2.
+%3">
+    </event>
+    <event value="4105" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication error: Unexpected error.
+%1">
+    </event>
+    <event value="4106" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication warning: %1
+Error: %2.
+%3">
+    </event>
+    <event value="4107" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication error: Unexpected COM error %1: %2.  Error code: %3.
+%4">
+    </event>
+    <event value="4108" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication was unable to access the following file or volume: &quot;%1&quot;.  This file or volume might be locked by another application right now, or you might need to give Local System access to it.
+%2">
+    </event>
+    <event value="4109" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered an unexpected error during volume scan of volumes mounted at &quot;%1&quot; (&quot;%2&quot;). To find out more information about the root cause for this error please consult the Application/System event log for other Deduplication service, VSS or VOLSNAP errors related with these volumes. Also, you might want to make sure that you can create shadow copies on these volumes by using the VSSADMIN command like this: VSSADMIN CREATE SHADOW /For=C:
+%3">
+    </event>
+    <event value="4110" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication was unable to create or access the shadow copy for volumes mounted at &quot;%1&quot; (&quot;%2&quot;). Possible causes include an improper Shadow Copy configuration, insufficient disk space, or extreme memory, I/O or CPU load of the system. To find out more information about the root cause for this error please consult the Application/System event log for other Deduplication service, VSS or VOLSNAP errors related with these volumes. Also, you might want to make sure that you can create shadow copies on these volumes by using the VSSADMIN command like this: VSSADMIN CREATE SHADOW /For=C:
+%3">
+    </event>
+    <event value="4111" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication was unable to access volumes mounted at &quot;%1&quot; (&quot;%2&quot;). Make sure that dismount or format operations do not happen while running deduplication.
+%3">
+    </event>
+    <event value="4112" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication was unable to access a file or volume. Details:
+
+%1
+ The volume may be inaccessible for I/O operations or marked read-only. In case of a cluster volume, this may be a transient failure during failover.
+%2">
+    </event>
+    <event value="4113" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication was unable to scan volume &quot;%1&quot; (&quot;%2&quot;).
+%3">
+    </event>
+    <event value="4114" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication detected a corruption on file &quot;%1&quot; at offset (&quot;%2&quot;).  If this condition persists then please restore the data from a previous backup.  Corruption details: Structure=%3, Corruption type = %4, Additional data = %5
+%6">
+    </event>
+    <event value="4115" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered failure while reconciling chunk store on volume &quot;%1&quot;. The error code was %2. Reconciliation is disabled for the current optimization job.
+%3">
+    </event>
+    <event value="4118" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered corrupted chunk container %1 while performing full garbage collection. The corrupted chunk container is skipped.
+%2">
+    </event>
+    <event value="4119" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication could not initialize change log under %1. The error code was %2.
+%3">
+    </event>
+    <event value="4120" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication service could not mark chunk container %1 as reconciled. The error code was %2.
+%3">
+    </event>
+    <event value="4121" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A Data Deduplication configuration file is corrupted. The system or volume may need to be restored from backup.
+%1">
+    </event>
+    <event value="4122" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication was unable to save one of the configuration stores on volume &quot;%1&quot; due to a disk-full error: If the disk is full, please clean it up (extend the volume or delete some files). If the disk is not full, but there is a hard quota on the volume root, please delete, disable or increase this quota.
+%2">
+    </event>
+    <event value="4123" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication could not access global configuration since the cluster service is not running. Please start the cluster service and retry the operation.
+%1">
+    </event>
+    <event value="4124" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Shadow copy &quot;%1&quot; was deleted during storage report generation.  Volume &quot;%2&quot; might be configured with inadequate shadow copy storage area. Data Deduplication could not process this volume.
+%3">
+    </event>
+    <event value="4125" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Shadow copy creation failed for volume &quot;%1&quot; after retrying for %2 minutes because other shadow copies were being created.  Reschedule the Data Deduplication for a less busy time.
+%3">
+    </event>
+    <event value="4126" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Volume &quot;%1&quot; is not supported for shadow copy.  It is possible that the volume was removed from the system.  Data Deduplication service could not process this volume.
+%2">
+    </event>
+    <event value="4127" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The volume &quot;%1&quot; has been deleted or removed from the system.
+%2">
+    </event>
+    <event value="4128" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Shadow copy creation failed for volume &quot;%1&quot; with error %2.  The volume might be configured with inadequate shadow copy storage area.  File Serve Deduplication service could not process this volume.
+%3">
+    </event>
+    <event value="4129" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The file system on volume &quot;%1&quot; is potentially corrupted.  Please run the CHKDSK utility to verify and fix the file system.
+%2">
+    </event>
+    <event value="4130" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication detected an insecure internal folder. To secure the folder, reinstall deduplication on the volume again.
+%1">
+    </event>
+    <event value="4131" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication could not find a chunk store on the volume.
+%1">
+    </event>
+    <event value="4132" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication detected multiple chunk store folders. To recover, reinstall deduplication on the volume.
+%1">
+    </event>
+    <event value="4133" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication detected conflicting chunk store folders: &quot;%1&quot; and &quot;%2&quot;.
+%3">
+    </event>
+    <event value="4134" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The data is invalid.
+%1">
+    </event>
+    <event value="4135" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication scheduler failed to initialize with error &quot;%1&quot;.
+%2">
+    </event>
+    <event value="4136" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication failed to validate job type &quot;%1&quot; on volume &quot;%2&quot; with error &quot;%3&quot;.
+%4">
+    </event>
+    <event value="4137" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication failed to start job type &quot;%1&quot; on volume &quot;%2&quot; with error &quot;%3&quot;.
+%4">
+    </event>
+    <event value="4140" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication detected job type &quot;%1&quot; on volume &quot;%2&quot; uses too much memory. %3 MB is assigned. %4 MB is used.
+%5">
+    </event>
+    <event value="4141" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Data Deduplication detected job type &quot;%1&quot; on volume &quot;%2&quot; memory usage has dropped to desirable level.
+%3">
+    </event>
+    <event value="4142" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication cancelled job type &quot;%1&quot; on volume &quot;%2&quot;. It uses too much memory than the amount assigned to it.
+%3">
+    </event>
+    <event value="4143" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Data Deduplication cancelled job type &quot;%1&quot; on volume &quot;%2&quot;. Memory resource is running low on the machine or in the job.
+%3">
+    </event>
+    <event value="4144" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication job type &quot;%1&quot; on volume &quot;%2&quot; failed to report completion to the service with error: %3.
+%4">
+    </event>
+    <event value="4145" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication detected a container cannot be compacted or updated because it has reached the maximum generation.
+%1">
+    </event>
+    <event value="4146" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication corruption log &quot;%1&quot; is corrupted.
+%2">
+    </event>
+    <event value="4147" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication corruption log &quot;%1&quot; has reached maximum allowed size &quot;%2&quot;. Please run scrubbing job to process corruption log. No more corruptions will be reported until the log is processed.
+%3">
+    </event>
+    <event value="4148" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication corruption log &quot;%1&quot; has reached maximum allowed size &quot;%2&quot;. No more corruptions will be reported until the log is processed.
+%3">
+    </event>
+    <event value="4149" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication scheduler failed to uninitialize with error &quot;%1&quot;.
+%2">
+    </event>
+    <event value="4150" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication detected a new container could not be created in a chunk store because it ran out of available container Id.
+%1">
+    </event>
+    <event value="4151" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication full garbage collection phase 1 (cleaning file related metadata) on volume &quot;%1&quot; failed with error: %2.  The job will continue with phase 2 execution (data chunk cleanup).
+%3">
+    </event>
+    <event value="4153" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication full garbage collection could not achieve maximum space reclamation because delete logs for data container %1 could not be cleaned up.
+%2">
+    </event>
+    <event value="4154" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Some files could not be deduplicated because of FSRM Quota violations on volume %1. Files skipped are likely compressed or sparse files in folders which are at quota or close to their quota limit. Please consider increasing the quota limit for folders that are at their quota limit or close to it.
+%2">
+    </event>
+    <event value="4155" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication failed to dedup file %1 &quot;%2&quot; due to fatal error %3
+%4">
+    </event>
+    <event value="4156" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered corruption while accessing a file in chunk store.
+%1">
+    </event>
+    <event value="4157" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered corruption while accessing a file in chunk store. Please run scrubbing job for diagnosis and repair.
+%1">
+    </event>
+    <event value="4158" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered checksum (CRC) mismatch error while accessing a file in chunk store. Please run scrubbing job for diagnosis and repair.
+%1">
+    </event>
+    <event value="4159" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication is unable to access file %1 because the file is in use.
+%2">
+    </event>
+    <event value="4160" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered checksum (CRC) mismatch error while accessing a file in chunk store.
+%1">
+    </event>
+    <event value="4161" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication cannot run the job on volume %1 because the dedup store version compatiblity check failed with error %2.
+%3">
+    </event>
+    <event value="4162" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication has disabled the volume %1 because it has discovered too many corruptions. Please run deep scrubbing on the volume.
+%2">
+    </event>
+    <event value="4163" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication has detected a corrupt corruption metadata file on the store at %1. Please run deep scrubbing on the volume.
+%2">
+    </event>
+    <event value="4164" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Volume &quot;%1&quot; cannot be enabled for Data Deduplication. Data Deduplication does not support volumes larger than 64TB. Error: %2.
+%3">
+    </event>
+    <event value="4165" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication cannot be enabled on SIS volume &quot;%1&quot;. Error: %2.
+%3">
+    </event>
+    <event value="4166" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="File-system is configured for case-sensitive file/folder names. Data Deduplication does not support case-sensitive file-system mode.
+%1">
+    </event>
+    <event value="4169" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication changed scrubbing job to read-only due to insufficient disk space.
+%1">
+    </event>
+    <event value="4171" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication has disabled the volume %1 because there are missing or corrupt containers. Please run deep scrubbing on the volume.
+%2">
+    </event>
+    <event value="4173" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered a disk-full error.
+%1">
+    </event>
+    <event value="4174" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication job cannot run on volume &quot;%1&quot; due to insufficient disk space.
+%2">
+    </event>
+    <event value="4175" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication job cannot run on offline volume &quot;%1&quot;.
+%2">
+    </event>
+    <event value="4176" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Data Deduplication recovered a corrupt or missing file.
+%1">
+    </event>
+    <event value="4177" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered a corrupted metadata file. To correct the problem, schedule or manually run a Garbage Collection job on the affected volume with the -Full option.
+%1">
+    </event>
+    <event value="4178" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered chunk %1 with corrupted header while updating container. The corrupted chunk is replicated to the new container %2.
+%3">
+    </event>
+    <event value="4179" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered chunk %1 with transient header corruption while updating container. The corrupted chunk is NOT replicated to the new container %2.
+%3">
+    </event>
+    <event value="4180" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication failed to read chunk container redirection table from file %1 with error %2.
+%3">
+    </event>
+    <event value="4181" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication failed to initialize reparse point index table for deep scrubbing from file %1 with error %2.
+%3">
+    </event>
+    <event value="4182" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication failed to deep scrub container file %1 on volume %2 with error %3.
+%4">
+    </event>
+    <event value="4183" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication failed to load stream map log for deep scrubbing from file %1 with error %2.
+%3">
+    </event>
+    <event value="4184" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication found a duplicate local chunk id %1 in container file %2.
+%3">
+    </event>
+    <event value="4185" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Data Deduplication job type &quot;%1&quot; on volume &quot;%2&quot; was cancelled manually.
+%3">
+    </event>
+    <event value="4186" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Scheduled data Deduplication job type &quot;%1&quot; on volume &quot;%2&quot; was cancelled.
+%3">
+    </event>
+    <event value="4189" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Data Deduplication chunk store statistics file on volume &quot;%1&quot; is corrupted and will be reset. Statistics will be updated by a subsequent job and can be updated manually by running the Update-DedupStatus cmdlet.
+%2">
+    </event>
+    <event value="4190" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Data Deduplication volume statistics file on volume &quot;%1&quot; is corrupted and will be reset. Statistics will be updated by a subsequent job and can be updated manually by running the Update-DedupStatus cmdlet.
+%2">
+    </event>
+    <event value="4191" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication failed to append to deep scrubbing log file %1 with error %2.
+%3">
+    </event>
+    <event value="4192" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered a failure during deep scrubbing on store %1 with error %2.
+%3">
+    </event>
+    <event value="4193" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Data Deduplication cancelled job type &quot;%1&quot; on volume &quot;%2&quot;. The job violated Csv dedup job placement policy.
+%3">
+    </event>
+    <event value="4194" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Data Deduplication cancelled job type &quot;%1&quot; on volume &quot;%2&quot;. The csv job monitor has been uninitialized.
+%3">
+    </event>
+    <event value="4195" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered a IO device error while accessing a file on the volume. This is likely a hardware fault in the storage subsystem.
+%1">
+    </event>
+    <event value="4196" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Data Deduplication encountered an unexpected error. If this is a cluster, verify Data Deduplication is enabled on all nodes of the cluster.
+%1">
+    </event>
+    <event value="4197" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Attempted to disable data access for data deduplicated CSV volume &quot;%1&quot; without maintenance mode. Data access can only be disabled for a CSV volume when in maintenance mode. Place volume into maintenance mode and retry.
+%2">
+    </event>
+    <event value="6144" version="0" opcode="0" channel="16" level="2" task="4" keywords="0x8000000000000001" message="Data Deduplication service could not unoptimize file &quot;%5%6%7&quot;. Error %8, &quot;%9&quot;.">
+    </event>
+    <event value="6145" version="0" opcode="0" channel="16" level="2" task="4" keywords="0x8000000000000001" message="Data Deduplication service failed to unoptimize too many files %3. Some files are not reported.">
+    </event>
+    <event value="6146" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000001" message="Data Deduplication service has finished unoptimization on volume %3 with no errors.">
+    </event>
+    <event value="6147" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000001" message="Data Deduplication service has finished unoptimization on volume %3 with %4 errors.">
+    </event>
+    <event value="6148" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has started.
+
+Volume: %4 (%3)
+Available memory: %5 MB
+Available cores: %6
+Instances: %7
+Readers per instance: %8
+Priority: %9
+IoThrottle: %10">
+    </event>
+    <event value="6149" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has started.
+
+Volume: %4 (%3)
+Available memory: %5 MB
+Available cores: %6
+Priority: %7
+Full: %8
+Volume free space (MB): %9">
+    </event>
+    <event value="6150" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has started.
+
+Volume: %4 (%3)
+Available memory: %5 MB
+Priority: %6
+Full: %7
+Read-only: %8">
+    </event>
+    <event value="6151" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has started.
+
+Volume: %4 (%3)
+Available memory: %5 MB
+Priority: %6">
+    </event>
+    <event value="6152" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has started.
+
+Volume: %4 (%3)
+Available memory: %5 MB
+Priority: %6">
+    </event>
+    <event value="6153" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has completed.
+
+Volume: %4 (%3)
+Error code: %5
+Error message: %6
+Savings rate (percent): %7
+Saved space (MB): %8
+Volume used space (MB): %9
+Volume free space (MB): %10
+Optimized file count: %11
+In-policy file count: %12
+Job processed space (MB): %13
+Job elapsed time (seconds): %18
+Job throughput (MB/second): %19
+Churn processing throughput (MB/second): %20">
+    </event>
+    <event value="6154" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has completed.
+
+Full: %2
+Volume: %5 (%4)
+Error code: %6
+Error message: %7
+Freed up space (MB): %8
+Volume free space (MB): %9
+Job elapsed time (seconds): %10
+Job throughput (MB/second): %11">
+    </event>
+    <event value="6155" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has completed.
+
+Volume: %4 (%3)
+Error code: %5
+Error message: %6">
+    </event>
+    <event value="6156" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has completed.
+
+Full: %2
+Read-only: %3
+Volume: %6 (%5)
+Error code: %7
+Error message: %8
+Total corruption count: %9
+Fixable corruption count: %10
+
+When corruptions are found, check more details in Scrubbing event channel.">
+    </event>
+    <event value="6157" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has completed.
+
+Volume: %4 (%3)
+Error code: %5
+Error message: %6
+Unoptimized file count: %7
+Job processed space (MB): %8
+Job elapsed time (seconds): %9
+Job throughput (MB/second): %10">
+    </event>
+    <event value="6158" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has been queued.
+
+Volume: %4 (%3)
+System memory percent: %5 
+Priority: %6
+Schedule mode: %7">
+    </event>
+    <event value="6159" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has been queued.
+
+Volume: %4 (%3)
+System memory percent: %5 
+Priority: %6
+Schedule mode: %7">
+    </event>
+    <event value="6160" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has been queued.
+
+Volume: %4 (%3)
+System memory percent: %5 
+Priority: %6
+Schedule mode: %7">
+    </event>
+    <event value="6170" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has been queued.
+
+Volume: %4 (%3)
+System memory percent: %5 
+Priority: %6
+Schedule mode: %7">
+    </event>
+    <event value="6171" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 job has been queued.
+
+Volume: %4 (%3)
+System memory percent: %5 
+Priority: %6
+Schedule mode: %7">
+    </event>
+    <event value="6172" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000001" message="Restore of deduplicated file &quot;%1&quot; failed with the following error: %2, &quot;%3&quot;.">
+    </event>
+    <event value="6173" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Priority %1 job has started.
+
+Volume: %4 (%3)
+File ID: %11
+Available memory: %5 MB
+Available cores: %6
+Instances: %7
+Readers per instance: %8
+Priority: %9
+IoThrottle: %10">
+    </event>
+    <event value="8192" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication detected job type &quot;%1&quot; on volume &quot;%2&quot; working set is low. Ratio to commit size is %3.
+%4">
+    </event>
+    <event value="8193" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication detected job type &quot;%1&quot; on volume &quot;%2&quot; working set has recovered to desirable level.
+%3">
+    </event>
+    <event value="8194" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication detected job type &quot;%1&quot; on volume &quot;%2&quot; page fault rate is high. The rate is %3 page faults per second.
+%4">
+    </event>
+    <event value="8195" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication detected job type &quot;%1&quot; on volume &quot;%2&quot; page fault rate has lowered to desirable level. The rate is %3 page faults per second.
+%4">
+    </event>
+    <event value="8196" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication failed to dedup file &quot;%1&quot; with file ID %2 due to non-fatal error %3
+%4.
+
+Note: You can retrieve the file name by running the command FSUTIL FILE QUERYFILENAMEBYID on the file in question.">
+    </event>
+    <event value="8197" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication was unable to access a file or volume. Details:
+
+%1
+ The volume may be inaccessible for I/O operations or marked read-only. In case of a cluster volume, this may be a transient failure during failover.
+%2">
+    </event>
+    <event value="8198" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication could not find a chunk store on the volume.
+%1">
+    </event>
+    <event value="8199" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication detected multiple chunk store folders. To recover, reinstall deduplication on the volume.
+%1">
+    </event>
+    <event value="8200" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="The data is invalid.
+%1">
+    </event>
+    <event value="8201" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication detected a container cannot be compacted or updated because it has reached the maximum generation.
+%1">
+    </event>
+    <event value="8202" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication detected a new container could not be created in a chunk store because it ran out of available container Id.
+%1">
+    </event>
+    <event value="8203" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication error: Unexpected error.
+%1">
+    </event>
+    <event value="8204" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication has aborted a group commit session.
+
+File count: %1
+Error: %2
+%3">
+    </event>
+    <event value="8205" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication encountered corruption while accessing a file in chunk store. Please run scrubbing job for diagnosis and repair.
+%1">
+    </event>
+    <event value="8206" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication encountered checksum (CRC) mismatch error while accessing a file in chunk store. Please run scrubbing job for diagnosis and repair.
+%1">
+    </event>
+    <event value="8207" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication detected an insecure internal folder. To secure the folder, reinstall deduplication on the volume again.
+%1">
+    </event>
+    <event value="8208" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="A Data Deduplication configuration file is corrupted. The system or volume may need to be restored from backup.
+%1">
+    </event>
+    <event value="8209" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication could not access global configuration since the cluster service is not running. Please start the cluster service and retry the operation.
+%1">
+    </event>
+    <event value="8210" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication error: Unexpected error calling routine %1.  hr = %2.
+%3">
+    </event>
+    <event value="8211" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication error: Unexpected COM error %1: %2.  Error code: %3.
+%4">
+    </event>
+    <event value="8212" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication warning: %1
+Error: %2.
+%3">
+    </event>
+    <event value="8213" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="The COM Server with CLSID %1 and name &quot;%2&quot; cannot be started on machine &quot;%3&quot;. Most likely the CPU is under heavy load.  Error: %4.
+%5">
+    </event>
+    <event value="8214" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="The COM Server with CLSID %1 and name &quot;%2&quot; cannot be started on machine &quot;%3&quot;.  Error: %4.
+%5">
+    </event>
+    <event value="8215" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="The COM Server with CLSID %1 and name &quot;%2&quot; cannot be started on machine &quot;%3&quot; during Safe Mode. The Data Deduplication service cannot start while in safe mode.  Error: %4.
+%5">
+    </event>
+    <event value="8216" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="A critical component required by Data Deduplication is not registered. This might happen if an error occurred during Windows setup, or if the computer does not have the Windows Server 2012 or later version of Deduplication service installed. The error returned from CoCreateInstance on class with CLSID %1 and Name &quot;%2&quot; on machine &quot;%3&quot; is %4.
+%5">
+    </event>
+    <event value="8217" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication is unable to access file %1 because the file is in use.
+%2">
+    </event>
+    <event value="8218" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication encountered checksum (CRC) mismatch error while accessing a file in chunk store.
+%1">
+    </event>
+    <event value="8219" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication encountered corruption while accessing a file in chunk store.
+%1">
+    </event>
+    <event value="8220" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Fail to open dedup setting registry key">
+    </event>
+    <event value="8221" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication failed to dedup file &quot;%1&quot; with file ID %2 due to oplock break
+%3">
+    </event>
+    <event value="8222" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication failed to load hotspot table from file %1 due to error %2.
+%3">
+    </event>
+    <event value="8223" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication failed to initialize oplock.
+
+File ID: %1
+File name: &quot;%2&quot;
+Error: %3
+%4">
+    </event>
+    <event value="8224" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication while running job on volume %1 detected invalid physical sector size %2. Using default value %3.
+%4">
+    </event>
+    <event value="8225" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication detected an unsupported chunk store container.
+%1">
+    </event>
+    <event value="8226" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication could not create window to receive task scheduler stop message due to error %1. Task(s) may not stop after duration limit.
+%2">
+    </event>
+    <event value="8227" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication could not create thread to poll for task scheduler stop message due to error %1. Task(s) may not stop after duration limit.
+%2">
+    </event>
+    <event value="8228" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="An attempt was made to perform an initialization operation when initialization has already been completed.
+%1">
+    </event>
+    <event value="8230" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000000" message="Data Deduplication detected a corruption on file &quot;%1&quot; at offset (&quot;%2&quot;).  If this condition persists then please restore the data from a previous backup.  Corruption details: Structure=%3, Corruption type = %4, Additional data = %5
+%6">
+    </event>
+    <event value="8231" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Data Deduplication encountered a disk-full error.
+%1">
+    </event>
+    <event value="8232" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication created emergency file %1.
+%3">
+    </event>
+    <event value="8233" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Data Deduplication failed to create emergency file %1 with error %2.
+%3">
+    </event>
+    <event value="8234" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication deleted emergency file %1.
+%3">
+    </event>
+    <event value="8235" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Data Deduplication failed to delete emergency file %1 with error %2.
+%3">
+    </event>
+    <event value="8236" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication detected a chunk store container with misaligned valid data length.
+%1">
+    </event>
+    <event value="8237" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Data Deduplication Garbage Collection encountered a delete log entry with an invalid stream map signature for stream map Id %1.
+%2">
+    </event>
+    <event value="8238" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication failed to initialize oplock as the file appears to be missing.
+
+File ID: %1
+File name: &quot;%2&quot;
+Error: %3
+%4">
+    </event>
+    <event value="8239" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication skipped too many file-level errors. We will not log more than %1 file-level errors per job.
+%2">
+    </event>
+    <event value="8240" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Data Deduplication diagnostic warning.
+
+%1
+%2">
+    </event>
+    <event value="8241" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication diagnostic information.
+
+%1
+%2">
+    </event>
+    <event value="8242" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Data Deduplication found file %1 with a stream map id %2 in container file %3 marked for deletion.
+%4">
+    </event>
+    <event value="8243" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Failed to enqueue job of type &quot;%1&quot; on volume &quot;%2&quot;.
+%3">
+    </event>
+    <event value="8244" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Error terminating job host process for job type &quot;%1&quot; on volume &quot;%2&quot; (process id: %3).
+%4">
+    </event>
+    <event value="8245" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication encountered corrupted chunk %1 while updating container. Corrupted data that cannot be repaired will be copied as-is to the new container %2.
+%3">
+    </event>
+    <event value="8246" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Data Deduplication job type &quot;%1&quot; on volume &quot;%2&quot; failed to exit gracefully.
+%3">
+    </event>
+    <event value="8247" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000000" message="Data Deduplication job host for job type &quot;%1&quot; on volume &quot;%2&quot; exited unexpectedly.
+%3">
+    </event>
+    <event value="8248" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication has failed to load corruption metadata file on the store at %1 due to error %2. Please run deep scrubbing on the volume.
+%3">
+    </event>
+    <event value="8249" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Data Deduplication full garbage collection phase 1 on volume &quot;%1&quot; encountered an error %2 while processing file %3. Phase 1 will need to be aborted since garbage collection of file-related metadata is unsafe to continue on file errors.
+%4">
+    </event>
+    <event value="8250" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication has failed to process corruption metadata file %1 due to error %2. Please run deep scrubbing on the volume.
+%3">
+    </event>
+    <event value="8251" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication has failed to load a corrupted metadata file %1 due to error %2. Deleting the file and continuing.
+%3">
+    </event>
+    <event value="8252" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication has failed to set NTFS allocation size for container file %1 due to error %2.
+%3">
+    </event>
+    <event value="8253" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication configured to use BCrypt provider &apos;%1&apos; for hash algorithm %2.
+%3">
+    </event>
+    <event value="8254" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Data Deduplication could not use BCrypt provider &apos;%1&apos; for hash algorithm %2 due to an error in operation %3. Reverting to the Microsoft primitive CNG provider.
+%4">
+    </event>
+    <event value="8255" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication failed to include file &quot;%1&quot; in file metadata analysis calculations.
+%2">
+    </event>
+    <event value="8256" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication failed to include stream map %1 in file metadata analysis calculations.
+%2">
+    </event>
+    <event value="8257" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication encountered an error for file &quot;%1&quot; while scanning files and folders.
+%2">
+    </event>
+    <event value="8258" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication encountered an error while attempting to resume processing. Please consult the event log parameters for more details about the current file being processed.
+%1">
+    </event>
+    <event value="8259" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="Data Deduplication encountered an error %1 whle scanning usn journal on volume %2 for updating hot range tracking.
+%3">
+    </event>
+    <event value="8260" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication could not truncate the stream of an optimized file. No action is required. Error: %1
+
+%2">
+    </event>
+    <event value="8261" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication encountered a IO device error while accessing a file on the volume. This is likely a hardware fault in the storage subsystem.
+%1">
+    </event>
+    <event value="10240" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="%1 job memory requirements.
+
+Volume: %4 (%3)
+Minimum memory: %5 MB
+Maximum memory: %6 MB
+Minimum disk: %7 MB
+Maximum cores: %8">
+    </event>
+    <event value="10241" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="%1 reconciliation has started.
+
+Volume: %4 (%3)">
+    </event>
+    <event value="10242" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="%1 reconciliation has completed.
+
+Volume: %4 (%3)
+Reconciled containers: %5
+Unreconciled containers: %6
+Catchup references: %7
+Catchup containers: %8
+Reconciled references: %9
+Reconciled containers: %10
+Cross-reconciled references: %11
+Cross-reconciled containers: %12
+Error code: %13
+Error message: %14">
+    </event>
+    <event value="10243" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000000" message="%1 job on volume %4 (%3) was configured with insufficient memory.
+
+System memory percentage: %5
+Available memory: %8 MB
+Minimum required memory: %6 MB">
+    </event>
+    <event value="10244" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Optimization memory details for %1 job on volume %3 (%2).">
+    </event>
+    <event value="10245" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="An open file was skipped during optimization. No action is required.
+
+FileId: %2
+Skip Reason: %1">
+    </event>
+    <event value="10246" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="An operation succeeded after one or more retries. Operation: %1; FileId: %3; Number of retries: %2">
+    </event>
+    <event value="10247" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication aborted the optimization pipeline.
+VolumePath: %1
+ErrorCode: %2
+ErrorMessage: %3Details: %4">
+    </event>
+    <event value="10248" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication aborted a file.
+FileId: %1
+FilePath: %2
+FileSize: %3
+Flags: %4
+TotalRanges: %5
+SkippedRanges: %6
+AbortedRanges: %7
+CommittedRanges: %8
+ErrorCode: %9
+ErrorMessage: %10Details: %11">
+    </event>
+    <event value="10249" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication aborted a file range.
+FileId: %1
+FilePath: %2
+RangeOffset: %3
+RangeLength: %4
+ErrorCode: %5
+ErrorMessage: %6Details: %7">
+    </event>
+    <event value="10250" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Data Deduplication aborted a session.
+MaxSize: %1
+CurrentSize: %2
+RemainingRanges: %3
+ErrorCode: %4
+ErrorMessage: %5Details: %6">
+    </event>
+    <event value="10251" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="USN journal created.
+
+Volume: %2 (%1)
+Maximum size %3 MB
+Allocation size %4 MB">
+    </event>
+    <event value="12800" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000001" message="Data Deduplication service detected corruption in &quot;%5%6%7&quot;. The corruption cannot be repaired.">
+    </event>
+    <event value="12801" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Data Deduplication service detected corruption (%7) in &quot;%6&quot;. See the event details for more information.">
+    </event>
+    <event value="12802" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Data Deduplication service detected a corrupted item (%11 - %13, %8, %9, %10, %12) in Deduplication Chunk Store on volume %4. See the event details for more information.">
+    </event>
+    <event value="12803" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Data Deduplication service has finished scrubbing on volume %3. It did not find any corruption since the last scrubbing.">
+    </event>
+    <event value="12804" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000000001" message="Data Deduplication service found %4 corruption(s) on volume %3. All corruptions are fixed.">
+    </event>
+    <event value="12805" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000001" message="Data Deduplication service found %4 corruption(s) on volume %3. %5 corruption(s) are fixed. %6 user file(s) are corrupted. %7 user file(s) are fixed. For the corrupted file list, see the Microsoft/Windows/Deduplication/Scrubbing events.">
+    </event>
+    <event value="12806" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000001" message="Data Deduplication service found too many corruptions on volume %3. Some corruptions are not reported.">
+    </event>
+    <event value="12810" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Data Deduplication service has finished scrubbing on volume %3. It did not find any corruption since the last scrubbing.">
+    </event>
+    <event value="12817" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Data Deduplication service has finished scrubbing on volume %3. See the event details for more information.">
+    </event>
+    <event value="12818" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered error while processing file &quot;%5%6%7&quot;. The error was %8.">
+    </event>
+    <event value="12819" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered too many errors while processing file on volume %3. The threshold was %4. Some user file corruptions may not be reported.">
+    </event>
+    <event value="12820" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered error while detecting corruptions in chunk store on volume %3. The error was %4. The job is aborted.">
+    </event>
+    <event value="12822" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered error while loading corruption logs on volume %3. The error was %4. The job continues. Some corruptions may not be detected.">
+    </event>
+    <event value="12823" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered error while cleaning up corruption logs on volume %3. The error was %4. Some corruptions may be reported again next time.">
+    </event>
+    <event value="12824" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered error while loading hotspots mapping from chunk store on volume %3. The error was %4. Some corruptions may not be repaired.">
+    </event>
+    <event value="12825" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered error while determining corrupted user files on volume %3. The error was %4. Some user file corruptions may not be reported.">
+    </event>
+    <event value="12826" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000000001" message="Data Deduplication service found %4 corruption(s) on volume %3. %6 user file(s) are corrupted. %7 user file(s) are fixable. Please run scrubbing job in read-write mode to attempt fixing reported corruptions.">
+    </event>
+    <event value="12827" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Data Deduplication service fixed corruption in &quot;%5%6%7&quot;.">
+    </event>
+    <event value="12828" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Data Deduplication service detected fixable corruption in &quot;%5%6%7&quot;. Please run scrubbing job in read-write mode to fix this corruption.">
+    </event>
+    <event value="12829" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Data Deduplication service has finished scrubbing on volume %3. See the event details for more information.">
+    </event>
+    <event value="12830" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered error while repairing corruptions on volume %3. The error was %4. The repair is unsuccessful.">
+    </event>
+    <event value="12831" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Data Deduplication service detected a corrupted item (%6, %7, %8, %9) in Deduplication Chunk Store on volume %4. See the event details for more information.">
+    </event>
+    <event value="12832" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Container (%8,%9) with user data is missing from the chunk store. Missing container may result from incomplete restore, incomplete migration or file-system corruption. Volume is disabled from further optimization. It is recommended to restore the volume prior to enabling the volume for further optimization.">
+    </event>
+    <event value="12833" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered error while scaning dedup user files on volume %3. The error was %4. Some user file corruptions may not be reported.">
+    </event>
+    <event value="12834" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered error while processing file &quot;%5%6%7&quot;. The error was %8.">
+    </event>
+    <event value="12835" version="0" opcode="0" channel="17" level="3" task="3" keywords="0x4000000000000001" message="Data Deduplication service encountered too many errors while processing file on volume %3. The threshold was %4. Some user file corruptions may not be reported.">
+    </event>
+    <event value="12836" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Data Deduplication service detected potential data loss (%9) in &quot;%6&quot; due to sharing reparse data with file &quot;%8&quot;. See the event details for more information.">
+    </event>
+    <event value="12837" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Container (%8,%9) with user data is corrupt in the chunk store. It is recommended to restore the volume prior to enabling the volume for further optimization.">
+    </event>
+    <event value="20480" version="0" opcode="1" channel="19" level="4" task="5" keywords="0x1000000000000004" message="Open stream store stream (StartingChunkId %1, FileId %2)">
+    </event>
+    <event value="20481" version="0" opcode="2" channel="19" level="4" task="5" keywords="0x1000000000000004" message="Open stream store stream completed %1">
+    </event>
+    <event value="20482" version="0" opcode="1" channel="19" level="4" task="6" keywords="0x1000000000000004" message="Prepare for paging IO (Stream %1, FileId %2)">
+    </event>
+    <event value="20483" version="0" opcode="2" channel="19" level="4" task="6" keywords="0x1000000000000004" message="Prepare for paging IO completed %1">
+    </event>
+    <event value="20484" version="1" opcode="1" channel="19" level="4" task="7" keywords="0x1000000000000004" message="Read stream map (Stream %1, FileId %2, StartIndex %3, EntryCount %4)">
+    </event>
+    <event value="20485" version="0" opcode="2" channel="19" level="4" task="7" keywords="0x1000000000000004" message="Read stream map completed %1">
+    </event>
+    <event value="20486" version="0" opcode="1" channel="19" level="4" task="8" keywords="0x1000000000000004" message="Read chunks (Stream %1, FileId %2, IoType %3, FirstRequestChunkId %4, NextRequest %5)">
+    </event>
+    <event value="20487" version="0" opcode="2" channel="19" level="4" task="8" keywords="0x1000000000000004" message="Read chunks completed %1">
+    </event>
+    <event value="20488" version="0" opcode="1" channel="19" level="4" task="9" keywords="0x1000000000000008" message="Compute checksum (ItemType %1, DataSize %2)">
+    </event>
+    <event value="20489" version="0" opcode="2" channel="19" level="4" task="9" keywords="0x1000000000000008" message="Compute checksum completed %1">
+    </event>
+    <event value="20490" version="0" opcode="1" channel="19" level="4" task="10" keywords="0x1000000000000008" message="Get container entry (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20491" version="0" opcode="2" channel="19" level="4" task="10" keywords="0x1000000000000008" message="Get container entry completed %1">
+    </event>
+    <event value="20492" version="0" opcode="1" channel="19" level="4" task="11" keywords="0x1000000000000010" message="Get maximum generation for container (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20493" version="0" opcode="2" channel="19" level="4" task="11" keywords="0x1000000000000010" message="Get maximum generation for container completed %1">
+    </event>
+    <event value="20494" version="0" opcode="1" channel="19" level="4" task="12" keywords="0x1000000000000010" message="Open chunk container (ContainerId %1, Generation %2, RootPath %4)">
+    </event>
+    <event value="20495" version="0" opcode="2" channel="19" level="4" task="12" keywords="0x1000000000000010" message="Open chunk container completed %1">
+    </event>
+    <event value="20496" version="0" opcode="1" channel="19" level="4" task="13" keywords="0x1000000000000010" message="Initialize chunk container redirection table (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20497" version="0" opcode="2" channel="19" level="4" task="13" keywords="0x1000000000000010" message="Initialize chunk container redirection table completed %1">
+    </event>
+    <event value="20498" version="0" opcode="1" channel="19" level="4" task="14" keywords="0x1000000000000010" message="Validate chunk container redirection table (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20499" version="0" opcode="2" channel="19" level="4" task="14" keywords="0x1000000000000010" message="Validate chunk container redirection table completed %1">
+    </event>
+    <event value="20500" version="0" opcode="1" channel="19" level="4" task="15" keywords="0x1000000000000010" message="Get chunk container valid data length (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20501" version="0" opcode="2" channel="19" level="4" task="15" keywords="0x1000000000000010" message="Get chunk container valid data length completed %1">
+    </event>
+    <event value="20502" version="0" opcode="1" channel="19" level="4" task="16" keywords="0x1000000000000010" message="Get offset from chunk container redirection table (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20503" version="0" opcode="2" channel="19" level="4" task="16" keywords="0x1000000000000010" message="Get offset from chunk container redirection table completed %1">
+    </event>
+    <event value="20504" version="0" opcode="1" channel="19" level="4" task="17" keywords="0x1000000000000010" message="Read chunk container block (ContainerId %1, Generation %2, Buffer %3, Offset %4, Length %5, IoType %6, Synchronous %7)">
+    </event>
+    <event value="20505" version="0" opcode="2" channel="19" level="4" task="17" keywords="0x1000000000000010" message="Read chunk container block completed %1">
+    </event>
+    <event value="20506" version="0" opcode="1" channel="19" level="4" task="18" keywords="0x1000000000000010" message="Clear chunk container block (Buffer %1, Size %2, BufferType %3)">
+    </event>
+    <event value="20507" version="0" opcode="2" channel="19" level="4" task="18" keywords="0x1000000000000010" message="Clear chunk container block completed %1">
+    </event>
+    <event value="20508" version="0" opcode="1" channel="19" level="4" task="19" keywords="0x1000000000000010" message="Copy chunk (Buffer %1, Size %2, BufferType %3, BufferOffset %4, OutputCapacity %5)">
+    </event>
+    <event value="20509" version="0" opcode="2" channel="19" level="4" task="19" keywords="0x1000000000000010" message="Copy chunk completed %1">
+    </event>
+    <event value="20510" version="0" opcode="1" channel="19" level="4" task="20" keywords="0x1000000000000020" message="Initialize file cache (UnderlyingFileObject %1, CacheFileSize %2)">
+    </event>
+    <event value="20511" version="0" opcode="2" channel="19" level="4" task="20" keywords="0x1000000000000020" message="Initialize file cache completed %1">
+    </event>
+    <event value="20512" version="0" opcode="1" channel="19" level="4" task="21" keywords="0x1000000000000020" message="Map file cache data (CacheFileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="20513" version="0" opcode="2" channel="19" level="4" task="21" keywords="0x1000000000000020" message="Map file cache data completed %1">
+    </event>
+    <event value="20514" version="0" opcode="1" channel="19" level="4" task="22" keywords="0x1000000000000020" message="Unpin file cache data(Bcb %1)">
+    </event>
+    <event value="20515" version="0" opcode="2" channel="19" level="4" task="22" keywords="0x1000000000000020" message="Unpin file cache data completed %1">
+    </event>
+    <event value="20516" version="0" opcode="1" channel="19" level="4" task="23" keywords="0x1000000000000020" message="Copy file cache data (CacheFileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="20517" version="0" opcode="2" channel="19" level="4" task="23" keywords="0x1000000000000020" message="Copy file cache data completed %1">
+    </event>
+    <event value="20518" version="0" opcode="1" channel="19" level="4" task="24" keywords="0x1000000000000020" message="Read underlying file cache data (CacheFileObject %1, UnderlyingFileObject %2, Offset %3, Length %4)">
+    </event>
+    <event value="20519" version="0" opcode="2" channel="19" level="4" task="24" keywords="0x1000000000000020" message="Read underlying file cache data completed %1">
+    </event>
+    <event value="20520" version="0" opcode="1" channel="19" level="4" task="25" keywords="0x1000000000000010" message="Get chunk container file size (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20521" version="0" opcode="2" channel="19" level="4" task="25" keywords="0x1000000000000010" message="Get chunk container file size completed %1">
+    </event>
+    <event value="20522" version="0" opcode="1" channel="19" level="4" task="26" keywords="0x1000000000000004" message="Pin stream map (Stream %1, FileId %2, StartIndex %3, EntryCount %4)">
+    </event>
+    <event value="20523" version="0" opcode="2" channel="19" level="4" task="26" keywords="0x1000000000000004" message="Pin stream map completed %1">
+    </event>
+    <event value="20524" version="0" opcode="1" channel="19" level="4" task="27" keywords="0x1000000000000010" message="Pin chunk container (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20525" version="0" opcode="2" channel="19" level="4" task="27" keywords="0x1000000000000010" message="Pin chunk container completed %1">
+    </event>
+    <event value="20526" version="0" opcode="1" channel="19" level="4" task="28" keywords="0x1000000000000010" message="Pin chunk (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20527" version="0" opcode="2" channel="19" level="4" task="28" keywords="0x1000000000000010" message="Pin chunk completed %1">
+    </event>
+    <event value="20528" version="0" opcode="1" channel="19" level="4" task="29" keywords="0x1000000000000010" message="Allocate pool buffer (ReadLength %1, PagingIo %2)">
+    </event>
+    <event value="20529" version="0" opcode="2" channel="19" level="4" task="29" keywords="0x1000000000000010" message="Allocate pool buffer completed %1">
+    </event>
+    <event value="20530" version="0" opcode="1" channel="19" level="4" task="30" keywords="0x1000000000000010" message="Unpin chunk container (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20531" version="0" opcode="2" channel="19" level="4" task="30" keywords="0x1000000000000010" message="Unpin chunk container completed %1">
+    </event>
+    <event value="20532" version="0" opcode="1" channel="19" level="4" task="31" keywords="0x1000000000000010" message="Unpin chunk (ContainerId %1, Generation %2)">
+    </event>
+    <event value="20533" version="0" opcode="2" channel="19" level="4" task="31" keywords="0x1000000000000010" message="Unpin chunk completed %1">
+    </event>
+    <event value="24616" version="0" opcode="1" channel="19" level="4" task="32" keywords="0x1000000000000002" message="Dedup read processing (FileObject %1, Offset %2, Length %3, IoType %4)">
+    </event>
+    <event value="24617" version="0" opcode="2" channel="19" level="4" task="32" keywords="0x1000000000000002" message="Dedup read processing completed %1">
+    </event>
+    <event value="24618" version="0" opcode="1" channel="19" level="4" task="33" keywords="0x1000000000000002" message="Get first stream map entry (TlCache %1, Stream %2, RequestStartOffset %3, RequestEndOffset %4)">
+    </event>
+    <event value="24619" version="0" opcode="2" channel="19" level="4" task="33" keywords="0x1000000000000002" message="Get first stream map entry completed %1">
+    </event>
+    <event value="24620" version="0" opcode="1" channel="19" level="4" task="34" keywords="0x1000000000000002" message="Read chunk metadata (Stream %1, CurrentOffset %2, AdjustedFinalOffset %3, FirstChunkByteOffset %4, ChunkRequestsEndOffset %5, TlCache %6)">
+    </event>
+    <event value="24621" version="0" opcode="2" channel="19" level="4" task="34" keywords="0x1000000000000002" message="Read chunk metadata completed %1">
+    </event>
+    <event value="24622" version="0" opcode="1" channel="19" level="4" task="35" keywords="0x1000000000000002" message="Read chunk data (TlCache %1, Stream %2, RequestStartOffset %3, RequestEndOffset %4)">
+    </event>
+    <event value="24623" version="0" opcode="2" channel="19" level="4" task="35" keywords="0x1000000000000002" message="Read chunk data completed %1">
+    </event>
+    <event value="24624" version="0" opcode="1" channel="19" level="4" task="36" keywords="0x1000000000000002" message="Reference TlCache data (TlCache %1, Stream %2)">
+    </event>
+    <event value="24625" version="0" opcode="2" channel="19" level="4" task="36" keywords="0x1000000000000002" message="Reference TlCache data completed %1">
+    </event>
+    <event value="24626" version="0" opcode="1" channel="19" level="4" task="37" keywords="0x1000000000000002" message="Read chunk data from stream store (Stream %1)">
+    </event>
+    <event value="24627" version="0" opcode="2" channel="19" level="4" task="37" keywords="0x1000000000000002" message="Read chunk data from stream store completed %1">
+    </event>
+    <event value="24628" version="0" opcode="1" channel="19" level="4" task="38" keywords="0x1000000000000002" message="Assemble chunk data">
+    </event>
+    <event value="24629" version="0" opcode="2" channel="19" level="4" task="38" keywords="0x1000000000000002" message="Assemble chunk data completed %1">
+    </event>
+    <event value="24630" version="0" opcode="1" channel="19" level="4" task="39" keywords="0x1000000000000002" message="Decompress chunk data">
+    </event>
+    <event value="24631" version="0" opcode="2" channel="19" level="4" task="39" keywords="0x1000000000000002" message="Decompress chunk data completed %1">
+    </event>
+    <event value="24632" version="0" opcode="1" channel="19" level="4" task="40" keywords="0x1000000000000002" message="Copy chunk data in to user buffer (BytesCopied %1)">
+    </event>
+    <event value="24633" version="0" opcode="2" channel="19" level="4" task="40" keywords="0x1000000000000002" message="Copy chunk data in to user buffer completed %1">
+    </event>
+    <event value="24634" version="0" opcode="1" channel="19" level="4" task="41" keywords="0x1000000000000002" message="Insert chunk data in to tlcache">
+    </event>
+    <event value="24635" version="0" opcode="2" channel="19" level="4" task="41" keywords="0x1000000000000002" message="Insert chunk data in to tlcache completed %1">
+    </event>
+    <event value="24636" version="0" opcode="1" channel="19" level="4" task="42" keywords="0x1000000000000002" message="Read data from dedup reparse point file (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24637" version="0" opcode="2" channel="19" level="4" task="42" keywords="0x1000000000000002" message="Read underlying file cache data completed %1">
+    </event>
+    <event value="24638" version="0" opcode="1" channel="19" level="4" task="43" keywords="0x1000000000000002" message="Prepare stream map (StreamContext %1)">
+    </event>
+    <event value="24639" version="0" opcode="2" channel="19" level="4" task="43" keywords="0x1000000000000002" message="Prepare stream map completed %1">
+    </event>
+    <event value="24640" version="0" opcode="1" channel="19" level="4" task="44" keywords="0x1000000000000002" message="Patch clean ranges (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24641" version="0" opcode="2" channel="19" level="4" task="44" keywords="0x1000000000000002" message="Patch clean ranges completed %1">
+    </event>
+    <event value="24642" version="0" opcode="1" channel="19" level="4" task="45" keywords="0x1000000000000002" message="Writing data to dedup file (FileObject %1, Offset %2, Length %3, IoType %4)">
+    </event>
+    <event value="24643" version="0" opcode="2" channel="19" level="4" task="45" keywords="0x1000000000000002" message="Writing data to dedup file completed %1">
+    </event>
+    <event value="24644" version="0" opcode="1" channel="19" level="4" task="46" keywords="0x1000000000000002" message="Queue write request on dedup file (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24645" version="0" opcode="2" channel="19" level="4" task="46" keywords="0x1000000000000002" message="Queue write request on dedup file completed %1">
+    </event>
+    <event value="24646" version="0" opcode="1" channel="19" level="4" task="47" keywords="0x1000000000000002" message="Do copy on write work on dedup file (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24647" version="0" opcode="2" channel="19" level="4" task="47" keywords="0x1000000000000002" message="Do copy on write work on dedup file completed %1">
+    </event>
+    <event value="24648" version="0" opcode="1" channel="19" level="4" task="48" keywords="0x1000000000000002" message="Do full recall on dedup file (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24649" version="0" opcode="2" channel="19" level="4" task="48" keywords="0x1000000000000002" message="Do full recall on dedup file completed %1">
+    </event>
+    <event value="24650" version="0" opcode="1" channel="19" level="4" task="49" keywords="0x1000000000000002" message="Do partial recall on dedup file (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24651" version="0" opcode="2" channel="19" level="4" task="49" keywords="0x1000000000000002" message="Do partial recall on dedup file completed %1">
+    </event>
+    <event value="24652" version="0" opcode="1" channel="19" level="4" task="50" keywords="0x1000000000000002" message="Do dummy paging read on dedup file (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24653" version="0" opcode="2" channel="19" level="4" task="50" keywords="0x1000000000000002" message="Do dummy paging read on dedup file completed %1">
+    </event>
+    <event value="24654" version="0" opcode="1" channel="19" level="4" task="51" keywords="0x1000000000000002" message="Read clean data for recalling file (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24655" version="0" opcode="2" channel="19" level="4" task="51" keywords="0x1000000000000002" message="Read clean data for recalling file completed %1">
+    </event>
+    <event value="24656" version="0" opcode="1" channel="19" level="4" task="52" keywords="0x1000000000000002" message="Write clean data to dedup file normally (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24657" version="0" opcode="2" channel="19" level="4" task="52" keywords="0x1000000000000002" message="Write clean data to dedup file completed %1">
+    </event>
+    <event value="24658" version="0" opcode="1" channel="19" level="4" task="53" keywords="0x1000000000000002" message="Write clean data to dedup file paged (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24659" version="0" opcode="2" channel="19" level="4" task="53" keywords="0x1000000000000002" message="Write clean data to dedup file paged completed %1">
+    </event>
+    <event value="24660" version="0" opcode="1" channel="19" level="4" task="54" keywords="0x1000000000000002" message="Recall dedup file using paging Io (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24661" version="0" opcode="2" channel="19" level="4" task="54" keywords="0x1000000000000002" message="Recall dedup file using paging Io completed %1">
+    </event>
+    <event value="24662" version="0" opcode="1" channel="19" level="4" task="55" keywords="0x1000000000000002" message="Flush dedup file after recall (FileObject %1)">
+    </event>
+    <event value="24663" version="0" opcode="2" channel="19" level="4" task="55" keywords="0x1000000000000002" message="Flush dedup file after recall completed %1">
+    </event>
+    <event value="24664" version="0" opcode="1" channel="19" level="4" task="56" keywords="0x1000000000000002" message="Update bitmap after recall on dedup file (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24665" version="0" opcode="2" channel="19" level="4" task="56" keywords="0x1000000000000002" message="Update bitmap after recall on dedup file completed %1">
+    </event>
+    <event value="24666" version="0" opcode="1" channel="19" level="4" task="57" keywords="0x1000000000000002" message="Delete dedup reparse point (FileObject %1)">
+    </event>
+    <event value="24667" version="0" opcode="2" channel="19" level="4" task="57" keywords="0x1000000000000002" message="Delete dedup reparse point completed %1">
+    </event>
+    <event value="24668" version="0" opcode="1" channel="19" level="4" task="58" keywords="0x1000000000000002" message="Open dedup file (FilePath %1)">
+    </event>
+    <event value="24669" version="0" opcode="2" channel="19" level="4" task="58" keywords="0x1000000000000002" message="Open dedup file completed %1">
+    </event>
+    <event value="24670" version="0" opcode="1" channel="19" level="4" task="59" keywords="0x1000000000000002" message="Locking user buffer for read">
+    </event>
+    <event value="24671" version="0" opcode="2" channel="19" level="4" task="59" keywords="0x1000000000000002" message="Locking user buffer for read completed %1">
+    </event>
+    <event value="24672" version="0" opcode="1" channel="19" level="4" task="60" keywords="0x1000000000000002" message="Get system address for MDL">
+    </event>
+    <event value="24673" version="0" opcode="2" channel="19" level="4" task="60" keywords="0x1000000000000002" message="Get system address for MDL completed %1">
+    </event>
+    <event value="24674" version="0" opcode="1" channel="19" level="4" task="61" keywords="0x1000000000000002" message="Read clean dedup file (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24675" version="0" opcode="2" channel="19" level="4" task="61" keywords="0x1000000000000002" message="Read clean dedup file completed %1">
+    </event>
+    <event value="24676" version="0" opcode="1" channel="19" level="4" task="62" keywords="0x1000000000000002" message="Get range state (Offset %1, Length %2)">
+    </event>
+    <event value="24677" version="0" opcode="2" channel="19" level="4" task="62" keywords="0x1000000000000002" message="Get range state completed %1">
+    </event>
+    <event value="24678" version="0" opcode="1" channel="19" level="4" task="63" keywords="0x1000000000000004" message="Get chunk body">
+    </event>
+    <event value="24679" version="0" opcode="2" channel="19" level="4" task="63" keywords="0x1000000000000004" message="Get chunk body completed %1">
+    </event>
+    <event value="24680" version="0" opcode="1" channel="19" level="4" task="64" keywords="0x1000000000000004" message="Release chunk">
+    </event>
+    <event value="24681" version="0" opcode="2" channel="19" level="4" task="64" keywords="0x1000000000000004" message="Release chunk completed %1">
+    </event>
+    <event value="24682" version="0" opcode="1" channel="19" level="4" task="65" keywords="0x1000000000000002" message="Release decompress chunk context (BufferSize %1)">
+    </event>
+    <event value="24683" version="0" opcode="2" channel="19" level="4" task="65" keywords="0x1000000000000002" message="Release decompress chunk context completed %1">
+    </event>
+    <event value="24684" version="0" opcode="1" channel="19" level="4" task="66" keywords="0x1000000000000002" message="Prepare decompress chunk context (BufferSize %1)">
+    </event>
+    <event value="24685" version="0" opcode="2" channel="19" level="4" task="66" keywords="0x1000000000000002" message="Prepare decompress chunk context completed %1">
+    </event>
+    <event value="24686" version="0" opcode="1" channel="19" level="4" task="67" keywords="0x1000000000000002" message="Copy data to compressed buffer (BufferSize %1)">
+    </event>
+    <event value="24687" version="0" opcode="2" channel="19" level="4" task="67" keywords="0x1000000000000002" message="Copy data to compressed buffer completed %1">
+    </event>
+    <event value="24688" version="0" opcode="1" channel="19" level="4" task="68" keywords="0x1000000000000002" message="Release data from TL Cache">
+    </event>
+    <event value="24689" version="0" opcode="2" channel="19" level="4" task="68" keywords="0x1000000000000002" message="Release data from TL Cache completed %1">
+    </event>
+    <event value="24690" version="0" opcode="1" channel="19" level="4" task="69" keywords="0x1000000000000002" message="Queue async read request (FileObject %1, Offset %2, Length %3)">
+    </event>
+    <event value="24691" version="0" opcode="2" channel="19" level="4" task="69" keywords="0x1000000000000002" message="Queue async read request complete %1">
+    </event>
+  </events>
+</provider>

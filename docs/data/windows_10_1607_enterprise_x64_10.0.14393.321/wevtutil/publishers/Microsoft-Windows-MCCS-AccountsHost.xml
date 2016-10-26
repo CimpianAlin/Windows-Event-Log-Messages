@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MCCS-AccountsHost" guid="04eccf8e-8490-4ad1-8ed5-0ae7750e69e6" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=APHostRes.dll&amp;FileVer=10.0.14393.0" resourceFileName="APHostRes.dll" messageFileName="APHostRes.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Comms_snservice_QueueRequestAtRM" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Comms_RequestManager_ExecuteRequest" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Comms_RequestManager_Step" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Comms_APHost_InitProviders" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Comms_APHost_UnInitProviders" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Comms_APHost_OnProvidersLoaded" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Comms_APHost_OnServiceStarting" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Comms_APHost_OnServiceStarted" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="tracemessage" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="Trace">
+    </task>
+    <task name="Comms_SEMGR_ClientLaunching" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Comms_SEMGR_ClientRunning" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Comms_SEMGR_ClientProcessingOp" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="Debug" mask="4" message="">
+    </keyword>
+    <keyword name="SNAS" mask="8" message="">
+    </keyword>
+    <keyword name="Contacts" mask="10" message="">
+    </keyword>
+    <keyword name="Photos" mask="20" message="">
+    </keyword>
+    <keyword name="Feeds" mask="40" message="">
+    </keyword>
+    <keyword name="Battery" mask="80" message="">
+    </keyword>
+    <keyword name="SNService" mask="100" message="">
+    </keyword>
+    <keyword name="JobDispatcher" mask="200" message="">
+    </keyword>
+    <keyword name="RequestManager" mask="400" message="">
+    </keyword>
+    <keyword name="Unused" mask="800" message="">
+    </keyword>
+    <keyword name="Room" mask="1000" message="">
+    </keyword>
+    <keyword name="Extensibility" mask="2000" message="">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Error: HRESULT: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Error Propagated: HRESULT: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="3" version="0" opcode="0" channel="0" level="5" task="19" keywords="0x4" message="">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000400" message="Request Manager exceeded maximum requests limit and will start rejecting older requests">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x401" message="Scheduling function (Step) failed with result %1">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000400" message="Authentication error (%1) detected for request [%2-%3]">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x401" message="RPC Registration failed with error code %1">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Request Manager was initialized correctly">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000400" message="Request [%2-%3] failed with error code %1">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000400" message="Request [%2-%3] permanently failed with error code %1">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000400" message="Requests (#%1) are pending execution during shutdown">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000480" message="Request Manager entered battery saving mode">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000480" message="Request Manager recovered from battery saving mode">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Request Manager entered low-memory mode">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Request Manager recovered from low-memory mode">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Request Manager entered no connectivity mode, suspending activity">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Request Manager detected connection recovery, retrying">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x440" message="Fetch more requested for feed which reached the end and can&apos;t fetch any more data">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x440" message="Fetch more was requested for empty or new feed, normal feed fetch will be performed">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000420" message="Failed to add the comment to the database after succesful post">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x400" message="Request Manager found matching request to cancel [%1-%2] (request is not executing)">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="Request Manager found matching executing request to cancel [%1-%2], sending cancelation to provider">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="Request [%1-%2] was canceled succesfully">
+    </event>
+    <event value="1028" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="Upload file job to alubm (id: %1-%2-%3) has exceeded the maximum number of retry">
+    </event>
+    <event value="1029" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="Request Manager queued request [%1-%2]">
+    </event>
+    <event value="1030" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="Request Manager is executing request [%1-%2]">
+    </event>
+    <event value="1031" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="Request Manager completed request [%1-%2] with success">
+    </event>
+    <event value="1034" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x440" message="Refresh requested for a feed that satisfies freshness requirement.">
+    </event>
+    <event value="1500" version="0" opcode="1" channel="0" level="5" task="3" keywords="0x402" message="RM::[PERFMARKER] Single Step BEGIN">
+    </event>
+    <event value="1501" version="0" opcode="2" channel="0" level="5" task="3" keywords="0x402" message="RM::[PERFMARKER] Single Step END">
+    </event>
+    <event value="1502" version="0" opcode="1" channel="0" level="5" task="2" keywords="0x402" message="RM::[PERFMARKER] Execute request BEGIN (rmguid:%1)(handle:%2)">
+    </event>
+    <event value="1503" version="0" opcode="2" channel="0" level="5" task="2" keywords="0x402" message="RM::[PERFMARKER] Execute request END (rmguid:%1)(handle:%2)">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000009" message="Sending notification failed for endpoint %1 with error code %2">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x408000000008" message="SNAS Initialized successfully">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x408000000008" message="SNAS Uninitialized">
+    </event>
+    <event value="2051" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000009" message="Provider [%1] failed to initialize with HR: %2">
+    </event>
+    <event value="2052" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000009" message="Provider [%1] failed to late-initialize HR: %2">
+    </event>
+    <event value="2053" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000009" message="Failed to CoCreate provider [%1], HR: %2">
+    </event>
+    <event value="2061" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Job [%1] submitted with id %2">
+    </event>
+    <event value="5000" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x408000000100" message="SNService - Service Started">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000101" message="SNService - Failed to Initialize">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000101" message="SNService - Critical error during SNService startup, HRESULT: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000101" message="SNService - Request Manager Database failed to initialze, 0x%1">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x408000000100" message="SNService - Service Stopped">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x408000000100" message="SNService - Setting CPU rate cap to %1%%">
+    </event>
+    <event value="7001" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Job [%1] completed execution and will not be rescheduled">
+    </event>
+    <event value="7002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000200" message="Job [%1] failed, error [%2] and will remain inactive in the queue">
+    </event>
+    <event value="7003" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Job [%1] completed all requests for given state and will be rescheduled for execution, allowExecutionInSeconds [%2] onlyWhenConnectionChanged [%3]">
+    </event>
+    <event value="7004" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000200" message="Job Dispatcher exceeded maximum number of jobs and will cancel oldest jobs in the queue">
+    </event>
+    <event value="7005" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000200" message="Job [%1] expired and will be removed from the queue">
+    </event>
+    <event value="7006" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Job [%1] SNJobType:[%2] Executing ">
+    </event>
+    <event value="7007" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201" message="Synchronous failure in job execution for job [%1, SNJobType:%2], error [%3]">
+    </event>
+    <event value="7008" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201" message="Job [%1] failed to update in database, error [%2]">
+    </event>
+    <event value="7009" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x200" message="Job [%1] of type %2 was submitted to Job Dispatcher">
+    </event>
+    <event value="7010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201" message="Job [%1] failed to be submitted to Job Dispatcher, error %2">
+    </event>
+    <event value="7011" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201" message="Request for job [%1] failed to be submitted to Job Dispatcher, error %2">
+    </event>
+    <event value="7012" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Canceling job [%1]">
+    </event>
+    <event value="7013" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Job dispatcher received retry message from Connection Manager">
+    </event>
+    <event value="7014" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Job dispatcher received time based retry message and will retry failed jobs">
+    </event>
+    <event value="7015" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201" message="Job dispatcher received time based retry message and will retry failed jobs, error %1">
+    </event>
+    <event value="7016" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Job dispatcher created new volume">
+    </event>
+    <event value="7022" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201" message="Unexpected job dispatcher failure occured, HRESULT: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="7023" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201" message="Failed to cancel job, hr = %1">
+    </event>
+    <event value="7024" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201" message="Failed to add job %1 to the queue, hr = %2">
+    </event>
+    <event value="7025" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000200" message="Job [%1, SNJobType: %2] executed [%3] exceeding time limit; execution time = %4; (ActivityList entry = #%5/%6)">
+    </event>
+    <event value="7026" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201" message="Job [%1] seems rogue (exceeded max step limit) and will be removed from the queue">
+    </event>
+    <event value="7027" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201" message="Job [%1] seems rogue (exceeded delayed retry limit) and will be removed from the queue">
+    </event>
+    <event value="7028" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Job [%1, SNJobType: %2] executed [%3] within time limit; execution time = %4;  (ActivityList entry = #%5/%6)">
+    </event>
+    <event value="7029" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Completing job [%1, SNJobType:%2]">
+    </event>
+    <event value="7030" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Exceeded maximum number of jobs in the queue, will remove old job [%1]; (ActivityList entry #%2/%3)">
+    </event>
+    <event value="7031" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Added activity with handle [%1] to the submission list of activity with handle [%2]">
+    </event>
+    <event value="7032" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Added work with handle [%1] to the submission list of activity with handle [%2]">
+    </event>
+    <event value="7033" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Added request with handle [%1] to the submission list of activity with handle [%2]">
+    </event>
+    <event value="7034" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Removed submission with handle [%1] from the submission list of activity with handle [%2]">
+    </event>
+    <event value="7035" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Submission with handle [%1] completed but was not removed from submission list of activity with handle [%2]">
+    </event>
+    <event value="8500" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000001000" message="Setting Room background picture, deleting remote room picture (Step) failed with result %1">
+    </event>
+    <event value="8501" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000001000" message="Setting Room background picture, uploading room picture (Step) failed with result %1">
+    </event>
+    <event value="8502" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000001000" message="Download Room background picture, download room picture metadata (Step) failed with result %1">
+    </event>
+    <event value="8503" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000001000" message="Download Room background picture, download room picture binary (Step) failed with result %1">
+    </event>
+    <event value="9001" version="0" opcode="1" channel="0" level="4" task="4" keywords="0x2" message="">
+    </event>
+    <event value="9002" version="0" opcode="2" channel="0" level="4" task="4" keywords="0x2" message="">
+    </event>
+    <event value="9003" version="0" opcode="1" channel="0" level="4" task="6" keywords="0x2" message="">
+    </event>
+    <event value="9004" version="0" opcode="2" channel="0" level="4" task="6" keywords="0x2" message="">
+    </event>
+    <event value="9005" version="0" opcode="1" channel="0" level="4" task="5" keywords="0x2" message="">
+    </event>
+    <event value="9006" version="0" opcode="2" channel="0" level="4" task="5" keywords="0x2" message="">
+    </event>
+    <event value="9007" version="0" opcode="1" channel="0" level="4" task="7" keywords="0x400000000002" message="">
+    </event>
+    <event value="9008" version="0" opcode="2" channel="0" level="4" task="7" keywords="0x400000000002" message="">
+    </event>
+    <event value="9009" version="0" opcode="1" channel="0" level="4" task="8" keywords="0x2" message="">
+    </event>
+    <event value="9010" version="0" opcode="2" channel="0" level="4" task="8" keywords="0x2" message="">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-AppV-Client" guid="e4f68870-5ae8-4e5b-9ce7-ca9ed75b0245" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=appvetwclientres.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\appvetwclientres.dll" messageFileName="C:\Windows\system32\appvetwclientres.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-AppV-Client/Admin" id="16" flags="0" message="Admin">
+    </channel>
+    <channel name="Microsoft-AppV-Client/Operational" id="17" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-AppV-Client/Virtual Applications" id="18" flags="0" message="Virtual Applications">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="win:Send" value="589824" message="Send">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ClientStartup" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Client Startup">
+    </task>
+    <task name="ClientShutdown" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Client Shutdown">
+    </task>
+    <task name="UserLogon" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="User Logon">
+    </task>
+    <task name="UserLogoff" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="User Logoff">
+    </task>
+    <task name="PolicyChange" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Dynamic Configuration Change">
+    </task>
+    <task name="APIRequest" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="API Request">
+    </task>
+    <task name="Impersonation" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Impersonation/Deimpersonation">
+    </task>
+    <task name="ConfigurePackage" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Configure Package">
+    </task>
+    <task name="PublishPackage" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Publish Package">
+    </task>
+    <task name="UnpublishPackage" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Unpublish Package">
+    </task>
+    <task name="RemovePackage" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="Remove Package">
+    </task>
+    <task name="ConfigurePackageGroup" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="Configure Virtual Application Connection Group">
+    </task>
+    <task name="PublishPackageGroup" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="Publish Virtual Application Connection Group">
+    </task>
+    <task name="UnpublishPackageGroup" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="Unpublish Virtual Application Connection Group">
+    </task>
+    <task name="RemovePackageGroup" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="Remove Virtual Application Connection Group">
+    </task>
+    <task name="ExecuteScripts" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="Execute Embedded Scripts">
+    </task>
+    <task name="VFSRedirection" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="Virtual File System Redirection">
+    </task>
+    <task name="ConfigureVirtualServices" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="Configure Virtual Services">
+    </task>
+    <task name="SettingChanges" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="Setting Changes">
+    </task>
+    <task name="ParseDynamicConfigurationFile" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="Parse Dynamic Configuration File">
+    </task>
+    <task name="PowerShellInvoke" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="PowerShell Invoke">
+    </task>
+    <task name="SubsystemStartup" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="Subsystem Startup">
+    </task>
+    <task name="ApplicationLaunch" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="Application Launch">
+    </task>
+    <task name="VirtualEnvironmentStart" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="Virtual Environment Start">
+    </task>
+    <task name="DeleteUserState" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="User State Deletion">
+    </task>
+    <task name="BackgroundStreaming" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="Background Streaming">
+    </task>
+    <task name="PSObjectGetPropertyValue" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="PSObject Get Property Value">
+    </task>
+    <task name="PSObjectInvokeMethod" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="PSObject Invoke Method">
+    </task>
+    <task name="ConnectToAppVClientService" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="Connect to AppV Client Service">
+    </task>
+    <task name="PowershellProcess" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="Powershell Process">
+    </task>
+    <task name="CreateReportingData" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="Create Reporting Data">
+    </task>
+    <task name="UploadReportingData" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="Upload Reporting Data">
+    </task>
+    <task name="GeneralStreaming" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="Streaming">
+    </task>
+    <task name="RepairPackage" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="Repair Package">
+    </task>
+    <task name="RepairPackageGroup" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="Repair Virtual Application Connection Group">
+    </task>
+    <task name="PublishingRefresh" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="Publishing Refresh">
+    </task>
+    <task name="StopPackageOrGroup" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="Stop Package or Connection Group">
+    </task>
+    <task name="Integration" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="Integration">
+    </task>
+    <task name="SxS" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="Side by Side">
+    </task>
+    <task name="EnableDisableAppV" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="Enable/Disable Appv">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Startup" mask="1" message="Startup">
+    </keyword>
+    <keyword name="Shutdown" mask="2" message="Shutdown">
+    </keyword>
+    <keyword name="Logon" mask="4" message="Logon">
+    </keyword>
+    <keyword name="Logoff" mask="8" message="Logoff">
+    </keyword>
+    <keyword name="API" mask="10" message="API">
+    </keyword>
+    <keyword name="ComponentStartup" mask="20" message="Component Startup">
+    </keyword>
+    <keyword name="Common" mask="40" message="Client Common">
+    </keyword>
+    <keyword name="Catalog" mask="80" message="Catalog">
+    </keyword>
+    <keyword name="Publishing" mask="100" message="Publishing">
+    </keyword>
+    <keyword name="EmbeddedScripting" mask="200" message="Embedded Scripting">
+    </keyword>
+    <keyword name="VFS" mask="400" message="Virtual File System">
+    </keyword>
+    <keyword name="VirtualServices" mask="800" message="Virtual Services">
+    </keyword>
+    <keyword name="Settings" mask="1000" message="Settings">
+    </keyword>
+    <keyword name="DynamicConfiguration" mask="2000" message="Dynamic Configuration">
+    </keyword>
+    <keyword name="ClientManagement" mask="4000" message="Client Management">
+    </keyword>
+    <keyword name="Subsystems" mask="8000" message="Subsystems">
+    </keyword>
+    <keyword name="ClientCoExistence" mask="10000" message="Client Co-existence">
+    </keyword>
+    <keyword name="VREG" mask="20000" message="Virtual Registry">
+    </keyword>
+    <keyword name="Streaming" mask="40000" message="Streaming">
+    </keyword>
+    <keyword name="ClientStreamingUX" mask="80000" message="Client Streaming UX">
+    </keyword>
+    <keyword name="VirtualAppLaunch" mask="100000" message="Virtual Application Launch">
+    </keyword>
+    <keyword name="VOBJ" mask="200000" message="Virtual Object">
+    </keyword>
+    <keyword name="Reporting" mask="400000" message="Reporting">
+    </keyword>
+    <keyword name="PublishingRefresh" mask="800000" message="Publishing Refresh">
+    </keyword>
+    <keyword name="Integration" mask="1000000" message="Integration">
+    </keyword>
+    <keyword name="SxS" mask="2000000" message="Side by Side">
+    </keyword>
+    <keyword name="AppManagementConfiguration" mask="4000000" message="AppManagementConfiguration">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000001" message="The Client service started successfully.">
+    </event>
+    <event value="2" version="1" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000002" message="The Client service shut down.">
+    </event>
+    <event value="3" version="1" opcode="1" channel="16" level="2" task="1" keywords="0x8000000000000001" message="A required component (%1) cannot be loaded.  Please repair your installation. {error: %2}">
+    </event>
+    <event value="4" version="1" opcode="1" channel="16" level="2" task="1" keywords="0x8000000000000005" message="The Client service could not get the list of currently logged-on users.  If users experience any issues running virtual applications, please logoff and logon again, or restart the service. {error: %1}">
+    </event>
+    <event value="5" version="1" opcode="1" channel="16" level="2" task="3" keywords="0x8000000000000004" message="The Client could not register a logged-on user.  The user will not be able to access any App-V services, including running virtual applications.  Please have the user logoff and logon again. {error: %1-%2}">
+    </event>
+    <event value="6" version="1" opcode="2" channel="16" level="2" task="4" keywords="0x8000000000000008" message="The Client could not unregister a user that logged off.  If other users experience any issues logging on, please restart the Client service. {error: %1-%2}">
+    </event>
+    <event value="7" version="1" opcode="9" channel="16" level="2" task="6" keywords="0x8000000000000010" message="The Client could not determine the identity of a caller on a public request, and the request was denied. {error: %1}">
+    </event>
+    <event value="8" version="1" opcode="1" channel="16" level="2" task="3" keywords="0x8000000000000004" message="The Client could not register a caller, or verify the registration status of a caller, on a public request, and the request was denied. {error: %1-%2}">
+    </event>
+    <event value="9" version="1" opcode="0" channel="16" level="2" task="6" keywords="0x8000000000000010" message="A public request to the Client was initiated by a caller which granted the Client the authority for %1, whereas the Client requires at a minimum RPC_C_IMP_LEVEL_IMPERSONATE in order to satisfy a request on the caller&apos;s behalf.  The calling application will need to modify its security settings for outbound calls in order to successfully access the Client API.">
+    </event>
+    <event value="10" version="1" opcode="0" channel="16" level="2" task="6" keywords="0x8000000000000010" message="The access to the client was denied. The caller didn&apos;t have required permission for this operation.">
+    </event>
+    <event value="11" version="1" opcode="0" channel="16" level="3" task="1" keywords="0x8000000000000001" message="The Client failed to register for power notifications.  {error: %1-%2}.">
+    </event>
+    <event value="12" version="1" opcode="0" channel="16" level="3" task="2" keywords="0x8000000000000002" message="The Client failed to unregister for power notifications.  {error: %1-%2}.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="17" level="3" task="6" keywords="0x4000000000000000" message="SLAPI check failed because of failure to read license info. {error: %1}">
+    </event>
+    <event value="14" version="1" opcode="1" channel="17" level="2" task="1" keywords="0x4000000000000001" message="The Client service cannot be started due to reboot required.">
+    </event>
+    <event value="15" version="1" opcode="1" channel="17" level="2" task="1" keywords="0x4000000000000001" message="The Client service cannot be started due AppV being disabled.">
+    </event>
+    <event value="101" version="1" opcode="1" channel="17" level="4" task="6" keywords="0x4000000000000000" message="IAppVClient::%1 COM method entered.">
+    </event>
+    <event value="102" version="1" opcode="2" channel="17" level="4" task="6" keywords="0x4000000000000000" message="IAppVClient::%1 COM method exited. %2">
+    </event>
+    <event value="1001" version="1" opcode="2" channel="16" level="2" task="2" keywords="0x8000000000000002" message="Active processing could not be shut down, this may lead to delays or hangs for Client shutdown. {error: %1-%2}">
+    </event>
+    <event value="1002" version="1" opcode="0" channel="17" level="4" task="8" keywords="0x4000000000000100" message="Package %1 version %2 was successfully configured in folder &apos;%3&apos;.">
+    </event>
+    <event value="1003" version="1" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000000100" message="Package %1 version %2 was successfully published for the user.">
+    </event>
+    <event value="1004" version="1" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000000100" message="Package %1 version %2 was successfully published for all users.">
+    </event>
+    <event value="1005" version="1" opcode="0" channel="17" level="4" task="10" keywords="0x4000000000000100" message="Package %1 version %2 was unpublished for the user.">
+    </event>
+    <event value="1006" version="1" opcode="0" channel="17" level="4" task="10" keywords="0x4000000000000100" message="Package %1 version %2 was unpublished for all users.">
+    </event>
+    <event value="1007" version="1" opcode="0" channel="17" level="4" task="11" keywords="0x4000000000000100" message="Package %1 version %2 was removed.">
+    </event>
+    <event value="1008" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="Package %1 version %2 failed configuration in folder &apos;%3&apos; with error %4-%5.">
+    </event>
+    <event value="1009" version="1" opcode="0" channel="17" level="4" task="12" keywords="0x4000000000000100" message="Virtual application connection group %1 version %2 was successfully configured.">
+    </event>
+    <event value="1010" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000000100" message="Virtual application connection group %1 version %2 failed configuration with error %3-%4.">
+    </event>
+    <event value="1011" version="1" opcode="0" channel="17" level="4" task="13" keywords="0x4000000000000100" message="Virtual application connection group %1 version %2 was successfully published for the user.">
+    </event>
+    <event value="1012" version="1" opcode="0" channel="17" level="4" task="13" keywords="0x4000000000000100" message="Virtual application connection group %1 version %2 was successfully published for all users.">
+    </event>
+    <event value="1013" version="1" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000000100" message="Virtual application connection group %1 version %2 was unpublished for the user.">
+    </event>
+    <event value="1014" version="1" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000000100" message="Virtual application connection group %1 version %2 was unpublished for all users.">
+    </event>
+    <event value="1015" version="1" opcode="0" channel="17" level="4" task="15" keywords="0x4000000000000100" message="Virtual application connection group %1 version %2 was removed.">
+    </event>
+    <event value="1016" version="1" opcode="0" channel="16" level="2" task="10" keywords="0x8000000000000100" message="Failed to unpublish package %1 version %2 because the package is published as part of one or more connection groups. Unpublish all connection groups that reference this package and try again.">
+    </event>
+    <event value="1017" version="1" opcode="0" channel="16" level="2" task="11" keywords="0x8000000000000100" message="Failed to remove package %1 version %2 because the package is configured as part of one or more connection groups. Remove all connection groups that reference this package and try again.">
+    </event>
+    <event value="1018" version="1" opcode="0" channel="16" level="2" task="10" keywords="0x8000000000000100" message="A package could not be unpublished for the user because it is currently in use by the user.  Shut down all applications in the package, and try again.
+Package %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1019" version="1" opcode="0" channel="16" level="2" task="10" keywords="0x8000000000000100" message="A package could not be globally unpublished because it is currently in use.  Make sure all users have shut down all applications in the package, and try again.
+Package %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1020" version="1" opcode="0" channel="16" level="2" task="11" keywords="0x8000000000000100" message="A package could not be removed because it is currently in use.  Make sure all users have shut down all applications in the package, and try again.
+Package %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1021" version="1" opcode="0" channel="16" level="2" task="14" keywords="0x8000000000000100" message="An app connection group could not be unpublished for the user because it is currently in use by the user.  Shut down all applications in the group, and try again.
+Connection Group %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1022" version="1" opcode="0" channel="16" level="2" task="14" keywords="0x8000000000000100" message="An app connection group could not be globally unpublished because it is currently in use.  Make sure all users have shut down all applications in the group, and try again.
+Connection Group %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1023" version="1" opcode="0" channel="16" level="2" task="15" keywords="0x8000000000000100" message="An app connection group could not be removed because it is currently in use.  Make sure all users have shut down all applications in the group, and try again.
+Connection Group %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1024" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be reconfigured because it is not configured on the system.  Ensure the package ID and version ID are correct and try again.">
+    </event>
+    <event value="1025" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured because it can only be used with 64-bit versions of Windows.">
+    </event>
+    <event value="1026" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured because it is not compatible with this version of Windows.">
+    </event>
+    <event value="1027" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured becaused the Deployment Configuration file &apos;%3&apos; could not be found.  Ensure the path is correct and try again.">
+    </event>
+    <event value="1028" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured because the Deployment Configuration file &apos;%3&apos; is not valid.  Verify that the document is valid and try again.">
+    </event>
+    <event value="1029" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured because the Deployment Configuration file does not match the the specified package.  Ensure the GUIDs in the Deployment Configuration file match those of the package and try again.">
+    </event>
+    <event value="1030" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured because the user account does not have administrative privileges.">
+    </event>
+    <event value="1031" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="The package %1 version %2 could not be published globally because the user account does not have administrative privileges.">
+    </event>
+    <event value="1032" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="The package %1 version %2 could not be published because the package has not been configured on the system.  Configure the package and try again.">
+    </event>
+    <event value="1033" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="The package %1 version %2 could not be published becaused the User Configuration file &apos;%3&apos; could not be found.  Ensure the path is correct and try again.">
+    </event>
+    <event value="1034" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="The package %1 version %2 could not be published because the User Configuration file &apos;%3&apos; is not valid.  Verify that the document is valid and try again.">
+    </event>
+    <event value="1035" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="The package %1 version %2 could not be published because the User Configuration file does not match the the specified package.  Ensure the GUIDs in the User Configuration file match those of the package and try again.">
+    </event>
+    <event value="1036" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="The package %1 version %2 could not be published globally because a User Configuration file was specified.  Either publish the package for the user with the User Configuration file specified or do not supply a User Configuration.">
+    </event>
+    <event value="1037" version="1" opcode="0" channel="16" level="2" task="10" keywords="0x8000000000000100" message="The package %1 version %2 could not be unpublished globally because the user account does not have administrative privileges.">
+    </event>
+    <event value="1038" version="1" opcode="0" channel="16" level="2" task="10" keywords="0x8000000000000100" message="The package %1 version %2 could not be unpublished because it is not published to the target of the unpublish operation.">
+    </event>
+    <event value="1039" version="1" opcode="0" channel="16" level="2" task="11" keywords="0x8000000000000100" message="The package %1 version %2 could not be removed because the package is not configured on the system.">
+    </event>
+    <event value="1040" version="1" opcode="0" channel="16" level="2" task="11" keywords="0x8000000000000100" message="The package %1 version %2 could not be removed because the user account does not have administrative privileges.">
+    </event>
+    <event value="1041" version="1" opcode="0" channel="16" level="2" task="34" keywords="0x8000000000000100" message="The package %1 version %2 cannot be repaired because the package is not configured on the system.">
+    </event>
+    <event value="1042" version="1" opcode="0" channel="16" level="2" task="34" keywords="0x8000000000000100" message="The package %1 version %2 was repaired successfully, but the package is published in one or more Virtual Application Connection Groups.  Settings are associated with the group, so you may need to clear settings for the Virtual Application Connection Groups associated with this package.">
+    </event>
+    <event value="1043" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be added because the app connection group file &apos;%3&apos; could not be found.  Ensure the path is correct and try again.">
+    </event>
+    <event value="1044" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be added because the package %3 version %4 is not configured on the system.  Configure the package and try again.">
+    </event>
+    <event value="1045" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be added because the app connection group file &apos;%3&apos; is not valid.  Verify that the document is valid and try again.">
+    </event>
+    <event value="1046" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be added because the user account does not have administrative privileges.">
+    </event>
+    <event value="1047" version="1" opcode="0" channel="16" level="2" task="13" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be enabled because the app connection group has not been added on the system.  Add the app connection group and try again.">
+    </event>
+    <event value="1048" version="1" opcode="0" channel="16" level="2" task="13" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be enabled because the package %3 version %4 is not published to the target of the operation.  Publish the package and try again.">
+    </event>
+    <event value="1049" version="1" opcode="0" channel="16" level="2" task="13" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be enabled globally because the user account does not have administrative privileges.">
+    </event>
+    <event value="1050" version="1" opcode="0" channel="16" level="2" task="14" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be disabled because it is not enabled for the target of the disable operation.">
+    </event>
+    <event value="1051" version="1" opcode="0" channel="16" level="2" task="14" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be disabled globally because the user account does not have administrative privileges.">
+    </event>
+    <event value="1052" version="1" opcode="0" channel="16" level="2" task="15" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be removed because the package it has not been added on the system.">
+    </event>
+    <event value="1053" version="1" opcode="0" channel="16" level="2" task="15" keywords="0x8000000000000100" message="The app connection group %1 version %2 could not be removed because the user account does not have administrative privileges.">
+    </event>
+    <event value="1054" version="1" opcode="0" channel="16" level="2" task="35" keywords="0x8000000000000100" message="The app connection group %1 version %2 cannot be repaired because the app connection group has not been added on the system.">
+    </event>
+    <event value="1055" version="1" opcode="0" channel="17" level="4" task="10" keywords="0x4000000000000100" message="A package could not be unpublished for the user because it is currently in use by the user.  The package will be unpublished at a later time.
+Package %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1056" version="1" opcode="0" channel="17" level="4" task="10" keywords="0x4000000000000100" message="A package could not be globally unpublished because it is currently in use.  The package will be unpublished at a later time.
+Package %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1057" version="1" opcode="0" channel="16" level="4" task="10" keywords="0x8000000000000100" message="The package %1 version %2 was detected to have a pending global Unpublish task. The App-V Client cannot start the virtual environment. Please close all running applications in the package or stop the package.">
+    </event>
+    <event value="1058" version="1" opcode="0" channel="16" level="4" task="14" keywords="0x8000000000000100" message="The app connection group %1 version %2 was detected to have a pending global Unpublish task. The App-V Client cannot start the virtual environment. Please close all running applications in the app connection group or stop the app connection group.">
+    </event>
+    <event value="1059" version="1" opcode="0" channel="16" level="4" task="10" keywords="0x8000000000000100" message="The package %1 version %2 was detected to have a pending user Unpublish task. The App-V Client cannot start the virtual environment. Please close all running applications in the package or stop the package.">
+    </event>
+    <event value="1060" version="1" opcode="0" channel="16" level="4" task="14" keywords="0x8000000000000100" message="The app connection group %1 version %2 was detected to have a pending user Unpublish task. The App-V Client cannot start the virtual environment. Please close all running applications in the app connection group or stop the app connection group.">
+    </event>
+    <event value="1061" version="1" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000000100" message="A connection group could not be unpublished for the user because it is currently in use by the user.  The connection group will be unpublished at a later time.
+Connection Group %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1062" version="1" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000000100" message="A connection group could not be globally unpublished because it is currently in use.  The connection group will be unpublished at a later time.
+Connection Group %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1063" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="A package could not be published for the user because it is currently in use by the user.  Shut down all applications in the package, and try again.
+Package %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1064" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="A package could not be globally published because it is currently in use.  Make sure all users have shut down all applications in the package, and try again.
+Package %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1065" version="1" opcode="0" channel="16" level="2" task="13" keywords="0x8000000000000100" message="An app connection group could not be published for the user because it is currently in use by the user.  Shut down all applications in the group, and try again.
+Connection Group %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1066" version="1" opcode="0" channel="16" level="2" task="13" keywords="0x8000000000000100" message="An app connection group could not be globally published because it is currently in use.  Make sure all users have shut down all applications in the group, and try again.
+Connection Group %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1067" version="1" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000000100" message="A package could not be published for the user because it is currently in use by the user.  The package will be published at a later time.
+Package %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1068" version="1" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000000100" message="A package could not be globally published because it is currently in use.  The package will be published at a later time.
+Package %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1069" version="1" opcode="0" channel="17" level="4" task="13" keywords="0x4000000000000100" message="A connection group could not be published for the user because it is currently in use by the user.  The connection group will be published at a later time.
+Connection Group %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1070" version="1" opcode="0" channel="17" level="4" task="13" keywords="0x4000000000000100" message="A connection group could not be globally published because it is currently in use.  The connection group will be published at a later time.
+Connection Group %1
+Version %2
+Activity #%3">
+    </event>
+    <event value="1071" version="1" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000100" message="The package %1 version %2 was detected to have an upgrading task. The App-V Client cannot start the virtual environment. Please try again in several minutes once the update is complete.">
+    </event>
+    <event value="1072" version="1" opcode="0" channel="16" level="4" task="13" keywords="0x8000000000000100" message="The application connection group %1 version %2 was detected to have an upgrading task. The App-V Client cannot start the virtual environment. Please try again in several minutes once the update is complete.">
+    </event>
+    <event value="1073" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="The pending publish operation for package %1 version %2 was not performed because network connectivity is not available.">
+    </event>
+    <event value="1074" version="1" opcode="0" channel="16" level="2" task="11" keywords="0x8000000000000100" message="The package %1 version %2 was detected to have a pending publish or unpublish operation. The App-V Client cannot remove the package. Pending user operations are processed at logon, and pending global operations are processed at startup. Please try again when any related pending operations are complete. Activity #%3">
+    </event>
+    <event value="1075" version="1" opcode="0" channel="16" level="2" task="15" keywords="0x8000000000000100" message="The app connection group %1 version %2 was detected to have a pending task. The App-V Client cannot remove the app connection group. Pending user operations are processed at logon, and pending global operations are processed at startup. Please try again when any related pending operations are complete. Activity #%3">
+    </event>
+    <event value="1076" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="The UserSID value %1 is not valid. Please ensure it is a valid SID and that the associated user is logged in when you run the cmdlet. {error: %2-%3}">
+    </event>
+    <event value="1077" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="While publishing package %1 version %2 an error occurred when obtaining the integration settings for each of the connection groups that the package belongs to {error %3 - %4}.
+The package has not been published.">
+    </event>
+    <event value="1078" version="1" opcode="0" channel="16" level="3" task="9" keywords="0x8000000000000100" message="Package %1 version %2 was user published while belonging to globally published Connection Group %3 version %4.
+Therefore, although the package will be published to the user, it will not be assocated with the Connection Group until it is also published globally.">
+    </event>
+    <event value="1079" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The App-V driver mappings were not successfully updated when Package %1 version %2 was added (error: %3-%4).
+Connection Groups containing this package may not work correctly.">
+    </event>
+    <event value="1080" version="1" opcode="0" channel="16" level="2" task="11" keywords="0x8000000000000100" message="The App-V driver mappings were not successfully updated when Package %1 version %2 was removed (error: %3-%4).
+Connection Groups previously containing this package may not work correctly.">
+    </event>
+    <event value="1082" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000000100" message="The App-V driver mappings were not successfully updated when Package %1 version %2 was published (error: %3-%4).
+Connection Groups previously containing this package may not work correctly.">
+    </event>
+    <event value="1083" version="1" opcode="0" channel="16" level="2" task="10" keywords="0x8000000000000100" message="The App-V driver mappings were not successfully updated when Package %1 version %2 was unpublished (error: %3-%4).
+Connection Groups previously containing this package may not work correctly.">
+    </event>
+    <event value="2001" version="1" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000085" message="Failed to move Catalog folder ‘%1’ to new required location ‘%2’. {error: %3}">
+    </event>
+    <event value="2002" version="1" opcode="0" channel="16" level="3" task="3" keywords="0x8000000000000085" message="Catalog folder ‘%1’ was migrated to new required location ‘%2’, but the old location could not be removed.  The Catalog will be used from the new location. {error: %3}">
+    </event>
+    <event value="2003" version="1" opcode="0" channel="16" level="3" task="3" keywords="0x8000000000000085" message="Catalog folder ‘%1’ was migrated to new required location ‘%2’, but the new location previously existed.">
+    </event>
+    <event value="2004" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000081" message="Failed due to could not get catalog folder. {error: %1-%2}">
+    </event>
+    <event value="2005" version="1" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000081" message="The package %1 version %2 was detected to be in an irreconcilable state and has been removed. Please manually remove any remaining data (by default under %ProgramData%\App-V\) when re-adding the package.">
+    </event>
+    <event value="2006" version="1" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000081" message="The app connection group %1 version %2 was detected to be in an irreconcilable state and has been removed. Please manually remove any remaining data (by default under %ProgramData%\App-V\) when re-adding the app connection group.">
+    </event>
+    <event value="3001" version="1" opcode="2" channel="16" level="1" task="7" keywords="0x8000000000000040" message="The Client service has encountered a critical security issue and must shut down immediately. {error %1-%2}">
+    </event>
+    <event value="3002" version="1" opcode="2" channel="16" level="1" task="7" keywords="0x8000000000000040" message="The Client service has encountered a critical security issue and must shut down immediately. {error %1-%2}">
+    </event>
+    <event value="4001" version="1" opcode="0" channel="16" level="2" task="16" keywords="0x8000000000000200" message="The App-V client failed to create a process for %1 script event %2 with command line: &apos;%3&apos;. Windows error: %4.  The path must be a Windows application (.exe file).">
+    </event>
+    <event value="4002" version="1" opcode="0" channel="16" level="2" task="16" keywords="0x8000000000000200" message="The App-V client waited for the designated Timeout of %1 seconds for %2 script event %3 with executable: &apos;%4&apos; to complete. Because the Timeout was reached, the script process was terminated. Since RollbackOnError is set to true in script definition, the current AppV Client operation was rolled back due to script timeout.">
+    </event>
+    <event value="4004" version="1" opcode="0" channel="17" level="4" task="16" keywords="0x4000000000000200" message="Running %1 script defined in package %2 for event %3. Script execution was initiated by User Account: &apos;%4&apos;; command line: &apos;%5&apos;.">
+    </event>
+    <event value="4005" version="1" opcode="0" channel="17" level="4" task="16" keywords="0x4000000000000200" message="A %1 script is defined in package %2 for event %3 but will not be run because embedded scripting is disabled for this client.">
+    </event>
+    <event value="4006" version="1" opcode="0" channel="16" level="2" task="16" keywords="0x8000000000000200" message="Parsing of Embedded Script XML in package Manifest failed. Package: %1; event name: %2; XML parsing error: %3-%4. Please ensure that the XML script section in the package manifest for event %2 is well formed.">
+    </event>
+    <event value="4007" version="1" opcode="0" channel="16" level="2" task="16" keywords="0x8000000000000200" message="An error was encountered while reading the setting to enable scripts. Error code:  %1-%2.">
+    </event>
+    <event value="4008" version="1" opcode="0" channel="16" level="3" task="16" keywords="0x8000000000000200" message="The App-V client waited for the designated Timeout of %1 seconds for %2 script event %3 with executable: &apos;%4&apos; to complete. Because the Timeout was reached, the script process was terminated. Since RollbackOnError is set to false in script definition, the timeout is ignored and current AppV Client operation will continue.">
+    </event>
+    <event value="4009" version="1" opcode="0" channel="16" level="2" task="16" keywords="0x8000000000000200" message="%1 script for event %2 with command line: &apos;%3&apos; exited with failure error code: %4. Because Rollback is set to true in the script definition, the current AppV Client operation was rolled back.">
+    </event>
+    <event value="4010" version="1" opcode="0" channel="16" level="3" task="16" keywords="0x8000000000000200" message="%1 script for event %2 with command line: &apos;%3&apos; exited with failure error code: %4. Because Rollback is set to false in the script definition, the script process failure is ignored and the current AppV Client operation will continue.">
+    </event>
+    <event value="4011" version="1" opcode="0" channel="16" level="3" task="16" keywords="0x8000000000000200" message="Appv Client Scripting Component failed to acquire a proper token before querying Appv Client settings for Scripting, the query of the settings for Scripting may fail.">
+    </event>
+    <event value="5001" version="1" opcode="0" channel="18" level="4" task="17" keywords="0x2000000000000400" message="The move/rename of a directory was blocked by the Virtual File System because it represented the merged view of more than one package directory and/or a non-package directory.">
+    </event>
+    <event value="5002" version="1" opcode="0" channel="18" level="4" task="17" keywords="0x2000000000000400" message="The delete of a directory was blocked by the Virtual File System because it represented the merged view of more than one package directory and/or a non-package directory.">
+    </event>
+    <event value="5003" version="1" opcode="0" channel="18" level="4" task="17" keywords="0x2000000000000400" message="The delete of directory &apos;%1&apos; was blocked by the Virtual File System because it represented the merged view of more than one package directory and/or a non-package directory.">
+    </event>
+    <event value="6001" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="Failed to get Virtual Service information from manifest.
+ Package: %1
+ Version: %2
+ Error: %3-%4">
+    </event>
+    <event value="6002" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="Virtual Service startup type %1 is not supported. The only supported configuration values are Automatic, Manual and Disabled.">
+    </event>
+    <event value="6006" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="Service %1 failed to start due to error %2.">
+    </event>
+    <event value="6007" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="DependentService %1 failed to start due to error %2.">
+    </event>
+    <event value="6008" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="Service %1 failed while handling a control message due to error %2.">
+    </event>
+    <event value="6009" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="Could not acquire service start lock due to error %1.">
+    </event>
+    <event value="6010" version="1" opcode="0" channel="17" level="4" task="18" keywords="0x4000000000000800" message="Starting automatic service %1.">
+    </event>
+    <event value="6011" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="Service %1 could not be stopped.">
+    </event>
+    <event value="6012" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="Automatic service %1 could not be started.">
+    </event>
+    <event value="6013" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="Request to change the service configuration is rejected. Currently, changing service configuration during runtime is not supported.">
+    </event>
+    <event value="6014" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="Request to delete a virtual service is rejected. Currently, deleting a service during runtime is not supported.">
+    </event>
+    <event value="6015" version="1" opcode="0" channel="17" level="3" task="18" keywords="0x4000000000000800" message="Service %1 is created as a native service instead of a virtual service. Creating virtual service during runtime is not supported.">
+    </event>
+    <event value="6016" version="1" opcode="0" channel="17" level="2" task="18" keywords="0x4000000000000800" message="Request to set virtual service security is rejected. Currently, changing service security during runtime is not supported.">
+    </event>
+    <event value="7001" version="1" opcode="0" channel="16" level="2" task="19" keywords="0x8000000000001000" message="The client service has encountered an error monitoring settings. Changes to some settings will not take effect until the service is restarted. {error: %1}">
+    </event>
+    <event value="8001" version="1" opcode="0" channel="16" level="2" task="20" keywords="0x8000000000002000" message="Failed to load provided xml.
+DOM Error: %1
+Reason: %2
+Line: %3
+Column: %4
+Offset: %5">
+    </event>
+    <event value="8002" version="1" opcode="0" channel="16" level="2" task="20" keywords="0x8000000000002000" message="Failed to validate provided xml.
+DOM Error: %1
+Reason: %2">
+    </event>
+    <event value="8003" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000002000" message="Invalid connection group document format. There are no packages specified in the connection group document for connection group %1, version %2.">
+    </event>
+    <event value="8004" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000002000" message="Invalid connection group XML document format. There needs to be at least one mandatory package in the connection group XML document for connection group %1, version %2.">
+    </event>
+    <event value="8005" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000002000" message="Failed to update the connection groups for user %1. Some virtualized applications may fail to execute properly. Error: %2">
+    </event>
+    <event value="8006" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000002000" message="All of the package groups associated with the publishing of package %1, version %2 were not successfully refreshed. Error: %3">
+    </event>
+    <event value="8007" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000002000" message="All of the package groups associated with the unpublishing of package %1, version %2 were not successfully refreshed. Error: %3">
+    </event>
+    <event value="8008" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000002000" message="All of the package groups associated with the adding of package %1, version %2 were not successfully refreshed. Error: %3">
+    </event>
+    <event value="8009" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000002000" message="Failed to get the package groups associated with the removal of package %1, version %2. Error: %3.">
+    </event>
+    <event value="8010" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000002000" message="All of the package groups associated with the removal of package %1, version %2 were not successfully refreshed. Error: %3">
+    </event>
+    <event value="8011" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000002000" message="Package group %1, version %2 was not successfully refreshed. Error: %3">
+    </event>
+    <event value="8012" version="1" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000002000" message="Mandatory package %3, version %4 specified in connection group %1, version %2 has not been added to the computer or has not been entitled to the user.">
+    </event>
+    <event value="8013" version="1" opcode="0" channel="16" level="3" task="12" keywords="0x8000000000002000" message="Error %3-%4 occurred while attempting to delete the user publishing data associated with group %1, version %2 for user %5. The publishing data may need to be removed manually.">
+    </event>
+    <event value="8014" version="1" opcode="0" channel="16" level="3" task="12" keywords="0x8000000000002000" message="Error %3-%4 occurred while attempting to unpublish group %1, version %2 for user %5. This error should correct itself on the next publishing refresh for the user.">
+    </event>
+    <event value="8015" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000002000" message="Failed to get the package groups associated with the unpublish of package %1, version %2. Error: %3.">
+    </event>
+    <event value="9001" version="1" opcode="0" channel="16" level="2" task="21" keywords="0x8000000000004000" message="Error encountered while executing command %1. Error: %2">
+    </event>
+    <event value="9002" version="1" opcode="0" channel="16" level="3" task="21" keywords="0x8000000000004000" message="Warning raised while executing command %1. Warning: %2">
+    </event>
+    <event value="9003" version="1" opcode="0" channel="16" level="2" task="27" keywords="0x8000000000004000" message="Error encountered when accessing a property value of an App-V Publishing Server. This Publishing Server has been skipped.">
+    </event>
+    <event value="9004" version="1" opcode="0" channel="16" level="2" task="27" keywords="0x8000000000004000" message="Error encountered when accessing a property value of an App-V Client Connection Group. This Connection Group has been skipped.">
+    </event>
+    <event value="9005" version="1" opcode="0" channel="16" level="2" task="27" keywords="0x8000000000004000" message="Error encountered when accessing a property value of an App-V Client Package. This Package has been skipped.">
+    </event>
+    <event value="9006" version="1" opcode="0" channel="16" level="2" task="27" keywords="0x8000000000004000" message="Error encountered when accessing a property value of an App-V Client Application. This Application has been skipped.">
+    </event>
+    <event value="9007" version="1" opcode="0" channel="16" level="2" task="28" keywords="0x8000000000004000" message="Error encountered when attempting to access the packages of an App-V Client Connection Group. This Connection Group will display no Packages.">
+    </event>
+    <event value="9008" version="1" opcode="0" channel="16" level="2" task="28" keywords="0x8000000000004000" message="Error encountered when attempting to access the applications of an App-V Client Package. This Package will display no Applications.">
+    </event>
+    <event value="9009" version="1" opcode="0" channel="16" level="2" task="30" keywords="0x8000000000004000" message="Error encountered during Powershell process startup or exit while executing command &apos;%1&apos;.">
+    </event>
+    <event value="9010" version="1" opcode="0" channel="16" level="2" task="30" keywords="0x8000000000004000" message="Error encountered while executing command &apos;%1&apos;. Please refer to the AppV Client log for error details.">
+    </event>
+    <event value="9012" version="1" opcode="0" channel="16" level="2" task="27" keywords="0x8000000000004000" message="Error encountered when accessing a property value of an App-V Client Configuration.">
+    </event>
+    <event value="10001" version="1" opcode="0" channel="16" level="2" task="22" keywords="0x8000000000008000" message="Process %1 failed to start due to %4 subsystem failure. Package ID %2. Version ID %3. Error: %5-%6">
+    </event>
+    <event value="10002" version="1" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000008000" message="Unable to inject into a non-virtual process with PID %1. This process will not be able to use virtual components.">
+    </event>
+    <event value="11002" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000010000" message="Could not takeover extension points ownership from legacy package %1. Error: %2">
+    </event>
+    <event value="11003" version="1" opcode="0" channel="16" level="2" task="10" keywords="0x8000000000010000" message="Could not give extension points ownership back to legacy package %1. Error: %2">
+    </event>
+    <event value="11004" version="1" opcode="0" channel="16" level="3" task="9" keywords="0x8000000000010000" message="MigrationMode is enabled but legacy App-V Client is not installed on the machine. Managing Authority policy will not be applied for the package %1.">
+    </event>
+    <event value="11005" version="1" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000010000" message="Taking over extension points ownership using command: %1">
+    </event>
+    <event value="11006" version="1" opcode="0" channel="17" level="4" task="10" keywords="0x4000000000010000" message="Give back extension points ownership using command: %1">
+    </event>
+    <event value="11007" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000010000" message="Failed reading Managing Authority policy for package %1. Error: %2-%3">
+    </event>
+    <event value="11008" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000010000" message="Failed reading old Managing Authority policy for package %1. Error: %2-%3">
+    </event>
+    <event value="11009" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000010000" message="Error &apos;%2&apos; waitig for command: %1">
+    </event>
+    <event value="11010" version="1" opcode="0" channel="16" level="3" task="9" keywords="0x8000000000010000" message="Timed out waitig for command: %1">
+    </event>
+    <event value="11011" version="1" opcode="0" channel="16" level="3" task="9" keywords="0x8000000000010000" message="Error &apos;%2&apos; getting exit code for command: %1">
+    </event>
+    <event value="11012" version="1" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000010000" message="Command &apos;%1&apos; exited with code: %2">
+    </event>
+    <event value="12001" version="1" opcode="1" channel="16" level="2" task="24" keywords="0x8000000000020000" message="A conflict was detected in the user configuration setting for enabling the virtual registry in virtual application connection group %1 version %2. The virtual application could not be started.">
+    </event>
+    <event value="13001" version="1" opcode="0" channel="17" level="4" task="25" keywords="0x4000000000000400" message="User VFS COW state deleted for package ID %1.">
+    </event>
+    <event value="13002" version="1" opcode="0" channel="17" level="2" task="25" keywords="0x4000000000000400" message="User VFS COW state deletion failed for package ID %1, error %2-%3.">
+    </event>
+    <event value="13003" version="1" opcode="0" channel="17" level="2" task="23" keywords="0x4000000000100000" message="%1 application from package ID %2 failed to launch. process ID %3, error %4-%5.">
+    </event>
+    <event value="13004" version="1" opcode="0" channel="17" level="2" task="8" keywords="0x4000000000000400" message="User VFS COW folder validation failed for source: %1, target: %2.">
+    </event>
+    <event value="13005" version="1" opcode="0" channel="17" level="2" task="9" keywords="0x4000000000000400" message="Failed to publish roaming packages, error %1-%2.">
+    </event>
+    <event value="13006" version="1" opcode="0" channel="17" level="2" task="13" keywords="0x4000000000000400" message="Failed to publish roaming groups, error %1-%2.">
+    </event>
+    <event value="13007" version="1" opcode="0" channel="16" level="3" task="23" keywords="0x8000000000100000" message="Security information for VFS directory %1 has changed from its previous value.">
+    </event>
+    <event value="14001" version="1" opcode="0" channel="17" level="4" task="26" keywords="0x4000000000040000" message="App-V client is relying on a mobile network connection to stream packages.  Background streaming has been suspended due to the mobile network approaching/exceeding the data limit or roaming.">
+    </event>
+    <event value="14002" version="1" opcode="0" channel="17" level="4" task="26" keywords="0x4000000000040000" message="App-V client has detected an unrestricted network connection or a mobile connection with sufficient remaining data capacity.  Background streaming has resumed.">
+    </event>
+    <event value="14003" version="1" opcode="0" channel="16" level="2" task="26" keywords="0x8000000000040000" message="App-V client has detected that you are trying to launch a new application on a mobile network connection.  The launch has been blocked due to the mobile network approaching/exceeding the data limit or roaming.">
+    </event>
+    <event value="14004" version="1" opcode="0" channel="16" level="3" task="26" keywords="0x8000000000040000" message="Unexepected error.  The App-V client was unable to register for the network cost callback and will be unable to suspend background loads if the network cost increases.">
+    </event>
+    <event value="14005" version="1" opcode="0" channel="16" level="3" task="26" keywords="0x8000000000040000" message="Unexpected error %1-%2.  The App-V client was unable to start the background load queue.  Packages will not be loaded in the background automatically.">
+    </event>
+    <event value="14006" version="1" opcode="0" channel="16" level="3" task="26" keywords="0x8000000000040000" message="Unexpected error.  The App-V client was unable to start the background load queue properly.  Package information is not available to determine if background loads are local or remote.">
+    </event>
+    <event value="14007" version="1" opcode="0" channel="17" level="4" task="26" keywords="0x4000000000040000" message="App-V client has entered connected standby mode.  Background streaming has been suspended.">
+    </event>
+    <event value="14008" version="1" opcode="0" channel="17" level="4" task="26" keywords="0x4000000000040000" message="App-V client has exited connected standby mode.  Background streaming has resumed.">
+    </event>
+    <event value="14009" version="1" opcode="0" channel="16" level="3" task="33" keywords="0x8000000000040000" message="App-V client has detected an HTTP error 502 while attempting to stream a package.  This can be the result of a proxy server not being configured to allow a high enough rate of requests from the client to the package server.">
+    </event>
+    <event value="14010" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured because the path %3 could not be reached.  Ensure the path is correct and try again.">
+    </event>
+    <event value="14011" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured because the package is corrupt.  Ensure that the package file is a valid App-V package and try again.">
+    </event>
+    <event value="14012" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured because the package store location is not on a valid NTFS file system.  Ensure that the package store location is a valid NTFS file system and try again.">
+    </event>
+    <event value="14013" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured due to low disk space.  Ensure that there is enough disk space and try again.">
+    </event>
+    <event value="14014" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured because the specified URL is not valid.  Ensure that the URL is valid and try again.">
+    </event>
+    <event value="14015" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 could not be configured because the target location %3 already exists.  Ensure that this location is removed and try again.">
+    </event>
+    <event value="14016" version="1" opcode="0" channel="16" level="2" task="33" keywords="0x8000000000040000" message="The package %1 version %2 could not be mounted because the network connection has been lost or is unavailable.  Check your network connection and try again.">
+    </event>
+    <event value="14017" version="1" opcode="0" channel="16" level="2" task="33" keywords="0x8000000000040000" message="The package %1 version %2 could not be mounted. The operation failed with HRESULT %3, probably due to low disk space.  Ensure that there is enough disk space and try again.">
+    </event>
+    <event value="14018" version="1" opcode="0" channel="16" level="2" task="33" keywords="0x8000000000040000" message="The package %1 version %2 could not be mounted due to the network connection timing out.  Check your network connection and try again.">
+    </event>
+    <event value="14019" version="1" opcode="0" channel="16" level="3" task="33" keywords="0x8000000000040000" message="The package %1 version %2 full mount was suspended because the user who initiated the operation has logged off.">
+    </event>
+    <event value="14020" version="1" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000100" message="The package %1 version %2 failed to be configured because the package is not valid for the current CPU architecture.">
+    </event>
+    <event value="14021" version="1" opcode="0" channel="16" level="2" task="33" keywords="0x8000000000040000" message="Content required by an application could not be retrieved from the network. A request for file %2 from package version %1 failed with error %3.  Check your network connection and try again.">
+    </event>
+    <event value="14022" version="1" opcode="0" channel="16" level="1" task="33" keywords="0x8000000000040000" message="The App-V Client failed to initialize properly.  The Streaming Mini-Filter failed to initialize with error code %1. Please verify that the App-V Client is installed properly.">
+    </event>
+    <event value="14023" version="1" opcode="0" channel="17" level="4" task="33" keywords="0x4000000000040000" message="A request for the file %1 from process %2 is being processed as SYSTEM since no suitable user token could be found.">
+    </event>
+    <event value="14024" version="1" opcode="0" channel="17" level="4" task="33" keywords="0x4000000000040000" message="A request for the file %1 from process %2 is being processed as an alternate user %3.">
+    </event>
+    <event value="14025" version="1" opcode="0" channel="17" level="4" task="26" keywords="0x4000000000040000" message="App-V client has detected that the system has exited idle state. Background streaming has been suspended due to the system coming out of idle state.">
+    </event>
+    <event value="14026" version="1" opcode="0" channel="17" level="4" task="26" keywords="0x4000000000040000" message="App-V client has detected that the system has entered idle state. Background streaming has resumed.">
+    </event>
+    <event value="14027" version="1" opcode="0" channel="17" level="4" task="26" keywords="0x4000000000040000" message="App-V client failed to create the idle state detector.">
+    </event>
+    <event value="14028" version="1" opcode="0" channel="17" level="4" task="26" keywords="0x4000000000040000" message="App-V client failed to register for idle state callback.">
+    </event>
+    <event value="15001" version="1" opcode="0" channel="16" level="2" task="29" keywords="0x8000000000080000" message="The AppVStreamingUX application experienced an AppV error while attempting to connect to the AppVClient service. The AppVStreamingUX process will now exit. AppV Error: %1-%2">
+    </event>
+    <event value="15002" version="1" opcode="0" channel="16" level="2" task="29" keywords="0x8000000000080000" message="The AppVStreamingUX application experienced a COM error while attempting to connect to the AppVClient service. The AppVStreamingUX process will now exit. HResult: %1">
+    </event>
+    <event value="15003" version="1" opcode="0" channel="16" level="2" task="37" keywords="0x8000000000080000" message="The AppVStreamingUX application experienced an AppV error while attempting to stop a package or connection group. Running Virtual Environment ID: %1, Version: %2, AppV Error: %3 - %4">
+    </event>
+    <event value="16001" version="1" opcode="0" channel="16" level="2" task="24" keywords="0x8000000000200000" message="A conflict was detected in the configuration settings for Virtual Object exclusions in virtual application connection group %1 version %2. The virtual application could not be started. Verify that the settings are correct and try again.">
+    </event>
+    <event value="16002" version="1" opcode="0" channel="16" level="2" task="24" keywords="0x8000000000200000" message="A conflict was detected in the &apos;enabled&apos; setting for Virtual Object subsystem in virtual application connection group %1 version %2. The virtual application could not be started. Verify that the settings are correct and try again.">
+    </event>
+    <event value="16003" version="1" opcode="0" channel="16" level="2" task="13" keywords="0x8000000000200000" message="The connection group %1 version %2 could not be published because the virtual objects settings of the individual packages conflict. Verify that the virtual objects settings are the same for all member packages and try again.
+Error code: %3 - %4">
+    </event>
+    <event value="16004" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000200000" message="Failed to publish package %1 version %2 because its virtual objects settings do not match those of other packages in connection group %3 version %4.
+Verify that the virtual objects settings are the same for all member packages and try again.
+Error code: %5 - %6">
+    </event>
+    <event value="17001" version="1" opcode="0" channel="16" level="3" task="32" keywords="0x8000000000400000" message="Failed to save last report data cache file path %1 to the registry due to error %2.  If there is a Client failure before the next save attempt, and the report data must be loaded from the cache, some records may be missing.">
+    </event>
+    <event value="17002" version="1" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000400000" message="Reporting data cache could not be loaded from %1 due to error %2-%3.  A new report data cache file will be generated and saved separately.  Any report data from the previous cache file will be lost.">
+    </event>
+    <event value="17003" version="1" opcode="0" channel="16" level="2" task="31" keywords="0x8000000000400000" message="Reporting data manager queue worker thread is exiting on unexpected wait condition %1, error code %2.  No further report records will be processed.">
+    </event>
+    <event value="17004" version="1" opcode="0" channel="16" level="3" task="31" keywords="0x8000000000400000" message="Reporting data cache could not be saved to disk after adding new records (rc = %1-%2); those records may be lost if the Client shuts down before the next attempt to save or transmit the cache.">
+    </event>
+    <event value="17005" version="1" opcode="0" channel="17" level="4" task="31" keywords="0x4000000000400000" message="Reporting data cache has exceeded the maximum cache size, and older records will be discarded to make room for new records until the cache can be transmitted to a Reporting Server.">
+    </event>
+    <event value="17006" version="1" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000400000" message="Reporting data cache could not be sent to Reporting Server. (rc = %1-%2).">
+    </event>
+    <event value="17007" version="1" opcode="0" channel="16" level="2" task="31" keywords="0x8000000000400000" message="Failed to add application launch data to the reporting queue. This application launch will not be reported to the reporting server. (rc = %1-%2).">
+    </event>
+    <event value="17008" version="1" opcode="0" channel="16" level="2" task="31" keywords="0x8000000000400000" message="Failed to add application shutdown data to the reporting queue. This application shutdown will not be reported to the reporting server. (rc = %1-%2).">
+    </event>
+    <event value="17009" version="1" opcode="0" channel="16" level="2" task="31" keywords="0x8000000000400000" message="Failed to add virtual environment created data for the launching application. The application launch will not be reported to the reporting server. (rc = %1-%2).">
+    </event>
+    <event value="17010" version="1" opcode="0" channel="16" level="2" task="31" keywords="0x8000000000400000" message="Failed to add virtual environment terminated data for the terminating application. The application shutdown will not be reported to the reporting server. (rc = %1-%2).">
+    </event>
+    <event value="17011" version="1" opcode="0" channel="16" level="3" task="32" keywords="0x8000000000400000" message="Failed to save updated cached file after upload due to error %1-%2; duplicate records may be sent to the server if the cache must be reloaded before the next save attempt.">
+    </event>
+    <event value="17012" version="1" opcode="0" channel="16" level="2" task="31" keywords="0x8000000000400000" message="Failed to add virtual process launch failure information for the terminating process. The application launch failure will not be reported to the reporting server. (rc = %1-%2).">
+    </event>
+    <event value="18001" version="1" opcode="0" channel="16" level="2" task="23" keywords="0x8000000000100000" message="A virtual application could not be launched from package &apos;%1&apos; because the App-V Client Service is not running.  Start the App-V Client Service and try again.">
+    </event>
+    <event value="18002" version="1" opcode="0" channel="16" level="2" task="23" keywords="0x8000000000100000" message="The virtual application &apos;%1&apos; could not be launched because the user is not entitled to the package to which it belongs.  Either publish the package to the user or globally and try again.">
+    </event>
+    <event value="18003" version="1" opcode="0" channel="16" level="2" task="23" keywords="0x8000000000100000" message="The virtual application &apos;%1&apos; could not be launched because the App-V Client could not determine which environment to use.  Provide a priority to the app connection group for the package and try again.">
+    </event>
+    <event value="18004" version="1" opcode="0" channel="16" level="2" task="23" keywords="0x8000000000100000" message="The virtual application &apos;%1&apos; could not be launched because the service &apos;%2&apos; could not be started.">
+    </event>
+    <event value="18005" version="1" opcode="0" channel="18" level="2" task="23" keywords="0x2000000000100000" message="The virtual application &apos;%1&apos; could not be started because the App-V Subsystem &apos;%2&apos; could not be initialized. {error: %3-%4}">
+    </event>
+    <event value="18006" version="1" opcode="0" channel="16" level="2" task="23" keywords="0x8000000000100000" message="The virtual environment for connection group %1 version %2 could not be created because the package %3 version %4 is not published.  Publish the package and try again.">
+    </event>
+    <event value="19001" version="1" opcode="0" channel="17" level="4" task="36" keywords="0x4000000000800000" message="Publishing Refresh started.
+ URL: %1
+ Global: %2">
+    </event>
+    <event value="19002" version="1" opcode="0" channel="17" level="4" task="36" keywords="0x4000000000800000" message="Publishing Refresh stopped.
+ URL: %1
+ Global: %2
+ Return code: %3 - %4">
+    </event>
+    <event value="19010" version="1" opcode="0" channel="17" level="4" task="36" keywords="0x4000000000800000" message="Settings synced.
+ Return code: %1 - %2">
+    </event>
+    <event value="19011" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Settings sync failed.
+ Error code: %1 - %2">
+    </event>
+    <event value="19101" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Getting client information failed.
+ Error code: %1 - %2">
+    </event>
+    <event value="19102" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Getting server publishing data failed.
+ URL: %1
+ Error code: %2 - %3">
+    </event>
+    <event value="19103" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Getting client published data failed.
+ Error code: %1 - %2">
+    </event>
+    <event value="19104" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Part or all packages publish failed.
+ published: %1
+ failed: %2 
+Please check the error events of &apos;Configure/Publish Package&apos; before this message for the details of the failure.">
+    </event>
+    <event value="19105" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Part or all packages un-publish failed.
+ un-published: %1
+ failed: %2 
+Please check the error events of &apos;Unpublish Package&apos; before this message for the details of the failure.">
+    </event>
+    <event value="19106" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Part or all groups publish failed.
+ published: %1
+ failed: %2 
+Please check the error events of &apos;Configure/Publish Virtual Application Connection Group&apos; before this message for the details of the failure.">
+    </event>
+    <event value="19107" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Part or all groups un-publish failed.
+ un-published: %1
+ failed: %2 
+Please check the error events of &apos;Unpublish Virtual Application Connection Group&apos; before this message for the details of the failure.">
+    </event>
+    <event value="19108" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Failed to publish group due to the failure of the package.
+ Group GUID: %1
+ Group Version GUID: %2
+ Package GUID: %3">
+    </event>
+    <event value="19201" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Unknown protocol for package URI.
+ input: %1">
+    </event>
+    <event value="19202" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="HttpRequest initialize failed.
+ URL: %1
+ Error code: %2 - %3">
+    </event>
+    <event value="19203" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="HttpRequest sendRequest failed.
+ URL: %1
+ Error code: %2 - %3">
+    </event>
+    <event value="19204" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="The content could not be coverted to unicode.
+ URL: %1">
+    </event>
+    <event value="19205" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="The content from server is not valid XML for publishing.
+ URL: %1
+ Error code: %2 - %3">
+    </event>
+    <event value="19301" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Failed to create default machine policy document.
+ Package: %1, %2
+ Error code: %3 - %4">
+    </event>
+    <event value="19302" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Failed to create machine policy document from string.
+ Package: %1, %2
+ Error code: %3 - %4">
+    </event>
+    <event value="19303" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Failed to create user policy document from string.
+ Package: %1, %2
+ Error code: %3 - %4">
+    </event>
+    <event value="19304" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Failed to create package group descriptor document from string.
+ Group: %1, %2
+ Error code: %3 - %4">
+    </event>
+    <event value="19401" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Failed to get publishing server record from registry.
+ Server ID: %1
+ Error code: %2 - %3">
+    </event>
+    <event value="19402" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="The URL has already been used by other publishing server.
+ Server ID: %1
+ URL: %2">
+    </event>
+    <event value="19403" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="No URL was supplied for the publishing server.
+ Server ID: %1">
+    </event>
+    <event value="19404" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="The ID for the publishing server is out of the range.
+ Server ID: %1
+ Valid Range: [1~5]">
+    </event>
+    <event value="19405" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="The interval of hours for the publishing server is out of the range.
+ Server ID: %1
+ Interval: %2
+ Valid Range: [0~23]">
+    </event>
+    <event value="19406" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="The interval of days for the publishing server is out of the range.
+ Server ID: %1
+ Interval: %2
+ Valid Range: [0~365]">
+    </event>
+    <event value="19407" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="The interval unint for the publishing server is not valid.
+ Server ID: %1
+ Interval Unit: %2
+ Valid Values: 0/Hour, 1/Day">
+    </event>
+    <event value="19408" version="1" opcode="0" channel="17" level="3" task="36" keywords="0x4000000000800000" message="The stored URL %1 for the server %2 is incorrectly formatted.">
+    </event>
+    <event value="19501" version="1" opcode="0" channel="17" level="4" task="36" keywords="0x4000000000800000" message="SyncAppvPublishingServer completed successfully: &apos;%1&apos;.">
+    </event>
+    <event value="19502" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="SyncAppvPublishingServer failed due to a PowerShell error.
+Error: &apos;%1&apos;">
+    </event>
+    <event value="19801" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Deimpersonation failed.
+ Error: %1 - %2.">
+    </event>
+    <event value="19802" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Read policy identities failed.
+ URL: %1
+ Global: %2
+ For deployment configuration: %3
+ Error: %4 - %5.">
+    </event>
+    <event value="19803" version="1" opcode="0" channel="16" level="2" task="36" keywords="0x8000000000800000" message="Write policy identities failed.
+ URL: %1
+ Global: %2
+ For deployment configuration: %3
+ Error: %4 - %5.">
+    </event>
+    <event value="19804" version="1" opcode="0" channel="17" level="4" task="36" keywords="0x4000000000800000" message="File type associations, shell extensions, and shortcuts updated.">
+    </event>
+    <event value="19805" version="1" opcode="0" channel="17" level="2" task="36" keywords="0x4000000000800000" message="Failed to update file type associations, shell extensions, and shortcuts.
+ Error: %1 - %2.">
+    </event>
+    <event value="20001" version="1" opcode="0" channel="16" level="2" task="13" keywords="0x8000000000002000" message="The connection group %1 version %2 could not be published because the virtual COM settings of the individual packages conflict.  Verify that the virtual COM settings are the same for all member packages and try again.
+Error code: %3 - %4">
+    </event>
+    <event value="20002" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000002000" message="Package %1 version %2 could not be published because its virtual COM settings conflict with those of other packages in connection group %3-%4.  Verify that the virtual COM settings are the same for all member packages and try again.
+Error code: %5 - %6">
+    </event>
+    <event value="20101" version="1" opcode="0" channel="16" level="2" task="9" keywords="0x8000000000002000" message="Package %1 version %2 could not be published because its virtual file system settings conflict with other packages in connection group %3-%4.  Verify that the virtual COM settings are the same for all member packages and try again.
+Error code: %5 - %6">
+    </event>
+    <event value="21001" version="1" opcode="0" channel="17" level="2" task="38" keywords="0x4000000001000000" message="An error was encountered while reading the setting to enable or disable Dynamic Virtualization. Dynamic Virtualization is enabled by default and can be modified using the Set-AppvClientConfiguration Powershell cmdlet. Error code:  %1-%2.">
+    </event>
+    <event value="21002" version="1" opcode="0" channel="17" level="4" task="38" keywords="0x4000000001000000" message="Dynamic Virtualization is currently disabled. Publishing will not take effect for shell extensions, browser plugins, or ActiveX controls. To modify this setting, use the Set-AppVClientConfiguration Powershell cmdlet.">
+    </event>
+    <event value="22001" version="1" opcode="0" channel="16" level="3" task="39" keywords="0x8000000002000000" message="The SxS assembly &apos;%1&apos; could not be installed because its payload file &apos;%2&apos; is not part of the package. Please ensure this assembly is installed natively to ensure package functionality.">
+    </event>
+    <event value="23001" version="1" opcode="0" channel="17" level="2" task="33" keywords="0x4000000000040000" message="A timeout occurred while streaming an application, which may have prevented the application from running. The application should start successfully the next time it is launched.">
+    </event>
+    <event value="24001" version="1" opcode="0" channel="17" level="2" task="40" keywords="0x4000000004000000" message="Enable Appv failed with error %1.">
+    </event>
+    <event value="24002" version="1" opcode="0" channel="17" level="2" task="40" keywords="0x4000000004000000" message="Disable Appv failed with error %1.">
+    </event>
+  </events>
+</provider>

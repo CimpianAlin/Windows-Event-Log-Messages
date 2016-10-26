@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IPMIProvider" guid="2a45d52e-bbf3-4843-8e18-b356ed5f6a65" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ipmiprr.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\wbem\ipmiprr.dll" messageFileName="C:\Windows\system32\wbem\ipmiprr.dll" message="Microsoft-Windows-IPMI WMI Provider" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="HardwareEvents" id="16" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="3221226472" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The IPMI Provider attempted to set the value of the &quot;LowerThresholdNonCritical&quot; property of the &quot;NumericSensor&quot; class.  While the BMC returned a success status, retrieval of the property from the BMC indicated that it did not change.  This might be an issue with the BMC, please contact your BMC Vendor for more information.">
+    </event>
+    <event value="3221226473" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The IPMI Provider attempted to set the value of the &quot;UpperThresholdNonCritical&quot; property of the &quot;NumericSensor&quot; class.  While the BMC returned a success status, retrieval of the property from the BMC indicated that it did not change.  This might be an issue with the BMC, please contact your BMC Vendor for more information.">
+    </event>
+  </events>
+</provider>

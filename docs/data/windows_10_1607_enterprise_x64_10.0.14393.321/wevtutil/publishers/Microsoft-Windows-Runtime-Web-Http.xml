@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Runtime-Web-Http" guid="41877cb4-11fc-4188-b590-712c143c881d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Windows.Web.Http.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\Windows.Web.Http.dll" messageFileName="C:\Windows\system32\Windows.Web.Http.dll" message="Microsoft-Windows-Runtime-Web-Http" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Runtime-Web-Http/Tracing" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tasks.HttpAsyncIO" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Async I/O">
+    </task>
+    <task name="tasks.HttpOperation" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Operation">
+    </task>
+    <task name="tasks.HttpCct" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Http Cct">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Failed to parse URI &apos;%1&apos;.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Failed to create URI with base URI &apos;%1&apos; and relative URI &apos;%2&apos;.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Add HTTP header &apos;%1: %2&apos;.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Start to connect to &apos;%1&apos; with credential of &apos;%2&apos;.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Start to connect to &apos;%1&apos; with default credential.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Failed to connect to &apos;%1&apos; at port %2. The last error is %3: %4">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Opening request to &apos;%1&apos; to &apos;%2&apos; with flags %3.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Failed to open request to &apos;%1&apos;. The last error is %2: %3">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Request context %1 has request handle %2 to &apos;%3&apos;.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Set HTTP send and receive timeout to %2ms on request handle %1.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Start to send to request handle %1 with content length %2.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Request handle %1 completed synchronously.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Request context %1 completed send asynchronously.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Writing %2 bytes to request handle %1.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Failed to send entity body to request handle %1. The last error is %2: %3">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="Sent HTTP request at request handle %1: %2">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Start to receive response from request handle %1.">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Received HTTP response from request handle %1 with status code %2 and status description &apos;%3&apos;.">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="Receive HTTP response from request handle %1: %2">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Failed to receive HTTP response from request handle %1. The last error is %2: %3">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Request context %1 received HTTP response of %2 bytes, which is over the %3 limit.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Request context %1 resubmitting the request.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Reusing the request handle %1 for server &apos;%2&apos;.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Request context %1 was aborted.">
+    </event>
+    <event value="25" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Progress to &apos;%1&apos;: %2 stage; %3 retries; %4 bytes sent; %5 total bytes to send; %6 bytes received; %7 total bytes to receive.">
+    </event>
+    <event value="26" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="HTTP request to &apos;%1&apos; completed. The error code is %2: %3">
+    </event>
+    <event value="27" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Async operation %1 at %2 failed to process HTTP response &apos;%3&apos;. The error code is %4: %5">
+    </event>
+    <event value="28" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 started.">
+    </event>
+    <event value="29" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 failed to start. The error code is %3: %4">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 completed successfully.">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 failed with error code %3: %4">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 was canceled.">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 was closed.">
+    </event>
+    <event value="34" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 called progress delegate.">
+    </event>
+    <event value="35" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="CompleteDelivery loop with %1 response state; %2 pending receive operations.">
+    </event>
+    <event value="36" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="CompleteDelivery enter.">
+    </event>
+    <event value="37" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="CompleteDelivery exit with %1: %2">
+    </event>
+    <event value="38" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Flush enter.">
+    </event>
+    <event value="39" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Flush exit with %1: %2">
+    </event>
+    <event value="40" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Decrement pending receive operations to %1.">
+    </event>
+    <event value="41" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Increment pending receive operations to %1.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Set response state to %1.">
+    </event>
+    <event value="43" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Handle %1: HTTP/2 enabled.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 started server custom validation.">
+    </event>
+    <event value="45" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 waiting for completion of server custom validation.">
+    </event>
+    <event value="46" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 failed server custom validation.">
+    </event>
+    <event value="47" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Async operation %1 at %2 successfully completed server custom validation.">
+    </event>
+    <event value="48" version="0" opcode="0" channel="16" level="3" task="1" keywords="0x8000000000000000" message="A dialog cannot be displayed because the parent window handle cannot be determined.">
+    </event>
+  </events>
+</provider>

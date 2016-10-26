@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-RPC-Events" guid="f4aed7c7-a898-4627-b053-44a7caa12fcd" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=rpcrt4.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\rpcrt4.dll" messageFileName="C:\Windows\system32\rpcrt4.dll" message="Microsoft-Windows-RPC" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="RPC_EVENTLOG_ERROR_CATEGORY" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="RPC Error">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="2" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this: &quot;An RPC method using synchronous pipes has been called on on protocol sequence %3 interface with unique identifier %4. Usage and support of synchronous pipes on this protocol sequence has been deprecated for this release of Windows. For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415.&quot;  User Action Contact the application vendor for updated version of the application.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this: &quot;An RPC method using synchronous pipes has been called on on protocol sequence %3 interface with unique identifier %4. Usage and support of synchronous pipes has been deprecated for this release of Windows. For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415.&quot;  User Action Contact the application vendor for updated version of the application.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this: &quot;An RPC method using the name service has been called. Usage and support for the RPC name service has been deprecated for this release of Windows.  For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415.&quot;  User Action Contact the application vendor for updated version of the application.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this: &quot;An RPC method using pipes has been called on on protocol sequence %3 interface with unique identifier %4. Usage and support of pipes on this protocol sequence has been deprecated for this release of Windows. For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415.&quot;  User Action Contact the application vendor for updated version of the application.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this:  &quot;An RPC method has been called on a connectionless protocol sequence %3. Usage and support of this protocol sequence has been deprecated for this release of Windows. For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415.&quot;  User Action Contact the application vendor for updated version of the application.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this:  &quot;An RPC method has been called on a connectionless protocol sequence %3 and interface with unique identifier %4. Usage and support of this protocol sequence has been deprecated for this release of Windows. For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415.&quot;  User Action Contact the application vendor for updated version of the application.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Application (%1) (PID: %2) has failed to add endpoint %3:%4 for interface with unique identifier %5 with error %6.  User Action Verify that the machine has sufficient memory.  Verify that no other process is listening on the endpoint.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Application (%1) (PID: %2) has failed to complete a COM/RPC call because of an invalid message from server.  User Action Try the operation again. If the problem persists, contact your system administrator.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Application (%1) (PID: %2) has failed to complete a COM call because an incorrect interface ID was passed as a parameter.  The expected Interface ID was %3, and the Interface ID returned was %4.  User Action Contact the application vendor for updated version of the application.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Possible Memory Leak.  Application (%1) (PID: %2) has passed a non-NULL pointer to RPC for an [out] parameter marked [allocate(all_nodes)].  [allocate(all_nodes)] parameters are always reallocated; if the original pointer contained the address of valid memory, that memory will be leaked.  The call originated on the interface with UUID (%3), Method number (%4).  User Action: Contact your application vendor for an updated version of the application.">
+    </event>
+  </events>
+</provider>

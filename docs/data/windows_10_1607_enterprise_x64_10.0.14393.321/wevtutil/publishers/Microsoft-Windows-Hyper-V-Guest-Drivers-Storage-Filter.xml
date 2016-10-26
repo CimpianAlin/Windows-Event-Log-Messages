@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter" guid="0b9fdccc-451c-449c-9bd8-6756fcc6091a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=vmstorfl.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\vmstorfl.sys" parameterFileName="C:\Windows\system32\drivers\vmstorfl.sys" messageFileName="C:\Windows\system32\drivers\vmstorfl.sys" message="Microsoft-Windows-Hyper-V-Virtual-Storage-Filter" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Guest-Drivers/Debug" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Guest-Drivers/Admin" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="Dispatch" value="6553600" message="Dispatching of request.">
+    </opcode>
+    <opcode name="Completion" value="6619136" message="Completion of request.">
+    </opcode>
+    <opcode name="Timeout" value="6684672" message="Request timeout handling.">
+    </opcode>
+    <opcode name="Error" value="6750208" message="Request error handling.">
+    </opcode>
+    <opcode name="Retry" value="6815744" message="Retry handling.">
+    </opcode>
+    <opcode name="Miniport" value="6881280" message="Miniport handling of request.">
+    </opcode>
+    <opcode name="Queue" value="6946816" message="Event Queue related operation.">
+    </opcode>
+    <opcode name="StateTransition" value="7012352" message="State transition.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Port" value="201" eventGUID="00000000-0000-0000-0000-000000000000" message="Port">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Reset" mask="1" message="">
+    </keyword>
+    <keyword name="PortNotification" mask="2" message="">
+    </keyword>
+    <keyword name="PauseResume" mask="4" message="">
+    </keyword>
+    <keyword name="IoPerfNotification" mask="8" message="">
+    </keyword>
+    <keyword name="Config" mask="10" message="">
+    </keyword>
+    <keyword name="Perf" mask="20" message="">
+    </keyword>
+    <keyword name="Logo_Performance" mask="80000" message="Logo Performance measurement">
+    </keyword>
+    <keyword name="IO_Performance" mask="100000" message="IO Performance measurement">
+    </keyword>
+    <keyword name="Read" mask="200000" message="Read request">
+    </keyword>
+    <keyword name="Write" mask="400000" message="Write request">
+    </keyword>
+    <keyword name="PagingRead" mask="800000" message="Paging Read request">
+    </keyword>
+    <keyword name="PagingWrite" mask="1000000" message="Paging Write request">
+    </keyword>
+    <keyword name="LowMemoryRead" mask="2000000" message="Low memory Read request">
+    </keyword>
+    <keyword name="LowMemoryWrite" mask="4000000" message="Low memory write request">
+    </keyword>
+    <keyword name="NonReadWrite" mask="8000000" message="Non-Read/Write request">
+    </keyword>
+    <keyword name="PassThrough" mask="10000000" message="Pass-Through request">
+    </keyword>
+    <keyword name="Flush" mask="20000000" message="Flush request">
+    </keyword>
+    <keyword name="IOCTL" mask="40000000" message="Device I/O control request">
+    </keyword>
+    <keyword name="WMI" mask="80000000" message="WMI request">
+    </keyword>
+    <keyword name="Power" mask="100000000" message="Power request">
+    </keyword>
+    <keyword name="PnP" mask="200000000" message="PnP request">
+    </keyword>
+    <keyword name="Enum" mask="400000000" message="Device enumeration handling">
+    </keyword>
+    <keyword name="Queue" mask="800000000" message="Queue-related operation">
+    </keyword>
+    <keyword name="ISR" mask="1000000000" message="Interrupt Service Routine processing">
+    </keyword>
+    <keyword name="DPC" mask="2000000000" message="Deferred Procedure Call handling">
+    </keyword>
+    <keyword name="Timer" mask="4000000000" message="Timer-related operation">
+    </keyword>
+    <keyword name="Protocol" mask="8000000000" message="Bus protocol specific operation">
+    </keyword>
+    <keyword name="Target" mask="10000000000" message="Target-related operation">
+    </keyword>
+    <keyword name="Adapter" mask="20000000000" message="Controller or Host Bus Adapter related operation">
+    </keyword>
+    <keyword name="Retry" mask="40000000000" message="Retry handling">
+    </keyword>
+    <keyword name="Timeout" mask="80000000000" message="Timeout handling">
+    </keyword>
+    <keyword name="ReSet" mask="100000000000" message="Reset handling">
+    </keyword>
+    <keyword name="MiniportInterface" mask="200000000000" message="Activity between port and miniport">
+    </keyword>
+    <keyword name="Test" mask="800000000000" message="Testing-specific processing">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The Virtual Storage Filter Driver failed to initialize (%1).">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The Virtual Storage Filter Driver failed to intialize disk (%1).">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Virtual Storage Filter Driver is active for disk at location %1 (%2).">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The Virtual Storage Filter Driver is inactive for disk at location %1 (%2).">
+    </event>
+    <event value="5" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The Virtual Storage Filter Driver is disabled through the registry. It is inactive for all disk drives.">
+    </event>
+    <event value="202" version="1" opcode="100" channel="16" level="5" task="201" keywords="0x8000000000200000" message="Dispatching a read request.">
+    </event>
+    <event value="203" version="1" opcode="100" channel="16" level="5" task="201" keywords="0x8000000000400000" message="Dispatching a write request.">
+    </event>
+    <event value="208" version="1" opcode="101" channel="16" level="5" task="201" keywords="0x8000000007e00000" message="Completing an IO (read/write) request.">
+    </event>
+  </events>
+</provider>

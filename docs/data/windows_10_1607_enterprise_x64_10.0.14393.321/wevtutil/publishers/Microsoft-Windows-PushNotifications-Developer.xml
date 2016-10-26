@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-PushNotifications-Developer" guid="5cad3597-5fec-4c62-9ce1-9d7abc723d3a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wpnapps.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\wpnapps.dll" messageFileName="C:\Windows\System32\wpnapps.dll" message="Microsoft-Windows-PushNotifications-Developer" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-PushNotification-Developer/Debug" id="16" flags="0" message="Microsoft-Windows-PushNotifications-Developer/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CloudNotificationDelivery" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ToastDismissed" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ToastCanceled" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ToastTimedOut" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ToastActivated" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ToastError" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectionStatusDelivery" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileCreateAsyncLambda" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileDeleteAsync" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileUpdateAsync" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileStaticsExists" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileStaticsFindAllAsync" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileStaticsFindAllAsyncForApplication" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileStaticsFindAllAsyncForPackage" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SecondaryTileFactoryEnumerateTiles" value="108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DualSimTileCreateAsync" value="201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DualSimTileDeleteAsync" value="202" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DualSimTileUpdateAsync" value="203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows Push Notification Developer APIs have encountered an error in file %1, function %2, line %3: %4.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows Push Notification Developer APIs have been loaded.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows Push Notification Developer APIs have been unloaded.">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A channel request has been started with the following parameters: %1 [AppID].">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A channel request has completed: %1 [AppID] %2 [ChannelUri].">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The following channel has been closed: %1 [ChannelUri].">
+    </event>
+    <event value="1100" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="A cloud notification is about to be delivered: %1 [NotificationType].">
+    </event>
+    <event value="1101" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="A cloud notification has been delivered: %1 [NotificationType].">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A cloud notification has been canceled and will not be delivered to the presentation layer: %1 [NotificationType].">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A cloud notification has been delivered to the presentation layer: %1 [NotificationType].">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A notification has been delivered to the presentation layer: %1 [AppId] %2 [NotificationType].">
+    </event>
+    <event value="1105" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A clear tile message has been delivered to the presentation layer: %1 [AppId].">
+    </event>
+    <event value="1106" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A clear badge message has been delivered to the presentation layer: %1 [AppId].">
+    </event>
+    <event value="1107" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A cancel toast message has been delivered to the presentation layer: %1 [AppId].">
+    </event>
+    <event value="1108" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="A toast user dismissal event is about to be set.">
+    </event>
+    <event value="1109" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="A toast user dismissal event has been set.">
+    </event>
+    <event value="1110" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000000" message="A toast canceled dismissal event is about to be set.">
+    </event>
+    <event value="1111" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000000" message="A toast canceled dismissal event has been set.">
+    </event>
+    <event value="1112" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000000" message="A toast timed-out dismissal event is about to be set.">
+    </event>
+    <event value="1113" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000000" message="A toast timed-out dismissal event has been set.">
+    </event>
+    <event value="1114" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000000" message="A toast activation event is about to be set.">
+    </event>
+    <event value="1115" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000000" message="A toast activation event has been set.">
+    </event>
+    <event value="1116" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000000" message="A toast error event is about to be set.">
+    </event>
+    <event value="1117" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000000" message="A toast error event has been set.">
+    </event>
+    <event value="1118" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A clear all toast event has been set.">
+    </event>
+    <event value="1119" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A remove toast event has been set.">
+    </event>
+    <event value="1120" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A remove toast w/ tag event has been set.">
+    </event>
+    <event value="1121" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A remove toast w/ tag and group event has been set.">
+    </event>
+    <event value="1122" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000000" message="A connection status update is about to be delivered: %1 [AppId] %2 [IsConnected].">
+    </event>
+    <event value="1123" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000000" message="A connection status update has been delivered: %1 [AppId] %2 [IsConnected].">
+    </event>
+    <event value="1124" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A clear flyout message has been delivered to the presentation layer: %1 [AppId].">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2002" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2003" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2004" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2005" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2006" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2007" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2008" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2009" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2010" version="0" opcode="1" channel="16" level="4" task="105" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2011" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2012" version="0" opcode="1" channel="16" level="4" task="106" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2013" version="0" opcode="2" channel="16" level="4" task="106" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2014" version="0" opcode="1" channel="16" level="4" task="107" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2015" version="0" opcode="2" channel="16" level="4" task="107" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2016" version="0" opcode="1" channel="16" level="4" task="108" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2017" version="0" opcode="2" channel="16" level="4" task="108" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2018" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2019" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2020" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2021" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2022" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2023" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2024" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2025" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2026" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2027" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2028" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2029" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2030" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2031" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2032" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2033" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2034" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2035" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2036" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2037" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2038" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2039" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2040" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2041" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2042" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2043" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2044" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2045" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2046" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2047" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2048" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2049" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2050" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2051" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2052" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2053" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2054" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2055" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2056" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2057" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2058" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2059" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2060" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2061" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2062" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2063" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2064" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2065" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2066" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2067" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3002" version="0" opcode="1" channel="16" level="4" task="201" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3003" version="0" opcode="2" channel="16" level="4" task="201" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3004" version="0" opcode="1" channel="16" level="4" task="202" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3005" version="0" opcode="2" channel="16" level="4" task="202" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3006" version="0" opcode="1" channel="16" level="4" task="203" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3007" version="0" opcode="2" channel="16" level="4" task="203" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

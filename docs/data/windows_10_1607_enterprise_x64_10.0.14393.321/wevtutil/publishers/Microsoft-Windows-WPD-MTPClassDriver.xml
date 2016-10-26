@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WPD-MTPClassDriver" guid="21b7c16e-c5af-4a69-a74a-7245481c1b97" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wpd_ci.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\wpd_ci.dll" messageFileName="C:\Windows\System32\wpd_ci.dll" message="Microsoft-Windows-WPD-MTPClassDriver" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WPD-MTPClassDriver/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-WPD-MTPClassDriver/Analytic" id="17" flags="0" message="Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DriverInitialization" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Initialization">
+    </task>
+    <task name="DriverOperation" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Operation">
+    </task>
+    <task name="DriverFailure" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Failure">
+    </task>
+    <task name="DeviceError" value="64" eventGUID="00000000-0000-0000-0000-000000000000" message="Device Error">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="16" keywords="0x8000000000000000" message="MTP Driver started successfully.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="16" keywords="0x8000000000000000" message="Device will enter the suspend state if idle for %1 seconds.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="32" keywords="0x8000000000000000" message="Device is entering the idle state (Idle state: %1; Return code: %2).">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="32" keywords="0x8000000000000000" message="Device is resuming operation from idle state (Idle state: %1; Return code: %2).">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="3" task="32" keywords="0x8000000000000000" message="Driver has cancelled the operation %1">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="16" keywords="0x8000000000000000" message="Customizing for &apos;%1, %2, %3&apos; (%4).">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="1" task="16" keywords="0x8000000000000000" message="Driver has failed to start, HRESULT %1.">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="1" task="32" keywords="0x8000000000000000" message="Device has failed to respond to the operation %1 in 5 minutes, attempted to cancel the operationm HRESULT %2.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="1" task="32" keywords="0x8000000000000000" message="Device has failed to communicate its status when processing operation %1.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="1" task="32" keywords="0x8000000000000000" message="Bluetooth transport driver has detected a data discontinuity error: (expected sequence ID %1, but recevied %2).">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="1" task="32" keywords="0x8000000000000000" message="Bluetooth transport driver has detected a data integrity error in a bulk data transfer operation: (expected CRC-32 value %1, but received %2).">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ServicePropList Dataset: Service ID %1, Property ID %2, DataSet Offset %3">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="FixedArray form flag used with non-array type">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="ByteArray form flag used with non-AUINT8 type">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="LongString form flag used with non-AUINT16 type">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ObjectPropDesc Dataset: Format ID %1, Property ID %2, DataSet Offset %3">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in InterdependentPropDesc Dataset: Format ID %1, DataSet Offset %2">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ServiceCapabilities Dataset: Service ID %1, Format ID %2, DataSet Offset %3">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="FixedArray form flag used with non-array type">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="ByteArray form flag used with non-AUINT8 type">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="LongString form flag used with non-AUINT16 type">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Dataset not large enough for expected data">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in DeviceInfo Dataset: DataSet Offset %1">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in StorageInfo Dataset: Storage ID %1, DataSet Offset %2">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ServiceInfo Dataset: Service ID %1, DataSet Offset %2">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ObjectInfo Dataset: Object ID %1, DataSet Offset %2">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in DevicePropDesc Dataset: Property ID %1, DataSet Offset %2">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Invalid string specification">
+    </event>
+    <event value="1028" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Unable to parse value for MTP DataType %1">
+    </event>
+    <event value="1029" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ServiceIDs: declared %1 elements, but only space to hold %2 elements">
+    </event>
+    <event value="1030" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Warning in ServiceIDs: declared %1 elements, but space to hold %2 elements">
+    </event>
+    <event value="1031" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ServiceIDs: count of %1 exceeds system limits">
+    </event>
+    <event value="1032" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in StorageIDs: declared %1 elements, but only space to hold %2 elements">
+    </event>
+    <event value="1033" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Warning in StorageIDs: declared %1 elements, but space to hold %2 elements">
+    </event>
+    <event value="1034" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in StorageIDs: count of %1 exceeds system limits">
+    </event>
+    <event value="1035" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ObjectHandles: declared %1 elements, but only space to hold %2 elements">
+    </event>
+    <event value="1036" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Warning in ObjectHandles: declared %1 elements, but space to hold %2 elements">
+    </event>
+    <event value="1037" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ObjectHandles: count of %1 exceeds system limits">
+    </event>
+    <event value="1038" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ObjectReferences: declared %1 elements, but only space to hold %2 elements">
+    </event>
+    <event value="1039" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Warning in ObjectReferences: declared %1 elements, but space to hold %2 elements">
+    </event>
+    <event value="1040" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in ObjectReferences: count of %1 exceeds system limits">
+    </event>
+    <event value="1041" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Duplicate Namespace and ID %1.%2 (ignored)">
+    </event>
+    <event value="1042" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Duplicate Format ID %1 (ignored)">
+    </event>
+    <event value="1043" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Duplicate Method ID %1 (ignored)">
+    </event>
+    <event value="1044" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Duplicate Event ID %1 (ignored)">
+    </event>
+    <event value="1045" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Duplicate PropCode ID %2 for Service Format %1 (ignored)">
+    </event>
+    <event value="1046" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Ambiguous mapping of Namespace and ID %1.%2 to both PropCodes %3 and %4 (ignored)">
+    </event>
+    <event value="1047" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Empty Hints Service data block">
+    </event>
+    <event value="1048" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Hints Service data block is of invalid size">
+    </event>
+    <event value="1049" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Unrecognized MTP DataType %1">
+    </event>
+    <event value="1050" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="MaxLength of %1 is too large for associated MTP DataType">
+    </event>
+    <event value="1051" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Unrecognized MTP FormFlag %1">
+    </event>
+    <event value="1052" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Abstract property %1.%2 redefined by service %3">
+    </event>
+    <event value="1053" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Abstract format %1 redefined by service %2">
+    </event>
+    <event value="1054" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Abstract method %1 redefined by service %2">
+    </event>
+    <event value="1055" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Abstract event %1 redefined by service %2">
+    </event>
+    <event value="1056" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Warning in ServiceInfo Dataset: Service ID %1, left-over bytes ignored at end of dataset">
+    </event>
+    <event value="1057" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Ignoring reference by Service ID %2 to concrete service %1">
+    </event>
+    <event value="1058" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Service ID %2 referencing unknown service %1">
+    </event>
+    <event value="1059" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Service ID %1 specifies unknown service flag %2 (expecting Standard or Abstract)">
+    </event>
+    <event value="1060" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in Dataset: count of %1 exceeds system limits">
+    </event>
+    <event value="1061" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Device does not support bulk version of GetServiceCapabilities">
+    </event>
+    <event value="1062" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Device does not support bulk version of GetServiceProperties">
+    </event>
+    <event value="1063" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Method ID %1 referencing unknown association format %2">
+    </event>
+    <event value="1064" version="0" opcode="0" channel="16" level="3" task="64" keywords="0x8000000000000000" message="Device does not support bulk version of GetFormatCapabilities">
+    </event>
+    <event value="1065" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in FormatCapabilities Dataset: Format ID %1, DataSet Offset %2">
+    </event>
+    <event value="1066" version="0" opcode="0" channel="16" level="1" task="32" keywords="0x8000000000000000" message="Bluetooth transport driver has terminated an MTP Bluetooth connection due to failure to recover from a transport error (MTP OpCode %1).">
+    </event>
+    <event value="1067" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in GetObjectPropsSupported Dataset: DataSet Offset %1">
+    </event>
+    <event value="1068" version="0" opcode="0" channel="16" level="2" task="64" keywords="0x8000000000000000" message="Error in GetObjectPropList Dataset: DataSet Offset %1">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MTP Request">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MTP Data(in) and Response">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MTP Data(in) and Response for GetDevice/ObjectPropValue">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MTP Response">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MTP Event received from device">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MTP Bulk GetObjectProperties by Object Format">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MTP Request and Data(out)">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="MTP Request and Data(out) for SetDevice/ObjectPropValue">
+    </event>
+  </events>
+</provider>

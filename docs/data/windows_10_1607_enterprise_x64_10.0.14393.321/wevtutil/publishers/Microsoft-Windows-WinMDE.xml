@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WinMDE" guid="77549803-7bb1-418b-a98e-f2e22f35a873" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=winmde.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\winmde.dll" messageFileName="C:\Windows\system32\winmde.dll" message="Windows Media Delivery Engine" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WinMDE/MDE" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="HttpListener" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="HTTP Listener">
+    </task>
+    <task name="NetStreamSink_SampleRequests" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="NetStreamSink_SampleRequests">
+    </task>
+    <task name="RtspSink_SetWorkQueue" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="RtspSink_SetWorkQueueTask">
+    </task>
+    <task name="RtspSink_ProcessSample" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="RtspSink_ProcessSampleTask">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="HttpListener@%1 object created">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="HttpListener@%1 object destroyed">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="HttpListener@%1 HTTP request received">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="HttpListener@%1 sending HTTP response entity body (%2 chunks)">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x8000000000000000" message="NetStreamSink_SampleRequests @%1 %2 requests">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="5" task="3" keywords="0x8000000000000000" message="RtspSink_SetWorkQueue @%1 %2 requests">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="5" task="4" keywords="0x8000000000000000" message="RtspSink_ProcessSample_Start @%1">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="5" task="4" keywords="0x8000000000000000" message="RtspSink_ProcessSample_Stop @%1">
+    </event>
+  </events>
+</provider>

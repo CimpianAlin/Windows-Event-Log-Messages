@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Wcmsvc" guid="67d07935-283a-4791-8f8d-fa9117f3e6f2" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wcmsvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\wcmsvc.dll" messageFileName="C:\Windows\system32\wcmsvc.dll" message="Microsoft-Windows-Wcmsvc" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Wcmsvc/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Wcmsvc/Diagnostic" id="17" flags="0" message="Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TaskWwanResumeReconnect" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Measure WWAN Resume Reconnect task">
+    </task>
+    <task name="TaskWlanResumeReconnect" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Measure WLAN Resume Reconnect task">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="LwtDiagnostic" mask="20" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WCMSVC: Service Startup">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WCMSVC: Service Shutdown">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CDE reported a state change 
+
+ State: %1 
+
+ Name: %2">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Group Policy change was processed">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="A Power change was processed. 
+
+ Reason: %1">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="A Terminal Services session change was processed. 
+
+ Reason: %1">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="CDE reported a state change 
+
+ State: %1 
+
+ Name: Nlasvc.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="NLA interface property change 
+
+Interface: %1
+Internet v4: %2
+Internet v6: %3
+Probe Complete v4: %4
+Probe Complete v6: %5
+Domain Authenticated: %6
+Domain Probe Complete: %7">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CDE reported an L2 adapter arrival 
+
+ Interface: %1 
+
+ Type: %2">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CDE reported an L2 adapter removal 
+
+ Interface: %1 
+
+ Type: %2">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000020" message="CDE reported a successful connection 
+
+ Interface: %1 
+
+ Type: %2">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CDE reported a connection failure 
+
+ Interface: %1 
+
+ Type: %2
+
+ Status: %3">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000020" message="CDE reported a disconnection 
+
+ Interface: %1 
+
+ Type: %2">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="WcmSetParameter Called
+
+Interface: %1
+Profile Name: %2
+Wcm Opcode: %3
+Data Length: %4
+Caller Process ID: %5
+Return Value: %6">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="Interface Token Applied
+
+Interface: %1
+Media Type: %2
+Manual enabled: %3
+Manual Filter: %4
+Num Manual: %5
+Manual Profiles: %6
+Auto enabled: %7
+Auto filter: %8
+Num Auto: %9
+Auto Profiles: %10">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="Interface Token Failed
+
+Interface: %1
+Media Type: %2
+Manual enabled: %3
+Manual Filter: %4
+Num Manual: %5
+Manual Profiles: %6
+Auto enabled: %7
+Auto filter: %8
+Num Auto: %9
+AutoProfiles: %10
+Status: %11">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Soft disconnect over thresholds for interface: %1
+AvgIn: %2 AvgOut: %3 SpikeIn: %4 SpikeOut: %5
+Thresholds: AvgIn: %6 AvgOut: %7 SpikeIn: %8 SpikeOut:%9
+All values are in bytes/second">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Soft disconnect under thresholds for interface: %1
+AvgIn: %2 AvgOut: %3 SpikeIn: %4 SpikeOut: %5
+Thresholds: AvgIn: %6 AvgOut: %7 SpikeIn: %8 SpikeOut:%9
+All values are in bytes/second">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CDE reported an unblocked profile 
+
+ Interface: %1 
+
+ Type: %2
+
+ Profile: %3">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WCM Preferred Order List:
+%1">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WCM entered connected standby">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WCM exited connected standby">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000020" message="Acquired NDIS NIC Active Reference for interface: %1">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000020" message="Released NDIS NIC Active Reference for interface: %1">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CDE reported an NDIS adapter arrival 
+
+ Interface: %1 
+
+ Type: %2">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CDE reported an NDIS adapter removal 
+
+ Interface: %1 
+
+ Type: %2">
+    </event>
+    <event value="1028" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WCM entered net quiet mode">
+    </event>
+    <event value="1029" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WCM exited net quiet mode">
+    </event>
+    <event value="1030" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Billing Cycle Reset Successful">
+    </event>
+    <event value="1031" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Server Time Retrieval Failure">
+    </event>
+    <event value="1032" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000020" message="Acquire NDIS NIC Active Reference Failed for interface: %1">
+    </event>
+    <event value="1033" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000020" message="Release NDIS NIC Active Reference Failed for interface: %1">
+    </event>
+    <event value="1034" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="OnDemandInterfaceStateChanged. OnDemandType:%1, Interface: %2, OnDemandInfo:%3, ProviderID:%4, NewState:%5, Ref counter:%6">
+    </event>
+    <event value="1035" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="OnDemand PDP Profile Created. OnDemandInfo:%1, ProviderID:%2, SubscriberID:%3, Profile Name:%4">
+    </event>
+    <event value="1036" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="OnDemand PDP Profile Deleted. Profile Name:%1">
+    </event>
+    <event value="1037" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="OnDemand Request opened. App ID:%1, ProcessID:%2,OnDemandType:%3, OnDemandInfo:%4, ProviderID:%5, Error: %6">
+    </event>
+    <event value="1038" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="OnDemand Request closed. App ID:%1, ProcessID:%2,OnDemandType:%3, OnDemandInfo:%4, ProviderID:%5, Error: %6">
+    </event>
+    <event value="1039" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="OnDemand Request started. App ID:%1, ProcessID:%2,OnDemandType:%3, OnDemandInfo:%4, ProviderID:%5, Error: %6">
+    </event>
+    <event value="1040" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="OnDemand Request cancelled. App ID:%1, ProcessID:%2,OnDemandType:%3, OnDemandInfo:%4, ProviderID:%5, Error: %6">
+    </event>
+    <event value="1050" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="WcmSvc acquired the NIC reference for Interface: %1 for reason: %2">
+    </event>
+    <event value="1051" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="WcmSvc released the NIC reference for Interface: %1 for reason: %2">
+    </event>
+    <event value="1052" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc signalled disconnected standby">
+    </event>
+    <event value="1053" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc signalled end of disconnected standby">
+    </event>
+    <event value="1054" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc received power policy update for networking in standby - the new policy value is %1">
+    </event>
+    <event value="4020" version="0" opcode="2" channel="17" level="4" task="4" keywords="0x4001000000000000" message="End of Wwan Resume Reconnect">
+    </event>
+    <event value="4021" version="0" opcode="2" channel="17" level="4" task="5" keywords="0x4001000000000000" message="End of Wlan Resume Reconnect to Same Network">
+    </event>
+    <event value="4022" version="0" opcode="2" channel="17" level="4" task="5" keywords="0x4001000000000000" message="End of Wlan Resume Reconnect to Same Network OneX">
+    </event>
+    <event value="4023" version="0" opcode="2" channel="17" level="4" task="5" keywords="0x4001000000000000" message="End of Wlan Resume Reconnect to Different Network">
+    </event>
+    <event value="4024" version="0" opcode="2" channel="17" level="4" task="5" keywords="0x4001000000000000" message="End of Wlan Resume Reconnect to Different Network OneX">
+    </event>
+    <event value="4025" version="0" opcode="2" channel="17" level="4" task="5" keywords="0x4001000000000000" message="Cancel of Wlan Resume Reconnect2">
+    </event>
+    <event value="4026" version="0" opcode="2" channel="17" level="4" task="4" keywords="0x4001000000000000" message="">
+    </event>
+    <event value="4027" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc CmPdcActivationClientRegister - Status [%1]">
+    </event>
+    <event value="4028" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc CmPdcActivationClientUnregister - Status [%1]">
+    </event>
+    <event value="4029" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc CmPdcActivationClientActivityRequest - Activate [%1], Status [%2]">
+    </event>
+    <event value="4030" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc SetNetworkReference - Activate [%1], Result [%2], TotalNetworkRefCount [%3], ProcessId [%4], PerProcessNetworkRefCount [%5], App [%6]">
+    </event>
+    <event value="4031" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc ReleaseNetworkReferenceInProcess - ProcessId [%1], PerProcessNetworkRefCount [%2], TotalNetworkRefCount [%3]">
+    </event>
+    <event value="4032" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc AcquireNdisReference - Result [%1], TotalCmNdisRefCount [%2], ProcessId [%3], PerProcessCmNdisRefCount [%4], App [%5]">
+    </event>
+    <event value="4033" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc ReleaseNdisReference - Result [%1], TotalCmNdisRefCount [%2], ProcessId [%3], PerProcessCmNdisRefCount [%4], App [%5]">
+    </event>
+    <event value="4034" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc ReleaseNdisReferenceInProcess - ProcessId [%1], PerProcessCmNdisRefCount [%2], TotalCmNdisRefCount [%3]">
+    </event>
+    <event value="4035" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="WcmSvc NdisReferenceError - [%1]: Result [%2]">
+    </event>
+    <event value="4036" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CmService::NdisReference - [%1] InterfaceLuid [%2], Result [%3]">
+    </event>
+    <event value="10001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="WCMSVC: Start WCM Service Startup">
+    </event>
+    <event value="10002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="WCMSVC: Complete WCM Service Startup">
+    </event>
+    <event value="10003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="WCMSVC: Start Service Shutdown">
+    </event>
+    <event value="10004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="WCMSVC: Complete Service Shutdown">
+    </event>
+    <event value="10005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Tethering Manager Loaded Successfully">
+    </event>
+    <event value="10006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Tethering Manager Unloaded Successfully">
+    </event>
+  </events>
+</provider>

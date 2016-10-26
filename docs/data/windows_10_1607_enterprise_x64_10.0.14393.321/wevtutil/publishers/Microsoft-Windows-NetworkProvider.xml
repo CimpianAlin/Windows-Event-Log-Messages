@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NetworkProvider" guid="1e9a4978-78c2-441e-8858-75b5d1326bc5" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=mup.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\mup.sys" messageFileName="C:\Windows\system32\drivers\mup.sys" message="Microsoft-Windows-NetworkProvider" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NetworkProvider/Operational" id="16" flags="0" message="Microsoft-Windows-NetworkProvider/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="UnsupportedRegistryValueType" value="720907" message="Unsupported Registry Value Type">
+    </opcode>
+    <opcode name="InvalidUncPath" value="786443" message="Invalid UNC Path">
+    </opcode>
+    <opcode name="UnsupportedUncPath" value="851979" message="Unsupported UNC Path">
+    </opcode>
+    <opcode name="InvalidSyntax" value="917515" message="Invalid Syntax">
+    </opcode>
+    <opcode name="UnsupportedPropertyName" value="983051" message="Unsupported Property Name">
+    </opcode>
+    <opcode name="UnsupportedPropertyValue" value="1048587" message="Unsupported Property Value">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="UncHardeningConfiguration" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="UNC Hardening Configuration">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="UncHardening" mask="100" message="UNC Hardening">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="11" channel="16" level="2" task="11" keywords="0x8000000000000100" message="Ignoring UNC Hardening Configuration Entry: Unsupported registry value type.
+
+Registry Value Path: %2@%4
+
+Registry Value Type: %5
+
+Guidance:
+UNC Hardening configuration only supports registry values of types REG_SZ and REG_MULTI_SZ.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.">
+    </event>
+    <event value="1001" version="0" opcode="12" channel="16" level="2" task="11" keywords="0x8000000000000100" message="Ignoring UNC Hardening Configuration Entry: Unable to parse UNC Path.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Guidance:
+The registry value name is not a valid UNC path.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.">
+    </event>
+    <event value="1002" version="0" opcode="13" channel="16" level="2" task="11" keywords="0x8000000000000100" message="Ignoring UNC Hardening Configuration Entry: Unsupported UNC Path.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Guidance:
+UNC Hardening is only supported at server or share granularity. If only a fraction of the resources available on a share require additional security, consider relocating contents that require additional security to a different share.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.">
+    </event>
+    <event value="1003" version="0" opcode="15" channel="16" level="3" task="11" keywords="0x8000000000000100" message="Ignoring UNC Hardening Configuration Property: Unsupported property name.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Property Name: %6
+
+Property Value: %7
+
+Guidance:
+The specified property name does not match a UNC Hardening property supported on the current version of Windows and will be ignored.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.">
+    </event>
+    <event value="1004" version="0" opcode="15" channel="16" level="3" task="11" keywords="0x8000000000000100" message="Ignoring UNC Hardening Configuration Property: Unsupported property name.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Property Name: %6
+
+Property Value: &apos;%8&apos;
+
+Guidance:
+The specified property name does not match a UNC Hardening property supported on the current version of Windows and will be ignored.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.">
+    </event>
+    <event value="1005" version="0" opcode="16" channel="16" level="2" task="11" keywords="0x8000000000000100" message="Ignoring UNC Hardening Configuration Property: Unsupported property value.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Property Name: %6
+
+Property Value: &apos;%8&apos;
+
+Guidance:
+The specified property name expects a boolean value should be assigned a value of 0 (disabled) or 1 (enabled).
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.">
+    </event>
+    <event value="1006" version="0" opcode="14" channel="16" level="2" task="11" keywords="0x8000000000000100" message="Unable to parse UNC Hardening Configuration Entry: Unknown Error.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Guidance:
+The UNC Hardening configuration for the path contains invalid syntax and may be ignored.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.">
+    </event>
+    <event value="1007" version="0" opcode="14" channel="16" level="2" task="11" keywords="0x8000000000000100" message="Unable to parse UNC Hardening Configuration Entry: Unexpected token.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Expected Token: %5
+
+Found Token: %7
+
+Guidance: The UNC Hardening configuration for the path contains invalid syntax and may be ignored.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.">
+    </event>
+    <event value="1008" version="0" opcode="14" channel="16" level="2" task="11" keywords="0x8000000000000100" message="Unable to parse UNC Hardening Configuration Entry: Unable to parse integer.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Expected Token: %5
+
+Found Token: %7
+
+Guidance: The UNC Hardening configuration for the path contains invalid syntax and may be ignored. The value found token was parsed as an integer, but was found to contain illegal digits.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.">
+    </event>
+    <event value="1009" version="0" opcode="14" channel="16" level="2" task="11" keywords="0x8000000000000100" message="Unable to parse UNC Hardening Configuration Entry: Unable to parse string.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Expected Token: %5
+
+Found Token: %7
+
+Guidance: The UNC Hardening configuration for the path contains invalid syntax and may be ignored. The value found token was parsed as an string, but was not terminated or exceeded the maximum allowable string length.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.">
+    </event>
+  </events>
+</provider>

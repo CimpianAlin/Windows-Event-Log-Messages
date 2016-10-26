@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Deduplication-Change" guid="1d5e499d-739c-45a6-a3e1-8cbe0a352beb" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ddputils.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\ddputils.dll" messageFileName="C:\Windows\System32\ddputils.dll" message="Data Deduplication Change Events" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="16384" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Create chunk container (%1 - %2.%3.ccc)">
+    </event>
+    <event value="16385" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Create chunk container completed %1">
+    </event>
+    <event value="16386" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Copy chunk container (%1 - %2.%3.ccc)">
+    </event>
+    <event value="16387" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Copy chunk container completed %1">
+    </event>
+    <event value="16388" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Delete chunk container (%1 - %2.%3.ccc)">
+    </event>
+    <event value="16389" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Delete chunk container completed %1">
+    </event>
+    <event value="16390" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rename chunk container (%1 - %2.%3.ccc%4)">
+    </event>
+    <event value="16391" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rename chunk container completed %1">
+    </event>
+    <event value="16392" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Flush chunk container (%1 - %2.%3.ccc)">
+    </event>
+    <event value="16393" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Flush chunk container completed %1">
+    </event>
+    <event value="16394" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rollback chunk container (%1 - %2.%3.ccc)">
+    </event>
+    <event value="16395" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rollback chunk container completed %1">
+    </event>
+    <event value="16396" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Mark chunk container (%1 - %2.%3.ccc) read-only">
+    </event>
+    <event value="16397" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Mark chunk container read-only completed %1">
+    </event>
+    <event value="16398" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write chunk container (%1 - %2.%3.ccc) redirection table at offset %4 (Entries: StartIndex %5, Count %6)">
+    </event>
+    <event value="16399" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write chunk container redirection table completed %1">
+    </event>
+    <event value="16400" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write chunk container (%5 - %6.%7.ccc) header at offset %8 (Header: USN %9, VDL %10, #Chunk %11, NextLocalId %12, Flags %13, LastAppendTime %14, BackupRedirectionTableOfset %15, LastReconciliationLocalId %16)">
+    </event>
+    <event value="16401" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write chunk container header completed %1">
+    </event>
+    <event value="16402" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert data chunk header to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorupted %6, DataSize %7)">
+    </event>
+    <event value="16403" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert data chunk header completed %1">
+    </event>
+    <event value="16404" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert data chunk body to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7)">
+    </event>
+    <event value="16405" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert data chunk body completed %1 with ChunkId %2">
+    </event>
+    <event value="16408" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write delete log (%5 - %6.%7.delete.log) header">
+    </event>
+    <event value="16409" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write delete log header completed %1">
+    </event>
+    <event value="16410" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Append delete log (%1 - %2.%3.delete.log) entries at offset %4 (Entries: StartIndex %5, Count %6)">
+    </event>
+    <event value="16411" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Append delete log entries completed %1">
+    </event>
+    <event value="16412" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Delete delete log (%1 - %2.%3.delete.log)">
+    </event>
+    <event value="16413" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Delete delete log completed %1">
+    </event>
+    <event value="16414" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rename delete log (%1 - %2.%3.delete.log)">
+    </event>
+    <event value="16415" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rename delete log completed %1">
+    </event>
+    <event value="16416" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write chunk container bitmap (%1 - %2) for chunk container (%1 - %3.%4) (Bitmap: BitLength %5, StartIndex %6, Count %7)">
+    </event>
+    <event value="16417" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write chunk container bitmap completed %1">
+    </event>
+    <event value="16418" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Delete chunk container bitmap (%1 - %2) for chunk container (%1 - %3.%4)">
+    </event>
+    <event value="16419" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Delete chunk container bitmap completed %1">
+    </event>
+    <event value="16420" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write merge log (%5 - %6.%7.merge.log) header">
+    </event>
+    <event value="16421" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write merge log header completed %1">
+    </event>
+    <event value="16422" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert hotspot chunk header to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7)">
+    </event>
+    <event value="16423" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert hotspot chunk header completed %1">
+    </event>
+    <event value="16424" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert hotspot chunk body to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7)">
+    </event>
+    <event value="16425" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert hotspot chunk body completed %1 with ChunkId %2">
+    </event>
+    <event value="16426" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert stream map chunk header to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7)">
+    </event>
+    <event value="16427" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert stream map chunk header completed %1">
+    </event>
+    <event value="16428" version="3" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert stream map chunk body to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7) (Entries: StartIndex %8, Count %9)">
+    </event>
+    <event value="16429" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert stream map chunk body completed %1 with ChunkId %2">
+    </event>
+    <event value="16430" version="2" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Append merge log (%1 - %2.%3.merge.log) entries at offset %4 (Entries: StartIndex %5, Count %6)">
+    </event>
+    <event value="16431" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Append merge log entries completed %1">
+    </event>
+    <event value="16432" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Delete merge log (%1 - %2.%3.merge.log)">
+    </event>
+    <event value="16433" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Delete merge log completed %1">
+    </event>
+    <event value="16434" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Flush merge log (%1 - %2.%3.merge.log)">
+    </event>
+    <event value="16435" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Flush merge log completed %1">
+    </event>
+    <event value="16436" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Update file list entries (Remove: %1, Add: %2)">
+    </event>
+    <event value="16437" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Update file list entries completed %1">
+    </event>
+    <event value="16438" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Set dedup reparse point on %2 (FileId %1) (ReparsePoint: SizeBackedByChunkStore %3, StreamMapInfoSize %4, StreamMapInfo %5)">
+    </event>
+    <event value="16439" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Set dedup reparse point completed %1 (%2)">
+    </event>
+    <event value="16440" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Set dedup zero data on %2 (FileId %1)">
+    </event>
+    <event value="16441" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Set dedup zero data completed %1">
+    </event>
+    <event value="16442" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Flush reparse point files">
+    </event>
+    <event value="16443" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Flush reparse point files completed %1">
+    </event>
+    <event value="16444" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Set sparse on file id %1">
+    </event>
+    <event value="16445" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Set sparse completed %1">
+    </event>
+    <event value="16446" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="FSCTL_SET_ZERO_DATA on file id %1 at offset %2 and BeyondFinalZero %3">
+    </event>
+    <event value="16447" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="FSCTL_SET_ZERO_DATA completed %1">
+    </event>
+    <event value="16448" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rename chunk container bitmap (%1 - %2) for chunk container (%1 - %3.%4)">
+    </event>
+    <event value="16449" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rename chunk container bitmap completed %1">
+    </event>
+    <event value="16450" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert padding chunk header to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorupted %6, DataSize %7)">
+    </event>
+    <event value="16451" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert padding chunk header completed %1">
+    </event>
+    <event value="16452" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert padding chunk body to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7)">
+    </event>
+    <event value="16453" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert padding chunk body completed %1 with ChunkId %2">
+    </event>
+    <event value="16454" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert batch of chunks to chunk container (%1 - %2.%3.ccc) at offset %4 (BatchChunkCount %5, BatchDataSize %6)">
+    </event>
+    <event value="16455" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Insert batch of chunks completed %1">
+    </event>
+    <event value="16456" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write chunk container directory (%1 - %2) for chunk container (%1 - %3.%4) (Directory: EntryCount %5)">
+    </event>
+    <event value="16457" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Write chunk container directory completed %1">
+    </event>
+    <event value="16458" version="1" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Delete chunk container directory (%1 - %2) for chunk container (%1 - %3.%4)">
+    </event>
+    <event value="16459" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Delete chunk container directory completed %1">
+    </event>
+    <event value="16460" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rename chunk container directory (%1 - %2) for chunk container (%1 - %3.%4)">
+    </event>
+    <event value="16461" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rename chunk container directory completed %1">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ServicesForNFS-ONCRPC" guid="3d888ee4-5a93-4633-91e7-fff8afd89a7b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=rpcxdr.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\rpcxdr.sys" messageFileName="C:\Windows\system32\drivers\rpcxdr.sys" message="Microsoft-Windows-ServicesForNFS-ONCRPC" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ServicesForNFS-ONCRPC/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-ServicesForNFS-ONCRPC/Operational" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ReceivePacket" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SendPacket" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DecodeMessage" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IndicateServer" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EnQueueWorkitem" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Performance" mask="1" message="">
+    </keyword>
+    <keyword name="Correlation" mask="2" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="8000" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Winsock indication.">
+    </event>
+    <event value="8001" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Packet received.">
+    </event>
+    <event value="8002" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000001" message="NFS server indicated.">
+    </event>
+    <event value="8003" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000001" message="Workitem queued.">
+    </event>
+    <event value="8004" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Send reply.">
+    </event>
+    <event value="8005" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Reply received.">
+    </event>
+    <event value="8006" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Workitem completed.">
+    </event>
+  </events>
+</provider>

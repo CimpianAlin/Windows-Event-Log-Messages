@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-RemoteApp and Desktop Connections" guid="1b8b402d-78dc-46fb-bf71-46e64aedf165" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=TSWorkspace.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\TSWorkspace.dll" parameterFileName="C:\Windows\system32\TSWorkspace.dll" messageFileName="C:\Windows\system32\TSWorkspace.dll" message="Microsoft-Windows-RemoteApp and Desktop Connections" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-RemoteApp and Desktop Connections/Admin" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-RemoteApp and Desktop Connections/Operational" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="Setup" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="Setup">
+    </task>
+    <task name="Update" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="Update">
+    </task>
+    <task name="Connection" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="Connection">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x4000000000000000" message="An error occurred. Contact your workplace administrator for assistance.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="2" task="101" keywords="0x4000000000000000" message="An error occurred. Contact your workplace administrator for assistance.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x4000000000000000" message="Windows cannot find the remote computer that contains the connection.                         
+
+Make sure that: 
+
+	-    You typed the correct connection URL 
+	-    Your computer can connect to the internet                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="2" task="101" keywords="0x4000000000000000" message="Windows cannot find the remote computer that contains the connection.                         
+
+Make sure that: 
+
+	-    You typed the correct connection URL 
+	-    Your computer can connect to the internet                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x4000000000000000" message="The URL you typed does not have a connection. 
+
+Make sure that: 
+
+	-    You typed the correct connection URL                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="2" task="101" keywords="0x4000000000000000" message="The URL you typed does not have a connection. 
+
+Make sure that: 
+
+	-    You typed the correct connection URL                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x4000000000000000" message="The connection update timed out.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="2" task="101" keywords="0x4000000000000000" message="The connection update timed out.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="3" task="100" keywords="0x4000000000000000" message="Some available resources could not be downloaded. 
+
+Resources available: %5 
+Resources downloaded: %6 
+Resources not downloaded: %7                         
+
+Contact your workplace administrator for assistance.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="3" task="101" keywords="0x4000000000000000" message="Some available resources could not be downloaded. 
+
+Resources available: %5 
+Resources downloaded: %6 
+Resources not downloaded: %7                         
+
+Contact your workplace administrator for assistance.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="3" task="100" keywords="0x4000000000000000" message="There are currently no resources available in this connection. 
+
+Your workplace administrator might not have published any programs or desktops for you to access.                        
+
+In the future, use RemoteApp and Desktop Connections in Control Panel to check for updates to this connection.                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="3" task="101" keywords="0x4000000000000000" message="There are currently no resources available in this connection. 
+
+Your workplace administrator might not have published any programs or desktops for you to access.                        
+
+In the future, use RemoteApp and Desktop Connections in Control Panel to check for updates to this connection.                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x4000000000000000" message="There is a problem with this connection&apos;s security certificate. 
+
+The remote computer cannot be authenticated due to problems with its security certificate.                        
+
+Security certificate problems might indicate an attempt to fool you or intercept data you send to the remote computer.                        
+
+Windows cannot continue setting up this connection. Contact your workplace administrator for assistance.                         
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="2" task="101" keywords="0x4000000000000000" message="There is a problem with this connection&apos;s security certificate. 
+
+The remote computer cannot be authenticated due to problems with its security certificate.                        
+
+Security certificate problems might indicate an attempt to fool you or intercept data you send to the remote computer.                        
+
+Windows cannot continue setting up this connection. Contact your workplace administrator for assistance.                         
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x4000000000000000" message="The credentials that were used to connect to %1 did not work.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="2" task="101" keywords="0x4000000000000000" message="The credentials that were used to connect to %1 did not work.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="2" task="101" keywords="0x4000000000000000" message="An update to this connection is already in progress. Please try again later.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x4000000000000000" message="The following resource could not be downloaded: 
+
+%5 
+
+Make sure that:                        
+
+	-     The file exists on the remote computer 
+
+	-     Your computer has the client software to use this resource                         
+
+	-     Your computer can connect to the Internet 
+
+	-     You typed the correct connection URL                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="2" task="101" keywords="0x4000000000000000" message="The following resource could not be downloaded: 
+
+%5 
+
+Make sure that:                        
+
+	-     The file exists on the remote computer 
+
+	-     Your computer has the client software to use this resource                         
+
+	-     Your computer can connect to the Internet 
+
+	-     You typed the correct connection URL                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="4" task="100" keywords="0x4000000000000000" message="You have successfully set up the following connection:
+
+Connection name: %1
+
+Connection URL: %2">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="4" task="100" keywords="0x4000000000000000" message="The connection has been successfully removed:
+
+Connection name: %1
+
+Connection URL: %2">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="3" task="101" keywords="0x4000000000000000" message="Multiple resources are associated with the same file extensions.  Resources: %1.  Associated file extensions: %2.  Only one of these resources will be associated as the default program. To resolve this issue, change the file association settings for one or more of these resources so that they do not attempt to associate as the default program for the same extension.">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="4" task="100" keywords="0x4000000000000000" message="Connection discovery was successful.
+
+Discovery hint: %1
+Connection URL: %2
+">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x4000000000000000" message="Connection discovery failed.  Contact your workplace administrator for assistance.
+Discovery hint: %1
+Connection URL: %2
+Error code: %3
+">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x4000000000000000" message="Connection discovery failed.  The URL that was discovered is not a valid connection URL.  Contact your workplace administrator for assistance.
+Discovery hint: %1
+Connection URL: %2
+Error code: %3
+">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="An error occurred while Windows was installing file-type associations for the default connection. You will not be able to open files with the %1 RemoteApp program because the program couldn&apos;t be associated with any file types. Contact your workplace administrator for assistance. 
+
+Connection name: %2
+Connection URL: %3
+Error code: %4">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The installation of the default connection has been cancelled. A default connection cannot be used on a system that is part of a Remote Desktop Services deployment.
+
+User: %1
+">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x2000000000000000" message="New RemoteApp and Desktop connection (%1) is started for user (%2) with authenticated credentials">
+    </event>
+    <event value="1028" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x2000000000000000" message="New RemoteApp and Desktop connection (%1) is started for user (%2) without authenticated credentials">
+    </event>
+    <event value="1029" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x2000000000000000" message="RemoteApp and Desktop connection (%1) already exists for user (%2) with authenticated credentials.">
+    </event>
+    <event value="1030" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x2000000000000000" message="RemoteApp and Desktop connection (%1) already exists for user (%2) without authenticated credentials.">
+    </event>
+    <event value="1031" version="0" opcode="0" channel="17" level="2" task="102" keywords="0x2000000000000000" message="RemoteApp and Desktop connection (%1) start failed (Error = %2)">
+    </event>
+    <event value="1032" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x2000000000000000" message="User (%1) authentication information is registered on RemoteApp and Desktop connection (%2)">
+    </event>
+    <event value="1033" version="0" opcode="0" channel="17" level="2" task="102" keywords="0x2000000000000000" message="Failed to register user (%1) authentication information on RemoteApp and Desktop connection (%2). (Error = %3)">
+    </event>
+    <event value="1034" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x2000000000000000" message="A connection (%1) is added to the RemoteApp and Desktop connection (%2)">
+    </event>
+    <event value="1035" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x2000000000000000" message="RemoteApp and Desktop connection (%1) is disconnected">
+    </event>
+    <event value="1036" version="0" opcode="0" channel="17" level="2" task="102" keywords="0x2000000000000000" message="RemoteApp and Desktop connection (%1) disconnect failed (Error = %2)">
+    </event>
+    <event value="1037" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x2000000000000000" message="A connection (%1) is removed from the RemoteApp and Desktop connection (%2)">
+    </event>
+    <event value="1038" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x2000000000000000" message="RemoteApp and Desktop connection (%1) reconnect succeeded to the RDWeb (%2)">
+    </event>
+    <event value="1039" version="0" opcode="0" channel="17" level="2" task="102" keywords="0x2000000000000000" message="RemoteApp and Desktop connection (%1) reconnect failed to the RDWeb (%2) (Error = %3)">
+    </event>
+    <event value="1040" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x2000000000000000" message="Remote application (%1) is launched using  stored credentials on RemoteApp and Desktop connection (%2).">
+    </event>
+    <event value="1041" version="0" opcode="0" channel="17" level="3" task="102" keywords="0x2000000000000000" message="Remote application (%1) is launched on RemoteApp and Desktop connection (%2) but no stored credentials are used for single sign on. (Reason - %3)">
+    </event>
+    <event value="1042" version="0" opcode="0" channel="17" level="2" task="102" keywords="0x2000000000000000" message="Remote application (%1) failed to launch on RemoteApp and Desktop connection (%2). (Error = %3)">
+    </event>
+  </events>
+</provider>

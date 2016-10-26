@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MCCS-SyncController" guid="7fcb9791-f481-46d1-846e-2eb6f003c4d3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=SyncController.dll&amp;FileVer=10.0.14393.0" resourceFileName="SyncController.dll" messageFileName="SyncController.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SPERF_TAG_SYNC_INIT_PROVIDER" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNC_SERVICE_LOADED" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNC_SERVICE_UNLOAD" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_BOOKKEEPER_SERVICE_LOADED" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_BOOKKEEPER_BOOTSTRAP_ACCOUNTS" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_BOOKKEEPER_ADD_CONTROLLER" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="Error">
+    </keyword>
+    <keyword name="Performance" mask="2" message="Performance">
+    </keyword>
+    <keyword name="State" mask="4" message="State">
+    </keyword>
+    <keyword name="CommsService" mask="1000000000" message="CommsService">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="Warning">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="StateTransition">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="Error: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="Error Propagated: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="SyncController:[Consistency] [%1] Registry key for the default live partner is invalid, but will not be deleted.">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="SyncController:[Consistency] [%1] Registry key for this partner is being deleted because it&apos;s invalid.">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="SyncController:[Consistency] Default Store is invalid, but will not be deleted. There were &apos;%1&apos; stores found.">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="SyncController:[Consistency] [%1:%2:%3] Store being deleted because it&apos;s invalid. There were &apos;%4&apos; stores found.">
+    </event>
+    <event value="105" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="SyncController:[Consistency] [%1] Registry key for this partner is invalid, the reason is &apos;%2&apos;.">
+    </event>
+    <event value="106" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="SyncController:[Consistency] [%1:%2:%3] Store is invalid, the reason is &apos;%4&apos;.">
+    </event>
+    <event value="112" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="SimContactsSync [%1:%2] Unexpected Workitem">
+    </event>
+    <event value="113" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="SimContactsSync [%1:%2] Failed to initialize store">
+    </event>
+    <event value="114" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="SimContactsSync [%1:%2] Failed add to work item to queue">
+    </event>
+    <event value="116" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="SimContactsSync [%1:%2] Failed to delete store">
+    </event>
+    <event value="117" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="SimContactsSync [%1:%2] Failed to do Post boot sync">
+    </event>
+    <event value="118" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="SimContactsSync [%1:%2] Failed to OnStoreChange sync">
+    </event>
+    <event value="120" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="SimContactsSync [%1:%2] Failed to OnExportDone sync">
+    </event>
+    <event value="121" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="SimContactsSync [%1:%2] Failed to set store and contacts access">
+    </event>
+    <event value="122" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] Received Phonebook Ready state change. Ready state: %3">
+    </event>
+    <event value="123" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] Run (pending work item)">
+    </event>
+    <event value="124" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] Adding work item type %3">
+    </event>
+    <event value="125" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] Executing work item type %3">
+    </event>
+    <event value="126" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] Store change event">
+    </event>
+    <event value="128" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] Export done event">
+    </event>
+    <event value="129" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync: Service loaded. Enabled = %1">
+    </event>
+    <event value="132" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] Client request to shut down sync service">
+    </event>
+    <event value="133" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2]: Request to cancel setting Fdn Pin2 work, but cancel isn&apos;t supported">
+    </event>
+    <event value="134" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2]: Request to cancel shutting down Fdn sync work, but cancel isn&apos;t supported">
+    </event>
+    <event value="135" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] Found %3 slots">
+    </event>
+    <event value="136" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] CellularApiHelper discovery state updated to: %3">
+    </event>
+    <event value="137" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] Stop requested, releasing phonebook and cellular API helper.">
+    </event>
+    <event value="138" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2] Checked for a sim swap, and the result is: %3">
+    </event>
+    <event value="139" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimSyncServiceWork: Found %1 slots">
+    </event>
+    <event value="140" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2]: Request to cancel starting Fdn sync work, but cancel isn&apos;t supported">
+    </event>
+    <event value="141" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2]: Responding to a request to start FDN sync">
+    </event>
+    <event value="142" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2]: Responding to a request to shutdown FDN sync">
+    </event>
+    <event value="143" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2]: Responding to a request to set the FDN password">
+    </event>
+    <event value="144" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2]: Found an updated slot name, setting the store name to: %3">
+    </event>
+    <event value="145" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: Initializing with SIMOM instance %1">
+    </event>
+    <event value="146" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimSyncServiceWork: Discovery state changed to %1, slots ready = %2">
+    </event>
+    <event value="147" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimSyncServiceWork: Requested to enable slot %1">
+    </event>
+    <event value="148" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: Not enabling slot because handlers are not yet initialized">
+    </event>
+    <event value="149" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: EnableSlot: Handler found and already running, evaluating reset">
+    </event>
+    <event value="150" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: Found a handler for this slot, but it is aborted so we will delete and recreate">
+    </event>
+    <event value="151" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimSyncServiceWork: Handler created and stored for slot %1">
+    </event>
+    <event value="152" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimSyncServiceWork: Tearing down. Will stop all handlers and unadvise from SIMOM">
+    </event>
+    <event value="153" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: Not rescheduling because slots and handlers aren&apos;t initialized">
+    </event>
+    <event value="154" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: Work pending = %1">
+    </event>
+    <event value="155" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: Rescheduling - Slot %1 has a handler running">
+    </event>
+    <event value="156" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: Rescheduling - Slot %1 has work pending">
+    </event>
+    <event value="157" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: Rescheduling - No handlers running, so shutting down">
+    </event>
+    <event value="158" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: ExecuteWork">
+    </event>
+    <event value="159" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: ExecuteWork - Slots ready">
+    </event>
+    <event value="160" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: ExecuteWork - Handlers not yet created, initializing for %1 slots">
+    </event>
+    <event value="161" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimSyncServiceWork: ExecuteWork - Created and stored handler for slot %1">
+    </event>
+    <event value="162" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: ExecuteWork - Handlers already initialized">
+    </event>
+    <event value="163" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: ExecuteWork - Running handler for slot %1">
+    </event>
+    <event value="164" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: ExecuteWork - Handler for slot %1 is aborted">
+    </event>
+    <event value="165" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: ExecuteWork - Not executing, slots aren&apos;t ready yet">
+    </event>
+    <event value="166" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: Cancelling all handlers">
+    </event>
+    <event value="167" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceWork: Getting singleton instance">
+    </event>
+    <event value="168" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimSyncServiceWork: Instance does not exist, creating...">
+    </event>
+    <event value="169" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimSyncServiceWork: Releasing singleton instance">
+    </event>
+    <event value="170" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceActivityFactory: Factory initialized, SIMOM instance = %1">
+    </event>
+    <event value="171" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceActivityFactory: Service unloaded, releasing service work singletons and SIMOM">
+    </event>
+    <event value="172" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceActivityFactory: Requested Fdn sync for slot %1. Singleton is NOT valid so creating it.">
+    </event>
+    <event value="173" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimSyncServiceActivityFactory: Requested Fdn sync for slot %1. Singleton is running so scheduling a trigger job.">
+    </event>
+    <event value="174" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Feature is not supported, so deleting store and aborting">
+    </event>
+    <event value="175" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Didn&apos;t find a slot for our given index, so deleting store and aborting">
+    </event>
+    <event value="176" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: App state is %3">
+    </event>
+    <event value="177" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Slot state is %3">
+    </event>
+    <event value="178" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Looking for an app change, checking against current app id: %3">
+    </event>
+    <event value="179" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Found our application in the list">
+    </event>
+    <event value="180" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Current app id: %3, New app id: %4, switch = %5">
+    </event>
+    <event value="181" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Resetting phonebook app, found = %3, switch = %4">
+    </event>
+    <event value="182" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Processing SIM state change">
+    </event>
+    <event value="183" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Enumerating SIM apps: %3">
+    </event>
+    <event value="184" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Looking for an imsi change, current imsi: %3">
+    </event>
+    <event value="185" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Current imsi: %3, new Imsi: %4, Changed: %5">
+    </event>
+    <event value="186" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="SimContactsSync [%1:%2]: Resetting state, type = %3">
+    </event>
+    <event value="187" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Resetting handler flags">
+    </event>
+    <event value="188" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Marking handler to evaluate reset.">
+    </event>
+    <event value="189" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: Sim apps are no longer ready, so ignoring request to reset/load phonebook.">
+    </event>
+    <event value="190" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="SimContactsSync [%1:%2]: EvaluateReset: IMSI and App have not changed, but the feature is now disabled so resetting state.">
+    </event>
+    <event value="191" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Sync WNF event: %1">
+    </event>
+    <event value="192" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201000000000" message="Sync WNF event: %1">
+    </event>
+    <event value="193" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Sync WNF event: %1 - %2">
+    </event>
+    <event value="194" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x201000000000" message="Sync WNF event: %1 - %2">
+    </event>
+    <event value="195" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x401000000000" message="Sync WNF event %1 not found.">
+    </event>
+    <event value="196" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x401000000000" message="Notified golden account existence: %1.">
+    </event>
+    <event value="201" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Receive WNF event; current mode: %1, current value: %2">
+    </event>
+    <event value="401" version="0" opcode="1" channel="0" level="4" task="1" keywords="0x400000000002" message="">
+    </event>
+    <event value="402" version="0" opcode="2" channel="0" level="4" task="1" keywords="0x400000000002" message="">
+    </event>
+    <event value="403" version="0" opcode="1" channel="0" level="4" task="2" keywords="0x2" message="">
+    </event>
+    <event value="404" version="0" opcode="2" channel="0" level="4" task="2" keywords="0x2" message="">
+    </event>
+    <event value="405" version="0" opcode="1" channel="0" level="4" task="3" keywords="0x400000000002" message="">
+    </event>
+    <event value="406" version="0" opcode="2" channel="0" level="4" task="3" keywords="0x400000000002" message="">
+    </event>
+    <event value="407" version="0" opcode="1" channel="0" level="4" task="4" keywords="0x2" message="">
+    </event>
+    <event value="408" version="0" opcode="2" channel="0" level="4" task="4" keywords="0x2" message="">
+    </event>
+    <event value="409" version="0" opcode="1" channel="0" level="4" task="5" keywords="0x2" message="">
+    </event>
+    <event value="410" version="0" opcode="2" channel="0" level="4" task="5" keywords="0x2" message="">
+    </event>
+    <event value="411" version="0" opcode="1" channel="0" level="4" task="6" keywords="0x2" message="">
+    </event>
+    <event value="412" version="0" opcode="2" channel="0" level="4" task="6" keywords="0x2" message="">
+    </event>
+    <event value="500" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="AccountSyncController: Starting scheduled SyncExecutor for account %1, engine %2.">
+    </event>
+    <event value="501" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="AccountSyncController: Starting interactive SyncExecutor for account %1, engine %2.">
+    </event>
+    <event value="502" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="AccountSyncController: Starting AUTDExecutor for account %1, engine %2.">
+    </event>
+    <event value="503" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="AccountSyncController: Finished SyncExecutor work for account %1 with hr=%2, retry level %3, can start AUTD %4, queue empty %5, saver mode %6, engine %7.">
+    </event>
+    <event value="504" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="AccountSyncController: Finished AUTDExecutor work for account %1 with hr %2, can start AUTD %3, queue empty %4, saver mode %5, engine %6.">
+    </event>
+    <event value="505" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="AccountSyncController: Adding new controller with id %1.">
+    </event>
+    <event value="506" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="AccountSyncController: Deleting sync controller with id %1.">
+    </event>
+    <event value="507" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Handle schedule period changed from %2 min to %3 min for account %1 and engine %4.">
+    </event>
+    <event value="508" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Handle content/filter change for account %1 and engine %2.">
+    </event>
+    <event value="509" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="AccountSyncController: Added new AccountSyncController for account %1.">
+    </event>
+    <event value="510" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started DownloadEmailBodyWork for account %1.">
+    </event>
+    <event value="511" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished DownloadEmailBodyWork for account %1.">
+    </event>
+    <event value="512" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Started AddMeetingResponseWork for account %1.">
+    </event>
+    <event value="513" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Finished AddMeetingResponseWork for account %1 with HRESULT %2">
+    </event>
+    <event value="516" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started DownloadEmailAttachmentWork for account %1.">
+    </event>
+    <event value="517" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished DownloadEmailAttachmentWork for account %1.">
+    </event>
+    <event value="518" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started DownloadSharePointDocumentWork for account %1.">
+    </event>
+    <event value="519" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished DownloadSharePointDocumentWork for account %1.">
+    </event>
+    <event value="520" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started EmptyEmailFolderWork for account %1.">
+    </event>
+    <event value="521" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished EmptyEmailFolderWork for account %1.">
+    </event>
+    <event value="522" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started GalSearchWork for account %1.">
+    </event>
+    <event value="523" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished GalSearchWork for account %1.">
+    </event>
+    <event value="524" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started GetOofWork for account %1.">
+    </event>
+    <event value="525" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished GetOofWork for account %1.">
+    </event>
+    <event value="526" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started MailboxSearchWork for account %1.">
+    </event>
+    <event value="527" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished MailboxSearchWork for account %1.">
+    </event>
+    <event value="528" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started PurgeDeletedAccountsWork.">
+    </event>
+    <event value="529" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished PurgeDeletedAccountsWork.">
+    </event>
+    <event value="530" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started SetFolderSyncStateWork for account %1.">
+    </event>
+    <event value="531" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished SetFolderSyncStateWork for account %1.">
+    </event>
+    <event value="532" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started SetLivePasswordWork.">
+    </event>
+    <event value="533" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished SetLivePasswordWork.">
+    </event>
+    <event value="534" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started UpdateContentTypesWork for account %1.">
+    </event>
+    <event value="535" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished UpdateContentTypesWork for account %1.">
+    </event>
+    <event value="536" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started SetOofWork for account %1.">
+    </event>
+    <event value="537" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished SetOofWork for account %1.">
+    </event>
+    <event value="538" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Started AddMeetingResponseWork for account %1.">
+    </event>
+    <event value="539" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Finished AddMeetingResponseWork for account %1 with HRESULT %2">
+    </event>
+    <event value="540" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started FlushAccountSettingsWork for account %1.">
+    </event>
+    <event value="541" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished FlushAccountSettingsWork for account %1.">
+    </event>
+    <event value="542" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Started PurgeDeletedAccountWork for account %1.">
+    </event>
+    <event value="543" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Finished PurgeDeletedAccountWork for account %1.">
+    </event>
+    <event value="544" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="AccountSyncController: Adding new child sync controller with id %1 and engine id %2.">
+    </event>
+    <event value="545" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x408000000000" message="Delete Account %1: Unknown Store Type %2.">
+    </event>
+    <event value="550" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="AccountSyncController: Starting ScheduleManager work for account %1, engine %2.">
+    </event>
+    <event value="551" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Upgrading account %1 from version %2 to the current version %3.">
+    </event>
+    <event value="552" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x201000000000" message="Ignoring account %1 because its version (%2) doesn&apos;t match the current version (%3).">
+    </event>
+    <event value="553" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x401000000000" message="Detected a previous failure in Execute Activity Step for account %1, delaying next run.">
+    </event>
+    <event value="555" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x201000000000" message="Account %1 setting schedule trigger requirement %2.">
+    </event>
+    <event value="556" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x201000000000" message="Account %1 exiting delay and resetting successive empty sync count to zero.">
+    </event>
+    <event value="561" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Aggregate controller has new merged result: engine %1, result %2.">
+    </event>
+    <event value="562" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Handle server change for account %1 and engine %2.">
+    </event>
+    <event value="563" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Handle login info change for account %1 and engine %2.">
+    </event>
+    <event value="570" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Executing ScheduleManager work of type %3 for account %1, engine %2.">
+    </event>
+    <event value="571" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Executing Post OOBE notifications work. Cancelled = %1">
+    </event>
+    <event value="701" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Cred Vault: DeletePwd Called. Caller: _PurgeActiveSyncAccount, Partner %1">
+    </event>
+    <event value="702" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Cred Vault: DeletePwd Called. Caller: ActiveSyncServer_DeletePassword, Partner %1">
+    </event>
+    <event value="801" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Setting delayed value of conversation sync enabled to %1">
+    </event>
+    <event value="802" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208000000000" message="Setting the value of conversation sync if changed - Desired = %1, Current = %2">
+    </event>
+    <event value="809" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Schedule for account %1 triggered when the screen was on and the schedule was set to trigger for screen on.">
+    </event>
+    <event value="810" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="Schedule %1 for account %2 triggered with period %3, base period %4, failure count %5, trigger flags %6, engine %7.">
+    </event>
+    <event value="811" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="TokenBucket: Account %1 is throttling for %2 minutes.">
+    </event>
+    <event value="812" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="TokenBucket: Account %1 successfully retrieved a token.">
+    </event>
+    <event value="813" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="TokenBucket: Account %1 was not throttled because the screen was on.">
+    </event>
+    <event value="900" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="NotificationUtils: Initializing notification utils. IsOobeDone = %1">
+    </event>
+    <event value="901" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="NotificationUtils: Cleanup.">
+    </event>
+    <event value="902" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="NotificationUtils: _PostAttentionRequiredNotification(). Account = %1, Toast already sent = %2.">
+    </event>
+    <event value="903" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x201000000000" message="NotificationUtils: _RemoveAttentionRequiredNotification(). Account = %1">
+    </event>
+  </events>
+</provider>

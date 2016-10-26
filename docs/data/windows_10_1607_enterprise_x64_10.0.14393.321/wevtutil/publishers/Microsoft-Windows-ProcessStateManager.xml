@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ProcessStateManager" guid="d49918cf-9489-4bf1-9d7b-014d864cf71f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=psmsrv.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\psmsrv.dll" messageFileName="C:\Windows\system32\psmsrv.dll" message="Microsoft-Windows-ProcessStateManager" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ProcessStateManager/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:DC_Stop" value="262144" message="DCStop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="StateChange" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PolicySuspend" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PolicyResume" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PriorityChange" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Rundown" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessRegister" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="StateChange" mask="1" message="">
+    </keyword>
+    <keyword name="Policy" mask="2" message="">
+    </keyword>
+    <keyword name="PriorityChange" mask="4" message="">
+    </keyword>
+    <keyword name="Rundown" mask="8" message="">
+    </keyword>
+    <keyword name="ProcessRegister" mask="10" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="100" keywords="0x8000000000000001" message="Application %3 state changed from %4 to %5. MixedWorkItems: %6, PureWorkItems: %7, SystemWorkItems: %8">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="4" task="101" keywords="0x2" message="">
+    </event>
+    <event value="3" version="0" opcode="0" channel="0" level="4" task="102" keywords="0x2" message="">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="103" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="100" version="0" opcode="4" channel="0" level="4" task="100" keywords="0x1" message="">
+    </event>
+    <event value="101" version="0" opcode="4" channel="16" level="4" task="103" keywords="0x8000000000000004" message="">
+    </event>
+    <event value="102" version="0" opcode="4" channel="0" level="4" task="104" keywords="0x8" message="">
+    </event>
+    <event value="103" version="0" opcode="4" channel="0" level="4" task="105" keywords="0x10" message="">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WinHttp" guid="7d44233d-3055-4b9c-ba64-0d47ca40a232" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=winhttp.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\winhttp.dll" messageFileName="C:\Windows\system32\winhttp.dll" message="Microsoft-Windows-WinHttp" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WinHttp/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WinHTTP-NDF/Diagnostic" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Opcode.NoOp" value="655360" message="NOOP">
+    </opcode>
+    <opcode name="Opcode.Fail" value="720896" message="Fail">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Task.API" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="API">
+    </task>
+    <task name="Task.Debug" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="Debug">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_SEARCH" value="537" eventGUID="4862cb22-2f79-4ecb-a2ef-38b73b2c8cda" message="WINHTTP_AUTOPROXY_SEARCH">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_DHCP" value="538" eventGUID="e6167886-e865-4313-9955-e9ac02ec43fc" message="WINHTTP_AUTOPROXY_DHCP">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_DNS" value="539" eventGUID="7d1633af-fe8d-4e4c-9903-b74f587270e2" message="WINHTTP_AUTOPROXY_DNS">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_DOWNLOAD" value="540" eventGUID="d2ef0090-3080-4f45-b653-b919eb211da7" message="WINHTTP_AUTOPROXY_DOWNLOAD">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_FIND_INFO_FOR_URL" value="541" eventGUID="9ecb6213-7921-40f8-b937-5a3034dcaa34" message="WINHTTP_AUTOPROXY_FIND_INFO_FOR_URL">
+    </task>
+    <task name="Task.WINHTTP_BLOCKING_AUTOPROXY_DETERMINATION" value="543" eventGUID="0d5d7c7b-842f-4233-b883-f8da8ff354e6" message="WINHTTP_BLOCKING_AUTOPROXY_DETERMINATION">
+    </task>
+    <task name="Task.WINHTTP_TRANSFER" value="544" eventGUID="9e27f6f7-3d22-4335-8293-00574112972e" message="WINHTTP_TRANSFER">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_SWPAD" value="545" eventGUID="7c9c7925-15c5-4c67-9ef5-aa97a517d228" message="WINHTTP_AUTOPROXY_SWPAD">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUP" value="580" eventGUID="0d9b0709-e3ca-4394-98ae-1fc6c38efbae" message="WINHTTP_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUP">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_PERFTRACK_SWPAD_LOOKUP" value="581" eventGUID="23306a55-02c3-4170-9db6-81bb4285b109" message="WINHTTP_AUTOPROXY_PERFTRACK_SWPAD_LOOKUP">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_PERFTRACK_KNOWN_DETECTION" value="582" eventGUID="795c7b5e-3dd6-46e8-9e5c-75ba20978fbc" message="WINHTTP_AUTOPROXY_PERFTRACK_KNOWN_DETECTION">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTION" value="583" eventGUID="4122d502-8d09-4c00-a4fa-fa2225bd1db1" message="WINHTTP_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTION">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOAD" value="584" eventGUID="d3316dc4-e96a-4cef-83aa-74d2f8c19252" message="WINHTTP_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOAD">
+    </task>
+    <task name="Task.WINHTTP_AUTOPROXY_PERFTRACK_ALL" value="587" eventGUID="e526e440-8783-4515-94f4-5ad61ed43bb7" message="WINHTTP_AUTOPROXY_PERFTRACK_ALL">
+    </task>
+    <task name="WinHTTP_Getaddrinfo" value="572" eventGUID="16bd02bb-c30e-4228-92b6-0f3aa32c3150" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Keyword.API" mask="1" message="API">
+    </keyword>
+    <keyword name="WINHTTP_KEYWORD_AUTOPROXY" mask="20" message="Flagged on all WinHTTP events dealing with AUTOPROXY">
+    </keyword>
+    <keyword name="Keyword.SEND" mask="100000000" message="SEND">
+    </keyword>
+    <keyword name="Keyword.RECEIVE" mask="200000000" message="RECEIVE">
+    </keyword>
+    <keyword name="Keyword.L3_CONNECT" mask="400000000" message="L3_CONNECT">
+    </keyword>
+    <keyword name="Keyword.CLOSE" mask="1000000000" message="CLOSE">
+    </keyword>
+    <keyword name="Keyword.SECURITY" mask="2000000000" message="SECURITY">
+    </keyword>
+    <keyword name="Keyword.CONFIGURATION" mask="4000000000" message="CONFIGURATION">
+    </keyword>
+    <keyword name="Keyword.GLOBAL" mask="8000000000" message="GLOBAL">
+    </keyword>
+    <keyword name="Keyword.DROPPED" mask="10000000000" message="DROPPED">
+    </keyword>
+    <keyword name="Keyword.PII_PRESENT" mask="20000000000" message="PII_PRESENT">
+    </keyword>
+    <keyword name="Keyword.PACKET" mask="40000000000" message="PACKET">
+    </keyword>
+    <keyword name="Keyword.ADDRESS" mask="80000000000" message="ADDRESS">
+    </keyword>
+    <keyword name="Keyword.CONTEXT_EVENT" mask="100000000000" message="CONTEXT_EVENT">
+    </keyword>
+    <keyword name="Keyword.STATE_TRANSITION" mask="200000000000" message="STATE_TRANSITION">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1">
+    </event>
+    <event value="4" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API called.">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API returned successfully.">
+    </event>
+    <event value="11" version="0" opcode="2" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API failed with an error = %3.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API pending completion.">
+    </event>
+    <event value="13" version="0" opcode="2" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API completed.">
+    </event>
+    <event value="14" version="0" opcode="2" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API completed with an error = %3.">
+    </event>
+    <event value="100" version="0" opcode="0" channel="16" level="5" task="109" keywords="0x8000020000000001" message="%1: WinHttpSetCredentials Details: Target (%2) Schemes (%3) UserName (%4) Password (%5)">
+    </event>
+    <event value="801" version="0" opcode="1" channel="16" level="4" task="537" keywords="0x8000000000000020" message="Client begins attempts to locate the WPAD configuration file: ConnectionName=%2, DetectFlags=%3">
+    </event>
+    <event value="801" version="1" opcode="1" channel="16" level="4" task="537" keywords="0x8000000000000020" message="Client begins attempts to locate the WPAD configuration file: ConnectionName=%2, DetectFlags=%3">
+    </event>
+    <event value="802" version="0" opcode="1" channel="16" level="5" task="538" keywords="0x8000000000000020" message="Begin search for configuration file using DHCP: Interface=%2">
+    </event>
+    <event value="802" version="1" opcode="1" channel="16" level="5" task="538" keywords="0x8000000000000020" message="Begin search for configuration file using DHCP: Interface=%2">
+    </event>
+    <event value="803" version="0" opcode="2" channel="16" level="5" task="538" keywords="0x8000000000000020" message="WPAD configuration file found using DHCP: Interface=%2, ConfigurationURL=%4">
+    </event>
+    <event value="803" version="1" opcode="2" channel="16" level="5" task="538" keywords="0x8000000000000020" message="WPAD configuration file found using DHCP: Interface=%2, ConfigurationURL=%4">
+    </event>
+    <event value="804" version="0" opcode="11" channel="16" level="2" task="538" keywords="0x8000000000000020" message="Search for WPAD configuration file using DHCP failed: Interface=%2, ConfigurationURL=%4, Error=%5">
+    </event>
+    <event value="804" version="1" opcode="11" channel="16" level="2" task="538" keywords="0x8000000000000020" message="Search for WPAD configuration file using DHCP failed: Interface=%2, ConfigurationURL=%4, Error=%5">
+    </event>
+    <event value="805" version="0" opcode="1" channel="16" level="5" task="539" keywords="0x8000000000000020" message="Begin search for configuration file using DNS: DetectFlags=%1">
+    </event>
+    <event value="806" version="0" opcode="2" channel="16" level="5" task="539" keywords="0x8000000000000020" message="WPAD configuration file found using DNS: ConfigurationURL=%2, DetectFlags=%3">
+    </event>
+    <event value="806" version="1" opcode="2" channel="16" level="5" task="539" keywords="0x8000000000000020" message="WPAD configuration file found using DNS: ConfigurationURL=%2, DetectFlags=%3">
+    </event>
+    <event value="807" version="0" opcode="11" channel="16" level="2" task="539" keywords="0x8000000000000020" message="Search for WPAD configuration file using DNS failed: DetectFlags=%1, Error=%2">
+    </event>
+    <event value="808" version="0" opcode="11" channel="16" level="2" task="537" keywords="0x8000000000000020" message="Search for WPAD configruation file failed: Error=%1">
+    </event>
+    <event value="809" version="0" opcode="1" channel="16" level="4" task="540" keywords="0x8000000000000020" message="Begin downloading the configuration file from the configuration URL: ConfigurationURL=%2">
+    </event>
+    <event value="809" version="1" opcode="1" channel="16" level="4" task="540" keywords="0x8000000000000020" message="Begin downloading the configuration file from the configuration URL: ConfigurationURL=%2">
+    </event>
+    <event value="810" version="0" opcode="2" channel="16" level="4" task="540" keywords="0x8000000000000020" message="Client successfully downloaded the configuration file from the configuration URL: ConfigurationURL=%2">
+    </event>
+    <event value="810" version="1" opcode="2" channel="16" level="4" task="540" keywords="0x8000000000000020" message="Client successfully downloaded the configuration file from the configuration URL: ConfigurationURL=%2">
+    </event>
+    <event value="811" version="0" opcode="11" channel="16" level="2" task="540" keywords="0x8000000000000020" message="Downloading the configuration file from the configuration URL failed: ConfigurationURL=%2, Error=%3">
+    </event>
+    <event value="811" version="1" opcode="11" channel="16" level="2" task="540" keywords="0x8000000000000020" message="Downloading the configuration file from the configuration URL failed: ConfigurationURL=%2, Error=%3">
+    </event>
+    <event value="812" version="0" opcode="11" channel="16" level="2" task="540" keywords="0x8000000000000020" message="The downloaded configuration file could not be used: ConfigurationURL=%2, MIMEType=%4, Error=%5">
+    </event>
+    <event value="812" version="1" opcode="11" channel="16" level="2" task="540" keywords="0x8000000000000020" message="The downloaded configuration file could not be used: ConfigurationURL=%2, MIMEType=%4, Error=%5">
+    </event>
+    <event value="813" version="0" opcode="1" channel="16" level="4" task="541" keywords="0x8000000000000020" message="Searching for Proxy Information for the URL: URL=%2">
+    </event>
+    <event value="813" version="1" opcode="1" channel="16" level="4" task="541" keywords="0x8000000000000020" message="Searching for Proxy Information for the URL: URL=%2">
+    </event>
+    <event value="814" version="0" opcode="2" channel="16" level="4" task="541" keywords="0x8000000000000020" message="Client has successfully retrieved proxy data for accessing a specified resource: URL=%2, ProxyString=%4">
+    </event>
+    <event value="814" version="1" opcode="2" channel="16" level="4" task="541" keywords="0x8000000000000020" message="Client has successfully retrieved proxy data for accessing a specified resource: URL=%2, ProxyString=%4">
+    </event>
+    <event value="815" version="0" opcode="11" channel="16" level="2" task="541" keywords="0x8000000000000020" message="Error locating proxy information for the URL: URL=%2, Error=%3">
+    </event>
+    <event value="815" version="1" opcode="11" channel="16" level="2" task="541" keywords="0x8000000000000020" message="Error locating proxy information for the URL: URL=%2, Error=%3">
+    </event>
+    <event value="816" version="0" opcode="1" channel="16" level="4" task="543" keywords="0x8001000000000020" message="Blocking autoproxy determination started">
+    </event>
+    <event value="817" version="0" opcode="2" channel="16" level="4" task="543" keywords="0x8001000000000020" message="Blocking autoproxy determination stopped">
+    </event>
+    <event value="818" version="0" opcode="0" channel="16" level="4" task="544" keywords="0x8000000000000020" message="WinHTTP Activity Transfer Event">
+    </event>
+    <event value="819" version="0" opcode="0" channel="16" level="4" task="545" keywords="0x8000000000000020" message="AutoProxy SWPAD Decision (%1) NumConnections (%2)">
+    </event>
+    <event value="820" version="0" opcode="1" channel="16" level="4" task="580" keywords="0x8001000000000020" message="Autoproxy host IP lookup started">
+    </event>
+    <event value="821" version="0" opcode="2" channel="16" level="4" task="580" keywords="0x8001000000000020" message="Autoproxy host IP lookup stopped">
+    </event>
+    <event value="822" version="0" opcode="1" channel="16" level="4" task="581" keywords="0x8001000000000020" message="Autoproxy SWPAD lookup started">
+    </event>
+    <event value="823" version="0" opcode="2" channel="16" level="4" task="581" keywords="0x8001000000000020" message="Autoproxy SWPAD lookup stopped">
+    </event>
+    <event value="824" version="0" opcode="1" channel="16" level="4" task="582" keywords="0x8001000000000020" message="Autoproxy Detection with SWPAD ON started">
+    </event>
+    <event value="825" version="0" opcode="2" channel="16" level="4" task="582" keywords="0x8001000000000020" message="Autoproxy Detection with SWPAD ON stopped">
+    </event>
+    <event value="826" version="0" opcode="1" channel="16" level="4" task="583" keywords="0x8001000000000020" message="Autoproxy Detection with SWPAD UNKNOWN started">
+    </event>
+    <event value="827" version="0" opcode="2" channel="16" level="4" task="583" keywords="0x8001000000000020" message="Autoproxy Detection with SWPAD UNKNOWN stopped">
+    </event>
+    <event value="828" version="0" opcode="1" channel="16" level="4" task="584" keywords="0x8001000000000020" message="Autoproxy Script Download Started">
+    </event>
+    <event value="829" version="0" opcode="2" channel="16" level="4" task="584" keywords="0x8001000000000020" message="Autoproxy Script Download Stopped">
+    </event>
+    <event value="834" version="0" opcode="1" channel="16" level="4" task="587" keywords="0x8001000000000020" message="Autoproxy full scenario started">
+    </event>
+    <event value="835" version="0" opcode="2" channel="16" level="4" task="587" keywords="0x8001000000000020" message="Autoproxy full scenario stopped">
+    </event>
+    <event value="1051" version="0" opcode="1" channel="16" level="4" task="572" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="1052" version="0" opcode="2" channel="16" level="4" task="572" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="12501" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service detected an internal data corruption.">
+    </event>
+    <event value="12503" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service has been idle for %1 minutes, it will be shut down.">
+    </event>
+    <event value="12506" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service encountered a system error from %1: (Error Code = %3) %2">
+    </event>
+    <event value="12507" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service failed to allocate a critical resource. The system may be running low on physical memory.">
+    </event>
+    <event value="12509" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service detected a non- local RPC request (Transport Type = %1); Access Denied. There may have been an rogue attempt to gain access to the service through the network.">
+    </event>
+    <event value="12511" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service failed to abort all pending requests in %1 seconds.  The system WinHTTP Services may have been under stress and slow to respond to cancel requests.">
+    </event>
+    <event value="12512" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service failed parameter validation of a client request.  This may be due to an unexpected error from the system WinHTTP Services.">
+    </event>
+    <event value="12513" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service is shutting down and not accepting client requests.">
+    </event>
+    <event value="12514" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service detected an unexpected exception from the system WinHTTP Services. (Exception Code = %1)">
+    </event>
+    <event value="12516" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service discarded and is re-attempting a request after a critical power event.">
+    </event>
+    <event value="12517" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service suspended operation.">
+    </event>
+    <event value="12518" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service resumed operation.">
+    </event>
+    <event value="58999" version="0" opcode="0" channel="16" level="5" task="110" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="59995" version="0" opcode="2" channel="16" level="5" task="110" keywords="0x8000000000000000" message="Canceling %2 Thread Action (Context: %1)">
+    </event>
+    <event value="59996" version="0" opcode="1" channel="16" level="5" task="110" keywords="0x8000000000000000" message="Queue %2 Thread Action (Context: %1)">
+    </event>
+    <event value="59997" version="0" opcode="2" channel="16" level="5" task="110" keywords="0x8000000000000000" message="Stopping %2 Thread Action (Context: %1)">
+    </event>
+    <event value="59998" version="0" opcode="1" channel="16" level="5" task="110" keywords="0x8000000000000000" message="Starting %2 Thread Action (Context: %1)">
+    </event>
+    <event value="59999" version="0" opcode="0" channel="16" level="5" task="110" keywords="0x8000000000000000" message="(%1:%2) %4">
+    </event>
+  </events>
+</provider>

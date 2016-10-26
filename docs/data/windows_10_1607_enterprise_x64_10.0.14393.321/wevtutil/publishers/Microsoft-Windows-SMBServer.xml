@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SMBServer" guid="d48ce617-33a2-4bc3-a5c7-11aa4f29619e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=srv2.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\srv2.sys" messageFileName="C:\Windows\system32\drivers\srv2.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SMBServer/Performance" id="16" flags="0" message="Microsoft-Windows-SMBServer/Performance">
+    </channel>
+    <channel name="Microsoft-Windows-SMBServer/Analytic" id="17" flags="0" message="Microsoft-Windows-SMBServer/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-SMBServer/Operational" id="18" flags="0" message="Microsoft-Windows-SMBServer/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-SMBServer/Diagnostic" id="19" flags="0" message="Microsoft-Windows-SMBServer/Diagnostic">
+    </channel>
+    <channel name="Microsoft-Windows-SMBServer/Security" id="20" flags="0" message="Microsoft-Windows-SMBServer/Security">
+    </channel>
+    <channel name="Microsoft-Windows-SMBServer/Connectivity" id="21" flags="0" message="Microsoft-Windows-SMBServer/Connectivity">
+    </channel>
+    <channel name="Microsoft-Windows-SMBServer/Audit" id="22" flags="0" message="Microsoft-Windows-SMBServer/Audit">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="win:Send" value="589824" message="Send">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Smb2RequestNegotiate" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestSessionSetup" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestLogoff" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestTreeConnect" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestTreeDisconnect" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestEcho" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestCancel" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestCreate" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestClose" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestFlush" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestRead" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestWrite" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestBreakOplock" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestNotifyBreakLease" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestAcknowledgeBreakLease" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestLock" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestIoctl" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestQueryDirectory" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestChangeNotify" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestQueryInfo" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RequestSetInfo" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseNegotiate" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseSessionSetup" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseLogoff" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseTreeConnect" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseTreeDisconnect" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseEcho" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseCreate" value="108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseClose" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseFlush" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseRead" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseWrite" value="112" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseBreakOplock" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseAcknowledgeBreakLease" value="115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseLock" value="116" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseIoctl" value="117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseQueryDirectory" value="118" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseChangeNotify" value="119" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseQueryInfo" value="120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseSetInfo" value="121" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ResponseError" value="122" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2WorkItemTransition" value="200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2WorkItemStart" value="201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2WorkItemStop" value="202" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2WorkItemActivityTransfer" value="203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2WorkItemActivityStop" value="204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ConnectionAccept" value="500" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ConnectionDisconnectEvent" value="501" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ConnectionTerminate" value="502" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2SessionAllocate" value="550" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2SessionAuthFailure" value="551" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2SessionAuthenticated" value="552" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2SessionBind" value="553" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2SessionTerminate" value="554" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2TreeConnectAllocate" value="600" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2TreeConnectDisconnect" value="601" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2TreeConnectTerminate" value="602" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2TreeConnectFailedDueToPending" value="603" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2FileOpen" value="650" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2FileDisconnect" value="651" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2FileReconnect" value="652" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2FileSuspend" value="653" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2FileClose" value="654" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2FileTimeout" value="655" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2FileTerminate" value="656" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2FileCCFClose" value="657" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2FileCCFCloseAudit" value="658" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ShareAdd" value="700" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ShareModify" value="701" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2ShareDelete" value="702" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvEmptyParameterTemplate" value="900" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvS4U2SelfFailure" value="1000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvDisabled" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Smb2RkfFailure" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvUnencryptedAcccessFailure" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvSignatureValidationFailure" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvNegotiateValidationFailure" value="1005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvShareAccessCheckFailure" value="1006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvShareAnonymousAccessDeniedFailure" value="1007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvSessionAnonymousAccessDenied" value="1009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvEndpointAdded" value="1010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvEndpointRemoved" value="1011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvNetNameInfoChange" value="1012" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvEndpointOnline" value="1013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvEndpointOffline" value="1014" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvDecryptionFailure" value="1015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvReopenFailure" value="1016" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvHandleScavenge" value="1017" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvSessionInvalidate" value="1018" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvFileInvalidate" value="1019" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvSlowFsOperation" value="1020" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvLmCompatibilityLevelNonDefault" value="1021" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvFileSharingFirewallRuleEnabled" value="1022" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvABESharesPresent" value="1023" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvSmb2Disabled" value="1024" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvNullSessionsAllowed" value="1025" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvLeasingDisabled" value="1026" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvFirewallPortsClosed" value="1027" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SSClusterCaFailure" value="1800" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SSRkfCaFailure" value="1801" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SrvNetGetNextIdFailure" value="2000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Request" mask="1" message="">
+    </keyword>
+    <keyword name="Response" mask="2" message="">
+    </keyword>
+    <keyword name="Transition" mask="4" message="">
+    </keyword>
+    <keyword name="Operational" mask="8" message="">
+    </keyword>
+    <keyword name="Connection" mask="10" message="">
+    </keyword>
+    <keyword name="Session" mask="20" message="">
+    </keyword>
+    <keyword name="TreeConnect" mask="40" message="">
+    </keyword>
+    <keyword name="File" mask="80" message="">
+    </keyword>
+    <keyword name="Share" mask="100" message="">
+    </keyword>
+    <keyword name="Nsi" mask="200" message="">
+    </keyword>
+    <keyword name="Correlation" mask="1000" message="">
+    </keyword>
+    <keyword name="PacketStart" mask="40000000" message="">
+    </keyword>
+    <keyword name="PacketEnd" mask="80000000" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="PduFull" mask="800000000000" message="">
+    </keyword>
+    <keyword name="win:AuditFailure" mask="10000000000000" message="Audit Failure">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="2" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="SMB2 Request Negotiate">
+    </event>
+    <event value="2" version="2" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="SMB2 Request Session Setup">
+    </event>
+    <event value="3" version="2" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000001" message="SMB2 Request Logoff">
+    </event>
+    <event value="4" version="2" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000001" message="SMB2 Request Tree Connect">
+    </event>
+    <event value="5" version="2" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000001" message="SMB2 Request Tree Disconnect">
+    </event>
+    <event value="6" version="2" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000001" message="SMB2 Request Echo">
+    </event>
+    <event value="7" version="2" opcode="0" channel="16" level="4" task="7" keywords="0x8000000000000001" message="SMB2 Request Cancel">
+    </event>
+    <event value="8" version="2" opcode="0" channel="16" level="4" task="8" keywords="0x8000000000000001" message="SMB2 Request Create">
+    </event>
+    <event value="9" version="2" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000001" message="SMB2 Request Close">
+    </event>
+    <event value="10" version="2" opcode="0" channel="16" level="4" task="10" keywords="0x8000000000000001" message="SMB2 Request Flush">
+    </event>
+    <event value="11" version="2" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000000001" message="SMB2 Request Read">
+    </event>
+    <event value="12" version="2" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000001" message="SMB2 Request Write">
+    </event>
+    <event value="13" version="2" opcode="0" channel="16" level="4" task="13" keywords="0x8000000000000001" message="SMB2 Request Break Oplock">
+    </event>
+    <event value="14" version="2" opcode="0" channel="16" level="4" task="14" keywords="0x8000000000000001" message="SMB2 Request Notify Break Lease">
+    </event>
+    <event value="15" version="2" opcode="0" channel="16" level="4" task="15" keywords="0x8000000000000001" message="SMB2 Request Acknowledge Break Lease">
+    </event>
+    <event value="16" version="2" opcode="0" channel="16" level="4" task="16" keywords="0x8000000000000001" message="SMB2 Request Lock">
+    </event>
+    <event value="17" version="2" opcode="0" channel="16" level="4" task="17" keywords="0x8000000000000001" message="SMB2 Request Ioctl">
+    </event>
+    <event value="18" version="2" opcode="0" channel="16" level="4" task="18" keywords="0x8000000000000001" message="SMB2 Request Query Directory">
+    </event>
+    <event value="19" version="2" opcode="0" channel="16" level="4" task="19" keywords="0x8000000000000001" message="SMB2 Request Change Notify">
+    </event>
+    <event value="20" version="2" opcode="0" channel="16" level="4" task="20" keywords="0x8000000000000001" message="SMB2 Request Query Info">
+    </event>
+    <event value="21" version="2" opcode="0" channel="16" level="4" task="21" keywords="0x8000000000000001" message="SMB2 Request Set Info">
+    </event>
+    <event value="101" version="2" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000002" message="SMB2 Response Negotiate">
+    </event>
+    <event value="102" version="2" opcode="0" channel="16" level="4" task="102" keywords="0x8000000000000002" message="SMB2 Response Session Setup">
+    </event>
+    <event value="103" version="2" opcode="0" channel="16" level="4" task="103" keywords="0x8000000000000002" message="SMB2 Response Logoff">
+    </event>
+    <event value="104" version="2" opcode="0" channel="16" level="4" task="104" keywords="0x8000000000000002" message="SMB2 Response Tree Connect">
+    </event>
+    <event value="105" version="2" opcode="0" channel="16" level="4" task="105" keywords="0x8000000000000002" message="SMB2 Response Tree Disconnect">
+    </event>
+    <event value="106" version="2" opcode="0" channel="16" level="4" task="106" keywords="0x8000000000000002" message="SMB2 Response Echo">
+    </event>
+    <event value="108" version="2" opcode="0" channel="16" level="4" task="108" keywords="0x8000000000000002" message="SMB2 Response Create">
+    </event>
+    <event value="109" version="2" opcode="0" channel="16" level="4" task="109" keywords="0x8000000000000002" message="SMB2 Response Close">
+    </event>
+    <event value="110" version="2" opcode="0" channel="16" level="4" task="110" keywords="0x8000000000000002" message="SMB2 Response Flush">
+    </event>
+    <event value="111" version="2" opcode="0" channel="16" level="4" task="111" keywords="0x8000000000000002" message="SMB2 Response Read">
+    </event>
+    <event value="112" version="2" opcode="0" channel="16" level="4" task="112" keywords="0x8000000000000002" message="SMB2 Response Write">
+    </event>
+    <event value="113" version="2" opcode="0" channel="16" level="4" task="113" keywords="0x8000000000000002" message="SMB2 Response Break Oplock">
+    </event>
+    <event value="115" version="2" opcode="0" channel="16" level="4" task="115" keywords="0x8000000000000002" message="SMB2 Response Acknowledge Break Lease">
+    </event>
+    <event value="116" version="2" opcode="0" channel="16" level="4" task="116" keywords="0x8000000000000002" message="SMB2 Response Lock">
+    </event>
+    <event value="117" version="2" opcode="0" channel="16" level="4" task="117" keywords="0x8000000000000002" message="SMB2 Response Ioctl">
+    </event>
+    <event value="118" version="2" opcode="0" channel="16" level="4" task="118" keywords="0x8000000000000002" message="SMB2 Response Query Directory">
+    </event>
+    <event value="119" version="2" opcode="0" channel="16" level="4" task="119" keywords="0x8000000000000002" message="SMB2 Response Change Notify">
+    </event>
+    <event value="120" version="2" opcode="0" channel="16" level="4" task="120" keywords="0x8000000000000002" message="SMB2 Response Query Info">
+    </event>
+    <event value="121" version="2" opcode="0" channel="16" level="4" task="121" keywords="0x8000000000000002" message="SMB2 Response Set Info">
+    </event>
+    <event value="122" version="2" opcode="0" channel="16" level="4" task="122" keywords="0x8000000000000002" message="SMB2 Response Error">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="4" task="200" keywords="0x8000000000000004" message="SMB2 Work Item Component Transition">
+    </event>
+    <event value="201" version="0" opcode="1" channel="16" level="4" task="201" keywords="0x8000000000000004" message="SMB2 Work Item allocated">
+    </event>
+    <event value="202" version="0" opcode="2" channel="16" level="4" task="202" keywords="0x8000000000000004" message="SMB2 Work Item released">
+    </event>
+    <event value="203" version="0" opcode="9" channel="16" level="4" task="203" keywords="0x8000000000001000" message="SMB2 Work Item activity id transfer">
+    </event>
+    <event value="204" version="0" opcode="2" channel="16" level="4" task="204" keywords="0x8000000000001000" message="SMB2 Work Item external activity id stop">
+    </event>
+    <event value="500" version="0" opcode="1" channel="17" level="4" task="500" keywords="0x4000000000000010" message="SMB2 Connection accepted">
+    </event>
+    <event value="501" version="0" opcode="0" channel="17" level="4" task="501" keywords="0x4000000000000010" message="SMB2 Connection Disconnected by Peer">
+    </event>
+    <event value="502" version="0" opcode="2" channel="17" level="4" task="502" keywords="0x4000000000000010" message="SMB2 Connection Terminated">
+    </event>
+    <event value="550" version="0" opcode="1" channel="17" level="4" task="550" keywords="0x4000000000000020" message="SMB2 Session Allocated">
+    </event>
+    <event value="551" version="0" opcode="0" channel="17" level="4" task="551" keywords="0x4000000000000020" message="Smb Session Authentication Failure">
+    </event>
+    <event value="551" version="1" opcode="0" channel="20" level="2" task="551" keywords="0x810000000000008" message="SMB Session Authentication Failure
+
+Client Name: %11
+Client Address: %6
+User Name: %9
+Session ID: %7
+Status: %4 (%3)
+
+Guidance:
+
+You should expect this error when attempting to connect to shares using incorrect credentials.
+
+This error does not always indicate a problem with authorization, but mainly authentication. It is more common with non-Windows clients.
+
+This error can occur when using incorrect usernames and passwords with NTLM, mismatched LmCompatibility settings between client and server, duplicate Kerberos service principal names, incorrect Kerberos ticket-granting service tickets, or Guest accounts without Guest access enabled">
+    </event>
+    <event value="551" version="2" opcode="0" channel="20" level="2" task="551" keywords="0x810000000000008" message="SMB Session Authentication Failure
+
+Client Name: %11
+Client Address: %6
+User Name: %9
+Session ID: %7
+Status: %4 (%3)
+SPN: %12
+SPN Validation Policy: %13
+
+Guidance:
+
+You should expect this error when attempting to connect to shares using incorrect credentials.
+
+This error does not always indicate a problem with authorization, but mainly authentication. It is more common with non-Windows clients.
+
+This error can occur when using incorrect usernames and passwords with NTLM, mismatched LmCompatibility settings between client and server, an incorrect service principal name, duplicate Kerberos service principal names, incorrect Kerberos ticket-granting service tickets, or Guest accounts without Guest access enabled">
+    </event>
+    <event value="552" version="0" opcode="0" channel="17" level="4" task="552" keywords="0x4000000000000020" message="SMB2 Session Authentication Success">
+    </event>
+    <event value="553" version="0" opcode="0" channel="17" level="4" task="553" keywords="0x4000000000000020" message="SMB2 Session Bound to Connection">
+    </event>
+    <event value="554" version="0" opcode="2" channel="17" level="4" task="554" keywords="0x4000000000000020" message="SMB2 Session Terminated">
+    </event>
+    <event value="600" version="0" opcode="1" channel="17" level="4" task="600" keywords="0x4000000000000040" message="SMB2 TreeConnect Allocated">
+    </event>
+    <event value="601" version="0" opcode="0" channel="17" level="4" task="601" keywords="0x4000000000000040" message="SMB2 TreeConnect Disconnected">
+    </event>
+    <event value="602" version="0" opcode="2" channel="17" level="4" task="602" keywords="0x4000000000000040" message="SMB2 TreeConnect Terminated">
+    </event>
+    <event value="603" version="0" opcode="0" channel="17" level="3" task="603" keywords="0x4000000000000040" message="SMB2 TreeConnect Failed due to Cluster Endpoint Initializing">
+    </event>
+    <event value="650" version="0" opcode="1" channel="17" level="4" task="650" keywords="0x4000000000000080" message="SMB2 Open established">
+    </event>
+    <event value="651" version="0" opcode="0" channel="17" level="4" task="651" keywords="0x4000000000000080" message="SMB2 Open Disconnected - Preserved">
+    </event>
+    <event value="652" version="0" opcode="0" channel="17" level="4" task="652" keywords="0x4000000000000080" message="SMB2 Open Reconnected">
+    </event>
+    <event value="653" version="0" opcode="0" channel="17" level="4" task="653" keywords="0x4000000000000080" message="SMB2 Open Suspended - Preserved">
+    </event>
+    <event value="654" version="0" opcode="0" channel="17" level="4" task="654" keywords="0x4000000000000080" message="SMB2 Open Closed">
+    </event>
+    <event value="655" version="0" opcode="0" channel="17" level="4" task="655" keywords="0x4000000000000080" message="SMB2 Open Timed Out">
+    </event>
+    <event value="656" version="0" opcode="0" channel="17" level="4" task="656" keywords="0x4000000000000080" message="SMB2 Open Terminated">
+    </event>
+    <event value="657" version="0" opcode="0" channel="17" level="4" task="657" keywords="0x4000000000000080" message="SMB2 Open Clustered Client Failover Closed">
+    </event>
+    <event value="658" version="0" opcode="0" channel="18" level="4" task="658" keywords="0x2000000000000008" message="File handle for file &quot;%8\%2&quot; was invalidated by user %4 from computer %6">
+    </event>
+    <event value="700" version="0" opcode="0" channel="17" level="4" task="700" keywords="0x4000000000000100" message="SMB2 Share Added">
+    </event>
+    <event value="701" version="0" opcode="0" channel="17" level="4" task="701" keywords="0x4000000000000100" message="SMB2 Share Modified">
+    </event>
+    <event value="702" version="0" opcode="0" channel="17" level="4" task="702" keywords="0x4000000000000100" message="SMB2 Share Deleted">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="18" level="3" task="1000" keywords="0x2000000000000008" message="S4U2Self authentication failure - The client could not be reauthenticated with S4U2Self to obtain claims.  This may be expected if the account is not a domain account.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="18" level="4" task="1001" keywords="0x2000000000000008" message="SRV Disabled - The SMB1 negotiate request fails due to SMB1 is disabled.">
+    </event>
+    <event value="1001" version="1" opcode="0" channel="18" level="4" task="1001" keywords="0x2000000000000008" message="A client attempted to access the server using SMB1 and was rejected because SMB1 file sharing support is disabled or has been uninstalled.
+
+Guidance:
+
+An administrator has disabled or uninstalled server support for SMB1. Clients running Windows XP / Windows Server 2003 R2 and earlier will not be able to access this server. Clients running Windows Vista / Windows Server 2008 and later no longer require SMB1. To determine which clients are attempting to access this server using SMB1, use the Windows PowerShell cmdlet Set-SmbServerConfiguration to enable SMB1 access auditing.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="18" level="2" task="1002" keywords="0x2000000000000008" message="RKF failure - SRV2 failed to get acknowledgement from Resume Key filter for persistent handle request.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="18" level="2" task="1003" keywords="0x2000000000000008" message="The server received an unencrypted message from client %4. Message was rejected.
+
+Guidance:
+
+This event indicates that a client is sending unencrypted data even though the SMB share requires encryption.">
+    </event>
+    <event value="1003" version="1" opcode="0" channel="18" level="2" task="1003" keywords="0x2000000000000008" message="The server received an unencrypted message from client when encryption was required. Message was rejected.
+
+Client Name: %4
+Client Address: %8
+User Name: %6
+Session ID: %9
+Share Name: %2
+
+Guidance:
+
+This event indicates that a client is sending unencrypted data even though the SMB share requires encryption.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="18" level="2" task="1004" keywords="0x2000000000000008" message="The server received an incorrectly signed message from client %2. Message was rejected.
+
+Guidance:
+
+This event indicates that a client is sending an incorrectly signed request.">
+    </event>
+    <event value="1004" version="1" opcode="0" channel="18" level="2" task="1004" keywords="0x2000000000000008" message="The server rejected an incorrectly signed message.
+
+Client Name: %2
+Client Address: %6
+User Name: %4
+Session ID: %7
+
+Guidance:
+
+This event indicates that a client is sending an incorrectly signed request.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="18" level="2" task="1005" keywords="0x2000000000000008" message="The server failed to validate negotiation from client %2. Connection was terminated.">
+    </event>
+    <event value="1005" version="1" opcode="0" channel="18" level="2" task="1005" keywords="0x2000000000000008" message="The server rejected an invalid negotiation request. Connection was terminated.
+
+Client Name: %2
+Client Address: %6
+User Name: %4
+Session ID: %13
+Expected Dialect: %7
+Expected Capabilities: %8
+Expected Security Mode: %9
+Received Dialect: %10
+Received Capabilities: %11
+Received Security Mode: %12
+
+Guidance:
+
+This event indicates that a client is attempting to negotiate a second connection using a mismatched dialect or capabilities.">
+    </event>
+    <event value="1005" version="2" opcode="0" channel="18" level="2" task="1005" keywords="0x2000000000000008" message="Negotiate integrity check failed.
+
+Status: %2
+Client Name: %4
+Client Address: %8
+User Name: %6
+Session ID: %9
+
+Guidance:
+
+This event indicates that the client&apos;s negotiate request was altered on the network between the client and server due to errors or a &quot;man-in-the-middle&quot; attack. The client has been disconnected to prevent a security downgrade.">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="20" level="2" task="1006" keywords="0x810000000000008" message="The share denied access to the client.
+
+Client Name: %10
+Client Address: %6
+User Name: %8
+Session ID: %17
+Share Name: %2
+Share Path: %4
+Status: %16 (%15)
+Mapped Access: %11
+Granted Access: %12
+Security Descriptor: %14
+
+Guidance:
+
+You should expect access denied errors when a principal accesses a share without the necessary permissions. Usually, this indicates that the principal does not have direct security permissions or lacks membership in a group that has direct access permissions. To determine and correct the permissions on the specified share, an administrator can use the Security tab in File Explorer Properties dialog, the SMBSHARE Windows PowerShell module, or the NET SHARE command. You can also use the Effective Access tab in File Explorer to help diagnose the issue.
+
+Applications may generate access denied errors if they attempt to open files in a writable mode first, and then reopen the files in a read-only mode. In this case, no user action is required.
+
+If access to the share is denied and this event is not logged, you can examine the file and folder NTFS/REFS permissions.
+
+This error does not indicate a problem with authentication, only authorization.">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="20" level="2" task="1007" keywords="0x810000000000008" message="The share denied anonymous access to the client.
+
+Client Name: %8
+Client Address: %6
+Share Name: %2
+Share Path: %4
+
+Guidance:
+
+You should expect this error when a client attempts to connect to shares and does not provide any credentials. This indicates that the client is not providing a user name (and domain credentials, if necessary). By default, anonymous access to shares is denied.
+
+This error does not always indicate a problem with authorization, but mainly authentication. It is more common with non-Windows clients.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="20" level="2" task="1009" keywords="0x810000000000008" message="The server denied anonymous access to the client.
+
+Client Name: %4
+ Client Address: %2
+Session ID: %5
+
+Guidance:
+
+You should expect this error when a client attempts to connect to shares and does not provide any credentials. This indicates that the client is not providing a user name (and domain credentials, if necessary). By default, Windows Server denies anonymous access to shares.
+
+This error does not always indicate a problem with authorization, but mainly authentication. It is more common with non-Windows clients.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="18" level="4" task="1010" keywords="0x2000000000000008" message="Endpoint added.
+
+Name: %2
+Domain Name: %4
+Transport Name: %6
+Transport Flags: %7
+
+Guidance:
+
+You should expect this event when the server starts listening on an interface, such as during system restart or when enabling a network adaptor. No user action is required.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="18" level="4" task="1011" keywords="0x2000000000000008" message="Endpoint removed.
+
+Name: %2
+Domain Name: %4
+Transport Name: %6
+
+Guidance:
+
+You should expect this event when the server stops listening on an interface, such as during shutdown or when disabling a network adaptor. No user action is required.">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="18" level="4" task="1012" keywords="0x2000000000000008" message="The network name information changed.
+
+Change Type: %1
+Net Name: %3
+IP Address: %9
+Flags: %4
+Interface Index: %5
+Capability: %6
+Link Speed: %7
+
+Guidance:
+
+You should expect this event on a Windows Failover Cluster node during failover operations, at system startup, or during network configuration. No user action is required.">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="18" level="4" task="1013" keywords="0x2000000000000008" message="Endpoint coming online.
+
+Endpoint Name: %2
+Transport Name: %4
+
+Guidance:
+
+You should expect this event on a Windows Failover Cluster node during failover operations. No user action is required.">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="18" level="4" task="1014" keywords="0x2000000000000008" message="Endpoint going offline.
+
+Endpoint Name: %2
+Transport Name: %4
+
+Guidance:
+
+You should expect this event on a Windows Failover Cluster node during failover operations. No user action is required.">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="20" level="2" task="1015" keywords="0x800000000000008" message="Decrypt call failed.
+
+Client Name: %2
+Client Address: %4
+Session ID: %7
+Status: %6 (%5)
+
+Guidance:
+
+This event commonly occurs because a previous SMB session no longer exists. It may also be caused by packets that are altered on the network between the computers due to either errors or a &quot;man-in-the-middle&quot; attack.">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="18" level="2" task="1016" keywords="0x2000000000000008" message="Reopen failed.
+
+Client Name: %7
+Client Address: %9
+User Name: %13
+Session ID: %14
+Share Name: %11
+File Name: %16
+Resume Key: %20
+Status: %2 (%1)
+RKF Status: %4 (%3)
+Durable: %17
+Resilient: %18
+Persistent: %19
+Reason: %21
+
+Guidance:
+
+The client attempted to reopen a continuously available handle, but the attempt failed. This typically indicates a problem with the network or underlying file being re-opened.">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="18" level="4" task="1017" keywords="0x2000000000000008" message="Handle scavenged.
+
+Share Name: %7
+File Name: %9
+Resume Key: %5
+Persistent File ID: %3
+Volatile File ID: %4
+Durable: %1
+Resilient or Persistent: %2
+
+Guidance:
+
+The server closed a handle that was previously reserved for a client after 60 seconds. You should expect this event on a computer that is continuously available where a client did not gracefully close its session. For instance, this may occur when the client unexpectedly restarted.">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="18" level="4" task="1018" keywords="0x2000000000000008" message="Backchannel invalidation of session completed.
+
+Session ID: %1
+Status: %3 (%2)
+Task Status: %5 (%4)
+
+Guidance:
+
+You should expect this event on a computer that is continuously available. No user action is required">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="18" level="4" task="1019" keywords="0x2000000000000008" message="Backchannel invalidation of file completed.
+
+Resume Key: %1
+Status: %3 (%2)
+Task Status: %5 (%4)
+
+Guidance:
+
+You should expect this event on a computer that is continuously available. No user action is required">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="18" level="3" task="1020" keywords="0x2000000000000008" message="File system operation has taken longer than expected.
+
+Client Name: %8
+Client Address: %10
+User Name: %6
+Session ID: %3
+Share Name: %12
+File Name: %14
+Command: %1
+Duration (in milliseconds): %15
+Warning Threshold (in milliseconds): %16
+
+Guidance:
+
+The underlying file system has taken too long to respond to an operation. This typically indicates a problem with the storage and not SMB.">
+    </event>
+    <event value="1020" version="1" opcode="0" channel="18" level="3" task="1020" keywords="0x2000000000000008" message="File system operation has taken longer than expected.
+
+Client Name: %8
+Client Address: %10
+User Name: %6
+Session ID: %3
+Share Name: %12
+File Name: %14
+Command: %1
+Duration (in milliseconds): %15
+Warning Threshold (in milliseconds): %16
+
+Guidance:
+
+The underlying file system has taken too long to respond to an operation. This typically indicates a problem with the storage and not SMB.">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="20" level="4" task="1021" keywords="0x800000000000008" message="LmCompatibilityLevel value is different from the default.
+
+Configured LM Compatibility Level: %1
+Default LM Compatibility Level: %2
+
+Guidance:
+
+LAN Manager (LM) authentication is the protocol used to authenticate Windows clients for network operations. This includes joining a domain, accessing network resources, and authenticating users or computers. This determines which challenge/response authentication protocol is negotiated between the client and the server computers. Specifically, the LM authentication level determines which authentication protocols the client will try to negotiate or the server will accept. The value set for LmCompatibilityLevel determines which challenge/response authentication protocol is used for network logons. This value affects the level of authentication protocol that clients use, the level of session security negotiated, and the level of authentication accepted by servers.
+
+Value (Setting) - Description
+
+0 (Send LM &amp; NTLM responses) - Clients use LM and NTLM authentication and never use NTLMv2 session security. Domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+1 (Send LM &amp; NTLM - use NTLMv2 session security if negotiated) - Clients use LM and NTLM authentication, and use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+2 (Send NTLM response only) - Clients use NTLM authentication only and use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+3 (Send NTLM v2 response only) - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+4 (Send NTLMv2 response only/refuse LM) - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it. Domain controllers refuse LM and accept only NTLM and NTLMv2 authentication.
+
+5 (Send NTLM v2 response only/refuse LM &amp; NTLM) - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it. Domain controllers refuse LM and NTLM and accept only NTLMv2 authentication.
+
+Incompatibly configured  LmCompatibility levels between a client and server (such as 0 on a client and 5 on a server) prevent access to the server. Non-Microsoft clients and servers also provide these configuration settings.">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="21" level="4" task="1022" keywords="0x400000000000008" message="File and printer sharing firewall rule enabled.
+
+Guidance:
+
+You should expect this event when Windows Firewall is configured to enable the File and Printer Sharing rule, which allows inbound SMB traffic. This event occurs on a computer that has custom shares configured.">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="18" level="4" task="1023" keywords="0x2000000000000008" message="One or more shares present on this server have access based enumeration enabled.
+
+Guidance:
+
+You should expect this event when enabling access-based enumeration on one or more shares by using either Server Manager or the Set-SmbShare Windows PowerShell cmdlet. Access-based enumeration can raise CPU utilization when clients connect to shares with folders containing many peer-level resources to which a user does not have access. You can control the CPU utilization by configuring the ABELevel value in the Windows registry:
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanServer\Parameters\ABELevel [DWORD]
+
+You can set the value for ABELevel to greater depths to minimize CPU overhead, but doing so diminishes the effectiveness of access-based enumeration:
+
+Value = 0: access-based enumeration is enabled for all levels
+
+Value = 1: access-based enumeration is enabled for a depth of 1 (example: \server\share)
+
+Value = 2: access-based enumeration is enabled for a depth of 2 (example: \server\share\folder)
+
+You can continue setting values for multiple depth levels.">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="18" level="2" task="1024" keywords="0x2000000000000008" message="SMB2 and SMB3 have been disabled on this server.  This results in reduced functionality and performance.
+
+Registry Key: HKLM\System\CurrentControlSet\Services\LanmanServer\Parameters
+Registry Value: Smb2
+Default Value: 1 (or not present)
+Current Value: 0
+
+Guidance:
+
+You should expect this event when disabling SMB2/SMB3. Microsoft does not recommend disabling SMB2/SMB3. When SMB3 is disabled, you cannot use features such as SMB Transparent Failover, SMB Scale Out, SMB Multichannel, SMB Direct (RDMA), SMB Encryption, VSS for SMB file shares, and SMB Directory Leasing. In most scenarios, SMB provides a troubleshooting workaround as an alternative to disabling SMB2/SMB3. Use the Set-SmbServerConfiguration Windows PowerShell cmdlet to enable SMB2/SMB3.">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="18" level="3" task="1025" keywords="0x2000000000000008" message="One or more named pipes or shares have been marked for access by anonymous users.  This increases the security risk of the computer by allowing unauthenticated users to connect to this server.
+
+Registry Key: HKLM\System\CurrentControlSet\Services\LanmanServer\Parameters
+Registry Values: NullSessionPipes, NullSessionShares
+Default Value: Empty (or not present)
+Current Value: Non-empty
+
+Guidance:
+
+You should expect this event when modifying the default values of NullSessionShares and NullSessionPipes. On a typical file server, these settings do not exist or do not contain values, which is the most secure configuration. By default, domain controllers populate the NullSessionShares entry with netlogon, samr, and lsarpc to allow legacy access methods.">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="18" level="3" task="1026" keywords="0x2000000000000008" message="File leasing has been disabled for the SMB2 and SMB3 protocols.  This reduces functionality and can decrease performance.
+
+Registry Key: HKLM\System\CurrentControlSet\Services\LanmanServer\Parameters
+Registry Value: DisableLeasing
+Default Value: 0 (or not present)
+Current Value: non-zero
+
+Guidance:
+
+You should expect this event when disabling SMB 3 Leasing. Microsoft does not recommend disabling SMB Leasing. Once disabled, traffic from client to server may increase since metadata and data may no longer be retrieved from a local cache.">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="18" level="4" task="1027" keywords="0x2000000000000008" message="The file and printer sharing firewall ports are currently closed.  This is the default configuration for a system that is not sharing content or is on a Public network.
+
+Guidance:
+
+You should expect this event when Windows Firewall is not configured to enable the File and Printer Sharing rule, which allows inbound SMB traffic. This event occurs on a computer that does not have custom shares configured. Clients cannot access SMB shares on this computer until SMB traffic is allowed through the firewall.">
+    </event>
+    <event value="1028" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000008" message="The maximum cluster-supported SMB dialect has changed.
+
+NewMaxDialect: %1
+OldMaxDialect: %2
+
+Guidance:
+
+You should expect this event during a Windows Failover Cluster upgrade. No user action is required.">
+    </event>
+    <event value="1029" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000008" message="The Cipher Suite Order group policy setting is invalid.
+
+Guidance:
+
+This event indicates that an administrator has configured an invalid value for the &quot;Computer Configuration\Administrative Templates\Network\Lanman Server\Cipher Suite Order&quot; group policy setting. The server will use the default cipher suite order &quot;%1&quot; until this error is resolved.">
+    </event>
+    <event value="1030" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000008" message="An MDL read or write completion request failed.
+
+Server Name: %2
+Share Name: %4
+File Name: %6
+IsRead: %7
+Status: %8
+
+Guidance:
+
+The SMB server sends MDL completion requests to a file system upon completion of a buffered I/O to release system resources. The file system and its filter drivers must not fail MDL completion requests. Failures may result in memory leaks and degraded system performance and stability. Non-Microsoft file system filter drivers are the most common cause of failed MDL completion requests.">
+    </event>
+    <event value="1031" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000008" message="The server detected a problem and has captured a live kernel dump to collect debug information.
+
+Reason: %1
+Dump Location: %SystemRoot%\LiveKernelReports
+
+Guidance:
+
+The server supports the Live Dump feature, where the detection of a problem results in a kernel memory dump, but no bugcheck and reboot. This allows Microsoft Support to examine memory dumps without requiring a reboot or manual intervention. The reason code indicates the type of problem that was detected.
+
+Stalled I/O
+
+An I/O is taking an unreasonably long time to complete. Malfunctioning third-party file system minifilter drivers are a common source of this problem. Other causes include failed disks or a client-driven I/O workload that greatly exceeds the server&apos;s capacity.">
+    </event>
+    <event value="1032" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000008" message="The server detected a problem but was unable to capture a live kernel dump to collect debug information.
+
+Reason: %1
+
+Guidance:
+
+The server supports the Live Dump feature, where the detection of a problem results in a kernel memory dump, but no bugcheck and reboot. This allows Microsoft Support to examine memory dumps without requiring a reboot or manual intervention. The reason code indicates the type of problem that was detected. In this case, the server&apos;s request to create a live kernel dump was rejected. This is usually due to the live kernel dump throttle, which prevents frequent dumps from consuming too much disk space. Either wait for the throttle limit to expire (by default, 7 days), or contact Microsoft Support for steps to override the throttle. This event is written to the log no more than once per day. The problem that caused the server to the request a live kernel dump may be occuring more frequently.
+
+Stalled I/O
+
+An I/O is taking an unreasonably long time to complete. Malfunctioning third-party file system minifilter drivers are a common source of this problem. Other causes include failed disks or a client-driven I/O workload that greatly exceeds the server&apos;s capacity.">
+    </event>
+    <event value="1033" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000200" message="Sent RDMA %1 event to LanmanServer for interface %3.">
+    </event>
+    <event value="1034" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000200" message="Send RDMA Endpoint notification failure - %1">
+    </event>
+    <event value="1035" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000200" message="RDMA Endpoint %4 for interface %2 was %1.">
+    </event>
+    <event value="1036" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000200" message="RDMA Endpoint allocation failure - Endpoint allocation failed for interface %1. %2">
+    </event>
+    <event value="1037" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000200" message="RDMA listener creation failure - %1">
+    </event>
+    <event value="1038" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000200" message="RDMA Send endpoint notification RPC failure for device %3 - %1">
+    </event>
+    <event value="1039" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000200" message="Received Nsi notification type %1 for interface %2 with NdkOperationalState %3">
+    </event>
+    <event value="1040" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000200" message="Received Mib notification type %1 for interface %2">
+    </event>
+    <event value="1800" version="0" opcode="0" channel="18" level="2" task="1800" keywords="0x2000000000000008" message="CA failure - Failed to set continuously available property on a new or existing file share as the file share is not a cluster share.">
+    </event>
+    <event value="1801" version="0" opcode="0" channel="18" level="2" task="1801" keywords="0x2000000000000008" message="CA failure - Failed to set continuously available property on a new or existing file share as Resume Key filter is not started or has failed to attach to the underlying volume.">
+    </event>
+    <event value="1802" version="0" opcode="0" channel="18" level="2" task="2000" keywords="0x2000000000000008" message="The server failed to reserve the next ID region in the cluster registry.">
+    </event>
+    <event value="1803" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000008" message="The security descriptor differs from the default value.
+
+ Path: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\DefaultSecurity\%1
+
+ Guidance:
+
+ This is typically caused by an administrator or a third party changing the security on the object manually. To reset the security back to the default value, delete the path shown above.
+ Microsoft does not recommend changing the default security of %1 as it may cause application incompatibilities or security concerns.">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000040000000000" message="Packet Fragment (%2 bytes)">
+    </event>
+    <event value="3000" version="0" opcode="0" channel="22" level="4" task="0" keywords="0x200000000000000" message="SMB1 access
+
+Client Address: %1
+
+Guidance:
+
+This event indicates that a client attempted to access the server using SMB1. To stop auditing SMB1 access, use the Windows PowerShell cmdlet Set-SmbServerConfiguration.">
+    </event>
+    <event value="40000" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000040000000000" message="Packet (%4 bytes)">
+    </event>
+  </events>
+</provider>

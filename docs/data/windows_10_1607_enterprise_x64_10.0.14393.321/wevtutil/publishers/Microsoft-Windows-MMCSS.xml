@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MMCSS" guid="36008301-e154-466c-acec-5f4cbd6b4694" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=avrt.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\avrt.dll" messageFileName="C:\Windows\system32\avrt.dll" message="Microsoft-Windows-MMCSS" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Scheduler_Priority_Change" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scheduler_Wakeup" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scheduler_Sleep" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Service_Start" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Service_Stop" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Thread_Join" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Thread_Leave" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TaskIndex_Yield" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TaskIndex_YieldCancel" value="112" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Set_MultimediaMode" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TaskIndex_DeadlineExpired" value="114" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TurboEngaged" value="115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThreadBuffering" value="116" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TaskIndex_PreDeadlineExpired" value="117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="0" channel="0" level="4" task="100" keywords="0x0" message="Thread priority of (%1.%2) in task %4 has changed to %3.">
+    </event>
+    <event value="2" version="1" opcode="0" channel="0" level="4" task="101" keywords="0x0" message="Scheduler woke up for reason %1.">
+    </event>
+    <event value="3" version="1" opcode="0" channel="0" level="4" task="102" keywords="0x0" message="Scheduler thread slept.">
+    </event>
+    <event value="5" version="1" opcode="0" channel="0" level="4" task="104" keywords="0x0" message="MMCSS Service started.">
+    </event>
+    <event value="6" version="1" opcode="0" channel="0" level="4" task="105" keywords="0x0" message="MMCSS Service stopped.">
+    </event>
+    <event value="7" version="1" opcode="0" channel="0" level="4" task="106" keywords="0x0" message="Thread joined MMCSS Task %5">
+    </event>
+    <event value="8" version="1" opcode="0" channel="0" level="4" task="107" keywords="0x0" message="Thread left MMCSS">
+    </event>
+    <event value="12" version="1" opcode="0" channel="0" level="4" task="111" keywords="0x0" message="TaskIndex %1 yielded for %2 hectons">
+    </event>
+    <event value="13" version="1" opcode="0" channel="0" level="4" task="112" keywords="0x0" message="TaskIndex %1 canceled a registered yield">
+    </event>
+    <event value="14" version="1" opcode="0" channel="0" level="4" task="113" keywords="0x0" message="TaskIndex %1 sets multimedia mode to %2">
+    </event>
+    <event value="15" version="1" opcode="0" channel="0" level="4" task="114" keywords="0x0" message="TaskIndex %1 deadline Expired">
+    </event>
+    <event value="16" version="1" opcode="0" channel="0" level="4" task="115" keywords="0x0" message="Notify Power Manger to engage turbo mode (%1)">
+    </event>
+    <event value="17" version="1" opcode="1" channel="0" level="4" task="116" keywords="0x0" message="Thread Buffering Start (%1)">
+    </event>
+    <event value="18" version="1" opcode="2" channel="0" level="4" task="116" keywords="0x0" message="Thread Buffering Stop (%1)">
+    </event>
+    <event value="19" version="1" opcode="0" channel="0" level="4" task="117" keywords="0x0" message="TaskIndex %1 predeadline Expired">
+    </event>
+  </events>
+</provider>

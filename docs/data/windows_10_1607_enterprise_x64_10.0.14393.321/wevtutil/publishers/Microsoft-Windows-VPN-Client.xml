@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-VPN-Client" guid="3c088e51-65be-40d1-9b90-62bfec076737" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=VpnClientPSProvider.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\wbem\VpnClientPSProvider.dll" messageFileName="C:\Windows\System32\wbem\VpnClientPSProvider.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-VPN-Client/Operational" id="16" flags="0" message="Microsoft-Windows-VPN-Client/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="Success" value="720896" message="Success">
+    </opcode>
+    <opcode name="Failure" value="786432" message="Failure">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WMICreate" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="VPNWmiCreate">
+    </task>
+    <task name="WMIDelete" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="VPNWmiDelete">
+    </task>
+    <task name="WMIModify" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="VPNWmiModify">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="10001" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000000000" message="VPN Profile %1 has been created with the following properties: 
+%2">
+    </event>
+    <event value="10002" version="0" opcode="12" channel="16" level="2" task="1" keywords="0x8000000000000000" message="VPN Profile %1 could not be created. 
+Error: (%2). 
+Properties: 
+%3">
+    </event>
+    <event value="10003" version="0" opcode="11" channel="16" level="4" task="2" keywords="0x8000000000000000" message="VPN Profile %1 has been deleted.">
+    </event>
+    <event value="10004" version="0" opcode="12" channel="16" level="2" task="2" keywords="0x8000000000000000" message="VPN Profile %1 could not be deleted. 
+Error: (%2).">
+    </event>
+    <event value="10005" version="0" opcode="11" channel="16" level="4" task="3" keywords="0x8000000000000000" message="VPN Connection %1 has been modified with the following properties: 
+%2">
+    </event>
+    <event value="10006" version="0" opcode="12" channel="16" level="2" task="3" keywords="0x8000000000000000" message="VPN Profile %1 could not be modified. 
+Error: (%2). 
+Properties: 
+%3">
+    </event>
+    <event value="10007" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000000000" message="VPN Profile %1 has been created with the following input properties: 
+%2
+The following properties could not be updated:
+%3">
+    </event>
+    <event value="10008" version="0" opcode="11" channel="16" level="4" task="3" keywords="0x8000000000000000" message="VPN Connection %1 has been modified with the following input properties: 
+%2
+The following properties could not be updated:
+%3">
+    </event>
+  </events>
+</provider>

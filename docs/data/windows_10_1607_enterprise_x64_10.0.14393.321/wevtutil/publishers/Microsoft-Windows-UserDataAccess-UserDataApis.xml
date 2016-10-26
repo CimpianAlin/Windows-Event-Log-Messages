@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-UserDataAccess-UserDataApis" guid="b9b2de3c-3fbd-4f42-8ff7-33c3bad35fd4" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=AppointmentApis.dll&amp;FileVer=10.0.14393.0" resourceFileName="AppointmentApis.dll" messageFileName="AppointmentApis.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-WindowsMobile-CommsApis-Channel" id="16" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CreateVoipShim" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReleaseVoipShim" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IncomingCall" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StartCall" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EndCall" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetAudioRouting" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessMuteStateNotification" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UdmSessionHandleEnsureConnected_START" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UdmSessionHandleEnsureConnected_STOP" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatMessagesReadBatchWithCountAsync_START" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatMessagesReadBatchWithCountAsync_STOP" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatConversationsReadBatchWithCountAsync_START" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatConversationsReadBatchWithCountAsync_STOP" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatMessageRead_START" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatMessageRead_STOP" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatMessageStoreInitialize_START" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatMessageStoreInitialize_STOP" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatConversationReadAsync_START" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatConversationReadAsync_STOP" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatConversationThreadingReadAsync_START" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatConversationThreadingReadAsync_STOP" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatMessageManagerGetTransportsAsync_START" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatMessageManagerGetTransportsAsync_STOP" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatMessageManagerGetTransportAsync_START" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChatMessageManagerGetTransportAsync_STOP" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="Debug" mask="4" message="">
+    </keyword>
+    <keyword name="VoipCallCoordinator" mask="8" message="">
+    </keyword>
+    <keyword name="VoipPhoneCall" mask="10" message="">
+    </keyword>
+    <keyword name="AudioRouter" mask="20" message="">
+    </keyword>
+    <keyword name="SmsIntercept" mask="40" message="">
+    </keyword>
+    <keyword name="PhoneCallFilter" mask="80" message="">
+    </keyword>
+    <keyword name="SmsFilter" mask="100" message="">
+    </keyword>
+    <keyword name="SocialAPI" mask="200" message="">
+    </keyword>
+    <keyword name="OnlinePhotosAPI" mask="400" message="">
+    </keyword>
+    <keyword name="EntityAPI" mask="800" message="">
+    </keyword>
+    <keyword name="MediaRTAPI" mask="1000" message="">
+    </keyword>
+    <keyword name="ChatApis" mask="2000" message="">
+    </keyword>
+    <keyword name="ThirdPartyTemp" mask="10000000" message="">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000001" message="Error: HRESULT: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="Error Propagated: HRESULT: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="10" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x4" message="%1">
+    </event>
+    <event value="100" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Opening VoIP RPC client">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Opened VoIP RPC client">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="New incoming VoIP call %1">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="New outgoing VoIP call %1">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Made DSS token %1 for file %2">
+    </event>
+    <event value="105" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Outgoing Video call upgrade call: %1, Call upgrade Guid: %2">
+    </event>
+    <event value="106" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="New incoming upgrade video call %1">
+    </event>
+    <event value="120" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Invoking AcceptIncoming for VoIP call %1">
+    </event>
+    <event value="121" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Invoking RejectIncoming for VoIP call %1">
+    </event>
+    <event value="122" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Invoking Hold for VoIP call %1">
+    </event>
+    <event value="123" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Invoking Unhold for VoIP call %1">
+    </event>
+    <event value="124" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Invoking End for VoIP call %1">
+    </event>
+    <event value="140" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x20" message="Opening audio routing RPC client">
+    </event>
+    <event value="141" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x20" message="Opened audio routing RPC client">
+    </event>
+    <event value="142" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x40" message="A new SMS Intercept application has been added">
+    </event>
+    <event value="143" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x40" message="A new SMS Intercept application has been removed">
+    </event>
+    <event value="144" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x40" message="A new SMS has arrived">
+    </event>
+    <event value="145" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x40" message="A new SMS has been retrieved of length %1">
+    </event>
+    <event value="150" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x80" message="Opening phone call filter client">
+    </event>
+    <event value="151" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x80" message="Opened phone call filter client">
+    </event>
+    <event value="152" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x100" message="Opening SMS filter client">
+    </event>
+    <event value="153" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x100" message="Opened SMS filter client">
+    </event>
+    <event value="200" version="0" opcode="1" channel="0" level="5" task="3" keywords="0x2" message="">
+    </event>
+    <event value="201" version="0" opcode="1" channel="0" level="5" task="4" keywords="0x2" message="">
+    </event>
+    <event value="202" version="0" opcode="2" channel="0" level="5" task="4" keywords="0x2" message="">
+    </event>
+    <event value="203" version="0" opcode="1" channel="0" level="5" task="5" keywords="0x2" message="">
+    </event>
+    <event value="204" version="0" opcode="1" channel="0" level="5" task="6" keywords="0x2" message="">
+    </event>
+    <event value="205" version="0" opcode="2" channel="0" level="5" task="6" keywords="0x2" message="">
+    </event>
+    <event value="206" version="0" opcode="1" channel="0" level="5" task="7" keywords="0x2" message="">
+    </event>
+    <event value="207" version="0" opcode="1" channel="0" level="5" task="7" keywords="0x2" message="">
+    </event>
+    <event value="301" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x200" message="Social object is missing UDM property: %1">
+    </event>
+    <event value="302" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x200" message="Social object needs at least one text field">
+    </event>
+    <event value="303" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x200" message="Social object has too many thumbnails">
+    </event>
+    <event value="304" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x200" message="Social object has invalid value for UDM property: %1">
+    </event>
+    <event value="305" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000200" message="Saving feed of type=%1, updateMode=%2, operationId=%3, itemCount=%4">
+    </event>
+    <event value="306" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x200" message="Social object needs an image or an image URL">
+    </event>
+    <event value="307" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x200" message="Social Originate Error: %1">
+    </event>
+    <event value="308" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x0" message="Social Cancellation State(Cookie: %2): %1 ">
+    </event>
+    <event value="401" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Saving online picture remote id: [%1]">
+    </event>
+    <event value="402" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Saving online video remote id: [%1])">
+    </event>
+    <event value="403" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Saving online album remote id: [%1])">
+    </event>
+    <event value="404" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Bulk saving %1 albums">
+    </event>
+    <event value="405" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Bulk saving %1 media items">
+    </event>
+    <event value="406" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Done bulk saving albums">
+    </event>
+    <event value="407" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000400" message="Done bulk saving media items">
+    </event>
+    <event value="500" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneCallAnnotations: Starting location query. Phone number: %1">
+    </event>
+    <event value="501" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneCallAnnotations: Completing location query. Location: %1">
+    </event>
+    <event value="502" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneCallAnnotations: Starting RPC server with endpoint %1">
+    </event>
+    <event value="503" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneCallAnnotations: Stopping RPC server">
+    </event>
+    <event value="600" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000001000" message="The store for app %1 was not found">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="[ChatApis] ChatMessageStoreChangedEventArgs Kind = %1, Type = %2">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="[ChatApis] ChatConversationReaderImpl::ReadBatchWithCountAsync batch count= %1">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="[ChatApis] ChatMessageReaderImpl::_ReadBatchImpl batch count= %1">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="[ChatApis] ChatMessageStoreImpl::MarkMessageReadAsync">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="[ChatApis] ChatMessageStoreImpl::RetrySendMessageAsync">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="[ChatApis] ChatApis::ChatMessageStoreImpl_SendMessageAsync">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x2000" message="[ChatApis] ChatMessageManager::GetTransportsAsync Session-&gt;EnsureConnected complete. HRESULT=%1">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x2000" message="[ChatApis] ChatMessageManager::GetTransportsAsync Completed RPC call to UdmSvc_GetChatTransports. HRESULT=%1">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x2000" message="[ChatApis] ChatMessageManager::GetTransportsAsync TransportCount=%1">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x2000" message="[ChatApis] ChatNavigation::_LaunchUriForDefaultChatApp MessagingPackage = %1">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x2000" message="[ChatApis] ChatNavigation::_LaunchUriForDefaultChatApp LaunchStatus = %1, Expected = %2">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="[ChatApis] ChatApis::ChatCapabilitiesManagerStaticImpl_GetCachedCapabilitiesAsync">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="[ChatApis] ChatApis::ChatCapabilitiesManagerStaticImpl_GetCapabilitiesFromNetworkAsync">
+    </event>
+    <event value="1500" version="0" opcode="1" channel="0" level="5" task="10" keywords="0x2" message="">
+    </event>
+    <event value="1501" version="0" opcode="2" channel="0" level="5" task="11" keywords="0x2" message="">
+    </event>
+    <event value="1502" version="0" opcode="1" channel="0" level="5" task="12" keywords="0x2" message="">
+    </event>
+    <event value="1503" version="0" opcode="2" channel="0" level="5" task="13" keywords="0x2" message="">
+    </event>
+    <event value="1504" version="0" opcode="1" channel="0" level="5" task="14" keywords="0x2" message="">
+    </event>
+    <event value="1505" version="0" opcode="2" channel="0" level="5" task="15" keywords="0x2" message="">
+    </event>
+    <event value="1506" version="0" opcode="1" channel="0" level="5" task="16" keywords="0x2" message="">
+    </event>
+    <event value="1507" version="0" opcode="2" channel="0" level="5" task="17" keywords="0x2" message="">
+    </event>
+    <event value="1508" version="0" opcode="1" channel="0" level="5" task="18" keywords="0x2" message="">
+    </event>
+    <event value="1509" version="0" opcode="2" channel="0" level="5" task="19" keywords="0x2" message="">
+    </event>
+    <event value="1510" version="0" opcode="1" channel="0" level="5" task="20" keywords="0x2" message="">
+    </event>
+    <event value="1511" version="0" opcode="2" channel="0" level="5" task="21" keywords="0x2" message="">
+    </event>
+    <event value="1512" version="0" opcode="1" channel="0" level="5" task="22" keywords="0x2" message="">
+    </event>
+    <event value="1513" version="0" opcode="2" channel="0" level="5" task="23" keywords="0x2" message="">
+    </event>
+    <event value="1514" version="0" opcode="1" channel="0" level="5" task="24" keywords="0x2" message="">
+    </event>
+    <event value="1515" version="0" opcode="2" channel="0" level="5" task="25" keywords="0x2" message="">
+    </event>
+    <event value="2000" version="0" opcode="1" channel="0" level="5" task="8" keywords="0x2" message="">
+    </event>
+    <event value="2001" version="0" opcode="2" channel="0" level="5" task="9" keywords="0x2" message="">
+    </event>
+    <event value="10000" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8010000000" message="3rd party log: %1 - %2">
+    </event>
+  </events>
+</provider>

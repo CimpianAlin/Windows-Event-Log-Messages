@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-VolumeSnapshot-Driver" guid="67fe2216-727a-40cb-94b2-c02211edb34a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=volsnap.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\volsnap.sys" messageFileName="C:\Windows\system32\drivers\volsnap.sys" message="Microsoft-Windows-VolumeSnapshot-Driver" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-VolumeSnapshot-Driver/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-VolumeSnapshot-Driver/Operational" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="vs:Prepare" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:PreExposure" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:AdjustBitmap" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:EndCommit" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:Activate" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:SetIgnorable" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:IgnorableProduct" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:Dismount" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:Remount" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:DeleteProcess" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:Revert" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:ProtectedBitmap" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:FlushHoldFs" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:ActivateLoop" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:ValidateFiles" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:VolumeSafe" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="vs:DiscoverSnapshots" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="9" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="10" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="12" version="0" opcode="1" channel="16" level="4" task="12" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="13" version="0" opcode="2" channel="16" level="4" task="12" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="14" version="0" opcode="1" channel="16" level="4" task="14" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="15" version="0" opcode="2" channel="16" level="4" task="14" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="16" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="17" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="18" version="0" opcode="1" channel="16" level="4" task="18" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="19" version="0" opcode="2" channel="16" level="4" task="18" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="20" version="0" opcode="1" channel="16" level="4" task="20" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="21" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="22" version="0" opcode="1" channel="16" level="4" task="22" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="23" version="0" opcode="2" channel="16" level="4" task="22" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="24" version="0" opcode="1" channel="16" level="4" task="24" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="25" version="0" opcode="2" channel="16" level="4" task="24" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="26" version="0" opcode="1" channel="16" level="4" task="26" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="27" version="0" opcode="2" channel="16" level="4" task="26" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="28" version="0" opcode="1" channel="16" level="4" task="28" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="29" version="0" opcode="2" channel="16" level="4" task="28" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="30" version="0" opcode="1" channel="16" level="4" task="30" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="31" version="0" opcode="2" channel="16" level="4" task="30" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="32" version="0" opcode="1" channel="16" level="4" task="32" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="33" version="0" opcode="2" channel="16" level="4" task="32" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="100" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The volume snapshot driver has begun processing for volume online.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is brought online the volume snapshot driver scans for any persistent snapshots that may be on the volume.
+
+You should expect this event when a volume is brought online.  No user action is required.">
+    </event>
+    <event value="101" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The volume snapshot driver has completed processing for volume online.
+
+Volume GUID: %1
+
+Guidance:
+The volume snapshot driver was able to scan for any persistent snapshots on this volume.
+
+You should expect this event when a volume is brought online.  No user action is required.">
+    </event>
+    <event value="102" version="0" opcode="2" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The volume snapshot driver encountered an error while performing processing for volume online.
+
+Error: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is brought online the volume snapshot driver scans for any persistent snapshots that may be on the volume.  In case of an error this scan is not performed.  The error may have originated in storage drivers beneath the volume snapshot driver; check their logs.
+
+If the error is STATUS_DEVICE_NOT_CONNECTED this means the volume is in snapshot protection mode and has been taken offline to prevent loss of snapshots.">
+    </event>
+    <event value="103" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Activation of discovered snapshots began.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.
+
+You should expect this event when a volume is brought online or reverted to a snapshot.  No user action is required.">
+    </event>
+    <event value="104" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Activation of discovered snapshots completed.
+
+Volume GUID: %1
+Total Number of Snapshots Found: %2
+Number of Snapshots Marked for Delete: %3
+Number of Visible Snapshots Found: %4
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.  Some snapshots may be marked &apos;visible&apos;, meaning they were exposed as a local volume or file share.  Some detected snapshots may be marked &apos;deleted&apos;, meaning they are no longer available for use and their diff area space will be reclaimed when all older snapshots are deleted.  Look for instances of event 106 to see each snapshot that was discovered and whether it was &apos;visible&apos; or &apos;deleted&apos;.
+
+You should expect this event when a volume is brought online or reverted to a snapshot.  No user action is required.">
+    </event>
+    <event value="105" version="0" opcode="2" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Activation of discovered snapshots encountered an error.
+
+Error: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.  Unless the volume is in snapshot protection mode or the error code indicates the volume is offline, a failure during this process results in loss of all snapshots on the volume.">
+    </event>
+    <event value="106" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A persistent snapshot was activated.
+
+Volume GUID: %1
+Snapshot GUID: %2
+Snapshot Marked Deleted: %3
+Snapshot Visible: %4
+Snapshot Commit Timestamp: %5
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.  If the snapshot is &apos;visible&apos;, it was exposed as a local volume or file share.  If the snapshot is &apos;deleted&apos;, it is no longer available for use and its diff area space will be reclaimed when all older snapshots are deleted.
+
+You should expect this event when a volume containing persistent snapshots is brought online or reverted to a snapshot.  If all discovered snapshots are successfully activated you should expect event 104, otherwise you will see event 105.  No user action is required.">
+    </event>
+    <event value="107" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Reading of a snapshot diff area&apos;s metadata began.
+
+Volume GUID: %1
+Snapshot GUID: %2
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver reads the diff area for the most-recent persistent snapshot (if any).  The diff area for earlier persistent snapshots is typically read the first time the snapshot is read from.
+
+You should expect this event when a volume is brought online, reverted to a snapshot, or when reading from a persistent snapshot for the first time after bringing a volume online.  This event may also occur if a volume is dismounted that contains snapshots that have not been read since the volume was brought online.  No user action is required.">
+    </event>
+    <event value="108" version="2" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Reading of a snapshot diff area&apos;s metadata completed.
+
+Volume GUID: %1
+Snapshot GUID: %2
+Count of 1MB Reads: %3
+Count of 16KB Reads: %4
+Diff Area Metadata Size: %5 Bytes
+Total Data Read: %6 Bytes
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver reads the diff area for the most-recent persistent snapshot (if any).  The diff area for earlier persistent snapshots is typically read the first time the snapshot is read from.  The size of the diff area metadata may be less than the total number of bytes read if the diff area is discontiguous on disk.
+
+You should expect this event when a volume is brought online, reverted to a snapshot, or when reading from a persistent snapshot for the first time after bringing a volume online.  This event may also occur if a volume is dismounted that contains snapshots that have not been read since the volume was brought online.  No user action is required.">
+    </event>
+    <event value="109" version="2" opcode="2" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Reading of a snapshot diff area&apos;s metadata encountered an error.
+
+Error: %3
+
+Volume GUID: %1
+Snapshot GUID: %2
+Count of 1MB Reads: %4
+Count of 16KB Reads: %5
+Amount of Diff Area Metadata Read: %6 Bytes
+Total Data Read: %7 Bytes
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver reads the diff area for the most-recent persistent snapshot (if any).  The diff area for earlier persistent snapshots is typically read the first time the snapshot is read from.  Unless the volume is in snapshot protection mode, a failure during this process results in loss of all snapshots on the volume.">
+    </event>
+    <event value="110" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Validation of diff area files began.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is mounted, the volume snapshot driver reads and validates all the diff area files located on the volume.  These diff area files may be for persistent snapshots of the volume being mounted, or for persistent snapshots of other volumes.
+
+You should expect this event when mounting a volume.  No user action is required.">
+    </event>
+    <event value="111" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Validation of diff area files completed.
+
+Number of Diff Areas: %2
+
+Guidance:
+When a volume is mounted, the volume snapshot driver reads and validates all the diff area files located on the volume.  These diff area files may be for persistent snapshots of the volume being mounted, or for persistent snapshots of other volumes.
+
+You should expect this event when mounting a volume.  No user action is required.">
+    </event>
+    <event value="112" version="0" opcode="2" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Validation of diff area files encountered an error.
+
+Error: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is mounted, the volume snapshot driver reads and validates all the diff area files located on the volume.  These diff area files may be for persistent snapshots of the volume being mounted, or for persistent snapshots of other volumes.  A failure during this process results in loss of all snapshots whose diff area files are located on the volume, unless those snapshots are of volumes that are in snapshot protection mode.">
+    </event>
+    <event value="113" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The volume is preparing to be taken offline.
+
+Volume GUID: %1
+
+Guidance:
+Some system services, such as the cluster service, inform the volume snapshot driver when they are about to take the volume offline.
+
+You should expect this event when an entity such as the cluster service prepares to take a volume offline.  No user action is required.">
+    </event>
+    <event value="114" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The volume snapshot driver has begun processing for dismount.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is dismounted, the volume snapshot driver closes any handles it may have open on the dismounting volume, such as handles to diff areas.  All auto-release snapshots that have diff areas on the dismounting volume are deleted at this time. The volume snapshot driver may also perform some work to detect whether any future direct writes to the volume are to diff area space for persistent snapshots.  If such writes occur this detection work allows the volume snapshot driver to destroy the snapshots, since the direct volume writes may corrupt them.
+
+You should expect this event when a volume dismounts.  No user action is required.">
+    </event>
+    <event value="115" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The volume snapshot driver has completed processing for dismount.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is dismounted, the volume snapshot driver closes any handles it may have open on the dismounting volume, such as handles to diff areas.  All auto-release snapshots that have diff areas on the dismounting volume are deleted at this time. The volume snapshot driver may also perform some work to detect whether any future direct writes to the volume are to diff area space for persistent snapshots.  If such writes occur this detection work allows the volume snapshot driver to destroy the snapshots, since the direct volume writes may corrupt them.
+
+You should expect this event when a volume dismounts.  No user action is required.">
+    </event>
+    <event value="116" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The volume snapshot driver has begun processing for volume offline.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is taken offline, the volume snapshot driver disables any persistent snapshots that still exist for the volume (autorelease snapshots were deleted when the volume was dismounted).  Snapshots of other volumes whose diff areas are on the offlining volume are destroyed, unless those volumes are in snapshot protection mode.  In that case those volumes are taken offline.
+
+You should expect this event when a volume is taken offline.  No user action is required.">
+    </event>
+    <event value="117" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The volume snapshot driver has completed processing for volume offline.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is taken offline, the volume snapshot driver disables any persistent snapshots that still exist for the volume (autorelease snapshots were deleted when the volume was dismounted).  Snapshots of other volumes whose diff areas are on the offlining volume are destroyed, unless those volumes are in snapshot protection mode.  In that case those volumes are taken offline.
+
+You should expect this event when a volume is taken offline.  No user action is required.">
+    </event>
+    <event value="118" version="0" opcode="2" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The volume snapshot driver encountered an error while performing processing for volume offline.
+
+Error: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is taken offline, the volume snapshot driver disables any persistent snapshots that still exist for the volume (autorelease snapshots were deleted when the volume was dismounted).  Snapshots of other volumes whose diff areas are on the offlining volume are destroyed, unless those volumes are in snapshot protection mode.  In that case those volumes are taken offline.
+
+If the error is STATUS_INSUFFICIENT_RESOURCES (0xc000009a), the volume snapshot driver may have been unable to allocate memory.  Other error codes originate from lower drivers.  Please check their log(s) for further information.">
+    </event>
+    <event value="119" version="0" opcode="2" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The volume snapshot driver encountered an error while performing processing for dismount.
+
+Error: %3
+Error Details: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is dismounted, the volume snapshot driver closes any handles it may have open on the dismounting volume, such as handles to diff areas.  All auto-release snapshots that have diff areas on the dismounting volume are deleted at this time. The volume snapshot driver may also perform some work to detect whether any future direct writes to the volume are to diff area space for persistent snapshots.  If such writes occur this detection work allows the volume snapshot driver to destroy the snapshots, since the direct volume writes may corrupt them.
+
+A failure during this process results in loss of all snapshots whose diff area files are located on the volume, unless those snapshots are of volumes that are in snapshot protection mode.">
+    </event>
+    <event value="120" version="0" opcode="2" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Activation of discovered snapshots took too long and was aborted.
+
+Volume GUID: %1
+Timeout Value (in seconds): %2
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.  This process took longer than the amount of time allowed on this system, so activation has been aborted.  Unless the volume is in snapshot protection mode, all snapshots on this volume have been deleted.">
+    </event>
+    <event value="121" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The volume snapshot driver was unable to log an event to the legacy System event log.
+
+Volume Name: %2
+Diff Volume Name (if applicable): %4
+Original Error Event Code: %5
+Original Error Status: %6
+Cause of Logging Failure:%10">
+    </event>
+    <event value="122" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The volume snapshot driver encountered an error when attempting to determine whether the volume is clustered.
+
+Error: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.  This process attempts to determine whether the volume is part of a cluster shared resource, but the query to determine this failed.
+
+This error does not indicate that any snapshots have been deleted.  You should expect this event if the volume is on a dynamic disk or is managed by a third-party volume manager.">
+    </event>
+    <event value="1000" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="PrepareForSnapshot (Enter)">
+    </event>
+    <event value="1001" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="PrepareForSnapshot (Leave)">
+    </event>
+    <event value="1002" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="PreExposure (Enter)">
+    </event>
+    <event value="1003" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="PreExposure (Leave)">
+    </event>
+    <event value="1004" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AdjustBitmap (Enter)">
+    </event>
+    <event value="1005" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AdjustBitmap (Leave)">
+    </event>
+    <event value="1006" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000000" message="EndCommit (Enter)">
+    </event>
+    <event value="1007" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000000" message="EndCommit (Leave)">
+    </event>
+    <event value="1008" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000000" message="Activate (Enter)">
+    </event>
+    <event value="1009" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000000" message="Activate (Leave)">
+    </event>
+    <event value="1010" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8000000000000000" message="SetIgnorable (Enter)">
+    </event>
+    <event value="1011" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8000000000000000" message="SetIgnorable (Leave)">
+    </event>
+    <event value="1012" version="0" opcode="1" channel="16" level="4" task="12" keywords="0x8000000000000000" message="ComputeIgnorableProduct (Enter)">
+    </event>
+    <event value="1013" version="0" opcode="2" channel="16" level="4" task="12" keywords="0x8000000000000000" message="ComputeIgnorableProduct (Leave)">
+    </event>
+    <event value="1014" version="0" opcode="1" channel="16" level="4" task="14" keywords="0x8000000000000000" message="Dismount (Enter)">
+    </event>
+    <event value="1015" version="0" opcode="2" channel="16" level="4" task="14" keywords="0x8000000000000000" message="Dismount (Leave)">
+    </event>
+    <event value="1016" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x8000000000000000" message="Remount (Enter)">
+    </event>
+    <event value="1017" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x8000000000000000" message="Remount (Leave)">
+    </event>
+    <event value="1018" version="0" opcode="1" channel="16" level="4" task="18" keywords="0x8000000000000000" message="DeleteProcess (Enter)">
+    </event>
+    <event value="1019" version="0" opcode="2" channel="16" level="4" task="18" keywords="0x8000000000000000" message="DeleteProcess (Leave)">
+    </event>
+    <event value="1020" version="0" opcode="1" channel="16" level="4" task="20" keywords="0x8000000000000000" message="Revert (Enter)">
+    </event>
+    <event value="1021" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000000" message="Revert (Leave)">
+    </event>
+    <event value="1022" version="0" opcode="1" channel="16" level="4" task="22" keywords="0x8000000000000000" message="ComputeProtectedBitmap (Enter)">
+    </event>
+    <event value="1023" version="0" opcode="2" channel="16" level="4" task="22" keywords="0x8000000000000000" message="ComputeProtectedBitmap (Leave)">
+    </event>
+    <event value="1024" version="0" opcode="1" channel="16" level="4" task="24" keywords="0x8000000000000000" message="FlushHoldFs (Enter)">
+    </event>
+    <event value="1025" version="0" opcode="2" channel="16" level="4" task="24" keywords="0x8000000000000000" message="FlushHoldFs (Leave)">
+    </event>
+    <event value="1026" version="0" opcode="1" channel="16" level="4" task="26" keywords="0x8000000000000000" message="ActivateLoop (Enter)">
+    </event>
+    <event value="1027" version="0" opcode="2" channel="16" level="4" task="26" keywords="0x8000000000000000" message="ActivateLoop (Leave)">
+    </event>
+    <event value="1028" version="0" opcode="1" channel="16" level="4" task="28" keywords="0x8000000000000000" message="ValidateDiffAreaFiles (Enter)">
+    </event>
+    <event value="1029" version="0" opcode="2" channel="16" level="4" task="28" keywords="0x8000000000000000" message="ValidateDiffAreaFiles (Leave)">
+    </event>
+    <event value="1030" version="0" opcode="1" channel="16" level="4" task="30" keywords="0x8000000000000000" message="VolumesSafeForWrite (Enter)">
+    </event>
+    <event value="1031" version="0" opcode="2" channel="16" level="4" task="30" keywords="0x8000000000000000" message="VolumesSafeForWrite (Leave)">
+    </event>
+    <event value="1032" version="0" opcode="1" channel="16" level="4" task="32" keywords="0x8000000000000000" message="DiscoverSnapshots (Enter)">
+    </event>
+    <event value="1033" version="0" opcode="2" channel="16" level="4" task="32" keywords="0x8000000000000000" message="DiscoverSnapshots (Leave)">
+    </event>
+  </events>
+</provider>

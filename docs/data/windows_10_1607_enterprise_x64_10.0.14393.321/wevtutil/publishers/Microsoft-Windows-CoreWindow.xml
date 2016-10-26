@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-CoreWindow" guid="a3d95055-34cc-4e4a-b99f-ec88f5370495" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=windows.ui.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\windows.ui.dll" messageFileName="C:\Windows\system32\windows.ui.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-CoreWindow/Debug" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-CoreWindow/Analytic" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CreateCoreWindow" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerEvent" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerDown" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerEnter" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Failure" mask="1" message="">
+    </keyword>
+    <keyword name="Informational" mask="2" message="">
+    </keyword>
+    <keyword name="Diagnostic" mask="4" message="">
+    </keyword>
+    <keyword name="Performance" mask="8" message="">
+    </keyword>
+    <keyword name="CoreWindowInternal" mask="10" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="1003" version="0" opcode="1" channel="17" level="4" task="3" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="1004" version="0" opcode="2" channel="17" level="4" task="3" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="1005" version="0" opcode="1" channel="17" level="4" task="4" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="1006" version="0" opcode="2" channel="17" level="4" task="4" keywords="0x4000000000000008" message="">
+    </event>
+  </events>
+</provider>

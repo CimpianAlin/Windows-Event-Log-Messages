@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IME-KRAPI" guid="7562948e-2671-4dda-8f8f-bf945ef984a1" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\IME\IMEKR\imkrapi.dll" messageFileName="C:\Windows\system32\IME\IMEKR\imkrapi.dll" message="Microsoft-Windows-IME-KRAPI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IME-KRAPI/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="IME_CandOpen" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Candidate Open">
+    </task>
+    <task name="IME_CandClose" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Candidate Close">
+    </task>
+    <task name="IME_Conversion" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Conversion">
+    </task>
+    <task name="IME_KR_DictLoad" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME KR DictLoad">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="70" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_HanjaGetCandListStart">
+    </event>
+    <event value="71" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_HanjaGetCandListEnd">
+    </event>
+    <event value="72" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000000" message="EAIME_HanjaDictLoadStart">
+    </event>
+    <event value="73" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000000" message="EAIME_HanjaDictLoadEnd">
+    </event>
+    <event value="74" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000000" message="EAIME_HanjaFinalizeCandStart">
+    </event>
+    <event value="75" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000000" message="EAIME_HanjaFinalizeCandEnd">
+    </event>
+    <event value="76" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000000" message="EAIME_HanjaConvStart">
+    </event>
+    <event value="77" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000000" message="EAIME_HanjaConvEnd">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-StorageManagement" guid="7e58e69a-e361-4f06-b880-ad2f4b64c944" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.206&amp;FileName=storagewmi.dll&amp;FileVer=10.0.14393.206" resourceFileName="storagewmi.dll" messageFileName="storagewmi.dll" message="Microsoft-Windows-StorageManagement" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-StorageManagement/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-StorageManagement/Debug" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="EnterExit" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000001" message="%1
+%2(%3)">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="%1 %2
+%3(%4)">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="%1
+%2(%3)">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error has occurred during method execution.
+
+Class:		%1
+Method:		%2
+Error Code:	%3
+Error Message:
+
+%4">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error has occurred during method execution.
+
+Class:		%1
+Method:		%2
+Error Code:	%3">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows Storage Provider host service failed to start.
+ 
+ Error Code: %1
+">
+    </event>
+  </events>
+</provider>

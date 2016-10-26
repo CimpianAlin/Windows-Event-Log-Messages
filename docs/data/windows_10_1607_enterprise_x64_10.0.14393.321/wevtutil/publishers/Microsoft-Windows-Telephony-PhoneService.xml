@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Telephony-PhoneService" guid="cbbbc22d-2efe-4eae-9af5-f9c6cf113670" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=PhoneService.dll&amp;FileVer=10.0.14393.0" resourceFileName="PhoneService.dll" messageFileName="PhoneService.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CallerId" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlayDTMF" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StopEventSound" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CallUpdate" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetAudioRouting" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MuteState" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="Debug" mask="4" message="">
+    </keyword>
+    <keyword name="PhoneDefault" mask="8" message="">
+    </keyword>
+    <keyword name="CONTROLLER" mask="10" message="">
+    </keyword>
+    <keyword name="CellularProvider" mask="20" message="">
+    </keyword>
+    <keyword name="PHONEUI" mask="40" message="">
+    </keyword>
+    <keyword name="Callhistory" mask="100" message="">
+    </keyword>
+    <keyword name="CDMA" mask="200" message="">
+    </keyword>
+    <keyword name="VVM" mask="400" message="">
+    </keyword>
+    <keyword name="MISC" mask="1000" message="">
+    </keyword>
+    <keyword name="DataCollection" mask="2000" message="">
+    </keyword>
+    <keyword name="PhoneTile" mask="4000" message="">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="[ERROR] originated HRESULT=%1 [%2 @ %3]">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="[ERROR] propagated HRESULT=%1 [%2 @ %3]">
+    </event>
+    <event value="10" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="%1">
+    </event>
+    <event value="100" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="The Phone service is starting">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="The Phone service has started">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="The Phone service failed to start with error %1">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="The Phone service is stopping">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="The Phone service has stopped">
+    </event>
+    <event value="600" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="PH_MSG: %1 with supsvc code or SIM error: %2">
+    </event>
+    <event value="601" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="USSD Message: %1 suppressed due to emergency call">
+    </event>
+    <event value="602" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneService: Phone RPC server started. Setting PhoneApiReady.">
+    </event>
+    <event value="603" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneService: Stopping Phone RPC server.">
+    </event>
+    <event value="700" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallState Change for callId: %1, from %2 to %3">
+    </event>
+    <event value="702" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Controller request to provider %1: verb %2 id: %3 hr: %4">
+    </event>
+    <event value="703" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Controller request result from provider %1: verb %2 id: %3 hr: %4">
+    </event>
+    <event value="704" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Dialing: Got call handle from provider">
+    </event>
+    <event value="705" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x10" message="Dialing: Failed due to existing outgoing call">
+    </event>
+    <event value="706" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Phone dialing %1">
+    </event>
+    <event value="708" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Fake Call Added: %1">
+    </event>
+    <event value="712" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Controller added call history record with Oid: %1 hr %2">
+    </event>
+    <event value="713" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Dialing rules start">
+    </event>
+    <event value="714" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Dialing rules end: modified by rule %1, rule processing time %2 ms.">
+    </event>
+    <event value="715" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Dialing: Failed because there are already two calls.">
+    </event>
+    <event value="716" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Dialing: Failed because the active call cannot be held.">
+    </event>
+    <event value="717" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Controller holding call %1 to accept call %2.">
+    </event>
+    <event value="718" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Controller dropping held call %1 to accept call %2.">
+    </event>
+    <event value="719" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Controller using DropAccept for incoming, dropping call %1 to accept %2.">
+    </event>
+    <event value="720" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Setting audio endpoint to %1">
+    </event>
+    <event value="721" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Notified of audio routing endpoint change to %1">
+    </event>
+    <event value="722" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Notified of bluetooth state change to %1">
+    </event>
+    <event value="723" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Enabling phone call audio to endpoint %1; IsIncoming %2">
+    </event>
+    <event value="724" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Disabling phone call audio">
+    </event>
+    <event value="726" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Phone service failed to initialize UDM or CallHistoryItemWriter.  Call history entries will not be written.  HRESULT: %1">
+    </event>
+    <event value="727" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Phone service failed to initialize External VVM manager.  VVM apps will not be able to control audio. HRESULT: %1">
+    </event>
+    <event value="728" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Phone service failed to initialize POOM.  Caller ID information will not be available. HRESULT: %1">
+    </event>
+    <event value="729" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Tone Notification: %1, digits %2, on %3, off %4">
+    </event>
+    <event value="730" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Controller OnFinished called for requestId %1 hr: %2">
+    </event>
+    <event value="731" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Rejected incoming call. Line id: %1 Call Id: %2 reason: %3 ">
+    </event>
+    <event value="732" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Enabling cellular audio: %1 on executor %2">
+    </event>
+    <event value="733" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Disabling cellular audio: %1 on executor %2">
+    </event>
+    <event value="734" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="VOIP audio count ref increased">
+    </event>
+    <event value="735" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="VOIP audio count ref Decreased">
+    </event>
+    <event value="736" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="VOIP muting audio">
+    </event>
+    <event value="737" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="VOIP unmuting audio">
+    </event>
+    <event value="738" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneController - phone line added. id: %1, type: %2">
+    </event>
+    <event value="739" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneController - phone line removed. id: %1">
+    </event>
+    <event value="740" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneController - line property: %2 value: %3 for line ID:%1">
+    </event>
+    <event value="741" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneController - line property: %2 value: %3 for line ID:%1">
+    </event>
+    <event value="742" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] ExecutorIndex: %1 already initialized for audio">
+    </event>
+    <event value="743" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Muting cellular TX audio: %1 on executor %2, muted: %3">
+    </event>
+    <event value="744" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Muting cellular RX audio: %1 on executor %2, muted: %3">
+    </event>
+    <event value="745" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="EndUpgradeOriginationCall invoked for upgrade guid %1">
+    </event>
+    <event value="746" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CancelUpgrade invoked for upgrade guid %1">
+    </event>
+    <event value="747" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Enabling cellular provider change, [executorIndex=%1][cellularAudioType=%2][operation=%3]">
+    </event>
+    <event value="748" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Invalid cellular provider change attempted, [executorIndex=%1][targetAudioType=%2][operation=%3][currentAudioType=%4][isInHandover=%5]">
+    </event>
+    <event value="749" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Handover in progress, cellular audio type change not allowed [executorIndex=%1][cellularAudioType=%2][audioActive=%3]">
+    </event>
+    <event value="750" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Phone call swap was ignored. Call to hold: %1. Call to unhold: %2.">
+    </event>
+    <event value="751" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calculation for time between call swaps was completed. Allow swap is %1. Last successful swap was %2 ms ago. The device is configured to wait at least %3 ms in between swaps.">
+    </event>
+    <event value="752" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallProgress - Determined sound configuration according to country code, [LineId=%1][CountryCode=%2][InCallToneType=%3][InCallToneName=%4]">
+    </event>
+    <event value="753" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Disable and enable cellular audio. Disable Executor Index: %1, Enable Executor Index: %2, Cellular Audio Type: %3, Audio Active: %4">
+    </event>
+    <event value="754" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallProgress - Using override country code for determining tone configuration, [CountryCode=%1][OverrideCountryCode=%2]">
+    </event>
+    <event value="755" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="CallProgress - Failed to get 3GPP in call tone for type and mcc, [CountryCode=%1][InCallToneType=%2][HRESULT=%3]">
+    </event>
+    <event value="756" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="CallProgress - Failed to get 3GPP in call tone, [HRESULT=%1]">
+    </event>
+    <event value="900" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Event sound: %1">
+    </event>
+    <event value="1008" version="0" opcode="1" channel="0" level="5" task="5" keywords="0x2" message="">
+    </event>
+    <event value="1009" version="0" opcode="2" channel="0" level="5" task="5" keywords="0x2" message="">
+    </event>
+    <event value="1010" version="0" opcode="2" channel="0" level="5" task="30" keywords="0x2" message="">
+    </event>
+    <event value="1011" version="0" opcode="1" channel="0" level="5" task="31" keywords="0x2" message="">
+    </event>
+    <event value="1012" version="0" opcode="2" channel="0" level="5" task="31" keywords="0x2" message="">
+    </event>
+    <event value="1015" version="0" opcode="2" channel="0" level="5" task="32" keywords="0x2" message="">
+    </event>
+    <event value="1044" version="0" opcode="1" channel="0" level="5" task="27" keywords="0x42" message="">
+    </event>
+    <event value="1045" version="0" opcode="2" channel="0" level="5" task="27" keywords="0x42" message="">
+    </event>
+    <event value="1046" version="0" opcode="1" channel="0" level="5" task="29" keywords="0x42" message="">
+    </event>
+    <event value="1047" version="0" opcode="2" channel="0" level="5" task="29" keywords="0x42" message="">
+    </event>
+    <event value="1048" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Emergency Number: received updated list %1">
+    </event>
+    <event value="1049" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Emergency Number: Dial request for callid %1">
+    </event>
+    <event value="1050" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Emergency Number list received null argument or empty list.">
+    </event>
+    <event value="1051" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Dialing: Failed because the line attempt to dial is not free.">
+    </event>
+    <event value="1052" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="OperationWatchdog: &quot;%1&quot; timed out.  Context: %2.  Timeout value: %3ms.  Still waiting after: %4ms.">
+    </event>
+    <event value="1053" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="OperationWatchdog: &quot;%1&quot; completed.  Context: %2.  Actual time: %3ms">
+    </event>
+    <event value="1054" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Async API context %1 completed with result %2">
+    </event>
+    <event value="1055" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x0" message="Phone service listener added: %1">
+    </event>
+    <event value="1056" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x0" message="Phone service listener removed: %1">
+    </event>
+    <event value="1057" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Phone service listener lost notifications: %1">
+    </event>
+    <event value="1058" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Phone service listener lost notifications: %1">
+    </event>
+    <event value="1059" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Phone service listener rundown: %1">
+    </event>
+    <event value="1060" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10" message="Phone notification sent: %1 error: %2">
+    </event>
+    <event value="1065" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Call Upgrade state for CallId: %1 Changed From: %2 To: %3">
+    </event>
+    <event value="1066" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Data Connectivity State: %1">
+    </event>
+    <event value="1069" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000" message="Non-seamless upgrade was cancelled by the user.">
+    </event>
+    <event value="1070" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000" message="Seamless upgrade was cancelled by the user.">
+    </event>
+    <event value="1071" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Connection Manager Error. Connection Manager Result: %1.">
+    </event>
+    <event value="1072" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Call Line Change for CallId: %1 from LineId: %2 to LineId: %3">
+    </event>
+    <event value="1074" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4000" message="PhoneTileManager: Creating secondary Phone Tile with id: %1">
+    </event>
+    <event value="1075" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4000" message="PhoneTileManager: Setting the primary Phone Tile to be assigned to PhoneLineId: %1">
+    </event>
+    <event value="1076" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4000" message="PhoneTileManager: Deleting Phone Tile with id: %1">
+    </event>
+    <event value="1078" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4000" message="PhoneTile: Committed an update to the Phone Tile with tile id: %1. Title %2; Tile mode: %3; has voicemail: %4; missed call count: %5; has large content: %6">
+    </event>
+    <event value="1080" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4000" message="PhoneTileControllerSink: The PhoneLine (%1) has been removed.  Removing its tile and updating any remaining tiles as necessary.">
+    </event>
+    <event value="1087" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4000" message="PhoneTileControllerSink: ShellReadyState changed to %1">
+    </event>
+    <event value="1088" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: LineChangedTrigger fired with: LineId %1: PhoneLineChangeKind %2: PhoneLineProperties: %3: hr: %4">
+    </event>
+    <event value="1089" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: NewVoicemailMessageTrigger fired with: LineId %1: voicemailCount %2: VoicemailMessage: %3: hr: %4">
+    </event>
+    <event value="1090" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: CallOriginDataRequestTrigger fired with: RequestId %1: PhoneNumber: %2: hr: %3">
+    </event>
+    <event value="1091" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: CallHistoryChanged fired with: hr: %1">
+    </event>
+    <event value="1092" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: AirplaneModeDisabledForEmergencyCall fired with: hr: %1">
+    </event>
+    <event value="1093" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: OnCallEvent called with: event: %1">
+    </event>
+    <event value="1094" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: Attempted to advise to CallHistorySession with: hr: %1">
+    </event>
+    <event value="1095" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x8000000000" message="IR94FeatureDisabled: Returning video capability sharing as disabled.">
+    </event>
+    <event value="1096" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x8000000000" message="IR94FeatureDisabled: Returning device not video capable.">
+    </event>
+    <event value="1097" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x8000000000" message="IR94FeatureDisabled: Returning video calling switch as not actionable.">
+    </event>
+    <event value="1098" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: LineChangedTrigger suppressed [LineId=%1][PhoneLineChangeKind=%2][PhoneLineProperties=%3]">
+    </event>
+    <event value="1099" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: Received shell ready notification.">
+    </event>
+    <event value="1100" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: OnShellReady started [existingInitialBootSequenceComplete=%1][cachedLineCount=%2]">
+    </event>
+    <event value="1101" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: OnShellReady triggering deferred notification [LineId=%1][PhoneLineChangeKind=%2][PhoneLineProperties=%3]">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: Received screen state change notification [monitorState=%1].">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: OnScreenStateChange started [existingSuppressLineChangedTrigger=%1][screenIsOn=%2]">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: OnScreenStateChange triggering deferred notification [LineId=%1][PhoneLineChangeKind=%2][PhoneLineProperties=%3]">
+    </event>
+    <event value="1105" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SystemEventTriggerControllerSink: LineChangedTrigger skipped [LineId=%1]">
+    </event>
+    <event value="1201" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="InteractiveUserNotificationSink: New Incoming Call State Changed [callId=%1].">
+    </event>
+    <event value="1202" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="InteractiveUserNotificationSink: Show Incoming Call Toast [callId=%1].">
+    </event>
+    <event value="1203" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000" message="Supplementary service code: %1 was converted from erase to deactivate command due override setting.">
+    </event>
+    <event value="1501" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x2000" message="Call data collection item added for CallId: [%1]">
+    </event>
+    <event value="1502" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x2000" message="Call data collection item removed for CallId: [%1]">
+    </event>
+    <event value="1503" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x2000" message="Call data collection item dropped an idle call for CallId: [%1]">
+    </event>
+    <event value="1504" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallHistoryItemWriter: Call with id %1 is added.">
+    </event>
+    <event value="1505" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallHistoryItemWriter: Call with id %1 is updated.">
+    </event>
+    <event value="1506" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallAnnotationsLookupConnecting: Establishing RPC connection.  Endpoint: %1">
+    </event>
+    <event value="1507" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallAnnotationsLookup: Querying location.  Phone number: %1">
+    </event>
+    <event value="1508" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallAnnotationsLookup: Completed location query.  Location: %1">
+    </event>
+    <event value="1509" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallAnnotationsLookup: RPC failure, clearing RPC connection.">
+    </event>
+    <event value="1510" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallAnnotationsManager: Call: %1 LookupState: %2">
+    </event>
+    <event value="1511" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Shutting down Phone service due to idle stop.">
+    </event>
+    <event value="1512" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Service Idle Callback received. Idle status: %1, Phone calls exist: %2">
+    </event>
+    <event value="1513" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecording VALID state change from &apos;%2&apos; to &apos;%3&apos; on executor %1">
+    </event>
+    <event value="1514" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x8000000000" message="CallRecording: INVALID state change from &apos;%2&apos; to &apos;%3&apos; on executor %1">
+    </event>
+    <event value="1515" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecording: Recorded call is now idle.  Recording will end.  LineId:%1, CallId:%2, ConferenceCallId:%3">
+    </event>
+    <event value="1516" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecording: Recorded call is now held.  Recording will pause and may finish.  LineId:%1, CallId:%2, ConferenceCallId:%3">
+    </event>
+    <event value="1517" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecording: A call that is not being recorded is talking.  Recording will finish.  LineId:%1, CallId:%2, ConferenceCallId:%3">
+    </event>
+    <event value="1518" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecording: Recorded call no longer exists.  Recording will finish.  LineId:%2, CallId:%1">
+    </event>
+    <event value="1519" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecording: Preferred recording application changed.  Old Package Family Name: &apos;%1&apos;, New Package Family Name: &apos;%2&apos;">
+    </event>
+    <event value="1520" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Call [callId=%1] marked as handover merged due to being conferenced with call [callState=%2] that ended with handover merged reason">
+    </event>
+    <event value="1521" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecordingOff: %1, Preferred Recording app PFN: %2">
+    </event>
+    <event value="1522" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecordingApplication %1 detected">
+    </event>
+    <event value="1600" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Request Capabilities: %1">
+    </event>
+    <event value="1601" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Received query response, [responseCode=%1][reason=%2]">
+    </event>
+    <event value="1602" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Received %1 capability tuple(s)">
+    </event>
+    <event value="1603" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Tuple %1, MediaType not video capable: %2">
+    </event>
+    <event value="1604" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Tuple %1, ServiceIdentifier not video capable: %2">
+    </event>
+    <event value="1605" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Tuple %1 is video capable.">
+    </event>
+    <event value="1606" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] RcsPresenceCache hit, [TelUri string=%1][Capabilities returned=%2]">
+    </event>
+    <event value="1607" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Query suppressed due to capabilities sharing opt-in settings, [TelUri string=%1][Capabilities returned=%2]">
+    </event>
+    <event value="1608" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x0" message="Checking for device support of video calling. This service (%1) exists, thus video calling is supported.">
+    </event>
+    <event value="1609" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x0" message="Checking for device support of video calling. This service (%2) does NOT exist due to error code %1, thus a different service would have to exist for video calling to be supported.">
+    </event>
+    <event value="1610" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="PhoneController - Updating video calling settings, [lineId=%1][videoCallingSetting=%2][cacheVideoCallingSetting=%3][userRequest=%4][TTYEnabled=%5][cellularDataEnabled=%6]">
+    </event>
+    <event value="1611" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecording: Deferred request to disable cellular audio: %1 on executor %2">
+    </event>
+    <event value="1612" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecording: Cancelled request to defer disabling of cellular audio: %3 due to enabling of: %1 on executor %2">
+    </event>
+    <event value="1613" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecording: An audio type change prevented deferring of audio disable.  New audio type: %1, Audio type being disabled: %3 on executor %2">
+    </event>
+    <event value="1614" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallRecording: Performing deferred request to disable cellular audio: %1 on executor %2">
+    </event>
+    <event value="1615" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Received OnPublishRequested">
+    </event>
+    <event value="1616" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Suppressed publishing actual video capability as UCE capability sharing is disabled.">
+    </event>
+    <event value="1617" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Video capability sharing settings update requested [isCapabilitySharingEnabled=%1][previousValue=%2].">
+    </event>
+    <event value="1618" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Cache initialized [cacheExpirationInSeconds=%1]">
+    </event>
+    <event value="1619" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Publishing capabilities [%1]">
+    </event>
+    <event value="1620" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Initializing RCS presence service">
+    </event>
+    <event value="1621" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] RCS presence service status queried, [status=%1]">
+    </event>
+    <event value="1622" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Starting RCS presence service">
+    </event>
+    <event value="1623" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Received publish response, [responseCode=%1][reason=%2]">
+    </event>
+    <event value="1624" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Received OnNetworkSupportVideoChanged, [updatedValue=%1][previousValue=%2]">
+    </event>
+    <event value="1625" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Saved last published capabilities, [updatedValue=%1][previousValue=%2]">
+    </event>
+    <event value="1626" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[RcsPresence] Publish capabilities requested, [reason=%1][networkType=%2]">
+    </event>
+    <event value="1627" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Attempting audio routing {%1} as per settings.">
+    </event>
+  </events>
+</provider>

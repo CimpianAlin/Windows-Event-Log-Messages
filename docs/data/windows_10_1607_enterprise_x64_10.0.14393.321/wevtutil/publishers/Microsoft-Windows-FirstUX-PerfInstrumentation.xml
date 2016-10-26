@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-FirstUX-PerfInstrumentation" guid="fbef8096-2ca3-4082-acde-dcfb47e96b72" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=winlgdep.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\oobe\winlgdep.dll" messageFileName="C:\Windows\System32\oobe\winlgdep.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="FirstUXPerf-Analytic" id="16" flags="0" message="Setup splash window performance">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="FirstUX" value="1" eventGUID="d6ee3839-617f-4994-b3c9-6f370dbf4345" message="Setup splash window initialization">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The creation of the first setup splash window started">
+    </event>
+    <event value="1" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The creation of the first setup splash window stopped">
+    </event>
+    <event value="2" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The creation of the second setup splash window started">
+    </event>
+    <event value="3" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The creation of the second setup splash window stopped">
+    </event>
+  </events>
+</provider>

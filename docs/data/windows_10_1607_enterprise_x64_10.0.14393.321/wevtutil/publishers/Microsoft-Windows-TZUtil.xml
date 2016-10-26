@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-TZUtil" guid="2d318b91-e6e7-4c46-bd04-bfe6db412cf9" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=tzutil.exe&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\tzutil.exe" messageFileName="C:\Windows\system32\tzutil.exe" message="Microsoft-Windows-TZUtil" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-TZUtil/Operational" id="16" flags="0" message="Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="Operation" value="2162688" message="TZUtil operations">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TimeZone" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="TZUtil time zone functionality">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1004" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="The attempt to set the system time zone to &quot;%1&quot; returned error. Error code is %2. Error message is: &quot;%3&quot;.">
+    </event>
+    <event value="1005" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="The attempt to set the system time zone to &quot;%1&quot; returned error. Error code is %2. The time zone has been made obsolete.">
+    </event>
+    <event value="1006" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="The attempt to set the system time zone to &quot;%1&quot; returned error. Error code is %2. The time zone is unrecognized.">
+    </event>
+    <event value="1007" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="The attempt to set the system time zone to &quot;%1&quot; returned error. Error code is %2. The time zone data is unreadable.">
+    </event>
+    <event value="20001" version="0" opcode="33" channel="16" level="4" task="31" keywords="0x8000000000000000" message="The system time zone was set successfully to &quot;%1&quot;.">
+    </event>
+  </events>
+</provider>

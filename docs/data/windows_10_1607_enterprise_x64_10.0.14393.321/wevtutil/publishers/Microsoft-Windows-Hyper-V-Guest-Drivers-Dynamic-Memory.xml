@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-Guest-Drivers-Dynamic-Memory" guid="ba2ffb5c-e20a-4fb9-91b4-45f61b4b66a0" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=dmvsc.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\dmvsc.sys" parameterFileName="C:\Windows\system32\drivers\dmvsc.sys" messageFileName="C:\Windows\system32\drivers\dmvsc.sys" message="Microsoft-Windows-Hyper-V-Guest-Drivers" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Guest-Drivers/Diagnose" id="16" flags="0" message="Microsoft-Hyper-V-Guest-Drivers-Diagnose">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Guest-Drivers/Debug" id="17" flags="0" message="Microsoft-Hyper-V-Guest-Drivers-Debug">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Guest-Drivers/Analytic" id="18" flags="0" message="Microsoft-Hyper-V-Guest-Drivers-Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Guest-Drivers/Operational" id="19" flags="0" message="Microsoft-Hyper-V-Guest-Drivers-Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Guest-Drivers/Admin" id="20" flags="0" message="Microsoft-Hyper-V-Guest-Drivers-Admin">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="20" level="2" task="0" keywords="0x800000000000000" message="The dynamic memory driver failed unexpectedly.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="20" level="2" task="0" keywords="0x800000000000000" message="The dynamic memory driver failed because this version of Windows does not support this feature.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="20" level="2" task="0" keywords="0x800000000000000" message="The dynamic memory driver failed because it is outdated and cannot communicate with the management operating system.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="20" level="2" task="0" keywords="0x800000000000000" message="The dynamic memory driver failed because the device was removed.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="20" level="2" task="0" keywords="0x800000000000000" message="The dynamic memory driver failed because a nested instance of Hyper-V was detected.">
+    </event>
+  </events>
+</provider>

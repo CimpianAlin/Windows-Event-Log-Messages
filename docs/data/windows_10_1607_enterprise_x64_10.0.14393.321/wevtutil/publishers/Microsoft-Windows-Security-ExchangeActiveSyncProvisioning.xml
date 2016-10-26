@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Security-ExchangeActiveSyncProvisioning" guid="9249d0d0-f034-402f-a29b-92fa8853d9f3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=easwrt.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\easwrt.dll" messageFileName="C:\Windows\System32\easwrt.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Security-ExchangeActiveSyncProvisioning/Performance" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Security-ExchangeActiveSyncProvisioning/Operational" id="17" flags="0" message="Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CATEGORY_PERF" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="ExchangeActiveSyncProvisioning Performance">
+    </task>
+    <task name="EAS_REGPROV" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="1" task="2" keywords="0x4000000000000000" message="Registered EAS supporting Windows Encryption Provider - (%1)">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="1" task="2" keywords="0x4000000000000000" message="UnRegistered EAS supporting Windows Encryption Provider - (%1)">
+    </event>
+    <event value="100" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CheckCompliance begin">
+    </event>
+    <event value="101" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="CheckCompliance end:
+
+    elapse: %1 milliseconds">
+    </event>
+  </events>
+</provider>

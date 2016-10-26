@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IME-CustomerFeedbackManagerUI" guid="1b734b40-a458-4b81-954f-ad7c9461bed8" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\IME\Shared\ImeCfmui.exe" messageFileName="C:\Windows\system32\IME\Shared\ImeCfmui.exe" message="Microsoft-Windows-IME-CustomerFeedbackManagerUI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IME-CustomerFeedbackManagerUI/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SendReport" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME CustomerFeedbackManagerUI SendReport">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="12" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000000000000000" message="SendReport Start">
+    </event>
+    <event value="13" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000000" message="SendReport Stop">
+    </event>
+  </events>
+</provider>

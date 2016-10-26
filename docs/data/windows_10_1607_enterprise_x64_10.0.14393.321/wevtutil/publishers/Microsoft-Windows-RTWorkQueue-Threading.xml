@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-RTWorkQueue-Threading" guid="e18d0fc9-9515-4232-98e4-89e456d8551b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=rtworkq.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\rtworkq.dll" messageFileName="C:\Windows\system32\rtworkq.dll" message="Microsoft-Windows-RTWorkQueue-Threading" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="RTWorkQueueTheading" id="16" flags="0" message="RTWorkQueue Threading">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WorkQueue_Execute" value="583" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Execute">
+    </task>
+    <task name="WorkQueue_Queue" value="584" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Queue">
+    </task>
+    <task name="WorkQueue_Thread" value="588" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Thread">
+    </task>
+    <task name="MMCSS_Registration" value="595" eventGUID="00000000-0000-0000-0000-000000000000" message="MMCSS Registration">
+    </task>
+    <task name="WorkQueue_Queue_Create" value="602" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Queue_Create">
+    </task>
+    <task name="WorkQueue_Execute_Callback" value="603" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Execute callback">
+    </task>
+    <task name="WorkQueue_MMCSS" value="604" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: MMCSS Transition">
+    </task>
+    <task name="WorkQueue_UpdateDeadlines" value="605" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: UpdateDeadlines">
+    </task>
+    <task name="WorkQueue_AddDeadline" value="606" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: AddDeadline">
+    </task>
+    <task name="WorkQueue_AddImmediateDeadline" value="607" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: AddImmediateDeadline">
+    </task>
+    <task name="WorkQueue_DeadlineYield" value="608" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: DeadlineYield">
+    </task>
+    <task name="WorkQueue_DeadlineQueue" value="609" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: UpdateDeadlineQueue">
+    </task>
+    <task name="WorkQueue_LongRunning" value="610" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: LongRunning">
+    </task>
+    <task name="WorkQueue_StartTimer" value="611" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: StartTimer">
+    </task>
+    <task name="WorkQueue_ExecuteTimer" value="612" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: ExecuteTimer">
+    </task>
+    <task name="UpdateSelectWorkQueuesCpuGroupMask" value="614" eventGUID="00000000-0000-0000-0000-000000000000" message="Update Select WorkQueues CpuGroupMask">
+    </task>
+    <task name="SubscribeCpuGroupMaskChangeWNF" value="615" eventGUID="00000000-0000-0000-0000-000000000000" message="SubscribeCpuGroupMaskChangeWNF">
+    </task>
+    <task name="UpdateWorkqueueCpuGroupMask" value="616" eventGUID="00000000-0000-0000-0000-000000000000" message="UpdateWorkqueueCpuGroupMask">
+    </task>
+    <task name="CpuGroupMaskChangeWnfCallback" value="617" eventGUID="00000000-0000-0000-0000-000000000000" message="CpuGroupMaskChangeWnfCallback">
+    </task>
+    <task name="SetThreadCpuGroupMask" value="618" eventGUID="00000000-0000-0000-0000-000000000000" message="SetThreadCpuGroupMask">
+    </task>
+    <task name="WorkQueue_Debounce" value="619" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Debounce">
+    </task>
+    <task name="WorkQueue_Buffering" value="620" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Buffering">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="4435" version="0" opcode="1" channel="16" level="5" task="583" keywords="0x8000000000000000" message="WorkQueue Execute: Start workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3">
+    </event>
+    <event value="4436" version="0" opcode="2" channel="16" level="5" task="583" keywords="0x8000000000000000" message="WorkQueue Execute: End workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3">
+    </event>
+    <event value="4437" version="0" opcode="1" channel="16" level="5" task="584" keywords="0x8000000000000000" message="WorkQueue Queue: WorkQueuePtr=%1 Start threads=%2 AsyncResult=%3">
+    </event>
+    <event value="4438" version="0" opcode="2" channel="16" level="5" task="584" keywords="0x8000000000000000" message="WorkQueue Queue: WorkQueuePtr=%1 End threads=%2 AsyncResult=%3">
+    </event>
+    <event value="4439" version="0" opcode="1" channel="16" level="4" task="588" keywords="0x8000000000000000" message="WorkQueue Thread: Start workqueue_ptr=%1 WorkQueueID=%2 ThreadCount=%3">
+    </event>
+    <event value="4440" version="0" opcode="2" channel="16" level="4" task="588" keywords="0x8000000000000000" message="WorkQueue Thread: End workqueue_ptr=%1 WorkQueueID=%2 ThreadCount=%3">
+    </event>
+    <event value="4454" version="0" opcode="1" channel="16" level="4" task="595" keywords="0x8000000000000000" message="MMCSS Registration Enter Queue=%1 ThreadID=%2 Handle=%3 Error=%4 Class=%5 Pri=%6 TaskID=%7">
+    </event>
+    <event value="4455" version="0" opcode="2" channel="16" level="4" task="595" keywords="0x8000000000000000" message="MMCSS Registration Enter Queue=%1 ThreadID=%2 Handle=%3 Error=%4 Class=%5 Pri=%6 TaskID=%7">
+    </event>
+    <event value="4472" version="0" opcode="1" channel="16" level="5" task="602" keywords="0x8000000000000000" message="WorkQueue Queue: WorkQueuePtr=%1 WorkQueueID=%2">
+    </event>
+    <event value="4473" version="0" opcode="2" channel="16" level="5" task="602" keywords="0x8000000000000000" message="WorkQueue Queue: WorkQueuePtr=%1 WorkQueueID=%2">
+    </event>
+    <event value="4474" version="0" opcode="1" channel="16" level="5" task="603" keywords="0x8000000000000000" message="WorkQueue Execute Callback: Start workqueue_ptr=%1 workQueueID=%2 BaseWorkQueueID=%3 ThreadID=%4 AsyncResult=%5 AsyncResultPtr=%6 LongRunning=%7">
+    </event>
+    <event value="4475" version="0" opcode="2" channel="16" level="5" task="603" keywords="0x8000000000000000" message="WorkQueue Execute Callback: End workqueue_ptr=%1 workQueueID=%2 BaseWorkQueueID=%3 ThreadID=%4 AsyncResult=%5 AsyncResultPtr=%6 LongRunning=%7">
+    </event>
+    <event value="4476" version="0" opcode="1" channel="16" level="5" task="604" keywords="0x8000000000000000" message="WorkQueue MMCSS: Start workqueue_ptr=%1 workQueueID=%2 Class=%3 Pri=%4">
+    </event>
+    <event value="4477" version="0" opcode="2" channel="16" level="5" task="604" keywords="0x8000000000000000" message="WorkQueue MMCSS: End workqueue_ptr=%1 workQueueID=%2 Class=%3 Pri=%4">
+    </event>
+    <event value="4478" version="0" opcode="1" channel="16" level="5" task="605" keywords="0x8000000000000000" message="WorkQueue UpdateDeadlines: Start workqueue_ptr=%1 workQueueID=%2 TaskId=%3 Previous=%4 Next=%5 Delay=%6">
+    </event>
+    <event value="4479" version="0" opcode="2" channel="16" level="5" task="605" keywords="0x8000000000000000" message="WorkQueue UpdateDeadlines: End workqueue_ptr=%1 workQueueID=%2 TaskId=%3 Previous=%4 Next=%5 Delay=%6">
+    </event>
+    <event value="4480" version="0" opcode="1" channel="16" level="5" task="606" keywords="0x8000000000000000" message="WorkQueue AddDeadline: Start workqueue_ptr=%1 workQueueID=%2 Item=%3 global=%4 delta=%5 ">
+    </event>
+    <event value="4481" version="0" opcode="2" channel="16" level="5" task="606" keywords="0x8000000000000000" message="WorkQueue AddDeadline: End workqueue_ptr=%1 workQueueID=%2 Item=%3 global=%4 delta=%5 ">
+    </event>
+    <event value="4482" version="0" opcode="1" channel="16" level="5" task="607" keywords="0x8000000000000000" message="WorkQueue AddImmediateDeadline: Start workqueue_ptr=%1 workQueueID=%2 Item=%3 global=%4 delta=%5 ">
+    </event>
+    <event value="4483" version="0" opcode="2" channel="16" level="5" task="607" keywords="0x8000000000000000" message="WorkQueue AddImmediateDeadline: End workqueue_ptr=%1 workQueueID=%2 Item=%3 global=%4 delta=%5 ">
+    </event>
+    <event value="4484" version="0" opcode="1" channel="16" level="5" task="608" keywords="0x8000000000000000" message="WorkQueue DeadlineYield: Start workQueueID=%1 Delay=%2">
+    </event>
+    <event value="4485" version="0" opcode="2" channel="16" level="5" task="608" keywords="0x8000000000000000" message="WorkQueue DeadlineYield: End workQueueID=%1 Delay=%2">
+    </event>
+    <event value="4486" version="0" opcode="0" channel="16" level="5" task="609" keywords="0x8000000000000000" message="WorkQueue DeadlineQueue: WorkQueuePtr=%1 workQueueID=%2 count=%3 immediateCount=%4 nextDeadline=%5 nextItem=%6">
+    </event>
+    <event value="4487" version="0" opcode="1" channel="16" level="5" task="610" keywords="0x8000000000000000" message="WorkQueue LongRunning: Start workQueueID=%1">
+    </event>
+    <event value="4488" version="0" opcode="2" channel="16" level="5" task="610" keywords="0x8000000000000000" message="WorkQueue LongRunning: End workQueueID=%1">
+    </event>
+    <event value="4489" version="0" opcode="0" channel="16" level="5" task="611" keywords="0x8000000000000000" message="WorkQueue: StartTimer QueuePtr=%1 QueueID=%2 TimerPtr=%3 Timeout=%4 IsPeriodic=%5">
+    </event>
+    <event value="4490" version="0" opcode="0" channel="16" level="5" task="612" keywords="0x8000000000000000" message="WorkQueue: ExecuteTimer QueuePtr=%1 QueueID=%2 TimerPtr=%3">
+    </event>
+    <event value="4493" version="0" opcode="1" channel="16" level="4" task="614" keywords="0x8000000000000000" message="UpdateSelectWorkQueuesCpuGroupMask Enter ProcessorGroup=%1 ProcessorMask=%2">
+    </event>
+    <event value="4494" version="0" opcode="2" channel="16" level="4" task="614" keywords="0x8000000000000000" message="UpdateSelectWorkQueuesCpuGroupMask Leave ProcessorGroup=%1 ProcessorMask=%2 hr=%3">
+    </event>
+    <event value="4495" version="0" opcode="0" channel="16" level="4" task="615" keywords="0x8000000000000000" message="SubscribeCpuGroupMaskChangeWNF queryStatus=%1 subscribeStatus=%2 changeStamp=%3">
+    </event>
+    <event value="4496" version="0" opcode="0" channel="16" level="4" task="616" keywords="0x8000000000000000" message="UpdateWorkqueueCpuGroupMask workQueue=%1 Class=%2 ProcesssorGroup=%3 ProcesssorMask=%4">
+    </event>
+    <event value="4497" version="0" opcode="0" channel="16" level="4" task="617" keywords="0x8000000000000000" message="CpuGroupMaskChangeWnfCallback ChangeStamp=%1 CurChangeStamp=%2 ProcessorGroup=%3 ProcessorMask=%4 Length=%5">
+    </event>
+    <event value="4498" version="0" opcode="0" channel="16" level="4" task="618" keywords="0x8000000000000000" message="SetThreadCpuGroupMask pWorkQueue=%1 Class=%2 Priority=%3 ThreadId=%4 CurProcessorGroup=%5 CurProcessorMask=%6 NewProcessorGroup=%7 NewProcessorMask=%8 status=%9">
+    </event>
+    <event value="4499" version="0" opcode="1" channel="16" level="5" task="584" keywords="0x8000000000000000" message="WorkQueue Start Notification WorkQueuePtr=%1 WorkQueueID=%2">
+    </event>
+    <event value="4500" version="0" opcode="2" channel="16" level="5" task="584" keywords="0x8000000000000000" message="WorkQueue End Notification WorkQueuePtr=%1 WorkQueueID=%2">
+    </event>
+    <event value="4501" version="0" opcode="1" channel="16" level="5" task="619" keywords="0x8000000000000000" message="WorkQueue Debounce: Start workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3">
+    </event>
+    <event value="4502" version="0" opcode="2" channel="16" level="5" task="619" keywords="0x8000000000000000" message="WorkQueue Debounce: Stop workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3">
+    </event>
+    <event value="4503" version="0" opcode="1" channel="16" level="5" task="620" keywords="0x8000000000000000" message="WorkQueue Buffering: Start workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3">
+    </event>
+    <event value="4504" version="0" opcode="2" channel="16" level="5" task="620" keywords="0x8000000000000000" message="WorkQueue Buffering: Stop workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Schannel" guid="1f678132-5938-4686-9fdc-c8ff68f15c85" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=lsasrv.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\lsasrv.dll" messageFileName="C:\Windows\System32\lsasrv.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="36864" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The schannel security package has loaded successfully.">
+    </event>
+    <event value="36865" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal error occurred while opening the system %1 cryptographic module. Operations that require the SSL or TLS cryptographic protocols will not work correctly. The error code is %2.">
+    </event>
+    <event value="36867" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Creating a TLS %1 credential.">
+    </event>
+    <event value="36868" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The TLS %1 credential&apos;s private key has the following properties:
+
+   CSP name: %2
+   CSP type: %3
+   Key name: %4
+   Key Type: %5
+   Key Flags: %6
+
+ The attached data contains the certificate.">
+    </event>
+    <event value="36869" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The TLS %1 credential&apos;s certificate does not have a private key information property attached to it. This most often occurs when a certificate is backed up incorrectly and then later restored. This message can also indicate a certificate enrollment failure.">
+    </event>
+    <event value="36870" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal error occurred when attempting to access the TLS %1 credential private key. The error code returned from the cryptographic module is %2. The internal error state is %3.">
+    </event>
+    <event value="36871" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal error occurred while creating a TLS %1 credential. The internal error state is %2.">
+    </event>
+    <event value="36872" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The TLS %1 specified certificate&apos;s chain could not be retrieved:
+
+   Failure Status: %2
+   Flags: %3
+
+ The attached data contains the certificate.">
+    </event>
+    <event value="36873" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="No supported cipher suites were found when initiating a TLS connection. This indicates a configuration problem with the client application and/or the installed cryptographic modules. The TLS connection request has failed.">
+    </event>
+    <event value="36874" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="An %1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.">
+    </event>
+    <event value="36875" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The remote server has requested TLS client authentication, but no suitable client certificate could be found. An anonymous connection will be attempted. This TLS connection request may succeed or fail, depending on the server&apos;s policy settings.">
+    </event>
+    <event value="36876" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The certificate received from the remote server has not validated correctly. The error code is %1. The TLS connection request has failed. The attached data contains the server certificate.">
+    </event>
+    <event value="36877" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The certificate received from the remote client application has not validated correctly. The error code is %1. The attached data contains the client certificate.">
+    </event>
+    <event value="36878" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The certificate received from the remote client application is not suitable for direct mapping to a client system account, possibly because the authority that issuing the certificate is not sufficiently trusted. The error code is %1. The attached data contains the client certificate.">
+    </event>
+    <event value="36879" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The certificate received from the remote client application was not successfully mapped to a client system account. The error code is %1. This is not necessarily a fatal error, as the server application may still find the certificate acceptable.">
+    </event>
+    <event value="36880" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="A TLS %1 handshake completed successfully. The negotiated cryptographic parameters are as follows.
+
+   Protocol version: %2
+   CipherSuite: %3
+   Exchange strength: %4 bits
+   Context handle: %5
+   Target name: %6
+   Local certificate subject name: %7
+   Remote certificate subject name: %8">
+    </event>
+    <event value="36881" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The certificate received from the remote server has either expired or is not yet valid. The TLS connection request has failed. The attached data contains the server certificate.">
+    </event>
+    <event value="36882" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The certificate received from the remote server was issued by an untrusted certificate authority. Because of this, none of the data contained in the certificate can be validated. The TLS connection request has failed. The attached data contains the server certificate.">
+    </event>
+    <event value="36883" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The certificate received from the remote server has been revoked. This means that the certificate authority that issued the certificate has invalidated it. The TLS connection request has failed. The attached data contains the server certificate.">
+    </event>
+    <event value="36884" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The certificate received from the remote server does not contain the expected name. It is therefore not possible to determine whether we are connecting to the correct server. The server name we were expecting is %1. The TLS connection request has failed. The attached data contains the server certificate.">
+    </event>
+    <event value="36885" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="When asking for client authentication, this server sends a list of trusted certificate authorities to the client. The client uses this list to choose a client certificate that is trusted by the server. Currently, this server trusts so many certificate authorities that the list has grown too long. This list has thus been truncated. The administrator of this machine should review the certificate authorities trusted for client authentication and remove those that do not really need to be trusted.">
+    </event>
+    <event value="36886" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="No suitable default server credential exists on this system. This will prevent server applications that expect to make use of the system default credentials from accepting SSL connections. An example of such an application is the directory server. Applications that manage their own credentials, such as the internet information server, are not affected by this.">
+    </event>
+    <event value="36887" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="A fatal alert was received from the remote endpoint. The TLS protocol defined fatal alert code is %1.">
+    </event>
+    <event value="36888" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="A fatal alert was generated and sent to the remote endpoint. This may result in termination of the connection. The TLS protocol defined fatal alert code is %1.
+
+   Target name: %3
+
+The TLS alert registry can be found at http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-6">
+    </event>
+    <event value="36889" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The TLS %1 specified certificate&apos;s chain is incomplete:
+
+   Failure Status: %2
+
+ This can cause trust validation failures or interoperability problems. For more information see KB 954755
+ The attached data contains the certificate.">
+    </event>
+    <event value="36896" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Verification of the DTLS connection request failed.">
+    </event>
+    <event value="36897" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="DTLS record was rejected because it is outside of current receive window.">
+    </event>
+    <event value="36898" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="A DTLS record was rejected because it is a duplicate of a previously received record.">
+    </event>
+    <event value="36899" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The retransmission of DTLS handshake messages has been requested.">
+    </event>
+    <event value="36912" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The key material used to protect TLS Session Tickets was not found at %1.">
+    </event>
+  </events>
+</provider>

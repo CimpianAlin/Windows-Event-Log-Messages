@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IME-JPAPI" guid="31bcac7f-4ab8-47a1-b73a-a161ee68d585" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\IME\IMEJP\imjpapi.dll" messageFileName="C:\Windows\system32\IME\IMEJP\imjpapi.dll" message="Microsoft-Windows-IME-JPAPI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IME-JPAPI/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="IME_CandOpen" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Candidate Open">
+    </task>
+    <task name="IME_Conversion" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Conversion">
+    </task>
+    <task name="IME_Typing" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Typing">
+    </task>
+    <task name="IME_Activate" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Activate">
+    </task>
+    <task name="IME_Determine" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Determine">
+    </task>
+    <task name="IME_GetComment" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME GetComment">
+    </task>
+    <task name="IME_Commands" value="108" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Commands">
+    </task>
+    <task name="IME_API" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME API">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="31" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_EM_CandStart">
+    </event>
+    <event value="32" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_EM_CandEnd">
+    </event>
+    <event value="35" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000000" message="EAIME_EM_ConvStart">
+    </event>
+    <event value="36" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000000" message="EAIME_EM_ConvEnd">
+    </event>
+    <event value="37" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000000" message="EAIME_EM_TypingStart">
+    </event>
+    <event value="38" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000000" message="EAIME_EM_TypingEnd">
+    </event>
+    <event value="39" version="0" opcode="1" channel="16" level="4" task="107" keywords="0x8000000000000000" message="EAIME_EM_GetCommentStart">
+    </event>
+    <event value="40" version="0" opcode="2" channel="16" level="4" task="107" keywords="0x8000000000000000" message="EAIME_EM_GetCommentEnd">
+    </event>
+    <event value="41" version="0" opcode="1" channel="16" level="4" task="105" keywords="0x8000000000000000" message="EAIME_EM_IMEONStart">
+    </event>
+    <event value="42" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8000000000000000" message="EAIME_EM_IMEONEnd">
+    </event>
+    <event value="43" version="0" opcode="1" channel="16" level="4" task="106" keywords="0x8000000000000000" message="EAIME_EM_DetermineStart">
+    </event>
+    <event value="44" version="0" opcode="2" channel="16" level="4" task="106" keywords="0x8000000000000000" message="EAIME_EM_DetermineEnd">
+    </event>
+    <event value="50" version="0" opcode="1" channel="16" level="4" task="108" keywords="0x8000000000000000" message="EAIME_EM_BackToReadPhraseStart">
+    </event>
+    <event value="51" version="0" opcode="2" channel="16" level="4" task="108" keywords="0x8000000000000000" message="EAIME_EM_BackToReadPhraseEnd">
+    </event>
+    <event value="52" version="0" opcode="1" channel="16" level="4" task="108" keywords="0x8000000000000000" message="EAIME_EM_BackToReadingStart">
+    </event>
+    <event value="53" version="0" opcode="2" channel="16" level="4" task="108" keywords="0x8000000000000000" message="EAIME_EM_BackToReadingEnd">
+    </event>
+    <event value="54" version="0" opcode="1" channel="16" level="4" task="108" keywords="0x8000000000000000" message="EAIME_EM_ClearAllStart">
+    </event>
+    <event value="55" version="0" opcode="2" channel="16" level="4" task="108" keywords="0x8000000000000000" message="EAIME_EM_ClearAllEnd">
+    </event>
+    <event value="60" version="0" opcode="1" channel="16" level="4" task="110" keywords="0x8000000000000000" message="EAIME_API_FELangStart">
+    </event>
+    <event value="61" version="0" opcode="2" channel="16" level="4" task="110" keywords="0x8000000000000000" message="EAIME_API_FELangEnd">
+    </event>
+    <event value="62" version="0" opcode="1" channel="16" level="4" task="110" keywords="0x8000000000000000" message="EAIME_API_FEDict_GetWordsStart">
+    </event>
+    <event value="63" version="0" opcode="2" channel="16" level="4" task="110" keywords="0x8000000000000000" message="EAIME_API_FEDict_GetWordsEnd">
+    </event>
+  </events>
+</provider>

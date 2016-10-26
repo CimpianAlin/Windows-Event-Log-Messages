@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-VID" guid="5931d877-4860-4ee7-a95c-610a5f0d1407" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=vid.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\vid.sys" messageFileName="C:\Windows\system32\drivers\vid.sys" message="Microsoft-Windows-Hyper-V-VID" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-VID-Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-VID-Admin" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="VMT_VID_RESERVE_PAGES" value="1536" eventGUID="00000000-0000-0000-0000-000000000000" message="VID - reserve pages">
+    </task>
+    <task name="VMT_VID_RELEASE_PAGES" value="1537" eventGUID="00000000-0000-0000-0000-000000000000" message="VID - release pages">
+    </task>
+    <task name="VMT_VID_BALLOON_PAGES" value="1538" eventGUID="00000000-0000-0000-0000-000000000000" message="VID - balloon pages">
+    </task>
+    <task name="VMT_VID_UNBALLOON_PAGES" value="1539" eventGUID="00000000-0000-0000-0000-000000000000" message="VID - un balloon pages">
+    </task>
+    <task name="VMT_VID_HOTADD_PAGES" value="1540" eventGUID="00000000-0000-0000-0000-000000000000" message="VID - hot add">
+    </task>
+    <task name="VMT_VID_HOTADD_UNDO_PAGES" value="1541" eventGUID="00000000-0000-0000-0000-000000000000" message="VID - hot add undo">
+    </task>
+    <task name="VMT_VID_CREATE_MEMBLOCK" value="1542" eventGUID="00000000-0000-0000-0000-000000000000" message="VID - create memory block">
+    </task>
+    <task name="VMT_VID_ALLOCATE_PARTITION_NODE_PAGES" value="1543" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="VMK_HYPERV_PERF_OUTER" mask="1" message="Hyper-V performance traces (outer operations)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_INNER" mask="2" message="Hyper-V performance traces (inner operations)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_VERBOSE" mask="4" message="Hyper-V performance traces (verbose)">
+    </keyword>
+    <keyword name="VMK_ALLOCATE_PAGES" mask="8" message="">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF" mask="1000" message="Hyper-V performance traces">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1101" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to reserve %2 pages: %3. (Partition ID %1)">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to reserve %2 pages: %3. (Partition ID %1)">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to allocate %2 pages: %3. (Partition ID %1)">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to release %2 pages: %3. (Partition ID %1)">
+    </event>
+    <event value="1105" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to withdraw pages from bucket: %2. (Partition ID %1)">
+    </event>
+    <event value="1106" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to balloon %2 page ranges: %3. (Partition ID %1)">
+    </event>
+    <event value="1107" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to un-balloon %2 pages: %3. (Partition ID %1)">
+    </event>
+    <event value="1108" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to hot add %2 pages: %3. (Partition ID %1)">
+    </event>
+    <event value="1109" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to hot add undo %2 pages: %3. (Partition ID %1)">
+    </event>
+    <event value="1110" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to create mem block with %2 pages: %3. (Partition ID %1)">
+    </event>
+    <event value="3000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Created partition with ID %2 and name %1.">
+    </event>
+    <event value="5001" version="0" opcode="1" channel="16" level="4" task="1536" keywords="0x8001000000001001" message="Started reserving %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5002" version="0" opcode="2" channel="16" level="4" task="1536" keywords="0x8001000000001001" message="Finished reserving pages with status = %3. %2 pages reserved. %4 LargeLocal, %5 SmallLocal, %6 LargeRemote, %7 SmallRemote. (Partition ID %1)">
+    </event>
+    <event value="5003" version="0" opcode="1" channel="16" level="4" task="1536" keywords="0x8001000000001002" message="Started reserving bucket pages. Reserving %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5004" version="0" opcode="2" channel="16" level="4" task="1536" keywords="0x8001000000001002" message="Finished reserving bucket pages with status = %3. %2 pages reserved. (Partition ID %1)">
+    </event>
+    <event value="5005" version="0" opcode="1" channel="16" level="4" task="1536" keywords="0x8001000000001002" message="Started allocating %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5006" version="0" opcode="2" channel="16" level="4" task="1536" keywords="0x8001000000001002" message="Finished allocating pages with status = %3. %2 pages allocated. (Partition ID %1)">
+    </event>
+    <event value="5007" version="0" opcode="1" channel="16" level="4" task="1536" keywords="0x8001000000001002" message="Started depositing pages. (Partition ID %1)">
+    </event>
+    <event value="5008" version="0" opcode="2" channel="16" level="4" task="1536" keywords="0x8001000000001002" message="Finished depositing pages. (Partition ID %1)">
+    </event>
+    <event value="5009" version="0" opcode="1" channel="16" level="4" task="1537" keywords="0x8001000000001001" message="Started releasing %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5010" version="0" opcode="2" channel="16" level="4" task="1537" keywords="0x8001000000001001" message="Finished releasing %2 pages with status = %3. (Partition ID %1)">
+    </event>
+    <event value="5011" version="0" opcode="1" channel="16" level="4" task="1537" keywords="0x8001000000001002" message="Started releasing bucket %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5012" version="0" opcode="2" channel="16" level="4" task="1537" keywords="0x8001000000001002" message="Finished releasing bucket %2 pages with status = %3. (Partition ID %1)">
+    </event>
+    <event value="5013" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8001000000001002" message="Started withdrawing pages from bucket. (Partition ID %1)">
+    </event>
+    <event value="5014" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8001000000001002" message="Finished withdrawing pages from bucket with status = %2. (Partition ID %1)">
+    </event>
+    <event value="5017" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8001000000001002" message="Started depositing pages to bucket from page list. (Partition ID %1)">
+    </event>
+    <event value="5018" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8001000000001002" message="Finished depositing pages to bucket from page list. (Partition ID %1)">
+    </event>
+    <event value="5019" version="0" opcode="1" channel="16" level="4" task="1538" keywords="0x8001000000001002" message="Started ballooning %2 page ranges. (Partition ID %1)">
+    </event>
+    <event value="5020" version="0" opcode="2" channel="16" level="4" task="1538" keywords="0x8001000000001002" message="Finished ballooning %2 page ranges with status %3. (Partition ID %1)">
+    </event>
+    <event value="5021" version="0" opcode="1" channel="16" level="4" task="1538" keywords="0x8001000000001002" message="Started de-committing GPAs - %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5022" version="0" opcode="2" channel="16" level="4" task="1538" keywords="0x8001000000001002" message="Finished de-committing GPAs - %2 pages with status %3. (Partition ID %1)">
+    </event>
+    <event value="5023" version="0" opcode="1" channel="16" level="4" task="1539" keywords="0x8001000000001002" message="Started un-ballooning %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5024" version="0" opcode="2" channel="16" level="4" task="1539" keywords="0x8001000000001002" message="Finished un-ballooning %2 pages with status %3. (Partition ID %1)">
+    </event>
+    <event value="5025" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8001000000001002" message="Started committing %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5026" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8001000000001002" message="Finished committing %2 pages with status %3. (Partition ID %1)">
+    </event>
+    <event value="5029" version="0" opcode="1" channel="16" level="4" task="1540" keywords="0x8001000000001002" message="Started hot adding %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5030" version="0" opcode="2" channel="16" level="4" task="1540" keywords="0x8001000000001002" message="Finished hot adding %2 pages with status %3. (Partition ID %1)">
+    </event>
+    <event value="5031" version="0" opcode="1" channel="16" level="4" task="1541" keywords="0x8001000000001002" message="Started hot add undoing %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5032" version="0" opcode="2" channel="16" level="4" task="1541" keywords="0x8001000000001002" message="Finished hot add undoing %2 pages with status %3. (Partition ID %1)">
+    </event>
+    <event value="5033" version="0" opcode="1" channel="16" level="4" task="1542" keywords="0x8001000000001002" message="Started creating memory block with %2 pages. (Partition ID %1)">
+    </event>
+    <event value="5034" version="0" opcode="2" channel="16" level="4" task="1542" keywords="0x8001000000001002" message="Finished creating memory block with %2 pages with status %3. (Partition ID %1)">
+    </event>
+    <event value="5035" version="0" opcode="1" channel="16" level="4" task="1539" keywords="0x8001000000001002" message="Started un-ballooning %2 pages. Contiguous = %3. (Partition ID %1)">
+    </event>
+    <event value="5036" version="0" opcode="2" channel="16" level="4" task="1539" keywords="0x8001000000001002" message="Finished un-ballooning %2 pages with status %3. Contiguous = %4. (Partition ID %1)">
+    </event>
+    <event value="5037" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="An uncorrected memory error occurred at physical address %1. This page was not found in a virtual machine. No action was taken. (Platform Directed: %2)">
+    </event>
+    <event value="5038" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="&apos;%3&apos; was reset because an uncorrected memory error occured at physical address %1, which was used by this virtual machine. (Virtual Machine: %4, Platform Directed: %2)">
+    </event>
+    <event value="5039" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="An uncorrected memory error occurred at physical address %1 which is used by virtual machine &apos;%3&apos;. The affected page has been released. A machine check event correpsonding to this memory error was injected into the virtual machine for handling by the virtual machine&apos;s operating system. (Virtual Machine: %4, Platform Directed: %2)">
+    </event>
+    <event value="5040" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="An uncorrected memory error occurred at physical address %1. The virtual machine that was using the page is no longer valid. No action was taken. (Platform Directed: %2)">
+    </event>
+    <event value="5041" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="One or more corrected memory error occurred at physical address %1. This page was not found in a virtual machine. No action was taken. (Platform Directed: %2)">
+    </event>
+    <event value="5042" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="One or more corrected memory error occurred at physical address %1, which is used by virtual machine &apos;%3&apos;. The page could not be replaced. No action was taken. The virtual machine will continue operating normally. (Virtual Machine: %4, Platform Directed: %2)">
+    </event>
+    <event value="5043" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="One or more corrected memory error occurred at physical address %1, which is used by virtual machine &apos;%3&apos;. The page has been replaced. The virtual machine will continue operating normally. (Virtual Machine: %4, Platform Directed: %2)">
+    </event>
+    <event value="5044" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Failed to retrieve memory from the kernel with error %2 during a fast restore operation. (Virtual Machine %1)">
+    </event>
+    <event value="5045" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Failed to persist memory with the kernel with error %2 during a fast save operation. (Virtual Machine %1)">
+    </event>
+    <event value="5046" version="0" opcode="1" channel="0" level="4" task="1543" keywords="0x8" message="">
+    </event>
+    <event value="5047" version="0" opcode="2" channel="0" level="4" task="1543" keywords="0x8" message="">
+    </event>
+  </events>
+</provider>

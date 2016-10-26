@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Multimedia-HEVCDECODER" guid="3293f985-41d3-4b6a-b187-2ff4aa91f2fc" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=hevcdecoder.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\hevcdecoder.dll" messageFileName="C:\Windows\system32\hevcdecoder.dll" message="Multimedia-HEVCDECODER" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="WINDOWS_HEVCDECODER_CHANNEL" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="MFT_ProcessInput" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MFT_ProcessOutput" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MFT_NotifySampleLag" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2" version="0" opcode="1" channel="16" level="5" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3" version="0" opcode="2" channel="16" level="5" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="5" task="3" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

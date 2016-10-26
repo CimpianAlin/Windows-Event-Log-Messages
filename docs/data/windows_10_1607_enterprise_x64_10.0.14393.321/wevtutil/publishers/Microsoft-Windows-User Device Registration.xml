@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-User Device Registration" guid="23b8d46b-67dd-40a3-b636-d43e50552c6d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.206&amp;FileName=dsreg.dll&amp;FileVer=10.0.14393.206" resourceFileName="C:\Windows\system32\dsreg.dll" messageFileName="C:\Windows\system32\dsreg.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-User Device Registration/Admin" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-User Device Registration/Debug" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The discovery request send operation was successful.">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The discovery operation callback was successful. 
+Server response was: %1">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The initialization of the join request was successful. Inputs:
+ JoinRequest: %1 (%2)
+ Domain: %3">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The join request was successfully sent to server. Inputs:
+ AuthToken: %1">
+    </event>
+    <event value="104" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The get join response operation callback was successful. Server response was:%1">
+    </event>
+    <event value="105" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The complete join response operation was successful.">
+    </event>
+    <event value="106" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The post join tasks for the AAD Authentication Package completed successfully.">
+    </event>
+    <event value="107" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The existing NGC user ID key was successfully deleted. Key name: %1.">
+    </event>
+    <event value="108" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The NGC container was successfully created. 
+User SID: %1 
+IDP domain: %2 
+Tenant domain: %3 
+Flags: %4">
+    </event>
+    <event value="109" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The NGC user ID key was successfully created. 
+User SID: %1 
+IDP domain: %2 
+Tenant domain: %3 
+User ID: %4 
+Flags: %5">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The discovery request send operation failed with exit code: %1. Inputs:
+ Domain: %2">
+    </event>
+    <event value="201" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The discovery operation callback failed with exit code: %1. The server returned HTTP status: %2. 
+Server response was:
+%3">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The initialization of the join request failed with exit code: %1. Inputs:
+ JoinRequest: %2 (%3)
+ Domain: %4">
+    </event>
+    <event value="203" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The send join request operation failed with exit code: %1. Inputs:
+ AuthToken: %2">
+    </event>
+    <event value="204" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The get join response operation callback failed with exit code: %1. 
+Activity Id: %2 
+The server returned HTTP status: %3 
+Server response was: %4">
+    </event>
+    <event value="205" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The complete join response operation failed with exit code: %1. ">
+    </event>
+    <event value="206" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The post join tasks for the AAD Authentication Package failed with exit code: %1">
+    </event>
+    <event value="207" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The parameter value should not be NULL or empty. Function: %1; Parameter: %2.">
+    </event>
+    <event value="208" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to remove account %2 from group %1. Error: %3">
+    </event>
+    <event value="209" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to convert the string-format security identifier (SID) %1 to a functional SID. Error: %2">
+    </event>
+    <event value="210" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to retrieve account information for security identifier (SID) %1. Error: %2">
+    </event>
+    <event value="211" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to add account %2 to group %1. Error: %3">
+    </event>
+    <event value="212" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Error happened while accessing registry: %1">
+    </event>
+    <event value="213" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to connect to Local Security Authority (LSA) server. Error: %1">
+    </event>
+    <event value="214" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to lookup Local Security Authority (LSA) authentication package. Package name: %1. Error: %2">
+    </event>
+    <event value="215" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Local Security Authority (LSA) authentication failed. 
+Authentication package identifier: %1. 
+Authentication package name: %2. 
+Error: %3">
+    </event>
+    <event value="216" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The security identifier (SID) is invalid. Function name: %1. Parameter name: %2.">
+    </event>
+    <event value="217" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to copy security identifier (SID) %1. Error: %2">
+    </event>
+    <event value="218" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The string %1 is not a valid email address.">
+    </event>
+    <event value="219" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to retrieve the Active Directory domain join status information of the computer. Error: %1">
+    </event>
+    <event value="220" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to retrieve the local computer&apos;s name in the specified format %1. Error: %2">
+    </event>
+    <event value="221" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to connect to the LDAP server %1:%2 using authentication method %3. Error: %4">
+    </event>
+    <event value="222" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to convert the SID structure to its string-format. Error: %1">
+    </event>
+    <event value="223" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to set WinHTTP option %1. Error: %2">
+    </event>
+    <event value="224" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to query WinHTTP option %1. Error: %2">
+    </event>
+    <event value="225" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to initialize WinHTTP. 
+User agent: %1 
+Access type: %2 
+Proxy name: %3 
+Proxy bypass address list: %4 
+Flags: %5 
+Error: %6">
+    </event>
+    <event value="226" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to connect to server %1:%2 through WinHTTP. Error: %3">
+    </event>
+    <event value="227" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to open WinHTTP %1 request. Flags: %2. Error: %3">
+    </event>
+    <event value="228" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to set WinHTTP call back function. Notification flags: %1. Error: %2">
+    </event>
+    <event value="229" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to retrieve WinHTTP header information. Flags: %1. Name: %2. Error: %3">
+    </event>
+    <event value="230" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to send WinHTTP request. Error: %1">
+    </event>
+    <event value="231" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="One or more errors were encountered while retrieving a Secure Sockets Layer (SSL) certificate from the server. Error code: %1">
+    </event>
+    <event value="232" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The WinHTTP callback function was cancelled. WINHTTP_STATUS_CALLBACK status code: %1">
+    </event>
+    <event value="233" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The WinHTTP callback function failed. WINHTTP_STATUS_CALLBACK status code: %1. Error: %2">
+    </event>
+    <event value="234" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unalbed to query the amount of data available to read through WinHTTP. Error: %1">
+    </event>
+    <event value="235" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="WinHTTP read data failure. Error: %1">
+    </event>
+    <event value="236" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="WinHTTP write data failure. Error: %1">
+    </event>
+    <event value="237" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to setup a certificate from the given encoded string. Error: %1">
+    </event>
+    <event value="238" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to save the certificate. Error: %1">
+    </event>
+    <event value="300" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Microsoft Passport key was successfully registered with Azure AD. 
+Key ID: %1 
+UPN: %2 
+Attestation: %3 
+Client request ID: %4 
+Server request ID: %5 
+Server response: %6">
+    </event>
+    <event value="301" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="NGC key registration failed. 
+Exit code: %1 
+Client request ID: %2 
+Server request ID: %3 
+Error code: %4 
+Server error message: %5 
+Recommended client response: %6 
+Server response: %7">
+    </event>
+    <event value="302" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The NGC key registration request was successfully sent. User email: %1.
+Auth token: %2.">
+    </event>
+    <event value="303" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The NGC key registration initialization operation failed. Exit code: %1. User email: %2.
+Auth token: %3.">
+    </event>
+    <event value="304" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Automatic registration failed at join phase.  Exit code: %1. Server error: %2. Debug Output:\r\n %3.">
+    </event>
+    <event value="305" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Automatic registration failed at authentication phase.  Unable to acquire access token.  Exit code: %1. Server error: %2. Tenant Type: %3">
+    </event>
+    <event value="306" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Automatic registration Succeeded.">
+    </event>
+    <event value="307" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Automatic registration failed. Failed to lookup the registration service information from Active Directory. Exit code: %1. See http://go.microsoft.com/fwlink/?LinkId=623042">
+    </event>
+    <event value="308" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="This Device is joined to Azure AD, however, the user did not sign-in with an Azure AD account. Microsoft Passport provisioning will not be enabled. User: %1.">
+    </event>
+    <event value="309" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to discover the Azure AD DRS service. Exit code: %1.">
+    </event>
+    <event value="310" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to retrieve the NGC user ID key with name %1. Error: %2">
+    </event>
+    <event value="311" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The NGC create container operation failed. 
+User SID: %1 
+IDP domain: %2 
+Tenant domain: %3 
+Flags: %4 
+Error: %5">
+    </event>
+    <event value="312" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The existing NGC container was successfully deleted. 
+User SID: %1 
+IDP domain: %2 
+Tenant domain: %3">
+    </event>
+    <event value="314" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to delete NGC container. 
+User SID: %1 
+IDP domain: %2 
+Tenant domain: %3 
+Error: %4">
+    </event>
+    <event value="315" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to create NGC user ID key. 
+User SID: %1 
+IDP domain: %2 
+Tenant domain: %3 
+User ID: %4 
+Flags: %5 
+Error: %6">
+    </event>
+    <event value="316" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to retrieve the specified NGC user ID key. 
+User SID: %1 
+IDP domain: %2 
+Tenant domain: %3 
+User ID: %4 
+Error: %5">
+    </event>
+    <event value="317" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to delete NGC user ID key. Key name: %1. Error: %2">
+    </event>
+    <event value="318" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to create NGC transport key. 
+User SID: %1 
+IDP domain: %2 
+Tenant domain: %3 
+User ID: %4 
+Key type: %5 
+Flags: %6 
+Error: %7">
+    </event>
+    <event value="319" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to delete NGC transport key. 
+User SID: %1 
+IDP domain: %2 
+Tenant domain: %3 
+User ID: %4 
+Error: %5">
+    </event>
+    <event value="320" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to parse the NGC registration server response. 
+HTTP status: %1 
+Server response body: %2 
+Error: %3">
+    </event>
+    <event value="321" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to enable the device lock PIN. Error: %1">
+    </event>
+    <event value="322" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The application does not have the permission to perform this operation. Application SID: %1">
+    </event>
+    <event value="323" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Requesting token through token broker... 
+Account provider ID: %1 
+Scope: %2 
+Client ID: %3 
+Authority: %4 
+Resource: %5">
+    </event>
+    <event value="324" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to get a token via token broker. Error: %5 
+Request status code: %1 (%2) 
+Token provider error code: %3 
+Token provider error message: %4">
+    </event>
+    <event value="325" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Successfully obtained a token for the current user via token broker.">
+    </event>
+    <event value="326" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to get the application&apos;s core window. Error: %1">
+    </event>
+    <event value="328" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to check whether a PIN has been created to use in place of the current user&apos;s logon password. 
+User SID: %1 
+Error: %2">
+    </event>
+    <event value="329" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Requesting token through token broker silently (no UI mode)... 
+Account provider ID: %1 
+Scope: %2 
+Client ID: %3 
+Authority: %4 
+Resource: %5">
+    </event>
+    <event value="330" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Azure DRS and Enterprise DRS are configured for this device. Only one DRS instance can be configured for an environment. AzureADTenantName:%1 EnterpriseDrsName:%2">
+    </event>
+    <event value="331" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Automatic device join pre-check tasks completed. Debug output:\r\n %1">
+    </event>
+    <event value="332" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Automatic device join pre-check tasks found that this device is joined, however, it is missing some required state. The device will be removed and then joined again.">
+    </event>
+    <event value="333" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Automatic device join pre-check tasks completed. The device can NOT be joined. The process MUST run as NT AUTHORITY\SYSTEM.">
+    </event>
+    <event value="334" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Automatic device join pre-check tasks completed. The device can NOT be joined because a domain controller could not be located. The device must be connected to a network with connectivity to an Active Directory domain controller.">
+    </event>
+    <event value="335" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Automatic device join pre-check tasks completed. The device is already joined.">
+    </event>
+    <event value="336" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Web Proxy Autodiscovery Protocol (WPAD) did NOT locate the URL of a configuration file using DHCP and/or DNS discovery methods. The request will be sent directly to the server. WINHTTP_STATUS_CALLBACK dwInternetStatus is %1 WINHTTP_ASYNC_RESULT dwResult is %2 WINHTTP_ASYNC_RESULT dwError is %3">
+    </event>
+    <event value="337" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The request was sent to the server through the out-bound proxy and failed with the following information. A fail-over proxy server will be used if available. WINHTTP_STATUS_CALLBACK dwInternetStatus is %1 WINHTTP_ASYNC_RESULT dwResult is %2 WINHTTP_ASYNC_RESULT dwError is %3">
+    </event>
+    <event value="338" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Web Proxy Autodiscovery Protocol (WPAD) located the URL of a configuration file using DHCP and/or DNS discovery methods. %1 configuration entries were found in the configuration file.">
+    </event>
+    <event value="339" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The following out-bound proxy information was set for this request. WINHTTP_PROXY_RESULT_ENTRY fProxy is: %1 WINHTTP_PROXY_RESULT_ENTRY fBypass is: %2 WINHTTP_PROXY_RESULT_ENTRY INTERNET_SCHEME is: %3 WINHTTP_PROXY_RESULT_ENTRY pwszProxy is: %4 WINHTTP_PROXY_RESULT_ENTRY ProxyPort is: %5">
+    </event>
+    <event value="340" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Web Proxy Autodiscovery Protocol (WPAD) encountered an unexpected error. The request may not have been sent to the server. WINHTTP_STATUS_CALLBACK dwInternetStatus is %1 WINHTTP_ASYNC_RESULT dwResult is %2 WINHTTP_ASYNC_RESULT dwError is %3">
+    </event>
+    <event value="341" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="This request will NOT fail over to a proxy server. The end of the proxy configuration discovered by Web Proxy Autodiscovery Protocol (WPAD) has been reached. Error %1">
+    </event>
+    <event value="342" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to query Passport for Work policies. 
+User SID: %1 
+IDP domain: %2 
+Tenant domain: %3 
+Error: %4">
+    </event>
+    <event value="343" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to enumerate Passport for Work containers. 
+User SID: %1 
+Error: %2">
+    </event>
+    <event value="344" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to access the device key. If you have a TPM, it might be locked out or in an unknown state. 
+Error: %1">
+    </event>
+    <event value="345" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to access the device key. The device key has likely been removed. 
+Error: %1">
+    </event>
+    <event value="500" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="501" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="502" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="503" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="504" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+  </events>
+</provider>

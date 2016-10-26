@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Storage-Tiering" guid="4a104570-ec6d-4560-a40f-858fa955e84f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=TieringEngineService.exe&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\TieringEngineService.exe" messageFileName="C:\Windows\System32\TieringEngineService.exe" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Storage-Tiering/Admin" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Storage Tiers Management service started monitoring a volume on a tiered storage space. No action is required.  Volume name: %2.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Storage Tiers Management service encountered an error with the database of manually assigned files and re-created the database. Confirm that files that were manually assigned to a particular storage tier are still assigned to the correct tier, as appropriate. Volume name: %2.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Storage Tiers Management service is monitoring a volume on a tiered storage space. No action is required.
+
+           Local volume name: %2
+           CSV name: %4">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Storage Tiers Management service completed optimization of the tiered storage space. No action is required. Volume name: %2 Result: %7.  Processing time (in minutes): %8 Optimization time (in minutes): %9  Number of clusters requested to move to SSD: %3; to HDD: %4  Actual number of clusters moved to SSD: %5; to HDD: %6">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Storage Tier Optimization Report for volume %2
+
+%3
+Current size of the faster (SSD) tier: %4
+Percent of total I/Os serviced from the SSD tier: %5% 
+
+Size of files pinned to the SSD tier: %6
+Percent of total I/Os: %7% 
+
+Size of files pinned to the HDD tier: %8
+Percent of total I/Os: %9%">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Storage Tiers Management service reached the limit of in-memory records of reads and writes to a tiered storage space. Additional read and write activity will not be recorded or considered during optimization of storage tiers on this storage space for the rest of the hour.  Consider increasing the MaxInMemoryTreeSize registry value. Memory entries limit: %3 Volume name: %2">
+    </event>
+  </events>
+</provider>

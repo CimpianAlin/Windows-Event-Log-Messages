@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Power-Meter-Polling" guid="306c4e0b-e148-543d-315b-c618eb93157c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=umpoext.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\umpoext.dll" messageFileName="C:\Windows\system32\umpoext.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Power-Meter-Polling/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="PowerMeterRundown" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EnergyMeterRundown" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerMeterData" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EnergyMeterData" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SamplingPeriodRundown" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SamplingPeriodChange" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Default" mask="1" message="">
+    </keyword>
+    <keyword name="OneSecond" mask="2" message="">
+    </keyword>
+    <keyword name="FiveSecond" mask="4" message="">
+    </keyword>
+    <keyword name="ThirtySecond" mask="8" message="">
+    </keyword>
+    <keyword name="FiveMinute" mask="10" message="">
+    </keyword>
+    <keyword name="ThirtyMinute" mask="20" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

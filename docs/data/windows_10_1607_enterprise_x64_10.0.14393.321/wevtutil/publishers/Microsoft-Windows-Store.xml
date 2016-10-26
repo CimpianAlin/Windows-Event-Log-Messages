@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Store" guid="9c2a37f3-e5fd-5cae-bcd1-43dafeee1ff0" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.206&amp;FileName=LicenseManager.dll&amp;FileVer=10.0.14393.206" resourceFileName="C:\Windows\System32\LicenseManager.dll" messageFileName="C:\Windows\System32\LicenseManager.dll" message="Microsoft-Windows-Store" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Store/Operational" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="Error" value="794433" message="Error">
+    </opcode>
+    <opcode name="Warning" value="859969" message="Warning">
+    </opcode>
+    <opcode name="Info" value="925505" message="Info">
+    </opcode>
+    <opcode name="EnqueueEvent" value="991042" message="Enqueue Event">
+    </opcode>
+    <opcode name="DispatchEvent" value="1056578" message="Dispatch Event">
+    </opcode>
+    <opcode name="StateChange" value="1122114" message="Change State">
+    </opcode>
+    <opcode name="StartProcessing" value="1187650" message="Start pumping events">
+    </opcode>
+    <opcode name="StopProcessing" value="1253186" message="Stop pumping events">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ModuleLoaded" value="8000" eventGUID="00000000-0000-0000-0000-000000000000" message="LM Module Loaded">
+    </task>
+    <task name="LogMessage" value="8001" eventGUID="00000000-0000-0000-0000-000000000000" message="LM">
+    </task>
+    <task name="StateMachine" value="8002" eventGUID="00000000-0000-0000-0000-000000000000" message="LM State Machine">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Messages" mask="100000000000" message="">
+    </keyword>
+    <keyword name="StateMachine" mask="200000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="8000" version="0" opcode="0" channel="16" level="4" task="8000" keywords="0x8000100000000000" message="Process Name: %1
+Module Name: %2
+Build: %3
+">
+    </event>
+    <event value="8001" version="0" opcode="14" channel="16" level="4" task="8001" keywords="0x8000100000000000" message="%1
+Function: %2
+Source: %3 (%4)">
+    </event>
+    <event value="8002" version="0" opcode="13" channel="16" level="3" task="8001" keywords="0x8000100000000000" message="%1
+Function: %2
+Source: %3 (%4)">
+    </event>
+    <event value="8003" version="0" opcode="12" channel="16" level="2" task="8001" keywords="0x8000100000000000" message="%1
+Function: %2
+Source: %3 (%4)">
+    </event>
+    <event value="8010" version="0" opcode="15" channel="16" level="5" task="8002" keywords="0x8000200000000000" message="%1: %2: %3: Enqueue: %4">
+    </event>
+    <event value="8011" version="0" opcode="16" channel="16" level="5" task="8002" keywords="0x8000200000000000" message="%1: %2: %3: Dispatch: %4 =&gt; %5">
+    </event>
+    <event value="8012" version="0" opcode="17" channel="16" level="5" task="8002" keywords="0x8000200000000000" message="%1: %2: %3 Change: %4 =&gt; %5">
+    </event>
+    <event value="8013" version="0" opcode="18" channel="16" level="5" task="8002" keywords="0x8000200000000000" message="%1: %2: %3 Pumping: %4">
+    </event>
+    <event value="8014" version="0" opcode="19" channel="16" level="5" task="8002" keywords="0x8000200000000000" message="%1: %2: %3: Done: %4">
+    </event>
+  </events>
+</provider>

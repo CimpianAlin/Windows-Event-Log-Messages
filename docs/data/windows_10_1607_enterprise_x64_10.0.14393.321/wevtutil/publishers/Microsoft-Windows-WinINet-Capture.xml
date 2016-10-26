@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WinINet-Capture" guid="a70ff94f-570b-4979-ba5c-e59c9feab61b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Explorer&amp;ProdVer=11.0.14393.0&amp;FileName=wininet.dll&amp;FileVer=11.0.14393.0" resourceFileName="C:\Windows\system32\wininet.dll" messageFileName="C:\Windows\system32\wininet.dll" message="Microsoft-Windows-WinINet" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WinINet-Capture/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="WININET_KEYWORD_SEND" mask="100000000" message="Flagged on all WinINet events dealing with sending packet capture ">
+    </keyword>
+    <keyword name="WININET_KEYWORD_RECEIVE" mask="200000000" message="Flagged on all WinINet events dealing with receiving packet capture">
+    </keyword>
+    <keyword name="WININET_KEYWORD_PII_PRESENT" mask="20000000000" message="Flagged on all WinINet events dealing with potential personally identifiable information">
+    </keyword>
+    <keyword name="WININET_KEYWORD_PACKET" mask="40000000000" message="Flagged on all WinINet events dealing with packet capture">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000060100000000" message="The WinINet request header buffer captured">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000060100000000" message="The WinINet request payload buffer captured">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000060200000000" message="The WinINet response header buffer captured">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000060200000000" message="The WinINet response payload buffer captured">
+    </event>
+  </events>
+</provider>

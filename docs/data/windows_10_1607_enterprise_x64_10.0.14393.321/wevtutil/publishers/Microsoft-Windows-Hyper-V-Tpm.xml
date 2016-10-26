@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-Tpm" guid="13eae551-76ca-4ddc-b974-d3a0f8d44a03" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=vmtpm.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\vmtpm.dll" parameterFileName="C:\Windows\system32\wbem\wmiutils.dll;C:\Windows\system32\ntdll.dll" messageFileName="C:\Windows\system32\vmtpm.dll" message="Microsoft-Windows-Hyper-V-Tpm" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Admin" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Analytic" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1500" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="1510" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="1520" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+    <event value="1530" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="[Virtual machine %2] %1">
+    </event>
+  </events>
+</provider>

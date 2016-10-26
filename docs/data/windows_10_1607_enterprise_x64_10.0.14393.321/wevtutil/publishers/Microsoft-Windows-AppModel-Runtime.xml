@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-AppModel-Runtime" guid="f1ef270a-0d32-4352-ba52-dbab41e1d859" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="Microsoft-Windows-AppModel-Runtime" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-AppModel-Runtime/Analytic" id="16" flags="0" message="Microsoft-Windows-AppModel-Runtime/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-AppModel-Runtime/Admin" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-AppModel-Runtime/Debug" id="18" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-AppModel-Runtime/Diagnostics" id="19" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="AppModelProcessStart" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppIntegrityDependencyGraphCheck" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppIntegrityProcessCreation" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppIntegrityInAppValidatePackage" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppModelDynamicPropertiesReadFailed" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppModelDynamicPropertiesInvalid" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestrictedAppContainerCreation" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestrictedAppContainerDeletion" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestrictedAppContainerOpen" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestrictedAppContainerEnumeration" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestrictedAppContainerLaunch" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestrictedAppContainerTerminateAll" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppContainerCreation" value="201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppContainerDeletion" value="202" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppContainerUpdate" value="203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FirewallAppContainerCreation" value="204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FirewallAppContainerDeletion" value="205" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Process" mask="1" message="Process">
+    </keyword>
+    <keyword name="AppContainer" mask="2" message="AppContainer">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000001" message="Process %1 started at time %2 by parent %3 running as package %4 with executable %5 is application %6.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000001" message="%2: Cannot create the process for package %1 because an error was encountered. %3">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000001" message="%2: Cannot create the process for package %1 because an error was encountered while querying the fast cache. %3">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000001" message="%2: Cannot create the process for package %1 because an error was encountered while preparing the App credentials. %3">
+    </event>
+    <event value="5" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000001" message="%2: Cannot create the process for package %1 because an error was encountered while checking the user-level package status. %3">
+    </event>
+    <event value="6" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000001" message="%2: Cannot create the process for package %1 because an error was encountered while checking the machine-level package status. %3">
+    </event>
+    <event value="7" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="%2: Cannot create the process for package %1 because an error was encountered while verifying the App credentials. %3">
+    </event>
+    <event value="8" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="App %1 was terminated with error %2 because of an issue with application binary %3. This could be because the binary is unsigned, contains an untrusted signature, or has been corrupted or tampered with. Reinstall the application to fix this issue.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000001" message="App %1 was terminated with error %2 because of an issue with Windows binary %3. This could be because the binary is unsigned, contains an untrusted signature, or has been corrupted or tampered with. Refresh your PC to fix this issue.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000001" message="App %1 prevented the load of generated binary %3 due to error %2. This could be because the binary is unsigned, contains an untrusted signature, or has been corrupted or tampered with.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000001" message="An app prevented the load of a binary due to error %1. This could be because the binary is unsigned, contains an untrusted signature, or has been corrupted or tampered with.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="%2: Package runtime information %1 is corrupted (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="%2: Package runtime information %1 is missing expected data (address=%4, size=%3, section=%5, processid=%6). Reinstall the package to fix this issue.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="%2: Package runtime information %1 contains conflicting data (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="%2: Package runtime information %1 contains unexpected data (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.">
+    </event>
+    <event value="18" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="%2: Package runtime information %1 failed to load (processid=%3).">
+    </event>
+    <event value="19" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Package runtime information %1 failed to load because exception %2 occurred.">
+    </event>
+    <event value="20" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000001" message="%2: Cannot create the process for package %1 because an error was encountered while loading the runtime information. %3">
+    </event>
+    <event value="21" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000002" message="CreateAppContainerProfile failed for AppContainer %2 with error %1.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="DeleteAppContainerProfile failed for AppContainer %2 with error %1.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="UpdateAppContainerProfile failed for AppContainer %2 with error %1.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="CreateAppContainerProfile failed with error %1 because it was unable to create registry key %2.">
+    </event>
+    <event value="25" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="CreateAppContainerProfile failed with error %1 because it was unable to set security on registry key %2.">
+    </event>
+    <event value="26" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="AppContainer profile failed with error %1 because it was unable to delete registry key %2.">
+    </event>
+    <event value="27" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="CreateAppContainerProfile failed with error %1 because it was unable to create folder %2.">
+    </event>
+    <event value="28" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="CreateAppContainerProfile failed with error %1 because it was unable to set attributes on folder %2.">
+    </event>
+    <event value="29" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="CreateAppContainerProfile failed with error %1 because it was unable to verify the existence of registry key %2.">
+    </event>
+    <event value="30" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="CreateAppContainerProfile failed with error %1 because it was unable to verify the existence of folder %2.">
+    </event>
+    <event value="31" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="CreateAppContainerProfile failed with error %1 because it was unable to find the users local app data folder.">
+    </event>
+    <event value="32" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="AppContainer profile failed with error %1 because it was unable to delete folder %2 or its contents.">
+    </event>
+    <event value="33" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="AppContainer profile failed with error %1 because it was unable to look up the AppContainer name.">
+    </event>
+    <event value="34" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="AppContainer profile failed with error %1 because it was unable to look up the AppContainer display name.">
+    </event>
+    <event value="35" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="CreateAppContainerProfile failed with error %1 because it was unable to register with the firewall.">
+    </event>
+    <event value="36" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="DeleteAppContainerProfile failed with error %1 because it was unable to unregister with the firewall.">
+    </event>
+    <event value="37" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="App Container profile failed with error %1 because it was unable to register the AppContainer SID.">
+    </event>
+    <event value="38" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="DeleteAppContainerProfile failed with error %1 because it was unable to unregister the AppContainer SID.">
+    </event>
+    <event value="39" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="Successfully created AppContainer %1.">
+    </event>
+    <event value="40" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="AppContainer %1 was not created because it already exists.">
+    </event>
+    <event value="41" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="Successfully deleted AppContainer %1.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="Successfully updated AppContainer %1.">
+    </event>
+    <event value="43" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="%2: Package runtime information %1 is missing expected data (address=%4, size=%3, section=%5, processid=%6). Reinstall the package to fix this issue.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="%2: Application identity not accessible while loading package runtime information %1 (address=%4, size=%3, processid=%5).">
+    </event>
+    <event value="45" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed with %1 while retrieving AppContainer %2 information during interaction with Restricted AppContainer.">
+    </event>
+    <event value="46" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed with %1 while retrieving AppContainer information during interaction with Restricted AppContainer.">
+    </event>
+    <event value="47" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed with %1 while retrieving AppContainer information. Call invalid from this process type.">
+    </event>
+    <event value="48" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed to create shared context object for Restricted AppContainer %2 with %1.">
+    </event>
+    <event value="49" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed to activate Restricted AppContainer %2 with %1.">
+    </event>
+    <event value="50" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Creation of Restricted AppContainer %2 failed with %1 because an invalid capability was specified.">
+    </event>
+    <event value="51" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Opening existing Restricted AppContainer %2 failed with %1 because the capabilities storage value could not be read.">
+    </event>
+    <event value="52" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed to create the capabilities storage value for Restricted AppContainer %2 with %1.">
+    </event>
+    <event value="53" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="The package %1 requires validation.">
+    </event>
+    <event value="54" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Modification was detected in package %1.">
+    </event>
+    <event value="55" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed to terminate app with package %1.">
+    </event>
+    <event value="56" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Validation of app with package %1 was successful.">
+    </event>
+    <event value="57" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed with %1 to retrieve the trust state of the package %2 folder.">
+    </event>
+    <event value="58" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="App Integrity check failed with %1 while checking %2.">
+    </event>
+    <event value="59" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="App Integrity terminated an application. Integrity check for %2 returned %1.">
+    </event>
+    <event value="60" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="App Integrity check for %1 timed out.">
+    </event>
+    <event value="61" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000001" message="%2: Cannot create the process for package %1 because an error was encountered while performing the integrity check. %3">
+    </event>
+    <event value="62" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Deployment server integrity check of package %1 failed with %2.">
+    </event>
+    <event value="63" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed with %1 retrieving AppModel Runtime group policy values.">
+    </event>
+    <event value="64" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed with %1 validating AppModel Runtime group policy values.">
+    </event>
+    <event value="65" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed with %1 retrieving AppModel Runtime status for package %2.">
+    </event>
+    <event value="66" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="Failed with %1 retrieving AppModel Runtime status for package %2 for user %3.">
+    </event>
+    <event value="67" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000001" message="Failed with %1 modifying AppModel Runtime status for package %2 (current status = %4, desired status = %3).">
+    </event>
+    <event value="68" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000400000000001" message="AppModel Runtime status for package %1 successfully updated to %2 (previous status = %3).">
+    </event>
+    <event value="69" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000001" message="Failed with %1 modifying AppModel Runtime status for package %2 for user %3 (current status = %5, desired status = %4).">
+    </event>
+    <event value="70" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000400000000001" message="AppModel Runtime status for package %1 for user %2 successfully updated to %3 (previous status = %4).">
+    </event>
+    <event value="71" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000400000000001" message="Failed with %1 modifying AppModel Runtime status version (context = %2).">
+    </event>
+    <event value="72" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000001" message="AppModel Runtime status version successfully updated.">
+    </event>
+    <event value="73" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000001" message="%2: Cannot create the process for package %1 because an error was encountered while performing the app data creation. %3">
+    </event>
+    <event value="101" version="0" opcode="1" channel="19" level="4" task="201" keywords="0x800000000000002" message="Creating AppContainer %1.">
+    </event>
+    <event value="102" version="0" opcode="2" channel="19" level="4" task="201" keywords="0x800000000000002" message="Finished creating AppContainer %2 with %1.">
+    </event>
+    <event value="103" version="0" opcode="1" channel="19" level="4" task="202" keywords="0x800000000000002" message="Deleting AppContainer %1.">
+    </event>
+    <event value="104" version="0" opcode="2" channel="19" level="4" task="202" keywords="0x800000000000002" message="Finished deleting AppContainer %2 with %1.">
+    </event>
+    <event value="105" version="0" opcode="1" channel="19" level="4" task="203" keywords="0x800000000000002" message="Updating AppContainer %1.">
+    </event>
+    <event value="106" version="0" opcode="2" channel="19" level="4" task="203" keywords="0x800000000000002" message="Finished updating AppContainer %2 with %1.">
+    </event>
+    <event value="107" version="0" opcode="1" channel="19" level="4" task="204" keywords="0x800000000000002" message="Creating firewall rules for AppContainer %1.">
+    </event>
+    <event value="108" version="0" opcode="2" channel="19" level="4" task="204" keywords="0x800000000000002" message="Finished creating firewall rules for AppContainer %2 with %1.">
+    </event>
+    <event value="109" version="0" opcode="1" channel="19" level="4" task="205" keywords="0x800000000000002" message="Deleting firewall rules for AppContainer %1.">
+    </event>
+    <event value="110" version="0" opcode="2" channel="19" level="4" task="205" keywords="0x800000000000002" message="Finished deleting firewall rules for AppContainer %2 with %1.">
+    </event>
+    <event value="111" version="0" opcode="1" channel="19" level="4" task="100" keywords="0x800000000000002" message="Creating Restricted AppContainer %1.">
+    </event>
+    <event value="112" version="0" opcode="2" channel="19" level="4" task="100" keywords="0x800000000000002" message="Finished creating Restricted AppContainer %2 with %1.">
+    </event>
+    <event value="113" version="0" opcode="1" channel="19" level="4" task="101" keywords="0x800000000000002" message="Deleting Restricted AppContainer %1.">
+    </event>
+    <event value="114" version="0" opcode="2" channel="19" level="4" task="101" keywords="0x800000000000002" message="Finished deleting Restricted AppContainer %2 with %1.">
+    </event>
+    <event value="115" version="0" opcode="1" channel="19" level="4" task="102" keywords="0x800000000000002" message="Opening Restricted AppContainer %1.">
+    </event>
+    <event value="116" version="0" opcode="2" channel="19" level="4" task="102" keywords="0x800000000000002" message="Finished opening Restricted AppContainer %2 with %1.">
+    </event>
+    <event value="117" version="0" opcode="1" channel="19" level="4" task="103" keywords="0x800000000000002" message="Enumerating all Restricted AppContainers for %1.">
+    </event>
+    <event value="118" version="0" opcode="2" channel="19" level="4" task="103" keywords="0x800000000000002" message="Finished enumerating all Restricted AppContainers for AppContainer %2 with %1.">
+    </event>
+    <event value="119" version="0" opcode="1" channel="19" level="4" task="104" keywords="0x800000000000002" message="Launching process in Restricted AppContainer %1.">
+    </event>
+    <event value="120" version="0" opcode="2" channel="19" level="4" task="104" keywords="0x800000000000002" message="Finished launching process in Restricted AppContainer %2 with %1.">
+    </event>
+    <event value="121" version="0" opcode="1" channel="19" level="4" task="105" keywords="0x800000000000002" message="Terminating all processes in Restricted AppContainer %1.">
+    </event>
+    <event value="122" version="0" opcode="2" channel="19" level="4" task="105" keywords="0x800000000000002" message="Finished terminating all processes in Restricted AppContainer %2 with %1.">
+    </event>
+    <event value="123" version="0" opcode="1" channel="19" level="4" task="2" keywords="0x800000000000001" message="Checking package graph for %1.">
+    </event>
+    <event value="124" version="0" opcode="2" channel="19" level="4" task="2" keywords="0x800000000000001" message="Package graph check for %2 finished with %1.">
+    </event>
+    <event value="125" version="0" opcode="1" channel="19" level="4" task="3" keywords="0x800000000000001" message="Performing app integrity check for package %1.">
+    </event>
+    <event value="126" version="0" opcode="2" channel="19" level="4" task="3" keywords="0x800000000000001" message="App integrity check for package %2 finished with %1.">
+    </event>
+    <event value="127" version="0" opcode="1" channel="19" level="4" task="4" keywords="0x800000000000001" message="Performing runtime app integrity check for package %1.">
+    </event>
+    <event value="128" version="0" opcode="2" channel="19" level="4" task="4" keywords="0x800000000000001" message="Runtime app integrity check for package %2 finished with %1.">
+    </event>
+    <event value="129" version="0" opcode="2" channel="19" level="4" task="204" keywords="0x800000000000002" message="Firewall Service not running. Skipping creation of firewall rules for AppContainer %1.">
+    </event>
+  </events>
+</provider>

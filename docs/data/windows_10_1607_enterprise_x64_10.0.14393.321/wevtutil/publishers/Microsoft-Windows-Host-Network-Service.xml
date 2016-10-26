@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Host-Network-Service" guid="0c885e0d-6eb6-476c-a048-2457eed3a5c1" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=HostNetSvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\HostNetSvc.dll" parameterFileName="C:\Windows\system32\ntdll.dll" messageFileName="C:\Windows\system32\HostNetSvc.dll" message="Microsoft-Windows-Host-Network-Service" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Host-Network-Service-Admin" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Host-Network-Service-Operational" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Host-Network-Service-Analytic" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to create vmswitch with error &apos;%1&apos; and adapter id = &apos;%2&apos;.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to delete vmswitch with error = &apos;%1&apos;, id = &apos;%2&apos; and friendly name = &apos;%3&apos;.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to create intenal nic with error = &apos;%1&apos;, id = &apos;%2&apos; and friendly name = &apos;%3&apos;.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to delete internal nic with error = &apos;%1&apos; and id = &apos;%2&apos;. ">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to create vmswitch port with error &apos;%1&apos;, switch id = &apos;%2&apos;, port id = &apos;%3&apos; and type = &apos;%4&apos;.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to delete vmswitch port with error &apos;%1&apos;, switch id = &apos;%2&apos; and port id = &apos;%3&apos;.">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to connect vmswitch port with error &apos;%1&apos;, switch id = &apos;%2&apos;, port id = &apos;%3&apos; and nic name = &apos;%4&apos;. ">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to disconnect vmswitch port with error &apos;%1&apos;, switch id = &apos;%2&apos;, port id = &apos;%3&apos; and nic name = &apos;%4&apos;.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to bind external adapter to vswitch with error &apos;%1&apos; and adapter id = &apos;%2&apos;.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to unbind external adapter to vswitch with error &apos;%1&apos; and adapter id = &apos;%2&apos;.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to &apos;%1&apos; vmswitch VFP extension with error &apos;%2&apos;.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to set vmswitch port profile with error &apos;%1&apos;, switch id = &apos;%2&apos;, port id = &apos;%3&apos; and profile id = &apos;%4&apos;.">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to set vmswitch port isolation with error &apos;%1&apos;, switch id = &apos;%2&apos;, port id = &apos;%3&apos; and isolation id = &apos;%4&apos;.">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 :- 
+ Network id = &apos;%2&apos;.
+ Network type = &apos;%3&apos;.
+  Result code = &apos;%4&apos;. ">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 :- 
+ Network id = &apos;%2&apos;.
+ Network type = &apos;%3&apos;.
+  Result code = &apos;%4&apos;.">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 :-  
+ Endpoint id = &apos;%2&apos;.
+  Network id = &apos;%3&apos;.
+  Network type = &apos;%4&apos;.
+  Result code = &apos;%5&apos;. ">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1&apos;:-  
+ Endpoint id = &apos;%2&apos;.
+  Network id = &apos;%3&apos;.
+  Network type = &apos;%4&apos;.
+  Result code = &apos;%5&apos;.">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to configure hostagent traffic managment on vmswitch port with error &apos;%1&apos;, port profile id = &apos;%2&apos;, ip address = &apos;%3&apos; and isolation id = &apos;%4&apos;">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to reset hostagent traffic management on vmswitch port with error &apos;%1&apos; and port profile id = &apos;%2&apos;.">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to configure hostagent traffic managment on switch with error &apos;%1&apos;, switch id = &apos;%2&apos;, managment ip address = &apos;%3&apos; and forward all traffic to external network = &apos;%4&apos;.  ">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to add firewall rules for new container with error &apos;%1&apos; and unique error string &quot;&apos;%2&apos;&quot;">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to create winnat instance with error &apos;%1&apos;, external ip prefix = &apos;%2&apos;, internal ip prefix = &apos;%3&apos; and nat name = &apos;%4&apos;.">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to delete winnat instance with error &apos;%1&apos;, class name &apos;%2&apos; and instance id = &apos;%3&apos;.">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to set interface configuration with error &apos;%1&apos;.
+NetCfgInstanceId = &apos;%2&apos;.
+HostDnsServerList = &apos;%3&apos;.
+HostDnsSuffix = &apos;%4&apos;.
+Enable DHCP = &apos;%5&apos;.
+Unique error string = &apos;%6&apos;. ">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to configure ipv4 address with error &apos;%1&apos;.
+Adapter index = &apos;%2&apos;.
+Compartment id = &apos;%3&apos;.
+Prefix length = &apos;%4&apos;.
+IPv4 address = &apos;%5&apos;. 
+Persistent = &apos;%6&apos;.">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to configure default route with error &apos;%1&apos;.
+Adapter index = &apos;%2&apos;.
+Compartment id = &apos;%3&apos;.
+Gateway ip address = &apos;%4&apos;.">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="HNS failed to allocate nat port with error &apos;%1&apos;.
+Port Number= &apos;%2&apos;.">
+    </event>
+  </events>
+</provider>

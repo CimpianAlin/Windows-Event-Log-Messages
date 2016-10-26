@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-AppReadiness" guid="f0be35f8-237b-4814-86b5-ade51192e503" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=AppReadiness.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\AppReadiness.dll" messageFileName="C:\Windows\system32\AppReadiness.dll" message="Microsoft-Windows-AppReadiness" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-AppReadiness/Admin" id="16" flags="0" message="Admin">
+    </channel>
+    <channel name="Microsoft-Windows-AppReadiness/Operational" id="17" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-AppReadiness/Debug" id="18" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="AppReadiness_User_ProcessTasks" value="1" eventGUID="57563bf6-35dd-4dfb-a7d3-16a72680f595" message="">
+    </task>
+    <task name="AppReadiness_ExecuteTask" value="2" eventGUID="8b11f233-74ca-4bdf-a5b2-9d0e8087992b" message="">
+    </task>
+    <task name="AppReadiness_Api_Install" value="3" eventGUID="2560a727-59d1-45ec-8166-45461e8589d8" message="">
+    </task>
+    <task name="AppReadiness_ScorePackage" value="4" eventGUID="226bc91f-edc9-4f94-ae0d-368220c8d831" message="">
+    </task>
+    <task name="AppReadiness_PerfTrack" value="5" eventGUID="10350f26-3616-4f29-9bc2-fd47251f3938" message="">
+    </task>
+    <task name="AppReadiness_Error" value="6" eventGUID="ee1c6875-6c72-4616-a618-760991f90074" message="">
+    </task>
+    <task name="AppReadiness_Service" value="7" eventGUID="d34c6238-d005-4de6-baa9-a88d9b8d9991" message="">
+    </task>
+    <task name="AppReadiness_Api_Remove" value="8" eventGUID="2742e944-e681-49c8-af18-17945ec87f3c" message="">
+    </task>
+    <task name="AppReadiness_Api_GetTask" value="9" eventGUID="801b69d8-3d65-4c43-940e-861406327102" message="">
+    </task>
+    <task name="AppReadiness_Api_ProcessTasks" value="11" eventGUID="b68e9b58-d7f3-4c1d-afdb-20fa73011959" message="">
+    </task>
+    <task name="AppReadiness_Service_Lifetime" value="13" eventGUID="842d13fb-0feb-4f91-88e0-f109511996be" message="">
+    </task>
+    <task name="AppReadiness_Service_Thread" value="14" eventGUID="2a22a17e-7c7e-421b-b118-fe9ba29f7898" message="">
+    </task>
+    <task name="AppReadiness_BrokerSession" value="15" eventGUID="8f25dee2-c7ed-4ee9-855d-423beb7ccb42" message="">
+    </task>
+    <task name="AppReadiness_Api_HandlePackageChange" value="16" eventGUID="daf2cb26-88a8-45e6-9937-06b20d825096" message="">
+    </task>
+    <task name="AppReadiness_PackageChange" value="17" eventGUID="d2e17455-ccdc-46e6-94f8-22004294061c" message="">
+    </task>
+    <task name="AppReadiness_TriggerTask_Run" value="18" eventGUID="8e304397-0932-4c5f-b617-77946a49cab9" message="">
+    </task>
+    <task name="AppReadiness_MaintenanceTask_Run" value="19" eventGUID="a9c8a57f-cc02-4e0b-93ba-ad630447534e" message="">
+    </task>
+    <task name="AppReadiness_User_Shutdown" value="20" eventGUID="553cb39a-5379-43a2-8fee-284c72b2b02e" message="">
+    </task>
+    <task name="AppReadiness_Api_CreateTask" value="21" eventGUID="1d05da91-aa70-4961-be4d-77f5cced2178" message="">
+    </task>
+    <task name="AppReadiness_Api_EnterLogonPhase" value="22" eventGUID="bb5f5044-23bb-4b6b-98af-0d4f7d2bb4af" message="">
+    </task>
+    <task name="AppReadiness_PreRegister_Package" value="23" eventGUID="0a04226d-0213-4b31-a24f-e03330d51a13" message="">
+    </task>
+    <task name="AppReadiness_Api_ResolveStoreCategories" value="24" eventGUID="e158df60-3b44-45c6-8586-33ed4759fd47" message="">
+    </task>
+    <task name="AppReadiness_Timeline" value="25" eventGUID="cb300536-b4f4-451c-a68f-b96ead859616" message="">
+    </task>
+    <task name="AppReadiness_Api_DisableInAuditMode" value="26" eventGUID="c9e54be5-0303-469b-a32e-97b3aee49322" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Service" mask="1" message="">
+    </keyword>
+    <keyword name="User" mask="2" message="">
+    </keyword>
+    <keyword name="Tasks" mask="4" message="">
+    </keyword>
+    <keyword name="Api" mask="8" message="">
+    </keyword>
+    <keyword name="Scoring" mask="10" message="">
+    </keyword>
+    <keyword name="BrokerSession" mask="20" message="">
+    </keyword>
+    <keyword name="Triggers" mask="40" message="">
+    </keyword>
+    <keyword name="Error" mask="80" message="">
+    </keyword>
+    <keyword name="Timeline" mask="100" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="10" version="0" opcode="0" channel="16" level="2" task="6" keywords="0x8000000000000080" message="The Appx operation &apos;%2&apos; on &apos;%3&apos; failed for user &apos;%1&apos; - %5. (Error: %4)">
+    </event>
+    <event value="11" version="0" opcode="0" channel="17" level="3" task="6" keywords="0x4000000000000080" message="A exception was caught: %1.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="2" task="6" keywords="0x8000000000000080" message="The Appx preview tile generation failed for user &apos;%1&apos;: %2. (Result: %3)">
+    </event>
+    <event value="100" version="0" opcode="1" channel="16" level="4" task="13" keywords="0x8000400000000001" message="App Readiness service has started.">
+    </event>
+    <event value="101" version="0" opcode="2" channel="16" level="4" task="13" keywords="0x8000400000000001" message="App Readiness service has stopped.">
+    </event>
+    <event value="102" version="0" opcode="1" channel="17" level="4" task="14" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="103" version="0" opcode="2" channel="17" level="4" task="14" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="104" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000000000000001" message="App Readiness status changed to &apos;%1&apos; (ExitCode: %2)">
+    </event>
+    <event value="105" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000000000000001" message="Checking for service idle. (Result=%1, Reason=%2)">
+    </event>
+    <event value="106" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000000000000001" message="&apos;%1&apos; has logged on.">
+    </event>
+    <event value="107" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000000000000001" message="&apos;%1&apos; has logged off.">
+    </event>
+    <event value="108" version="0" opcode="1" channel="17" level="4" task="17" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="109" version="0" opcode="2" channel="16" level="4" task="17" keywords="0x8000000000000001" message="App Readiness service has been notified of new apps. (Source: %1, Error: %2)">
+    </event>
+    <event value="200" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000002" message="Started processing tasks for &apos;%1&apos;.">
+    </event>
+    <event value="201" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000002" message="Finished processing tasks for &apos;%1&apos;.">
+    </event>
+    <event value="205" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000002" message="Loaded queue for &apos;%1&apos; with %2 items.">
+    </event>
+    <event value="206" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000002" message="&apos;%2&apos; started for %1. (Priority: %3)">
+    </event>
+    <event value="207" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000002" message="&apos;%2&apos; finished for %1. (Result: %3)">
+    </event>
+    <event value="209" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000002" message="For &apos;%1&apos; has changed mode from &apos;%2&apos; to &apos;%3&apos;">
+    </event>
+    <event value="210" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000002" message="App Readiness service has found new tasks for %1.">
+    </event>
+    <event value="211" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000002" message="App Readiness service has completed tasks for %1.">
+    </event>
+    <event value="212" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000002" message="%2 pre-installed apps found for %1">
+    </event>
+    <event value="213" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000002" message="&apos;%2&apos; %3 succeeded for %1. (%4 seconds)">
+    </event>
+    <event value="214" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000002" message="&apos;%2&apos; %3 failed for %1. Error: &apos;%4&apos; (%5 seconds)">
+    </event>
+    <event value="215" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000002" message="&apos;%2&apos; failed for %1. Error: &apos;%3&apos; (%4 seconds)">
+    </event>
+    <event value="216" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000002" message="Activity for &apos;%1&apos; has been suspended and will resume at %2.">
+    </event>
+    <event value="217" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000002" message="Activity for &apos;%1&apos; has resumed.">
+    </event>
+    <event value="218" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000002" message="&apos;%2&apos; %3 failed for %1 and will be attempted after %5.">
+    </event>
+    <event value="219" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000002" message="%2 pre-installed apps found for %1">
+    </event>
+    <event value="220" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000002" message="&apos;%2&apos; succeeded for %1. (%3 seconds)">
+    </event>
+    <event value="221" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000002" message="Task &apos;%2&apos; created for %1.">
+    </event>
+    <event value="222" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x4000000000000002" message="&apos;%2&apos; was removed (Canceled: %4) for &apos;%1&apos; due to new opposing task of type %3.">
+    </event>
+    <event value="223" version="0" opcode="1" channel="17" level="4" task="20" keywords="0x4000000000000002" message="Shutdown for &apos;%1&apos; has started.">
+    </event>
+    <event value="224" version="0" opcode="2" channel="17" level="4" task="20" keywords="0x4000000000000002" message="Shutdown for &apos;%1&apos; has completed.">
+    </event>
+    <event value="225" version="0" opcode="0" channel="16" level="3" task="20" keywords="0x8000000000000002" message="Canceling &apos;%2&apos; for &apos;%1&apos; due to shutdown.">
+    </event>
+    <event value="226" version="0" opcode="0" channel="17" level="4" task="20" keywords="0x4000000000000002" message="During shutdown &apos;%1&apos; is waiting for tasks to complete.">
+    </event>
+    <event value="227" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000002" message="&apos;%2&apos; was selected as the next task for %1. (Priority=%3)">
+    </event>
+    <event value="228" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000400000000002" message="&apos;%1&apos; succeeded. (%2 seconds)">
+    </event>
+    <event value="229" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000400000000002" message="&apos;%1&apos; was selected as the next task. (Priority=%2)">
+    </event>
+    <event value="230" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000400000000002" message="App Readiness service has completed all tasks for user.">
+    </event>
+    <event value="231" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000400000000002" message="FWOpenPolicyStore starts.">
+    </event>
+    <event value="232" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000400000000002" message="FWOpenPolicyStore returns %1.">
+    </event>
+    <event value="233" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000400000000002" message="FWClosePolicyStore starts.">
+    </event>
+    <event value="234" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000400000000002" message="FWClosePolicyStore returns %1.">
+    </event>
+    <event value="300" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000004" message="Started &apos;%2&apos; for &apos;%1&apos;">
+    </event>
+    <event value="301" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000004" message="Finished &apos;%2&apos; for &apos;%1&apos; lasted %4 seconds. (%3)">
+    </event>
+    <event value="302" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000004" message="Started group &apos;%2&apos; for &apos;%1&apos;">
+    </event>
+    <event value="303" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000004" message="Finished group &apos;%2&apos; for &apos;%1&apos; lasted %4 seconds. (%3)">
+    </event>
+    <event value="304" version="0" opcode="0" channel="17" level="3" task="2" keywords="0x4000000000000004" message="During execution of &apos;%2&apos; for &apos;%1&apos; task &apos;%3&apos; failed. (Error: %4)">
+    </event>
+    <event value="305" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000004" message="Package &apos;%2&apos; was removed from &apos;%1&apos; first login group. (Reason: %3)">
+    </event>
+    <event value="306" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000004" message="For &apos;%1&apos; task &apos;%2&apos; was canceled.">
+    </event>
+    <event value="307" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000004" message="Finished activation of &apos;%2&apos; for &apos;%1&apos;. (Result: %3)">
+    </event>
+    <event value="308" version="0" opcode="0" channel="16" level="3" task="2" keywords="0x8000000000000004" message="Preview tile creation failed &apos;%2&apos; for %1. (Source: %3, Error: %4)">
+    </event>
+    <event value="309" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000004" message="Starting registry flush for &apos;%1&apos;.">
+    </event>
+    <event value="310" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000004" message="Finished registry flush for &apos;%1&apos;.">
+    </event>
+    <event value="311" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000004" message="Failed to flush registry key &apos;%2&apos; for &apos;%1&apos;. (Error: %3)">
+    </event>
+    <event value="312" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000004" message="Successfully created %3 preview tiles for %1. (Source: %2)">
+    </event>
+    <event value="313" version="0" opcode="0" channel="17" level="3" task="2" keywords="0x4000000000000004" message="&apos;%2&apos; is canceling &apos;%3&apos; for &apos;%1&apos; as a result of cancel.">
+    </event>
+    <event value="314" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000004" message="&apos;%2&apos; has selected &apos;%3&apos; for &apos;%1&apos; for the next task.">
+    </event>
+    <event value="315" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000004" message="&apos;%2&apos; was removed from &apos;%1&apos; first login group. (Reason: %3)">
+    </event>
+    <event value="316" version="0" opcode="0" channel="16" level="3" task="2" keywords="0x8000000000000004" message="Installing &apos;%2&apos; for &apos;%1&apos; has hit the in-activity timeout">
+    </event>
+    <event value="317" version="0" opcode="1" channel="17" level="4" task="23" keywords="0x4000000000000004" message="Starting pre-registration of &apos;%1&apos;">
+    </event>
+    <event value="318" version="0" opcode="2" channel="17" level="4" task="23" keywords="0x4000000000000004" message="Completed pre-registration of &apos;%1&apos;">
+    </event>
+    <event value="319" version="0" opcode="0" channel="16" level="2" task="23" keywords="0x8000000000000004" message="Pre-registration for &apos;%1&apos; failed. (Error: %2)">
+    </event>
+    <event value="320" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000400000000004" message="Failed to flush registry key &apos;%1&apos;. (Error: %2)">
+    </event>
+    <event value="1001" version="0" opcode="1" channel="17" level="4" task="3" keywords="0x4000000000000008" message="API Enter for &apos;%1&apos; (Process: %2)">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="17" level="4" task="3" keywords="0x4000000000000008" message="API Exit for &apos;%1&apos; (Process: %2 Result: %3)">
+    </event>
+    <event value="1003" version="0" opcode="1" channel="17" level="4" task="8" keywords="0x4000000000000008" message="API Enter for &apos;%1&apos; (Process: %2)">
+    </event>
+    <event value="1004" version="0" opcode="2" channel="17" level="4" task="8" keywords="0x4000000000000008" message="API Exit for &apos;%1&apos; (Process: %2 Result: %3)">
+    </event>
+    <event value="1005" version="0" opcode="1" channel="17" level="4" task="9" keywords="0x4000000000000008" message="API Enter for &apos;%1&apos; (Process: %2)">
+    </event>
+    <event value="1006" version="0" opcode="2" channel="17" level="4" task="9" keywords="0x4000000000000008" message="API Exit for &apos;%1&apos; (Process: %2 Result: %3)">
+    </event>
+    <event value="1009" version="0" opcode="1" channel="17" level="4" task="11" keywords="0x4000000000000008" message="API Enter for &apos;%1&apos; (Process: %2)">
+    </event>
+    <event value="1010" version="0" opcode="2" channel="17" level="4" task="11" keywords="0x4000000000000008" message="API Exit for &apos;%1&apos; (Process: %2 Result: %3)">
+    </event>
+    <event value="1013" version="0" opcode="1" channel="17" level="4" task="16" keywords="0x4000000000000008" message="API Enter for &apos;%1&apos; (Process: %2)">
+    </event>
+    <event value="1014" version="0" opcode="2" channel="17" level="4" task="16" keywords="0x4000000000000008" message="API Exit for &apos;%1&apos; (Process: %2 Result: %3)">
+    </event>
+    <event value="1015" version="0" opcode="1" channel="17" level="4" task="21" keywords="0x4000000000000008" message="API Enter for &apos;%1&apos; (Process: %2)">
+    </event>
+    <event value="1016" version="0" opcode="2" channel="17" level="4" task="21" keywords="0x4000000000000008" message="API Exit for &apos;%1&apos; (Process: %2 Result: %3)">
+    </event>
+    <event value="1017" version="0" opcode="1" channel="17" level="4" task="22" keywords="0x4000000000000008" message="API Enter for &apos;%1&apos; (Process: %2)">
+    </event>
+    <event value="1018" version="0" opcode="2" channel="17" level="4" task="22" keywords="0x4000000000000008" message="API Exit for &apos;%1&apos; (Process: %2 Result: %3)">
+    </event>
+    <event value="1019" version="0" opcode="1" channel="17" level="4" task="24" keywords="0x4000000000000008" message="API Enter for &apos;%1&apos; (Process: %2)">
+    </event>
+    <event value="1020" version="0" opcode="2" channel="17" level="4" task="24" keywords="0x4000000000000008" message="API Exit for &apos;%1&apos; (Process: %2 Result: %3)">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="4" task="26" keywords="0x8000000000000008" message="DisableInAuditMode registry value set to block API calls while in audit mode (audit mode: %1).">
+    </event>
+    <event value="2000" version="0" opcode="1" channel="18" level="4" task="4" keywords="0x2000000000000010" message="">
+    </event>
+    <event value="2001" version="0" opcode="2" channel="18" level="4" task="4" keywords="0x2000000000000010" message="">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="18" level="4" task="4" keywords="0x2000000000000010" message="">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="18" level="4" task="4" keywords="0x2000000000000010" message="">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="18" level="4" task="4" keywords="0x2000000000000010" message="">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="18" level="4" task="4" keywords="0x2000000000000010" message="">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="18" level="4" task="4" keywords="0x2000000000000010" message="">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="18" level="4" task="4" keywords="0x2000000000000010" message="">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="18" level="4" task="4" keywords="0x2000000000000010" message="">
+    </event>
+    <event value="2500" version="0" opcode="1" channel="18" level="4" task="15" keywords="0x2000000000000020" message="">
+    </event>
+    <event value="2501" version="0" opcode="2" channel="18" level="4" task="15" keywords="0x2000000000000020" message="">
+    </event>
+    <event value="2502" version="0" opcode="0" channel="18" level="4" task="15" keywords="0x2000000000000020" message="">
+    </event>
+    <event value="2503" version="0" opcode="0" channel="18" level="4" task="15" keywords="0x2000000000000020" message="">
+    </event>
+    <event value="2504" version="0" opcode="0" channel="17" level="4" task="15" keywords="0x4000000000000020" message="">
+    </event>
+    <event value="3000" version="0" opcode="1" channel="18" level="4" task="5" keywords="0x2001400000000004" message="">
+    </event>
+    <event value="3001" version="0" opcode="2" channel="18" level="4" task="5" keywords="0x2001400000000004" message="">
+    </event>
+    <event value="4000" version="0" opcode="0" channel="17" level="4" task="18" keywords="0x4000000000000040" message="">
+    </event>
+    <event value="4001" version="0" opcode="0" channel="17" level="4" task="19" keywords="0x4000000000000040" message="">
+    </event>
+    <event value="5000" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5001" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5002" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5003" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5004" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5005" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5006" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5007" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5008" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5009" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5010" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5011" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5012" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5013" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5014" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5015" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5016" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5017" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5018" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5019" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5020" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5021" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5022" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5023" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5024" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5025" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5026" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5027" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5028" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5029" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5030" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5031" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5032" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5033" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5034" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5035" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5036" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5037" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5038" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5039" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5040" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5041" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5042" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="5043" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000000100" message="">
+    </event>
+  </events>
+</provider>

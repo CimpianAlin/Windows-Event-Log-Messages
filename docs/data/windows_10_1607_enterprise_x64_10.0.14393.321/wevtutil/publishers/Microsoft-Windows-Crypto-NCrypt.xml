@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Crypto-NCrypt" guid="e8ed09dc-100c-45e2-9fc8-b53399ec1f70" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ncrypt.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\ncrypt.dll" messageFileName="C:\Windows\System32\ncrypt.dll" message="Microsoft-Windows-Crypto-NCrypt" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Crypto-NCrypt/Operational" id="16" flags="0" message="Microsoft-Windows-Crypto-NCrypt/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="OperationFailed" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Operation Failure">
+    </task>
+    <task name="ProviderOpenFailed" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Open Provider Failure">
+    </task>
+    <task name="KeyOpenFailed" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Open Key Failure">
+    </task>
+    <task name="KeyCreationFailed" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Key Creation Failure">
+    </task>
+    <task name="ProtectKeyFailed" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Operation Failure">
+    </task>
+    <task name="UnprotectKeyFailed" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Operation Failure">
+    </task>
+    <task name="ProtectSecretFailed" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Operation Failure">
+    </task>
+    <task name="UnprotectSecretFailed" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Operation Failure">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ETW_KEYWORD_NCRYPT_OPERATION" mask="1" message="NCrypt Operation">
+    </keyword>
+    <keyword name="ETW_KEYWORD_PROTECT_OPERATION" mask="2" message="Secret Protection">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000001" message="Cryptographic Operation failed.
+
+ Cryptographic Parameters:
+ 	OperationType:	%1
+ 	Provider Name:	%2
+ 	Key Name:	%3
+ 	Key Type:	%4
+ 	Algorithm Name:	%5
+ 
+Failure Information:
+ 	Return Code:	%6">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Open Provider operation failed.
+
+ Cryptographic Parameters:
+ 	Provider Name:	%1
+ Failure Information:
+ 	Return Code:	%3">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x8000000000000001" message="Open Key operation failed.
+
+ Cryptographic Parameters:
+ 	Provider Name:	%1
+ 	Key Name:	%2
+ Failure Information:
+ 	Return Code:	%3">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="2" task="4" keywords="0x8000000000000001" message="Create Key operation failed.
+
+ Cryptographic Parameters:
+ 	Provider Name:	%1
+ 	Key Name:	%2
+ 	Algorithm Name:	%3
+ 	Flags:		%4
+ Failure Information:
+  	Return Code:	%5">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="2" task="5" keywords="0x8000000000000002" message="Protect Key operation failed.
+
+ Cryptographic Parameters:
+ 	Protector Name:	%1
+ 	Protector Attributes:
+			%2
+ 	Flags:		%3
+ Failure Information:
+ 	Return Code:	%4">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="2" task="6" keywords="0x8000000000000002" message="Unprotect Key operation failed.
+
+ Cryptographic Parameters:
+ 	Protector Name:	%1
+ 	Recipient Type:	%2
+ 	Flags:		%3
+ Failure Information:
+ 	Return Code:	%4">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="2" task="7" keywords="0x8000000000000002" message="Protect Secret operation failed.
+
+ Cryptographic Parameters:
+ 	Flags:		%1
+ Failure Information:
+ 	Return Code:	%2">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="2" task="8" keywords="0x8000000000000002" message="Unprotect Secret operation failed.
+
+ Cryptographic Parameters:
+ 	Flags:		%1
+ Failure Information:
+ 	Return Code:	%2">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-URLMon" guid="245f975d-909d-49ed-b8f9-9a75691d6b6b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Explorer&amp;ProdVer=11.0.14393.0&amp;FileName=urlmon.dll&amp;FileVer=11.0.14393.0" resourceFileName="C:\Windows\system32\urlmon.dll" messageFileName="C:\Windows\system32\urlmon.dll" message="Microsoft-Windows-URLMon" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WinURLMon/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="URLMON_Queue_Msg" value="801" eventGUID="b0c2bdbb-2768-4c45-8430-f73a7e86eacc" message="">
+    </task>
+    <task name="URLMON_Process_Queued_Msg" value="802" eventGUID="0f06fd61-31f8-40d7-87cb-d2344e1b0a73" message="">
+    </task>
+    <task name="URLMON_CINet_Read" value="803" eventGUID="655a03af-7e2c-4a6e-aba5-dc76efda0fac" message="">
+    </task>
+    <task name="URLMON_CInet_Start" value="804" eventGUID="ad27e550-3d7c-42bc-9da3-51aa9554d710" message="">
+    </task>
+    <task name="URLMON_CINet_Abort" value="805" eventGUID="986a55b3-7c0c-4ad9-85ce-3327fadfe579" message="">
+    </task>
+    <task name="URLMON_CINet_Binding" value="806" eventGUID="5f1cb2b0-d4e7-4e2e-8ca2-1944850753f0" message="">
+    </task>
+    <task name="URLMON_CINet_Write" value="807" eventGUID="7e39f114-7572-4fc6-a52d-1bc033b9088c" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="URLMON_KEYWORD" mask="1" message="Flagged on all URLMon IE events">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="801" version="0" opcode="0" channel="16" level="4" task="801" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="802" version="0" opcode="0" channel="16" level="4" task="802" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="803" version="0" opcode="0" channel="16" level="4" task="803" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="804" version="0" opcode="0" channel="16" level="4" task="803" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="805" version="0" opcode="0" channel="16" level="4" task="804" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="806" version="0" opcode="0" channel="16" level="4" task="805" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="807" version="0" opcode="0" channel="16" level="4" task="806" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="808" version="0" opcode="0" channel="16" level="4" task="807" keywords="0x8000000000000001" message="">
+    </event>
+  </events>
+</provider>

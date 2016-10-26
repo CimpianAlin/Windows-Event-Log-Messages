@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-VSmb" guid="7b0ea079-e3bc-424a-b2f0-e3d8478d204b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=vmsmb.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\vmsmb.dll" messageFileName="C:\Windows\system32\vmsmb.dll" message="Microsoft-Windows-Hyper-V-VSmb" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Admin" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Worker-Analytic" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+  </events>
+</provider>

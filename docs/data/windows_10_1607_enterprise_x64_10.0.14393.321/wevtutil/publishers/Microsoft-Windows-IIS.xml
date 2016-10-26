@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IIS" guid="de4649c9-15e8-4fea-9d85-1cdda520c334" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\inetsrv\iisetw.dll" parameterFileName="C:\Windows\system32\inetsrv\iisetw.dll" messageFileName="C:\Windows\system32\inetsrv\iisetw.dll" message="Microsoft-Windows-IIS" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IIS/Diagnostic" id="16" flags="0" message="IIS Diagnostics Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:LogAlways" value="0" message="Log Always">
+    </level>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="UseUrlFilter" mask="1" message="Allow tracing only selected requests">
+    </keyword>
+    <keyword name="IISAuthentication" mask="2" message="IIS authentication events">
+    </keyword>
+    <keyword name="IISSecurity" mask="4" message="IIS security events">
+    </keyword>
+    <keyword name="IISFilter" mask="8" message="IIS filter events">
+    </keyword>
+    <keyword name="IISStaticFile" mask="10" message="IIS static file events">
+    </keyword>
+    <keyword name="IISCGI" mask="20" message="IIS CGI events">
+    </keyword>
+    <keyword name="IISCompression" mask="40" message="IIS compression events">
+    </keyword>
+    <keyword name="IISCache" mask="80" message="IIS cache events">
+    </keyword>
+    <keyword name="IISRequestNotification" mask="100" message="IIS request notifications events">
+    </keyword>
+    <keyword name="IISModule" mask="200" message="IIS module events">
+    </keyword>
+    <keyword name="IISFastCGI" mask="1000" message="IIS FastCGI events">
+    </keyword>
+    <keyword name="IISISAPI" mask="2000" message="IIS ISAPI events">
+    </keyword>
+    <keyword name="IISWebSocket" mask="4000" message="IIS WebSocket events">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_REQUEST_START: SiteId=&apos;%2&apos;,AppPoolId=&apos;%3&apos;,ConnId=&apos;%4&apos;,RawConnId=&apos;%5&apos;,RequestURL=&apos;%6&apos;,RequestVerb=&apos;%7&apos;">
+    </event>
+    <event value="2" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_REQUEST_END: BytesSent=&apos;%2&apos;,BytesReceived=&apos;%3&apos;,HttpStatus=&apos;%4&apos;,HttpSubStatus=&apos;%5&apos;">
+    </event>
+    <event value="10" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_STATIC_FILE_HANDLER: FileName=&apos;%2&apos;">
+    </event>
+    <event value="11" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_CGI_HANDLER">
+    </event>
+    <event value="12" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_ISAPI_HANDLER">
+    </event>
+    <event value="13" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_OOP_ISAPI_HANDLER: ProcessId=&apos;%2&apos;,TotalReqs=&apos;%3&apos;,CurrentReqs=&apos;%4&apos;">
+    </event>
+    <event value="14" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_REDIRECTION_HANDLER: RedirectedURL=&apos;%2&apos;">
+    </event>
+    <event value="15" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_DAV_HANDLER: FileName=&apos;%2&apos;">
+    </event>
+    <event value="16" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_OPTIONS_HANDLER">
+    </event>
+    <event value="17" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_TRACE_HANDLER">
+    </event>
+    <event value="30" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GENERAL_GET_URL_METADATA: PhysicalPath=&apos;%2&apos;,AccessPerms=&apos;%3&apos;">
+    </event>
+    <event value="31" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_CHILD_REQUEST_START: SiteId=&apos;%2&apos;,RequestURL=&apos;%3&apos;,RequestVerb=&apos;%4&apos;,RecursiveLevel=&apos;%5&apos;">
+    </event>
+    <event value="32" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_CHILD_REQUEST_END: BytesSent=&apos;%2&apos;,HttpStatus=&apos;%3&apos;,HttpSubStatus=&apos;%4&apos;">
+    </event>
+    <event value="33" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_SEND_CUSTOM_ERROR: HttpStatus=&apos;%2&apos;,HttpSubStatus=&apos;%3&apos;,FileNameOrURL=&apos;%4&apos;">
+    </event>
+    <event value="34" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="GENERAL_MAP_HANDLER">
+    </event>
+    <event value="35" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GENERAL_FLUSH_RESPONSE_START">
+    </event>
+    <event value="36" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GENERAL_FLUSH_RESPONSE_END: BytesSent=&apos;%2&apos;,ErrorCode=&apos;%3&apos;">
+    </event>
+    <event value="37" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GENERAL_READ_ENTITY_START">
+    </event>
+    <event value="38" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GENERAL_READ_ENTITY_END: BytesReceived=&apos;%2&apos;,ErrorCode=&apos;%3&apos;">
+    </event>
+    <event value="39" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="FILE_CHANGE_NOTIFICATION: FilePath=&apos;%2&apos;">
+    </event>
+    <event value="40" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="CONFIG_CHANGE_NOTIFICATION: ConfigPath=&apos;%2&apos;">
+    </event>
+    <event value="41" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="VIRTUAL_MODULE_UNRESOLVED: Name=&apos;%2&apos;,Type=&apos;%3&apos;">
+    </event>
+    <event value="42" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="URL_CHANGED: OldUrl=&apos;%2&apos;,NewUrl=&apos;%3&apos;">
+    </event>
+    <event value="43" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="HANDLER_CHANGED: OldHandlerName=&apos;%2&apos;,NewHandlerName=&apos;%3&apos;,NewHandlerModules=&apos;%4&apos;,NewHandlerScriptProcessor=&apos;%5&apos;,NewHandlerType=&apos;%6&apos;">
+    </event>
+    <event value="44" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="USER_SET: AuthType=&apos;%2&apos;,UserName=&apos;%3&apos;,SupportsIsInRole=&apos;%4&apos;">
+    </event>
+    <event value="45" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="MODULE_PRECONDITION_NOT_MATCH: Name=&apos;%2&apos;,Precondition=&apos;%3&apos;">
+    </event>
+    <event value="46" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="HANDLER_PRECONDITION_NOT_MATCH: Name=&apos;%2&apos;,Precondition=&apos;%3&apos;">
+    </event>
+    <event value="47" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GENERAL_RESPONSE_HEADERS: Headers=&apos;%2&apos;">
+    </event>
+    <event value="48" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="GENERAL_RESPONSE_ENTITY_FILE: FileName=&apos;%2&apos;,Offset=&apos;%3&apos;,Size=&apos;%4&apos;">
+    </event>
+    <event value="49" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="GENERAL_RESPONSE_ENTITY_BUFFER: Buffer=&apos;%2&apos;">
+    </event>
+    <event value="50" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GENERAL_REQUEST_HEADERS: Headers=&apos;%2&apos;">
+    </event>
+    <event value="51" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="GENERAL_REQUEST_ENTITY: Buffer=&apos;%2&apos;">
+    </event>
+    <event value="52" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="GENERAL_NOT_SEND_CUSTOM_ERROR: Reason=&apos;%2&apos;">
+    </event>
+    <event value="53" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="GENERAL_SET_REQUEST_HEADER: HeaderName=&apos;%2&apos;,HeaderValue=&apos;%3&apos;,Replace=&apos;%4&apos;">
+    </event>
+    <event value="54" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="GENERAL_MODULE_FACTORY_FAILED: ModuleName=&apos;%2&apos;,ErrorCode=&apos;%3&apos;">
+    </event>
+    <event value="55" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GENERAL_ENDPOINT_INFORMATION: RemoteAddress=&apos;%2&apos;,RemotePort=&apos;%3&apos;,LocalAddress=&apos;%4&apos;,LocalPort=&apos;%5&apos;">
+    </event>
+    <event value="56" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GENERAL_SET_RESPONSE_HEADER: HeaderName=&apos;%2&apos;,HeaderValue=&apos;%3&apos;,Replace=&apos;%4&apos;">
+    </event>
+    <event value="522" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="AUTH_START: AuthTypeSupported=&apos;%2&apos;">
+    </event>
+    <event value="523" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="AUTH_SUCCEEDED: AuthType=&apos;%2&apos;,NTLMUsed=&apos;%3&apos;,RemoteUserName=&apos;%4&apos;,AuthUserName=&apos;%5&apos;,TokenImpersonationLevel=&apos;%6&apos;">
+    </event>
+    <event value="524" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_TYPE_NOT_SUPPORTED">
+    </event>
+    <event value="525" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000002" message="AUTH_INVALID_ANON_ACCOUNT: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="526" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_PASSWD_CHANGE_NEEDED">
+    </event>
+    <event value="527" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_PASSWD_CHANGE_DISABLED">
+    </event>
+    <event value="528" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_BAD_BASIC_HEADER">
+    </event>
+    <event value="529" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_BASIC_LOGON_FAILED: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="530" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_WDIGEST_LOGON_FAILED: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="531" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_IISDIGEST_LOGON_FAILED: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="532" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_PASSPORT_LOGON_FAILED: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="533" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_SSPI_LOGON_FAILED: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="534" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_NTLM_NULL_SESSION">
+    </event>
+    <event value="535" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="AUTH_SSPI_CONTINUE_NEEDED: PackageName=&apos;%2&apos;">
+    </event>
+    <event value="536" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000002" message="AUTH_ANON_PASSWD_CHANGE_NEEDED">
+    </event>
+    <event value="539" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="AUTH_REQUEST_AUTH_TYPE: RequestAuthType=&apos;%2&apos;">
+    </event>
+    <event value="540" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="AUTH_END">
+    </event>
+    <event value="567" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="AUTH_KERBEROS_FAILED: KMUsed=&apos;%2&apos;,APUserName=&apos;%3&apos;,SPNName=&apos;%4&apos;,ADConfigIsOK=&apos;%5&apos;,KerberosInfo=&apos;%6&apos;">
+    </event>
+    <event value="778" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000004" message="SECURITY_ILLEGAL_SHORT_FILENAME: FileName=&apos;%2&apos;">
+    </event>
+    <event value="779" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000004" message="SECURITY_REJECTED_IP: IPAddress=&apos;%2&apos;">
+    </event>
+    <event value="780" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000004" message="SECURITY_REJECTED_HOSTNAME: HostName=&apos;%2&apos;">
+    </event>
+    <event value="781" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000004" message="SECURITY_REJECTED_REQUIRE_SSL_128">
+    </event>
+    <event value="782" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000004" message="SECURITY_FILE_ACCESS_DENIED: FileName=&apos;%2&apos;,AccountName=&apos;%3&apos;,DomainName=&apos;%4&apos;">
+    </event>
+    <event value="783" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000004" message="SECURITY_DENIED_BY_MIMEMAP: FileName=&apos;%2&apos;">
+    </event>
+    <event value="784" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000004" message="SECURITY_DENIED_BY_ISAPI_RESTRICTION: ImageName=&apos;%2&apos;">
+    </event>
+    <event value="785" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000004" message="SECURITY_DENIED_BY_CGI_RESTRICTION: ImageName=&apos;%2&apos;">
+    </event>
+    <event value="786" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000004" message="SECURITY_DENIED_BY_ACCESS_FLAGS: CurrentFlags=&apos;%2&apos;,NeededFlags=&apos;%3&apos;">
+    </event>
+    <event value="1025" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000008" message="FILTER_START: FilterName=&apos;%2&apos;">
+    </event>
+    <event value="1026" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000008" message="FILTER_END: NotificationStatus=&apos;%2&apos;">
+    </event>
+    <event value="1036" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000008" message="FILTER_ERROR: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="1037" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_PREPROC_HEADERS_START">
+    </event>
+    <event value="1038" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_PREPROC_HEADERS_END">
+    </event>
+    <event value="1039" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_URL_MAP_START: OrigURL=&apos;%2&apos;,OrigPath=&apos;%3&apos;,AccessPerms=&apos;%4&apos;,MatchingPath=&apos;%5&apos;,MatchingURL=&apos;%6&apos;,ScriptMapEntry=&apos;%7&apos;">
+    </event>
+    <event value="1040" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_URL_MAP_END: FinalURL=&apos;%2&apos;,FinalPath=&apos;%3&apos;,AccessPerms=&apos;%4&apos;,MatchingPath=&apos;%5&apos;,MatchingURL=&apos;%6&apos;,ScriptMapEntry=&apos;%7&apos;">
+    </event>
+    <event value="1041" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_AUTHENTICATION_START: OrigUserName=&apos;%2&apos;">
+    </event>
+    <event value="1042" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_AUTHENTICATION_END: FinalUserName=&apos;%2&apos;,PasswordChanged=&apos;%3&apos;">
+    </event>
+    <event value="1043" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_AUTH_COMPLETE_START">
+    </event>
+    <event value="1044" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_AUTH_COMPLETE_END">
+    </event>
+    <event value="1045" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_SEND_RESPONSE_START: HttpStatus=&apos;%2&apos;">
+    </event>
+    <event value="1046" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_SEND_RESPONSE_END">
+    </event>
+    <event value="1047" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_END_OF_REQUEST_START">
+    </event>
+    <event value="1048" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_END_OF_REQUEST_END">
+    </event>
+    <event value="1049" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_LOG_START: OrigClientHostName=&apos;%2&apos;,OrigClientUserName=&apos;%3&apos;,OrigServerName=&apos;%4&apos;,OrigOperation=&apos;%5&apos;,OrigTarget=&apos;%6&apos;,OrigParameters=&apos;%7&apos;,OrigHttpStatus=&apos;%8&apos;,OrigWin32Status=&apos;%9&apos;">
+    </event>
+    <event value="1050" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_LOG_END: FinalClientHostName=&apos;%2&apos;,FinalClientUserName=&apos;%3&apos;,FinalServerName=&apos;%4&apos;,FinalOperation=&apos;%5&apos;,FinalTarget=&apos;%6&apos;,FinalParameters=&apos;%7&apos;,FinalHttpStatus=&apos;%8&apos;,FinalWin32Status=&apos;%9&apos;">
+    </event>
+    <event value="1051" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_SEND_RAW_DATA_START">
+    </event>
+    <event value="1052" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_SEND_RAW_DATA_END">
+    </event>
+    <event value="1053" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_ACCESS_DENIED_START: RequestedURL=&apos;%2&apos;,PhysicalPath=&apos;%3&apos;,DenialReason=&apos;%4&apos;">
+    </event>
+    <event value="1054" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_ACCESS_DENIED_END">
+    </event>
+    <event value="1055" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_SET_REQ_HEADER: HeaderName=&apos;%2&apos;,HeaderValue=&apos;%3&apos;">
+    </event>
+    <event value="1056" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_ADD_REQ_HEADER: HeaderName=&apos;%2&apos;,HeaderValue=&apos;%3&apos;">
+    </event>
+    <event value="1057" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_SET_RESP_HEADER: HeaderName=&apos;%2&apos;,HeaderValue=&apos;%3&apos;">
+    </event>
+    <event value="1058" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="FILTER_ADD_RESP_HEADER: HeaderName=&apos;%2&apos;,HeaderValue=&apos;%3&apos;">
+    </event>
+    <event value="1537" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000020" message="CGI_START">
+    </event>
+    <event value="1538" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000020" message="CGI_END">
+    </event>
+    <event value="1539" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CGI_LAUNCH: CommandLine=&apos;%2&apos;,ErrorCode=&apos;%3&apos;,ProcessId=&apos;%4&apos;">
+    </event>
+    <event value="1540" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CGI_TIMEOUT: Headers=&apos;%2&apos;">
+    </event>
+    <event value="1541" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CGI_PREMATURE_TERMINATION: Headers=&apos;%2&apos;">
+    </event>
+    <event value="1542" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CGI_REQUEST_ENTITY_SENT">
+    </event>
+    <event value="1543" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000020" message="CGI_HEADERS_RECEIVED">
+    </event>
+    <event value="1793" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="STATIC_COMPRESSION_START">
+    </event>
+    <event value="1794" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="STATIC_COMPRESSION_SUCCESS">
+    </event>
+    <event value="1795" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="STATIC_COMPRESSION_NOT_SUCCESS: Reason=&apos;%2&apos;">
+    </event>
+    <event value="1796" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="STATIC_COMPRESSION_CREATE_START: OriginalFileName=&apos;%2&apos;">
+    </event>
+    <event value="1797" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="STATIC_COMPRESSION_CREATE_END: ErrorCode=&apos;%2&apos;,OriginalFileName=&apos;%3&apos;,OriginalFileSize=&apos;%4&apos;,CompressedFileName=&apos;%5&apos;,CompressedFileSize=&apos;%6&apos;">
+    </event>
+    <event value="1798" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="DYNAMIC_COMPRESSION_START">
+    </event>
+    <event value="1799" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="DYNAMIC_COMPRESSION_SUCCESS">
+    </event>
+    <event value="1800" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="DYNAMIC_COMPRESSION_NOT_SUCCESS: Reason=&apos;%2&apos;">
+    </event>
+    <event value="1801" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000040" message="DYNAMIC_COMPRESSION_DO: OriginalSize=&apos;%2&apos;,CompressedSize=&apos;%3&apos;">
+    </event>
+    <event value="1802" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="DYNAMIC_COMPRESSION_END">
+    </event>
+    <event value="1803" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="STATIC_COMPRESSION_END">
+    </event>
+    <event value="2058" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="FILE_CACHE_ACCESS_START: FileName=&apos;%2&apos;,UserName=&apos;%3&apos;,DomainName=&apos;%4&apos;">
+    </event>
+    <event value="2059" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="FILE_CACHE_ACCESS_END: Successful=&apos;%2&apos;,FileFromCache=&apos;%3&apos;,FileAddedToCache=&apos;%4&apos;,FileDirmoned=&apos;%5&apos;,LastModCheckErrorIgnored=&apos;%6&apos;,ErrorCode=&apos;%7&apos;,LastModifiedTime=&apos;%8&apos;">
+    </event>
+    <event value="2060" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="URL_CACHE_ACCESS_START: RequestURL=&apos;%2&apos;">
+    </event>
+    <event value="2061" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="URL_CACHE_ACCESS_END: PhysicalPath=&apos;%2&apos;,URLInfoFromCache=&apos;%3&apos;,URLInfoAddedToCache=&apos;%4&apos;,ErrorCode=&apos;%5&apos;">
+    </event>
+    <event value="2062" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="HTTPSYS_CACHEABLE: HttpsysCacheable=&apos;%2&apos;,Reason=&apos;%3&apos;,CachePolicy=&apos;%4&apos;,TimeToLive=&apos;%5&apos;">
+    </event>
+    <event value="2063" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="OUTPUT_CACHE_LOOKUP_START">
+    </event>
+    <event value="2064" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="OUTPUT_CACHE_LOOKUP_END: Result=&apos;%2&apos;">
+    </event>
+    <event value="2065" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="OUTPUT_CACHE_UPDATE_START: CachePolicy=&apos;%2&apos;,TimeToLive=&apos;%3&apos;">
+    </event>
+    <event value="2066" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="OUTPUT_CACHE_UPDATE_END: Result=&apos;%2&apos;">
+    </event>
+    <event value="2067" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="OUTPUT_CACHE_DISABLED">
+    </event>
+    <event value="2068" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000080" message="FILE_CACHE_CREATE_FILE: FileName=&apos;%2&apos;,UserName=&apos;%3&apos;,DomainName=&apos;%4&apos;">
+    </event>
+    <event value="2305" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000100" message="NOTIFY_MODULE_START: ModuleName=&apos;%2&apos;,Notification=&apos;%3&apos;,fIsPostNotification=&apos;%4&apos;">
+    </event>
+    <event value="2306" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000100" message="NOTIFY_MODULE_END: ModuleName=&apos;%2&apos;,Notification=&apos;%3&apos;,fIsPostNotificationEvent=&apos;%4&apos;,NotificationStatus=&apos;%5&apos;">
+    </event>
+    <event value="2307" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000100" message="NOTIFY_MODULE_COMPLETION: ModuleName=&apos;%2&apos;,Notification=&apos;%3&apos;,fIsPostNotificationEvent=&apos;%4&apos;,CompletionBytes=&apos;%5&apos;,ErrorCode=&apos;%6&apos;">
+    </event>
+    <event value="2308" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000100" message="PRE_BEGIN_REQUEST_START: ModuleName=&apos;%2&apos;">
+    </event>
+    <event value="2309" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000100" message="PRE_BEGIN_REQUEST_END: ModuleName=&apos;%2&apos;,NotificationStatus=&apos;%3&apos;">
+    </event>
+    <event value="2319" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000100" message="REQUEST_PROCESSING_ERROR: ModuleName=&apos;%2&apos;,Notification=&apos;%3&apos;,ErrorCode=&apos;%4&apos;">
+    </event>
+    <event value="2320" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000100" message="MODULE_SET_RESPONSE_ERROR_STATUS: ModuleName=&apos;%2&apos;,Notification=&apos;%3&apos;,HttpStatus=&apos;%4&apos;,HttpReason=&apos;%5&apos;,HttpSubStatus=&apos;%6&apos;,ErrorCode=&apos;%7&apos;,ConfigExceptionInfo=&apos;%8&apos;">
+    </event>
+    <event value="2321" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000100" message="MODULE_SET_RESPONSE_SUCCESS_STATUS: ModuleName=&apos;%2&apos;,Notification=&apos;%3&apos;,HttpStatus=&apos;%4&apos;,HttpReason=&apos;%5&apos;">
+    </event>
+    <event value="2322" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000100" message="SET_RESPONSE_ERROR_DESCRIPTION: ErrorDescription=&apos;%2&apos;">
+    </event>
+    <event value="2561" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000200" message="MODULE_START: ModuleName=&apos;%2&apos;,Data1=&apos;%3&apos;,Data2=&apos;%4&apos;,ErrorCode=&apos;%5&apos;">
+    </event>
+    <event value="2562" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000200" message="MODULE_END: ModuleName=&apos;%2&apos;,Data1=&apos;%3&apos;,Data2=&apos;%4&apos;,ErrorCode=&apos;%5&apos;">
+    </event>
+    <event value="2563" version="1" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000200" message="MODULE_CRITICAL_ERROR: ModuleName=&apos;%2&apos;,Data1=&apos;%3&apos;,Data2=&apos;%4&apos;,ErrorCode=&apos;%5&apos;">
+    </event>
+    <event value="2564" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000200" message="MODULE_ERROR: ModuleName=&apos;%2&apos;,Data1=&apos;%3&apos;,Data2=&apos;%4&apos;,ErrorCode=&apos;%5&apos;">
+    </event>
+    <event value="2565" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000200" message="MODULE_WARNING: ModuleName=&apos;%2&apos;,Data1=&apos;%3&apos;,Data2=&apos;%4&apos;,ErrorCode=&apos;%5&apos;">
+    </event>
+    <event value="2566" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000200" message="MODULE_INFORMATION: ModuleName=&apos;%2&apos;,Data1=&apos;%3&apos;,Data2=&apos;%4&apos;,ErrorCode=&apos;%5&apos;">
+    </event>
+    <event value="2567" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000200" message="MODULE_VERBOSE: ModuleName=&apos;%2&apos;,Data1=&apos;%3&apos;,Data2=&apos;%4&apos;,ErrorCode=&apos;%5&apos;">
+    </event>
+    <event value="3329" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_ACTIVITY_TIMEOUT">
+    </event>
+    <event value="3330" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_REQUEST_TIMEOUT">
+    </event>
+    <event value="3331" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_UNEXPECTED_EXIT">
+    </event>
+    <event value="3332" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_RAPID_FAILURE_PROTECTION">
+    </event>
+    <event value="3333" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_PATH_NOT_FOUND">
+    </event>
+    <event value="3334" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_SCRIPT_PROCESSOR_MISSING">
+    </event>
+    <event value="3335" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_ADD_JOBOBJECT_FAIL">
+    </event>
+    <event value="3336" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_APPLICATION_MANAGER_SHUTDOWN">
+    </event>
+    <event value="3337" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_QUEUE_FULL">
+    </event>
+    <event value="3338" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_UNKNOWN_ERROR: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="3339" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000001000" message="FASTCGI_RESPONSE_WRITTEN">
+    </event>
+    <event value="3340" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000001000" message="FASTCGI_WAITING_FOR_RESPONSE">
+    </event>
+    <event value="3341" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000001000" message="FASTCGI_STDERR_TRACE_ERROR: Message=&apos;%2&apos;">
+    </event>
+    <event value="3342" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000001000" message="FASTCGI_STDERR_TRACE_WARNING: Message=&apos;%2&apos;">
+    </event>
+    <event value="3343" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000001000" message="FASTCGI_STDERR_TRACE_INFO: Message=&apos;%2&apos;">
+    </event>
+    <event value="3344" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000001000" message="FASTCGI_QUEUE_REQUEST: PositionInQueue=&apos;%2&apos;,MaxInstances=&apos;%3&apos;">
+    </event>
+    <event value="3345" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000001000" message="FASTCGI_ASSIGN_PROCESS: CommandLine=&apos;%2&apos;,IsNewProcess=&apos;%3&apos;,ProcessId=&apos;%4&apos;,RequestNumber=&apos;%5&apos;">
+    </event>
+    <event value="3346" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000001000" message="FASTCGI_START">
+    </event>
+    <event value="3347" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000001000" message="FASTCGI_END">
+    </event>
+    <event value="3585" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000002000" message="ISAPI_START">
+    </event>
+    <event value="3586" version="1" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000002000" message="ISAPI_END">
+    </event>
+    <event value="3841" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000004000" message="WEBSOCKET_INITIALIZE_FAILED: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="3842" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_HANDSHAKE_START">
+    </event>
+    <event value="3843" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_HANDSHAKE_SUCCESS">
+    </event>
+    <event value="3844" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000004000" message="WEBSOCKET_HANDSHAKE_NOT_SUCCESS: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="3845" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_READ_FRAGMENT_START: BufferSize=&apos;%2&apos;">
+    </event>
+    <event value="3846" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_READ_FRAGMENT_END_PENDING">
+    </event>
+    <event value="3847" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_READ_FRAGMENT_END_SUCCESS: BytesReceived=&apos;%2&apos;">
+    </event>
+    <event value="3848" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000004000" message="WEBSOCKET_READ_FRAGMENT_END_NOT_SUCCESS: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="3849" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_WRITE_FRAGMENT_START: DataType=&apos;%2&apos;,DataSize=&apos;%3&apos;">
+    </event>
+    <event value="3850" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_WRITE_FRAGMENT_END_PENDING">
+    </event>
+    <event value="3851" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_WRITE_FRAGMENT_END_SUCCESS: BytesSent=&apos;%2&apos;">
+    </event>
+    <event value="3852" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000004000" message="WEBSOCKET_WRITE_FRAGMENT_END_NOT_SUCCESS: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="3853" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000004000" message="WEBSOCKET_APPLICATION_CLOSE_CONNECTION">
+    </event>
+    <event value="3854" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000004000" message="WEBSOCKET_MODULE_CLOSE_CONNECTION: Reason=&apos;%2&apos;">
+    </event>
+    <event value="3855" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000004000" message="WEBSOCKET_READ_IO_NOT_SUCCESS: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="3856" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000004000" message="WEBSOCKET_WRITE_IO_NOT_SUCCESS: ErrorCode=&apos;%2&apos;">
+    </event>
+    <event value="3857" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_RECEIVED_CLOSE: Status=&apos;%2&apos;,Reason=&apos;%3&apos;">
+    </event>
+    <event value="3858" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_SEND_CLOSE_START: Status=&apos;%2&apos;,Reason=&apos;%3&apos;">
+    </event>
+    <event value="3859" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000004000" message="WEBSOCKET_SEND_CLOSE_END_SUCCESS">
+    </event>
+    <event value="3860" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000004000" message="WEBSOCKET_SEND_CLOSE_END_NOT_SUCCESS: ErrorCode=&apos;%2&apos;">
+    </event>
+  </events>
+</provider>

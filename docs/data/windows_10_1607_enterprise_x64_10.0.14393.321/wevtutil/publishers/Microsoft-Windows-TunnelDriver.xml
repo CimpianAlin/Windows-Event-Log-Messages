@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-TunnelDriver" guid="4edbe902-9ed3-4cf0-93e8-b8b5fa920299" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=tunnel.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\tunnel.sys" parameterFileName="C:\Windows\system32\drivers\tunnel.sys" messageFileName="C:\Windows\system32\drivers\tunnel.sys" message="Microsoft-Windows-Tunnel" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-TunnelDriver" id="16" flags="0" message="Tunnel Driver Etw Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel Driver of type %1 successfully initialized with index %2.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel Driver of type %1 could not initialize.
+ Windows Status Code %2, Tunnel Status Code %3.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel Driver Load: %1. Status %2">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel Updated flag for Interface with index %1, interface forwarding is%2set, weakhostreceive is%3set.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel received packet with incomplete inner IP header">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Could not find tunnel interface for packet.">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Packet filter on tunnel interface %1 is off. Dropping Packet.">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Packet failed integrity check on interface type %1 with index %2.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Non IPv6 Packet received on interface %1.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Could not find tunnel interface for truncated ICMP message.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Could not find the source of the ICMP message on tunnel interface %1.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Failed to copy Buffer into MDL while generating ICMPv6 message on tunnel interface %1.">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Completing the pause for tunnel interface %1.">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Completing power notification for tunnel interface %1.">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel interface %1 has media status set to %2.">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel interface %1 %3 could not be read.
+NDIS returned status %2.">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel interface %1 has unknown type %2.">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel interface of type %1 with index %2 has been %3.">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Teredo Tunnel offload %1 flow entry freed.">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Teredo WFP receive path worker has NULL clone list.">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Skipped offload flow creation for non-Teredo address pair.
+Local %2 Remote %3.">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Teredo Wfp created IPv4 flow with following parameters.
+LocalV4:%1 RemoteV4:%2 
+LocalPort:%3 RemotePort:%4.">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Teredo Wfp registration occured with status %1.">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Teredo Wfp created V6 flow with status %6 following parameters.
+LocalV4:%2 RemoteV4:%3 
+LocalV6:%4 RemoteV6:%5.">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel type %1 with index %2 has IPv4 address %3 now %4 associated with physical interface with index %5.">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel type %1 offloaded %2 NBLs, Could not offload %3 NBLs">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Tunnel Type %1 with index %2 is in an invalid device state such as not opened or being closed.
+%3 NBLs could not be sent.">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Teredo tunnel callout wasn&apos;t allowed to modify a packet. PID: %1. FilterID: %2. Flow handle %3.">
+    </event>
+  </events>
+</provider>

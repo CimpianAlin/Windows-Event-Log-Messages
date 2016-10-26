@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Firewall" guid="e595f735-b42a-494b-afcd-b68666945cd3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=mpssvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\mpssvc.dll" messageFileName="C:\Windows\System32\mpssvc.dll" message="Microsoft-Windows-Firewall" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="6400" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="An attempt to programmatically disable the Windows Firewall using a call to INetFwProfile.FirewallEnabled(FALSE) interface was rejected because this API is not supported on Windows Vista. This has most likely occurred due to an application which is incompatible with Windows Vista. Please contact the application&apos;s vendor to make sure you have a Windows Vista compatible application version.
+
+Error Code:		E_NOTIMPL
+Caller Process Name:	%1
+Process Id:		%2
+Publisher:		%3">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Sdstor" guid="afe654eb-0a83-4eb4-948f-d4510ec39c30" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=sdstor.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\sdstor.sys" messageFileName="C:\Windows\system32\drivers\sdstor.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Sdstor/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="task_io" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Io">
+    </task>
+    <task name="Task_PackedCommand" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Packed Command">
+    </task>
+    <task name="Task_HPI" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="High Priority Interrupt">
+    </task>
+    <task name="Task_Flush" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Flush">
+    </task>
+    <task name="Task_Discard" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Discard">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Request servicing time taken by SD stack.">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Packed Command Read Received.
+Total Count: %1
+Number of Packed Irps: %2">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Packed Command Write Received.
+Total Count: %1
+Number of Packed Irps: %2">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="HPI Timer Queued">
+    </event>
+    <event value="104" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="HPI Irp Sent">
+    </event>
+    <event value="105" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="HPI Irp Completed (0x%1)">
+    </event>
+    <event value="106" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Flush received">
+    </event>
+    <event value="107" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="Discard received (LBA %1 Length %2)">
+    </event>
+  </events>
+</provider>

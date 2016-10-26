@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Telephony-PhoneProviders" guid="1db8dad0-7ca6-4f18-b357-43bfdd8c9806" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=PhoneProviders.dll&amp;FileVer=10.0.14393.0" resourceFileName="PhoneProviders.dll" messageFileName="PhoneProviders.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="NumberAvailable" value="720902" message="">
+    </opcode>
+    <opcode name="Display" value="786438" message="">
+    </opcode>
+    <opcode name="CallTimerCancelled" value="2031646" message="">
+    </opcode>
+    <opcode name="CallTimerFired" value="2097182" message="">
+    </opcode>
+    <opcode name="CallTimerProcessed" value="2162718" message="">
+    </opcode>
+    <opcode name="CallTimerFiredCancelled" value="2228254" message="">
+    </opcode>
+    <opcode name="HeuristicsReset" value="2359331" message="">
+    </opcode>
+    <opcode name="HeuristicsShutdown" value="2424867" message="">
+    </opcode>
+    <opcode name="HeuristicsAbort" value="2490403" message="">
+    </opcode>
+    <opcode name="TurningOn" value="2621479" message="">
+    </opcode>
+    <opcode name="TurningOff" value="2687015" message="">
+    </opcode>
+    <opcode name="Reset" value="2752551" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="StartCall" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EndCall" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AnswerCall" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IgnoreCall" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CallerId" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IncomingCall" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlayRing" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SwapCalls" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mute" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SpeakerPhone" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShellSpeaker" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Bluetooth" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BluetoothIoctl" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AssistedDial" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CallHistoryLaunch" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlayDTMF" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlayEventSound" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StopEventSound" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CallWaitingTimer" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CdmaHeuristicsState" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CellBroadcastListenerState" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="Debug" mask="4" message="">
+    </keyword>
+    <keyword name="PhoneDefault" mask="8" message="">
+    </keyword>
+    <keyword name="CallManager" mask="10" message="">
+    </keyword>
+    <keyword name="GSM" mask="20" message="">
+    </keyword>
+    <keyword name="CDMA" mask="40" message="">
+    </keyword>
+    <keyword name="VVM" mask="80" message="">
+    </keyword>
+    <keyword name="MISC" mask="100" message="">
+    </keyword>
+    <keyword name="CellularLine" mask="200" message="">
+    </keyword>
+    <keyword name="VoipLine" mask="400" message="">
+    </keyword>
+    <keyword name="CellularFactory" mask="800" message="">
+    </keyword>
+    <keyword name="SupSvcs" mask="2000" message="">
+    </keyword>
+    <keyword name="VoipPacman" mask="4000" message="">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="[ERROR] originated HRESULT=%1 [%2 @ %3]">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="[ERROR] propagated HRESULT=%1 [%2 @ %3]">
+    </event>
+    <event value="10" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x4" message="%1">
+    </event>
+    <event value="100" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Enqueued verb %1, callid %2 (completion context %3)">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Enqueued verb %1, callids %2, %3 (completion context %4)">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Enqueued verb Dial, callid %1, callType %2, calleridoption %3 (completion context %4)">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Dequeued verb %1, callid %2 (completion context %3)">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Dequeued verb %1, callids %2, %3 (completion context %4)">
+    </event>
+    <event value="105" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Dequeued verb Dial, callid %1, callType %2, calleridoption %3 (completion context %4)">
+    </event>
+    <event value="106" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Verb completed with HRESULT %1; host notified (completion context %2)">
+    </event>
+    <event value="107" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Verb completed with HRESULT %1; host not notified (completion context %2)">
+    </event>
+    <event value="108" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Began tracking async CellVoice request id %1 (for completion context %2)">
+    </event>
+    <event value="109" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Stopped tracking async CellVoice request id %1 (for completion context %2)">
+    </event>
+    <event value="110" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Enqueued async CellVoice request id %1 completion with HRESULT %2">
+    </event>
+    <event value="111" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Gsm call manager called I3GPPCallModel::%1 with async request id %2 for callid %3 (cellvoice callid %4)">
+    </event>
+    <event value="112" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Gsm call manager called I3GPPCallModel::%1 with async request id %2 for callids %3, %4">
+    </event>
+    <event value="113" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Gsm call manager called I3GPPCallModel::RequestOutgoingCall with async request id %1 for callid %2, callType %3 (no cellvoice callid)">
+    </event>
+    <event value="114" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallManager got call progress update for cellvoiceId %1; status %2; direction %3; number %4; name %5; party %6; flags %7; type %8; valid params %9; ">
+    </event>
+    <event value="115" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CellVoice returned failure %1 to get subscriber number">
+    </event>
+    <event value="116" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CellVoice returned failure %1 to get voicemail number">
+    </event>
+    <event value="117" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CellVoice get IMSI completed with error %1">
+    </event>
+    <event value="118" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Resetting VVM state; old MCC/MNC/nameDiff %1 %2 %3">
+    </event>
+    <event value="119" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Used RIL system type %1; got signal strength %2">
+    </event>
+    <event value="120" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Used RIL system type %1; voice domain %2; got registration status %3">
+    </event>
+    <event value="122" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="No Visual Voicemail provider was loaded for MCC,MNC %1,%2">
+    </event>
+    <event value="123" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Visual Voicemail action %1 is not currently available on this line">
+    </event>
+    <event value="124" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Legacy Voicemail message received: %1. Message count: %2">
+    </event>
+    <event value="125" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Registered to operator: params %1; long name &quot;%2&quot;; short name &quot;%3&quot;; numeric name&quot;%4&quot;; country code &quot;%5&quot;">
+    </event>
+    <event value="126" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Switched to data registration to get registration info">
+    </event>
+    <event value="127" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Status %1 from cellcore reading voicemail count %2 from SIM">
+    </event>
+    <event value="128" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Status %1 from cellcore writing voicemail count %2 to SIM">
+    </event>
+    <event value="131" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Muting cellular audio">
+    </event>
+    <event value="132" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Unmuting cellular audio">
+    </event>
+    <event value="133" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallManager got disconnect notification for cellvoiceId %1; initiator %2; reason %3; group %4; gppdetails [ location %5 cause %6 ]">
+    </event>
+    <event value="134" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallModel3GPP2 invoking %1; callid %2; asyncRequestId %3">
+    </event>
+    <event value="135" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CdmaHeuristics invoking %1; callid %2 and %3; asyncRequestId %3; completionContext %4">
+    </event>
+    <event value="136" version="0" opcode="1" channel="0" level="4" task="30" keywords="0x8000000000" message="">
+    </event>
+    <event value="137" version="0" opcode="31" channel="0" level="4" task="30" keywords="0x8000000000" message="">
+    </event>
+    <event value="138" version="0" opcode="32" channel="0" level="4" task="30" keywords="0x8000000000" message="">
+    </event>
+    <event value="139" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Call manager got call waiting notification for cellvoice callid %1: rilremotepartyinfo: params %2 numberpres %3 namepres %4">
+    </event>
+    <event value="140" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Call manager got dial id notification for cellvoice callid %1: params %2 numberpres %3 namepres %4">
+    </event>
+    <event value="141" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x50" message="CdmaHeuristics started tracking verb %1 asyncRequestId %2 for completionContext %3">
+    </event>
+    <event value="142" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x50" message="CdmaHeuristics stopped tracking verb %1 asyncRequestId %2 for completionContext %3">
+    </event>
+    <event value="143" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Status %1 from cellcore reading call forwarding status %2 from SIM">
+    </event>
+    <event value="144" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Status %1 from cellcore reading call forwarding number from SIM">
+    </event>
+    <event value="145" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Status %1 from cellcore writing call forwarding status to SIM">
+    </event>
+    <event value="146" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Status %1 from cellcore writing call forwarding number to SIM">
+    </event>
+    <event value="147" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Sim LockState changed to: %1">
+    </event>
+    <event value="148" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Cellvoice UICC Line set; sim swap pending: %1; old/new line ID: %2 / %3">
+    </event>
+    <event value="149" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Finished retrieving home MCC/MNC: %1 %2">
+    </event>
+    <event value="150" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Set visual voicemail provisioning state to %1">
+    </event>
+    <event value="151" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Forced SIM swap based on MCC/MNC: %1 %2 ==&gt; %3 %4">
+    </event>
+    <event value="152" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Modem power state changed to %1">
+    </event>
+    <event value="153" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Network codes: params %1; MCC %2; MNC %3">
+    </event>
+    <event value="154" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="SIMOM gave LineFactory a duplicate modem (ignored)">
+    </event>
+    <event value="155" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="SIMOM gave LineFactory an unknown modem to remove (ignored)">
+    </event>
+    <event value="156" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="SIMOM gave LineFactory an unknown modem for adding a slot (ignored)">
+    </event>
+    <event value="157" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="SIMOM gave LoneFactory a duplicate slot (ignored)">
+    </event>
+    <event value="158" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="SIMOM gave LineFactory an unknown modem for removing a slot (ignored)">
+    </event>
+    <event value="159" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="SIMOM gave LineFactory an unknown slot to remove (ignored)">
+    </event>
+    <event value="160" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Line not created: modem index %1 or slot index %2 out of bounds (from ISlot %3)">
+    </event>
+    <event value="161" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallManager new incoming call from %1">
+    </event>
+    <event value="162" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Call forwarding state updated. SupSvcCode: %1; Enable: %2; new m_callForwardingState: %3">
+    </event>
+    <event value="163" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Read call forwarding state from registry. m_callForwardingState: %1; m_callForwardingAddress: %2">
+    </event>
+    <event value="164" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="OnSupServiceCallback. ExecutionResult: %1; SvcCode: %2; DialAction: %3">
+    </event>
+    <event value="165" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Legacy Voicemail message ignored due to config setting">
+    </event>
+    <event value="166" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CdmaHeuristics set local hold to %1">
+    </event>
+    <event value="167" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Detected SGLTE config with no GSM RF; using synthesized no-registration status">
+    </event>
+    <event value="168" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Enqueued verb AcceptIncoming, callid %1, callType %2 (completion context %3)">
+    </event>
+    <event value="169" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Dequeued verb AcceptIncoming, callid %1, callType %2 (completion context %3)">
+    </event>
+    <event value="170" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Gsm call manager called I3GPPCallModel::AcceptIncomingCall with async request id %1 for callid %2, callType %3 (cellvoice callid %4)">
+    </event>
+    <event value="171" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Received an IMS SIP disconnect cause: error-code=%1, reason=%2">
+    </event>
+    <event value="172" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Assumed error is XCAP related and enabling show/hide caller id feature">
+    </event>
+    <event value="173" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[Voicemail] Timer task for Visual Voicemail configuration changes fired.">
+    </event>
+    <event value="174" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[Voicemail] Attempting to queue action for Visual Voicemail configuration changes [isChangePending=%1]">
+    </event>
+    <event value="175" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[Voicemail] Got notified of Visual Voicemail registry changes">
+    </event>
+    <event value="176" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[Voicemail] Configure Visual Voicemail [homeMcc=%1][homeMnc=%2][dataAffinityExists=%3]">
+    </event>
+    <event value="177" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Can Data affinity change [LineId=%1][dataAffinityCanIndex=%2]">
+    </event>
+    <event value="202" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Terminating Active Call Agent %1 due to timeout waiting for Notify callback">
+    </event>
+    <event value="203" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Cell Broadcast Listener received message %1">
+    </event>
+    <event value="204" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Display text changed: params %1, info type %2, info tag %3, message size %4">
+    </event>
+    <event value="205" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling IVoIPTaskManagerClient-&gt;LaunchActiveCallAgent(%1)">
+    </event>
+    <event value="206" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling IVoIPTaskManagerClient-&gt;CancelActiveCallAgentInstance(%1)">
+    </event>
+    <event value="207" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="_CancelActiveCallAgent for product id: %1; isForcedShutdown: %2; isActiveCallAgentRunning: %3">
+    </event>
+    <event value="208" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling IVoIPTaskManagerClient-&gt;HoldActiveCall(%1)">
+    </event>
+    <event value="209" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling IVoIPTaskManagerClient-&gt;UnholdActiveCall(%1)">
+    </event>
+    <event value="210" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling IVoIPTaskManagerClient-&gt;OnIncomingCallDialogDisplayed(%1)">
+    </event>
+    <event value="211" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling IVoIPTaskManagerClient-&gt;OnIncomingCallDialogDismissed(%1)">
+    </event>
+    <event value="212" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="InitializedConnectionToAppHost called on VoipProvider. RPC Handle: %1; VoipLine: %2; AgentProcessId: %3; ContextId: %4">
+    </event>
+    <event value="213" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;NewIncomingCall(%1, %2)">
+    </event>
+    <event value="214" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;NewOutgoingCall(%1, %2)">
+    </event>
+    <event value="215" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;CallActive(%1, %2)">
+    </event>
+    <event value="216" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;CallHeld(%1, %2)">
+    </event>
+    <event value="217" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;CallEnded(%1, %2)">
+    </event>
+    <event value="218" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;SetAudioRouting(%1, %2)">
+    </event>
+    <event value="219" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="LineFactory-&gt;GetAudioRouting(%1)">
+    </event>
+    <event value="220" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;SetMuteState(%1, %2)">
+    </event>
+    <event value="221" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;UpdateCallContactName(%1, %2)">
+    </event>
+    <event value="222" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;UpdateCallStartTime(%1, %2)">
+    </event>
+    <event value="223" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="LineFactory-&gt;GetCallStartTime(%1, %2)">
+    </event>
+    <event value="224" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;UpdateCallAttributes(%1, %2, %3)">
+    </event>
+    <event value="225" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="VoipAppHostHandle_rundown(%1)">
+    </event>
+    <event value="226" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="_PendingRpcCallCompleted(%2, %3) for line: %1; onTime: %4">
+    </event>
+    <event value="227" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling %1 on VoipApp for line: %2. Controller callId: %3; VoipApp CallId: %4">
+    </event>
+    <event value="228" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling %1 on VoipApp for line: %2.">
+    </event>
+    <event value="229" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling OnAudioRouteChanged on VoipApp for line: %1. AudioRoute: %2; Available Paths: %3">
+    </event>
+    <event value="230" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Can %1 entered emergency mode %2">
+    </event>
+    <event value="231" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Modem constraint violated: Illegal CPI %1">
+    </event>
+    <event value="232" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Modem constraint violated: Async dial failure %1 for call in CPI state %2">
+    </event>
+    <event value="233" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Modem constraint violated: Mismatched direction fields; direction %1, CPI state %2">
+    </event>
+    <event value="234" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallManager invoked I3GPP[2]CallModel::%1; asyncRequestId %2">
+    </event>
+    <event value="235" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x70" message="CallManager invoking I3GPP[2]CallModel::%1; asyncRequestId %2">
+    </event>
+    <event value="236" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallModel3GPP2 invoking %1; callid %2 and %3; asyncRequestId %4)">
+    </event>
+    <event value="237" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CdmaHeuristics invoking %1; callid %2; asyncRequestId %3; completionContext %4">
+    </event>
+    <event value="238" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CdmaHeuristics verb completed: asyncRequestId %1; result %2; verb %3; callid %4; original completionContext %5">
+    </event>
+    <event value="239" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CdmaHeuristics verb completed: asyncRequestId %1; result %2">
+    </event>
+    <event value="240" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x50" message="CallModel3GPP2 verb completed: asyncRequestId %1; result %2; verb %3; callid %4; original completionContext %5">
+    </event>
+    <event value="241" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x70" message="Dequeued async CellVoice request id %1 completion with HRESULT %2">
+    </event>
+    <event value="242" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x70" message="CallModel processing call progress update with cellvoiceId %1 for callId %2">
+    </event>
+    <event value="243" version="0" opcode="33" channel="0" level="4" task="30" keywords="0x8000000050" message="">
+    </event>
+    <event value="244" version="0" opcode="34" channel="0" level="4" task="30" keywords="0x8000000000" message="">
+    </event>
+    <event value="245" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="CdmaHeuristics tracking with asyncRequestId %1 not found">
+    </event>
+    <event value="246" version="0" opcode="36" channel="0" level="4" task="35" keywords="0x8000000000" message="">
+    </event>
+    <event value="247" version="0" opcode="37" channel="0" level="4" task="35" keywords="0x8000000000" message="">
+    </event>
+    <event value="248" version="0" opcode="38" channel="0" level="4" task="35" keywords="0x8000000000" message="">
+    </event>
+    <event value="249" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="CallModel3GPP2 got unexpected call update for cellvoiceId %1; while having existing cellvoiceId %2">
+    </event>
+    <event value="250" version="0" opcode="40" channel="0" level="4" task="39" keywords="0x8000000000" message="">
+    </event>
+    <event value="251" version="0" opcode="41" channel="0" level="4" task="39" keywords="0x8000000000" message="">
+    </event>
+    <event value="252" version="0" opcode="42" channel="0" level="4" task="39" keywords="0x8000000000" message="">
+    </event>
+    <event value="253" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Processed request to clear Voicemail count.">
+    </event>
+    <event value="254" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Default voicemail number source is: %1">
+    </event>
+    <event value="255" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Modem constraint violated: Illegal 3GPP2 CallWaiting notification">
+    </event>
+    <event value="256" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Tone signal received: params %1, %2, %3, %4">
+    </event>
+    <event value="257" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x200" message="LineNotificationWorkItem: instantiated #%1 (%2)">
+    </event>
+    <event value="258" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x200" message="LineNofiticationWorkItem: processing #%1 (%2)">
+    </event>
+    <event value="259" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x200" message="LineNofiticationWorkItem: finished processing #%1 (%2)">
+    </event>
+    <event value="260" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x200" message="LineNofiticationWorkItem: canceled #%1 (%2)">
+    </event>
+    <event value="261" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Got subscriber numbers; dwNumSubscribers = %1">
+    </event>
+    <event value="262" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="Subscriber number entry #%1: params #2, service #3">
+    </event>
+    <event value="263" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Subscriber number is missing or empty">
+    </event>
+    <event value="264" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Got IMS status change notification. [Params=%1][AvailableServices=%2]">
+    </event>
+    <event value="265" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CallModel3GPP] Call model changing between GSM and IMS, [ims=%1][m_imsOnWiFi=%2]">
+    </event>
+    <event value="266" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Roaming override number used.  Dialing %1.">
+    </event>
+    <event value="267" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="HandleUICCPersoCheckStatusChange, [dwParams=%1][dwPersoFeature=%2][dwPersoCheckState=%3]">
+    </event>
+    <event value="268" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Get Perso deactivation state for %1 completed with hr %2; params %3; state %4; unlock remaining %5; unblock remaining %6">
+    </event>
+    <event value="269" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Deactivate Perso for %1 completed with hr %2; params %3; state %4; unlock remaining %5; unblock remaining %6; async API context %7">
+    </event>
+    <event value="270" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Initiating SIM PIN operation %1; async completion context = %2">
+    </event>
+    <event value="271" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Initiating Perso unlock for %1; async completion context = %2">
+    </event>
+    <event value="272" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SIM PIN operation &apos;%1&apos; with async completion context %2 complete, result % = 3">
+    </event>
+    <event value="273" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="3GPP2CallModel ignored alien call (CellVoice ID %1) due to existing call (CellVoice ID %2).">
+    </event>
+    <event value="274" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="3GPPCallModel suppressed call update due to invalid state.">
+    </event>
+    <event value="275" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Unsolicited supservice %1 received for CellVoice callid %2">
+    </event>
+    <event value="276" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="CellVoice Response Received in Method: %1. Async Hresult: %2">
+    </event>
+    <event value="277" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="dwParams %1; dwNetworkSSErrorCause %2; dwNetworkCCErrorCause %3; dwVendorErrorCause %4">
+    </event>
+    <event value="278" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="CellVoice reported infoClasses: %1.">
+    </event>
+    <event value="279" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="CellVoice reported hide ID settings: params %1, status %2, provisioning %3.">
+    </event>
+    <event value="280" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="CellVoice reported call forwarding settings: params %1, info class %2, delay time %3, status %4.">
+    </event>
+    <event value="281" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="CellVoice Ussd Data Status: %1.">
+    </event>
+    <event value="282" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Ussd Session terminated">
+    </event>
+    <event value="283" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="New Ussd Session initiated">
+    </event>
+    <event value="284" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Invalid Callforwarding delay time parameter: %1. Using default value instead.">
+    </event>
+    <event value="285" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Using default value for call forwarding delay time">
+    </event>
+    <event value="286" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="CellVoice reported COLR settings: params %1, status %2, provisioning %3.">
+    </event>
+    <event value="287" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="CellVoice reported CLIP settings: params %1, status %2, provisioning %3.">
+    </event>
+    <event value="288" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Executing sup service code %1, action %2">
+    </event>
+    <event value="289" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Ussd User response truncated">
+    </event>
+    <event value="290" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="CellVoice reported COLP settings: params %1, status %2, provisioning %3.">
+    </event>
+    <event value="291" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000" message="Address for unsolicited supservice %1 is %2">
+    </event>
+    <event value="292" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling %1 on VoipApp for line: %2. VoipApp CallId: %3">
+    </event>
+    <event value="295" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="RemoteId Request Complete: CallId: %1 RemoteId Exists: %2">
+    </event>
+    <event value="296" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="Launching Voip app with URI: %1">
+    </event>
+    <event value="297" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;NewIncomingUpgradeCall(%1, %2)">
+    </event>
+    <event value="298" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;NewOutgoingUpgradeCall(%1, %2). CallUpgradeGuid: %3">
+    </event>
+    <event value="299" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;CallReady(%1, %2)">
+    </event>
+    <event value="300" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="3GPPCallModel suppressed call update due to ECall Failover.">
+    </event>
+    <event value="301" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Dialing an Emergency call. PhoneCallId: %1.">
+    </event>
+    <event value="302" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="3GPPCallModel got surprise outgoing Emergency call notification. Existing ECallId: %1, IgnoreNotification: %2.">
+    </event>
+    <event value="303" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Modem Radio Config changed to %1">
+    </event>
+    <event value="304" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Setting Can Focus for Can: %1">
+    </event>
+    <event value="305" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Set Can Focus result: %1">
+    </event>
+    <event value="306" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Disconnecting dialed call with callId: %1 for incoming call.">
+    </event>
+    <event value="307" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;GetNextOperation(%1)">
+    </event>
+    <event value="308" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Terminating Call Query Agent %1 due to timeout waiting for Notify callback">
+    </event>
+    <event value="309" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="lineFactory-&gt;VoipAppOperationComplete(%1). Completed operationId: %2. Succeeded: %3. Call upgrade support: %4">
+    </event>
+    <event value="310" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling IVoIPTaskManagerClient-&gt;LaunchCallQueryAgent(%1)">
+    </event>
+    <event value="311" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling IVoIPTaskManagerClient-&gt;CancelCallQueryAgentInstance(%1)">
+    </event>
+    <event value="312" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Received async dial completion. CallId: %1, CellVoice CallId: %2">
+    </event>
+    <event value="313" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="3GPP2CallModel ignored disconnected call (CellVoice ID %1) due to existing call (CellVoice ID %2).">
+    </event>
+    <event value="314" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x8000000000" message="Detected LTE System Type with no network registration and no voice domain.">
+    </event>
+    <event value="315" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallManager invoked I3GPP[2]CallModel::%1; asyncRequestId %2, Dialed Number: %3">
+    </event>
+    <event value="316" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Update to call type or video context.  CallId: %1, CallType: %2, Video Context: %3">
+    </event>
+    <event value="317" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallModel3GPP2 CallVerb_SetVideoPaused; CallId: %1; paused: %2; completion context: %3">
+    </event>
+    <event value="318" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallModel3GPP CallVerb_SetVideoPaused; CallId: %1; paused: %2; async id: %3">
+    </event>
+    <event value="319" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Enqueued verb SetVideoPaused, callid %1, paused %2, (completion context %3)">
+    </event>
+    <event value="320" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Dequeued verb SetVideoPaused, callid %1, paused %2, (completion context %3)">
+    </event>
+    <event value="321" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Video state update.  Params: %1, Action: %2, Direction: %3, State Params: %4, Peer caps: %5, Flags: %6, ContextID: %7">
+    </event>
+    <event value="322" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Calling Cellular API in media update for %1.  Async request id: %2, CallId %3, CellVoice CallId: %4)">
+    </event>
+    <event value="323" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Requesting video state publish.  Subscriber Number: %1, videoCapable: %2">
+    </event>
+    <event value="324" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Line type changed but SupService was not reset.">
+    </event>
+    <event value="325" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Registration state according to voice domain, voice domain: %1, registration status: %2, mapped registration state: %3">
+    </event>
+    <event value="326" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SubscriptionUpdate OMADM initiated : %1 HR = %2">
+    </event>
+    <event value="327" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Video direction override during multitasking, new transmit state: %1">
+    </event>
+    <event value="328" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CellularLine SetVideoCallingSetting: [CurrentState=%1][RequestType=%2][CacheSetting=%3][PerSimConfigAvailable=%4][TargetState=%5]">
+    </event>
+    <event value="329" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="IMS system-type changing from %1 to %2">
+    </event>
+    <event value="330" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Video media offer answer. Params: %1, Action: %2, Direction: %3, State Params: %4, Peer caps: %5, Flags: %6, ContextID: %7">
+    </event>
+    <event value="331" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;EndUpgradeOriginationCall(%1)">
+    </event>
+    <event value="332" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;CancelUpgrade(%1)">
+    </event>
+    <event value="333" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="ImsHandoverAttempt notify arrives. hrHandOverResult: %1, OldSystemType: %2, NewSystemType: %3">
+    </event>
+    <event value="334" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="GetVideoCapabilitySharingSettings: Queried, [LineId=%1][PerSimConfigAvaiable=%2][IsCapabilitySharingEnabled=%3][LastModifiedTimestamp=%4]">
+    </event>
+    <event value="335" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SetVideoCapabilitySharingSettings: Updating, [LineId=%1][PerSimConfigAvaiable=%2][IsCapabilitySharingEnabled=%3][CurrentTimestamp=%4]">
+    </event>
+    <event value="336" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Applying video calling setting to saved or default user preference.">
+    </event>
+    <event value="337" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Unable to determine cached video calling setting.">
+    </event>
+    <event value="338" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Updated home MCC value from SIM in line specific data, [LineId=%1][HomeMcc=%2].">
+    </event>
+    <event value="339" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="CallRecording: Phone service was notified of a Call Recording application whose Package Family Name is too long: &apos;%1&apos;">
+    </event>
+    <event value="341" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="IMS service voice changed, [imsVoiceAvailable=%1][imsVideoAvailable=%2][videoCallingEnabled=%3]">
+    </event>
+    <event value="342" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="IMS service video changed, [imsVoiceAvailable=%1][imsVideoAvailable=%2][videoCallingEnabled=%3]">
+    </event>
+    <event value="343" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="DeterminePhoneSystemType, [imsVoiceSupported=%1][registration0SystemType=%2][registration0VoiceDomain=%3][callPresence=%4]">
+    </event>
+    <event value="344" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="UpdateLineSystemType, [currentLineSystemType=%1][newLineSystemType=%2]">
+    </event>
+    <event value="345" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SetRadioAccessTechnology, [radioAccessTechnology=%1][toIms=%2][toGsm=%3][toCdma=%4][fromIms=%5][fromGsm=%6][fromCdma=%7]">
+    </event>
+    <event value="346" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="SetRadioAccessTechnology, switching call model, [To3GPP=%1]">
+    </event>
+    <event value="347" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="UpdateCallPresence, [currentPresence=%1][aggregatePresence=%2][allSameType=%3]">
+    </event>
+    <event value="348" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CallModel3GPP] Updating audio, [audioType=%1][audioActive=%2][anyCallNeedsAudio=%3][anyCallNeedsAudioActive=%4][localHoldSupported=%5]">
+    </event>
+    <event value="349" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CallModel3GPP2] Updating audio, [audioType=%1][shouldEnableAudio=%2][audioAllowed=%3]">
+    </event>
+    <event value="350" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CellularAudio] Updating audio for handover notification, [inProgress=%1][isHandoverNotification=%2][phase=%3][oldType=%4][newType=%5]">
+    </event>
+    <event value="351" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="ProcessHandoverNotification, [callInfoParams=%1][phase=%2][handoverStateParams=%3][oldType=%4][newType=%5][inProgress=%6]">
+    </event>
+    <event value="352" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Reset handover state">
+    </event>
+    <event value="353" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Updated video call conference state, [CallId=%1][CellVoiceCallId=%2][ContextId=%3][ConferenceContextId=%4][PreviousState=%5][UpdatedState=%6].">
+    </event>
+    <event value="354" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Interpret E_SUPSVCS_INVALIDREMOTEURI as success with call forwarding status disabled.">
+    </event>
+    <event value="355" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x8000000000" message="IR94FeatureDisabled: Disable video calling.">
+    </event>
+    <event value="356" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x8000000000" message="IR94FeatureDisabled: Force disable video calling.">
+    </event>
+    <event value="357" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Emergency call failed over. ECallId: %1.">
+    </event>
+    <event value="358" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Emergency call DisableAndEnable Audio from 3GPP CallModel. ECallId: %1.">
+    </event>
+    <event value="359" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Emergency call DisableAndEnable Audio from 3GPP2 CallModel. ECallId: %1.">
+    </event>
+    <event value="360" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="HandleUICCPinLockStateChange, [dwParams=%1][dwLockState=%2]">
+    </event>
+    <event value="361" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Updating UICC related information from SIM">
+    </event>
+    <event value="362" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="OnSubscriberNumbersChange, [result=%1]">
+    </event>
+    <event value="363" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[CallModel3GPP] Notified for IMS on Wifi flag, [m_imsOnWiFi=%1][onWiFi=%2]">
+    </event>
+    <event value="364" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="Removed stale pending RPC for line: %1, callid: %2, type: %3">
+    </event>
+    <event value="365" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="Timedout pending RPC for line: %1, callid: %2, type: %3">
+    </event>
+    <event value="366" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="ResetConnectionToApp for line: %1">
+    </event>
+    <event value="367" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="CleanupVoipAppConnectionState for line: %1, pendingRPCCalls: %2, voipAppProcessId: %3">
+    </event>
+    <event value="368" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400" message="VoIP Line Id: %1 has AboveLock extension: %2">
+    </event>
+    <event value="369" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Enqueued verb %1, (completion context %2)">
+    </event>
+    <event value="370" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x70" message="Dequeued verb %1, (completion context %2)">
+    </event>
+    <event value="371" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CellularCallModel initiating explicit call transfer; asyncRequestId %1">
+    </event>
+    <event value="372" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Ril audio codec %1 mapped to %2 for CallId: %3.">
+    </event>
+    <event value="373" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[Voicemail] Stop VVM Invoked [stopReason=%1]">
+    </event>
+    <event value="374" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[Voicemail] Start VVM Invoked [last stopReason=%1]">
+    </event>
+    <event value="375" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;ReserveVoipCallResources(%1, %3, %2) Completed.">
+    </event>
+    <event value="376" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="LineFactory-&gt;CancelVoipCallResourceReservation(%1) Completed.">
+    </event>
+    <event value="377" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[VoipLine#%1] Calling LaunchVoipRtcTask(%3, %4, %2)">
+    </event>
+    <event value="378" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[VoipLine#%1] Calling CancelVoipRtcTask(%2)">
+    </event>
+    <event value="379" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="[VoipLine#%1] Calling NotifyVoipActivityCompleted(%2)">
+    </event>
+    <event value="380" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="CallerId Prefix updated.  Updated number is %1.">
+    </event>
+    <event value="1000" version="0" opcode="1" channel="0" level="5" task="1" keywords="0x2" message="">
+    </event>
+    <event value="1010" version="0" opcode="1" channel="0" level="5" task="6" keywords="0x2" message="">
+    </event>
+    <event value="1050" version="0" opcode="2" channel="0" level="5" task="6" keywords="0x2" message="">
+    </event>
+    <event value="1051" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Received IMS Failure changed, [imsFailureMessageType=%1].">
+    </event>
+    <event value="1052" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Ims failure error string is missing or empty.">
+    </event>
+    <event value="1053" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="WiFi call disconnect occured, [errorMessage=%1] .">
+    </event>
+    <event value="1054" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="WiFi internet connection status: %1.">
+    </event>
+    <event value="1055" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="WiFi calling feature enabled: %1.">
+    </event>
+    <event value="1056" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="WiFi calling upsell suppressed: %1.">
+    </event>
+    <event value="1057" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Media Configuration Data, Set Index: %1, IMS Service Type: %2, Media Preference: %3.">
+    </event>
+    <event value="1058" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Placing request for switching cellular audio provider, Executor Index: %1, Old Audio type: %2, New Audio Type: %3.">
+    </event>
+  </events>
+</provider>

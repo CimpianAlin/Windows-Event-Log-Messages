@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-Tm" guid="4cec9c95-a65f-4591-b5c4-30100e51d870" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ktmw32.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\ktmw32.dll" messageFileName="C:\Windows\system32\ktmw32.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The Transaction (UOW=%1, Description=&apos;%3&apos;) was unable to be committed, and instead rolled back; this was due to an error message returned by CLFS while attempting to write a Prepare or Commit record for the Transaction.  The CLFS error returned was: %4.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The Transaction (UOW=%1, Description=&apos;%3&apos;) blocked a Freeze from completing.  Freeze is necessary to ensure that a VSS snapshot is transactionally consistent.  The ResourceManager (RmId=%4, Description=&apos;%6&apos;) may not be functioning correctly, since it did not allow the transaction to drain in the allotted time.  Contact the vendor for that ResourceManager for assistance.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The transaction (UOW=%1, Description=&apos;%3&apos;) was heuristically aborted and forgotten from the TransactionManager (TmId=%4, LogPath=%6) so that the TransactionManager can continue to make forward progress.  This may cause data corruption in any subordinate ResourceManagers or Transactionmanager.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The TransactionManager (TmId=%1, LogPath=%3) has failed to advance its log tail, due to the transaction (UOW=%4, Description=&apos;%6&apos;) being unresolved for some time.  The transaction must be forced to resolve in order for the TransactionManager to continue to provide transactional services.  Forcing the incorrect outcome may cause data corruption in any subordinate ResourceManagers or Transactionmanagers.">
+    </event>
+  </events>
+</provider>

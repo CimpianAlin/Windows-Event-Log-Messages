@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Folder Redirection" guid="7d7b0c39-93f6-4100-bd96-4dda859652c5" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=fdeploy.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\fdeploy.dll" messageFileName="C:\Windows\System32\fdeploy.dll" message="Microsoft-Windows-Folder Redirection" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-Folder Redirection/Operational" id="16" flags="0" message="Microsoft-Windows-Folder Redirection/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="501" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successfully applied policy and redirected folder &quot;%1&quot; to &quot;%2&quot;.
+ Redirection options=%3.">
+    </event>
+    <event value="502" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to apply policy and redirect folder &quot;%1&quot; to &quot;%2&quot;.
+ Redirection options=%3.
+ The following error occurred: &quot;%4&quot;.
+ Error details: &quot;%5&quot;.">
+    </event>
+    <event value="503" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to create KnownFolderManager. Folder redirection can not be performed.
+ Error details: &quot;%1&quot;.">
+    </event>
+    <event value="505" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to get destination path on policy removal for folder &quot;%1&quot;.
+ The folder redirection can not be removed.
+ Error details: &quot;%2&quot;.">
+    </event>
+    <event value="506" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to update policy state for folder &quot;%1&quot;.
+ Error details: &quot;%2&quot;.">
+    </event>
+    <event value="507" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to delete policy state for folder &quot;%1&quot;.
+ Error details: &quot;%2&quot;.">
+    </event>
+    <event value="508" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to resolve path for folder &quot;%1&quot;.
+ Folder configuration is invalid or folder is configured to follow parent and the parent folder is not redirected. Folder can not be redirected.
+ Error details: &quot;%2&quot;.">
+    </event>
+    <event value="509" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to expand path for folder &quot;%1&quot; path &quot;%2&quot;.
+ The folder can not be redirected.
+ Error details: &quot;%3&quot;.">
+    </event>
+    <event value="510" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="The folder redirection policy hasn&apos;t been applied. It&apos;s been delayed until the next sign-in because the group policy sign-in optimization is in effect.">
+    </event>
+    <event value="511" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to process policy info.
+ Error details: &quot;%1&quot;.">
+    </event>
+    <event value="512" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successfully removed policy and redirected folder &quot;%1&quot; to &quot;%2&quot;.
+ Removal options=%3.">
+    </event>
+    <event value="513" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to remove policy and redirect folder &quot;%1&quot; to &quot;%2&quot;.
+ Removal options=%3.
+ The following error occurred: &quot;%4&quot;.
+ Error details: &quot;%5&quot;.">
+    </event>
+    <event value="514" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successfully removed policy for folder &quot;%1&quot;.
+ Removal options=%2.">
+    </event>
+    <event value="515" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to remove policy for folder &quot;%1&quot;.
+ Removal options=%2.
+ The following error occurred: &quot;%3&quot;.
+ Error details: &quot;%4&quot;.">
+    </event>
+    <event value="516" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successfully applied policy to keep folder &quot;%1&quot; at the same location.
+ Redirection options=%2.">
+    </event>
+    <event value="517" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to apply policy to keep folder &quot;%1&quot; at the same location.
+ Redirection options=%2.
+ The following error occurred: &quot;%3&quot;.
+ Error details: &quot;%4&quot;.">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Folder Redirection Group Policy extension started.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Folder Redirection Group Policy extension finished.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Group Policy flags=%1.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Start Processing Group Policy Objects ...">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Processing configuration file &quot;%1&quot; ...">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Folder &quot;%1&quot; was previously redirected.
+ Redirection options were = %2">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Folder &quot;%1&quot; has to be redirected.
+ Redirection options = %2.
+ Parent folder = &quot;%3&quot;.
+ Path = &quot;%4&quot;.
+ Group = %5.">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="No Folders were previously redirected.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="No Folders have to be redirected.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Windows was unable to successfully evaluate whether this computer is a primary computer for this user. This may be due to failing to access the Active Directory server at this time. The user will have his or her redirected folders configured on this machine. Contact the Administrator for more assistance. Error: %1">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="This computer %1 a primary computer for this user.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Folder Redirection configuration is being controlled by Group Policy.">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Folder Redirection configuration is being controlled by WMI configuration class Win32_FolderRedirectionUserConfiguration.">
+    </event>
+  </events>
+</provider>

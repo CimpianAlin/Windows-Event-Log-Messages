@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DVD" guid="e18d0fca-9515-4232-98e4-89e456d8551b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=qdvd.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\qdvd.dll" messageFileName="C:\Windows\system32\qdvd.dll" message="Microsoft-Windows-DVD-Navigator" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Navigator" id="16" flags="0" message="DVD Navigator">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Nav_SendSample" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Nav SendSample">
+    </task>
+    <task name="Nav_Flush" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Nav Flush">
+    </task>
+    <task name="Nav_StillTimer" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Nav StillTimer">
+    </task>
+    <task name="Nav_ParsePCI" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Nav ParsePCI">
+    </task>
+    <task name="Nav_Throttle" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Nav Throttle">
+    </task>
+    <task name="Nav_PumpWait" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Nav PumpWait">
+    </task>
+    <task name="Nav_SendEventNotification" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Nav SendEventNotification">
+    </task>
+    <task name="Nav_DomainChange" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Nav DomainChange">
+    </task>
+    <task name="Nav_SendErrorNotification" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Nav SendErrorNotification">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="Nav SendSample Object=%1 treamID=%1 StreamType=%2 IsRunning=%3 rtTimestamp=%4 rtNow=%5 rtAhead=%6 SyncPoint=%8 TimeDisc=%9">
+    </event>
+    <event value="2" version="0" opcode="1" channel="16" level="5" task="2" keywords="0x8000000000000000" message="Nav BeginFlush object=%1">
+    </event>
+    <event value="3" version="0" opcode="2" channel="16" level="5" task="2" keywords="0x8000000000000000" message="Nav EndFlush object=%1">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="5" task="4" keywords="0x8000000000000000" message="Nav StillTimerOn object=%1 time=%2">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="5" task="4" keywords="0x8000000000000000" message="Nav StillTimerOff object=%1 time=%2">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="5" task="5" keywords="0x8000000000000000" message="Nav ParsePCI object=%1 wStreamID=%2 type=%3 fIsRunning=%4 rtStart=%5 rtNow=%6 rtDistAheadOfClock=%7">
+    </event>
+    <event value="8" version="0" opcode="1" channel="16" level="5" task="6" keywords="0x8000000000000000" message="Nav Throttle start object=%1 dur=%2 max_lat=%3">
+    </event>
+    <event value="9" version="0" opcode="2" channel="16" level="5" task="6" keywords="0x8000000000000000" message="Nav Throttle end object=%1">
+    </event>
+    <event value="10" version="0" opcode="1" channel="16" level="5" task="7" keywords="0x8000000000000000" message="Nav PumpWait start object=%1 handleMask=%2">
+    </event>
+    <event value="11" version="0" opcode="2" channel="16" level="5" task="7" keywords="0x8000000000000000" message="Nav PumpWait end object=%1 WakeIndex=%2 Error=%3 IOIndex=%4 ExtraInfo=%5">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="5" task="8" keywords="0x8000000000000000" message="Nav SendEventNotification object=%1 type=%2 param1=%3 param2=%4">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="5" task="9" keywords="0x8000000000000000" message="Nav DomainChange object=%1 domain=%2 VTSN=%3">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="5" task="10" keywords="0x8000000000000000" message="Nav SendErrorNotification object=%1 param1=%2 param2=%3">
+    </event>
+  </events>
+</provider>

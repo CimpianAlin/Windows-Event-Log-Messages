@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Minstore" guid="55b24b1d-dd9c-44c0-ba77-4f749f1b6976" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=minstoreevents.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\minstoreevents.dll" messageFileName="C:\Windows\System32\minstoreevents.dll" message="Minstore Event Provider" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Minstore/Analytic" id="16" flags="0" message="Minstore Analytic Channel">
+    </channel>
+    <channel name="Microsoft-Windows-Minstore/Debug" id="17" flags="0" message="Minstore Debug Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="BucketSplit" value="851968" message="Bucket Split">
+    </opcode>
+    <opcode name="BucketMerge" value="917504" message="Bucket Merge">
+    </opcode>
+    <opcode name="TreeUpdate" value="983040" message="Write B+ tree">
+    </opcode>
+    <opcode name="VolumeCheckpoint" value="1048576" message="Checkpoint">
+    </opcode>
+    <opcode name="LogFullRedoLog" value="1114112" message="LFF: Redo Log">
+    </opcode>
+    <opcode name="LogFullFreeSpace" value="1179648" message="LFF: Protected Space">
+    </opcode>
+    <opcode name="AllocationRange" value="1245184" message="Allocation range">
+    </opcode>
+    <opcode name="TreeUpdateStart" value="1310720" message="Started writing B+ tree">
+    </opcode>
+    <opcode name="TreeUpdateEnd" value="1376256" message="Finished writing B+ tree">
+    </opcode>
+    <opcode name="LogAdvance" value="1441792" message="Log tail advance">
+    </opcode>
+    <opcode name="LogRedo" value="1507328" message="Log Redo">
+    </opcode>
+    <opcode name="LogPulseLazyWriter" value="1572864" message="Log pulse lazy writer">
+    </opcode>
+    <opcode name="ContainerMove" value="1638400" message="Container move">
+    </opcode>
+    <opcode name="BucketReadCollision" value="3276800" message="Bucket read collision">
+    </opcode>
+    <opcode name="BucketLockCollision" value="3342336" message="Bucket lock collision">
+    </opcode>
+    <opcode name="BucketCowCollision" value="3407872" message="Bucket cow collision">
+    </opcode>
+    <opcode name="CorruptBucket" value="6553600" message="B+ node CRC mismatch">
+    </opcode>
+    <opcode name="FixedBucket" value="6619136" message="B+ node repaired via redundant copy">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TreeUpdateTask" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TableEvent" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="VolumeCheckpoint" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ForwardProgress" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Allocation" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Contention" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogRedo" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ErrorDetected" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="13" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Bucket split">
+    </event>
+    <event value="2" version="1" opcode="14" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Bucket merge">
+    </event>
+    <event value="10" version="1" opcode="15" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Tree update">
+    </event>
+    <event value="11" version="1" opcode="16" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Tree update">
+    </event>
+    <event value="12" version="1" opcode="20" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Start tree update">
+    </event>
+    <event value="13" version="1" opcode="21" channel="16" level="4" task="1" keywords="0x8000000000000000" message="End tree update">
+    </event>
+    <event value="20" version="1" opcode="17" channel="16" level="4" task="4" keywords="0x8000000000000000" message="LFF: Redo log">
+    </event>
+    <event value="21" version="1" opcode="18" channel="16" level="4" task="4" keywords="0x8000000000000000" message="LFF: Protected space">
+    </event>
+    <event value="22" version="1" opcode="19" channel="17" level="5" task="5" keywords="0x4000000000000000" message="Allocation range:
+	Metadata allocation: %1 
+	Requested tier: %2, actual tier: %3 
+	Requested allocation start: %4, count: %5 
+	Actual allocation start: %6, count: %7">
+    </event>
+    <event value="23" version="1" opcode="22" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Log tail advance from %3 to %4.
+Log is %2 percent full.">
+    </event>
+    <event value="24" version="1" opcode="24" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Log pulse lazy writer. Log is %2 percent full.">
+    </event>
+    <event value="25" version="1" opcode="25" channel="16" level="4" task="5" keywords="0x8000000000000000" message="Container move:
+	Source tier: %1, Target tier: %2 
+	Source start of range: %3, count: %4 
+	 Target physical offset: %5 
+	SSD Fill Ratio %6, HDD Fill Ratio %7 
+	Reserved: %8
+	Destaged allocation count: %9
+	Failed SSD Destage: %10">
+    </event>
+    <event value="50" version="1" opcode="50" channel="16" level="4" task="50" keywords="0x8000000000000000" message="Two threads tried to read bucket %1 (table %2) for level">
+    </event>
+    <event value="51" version="1" opcode="51" channel="16" level="4" task="50" keywords="0x8000000000000000" message="A thread had to wait to lock bucket %1 (table %2) for level">
+    </event>
+    <event value="52" version="1" opcode="52" channel="16" level="4" task="50" keywords="0x8000000000000000" message="A thread had to wait for a copy of bucket %1 (table %2) for level">
+    </event>
+    <event value="100" version="1" opcode="100" channel="16" level="4" task="100" keywords="0x8000000000000000" message="B+ node CRC mismatch">
+    </event>
+    <event value="101" version="1" opcode="101" channel="16" level="4" task="100" keywords="0x8000000000000000" message="B+ node repaired via redundant copy">
+    </event>
+    <event value="1000" version="2" opcode="13" channel="16" level="4" task="2" keywords="0x8000000000000000" message="B+ tree node started splitting">
+    </event>
+    <event value="1002" version="2" opcode="13" channel="16" level="4" task="2" keywords="0x8000000000000000" message="B+ tree node finished splitting">
+    </event>
+    <event value="1003" version="2" opcode="14" channel="16" level="4" task="2" keywords="0x8000000000000000" message="B+ tree nodes started merging">
+    </event>
+    <event value="1004" version="2" opcode="14" channel="16" level="4" task="2" keywords="0x8000000000000000" message="B+ tree nodes finished merging">
+    </event>
+    <event value="1005" version="2" opcode="13" channel="16" level="4" task="2" keywords="0x8000000000000000" message="B+ tree starting pushing its root">
+    </event>
+    <event value="1006" version="2" opcode="13" channel="16" level="4" task="2" keywords="0x8000000000000000" message="B+ tree finished pushing its root">
+    </event>
+    <event value="1007" version="2" opcode="14" channel="16" level="4" task="2" keywords="0x8000000000000000" message="B+ tree starting popping its root">
+    </event>
+    <event value="1008" version="2" opcode="14" channel="16" level="4" task="2" keywords="0x8000000000000000" message="B+ tree finished popping its root">
+    </event>
+    <event value="1011" version="2" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Analyze pass start">
+    </event>
+    <event value="1012" version="2" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Analyze pass end">
+    </event>
+    <event value="1013" version="2" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Redo pass start">
+    </event>
+    <event value="1014" version="2" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Redo pass end">
+    </event>
+    <event value="1015" version="2" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Flush And Checkpoint start">
+    </event>
+    <event value="1016" version="2" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Flush And Checkpoint end">
+    </event>
+    <event value="1017" version="2" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000000" message="First redo transaction found">
+    </event>
+    <event value="1018" version="2" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Tree Update Record found">
+    </event>
+    <event value="1019" version="2" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Open Table for redo">
+    </event>
+    <event value="1020" version="2" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Reserve ranges for redo">
+    </event>
+  </events>
+</provider>

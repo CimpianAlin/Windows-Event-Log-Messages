@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-FMS" guid="dea07764-0790-44de-b9c4-49677b17174f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=fms.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\fms.dll" messageFileName="C:\Windows\system32\fms.dll" message="Microsoft-Windows-FMS" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-FMS/Operational" id="16" flags="0" message="Microsoft-Windows-FMS/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-FMS/Analytic" id="17" flags="0" message="Microsoft-Windows-FMS/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-FMS/Debug" id="18" flags="0" message="Microsoft-Windows-FMS/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="NameResOp" value="1048576" message="NameResolution">
+    </opcode>
+    <opcode name="GetFontNameTableStartOp" value="1114112" message="GetFontNameTable Start">
+    </opcode>
+    <opcode name="GetFontNameTableStopOp" value="1179648" message="GetFontNameTable Stop">
+    </opcode>
+    <opcode name="GetNameRecordStartOp" value="1245184" message="Get Name Record Start">
+    </opcode>
+    <opcode name="GetNameRecordStopOp" value="1310720" message="Get Name Record Stop">
+    </opcode>
+    <opcode name="GetNameStringsStartOp" value="1376256" message="Get Name Strings Start">
+    </opcode>
+    <opcode name="GetNameStringsStopOp" value="1441792" message="Get Name Strings Stop">
+    </opcode>
+    <opcode name="GetFontDataStartOp" value="1507328" message="Get Font Data Start">
+    </opcode>
+    <opcode name="GetFontDataStopOp" value="1572864" message="Get Font Data Stop">
+    </opcode>
+    <opcode name="GdiGetFontRealizationInfoStartOp" value="1638400" message="GdiGetFontRealizationInfo Start">
+    </opcode>
+    <opcode name="GdiGetFontRealizationInfoStopOp" value="1703936" message="GdiGetFontRealizationInfo Stop">
+    </opcode>
+    <opcode name="FmsErrorOp" value="1769472" message="FmsErrorMessage">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ModuleInitialization" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="FMS DLL initialization">
+    </task>
+    <task name="PerfTrack_DisplayFmsInit" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FMS_SingleTask" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="ETW Debug Msg">
+    </task>
+    <task name="ApiEntryCalls" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="FMS API entry call">
+    </task>
+    <task name="ApiExitCalls" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="FMS API exit call">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="1" opcode="1" channel="8" level="2" task="30" keywords="0x8000000000000000" message="FMS DLL initialization failed">
+    </event>
+    <event value="2015" version="0" opcode="0" channel="17" level="4" task="35" keywords="0x2000000000000000" message="FMS API entry for: %1">
+    </event>
+    <event value="2016" version="0" opcode="0" channel="17" level="4" task="36" keywords="0x2000000000000000" message="FMS API exit for: %1">
+    </event>
+    <event value="30000" version="0" opcode="1" channel="17" level="4" task="31" keywords="0x2001000000000000" message="">
+    </event>
+    <event value="30001" version="0" opcode="2" channel="17" level="4" task="31" keywords="0x2001000000000000" message="">
+    </event>
+    <event value="40000" version="0" opcode="16" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40001" version="0" opcode="17" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40002" version="0" opcode="18" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40003" version="0" opcode="19" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40004" version="0" opcode="20" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40005" version="0" opcode="21" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40006" version="0" opcode="22" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40007" version="0" opcode="23" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40008" version="0" opcode="24" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40009" version="0" opcode="25" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40010" version="0" opcode="26" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+    <event value="40011" version="0" opcode="27" channel="17" level="4" task="32" keywords="0x2000000000000000" message="FMS ETW: %1">
+    </event>
+  </events>
+</provider>

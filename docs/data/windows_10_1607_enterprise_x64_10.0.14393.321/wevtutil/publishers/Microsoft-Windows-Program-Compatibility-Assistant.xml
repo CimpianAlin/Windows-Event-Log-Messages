@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Program-Compatibility-Assistant" guid="4cb314df-c11f-47d7-9c04-65fb0051561b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=pcaevts.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\pcaevts.dll" parameterFileName="C:\Windows\system32\pcaevts.dll" messageFileName="C:\Windows\system32\pcaevts.dll" message="Microsoft-Windows-Program-Compatibility-Assistant" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Program-Compatibility-Assistant/Analytic" id="16" flags="0" message="Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant" id="17" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant/Analytic" id="18" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Program-Compatibility-Assistant/CompatAfterUpgrade" id="19" flags="0" message="Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PCA_ServiceStartup" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PCA_MonitorProcess" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PCA_ServiceInitialize" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PCA_ServiceShutdown" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="WDI" mask="100" message="">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Binary data sent from PCA Diagnostic Module to PCA service for processing. It is not meant to be human readable.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="PCA has finished monitoring an application: %1
+
+The problems detected code is: %2
+
+If this number is not 0, PCA observed some indications of compatibility problems.
+
+For this application, the following dialog type was shown:%3
+
+If this number is not 0, an actual dialog was shown offering possible fixes to suspected problems.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Exe: %1
+
+ResolverName: %2">
+    </event>
+    <event value="30" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Program Compatibility Assistant was invoked to correct a compatibility problem. Information about the application is below.
+
+Application name: %1
+Application version: %2
+Executable path: %3
+Scenario ID: %4
+User action: %5
+Compatibility layer: %6">
+    </event>
+    <event value="31" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Program Compatibility Assistant was invoked to correct a compatibility problem. Information about the application is below.
+
+Application name: %1
+Application version: %2
+Executable path: %3
+Scenario ID: %4
+User action: %5
+Compatibility layer: %6
+Deprecated component: %7">
+    </event>
+    <event value="32" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Program Compatibility Assistant was invoked due to an unsigned driver install. This version of Windows requires all drivers to have a valid digital signature. Information about the driver is below.
+
+Driver: %1
+Service: %2
+Publisher: %3
+Location: %4
+Version: %5
+
+This driver is unavailable and the program that uses this driver might not work correctly.">
+    </event>
+    <event value="101" version="0" opcode="1" channel="0" level="4" task="1" keywords="0x0" message="PCA Service startup begin.">
+    </event>
+    <event value="102" version="0" opcode="2" channel="0" level="4" task="1" keywords="0x0" message="PCA Service startup finished.">
+    </event>
+    <event value="103" version="0" opcode="1" channel="0" level="4" task="2" keywords="0x0" message="PCA Process Monitor begin.">
+    </event>
+    <event value="104" version="0" opcode="2" channel="0" level="4" task="2" keywords="0x0" message="PCA Process Monitor finished.">
+    </event>
+    <event value="105" version="0" opcode="1" channel="0" level="4" task="3" keywords="0x0" message="PCA Service initialization begin.">
+    </event>
+    <event value="106" version="0" opcode="2" channel="0" level="4" task="3" keywords="0x0" message="PCA Service initialization finished.">
+    </event>
+    <event value="107" version="0" opcode="1" channel="0" level="4" task="4" keywords="0x0" message="PCA Service initialization begin.">
+    </event>
+    <event value="108" version="0" opcode="2" channel="0" level="4" task="4" keywords="0x0" message="PCA Service initialization finished.">
+    </event>
+    <event value="200" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Program Compatibility Assistant service was stopped successfully.">
+    </event>
+    <event value="201" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Program Compatibility Assistant service started successfully.">
+    </event>
+    <event value="202" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The Program Compatibility Assistant service failed to initialize.">
+    </event>
+    <event value="203" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The Program Compatibility Assistant service failed to start.">
+    </event>
+    <event value="204" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The Program Compatibility Assistant service failed to stop.">
+    </event>
+    <event value="205" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The Program Compatibility Assistant service failed to perform the phase two initialization.">
+    </event>
+    <event value="206" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The Program Compatibility Assistant service successfully performed phase two initialization.">
+    </event>
+    <event value="1100" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000100" message="Notified PCA service of status icon registration.">
+    </event>
+    <event value="1200" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000100" message="PCA Trigger event:%1">
+    </event>
+    <event value="1234" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000200000000000" message="Exe: AppId%1
+
+Uptime %2 
+
+">
+    </event>
+  </events>
+</provider>

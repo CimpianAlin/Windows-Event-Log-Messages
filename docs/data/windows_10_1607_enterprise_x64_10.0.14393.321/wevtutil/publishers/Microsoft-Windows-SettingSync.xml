@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SettingSync" guid="83d6e83b-900b-48a3-9835-57656b6f6474" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=SettingSyncCore.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\SettingSyncCore.dll" messageFileName="C:\Windows\system32\SettingSyncCore.dll" message="Microsoft-Windows-SettingSync" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SettingSync/Operational" id="16" flags="0" message="Microsoft-Windows-SettingSync/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-SettingSync/Debug" id="17" flags="0" message="Microsoft-Windows-SettingSync/Debug">
+    </channel>
+    <channel name="Microsoft-Windows-SettingSync/Analytic" id="18" flags="0" message="Microsoft-Windows-SettingSync/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-SettingSync/VerboseDebug" id="19" flags="0" message="Microsoft-Windows-SettingSync/VerboseDebug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Debug_WLRoamMaintenance" value="6524" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Debug_BackupMaintenance" value="6562" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_SettingProfileHandler_OnLoad" value="7001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MouseSettingHandler_GetUnit" value="7003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MouseSettingHandler_ApplyUnit" value="7005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_FileSystemHandler_OpenStream" value="7007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_FileSystemHandler_ApplyUnit" value="7009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_LocalSyncSession" value="7011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_ScanForLocalSettingChanges" value="7013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_ApplySettingUnit" value="7015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_RemoveSettingUnit" value="7017" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_GetUnits" value="7019" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_GetUnit" value="7021" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_RemoteCreateCollection" value="7023" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_DownloadSyncCollection" value="7025" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_UploadSyncCollection" value="7027" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_RemoteDeleteCollection" value="7029" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_SyncRequestedByLocalSystem" value="7031" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamLocalSyncSession" value="7033" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamLocalSyncOpenMetadataStore" value="7035" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamLocalSyncMetadataMaintenancePass" value="7037" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamLocalSyncSaveSettingUnit" value="7039" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamLocalSyncDeleteSettingUnit" value="7041" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamLocalSyncGetSettingUnit" value="7043" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamFindChanges" value="7045" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamFindChangesNetworkRequest" value="7047" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamUploadBatch" value="7049" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamUploadBatchNetworkRequest" value="7051" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGlobalEnable" value="7053" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGlobalDisable" value="7055" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetPolicyDocument" value="7057" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetPolicyDocumentNetworkRequest" value="7059" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetAllForSubfolders" value="7061" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetAllForSubfoldersNetworkRequest" value="7063" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetSettingUnit" value="7065" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetSettingUnitNetworkRequest" value="7067" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetCollectionInterestParticipantCountNetworkRequest" value="7069" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamRegisterCollectionInterestNetworkRequest" value="7071" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamRegisterWNSNotificationNetworkRequest" value="7073" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetUserTile" value="7075" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetUserTileNetworkRequest" value="7077" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamSetUserTile" value="7079" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamSetUserTileNetworkRequest" value="7081" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamCloudSyncSessionDownSync" value="7083" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamCloudSyncSessionUpSync" value="7085" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamPayload1Sync" value="7087" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MicroImageCompression" value="7089" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MicroImageScale" value="7091" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_LocalCreateCollection" value="7093" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_LocalDeleteCollection" value="7095" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_ScanForChanges" value="7097" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_EndSyncBatch" value="7099" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_NotifyOnBackgroundUploadsStarted" value="7101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_BackupRequestedByLocalSystem" value="7103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MoveCollectionToBackup" value="7105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MoveCollectionToRoaming" value="7107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_LocalDeleteCollectionBackup" value="7109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_RemoteDeleteCollectionBackup" value="7111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MarkCollectionForDownload" value="7113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MarkCollectionForUpload" value="7115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MarkCollectionForBackup" value="7117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MarkCollectionForRestore" value="7119" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamFindBackupChanges" value="7121" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamUploadBackupBatch" value="7123" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamCreateBackupFolder" value="7125" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamCommitTempBackupReplica" value="7127" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamDeleteBackupReplica" value="7129" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetBackupSyncToken" value="7131" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamDeleteBackupFolder" value="7133" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamCreateAppBackupFolder" value="7135" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamEnumerateAppBackups" value="7137" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetCloudStorageUsage" value="7139" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamEnumerateAppBackupsNetworkRequest" value="7141" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetCloudStorageUsageNetworkRequest" value="7143" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamEnumerateDeviceBackups" value="7145" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamEnumerateDeviceBackupsNetworkRequest" value="7147" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamBlockDevice" value="7149" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamCreateOrUpdateDeviceBackupFolder" value="7151" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamFetchDataFromPreAuthUrl" value="7153" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamUpdateDeviceMetadataNetworkRequest" value="7155" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamUploadBackupSettingData" value="7157" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_MarkCollectionReadyForBackup" value="7159" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncGetRoamedCollection" value="7161" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncApplyRoamedCollection" value="7163" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncMergeCollections" value="7165" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncLoadCollection" value="7167" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncStoreCollection" value="7169" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncReacquireApps" value="7171" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncRequestStoreApplicability" value="7173" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncRequestStorePreviewTiles" value="7175" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncInstallApp" value="7177" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncUninstallApp" value="7179" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_OutOfQuotaDialogInvokeDialog" value="7181" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamCheckIfBackupIsDisabled" value="7183" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncAppInstalled" value="7185" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncAppUninstalled" value="7187" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncRevertAppInstalled" value="7189" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_CatastrophicRestoreFailureDialogInvokeDialog" value="7191" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamMoveBackupFolderForRestore" value="7193" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetAppOsBackupFolderForMetadata" value="7195" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetCollectionBackupFolderForRestore" value="7197" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamGetSettingUnitFromResourceIdForRestore" value="7199" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_WLRoamCheckIfBackupFolderExistsUnderDeviceRoot" value="7201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncOnApplyChanges" value="7203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncDrainDEHQueue" value="7205" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_Backup_Task" value="7307" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_Backup_Collection" value="7309" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_CreateRoamingCollectionFolder" value="7311" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_BootstrapRestoreDownloadCriticalCollections" value="7313" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_SyncRequestedByCloud" value="7314" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_AppSyncGetStoreMetadata" value="7315" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_DeleteAllAppBackups" value="7317" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="RoamingSettings" mask="1" message="">
+    </keyword>
+    <keyword name="AppSync" mask="2" message="">
+    </keyword>
+    <keyword name="OutOfQuotaDialog" mask="4" message="">
+    </keyword>
+    <keyword name="CatastrophicRestoreFailureDialog" mask="8" message="">
+    </keyword>
+    <keyword name="BackupTask" mask="20" message="">
+    </keyword>
+    <keyword name="BootstrapRestore" mask="40" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="5001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Local create for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Remote create for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Download for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Upload for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Local delete for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Remote delete for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5007" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Applying setting unit %1 for collection %2 failed. (Result: %3)">
+    </event>
+    <event value="5008" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Removing setting unit %1 for collection %2 failed. (Result: %3)">
+    </event>
+    <event value="5009" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Resolving a conflict with setting unit %1 for collection %2 with sync operation %3 failed (Result: %4).">
+    </event>
+    <event value="5010" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Merging setting unit %1 for collection %2 with sync operation %3 failed (Result: %4).">
+    </event>
+    <event value="5011" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The system failed to request a sync for collection %1 (operation: %2, Result: %3).">
+    </event>
+    <event value="5012" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The sync at logon failed (Result %1).">
+    </event>
+    <event value="5013" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to flush delayed uploads (Result: %1)">
+    </event>
+    <event value="5014" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The setting unit %1 for collection %2 is invalid. (operation: %3, Result: %4).">
+    </event>
+    <event value="5015" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Profile notification handler will not sync at logon. (Reason: %1)">
+    </event>
+    <event value="5016" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Restoring operations failed (Result: %1).">
+    </event>
+    <event value="5017" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The connect/disconnect (%1) operation failed (Result: %2).">
+    </event>
+    <event value="5018" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="The host process failed to initialize (Result: %1).">
+    </event>
+    <event value="5019" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to scan collection %1 for offline changes. (Result: %2).">
+    </event>
+    <event value="5020" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Starting or stopping setting change publisher for %1 failed. (Result: %2)">
+    </event>
+    <event value="5021" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Ending the sync batch failed. (Result: %1)">
+    </event>
+    <event value="5022" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The PDC task request failed (Result: %1).">
+    </event>
+    <event value="5023" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to schedule end sync batch (Result: %1).">
+    </event>
+    <event value="5024" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to create process %1 (Result: %2).">
+    </event>
+    <event value="5025" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Scheduling backup for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5026" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Scheduling restore for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5027" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Moving items from roaming to backup replica for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5028" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Moving items from backup to roaming replica for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5029" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Local backup delete for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5030" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Remote backup delete for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5031" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Marking cloud as dirty failed. (Result: %1)">
+    </event>
+    <event value="5032" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Scheduling an upload sync session for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5033" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Scheduling a download sync session for collection %1 failed. (Result: %2)">
+    </event>
+    <event value="5034" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Starting the setting monitor SSO failed.  (Message: %1, Result: %2)">
+    </event>
+    <event value="5035" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Starting the WNF listener failed.  (Message: %1, Result: %2)">
+    </event>
+    <event value="5036" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Initiating first time sync before logon failed. (Result: %1)">
+    </event>
+    <event value="5037" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to sync initial payloads. (Result: %1)">
+    </event>
+    <event value="5038" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Bootstrapping first time sync with cloud failed. (Result: %1)">
+    </event>
+    <event value="5039" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Initiating first time sync before logon (group 2) failed. (Result: %1)">
+    </event>
+    <event value="5040" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Winbici EndExperience has not completed after %1 milliseconds.">
+    </event>
+    <event value="5041" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Local Provider successfully repaired replica %1 (Operation: %2)">
+    </event>
+    <event value="5042" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Local Provider failed to repair replica %1 (Operation: %2) Result: %3">
+    </event>
+    <event value="5390" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Applying setting unit %2 for collection %1 failed. (Result: %3)">
+    </event>
+    <event value="5391" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Removing setting unit %2 for collection %1 failed. (Result: %3)">
+    </event>
+    <event value="5392" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Resolving a conflict with setting unit %2 for collection %1 with sync operation %3 failed (Result: %4).">
+    </event>
+    <event value="5393" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Merging setting unit %2 for collection %1 with sync operation %3 failed (Result: %4).">
+    </event>
+    <event value="5401" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to open metadata store %1. (Result: %2)">
+    </event>
+    <event value="5402" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The metadata store file %1 is locked, waiting... (Attempt: %2)">
+    </event>
+    <event value="5403" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The metadata store file %1 is locked, giving up.">
+    </event>
+    <event value="5501" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Maintenance task has completed (Result: %1)">
+    </event>
+    <event value="5502" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cloud provider failed to update setting unit %1 in collection %2 (Operation: %3, Result: %4)">
+    </event>
+    <event value="5503" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cloud sync provider failed to sync (Result: %1)">
+    </event>
+    <event value="5504" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cloud sync engine failed to sync collection %1 from cloud storage to Windows (Result: %2)">
+    </event>
+    <event value="5505" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Local sync provider failed to sync with the OS local provider (Result: %1)">
+    </event>
+    <event value="5506" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Local provider failed to update setting unit %1 in collection %2 (Operation: %3, Result: %4)">
+    </event>
+    <event value="5507" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Local provider failed to delete setting unit %1 in collection %2 (Operation: %3, Result: %4)">
+    </event>
+    <event value="5508" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Payload1 collections download completed with an error (Result: %1)">
+    </event>
+    <event value="5509" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Payload1 collections successfully downloaded">
+    </event>
+    <event value="5510" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Settings view failed to parse. (Result: %1)">
+    </event>
+    <event value="5511" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Policy document failed to parse. (Result: %1)">
+    </event>
+    <event value="5512" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cloud sync engine failed to sync collection %1 from Windows to cloud storage (Result: %2)">
+    </event>
+    <event value="5513" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Shared settings didnt sync between PCs. Update Windows to fix the problem.">
+    </event>
+    <event value="5514" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="There was a problem signing in to the sync server. Shared settings might be out of sync.">
+    </event>
+    <event value="5515" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The sync server returned error %1. Shared settings might be out of sync.">
+    </event>
+    <event value="5516" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Shared settings in the collection %1 didnt sync because the collection is too large.">
+    </event>
+    <event value="5517" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Shared settings in the collection %1 didnt sync. The updates were blocked by the server because theyre too big or have changed too frequently. The settings will sync again when the limits have been reset.">
+    </event>
+    <event value="5518" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="UserTile view failed to parse. (Result: %1)">
+    </event>
+    <event value="5519" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Policy document failed to download. (Result: %1)">
+    </event>
+    <event value="5520" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Policy document failed to save. (Result: %1)">
+    </event>
+    <event value="5521" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Successfully applied %2 setting unit(s) and failed to apply %3 setting unit(s) to cloud storage for collection %1.">
+    </event>
+    <event value="5522" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Policy document is missing at least one required value. (Result: %1)">
+    </event>
+    <event value="5523" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Registry writes for the Cached Policy Values failed (Result: %1)">
+    </event>
+    <event value="5524" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An invalid cached policy was detected. Policy document retry logic now in recovery mode.">
+    </event>
+    <event value="5525" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Notification WNS channel %1 creation failed (Result: %2)">
+    </event>
+    <event value="5526" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Notification WLS channel %1 creation failed (Result: %2)">
+    </event>
+    <event value="5527" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Notification WLS subscription limit was exceeded">
+    </event>
+    <event value="5528" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="No payload 1 settings were downloaded because the settings folder was not present in cloud storage. This is expected if this is the first device to join the sync relationship.">
+    </event>
+    <event value="5529" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The LiveProviderSession has timed out waiting for an unlock event on a non-AoAc device.  This should be a rare event and a report has been logged.">
+    </event>
+    <event value="5530" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cloud sync engine failed to back up collection %1 (Result: %2)">
+    </event>
+    <event value="5531" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Policy document has not been cached and we are not allowed to refresh at this time. (Result: %1)">
+    </event>
+    <event value="5532" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to parse response from Live Storage Quota API. (Result: %1)">
+    </event>
+    <event value="5533" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Successfully applied %2 setting unit(s) and failed to apply %3 setting unit(s) to Windows for collection %1.">
+    </event>
+    <event value="5534" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Create new device folder during restore completed with hr = %1">
+    </event>
+    <event value="5535" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Move Backup folder from Old device folder to current device folder during restore completed with hr = %1">
+    </event>
+    <event value="5536" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Retrying restore since a previous attempt failed with hr = %2? - %1">
+    </event>
+    <event value="5537" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Bootstrap Restore completed with hr = %1">
+    </event>
+    <event value="5538" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Critical collection %1 download completed with hr = %2 during bootstrap.">
+    </event>
+    <event value="5539" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Scheduling prelogon collections for download completed with hr = %1 during bootstrap.">
+    </event>
+    <event value="5540" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cloud sync engine failed to restore collection %1 (Result: %2)">
+    </event>
+    <event value="5541" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Successfully applied %2 setting unit(s) and failed to apply %3 setting unit(s) during Restore for collection %1.">
+    </event>
+    <event value="5542" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Completed backup metadata maintenance passfor OS collections with hr = %1.">
+    </event>
+    <event value="5543" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Completed backup metadata maintenance pass for App collections with hr = %1.">
+    </event>
+    <event value="5544" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cannot find restore folder for collection %1. Looks like it was stolen by another device and then deleted.">
+    </event>
+    <event value="5545" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Cloud sync engine unable to back up collection %1 (Result: %2)">
+    </event>
+    <event value="5546" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Failed to fully parse remote roaming metadata on bootstrap logon. HRESULT: %1">
+    </event>
+    <event value="5547" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The %2 providers RecoverOutOfDateReplica got called for for %1 (HRESULT: %3)">
+    </event>
+    <event value="5690" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cloud provider failed to update setting unit %2 in collection %1 (Operation: %3, Result: %4)">
+    </event>
+    <event value="5691" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Local provider failed to update setting unit %2 in collection %1 (Operation: %3, Result: %4)">
+    </event>
+    <event value="5692" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Local provider failed to delete setting unit %2 in collection %1 (Operation: %3, Result: %4)">
+    </event>
+    <event value="5693" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Cloud sync provider encountered an unexpected null setting unit in collection %1 (saveAction: %2, Result: %3)">
+    </event>
+    <event value="5701" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="(OutOfQuotaDialog) System Settings launched from over quota dialog. (Result: %1)">
+    </event>
+    <event value="5702" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="(OutOfQuotaDialog) Buy more storage launched from over quota dialog. (Result: %1)">
+    </event>
+    <event value="5703" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="(OutOfQuotaDialog) User ignored dialog.">
+    </event>
+    <event value="5704" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="(OutOfQuotaDialog) Registry keys updated. (Result: %1)">
+    </event>
+    <event value="5705" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="(OutOfQuotaDialog) ShouldShowDialog checks completed with status %1">
+    </event>
+    <event value="5706" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Using Win8 Policy Document Uri. (Result: %1)">
+    </event>
+    <event value="5707" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="MSA ticket request failed for current user. (Result: %1)">
+    </event>
+    <event value="5708" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Reupload Needed request for %1. (Result: %2)">
+    </event>
+    <event value="5711" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="(CatastrophicRestoreFailureDialog) ShouldShowDialog checks completed with status %1">
+    </event>
+    <event value="5712" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="(CatastrophicRestoreFailureDialog) User pressed OK button.">
+    </event>
+    <event value="5713" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="WNF monitor failed to subscribe to WNF event %1. (Result: %2)">
+    </event>
+    <event value="5714" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="WNF monitor failed to unsubscribe from WNF event %1. (Result: %2)">
+    </event>
+    <event value="5715" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="WNF monitor failed to start. (Result: %1)">
+    </event>
+    <event value="5716" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="WNF monitor failed to notify state change for WNF event %1. (Result: %2)">
+    </event>
+    <event value="5717" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Activation of PDC failed. (Result: %1)">
+    </event>
+    <event value="5718" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Store found in memory cache for path (%1)">
+    </event>
+    <event value="5719" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Modified time for unit(%1) set to zero">
+    </event>
+    <event value="5720" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Modified time %1 is greater than current time. Original modified time %2. Collection %3. Setting unit %4. Operation %5.">
+    </event>
+    <event value="5721" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="5722" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="5723" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="5724" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Invalid metadata field type. Name: %1, type: %2.">
+    </event>
+    <event value="5725" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Creating new local metadata store at %1">
+    </event>
+    <event value="5726" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Bootstrap remote metadata failed for %1 HRESULT: %2.">
+    </event>
+    <event value="6001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Updated local settings for collection %1. (Result: %2)">
+    </event>
+    <event value="6002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Local create for collection %1 completed. (Result: %2)">
+    </event>
+    <event value="6003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Remote create for collection %1 completed. (Result: %2)">
+    </event>
+    <event value="6004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A download sync session completed for collection %1. (Result: %2)">
+    </event>
+    <event value="6005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="An upload sync session completed for collection %1. (Result: %2)">
+    </event>
+    <event value="6006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Local delete for collection %1 completed. (Result: %2)">
+    </event>
+    <event value="6007" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Remote delete for collection %1 completed. (Result: %2)">
+    </event>
+    <event value="6008" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The background upload task has started (Reason: %1, Result: %2).">
+    </event>
+    <event value="6009" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Part of the setting unit %1 was not applied as more recent settings were detected locally.">
+    </event>
+    <event value="6010" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully resolved a conflict with setting unit %1 for collection %2 with sync operation %3 (Result: %4).">
+    </event>
+    <event value="6011" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="Sync process shutdown: %1.">
+    </event>
+    <event value="6012" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Profile notification handler will sync at logon.">
+    </event>
+    <event value="6013" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The remote provider has requested that the settings in collection %1 be applied (Result: %2).">
+    </event>
+    <event value="6014" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The sync status was changed to %1.">
+    </event>
+    <event value="6015" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The sync provider requested that %1 not upload now.  It will retry the upload later.">
+    </event>
+    <event value="6016" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The connect/disconnect (%1) operation was successful.">
+    </event>
+    <event value="6017" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Local provider requested a sync of collection %1. (operation: %2, Result: %3)">
+    </event>
+    <event value="6018" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="Operation %2 for collection %1 was scheduled: %3.">
+    </event>
+    <event value="6019" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="Sync process started.">
+    </event>
+    <event value="6020" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully merged setting unit %1 for collection %2 with sync operation %3 (Result: %4).">
+    </event>
+    <event value="6021" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Applying setting unit %1 for collection %2 failed even though local settings are default. (Result: %3)">
+    </event>
+    <event value="6022" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="%2 of %3 settings were synchronized before entering connected standby.">
+    </event>
+    <event value="6023" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The data store for %1 is offline. The operation %2 cannot complete at this time.">
+    </event>
+    <event value="6024" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A backup session was scheduled for collection %1. (Result: %2)">
+    </event>
+    <event value="6025" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A restore session was scheduled for collection %1. (Result: %2)">
+    </event>
+    <event value="6026" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Moving collection from roaming to backup completed for collection %1. (Result: %2)">
+    </event>
+    <event value="6027" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Moving collection from backup to roaming completed for collection %1. (Result: %2)">
+    </event>
+    <event value="6028" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Local backup delete for collection %1 completed. (Result: %2)">
+    </event>
+    <event value="6029" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Remote backup delete for collection %1 completed. (Result: %2)">
+    </event>
+    <event value="6030" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Marking cloud dirty completed. (Result: %1)">
+    </event>
+    <event value="6031" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Backup state for collection %1 set to %2. (Result: %3)">
+    </event>
+    <event value="6032" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="OnOperationProgress (Collection - %1, Completed - %2, Total - %3, hr - %4)">
+    </event>
+    <event value="6033" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A download sync session was scheduled for collection %1. (Result: %2)">
+    </event>
+    <event value="6034" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="An upload sync session was scheduled for collection %1. (Result: %2)">
+    </event>
+    <event value="6035" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Last backup setting change time for collection %1 set to %2. (Result: %3)">
+    </event>
+    <event value="6036" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="First backup setting change time for collection %1 set to %2. (Result: %3)">
+    </event>
+    <event value="6037" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Retrieved backup consistency timestamp %2 for collection %1. (Result: %3)">
+    </event>
+    <event value="6038" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Collection %1 is in backup state %2 which is invalid while retrieving the consistency timestamp. (Result: %3)">
+    </event>
+    <event value="6039" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Consistency timestamp for collection %1 was invalidated because it changed from %2 to %3 during retrieval. (Result: %4)">
+    </event>
+    <event value="6040" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Setting unit with ID %1 has timestamp %2, but its data stream has timestamp %3; backup will be blocked.">
+    </event>
+    <event value="6041" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Quota check failed on collection %1. (Result: %2)">
+    </event>
+    <event value="6042" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Setting Monitor SSO disabled since setting sync is disabled.">
+    </event>
+    <event value="6043" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="No settings have been synced before. Initiating first time sync.">
+    </event>
+    <event value="6044" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Bootstrapping restore from device %1.">
+    </event>
+    <event value="6045" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Bootstrapping first time sync.">
+    </event>
+    <event value="6046" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="All critical collections downloaded successfully and rest of initial payload (group 1) collections have been scheduled.">
+    </event>
+    <event value="6047" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Operations %2 for collection %1 are being no-oped because the collection is disabled for roaming: %3.">
+    </event>
+    <event value="6048" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Operations %2 for collection %1 are being no-oped because the collection is disabled for backup: %3.">
+    </event>
+    <event value="6049" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Operations %2 for collection %1 are being no-oped because the collection is disabled for restore: %3.">
+    </event>
+    <event value="6050" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Device metadata upload failed with status %1">
+    </event>
+    <event value="6051" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="SettingSyncEngine coclass has shutdown.">
+    </event>
+    <event value="6052" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Collection %1 could not be locked for sync because it is in use locally">
+    </event>
+    <event value="6053" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Backup consistency timestamp for collection %1 implicitly set to %2. (Result: %3)">
+    </event>
+    <event value="6054" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Ramp State Update: %1 upgraded from %2 to %3">
+    </event>
+    <event value="6055" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="SettingSyncHost.exe is blocked due to one instance has already existed. (PID: %1)">
+    </event>
+    <event value="6056" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="SettingSyncHost.exe acquired global running mutex. (PID: %1)">
+    </event>
+    <event value="6057" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="SettingSyncHost.exe released global running mutex. (PID: %1)">
+    </event>
+    <event value="6058" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The current user session has a parent session (The user session could be a VS simulator). Prevent SettingSyncHost.exe from starting in this session.">
+    </event>
+    <event value="6059" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Initiating first time sync (group 2) with pre-fetch app list.">
+    </event>
+    <event value="6060" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="App pre-fetch collections and initial payload (group 2) collections have been scheduled.">
+    </event>
+    <event value="6061" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6062" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Collection %1 failed to back up (Result: %2)">
+    </event>
+    <event value="6063" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Property %1 of the setting unit %2 was not applied as more recent settings were detected locally.">
+    </event>
+    <event value="6064" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Starting or stopping setting change publisher for %1 failed. (Result: %2)">
+    </event>
+    <event value="6065" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="6066" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="6067" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="6501" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Local provider updated setting unit %1 in collection %2 (Operation: %3)">
+    </event>
+    <event value="6502" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud provider updated setting unit %1 in collection %2 (Operation: %3)">
+    </event>
+    <event value="6503" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Setting collection manager created collection %1 in the local cache.">
+    </event>
+    <event value="6504" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Setting collection manager deleted collection %1 from the local cache.">
+    </event>
+    <event value="6505" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="WNS listener received a notification for collection %1">
+    </event>
+    <event value="6506" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Local provider received a notification for collection %1">
+    </event>
+    <event value="6507" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud sync engine was triggered by collection %1, but did not sync for an expected reason. (Result: %2)">
+    </event>
+    <event value="6508" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud sync provider failed to sync, but for an expected reason (Result: %1)">
+    </event>
+    <event value="6509" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Sync task has completed (Result: %1)">
+    </event>
+    <event value="6510" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Sync task has been cancelled (Result: %1)">
+    </event>
+    <event value="6511" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Maintenance task has been cancelled (Result: %1)">
+    </event>
+    <event value="6512" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="CloudSyncEngine is attempting a sync with cloud storage">
+    </event>
+    <event value="6513" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Attempting to sync settings from cloud storage to Windows">
+    </event>
+    <event value="6514" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Downloading usertile from cloud storage">
+    </event>
+    <event value="6515" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully synced %2 settings from cloud storage to Windows for collection %1">
+    </event>
+    <event value="6516" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud Sync Engine saved a new sync token from cloud storage">
+    </event>
+    <event value="6517" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully synced %2 settings from Windows to cloud storage for collection %1">
+    </event>
+    <event value="6518" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A conflict was detected for setting unit %1 in collection %2 when attempting to sync it to cloud storage">
+    </event>
+    <event value="6519" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A conflict was detected for setting unit %1 in collection %2 when attempting to sync it to Windows">
+    </event>
+    <event value="6520" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="EndSyncBatch is complete">
+    </event>
+    <event value="6521" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A garbage collection occurred in cloud storage. %1 collection(s) on this device were removed.">
+    </event>
+    <event value="6522" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Setting collection manager deleted metadata for collection %1 from Windows.">
+    </event>
+    <event value="6523" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Register Notification Response: %1">
+    </event>
+    <event value="6524" version="0" opcode="1" channel="17" level="4" task="6524" keywords="0x4000000000000000" message="Maintenance task has started">
+    </event>
+    <event value="6525" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Sync task has started">
+    </event>
+    <event value="6526" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Attempting to sync settings from Windows to cloud storage">
+    </event>
+    <event value="6527" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Uploading Batch to service with transaction Id: %1">
+    </event>
+    <event value="6528" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Provider was enabled globally (Result: %1).">
+    </event>
+    <event value="6529" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Provider was disabled globally (Result: %1).">
+    </event>
+    <event value="6530" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Collection %1 was blocked from uploading to cloud storage. (Reason: %2)">
+    </event>
+    <event value="6531" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Collection %1 was blocked from downloading to Windows. (Reason: %2)">
+    </event>
+    <event value="6532" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Storage request: %1 to %2 completed with status code %3.">
+    </event>
+    <event value="6533" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Collection %1 was removed completely from the device due to a garbage collection in cloud storage.">
+    </event>
+    <event value="6534" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Device was still interested in garbge collected collection %1.">
+    </event>
+    <event value="6535" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A missing blob for setting unit %1 in collection %2 was detected in cloud storage, but this client cannot repair it">
+    </event>
+    <event value="6536" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A missing blob for setting unit %1 in collection %2 was detected in cloud storage. Attempting repair.">
+    </event>
+    <event value="6537" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Current cached policy document is invalid.">
+    </event>
+    <event value="6538" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully resolved a high priority write conflict against the local cache with setting unit %1 for collection %2 (Result: %4).">
+    </event>
+    <event value="6539" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully resolved a high priority write conflict against the cloud with setting unit %1 for collection %2 (Result: %4).">
+    </event>
+    <event value="6540" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Storage has requested a full recovery.">
+    </event>
+    <event value="6541" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Storage has ramped the full recovery attempt.  We&apos;ll try again later.">
+    </event>
+    <event value="6542" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Attempting to back up settings from Windows to cloud storage">
+    </event>
+    <event value="6543" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Wnf event callback failure. State Name: %1. HRESULT: %2.">
+    </event>
+    <event value="6544" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully backed up %2 settings from Windows to cloud storage for collection %1">
+    </event>
+    <event value="6545" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Collection Metadata Destroy Failure. Collection Id: %1. HRESULT: %2.">
+    </event>
+    <event value="6546" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Setting unit %1 in collection %2 was backed up via BITS (Result: %3)">
+    </event>
+    <event value="6547" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Collection %1 failed to download in cloud sync engine. HRESULT %2.">
+    </event>
+    <event value="6548" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="AppSync Install App. PackageFamilyName: %1. HRESULT: %2.">
+    </event>
+    <event value="6549" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="AppSync Uninstall App. PackageFamilyName: %1. HRESULT: %2.">
+    </event>
+    <event value="6550" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="AppSync Applicability Check. PackageFamilyName: %1, FilterMode: %2, IsApplicable=%3.">
+    </event>
+    <event value="6551" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="StartLayoutSync - Load layout data from stream. (HRESULT: %1)">
+    </event>
+    <event value="6552" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully restored up %2 settings from cloud storage to Windows for collection %1">
+    </event>
+    <event value="6553" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="AppSync Get Collection. List Type: %1. Number of Apps: %2. HRESULT: %3.">
+    </event>
+    <event value="6554" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="AppSync Merge Collections. List Type: %1. Number of Apps[Local]: %2. Number of Apps[Cloud]: %3. Number of Apps[Resolved]: %4. HRESULT: %5.">
+    </event>
+    <event value="6555" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="AppSync Apply Collection. List Type: %1. Number of Apps[Local]: %2. Number of Apps[Cloud]: %3. Number of Apps[Result]: %4. HRESULT: %5.">
+    </event>
+    <event value="6556" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Bootstrap remote metadata failed for %1 HRESULT: %2.">
+    </event>
+    <event value="6557" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="One or more collections failed to apply on download, but sync token was advanced.">
+    </event>
+    <event value="6558" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="PicturePasswordPicture image validation failed (HRESULT: %1)">
+    </event>
+    <event value="6559" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Setting unit %1 failed to upload with WriteStatus (%2)">
+    </event>
+    <event value="6560" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="BITS Upload session failed for setting unit %1 for collection %2 (HRESULT: %3)">
+    </event>
+    <event value="6561" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Aborting sync session for %1 as the user account is not connected.">
+    </event>
+    <event value="6562" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="StartLayoutSync - GetUnit() is returning pending remote payload because system is in cloud priority mode.">
+    </event>
+    <event value="6563" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="StartLayoutSync - No download happened during sync session. Switching back to normal mode from cloud priority mode.">
+    </event>
+    <event value="6564" version="0" opcode="1" channel="17" level="4" task="6562" keywords="0x4000000000000000" message="Backup maintenance task started">
+    </event>
+    <event value="6565" version="0" opcode="2" channel="17" level="4" task="6562" keywords="0x4000000000000000" message="Backup maintenance task ended">
+    </event>
+    <event value="6566" version="0" opcode="2" channel="17" level="4" task="6524" keywords="0x4000000000000000" message="Maintenance task ended">
+    </event>
+    <event value="6567" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Storage subscription operation (create/update) failed for %1 (HRESULT: %2)">
+    </event>
+    <event value="6568" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Storage subscription operation (delete) failed for %1 (HRESULT: %2)">
+    </event>
+    <event value="6569" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The expiry value in policy exceeds the expiry from WNS.  This is an indication of an invalid policy value, using WNS value instead.">
+    </event>
+    <event value="6570" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The %2 provider cleaned up tombstones for %1 (HRESULT: %3)">
+    </event>
+    <event value="6571" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="ScanForChanges omitted first scan of backup data for collection %1 because it is ineligible for backup">
+    </event>
+    <event value="6572" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="PDCActivation was used by process %1 instead of SettingSyncHost">
+    </event>
+    <event value="6573" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Connection was invalid. Connected state:%1 Roaming state:%2">
+    </event>
+    <event value="6574" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Operation reason: %1 for collection (%2) refused by network policy.">
+    </event>
+    <event value="6575" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Operation: %1 was refused by network policy.">
+    </event>
+    <event value="6576" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Collection %1 will not be roamed because it contains an encrypted unit.">
+    </event>
+    <event value="6577" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud Model Backup Started">
+    </event>
+    <event value="6578" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud Model Backup Started Succeeded">
+    </event>
+    <event value="6579" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud Model Backup Cancelled">
+    </event>
+    <event value="6580" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud Model Backup Cancelled Succeeded">
+    </event>
+    <event value="6581" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud Model Backup Status Changed with Percentage:%1">
+    </event>
+    <event value="6582" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud Model Backup Finished with hr %1">
+    </event>
+    <event value="6583" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud Model Backup Returned AppList with %1 apps">
+    </event>
+    <event value="6584" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud Model Backup main app switch was toggled">
+    </event>
+    <event value="6585" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Cloud Model Backup main system switch was toggled">
+    </event>
+    <event value="6586" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Monitor SSO Started">
+    </event>
+    <event value="6587" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Monitor SSO Status Changed">
+    </event>
+    <event value="6588" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Monitor SSO Collection Status Changed">
+    </event>
+    <event value="6589" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The cloud service has requested a replica repair for %1 (Operation: %2)">
+    </event>
+    <event value="6590" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="SSH Start State: IsRoamingEnabled: %1, RoamingReason: %2, IsBackupEnabled: %3, BackupReason: %4, ProviderId: %5.">
+    </event>
+    <event value="6591" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Unit %1 has invalid syncgid">
+    </event>
+    <event value="6592" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="SettingSyncOperation queued. CollectionId:%1, Direction:%2, Priority:%3, OperationId:%4">
+    </event>
+    <event value="6593" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="SettingSyncOperation OperationId:%1">
+    </event>
+    <event value="6594" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="SettingSyncOperation Waiting OperationId:%1">
+    </event>
+    <event value="6595" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="SettingSyncOperation Completed OperationId: %1 SyncResult: %2">
+    </event>
+    <event value="7001" version="0" opcode="1" channel="18" level="4" task="7001" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7002" version="0" opcode="2" channel="18" level="4" task="7001" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7003" version="0" opcode="1" channel="18" level="4" task="7003" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7004" version="0" opcode="2" channel="18" level="4" task="7003" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7005" version="0" opcode="1" channel="18" level="4" task="7005" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7006" version="0" opcode="2" channel="18" level="4" task="7005" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7007" version="0" opcode="1" channel="18" level="4" task="7007" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7008" version="0" opcode="2" channel="18" level="4" task="7007" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7009" version="0" opcode="1" channel="18" level="4" task="7009" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7010" version="0" opcode="2" channel="18" level="4" task="7009" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7011" version="0" opcode="1" channel="18" level="4" task="7011" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7012" version="0" opcode="2" channel="18" level="4" task="7011" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7013" version="0" opcode="1" channel="18" level="4" task="7013" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7014" version="0" opcode="2" channel="18" level="4" task="7013" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7015" version="0" opcode="1" channel="18" level="4" task="7015" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7016" version="0" opcode="2" channel="18" level="4" task="7015" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7017" version="0" opcode="1" channel="18" level="4" task="7017" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7018" version="0" opcode="2" channel="18" level="4" task="7017" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7019" version="0" opcode="1" channel="18" level="4" task="7019" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7020" version="0" opcode="2" channel="18" level="4" task="7019" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7021" version="0" opcode="1" channel="18" level="4" task="7021" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7022" version="0" opcode="2" channel="18" level="4" task="7021" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7023" version="0" opcode="1" channel="18" level="4" task="7023" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7024" version="0" opcode="2" channel="18" level="4" task="7023" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7025" version="0" opcode="1" channel="18" level="4" task="7025" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7026" version="0" opcode="2" channel="18" level="4" task="7025" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7027" version="0" opcode="1" channel="18" level="4" task="7027" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7028" version="0" opcode="2" channel="18" level="4" task="7027" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7029" version="0" opcode="1" channel="18" level="4" task="7029" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7030" version="0" opcode="2" channel="18" level="4" task="7029" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7031" version="0" opcode="1" channel="18" level="4" task="7031" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7032" version="0" opcode="2" channel="18" level="4" task="7031" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7033" version="0" opcode="1" channel="18" level="4" task="7033" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7034" version="0" opcode="2" channel="18" level="4" task="7033" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7035" version="0" opcode="1" channel="18" level="4" task="7035" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7036" version="0" opcode="2" channel="18" level="4" task="7035" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7037" version="0" opcode="1" channel="18" level="4" task="7037" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7038" version="0" opcode="2" channel="18" level="4" task="7037" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7039" version="0" opcode="1" channel="18" level="4" task="7039" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7040" version="0" opcode="2" channel="18" level="4" task="7039" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7041" version="0" opcode="1" channel="18" level="4" task="7041" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7042" version="0" opcode="2" channel="18" level="4" task="7041" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7043" version="0" opcode="1" channel="18" level="4" task="7043" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7044" version="0" opcode="2" channel="18" level="4" task="7043" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7045" version="0" opcode="1" channel="18" level="4" task="7045" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7046" version="0" opcode="2" channel="18" level="4" task="7045" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7047" version="0" opcode="1" channel="18" level="4" task="7047" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7048" version="0" opcode="2" channel="18" level="4" task="7047" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7049" version="0" opcode="1" channel="18" level="4" task="7049" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7050" version="0" opcode="2" channel="18" level="4" task="7049" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7051" version="0" opcode="1" channel="18" level="4" task="7051" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7052" version="0" opcode="2" channel="18" level="4" task="7051" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7053" version="0" opcode="1" channel="18" level="4" task="7053" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7054" version="0" opcode="2" channel="18" level="4" task="7053" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7055" version="0" opcode="1" channel="18" level="4" task="7055" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7056" version="0" opcode="2" channel="18" level="4" task="7055" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7057" version="0" opcode="1" channel="18" level="4" task="7057" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7058" version="0" opcode="2" channel="18" level="4" task="7057" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7059" version="0" opcode="1" channel="18" level="4" task="7059" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7060" version="0" opcode="2" channel="18" level="4" task="7059" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7061" version="0" opcode="1" channel="18" level="4" task="7061" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7062" version="0" opcode="2" channel="18" level="4" task="7061" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7063" version="0" opcode="1" channel="18" level="4" task="7063" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7064" version="0" opcode="2" channel="18" level="4" task="7063" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7065" version="0" opcode="1" channel="18" level="4" task="7065" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7066" version="0" opcode="2" channel="18" level="4" task="7065" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7067" version="0" opcode="1" channel="18" level="4" task="7067" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7068" version="0" opcode="2" channel="18" level="4" task="7067" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7069" version="0" opcode="1" channel="18" level="4" task="7069" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7070" version="0" opcode="2" channel="18" level="4" task="7069" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7071" version="0" opcode="1" channel="18" level="4" task="7071" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7072" version="0" opcode="2" channel="18" level="4" task="7071" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7073" version="0" opcode="1" channel="18" level="4" task="7073" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7074" version="0" opcode="2" channel="18" level="4" task="7073" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7075" version="0" opcode="1" channel="18" level="4" task="7075" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7076" version="0" opcode="2" channel="18" level="4" task="7075" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7077" version="0" opcode="1" channel="18" level="4" task="7077" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7078" version="0" opcode="2" channel="18" level="4" task="7077" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7079" version="0" opcode="1" channel="18" level="4" task="7079" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7080" version="0" opcode="2" channel="18" level="4" task="7079" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7081" version="0" opcode="1" channel="18" level="4" task="7081" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7082" version="0" opcode="2" channel="18" level="4" task="7081" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7083" version="0" opcode="1" channel="18" level="4" task="7083" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7084" version="0" opcode="2" channel="18" level="4" task="7083" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7085" version="0" opcode="1" channel="18" level="4" task="7085" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7086" version="0" opcode="2" channel="18" level="4" task="7085" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7087" version="0" opcode="1" channel="18" level="4" task="7087" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7088" version="0" opcode="2" channel="18" level="4" task="7087" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7089" version="0" opcode="1" channel="18" level="4" task="7089" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7090" version="0" opcode="2" channel="18" level="4" task="7089" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7091" version="0" opcode="1" channel="18" level="4" task="7091" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7092" version="0" opcode="2" channel="18" level="4" task="7089" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7093" version="0" opcode="1" channel="18" level="4" task="7093" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="7094" version="0" opcode="2" channel="18" level="4" task="7093" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="7095" version="0" opcode="1" channel="18" level="4" task="7095" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="7096" version="0" opcode="2" channel="18" level="4" task="7095" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="7097" version="0" opcode="1" channel="18" level="4" task="7097" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="7098" version="0" opcode="2" channel="18" level="4" task="7097" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="7099" version="0" opcode="1" channel="18" level="4" task="7099" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="7100" version="0" opcode="2" channel="18" level="4" task="7099" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="7101" version="0" opcode="1" channel="18" level="4" task="7101" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="7102" version="0" opcode="2" channel="18" level="4" task="7101" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="7103" version="0" opcode="1" channel="18" level="4" task="7103" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7104" version="0" opcode="2" channel="18" level="4" task="7103" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7105" version="0" opcode="1" channel="18" level="4" task="7105" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7106" version="0" opcode="2" channel="18" level="4" task="7105" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7107" version="0" opcode="1" channel="18" level="4" task="7107" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7108" version="0" opcode="2" channel="18" level="4" task="7107" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7109" version="0" opcode="1" channel="18" level="4" task="7109" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7110" version="0" opcode="2" channel="18" level="4" task="7109" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7111" version="0" opcode="1" channel="18" level="4" task="7111" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7112" version="0" opcode="2" channel="18" level="4" task="7111" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7113" version="0" opcode="1" channel="18" level="4" task="7113" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7114" version="0" opcode="2" channel="18" level="4" task="7113" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7115" version="0" opcode="1" channel="18" level="4" task="7115" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7116" version="0" opcode="2" channel="18" level="4" task="7115" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7117" version="0" opcode="1" channel="18" level="4" task="7117" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7118" version="0" opcode="2" channel="18" level="4" task="7117" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7119" version="0" opcode="1" channel="18" level="4" task="7119" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7120" version="0" opcode="2" channel="18" level="4" task="7119" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7121" version="0" opcode="1" channel="18" level="4" task="7121" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7122" version="0" opcode="2" channel="18" level="4" task="7121" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7123" version="0" opcode="1" channel="18" level="4" task="7123" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7124" version="0" opcode="2" channel="18" level="4" task="7123" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7125" version="0" opcode="1" channel="18" level="4" task="7125" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7126" version="0" opcode="2" channel="18" level="4" task="7125" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7127" version="0" opcode="1" channel="18" level="4" task="7127" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7128" version="0" opcode="2" channel="18" level="4" task="7127" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7129" version="0" opcode="1" channel="18" level="4" task="7129" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7130" version="0" opcode="2" channel="18" level="4" task="7129" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7131" version="0" opcode="1" channel="18" level="4" task="7131" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7132" version="0" opcode="2" channel="18" level="4" task="7131" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7133" version="0" opcode="1" channel="18" level="4" task="7133" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7134" version="0" opcode="2" channel="18" level="4" task="7133" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7135" version="0" opcode="1" channel="18" level="4" task="7159" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7136" version="0" opcode="2" channel="18" level="4" task="7159" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7137" version="0" opcode="1" channel="18" level="4" task="7135" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7138" version="0" opcode="2" channel="18" level="4" task="7135" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7139" version="0" opcode="1" channel="18" level="4" task="7137" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7140" version="0" opcode="2" channel="18" level="4" task="7137" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7141" version="0" opcode="1" channel="18" level="4" task="7139" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7142" version="0" opcode="2" channel="18" level="4" task="7139" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7143" version="0" opcode="1" channel="18" level="4" task="7141" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7144" version="0" opcode="2" channel="18" level="4" task="7141" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7145" version="0" opcode="1" channel="18" level="4" task="7145" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7146" version="0" opcode="2" channel="18" level="4" task="7145" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7147" version="0" opcode="1" channel="18" level="4" task="7147" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7148" version="0" opcode="2" channel="18" level="4" task="7147" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7149" version="0" opcode="1" channel="18" level="4" task="7149" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7150" version="0" opcode="2" channel="18" level="4" task="7149" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7151" version="0" opcode="1" channel="18" level="4" task="7151" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7152" version="0" opcode="2" channel="18" level="4" task="7151" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7153" version="0" opcode="1" channel="18" level="4" task="7153" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7154" version="0" opcode="2" channel="18" level="4" task="7153" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7155" version="0" opcode="1" channel="18" level="4" task="7155" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7156" version="0" opcode="2" channel="18" level="4" task="7155" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7157" version="0" opcode="1" channel="18" level="4" task="7157" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7158" version="0" opcode="2" channel="18" level="4" task="7157" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7159" version="0" opcode="1" channel="18" level="4" task="7143" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7160" version="0" opcode="2" channel="18" level="4" task="7143" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7161" version="0" opcode="1" channel="18" level="4" task="7161" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7162" version="0" opcode="2" channel="18" level="4" task="7161" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7163" version="0" opcode="1" channel="18" level="4" task="7163" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7164" version="0" opcode="2" channel="18" level="4" task="7163" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7165" version="0" opcode="1" channel="18" level="4" task="7165" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7166" version="0" opcode="2" channel="18" level="4" task="7165" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7167" version="0" opcode="1" channel="18" level="4" task="7167" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7168" version="0" opcode="2" channel="18" level="4" task="7167" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7169" version="0" opcode="1" channel="18" level="4" task="7169" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7170" version="0" opcode="2" channel="18" level="4" task="7169" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7171" version="0" opcode="1" channel="18" level="4" task="7171" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7172" version="0" opcode="2" channel="18" level="4" task="7171" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7173" version="0" opcode="1" channel="18" level="4" task="7173" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7174" version="0" opcode="2" channel="18" level="4" task="7173" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7175" version="0" opcode="1" channel="18" level="4" task="7175" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7176" version="0" opcode="2" channel="18" level="4" task="7175" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7177" version="0" opcode="1" channel="18" level="4" task="7177" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7178" version="0" opcode="2" channel="18" level="4" task="7177" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7179" version="0" opcode="1" channel="18" level="4" task="7179" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7180" version="0" opcode="2" channel="18" level="4" task="7179" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7181" version="0" opcode="1" channel="18" level="4" task="7181" keywords="0x2000000000000004" message="">
+    </event>
+    <event value="7182" version="0" opcode="2" channel="18" level="4" task="7181" keywords="0x2000000000000004" message="">
+    </event>
+    <event value="7183" version="0" opcode="1" channel="18" level="4" task="7183" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7184" version="0" opcode="2" channel="18" level="4" task="7183" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7185" version="0" opcode="1" channel="18" level="4" task="7185" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7186" version="0" opcode="2" channel="18" level="4" task="7185" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7187" version="0" opcode="1" channel="18" level="4" task="7187" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7188" version="0" opcode="2" channel="18" level="4" task="7187" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7189" version="0" opcode="1" channel="18" level="4" task="7189" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7190" version="0" opcode="2" channel="18" level="4" task="7189" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7191" version="0" opcode="1" channel="18" level="4" task="7191" keywords="0x2000000000000008" message="">
+    </event>
+    <event value="7192" version="0" opcode="2" channel="18" level="4" task="7191" keywords="0x2000000000000008" message="">
+    </event>
+    <event value="7193" version="0" opcode="1" channel="18" level="4" task="7193" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7194" version="0" opcode="2" channel="18" level="4" task="7193" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7195" version="0" opcode="1" channel="18" level="4" task="7195" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7196" version="0" opcode="2" channel="18" level="4" task="7195" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7197" version="0" opcode="1" channel="18" level="4" task="7197" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7198" version="0" opcode="2" channel="18" level="4" task="7197" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7199" version="0" opcode="1" channel="18" level="4" task="7199" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7200" version="0" opcode="2" channel="18" level="4" task="7199" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7201" version="0" opcode="1" channel="18" level="4" task="7201" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7202" version="0" opcode="2" channel="18" level="4" task="7201" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7203" version="0" opcode="1" channel="18" level="4" task="7203" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7204" version="0" opcode="2" channel="18" level="4" task="7203" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7205" version="0" opcode="1" channel="18" level="4" task="7205" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7206" version="0" opcode="2" channel="18" level="4" task="7205" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7207" version="0" opcode="1" channel="18" level="4" task="7314" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7208" version="0" opcode="2" channel="18" level="4" task="7314" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7307" version="0" opcode="1" channel="18" level="4" task="7307" keywords="0x2001000000000020" message="">
+    </event>
+    <event value="7308" version="0" opcode="2" channel="18" level="4" task="7307" keywords="0x2001000000000020" message="">
+    </event>
+    <event value="7309" version="0" opcode="1" channel="18" level="4" task="7309" keywords="0x2001000000000020" message="">
+    </event>
+    <event value="7310" version="0" opcode="2" channel="18" level="4" task="7309" keywords="0x2001000000000020" message="">
+    </event>
+    <event value="7311" version="0" opcode="1" channel="18" level="4" task="7311" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7312" version="0" opcode="1" channel="18" level="4" task="7311" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7313" version="0" opcode="1" channel="18" level="4" task="7313" keywords="0x2000000000000040" message="">
+    </event>
+    <event value="7314" version="0" opcode="2" channel="18" level="4" task="7313" keywords="0x2000000000000040" message="">
+    </event>
+    <event value="7315" version="0" opcode="1" channel="18" level="4" task="7315" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7316" version="0" opcode="2" channel="18" level="4" task="7315" keywords="0x2000000000000002" message="">
+    </event>
+    <event value="7317" version="0" opcode="1" channel="18" level="4" task="7317" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7318" version="0" opcode="2" channel="18" level="4" task="7317" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7500" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Sync process shutdown: %1.">
+    </event>
+    <event value="7750" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="%1">
+    </event>
+  </events>
+</provider>

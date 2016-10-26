@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-AuthenticationProvider" guid="dddc1d91-51a1-4a8d-95b5-350c4ee3d809" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=lsasrv.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\lsasrv.dll" messageFileName="C:\Windows\System32\lsasrv.dll" message="Microsoft-Windows-Authentication" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Authentication/ProtectedUser-Client" id="16" flags="0" message="Microsoft-Windows-Authentication/ProtectedUser-Client">
+    </channel>
+    <channel name="Microsoft-Windows-Authentication/ProtectedUserFailures-DomainController" id="17" flags="0" message="Microsoft-Windows-Authentication/ProtectedUserFailures-DomainController">
+    </channel>
+    <channel name="Microsoft-Windows-Authentication/ProtectedUserSuccesses-DomainController" id="18" flags="0" message="Microsoft-Windows-Authentication/ProtectedUserSuccesses-DomainController">
+    </channel>
+    <channel name="Microsoft-Windows-Authentication/AuthenticationPolicyFailures-DomainController" id="19" flags="0" message="Microsoft-Windows-Authentication/AuthenticationPolicyFailures-DomainController">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The security package does not cache the credentials needed to authenticate to the server.
+
+Package Name:	%1
+User Name:	%2
+Domain Name:	%3
+Server Name:	%4
+Protected User:	%5
+Error Code:	%6
+">
+    </event>
+    <event value="304" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The security package does not cache the user&apos;s sign on credentials.
+
+Package Name:	%1
+User Name:	%2
+Domain Name:	%3
+Protected User:	%4
+">
+    </event>
+  </events>
+</provider>

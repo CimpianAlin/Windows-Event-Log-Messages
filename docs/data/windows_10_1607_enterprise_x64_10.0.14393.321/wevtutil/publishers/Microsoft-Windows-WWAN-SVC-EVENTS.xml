@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WWAN-SVC-EVENTS" guid="3cb40aaa-1145-4fb8-b27b-7e30f0454316" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wwansvc.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\wwansvc.dll" messageFileName="C:\Windows\system32\wwansvc.dll" message="Microsoft-Windows-WWAN-SVC-EVENTS" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WWAN-SVC-Events/Diagnostic" id="16" flags="0" message="WWAN Diagnostic Channel">
+    </channel>
+    <channel name="Microsoft-Windows-WWAN-SVC-Events/Operational" id="17" flags="0" message="WWAN Operational Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Initialize" value="655360" message="Initialize">
+    </opcode>
+    <opcode name="Cleanup" value="720896" message="Cleanup">
+    </opcode>
+    <opcode name="RegisterState" value="786432" message="RegistrationState">
+    </opcode>
+    <opcode name="PacketServiceState" value="851968" message="PacketServiceState">
+    </opcode>
+    <opcode name="UiccPresence" value="917504" message="UiccPresence">
+    </opcode>
+    <opcode name="ConnectionProfile" value="983040" message="ConnectionProfile">
+    </opcode>
+    <opcode name="AutoConnectToken" value="1048576" message="AutoConnect">
+    </opcode>
+    <opcode name="ConnectionPolicy" value="1114112" message="ConnectionPolicy">
+    </opcode>
+    <opcode name="OIDHandling" value="1179648" message="OID_Handling">
+    </opcode>
+    <opcode name="IWLANAvailabilityState" value="1245184" message="IWLANAvailabilityState">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TaskSvcStartup" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="WWAN Service Startup">
+    </task>
+    <task name="TaskSvcShutdown" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="WWAN Service Shutdown">
+    </task>
+    <task name="TaskIntfInit" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Interface Initialization Task">
+    </task>
+    <task name="TaskRegister" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Register Task">
+    </task>
+    <task name="TaskAttach" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Attach Task">
+    </task>
+    <task name="TaskActivate" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Activate Task">
+    </task>
+    <task name="TaskConnect" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Connect Task">
+    </task>
+    <task name="TaskScan" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Scan Task">
+    </task>
+    <task name="TaskSvcResume" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="WWAN Service Startup">
+    </task>
+    <task name="TaskSvcSuspend" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="WWAN Service Suspend">
+    </task>
+    <task name="TaskCost" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="Connection Cost">
+    </task>
+    <task name="TaskAccountManagement" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="Account Management">
+    </task>
+    <task name="TaskWwanResumeReconnect" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="Measure Wwan Resume Reconnect task">
+    </task>
+    <task name="TaskUssd" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="USSD">
+    </task>
+    <task name="TaskInit" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="Initialization">
+    </task>
+    <task name="TaskShutdown" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="Shutdown">
+    </task>
+    <task name="TaskConnection" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="WWAN Connection">
+    </task>
+    <task name="TaskCellState" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="WWAN Cellular State">
+    </task>
+    <task name="TaskAuth" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="AUTH">
+    </task>
+    <task name="TaskXLATEnableDisable" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="XLATEnableDisable">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="LwtDiagnostic" mask="20" message="">
+    </keyword>
+    <keyword name="MbaeUpdater" mask="40" message="">
+    </keyword>
+    <keyword name="WwanOid" mask="100" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+    <keyword name="HighLevelTriage" mask="400000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="WWAN Service event: WWAN error">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="WWAN Service event: WWAN warning">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 Failed with Error Code %3 in %2">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="WWAN Service event: WWAN Service startup">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="WWAN Service event: WWAN Service shutdown">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000020" message="WWAN Service event: WWAN Interface arrived">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000000" message="WWAN Service event: WWAN Interface removed">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000800000020" message="WWAN Service event: WWAN Interface discarded">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: WWAN Interface information">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000004800000000" message="WWAN Service event: WWAN API Request">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="WWAN RPC API %1 Call on Interface {%2}">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000020" message="WWAN Service event: Register happened. Either automatically or by some request">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000800000020" message="WWAN Service event: Register request failed">
+    </event>
+    <event value="3003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000000" message="WWAN Service event: Deregister happened">
+    </event>
+    <event value="3004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="WWAN Service event: Packet attach happened. Either automatically or by some request">
+    </event>
+    <event value="3006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000000" message="WWAN Service event: Packet Detach happened. Either automatically or by some request">
+    </event>
+    <event value="3008" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="WWAN Service event: Context Activate happened. Either automatically or by some request">
+    </event>
+    <event value="3010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000000" message="WWAN Service event: Context Deactivate happened. Either automatically or by some request">
+    </event>
+    <event value="3012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000020" message="WWAN Service event: Connect happened. Either automatically or by some request">
+    </event>
+    <event value="3013" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000800000020" message="WWAN Service event: Connect request failed">
+    </event>
+    <event value="3014" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000000" message="WWAN Service event: Disconnect happened. Either automatically or by some request">
+    </event>
+    <event value="3015" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000001000000000" message="WWAN Service event: Disconnect request failed">
+    </event>
+    <event value="4001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: Signal Notification recieved">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: Radio state change Notification recieved">
+    </event>
+    <event value="4003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: Profile Update Notification recieved">
+    </event>
+    <event value="4004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000004000000000" message="Interface %1 is ready to be used for mobile broadband operations">
+    </event>
+    <event value="4005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000004000000000" message="Interface %1 mobile broadband is registered as %2">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000004000000000" message="WWAN Service event: Pin Information Notification recieved">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: Pin List Notification recieved">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: Pin Action Completion Notification recieved">
+    </event>
+    <event value="6001" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x4000004000000000" message="WWAN Service event: %1 Cost is changed to %2 for profile %4 on interface %3">
+    </event>
+    <event value="6002" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x4000004000000000" message="WWAN Service event: %1 Cost is cleared for profile %3 on interface %2">
+    </event>
+    <event value="6003" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x4000004000000000" message="Group Policy Cost is changed to %1">
+    </event>
+    <event value="6004" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x4000004000000000" message="Group Policy Cost is cleared">
+    </event>
+    <event value="6100" version="0" opcode="1" channel="16" level="4" task="13" keywords="0x8001200000000000" message="Wwan Resume Reconnect Started">
+    </event>
+    <event value="6101" version="0" opcode="2" channel="16" level="4" task="13" keywords="0x8001200000000000" message="Wwan Resume Reconnect Cancelled">
+    </event>
+    <event value="6102" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6103" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6104" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7000" version="0" opcode="0" channel="17" level="1" task="12" keywords="0x4000000000000000" message="Account Management: Error initializing network account updater.
+Error is %1: %2">
+    </event>
+    <event value="7001" version="0" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000000000" message="Account Management: Error retrieving mobile broadband property &quot;%2&quot; from network interface %1.
+Error is %3: %4">
+    </event>
+    <event value="7002" version="0" opcode="0" channel="17" level="3" task="12" keywords="0x4000000000000000" message="Account Management: Skipping network interface %1 with unsupported cellular class %2.">
+    </event>
+    <event value="7003" version="0" opcode="0" channel="17" level="2" task="12" keywords="0x4000000000000000" message="Account Management: Provider or subscriber ID reported by mobile broadband device is malformed.">
+    </event>
+    <event value="7004" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000000" message="Account Management: Network identity not recognized, assigning new network account ID.">
+    </event>
+    <event value="7005" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000000" message="Account Management: Network identity recognized, assigning existing network account ID.">
+    </event>
+    <event value="7006" version="0" opcode="0" channel="17" level="2" task="12" keywords="0x4000000000000000" message="Account Management: Error updating network account device node.
+Error is %1: %2">
+    </event>
+    <event value="7007" version="0" opcode="0" channel="17" level="2" task="12" keywords="0x4000000000000000" message="Account Management: Error updating SMS device node.
+Error is %1: %2">
+    </event>
+    <event value="7008" version="0" opcode="0" channel="17" level="2" task="12" keywords="0x4000000000000000" message="Account Management: Error updating mobile broadband account data store.
+Error is %1: %2">
+    </event>
+    <event value="7009" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000000" message="Account Management: Getting home provider ID from hardware device for network interface %1.
+Provider ID is &quot;%2&quot;.">
+    </event>
+    <event value="7010" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000000" message="Account Management: Getting home provider name from hardware device for network interface %1.
+Provider name is &quot;%2&quot;.">
+    </event>
+    <event value="7011" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000000" message="Account Management: Getting home provider ID from home network for network interface %1.
+Provider ID is &quot;%2&quot;.">
+    </event>
+    <event value="7012" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000000" message="Account Management: Getting home provider name from home network for network interface %1.
+Provider name is &quot;%2&quot;.">
+    </event>
+    <event value="7013" version="0" opcode="0" channel="16" level="3" task="12" keywords="0x8000000000000000" message="Account Management: Cannot get home provider ID for network interface %1 because the hardware device does not have it, and the network adapter is not in its home network. This is normal under some conditions.">
+    </event>
+    <event value="7014" version="0" opcode="0" channel="16" level="3" task="12" keywords="0x8000000000000000" message="Account Management: Cannot get home provider name for network interface %1 because the hardware device does not have it, and the network adapter is not in its home network. This is normal under some conditions.">
+    </event>
+    <event value="7015" version="0" opcode="0" channel="16" level="2" task="12" keywords="0x8000000000000000" message="Account Management: Metadata cannot be downloaded for network interface %1 because required information about the home service provider is not available.">
+    </event>
+    <event value="7016" version="0" opcode="0" channel="17" level="2" task="12" keywords="0x4000000000000000" message="Account Management: Metadata cannot be downloaded for network interface %1 because required information about the subscriber is not available.">
+    </event>
+    <event value="7017" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000000" message="Account Management: Detected removal of SIM from device bound to network interface %1.">
+    </event>
+    <event value="7018" version="0" opcode="0" channel="17" level="2" task="12" keywords="0x4000000000000000" message="Account Management: Error handling SIM removal from device bound to network interface %1.
+Error is %2: %3">
+    </event>
+    <event value="7900" version="0" opcode="1" channel="16" level="4" task="12" keywords="0x8000000000000040" message="Account Management: Account updater started for network interface %1.">
+    </event>
+    <event value="7901" version="0" opcode="2" channel="16" level="4" task="12" keywords="0x8000000000000040" message="Account Management: Account updater finished for network interface %1.">
+    </event>
+    <event value="7902" version="0" opcode="1" channel="16" level="4" task="12" keywords="0x8000000000000040" message="Account Management: Devnode create/update started.">
+    </event>
+    <event value="7903" version="0" opcode="2" channel="16" level="4" task="12" keywords="0x8000000000000040" message="Account Management: Devnode create/update finished.">
+    </event>
+    <event value="7904" version="0" opcode="1" channel="16" level="4" task="12" keywords="0x8000000000000040" message="Account Management: Data store create/update started.">
+    </event>
+    <event value="7905" version="0" opcode="2" channel="16" level="4" task="12" keywords="0x8000000000000040" message="Account Management: Data store create/update finished.">
+    </event>
+    <event value="8001" version="0" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000000000" message="USSD request">
+    </event>
+    <event value="8002" version="0" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000000000" message="USSD event">
+    </event>
+    <event value="8003" version="0" opcode="0" channel="17" level="4" task="14" keywords="0x4000000000000000" message="USSD event with failure">
+    </event>
+    <event value="10001" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000200000000000" message="WWAN Service event: Start WWAN Service Startup">
+    </event>
+    <event value="10002" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000200000000000" message="WWAN Service event: Complete WWAN Service Startup">
+    </event>
+    <event value="10011" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000200000000000" message="WWAN Service event: Start Service Shutdown">
+    </event>
+    <event value="10012" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000200000000000" message="WWAN Service event: Complete Service Shutdown">
+    </event>
+    <event value="10021" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000200000000000" message="WWAN Service event: Start Interface Initialization">
+    </event>
+    <event value="10022" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000200000000000" message="WWAN Service event: Complete Interface Initialization">
+    </event>
+    <event value="10031" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000200800000000" message="WWAN Service event: Start Registering">
+    </event>
+    <event value="10032" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000200800000000" message="WWAN Service event: Complete Registering">
+    </event>
+    <event value="10061" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000200800000000" message="WWAN Service event: Start Connecting">
+    </event>
+    <event value="10062" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000200800000000" message="WWAN Service event: Complete Connecting">
+    </event>
+    <event value="10071" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000200000000000" message="WWAN Service event: Start Scanning">
+    </event>
+    <event value="10072" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000200000000000" message="WWAN Service event: Complete Scanning">
+    </event>
+    <event value="10081" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8000200000000000" message="WWAN Service event: Start Service Resume">
+    </event>
+    <event value="10082" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8000200000000000" message="WWAN Service event: Complete Service Resume">
+    </event>
+    <event value="10091" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8000200000000000" message="WWAN Service event: Start Service Suspend">
+    </event>
+    <event value="10092" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8000200000000000" message="WWAN Service event: Complete Service Suspend">
+    </event>
+    <event value="11001" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received DeviceCaps, status=%3, IMEI=%14 Mfg=%15 Model=%16 Fw=%17, miniport=%1">
+    </event>
+    <event value="11002" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received ReadyInfo, state=%3 IMSI=%5 ICCID=%6, miniport=%1">
+    </event>
+    <event value="11003" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received RadioState, status=%3, Hw=%4 Sw=%5, miniport=%1">
+    </event>
+    <event value="11004" version="2" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Sent SET RadioState, Action=%3, miniport=%1, ErrorCode=%4">
+    </event>
+    <event value="11005" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received RegisterState, status=%3, State=%5, ProviderId=%7, ProviderName=%8, miniport=%1">
+    </event>
+    <event value="11006" version="2" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Sent SET RegisterState, ProviderId=%3, Action=%4, miniport=%1, ErrorCode=%5">
+    </event>
+    <event value="11007" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received PacketService, status=%3, state=%5, miniport=%1">
+    </event>
+    <event value="11008" version="2" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Sent SET PacketService, Action=%3, miniport=%1, ErrorCode=%4">
+    </event>
+    <event value="11009" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received ContextState, status=%3, State=%6, ConnectionId=%5, miniport=%1">
+    </event>
+    <event value="11010" version="2" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Sent SET ContextState, Command=%4, ConnectionId=%3, APN=%5, miniport=%1, ErrorCode=%9">
+    </event>
+    <event value="11011" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received PinInfo, status=%3, Type=%4 State=%5 Attempts=%6, miniport=%1">
+    </event>
+    <event value="11012" version="2" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Sent SET PinAction, Type=%3, Operation=%4, miniport=%1, ErrorCode=%5">
+    </event>
+    <event value="11013" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received HomeProvider, status=%3, ProviderId=%4, ProviderName=%6, miniport=%1">
+    </event>
+    <event value="11014" version="2" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Sent SET HomeProvider, ProviderId=%3, miniport=%1, ErrorCode=%4">
+    </event>
+    <event value="11015" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Querying Device Service %3 with Command %4 on Interface {%1}">
+    </event>
+    <event value="11016" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received Device Service %3 with Event %4 on Interface {%1}">
+    </event>
+    <event value="11017" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received Device Service %3 with Response %4 on Interface {%1}">
+    </event>
+    <event value="11018" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received Device Service %3 with Response %4 [ModemNumber %5 ExecutorID %6] on Interface {%1}">
+    </event>
+    <event value="11019" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received Device Service %3 with Response %4 [MaxContextCount %5] on Interface {%1}">
+    </event>
+    <event value="11020" version="1" opcode="18" channel="17" level="4" task="0" keywords="0x4000400000000120" message="[Request=%2] Received Device Service %3 with Response %4 [ExecutorCount %5 ActiveExecutors %6 ActiveDataExecutors %7] on Interface {%1}">
+    </event>
+    <event value="11101" version="1" opcode="18" channel="16" level="4" task="0" keywords="0x8000400000000120" message="[Request=%2] Sent SET with OID=%3, miniport=%1, ErrorCode=%6, payload length=%4, payload=%5">
+    </event>
+    <event value="11102" version="1" opcode="18" channel="16" level="4" task="0" keywords="0x8000400000000120" message="[Request=%2] Sent QUERY with OID=%3, miniport=%1, ErrorCode=%6, payload length=%4, payload=%5">
+    </event>
+    <event value="11103" version="1" opcode="18" channel="16" level="4" task="0" keywords="0x8000400000000120" message="[Request=%2] Received indication with NDIS WWAN Indication=%3, miniport=%1, payload length=%4, payload=%5">
+    </event>
+    <event value="12000" version="0" opcode="10" channel="16" level="4" task="15" keywords="0x8000400000000000" message="%2 Initialization: Unique Identifier=%1">
+    </event>
+    <event value="12001" version="0" opcode="11" channel="16" level="4" task="16" keywords="0x8000400000000000" message="%2 Cleanup: Unique Identifier=%1">
+    </event>
+    <event value="12100" version="0" opcode="12" channel="16" level="4" task="18" keywords="0x8000400000000000" message="Interface %1 mobile broadband is registered as %2">
+    </event>
+    <event value="12101" version="0" opcode="14" channel="16" level="4" task="18" keywords="0x8000400000000000" message="Interface %1 is ready to be used for mobile broadband operations">
+    </event>
+    <event value="12102" version="0" opcode="13" channel="16" level="4" task="18" keywords="0x8000400000000000" message="Interface %1 Packet Service State is %2">
+    </event>
+    <event value="12103" version="0" opcode="19" channel="16" level="4" task="18" keywords="0x8000400000000000" message="Interface %1 IWLAN Availability State is %2">
+    </event>
+    <event value="12200" version="0" opcode="16" channel="16" level="4" task="17" keywords="0x8000400000000000" message="Auto Connect Token %2 on Interface {%1}">
+    </event>
+    <event value="12201" version="0" opcode="17" channel="16" level="4" task="17" keywords="0x8000400000000000" message="%2Policy %3 on Interface {%1}">
+    </event>
+    <event value="12211" version="0" opcode="15" channel="16" level="4" task="17" keywords="0x8000400000000000" message="Profile deletion via PM: Int {%1} ExecIdx %2 Name [%3]">
+    </event>
+    <event value="12212" version="0" opcode="15" channel="16" level="4" task="17" keywords="0x8000400000000000" message="Profile creation/Update via PM before ICCID arrives: Int {%1} ExecIdx %2 Name [%3]">
+    </event>
+    <event value="12213" version="0" opcode="15" channel="16" level="2" task="17" keywords="0x8000400000000000" message="Profile creation/Update comes to a wrong executor: Int {%1} ExecIdx %2 Name [%3] ICCID [%4]">
+    </event>
+    <event value="12214" version="0" opcode="15" channel="16" level="4" task="17" keywords="0x8000400000000000" message="Profile update via PM:: Int {%1} ExecIdx %2 Name [%3] ICCID [%4] connnection mode %5">
+    </event>
+    <event value="12215" version="0" opcode="15" channel="16" level="4" task="17" keywords="0x8000400000000000" message="Profile addition via PM: Int {%1} ExecIdx %2 Name [%3] ICCID [%4] connnection mode %5">
+    </event>
+    <event value="12216" version="0" opcode="15" channel="16" level="4" task="17" keywords="0x8000400000000000" message="Profile addition upon ICCID arrival: Int {%1} ExecIdx %2 Name [%3] ICCID [%4] connnection mode %5">
+    </event>
+    <event value="12231" version="0" opcode="0" channel="16" level="4" task="19" keywords="0x8000400000000000" message="Auth Challenge request send">
+    </event>
+    <event value="12232" version="0" opcode="17" channel="16" level="4" task="17" keywords="0x8000400000000000" message="MdmDataEnablementPolicy is set to %2 on Interface{%1}">
+    </event>
+    <event value="12233" version="0" opcode="17" channel="16" level="4" task="17" keywords="0x8000400000000000" message="MdmDataRoamingPolicy is set to %3 on Interface{%1} for policyType %2">
+    </event>
+    <event value="12240" version="0" opcode="0" channel="17" level="2" task="17" keywords="0x4000400000000000" message="EnableXLAT failed with Error %2 on Interface{%1}">
+    </event>
+    <event value="12241" version="0" opcode="0" channel="17" level="4" task="17" keywords="0x4000400000000000" message="EnableXLAT succeeded with return value %2 on Interface{%1}">
+    </event>
+    <event value="12242" version="0" opcode="0" channel="17" level="2" task="17" keywords="0x4000400000000000" message="DisableXLAT failed with Error %2 on Interface{%1}">
+    </event>
+    <event value="12243" version="0" opcode="0" channel="17" level="4" task="17" keywords="0x4000400000000000" message="DisableXLAT succeeded with return value %2 on Interface{%1}">
+    </event>
+  </events>
+</provider>

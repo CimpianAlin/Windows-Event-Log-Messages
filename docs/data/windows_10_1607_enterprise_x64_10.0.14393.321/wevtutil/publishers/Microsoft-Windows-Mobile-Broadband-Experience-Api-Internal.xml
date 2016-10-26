@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Mobile-Broadband-Experience-Api-Internal" guid="2aabd03b-f48b-419a-b4ce-7a14403f4a46" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=MbaeApi.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\MbaeApi.dll" messageFileName="C:\Windows\system32\MbaeApi.dll" message="Microsoft-Windows-Mobile-Broadband-Experience-Api-Internal" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Mobile-Broadband-Experience-Api-Internal/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Error initializing for network interface %1.
+Error is %2: %3">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Error retrieving property &quot;%1&quot; for account bound to network interface %2.
+Error is %3: %4">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Error launching service provider&apos;s companion app for network interface %1.
+Error is %2: %3">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Launching service provider&apos;s companion app for network interface %1.
+App User Model ID is &quot;%2&quot;.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Launching Windows Store for network interface %1.
+App package family name is &quot;%2&quot;.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Error launching Windows Store for app package with family name &quot;%1&quot;.
+Error is %2: %3">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Error reading current user&apos;s installed mobile broadband companion app list.
+Error is %1: %2">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Error undating current user&apos;s installed mobile broadband companion app list.
+Error is %1: %2">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Detected installation of app with app user model ID &quot;%1&quot;.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Detected uninstall of app with app user model ID &quot;%1&quot;.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Notified clients of metadata event.">
+    </event>
+    <event value="9000" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Starting launch of service provider&apos;s companion app.">
+    </event>
+    <event value="9001" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Finished launch of service provider&apos;s companion app.">
+    </event>
+    <event value="9002" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Starting launch of Windows Store.">
+    </event>
+    <event value="9003" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Finished launch of Windows Store.">
+    </event>
+  </events>
+</provider>

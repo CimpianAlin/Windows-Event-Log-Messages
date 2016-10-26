@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-UserDataAccess-UserDataService" guid="fb19ee2c-0d22-4a2e-969e-dd41ae0ce1a9" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=UserDataService.dll&amp;FileVer=10.0.14393.0" resourceFileName="UserDataService.dll" messageFileName="UserDataService.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tracemessage" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Trace">
+    </task>
+    <task name="Udm_IntializedSecurityInfo" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Udm_OpenSession" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Udm_OpenCallHistorySession" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_UpdateCalendarObjects" value="200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_GetConflictInfo" value="202" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_RespondMeetingRequest" value="203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_ProposeNewTime" value="204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_CreateForwardMessage" value="205" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_GetChangedAppointmentsSince" value="206" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_GetCalendarStoreEnum" value="207" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_GetCalendarEnum" value="208" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_GetAppointmentEnum" value="209" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_EnumMultiDay" value="210" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_EnumSingleInstance" value="211" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_EnumRecurring" value="212" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_Search_Open" value="213" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Calendar_Search_Fetch" value="214" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Meeting_CreateOrModifyAppointment" value="250" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Meeting_GetStreamProperty" value="251" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Chat_GetChatConversationProperties" value="300" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Chat_GetMessageAttachments" value="301" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Chat_GetMessageParticipants" value="302" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Chat_ChatOperationContext_GetMessageProperties" value="303" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Chat_ChatOperationContext_ModifyConversationItem" value="304" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Chat_ChatOperationContext_ModifyItem" value="305" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="User_DataModel_Service" value="306" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Chat_DataModel_Service" value="307" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="">
+    </keyword>
+    <keyword name="Performance" mask="2" message="">
+    </keyword>
+    <keyword name="UserDataService" mask="4" message="">
+    </keyword>
+    <keyword name="StaleDataCleanup" mask="8" message="">
+    </keyword>
+    <keyword name="CalendarSearch" mask="10" message="">
+    </keyword>
+    <keyword name="debug" mask="100" message="Debug">
+    </keyword>
+    <keyword name="APICall" mask="200" message="API Call">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="Error: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="Error Propagated: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="3" version="0" opcode="0" channel="0" level="5" task="1" keywords="0x100" message="">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Handle %2 running down (path %1) - client crash?">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Opened data session object %1">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Closing data session object %1">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="CanAppAccessStore: pAppOwnershipId-&gt;productId = %1, pStoreAppOwnershipId-&gt;productId = %2">
+    </event>
+    <event value="105" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="CanAppAccessStore: Can access store = %1">
+    </event>
+    <event value="106" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="Cannot convert blob to string for msg [%1], prop [%2]: size actual [%3] vs. expected [%4]">
+    </event>
+    <event value="107" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="UDM Data migrated with status: [%1]">
+    </event>
+    <event value="108" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x404000000000" message="Call favorites data migrated with status: [%1]">
+    </event>
+    <event value="201" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Handle %1 updated controls to max:%2">
+    </event>
+    <event value="202" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Handle %1 requested %2 messages, got %3, %4 remain (also said lost %5)">
+    </event>
+    <event value="203" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Handle %1 has %2 ready notifications, (lost %3)">
+    </event>
+    <event value="204" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Handle %1: new notification type [%2], id [%3]">
+    </event>
+    <event value="205" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Id [%1], StartTime [%2]">
+    </event>
+    <event value="206" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Handle %1 requested %2 messages, got %3, %4 remain (also said lost %5)">
+    </event>
+    <event value="301" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Caller %1 asked to update missing object type:%2 id:%3">
+    </event>
+    <event value="302" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Caller %1 asked to delete missing object type:%2 id:%3">
+    </event>
+    <event value="303" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Caller %1 looked for properties on missing object type:%2 id:%3">
+    </event>
+    <event value="304" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x8000000004" message="Deleting ENUM object %1 in rundown">
+    </event>
+    <event value="305" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x8000000004" message="Deleting SESSION object %1 in rundown">
+    </event>
+    <event value="308" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x5" message="Client privacy capability failed allowedCallers = [%1],  m_clientAPISecurityFlags = [%2],  m_clientAPISecurityFlagsForPrivacy = [%3]">
+    </event>
+    <event value="400" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="CalendarEventSink %1: Advise to Poom">
+    </event>
+    <event value="401" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="CalendarEventSink %1: Unadvise from Poom">
+    </event>
+    <event value="402" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000014" message="CalendarSearch: %1 items returned. index = %2, future items = %3, past items = %4">
+    </event>
+    <event value="403" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x8000000004" message="Remote id not found: store=%1, found=%2">
+    </event>
+    <event value="404" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x408000000004" message="Appointment cache skipped because of missing prop: %1">
+    </event>
+    <event value="405" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x14" message="CalendarSearch: %1 recurring appts found. future items = %2, past items = %3">
+    </event>
+    <event value="406" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x14" message="CalendarSearch: inserted item %1, type %2">
+    </event>
+    <event value="407" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Appointment Cache notified: invalidate calendars [%1], invalidate cache [%2]">
+    </event>
+    <event value="501" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Modifying Feed of Type %1 for OLITEMID: %2 %3 %4">
+    </event>
+    <event value="502" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Invalid Timestamp for Feed Item: %1">
+    </event>
+    <event value="503" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Feed for contact %1 as a part of operation %2 did not provide enough items. %3 were requested and %4 were provided with %5 qualifying. Marking as failed.">
+    </event>
+    <event value="504" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="The following deep link is invalid: %1">
+    </event>
+    <event value="505" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="The following image url is too long: %1">
+    </event>
+    <event value="602" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Invalid Pending Upload Request Indentifier Format Encountered">
+    </event>
+    <event value="700" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="ChatStoreChangedEventSink %1: Advise to Messaging OM">
+    </event>
+    <event value="701" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="ChatStoreChangedEventSink %1: Unadvise from Messaging OM">
+    </event>
+    <event value="702" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x0" message="ChatStoreChanged event: event type [%1], item type [%2]">
+    </event>
+    <event value="705" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Activation status change notification received for Capability Service. New status: %1">
+    </event>
+    <event value="706" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Unknown activation status for Capability Service: %1">
+    </event>
+    <event value="707" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Request Capabilities: %1">
+    </event>
+    <event value="708" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="Capabilities retrieved:  %1, capabilities are %2">
+    </event>
+    <event value="711" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="ComposingStatusChangedEventSink %1: Advise to RCS">
+    </event>
+    <event value="712" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="ComposingStatusChangedEventSink %1: Unadvise from RCS">
+    </event>
+    <event value="713" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x0" message="ComposingStatusChanged event: source [RCS], chat id [%1], is group [%2], teluri [%3], is composing [%4]">
+    </event>
+    <event value="714" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="RcsEndUserMessageEventSink %1: Advise to End User Messages">
+    </event>
+    <event value="715" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="RcsEndUserMessageEventSink %1: Unadvise from End User Messages">
+    </event>
+    <event value="716" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="ServiceStatusChangedEventSink %1: Advise to RCS">
+    </event>
+    <event value="717" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="ServiceStatusChangedEventSink %1: Unadvise from RCS">
+    </event>
+    <event value="718" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x0" message="ServiceStatusChanged event: service type [%1], is supported [%2]">
+    </event>
+    <event value="719" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="Default messaging app fall back to: %1">
+    </event>
+    <event value="720" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rcs service initialization started">
+    </event>
+    <event value="721" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x0" message="Rcs service is not available">
+    </event>
+    <event value="722" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rcs service adapter initialized">
+    </event>
+    <event value="723" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rcs service adapter released">
+    </event>
+    <event value="724" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="Rcs service adapter lost connection">
+    </event>
+    <event value="725" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Chat: ChatOperationContextGetMessageProperties">
+    </event>
+    <event value="726" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Chat: ChatOperationContextGetMessageParticipants">
+    </event>
+    <event value="727" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Chat: ChatOperationContextGetMessageAttachments">
+    </event>
+    <event value="728" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Chat: ChatOperationContext_MarkAsSeen">
+    </event>
+    <event value="729" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Chat: GetChatMessageProperties">
+    </event>
+    <event value="730" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Chat: UdmSvcImpl_GetChatObjectProperties">
+    </event>
+    <event value="731" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Chat: ProcessChatUpdatesBegin">
+    </event>
+    <event value="732" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Chat: ProcessChatUpdatesEnd">
+    </event>
+    <event value="733" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Chat: UdmSvcImpl_UpdateChatObjects">
+    </event>
+    <event value="735" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Conversation does not exist. ConversationId: [%1]">
+    </event>
+    <event value="736" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="One or more conversation properties were not found. ConversationId: [%1]">
+    </event>
+    <event value="737" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="Got a ChatMessage without recipients.">
+    </event>
+    <event value="738" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="ChatCapabilitiesContext::GetCachedChatCapabilities()">
+    </event>
+    <event value="739" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="ChatCapabilitiesContext::GetCachedChatCapabilities() - Contact not found">
+    </event>
+    <event value="740" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="ChatCapabilitiesContext::GetCachedChatCapabilities() - Found a cached contact">
+    </event>
+    <event value="741" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="ChatCapabilitiesContext::GetCachedChatCapabilities() - capabilities = %1">
+    </event>
+    <event value="742" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="ChatCapabilitiesContext::GetCapabilitiesFromNetwork()">
+    </event>
+    <event value="743" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="ChatCapabilitiesContext::_RequestCapabilities()">
+    </event>
+    <event value="744" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="Conversation does not exist. Provider count: [%1], First Provider id [%2]">
+    </event>
+    <event value="745" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="Got app manager instance. HResult: [%1]">
+    </event>
+    <event value="746" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="Got default messaging application. HResult: [%1]">
+    </event>
+    <event value="747" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="Got messaging app package family name. HResult: [%1]">
+    </event>
+    <event value="748" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="Got transport IDs. HResult: [%1]">
+    </event>
+    <event value="749" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="Got one default transport ID. HResult: [%1] TransportID: [%2]">
+    </event>
+    <event value="750" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="Got one default transport ID. HResult: [%1] TransportID: [%2]">
+    </event>
+    <event value="751" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="Flattened items to send. HResult: [%1]">
+    </event>
+    <event value="752" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="ChatCapabilitiesContext::_FindCachedPhoneNumberCapabilities found = [%1]">
+    </event>
+    <event value="753" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000004" message="RcsMultipartMessageTracker::_OnChatOpenedWorker()">
+    </event>
+    <event value="754" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="ChatAppManager::GetDefaultMessagingApp found default messaging app in registery.">
+    </event>
+    <event value="755" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="ChatAppManager::GetDefaultMessagingApp ChatAppManager::GetAllMessagingApps() failed to find any messaging apps.">
+    </event>
+    <event value="756" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="ChatAppManager::_GetDefaultMessagingAppInRegistry default app not found in registry.">
+    </event>
+    <event value="757" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="ChatAppManager::SetDefaultMessagingAppInRegistry().">
+    </event>
+    <event value="758" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="ChatAppManager::SetDefaultMessagingApp app already registered.">
+    </event>
+    <event value="759" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4" message="ChatAppManager::_SetDefaultMessagingAppInRegistry().">
+    </event>
+    <event value="760" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4" message="ChatAppManager::GetAllDefaultCapableMessagingApps(). - no default apps found">
+    </event>
+    <event value="1000" version="0" opcode="1" channel="0" level="5" task="100" keywords="0x2" message="">
+    </event>
+    <event value="1001" version="0" opcode="2" channel="0" level="5" task="100" keywords="0x2" message="">
+    </event>
+    <event value="1002" version="0" opcode="1" channel="0" level="5" task="101" keywords="0x2" message="">
+    </event>
+    <event value="1003" version="0" opcode="2" channel="0" level="5" task="101" keywords="0x2" message="">
+    </event>
+    <event value="1004" version="0" opcode="1" channel="0" level="5" task="102" keywords="0x2" message="">
+    </event>
+    <event value="1005" version="0" opcode="2" channel="0" level="5" task="102" keywords="0x2" message="">
+    </event>
+    <event value="1100" version="0" opcode="1" channel="0" level="5" task="200" keywords="0x2" message="">
+    </event>
+    <event value="1101" version="0" opcode="2" channel="0" level="5" task="200" keywords="0x2" message="">
+    </event>
+    <event value="1104" version="0" opcode="1" channel="0" level="5" task="202" keywords="0x2" message="">
+    </event>
+    <event value="1105" version="0" opcode="2" channel="0" level="5" task="202" keywords="0x2" message="">
+    </event>
+    <event value="1106" version="0" opcode="1" channel="0" level="5" task="203" keywords="0x2" message="">
+    </event>
+    <event value="1107" version="0" opcode="2" channel="0" level="5" task="203" keywords="0x2" message="">
+    </event>
+    <event value="1108" version="0" opcode="1" channel="0" level="5" task="204" keywords="0x2" message="">
+    </event>
+    <event value="1109" version="0" opcode="2" channel="0" level="5" task="204" keywords="0x2" message="">
+    </event>
+    <event value="1110" version="0" opcode="1" channel="0" level="5" task="205" keywords="0x2" message="">
+    </event>
+    <event value="1111" version="0" opcode="2" channel="0" level="5" task="205" keywords="0x2" message="">
+    </event>
+    <event value="1112" version="0" opcode="1" channel="0" level="5" task="206" keywords="0x2" message="">
+    </event>
+    <event value="1113" version="0" opcode="2" channel="0" level="5" task="206" keywords="0x2" message="">
+    </event>
+    <event value="1114" version="0" opcode="1" channel="0" level="5" task="207" keywords="0x2" message="">
+    </event>
+    <event value="1115" version="0" opcode="2" channel="0" level="5" task="207" keywords="0x2" message="">
+    </event>
+    <event value="1116" version="0" opcode="1" channel="0" level="5" task="208" keywords="0x2" message="">
+    </event>
+    <event value="1117" version="0" opcode="2" channel="0" level="5" task="208" keywords="0x2" message="">
+    </event>
+    <event value="1118" version="0" opcode="1" channel="0" level="5" task="209" keywords="0x2" message="">
+    </event>
+    <event value="1119" version="0" opcode="2" channel="0" level="5" task="209" keywords="0x2" message="">
+    </event>
+    <event value="1120" version="0" opcode="1" channel="0" level="5" task="210" keywords="0x2" message="">
+    </event>
+    <event value="1121" version="0" opcode="2" channel="0" level="5" task="210" keywords="0x2" message="">
+    </event>
+    <event value="1122" version="0" opcode="1" channel="0" level="5" task="211" keywords="0x2" message="">
+    </event>
+    <event value="1123" version="0" opcode="2" channel="0" level="5" task="211" keywords="0x2" message="">
+    </event>
+    <event value="1124" version="0" opcode="1" channel="0" level="5" task="212" keywords="0x2" message="">
+    </event>
+    <event value="1125" version="0" opcode="2" channel="0" level="5" task="212" keywords="0x2" message="">
+    </event>
+    <event value="1126" version="0" opcode="1" channel="0" level="5" task="213" keywords="0x2" message="">
+    </event>
+    <event value="1127" version="0" opcode="2" channel="0" level="5" task="213" keywords="0x2" message="">
+    </event>
+    <event value="1128" version="0" opcode="1" channel="0" level="5" task="214" keywords="0x2" message="">
+    </event>
+    <event value="1129" version="0" opcode="2" channel="0" level="5" task="214" keywords="0x2" message="">
+    </event>
+    <event value="1200" version="0" opcode="1" channel="0" level="5" task="250" keywords="0x2" message="">
+    </event>
+    <event value="1201" version="0" opcode="2" channel="0" level="5" task="250" keywords="0x2" message="">
+    </event>
+    <event value="1202" version="0" opcode="1" channel="0" level="5" task="251" keywords="0x2" message="">
+    </event>
+    <event value="1203" version="0" opcode="2" channel="0" level="5" task="251" keywords="0x2" message="">
+    </event>
+    <event value="1204" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="App: %1, Action: %2">
+    </event>
+    <event value="1205" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x200" message="App: %1, Action: %2">
+    </event>
+    <event value="1206" version="0" opcode="1" channel="0" level="5" task="300" keywords="0x2" message="">
+    </event>
+    <event value="1207" version="0" opcode="2" channel="0" level="5" task="300" keywords="0x2" message="">
+    </event>
+    <event value="1208" version="0" opcode="1" channel="0" level="5" task="301" keywords="0x2" message="">
+    </event>
+    <event value="1209" version="0" opcode="2" channel="0" level="5" task="301" keywords="0x2" message="">
+    </event>
+    <event value="1210" version="0" opcode="1" channel="0" level="5" task="302" keywords="0x2" message="">
+    </event>
+    <event value="1211" version="0" opcode="2" channel="0" level="5" task="302" keywords="0x2" message="">
+    </event>
+    <event value="1212" version="0" opcode="1" channel="0" level="5" task="303" keywords="0x2" message="">
+    </event>
+    <event value="1213" version="0" opcode="2" channel="0" level="5" task="303" keywords="0x2" message="">
+    </event>
+    <event value="1214" version="0" opcode="1" channel="0" level="5" task="304" keywords="0x2" message="">
+    </event>
+    <event value="1215" version="0" opcode="2" channel="0" level="5" task="304" keywords="0x2" message="">
+    </event>
+    <event value="1216" version="0" opcode="1" channel="0" level="5" task="305" keywords="0x2" message="">
+    </event>
+    <event value="1217" version="0" opcode="2" channel="0" level="5" task="305" keywords="0x2" message="">
+    </event>
+    <event value="1218" version="0" opcode="1" channel="0" level="5" task="306" keywords="0x2" message="">
+    </event>
+    <event value="1219" version="0" opcode="2" channel="0" level="5" task="306" keywords="0x2" message="">
+    </event>
+    <event value="1220" version="0" opcode="1" channel="0" level="5" task="307" keywords="0x2" message="">
+    </event>
+    <event value="1221" version="0" opcode="2" channel="0" level="5" task="307" keywords="0x2" message="">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x400000000008" message="Cleaning up stale data. Priority cleanup? [%1] Pending Installs? [%2]">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Starting the knowledge defragmentation task for all sync partners">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Finished the knowledge defragmentation task. Examined %1 stores and %2 partners out of which defragmentation succeeded for %3, partially succeeded for %4 and failed for %5.">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Starting the knowledge defragmentation task for all sync partners associated with store %1">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8" message="Finished the knowledge defragmentation task for all sync partners associated with store %1. Examined %2 partners out of which defragmentation succeeded for %3, partially succeeded for %4 and failed for %5.">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000001" message="App Store Deleted: App Id [%1], Reason [%2]">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000001" message="App Store Grouping Deleted: App Id [%1], Reason [%2]">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000001" message="HandlePackageUninstall called for PFN: %1">
+    </event>
+  </events>
+</provider>

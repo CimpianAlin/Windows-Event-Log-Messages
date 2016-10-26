@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DataIntegrityScan" guid="13bc4371-4e21-4e46-a84f-8c0ffb548ced" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=discan.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\System32\discan.dll" messageFileName="C:\Windows\System32\discan.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DataIntegrityScan/Admin" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-DataIntegrityScan/CrashRecovery" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Started checking data integrity.">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Completed data integrity checks.">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Disk scan started on \\?\PhysicalDrive%1 (\\?\Disk%2)">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Disk scan completed on \\?\PhysicalDrive%1 (\\?\Disk%2)">
+    </event>
+    <event value="21" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Volume scan started on %4 (%2) in \\?\PhysicalDrive%5 (\\?\Disk%6)">
+    </event>
+    <event value="22" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Volume scan completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5">
+    </event>
+    <event value="23" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Volume scan was partially completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5">
+    </event>
+    <event value="24" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Files were skipped during the volume scan.
+Files skipped: %6
+Volume name: %4 (%2)
+First skipped file name: %8
+HResult: %5">
+    </event>
+    <event value="54" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="File data inconsistency was detected and was repaired successfully.
+File name: %2
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8">
+    </event>
+    <event value="55" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="File data scrub operation failed.
+File name: %2
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8">
+    </event>
+    <event value="56" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Volume metadata inconsistency was detected and was repaired successfully.
+Volume name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8">
+    </event>
+    <event value="57" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Volume metadata scrub operation failed.
+Volume name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8">
+    </event>
+    <event value="58" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="File metadata inconsistency was detected and was repaired successfully.
+File name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8">
+    </event>
+    <event value="59" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="File metadata scrub operation failed.
+File name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8">
+    </event>
+    <event value="60" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="File data inconsistency was detected and the parity repair was scheduled at the end of the task. No user action is required.
+File name: %2
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8">
+    </event>
+    <event value="61" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Volume metadata inconsistency was detected and the parity repair was scheduled at the end of the task. No user action is required.
+Volume name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8">
+    </event>
+    <event value="62" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="File metadata inconsistency was detected and the parity repair was scheduled at the end of the task. No user action is required.
+File name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8">
+    </event>
+    <event value="101" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Started checking data integrity for crash recovery.">
+    </event>
+    <event value="104" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Completed data integrity checks for crash recovery.">
+    </event>
+    <event value="111" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Crash recovery disk scan started on \\?\PhysicalDrive%1 (\\?\Disk%2)">
+    </event>
+    <event value="112" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Crash recovery disk scan completed on \\?\PhysicalDrive%1 (\\?\Disk%2)">
+    </event>
+    <event value="121" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Crash recovery volume scan started on %4 (%2) in \\?\PhysicalDrive%5 (\\?\Disk%9)">
+    </event>
+    <event value="122" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Crash recovery volume scan completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5">
+    </event>
+    <event value="123" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Volume scan was partially completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5">
+    </event>
+    <event value="124" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Files were skipped during the volume scan.
+Files skipped: %6
+Volume name: %4 (%2)
+First skipped file name: %8
+HResult: %5">
+    </event>
+    <event value="154" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="File data inconsistency was detected and was repaired successfully.
+File name: %2
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8">
+    </event>
+    <event value="155" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="File data scrub operation failed.
+File name: %2
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8">
+    </event>
+    <event value="156" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Volume metadata inconsistency was detected and was repaired successfully.
+Volume name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8">
+    </event>
+    <event value="157" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Volume metadata scrub operation failed.
+Volume name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8">
+    </event>
+    <event value="158" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="File metadata inconsistency was detected and was repaired successfully.
+File name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8">
+    </event>
+    <event value="159" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="File metadata scrub operation failed.
+File name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8">
+    </event>
+    <event value="160" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Parity repair completed.
+Volume name: %4 (%2)
+Extent count: %5
+Length (in bytes): %6">
+    </event>
+    <event value="161" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Parity repair failed.
+Volume name: %4 (%2)
+Extent count: %5
+Length (in bytes): %6
+HResult: %7">
+    </event>
+  </events>
+</provider>

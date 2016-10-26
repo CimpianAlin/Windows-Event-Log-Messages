@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-Guest-Drivers-IcSvc" guid="c18672d1-dc18-4dfd-91e4-170cf37160cf" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=icsvcext.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\icsvcext.dll" parameterFileName="C:\Windows\system32\icsvcext.dll" messageFileName="C:\Windows\system32\icsvcext.dll" message="Microsoft-Windows-Hyper-V-IcSvc" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Guest-Drivers/Diagnose" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Guest-Drivers/Admin" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Failed to initialize the backup components metadata in preparation for backup, status %1.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Failed to set context for shadow copy operations, status %1.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Failed to define overall configuration for a backup operation, status %1.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Failed to detect presence or absence of directly mapped disks like ISCSI and Fibre Channel disks in the system, status %1.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Could not find a matching original volume for shadow volume %1.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Some of the shadow Luns are not surfaced in the guest operating system.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Not all of the shadow volumes arrived in the guest operating system.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Hot backup is not supported on this version of the guest operating system, status %1.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The selected writer %1 is in a failed state, status %2, %3.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The cluster disk with disk number %1 is not currently owned by this VM and hence cannot be snapshotted by this VM.">
+    </event>
+    <event value="3584" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="3585" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="3586" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="3587" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="[VMID %2] %1">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IsolatedUserMode" guid="73a33ab2-1966-4999-8add-868c41415269" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=iumbase.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\iumbase.dll" messageFileName="C:\Windows\system32\iumbase.dll" message="Microsoft-Windows-IsolatedUserMode" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000400000000000" message="Secure Trustlet %4 Id %1 and Pid %2 started with status %3.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000400000000000" message="Secure Trustlet Id %1 and Pid %2 stopped with status %3.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000400000000000" message="Secure Kernel started with status %1 and flags %2.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000400000000000" message="Secure Trustlet Id %1 and Pid %2 failed to start with status %3.">
+    </event>
+  </events>
+</provider>

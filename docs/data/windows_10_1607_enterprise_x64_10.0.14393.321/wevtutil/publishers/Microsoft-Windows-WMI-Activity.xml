@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WMI-Activity" guid="1418ef04-b0b4-4623-bf7e-d74ab47bbdaa" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=WinMgmtR.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\wbem\WinMgmtR.dll" messageFileName="C:\Windows\system32\wbem\WinMgmtR.dll" message="Microsoft-Windows-WMI-Activity" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WMI-Activity/Trace" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WMI-Activity/Operational" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WMI-Activity/Debug" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GroupOperationId = %1; OperationId = %2; Operation = %3; ClientMachine = %4; User = %5; ClientProcessId = %6; NamespaceName = %7">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="ProviderInfo for GroupOperationId = %1; Operation = %2; ProviderName = %3; ProviderGuid = %4; Path = %5">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Stop OperationId = %1">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="CorrelationId = %1; GroupOperationId = %2; OperationId = %3; Operation = %4; ClientMachine = %5; User = %6; ClientProcessId = %7; NamespaceName = %8">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="ProviderInfo for GroupOperationId = %1; Operation = %2; HostID = %3; ProviderName = %4; ProviderGuid = %5; Path = %6">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Stop OperationId = %1; ResultCode = %2">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="OperationId = %1; Operation = %2; Channel = %3; Message = %4">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="OperationId = %1; Operation = %2; ErrorID = %3; ErrorCategory = %4; Message = %5; TargetName = %6">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="OperationId = %1; Operation = %2; ErrorID = %3; Message = %4">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="CorrelationId = %1; ProcessId = %2; Protocol = %3; Operation = %4; User = %5; Namespace = %6">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="WMI Events were dropped. ConsumerType = %1; Possiblecause = %2">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Performing delete operation on the WMI repository. OperationID = %1; Operation = %2">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Performing Update operation on the WMI repository. OperationID = %1; Operation = %2; Flags = %3">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="WMI Events were bound. ConsumerType = %1; Possiblecause = %2">
+    </event>
+    <event value="50" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Activity Transfer">
+    </event>
+    <event value="100" version="0" opcode="0" channel="18" level="0" task="0" keywords="0x2000000000000000" message="ComponentName = %1; MessageDetail = %2; FileName = %3">
+    </event>
+    <event value="101" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000000" message="ComponentName = %1; ErrorId = %2; ErrorDetail = %3; FileName = %4">
+    </event>
+    <event value="5857" version="0" opcode="0" channel="17" level="0" task="0" keywords="0x4000000000000000" message="%1 provider started with result code %2. HostProcess = %3; ProcessID = %4; ProviderPath = %5">
+    </event>
+    <event value="5858" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Id = %1; ClientMachine = %2; User = %3; ClientProcessId = %4; Component = %5; Operation = %6; ResultCode = %7; PossibleCause = %8">
+    </event>
+    <event value="5859" version="0" opcode="0" channel="17" level="0" task="0" keywords="0x4000000000000000" message="Namespace = %1; NotificationQuery = %2; OwnerName = %3; HostProcessID = %4;  Provider= %5, queryID = %6; PossibleCause = %7">
+    </event>
+    <event value="5860" version="0" opcode="0" channel="17" level="0" task="0" keywords="0x4000000000000000" message="Namespace = %1; NotificationQuery = %2; UserName = %3; ClientProcessID = %4, ClientMachine = %5; PossibleCause = %6">
+    </event>
+    <event value="5861" version="0" opcode="0" channel="17" level="0" task="0" keywords="0x4000000000000000" message="Namespace = %1; Eventfilter = %2 (refer to its activate eventid:5859); Consumer = %3; PossibleCause = %4">
+    </event>
+  </events>
+</provider>

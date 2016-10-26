@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NcdAutoSetup" guid="ec23f986-ae2d-4269-b52f-4e20765c1a94" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=NcdAutoSetup.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\NcdAutoSetup.dll" messageFileName="C:\Windows\system32\NcdAutoSetup.dll" message="Microsoft-Windows-NcdAutoSetup" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NcdAutoSetup/Operational" id="16" flags="0" message="Microsoft-Windows-NcdAutoSetup/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-NcdAutoSetup/Diagnostic" id="17" flags="0" message="Microsoft-Windows-NcdAutoSetup/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="taskDeviceQualified" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Device Qualified">
+    </task>
+    <task name="taskDeviceDisqualified" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Device Disqualified">
+    </task>
+    <task name="taskNetworkQualified" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Qualified">
+    </task>
+    <task name="taskNetworkDisqualified" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Disqualified">
+    </task>
+    <task name="taskNetworkSizeCalculation" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="taskNetworkQualificationCheck" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="4001" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Network connected device (Name: %1; Model %2) got qualified for automatic setup">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Network connected device (Name: %1; Model %2) got disqualified for automatic setup because it was manually removed earlier">
+    </event>
+    <event value="4003" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Network connected device (Name: %1; Model %2) got disqualified for automatic setup because its device category is disqualified">
+    </event>
+    <event value="4004" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Network connected device (Name: %1; Model %2) got disqualified for automatic setup due to an unexpected error (%3)">
+    </event>
+    <event value="4005" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Network connected device (Name: %1; Model %2) got disqualified for automatic setup because its device category property is missing">
+    </event>
+    <event value="4006" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Network connected device (Name: %1; Model %2) got disqualified for automatic setup because its device IP address property is missing">
+    </event>
+    <event value="4007" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Network connected device (Name: %1; Model %2) got disqualified for automatic setup because its device PnP-X Id property is missing">
+    </event>
+    <event value="4008" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Network connected device (Model %1) got disqualified for automatic setup because its device friendly name property is missing">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Network (%1) got qualified for automatic setup of network connected devices">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Network (%1) got disqualified for automatic setup of network connected devices because its network category is disqualified">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Network (%1) got disqualified for automatic setup of network connected devices because its network size is disqualified">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Network (%1) got disqualified for automatic setup of network connected devices because network discovery is turned off">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Network (%1) got disqualified for automatic setup of network connected devices because %2 bits are used for its mask">
+    </event>
+    <event value="6001" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6002" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6003" version="0" opcode="0" channel="17" level="4" task="6" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6004" version="0" opcode="0" channel="17" level="4" task="6" keywords="0x4000000000000000" message="">
+    </event>
+  </events>
+</provider>

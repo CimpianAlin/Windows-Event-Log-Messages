@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Intel-iaLPSS-GPIO" guid="d386cc7a-620a-41c1-abf5-55018c6c699a" helpLink="" resourceFileName="C:\Windows\system32\drivers\iaLPSSi_GPIO.sys" messageFileName="C:\Windows\system32\drivers\iaLPSSi_GPIO.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Intel-iaLPSS-GPIO/Analytic" id="16" flags="0" message="Analytic Channel">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="GPIO_Enumeration" value="1" eventGUID="d4aeac44-ad44-456e-9c90-33f8cdced6af" message="Enumeration of GPIOx driver">
+    </task>
+    <task name="GPIO_Power" value="2" eventGUID="d1ceaed4-0c69-4504-ba7f-cc591a9fe4f5" message="Device Power Flow ">
+    </task>
+    <task name="GpioIo" value="3" eventGUID="9064c13c-086d-43e3-b1b7-ccde30f320f0" message="Gpio IO operations">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1001" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Created WDFDEVICE %1 ">
+    </event>
+    <event value="1002" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="WDFDEVICE %1 IO Addr %2">
+    </event>
+    <event value="1003" version="1" opcode="0" channel="8" level="2" task="1" keywords="0x4000000000000000" message="%1. WDFDEVICE %3">
+    </event>
+    <event value="1004" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Resource for %1 Released">
+    </event>
+    <event value="1005" version="1" opcode="1" channel="16" level="4" task="0" keywords="0x8000000000000000" message="StartController Start">
+    </event>
+    <event value="1006" version="1" opcode="2" channel="16" level="4" task="0" keywords="0x8000000000000000" message="StartController End">
+    </event>
+    <event value="1007" version="1" opcode="1" channel="16" level="4" task="0" keywords="0x8000000000000000" message="StopController Start">
+    </event>
+    <event value="1008" version="1" opcode="2" channel="16" level="4" task="0" keywords="0x8000000000000000" message="StopController End">
+    </event>
+    <event value="1015" version="1" opcode="1" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DriverEntry Start">
+    </event>
+    <event value="1016" version="1" opcode="2" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DriverEntry End">
+    </event>
+    <event value="1017" version="1" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="DeviceAdd Start">
+    </event>
+    <event value="1018" version="1" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="DeviceAdd End">
+    </event>
+    <event value="1019" version="1" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="OnPrepareHardware Start">
+    </event>
+    <event value="1020" version="1" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="OnPrepareHardware End">
+    </event>
+    <event value="1030" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="DriverUnloaded">
+    </event>
+    <event value="1040" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Query Stop %1">
+    </event>
+    <event value="1041" version="1" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Surprise Removal %1">
+    </event>
+    <event value="1042" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="QueryBasicInformation">
+    </event>
+    <event value="1045" version="1" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="ConnectIO BankId = %1, PinCount = %2, ConnectMode = %3, PullConfiguration = %4">
+    </event>
+    <event value="1046" version="1" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="DisconnectIO BankId = %1, PinCount = %2, DisconnectMode = %3">
+    </event>
+    <event value="1048" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="ReadIoPins BankID:%1 PinValues:%2">
+    </event>
+    <event value="1049" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="WriteIoPins BankID:%1 SetValue:%2 ClearValue:%3">
+    </event>
+  </events>
+</provider>

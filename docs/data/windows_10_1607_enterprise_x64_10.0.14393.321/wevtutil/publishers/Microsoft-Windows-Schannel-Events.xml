@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Schannel-Events" guid="91cc1150-71aa-47e2-ae18-c96e61736b6f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=schannel.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\schannel.dll" messageFileName="C:\Windows\system32\schannel.dll" message="Microsoft-Windows-Schannel-Events" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Schannel-Events/Perf" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Allocate" value="1376256" message="">
+    </opcode>
+    <opcode name="Free" value="2031616" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="AcquireCredentialHandle" value="4096" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AcceptSecurityContext" value="8192" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MemoryAllocation" value="12288" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CAPI2Calls" value="16384" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PKCrypto" value="20480" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FreeCredentialHandle" value="24576" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeleteSecurityContext" value="28672" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="257" version="0" opcode="1" channel="16" level="4" task="4096" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="258" version="0" opcode="2" channel="16" level="4" task="4096" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="513" version="0" opcode="1" channel="16" level="4" task="8192" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="514" version="0" opcode="2" channel="16" level="4" task="8192" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="769" version="0" opcode="21" channel="16" level="4" task="12288" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="770" version="0" opcode="31" channel="16" level="4" task="12288" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1025" version="0" opcode="1" channel="16" level="4" task="16384" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1026" version="0" opcode="2" channel="16" level="4" task="16384" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1027" version="0" opcode="1" channel="16" level="4" task="16384" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1028" version="0" opcode="2" channel="16" level="4" task="16384" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1029" version="0" opcode="1" channel="16" level="4" task="16384" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1030" version="0" opcode="2" channel="16" level="4" task="16384" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1031" version="0" opcode="1" channel="16" level="4" task="16384" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1032" version="0" opcode="2" channel="16" level="4" task="16384" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1033" version="0" opcode="1" channel="16" level="4" task="16384" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1034" version="0" opcode="2" channel="16" level="4" task="16384" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1281" version="0" opcode="1" channel="16" level="4" task="20480" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1282" version="0" opcode="2" channel="16" level="4" task="20480" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1283" version="0" opcode="1" channel="16" level="4" task="20480" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1284" version="0" opcode="2" channel="16" level="4" task="20480" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1537" version="0" opcode="1" channel="16" level="4" task="24576" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1538" version="0" opcode="2" channel="16" level="4" task="24576" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1793" version="0" opcode="1" channel="16" level="4" task="28672" keywords="0x8000000000000000" message="A TLS Security Context handle is being deleted.
+
+   Context handle: %1
+   Target name: %2">
+    </event>
+    <event value="1794" version="0" opcode="2" channel="16" level="4" task="28672" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

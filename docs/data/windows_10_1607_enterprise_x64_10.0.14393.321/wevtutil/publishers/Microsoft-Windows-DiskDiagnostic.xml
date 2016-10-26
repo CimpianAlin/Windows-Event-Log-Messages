@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DiskDiagnostic" guid="e670a5a2-ce74-4ab4-9347-61b815319f4c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=dfdts.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\dfdts.dll" messageFileName="C:\Windows\system32\dfdts.dll" message="Microsoft-Windows-DiskDiagnostic" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-DiskDiagnostic/Operational" id="16" flags="0" message="Microsoft-Windows-DiskDiagnostic/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="1" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic detected a S.M.A.R.T. fault on disk %1 (volumes %2).  This disk might fail; back up your computer now. All data on the hard disk, including files, documents, pictures, programs, and settings might be lost if your hard disk fails.  To determine if the hard disk needs to be repaired or replaced, contact the manufacturer of your computer.  If you can&apos;t back up (for example, you have no CDs or other backup media), you should shut down your computer and restart when you have backup media available.  In the meantime, do not save any critical files to this disk.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Windows Disk Diagnostic was invoked for a S.M.A.R.T. fault, but no new faults were detected.  The diagnostic will exit without performing any corrective action.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Windows Disk Diagnostic successfully scheduled interactive resolution for a S.M.A.R.T. fault.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Windows Disk Diagnostic attempted to schedule interactive recovery for a S.M.A.R.T. fault but encountered an error.  The error code was %1.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Windows Disk Diagnostic detected a S.M.A.R.T. fault on disk %1 (volumes %2; hardware id %3). However, as this disk is known to report false errors, Windows Disk Diagnostic ignored this event and exited silently.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Windows Disk Diagnostic Resolver was disabled successfully.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Windows Disk Diagnostic Resolver could not be disabled.  The error code was %1.">
+    </event>
+  </events>
+</provider>

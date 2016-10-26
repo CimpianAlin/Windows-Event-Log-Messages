@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ESE" guid="478ea8a8-00be-4ba6-8e75-8b9dc7db9f78" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ETWESEProviderResources.dll&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\ETWESEProviderResources.dll" messageFileName="C:\Windows\system32\ETWESEProviderResources.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ESE/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-ESE/IODiagnose" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ESE_Trace" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_BF_Trace" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_Block_Trace" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_NewPage_Trace" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_ReadPage_Trace" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_PrereadPage_Trace" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_WritePage_Trace" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_EvictPage_Trace" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_RequestPage_Trace" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_DirtyPage_Trace" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TransactionBegin_Trace" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TransactionCommit_Trace" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TransactionRollback_Trace" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_AllocExt_Trace" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_FreeExt_Trace" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_AllocPage_Trace" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_FreePage_Trace" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_IOREQHeapEnqueue_Trace" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_IOREQHeapDequeue_Trace" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_IOCompletion_Trace" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_LogStall_Trace" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_LogFlush_Trace" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_EventLogInfo_Trace" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_EventLogWarn_Trace" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_EventLogError_Trace" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TimerQueueSchedule_Trace" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TimerQueueRun_Trace" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TimerQueueCancel_Trace" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TimerTaskSchedule_Trace" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TimerTaskRun_Trace" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TimerTaskCancel_Trace" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TaskManagerPost_Trace" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TaskManagerRun_Trace" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_GPTaskManagerPost_Trace" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_GPTaskManagerRun_Trace" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_TestMarker_Trace" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_ThreadCreate_Trace" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_ThreadStart_Trace" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_VersionPage_Trace" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_VersionCopyPage_Trace" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_CacheResize_Trace" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_CacheLimitResize_Trace" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_CacheScavengeProgress_Trace" value="44" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_ApiCall_Trace" value="45" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_ResMgrInit_Trace" value="46" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_ResMgrTerm_Trace" value="47" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_CachePage_Trace" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_MarkPageAsSuperCold_Trace" value="49" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_CacheMissLatency_Trace" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_BTreePrereadPageRequest_Trace" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagNull_Trace" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagInformation_Trace" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagErrors_Trace" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagAsserts_Trace" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagAPI_Trace" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagInitTerm_Trace" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagBufferManager_Trace" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagBufferManagerHashedLatches_Trace" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagIO_Trace" value="108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagMemory_Trace" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagVersionStore_Trace" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagVersionStoreOOM_Trace" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagVersionCleanup_Trace" value="112" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagCatalog_Trace" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagDDLRead_Trace" value="114" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagDDLWrite_Trace" value="115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagDMLRead_Trace" value="116" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagDMLWrite_Trace" value="117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagDMLConflicts_Trace" value="118" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagInstances_Trace" value="119" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagDatabases_Trace" value="120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagSessions_Trace" value="121" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagCursors_Trace" value="122" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagCursorNavigation_Trace" value="123" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagCursorPageRefs_Trace" value="124" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagBtree_Trace" value="125" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagSpace_Trace" value="126" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagFCBs_Trace" value="127" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagTransactions_Trace" value="128" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagLogging_Trace" value="129" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagRecovery_Trace" value="130" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagBackup_Trace" value="131" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagRestore_Trace" value="132" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagOLD_Trace" value="133" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagEventlog_Trace" value="134" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagBufferManagerMaintTasks_Trace" value="135" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagSpaceManagement_Trace" value="136" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagSpaceInternal_Trace" value="137" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagIOQueue_Trace" value="138" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagDiskVolumeManagement_Trace" value="139" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagCallbacks_Trace" value="140" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagIOProblems_Trace" value="141" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagUpgrade_Trace" value="142" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagRecoveryValidation_Trace" value="143" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagBufferManagerBufferCacheState_Trace" value="144" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagBufferManagerBufferDirtyState_Trace" value="145" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagTimerQueue_Trace" value="146" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagSortPerf_Trace" value="147" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagOLDRegistration_Trace" value="148" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagOLDWork_Trace" value="149" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagSysInitTerm_Trace" value="150" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ESE_tagVersionAndStagingChecks_Trace" value="151" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="Error">
+    </keyword>
+    <keyword name="Performance" mask="2" message="Performance">
+    </keyword>
+    <keyword name="Trace" mask="4" message="Trace">
+    </keyword>
+    <keyword name="Transaction" mask="8" message="Transaction">
+    </keyword>
+    <keyword name="Space" mask="10" message="Space">
+    </keyword>
+    <keyword name="BF" mask="20" message="BF">
+    </keyword>
+    <keyword name="IO" mask="40" message="IO">
+    </keyword>
+    <keyword name="LOG" mask="80" message="LOG">
+    </keyword>
+    <keyword name="Task" mask="100" message="Task">
+    </keyword>
+    <keyword name="Test" mask="200" message="Test">
+    </keyword>
+    <keyword name="BFRESMGR" mask="400" message="BFRESMGR">
+    </keyword>
+    <keyword name="JETTraceTag" mask="1000" message="JETTraceTag">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="0" level="5" task="1" keywords="0x4" message="ESE Trace">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="5" task="2" keywords="0x4" message="ESE BF Trace">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="5" task="3" keywords="0x20" message="ESE Block Trace">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="4" task="4" keywords="0x22" message="ESE NewPage Trace">
+    </event>
+    <event value="104" version="0" opcode="0" channel="0" level="4" task="5" keywords="0x22" message="ESE ReadPage Trace">
+    </event>
+    <event value="105" version="0" opcode="0" channel="0" level="4" task="6" keywords="0x22" message="ESE PrereadPage Trace">
+    </event>
+    <event value="106" version="0" opcode="0" channel="0" level="4" task="7" keywords="0x422" message="ESE WritePage Trace">
+    </event>
+    <event value="107" version="0" opcode="0" channel="0" level="4" task="8" keywords="0x420" message="ESE EvictPage Trace">
+    </event>
+    <event value="108" version="0" opcode="0" channel="0" level="5" task="9" keywords="0x420" message="ESE RequestPage Trace">
+    </event>
+    <event value="110" version="0" opcode="0" channel="0" level="4" task="11" keywords="0x422" message="ESE DirtyPage Trace">
+    </event>
+    <event value="111" version="0" opcode="0" channel="0" level="5" task="12" keywords="0x8" message="ESE TransactionBegin Trace">
+    </event>
+    <event value="112" version="0" opcode="0" channel="0" level="5" task="13" keywords="0x8" message="ESE TransactionCommit Trace">
+    </event>
+    <event value="113" version="0" opcode="0" channel="0" level="5" task="14" keywords="0x8" message="ESE TransactionRollback Trace">
+    </event>
+    <event value="114" version="0" opcode="0" channel="0" level="5" task="15" keywords="0x10" message="ESE AllocExt Trace">
+    </event>
+    <event value="115" version="0" opcode="0" channel="0" level="5" task="16" keywords="0x10" message="ESE FreeExt Trace">
+    </event>
+    <event value="116" version="0" opcode="0" channel="0" level="5" task="17" keywords="0x10" message="ESE AllocPage Trace">
+    </event>
+    <event value="117" version="0" opcode="0" channel="0" level="5" task="18" keywords="0x10" message="ESE FreePage Trace">
+    </event>
+    <event value="118" version="0" opcode="0" channel="17" level="4" task="19" keywords="0x4000000000000040" message="ESE IOREQHeapEnqueue Trace">
+    </event>
+    <event value="119" version="0" opcode="0" channel="17" level="4" task="20" keywords="0x4000000000000040" message="ESE IOREQHeapDequeue Trace">
+    </event>
+    <event value="120" version="0" opcode="0" channel="17" level="4" task="21" keywords="0x4000000000000040" message="ESE IOCompletion Trace">
+    </event>
+    <event value="121" version="0" opcode="0" channel="0" level="3" task="22" keywords="0x80" message="ESE Log Stall Trace">
+    </event>
+    <event value="122" version="0" opcode="0" channel="0" level="4" task="23" keywords="0x80" message="ESE LogFlush Trace">
+    </event>
+    <event value="123" version="0" opcode="0" channel="16" level="4" task="24" keywords="0x8000000000000004" message="ESE EventLog Information Trace">
+    </event>
+    <event value="124" version="0" opcode="0" channel="16" level="3" task="25" keywords="0x8000000000000004" message="ESE EventLog Warning Trace">
+    </event>
+    <event value="125" version="0" opcode="0" channel="16" level="2" task="26" keywords="0x8000000000000004" message="ESE EventLog Error Trace">
+    </event>
+    <event value="126" version="0" opcode="0" channel="0" level="5" task="27" keywords="0x100" message="ESE Timer Queue Schedule Trace">
+    </event>
+    <event value="127" version="0" opcode="0" channel="0" level="5" task="28" keywords="0x100" message="ESE Timer Queue Run Trace">
+    </event>
+    <event value="128" version="0" opcode="0" channel="0" level="5" task="29" keywords="0x100" message="ESE Timer Queue Cancel Trace">
+    </event>
+    <event value="129" version="0" opcode="0" channel="0" level="5" task="30" keywords="0x100" message="ESE Timer Task Schedule Trace">
+    </event>
+    <event value="130" version="0" opcode="0" channel="0" level="5" task="31" keywords="0x100" message="ESE Timer Task Run Trace">
+    </event>
+    <event value="131" version="0" opcode="0" channel="0" level="5" task="32" keywords="0x100" message="ESE Timer Task Cancel Trace">
+    </event>
+    <event value="132" version="0" opcode="0" channel="0" level="5" task="33" keywords="0x100" message="ESE Task Manager Post Trace">
+    </event>
+    <event value="133" version="0" opcode="0" channel="0" level="5" task="34" keywords="0x100" message="ESE Task Manager Run Trace">
+    </event>
+    <event value="134" version="0" opcode="0" channel="0" level="5" task="35" keywords="0x100" message="ESE General Purpose Task Manager Post Trace">
+    </event>
+    <event value="135" version="0" opcode="0" channel="0" level="5" task="36" keywords="0x100" message="ESE General Purpose Task Manager Run Trace">
+    </event>
+    <event value="136" version="0" opcode="0" channel="0" level="4" task="37" keywords="0x200" message="ESE Test Marker Trace">
+    </event>
+    <event value="137" version="0" opcode="0" channel="0" level="4" task="38" keywords="0x100" message="ESE Thread Create Trace">
+    </event>
+    <event value="138" version="0" opcode="0" channel="0" level="4" task="39" keywords="0x100" message="ESE Thread Start Trace">
+    </event>
+    <event value="139" version="0" opcode="0" channel="0" level="4" task="40" keywords="0x22" message="ESE VersionPage Trace">
+    </event>
+    <event value="140" version="0" opcode="0" channel="0" level="4" task="41" keywords="0x22" message="ESE VersionCopyPage Trace">
+    </event>
+    <event value="141" version="0" opcode="0" channel="0" level="4" task="42" keywords="0x22" message="ESE Cache Resize Trace">
+    </event>
+    <event value="142" version="0" opcode="0" channel="0" level="4" task="43" keywords="0x22" message="ESE Cache Limit Resize Trace">
+    </event>
+    <event value="143" version="0" opcode="0" channel="0" level="4" task="44" keywords="0x22" message="ESE Cache Scavenge Progress Trace">
+    </event>
+    <event value="144" version="0" opcode="1" channel="0" level="4" task="45" keywords="0x2" message="ESE Function Call Started">
+    </event>
+    <event value="145" version="0" opcode="2" channel="0" level="4" task="45" keywords="0x2" message="ESE Function Call Complete">
+    </event>
+    <event value="146" version="0" opcode="0" channel="0" level="4" task="46" keywords="0x400" message="ESE ResMgrInit Trace">
+    </event>
+    <event value="147" version="0" opcode="0" channel="0" level="4" task="47" keywords="0x400" message="ESE ResMgrTerm Trace">
+    </event>
+    <event value="148" version="0" opcode="0" channel="0" level="5" task="48" keywords="0x420" message="ESE CachePage Trace">
+    </event>
+    <event value="149" version="0" opcode="0" channel="0" level="5" task="49" keywords="0x420" message="ESE MarkPageAsSuperCold Trace">
+    </event>
+    <event value="150" version="0" opcode="0" channel="0" level="4" task="50" keywords="0x22" message="ESE CacheMissLatency Trace">
+    </event>
+    <event value="151" version="0" opcode="0" channel="0" level="4" task="51" keywords="0x2" message="ESE BTreePrereadPageRequest Trace">
+    </event>
+    <event value="200" version="0" opcode="0" channel="0" level="5" task="100" keywords="0x1000" message="ESE tagNull Trace">
+    </event>
+    <event value="201" version="0" opcode="0" channel="0" level="4" task="101" keywords="0x1000" message="ESE tagInformation Trace">
+    </event>
+    <event value="202" version="0" opcode="0" channel="0" level="4" task="102" keywords="0x1000" message="ESE tagErrors Trace">
+    </event>
+    <event value="203" version="0" opcode="0" channel="0" level="2" task="103" keywords="0x1000" message="ESE tagAsserts Trace">
+    </event>
+    <event value="204" version="0" opcode="0" channel="0" level="5" task="104" keywords="0x1000" message="ESE tagAPI Trace">
+    </event>
+    <event value="205" version="0" opcode="0" channel="0" level="5" task="105" keywords="0x1000" message="ESE tagInitTerm Trace">
+    </event>
+    <event value="206" version="0" opcode="0" channel="0" level="5" task="106" keywords="0x1000" message="ESE tagBufferManager Trace">
+    </event>
+    <event value="207" version="0" opcode="0" channel="0" level="5" task="107" keywords="0x1000" message="ESE tagBufferManagerHashedLatches Trace">
+    </event>
+    <event value="208" version="0" opcode="0" channel="0" level="5" task="108" keywords="0x1000" message="ESE tagIO Trace">
+    </event>
+    <event value="209" version="0" opcode="0" channel="0" level="5" task="109" keywords="0x1000" message="ESE tagMemory Trace">
+    </event>
+    <event value="210" version="0" opcode="0" channel="0" level="5" task="110" keywords="0x1000" message="ESE tagVersionStore Trace">
+    </event>
+    <event value="211" version="0" opcode="0" channel="0" level="5" task="111" keywords="0x1000" message="ESE tagVersionStoreOOM Trace">
+    </event>
+    <event value="212" version="0" opcode="0" channel="0" level="5" task="112" keywords="0x1000" message="ESE tagVersionCleanup Trace">
+    </event>
+    <event value="213" version="0" opcode="0" channel="0" level="5" task="113" keywords="0x1000" message="ESE tagCatalog Trace">
+    </event>
+    <event value="214" version="0" opcode="0" channel="0" level="5" task="114" keywords="0x1000" message="ESE tagDDLRead Trace">
+    </event>
+    <event value="215" version="0" opcode="0" channel="0" level="5" task="115" keywords="0x1000" message="ESE tagDDLWrite Trace">
+    </event>
+    <event value="216" version="0" opcode="0" channel="0" level="5" task="116" keywords="0x1000" message="ESE tagDMLRead Trace">
+    </event>
+    <event value="217" version="0" opcode="0" channel="0" level="5" task="117" keywords="0x1000" message="ESE tagDMLWrite Trace">
+    </event>
+    <event value="218" version="0" opcode="0" channel="0" level="5" task="118" keywords="0x1000" message="ESE tagDMLConflicts Trace">
+    </event>
+    <event value="219" version="0" opcode="0" channel="0" level="5" task="119" keywords="0x1000" message="ESE tagInstances Trace">
+    </event>
+    <event value="220" version="0" opcode="0" channel="0" level="5" task="120" keywords="0x1000" message="ESE tagDatabases Trace">
+    </event>
+    <event value="221" version="0" opcode="0" channel="0" level="5" task="121" keywords="0x1000" message="ESE tagSessions Trace">
+    </event>
+    <event value="222" version="0" opcode="0" channel="0" level="5" task="122" keywords="0x1000" message="ESE tagCursors Trace">
+    </event>
+    <event value="223" version="0" opcode="0" channel="0" level="5" task="123" keywords="0x1000" message="ESE tagCursorNavigation Trace">
+    </event>
+    <event value="224" version="0" opcode="0" channel="0" level="5" task="124" keywords="0x1000" message="ESE tagCursorPageRefs Trace">
+    </event>
+    <event value="225" version="0" opcode="0" channel="0" level="5" task="125" keywords="0x1000" message="ESE tagBtree Trace">
+    </event>
+    <event value="226" version="0" opcode="0" channel="0" level="5" task="126" keywords="0x1000" message="ESE tagSpace Trace">
+    </event>
+    <event value="227" version="0" opcode="0" channel="0" level="5" task="127" keywords="0x1000" message="ESE tagFCBs Trace">
+    </event>
+    <event value="228" version="0" opcode="0" channel="0" level="5" task="128" keywords="0x1000" message="ESE tagTransactions Trace">
+    </event>
+    <event value="229" version="0" opcode="0" channel="0" level="5" task="129" keywords="0x1000" message="ESE tagLogging Trace">
+    </event>
+    <event value="230" version="0" opcode="0" channel="0" level="5" task="130" keywords="0x1000" message="ESE tagRecovery Trace">
+    </event>
+    <event value="231" version="0" opcode="0" channel="0" level="5" task="131" keywords="0x1000" message="ESE tagBackup Trace">
+    </event>
+    <event value="232" version="0" opcode="0" channel="0" level="5" task="132" keywords="0x1000" message="ESE tagRestore Trace">
+    </event>
+    <event value="233" version="0" opcode="0" channel="0" level="5" task="133" keywords="0x1000" message="ESE tagOLD Trace">
+    </event>
+    <event value="234" version="0" opcode="0" channel="0" level="5" task="134" keywords="0x1000" message="ESE tagEventlog Trace">
+    </event>
+    <event value="235" version="0" opcode="0" channel="0" level="5" task="135" keywords="0x1000" message="ESE tagBufferManagerMaintTasks Trace">
+    </event>
+    <event value="236" version="0" opcode="0" channel="0" level="5" task="136" keywords="0x1000" message="ESE tagSpaceManagement Trace">
+    </event>
+    <event value="237" version="0" opcode="0" channel="0" level="5" task="137" keywords="0x1000" message="ESE tagSpaceInternal Trace">
+    </event>
+    <event value="238" version="0" opcode="0" channel="0" level="5" task="138" keywords="0x1000" message="ESE tagIOQueue Trace">
+    </event>
+    <event value="239" version="0" opcode="0" channel="0" level="5" task="139" keywords="0x1000" message="ESE tagDiskVolumeManagement Trace">
+    </event>
+    <event value="240" version="0" opcode="0" channel="0" level="5" task="140" keywords="0x1000" message="ESE tagCallbacks Trace">
+    </event>
+    <event value="241" version="0" opcode="0" channel="0" level="2" task="141" keywords="0x1000" message="ESE tagIOProblems Trace">
+    </event>
+    <event value="242" version="0" opcode="0" channel="0" level="5" task="142" keywords="0x1000" message="ESE tagUpgrade Trace">
+    </event>
+    <event value="243" version="0" opcode="0" channel="0" level="5" task="143" keywords="0x1000" message="ESE tagRecoveryValidation Trace">
+    </event>
+    <event value="244" version="0" opcode="0" channel="0" level="5" task="144" keywords="0x1000" message="ESE tagBufferManagerBufferCacheState Trace">
+    </event>
+    <event value="245" version="0" opcode="0" channel="0" level="5" task="145" keywords="0x1000" message="ESE tagBufferManagerBufferDirtyState Trace">
+    </event>
+    <event value="246" version="0" opcode="0" channel="0" level="5" task="146" keywords="0x1000" message="ESE tagTimerQueue Trace">
+    </event>
+    <event value="247" version="0" opcode="0" channel="0" level="5" task="147" keywords="0x1000" message="ESE tagSortPerf Trace">
+    </event>
+    <event value="248" version="0" opcode="0" channel="0" level="5" task="148" keywords="0x1000" message="ESE tagOLDRegistration Trace">
+    </event>
+    <event value="249" version="0" opcode="0" channel="0" level="5" task="149" keywords="0x1000" message="ESE tagOLDWork Trace">
+    </event>
+    <event value="250" version="0" opcode="0" channel="0" level="5" task="150" keywords="0x1000" message="ESE tagSysInitTerm Trace">
+    </event>
+    <event value="251" version="0" opcode="0" channel="0" level="5" task="151" keywords="0x1000" message="ESE tagVersionAndStagingChecks Trace">
+    </event>
+  </events>
+</provider>

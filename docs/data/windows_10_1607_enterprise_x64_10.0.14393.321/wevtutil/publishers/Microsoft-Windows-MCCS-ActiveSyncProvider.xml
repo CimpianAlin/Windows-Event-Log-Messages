@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MCCS-ActiveSyncProvider" guid="4a155f10-25ad-47e6-aba8-2c4f5eee7846" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ActiveSyncProvider.dll&amp;FileVer=10.0.14393.0" resourceFileName="ActiveSyncProvider.dll" messageFileName="ActiveSyncProvider.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SPERF_TAG_SYNC_SESSION" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNC_ENGINE" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_GET_SERVER_CHANGE_CNT" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_VERSION_NEGOTIATION" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_FOLDER_SYNC" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_HTTP" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_GENERATE_AIR_REQUEST" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PARSE_AIR_RESPONSE" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNCSESSION_INIT" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNCSESSION_CLEANUP" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SESSION_BEGINSYNC" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PROCESSRESPONSE" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_DETERMINE_CHANGES" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PIM_CHANGECOUNT" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_GET_SYNC_CMD" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_HANDLE_SERVER_CMD" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_READ_STORE" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_WRITE_STORE" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_GET_NAMEDPROPID" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_MSGSTORE_GETIDS" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNC_MAILWATCHER" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PIM_ITEMSAVE" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PIM_SETPROPERTY" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNC_SRVCMD" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_INBOX" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_CONTACTS" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_CALENDAR" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_TASKS" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNC_MEETING_REQUESTS" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SEND_MAIL" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_CONVERT_TO_MIME" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SMART_REPLY" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_GET_ATTACHMENTS" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_GET_ONE_ATTACHMENT" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_GET_DEVICE_CHANGE_CNT" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_GET_FETCH_IDS" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PURGE_CONTACTS" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PURGE_CALENDAR" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PURGE_TASKS" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PURGE_INBOX" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PURGE_NOTES" value="44" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PURGE_SMS" value="45" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_UPDATE_TRANSPORT" value="46" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_GET_NEXT_CHANGE" value="47" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_POOM_LOGON" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_POOM_LOGOFF" value="49" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNC_ONE_WND" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNC_NEW_SRC_NEXT" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_FOLDER_DELETE_CALLBACK" value="52" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_ALL_STORES_EMPTY" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_COMPACT_HEAP" value="54" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PING" value="55" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_REMOTE_FETCH_SVC" value="56" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_FETCH_SERVICE" value="57" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_FETCH_DOCINFO" value="58" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_FETCH_SENDRECV" value="59" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SEARCH_FALLBACK" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SERVERSYNC_INIT" value="61" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_SYNC_RECIPIENT_INFO" value="62" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_HTTP_SENDREQUEST" value="63" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_HTTP_GETRESPONSE" value="64" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_UI_SYNCALL" value="65" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_UI_SYNCSTOP" value="66" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_AUTODISCOVER" value="67" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_CSP_SESSION" value="68" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_CSP_PURE" value="69" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_CSP_LOAD_DS" value="70" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_CSP_VALIDATE" value="71" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_CSP_SAVE" value="72" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_AA_SAVE" value="73" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_AA_LOAD" value="74" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_AA_PROCESS" value="75" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_FTCH_SESSION" value="76" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SYNC_CMD_INVALID" value="77" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PEOPLE_MERGE" value="78" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PERSONS_MERGE" value="79" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_LINKS_MERGE" value="80" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_PURGE_OBSOLETE_PERSONS_AND_LINKS" value="81" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_FORGET_IRRELEVANT_PEOPLE_CHANGES" value="82" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_GET_PEOPLE_CHANGE_BATCH" value="83" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_MERGE_PERSONS_CHANGE_BATCH" value="84" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_MERGE_LINKS_CHANGE_BATCH" value="85" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_FETCH_AND_PROCESS_ONE_ATTACHMENT_BATCH" value="86" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SPERF_TAG_FETCH_ONE_ATTACHMENT_BATCH" value="87" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Error" mask="1" message="Error">
+    </keyword>
+    <keyword name="Performance" mask="2" message="Performance">
+    </keyword>
+    <keyword name="CommsService" mask="1000000000" message="CommsService">
+    </keyword>
+    <keyword name="PeopleSync" mask="2000000000" message="PeopleSync">
+    </keyword>
+    <keyword name="Warning" mask="4000000000" message="Warning">
+    </keyword>
+    <keyword name="StateTransition" mask="8000000000" message="StateTransition">
+    </keyword>
+    <keyword name="SyncSelfHost" mask="80000000000" message="SyncSelfHost">
+    </keyword>
+    <keyword name="ms:Telemetry" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ms:Measures" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000001" message="Error: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="Error Propagated: %1 Location: %2 Line Number: %3">
+    </event>
+    <event value="101" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="ActiveSyncProvider:[HandleServerCommand] Processed add of item %1; hr = %2.">
+    </event>
+    <event value="102" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="ActiveSyncProvider:[HandleServerCommand] Processed change of item %1; hr = %2.">
+    </event>
+    <event value="103" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="ActiveSyncProvider:[HandleServerCommand] Processed delete of item %1; hr = %2.">
+    </event>
+    <event value="201" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="ActiveSyncProvider:[SmartSend] Error opening Original message on the client.">
+    </event>
+    <event value="301" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [CertHelper] Changing authentication state from %2 to %3">
+    </event>
+    <event value="302" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [CertHelper] Discarding the currently persisted certificate">
+    </event>
+    <event value="303" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [CertHelper] Persisting the current certificate">
+    </event>
+    <event value="304" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [CertHelper] %2 Cert: %3 which expires on: %4/%5/%6 status: %7">
+    </event>
+    <event value="305" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [HttpSendRequest] Sending...">
+    </event>
+    <event value="306" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [HttpSendRequest] Finished, HRESULT=%2">
+    </event>
+    <event value="307" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [HrSendRequest] Read returns S_FALSE">
+    </event>
+    <event value="308" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Collection %1 transitioning from %2 to %3">
+    </event>
+    <event value="309" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [SyncFolderProgress] Sync response received for collection %2 of type %3, status %4, more available %5">
+    </event>
+    <event value="310" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [SyncFolderProgress] GIE response received for collection %2, status %3, count %4">
+    </event>
+    <event value="311" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="ActiveSyncProvider:[Ctrl] [%1] [SendMail] CAirSyncMailStore error sending 1 or more emails">
+    </event>
+    <event value="312" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Handled continuation sync request for collection %1. Continuation requests made so far: %2">
+    </event>
+    <event value="313" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Continuation sync request for collection %1 was ignored because the maximum number of continuation requests satisfied so far (%2) has been reached">
+    </event>
+    <event value="314" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] The total download count for collection %1 has changed from %2 to %3">
+    </event>
+    <event value="315" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] The total upload count for collection %1 has changed from %2 to %3">
+    </event>
+    <event value="316" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [MeetingResponsesSyncSession] Setting placeholder meeting server id for successful response (request id: %2, meeting id: %3)">
+    </event>
+    <event value="317" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [MeetingResponsesSyncSession] Deleting placeholder meeting for succesful response (request id: %2, meeting id: %3)">
+    </event>
+    <event value="318" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider: Updating tracking schema for account %1">
+    </event>
+    <event value="319" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [ItemMovesSyncSession] Ignoring invalid server response (status: %2)">
+    </event>
+    <event value="320" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [ItemMovesSyncSession] Ignoring successful response with missing destination id (sid: %2)">
+    </event>
+    <event value="321" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [ItemMovesSyncSession] Ignoring unsolicited server response (sid: %3, status: %2)">
+    </event>
+    <event value="322" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [ItemMovesSyncSession] The move operation failed with a transient error (sid: %3, status: %2). The move will be retried at a later time.">
+    </event>
+    <event value="323" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [ItemMovesSyncSession] The move operation failed with a permanent error (sid: %3, status: %2). The message will be moved back into its original folder.">
+    </event>
+    <event value="324" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [%1] [ItemMovesSyncSession] The move operation failed because the message no longer exists in its original folder (sid: %2). The message will be deleted.">
+    </event>
+    <event value="325" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Detected server command of type %1 with invalid server id.">
+    </event>
+    <event value="326" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Detected server command for item id %2 with invalid type %1.">
+    </event>
+    <event value="327" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Detected server command for item id %2 of type %1 already handled in the previous response.">
+    </event>
+    <event value="328" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Detected subsequent server command for item id %2 of type %1 in the same response. Only the last command will be cached">
+    </event>
+    <event value="329" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Will handle duplicated server command for collection %1 because the request had client changes.">
+    </event>
+    <event value="330" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Skipped invalid or duplicated server command for collection %1.">
+    </event>
+    <event value="331" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Skipped %2 out of %3 server commands while processing the server response for collection %1.">
+    </event>
+    <event value="332" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="ActiveSyncProvider:[Ctrl] [SyncFolderProgress] Detected duplicate or invalid server response for collection %1. The synchronization for this collection will be suspended for this session to prevent a potential sync loop.">
+    </event>
+    <event value="333" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1000000000" message="ActiveSyncProvider: Detected invalid change for item %1 (change type: %2, expected parent: %3, expected parent type: %4, actual parent: %5, actual parent type: %6)">
+    </event>
+    <event value="334" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x401000000000" message="Account %1 folder ID %2 is changed to ID %3">
+    </event>
+    <event value="335" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x401000000000" message="Account %1 FolderSync presync: tempoary ID %2, SID %3, type %4">
+    </event>
+    <event value="336" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x401000000000" message="Account %1 FolderSync matched: tempoary ID %2, SID %3, type %4">
+    </event>
+    <event value="401" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="ActiveSyncProvider: HTTP Send requires retry due to connection reset">
+    </event>
+    <event value="402" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="ActiveSyncProvider: Unexpected content with Content-Type text/html encountered. Number of bytes=%1, First 256 characters: &apos;%2&apos;">
+    </event>
+    <event value="403" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="ActiveSyncProvider: WinHTTP Send requires retry">
+    </event>
+    <event value="421" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="Fail to apply policy %1, hr:%2">
+    </event>
+    <event value="422" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x204000000000" message="Fail to remove policy %1, hr:%2">
+    </event>
+    <event value="423" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider: %1 Attempted to apply Exchange policy %2 with a polciy value %3, hr:%4">
+    </event>
+    <event value="424" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider: %1 Compliance result for Exchange policy %2 with a policy value %3, hr:%4">
+    </event>
+    <event value="501" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200000000001" message="ActiveSyncProvider: FolderSyncPendingResponse state: Empty Sync/Response loop detected for partner [%1]">
+    </event>
+    <event value="510" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring unknown ContactHandle xml element &apos;%2&apos;">
+    </event>
+    <event value="511" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Found ABCH handle with missing account id. Using the primary live account instead (object id: %1)">
+    </event>
+    <event value="512" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring handle with missing source type (account id: %1, object id: %2)">
+    </event>
+    <event value="513" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring handle with missing account id (source type: %1, object id: %2)">
+    </event>
+    <event value="514" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring handle with invalid object id (source type: %1, account id: %2, object id: %3)">
+    </event>
+    <event value="515" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring object with invalid remote object id (source type: %1, account id: %2, object id size: %3, object id: %4)">
+    </event>
+    <event value="516" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Forgetting irrelevant client changes">
+    </event>
+    <event value="517" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Examined %1 client changes and found %2 relevant changes">
+    </event>
+    <event value="518" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring invalid server command without a server id (command: %1, status: %2)">
+    </event>
+    <event value="519" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring server delete for an unknown person (server id: %1)">
+    </event>
+    <event value="520" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring invalid server response without a server or client id (command: %1, status: %2)">
+    </event>
+    <event value="521" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring invalid server Add response without a client id (status: %1)">
+    </event>
+    <event value="522" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring invalid server Change response without a server id (status: %1)">
+    </event>
+    <event value="523" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring server response with invalid type (command: %1, status: %2, server id: %3, client id: %4)">
+    </event>
+    <event value="524" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring unsolicited Add response (status: %1, server id: %2, client id: %3)">
+    </event>
+    <event value="525" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: The client Add command for person %2 failed with status: %1">
+    </event>
+    <event value="526" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring successful Add response for person %1 without a server id">
+    </event>
+    <event value="527" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring unsolicited Change response (status: %1, server id: %2)">
+    </event>
+    <event value="528" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: The client Change command for person %2 failed with status: %1">
+    </event>
+    <event value="529" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Committing implied successful change (server id: %1)">
+    </event>
+    <event value="530" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: The server failed to send a response for a client add command (client id: %1)">
+    </event>
+    <event value="531" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Created anonymous group %1">
+    </event>
+    <event value="532" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Created new group %1 with name &apos;%2&apos;">
+    </event>
+    <event value="533" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Renamed group %1 from &apos;%2&apos; to &apos;%3&apos;">
+    </event>
+    <event value="534" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Deleted group %1">
+    </event>
+    <event value="535" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Ignoring new server group %1 with name &apos;%3&apos; because it already exists as &apos;%2&apos;">
+    </event>
+    <event value="536" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: Local group renamed from &apos;%1&apos; to &apos;%2&apos; because its name conflicts with a new server group name">
+    </event>
+    <event value="537" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: The number of changes after merging the server changes is equal to or exceeds the previous number of changes (current %1, previous %2, retry count %3)">
+    </event>
+    <event value="538" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2000000000" message="PeopleSync: The person update doesn&apos;t have any contact handles. Handling it as if it were Delete (server id: %1)">
+    </event>
+    <event value="551" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1" message="Conv Sync server abnormal: status:%d extended status:%d">
+    </event>
+    <event value="600" version="0" opcode="1" channel="0" level="4" task="1" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [S] [SPERF_TAG_SYNC_SESSION_START] The whole sync session">
+    </event>
+    <event value="601" version="0" opcode="2" channel="0" level="4" task="1" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [S] [SPERF_TAG_SYNC_SESSION_STOP] The whole sync session">
+    </event>
+    <event value="602" version="0" opcode="1" channel="0" level="4" task="2" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [E] [SPERF_TAG_SYNC_ENGINE_START] The parent node for the sync engine thread">
+    </event>
+    <event value="603" version="0" opcode="2" channel="0" level="4" task="2" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [E] [SPERF_TAG_SYNC_ENGINE_STOP] The parent node for the sync engine thread">
+    </event>
+    <event value="604" version="0" opcode="1" channel="0" level="4" task="3" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [GIE] [SPERF_TAG_GET_SERVER_CHANGE_CNT_START] Get the number of server changes for all folders">
+    </event>
+    <event value="605" version="0" opcode="2" channel="0" level="4" task="3" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [GIE] [SPERF_TAG_GET_SERVER_CHANGE_CNT_STOP] Get the number of server changes for all folders">
+    </event>
+    <event value="606" version="0" opcode="1" channel="0" level="4" task="4" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [VerNeg] [SPERF_TAG_VERSION_NEGOTIATION_START] Version negotiation">
+    </event>
+    <event value="607" version="0" opcode="2" channel="0" level="4" task="4" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [VerNeg] [SPERF_TAG_VERSION_NEGOTIATION_STOP] Version negotiation">
+    </event>
+    <event value="608" version="0" opcode="1" channel="0" level="4" task="5" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [FldrS] [SPERF_TAG_FOLDER_SYNC_START] GetHierarchy / FolderSync">
+    </event>
+    <event value="609" version="0" opcode="2" channel="0" level="4" task="5" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [FldrS] [SPERF_TAG_FOLDER_SYNC_STOP] GetHierarchy / FolderSync">
+    </event>
+    <event value="610" version="0" opcode="1" channel="0" level="4" task="6" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Http] [SPERF_TAG_HTTP_START] Http operations">
+    </event>
+    <event value="611" version="0" opcode="2" channel="0" level="4" task="6" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Http] [SPERF_TAG_HTTP_STOP] Http operations">
+    </event>
+    <event value="612" version="0" opcode="1" channel="0" level="4" task="7" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [GnAir] [SPERF_TAG_GENERATE_AIR_REQUEST_START] Generating AirSync request (XML)">
+    </event>
+    <event value="613" version="0" opcode="2" channel="0" level="4" task="7" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [GnAir] [SPERF_TAG_GENERATE_AIR_REQUEST_STOP] Generating AirSync request (XML)">
+    </event>
+    <event value="614" version="0" opcode="1" channel="0" level="4" task="8" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PsAir] [SPERF_TAG_PARSE_AIR_RESPONSE_START] Parsing AirSync response (XML)">
+    </event>
+    <event value="615" version="0" opcode="2" channel="0" level="4" task="8" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PsAir] [SPERF_TAG_PARSE_AIR_RESPONSE_STOP] Parsing AirSync response (XML)">
+    </event>
+    <event value="616" version="0" opcode="1" channel="0" level="4" task="9" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [SyncInit] [SPERF_TAG_SYNCSESSION_INIT_START] Init the sync session and establish connection etc">
+    </event>
+    <event value="617" version="0" opcode="2" channel="0" level="4" task="9" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [SyncInit] [SPERF_TAG_SYNCSESSION_INIT_STOP] Init the sync session and establish connection etc">
+    </event>
+    <event value="618" version="0" opcode="1" channel="0" level="4" task="10" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [SyncExit] [SPERF_TAG_SYNCSESSION_CLEANUP_START] SynchronizeList main function cleanup and error handling code">
+    </event>
+    <event value="619" version="0" opcode="2" channel="0" level="4" task="10" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [SyncExit] [SPERF_TAG_SYNCSESSION_CLEANUP_STOP] SynchronizeList main function cleanup and error handling code">
+    </event>
+    <event value="620" version="0" opcode="1" channel="0" level="4" task="11" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [BeginSync] [SPERF_TAG_SESSION_BEGINSYNC_START] Folder Hierarchy, Change tracking etc">
+    </event>
+    <event value="621" version="0" opcode="2" channel="0" level="4" task="11" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [BeginSync] [SPERF_TAG_SESSION_BEGINSYNC_STOP] Folder Hierarchy, Change tracking etc">
+    </event>
+    <event value="622" version="0" opcode="1" channel="0" level="4" task="12" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Resp] [SPERF_TAG_PROCESSRESPONSE_START] Process the server response">
+    </event>
+    <event value="623" version="0" opcode="2" channel="0" level="4" task="12" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Resp] [SPERF_TAG_PROCESSRESPONSE_STOP] Process the server response">
+    </event>
+    <event value="624" version="0" opcode="1" channel="0" level="4" task="13" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [MailChg] [SPERF_TAG_DETERMINE_CHANGES_START] Get the list of changes (inbox only)">
+    </event>
+    <event value="625" version="0" opcode="2" channel="0" level="4" task="13" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [MailChg] [SPERF_TAG_DETERMINE_CHANGES_STOP] Get the list of changes (inbox only)">
+    </event>
+    <event value="626" version="0" opcode="1" channel="0" level="4" task="14" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PoomChg] [SPERF_TAG_PIM_CHANGECOUNT_START] Get the changes count for PIM folders">
+    </event>
+    <event value="627" version="0" opcode="2" channel="0" level="4" task="14" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PoomChg] [SPERF_TAG_PIM_CHANGECOUNT_STOP] Get the changes count for PIM folders">
+    </event>
+    <event value="628" version="0" opcode="1" channel="0" level="4" task="15" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [GtSC] [SPERF_TAG_GET_SYNC_CMD_START] Getting a sync cmd from the provider">
+    </event>
+    <event value="629" version="0" opcode="2" channel="0" level="4" task="15" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [GtSC] [SPERF_TAG_GET_SYNC_CMD_STOP] Getting a sync cmd from the provider">
+    </event>
+    <event value="630" version="0" opcode="1" channel="0" level="4" task="16" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [HdSC] [SPERF_TAG_HANDLE_SERVER_CMD_START] Handling AirSync response">
+    </event>
+    <event value="631" version="0" opcode="2" channel="0" level="4" task="16" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [HdSC] [SPERF_TAG_HANDLE_SERVER_CMD_STOP] Handling AirSync response">
+    </event>
+    <event value="632" version="0" opcode="1" channel="0" level="4" task="17" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [RSt] [SPERF_TAG_READ_STORE_START] Reading object (e. g. Contact) props from PIM/MAPI storage">
+    </event>
+    <event value="633" version="0" opcode="2" channel="0" level="4" task="17" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [RSt] [SPERF_TAG_READ_STORE_STOP] Reading object (e. g. Contact) props from PIM/MAPI storage">
+    </event>
+    <event value="634" version="0" opcode="1" channel="0" level="4" task="18" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [WSt] [SPERF_TAG_WRITE_STORE_START] Writing object (e. g. Contact) props to PIM/MAPI storage">
+    </event>
+    <event value="635" version="0" opcode="2" channel="0" level="4" task="18" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [WSt] [SPERF_TAG_WRITE_STORE_STOP] Writing object (e. g. Contact) props to PIM/MAPI storage">
+    </event>
+    <event value="636" version="0" opcode="1" channel="0" level="4" task="19" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [StoreId] [SPERF_TAG_GET_NAMEDPROPID_START] Get the message store and get PropIds from names">
+    </event>
+    <event value="637" version="0" opcode="2" channel="0" level="4" task="19" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [StoreId] [SPERF_TAG_GET_NAMEDPROPID_STOP] Get the message store and get PropIds from names">
+    </event>
+    <event value="638" version="0" opcode="1" channel="0" level="4" task="20" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [GtIds] [SPERF_TAG_MSGSTORE_GETIDS_START] Get the message store PropIds from names">
+    </event>
+    <event value="639" version="0" opcode="2" channel="0" level="4" task="20" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [GtIds] [SPERF_TAG_MSGSTORE_GETIDS_STOP] Get the message store PropIds from names">
+    </event>
+    <event value="640" version="0" opcode="1" channel="0" level="4" task="21" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [MailWatch] [SPERF_TAG_SYNC_MAILWATCHER_START] Use the Mail Watcher to build the email recipient index">
+    </event>
+    <event value="641" version="0" opcode="2" channel="0" level="4" task="21" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [MailWatch] [SPERF_TAG_SYNC_MAILWATCHER_STOP] Use the Mail Watcher to build the email recipient index">
+    </event>
+    <event value="642" version="0" opcode="1" channel="0" level="4" task="22" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PimSave] [SPERF_TAG_PIM_ITEMSAVE_START] Save the PIM item to the Unified Store">
+    </event>
+    <event value="643" version="0" opcode="2" channel="0" level="4" task="22" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PimSave] [SPERF_TAG_PIM_ITEMSAVE_STOP] Save the PIM item to the Unified Store">
+    </event>
+    <event value="644" version="0" opcode="1" channel="0" level="4" task="23" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [SetProp] [SPERF_TAG_PIM_SETPROPERTY_START] Set the PIM item properties">
+    </event>
+    <event value="645" version="0" opcode="2" channel="0" level="4" task="23" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [SetProp] [SPERF_TAG_PIM_SETPROPERTY_STOP] Set the PIM item properties">
+    </event>
+    <event value="646" version="0" opcode="1" channel="0" level="4" task="24" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [%1] [SPERF_TAG_SYNC_SRVCMD_START] ">
+    </event>
+    <event value="647" version="0" opcode="2" channel="0" level="4" task="24" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [%1] [SPERF_TAG_SYNC_SRVCMD_STOP] ">
+    </event>
+    <event value="654" version="0" opcode="1" channel="0" level="4" task="28" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Inbox] [SPERF_TAG_INBOX_START] Inbox synchronization">
+    </event>
+    <event value="655" version="0" opcode="2" channel="0" level="4" task="28" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Inbox] [SPERF_TAG_INBOX_STOP] Inbox synchronization">
+    </event>
+    <event value="656" version="0" opcode="1" channel="0" level="4" task="29" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Cntct] [SPERF_TAG_CONTACTS_START] Contacts synchronization">
+    </event>
+    <event value="657" version="0" opcode="2" channel="0" level="4" task="29" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Cntct] [SPERF_TAG_CONTACTS_STOP] Contacts synchronization">
+    </event>
+    <event value="658" version="0" opcode="1" channel="0" level="4" task="30" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Clndr] [SPERF_TAG_CALENDAR_START] Calendar synchronization">
+    </event>
+    <event value="659" version="0" opcode="2" channel="0" level="4" task="30" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Clndr] [SPERF_TAG_CALENDAR_STOP] Calendar synchronization">
+    </event>
+    <event value="660" version="0" opcode="1" channel="0" level="4" task="31" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Task] [SPERF_TAG_TASKS_START] Tasks synchronization">
+    </event>
+    <event value="661" version="0" opcode="2" channel="0" level="4" task="31" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Task] [SPERF_TAG_TASKS_STOP] Tasks synchronization">
+    </event>
+    <event value="662" version="0" opcode="1" channel="0" level="4" task="32" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [MtRqs] [SPERF_TAG_SYNC_MEETING_REQUESTS_START] Sync of meeting requests">
+    </event>
+    <event value="663" version="0" opcode="2" channel="0" level="4" task="32" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [MtRqs] [SPERF_TAG_SYNC_MEETING_REQUESTS_STOP] Sync of meeting requests">
+    </event>
+    <event value="664" version="0" opcode="1" channel="0" level="4" task="33" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [SndM] [SPERF_TAG_SEND_MAIL_START] SendMail command">
+    </event>
+    <event value="665" version="0" opcode="2" channel="0" level="4" task="33" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [SndM] [SPERF_TAG_SEND_MAIL_STOP] SendMail command">
+    </event>
+    <event value="666" version="0" opcode="1" channel="0" level="4" task="34" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Mime] [SPERF_TAG_CONVERT_TO_MIME_START] Convert mail message to MIME format">
+    </event>
+    <event value="667" version="0" opcode="2" channel="0" level="4" task="34" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Mime] [SPERF_TAG_CONVERT_TO_MIME_STOP] Convert mail message to MIME format">
+    </event>
+    <event value="668" version="0" opcode="1" channel="0" level="4" task="35" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [SmR] [SPERF_TAG_SMART_REPLY_START] Extra processing needed for SmartReply/SmartForward messages">
+    </event>
+    <event value="669" version="0" opcode="2" channel="0" level="4" task="35" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [SmR] [SPERF_TAG_SMART_REPLY_STOP] Extra processing needed for SmartReply/SmartForward messages">
+    </event>
+    <event value="670" version="0" opcode="1" channel="0" level="4" task="36" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Atts] [SPERF_TAG_GET_ATTACHMENTS_START] Time to download all attachments">
+    </event>
+    <event value="671" version="0" opcode="2" channel="0" level="4" task="36" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Atts] [SPERF_TAG_GET_ATTACHMENTS_STOP] Time to download all attachments">
+    </event>
+    <event value="672" version="0" opcode="1" channel="0" level="4" task="37" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Att] [SPERF_TAG_GET_ONE_ATTACHMENT_START] Time to download one attachment">
+    </event>
+    <event value="673" version="0" opcode="2" channel="0" level="4" task="37" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Att] [SPERF_TAG_GET_ONE_ATTACHMENT_STOP] Time to download one attachment">
+    </event>
+    <event value="674" version="0" opcode="1" channel="0" level="4" task="38" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [CgCnt] [SPERF_TAG_GET_DEVICE_CHANGE_CNT_START] Get the number of device changes for one folder">
+    </event>
+    <event value="675" version="0" opcode="2" channel="0" level="4" task="38" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [CgCnt] [SPERF_TAG_GET_DEVICE_CHANGE_CNT_STOP] Get the number of device changes for one folder">
+    </event>
+    <event value="676" version="0" opcode="1" channel="0" level="4" task="39" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Fetch] [SPERF_TAG_GET_FETCH_IDS_START] Get the messages marked for download for one folder">
+    </event>
+    <event value="677" version="0" opcode="2" channel="0" level="4" task="39" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Fetch] [SPERF_TAG_GET_FETCH_IDS_STOP] Get the messages marked for download for one folder">
+    </event>
+    <event value="678" version="0" opcode="1" channel="0" level="4" task="40" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PrgCntct] [SPERF_TAG_PURGE_CONTACTS_START] Purging Contacts">
+    </event>
+    <event value="679" version="0" opcode="2" channel="0" level="4" task="40" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PrgCntct] [SPERF_TAG_PURGE_CONTACTS_STOP] Purging Contacts">
+    </event>
+    <event value="680" version="0" opcode="1" channel="0" level="4" task="41" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PrgClndr] [SPERF_TAG_PURGE_CALENDAR_START] Purging Calendar">
+    </event>
+    <event value="681" version="0" opcode="2" channel="0" level="4" task="41" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PrgClndr] [SPERF_TAG_PURGE_CALENDAR_STOP] Purging Calendar">
+    </event>
+    <event value="682" version="0" opcode="1" channel="0" level="4" task="42" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PrgTask] [SPERF_TAG_PURGE_TASKS_START] Purging Tasls">
+    </event>
+    <event value="683" version="0" opcode="2" channel="0" level="4" task="42" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PrgTask] [SPERF_TAG_PURGE_TASKS_STOP] Purging Tasls">
+    </event>
+    <event value="684" version="0" opcode="1" channel="0" level="4" task="43" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PrgInbx] [SPERF_TAG_PURGE_INBOX_START] Purging Inbox">
+    </event>
+    <event value="685" version="0" opcode="2" channel="0" level="4" task="43" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PrgInbx] [SPERF_TAG_PURGE_INBOX_STOP] Purging Inbox">
+    </event>
+    <event value="686" version="0" opcode="1" channel="0" level="4" task="44" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PrgNotes] [SPERF_TAG_PURGE_NOTES_START] Purging Notes">
+    </event>
+    <event value="687" version="0" opcode="2" channel="0" level="4" task="44" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PrgNotes] [SPERF_TAG_PURGE_NOTES_STOP] Purging Notes">
+    </event>
+    <event value="688" version="0" opcode="1" channel="0" level="4" task="45" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PrgSMS] [SPERF_TAG_PURGE_SMS_START] Purging SMS">
+    </event>
+    <event value="689" version="0" opcode="2" channel="0" level="4" task="45" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PrgSMS] [SPERF_TAG_PURGE_SMS_STOP] Purging SMS">
+    </event>
+    <event value="690" version="0" opcode="1" channel="0" level="4" task="46" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [UpdTrns] [SPERF_TAG_UPDATE_TRANSPORT_START] Updating transport (calls into SyncCSP.dll)">
+    </event>
+    <event value="691" version="0" opcode="2" channel="0" level="4" task="46" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [UpdTrns] [SPERF_TAG_UPDATE_TRANSPORT_STOP] Updating transport (calls into SyncCSP.dll)">
+    </event>
+    <event value="692" version="0" opcode="1" channel="0" level="4" task="47" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [GtCg] [SPERF_TAG_GET_NEXT_CHANGE_START] Getting the next changed item">
+    </event>
+    <event value="693" version="0" opcode="2" channel="0" level="4" task="47" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [GtCg] [SPERF_TAG_GET_NEXT_CHANGE_STOP] Getting the next changed item">
+    </event>
+    <event value="694" version="0" opcode="1" channel="0" level="4" task="48" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PoomLn] [SPERF_TAG_POOM_LOGON_START] POOM Logons">
+    </event>
+    <event value="695" version="0" opcode="2" channel="0" level="4" task="48" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PoomLn] [SPERF_TAG_POOM_LOGON_STOP] POOM Logons">
+    </event>
+    <event value="696" version="0" opcode="1" channel="0" level="4" task="49" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [PoomLf] [SPERF_TAG_POOM_LOGOFF_START] POOM Logoffs">
+    </event>
+    <event value="697" version="0" opcode="2" channel="0" level="4" task="49" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [PoomLf] [SPERF_TAG_POOM_LOGOFF_STOP] POOM Logoffs">
+    </event>
+    <event value="698" version="0" opcode="1" channel="0" level="4" task="50" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Wnd] [SPERF_TAG_SYNC_ONE_WND_START] Synchronizing one window">
+    </event>
+    <event value="699" version="0" opcode="2" channel="0" level="4" task="50" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Wnd] [SPERF_TAG_SYNC_ONE_WND_STOP] Synchronizing one window">
+    </event>
+    <event value="700" version="0" opcode="1" channel="0" level="4" task="51" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [NewSrcNxt] [SPERF_TAG_SYNC_NEW_SRC_NEXT_START] Next button click in the new server source dialog">
+    </event>
+    <event value="701" version="0" opcode="2" channel="0" level="4" task="51" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [NewSrcNxt] [SPERF_TAG_SYNC_NEW_SRC_NEXT_STOP] Next button click in the new server source dialog">
+    </event>
+    <event value="702" version="0" opcode="1" channel="0" level="4" task="52" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [FldDltCb] [SPERF_TAG_FOLDER_DELETE_CALLBACK_START] MAPI folder delete callback func">
+    </event>
+    <event value="703" version="0" opcode="2" channel="0" level="4" task="52" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [FldDltCb] [SPERF_TAG_FOLDER_DELETE_CALLBACK_STOP] MAPI folder delete callback func">
+    </event>
+    <event value="704" version="0" opcode="1" channel="0" level="4" task="53" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [AllEmp] [SPERF_TAG_ALL_STORES_EMPTY_START] Checking to see if all stores are empty">
+    </event>
+    <event value="705" version="0" opcode="2" channel="0" level="4" task="53" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [AllEmp] [SPERF_TAG_ALL_STORES_EMPTY_STOP] Checking to see if all stores are empty">
+    </event>
+    <event value="706" version="0" opcode="1" channel="0" level="4" task="54" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [CmpctHp] [SPERF_TAG_COMPACT_HEAP_START] Compact the process heap">
+    </event>
+    <event value="707" version="0" opcode="2" channel="0" level="4" task="54" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [CmpctHp] [SPERF_TAG_COMPACT_HEAP_STOP] Compact the process heap">
+    </event>
+    <event value="708" version="0" opcode="1" channel="0" level="4" task="55" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Ping] [SPERF_TAG_PING_START] The parent node for the ping thread">
+    </event>
+    <event value="709" version="0" opcode="2" channel="0" level="4" task="55" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Ping] [SPERF_TAG_PING_STOP] The parent node for the ping thread">
+    </event>
+    <event value="710" version="0" opcode="1" channel="0" level="4" task="56" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [FetchSvc] [SPERF_TAG_REMOTE_FETCH_SVC_START] Remote Fetch Service time to handle request">
+    </event>
+    <event value="711" version="0" opcode="2" channel="0" level="4" task="56" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [FetchSvc] [SPERF_TAG_REMOTE_FETCH_SVC_STOP] Remote Fetch Service time to handle request">
+    </event>
+    <event value="712" version="0" opcode="1" channel="0" level="4" task="57" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Ftch] [SPERF_TAG_FETCH_SERVICE_START] Out of band fetch service">
+    </event>
+    <event value="713" version="0" opcode="2" channel="0" level="4" task="57" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Ftch] [SPERF_TAG_FETCH_SERVICE_STOP] Out of band fetch service">
+    </event>
+    <event value="714" version="0" opcode="1" channel="0" level="4" task="58" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [FtchDoc] [SPERF_TAG_FETCH_DOCINFO_START] Get document metadata for fetch service">
+    </event>
+    <event value="715" version="0" opcode="2" channel="0" level="4" task="58" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [FtchDoc] [SPERF_TAG_FETCH_DOCINFO_STOP] Get document metadata for fetch service">
+    </event>
+    <event value="716" version="0" opcode="1" channel="0" level="4" task="59" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [FtchSnRc] [SPERF_TAG_FETCH_SENDRECV_START] Send/Receive data for fetch">
+    </event>
+    <event value="717" version="0" opcode="2" channel="0" level="4" task="59" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [FtchSnRc] [SPERF_TAG_FETCH_SENDRECV_STOP] Send/Receive data for fetch">
+    </event>
+    <event value="718" version="0" opcode="1" channel="0" level="4" task="60" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [SrFbk] [SPERF_TAG_SEARCH_FALLBACK_START] Going through search folders (fallback)">
+    </event>
+    <event value="719" version="0" opcode="2" channel="0" level="4" task="60" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [SrFbk] [SPERF_TAG_SEARCH_FALLBACK_STOP] Going through search folders (fallback)">
+    </event>
+    <event value="720" version="0" opcode="1" channel="0" level="4" task="61" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [SrvSInit] [SPERF_TAG_SERVERSYNC_INIT_START] Server Sync Handler initialization">
+    </event>
+    <event value="721" version="0" opcode="2" channel="0" level="4" task="61" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [SrvSInit] [SPERF_TAG_SERVERSYNC_INIT_STOP] Server Sync Handler initialization">
+    </event>
+    <event value="722" version="0" opcode="1" channel="0" level="4" task="62" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [RI] [SPERF_TAG_SYNC_RECIPIENT_INFO_START] The time spent saving recipient info data">
+    </event>
+    <event value="723" version="0" opcode="2" channel="0" level="4" task="62" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [RI] [SPERF_TAG_SYNC_RECIPIENT_INFO_STOP] The time spent saving recipient info data">
+    </event>
+    <event value="724" version="0" opcode="1" channel="0" level="4" task="63" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [HttpSd] [SPERF_TAG_HTTP_SENDREQUEST_START] Send out the http request and wait for server response">
+    </event>
+    <event value="725" version="0" opcode="2" channel="0" level="4" task="63" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [HttpSd] [SPERF_TAG_HTTP_SENDREQUEST_STOP] Send out the http request and wait for server response">
+    </event>
+    <event value="726" version="0" opcode="1" channel="0" level="4" task="64" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [HttpGt] [SPERF_TAG_HTTP_GETRESPONSE_START] Get the server response from the HTTP response stream">
+    </event>
+    <event value="727" version="0" opcode="2" channel="0" level="4" task="64" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [HttpGt] [SPERF_TAG_HTTP_GETRESPONSE_STOP] Get the server response from the HTTP response stream">
+    </event>
+    <event value="728" version="0" opcode="1" channel="0" level="4" task="65" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [UISyncAll] [SPERF_TAG_UI_SYNCALL_START] Sync UI process the SyncAll softkey and schedule sync">
+    </event>
+    <event value="729" version="0" opcode="2" channel="0" level="4" task="65" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [UISyncAll] [SPERF_TAG_UI_SYNCALL_STOP] Sync UI process the SyncAll softkey and schedule sync">
+    </event>
+    <event value="730" version="0" opcode="1" channel="0" level="4" task="66" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [UISyncDn] [SPERF_TAG_UI_SYNCSTOP_START] Sync UI complete sync and show the result">
+    </event>
+    <event value="731" version="0" opcode="2" channel="0" level="4" task="66" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [UISyncDn] [SPERF_TAG_UI_SYNCSTOP_STOP] Sync UI complete sync and show the result">
+    </event>
+    <event value="732" version="0" opcode="1" channel="0" level="4" task="67" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [AutoD] [SPERF_TAG_AUTODISCOVER_START] Time taken to complete autodiscover.">
+    </event>
+    <event value="733" version="0" opcode="2" channel="0" level="4" task="67" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [AutoD] [SPERF_TAG_AUTODISCOVER_STOP] Time taken to complete autodiscover.">
+    </event>
+    <event value="734" version="0" opcode="1" channel="0" level="4" task="68" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [C] [SPERF_TAG_CSP_SESSION_START] The whole Sync CSP session">
+    </event>
+    <event value="735" version="0" opcode="2" channel="0" level="4" task="68" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [C] [SPERF_TAG_CSP_SESSION_STOP] The whole Sync CSP session">
+    </event>
+    <event value="736" version="0" opcode="1" channel="0" level="4" task="69" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [P] [SPERF_TAG_CSP_PURE_START] Time spent purely in the CSP (and below)">
+    </event>
+    <event value="737" version="0" opcode="2" channel="0" level="4" task="69" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [P] [SPERF_TAG_CSP_PURE_STOP] Time spent purely in the CSP (and below)">
+    </event>
+    <event value="738" version="0" opcode="1" channel="0" level="4" task="70" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [LD] [SPERF_TAG_CSP_LOAD_DS_START] Loading data sources">
+    </event>
+    <event value="739" version="0" opcode="2" channel="0" level="4" task="70" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [LD] [SPERF_TAG_CSP_LOAD_DS_STOP] Loading data sources">
+    </event>
+    <event value="740" version="0" opcode="1" channel="0" level="4" task="71" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [V] [SPERF_TAG_CSP_VALIDATE_START] Validate data sources before saving them">
+    </event>
+    <event value="741" version="0" opcode="2" channel="0" level="4" task="71" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [V] [SPERF_TAG_CSP_VALIDATE_STOP] Validate data sources before saving them">
+    </event>
+    <event value="742" version="0" opcode="1" channel="0" level="4" task="72" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [S] [SPERF_TAG_CSP_SAVE_START] Save the modified data">
+    </event>
+    <event value="743" version="0" opcode="2" channel="0" level="4" task="72" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [S] [SPERF_TAG_CSP_SAVE_STOP] Save the modified data">
+    </event>
+    <event value="744" version="0" opcode="1" channel="0" level="4" task="73" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [AAS] [SPERF_TAG_AA_SAVE_START] Save the account settings">
+    </event>
+    <event value="745" version="0" opcode="2" channel="0" level="4" task="73" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [AAS] [SPERF_TAG_AA_SAVE_STOP] Save the account settings">
+    </event>
+    <event value="746" version="0" opcode="1" channel="0" level="4" task="74" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [AAL] [SPERF_TAG_AA_LOAD_START] Load the account settings">
+    </event>
+    <event value="747" version="0" opcode="2" channel="0" level="4" task="74" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [AAL] [SPERF_TAG_AA_LOAD_STOP] Load the account settings">
+    </event>
+    <event value="748" version="0" opcode="1" channel="0" level="4" task="75" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [AAP] [SPERF_TAG_AA_PROCESS_START] Call to ProcessDocument">
+    </event>
+    <event value="749" version="0" opcode="2" channel="0" level="4" task="75" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [AAP] [SPERF_TAG_AA_PROCESS_STOP] Call to ProcessDocument">
+    </event>
+    <event value="750" version="0" opcode="1" channel="0" level="4" task="76" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [TmailSyncSvs] [SPERF_TAG_FTCH_SESSION_START] Out of band fetch session">
+    </event>
+    <event value="751" version="0" opcode="2" channel="0" level="4" task="76" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [TmailSyncSvs] [SPERF_TAG_FTCH_SESSION_STOP] Out of band fetch session">
+    </event>
+    <event value="752" version="0" opcode="1" channel="0" level="4" task="77" keywords="0x2" message="">
+    </event>
+    <event value="753" version="0" opcode="2" channel="0" level="4" task="77" keywords="0x2" message="">
+    </event>
+    <event value="754" version="0" opcode="1" channel="0" level="4" task="78" keywords="0x2" message="">
+    </event>
+    <event value="755" version="0" opcode="2" channel="0" level="4" task="78" keywords="0x2" message="">
+    </event>
+    <event value="756" version="0" opcode="1" channel="0" level="4" task="79" keywords="0x2" message="">
+    </event>
+    <event value="757" version="0" opcode="2" channel="0" level="4" task="79" keywords="0x2" message="">
+    </event>
+    <event value="758" version="0" opcode="1" channel="0" level="4" task="80" keywords="0x2" message="">
+    </event>
+    <event value="759" version="0" opcode="2" channel="0" level="4" task="80" keywords="0x2" message="">
+    </event>
+    <event value="760" version="0" opcode="1" channel="0" level="4" task="81" keywords="0x2" message="">
+    </event>
+    <event value="761" version="0" opcode="2" channel="0" level="4" task="81" keywords="0x2" message="">
+    </event>
+    <event value="762" version="0" opcode="1" channel="0" level="4" task="82" keywords="0x2" message="">
+    </event>
+    <event value="763" version="0" opcode="2" channel="0" level="4" task="82" keywords="0x2" message="">
+    </event>
+    <event value="764" version="0" opcode="1" channel="0" level="4" task="83" keywords="0x2" message="">
+    </event>
+    <event value="765" version="0" opcode="2" channel="0" level="4" task="83" keywords="0x2" message="">
+    </event>
+    <event value="766" version="0" opcode="1" channel="0" level="4" task="84" keywords="0x2" message="">
+    </event>
+    <event value="767" version="0" opcode="2" channel="0" level="4" task="84" keywords="0x2" message="">
+    </event>
+    <event value="768" version="0" opcode="1" channel="0" level="4" task="85" keywords="0x2" message="">
+    </event>
+    <event value="769" version="0" opcode="2" channel="0" level="4" task="85" keywords="0x2" message="">
+    </event>
+    <event value="770" version="0" opcode="1" channel="0" level="4" task="86" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Att] [SPERF_TAG_FETCH_AND_PROCESS_ONE_ATTACHMENT_BATCH_START] Time to download and process one attachment batch">
+    </event>
+    <event value="771" version="0" opcode="2" channel="0" level="4" task="86" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Att] [SPERF_TAG_FETCH_AND_PROCESS_ONE_ATTACHMENT_BATCH_STOP] Time to download and process one attachment batch">
+    </event>
+    <event value="772" version="0" opcode="1" channel="0" level="4" task="87" keywords="0x2" message="ActiveSyncProvider: [Start Marker] [Att] [SPERF_TAG_FETCH_ONE_ATTACHMENT_BATCH_START] Time to download one attachment batch">
+    </event>
+    <event value="773" version="0" opcode="2" channel="0" level="4" task="87" keywords="0x2" message="ActiveSyncProvider: [Stop Marker] [Att] [SPERF_TAG_FETCH_ONE_ATTACHMENT_BATCH_STOP] Time to download one attachment batch">
+    </event>
+    <event value="800" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="AUTDExecutor: Account %1 Heartbeat delayed for %2 seconds.">
+    </event>
+    <event value="801" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="AUTDExecutor: Account %1 Heartbeat scheduled immediate sync.">
+    </event>
+    <event value="802" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="AUTDExecutor: Account %1 Heartbeat scheduled delayed sync.">
+    </event>
+    <event value="803" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000000000" message="AUTDExecutor: Account %1 Heartbeat ended with HR 0x%2.">
+    </event>
+    <event value="804" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="AUTDExecutor: Account %1 entered AUTD Method">
+    </event>
+    <event value="805" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="AUTDExecutor: Account %1 left AUTD Method">
+    </event>
+    <event value="806" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="AUTDExecutor: Unknown AUTD support level. Defaulting to Ping">
+    </event>
+    <event value="807" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="Account 0x%1 Heartbeat for ping out of range.">
+    </event>
+    <event value="808" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="Account 0x%1 Heartbeat for sync out of range.">
+    </event>
+    <event value="809" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="Account 0x%1 FolderHierarchyChanged during Ping session.">
+    </event>
+    <event value="850" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="AutdSync: [Ctrl] [%2] Hanging sync response received. HR=%1 ">
+    </event>
+    <event value="851" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="AutdSync: [Ctrl] [%2] Hanging sync sent. Heartbeat=%1 ">
+    </event>
+    <event value="852" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="AutdSync: [Ctrl] [%3] Hanging sync status = %1, %2, ">
+    </event>
+    <event value="901" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400000000001" message="ActiveSyncProvider: Failed to get Rfc1766 info with locale=%1, HRESULT=%2">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Cred Vault: DeletePwd Called. Caller: WritePassword, Partner %1">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000" message="Cred Vault: DeletePwd Called. Caller: UpdatePasswordForAccount, Partner %1">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider: Stop syncing ActiveSync account %1 content type: %2.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1000000000" message="ActiveSyncProvider: Due to version negotication, Purging ActiveSync account %1 content type: %2.">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000000000" message="ActiveSyncProvider: Gal search fails to fetch contact photo, status:%1.">
+    </event>
+  </events>
+</provider>

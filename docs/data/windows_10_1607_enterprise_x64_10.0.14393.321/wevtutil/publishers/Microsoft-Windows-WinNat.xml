@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WinNat" guid="66c07ecd-6667-43fc-93f8-05cf07f446ec" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=winnat.sys&amp;FileVer=10.0.14393.0" resourceFileName="C:\Windows\system32\drivers\winnat.sys" messageFileName="C:\Windows\system32\drivers\winnat.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WinNat/Trace" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WinNat/Oper" id="17" flags="0" message="Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WinNatSessionCreate" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatSessionTimerUpdate" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatSessionTcpStateUpdate" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatSessionTimeout" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatSessionDelete" value="1005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatBindingCreate" value="1006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatBindingDelete" value="1007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatBindingSessionCount" value="1008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatTranslation" value="1009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatInstanceEvent" value="1010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatPacketFilterEvent" value="1011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatWFPFilterEvent" value="1012" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatAddressPoolConfig" value="1013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatAddressChangeNotify" value="1014" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatStaticBindingEvent" value="1015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMemoryAllocationFailure" value="1016" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatSessionCreateOperational" value="1017" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatSessionDeleteOperational" value="1018" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMInstanceCreation" value="1019" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMInstanceModification" value="1020" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMInstanceExternalInterfaceAssociation" value="1021" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMInstanceDeletion" value="1022" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMInstanceRundown" value="1023" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMExternalAddressAddition" value="1024" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMExternalAddressRemoval" value="1025" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMExternalAddressRundown" value="1026" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMStaticMappingAddition" value="1027" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMStaticMappingRemoval" value="1028" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMStaticMappingRundown" value="1029" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMDroppedIPv4Packet" value="1030" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMImproperDefaultRoute" value="1031" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMImproperDefaultRouteOper" value="1032" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMOutOfPortsOper" value="1033" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMSkippedIPv4Packet" value="1034" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMForwardedIPv4Packet" value="1035" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMGeneralError" value="1036" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMInstanceCreationWithNoMatchingPrefix" value="1037" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMTaskGenericEventInformational" value="1038" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMTaskGenericEventError" value="1039" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatMTaskGenericEventWarning" value="1040" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatIPxlatInstanceCreate" value="1041" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatIPxlatInstanceModify" value="1042" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinNatIPxlatInstanceDelete" value="1043" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ut:Session" mask="1" message="">
+    </keyword>
+    <keyword name="ut:Binding" mask="2" message="">
+    </keyword>
+    <keyword name="ut:Translation" mask="4" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="8" message="">
+    </keyword>
+    <keyword name="ut:NatDrop" mask="10" message="">
+    </keyword>
+    <keyword name="ut:NatSkip" mask="20" message="">
+    </keyword>
+    <keyword name="ut:NatForward" mask="40" message="">
+    </keyword>
+    <keyword name="ut:NatGeneralError" mask="80" message="">
+    </keyword>
+    <keyword name="ut:NatGeneric" mask="100" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="1001" keywords="0x8000000000000001" message="%7 session created. Internal source transport addr: %2, Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6, Lifetime: %8 seconds, TcpState:%9">
+    </event>
+    <event value="1001" version="1" opcode="0" channel="16" level="4" task="1001" keywords="0x8000000000000001" message="%7 session created. Internal source transport addr: %2 (CompartmentId %10), Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6, Lifetime: %8 seconds, TcpState:%9">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="5" task="1002" keywords="0x8000000000000001" message="%7 session lifetime updated. Internal source transport addr: %2, Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6, Lifetime: %8 seconds, TcpState: %9">
+    </event>
+    <event value="1002" version="1" opcode="0" channel="16" level="5" task="1002" keywords="0x8000000000000001" message="%7 session lifetime updated. Internal source transport addr: %2 (CompartmentId %10), Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6, Lifetime: %8 seconds, TcpState: %9">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="1003" keywords="0x8000000000000001" message="%7 session state updated. Internal source transport addr: %2, Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6, Lifetime: %8 seconds, TcpState: %9">
+    </event>
+    <event value="1003" version="1" opcode="0" channel="16" level="4" task="1003" keywords="0x8000000000000001" message="%7 session state updated. Internal source transport addr: %2 (CompartmentId %10), Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6, Lifetime: %8 seconds, TcpState: %9">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="1004" keywords="0x8000000000000001" message="%7 session timedout. Internal source transport addr: %2, Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6, Lifetime: %8 seconds, TcpState: %9">
+    </event>
+    <event value="1004" version="1" opcode="0" channel="16" level="4" task="1004" keywords="0x8000000000000001" message="%7 session timedout. Internal source transport addr: %2 (CompartmentId %10), Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6, Lifetime: %8 seconds, TcpState: %9">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="1005" keywords="0x8000000000000001" message="%7 session deleted. Internal source transport addr: %2, Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6, Lifetime: %8 seconds, TcpState: %9">
+    </event>
+    <event value="1005" version="1" opcode="0" channel="16" level="4" task="1005" keywords="0x8000000000000001" message="%7 session deleted. Internal source transport addr: %2 (CompartmentId %10), Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6, Lifetime: %8 seconds, TcpState: %9">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="4" task="1006" keywords="0x8000000000000002" message="%5 binding created. Internal transport addr: %2, External transport addr %4, SessionCount: %6, Configured: %7">
+    </event>
+    <event value="1006" version="1" opcode="0" channel="16" level="4" task="1006" keywords="0x8000000000000002" message="%5 binding created. Internal transport addr: %2 (CompartmentId %8), External transport addr %4, SessionCount: %6, Configured: %7">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="4" task="1007" keywords="0x8000000000000002" message="%5 binding deleted. Internal transport addr: %2, External transport addr %4, SessionCount: %6, Configured: %7">
+    </event>
+    <event value="1007" version="1" opcode="0" channel="16" level="4" task="1007" keywords="0x8000000000000002" message="%5 binding deleted. Internal transport addr: %2 (CompartmentId %8), External transport addr %4, SessionCount: %6, Configured: %7">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="4" task="1008" keywords="0x8000000000000002" message="%5 binding session count updated. Internal transport addr: %2, External transport addr %4, SessionCount: %6, Configured: %7">
+    </event>
+    <event value="1008" version="1" opcode="0" channel="16" level="4" task="1008" keywords="0x8000000000000002" message="%5 binding session count updated. Internal transport addr: %2 (CompartmentId %8), External transport addr %4, SessionCount: %6, Configured: %7">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="5" task="1009" keywords="0x8000000000000004" message="Translating %8 packet from %2:%3 to %5:%6, IPID:%7. Status: %9, IcmpType: %10, IcmpCode: %11, IcmpErrorPayload: %12">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="1010" keywords="0x8000000000000008" message="Nat Instance %1 %11 Status: %10.UdpIdleSessionTimeout: %2 sec, TcpTransientConnectionTimeout: %3, TcpEstablishedConnectionTimeout: %4, IcmpQueryTimeout: %5, TcpFilteringBehavior: %6, UdpFilteringBehavior: %7, UdpInboundRefresh: %8, Enabled: %9">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="4" task="1011" keywords="0x8000000000000008" message="Packet filter %12 Status: %13. Instance: %1, SrcPrefix: %3, SrcPrefixLength: %4, DstPrefix: %5, DstPrefixLength: %6, Ipv4Prefix: %7, Ipv4PrefixLength: %8, Nat64: %9, InterfaceLuid: %10">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="4" task="1012" keywords="0x8000000000000008" message="WFP filter %12 Status: %13. Instance: %1, FilterId: %11, SrcPrefix: %3, SrcPrefixLength: %4, DstPrefix: %5, DstPrefixLength: %6, Ipv4Prefix: %7, Ipv4PrefixLength: %8, Nat64: %9, InterfaceLuid: %10">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="4" task="1013" keywords="0x8000000000000008" message="Address pool %6 Status: %7. Instance: %1, Address: %2, StartingPort: %3, EndingPort: %4, InterfaceLuid: %5 ">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="4" task="1014" keywords="0x8000000000000008" message="Address %6 notification. Address: %2, InterfaceLuid: %5 ">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="1015" keywords="0x8000000000000008" message="Static binding %6 Status: %7. Internal Source: %2, External Source: %4, Protocol: %5">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="2" task="1016" keywords="0x800000000000007f" message="Memory allocation failure: %1">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="17" level="4" task="1017" keywords="0x4000000000000000" message="%7 session created. Internal source transport addr: %2, Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="17" level="4" task="1018" keywords="0x4000000000000000" message="%7 session deleted. Internal source transport addr: %2, Internal dest transport addr: %3, External source transport addr %5, External dest transport addr %6">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000000008" message="Created NAT instance %1 for RoutingDomainId %2 (CompartmentId %5) with external interface prefix %4/%3">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="4" task="1020" keywords="0x8000000000000008" message="Modified NAT instance %1 properties">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="4" task="1021" keywords="0x8000000000000008" message="NAT instance %1 external interface index is %6 for prefix %4/%3">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="4" task="1022" keywords="0x8000000000000008" message="Deleted NAT instance %1">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="4" task="1023" keywords="0x8000000000000008" message="NAT instance %1: RoutingDomainId %2 (CompartmentId %5), external interface index %6 (%4/%3)">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="4" task="1024" keywords="0x8000000000000008" message="Added external address %3:%4-%5 to NAT instance %1">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="4" task="1025" keywords="0x8000000000000008" message="Removed external address %3:%4-%5 from NAT instance %1">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="4" task="1026" keywords="0x8000000000000008" message="NAT instance %1: external address %3:%4-%5">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="16" level="4" task="1027" keywords="0x8000000000000008" message="Added static mapping %2 %5 &gt; %6 (CompartmentId %8) to NAT instance %1 (%3 %9/%10)">
+    </event>
+    <event value="1028" version="0" opcode="0" channel="16" level="4" task="1028" keywords="0x8000000000000008" message="Removed static mapping %2 %5 &gt; %6 (CompartmentId %8) from NAT instance %1 (%3 %9/%10)">
+    </event>
+    <event value="1029" version="0" opcode="0" channel="16" level="4" task="1029" keywords="0x8000000000000008" message="NAT instance %1: static mapping %2 %5 &gt; %6 (CompartmentId %8) (%3 %9/%10)">
+    </event>
+    <event value="1030" version="0" opcode="0" channel="16" level="3" task="1030" keywords="0x8000010000000010" message="NAT dropped IPv4 %5 packet which arrived over %4 interface %3 in compartment %2 with reason: %1.">
+    </event>
+    <event value="1031" version="0" opcode="0" channel="16" level="3" task="1031" keywords="0x8000000000000008" message="NAT detected a default route in compartment %1 interface %2. Default routes in internal compartments will prevent NAT operation for those compartments.">
+    </event>
+    <event value="1032" version="0" opcode="0" channel="17" level="3" task="1032" keywords="0x4000000000000000" message="NAT detected a default route in compartment %1 interface %2. Default routes in internal compartments will prevent NAT operation for those compartments.">
+    </event>
+    <event value="1033" version="0" opcode="0" channel="17" level="3" task="1033" keywords="0x4000000000000000" message="NAT instance %1 failed to allocate a %2 port dynamically because all ports in the instance&apos;s external address pool are in use.">
+    </event>
+    <event value="1034" version="0" opcode="0" channel="16" level="5" task="1034" keywords="0x8000000000000020" message="NAT left processing of IPv4 %5 packet to the host network stack over %4 interface %3 in compartment %2 with reason: %1.">
+    </event>
+    <event value="1035" version="0" opcode="0" channel="16" level="5" task="1035" keywords="0x8000000000000040" message="NAT translated and forwarded IPv4 %5 packet which arrived over %4 interface %3 in compartment %2 to interface %7 in compartment %6.">
+    </event>
+    <event value="1036" version="0" opcode="0" channel="16" level="2" task="1036" keywords="0x8000000000000080" message="NAT ERROR %1: %2 (%3) Status %4">
+    </event>
+    <event value="1037" version="0" opcode="0" channel="16" level="3" task="1037" keywords="0x8000000000000008" message="NAT Instance %1 created with no matching prefix %4/%3.">
+    </event>
+    <event value="1038" version="0" opcode="0" channel="16" level="4" task="1038" keywords="0x8000000000000100" message="%1">
+    </event>
+    <event value="1039" version="0" opcode="0" channel="16" level="2" task="1039" keywords="0x8000000000000100" message="%1">
+    </event>
+    <event value="1040" version="0" opcode="0" channel="16" level="3" task="1039" keywords="0x8000000000000100" message="%1">
+    </event>
+    <event value="1041" version="0" opcode="0" channel="16" level="4" task="1041" keywords="0x8000000000000008" message="Added IPxlat instance for interface %1">
+    </event>
+    <event value="1042" version="0" opcode="0" channel="16" level="4" task="1042" keywords="0x8000000000000008" message="Modified IPxlat instance for interface %1">
+    </event>
+    <event value="1043" version="0" opcode="0" channel="16" level="4" task="1043" keywords="0x8000000000000008" message="Deleted IPxlat instance for interface %1">
+    </event>
+  </events>
+</provider>
