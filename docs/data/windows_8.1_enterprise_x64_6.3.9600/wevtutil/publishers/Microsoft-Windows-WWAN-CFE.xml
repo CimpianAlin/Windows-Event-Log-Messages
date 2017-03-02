@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WWAN-CFE" guid="71c993b8-1e28-4543-9886-fb219b63fdb3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=8.1.9600.16384&amp;FileName=WWanConn.dll&amp;FileVer=8.1.9600.16384" resourceFileName="C:\Windows\system32\WWanConn.dll" messageFileName="C:\Windows\system32\WWanConn.dll" message="Microsoft-Windows-WWAN-CFE" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WWAN-CFE/Diagnostic" id="16" flags="0" message="Microsoft-Windows-WWAN-CFE/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Subscription_Page" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Roaming_Settings_Page" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Connecting_Page" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launch_Browser" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launch_MBAE" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="L2_Connect_Duration" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CreateProfile_UserInput_Duration" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Task_SetHomeProvider" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Task_WwanApnDatabaseParsingDuration" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WWAN_CFE_FAIL" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Wwan-Performance" mask="1" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="6" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="7" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="8" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="9" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="10" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="11" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="2" task="8" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="13" version="0" opcode="2" channel="16" level="2" task="8" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="14" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="15" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="16" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="17" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="10" keywords="0x8000000000000001" message="">
+    </event>
+  </events>
+</provider>

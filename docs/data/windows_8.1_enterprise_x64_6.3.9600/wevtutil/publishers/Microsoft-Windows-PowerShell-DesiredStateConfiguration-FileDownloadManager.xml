@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-PowerShell-DesiredStateConfiguration-FileDownloadManager" guid="aaf67066-0bf8-469f-ab76-275590c434ee" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=PSDSCFileDownloadManagerEvents.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\dsc\PSDSCFileDownloadManagerEvents.dll" messageFileName="C:\Windows\system32\dsc\PSDSCFileDownloadManagerEvents.dll" message="Windows PowerShell Desired State Configuration Pull Server" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-PowerShell-DesiredStateConfiguration-FileDownloadManager/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-PowerShell-DesiredStateConfiguration-FileDownloadManager/Analytic" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-PowerShell-DesiredStateConfiguration-FileDownloadManager/Debug" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="FileDownloadManagerDownload" value="1" eventGUID="89dfd391-b5cb-4310-9f1b-fe7e0b4410e1" message="Download request in FileDownloadManager">
+    </task>
+    <task name="FileDownloadManagerValidate" value="2" eventGUID="0fd1351d-fb53-4158-bf1a-d8e97f8f3c03" message="Validate request in FileDownloadManager">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="StateMessage" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="4097" version="1" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Error">
+    </event>
+    <event value="4098" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Error">
+    </event>
+    <event value="4099" version="1" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="File %1 not found.">
+    </event>
+    <event value="4100" version="1" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The checksum in file %1 is malformed.">
+    </event>
+    <event value="4101" version="1" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="The specified credentials are not authorized to retrieve the file %1.">
+    </event>
+    <event value="4102" version="1" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Cannot read file %1.">
+    </event>
+    <event value="4103" version="1" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Cannot read checksum content from file %1.">
+    </event>
+    <event value="4104" version="1" opcode="0" channel="18" level="4" task="2" keywords="0x2000000000000000" message="Generated checksum %1 for file %2.">
+    </event>
+    <event value="4106" version="1" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Failed to generate checksum for file %1.">
+    </event>
+    <event value="4107" version="1" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Generated checksum %1 does not match expected checksum %2 for file %3.">
+    </event>
+    <event value="4108" version="1" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Validated checksum for file %1.">
+    </event>
+    <event value="4109" version="1" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Failed to validate checksum for file %1.">
+    </event>
+    <event value="4110" version="1" opcode="0" channel="18" level="4" task="2" keywords="0x2000000000000000" message="Skipping checksum validation for file %1.">
+    </event>
+    <event value="4111" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Downloaded file %1 to %2.">
+    </event>
+    <event value="4112" version="1" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Unable to download file %1. Giving up.">
+    </event>
+    <event value="4113" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Unable to download file %1. Will retry.">
+    </event>
+    <event value="4114" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="File %1 is up to date.">
+    </event>
+    <event value="4115" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="File %1 needs to be updated.">
+    </event>
+    <event value="4116" version="1" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="File share %1 was mapped using the specified credentials.">
+    </event>
+    <event value="4117" version="1" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Could not map file share %1 using the specified credentials.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Resource-Exhaustion-Resolver" guid="91f5fb12-fdea-4095-85d5-614b495cd9de" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=radarrs.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\radarrs.dll" messageFileName="C:\Windows\system32\radarrs.dll" message="Microsoft-Windows-Resource-Exhaustion-Resolver" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Resource-Exhaustion-Resolver/Operational" id="16" flags="0" message="Microsoft-Windows-Resource-Exhaustion-Resolver/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="RDR_RES_OPCODE_LIFECYCLE_START" value="720896" message="Events logged when the resource exhaustion resolver is started.">
+    </opcode>
+    <opcode name="RDR_RES_OPCODE_LIFECYCLE_STOP" value="786432" message="Events logged when the resource exhaustion resolver is stopped.">
+    </opcode>
+    <opcode name="RDR_RES_OPCODE_LIFECYCLE_ALLOC" value="851968" message="Events logged after a memory allocation.">
+    </opcode>
+    <opcode name="RDR_RES_OPCODE_RESOLUTION_START" value="1376256" message="Events logged when diagnosis is started.">
+    </opcode>
+    <opcode name="RDR_RES_OPCODE_RESOLUTION_STOP" value="1441792" message="Events logged when diagnosis is stopped.">
+    </opcode>
+    <opcode name="RDR_RES_OPCODE_RESOLUTION_PROCESSING" value="1507328" message="Events logged during resolution.">
+    </opcode>
+    <opcode name="RDR_RES_OPCODE_RESOLUTION_RESULT" value="1572864" message="Events logged after performing the resolution actions">
+    </opcode>
+    <opcode name="RDR_RES_OPCODE_UI_START" value="2031616" message="Events logged before UI is launched.">
+    </opcode>
+    <opcode name="RDR_RES_OPCODE_UI_DISPLAY" value="2097152" message="Events logged after UI is launched or after an attempt to launch the UI is made.">
+    </opcode>
+    <opcode name="RDR_RES_OPCODE_LEAK_DIAGNOSIS_START" value="2686976" message="Events logged after an attempt to launch the leak diagnoser is made.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="RDR_RES_TASK_LIFECYCLE" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Lifecycle Events">
+    </task>
+    <task name="RDR_RES_TASK_RESOLUTION" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Resolution Events">
+    </task>
+    <task name="RDR_RES_TASK_UI" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="UI Events">
+    </task>
+    <task name="RDR_RES_TASK_LEAK_DIAGNOSIS" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Leak Diagnosis Events">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="RDR_RES_KEYWORD_LIFECYCLE" mask="1000" message="Lifecycle">
+    </keyword>
+    <keyword name="RDR_RES_KEYWORD_MEMORY_EXHAUSTION" mask="2000" message="System Commit Limit (Virtual Memory) Exhaustion">
+    </keyword>
+    <keyword name="RDR_RES_KEYWORD_LEAK_DIAGNOSIS" mask="4000" message="Memory leak diagnosis">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000001000" message="The Windows Resource Exhaustion Resolver started.">
+    </event>
+    <event value="1002" version="0" opcode="12" channel="16" level="4" task="1" keywords="0x8000000000001000" message="The Windows Resource Exhaustion Resolver stopped.">
+    </event>
+    <event value="1003" version="0" opcode="24" channel="16" level="3" task="3" keywords="0x8000000000002000" message="The Windows Resource Exhaustion Resolver received a notification that the computer is low on virtual memory. This notification was ignored as it is no longer valid.">
+    </event>
+    <event value="1004" version="0" opcode="31" channel="16" level="3" task="4" keywords="0x8000000000002000" message="The Windows Resource Exhaustion Resolver close programs UI was launched.">
+    </event>
+    <event value="1005" version="0" opcode="11" channel="16" level="2" task="1" keywords="0x8000000000001000" message="The Windows Resource Exhaustion Resolver failed to start due to an error.">
+    </event>
+    <event value="1006" version="0" opcode="12" channel="16" level="2" task="1" keywords="0x8000000000001000" message="The Windows Resource Exhaustion Resolver failed to stop due to an error.">
+    </event>
+    <event value="1007" version="0" opcode="13" channel="16" level="2" task="1" keywords="0x8000000000001000" message="The Windows Resource Exhaustion Resolver experienced a memory allocation failure.">
+    </event>
+    <event value="1008" version="0" opcode="32" channel="16" level="2" task="4" keywords="0x8000000000002000" message="The Windows Resource Exhaustion Resolver failed to launch the close programs UI.">
+    </event>
+    <event value="1009" version="0" opcode="32" channel="16" level="4" task="4" keywords="0x8000000000002000" message="The Windows Resource Exhaustion Resolver close programs UI was closed.">
+    </event>
+    <event value="1010" version="0" opcode="24" channel="16" level="4" task="3" keywords="0x8000000000002000" message="Windows could not restore the computer&apos;s virtual memory. To prevent information loss, save your files and close your programs.">
+    </event>
+    <event value="1011" version="0" opcode="24" channel="16" level="4" task="3" keywords="0x8000000000002000" message="Windows could not restore the computer&apos;s virtual memory because some programs could not be closed.">
+    </event>
+    <event value="1012" version="0" opcode="24" channel="16" level="4" task="3" keywords="0x8000000000002000" message="Windows successfully restored your computer&apos;s virtual memory.">
+    </event>
+    <event value="1013" version="0" opcode="24" channel="16" level="4" task="3" keywords="0x8000000000002000" message="Windows successfully restored your computer&apos;s virtual memory without closing any programs.">
+    </event>
+    <event value="1014" version="0" opcode="41" channel="16" level="4" task="5" keywords="0x8000000000004000" message="The Windows Resource Exhaustion Resolver received a notification to perform memory leak diagnosis. This notification was processed and dropped.">
+    </event>
+    <event value="1015" version="0" opcode="21" channel="16" level="4" task="3" keywords="0x8000000000002000" message="The Windows Resource Exhaustion Resolver received an event from the Windows Resource Exhaustion Detector.">
+    </event>
+    <event value="1016" version="0" opcode="24" channel="16" level="4" task="3" keywords="0x8000000000002000" message="Windows could not restore the computer&apos;s virtual memory.">
+    </event>
+    <event value="1017" version="0" opcode="24" channel="16" level="4" task="3" keywords="0x8000000000002000" message="The Windows Resource Exhaustion Resolver resolution failure notification UI was closed.">
+    </event>
+  </events>
+</provider>

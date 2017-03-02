@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ATAPort" guid="cb587ad1-cc35-4ef1-ad93-36cc82a2d319" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\ataport.sys" messageFileName="C:\Windows\system32\drivers\ataport.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ATAPort/SATA-LPM" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-ATAPort/General" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="ATAPORT_OPCODE_DEV_ENUM_INIT" value="655360" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_DEV_ENUM_COMPLETE" value="720896" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_XFER_MODE_CHANGE" value="786432" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_IO_REQUEST_COMPLETE" value="851968" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_IO_REQUEST_TIMEOUT" value="917504" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_IO_REQUEST_TRANSPORT_ERROR" value="983040" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_DEVICE_MISSING" value="1048576" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_CHANNEL_RESET_INIT" value="1114112" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_CHANNEL_RESET_COMPLETE" value="1179648" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_DEVICE_RESET_INIT" value="1245184" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_DEVICE_RESET_COMPLETE" value="1310720" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_CHANNEL_START_INIT" value="1376256" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_CHANNEL_START_COMPLETE" value="1441792" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_LPM_POWERSTATE_PARTIAL" value="13107200" message="">
+    </opcode>
+    <opcode name="ATAPORT_OPCODE_LPM_POWERSTATE_SLUMBER" value="13172736" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ATAPORT_TASK_SATA_LPM" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="LPM state change">
+    </task>
+    <task name="ATAPORT_TASK_GENERAL" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="ATAport General">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="AllIORequests" mask="1" message="">
+    </keyword>
+    <keyword name="DeviceEnumeration" mask="2" message="">
+    </keyword>
+    <keyword name="IOErrors" mask="4" message="">
+    </keyword>
+    <keyword name="Reset" mask="8" message="">
+    </keyword>
+    <keyword name="XferModeChange" mask="10" message="">
+    </keyword>
+    <keyword name="LinkPowerMgmt" mask="20" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="200" channel="16" level="5" task="1" keywords="0x8000000000000020" message="Entering Partial state.">
+    </event>
+    <event value="1" version="0" opcode="201" channel="16" level="5" task="1" keywords="0x8000000000000020" message="Entering Slumber state.">
+    </event>
+    <event value="100" version="0" opcode="10" channel="17" level="5" task="2" keywords="0x4000000000000002" message="Device Enumeration Starts.">
+    </event>
+    <event value="101" version="0" opcode="11" channel="17" level="5" task="2" keywords="0x4000000000000002" message="Device Enumeration Completes.">
+    </event>
+    <event value="102" version="0" opcode="12" channel="17" level="5" task="2" keywords="0x4000000000000010" message="Transfer Mode Changed.">
+    </event>
+    <event value="103" version="0" opcode="13" channel="17" level="5" task="2" keywords="0x4000000000000001" message="Request is Completed.">
+    </event>
+    <event value="104" version="0" opcode="14" channel="17" level="5" task="2" keywords="0x4000000000000004" message="Request Timed Out.">
+    </event>
+    <event value="105" version="0" opcode="15" channel="17" level="5" task="2" keywords="0x4000000000000004" message="Request Failed because of Transportation Error.">
+    </event>
+    <event value="106" version="0" opcode="16" channel="17" level="5" task="2" keywords="0x4000000000000002" message="Device Lost.">
+    </event>
+    <event value="107" version="0" opcode="17" channel="17" level="5" task="2" keywords="0x4000000000000008" message="Channel Reset Starts.">
+    </event>
+    <event value="108" version="0" opcode="18" channel="17" level="5" task="2" keywords="0x4000000000000008" message="Channel Reset Complets.">
+    </event>
+    <event value="109" version="0" opcode="19" channel="17" level="5" task="2" keywords="0x4000000000000008" message="Device Reset Starts.">
+    </event>
+    <event value="110" version="0" opcode="20" channel="17" level="5" task="2" keywords="0x4000000000000008" message="Device Reset Complets.">
+    </event>
+    <event value="111" version="0" opcode="21" channel="17" level="5" task="2" keywords="0x4000000000000002" message="Channel Start Phase Begins.">
+    </event>
+    <event value="112" version="0" opcode="22" channel="17" level="5" task="2" keywords="0x4000000000000002" message="Channel Start Phase Completes.">
+    </event>
+  </events>
+</provider>

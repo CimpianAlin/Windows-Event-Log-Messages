@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SkyDrive-SyncEngine" guid="70b2a341-03fe-494a-8888-87914d2c4d81" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=SyncEngine.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\SyncEngine.dll" messageFileName="C:\Windows\System32\SyncEngine.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SkyDrive-SyncEngine/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-SkyDrive-SyncEngine/Debug" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:LogAlways" value="0" message="Log Always">
+    </level>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Log" value="655360" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SignIn" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProvisionLocalDevice" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ClaimLocalDevice" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CreateSkyDriveFolder" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MapSkyDriveFolder" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProvisionIdentity" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Hashing" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Synchronization" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReSynchronization" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scanning" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Realizing" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RefreshClientPolicy" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Startup" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="OpLock" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PriorityMode" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelectiveSync" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Maintenance" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="OfficeTask" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogTask" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModernAppFileSyncHandler" value="150" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SyncLock" value="151" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Default" mask="1" message="">
+    </keyword>
+    <keyword name="ComAPI" mask="2" message="">
+    </keyword>
+    <keyword name="PriorityDownload" mask="4" message="">
+    </keyword>
+    <keyword name="Scanner" mask="8" message="">
+    </keyword>
+    <keyword name="Hasher" mask="10" message="">
+    </keyword>
+    <keyword name="ServiceProxy" mask="20" message="">
+    </keyword>
+    <keyword name="Realizer" mask="40" message="">
+    </keyword>
+    <keyword name="OpLock" mask="80" message="">
+    </keyword>
+    <keyword name="Maintenance" mask="100" message="">
+    </keyword>
+    <keyword name="PriorityMode" mask="200" message="">
+    </keyword>
+    <keyword name="Debug" mask="400" message="">
+    </keyword>
+    <keyword name="CoreLoop" mask="800" message="">
+    </keyword>
+    <keyword name="Office" mask="800000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="0" level="4" task="1" keywords="0x2" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="0" level="4" task="1" keywords="0x2" message="">
+    </event>
+    <event value="3" version="0" opcode="1" channel="0" level="4" task="5" keywords="0x2" message="">
+    </event>
+    <event value="4" version="0" opcode="2" channel="0" level="4" task="5" keywords="0x2" message="">
+    </event>
+    <event value="5" version="0" opcode="1" channel="0" level="4" task="6" keywords="0x2" message="">
+    </event>
+    <event value="6" version="0" opcode="2" channel="0" level="4" task="6" keywords="0x2" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="0" level="4" task="3" keywords="0x2" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="0" level="4" task="3" keywords="0x2" message="">
+    </event>
+    <event value="11" version="0" opcode="1" channel="0" level="4" task="4" keywords="0x2" message="">
+    </event>
+    <event value="12" version="0" opcode="2" channel="0" level="4" task="4" keywords="0x2" message="">
+    </event>
+    <event value="13" version="0" opcode="1" channel="0" level="4" task="7" keywords="0x2" message="">
+    </event>
+    <event value="14" version="0" opcode="2" channel="0" level="4" task="7" keywords="0x2" message="">
+    </event>
+    <event value="15" version="0" opcode="1" channel="0" level="4" task="8" keywords="0x10" message="">
+    </event>
+    <event value="16" version="0" opcode="2" channel="0" level="4" task="8" keywords="0x10" message="">
+    </event>
+    <event value="17" version="0" opcode="1" channel="0" level="4" task="10" keywords="0x20" message="">
+    </event>
+    <event value="18" version="0" opcode="2" channel="0" level="4" task="10" keywords="0x20" message="">
+    </event>
+    <event value="19" version="0" opcode="1" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="20" version="0" opcode="2" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="21" version="0" opcode="1" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="22" version="0" opcode="2" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="23" version="0" opcode="1" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="24" version="0" opcode="2" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="25" version="0" opcode="1" channel="0" level="4" task="12" keywords="0x40" message="">
+    </event>
+    <event value="26" version="0" opcode="2" channel="0" level="4" task="12" keywords="0x40" message="">
+    </event>
+    <event value="27" version="0" opcode="1" channel="0" level="4" task="11" keywords="0x8" message="">
+    </event>
+    <event value="28" version="0" opcode="2" channel="0" level="4" task="11" keywords="0x8" message="">
+    </event>
+    <event value="29" version="0" opcode="0" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="30" version="0" opcode="1" channel="0" level="4" task="13" keywords="0x20" message="">
+    </event>
+    <event value="31" version="0" opcode="2" channel="0" level="4" task="13" keywords="0x20" message="">
+    </event>
+    <event value="32" version="0" opcode="1" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="33" version="0" opcode="2" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="34" version="0" opcode="0" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="35" version="0" opcode="0" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="36" version="0" opcode="0" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="37" version="0" opcode="0" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="38" version="0" opcode="0" channel="0" level="4" task="15" keywords="0x80" message="">
+    </event>
+    <event value="39" version="0" opcode="0" channel="0" level="4" task="16" keywords="0x200" message="">
+    </event>
+    <event value="40" version="0" opcode="0" channel="0" level="4" task="16" keywords="0x200" message="">
+    </event>
+    <event value="41" version="0" opcode="0" channel="0" level="4" task="9" keywords="0x800" message="">
+    </event>
+    <event value="42" version="0" opcode="0" channel="0" level="4" task="9" keywords="0x4" message="">
+    </event>
+    <event value="43" version="0" opcode="0" channel="0" level="4" task="9" keywords="0x4" message="">
+    </event>
+    <event value="50" version="0" opcode="0" channel="0" level="0" task="50" keywords="0x800000000000" message="">
+    </event>
+    <event value="60" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x0" message="">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="0" level="0" task="9" keywords="0x20" message="">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="0" level="0" task="9" keywords="0x20" message="">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="0" level="0" task="9" keywords="0x20" message="">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="0" level="0" task="9" keywords="0x20" message="">
+    </event>
+    <event value="1100" version="0" opcode="1" channel="0" level="0" task="9" keywords="0x20" message="">
+    </event>
+    <event value="1101" version="0" opcode="2" channel="0" level="4" task="9" keywords="0x20" message="">
+    </event>
+    <event value="2000" version="1" opcode="10" channel="0" level="1" task="100" keywords="0x1" message="">
+    </event>
+    <event value="2001" version="1" opcode="10" channel="0" level="2" task="100" keywords="0x1" message="">
+    </event>
+    <event value="2002" version="1" opcode="10" channel="0" level="3" task="100" keywords="0x1" message="">
+    </event>
+    <event value="2003" version="1" opcode="10" channel="0" level="4" task="100" keywords="0x1" message="">
+    </event>
+    <event value="2004" version="1" opcode="10" channel="0" level="5" task="100" keywords="0x1" message="">
+    </event>
+    <event value="2005" version="1" opcode="10" channel="0" level="0" task="100" keywords="0x1" message="">
+    </event>
+    <event value="2010" version="0" opcode="10" channel="0" level="5" task="100" keywords="0x400" message="">
+    </event>
+    <event value="3000" version="0" opcode="1" channel="0" level="4" task="14" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3001" version="0" opcode="2" channel="0" level="4" task="14" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3002" version="0" opcode="1" channel="0" level="4" task="9" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3003" version="0" opcode="2" channel="0" level="4" task="9" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3004" version="0" opcode="2" channel="0" level="4" task="9" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3005" version="0" opcode="2" channel="0" level="4" task="9" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3006" version="0" opcode="2" channel="0" level="4" task="14" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3007" version="0" opcode="1" channel="0" level="4" task="14" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3008" version="0" opcode="2" channel="0" level="4" task="14" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3009" version="0" opcode="1" channel="0" level="4" task="17" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3010" version="0" opcode="2" channel="0" level="4" task="17" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3011" version="0" opcode="1" channel="0" level="4" task="18" keywords="0x100" message="">
+    </event>
+    <event value="3012" version="0" opcode="2" channel="0" level="4" task="18" keywords="0x100" message="">
+    </event>
+    <event value="3013" version="0" opcode="1" channel="0" level="4" task="14" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3014" version="0" opcode="2" channel="0" level="4" task="14" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3500" version="0" opcode="1" channel="0" level="4" task="150" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3501" version="0" opcode="2" channel="0" level="4" task="150" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3502" version="0" opcode="1" channel="0" level="4" task="150" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3503" version="0" opcode="2" channel="0" level="4" task="150" keywords="0x1000000000000" message="">
+    </event>
+    <event value="3550" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3551" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3552" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3553" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3554" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3555" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3556" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3557" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3558" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3559" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3560" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3561" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3570" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3571" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3572" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+    <event value="3573" version="0" opcode="0" channel="0" level="4" task="151" keywords="0x0" message="">
+    </event>
+  </events>
+</provider>

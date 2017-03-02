@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-CertificateServicesClient-AutoEnrollment" guid="f0db7ef8-b6f3-4005-9937-feb77b9e1b43" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=pautoenr.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\pautoenr.dll" messageFileName="C:\Windows\system32\pautoenr.dll" message="Microsoft-Windows-CertificateServicesClient-AutoEnrollment" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1073741825" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Automatic certificate enrollment for %1 failed to download certificates for %2 store from %3 (%4). %5">
+    </event>
+    <event value="3221225474" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Automatic certificate enrollment for %1 started.">
+    </event>
+    <event value="3221225475" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Automatic certificate enrollment for %1 completed.">
+    </event>
+    <event value="3221225476" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Automatic certificate enrollment for %1 invoked the enrollment API.">
+    </event>
+    <event value="3221225477" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Automatic certificate enrollment for %1 returned from the enrollment API.">
+    </event>
+    <event value="1073741830" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Automatic certificate enrollment for %1 failed (%2) %3.">
+    </event>
+    <event value="2147483663" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Automatic certificate enrollment for %1 failed to contact the active directory (%2). %3 Enrollment will not be performed.">
+    </event>
+    <event value="2147483712" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Certificate for %1 with Thumbprint %2 is about to expire or already expired.">
+    </event>
+  </events>
+</provider>

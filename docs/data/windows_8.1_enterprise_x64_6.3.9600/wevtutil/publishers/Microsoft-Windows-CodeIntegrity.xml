@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-CodeIntegrity" guid="4ee76bd8-3cf4-44a0-a0ac-3937643e37a3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=ci.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\ci.dll" messageFileName="C:\Windows\system32\ci.dll" message="Microsoft-Windows-CodeIntegrity" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-CodeIntegrity/Operational" id="16" flags="0" message="Microsoft-Windows-CodeIntegrity/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-CodeIntegrity/Verbose" id="17" flags="0" message="Microsoft-Windows-CodeIntegrity/Verbose">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:LogAlways" value="0" message="Log Always">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Failed" value="6553600" message="">
+    </opcode>
+    <opcode name="UnsignedDriverLoaded" value="6619136" message="">
+    </opcode>
+    <opcode name="PageHashNotFound" value="6684672" message="">
+    </opcode>
+    <opcode name="PageHashNotFound_DbgAttached" value="6750208" message="">
+    </opcode>
+    <opcode name="FileHashNotFound" value="6815744" message="">
+    </opcode>
+    <opcode name="FileHashNotFound_DbgAttached" value="6881280" message="">
+    </opcode>
+    <opcode name="RevokedDriverLoaded" value="6946816" message="">
+    </opcode>
+    <opcode name="RevokedDriverLoadedInDebugger" value="7012352" message="">
+    </opcode>
+    <opcode name="RevokedDriverNotLoaded" value="7077888" message="">
+    </opcode>
+    <opcode name="UpdateCatalogCacheFailed" value="7143424" message="">
+    </opcode>
+    <opcode name="PolicyFailure" value="7274496" message="">
+    </opcode>
+    <opcode name="UnsignedImageLoaded" value="7340032" message="">
+    </opcode>
+    <opcode name="RevokedImageLoaded" value="7405568" message="">
+    </opcode>
+    <opcode name="RevokedImageLoadedInDebugger" value="7471104" message="">
+    </opcode>
+    <opcode name="RevokedImageNotLoaded" value="7536640" message="">
+    </opcode>
+    <opcode name="SdlRequirement" value="7602176" message="">
+    </opcode>
+    <opcode name="SdlRequirementIgnored" value="7667712" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CreateSection" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LoadCatalog" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReloadCatalogs" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ValidateFileHash" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ValidatePageHash" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PageHashFoundInCatalog" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PageHashFoundInImageCertificate" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FileHashFoundInCatalog" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FileHashFoundInImageCertificate" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LoadCatalogCache" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SaveCatalogCache" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ValidateImageHeader" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GetFileCache" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetFileCache" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetCatalogHint" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GetCatalogHint" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="3001" version="0" opcode="101" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Code Integrity determined an unsigned kernel module %2 is loaded into the system. Check with the publisher to see if a signed version of the kernel module is available.">
+    </event>
+    <event value="3002" version="0" opcode="102" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Code Integrity is unable to verify the image integrity of the file %2 because the set of per-page image hashes could not be found on the system.">
+    </event>
+    <event value="3003" version="0" opcode="103" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Code Integrity is unable to verify the image integrity of the file %2 because the set of per-page image hashes could not be found on the system. The image is allowed to load because kernel mode debugger is attached.">
+    </event>
+    <event value="3004" version="0" opcode="104" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Windows is unable to verify the image integrity of the file %2 because file hash could not be found on the system. A recent hardware or software change might have installed a file that is signed incorrectly or damaged, or that might be malicious software from an unknown source.">
+    </event>
+    <event value="3005" version="0" opcode="105" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Code Integrity is unable to verify the image integrity of the file %2 because a file hash could not be found on the system. The image is allowed to load because kernel mode debugger is attached.">
+    </event>
+    <event value="3006" version="0" opcode="0" channel="17" level="4" task="6" keywords="0x4000000000000000" message="Code Integrity found a set of per-page image hashes for the file %2 in a catalog %4.">
+    </event>
+    <event value="3007" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000000000000000" message="Code Integrity found a set of per-page image hashes for the file %2 in the image embedded certificate.">
+    </event>
+    <event value="3008" version="0" opcode="0" channel="17" level="4" task="8" keywords="0x4000000000000000" message="Code Integrity found a file hash for the file %2 in a catalog %4.">
+    </event>
+    <event value="3009" version="0" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000000000" message="Code Integrity found a file hash for the file %2 in the image embedded certificate.">
+    </event>
+    <event value="3010" version="0" opcode="100" channel="16" level="3" task="2" keywords="0x8000000000000000" message="Code Integrity was unable to load the %2 catalog.">
+    </event>
+    <event value="3011" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Code Integrity successfully loaded the %2 catalog.">
+    </event>
+    <event value="3012" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Code Integrity started loading the %2 catalog.">
+    </event>
+    <event value="3013" version="0" opcode="1" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Code Integrity started reloading catalogs.">
+    </event>
+    <event value="3014" version="0" opcode="2" channel="17" level="4" task="3" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="3014" version="1" opcode="2" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Code Integrity completed reloading catalogs. Status %1.">
+    </event>
+    <event value="3015" version="0" opcode="1" channel="17" level="5" task="4" keywords="0x4000000000000000" message="Code Integrity started validating file hash of %2 file.">
+    </event>
+    <event value="3016" version="0" opcode="2" channel="17" level="5" task="4" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="3016" version="1" opcode="2" channel="17" level="5" task="4" keywords="0x4000000000000000" message="Code Integrity completed validating file hash. Status %1.">
+    </event>
+    <event value="3017" version="0" opcode="1" channel="17" level="5" task="5" keywords="0x4000000000000000" message="Code Integrity started validating page hashes of %2 file.">
+    </event>
+    <event value="3018" version="0" opcode="2" channel="17" level="5" task="5" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="3018" version="1" opcode="2" channel="17" level="5" task="5" keywords="0x4000000000000000" message="Code Integrity completed validating page hashes. Status %1.">
+    </event>
+    <event value="3019" version="0" opcode="1" channel="17" level="5" task="10" keywords="0x4000000000000000" message="Code Integrity started loading catalog cache from %2 file.">
+    </event>
+    <event value="3020" version="0" opcode="2" channel="17" level="5" task="10" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="3020" version="1" opcode="2" channel="17" level="5" task="10" keywords="0x4000000000000000" message="Code Integrity completed loading catalog cache. Status %1.">
+    </event>
+    <event value="3021" version="0" opcode="106" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Code Integrity determined a revoked kernel module %2 is loaded into the system.  Check with the publisher to see if a new signed version of the kernel module is available.">
+    </event>
+    <event value="3022" version="0" opcode="107" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Code Integrity determined a revoked kernel module %2 is loaded into the system. The image is allowed to load because kernel mode debugger is attached.">
+    </event>
+    <event value="3023" version="0" opcode="108" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Windows is unable to verify the integrity of the file %2 because the signing certificate has been revoked.  Check with the publisher to see if a new signed version of the kernel module is available.">
+    </event>
+    <event value="3024" version="0" opcode="109" channel="16" level="3" task="11" keywords="0x8000000000000000" message="Windows was unable to update the boot catalog cache file.  Status %1.">
+    </event>
+    <event value="3025" version="0" opcode="101" channel="17" level="5" task="1" keywords="0x4000000000000000" message="Code Integrity determined kernel module %2 is loaded into the system which does not have a valid embedded digital signature. Check with the publisher to see if an embedded signed version of the kernel module is available.">
+    </event>
+    <event value="3026" version="0" opcode="100" channel="16" level="3" task="2" keywords="0x8000000000000000" message="Code Integrity was unable to load the %2 catalog because the signing certificate for this catalog has been revoked.  This can result in images failing to load because a valid signature cannot be found.  Check with the publisher to see if a new signed version of the catalog and images are available.">
+    </event>
+    <event value="3027" version="0" opcode="0" channel="17" level="5" task="10" keywords="0x4000000000000000" message="Code Integrity started loading catalog %2 from the cache file.">
+    </event>
+    <event value="3028" version="0" opcode="1" channel="17" level="5" task="11" keywords="0x4000000000000000" message="Code Integrity started saving catalog cache to %2 file.">
+    </event>
+    <event value="3029" version="1" opcode="2" channel="17" level="5" task="11" keywords="0x4000000000000000" message="Code Integrity completed saving catalog cache. Status %1.">
+    </event>
+    <event value="3030" version="0" opcode="0" channel="17" level="5" task="11" keywords="0x4000000000000000" message="Code Integrity saved catalog %2 to the cache file.">
+    </event>
+    <event value="3032" version="0" opcode="113" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Code Integrity determined a revoked image %2 is loaded into the system.  Check with the publisher to see if a new signed version of the image is available.">
+    </event>
+    <event value="3033" version="0" opcode="111" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements.">
+    </event>
+    <event value="3034" version="0" opcode="111" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements. However, due to system policy, the image was allowed to load.">
+    </event>
+    <event value="3035" version="0" opcode="114" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Code Integrity determined a revoked image %2 is loaded into the system. The image is allowed to load because kernel mode debugger is attached.">
+    </event>
+    <event value="3036" version="0" opcode="115" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Windows is unable to verify the integrity of the file %2 because the signing certificate has been revoked.  Check with the publisher to see if a new signed version of the kernel module is available.">
+    </event>
+    <event value="3037" version="0" opcode="112" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Code Integrity determined an unsigned image %2 is loaded into the system. Check with the publisher to see if a signed version of the image is available.">
+    </event>
+    <event value="3038" version="0" opcode="1" channel="17" level="5" task="13" keywords="0x4000000000000000" message="Code Integrity started validating image header of %2 file.">
+    </event>
+    <event value="3039" version="1" opcode="2" channel="17" level="5" task="13" keywords="0x4000000000000000" message="Code Integrity completed validating image header. Status %1.">
+    </event>
+    <event value="3040" version="0" opcode="1" channel="17" level="5" task="14" keywords="0x4000000000000000" message="Code Integrity started retrieving the cached data of %2 file.">
+    </event>
+    <event value="3041" version="1" opcode="2" channel="17" level="5" task="14" keywords="0x4000000000000000" message="Code Integrity completed retrieval of file cache. Status %1.">
+    </event>
+    <event value="3042" version="0" opcode="1" channel="17" level="5" task="15" keywords="0x4000000000000000" message="Code Integrity started setting the cache of %2 file.">
+    </event>
+    <event value="3043" version="1" opcode="2" channel="17" level="5" task="15" keywords="0x4000000000000000" message="Code Integrity completed setting the file cache. Status %1.">
+    </event>
+    <event value="3050" version="0" opcode="0" channel="16" level="0" task="14" keywords="0x8000000000000000" message="Code Integrity completed retrieval of file cache. Status %1.">
+    </event>
+    <event value="3051" version="0" opcode="0" channel="16" level="0" task="14" keywords="0x8000000000000000" message="Code Integrity completed retrieval of file cache. Status %1.">
+    </event>
+    <event value="3052" version="0" opcode="0" channel="16" level="0" task="14" keywords="0x8000000000000000" message="Code Integrity completed retrieval of file cache. Status %1.">
+    </event>
+    <event value="3054" version="0" opcode="1" channel="17" level="5" task="15" keywords="0x4000000000000000" message="Code Integrity started setting the cache of %2 file.">
+    </event>
+    <event value="3055" version="0" opcode="2" channel="17" level="5" task="15" keywords="0x4000000000000000" message="Code Integrity completed setting the file cache. Status %1.">
+    </event>
+    <event value="3057" version="0" opcode="0" channel="16" level="0" task="14" keywords="0x8000000000000000" message="Code Integrity completed retrieval of file cache. Status %1.">
+    </event>
+    <event value="3058" version="0" opcode="0" channel="16" level="0" task="14" keywords="0x8000000000000000" message="Code Integrity completed retrieval of file cache. Status %1.">
+    </event>
+    <event value="3059" version="0" opcode="0" channel="17" level="4" task="16" keywords="0x4000000000000000" message="Code Integrity found a set of per-page image hashes for the file %2 in a catalog %4.">
+    </event>
+    <event value="3060" version="0" opcode="0" channel="17" level="4" task="17" keywords="0x4000000000000000" message="Code Integrity found a set of per-page image hashes for the file %2 in a catalog %4.">
+    </event>
+    <event value="3061" version="0" opcode="0" channel="17" level="4" task="16" keywords="0x4000000000000000" message="Code Integrity found a file hash for the file %2 in a catalog %4.">
+    </event>
+    <event value="3062" version="0" opcode="0" channel="17" level="4" task="17" keywords="0x4000000000000000" message="Code Integrity found a file hash for the file %2 in a catalog %4.">
+    </event>
+    <event value="3063" version="0" opcode="116" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Code Integrity determined that a process (%4) attempted to load %2 that did not meet the security requirements for %5.">
+    </event>
+    <event value="3064" version="0" opcode="0" channel="17" level="3" task="1" keywords="0x4000000000000000" message="Code Integrity determined that a process (%4) attempted to load %2 that did not meet the security requirements for %5. However, due to system policy, the image was allowed to load.">
+    </event>
+    <event value="3065" version="0" opcode="116" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Code Integrity determined that a process (%4) attempted to load %2 that did not meet the security requirements for %5. However, due to system policy, the image was allowed to load.">
+    </event>
+    <event value="3066" version="0" opcode="111" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements. However, due to system policy, the image was allowed to load.">
+    </event>
+  </events>
+</provider>

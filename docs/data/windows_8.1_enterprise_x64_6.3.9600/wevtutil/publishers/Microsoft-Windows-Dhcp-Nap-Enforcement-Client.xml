@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Dhcp-Nap-Enforcement-Client" guid="f6da35ce-d312-41c8-9828-5a2e173c91b6" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=dhcpqec.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\dhcpqec.dll" parameterFileName="C:\Windows\system32\dhcpqec.dll" messageFileName="C:\Windows\system32\dhcpqec.dll" message="Microsoft-Windows-Dhcp-Nap-Enforcement-Client" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DhcpNap/Operational" id="16" flags="0" message="Microsoft-Windows-DHCPNap/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-DhcpNap/Admin" id="17" flags="0" message="Microsoft-Windows-DHCPNap/Admin">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="DHCPQEC_OPCODE_ERROR_DETERMINING_LAN_ATTRIBUTES" value="720896" message="ErrorDeterminingLANAttributes">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_ERROR_OBTAINING_SOH" value="786432" message="ErrorObtainingSOH">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_ERROR_RENEWING_LEASE" value="851968" message="ErrorRenewingLease">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_ERROR_PROCESSING_SOH_RESPONSE" value="917504" message="ErrorProcessingSOHResponse">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_ERROR_OBTAINING_SOH_RESPONSE" value="983040" message="ErrorObtainingSOHResponse">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_ERROR_PLUMBING_SOH" value="1048576" message="ErrorPlumbingSOH">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_ERROR_DHCP_NAP_BINDING" value="1114112" message="ErrorDhcpNapBinding">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_QUARANTINE_CONFIGURATION_SET" value="1179648" message="QuarantineConfigurationSet">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_NONQUARANTINE_CONFIGURATION_SET" value="1245184" message="NonQuarantineConfigurationSet">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_DHCP_SERVICE_STOPPED" value="1310720" message="DhcpServiceStopped">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_DHCP_SERVICE_RUNNING" value="1376256" message="DhcpServiceRunning">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_MEDIA_CONNECT" value="1441792" message="MediaConnect">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_MEDIA_DISCONNECT" value="1507328" message="MediaDisconnect">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_NOTIFICATION_ACK_RECEIVED" value="1572864" message="NotificationAckReceived">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_NOTIFICATION_NON_DHCP_ADDRESS" value="1638400" message="NotificationNonDhcpAddress">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_NOTIFICATION_SOH_CHANGE" value="1703936" message="NotificationSOHChange">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_GET_CONNECTIONS_CALL" value="1769472" message="GetConnectionsCall">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_SERVICE_START" value="1835008" message="ServiceStart">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_SERVICE_STOP" value="1900544" message="ServiceStop">
+    </opcode>
+    <opcode name="DHCPQEC_OPCODE_ERROR_SERVICE_START" value="1966080" message="ErrorServiceStart">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DHCPQEC_TASK_CONFIGURATION_STATE" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Configuration State Event">
+    </task>
+    <task name="DHCPQEC_TASK_NOTIFICATION" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Notification">
+    </task>
+    <task name="DHCPQEC_TASK_SERVICE_STATE" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Service State Event">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="52001" version="0" opcode="11" channel="16" level="2" task="1" keywords="0x8000000000000000" message="An error occurred in determining the LAN attributes. Error code is %1">
+    </event>
+    <event value="52002" version="0" opcode="12" channel="16" level="2" task="1" keywords="0x8000000000000000" message="An error occurred in obtaining the SOH. Error code is %1">
+    </event>
+    <event value="52003" version="0" opcode="13" channel="17" level="2" task="1" keywords="0x4000000000000000" message="An error occurred when DHPQEC tried to renew DHCP lease in the adapter %1. Error code is %2">
+    </event>
+    <event value="52004" version="0" opcode="14" channel="16" level="2" task="1" keywords="0x8000000000000000" message="An error occurred in processing the SOH Response. Error code is %1">
+    </event>
+    <event value="52005" version="0" opcode="15" channel="16" level="2" task="1" keywords="0x8000000000000000" message="An error occurred in obtaining the SOH Response in %1. Error code is %2">
+    </event>
+    <event value="52006" version="0" opcode="16" channel="16" level="2" task="1" keywords="0x8000000000000000" message="An error occurred plumbing SOH for dhcp in the adapter %1. Error code is %2">
+    </event>
+    <event value="52007" version="0" opcode="20" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP client service state is changed to stopped">
+    </event>
+    <event value="52008" version="0" opcode="21" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP client service state is changed to running">
+    </event>
+    <event value="52009" version="0" opcode="22" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Media Connect happened in the adapter %1">
+    </event>
+    <event value="52010" version="0" opcode="23" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Media Disconnect happened in the adapter %1">
+    </event>
+    <event value="52011" version="0" opcode="24" channel="16" level="4" task="2" keywords="0x8000000000000000" message="ACK-message received notification is received for the adapter %1">
+    </event>
+    <event value="52012" version="0" opcode="25" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Plumbing of Non-Dhcp address notification is received for the adapter %1">
+    </event>
+    <event value="52013" version="0" opcode="26" channel="16" level="4" task="2" keywords="0x8000000000000000" message="NAP agent has notified SOH change">
+    </event>
+    <event value="52014" version="0" opcode="27" channel="16" level="4" task="2" keywords="0x8000000000000000" message="NAP agent has called GetConnections">
+    </event>
+    <event value="52015" version="0" opcode="28" channel="16" level="4" task="3" keywords="0x8000000000000000" message="The DHCP Quarantine Enforcement Client started succesfully.">
+    </event>
+    <event value="52016" version="0" opcode="30" channel="16" level="2" task="3" keywords="0x8000000000000000" message="The DHCP Quarantine Enforcement Client failed to start. The following error occured %1.">
+    </event>
+    <event value="52017" version="0" opcode="29" channel="16" level="3" task="3" keywords="0x8000000000000000" message="The DHCP Quarantine Enforcement Client stopped succesfully.">
+    </event>
+    <event value="52018" version="0" opcode="17" channel="17" level="2" task="1" keywords="0x4000000000000000" message="The DHCP Quarantine Enforcement Client could not bind to the Quarantine Agent. The following error occured %1.">
+    </event>
+    <event value="52019" version="0" opcode="18" channel="17" level="3" task="1" keywords="0x4000000000000000" message="The network connection corresponding to the Network Card with address %1 was assigned quarantine configuration by the DHCP Quarantine Enforcement Client.">
+    </event>
+    <event value="52020" version="0" opcode="19" channel="17" level="4" task="1" keywords="0x4000000000000000" message="The network connection corresponding to the Network Card with address %1 was removed from a previously assigned quarantine configuration by the DHCP Quarantine Enforcement Client.">
+    </event>
+  </events>
+</provider>

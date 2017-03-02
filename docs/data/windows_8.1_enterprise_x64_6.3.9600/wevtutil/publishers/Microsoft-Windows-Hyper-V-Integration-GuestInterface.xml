@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-Integration-GuestInterface" guid="5b924be5-409d-4c4d-91ac-bb844d7c8d3e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=vmicguestinterface.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\vmicguestinterface.dll" messageFileName="C:\Windows\system32\vmicguestinterface.dll" message="Microsoft-Windows-Hyper-V-Integration-GuestInterface" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-Integration-Admin" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Integration-Debug" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="3584" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="3585" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="3586" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="3587" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="%1">
+    </event>
+    <event value="4000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Hyper-V Guest Service Interface failed to connect to virtual machine &apos;%1&apos; because the version does not match the version expected by Hyper-V (Virtual machine ID %2). Framework version: %3; Message version: %4. To fix this problem, you must upgrade the integration services. To upgrade, connect to the virtual machine and select Insert Integration Services Setup Disk from the Action menu.">
+    </event>
+    <event value="4010" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Hyper-V Guest Service Interface connected to virtual machine &apos;%1&apos;, but the version does not match the version expected by Hyper-V (Virtual machine ID %2). Framework version: %3; Message version: %4. This is an unsupported configuration. This means that technical support will not be provided until this problem is resolved. To fix this problem, upgrade the integration services. To upgrade, connect to the virtual machine and select Insert Integration Services Setup Disk from the Action menu.">
+    </event>
+    <event value="4020" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Hyper-V Guest Service Interface connected to virtual machine &apos;%1&apos; is using the most recent version (Virtual machine ID %2).">
+    </event>
+    <event value="4096" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos;: The &apos;Guest Service Interface&apos; integration service is either not enabled, not running or not initialized. (Virtual machine ID %2)">
+    </event>
+    <event value="4097" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="The &apos;Guest Service Interface&apos; integration service is either not enabled, not running or not initialized.">
+    </event>
+  </events>
+</provider>

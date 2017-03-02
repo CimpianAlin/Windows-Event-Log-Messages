@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Bits-Client" guid="ef1cc15b-46c1-414e-bb95-e76b077bd51e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=7.5.7600.16385&amp;FileName=qmgr.dll&amp;FileVer=7.5.7600.16385" resourceFileName="C:\Windows\system32\qmgr.dll" parameterFileName="C:\Windows\system32\qmgr.dll" messageFileName="C:\Windows\system32\qmgr.dll" message="Microsoft-Windows-Bits-Client" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Bits-Client/Operational" id="16" flags="0" message="Microsoft-Windows-Bits-Client/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Bits-Client/Analytic" id="17" flags="0" message="Microsoft-Windows-Bits-Client/Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="win:Resume" value="458752" message="Resume">
+    </opcode>
+    <opcode name="win:Suspend" value="524288" message="Suspend">
+    </opcode>
+    <opcode name="win:Send" value="589824" message="Send">
+    </opcode>
+    <opcode name="AcceptPacket" value="655360" message="replying to an incoming request">
+    </opcode>
+    <opcode name="RejectPacket" value="720896" message="denying or ignoring an incoming packet">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DiscoveryServerListen" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="peer neighbor list (server) - listening for clients">
+    </task>
+    <task name="DiscoveryClientListen" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="listen via WS-Discovery for server announcements">
+    </task>
+    <task name="ContentSearch" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="a peer search for a particular URL">
+    </task>
+    <task name="ContentSearchRequest" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="a particular request within a peer search">
+    </task>
+    <task name="AuthExchangeRequest" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="a particular auth-exchange request">
+    </task>
+    <task name="ServerContentSearchRequest" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="1" version="0" opcode="7" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BITS job &quot;%2&quot; with ID %1 has been resumed.">
+    </event>
+    <event value="2" version="0" opcode="8" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BITS job &quot;%2&quot; with ID %1 has been suspended.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The BITS service created a new job: %1, with owner %2">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The transfer job is complete.
+User: %1
+Transfer job: %2
+Job ID: %3
+Owner: %4
+File count: %5">
+    </event>
+    <event value="4" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The transfer job is complete.
+User: %1
+Transfer job: %2
+Job ID: %3
+Owner: %4
+File count: %5">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Job cancelled. User: %1, job: %2, jobID: %3, owner: %4, filecount: %5">
+    </event>
+    <event value="10" version="0" opcode="1" channel="17" level="4" task="10" keywords="0x2000000000000000" message="BITS started listening for peer-client requests.">
+    </event>
+    <event value="11" version="0" opcode="2" channel="17" level="2" task="10" keywords="0x2000000000000000" message="BITS was not able to listen for peer-client requests.  The error code was %1.  BITS jobs from other machines will not be able to use this machine as a peer server.  To fix this problem, try stopping the BITS service and restarting it.">
+    </event>
+    <event value="12" version="0" opcode="2" channel="17" level="4" task="10" keywords="0x2000000000000000" message="BITS stopped listening for peer-client requests.">
+    </event>
+    <event value="13" version="0" opcode="1" channel="17" level="4" task="11" keywords="0x2000000000000000" message="BITS started listening for peer-server announcements.">
+    </event>
+    <event value="14" version="0" opcode="2" channel="17" level="2" task="11" keywords="0x2000000000000000" message="BITS was not able to listen for peer-server announcements.  The error code was %1.  BITS jobs on this machine will not be able to use peer-caching.  To fix this problem, try stopping the BITS service and restarting it.">
+    </event>
+    <event value="15" version="0" opcode="2" channel="17" level="4" task="11" keywords="0x2000000000000000" message="BITS stopped listening for peer-server announcements.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x2000000000000000" message="BITS has sent an inquiry for peer servers.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BITS has read the policy parameters for peer-caching.">
+    </event>
+    <event value="18" version="0" opcode="11" channel="16" level="3" task="11" keywords="0x4000000000000000" message="The peer list rejected an incoming server announcement. This event is generated if the request is not valid, not if the server is merely in a different Windows domain.">
+    </event>
+    <event value="19" version="0" opcode="10" channel="17" level="4" task="11" keywords="0x2000000000000000" message="A new peer was added.">
+    </event>
+    <event value="20" version="0" opcode="10" channel="17" level="4" task="11" keywords="0x2000000000000000" message="A peer was updated.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x2000000000000000" message="A peer was removed from the peer list.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x2000000000000000" message="A cached peer was restored from disk.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x4000000000000000" message="An application cleared the peer list.">
+    </event>
+    <event value="24" version="0" opcode="10" channel="17" level="4" task="10" keywords="0x2000000000000000" message="BITS has replied to a client&apos;s inquiry for peer servers.">
+    </event>
+    <event value="25" version="0" opcode="11" channel="17" level="3" task="10" keywords="0x2000000000000000" message="The server received a peer inquiry but rejected it.">
+    </event>
+    <event value="27" version="0" opcode="1" channel="17" level="5" task="12" keywords="0x2000000000000000" message="A peer search for an URL has begun.">
+    </event>
+    <event value="28" version="0" opcode="2" channel="17" level="4" task="12" keywords="0x2000000000000000" message="A peer search ended.">
+    </event>
+    <event value="29" version="0" opcode="1" channel="17" level="5" task="13" keywords="0x2000000000000000" message="A search request is being sent.">
+    </event>
+    <event value="30" version="0" opcode="2" channel="17" level="4" task="13" keywords="0x2000000000000000" message="A search request has completed.">
+    </event>
+    <event value="31" version="0" opcode="2" channel="17" level="2" task="13" keywords="0x2000000000000000" message="A search request has completed unsuccessfully.">
+    </event>
+    <event value="32" version="0" opcode="0" channel="17" level="4" task="13" keywords="0x2000000000000000" message="The peer&apos;s record %2 matched the request.">
+    </event>
+    <event value="33" version="0" opcode="0" channel="17" level="4" task="10" keywords="0x2000000000000000" message="BITS updated the set of IP addresses used for peer-caching.">
+    </event>
+    <event value="59" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BITS started the %2 transfer job that is associated with the %4 URL.">
+    </event>
+    <event value="59" version="1" opcode="1" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BITS started the %2 transfer job that is associated with the %4 URL.">
+    </event>
+    <event value="60" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BITS stopped transferring the %2 transfer job that is associated with the %4 URL. The status code is %6.">
+    </event>
+    <event value="60" version="1" opcode="2" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BITS stopped transferring the %2 transfer job that is associated with the %4 URL. The status code is %6.">
+    </event>
+    <event value="61" version="0" opcode="2" channel="16" level="3" task="0" keywords="0x4000000000000000" message="BITS stopped transferring the %2 transfer job that is associated with the %4 URL. The status code is %6.">
+    </event>
+    <event value="61" version="1" opcode="2" channel="16" level="3" task="0" keywords="0x4000000000000000" message="BITS stopped transferring the %2 transfer job that is associated with the %4 URL. The status code is %6.">
+    </event>
+    <event value="62" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The BITS job named &quot;%1&quot; belonging to user %2 received inconsistent data while downloading. The URL was &quot;%3&quot;. The transfer will continue using a different server.  If the problem occurs often, an administrator should scan the peer server for viruses or corruption in its hard drive.">
+    </event>
+    <event value="63" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The BITS job %1 is configured to launch %3 after transfer of %2. The notification program returned error %4, BITS will continue to launch the program periodically until it succeeds.">
+    </event>
+    <event value="64" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The BITS job %1 is configured to launch %3 after transfer of %2. The service failed to launch the program with error %4, BITS will continue trying to launch the program periodically until it succeeds.">
+    </event>
+    <event value="70" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x2000000000000000" message="BITS received a peer-cache request from a client at address %1.">
+    </event>
+    <event value="71" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="The client&apos;s search request is for &quot;%1&quot; with timestamp %2.">
+    </event>
+    <event value="72" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="The cache found a matching cache record with ID %1.">
+    </event>
+    <event value="73" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000000" message="While processing the client&apos;s request, BITS encountered error %1.">
+    </event>
+    <event value="74" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000000" message="BITS rejected the client&apos;s request with HTTP status %1.">
+    </event>
+    <event value="75" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x2000000000000000" message="BITS has finished processing the client request.">
+    </event>
+    <event value="76" version="0" opcode="9" channel="17" level="4" task="0" keywords="0x2000000000000000" message="The request includes the client&apos;s event-log activity ID.">
+    </event>
+    <event value="77" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x2000000000000000" message="BITS search for peer-servers has started.">
+    </event>
+    <event value="78" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="BITS has encountered %1 error while reading the peer-cache information. BITS will now attempt to delete and re-create the peer-cache.">
+    </event>
+    <event value="79" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BITS has successfully deleted the peer-cache. All the files cached until this point have been removed. The peer-cache will be re-created again as needed for handling the future requests.">
+    </event>
+    <event value="80" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BITS has successfully enabled peer-client and/or peer-server related components.">
+    </event>
+    <event value="81" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="BITS has encountered %1 error while starting one or more peer-client or peer-server components.">
+    </event>
+    <event value="82" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="BITS accessed group policy value %1 : %2.">
+    </event>
+    <event value="83" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="BITS defaulted group policy value %1 : %2.">
+    </event>
+    <event value="101" version="0" opcode="2" channel="17" level="3" task="13" keywords="0x2000000000000000" message="The peer&apos;s response to a search was invalid.">
+    </event>
+    <event value="102" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The file ranges associated with a transfer attempt">
+    </event>
+    <event value="200" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000000" message="While transferring %1, BITS encountered error %2 using %3 as the HTTP proxy server.  This may indicate a problem with the proxy server or with the client&apos;s network configuration.  If this error occurs frequently, then an administrator should investigate. Details: {Job: %4}, {owner: %5}, {jobid: %6}, {URL: %1}, {xferId: %7}, {proxyServerList: %8}, {hr: %2}.">
+    </event>
+    <event value="201" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The BITS job named &quot;%1&quot; was unable to contact any HTTP proxy server in its proxy list.  This may indicate a problem with the proxy servers or with the client&apos;s network configuration.  An administrator should verify whether the proxy list is correct.  BITS will periodically try to transfer the job.  The HTTP proxy list is &quot;%6&quot;.  The proxy-bypass list is &quot;%7&quot;.">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="While transferring %1, BITS encountered error %7 using %6 as the HTTP proxy server.  The web server or proxy server does not support an HTTP feature required by BITS.  This problem can only be corrected by the adminstrator of the web server or proxy server.  Details: {job: %1}, {owner: %2}, {jobId: %3}, {url: %4}, {xferId: %5}, {proxyServer: %6}, {hr: %7}, {urlContentLength: %8}, {urlHttpVersion: %9}, {urlRange: %10}">
+    </event>
+    <event value="203" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The BITS service provided job credentials in response to an authentication challenge from the %1 server for the %2 transfer job that is associated with the following URL: %3.
+The credentials were accepted.">
+    </event>
+    <event value="203" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The BITS service provided job credentials in response to the %4 authentication challenge from the %1 server for the %2 transfer job that is associated with the following URL: %3.
+The credentials for the %5 user were accepted.">
+    </event>
+    <event value="204" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="The BITS service provided job credentials in response to an authentication challenge from %1 for job %2, url %3. The credentials were rejected.">
+    </event>
+    <event value="204" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="The BITS service provided job credentials in response to the %4 authentication challenge from the %1 server for the %2 transfer job that is associated with the following URL: %3.
+ The credentials for the %5 user were rejected.">
+    </event>
+    <event value="205" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="A bandwidth slot transition occurred.">
+    </event>
+    <event value="281" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is generating its common global data.">
+    </event>
+    <event value="282" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is reading its group policy settings.">
+    </event>
+    <event value="283" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is creating its performance counters.">
+    </event>
+    <event value="284" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is searching for gateway devices.">
+    </event>
+    <event value="285" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is starting the peer-caching client.">
+    </event>
+    <event value="286" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is starting the peer-caching server.">
+    </event>
+    <event value="287" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is reading the job list from the disk.">
+    </event>
+    <event value="288" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is updating its list of active network connections.">
+    </event>
+    <event value="289" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is updating its list of logged-in users.">
+    </event>
+    <event value="290" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is creating the Volume Shadow Copy writer.">
+    </event>
+    <event value="291" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is registering its COM objects.">
+    </event>
+    <event value="301" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The BITS service has started successfully.">
+    </event>
+    <event value="302" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The BITS service has started successfully, but it was delayed long enough that there may be a problem. For more information on the delay, enable the analytic log for BITS, then stop and restart the BITS service.">
+    </event>
+    <event value="303" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x4000000000000000" message="The peer-cache client startup phase of startup has completed.">
+    </event>
+    <event value="304" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service is shutting down.">
+    </event>
+    <event value="305" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x2000000000000000" message="The service shutdown is complete.">
+    </event>
+    <event value="306" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x4000000000000000" message="The BITS service loaded the job list from disk.">
+    </event>
+    <event value="307" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="It took %1 seconds to write a change file to the BITS job list. If this is excessive, the number of BITS jobs may be larger than this machine can handle quickly.">
+    </event>
+    <event value="308" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The BITS service shut down successfully, but it was delayed for %1 seconds. This might cause delays when you turn off your computer. For more information on the delay, enable the analytic log for BITS, then stop and restart the BITS service.">
+    </event>
+    <event value="309" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The BITS peer cache was unable to find any peers in the network.">
+    </event>
+    <event value="310" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The initialization of the peer helper modules failed with the following error:  %1.">
+    </event>
+    <event value="311" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="The BITS peer transfer with the %1 ID for the %2 transfer job resulted in the following error: %4.">
+    </event>
+    <event value="16384" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The administrator %4 canceled job &quot;%2&quot; on behalf of %3.  The job ID was %1.">
+    </event>
+    <event value="16385" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="While canceling job &quot;%2&quot;, BITS was unable to remove some temporary files. To recover disk space, delete the files listed below.  The job ID was %1.  %3">
+    </event>
+    <event value="16386" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="While canceling job &quot;%2&quot;, BITS was unable to remove some temporary files. To recover disk space, delete the temporary files. Note: Due to space limitations, not all files are listed.  Check for additional files of the form BITxxx.TMP in the same directory.  The job ID was %1.  %3">
+    </event>
+    <event value="16387" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The administrator %3 modified the %4 property of job &quot;%2&quot;.  The job ID was %1.">
+    </event>
+    <event value="16388" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The administrator %4 took ownership of job &quot;%2&quot; from %3.  The job ID was %1.">
+    </event>
+    <event value="16389" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Job &quot;%2&quot; owned by %3 was canceled after being inactive for more than %4 days.  The job ID was %1.">
+    </event>
+    <event value="16390" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Job &quot;%2&quot; owned by %3 failed to notify its associated application.  BITS will retry in %4 minutes.  The job ID was %1.">
+    </event>
+    <event value="16391" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="The BITS job list is not in a recognized format.  It may have been created by a different version of BITS.  The job list has been cleared.">
+    </event>
+    <event value="16392" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The BITS service failed to start.  Error %1.">
+    </event>
+    <event value="16393" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="BITS has encountered an error communicating with an Internet Gateway Device.  Please check that the device is functioning properly. BITS will not attempt to use this device until the next system reboot. Error code: %1.">
+    </event>
+    <event value="16394" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BITS Peer-caching protocol">
+    </event>
+    <event value="16395" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Web Services-Discovery protocol">
+    </event>
+    <event value="16396" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Error %3 occurred when BITS tried to change the state of firewall rule &quot;%1&quot; to %2.  Restarting the BITS service may correct the problem.">
+    </event>
+    <event value="16397" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The Per-user job limit (%2) specified through Group Policy must be less than or equal to Per-computer job Limit (%3).  To correct the problem, modify BITS Group Policy settings and restart the BITS service.">
+    </event>
+    <event value="16398" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A new BITS job could not be created. The current job count for the user %1 (%2) is equal to or greater than the job limit (%3) specified through group policy.  To correct the problem, complete or cancel the BITS jobs that haven&apos;t made progress by looking at the error, and restart the BITS service. If this error recurs, contact your system administrator and increate the per-user and per-computer Group Policy job limits.">
+    </event>
+    <event value="16400" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A new BITS job could not be created. The current job count for this computer (%2) is equal to or greater than the per-computer job limit (%3) specified through Group Policy.  To correct the problem, complete or cancel the BITS jobs that haven&apos;t made progress by looking at the error and restarting the BITS service. If this error recurs, contact your system administrator and increase the per-computer Group Policy job limits.">
+    </event>
+    <event value="16401" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="BITS could not add file(s) to %1 job. The file count for %1 job (%2) has exceeded the per-job file limit (%3) specified through Group Policy.  To correct the problem, increase the Computer’s per-job file limit Group Policy settings and restart the BITS service.">
+    </event>
+    <event value="16402" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="BITS could not add ranges to %1 file. The range count for %1 file (%2) has exceeded the per-file range limit (%3) specified through group policy.  To correct the problem, increase the per-file range limit Group Policy setting and restart the BITS service.">
+    </event>
+    <event value="16404" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The BITS service has detected an exception, Function: %1, Line: %2 Error code: %3.">
+    </event>
+    <event value="16405" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A bandwidth profile is not configured correctly. The value of a Group Policy setting is missing or is not within the allowed range. Make sure that you configure the Group Policy settings correctly, and then try again.">
+    </event>
+    <event value="17005" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The BITS service is configured to run as %1. BITS works correctly only when configured to run as the system account.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MediaFoundation-Performance-Core" guid="b20e65ac-c905-4014-8f78-1b6a508142eb" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.9600.16384&amp;FileName=mfcore.dll&amp;FileVer=12.0.9600.16384" resourceFileName="C:\Windows\system32\mfcore.dll" messageFileName="C:\Windows\system32\mfcore.dll" message="Microsoft-Windows-MediaFoundation-Performance-Core" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="MediaFoundationPerformanceCore" id="16" flags="0" message="Media Foundation Performance Core">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="op_AudStreamSink_SetWorkQueue" value="720896" message="AudStreamSink_SetWorkQueue">
+    </opcode>
+    <opcode name="op_AudEngineStream_AudEngineStream" value="786432" message="AudEngineStream_AudEngineStream Event">
+    </opcode>
+    <opcode name="op_AudEngineStream_DelAudEngineStream" value="851968" message="AudEngineStream_DelAudEngineStream Event">
+    </opcode>
+    <opcode name="op_AudEngineStream_ReleaseStream" value="917504" message="AudEngineStream_ReleaseStream Event">
+    </opcode>
+    <opcode name="op_AudEngineStream_HandleStarvation_ReadForStreamSwitch" value="983040" message="AudEngineStream_HandleStarvation_ReadForStreamSwitch">
+    </opcode>
+    <opcode name="op_AudEngineStream_HandleStarvation_Starved_Glitch" value="1048576" message="AudEngineStream_HandleStarvation_Starved_Glitch">
+    </opcode>
+    <opcode name="op_AudEngineStream_HandleStarvation_ForceSilence" value="1179648" message="AudEngineStream_HandleStarvation_ForceSilence">
+    </opcode>
+    <opcode name="op_AudEngineStream_HandleEOSBuffer_Info" value="1245184" message="AudEngineStream_HandleEOSBuffer_Info">
+    </opcode>
+    <opcode name="op_AudEngineStream_FillRenderBuffer_BufferInfo" value="1310720" message="AudEngineStream_FillRenderBuffer_BufferInfo">
+    </opcode>
+    <opcode name="op_AudEngineStream_FillRenderBuffer_LastBufferFrameCount" value="1376256" message="AudEngineStream_FillRenderBuffer_LastBufferFrameCount">
+    </opcode>
+    <opcode name="op_AudEngineStream_FillRenderBuffer_NotEnoughData" value="1441792" message="AudEngineStream_FillRenderBuffer_NotEnoughData">
+    </opcode>
+    <opcode name="op_AudEngineStream_FillRenderBuffer_FillSilence_Glitch" value="1507328" message="AudEngineStream_FillRenderBuffer_FillSilence_Glitch">
+    </opcode>
+    <opcode name="op_AudEngineStream_BeginEOS" value="1572864" message="AudEngineStream_BeginEOS">
+    </opcode>
+    <opcode name="op_AudEngineStream_FreeRenderContainer" value="1638400" message="AudEngineStream_FreeRenderContainer">
+    </opcode>
+    <opcode name="op_AudEngineStream_StopLocalGraph_InvokeStreamSwitching" value="1703936" message="AudEngineStream_StopLocalGraph_InvokeStreamSwitching">
+    </opcode>
+    <opcode name="op_AudEngineStream_CMFPump_DoWork_States" value="1769472" message="AudEngineStream_CMFPump_DoWork_States">
+    </opcode>
+    <opcode name="op_AudEngineStream_CheckForEOS_PumpStopped" value="1835008" message="AudEngineStream_CheckForEOS_PumpStopped">
+    </opcode>
+    <opcode name="op_AudEngineStream_OnSessionDisconnected" value="1900544" message="AudEngineStream_OnSessionDisconnected">
+    </opcode>
+    <opcode name="op_AudStreamSink_AudStreamSink" value="1966080" message="AudStreamSink_AudStreamSink">
+    </opcode>
+    <opcode name="op_AudStreamSink_ShouldSampleBeDropped" value="2031616" message="AudStreamSink_ShouldSampleBeDropped">
+    </opcode>
+    <opcode name="op_AudStreamSink_ProcessSample_Info" value="2097152" message="AudStreamSink_ProcessSample_Info">
+    </opcode>
+    <opcode name="op_AudStreamSink_ProcessSample_SampleInfo" value="2162688" message="AudStreamSink_ProcessSample_SampleInfo">
+    </opcode>
+    <opcode name="op_AudStreamSink_ProcessSample_PrerollDone" value="2228224" message="AudStreamSink_ProcessSample_PrerollDone">
+    </opcode>
+    <opcode name="op_AudStreamSink_ProcessSample_NeedMoreData" value="2293760" message="AudStreamSink_ProcessSample_NeedMoreData">
+    </opcode>
+    <opcode name="op_AudStreamSink_PlaceMarker_Info" value="2359296" message="AudStreamSink_PlaceMarker_Info">
+    </opcode>
+    <opcode name="op_AudStreamSink_FlushMarkers_Enter" value="2424832" message="AudStreamSink_FlushMarkers_Enter">
+    </opcode>
+    <opcode name="op_AudStreamSink_EOSMarkerFired" value="2490368" message="AudStreamSink_EOSMarkerFired">
+    </opcode>
+    <opcode name="op_AudStreamSink_SetMediaType_States" value="2555904" message="AudStreamSink_SetMediaType_States">
+    </opcode>
+    <opcode name="op_AudStreamSink_GetTime_BadStreamTime" value="2621440" message="AudStreamSink_GetTime_BadStreamTime">
+    </opcode>
+    <opcode name="op_AudStreamSink_InternalGetTime_Info" value="2686976" message="AudStreamSink_InternalGetTime_Info">
+    </opcode>
+    <opcode name="op_AudStreamSink_OnFreeRenderContainer_QueueNotEmpty" value="2752512" message="AudStreamSink_OnFreeRenderContainer_QueueNotEmpty">
+    </opcode>
+    <opcode name="op_AudStreamSink_EnableSampleRequests" value="2818048" message="AudStreamSink_EnableSampleRequests">
+    </opcode>
+    <opcode name="op_AudStreamSink_CheckAllocationLimits_Offload" value="2883584" message="AudStreamSink_CheckAllocationLimits_Offload">
+    </opcode>
+    <opcode name="op_AudStreamSink_CheckAllocationLimits_NeedMoreData" value="2949120" message="AudStreamSink_CheckAllocationLimits_NeedMoreData">
+    </opcode>
+    <opcode name="op_AudStreamSink_CheckAllocationLimits_LowerMaxRequest" value="3014656" message="AudStreamSink_CheckAllocationLimits_LowerMaxRequest">
+    </opcode>
+    <opcode name="op_AudStreamSink_HandleDeviceRemoved_AlreadyInProgress" value="3080192" message="AudStreamSink_HandleDeviceRemoved_AlreadyInProgress">
+    </opcode>
+    <opcode name="op_AudStreamSink_OnHandleDeviceRemovedWorker_RenderContainerIsEmpty" value="3145728" message="AudStreamSink_OnHandleDeviceRemovedWorker_RenderContainerIsEmpty">
+    </opcode>
+    <opcode name="op_AudStreamSink_OnHandleDeviceRemovedWorker_DeviceNotReadyTimeout" value="3211264" message="AudStreamSink_OnHandleDeviceRemovedWorker_DeviceNotReadyTimeout">
+    </opcode>
+    <opcode name="op_AudStreamSink_DoInvalidateAudEngineStream_ReleasePendingStream" value="3276800" message="AudStreamSink_DoInvalidateAudEngineStream_ReleasePendingStream">
+    </opcode>
+    <opcode name="op_AudStreamSink_DoInvalidateAudEngineStream_ReleaseResouce" value="3342336" message="AudStreamSink_DoInvalidateAudEngineStream_ReleaseResouce">
+    </opcode>
+    <opcode name="op_AudStreamSink_DoInvalidateAudEngineStream_ReleaseStream" value="3407872" message="AudStreamSink_DoInvalidateAudEngineStream_ReleaseStream">
+    </opcode>
+    <opcode name="op_AudStreamSink_DoInvalidateAudEngineStream_TimeUpdate" value="3473408" message="AudStreamSink_DoInvalidateAudEngineStream_TimeUpdate">
+    </opcode>
+    <opcode name="op_AudStreamSink_InvokePipelineFormatChange_QueueMEStreamSinkFormatInvalidated" value="3538944" message="AudStreamSink_InvokePipelineFormatChange_QueueMEStreamSinkFormatInvalidated">
+    </opcode>
+    <opcode name="op_AudStreamSink_RecreateAudioStream_EngineStreamPending" value="3604480" message="AudStreamSink_RecreateAudioStream_EngineStreamPending">
+    </opcode>
+    <opcode name="op_AudStreamSink_RecreateAudioStream_ReleaseStream" value="3670016" message="AudStreamSink_RecreateAudioStream_ReleaseStream">
+    </opcode>
+    <opcode name="op_AudStreamSink_QueueAudioSessionChangedEvent_SignalDeviceReady" value="3735552" message="AudStreamSink_QueueAudioSessionChangedEvent_SignalDeviceReady">
+    </opcode>
+    <opcode name="op_AudStreamSink_InvalidateInternalStream_QueueCallback" value="3801088" message="AudStreamSink_InvalidateInternalStream_QueueCallback">
+    </opcode>
+    <opcode name="op_Notification_OnDefaultDeviceChanged_QueueEventToEngineStream" value="3866624" message="Notification_OnDefaultDeviceChanged_QueueEventToEngineStream">
+    </opcode>
+    <opcode name="op_Notification_OnDeviceStateChanged_QueueDeviceRemovedEvent" value="3932160" message="Notification_OnDeviceStateChanged_QueueDeviceRemovedEvent">
+    </opcode>
+    <opcode name="op_Notification_OnDeviceAdded_Enter" value="3997696" message="Notification_OnDeviceAdded_Enter">
+    </opcode>
+    <opcode name="op_Notification_OnDeviceRemoved_QueueDeviceRemovedEvent" value="4063232" message="Notification_OnDeviceRemoved_QueueDeviceRemovedEvent">
+    </opcode>
+    <opcode name="op_AudioMediaSink_TestStreamInvalidation" value="4128768" message="AudioMediaSink_TestStreamInvalidation">
+    </opcode>
+    <opcode name="op_AudStreamSink_RenderContainer_FreeSample" value="4194304" message="AudStreamSink_RenderContainer_FreeSample">
+    </opcode>
+    <opcode name="op_AudEngineStream_FillRenderBuffer_FirstReleaseBuffer" value="4259840" message="AudEngineStream_FillRenderBuffer_FirstReleaseBuffer">
+    </opcode>
+    <opcode name="op_Notification_OnDeviceStateChanged_Enter" value="4325376" message="Notification_OnDeviceStateChanged_Enter">
+    </opcode>
+    <opcode name="op_AudioMediaSink_GetCorrelatedTime" value="4390912" message="AudioMediaSink_GetCorrelatedTime">
+    </opcode>
+    <opcode name="op_AudStreamSink_WaveFormat" value="4456448" message="AudStreamSink_WaveFormat">
+    </opcode>
+    <opcode name="op_AudEngineStream_CMFPump_Schedule_RetryDoWork" value="4521984" message="AudEngineStream_CMFPump_Schedule_RetryDoWork">
+    </opcode>
+    <opcode name="op_AudStreamSink_DelayEOSMarker" value="4587520" message="AudStreamSink_DelayEOSMarker">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="MFAudio_Render_EngineStream_Task" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="MF Audio_Render_EngineStream Task">
+    </task>
+    <task name="MFAudio_Render_StreamSink_Task" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="MF MFAudio_Render_StreamSink">
+    </task>
+    <task name="MFAudio_Render_GetTime_Task" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="MF Audio_Render_GetTime Task">
+    </task>
+    <task name="MFAudio_Render_StreamInvalidation_Task" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="MF Audio_Render_StreamInvalidation Task">
+    </task>
+    <task name="MFAudio_Render_MediaSink_Task" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="MF MFAudio_Render_MediaSink_Task">
+    </task>
+    <task name="AudEngineStream_BeginStreamSwitch_Task" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_BeginStreamSwitch_Task">
+    </task>
+    <task name="AudEngineStream_Flush_Task" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_Flush_Task">
+    </task>
+    <task name="AudEngineStream_SetState_Task" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_SetState_Task">
+    </task>
+    <task name="AudEngineStream_GetPositionInternal_Task" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_GetPositionInternal_Task">
+    </task>
+    <task name="AudEngineStream_HandleStarvation_Task" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_HandleStarvation_Task">
+    </task>
+    <task name="AudEngineStream_HandleEOSBuffer_Task" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_HandleEOSBuffer_Task">
+    </task>
+    <task name="AudEngineStream_ScheduleEOSTimer_Task" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_ScheduleEOSTimer_Task">
+    </task>
+    <task name="AudEngineStream_FillRenderBuffer_Task" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_FillRenderBuffer_Task">
+    </task>
+    <task name="AudEngineStream_InsertMarker_Task" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_InsertMarker_Task">
+    </task>
+    <task name="AudEngineStream_StartLocalGraph_Task" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_StartLocalGraph_Task">
+    </task>
+    <task name="AudEngineStream_StopLocalGraph_Task" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_StopLocalGraph_Task">
+    </task>
+    <task name="AudEngineStream_CMFPump_DoWork_Task" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_CMFPump_DoWork_Task">
+    </task>
+    <task name="AudEngineStream_CheckForEOS_Task" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_CheckForEOS_Task">
+    </task>
+    <task name="AudEngineStream_RetryDoWork_Task" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_RetryDoWork_Task">
+    </task>
+    <task name="AudEngineStream_DelayStart_Task" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_DelayStart_Task">
+    </task>
+    <task name="AudEngineStream_CMFPump_Start_Task" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_CMFPump_Start_Task">
+    </task>
+    <task name="AudEngineStream_CMFPump_Stop_Task" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="AudEngineStream_CMFPump_Stop_Task">
+    </task>
+    <task name="AudStreamSink_DelAudStreamSink_Task" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_DelAudStreamSink_Task">
+    </task>
+    <task name="AudStreamSink_InitializeMediaTypeHandlerList_Task" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_InitializeMediaTypeHandlerList_Task">
+    </task>
+    <task name="AudStreamSink_ProcessSample_Task" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_ProcessSample_Task">
+    </task>
+    <task name="AudStreamSink_PlaceMarker_Task" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_PlaceMarker_Task">
+    </task>
+    <task name="AudStreamSink_InternalFlush_Task" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_InternalFlush_Task">
+    </task>
+    <task name="AudStreamSink_Flush_Task" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_Flush_Task">
+    </task>
+    <task name="AudStreamSink_StartPrerolling_Task" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_StartPrerolling_Task">
+    </task>
+    <task name="AudStreamSink_RemoveFromSink_Task" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_RemoveFromSink_Task">
+    </task>
+    <task name="AudStreamSink_SetMediaType_Task" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_SetMediaType_Task">
+    </task>
+    <task name="AudStreamSink_InternalGetTime_Task" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_InternalGetTime_Task">
+    </task>
+    <task name="AudStreamSink_GetTime_Task" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_GetTime_Task">
+    </task>
+    <task name="AudStreamSink_FinishOnClockStart_Task" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_FinishOnClockStart_Task">
+    </task>
+    <task name="AudStreamSink_PostOnClockStart_Task" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_PostOnClockStart_Task">
+    </task>
+    <task name="AudStreamSink_UpdateStartTime_Task" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_UpdateStartTime_Task">
+    </task>
+    <task name="AudStreamSink_InternalOnClockStop_Task" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_InternalOnClockStop_Task">
+    </task>
+    <task name="AudStreamSink_FinishOnClockStop_Task" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_FinishOnClockStop_Task">
+    </task>
+    <task name="AudStreamSink_FinishOnClockPause_Task" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_FinishOnClockPause_Task">
+    </task>
+    <task name="AudStreamSink_FinishOnClockSetRate_Task" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_FinishOnClockSetRate_Task">
+    </task>
+    <task name="AudStreamSink_PostOnClockSetRate_Task" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_PostOnClockSetRate_Task">
+    </task>
+    <task name="AudStreamSink_CreateAudioStreamInternal_Task" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_CreateAudioStreamInternal_Task">
+    </task>
+    <task name="AudStreamSink_GetDevicePosition_Task" value="44" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_GetDevicePosition_Task">
+    </task>
+    <task name="AudStreamSink_SubmitSilence_Task" value="45" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_SubmitSilence_Task">
+    </task>
+    <task name="AudStreamSink_DispatchMarker_Task" value="46" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_DispatchMarker_Task">
+    </task>
+    <task name="AudStreamSink_OnFreeRenderContainer_Task" value="47" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_OnFreeRenderContainer_Task">
+    </task>
+    <task name="AudStreamSink_OnInvokeStreamSwitch_Task" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_OnInvokeStreamSwitch_Task">
+    </task>
+    <task name="AudStreamSink_HandleScrubSample_Task" value="49" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_HandleScrubSample_Task">
+    </task>
+    <task name="AudStreamSink_SubmitData_Task" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_SubmitData_Task">
+    </task>
+    <task name="AudStreamSink_ComputeRenderPosition_Task" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_ComputeRenderPosition_Task">
+    </task>
+    <task name="AudStreamSink_GetPresentationTime_Task" value="52" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_GetPresentationTime_Task">
+    </task>
+    <task name="AudStreamSink_RenderSample_Task" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_RenderSample_Task">
+    </task>
+    <task name="AudStreamSink_GetPositionWrapper_Task" value="54" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_GetPositionWrapper_Task">
+    </task>
+    <task name="AudStreamSink_TrimBuffer_Task" value="55" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_TrimBuffer_Task">
+    </task>
+    <task name="AudStreamSink_RequestMoreSamples_Task" value="56" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_RequestMoreSamples_Task">
+    </task>
+    <task name="AudStreamSink_DoneWithReceivedSample_Task" value="57" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_DoneWithReceivedSample_Task">
+    </task>
+    <task name="AudStreamSink_HandleDeviceRemoved_Task" value="58" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_HandleDeviceRemoved_Task">
+    </task>
+    <task name="AudStreamSink_OnHandleDeviceRemovedWorker_Task" value="59" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_OnHandleDeviceRemovedWorker_Task">
+    </task>
+    <task name="AudStreamSink_OnSoundLevelChanged_Task" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_OnSoundLevelChanged_Task">
+    </task>
+    <task name="AudStreamSink_DoInvalidateAudEngineStream_Task" value="61" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_DoInvalidateAudEngineStream_Task">
+    </task>
+    <task name="AudStreamSink_InvokePipelineFormatChange_Task" value="62" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_InvokePipelineFormatChange_Task">
+    </task>
+    <task name="AudStreamSink_RecreateAudioStream_Task" value="63" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_RecreateAudioStream_Task">
+    </task>
+    <task name="AudStreamSink_QueueAudioSessionChangedEvent_Task" value="64" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_QueueAudioSessionChangedEvent_Task">
+    </task>
+    <task name="AudStreamSink_InvalidateInternalStream_Task" value="65" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_InvalidateInternalStream_Task">
+    </task>
+    <task name="Notification_OnDefaultDeviceChanged_Task" value="66" eventGUID="00000000-0000-0000-0000-000000000000" message="Notification_OnDefaultDeviceChanged_Task">
+    </task>
+    <task name="Notification_OnDeviceStateChanged_Task" value="67" eventGUID="00000000-0000-0000-0000-000000000000" message="Notification_OnDeviceStateChanged_Task">
+    </task>
+    <task name="Notification_OnDeviceRemoved_Task" value="68" eventGUID="00000000-0000-0000-0000-000000000000" message="Notification_OnDeviceRemoved_Task">
+    </task>
+    <task name="AudStreamSink_CheckMediaType_Task" value="69" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_CheckMediaType_Task">
+    </task>
+    <task name="AudStreamSink_InvalidatingStream_Task" value="70" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_InvalidatingStream_Task">
+    </task>
+    <task name="AudStreamSink_IsFormatSupported_Task" value="71" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_IsFormatSupported_Task">
+    </task>
+    <task name="AudStreamSink_IsFormatSupportedInternal_Task" value="72" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_IsFormatSupportedInternal_Task">
+    </task>
+    <task name="AudStreamSink_DetermineAudioClientBufferDuration_Task" value="73" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_DetermineAudioClientBufferDuration_Task">
+    </task>
+    <task name="AudStreamSink_DoLateBinding_Task" value="74" eventGUID="00000000-0000-0000-0000-000000000000" message="AudStreamSink_DoLateBinding_Task">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="11" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_SetWorkQueue Object %1 WorkQueueId=%2 MultiThreaded=%3">
+    </event>
+    <event value="2" version="0" opcode="12" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_AudEngineStream Event">
+    </event>
+    <event value="3" version="0" opcode="13" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_DelAudEngineStream Event">
+    </event>
+    <event value="4" version="0" opcode="14" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_ReleaseStream Event">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000000" message="AudEngineStream_BeginStreamSwitch_Enter">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000000" message="AudEngineStream_BeginStreamSwitch_Exit">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000000" message="AudEngineStream_Flush_Enter">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000000" message="AudEngineStream_Flush_Exit">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000000" message="AudEngineStream_SetState_Enter">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000000" message="AudEngineStream_SetState_Exit">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8000000000000000" message="AudEngineStream_GetPositionInternal_Enter">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8000000000000000" message="AudEngineStream_GetPositionInternal_Exit">
+    </event>
+    <event value="13" version="0" opcode="1" channel="16" level="4" task="11" keywords="0x8000000000000000" message="AudEngineStream_HandleStarvation_Enter">
+    </event>
+    <event value="14" version="0" opcode="15" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_HandleStarvation_ReadForStreamSwitch">
+    </event>
+    <event value="15" version="0" opcode="16" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_HandleStarvation_Starved_Glitch">
+    </event>
+    <event value="16" version="0" opcode="18" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_HandleStarvation_ForceSilence">
+    </event>
+    <event value="17" version="0" opcode="19" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_HandleEOSBuffer_Info">
+    </event>
+    <event value="18" version="0" opcode="2" channel="16" level="4" task="11" keywords="0x8000000000000000" message="AudEngineStream_HandleStarvation_Exit">
+    </event>
+    <event value="19" version="0" opcode="1" channel="16" level="4" task="12" keywords="0x8000000000000000" message="AudEngineStream_HandleEOSBuffer_Enter">
+    </event>
+    <event value="20" version="0" opcode="2" channel="16" level="4" task="12" keywords="0x8000000000000000" message="AudEngineStream_HandleEOSBuffer_Exit">
+    </event>
+    <event value="21" version="0" opcode="1" channel="16" level="4" task="13" keywords="0x8000000000000000" message="AudEngineStream_ScheduleEOSTimer_Enter">
+    </event>
+    <event value="22" version="0" opcode="2" channel="16" level="4" task="13" keywords="0x8000000000000000" message="AudEngineStream_ScheduleEOSTimer_Exit">
+    </event>
+    <event value="23" version="0" opcode="1" channel="16" level="4" task="14" keywords="0x8000000000000000" message="AudEngineStream_FillRenderBuffer_Enter">
+    </event>
+    <event value="24" version="0" opcode="20" channel="16" level="4" task="14" keywords="0x8000000000000000" message="AudEngineStream_FillRenderBuffer_BufferInfo">
+    </event>
+    <event value="25" version="0" opcode="21" channel="16" level="4" task="14" keywords="0x8000000000000000" message="AudEngineStream_FillRenderBuffer_LastBufferFrameCount">
+    </event>
+    <event value="26" version="0" opcode="22" channel="16" level="4" task="14" keywords="0x8000000000000000" message="AudEngineStream_FillRenderBuffer_NotEnoughData">
+    </event>
+    <event value="27" version="0" opcode="23" channel="16" level="4" task="14" keywords="0x8000000000000000" message="AudEngineStream_FillRenderBuffer_FillSilence_Glitch">
+    </event>
+    <event value="28" version="0" opcode="2" channel="16" level="4" task="14" keywords="0x8000000000000000" message="AudEngineStream_FillRenderBuffer_Exit">
+    </event>
+    <event value="29" version="0" opcode="24" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_BeginEOS">
+    </event>
+    <event value="30" version="0" opcode="1" channel="16" level="4" task="15" keywords="0x8000000000000000" message="AudEngineStream_InsertMarker_Enter">
+    </event>
+    <event value="31" version="0" opcode="2" channel="16" level="4" task="15" keywords="0x8000000000000000" message="AudEngineStream_InsertMarker_Exit">
+    </event>
+    <event value="32" version="0" opcode="25" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_FreeRenderContainer">
+    </event>
+    <event value="33" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x8000000000000000" message="AudEngineStream_StartLocalGraph_Enter">
+    </event>
+    <event value="34" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x8000000000000000" message="AudEngineStream_StartLocalGraph_Exit">
+    </event>
+    <event value="35" version="0" opcode="1" channel="16" level="4" task="17" keywords="0x8000000000000000" message="AudEngineStream_StopLocalGraph_Enter">
+    </event>
+    <event value="36" version="0" opcode="26" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudEngineStream_StopLocalGraph_InvokeStreamSwitching">
+    </event>
+    <event value="37" version="0" opcode="2" channel="16" level="4" task="17" keywords="0x8000000000000000" message="AudEngineStream_StopLocalGraph_Exit">
+    </event>
+    <event value="38" version="0" opcode="1" channel="16" level="4" task="18" keywords="0x8000000000000000" message="AudEngineStream_CMFPump_DoWork_Enter">
+    </event>
+    <event value="39" version="0" opcode="27" channel="16" level="4" task="18" keywords="0x8000000000000000" message="AudEngineStream_CMFPump_DoWork_States">
+    </event>
+    <event value="40" version="0" opcode="2" channel="16" level="4" task="18" keywords="0x8000000000000000" message="AudEngineStream_CMFPump_DoWork_Exit">
+    </event>
+    <event value="41" version="0" opcode="1" channel="16" level="4" task="19" keywords="0x8000000000000000" message="AudEngineStream_CheckForEOS_Enter">
+    </event>
+    <event value="42" version="0" opcode="28" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_CheckForEOS_PumpStopped">
+    </event>
+    <event value="43" version="0" opcode="2" channel="16" level="4" task="19" keywords="0x8000000000000000" message="AudEngineStream_CheckForEOS_Exit">
+    </event>
+    <event value="44" version="0" opcode="1" channel="16" level="4" task="20" keywords="0x8000000000000000" message="AudEngineStream_RetryDoWork_Enter">
+    </event>
+    <event value="45" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000000" message="AudEngineStream_RetryDoWork_Exit">
+    </event>
+    <event value="46" version="0" opcode="1" channel="16" level="4" task="21" keywords="0x8000000000000000" message="AudEngineStream_DelayStart_Enter">
+    </event>
+    <event value="47" version="0" opcode="2" channel="16" level="4" task="21" keywords="0x8000000000000000" message="AudEngineStream_DelayStart_Exit">
+    </event>
+    <event value="48" version="0" opcode="1" channel="16" level="4" task="22" keywords="0x8000000000000000" message="AudEngineStream_CMFPump_Start_Enter">
+    </event>
+    <event value="49" version="0" opcode="2" channel="16" level="4" task="22" keywords="0x8000000000000000" message="AudEngineStream_CMFPump_Start_Exit">
+    </event>
+    <event value="50" version="0" opcode="1" channel="16" level="4" task="23" keywords="0x8000000000000000" message="AudEngineStream_CMFPump_Stop_Enter">
+    </event>
+    <event value="51" version="0" opcode="2" channel="16" level="4" task="23" keywords="0x8000000000000000" message="AudEngineStream_CMFPump_Stop_Exit">
+    </event>
+    <event value="52" version="0" opcode="29" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_OnSessionDisconnected">
+    </event>
+    <event value="53" version="0" opcode="30" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_AudStreamSink">
+    </event>
+    <event value="54" version="0" opcode="1" channel="16" level="4" task="24" keywords="0x8000000000000000" message="AudStreamSink_DelAudStreamSink_Enter">
+    </event>
+    <event value="55" version="0" opcode="2" channel="16" level="4" task="24" keywords="0x8000000000000000" message="AudStreamSink_DelAudStreamSink_Exit">
+    </event>
+    <event value="56" version="0" opcode="1" channel="16" level="4" task="25" keywords="0x8000000000000000" message="AudStreamSink_InitializeMediaTypeHandlerList_Enter">
+    </event>
+    <event value="57" version="0" opcode="2" channel="16" level="4" task="25" keywords="0x8000000000000000" message="AudStreamSink_InitializeMediaTypeHandlerList_Exit">
+    </event>
+    <event value="58" version="0" opcode="31" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_ShouldSampleBeDropped">
+    </event>
+    <event value="59" version="0" opcode="1" channel="16" level="4" task="26" keywords="0x8000000000000000" message="AudStreamSink_ProcessSample_Enter">
+    </event>
+    <event value="60" version="0" opcode="32" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_ProcessSample_Info">
+    </event>
+    <event value="61" version="0" opcode="33" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_ProcessSample_SampleInfo">
+    </event>
+    <event value="62" version="0" opcode="34" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_ProcessSample_PrerollDone">
+    </event>
+    <event value="63" version="0" opcode="35" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_ProcessSample_NeedMoreData">
+    </event>
+    <event value="64" version="0" opcode="2" channel="16" level="4" task="26" keywords="0x8000000000000000" message="AudStreamSink_ProcessSample_Exit">
+    </event>
+    <event value="65" version="0" opcode="1" channel="16" level="4" task="27" keywords="0x8000000000000000" message="AudStreamSink_PlaceMarker_Enter">
+    </event>
+    <event value="66" version="0" opcode="36" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_PlaceMarker_Info">
+    </event>
+    <event value="67" version="0" opcode="2" channel="16" level="4" task="27" keywords="0x8000000000000000" message="AudStreamSink_PlaceMarker_Exit">
+    </event>
+    <event value="68" version="0" opcode="1" channel="16" level="4" task="28" keywords="0x8000000000000000" message="AudStreamSink_InternalFlush_Enter">
+    </event>
+    <event value="69" version="0" opcode="2" channel="16" level="4" task="28" keywords="0x8000000000000000" message="AudStreamSink_InternalFlush_Exit">
+    </event>
+    <event value="70" version="0" opcode="1" channel="16" level="4" task="29" keywords="0x8000000000000000" message="AudStreamSink_Flush_Enter">
+    </event>
+    <event value="71" version="0" opcode="2" channel="16" level="4" task="29" keywords="0x8000000000000000" message="AudStreamSink_Flush_Exit">
+    </event>
+    <event value="72" version="0" opcode="1" channel="16" level="4" task="30" keywords="0x8000000000000000" message="AudStreamSink_StartPrerolling_Enter">
+    </event>
+    <event value="73" version="0" opcode="2" channel="16" level="4" task="30" keywords="0x8000000000000000" message="AudStreamSink_StartPrerolling_Exit">
+    </event>
+    <event value="74" version="0" opcode="37" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_FlushMarkers_Enter">
+    </event>
+    <event value="75" version="0" opcode="38" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_EOSMarkerFired">
+    </event>
+    <event value="76" version="0" opcode="1" channel="16" level="4" task="31" keywords="0x8000000000000000" message="AudStreamSink_RemoveFromSink_Enter">
+    </event>
+    <event value="77" version="0" opcode="2" channel="16" level="4" task="31" keywords="0x8000000000000000" message="AudStreamSink_RemoveFromSink_Exit">
+    </event>
+    <event value="78" version="0" opcode="1" channel="16" level="4" task="32" keywords="0x8000000000000000" message="AudStreamSink_SetMediaType_Enter">
+    </event>
+    <event value="79" version="0" opcode="39" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_SetMediaType_States">
+    </event>
+    <event value="80" version="0" opcode="2" channel="16" level="4" task="32" keywords="0x8000000000000000" message="AudStreamSink_SetMediaType_Exit">
+    </event>
+    <event value="81" version="0" opcode="1" channel="16" level="4" task="33" keywords="0x8000000000000000" message="AudStreamSink_InternalGetTime_Enter">
+    </event>
+    <event value="82" version="0" opcode="2" channel="16" level="4" task="33" keywords="0x8000000000000000" message="AudStreamSink_InternalGetTime_Exit">
+    </event>
+    <event value="83" version="0" opcode="1" channel="16" level="4" task="34" keywords="0x8000000000000000" message="AudStreamSink_GetTime_Enter">
+    </event>
+    <event value="84" version="0" opcode="40" channel="16" level="4" task="3" keywords="0x8000000000000000" message="AudStreamSink_GetTime_BadStreamTime">
+    </event>
+    <event value="85" version="0" opcode="41" channel="16" level="4" task="3" keywords="0x8000000000000000" message="AudStreamSink_InternalGetTime_Info">
+    </event>
+    <event value="86" version="0" opcode="2" channel="16" level="4" task="34" keywords="0x8000000000000000" message="AudStreamSink_GetTime_Exit">
+    </event>
+    <event value="87" version="0" opcode="1" channel="16" level="4" task="35" keywords="0x8000000000000000" message="AudStreamSink_FinishOnClockStart_Enter">
+    </event>
+    <event value="88" version="0" opcode="2" channel="16" level="4" task="35" keywords="0x8000000000000000" message="AudStreamSink_FinishOnClockStart_Exit">
+    </event>
+    <event value="89" version="0" opcode="1" channel="16" level="4" task="36" keywords="0x8000000000000000" message="AudStreamSink_PostOnClockStart_Enter">
+    </event>
+    <event value="90" version="0" opcode="2" channel="16" level="4" task="36" keywords="0x8000000000000000" message="AudStreamSink_PostOnClockStart_Exit">
+    </event>
+    <event value="91" version="0" opcode="1" channel="16" level="4" task="37" keywords="0x8000000000000000" message="AudStreamSink_UpdateStartTime_Enter">
+    </event>
+    <event value="92" version="0" opcode="2" channel="16" level="4" task="37" keywords="0x8000000000000000" message="AudStreamSink_UpdateStartTime_Exit">
+    </event>
+    <event value="93" version="0" opcode="1" channel="16" level="4" task="38" keywords="0x8000000000000000" message="AudStreamSink_InternalOnClockStop_Enter">
+    </event>
+    <event value="94" version="0" opcode="2" channel="16" level="4" task="38" keywords="0x8000000000000000" message="AudStreamSink_InternalOnClockStop_Exit">
+    </event>
+    <event value="95" version="0" opcode="1" channel="16" level="4" task="39" keywords="0x8000000000000000" message="AudStreamSink_FinishOnClockStop_Enter">
+    </event>
+    <event value="96" version="0" opcode="2" channel="16" level="4" task="39" keywords="0x8000000000000000" message="AudStreamSink_FinishOnClockStop_Exit">
+    </event>
+    <event value="97" version="0" opcode="1" channel="16" level="4" task="40" keywords="0x8000000000000000" message="AudStreamSink_FinishOnClockPause_Enter">
+    </event>
+    <event value="98" version="0" opcode="2" channel="16" level="4" task="40" keywords="0x8000000000000000" message="AudStreamSink_FinishOnClockPause_Exit">
+    </event>
+    <event value="99" version="0" opcode="1" channel="16" level="4" task="41" keywords="0x8000000000000000" message="AudStreamSink_FinishOnClockSetRate_Enter">
+    </event>
+    <event value="100" version="0" opcode="2" channel="16" level="4" task="41" keywords="0x8000000000000000" message="AudStreamSink_FinishOnClockSetRate_Exit">
+    </event>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="42" keywords="0x8000000000000000" message="AudStreamSink_PostOnClockSetRate_Enter">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="42" keywords="0x8000000000000000" message="AudStreamSink_PostOnClockSetRate_Exit">
+    </event>
+    <event value="103" version="0" opcode="1" channel="16" level="4" task="43" keywords="0x8000000000000000" message="AudStreamSink_CreateAudioStreamInternal_Enter">
+    </event>
+    <event value="104" version="0" opcode="2" channel="16" level="4" task="43" keywords="0x8000000000000000" message="AudStreamSink_CreateAudioStreamInternal_Exit">
+    </event>
+    <event value="105" version="0" opcode="1" channel="16" level="4" task="44" keywords="0x8000000000000000" message="AudStreamSink_GetDevicePosition_Enter">
+    </event>
+    <event value="106" version="0" opcode="2" channel="16" level="4" task="44" keywords="0x8000000000000000" message="AudStreamSink_GetDevicePosition_Exit">
+    </event>
+    <event value="107" version="0" opcode="1" channel="16" level="4" task="45" keywords="0x8000000000000000" message="AudStreamSink_SubmitSilence_Enter">
+    </event>
+    <event value="108" version="0" opcode="2" channel="16" level="4" task="45" keywords="0x8000000000000000" message="AudStreamSink_SubmitSilence_Exit">
+    </event>
+    <event value="109" version="0" opcode="1" channel="16" level="4" task="46" keywords="0x8000000000000000" message="AudStreamSink_DispatchMarker_Enter">
+    </event>
+    <event value="110" version="0" opcode="2" channel="16" level="4" task="46" keywords="0x8000000000000000" message="AudStreamSink_DispatchMarker_Exit">
+    </event>
+    <event value="111" version="0" opcode="1" channel="16" level="4" task="47" keywords="0x8000000000000000" message="AudStreamSink_OnFreeRenderContainer_Enter">
+    </event>
+    <event value="112" version="0" opcode="42" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_OnFreeRenderContainer_QueueNotEmpty">
+    </event>
+    <event value="113" version="0" opcode="2" channel="16" level="4" task="47" keywords="0x8000000000000000" message="AudStreamSink_OnFreeRenderContainer_Exit">
+    </event>
+    <event value="114" version="0" opcode="1" channel="16" level="4" task="48" keywords="0x8000000000000000" message="AudStreamSink_OnInvokeStreamSwitch_Enter">
+    </event>
+    <event value="115" version="0" opcode="2" channel="16" level="4" task="48" keywords="0x8000000000000000" message="AudStreamSink_OnInvokeStreamSwitch_Exit">
+    </event>
+    <event value="116" version="0" opcode="1" channel="16" level="4" task="49" keywords="0x8000000000000000" message="AudStreamSink_HandleScrubSample_Enter">
+    </event>
+    <event value="117" version="0" opcode="2" channel="16" level="4" task="49" keywords="0x8000000000000000" message="AudStreamSink_HandleScrubSample_Exit">
+    </event>
+    <event value="118" version="0" opcode="1" channel="16" level="4" task="50" keywords="0x8000000000000000" message="AudStreamSink_SubmitData_Enter">
+    </event>
+    <event value="119" version="0" opcode="2" channel="16" level="4" task="50" keywords="0x8000000000000000" message="AudStreamSink_SubmitData_Exit">
+    </event>
+    <event value="120" version="0" opcode="1" channel="16" level="4" task="51" keywords="0x8000000000000000" message="AudStreamSink_ComputeRenderPosition_Enter">
+    </event>
+    <event value="121" version="0" opcode="2" channel="16" level="4" task="51" keywords="0x8000000000000000" message="AudStreamSink_ComputeRenderPosition_Exit">
+    </event>
+    <event value="122" version="0" opcode="1" channel="16" level="4" task="52" keywords="0x8000000000000000" message="AudStreamSink_GetPresentationTime_Enter">
+    </event>
+    <event value="123" version="0" opcode="2" channel="16" level="4" task="52" keywords="0x8000000000000000" message="AudStreamSink_GetPresentationTime_Exit">
+    </event>
+    <event value="124" version="0" opcode="1" channel="16" level="4" task="53" keywords="0x8000000000000000" message="AudStreamSink_RenderSample_Enter">
+    </event>
+    <event value="125" version="0" opcode="2" channel="16" level="4" task="53" keywords="0x8000000000000000" message="AudStreamSink_RenderSample_Exit">
+    </event>
+    <event value="126" version="0" opcode="1" channel="16" level="4" task="54" keywords="0x8000000000000000" message="AudStreamSink_GetPositionWrapper_Enter">
+    </event>
+    <event value="127" version="0" opcode="2" channel="16" level="4" task="54" keywords="0x8000000000000000" message="AudStreamSink_GetPositionWrapper_Exit">
+    </event>
+    <event value="128" version="0" opcode="1" channel="16" level="4" task="55" keywords="0x8000000000000000" message="AudStreamSink_TrimBuffer_Enter">
+    </event>
+    <event value="129" version="0" opcode="2" channel="16" level="4" task="55" keywords="0x8000000000000000" message="AudStreamSink_TrimBuffer_Exit">
+    </event>
+    <event value="130" version="0" opcode="43" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_EnableSampleRequests">
+    </event>
+    <event value="131" version="0" opcode="1" channel="16" level="4" task="56" keywords="0x8000000000000000" message="AudStreamSink_RequestMoreSamples_Enter">
+    </event>
+    <event value="132" version="0" opcode="2" channel="16" level="4" task="56" keywords="0x8000000000000000" message="AudStreamSink_RequestMoreSamples_Exit">
+    </event>
+    <event value="133" version="0" opcode="1" channel="16" level="4" task="57" keywords="0x8000000000000000" message="AudStreamSink_DoneWithReceivedSample_Enter">
+    </event>
+    <event value="134" version="0" opcode="2" channel="16" level="4" task="57" keywords="0x8000000000000000" message="AudStreamSink_DoneWithReceivedSample_Exit">
+    </event>
+    <event value="135" version="0" opcode="44" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_CheckAllocationLimits_Offload">
+    </event>
+    <event value="136" version="0" opcode="45" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_CheckAllocationLimits_NeedMoreData">
+    </event>
+    <event value="137" version="0" opcode="46" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_CheckAllocationLimits_LowerMaxRequest">
+    </event>
+    <event value="138" version="0" opcode="1" channel="16" level="4" task="58" keywords="0x8000000000000000" message="AudStreamSink_HandleDeviceRemoved_Enter">
+    </event>
+    <event value="139" version="0" opcode="47" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_HandleDeviceRemoved_AlreadyInProgress">
+    </event>
+    <event value="140" version="0" opcode="2" channel="16" level="4" task="58" keywords="0x8000000000000000" message="AudStreamSink_HandleDeviceRemoved_Exit">
+    </event>
+    <event value="141" version="0" opcode="1" channel="16" level="4" task="59" keywords="0x8000000000000000" message="AudStreamSink_OnHandleDeviceRemovedWorker_Enter">
+    </event>
+    <event value="142" version="0" opcode="48" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_OnHandleDeviceRemovedWorker_RenderContainerIsEmpty">
+    </event>
+    <event value="143" version="0" opcode="49" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_OnHandleDeviceRemovedWorker_DeviceNotReadyTimeout">
+    </event>
+    <event value="144" version="0" opcode="2" channel="16" level="4" task="59" keywords="0x8000000000000000" message="AudStreamSink_OnHandleDeviceRemovedWorker_Exit">
+    </event>
+    <event value="145" version="0" opcode="1" channel="16" level="4" task="60" keywords="0x8000000000000000" message="AudStreamSink_OnSoundLevelChanged_Enter">
+    </event>
+    <event value="146" version="0" opcode="2" channel="16" level="4" task="60" keywords="0x8000000000000000" message="AudStreamSink_OnSoundLevelChanged_Exit">
+    </event>
+    <event value="147" version="0" opcode="1" channel="16" level="4" task="61" keywords="0x8000000000000000" message="AudStreamSink_DoInvalidateAudEngineStream_Enter">
+    </event>
+    <event value="148" version="0" opcode="50" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_DoInvalidateAudEngineStream_ReleasePendingStream">
+    </event>
+    <event value="149" version="0" opcode="51" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_DoInvalidateAudEngineStream_ReleaseResouce">
+    </event>
+    <event value="150" version="0" opcode="52" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_DoInvalidateAudEngineStream_ReleaseStream">
+    </event>
+    <event value="151" version="0" opcode="53" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_DoInvalidateAudEngineStream_TimeUpdate">
+    </event>
+    <event value="152" version="0" opcode="2" channel="16" level="4" task="61" keywords="0x8000000000000000" message="AudStreamSink_DoInvalidateAudEngineStream_Exit">
+    </event>
+    <event value="153" version="0" opcode="1" channel="16" level="4" task="62" keywords="0x8000000000000000" message="AudStreamSink_InvokePipelineFormatChange_Enter">
+    </event>
+    <event value="154" version="0" opcode="54" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_InvokePipelineFormatChange_QueueMEStreamSinkFormatInvalidated">
+    </event>
+    <event value="155" version="0" opcode="2" channel="16" level="4" task="62" keywords="0x8000000000000000" message="AudStreamSink_InvokePipelineFormatChange_Exit">
+    </event>
+    <event value="156" version="0" opcode="1" channel="16" level="4" task="63" keywords="0x8000000000000000" message="AudStreamSink_RecreateAudioStream_Enter">
+    </event>
+    <event value="157" version="0" opcode="55" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_RecreateAudioStream_EngineStreamPending">
+    </event>
+    <event value="158" version="0" opcode="56" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_RecreateAudioStream_ReleaseStream">
+    </event>
+    <event value="159" version="0" opcode="2" channel="16" level="4" task="63" keywords="0x8000000000000000" message="AudStreamSink_RecreateAudioStream_Exit">
+    </event>
+    <event value="160" version="0" opcode="1" channel="16" level="4" task="64" keywords="0x8000000000000000" message="AudStreamSink_QueueAudioSessionChangedEvent_Enter">
+    </event>
+    <event value="161" version="0" opcode="57" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_QueueAudioSessionChangedEvent_SignalDeviceReady">
+    </event>
+    <event value="162" version="0" opcode="2" channel="16" level="4" task="64" keywords="0x8000000000000000" message="AudStreamSink_QueueAudioSessionChangedEvent_Exit">
+    </event>
+    <event value="163" version="0" opcode="1" channel="16" level="4" task="65" keywords="0x8000000000000000" message="AudStreamSink_InvalidateInternalStream_Enter">
+    </event>
+    <event value="164" version="0" opcode="58" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_InvalidateInternalStream_QueueCallback">
+    </event>
+    <event value="165" version="0" opcode="2" channel="16" level="4" task="65" keywords="0x8000000000000000" message="AudStreamSink_InvalidateInternalStream_Exit">
+    </event>
+    <event value="166" version="0" opcode="1" channel="16" level="4" task="66" keywords="0x8000000000000000" message="Notification_OnDefaultDeviceChanged_Enter">
+    </event>
+    <event value="167" version="0" opcode="59" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Notification_OnDefaultDeviceChanged_QueueEventToEngineStream">
+    </event>
+    <event value="168" version="0" opcode="2" channel="16" level="4" task="66" keywords="0x8000000000000000" message="Notification_OnDefaultDeviceChanged_Exit">
+    </event>
+    <event value="169" version="0" opcode="66" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Notification_OnDeviceStateChanged_Enter">
+    </event>
+    <event value="170" version="0" opcode="60" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Notification_OnDeviceStateChanged_QueueDeviceRemovedEvent">
+    </event>
+    <event value="171" version="0" opcode="2" channel="16" level="4" task="67" keywords="0x8000000000000000" message="Notification_OnDeviceStateChanged_Exit">
+    </event>
+    <event value="172" version="0" opcode="61" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Notification_OnDeviceAdded_Enter">
+    </event>
+    <event value="173" version="0" opcode="1" channel="16" level="4" task="68" keywords="0x8000000000000000" message="Notification_OnDeviceRemoved_Enter">
+    </event>
+    <event value="174" version="0" opcode="62" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Notification_OnDeviceRemoved_QueueDeviceRemovedEvent">
+    </event>
+    <event value="175" version="0" opcode="2" channel="16" level="4" task="68" keywords="0x8000000000000000" message="Notification_OnDeviceRemoved_Exit">
+    </event>
+    <event value="176" version="0" opcode="63" channel="16" level="4" task="5" keywords="0x8000000000000000" message="AudioMediaSink_TestStreamInvalidation">
+    </event>
+    <event value="177" version="0" opcode="64" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_RenderContainer_FreeSample">
+    </event>
+    <event value="178" version="0" opcode="65" channel="16" level="4" task="1" keywords="0x8000000000000000" message="AudEngineStream_FillRenderBuffer_FirstReleaseBuffer">
+    </event>
+    <event value="179" version="0" opcode="67" channel="16" level="4" task="5" keywords="0x8000000000000000" message="AudioMediaSink_GetCorrelatedTime">
+    </event>
+    <event value="180" version="0" opcode="1" channel="16" level="4" task="69" keywords="0x8000000000000000" message="AudStreamSink_CheckMediaType_Enter">
+    </event>
+    <event value="181" version="0" opcode="2" channel="16" level="4" task="69" keywords="0x8000000000000000" message="AudStreamSink_CheckMediaType_Exit">
+    </event>
+    <event value="182" version="0" opcode="68" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_WaveFormat">
+    </event>
+    <event value="183" version="0" opcode="1" channel="16" level="4" task="71" keywords="0x8000000000000000" message="AudStreamSink_IsFormatSupported_Enter">
+    </event>
+    <event value="184" version="0" opcode="2" channel="16" level="4" task="71" keywords="0x8000000000000000" message="AudStreamSink_IsFormatSupported_Exit">
+    </event>
+    <event value="185" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_SetStreamInvalidating_On">
+    </event>
+    <event value="186" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000000" message="AudStreamSink_SetStreamInvalidating_Off">
+    </event>
+    <event value="187" version="0" opcode="1" channel="16" level="4" task="72" keywords="0x8000000000000000" message="AudStreamSink_IsFormatSupportedInternal_Enter">
+    </event>
+    <event value="188" version="0" opcode="2" channel="16" level="4" task="72" keywords="0x8000000000000000" message="AudStreamSink_IsFormatSupportedInternal_Exit">
+    </event>
+    <event value="189" version="0" opcode="1" channel="16" level="4" task="73" keywords="0x8000000000000000" message="AudStreamSink_DetermineAudioClientBufferDuration_Enter">
+    </event>
+    <event value="190" version="0" opcode="2" channel="16" level="4" task="73" keywords="0x8000000000000000" message="AudStreamSink_DetermineAudioClientBufferDuration_Exit">
+    </event>
+    <event value="191" version="0" opcode="1" channel="16" level="4" task="74" keywords="0x8000000000000000" message="AudStreamSink_DoLateBinding_Enter">
+    </event>
+    <event value="192" version="0" opcode="2" channel="16" level="4" task="74" keywords="0x8000000000000000" message="AudStreamSink_DoLateBinding_Exit">
+    </event>
+    <event value="193" version="0" opcode="69" channel="16" level="4" task="18" keywords="0x8000000000000000" message="AudEngineStream_CMFPump_Schedule_RetryDoWork">
+    </event>
+    <event value="194" version="0" opcode="70" channel="16" level="4" task="2" keywords="0x8000000000000000" message="AudStreamSink_DelayEOSMarker">
+    </event>
+  </events>
+</provider>

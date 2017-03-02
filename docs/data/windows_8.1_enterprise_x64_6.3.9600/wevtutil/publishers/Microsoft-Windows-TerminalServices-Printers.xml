@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-TerminalServices-Printers" guid="952773bf-c2b7-49bc-88f4-920744b82c43" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=umrdp.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\umrdp.dll" messageFileName="C:\Windows\system32\umrdp.dll" message="Microsoft-Windows-TerminalServices-Printers" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-TerminalServices-Printers/Admin" id="16" flags="0" message="Admin">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-Printers/Analytic" id="17" flags="0" message="Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-Printers/Operational" id="18" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-Printers/Debug" id="19" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1100" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="TS RDPDR Device Redirection failed to initialize for a single user session %1.  Serial, Parallel, Printer, and File System Redirection will be disabled.  Look in the System event log for other related errors.">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Driver %1 required for printer %2 is not installed on the server. Contact the administrator to install the driver before you log in again.">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An internal communication error occurred.  Redirected printing will no longer function for a single user session.  Check the status of the Remote Desktop Device Redirector in the System folder of Device Manager.">
+    </event>
+    <event value="1105" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Printer security information for the printer %1 could not be set.">
+    </event>
+    <event value="1107" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The printer %1 could not be deleted.">
+    </event>
+    <event value="1108" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Configuration information for the %1 printer could not be restored.">
+    </event>
+    <event value="1109" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The %1 printer could not be set as the default printer.">
+    </event>
+    <event value="1110" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error occurred during processing of %1. The file might be corrupted. Run Setup again to reinstall the file.">
+    </event>
+    <event value="1111" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Driver %1 required for printer %2 is unknown. Contact the administrator to install the driver before you log in again.">
+    </event>
+    <event value="1112" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to register for user printing preferences change notification.  Open the Services snap-in and confirm that the Printer Spooler service is running">
+    </event>
+    <event value="1113" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="There is not enough memory to complete the operation. Save your work, close other programs, and then try again.">
+    </event>
+    <event value="1114" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Error communicating with the Spooler system service.  Open the Services snap-in and confirm that the Print Spooler service is running.">
+    </event>
+    <event value="1115" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unexpected internal error in TS RDP device redirection.  Contact technical support.">
+    </event>
+    <event value="1116" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The printer %1 cannot be redirected by using Remote Desktop Easy Print. The client computer may not have a version of the Remote Desktop Connection client or Microsoft .NET Framework installed that supports this driver.">
+    </event>
+    <event value="1123" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Print Spooler failed to add the printer %1, port %2 because of a port error. The Print Spooler will not try again to add the printer.">
+    </event>
+    <event value="1124" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The number of printers per session limit was reached. The following print queue was not created: 
+
+Printer = %1
+Port = %2">
+    </event>
+  </events>
+</provider>

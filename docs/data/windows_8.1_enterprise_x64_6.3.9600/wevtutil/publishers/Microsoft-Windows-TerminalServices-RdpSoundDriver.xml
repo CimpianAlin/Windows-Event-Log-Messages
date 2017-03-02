@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-TerminalServices-RdpSoundDriver" guid="127e0dc5-e13b-4935-985e-78fd508b1d80" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=rdpendp.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\rdpendp.dll" parameterFileName="C:\Windows\system32\rdpendp.dll" messageFileName="C:\Windows\System32\rdpendp.dll" message="Remote Audio" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-TerminalServices-RdpSoundDriver/Playback" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-TerminalServices-RdpSoundDriver/Capture" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="RdpSndSettingsCheck" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="Settings Check">
+    </task>
+    <task name="RdpSndSettingsChange" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="Settings Change">
+    </task>
+    <task name="RdpSndStreamSetup" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="Stream Setup">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="100" keywords="0x8000000000000000" message="Server version: %1
+Client version: %2">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="102" keywords="0x8000000000000000" message="Playback format:
+
+Format: %1
+Channels: %2
+Samples per second: %3
+Avg. Bytes per second: %4
+Block align: %5
+Bits per sample: %6">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000000" message="Playback format changed to:
+
+Format: %1
+Channels: %2
+Samples per second: %3
+Avg. Bytes per second: %4
+Block align: %5
+Bits per sample: %6">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="100" keywords="0x8000000000000000" message="Audio playback redirection is enabled.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x8000000000000000" message="Audio playback redirection was disabled by the client computer.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x8000000000000000" message="Audio playback redirection was disabled because of a licensing issue.">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x8000000000000000" message="Audio playback redirection was disabled by using Group Policy.">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x8000000000000000" message="Audio playback redirection was disabled by using the Windows Registry.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="2" task="100" keywords="0x8000000000000000" message="Audio playback redirection was disabled by an administrator.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="100" keywords="0x8000000000000000" message="Audio playback redirection quality mode: %2
+
+Quality mode is a bitmask where Dynamic=0x01, Medium=0x02, and High Quality = 0x04.">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="17" level="4" task="100" keywords="0x4000000000000000" message="Audio recording redirection is enabled.">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="17" level="2" task="100" keywords="0x4000000000000000" message="Audio recording redirection was disabled by the client computer.">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="17" level="2" task="100" keywords="0x4000000000000000" message="Audio recording redirection was disabled because of a licensing issue.">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="17" level="2" task="100" keywords="0x4000000000000000" message="Audio recording redirection was disabled by using Group Policy.">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="17" level="2" task="100" keywords="0x4000000000000000" message="Audio recording redirection was disabled by using the Windows Registry.">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="17" level="2" task="100" keywords="0x4000000000000000" message="Audio recording redirection was disabled by an administrator.">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="17" level="2" task="100" keywords="0x4000000000000000" message="Audio recording redirection is not available when the account is using session zero.">
+    </event>
+  </events>
+</provider>

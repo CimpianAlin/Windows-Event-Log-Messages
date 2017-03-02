@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ProcessExitMonitor" guid="fd771d53-8492-4057-8e35-8c02813af49b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=werfault.exe&amp;FileVer=6.1.7600.16385" resourceFileName="werfault.exe" messageFileName="C:\Windows\system32\werfault.exe" message="Process Exit Monitor" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1073744824" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The process &apos;%1&apos; exited with exit code %2. The creation time for the exiting process was 0x%3.">
+    </event>
+    <event value="1073744825" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The process &apos;%1&apos; was terminated by the process &apos;%2&apos; with termination code %3. The creation time for the exiting process was 0x%4.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-StorDiag" guid="f5d05b38-80a6-4653-825d-c414e4ab3c68" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\classpnp.sys" messageFileName="C:\Windows\system32\drivers\classpnp.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-StorDiag/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Storage-ClassPnP/Diagnose" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Storage-ClassPnP/Debug" id="18" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Storage-ClassPnP/Analytic" id="19" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Storage-ClassPnP/Operational" id="20" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Storage-ClassPnP/Admin" id="21" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="ClassPnP_IO_End" value="720896" message="">
+    </opcode>
+    <opcode name="ClassPnP_Enqueue_IdleIO" value="786432" message="">
+    </opcode>
+    <opcode name="ClassPnP_Boost_IdleIO" value="851968" message="">
+    </opcode>
+    <opcode name="Dispatch" value="6553600" message="Dispatching of request.">
+    </opcode>
+    <opcode name="Completion" value="6619136" message="Completion of request.">
+    </opcode>
+    <opcode name="Timeout" value="6684672" message="Request timeout handling.">
+    </opcode>
+    <opcode name="Error" value="6750208" message="Request error handling.">
+    </opcode>
+    <opcode name="Retry" value="6815744" message="Retry handling.">
+    </opcode>
+    <opcode name="Miniport" value="6881280" message="Miniport handling of request.">
+    </opcode>
+    <opcode name="Queue" value="6946816" message="Queue-related operation.">
+    </opcode>
+    <opcode name="StateTransition" value="7012352" message="State transition.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TaskClassPnPIOEnd" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="ClassPnP IO request complete">
+    </task>
+    <task name="TaskClassPnPEnqueueIdleIO" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="ClassPnP Enqueue Idle IO request">
+    </task>
+    <task name="TaskClassPnPBoostIdleIO" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="ClassPnP Boost Idle IO request">
+    </task>
+    <task name="Class" value="200" eventGUID="00000000-0000-0000-0000-000000000000" message="Class">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ClassPnPAllIO" mask="1" message="">
+    </keyword>
+    <keyword name="ClassPnPIdleIO" mask="2" message="">
+    </keyword>
+    <keyword name="CopyOffload_IO_Performance" mask="4" message="CopyOffload IO Performance measurement">
+    </keyword>
+    <keyword name="CopyOffload_Read" mask="8" message="CopyOffload Read request">
+    </keyword>
+    <keyword name="CopyOffload_Write" mask="10" message="CopyOffload Write request">
+    </keyword>
+    <keyword name="SenseData" mask="20" message="Sense Data returned">
+    </keyword>
+    <keyword name="IO_Performance" mask="100000" message="IO Performance measurement">
+    </keyword>
+    <keyword name="Read" mask="200000" message="Read request">
+    </keyword>
+    <keyword name="Write" mask="400000" message="Write request">
+    </keyword>
+    <keyword name="PagingRead" mask="800000" message="Paging Read request">
+    </keyword>
+    <keyword name="PagingWrite" mask="1000000" message="Paging Write request">
+    </keyword>
+    <keyword name="LowMemoryRead" mask="2000000" message="Low memory Read request">
+    </keyword>
+    <keyword name="LowMemoryWrite" mask="4000000" message="Low memory write request">
+    </keyword>
+    <keyword name="NonReadWrite" mask="8000000" message="Non-Read/Write request">
+    </keyword>
+    <keyword name="PassThrough" mask="10000000" message="Pass-Through request">
+    </keyword>
+    <keyword name="Flush" mask="20000000" message="Flush request">
+    </keyword>
+    <keyword name="IOCTL" mask="40000000" message="Device I/O control request">
+    </keyword>
+    <keyword name="WMI" mask="80000000" message="WMI request">
+    </keyword>
+    <keyword name="Power" mask="100000000" message="Power request">
+    </keyword>
+    <keyword name="PnP" mask="200000000" message="PnP request">
+    </keyword>
+    <keyword name="Enum" mask="400000000" message="Device enumeration handling">
+    </keyword>
+    <keyword name="Queue" mask="800000000" message="Queue-related operation">
+    </keyword>
+    <keyword name="ISR" mask="1000000000" message="Interrupt Service Routine processing">
+    </keyword>
+    <keyword name="DPC" mask="2000000000" message="Deferred Procedure Call handling">
+    </keyword>
+    <keyword name="Timer" mask="4000000000" message="Timer-related operation">
+    </keyword>
+    <keyword name="Protocol" mask="8000000000" message="Bus protocol specific operation">
+    </keyword>
+    <keyword name="Target" mask="10000000000" message="Target-related operation">
+    </keyword>
+    <keyword name="Adapter" mask="20000000000" message="Controller or Host Bus Adapter related operation">
+    </keyword>
+    <keyword name="Retry" mask="40000000000" message="Retry handling">
+    </keyword>
+    <keyword name="Timeout" mask="80000000000" message="Timeout handling">
+    </keyword>
+    <keyword name="ReSet" mask="100000000000" message="Reset handling">
+    </keyword>
+    <keyword name="MiniportInterface" mask="200000000000" message="Activity between port and miniport">
+    </keyword>
+    <keyword name="Test" mask="800000000000" message="Testing-specific processing">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000000001" message="ClassPnP IO request complete">
+    </event>
+    <event value="2" version="1" opcode="12" channel="16" level="4" task="2" keywords="0x8000000000000002" message="ClassPnP Enqueue Idle IO request">
+    </event>
+    <event value="3" version="1" opcode="13" channel="16" level="4" task="3" keywords="0x8000000000000002" message="ClassPnP Boost Idle IO request">
+    </event>
+    <event value="4" version="1" opcode="0" channel="19" level="4" task="200" keywords="0x1000000000100004" message="CopyOffload request servicing time taken by lower driver stack(s).">
+    </event>
+    <event value="5" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000000200008" message="Dispatching a CopyOffload read request.">
+    </event>
+    <event value="6" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000000400010" message="Dispatching a CopyOffload write request.">
+    </event>
+    <event value="7" version="1" opcode="101" channel="17" level="4" task="200" keywords="0x4000000000600018" message="Completing a CopyOffload IO (read/write) request.">
+    </event>
+    <event value="8" version="1" opcode="0" channel="17" level="4" task="200" keywords="0x4000000000000020" message="Device returned sense data.">
+    </event>
+    <event value="201" version="1" opcode="0" channel="19" level="4" task="200" keywords="0x1000000000100000" message="Request servicing time taken by lower driver stack(s).">
+    </event>
+    <event value="202" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000000200000" message="Dispatching a read request.">
+    </event>
+    <event value="203" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000000400000" message="Dispatching a write request.">
+    </event>
+    <event value="204" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000000a00000" message="Dispatching a read request.">
+    </event>
+    <event value="205" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000001400000" message="Dispatching a write request.">
+    </event>
+    <event value="206" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000002200000" message="Dispatching a read request.">
+    </event>
+    <event value="207" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000004400000" message="Dispatching a write request.">
+    </event>
+    <event value="208" version="1" opcode="101" channel="17" level="4" task="200" keywords="0x4000000007e00000" message="Completing an IO (read/write) request.">
+    </event>
+    <event value="208" version="2" opcode="101" channel="17" level="4" task="200" keywords="0x4000000007e00000" message="Completing an IO (read/write) request.">
+    </event>
+    <event value="209" version="1" opcode="104" channel="17" level="4" task="200" keywords="0x4000000007e00000" message="Retrying an IO (read/write) request.">
+    </event>
+    <event value="209" version="2" opcode="104" channel="17" level="4" task="200" keywords="0x4000000007e00000" message="Retrying an IO (read/write) request.">
+    </event>
+    <event value="210" version="1" opcode="0" channel="17" level="4" task="200" keywords="0x4000000020000000" message="Flush request.">
+    </event>
+    <event value="211" version="1" opcode="101" channel="17" level="4" task="200" keywords="0x4000000020000000" message="Flush request.">
+    </event>
+    <event value="212" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000040000000" message="Dispatching an IOCTL.">
+    </event>
+    <event value="213" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000080000000" message="Dispatching a WMI request.">
+    </event>
+    <event value="214" version="1" opcode="101" channel="17" level="4" task="200" keywords="0x40000000c0000000" message="Completing a non-read/write request.">
+    </event>
+    <event value="215" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000100000000" message="Dispatching a power request.">
+    </event>
+    <event value="216" version="1" opcode="101" channel="17" level="4" task="200" keywords="0x4000000100000000" message="Completing a power request.">
+    </event>
+    <event value="217" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000200000000" message="Dispatching a PnP request.">
+    </event>
+    <event value="218" version="1" opcode="101" channel="17" level="4" task="200" keywords="0x4000000200000000" message="Completing a PnP request.">
+    </event>
+    <event value="219" version="1" opcode="101" channel="17" level="4" task="200" keywords="0x4000000600000000" message="Completing a PnP enumeration request.">
+    </event>
+    <event value="220" version="1" opcode="106" channel="17" level="4" task="200" keywords="0x4000000800000000" message="Performing a queue-related operation.">
+    </event>
+    <event value="221" version="1" opcode="100" channel="17" level="4" task="200" keywords="0x4000000050000000" message="Dispatching a PassThrough request.">
+    </event>
+  </events>
+</provider>

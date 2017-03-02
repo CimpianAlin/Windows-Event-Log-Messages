@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Biometrics" guid="a0e3d8ea-c34f-4419-a1db-90435b8b21d0" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=wbiosrvc.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\wbiosrvc.dll" messageFileName="C:\Windows\System32\wbiosrvc.dll" message="Microsoft-Windows-Biometrics" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Biometrics/Operational" id="16" flags="0" message="Microsoft-Windows-Biometrics/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Biometrics/Analytic" id="17" flags="0" message="Microsoft-Windows-Biometrics/Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WBioSrvcTask" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="WBioSrvc">
+    </task>
+    <task name="BioCredProvTask" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="BioCredProv">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service could not verify %9 (%8) using sensor: %1.The operation failed with error: %10.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service successfully verified %9 (%8) using sensor: %1.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service could not match %9 (%8) with the sample from sensor: %1.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service could not complete an identification operation using sensor: %1.The operation failed with error: %8">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service successfully identified %9 (%8) using sensor: %1.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service could not determine the identity of the sample from sensor: %1.">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service started an enrollment operation using sensor: %1">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service encountered an error while processing and updating an enrollment request using sensor: %1.The operation failed with error: %8">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service is processing an enrollment operation and updating an enrollment using sensor: %1.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to enroll %9 (%8) using sensor: %1.The operation failed with error: %10.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service successfully enrolled %9 (%8) using sensor: %1.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to begin a capture operation using sensor: %1.The operation failed with error: %8">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to complete a capture operation using sensor: %1.The operation failed with error: %8, reject detail: %9">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to export data from sensor: %1.The operation failed with error: %8">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to delete a database record for %9 (%8) on sensor: %1.The operation failed with error: %10.">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service successfully deleted a database record for %9 (%8) on sensor: %1.">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to complete a vendor-specific operation for sensor: %1.The command was directed to the biometric unit&apos;s &quot;%8&quot; component.The operation failed with error: %9">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service completed a vendor-specific operation for sensor: %1.The command was directed to the biometric unit&apos;s &quot;%8&quot; component.">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to complete a privileged vendor-specific operation for sensor: %1.The command was directed to the biometric unit&apos;s &quot;%8&quot; component.The operation failed with error: %9">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service completed a privileged vendor-specific operation for sensor: %1.The command was directed to the biometric unit&apos;s &quot;%8&quot; component.">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service cannot complete a request because biometric operations are disabled by current system policy.">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service cannot complete a request because Terminal Server client sessions are not allowed to access the System sensor pool.">
+    </event>
+    <event value="1100" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to load an adapter binary: %1.The operation failed with error: %2.">
+    </event>
+    <event value="1101" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to load an adapter binary: %1.The module was not properly signed or its &quot;Force Integrity&quot; flag was not set.">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to load an adapter binary: %1.The module&apos;s &quot;%2&quot; interface is not valid.">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to open sensor: %1.The operation failed with error: %2">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to set the mode of sensor: %1.The operation failed with error: %8See the &quot;Details&quot; pane for information about the failing configuration.">
+    </event>
+    <event value="1105" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to initialize an adapter binary: %1.The module&apos;s &quot;%8&quot; initialization routine failed with error: %9See the &quot;Details&quot; pane for information about the failing configuration.">
+    </event>
+    <event value="1106" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service detected a missing or invalid biometric database configuration for sensor: %1.The operation failed with error: %8See the &quot;Details&quot; pane for information about the failing configuration.">
+    </event>
+    <event value="1107" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service encountered an error while opening the database associated with sensor: %1.The operation failed with error: %8See the &quot;Details&quot; pane for information about the failing configuration.">
+    </event>
+    <event value="1108" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service successfully created a Biometric Unit for sensor: %1The sensor&apos;s mode is &quot;%6,&quot; and its pool-type is &quot;%7.&quot;See the &quot;Details&quot; pane for additional information about the sensor&apos;s new configuration.">
+    </event>
+    <event value="1109" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="The Windows Biometric Service failed to configure a Biometric Unit for sensor: %1.The operation failed with error: %8See the &quot;Details&quot; pane for information about the failing configuration.">
+    </event>
+    <event value="1400" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x8000000000000000" message="The Windows Fingerprint Credential Provider could not log %1 on because the stored credential was invalid.">
+    </event>
+    <event value="1401" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The Windows Fingerprint Credential Provider failed to enumerate its tile.The operation failed with error: %1.">
+    </event>
+    <event value="1402" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x8000000000000000" message="The Windows Fingerprint Credential Provider could not log %1 on because the user does not have a credential stored for biometric logon.">
+    </event>
+    <event value="1403" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="The Windows Fingerprint Credential Provider has disabled biometric authentication.The operation failed with error: %1.">
+    </event>
+    <event value="1500" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager successfully stored a credential for %2 (%1).">
+    </event>
+    <event value="1501" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to store a credential for %2 (%1) due to the caller having insufficient privileges.The operation failed with error: %3.">
+    </event>
+    <event value="1502" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to store a credential because the Windows Fingerprint Credential Provider is disabled.">
+    </event>
+    <event value="1503" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to store a credential.The operation failed with error: %1.">
+    </event>
+    <event value="1504" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager successfully removed a credential for %2 (%1).">
+    </event>
+    <event value="1505" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to remove a credential for %2 (%1) due to the caller having insufficient privileges.The operation failed with error: %3.">
+    </event>
+    <event value="1506" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to remove a credential because the Windows Fingerprint Credential Provider is disabled.">
+    </event>
+    <event value="1507" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to remove a credential.The operation failed with error: %1.">
+    </event>
+    <event value="1508" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager successfully retrieved the credential state for %2 (%1).">
+    </event>
+    <event value="1509" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to retrieve the credential state for %2 (%1) due to the caller having insufficient privileges.The operation failed with error: %3.">
+    </event>
+    <event value="1510" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to retrieve the credential state because the Windows Fingerprint Credential Provider is disabled.">
+    </event>
+    <event value="1511" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to retrieve the state of a credential.The operation failed with error: %1.">
+    </event>
+    <event value="1512" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager successfully switched to user %2 (%1).">
+    </event>
+    <event value="1513" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to switch to user %2 (%1) due to the caller having insufficient privileges.The operation failed with error: %3.">
+    </event>
+    <event value="1514" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to switch to the specified user because the Windows Fingerprint Credential Provider is disabled.">
+    </event>
+    <event value="1515" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to switch to user %2 (%1) because they are already the interactive user.">
+    </event>
+    <event value="1516" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="The Windows Biometric Credential Manager failed to switch to the specified user.The operation failed with error: %1.">
+    </event>
+    <event value="7000" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7001" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7002" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7003" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7004" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7005" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7006" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7007" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7008" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7009" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7010" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7011" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+  </events>
+</provider>

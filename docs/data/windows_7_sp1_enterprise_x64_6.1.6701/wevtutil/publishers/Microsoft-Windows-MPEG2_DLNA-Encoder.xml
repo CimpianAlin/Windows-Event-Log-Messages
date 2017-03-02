@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MPEG2_DLNA-Encoder" guid="86efff39-2bdd-4efd-bd0b-853d71b2a9dc" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=msmpeg2enc.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\msmpeg2enc.dll" messageFileName="C:\Windows\system32\msmpeg2enc.dll" message="Microsoft-Windows-MPEG-2 Encode/Mux for DLNA" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="muxencode" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="MuxTask" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="MPEG-2 Encode/Mux for DLNA">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="1" channel="16" level="4" task="42" keywords="0x8000000000000000" message="Starting. Video: %1 (%2,%3). Audio Channels: %4, Video Bit Rate: %5, Audio Bit Rate %6, Seek Offset %7ms">
+    </event>
+    <event value="1" version="0" opcode="2" channel="16" level="4" task="42" keywords="0x8000000000000000" message="Stopping. Bytes Muxed: %1, Video Frames Received: %2, Video Frames Encoded: %3, Audio Bytes Received: %4, Audio Frames Encoded: %5">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="2" task="42" keywords="0x8000000000000000" message="Error: %1">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="5" task="42" keywords="0x8000000000000000" message="Video Frame Received.  Timestamp=%1, ID=%2">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="5" task="42" keywords="0x8000000000000000" message="Video Frame Encoded.  Input Frame ID=%1, Input Timestamp=%2, Output Timestamp=%3">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="5" task="42" keywords="0x8000000000000000" message="Audio Sample Received.  Timestamp=%1, Bytes in buffer=%2">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="5" task="42" keywords="0x8000000000000000" message="Audio Frame Encoded">
+    </event>
+  </events>
+</provider>

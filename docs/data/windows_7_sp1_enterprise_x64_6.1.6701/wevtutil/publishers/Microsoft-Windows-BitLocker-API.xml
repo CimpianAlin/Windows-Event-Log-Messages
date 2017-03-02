@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-BitLocker-API" guid="5d674230-ca9f-11da-a94d-0800200c9a66" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=fveapi.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\fveapi.dll" messageFileName="C:\Windows\system32\fveapi.dll" message="Microsoft-Windows-BitLocker-API" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="513" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="BitLocker Drive Encryption recovery information was backed up successfully to Active Directory Domain Services.
+Protector GUID: %1
+Volume GUID: %2">
+    </event>
+    <event value="514" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Failed to backup BitLocker Drive Encryption recovery information to Active Directory Domain Services.
+Errorcode: %2
+Protector GUID: %1
+Volume GUID: %3">
+    </event>
+    <event value="515" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="BitLocker Drive Encryption recovery information for the specified protector is already present in Active Directory Domain Services.
+Protector GUID: %1
+Volume GUID: %2">
+    </event>
+    <event value="516" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="A BitLocker certificate data recovery agent was created, because it was missing on the volume or added to the list of data recovery agents.
+Certificate thumbprint: %1
+Protector GUID: %2
+Volume GUID: %3">
+    </event>
+    <event value="517" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="A BitLocker certificate data recovery agent was removed, because is no longer in the list of data recovery agents.
+Certificate thumbprint: %1
+Protector GUID: %2
+Volume GUID: %3">
+    </event>
+    <event value="518" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The attempt to create a data recovery agent protector on the BitLocker volume failed.
+Errorcode: %1
+Certificate thumbprint: %2
+Volume GUID: %3">
+    </event>
+    <event value="519" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The servicing of the data recovery agents on the volume failed.
+Errorcode: %1
+Volume GUID: %2">
+    </event>
+    <event value="520" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The management of the data recovery agents failed on this drive because this feature of BitLocker Drive Encryption is not supported. To enable this functionality, upgrade your operating system to Windows 7 Enterprise. 
+Errorcode: %1
+Volume GUID: %2">
+    </event>
+  </events>
+</provider>

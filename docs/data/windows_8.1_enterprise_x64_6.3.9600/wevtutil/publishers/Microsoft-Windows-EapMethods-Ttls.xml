@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-EapMethods-Ttls" guid="d710d46c-235d-4798-ac20-9f83e1dcd557" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=TtlsAuth.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\TtlsAuth.dll" parameterFileName="C:\Windows\system32\TtlsAuth.dll" messageFileName="C:\Windows\System32\TtlsAuth.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-EapMethods-Ttls/Operational" id="16" flags="0" message="Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="AuthFailed" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="TTLS authentication failed event">
+    </task>
+    <task name="PerfMetric" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Performance metric event">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="TTLS authentication failed because the client doesn&apos;t understand a mandatory step that the server wants to perform.">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="TTLS authentication failed because a bad authentication protocol packet was received, possibly due to an implementation error.">
+    </event>
+    <event value="200" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Server certificate received">
+    </event>
+    <event value="201" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Validation completed">
+    </event>
+    <event value="202" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Message receieved from server">
+    </event>
+    <event value="203" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Client sends response">
+    </event>
+  </events>
+</provider>

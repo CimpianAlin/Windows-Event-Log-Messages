@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WMP-Setup_WM" guid="0d759f0f-cff9-4902-8867-eb9e29d7a98b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.9600.16384&amp;FileName=setup_wm.exe&amp;FileVer=12.0.9600.16384" resourceFileName="C:\Program Files\Windows Media Player\setup_wm.exe" messageFileName="C:\Program Files\Windows Media Player\setup_wm.exe" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="WMPSetup" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="FUE_CONFIGURATION" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FUE_INTERNAL_CONFIGURATION" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FUE_PATH_SELECTION" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FUE_PATH_TAKEN" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="801" version="0" opcode="1" channel="16" level="4" task="1001" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="802" version="0" opcode="2" channel="16" level="4" task="1001" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="803" version="0" opcode="1" channel="16" level="4" task="1002" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="804" version="0" opcode="2" channel="16" level="4" task="1002" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="805" version="0" opcode="0" channel="16" level="4" task="1003" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="806" version="0" opcode="0" channel="16" level="4" task="1004" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

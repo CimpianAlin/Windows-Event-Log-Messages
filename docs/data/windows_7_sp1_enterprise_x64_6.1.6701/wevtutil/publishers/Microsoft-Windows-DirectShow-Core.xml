@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DirectShow-Core" guid="968f313b-097f-4e09-9cdd-bc62692d138b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.6.7600.16385&amp;FileName=quartz.dll&amp;FileVer=6.6.7600.16385" resourceFileName="C:\Windows\system32\quartz.dll" messageFileName="C:\Windows\system32\quartz.dll" message="Microsoft-Windows-DirectShow" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="DirectShowPluginControl" id="16" flags="0" message="">
+    </channel>
+    <channel name="DirectShowFilterGraph" id="17" flags="0" message="DirectShow FilterGraph">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PluginTask" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="Plugin Manager">
+    </task>
+    <task name="RenderFileTask" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph RenderFile">
+    </task>
+    <task name="ConnectTask" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph Connect">
+    </task>
+    <task name="RenderPinTask" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph RenderPin">
+    </task>
+    <task name="AddFilterTask" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph AddFilter">
+    </task>
+    <task name="AddSourceFilterTask" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph AddSourceFilter">
+    </task>
+    <task name="NotifyEventTask" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph NotifyEvent">
+    </task>
+    <task name="PauseTask" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph Pause">
+    </task>
+    <task name="StopTask" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph Stop">
+    </task>
+    <task name="RunTask" value="108" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph Run">
+    </task>
+    <task name="ConnectDirectTask" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph ConnectDirect">
+    </task>
+    <task name="DisconnectTask" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph Disconnect">
+    </task>
+    <task name="GetStateTask" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph GetState">
+    </task>
+    <task name="RemoveFilterTask" value="112" eventGUID="00000000-0000-0000-0000-000000000000" message="DirectShow FilterGraph RemoveFilter">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="The file %2 could not be processed by the application %1 because it requires Indeo® Decoders of type %3">
+    </event>
+    <event value="2" version="0" opcode="1" channel="16" level="4" task="42" keywords="0x4000000000000000" message="Initialize:  Found %1 Preferred Filter clsids, %2 Do Not Use Filter clsids.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="3" task="42" keywords="0x4000000000000000" message="Attempt to use Filter clsid %1 marked as do not use.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="42" keywords="0x4000000000000000" message="Mark Filter clsid %1 do not use = %2.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="42" keywords="0x4000000000000000" message="Choosing preferred Filter clsid %1 for subtype %2.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="42" keywords="0x4000000000000000" message="Registering preferred Filter clsid %1 for subtype %2.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="3" task="42" keywords="0x4000000000000000" message="Attempt to use Do Not Use VCM codec fourcc %1 DLL name %2.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="5" task="42" keywords="0x4000000000000000" message="Query for preferred subtype %2 found clsid %1.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="5" task="42" keywords="0x4000000000000000" message="Query for preferred subtype %1 found no clsid.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="5" task="42" keywords="0x4000000000000000" message="Query Do Not Use for clsid %1: do not use = %2">
+    </event>
+    <event value="100" version="0" opcode="1" channel="17" level="4" task="100" keywords="0x2000000000000000" message="RenderFile Enter CFilterGraph(%1) url(%2)">
+    </event>
+    <event value="101" version="0" opcode="2" channel="17" level="4" task="100" keywords="0x2000000000000000" message="RenderFile Leave CFilterGraph(%1) hr(%2)">
+    </event>
+    <event value="102" version="0" opcode="1" channel="17" level="4" task="101" keywords="0x2000000000000000" message="Connect Enter CFilterGraph(%1) OutputPin(%2,%3) InputPin(%4,%5)">
+    </event>
+    <event value="103" version="0" opcode="2" channel="17" level="4" task="101" keywords="0x2000000000000000" message="Connect Leave CFilterGraph(%1) hr(%2) Major Type(%3) Subtype(%4)">
+    </event>
+    <event value="104" version="0" opcode="1" channel="17" level="4" task="102" keywords="0x2000000000000000" message="Render Pin Enter CFilterGraph(%1) Pin(%2,%3)">
+    </event>
+    <event value="105" version="0" opcode="2" channel="17" level="4" task="102" keywords="0x2000000000000000" message="Render Pin Leave CFilterGraph(%1) hr(%2)">
+    </event>
+    <event value="106" version="0" opcode="0" channel="17" level="4" task="103" keywords="0x2000000000000000" message="AddFilter CFilterGraph(%1) Filter(%2,%3) Name(%4) hr(%5)">
+    </event>
+    <event value="107" version="0" opcode="1" channel="17" level="4" task="104" keywords="0x2000000000000000" message="AddSourceFilter Enter CFilterGraph(%1) url(%2)">
+    </event>
+    <event value="108" version="0" opcode="2" channel="17" level="4" task="104" keywords="0x2000000000000000" message="AddSourceFilter Leave CFilterGraph(%1) Filter(%2,%3) hr(%4)">
+    </event>
+    <event value="109" version="0" opcode="0" channel="17" level="4" task="105" keywords="0x2000000000000000" message="NotifyEvent CFilterGraph(%1) EventCode(%2) Param1(%3) Param2(%4)">
+    </event>
+    <event value="110" version="0" opcode="1" channel="17" level="4" task="106" keywords="0x2000000000000000" message="Pause Enter CFilterGraph(%1)">
+    </event>
+    <event value="111" version="0" opcode="2" channel="17" level="4" task="106" keywords="0x2000000000000000" message="Pause Leave CFilterGraph(%1) Failing Filter (%2,%3) hr(%4)">
+    </event>
+    <event value="112" version="0" opcode="1" channel="17" level="4" task="107" keywords="0x2000000000000000" message="Stop Enter CFilterGraph(%1)">
+    </event>
+    <event value="113" version="0" opcode="2" channel="17" level="4" task="107" keywords="0x2000000000000000" message="Stop Leave CFilterGraph(%1) Failing Filter (%2,%3) hr(%4)">
+    </event>
+    <event value="114" version="0" opcode="1" channel="17" level="4" task="108" keywords="0x2000000000000000" message="Run Enter CFilterGraph(%1) tStart(%2)">
+    </event>
+    <event value="115" version="0" opcode="2" channel="17" level="4" task="108" keywords="0x2000000000000000" message="Run Leave CFilterGraph(%1) Failing Filter (%2,%3) hr(%4)">
+    </event>
+    <event value="116" version="0" opcode="1" channel="17" level="4" task="109" keywords="0x2000000000000000" message="ConnectDirect Enter CFilterGraph(%1) OutputPin(%2,%3) InputPin(%4,%5)">
+    </event>
+    <event value="117" version="0" opcode="2" channel="17" level="4" task="109" keywords="0x2000000000000000" message="ConnectDirect Leave CFilterGraph(%1) hr(%2)">
+    </event>
+    <event value="118" version="0" opcode="0" channel="17" level="4" task="110" keywords="0x2000000000000000" message="Disconnect CFilterGraph(%1) Pin(%2,%3) hr(%4)">
+    </event>
+    <event value="119" version="0" opcode="1" channel="17" level="4" task="111" keywords="0x2000000000000000" message="GetState Enter CFilterGraph(%1) Timeout(%2)">
+    </event>
+    <event value="120" version="0" opcode="2" channel="17" level="4" task="111" keywords="0x2000000000000000" message="GetState Leave CFilterGraph(%1) State(%2) Failing Filter(%3,%4) hr(%5)">
+    </event>
+    <event value="121" version="0" opcode="0" channel="17" level="4" task="112" keywords="0x2000000000000000" message="RemoveFIlter CFilterGraph(%1) Filter(%2,%3) hr(%4)">
+    </event>
+  </events>
+</provider>

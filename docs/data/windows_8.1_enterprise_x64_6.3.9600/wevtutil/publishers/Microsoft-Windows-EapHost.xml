@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-EapHost" guid="6eb8db94-fe96-443f-a366-5fe0cee7fb1c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=eapsvc.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\eapsvc.dll" parameterFileName="C:\Windows\system32\eapsvc.dll" messageFileName="C:\Windows\system32\eapsvc.dll" message="Microsoft-Windows-EapHost" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-EapHost/Operational" id="16" flags="0" message="Microsoft-Windows-EapHost/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-EapHost/Analytic" id="17" flags="0" message="Microsoft-Windows-EapHost/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-EapHost/Debug" id="18" flags="0" message="Microsoft-Windows-EapHost/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="Authenticator" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Authenticator">
+    </task>
+    <task name="Peer" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Peer">
+    </task>
+    <task name="Common" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Common">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Reg" mask="1" message="Registry">
+    </keyword>
+    <keyword name="COM" mask="2" message="COM">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="0" channel="9" level="2" task="1" keywords="0x8000000000000001" message="Method not registered or method&apos;s registry data could not be accessed. LoadConfig: FriendlyName, ConfigCLSID both are empty">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="9" level="2" task="1" keywords="0x8000000000000000" message="Unable to parse malformed EAP packet">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="9" level="2" task="1" keywords="0x8000000000000001" message="Method not registered or registry value error: Function Name=LoadConfig, ArgumentName=%1">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="9" level="4" task="1" keywords="0x8000000000000000" message="Negotiation failed. No available EAP methods">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="9" level="4" task="1" keywords="0x8000000000000000" message="Negotiation failed. Proposed methods list from peer is invalid">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="9" level="4" task="1" keywords="0x8000000000000000" message="Negotiation failed. Requested EAP methods not available">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="9" level="2" task="1" keywords="0x8000000000000000" message="Exceeded the maximum number(32) of Third Party EapHost processes. Discarding the current eap session.">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x4000000000000001" message="Method not registered or method&apos;s registry data could not be accessed. Unable to open registry key %1, error code %2">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x4000000000000001" message="Method not registered or method&apos;s registry data could not be accessed. Query registry (%1) failed for method: TypeId=%2, AuthorId=%3, VendorId=%4, VendorType=%5">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x4000000000000001" message="Method not registered or method&apos;s registry data could not be accessed. Validation failed for key (%1), Method Info: Type Id=%2, AuthorId=%3, vendorId=%4, vendorType=%5">
+    </event>
+    <event value="1041" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x2000000000000002" message="Unable to Initialize COM library. An instance of EapHostAuthenticatorInvokeConfigUI() is already running. CoInitializeEx returned S_FALSE.">
+    </event>
+    <event value="1042" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x2000000000000002" message="Unable to Initialize COM library. The wrong concurrency model was specified for EapHostAuthenticatorInvokeConfigUI(). COM Error: RPC_E_CHANGED_MODE.">
+    </event>
+    <event value="1043" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x2000000000000002" message="Unable to Initialize COM library for EapHostAuthenticatorInitialize(). 
+ Error Description: %1">
+    </event>
+    <event value="1044" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x2000000000000000" message="Invalid eatInnerEapMethodType returned by the EAP method. Attribute has incorrect format (%1)">
+    </event>
+    <event value="1045" version="0" opcode="0" channel="17" level="2" task="1" keywords="0x2000000000000000" message="Method does not support EapMethodAuthenticatorUpdateInnerMethodParams() API, but UpdateInnerMethodParams() called">
+    </event>
+    <event value="1046" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x2000000000000000" message="Client&apos;s response: NAK=%1, Accept=%2">
+    </event>
+    <event value="1047" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x2000000000000000" message="No preferred methods list provided by Peer">
+    </event>
+    <event value="1048" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x2000000000000000" message="Session(%1), state(%2), receive packet id(%3), length(%4)">
+    </event>
+    <event value="1049" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x2000000000000000" message="send packet id(%1), length(%2)">
+    </event>
+    <event value="1050" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x2000000000000000" message="SoH response found">
+    </event>
+    <event value="1051" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x2000000000000000" message="NAP exchange required, get SoH response from network policy server">
+    </event>
+    <event value="1052" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Method does not support stand-alone mode. Skipping EapMethod TypeId=%1, AuthorId=%2">
+    </event>
+    <event value="1053" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x2000000000000000" message="Unable to parse malformed EAP packet. ERROR_PPP_INVALID_PACKET returned">
+    </event>
+    <event value="1054" version="0" opcode="0" channel="17" level="4" task="1" keywords="0x2000000000000000" message="NAK Response: Method (VenId(%2), VenType(%3), Type(%1))  present">
+    </event>
+    <event value="1055" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1056" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1057" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1058" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1059" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1060" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1061" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1062" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1063" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1064" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1065" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1066" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1067" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1068" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1069" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1070" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1071" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1072" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1073" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1074" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1075" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1076" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1077" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1078" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1079" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1080" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1081" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1082" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1083" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1084" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1085" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1086" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1087" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1088" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1089" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1090" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1091" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="1092" version="0" opcode="0" channel="18" level="4" task="1" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="9" level="2" task="2" keywords="0x8000000000000001" message="Eap method friendly name can not be verified or %1 path could not be accessed; Error: type(%2), authId(%3), vendorId(%4), vendorType(%5)">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="9" level="2" task="2" keywords="0x8000000000000001" message="Skipping: %1 validation failed. Error: typeId=%2, authorId=%3, vendorId=%4, vendorType=%5">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x2000000000000002" message="CoTaskMemAlloc() failed for SoH. SoH not saved.">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x2000000000000002" message="Could not initialize COM library in service control manager notification thread">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x2000000000000000" message="SoH change failed. EapQec::NotifySoHChange caught exception for %1: 0x%2">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x2000000000000000" message="ConfigSchema validation failed. Error  %1">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x2000000000000000" message="EapQec Listening thread handle is NULL">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x2000000000000000" message="Session(%1, %2) in use">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x2000000000000000" message="EAP method does not support %1.">
+    </event>
+    <event value="2010" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x4000000000000000" message="XML configuration problem;  Failed to find root element.">
+    </event>
+    <event value="2011" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x4000000000000000" message="XML configuration problem;  Invalid parameter passed.">
+    </event>
+    <event value="2012" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x2000000000000001" message="Registry key validation successful">
+    </event>
+    <event value="2013" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x2000000000000000" message="Client not NAP enabled. SoH change failed.">
+    </event>
+    <event value="2014" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x2000000000000000" message="No SoH response received for %1">
+    </event>
+    <event value="2015" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x2000000000000000" message="Notify SoH change succeeded.">
+    </event>
+    <event value="2016" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x2000000000000000" message="Notify SoH change failed with interface: %1.">
+    </event>
+    <event value="2017" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x2000000000000000" message="Session(%1): Received EAP-Failure after Identity exchange:  There is likely a problem with the authenticating user&apos;s account.">
+    </event>
+    <event value="2018" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x2000000000000000" message="Session(%1): Received EAP-Failure after EAP-Nak negotiation:  The client &amp; server are not configured to support the same EAP methods. (Server offered EAP type %2; Client sent a Nak, and requested EAP type %3.)">
+    </event>
+    <event value="2019" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x2000000000000000" message="Method does not implement %1">
+    </event>
+    <event value="2020" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x2000000000000002" message="COM API %1 Failed.
+ Error Description : %2">
+    </event>
+    <event value="2022" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x2000000000000000" message="_beginthreadex failed.
+ Error Description : %1">
+    </event>
+    <event value="2023" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x4000000000000000" message="Invalid XML document. Failed to selectSingleNode.
+ Error Description : %1">
+    </event>
+    <event value="2024" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x4000000000000000" message="Unable to open %1 handle.
+ Error Description : %2">
+    </event>
+    <event value="2025" version="0" opcode="0" channel="9" level="4" task="2" keywords="0x8000000000000000" message="Exceeded the maximum number(32) of Third Party EapHost processes. Running the current eap session in short lived Eap3Host process.">
+    </event>
+    <event value="2026" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2027" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2028" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2029" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2030" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2031" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2032" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2033" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2034" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2035" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2036" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2037" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2038" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2039" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2040" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2041" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2042" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2043" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2044" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2045" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2046" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2047" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2048" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2049" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2050" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2051" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2052" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2053" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2054" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2055" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2056" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2057" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2058" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2059" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2060" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2061" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2062" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2063" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2064" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2065" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2066" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2067" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2068" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2069" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2070" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2071" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2072" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2073" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2074" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2075" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2076" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2077" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2078" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2079" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2080" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2081" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2082" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2083" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2084" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2085" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000000000" message="Performance">
+    </event>
+    <event value="2086" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x4000000000000000" message="EapHostPeerGetResult returned a failure.
+Eap Method Friendly Name: %2
+Reason code: %1
+Root Cause String: %3
+Repair String: %4">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="9" level="2" task="3" keywords="0x8000000000000001" message="EAPHost failed to load. LoadLibraryW(%1) failed %2">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="9" level="2" task="3" keywords="0x8000000000000000" message="Could not find the requested EapMethod: TypeId(%1), AuthorId(%2), VendorId(%3), VendorType(%4)">
+    </event>
+    <event value="3021" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x4000000000000001" message="EAP methods not registered or registry data could not be accessed; Failed to open registry %1, Error Code: %2">
+    </event>
+    <event value="3022" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x4000000000000001" message="EAP methods not registered or registry data could not be accessed; Failed to open method registry %2\\%1. Skip this type ID">
+    </event>
+    <event value="3023" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x4000000000000001" message="EAP methods not registered or registry data could not be accessed; Failed to open method registry %1. Skip this author ID">
+    </event>
+    <event value="3024" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x4000000000000001" message="EAP methods not registered or registry data could not be accessed; Failed to open method registry %1\\254\\%2\\%3. Skip this vendor type">
+    </event>
+    <event value="3025" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x4000000000000001" message="EAP methods not registered or registry data could not be accessed; Failed to open method registry %1\\254\\%2. Skip this vendor ID">
+    </event>
+    <event value="3026" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x4000000000000000" message="Skipping: Unable to add EAP method. Friendly name not present. TypeId(%1), AuthorId(%2), VendorId(%3), VendorType(%4)">
+    </event>
+    <event value="3027" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x4000000000000000" message="XML configuration problem; Failed to get EapMethodType node 
+. Error Description: %1">
+    </event>
+    <event value="3028" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x4000000000000000" message="XML configuration problem; Data Type mismatch for %1">
+    </event>
+    <event value="3029" version="0" opcode="0" channel="16" level="2" task="3" keywords="0x4000000000000000" message="XML configuration problem; Bad method: TypeId(%1), AuthorId(%2), VendorId(%3), VendorType(%4)">
+    </event>
+    <event value="3041" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x2000000000000000" message="Could not load method. Out of memory">
+    </event>
+    <event value="3042" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x2000000000000000" message="Unable to add new method after re-initialization">
+    </event>
+    <event value="3043" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x2000000000000000" message="EAP Exception caught: authorId(%1), type(%2), vendorId(%3), vendorType(%4), error(%5)">
+    </event>
+    <event value="3044" version="0" opcode="0" channel="17" level="2" task="3" keywords="0x2000000000000000" message="Exception caught: authorId(%1), type(%2), vendorId(%3), vendorType(%4), error(%5)">
+    </event>
+    <event value="3045" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x2000000000000000" message="Error %1, reading EAP method friendly name(muiRead). Friendly name retrieved from registry">
+    </event>
+    <event value="3046" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x2000000000000000" message="EAP method not found, re-initializing the library manager&apos;s EapMethodList data">
+    </event>
+    <event value="3047" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x2000000000000000" message="New method found after re-initializing EapMethodList data">
+    </event>
+    <event value="3048" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x2000000000000000" message="New EAP method added to EapMethodList: TypeId=%1, AuthorId=%2, VendorId=%3, VendorType=%4">
+    </event>
+    <event value="4001" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x1000000000000000" message="%1">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x1000000000000000" message="%1">
+    </event>
+  </events>
+</provider>

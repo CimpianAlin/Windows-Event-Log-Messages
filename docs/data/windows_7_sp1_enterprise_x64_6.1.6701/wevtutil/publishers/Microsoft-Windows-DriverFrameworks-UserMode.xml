@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DriverFrameworks-UserMode" guid="2e35aaeb-857f-4beb-a418-2e6c0e54d988" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=WUDFPlatform.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\WUDFPlatform.dll" messageFileName="C:\Windows\system32\WUDFPlatform.dll" message="Microsoft-Windows-DriverFrameworks-UserMode" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DriverFrameworks-UserMode/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-Power/Diagnostic" id="17" flags="1" message="">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="NestingStart" value="2097152" message="">
+    </opcode>
+    <opcode name="NestingStop" value="2162688" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DriverManager_Startup" value="16" eventGUID="3c59b640-5c5f-4aff-b2aa-4c08ba1231c8" message="Startup of the driver manager service.">
+    </task>
+    <task name="DriverManager_CreateHost" value="17" eventGUID="4ca6210c-dfd0-4f59-a7c5-16bde1c4d89f" message="Creation of a new driver host process.">
+    </task>
+    <task name="DriverManager_ShutdownHost" value="18" eventGUID="74e7bcc4-50d3-4395-8dd3-6733cac699e0" message="Shutdown of a driver host process.">
+    </task>
+    <task name="Host_Startup" value="32" eventGUID="30ba0d00-b0dd-45b5-aa11-9f47ebe06e16" message="Startup of a new driver host process.">
+    </task>
+    <task name="Host_DeviceArrival" value="33" eventGUID="570e0a75-5f4d-471a-b6e1-cb727f1eb250" message="Loading drivers to control a newly discovered device.">
+    </task>
+    <task name="Host_PnpOperation" value="37" eventGUID="9ec0ece4-c06b-464f-b35d-b485c6e3b68f" message="Pnp or Power Management operation to a particular device.">
+    </task>
+    <task name="Host_Shutdown" value="41" eventGUID="3c93d137-2148-4ffa-81f4-4457184daac8" message="Shutdown of a driver host process.">
+    </task>
+    <task name="Installation" value="48" eventGUID="e26225b2-3c55-4c8c-a9b2-94d6cd72a138" message="Installation or update of device drivers.">
+    </task>
+    <task name="UMDF_Crash" value="64" eventGUID="4064201e-a283-4824-a76d-11f58f85be14" message="User-mode Driver problems.">
+    </task>
+    <task name="Fx_PnpOperation" value="80" eventGUID="1dcb8db8-6b98-4e58-a9e9-cc43c30d07b1" message="Pnp or Power Management operation to a particular driver in a device stack.">
+    </task>
+    <task name="PowerTransition_Driver" value="96" eventGUID="98d390f0-891b-46c0-9a03-cfdfe20e8e85" message="">
+    </task>
+    <task name="Reflector_Startup" value="101" eventGUID="6625b667-c360-4f2c-872a-0f67026fb381" message="Startup of the UMDF reflector">
+    </task>
+    <task name="Performance_Coinstaller_Device_Installation" value="112" eventGUID="3279b149-4a7e-4143-82cc-9629896c8fb1" message="Performance measurement for installation or update of device drivers.">
+    </task>
+    <task name="Performance_Coinstaller_PreDevice_Installation" value="113" eventGUID="d04a37a7-3fb9-4627-8f16-b9cd5f00616a" message="Performance measurement for predevice install phase.">
+    </task>
+    <task name="Performance_Coinstaller_PostDevice_Installation" value="114" eventGUID="b0996c15-3ceb-4169-ae9c-0261838c0d84" message="Performance measurement for postdevice install phase.">
+    </task>
+    <task name="Performance_Coinstaller_Framework_Update" value="115" eventGUID="41c960ad-c616-4d31-b02c-51d9fbf7eb99" message="Performance measurement for framework update.">
+    </task>
+    <task name="UMDF_Test" value="116" eventGUID="4ba1131a-5e74-41b2-8921-9a27041d9906" message="Testing UMDF">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="umdf:PowerTransition" mask="1" message="">
+    </keyword>
+    <keyword name="umdf:StartupTrigger" mask="2" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="1" opcode="1" channel="16" level="4" task="16" keywords="0x8000000000000000" message="The Driver Manager service started successfully">
+    </event>
+    <event value="1001" version="1" opcode="2" channel="16" level="1" task="16" keywords="0x8000000000000000" message="The Driver Manager service failed to start.  The error reported was %2.">
+    </event>
+    <event value="1002" version="1" opcode="0" channel="16" level="4" task="16" keywords="0x8000000000000000" message="The Driver Manager service was stopped">
+    </event>
+    <event value="1003" version="1" opcode="1" channel="16" level="4" task="17" keywords="0x8000000000000000" message="The Driver Manager service is starting a host process for device %3.">
+    </event>
+    <event value="1004" version="1" opcode="2" channel="16" level="4" task="17" keywords="0x8000000000000000" message="The host process (%1) started successfully.">
+    </event>
+    <event value="1005" version="1" opcode="2" channel="16" level="2" task="17" keywords="0x8000000000000000" message="The host process (%1) failed to start successfully.  The error reported was %2.">
+    </event>
+    <event value="1006" version="1" opcode="1" channel="16" level="4" task="18" keywords="0x8000000000000000" message="The host process (%1) is being asked to shutdown.">
+    </event>
+    <event value="1007" version="1" opcode="0" channel="16" level="2" task="18" keywords="0x8000000000000000" message="The host process (%1) has a problem (%2) and is being terminated.">
+    </event>
+    <event value="1008" version="1" opcode="2" channel="16" level="4" task="18" keywords="0x8000000000000000" message="The host process (%1) has been shutdown.">
+    </event>
+    <event value="2000" version="1" opcode="1" channel="16" level="4" task="32" keywords="0x8000000000000000" message="The UMDF Host Process (%1) is starting up.">
+    </event>
+    <event value="2001" version="1" opcode="2" channel="16" level="4" task="32" keywords="0x8000000000000000" message="The UMDF Host Process (%1) started successfully.">
+    </event>
+    <event value="2002" version="1" opcode="2" channel="16" level="2" task="32" keywords="0x8000000000000000" message="The UMDF Host Process (%1) failed to start successfully.  The error reported was %2.">
+    </event>
+    <event value="2003" version="1" opcode="1" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The UMDF Host Process (%1) has been asked to load drivers for device %2.">
+    </event>
+    <event value="2004" version="1" opcode="1" channel="16" level="5" task="33" keywords="0x8000000000000000" message="The UMDF Host is loading driver %4 at level %3 for device %2.">
+    </event>
+    <event value="2005" version="1" opcode="0" channel="16" level="5" task="33" keywords="0x8000000000000000" message="The UMDF Host Process (%1) has loaded module %3 while loading drivers for device %2.">
+    </event>
+    <event value="2006" version="1" opcode="2" channel="16" level="5" task="33" keywords="0x8000000000000000" message="The UMDF Host successfully loaded the driver at level %3.">
+    </event>
+    <event value="2007" version="1" opcode="2" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The UMDF Host failed to load the driver at level %3.  The error reported was %4.">
+    </event>
+    <event value="2010" version="1" opcode="2" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The UMDF Host Process (%1) has successfully loaded drivers for device %2.">
+    </event>
+    <event value="2011" version="1" opcode="2" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The UMDF Host Process (%1) has failed to load drivers for device %2.  The error reported was %3">
+    </event>
+    <event value="2100" version="1" opcode="1" channel="16" level="4" task="37" keywords="0x8000000000000000" message="Received a Pnp or Power operation (%3, %4) for device %2.">
+    </event>
+    <event value="2101" version="1" opcode="2" channel="16" level="4" task="37" keywords="0x8000000000000000" message="Completed a Pnp or Power operation (%3, %4) for device %2 with status %9.">
+    </event>
+    <event value="2102" version="1" opcode="2" channel="16" level="4" task="37" keywords="0x8000000000000000" message="Forwarded a finished Pnp or Power operation (%3, %4) to the lower driver for device %2 with status %9.">
+    </event>
+    <event value="2103" version="1" opcode="2" channel="16" level="2" task="37" keywords="0x8000000000000000" message="Completed a Pnp or Power operation (%3, %4) for device %2 with status %9.">
+    </event>
+    <event value="2105" version="1" opcode="1" channel="16" level="4" task="37" keywords="0x8000000000000000" message="Forwarded a Pnp or Power operation (%3, %4) for device %2 to the lower driver with status %9">
+    </event>
+    <event value="2106" version="1" opcode="1" channel="16" level="4" task="37" keywords="0x8000000000000000" message="Received a Pnp or Power operation (%3, %4) for device %2 which was completed by the lower drivers with status %9">
+    </event>
+    <event value="2107" version="1" opcode="1" channel="16" level="2" task="37" keywords="0x8000000000000000" message="Received a Pnp or Power operation (%3, %4) for device %2 which was completed by the lower drivers with status %9">
+    </event>
+    <event value="2900" version="1" opcode="1" channel="16" level="4" task="41" keywords="0x8000000000000000" message="The UMDF Host (%1) has been asked to shutdown.">
+    </event>
+    <event value="2901" version="1" opcode="2" channel="16" level="4" task="41" keywords="0x8000000000000000" message="The UMDF Host (%1) has shutdown.">
+    </event>
+    <event value="3000" version="1" opcode="1" channel="16" level="5" task="80" keywords="0x8000000000000000" message="UMDF State Machine %4 start processing event %5 (Queueing %6)">
+    </event>
+    <event value="3001" version="1" opcode="0" channel="16" level="5" task="80" keywords="0x8000000000000000" message="UMDF State Machine %4 dropped event %5">
+    </event>
+    <event value="3010" version="1" opcode="1" channel="16" level="4" task="80" keywords="0x8000000000000000" message="UMDF State Machine %4 state change from %5 to %7 on event %6">
+    </event>
+    <event value="3011" version="1" opcode="2" channel="16" level="5" task="80" keywords="0x8000000000000000" message="UMDF State Machine %4 event processing finished in state %5">
+    </event>
+    <event value="3020" version="1" opcode="2" channel="16" level="5" task="80" keywords="0x8000000000000000" message="UMDF State Machine %4 event processing stopped in state %5">
+    </event>
+    <event value="10000" version="1" opcode="1" channel="8" level="4" task="48" keywords="0x2000000000000000" message="A driver package which uses user-mode driver framework version %2 is being installed on device %1.">
+    </event>
+    <event value="10001" version="1" opcode="0" channel="8" level="4" task="48" keywords="0x2000000000000000" message="The UMDF service %1 (CLSID %2) was installed.  It requires framework version %3 or higher.">
+    </event>
+    <event value="10002" version="1" opcode="0" channel="8" level="4" task="48" keywords="0x2000000000000000" message="The UMDF service %1 (CLSID %2) was upgraded.  It requires framework version %3 or higher.">
+    </event>
+    <event value="10100" version="1" opcode="2" channel="8" level="4" task="48" keywords="0x2000000000000000" message="The driver package installation has succeeded.">
+    </event>
+    <event value="10101" version="1" opcode="2" channel="8" level="2" task="48" keywords="0x2000000000000000" message="The driver package installation has failed.  The final status was %1.">
+    </event>
+    <event value="10110" version="1" opcode="0" channel="8" level="1" task="64" keywords="0x2000000000000000" message="A problem has occurred with one or more user-mode drivers and the hosting process has been terminated.  This may temporarily interrupt your ability to access the devices.">
+    </event>
+    <event value="10111" version="1" opcode="0" channel="8" level="1" task="64" keywords="0x2000000000000000" message="The device %2 (location %3) is offline due to a user-mode driver crash.  Windows will attempt to restart the device %5 more times.  Please contact the device manufacturer for more information about this problem.">
+    </event>
+    <event value="10112" version="1" opcode="0" channel="8" level="1" task="64" keywords="0x2000000000000000" message="The device %2 (location %3) is offline due to a user-mode device crash.  Windows will no longer attempt to restart this device because the maximum restart limit has been reached.  Disconnecting the device and reconnecting it, or disabling it and re-enabling it from the device manager, will reset this limit and allow the device to be accessed again.  Please contact the device manufacturer for more information about this problem.">
+    </event>
+    <event value="10113" version="1" opcode="0" channel="8" level="2" task="32" keywords="0x2000000000000000" message="The device %2 was unable to start due to conflict between the settings for driver %5 (%3 - %4) and the other drivers.  Windows will not be able to start this device.  Please contact the device manufacturer for assistance.">
+    </event>
+    <event value="10114" version="1" opcode="0" channel="8" level="4" task="101" keywords="0x2000000000000002" message="The UMDF reflector was unable to complete startup because the %2 service was not found.  This service may be started later during boot, at which point Windows will attempt to start the device again.">
+    </event>
+    <event value="19999" version="1" opcode="0" channel="8" level="4" task="116" keywords="0x2000000000000000" message="UMDF Test Event (%1)">
+    </event>
+    <event value="20030" version="1" opcode="1" channel="17" level="4" task="96" keywords="0x4000000000000001" message="Power IRP related event in the User-mode Driver Frameworks Host Process">
+    </event>
+    <event value="20031" version="1" opcode="2" channel="17" level="4" task="96" keywords="0x4000000000000001" message="Power IRP related event in the User-mode Driver Frameworks Host Process">
+    </event>
+    <event value="20032" version="1" opcode="32" channel="17" level="4" task="96" keywords="0x4000000000000001" message="Power IRP related event in the User-mode Driver Frameworks Host Process">
+    </event>
+    <event value="20033" version="1" opcode="33" channel="17" level="4" task="96" keywords="0x4000000000000001" message="Power IRP related event in the User-mode Driver Frameworks Host Process">
+    </event>
+    <event value="30000" version="1" opcode="1" channel="16" level="4" task="112" keywords="0x8001000000000000" message="A driver package which uses user-mode driver framework version %2 is being installed on device %1.">
+    </event>
+    <event value="30001" version="1" opcode="2" channel="16" level="4" task="112" keywords="0x8001000000000000" message="The driver package installation has finished. The final status was %1.">
+    </event>
+    <event value="30002" version="1" opcode="1" channel="16" level="4" task="113" keywords="0x8001000000000000" message="PreDevice installation (UMDF version %2) is starting for device %1.">
+    </event>
+    <event value="30003" version="1" opcode="2" channel="16" level="4" task="113" keywords="0x8001000000000000" message="PreDevice installation has finished. The final status was %1.">
+    </event>
+    <event value="30004" version="1" opcode="1" channel="16" level="4" task="114" keywords="0x8001000000000000" message="PostDevice installation (UMDF version %2) is starting for device %1.">
+    </event>
+    <event value="30005" version="1" opcode="2" channel="16" level="4" task="114" keywords="0x8001000000000000" message="PostDevice installation has finished. The final status was %1.">
+    </event>
+    <event value="30006" version="1" opcode="1" channel="16" level="4" task="115" keywords="0x8001000000000000" message="UMDF update has started.">
+    </event>
+    <event value="30007" version="1" opcode="2" channel="16" level="4" task="115" keywords="0x8001000000000000" message="UMDF has been updated. The final status was %1.">
+    </event>
+  </events>
+</provider>

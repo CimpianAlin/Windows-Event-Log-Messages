@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ApplicationResourceManagementSystem" guid="770ca594-b467-4811-b355-28f5e5706987" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=MrmCoreR.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\MrmCoreR.dll" messageFileName="C:\Windows\system32\MrmCoreR.dll" message="Microsoft-Windows-ApplicationResourceManagementSystem" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ApplicationResourceManagementSystem/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-ApplicationResourceManagementSystem/Operational" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Mrt_WinRt_APIs_Task" value="2000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_ResourceManagerQueue_GetString" value="2001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_Runtime_GetValue_Task" value="2002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_Runtime_GetSubtree_Task" value="2003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_Runtime_GetValue_Failed_Task" value="2004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_Runtime_Initialization_Failed_Task" value="2005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_Runtime_Initialization_Info_Task" value="2006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_ResourcePack_Merge_Task" value="2007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_ResourceManagerQueue_Reset" value="2008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_ResourceManagerQueue_GetInternalReferenceBlobForManifestValue" value="2009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_ResourceManager_GetStringValueForManifestField" value="2010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_WinRT_PerView_Context_APIs_Task" value="2011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_WinRT_SystemComponent_APIs_Task" value="2012" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_WinRT_Error_Task" value="2013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_General_Warning_Task" value="2014" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_ResourcePack_General_Informational_Task" value="2015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Mrt_COM_APIs_Task" value="2016" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerFactory GetCurrent API enter">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerFactory GetCurrent API exit">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerFactory IsResourceReference API enter">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerFactory IsResourceReference API exit">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager GetMainResourceMap API enter">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager GetMainResourceMap API exit">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager GetAllResourceMaps API enter">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager GetAllResourceMaps API exit">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager GetDefaultContext API enter">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager GetDefaultContext API exit">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager LoadPriFiles API enter">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager LoadPriFiles API exit">
+    </event>
+    <event value="13" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager UnloadPriFiles API enter">
+    </event>
+    <event value="14" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager UnloadPriFiles API exit">
+    </event>
+    <event value="15" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager Reset API enter">
+    </event>
+    <event value="16" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManager Reset API exit">
+    </event>
+    <event value="17" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetUri API enter">
+    </event>
+    <event value="18" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetUri API exit">
+    </event>
+    <event value="19" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetResources API enter">
+    </event>
+    <event value="20" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetResources API exit">
+    </event>
+    <event value="21" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetValue API enter">
+    </event>
+    <event value="22" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetValue API exit">
+    </event>
+    <event value="23" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetValueForContext API enter">
+    </event>
+    <event value="24" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetValueForContext API exit">
+    </event>
+    <event value="25" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetSubtree API enter">
+    </event>
+    <event value="26" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetSubtree API exit">
+    </event>
+    <event value="27" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap Lookup API enter">
+    </event>
+    <event value="28" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap Lookup API exit">
+    </event>
+    <event value="29" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetSize API enter">
+    </event>
+    <event value="30" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetSize API exit">
+    </event>
+    <event value="31" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap HasKey API enter">
+    </event>
+    <event value="32" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap HasKey API exit">
+    </event>
+    <event value="33" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap Split API enter">
+    </event>
+    <event value="34" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap Split API exit">
+    </event>
+    <event value="35" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap First API enter">
+    </event>
+    <event value="36" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap First API exit">
+    </event>
+    <event value="37" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap_Iterator GetCurrent API enter">
+    </event>
+    <event value="38" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap_Iterator GetCurrent API exit">
+    </event>
+    <event value="39" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap_Iterator GetHasCurrent API enter">
+    </event>
+    <event value="40" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap_Iterator GetHasCurrent API exit">
+    </event>
+    <event value="41" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap_Iterator MoveNext API enter">
+    </event>
+    <event value="42" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap_Iterator MoveNext API exit">
+    </event>
+    <event value="43" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView Lookup API enter">
+    </event>
+    <event value="44" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView Lookup API exit">
+    </event>
+    <event value="45" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView GetSize API enter">
+    </event>
+    <event value="46" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView GetSize API exit">
+    </event>
+    <event value="47" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView HasKey API enter">
+    </event>
+    <event value="48" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView HasKey API exit">
+    </event>
+    <event value="49" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView Split API enter">
+    </event>
+    <event value="50" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView Split API exit">
+    </event>
+    <event value="51" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView First API enter">
+    </event>
+    <event value="52" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView First API exit">
+    </event>
+    <event value="53" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView_Iterator GetCurrent API enter">
+    </event>
+    <event value="54" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView_Iterator GetCurrent API exit">
+    </event>
+    <event value="55" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView_Iterator GetHasCurrent API enter">
+    </event>
+    <event value="56" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView_Iterator GetHasCurrent API exit">
+    </event>
+    <event value="57" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView_Iterator MoveNext API enter">
+    </event>
+    <event value="58" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapMapView_Iterator MoveNext API exit">
+    </event>
+    <event value="59" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoader GetString API enter">
+    </event>
+    <event value="60" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoader GetString API exit">
+    </event>
+    <event value="63" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory CreateResourceLoaderByName API enter">
+    </event>
+    <event value="64" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory CreateResourceLoaderByName API exit">
+    </event>
+    <event value="65" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory GetStringForReference API enter">
+    </event>
+    <event value="66" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory GetStringForReference API exit">
+    </event>
+    <event value="69" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory ActivateInstance API enter">
+    </event>
+    <event value="70" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory ActivateInstance API exit">
+    </event>
+    <event value="71" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext GetQualifierValues API enter">
+    </event>
+    <event value="72" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext GetQualifierValues API exit">
+    </event>
+    <event value="73" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext Reset API enter">
+    </event>
+    <event value="74" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext Reset API exit">
+    </event>
+    <event value="75" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext ResetQualifierValues API enter">
+    </event>
+    <event value="76" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext ResetQualifierValues API exit">
+    </event>
+    <event value="77" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext OverrideToMatch API enter">
+    </event>
+    <event value="78" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext OverrideToMatch API exit">
+    </event>
+    <event value="79" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext Clone API enter">
+    </event>
+    <event value="80" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext Clone API exit">
+    </event>
+    <event value="81" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext GetLanguage API enter">
+    </event>
+    <event value="82" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext GetLanguage API exit">
+    </event>
+    <event value="83" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext PutLanguage API enter">
+    </event>
+    <event value="84" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext PutLanguage API exit">
+    </event>
+    <event value="85" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext GetHomeRegion API enter">
+    </event>
+    <event value="86" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext GetHomeRegion API exit">
+    </event>
+    <event value="87" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext PutHomeRegion API enter">
+    </event>
+    <event value="88" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext PutHomeRegion API exit">
+    </event>
+    <event value="89" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext GetScale API enter">
+    </event>
+    <event value="90" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext GetScale API exit">
+    </event>
+    <event value="91" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext PutScale API enter">
+    </event>
+    <event value="92" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext PutScale API exit">
+    </event>
+    <event value="93" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext GetContrast API enter">
+    </event>
+    <event value="94" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext GetContrast API exit">
+    </event>
+    <event value="95" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext PutContrast API enter">
+    </event>
+    <event value="96" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContext PutContrast API exit">
+    </event>
+    <event value="97" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory CreateMatchingContext API enter">
+    </event>
+    <event value="98" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory CreateMatchingContext API exit">
+    </event>
+    <event value="99" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory ActivateInstance API enter">
+    </event>
+    <event value="100" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory ActivateInstance API exit">
+    </event>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetAt API enter">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetAt API exit">
+    </event>
+    <event value="103" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetSize API enter">
+    </event>
+    <event value="104" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetSize API exit">
+    </event>
+    <event value="105" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView IndexOf API enter">
+    </event>
+    <event value="106" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView IndexOf API exit">
+    </event>
+    <event value="107" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetMany API enter">
+    </event>
+    <event value="108" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetMany API exit">
+    </event>
+    <event value="109" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView First API enter">
+    </event>
+    <event value="110" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView First API exit">
+    </event>
+    <event value="111" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap Lookup API enter">
+    </event>
+    <event value="112" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap Lookup API exit">
+    </event>
+    <event value="113" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap GetSize API enter">
+    </event>
+    <event value="114" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap GetSize API exit">
+    </event>
+    <event value="115" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap HasKey API enter">
+    </event>
+    <event value="116" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap HasKey API exit">
+    </event>
+    <event value="117" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap GetView API enter">
+    </event>
+    <event value="118" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap GetView API exit">
+    </event>
+    <event value="119" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap Insert API enter">
+    </event>
+    <event value="120" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap Insert API exit">
+    </event>
+    <event value="121" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap Remove API enter">
+    </event>
+    <event value="122" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap Remove API exit">
+    </event>
+    <event value="123" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap Clear API enter">
+    </event>
+    <event value="124" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap Clear API exit">
+    </event>
+    <event value="125" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap AddMapChanged API enter">
+    </event>
+    <event value="126" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap AddMapChanged API exit">
+    </event>
+    <event value="127" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap RemoveMapChanged API enter">
+    </event>
+    <event value="128" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap RemoveMapChanged API exit">
+    </event>
+    <event value="129" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap First API enter">
+    </event>
+    <event value="130" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap First API exit">
+    </event>
+    <event value="131" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap_Iterator GetCurrent API enter">
+    </event>
+    <event value="132" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap_Iterator GetCurrent API exit">
+    </event>
+    <event value="133" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap_Iterator GetHasCurrent API enter">
+    </event>
+    <event value="134" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap_Iterator GetHasCurrent API exit">
+    </event>
+    <event value="135" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap_Iterator MoveNext API enter">
+    </event>
+    <event value="136" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierObservableMap_Iterator MoveNext API exit">
+    </event>
+    <event value="137" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierMapView Lookup API enter">
+    </event>
+    <event value="138" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierMapView Lookup API exit">
+    </event>
+    <event value="139" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierMapView GetSize API enter">
+    </event>
+    <event value="140" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierMapView GetSize API exit">
+    </event>
+    <event value="141" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierMapView HasKey API enter">
+    </event>
+    <event value="142" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierMapView HasKey API exit">
+    </event>
+    <event value="143" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierMapView Split API enter">
+    </event>
+    <event value="144" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierMapView Split API exit">
+    </event>
+    <event value="145" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierMapView First API enter">
+    </event>
+    <event value="146" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierMapView First API exit">
+    </event>
+    <event value="147" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate GetQualifiers API enter">
+    </event>
+    <event value="148" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate GetQualifiers API exit">
+    </event>
+    <event value="149" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate GetIsMatch API enter">
+    </event>
+    <event value="150" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate GetIsMatch API exit">
+    </event>
+    <event value="151" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate GetIsMatchAsDefault API enter">
+    </event>
+    <event value="152" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate GetIsMatchAsDefault API exit">
+    </event>
+    <event value="153" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate GetIsDefault API enter">
+    </event>
+    <event value="154" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate GetIsDefault API exit">
+    </event>
+    <event value="155" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate ToString API enter">
+    </event>
+    <event value="156" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate ToString API exit">
+    </event>
+    <event value="157" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate ToFile API enter">
+    </event>
+    <event value="158" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate ToFile API exit">
+    </event>
+    <event value="159" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidateVectorView GetAt API enter">
+    </event>
+    <event value="160" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidateVectorView GetAt API exit">
+    </event>
+    <event value="161" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidateVectorView GetSize API enter">
+    </event>
+    <event value="162" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidateVectorView GetSize API exit">
+    </event>
+    <event value="163" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidateVectorView IndexOf API enter">
+    </event>
+    <event value="164" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidateVectorView IndexOf API exit">
+    </event>
+    <event value="165" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidateVectorView GetMany API enter">
+    </event>
+    <event value="166" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidateVectorView GetMany API exit">
+    </event>
+    <event value="167" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidateVectorView First API enter">
+    </event>
+    <event value="168" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidateVectorView First API exit">
+    </event>
+    <event value="169" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource GetURI API enter">
+    </event>
+    <event value="170" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource GetURI API exit">
+    </event>
+    <event value="171" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource GetCandidates API enter">
+    </event>
+    <event value="172" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource GetCandidates API exit">
+    </event>
+    <event value="173" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource Resolve API enter">
+    </event>
+    <event value="174" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource Resolve API exit">
+    </event>
+    <event value="175" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource ResolveForContext API enter">
+    </event>
+    <event value="176" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource ResolveForContext API exit">
+    </event>
+    <event value="177" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource ResolveAll API enter">
+    </event>
+    <event value="178" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource ResolveAll API exit">
+    </event>
+    <event value="179" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource ResolveAllForContext API enter">
+    </event>
+    <event value="180" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement NamedResource ResolveAllForContext API exit">
+    </event>
+    <event value="181" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetAt API enter">
+    </event>
+    <event value="182" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetAt API exit">
+    </event>
+    <event value="183" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetSize API enter">
+    </event>
+    <event value="184" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetSize API exit">
+    </event>
+    <event value="185" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView IndexOf API enter">
+    </event>
+    <event value="186" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView IndexOf API exit">
+    </event>
+    <event value="187" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetMany API enter">
+    </event>
+    <event value="188" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView GetMany API exit">
+    </event>
+    <event value="189" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView First API enter">
+    </event>
+    <event value="190" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceQualifierVectorView First API exit">
+    </event>
+    <event value="191" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate GetQualifierValue API enter">
+    </event>
+    <event value="192" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate GetQualifierValue API exit">
+    </event>
+    <event value="194" version="0" opcode="1" channel="16" level="4" task="2002" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapInternal GetValue API enter">
+    </event>
+    <event value="195" version="0" opcode="2" channel="16" level="4" task="2002" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapInternal GetValue API exit">
+    </event>
+    <event value="196" version="0" opcode="1" channel="16" level="4" task="2001" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerQueueGetString API enter">
+    </event>
+    <event value="197" version="0" opcode="2" channel="16" level="4" task="2001" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerQueueGetString API exit">
+    </event>
+    <event value="198" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate ToStream API enter">
+    </event>
+    <event value="199" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceCandidate ToStream API exit">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="2" task="2004" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMap GetValue API failed">
+    </event>
+    <event value="201" version="0" opcode="1" channel="16" level="4" task="2003" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapInternal GetSubtree API enter">
+    </event>
+    <event value="202" version="0" opcode="2" channel="16" level="4" task="2003" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceMapInternal GetSubtree API exit">
+    </event>
+    <event value="230" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement Initialization, Get application merged folder for App Container">
+    </event>
+    <event value="231" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement Initialization, Get application merged folder for Non App Container">
+    </event>
+    <event value="239" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement Initialization Info">
+    </event>
+    <event value="240" version="0" opcode="0" channel="17" level="2" task="2005" keywords="0x4000000000000000" message="ApplicationResourceManagement Initialization Failed">
+    </event>
+    <event value="241" version="0" opcode="1" channel="16" level="4" task="2001" keywords="0x8000000000000000" message="CContext::GetHash Enter">
+    </event>
+    <event value="242" version="0" opcode="2" channel="16" level="4" task="2001" keywords="0x8000000000000000" message="CContext::GetHash Exit">
+    </event>
+    <event value="251" version="0" opcode="1" channel="16" level="4" task="2007" keywords="0x8000000000000000" message="MergeResourcePack API Enter">
+    </event>
+    <event value="252" version="0" opcode="2" channel="16" level="4" task="2007" keywords="0x8000000000000000" message="MergeResourcePack API Exit">
+    </event>
+    <event value="253" version="0" opcode="1" channel="16" level="4" task="2007" keywords="0x8000000000000000" message="ResourcePackMerge AddPriFile Enter">
+    </event>
+    <event value="254" version="0" opcode="2" channel="16" level="4" task="2007" keywords="0x8000000000000000" message="ResourcePackMerge AddPriFile Exit">
+    </event>
+    <event value="255" version="0" opcode="0" channel="17" level="2" task="2007" keywords="0x4000000000000000" message="Resource Pack Merge Operation Error">
+    </event>
+    <event value="256" version="0" opcode="0" channel="16" level="4" task="2007" keywords="0x8000000000000000" message="Resource Pack Merge Operation Info">
+    </event>
+    <event value="301" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement InitializeForCurrentApplication API enter">
+    </event>
+    <event value="302" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement RInitializeForCurrentApplication API exit">
+    </event>
+    <event value="303" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement UnifiedResourceView LoadPriFiles API enter">
+    </event>
+    <event value="304" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement UnifiedResourceView LoadPriFiles API exit">
+    </event>
+    <event value="305" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement Runtime LoadPriFiles API enter">
+    </event>
+    <event value="306" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement Runtime LoadPriFiles API exit">
+    </event>
+    <event value="307" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement UnifiedResourceView RemoveFileReference API enter">
+    </event>
+    <event value="308" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000000" message="ApplicationResourceManagement UnifiedResourceView RemoveFileReference API exit">
+    </event>
+    <event value="309" version="0" opcode="1" channel="16" level="4" task="2008" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerQueueReset API enter">
+    </event>
+    <event value="310" version="0" opcode="2" channel="16" level="4" task="2008" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerQueueReset API exit">
+    </event>
+    <event value="311" version="0" opcode="1" channel="16" level="4" task="2009" keywords="0x8000000000000000" message="ApplicationResourceManagement GetInternalReferenceBlobForManifestValue API enter">
+    </event>
+    <event value="312" version="0" opcode="2" channel="16" level="4" task="2009" keywords="0x8000000000000000" message="ApplicationResourceManagement GetInternalReferenceBlobForManifestValue API exit">
+    </event>
+    <event value="313" version="0" opcode="1" channel="16" level="4" task="2010" keywords="0x8000000000000000" message="ApplicationResourceManagement GetStringValueForManifestField API enter">
+    </event>
+    <event value="314" version="0" opcode="2" channel="16" level="4" task="2010" keywords="0x8000000000000000" message="ApplicationResourceManagement GetStringValueForManifestField API exit">
+    </event>
+    <event value="315" version="0" opcode="0" channel="16" level="4" task="2008" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerQueueReset API Queue Size">
+    </event>
+    <event value="317" version="0" opcode="1" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory GetCurrentView API enter">
+    </event>
+    <event value="318" version="0" opcode="2" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory GetCurrentView API exit">
+    </event>
+    <event value="319" version="0" opcode="1" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory GetCurrentViewWithName API enter">
+    </event>
+    <event value="320" version="0" opcode="2" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory GetCurrentViewWithName API exit">
+    </event>
+    <event value="321" version="0" opcode="1" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoader GetStringForUri API enter">
+    </event>
+    <event value="322" version="0" opcode="2" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoader GetStringForUri API exit">
+    </event>
+    <event value="323" version="0" opcode="1" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory GetForCurrentView API enter">
+    </event>
+    <event value="324" version="0" opcode="2" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory GetForCurrentView API exit">
+    </event>
+    <event value="325" version="0" opcode="1" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory SetGlobalQualifierValue API enter">
+    </event>
+    <event value="326" version="0" opcode="2" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory SetGlobalQualifierValue API exit">
+    </event>
+    <event value="327" version="0" opcode="1" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory ResetGlobalQualifierValues API enter">
+    </event>
+    <event value="328" version="0" opcode="2" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory ResetGlobalQualifierValues API exit">
+    </event>
+    <event value="329" version="0" opcode="1" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory ResetGlobalQualifierValuesForSpecifiedQualifiers API enter">
+    </event>
+    <event value="330" version="0" opcode="2" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory ResetGlobalQualifierValuesForSpecifiedQualifiers API exit">
+    </event>
+    <event value="331" version="0" opcode="1" channel="16" level="4" task="2012" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerStaticInternal GetResourceManagerForSystemProfile API enter">
+    </event>
+    <event value="332" version="0" opcode="2" channel="16" level="4" task="2012" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerStaticInternal GetResourceManagerForSystemProfile API exit">
+    </event>
+    <event value="333" version="0" opcode="1" channel="16" level="4" task="2012" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerStaticInternal GetCurrentResourceManagerForSystemProfile API enter">
+    </event>
+    <event value="334" version="0" opcode="2" channel="16" level="4" task="2012" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceManagerStaticInternal GetCurrentResourceManagerForSystemProfile API exit">
+    </event>
+    <event value="335" version="0" opcode="1" channel="16" level="4" task="2012" keywords="0x8000000000000000" message="ApplicationResourceManagement SystemResourceManagerExtensions GetDefaultResourceContextForCurrentThread API enter">
+    </event>
+    <event value="336" version="0" opcode="2" channel="16" level="4" task="2012" keywords="0x8000000000000000" message="ApplicationResourceManagement SystemResourceManagerExtensions GetDefaultResourceContextForCurrentThread API exit">
+    </event>
+    <event value="337" version="0" opcode="1" channel="16" level="4" task="2012" keywords="0x8000000000000000" message="ApplicationResourceManagement SystemResourceManagerExtensions GetMrtResourceManagerForResourceManager API enter">
+    </event>
+    <event value="338" version="0" opcode="2" channel="16" level="4" task="2012" keywords="0x8000000000000000" message="ApplicationResourceManagement SystemResourceManagerExtensions GetMrtResourceManagerForResourceManager API exit">
+    </event>
+    <event value="339" version="0" opcode="1" channel="16" level="4" task="2012" keywords="0x8000000000000000" message="ApplicationResourceManagement SystemResourceContextExtensions GetMrtResourceContextForResourceContext API enter">
+    </event>
+    <event value="340" version="0" opcode="2" channel="16" level="4" task="2012" keywords="0x8000000000000000" message="ApplicationResourceManagement SystemResourceContextExtensions GetMrtResourceContextForResourceContext API exit">
+    </event>
+    <event value="341" version="0" opcode="0" channel="17" level="2" task="2013" keywords="0x4000000000000000" message="ApplicationResourceManagement MRT WinRT APIs errors ">
+    </event>
+    <event value="342" version="0" opcode="0" channel="17" level="3" task="2014" keywords="0x4000000000000000" message="ApplicationResourceManagement MRT APIs warning ">
+    </event>
+    <event value="361" version="0" opcode="1" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory GetForViewIndependentUse API enter">
+    </event>
+    <event value="362" version="0" opcode="2" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceContextFactory GetForViewIndependentUse API exit">
+    </event>
+    <event value="363" version="0" opcode="1" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory GetForViewIndependentUse API enter">
+    </event>
+    <event value="364" version="0" opcode="2" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory GetForViewIndependentUse API exit">
+    </event>
+    <event value="365" version="0" opcode="1" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory GetForViewIndependentUseWithName API enter">
+    </event>
+    <event value="366" version="0" opcode="2" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="ApplicationResourceManagement ResourceLoaderFactory GetForViewIndependentUseWithName API exit">
+    </event>
+    <event value="371" version="0" opcode="1" channel="16" level="4" task="2007" keywords="0x8000000000000000" message="ApplicationResourceManagement MergeSystemPriFiles API enter">
+    </event>
+    <event value="372" version="0" opcode="2" channel="16" level="4" task="2007" keywords="0x8000000000000000" message="ApplicationResourceManagement MergeSystemPriFiles API exit">
+    </event>
+    <event value="373" version="0" opcode="1" channel="16" level="4" task="2007" keywords="0x8000000000000000" message="ApplicationResourceManagement GetMergedSystemPri API enter">
+    </event>
+    <event value="374" version="0" opcode="2" channel="16" level="4" task="2007" keywords="0x8000000000000000" message="ApplicationResourceManagement GetMergedSystemPri API exit">
+    </event>
+    <event value="375" version="0" opcode="0" channel="17" level="4" task="2015" keywords="0x4000000000000000" message="ApplicationResourceManagement MRT APIs informational ">
+    </event>
+    <event value="381" version="0" opcode="1" channel="16" level="4" task="2016" keywords="0x8000000000000000" message="ResourceMap GetCandidateForContext MRT COM API enter">
+    </event>
+    <event value="382" version="0" opcode="2" channel="16" level="4" task="2016" keywords="0x8000000000000000" message="ResourceMap GetCandidateForContext MRT COM API exit">
+    </event>
+    <event value="383" version="0" opcode="1" channel="16" level="4" task="2016" keywords="0x8000000000000000" message="ResourceMap GetCandidateWithQuery MRT COM API enter">
+    </event>
+    <event value="384" version="0" opcode="2" channel="16" level="4" task="2016" keywords="0x8000000000000000" message="ResourceMap GetCandidateWithQuery MRT COM API exit">
+    </event>
+  </events>
+</provider>

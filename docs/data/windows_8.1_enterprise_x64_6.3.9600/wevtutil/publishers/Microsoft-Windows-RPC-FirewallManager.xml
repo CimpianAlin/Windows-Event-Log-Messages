@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-RPC-FirewallManager" guid="f997cd11-0fc9-4ab4-acba-bc742a4c0dd3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=RpcEpMap.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\RpcEpMap.dll" messageFileName="C:\Windows\system32\RpcEpMap.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="RPC_EVENTLOG_ERROR_CATEGORY" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="RPC Error">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2147483650" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An attempt to retrieve firewall filter with key %1 has failed with error %2. 
+RPC is not able to enforce this filter.">
+    </event>
+    <event value="2147483651" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An attempt to add firewall filter with key %1 has failed with error %2. 
+RPC is not able to add this filter.">
+    </event>
+    <event value="2147483652" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An attempt to delete firewall filter with key %1 has failed with error %2. 
+RPC is not able to remove this filter. 
+User Action Verify that the machine has sufficient memory.">
+    </event>
+  </events>
+</provider>

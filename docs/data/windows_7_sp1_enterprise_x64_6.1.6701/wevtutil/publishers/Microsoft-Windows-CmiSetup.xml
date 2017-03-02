@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-CmiSetup" guid="75ebc33e-0cc6-49da-8cd9-8903a5222aa0" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7601.17514&amp;FileName=CmiSetup.dll&amp;FileVer=6.1.7601.17514" resourceFileName="C:\Windows\system32\oobe\CmiSetup.dll" messageFileName="C:\Windows\system32\oobe\CmiSetup.dll" message="Microsoft-Windows-CmiSetup" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-CmiSetup/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Setup" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tskCmiConfigInstall" value="1000" eventGUID="c719ce52-9545-4c08-aca8-0f3c42b6b9de" message="CMI Configuration">
+    </task>
+    <task name="tskCmiConfigInstallWork" value="2000" eventGUID="6fa8aebf-3323-4231-bffd-dc0b54d6a73f" message="CMI Execute Changes">
+    </task>
+    <task name="tskCbsDoOnlineInstall" value="3000" eventGUID="cd5f25f1-1717-4c21-8818-8db698303259" message="CBS Online Install">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="keyPerformance" mask="1" message="Performance">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="1000" keywords="0x8000000000000001" message="CMI Configuration Started">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="16" level="4" task="1000" keywords="0x8000000000000001" message="CMI Configuration completed with status %1.">
+    </event>
+    <event value="2001" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000001" message="Executing CMI changes.">
+    </event>
+    <event value="2002" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000001" message="CMI changes completed with status %1.">
+    </event>
+    <event value="3001" version="0" opcode="1" channel="16" level="4" task="3000" keywords="0x8000000000000001" message="Performing CBS Online Install.">
+    </event>
+    <event value="3002" version="0" opcode="2" channel="16" level="4" task="3000" keywords="0x8000000000000001" message="CBS Online Install completed with status %1.">
+    </event>
+  </events>
+</provider>

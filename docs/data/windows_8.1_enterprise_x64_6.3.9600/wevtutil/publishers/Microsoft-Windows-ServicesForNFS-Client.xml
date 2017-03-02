@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ServicesForNFS-Client" guid="746a1133-bc1e-47c7-8c95-3d52c39114f9" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=nfsclnt.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\nfsclnt.exe" messageFileName="C:\Windows\system32\nfsclnt.exe" message="Microsoft-Windows-ServicesForNFS-Client" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ServicesForNFS-Client/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-ServicesForNFS-Client/IdentityMapping" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="5000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Service Control Manager failed a request for Client for NFS to initialize %1.
+
+Client for NFS cannot start.
+
+Windows(R) may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Service Control Manager failed a request to update service status %1.
+
+Client for NFS cannot properly reflect service status in administrative tools, such as Computer Management.
+
+Windows(R) may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows(R) Sockets failed a request to initialize %1.
+
+Client for NFS cannot start.
+
+Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows(R) failed a request to initialize the Network File System (NFS) redirector %1.
+
+Client for NFS cannot start.
+
+Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows(R) failed a request to open a communications port to the Network File System (NFS) redirector %1.
+
+Client for NFS cannot start.
+
+Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows(R) failed a request to create a supporting process thread %1.
+
+Client for NFS cannot start.
+
+Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows(R) remote procedure call (RPC) subsystem failed a request to register Client for NFS %1.
+
+Client for NFS cannot start.
+
+Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5007" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows(R) failed a request to create a security descriptor %1.
+
+Client for NFS cannot start.
+
+Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5008" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows(R) failed a request to unload the Network File System (NFS) redirector while Client for NFS was stopping %1.
+
+Client for NFS stopped anyway and may not be able to restart.
+
+Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Client for NFS started successfully.">
+    </event>
+    <event value="5010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Client for NFS stopped successfully.">
+    </event>
+    <event value="5011" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows(R) remote procedure call (RPC) subsystem failed a request to clean up after completing tasks for a client %1.
+
+To ensure internal consistency, Client for NFS stopped.
+
+Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5012" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows(R) failed a request to clean up after completing tasks for client %1.
+
+To ensure internal consistency, Client for NFS stopped.
+
+Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5013" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Windows(R) Lightweight Directory Access Protocol (LDAP) failed a request to connect to Active Directory Domain Services(R) for Windows user %1.
+
+Without the corresponding UNIX identity of the Windows user, the user cannot access Network File System (NFS) shared resources.
+
+Verify that the Windows user is in Active Directory Domain Services and has access permissions.">
+    </event>
+    <event value="5014" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The Active Directory Domain Services(R) uidNumber attribute is not set for Windows(R) user %1.
+
+Without the corresponding UNIX identity of the Windows user, the user cannot access Network File System (NFS) shared resources.
+
+Verify that the Active Directory Domain Services schema includes UNIX identity data, and then set the uidNumber attribute.">
+    </event>
+    <event value="5015" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="The Active Directory Domain Services(R) gidNumber attribute is not set for Windows(R) user %1.
+
+Without the corresponding UNIX identity of the Windows user, the user cannot access Network File System (NFS) shared resources.
+
+Verify that the Active Directory Domain Services schema includes UNIX identity data, and then set the gidNumber attribute.">
+    </event>
+    <event value="5100" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows(R) failed a request to access system resources associated with the Network File System (NFS) network provider.
+
+ If this problem persists, users may not be able to access NFS shared resources.
+
+ Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5101" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Windows(R) failed a request to communicate with the Network File System (NFS) redirector.
+
+ If this problem persists, users may not be able to access NFS shared resources.
+
+ Windows may be low on system resources.  Try increasing available system resources by closing programs, then start Client for NFS manually.">
+    </event>
+    <event value="5102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Client for NFS cannot communicate with the remote Network File System (NFS) server %1.
+
+ RPC Port Mapper (also known as Portmap and Rpcbind) may not be running on the remote NFS server.
+
+ Try starting RPC Port Mapper on the remote NFS server.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-RTWorkQueue-Threading" guid="e18d0fc9-9515-4232-98e4-89e456d8551b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.9600.16384&amp;FileName=rtworkq.dll&amp;FileVer=12.0.9600.16384" resourceFileName="C:\Windows\system32\rtworkq.dll" messageFileName="C:\Windows\system32\rtworkq.dll" message="Microsoft-Windows-RTWorkQueue-Threading" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="RTWorkQueueTheading" id="16" flags="0" message="RTWorkQueue Threading">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WorkQueue_Execute" value="583" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Execute">
+    </task>
+    <task name="WorkQueue_Queue" value="584" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Queue">
+    </task>
+    <task name="WorkQueue_Thread" value="588" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Thread">
+    </task>
+    <task name="MMCSS_Registration" value="595" eventGUID="00000000-0000-0000-0000-000000000000" message="MMCSS Registration">
+    </task>
+    <task name="WorkQueue_Queue_Create" value="602" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Queue_Create">
+    </task>
+    <task name="WorkQueue_Execute_Callback" value="603" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Execute callback">
+    </task>
+    <task name="WorkQueue_MMCSS" value="604" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: MMCSS Transition">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="4435" version="0" opcode="1" channel="16" level="5" task="583" keywords="0x8000000000000000" message="WorkQueue Execute: Start workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3">
+    </event>
+    <event value="4436" version="0" opcode="2" channel="16" level="5" task="583" keywords="0x8000000000000000" message="WorkQueue Execute: End workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3">
+    </event>
+    <event value="4437" version="0" opcode="1" channel="16" level="5" task="584" keywords="0x8000000000000000" message="WorkQueue Queue: WorkQueuePtr=%1 Start threads=%2 AsyncResult=%3">
+    </event>
+    <event value="4438" version="0" opcode="2" channel="16" level="5" task="584" keywords="0x8000000000000000" message="WorkQueue Queue: WorkQueuePtr=%1 End threads=%2 AsyncResult=%3">
+    </event>
+    <event value="4439" version="0" opcode="1" channel="16" level="4" task="588" keywords="0x8000000000000000" message="WorkQueue Thread: Start workqueue_ptr=%1 WorkQueueID=%2 ThreadCount=%3">
+    </event>
+    <event value="4440" version="0" opcode="2" channel="16" level="4" task="588" keywords="0x8000000000000000" message="WorkQueue Thread: End workqueue_ptr=%1 WorkQueueID=%2 ThreadCount=%3">
+    </event>
+    <event value="4454" version="0" opcode="1" channel="16" level="4" task="595" keywords="0x8000000000000000" message="MMCSS Registration Enter Queue=%1 ThreadID=%2 Handle=%3 Error=%4 Class=%5 Pri=%6 TaskID=%7">
+    </event>
+    <event value="4455" version="0" opcode="2" channel="16" level="4" task="595" keywords="0x8000000000000000" message="MMCSS Registration Enter Queue=%1 ThreadID=%2 Handle=%3 Error=%4 Class=%5 Pri=%6 TaskID=%7">
+    </event>
+    <event value="4472" version="0" opcode="1" channel="16" level="5" task="602" keywords="0x8000000000000000" message="WorkQueue Queue: WorkQueuePtr=%1 WorkQueueID=%2">
+    </event>
+    <event value="4473" version="0" opcode="2" channel="16" level="5" task="602" keywords="0x8000000000000000" message="WorkQueue Queue: WorkQueuePtr=%1 WorkQueueID=%2">
+    </event>
+    <event value="4474" version="0" opcode="1" channel="16" level="5" task="603" keywords="0x8000000000000000" message="WorkQueue Execute Callback: Start workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3">
+    </event>
+    <event value="4475" version="0" opcode="2" channel="16" level="5" task="603" keywords="0x8000000000000000" message="WorkQueue Execute Callback: End workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3">
+    </event>
+    <event value="4476" version="0" opcode="1" channel="16" level="5" task="604" keywords="0x8000000000000000" message="WorkQueue MMCSS: Start workqueue_ptr=%1 workQueueID=%2 Class=%3 Pri=%4">
+    </event>
+    <event value="4477" version="0" opcode="2" channel="16" level="5" task="604" keywords="0x8000000000000000" message="WorkQueue MMCSS: End workqueue_ptr=%1 workQueueID=%2 Class=%3 Pri=%4">
+    </event>
+  </events>
+</provider>

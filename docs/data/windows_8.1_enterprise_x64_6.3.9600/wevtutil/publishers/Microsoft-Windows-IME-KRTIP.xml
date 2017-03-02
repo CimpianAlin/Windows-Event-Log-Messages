@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IME-KRTIP" guid="e013e74b-97f4-4e1c-a120-596e5629ecfe" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\IME\IMEKR\imkrtip.dll" messageFileName="C:\Windows\system32\IME\IMEKR\imkrtip.dll" message="Microsoft-Windows-IME-KRTIP" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IME-KRTIP/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PerfTrack_IME_KOR_HWKBD_CandUIProcess" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME_KOR_HWKBD_CandUIProcess">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="50" keywords="0x8001000000000000" message="EAIME_IME_KOR_HWKBD_CandUIProcess_Info">
+    </event>
+  </events>
+</provider>

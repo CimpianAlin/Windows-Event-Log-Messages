@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-User-Loader" guid="b059b83f-d946-4b13-87ca-4292839dc2f2" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="Microsoft-Windows-User-Loader" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-User-Loader/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-User-Loader/Analytic" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="USER_LOADER_KEYWORD_DEPRECATED_DLL" mask="10" message="Deprecated dlls">
+    </keyword>
+    <keyword name="USER_LOADER_FATAL_CALLBACK_EXCEPTION" mask="20" message="Fatal user callback exception">
+    </keyword>
+    <keyword name="USER_LOADER_KEYWORD_LOAD_FAILURE" mask="40" message="A dll failed to load.">
+    </keyword>
+    <keyword name="USER_LOADER_LAUNCH_16BIT_APP" mask="80" message="Launch 16bit application">
+    </keyword>
+    <keyword name="USER_LOADER_KEYWORD_COMPONENT_ON_DEMAND" mask="100" message="Windows component on demand.">
+    </keyword>
+    <keyword name="USER_LOADER_KEYWORD_LOAD_FATAL_ERROR" mask="200" message="The Loader encountered a fatal error.">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000010" message="Deprecated module %1.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000020" message="Process %2 encountered a fatal user callback exception.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000040" message="Error status code %1 returned when %3 attempted to load dependency %2.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000080" message="The process launches a 16 bit process.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000100" message="Windows component on demand %1.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000200" message="The Loader encountered a fatal error while loading a thread from process image name %1.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000200" message="A fatal error occured during initalization of %1.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Error status code %1 returned when %3 attempted to load dependency %2.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x2000000000000200" message="The Loader encountered a fatal error running process image name %1.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Error status code %1 returned when %3 attempted to load dependency %2.">
+    </event>
+  </events>
+</provider>

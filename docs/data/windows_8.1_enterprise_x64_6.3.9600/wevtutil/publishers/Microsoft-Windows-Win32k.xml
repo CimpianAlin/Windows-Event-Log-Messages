@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Win32k" guid="8c416c79-d49b-4f01-a467-e56d3aa8234c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=win32k.sys&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\win32k.sys" messageFileName="C:\Windows\system32\win32k.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Win32k/Tracing" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Win32k/UIPI" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Win32k/Power" id="18" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Win32k/Concurrency" id="19" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Win32k/Render" id="20" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Win32k/Messages" id="21" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Win32k/Contention" id="22" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="OldToNewRendering" value="655360" message="">
+    </opcode>
+    <opcode name="NewRendering" value="720896" message="">
+    </opcode>
+    <opcode name="AppRenderingUpdate" value="786432" message="">
+    </opcode>
+    <opcode name="AppRenderingTightUpdate" value="851968" message="">
+    </opcode>
+    <opcode name="DirtyUpdate" value="917504" message="">
+    </opcode>
+    <opcode name="AccumulatedDirtyUpdate" value="983040" message="">
+    </opcode>
+    <opcode name="DWMPickedUpDitryUpdate" value="1048576" message="">
+    </opcode>
+    <opcode name="ValidateWindow" value="1114112" message="">
+    </opcode>
+    <opcode name="InvalidateWindow" value="1179648" message="">
+    </opcode>
+    <opcode name="PostGestureInputMessage" value="1245184" message="">
+    </opcode>
+    <opcode name="PostGestureMessage" value="1310720" message="">
+    </opcode>
+    <opcode name="TranslationUpdate" value="1376256" message="">
+    </opcode>
+    <opcode name="TranslationUpdateOffset" value="1441792" message="">
+    </opcode>
+    <opcode name="TranslationUpdateRectClip" value="1507328" message="">
+    </opcode>
+    <opcode name="UpdateDxAccumFromGDI" value="1572864" message="">
+    </opcode>
+    <opcode name="UpdateDxAccumFromDX" value="1638400" message="">
+    </opcode>
+    <opcode name="GetDxAccum" value="1703936" message="">
+    </opcode>
+    <opcode name="InjectTouchEvent" value="1769472" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WindowUpdate" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FocusChange" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UIPIMsgError" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UIPIHookError" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UIPIEventHookError" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UIPIHandleValError" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UIPIInputError" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UIPIClipboardError" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UIPISystemError" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerDisplayChange" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IdleActionExpiration" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayReqChange" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayTimeoutReset" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockAcquireExclusive" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockAcquireShared" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockAcquireSharedStarveExclusive" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LockRelease" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SwapChainBind" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SwapChainSetStats" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SwapChainUnBind" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IdleStatusTracing" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ScreenSaverProcess" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinlogonSleepStart" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinlogonSleepEnd" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UserActive" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FocusedProcessChange" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DwmSpriteCreate" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DwmSpriteDestroy" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogicalSurfCreate" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogicalSurfDestroy" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogicalSurfPhysSurfBind" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogicalSurfPhysSurfUnbind" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GdiSysMemToken" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WatermarkChange" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WaitCursor" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThreadInfoRundown" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InputProcessDelay" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MessageCheckDelay" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Rendering" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThreadExit" value="45" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BindLogicalSurface" value="46" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UnBindLogicalSurface" value="47" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BindLogicalSurfaceRH" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DwmSpriteLogicalSurfBind" value="49" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DwmSpriteLogicalSurfUnBind" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogicalSurfEnableDirtyNotification" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PhysicalSurfCreate" value="52" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModifyRgn" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SwapChainGetStats" value="54" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SwapChainBindingOpen" value="55" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SwapChainBindingRelease" value="56" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SwapChainBindingStatus" value="57" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DesktopResolutionFailure" value="58" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueuePostMessage" value="59" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SendMessage" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WakePump" value="61" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InputQueueLocked" value="62" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InputQueueUnLocked" value="63" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UserCallback" value="64" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RetrievePostMessage" value="65" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RetrieveSendMessage" value="66" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RetrieveInputMessage" value="67" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RetrievePseudoMessage" value="68" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppMessagePump" value="69" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InputDeviceRead" value="70" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MessageInjection" value="71" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WakeRIT" value="72" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerMotion" value="73" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InjectMouse" value="74" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MessagePumpInputMessage" value="75" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GUIProcess" value="76" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GUIThread" value="77" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SendMessageTimeOutToBlocking" value="78" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueueInputMessage" value="79" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TranslateMessage" value="80" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DispatchMessage" value="81" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchTargetingSpeedHitTest" value="82" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchTargetingWindowHitTest" value="83" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchTargetingPointerTarget" value="84" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PseudoDevCreation" value="85" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ContactVisualization" value="86" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchTargetingOffset" value="87" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchTargetingPointerEvent" value="88" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerDeviceRead" value="89" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerDeviceMessage" value="90" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerDeviceTransformation" value="91" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModifyDxAccumRgn" value="92" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogicalSurfRemovedTranslationFromDirty" value="93" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerDeviceDiscovery" value="94" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchInjectionEvent" value="95" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerFrameCreation" value="96" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerFrameBuildPartial" value="97" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerFrameCommit" value="98" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerFrameCoalesce" value="99" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerMessageGeneration" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerMessageRetrieve" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerUpdateMessageRetrieve" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerSetTargetWindows" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerUpdateSetTargetWindows" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InputQueueNoRemoveLocker" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InputQueueLockedPeekRecursion" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DCompCommitBatch" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DelegateInputUserCallback" value="108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DelegatedInputWorker" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SmoothRotation" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DCompGetBatch" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerFrameMessageGeneration" value="112" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ExclusiveUserCrit" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SharedUserCrit" value="114" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReleaseUserCrit" value="115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SleepInputIdle" value="116" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WakeInputIdle" value="117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EdgyDetection" value="118" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveInputProcessDelay" value="119" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ImmersiveMessageCheckDelay" value="120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="THQAEvent" value="121" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PointerPrediction" value="122" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MoveRgn" value="123" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DirtyRgn" value="124" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogicalSurfRemovedTranslationFromMove" value="125" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DwmGetRgn" value="126" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DirtyRectUpdate" value="127" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TranslationUpdateOffset" value="128" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TranslationUpdateOffsetDWM" value="129" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InternalSetTimerCoalescing" value="130" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InternalSetTimerNoCoalescing" value="131" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KillTimer" value="132" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcTimerCoalescing" value="133" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcTimerNoCoalescing" value="134" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DrvChangeDisplaySettings" value="135" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChangeDisplayMode" value="136" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchHWTimeStamp" value="137" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TokenCompositionSurfaceObject" value="138" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CompositionSurfaceObjectUpdate" value="139" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueueEventMessage" value="140" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RetrieveQueueEventMessage" value="141" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ForegroundWindowFullScreen" value="208" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChangeDisplayModeBroadcast" value="209" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChangeDisplayModeDeferral" value="210" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConvertibleState" value="211" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DockState" value="212" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadHWTimeStamp" value="213" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WakeDIT" value="214" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ArmDitMouseFlush" value="215" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessQueuedMouseEvents" value="216" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DITSpeedHitTestFailedRevalidation" value="217" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TransformAgeDecay" value="218" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InputRedirection" value="219" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="OnInputXformUpdate" value="220" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DitWaitForRitDisEngagement" value="221" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RitDisEngaged" value="222" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DitEngaged" value="223" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RitReEngaged" value="224" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DitDisEngaged" value="225" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DitTerminated" value="226" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DitShutdown" value="227" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadAAP" value="228" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadTypeDiscovered" value="229" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadEnabledStatusChange" value="230" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MouseInputApc" value="231" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MouseInputCoalesced" value="232" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PTPReadThresholds" value="233" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadConfidenceCleared" value="234" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadConfidenceUpped" value="235" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PTPElasticDragMode" value="236" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LegacyTouchPadDetection" value="237" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadCurtainState" value="238" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadCurtainSize" value="239" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchpadStopInertia" value="240" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CursorSize" value="241" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TrappedAppContainerRender" value="242" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TokenStateChanged" value="301" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DCompDeferBatch" value="400" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadHIDProcessing" value="401" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadWMPointerProcessing" value="402" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DitMmcssWork" value="403" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadGesture" value="404" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CopyPointerInputFrame" value="405" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WindowLayoutChange" value="10001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TouchPadLatencyModeProcessing" value="410" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DCompBeginFrame" value="412" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TokenIndependentFlipSkipComplete" value="413" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Updates" mask="1000" message="">
+    </keyword>
+    <keyword name="Focus" mask="2000" message="">
+    </keyword>
+    <keyword name="UIPI" mask="4000" message="">
+    </keyword>
+    <keyword name="win32Power" mask="8000" message="">
+    </keyword>
+    <keyword name="Concurrency" mask="10000" message="">
+    </keyword>
+    <keyword name="UserActivity" mask="20000" message="">
+    </keyword>
+    <keyword name="UIUnresponsiveness" mask="40000" message="">
+    </keyword>
+    <keyword name="ThreadRundown" mask="80000" message="">
+    </keyword>
+    <keyword name="Rendering" mask="100000" message="">
+    </keyword>
+    <keyword name="ThreadInfo" mask="200000" message="">
+    </keyword>
+    <keyword name="MessagePump" mask="400000" message="">
+    </keyword>
+    <keyword name="MessagePumpInternalAndInput" mask="800000" message="">
+    </keyword>
+    <keyword name="TouchInput" mask="1000000" message="">
+    </keyword>
+    <keyword name="TimerSurvey" mask="2000000" message="">
+    </keyword>
+    <keyword name="PointerInput" mask="4000000" message="">
+    </keyword>
+    <keyword name="AutoRotation" mask="8000000" message="">
+    </keyword>
+    <keyword name="Contention" mask="10000000" message="">
+    </keyword>
+    <keyword name="TimerInfo" mask="20000000" message="">
+    </keyword>
+    <keyword name="ComponentHosting" mask="40000000" message="">
+    </keyword>
+    <keyword name="TrappedACRendering" mask="80000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000002000" message="">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="4" task="3" keywords="0x4000000000004000" message="">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000004000" message="">
+    </event>
+    <event value="5" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000000004000" message="">
+    </event>
+    <event value="6" version="0" opcode="0" channel="17" level="4" task="6" keywords="0x4000000000004000" message="">
+    </event>
+    <event value="7" version="0" opcode="0" channel="17" level="4" task="7" keywords="0x4000000000004000" message="">
+    </event>
+    <event value="8" version="0" opcode="0" channel="17" level="4" task="8" keywords="0x4000000000004000" message="">
+    </event>
+    <event value="9" version="0" opcode="0" channel="17" level="4" task="9" keywords="0x4000000000004000" message="">
+    </event>
+    <event value="10" version="0" opcode="0" channel="18" level="4" task="10" keywords="0x2000000000008000" message="">
+    </event>
+    <event value="11" version="0" opcode="0" channel="18" level="4" task="11" keywords="0x2000000000008000" message="">
+    </event>
+    <event value="12" version="0" opcode="0" channel="18" level="4" task="12" keywords="0x2000000000008000" message="">
+    </event>
+    <event value="13" version="0" opcode="0" channel="18" level="4" task="13" keywords="0x2000000000008000" message="">
+    </event>
+    <event value="14" version="0" opcode="0" channel="19" level="4" task="14" keywords="0x1000000000010000" message="">
+    </event>
+    <event value="15" version="0" opcode="0" channel="19" level="4" task="15" keywords="0x1000000000010000" message="">
+    </event>
+    <event value="16" version="0" opcode="0" channel="19" level="4" task="16" keywords="0x1000000000010000" message="">
+    </event>
+    <event value="17" version="0" opcode="0" channel="19" level="4" task="17" keywords="0x1000000000010000" message="">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="18" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="4" task="20" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="20" version="0" opcode="0" channel="18" level="4" task="21" keywords="0x2000000000008000" message="">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="4" task="19" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="22" version="0" opcode="0" channel="18" level="4" task="22" keywords="0x2000000000008000" message="">
+    </event>
+    <event value="23" version="0" opcode="0" channel="18" level="4" task="23" keywords="0x2000000000008000" message="">
+    </event>
+    <event value="24" version="0" opcode="0" channel="18" level="4" task="24" keywords="0x2000000000008000" message="">
+    </event>
+    <event value="25" version="0" opcode="0" channel="16" level="4" task="25" keywords="0x8000000000020000" message="">
+    </event>
+    <event value="26" version="0" opcode="0" channel="16" level="4" task="26" keywords="0x8000000000020000" message="">
+    </event>
+    <event value="27" version="0" opcode="0" channel="16" level="4" task="27" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="28" version="0" opcode="0" channel="16" level="4" task="28" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="29" version="0" opcode="0" channel="16" level="4" task="29" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="4" task="30" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="4" task="31" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="4" task="32" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="4" task="33" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="35" version="0" opcode="0" channel="16" level="4" task="35" keywords="0x8000000000040000" message="">
+    </event>
+    <event value="36" version="0" opcode="0" channel="16" level="4" task="36" keywords="0x8000000000080000" message="">
+    </event>
+    <event value="37" version="0" opcode="0" channel="16" level="4" task="37" keywords="0x8001000000040000" message="">
+    </event>
+    <event value="38" version="0" opcode="0" channel="16" level="4" task="38" keywords="0x8001000000040000" message="">
+    </event>
+    <event value="39" version="0" opcode="11" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="40" version="0" opcode="10" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="41" version="0" opcode="12" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="42" version="0" opcode="13" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="43" version="0" opcode="17" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="44" version="0" opcode="18" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="45" version="0" opcode="0" channel="16" level="4" task="45" keywords="0x8000000000200000" message="">
+    </event>
+    <event value="46" version="0" opcode="0" channel="16" level="4" task="46" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="47" version="0" opcode="0" channel="16" level="4" task="47" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="48" version="0" opcode="0" channel="16" level="4" task="48" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="49" version="0" opcode="0" channel="16" level="4" task="49" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="50" version="0" opcode="0" channel="16" level="4" task="50" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="51" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="52" version="0" opcode="0" channel="16" level="4" task="52" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="53" version="0" opcode="0" channel="16" level="4" task="53" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="54" version="0" opcode="0" channel="16" level="4" task="54" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="55" version="0" opcode="0" channel="16" level="4" task="55" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="56" version="0" opcode="0" channel="16" level="4" task="56" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="57" version="0" opcode="0" channel="16" level="4" task="57" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="58" version="0" opcode="0" channel="16" level="4" task="58" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="59" version="0" opcode="0" channel="21" level="4" task="59" keywords="0x400000000400000" message="">
+    </event>
+    <event value="60" version="0" opcode="1" channel="21" level="4" task="60" keywords="0x400000000400000" message="">
+    </event>
+    <event value="61" version="0" opcode="0" channel="21" level="4" task="65" keywords="0x400000000400000" message="">
+    </event>
+    <event value="62" version="0" opcode="1" channel="21" level="4" task="66" keywords="0x400000000400000" message="">
+    </event>
+    <event value="63" version="0" opcode="0" channel="21" level="4" task="67" keywords="0x400000040400000" message="">
+    </event>
+    <event value="64" version="0" opcode="0" channel="21" level="0" task="68" keywords="0x400000000400000" message="">
+    </event>
+    <event value="65" version="0" opcode="0" channel="21" level="4" task="61" keywords="0x400000000400000" message="">
+    </event>
+    <event value="66" version="0" opcode="0" channel="21" level="4" task="62" keywords="0x400000000800000" message="">
+    </event>
+    <event value="67" version="0" opcode="0" channel="21" level="4" task="62" keywords="0x400000000800000" message="">
+    </event>
+    <event value="68" version="0" opcode="1" channel="21" level="4" task="64" keywords="0x400000000800000" message="">
+    </event>
+    <event value="69" version="0" opcode="2" channel="21" level="4" task="64" keywords="0x400000000800000" message="">
+    </event>
+    <event value="70" version="0" opcode="2" channel="21" level="4" task="60" keywords="0x400000000400000" message="">
+    </event>
+    <event value="71" version="0" opcode="0" channel="21" level="4" task="78" keywords="0x400000000800000" message="">
+    </event>
+    <event value="72" version="0" opcode="1" channel="21" level="4" task="70" keywords="0x400000000800000" message="">
+    </event>
+    <event value="73" version="0" opcode="2" channel="21" level="4" task="70" keywords="0x400000000800000" message="">
+    </event>
+    <event value="74" version="0" opcode="19" channel="21" level="4" task="71" keywords="0x400000000800000" message="">
+    </event>
+    <event value="75" version="0" opcode="20" channel="21" level="4" task="71" keywords="0x400000000800000" message="">
+    </event>
+    <event value="76" version="0" opcode="1" channel="21" level="4" task="69" keywords="0x400000000800000" message="">
+    </event>
+    <event value="77" version="0" opcode="2" channel="21" level="4" task="69" keywords="0x400000000800000" message="">
+    </event>
+    <event value="78" version="0" opcode="0" channel="21" level="4" task="72" keywords="0x400000000800000" message="">
+    </event>
+    <event value="79" version="0" opcode="1" channel="21" level="4" task="73" keywords="0x400000000800000" message="">
+    </event>
+    <event value="80" version="0" opcode="2" channel="21" level="4" task="73" keywords="0x400000000800000" message="">
+    </event>
+    <event value="81" version="0" opcode="1" channel="21" level="4" task="74" keywords="0x400000000800000" message="">
+    </event>
+    <event value="82" version="0" opcode="2" channel="21" level="4" task="74" keywords="0x400000000800000" message="">
+    </event>
+    <event value="83" version="0" opcode="2" channel="21" level="4" task="66" keywords="0x400000000400000" message="">
+    </event>
+    <event value="84" version="0" opcode="1" channel="21" level="4" task="76" keywords="0x400000000200000" message="">
+    </event>
+    <event value="85" version="0" opcode="2" channel="21" level="4" task="76" keywords="0x400000000200000" message="">
+    </event>
+    <event value="86" version="0" opcode="1" channel="21" level="4" task="77" keywords="0x400000000200000" message="">
+    </event>
+    <event value="87" version="0" opcode="2" channel="21" level="4" task="77" keywords="0x400000000200000" message="">
+    </event>
+    <event value="88" version="0" opcode="0" channel="21" level="4" task="79" keywords="0x400000040400000" message="">
+    </event>
+    <event value="89" version="0" opcode="1" channel="21" level="4" task="80" keywords="0x400000000400000" message="">
+    </event>
+    <event value="91" version="0" opcode="2" channel="21" level="4" task="80" keywords="0x400000000400000" message="">
+    </event>
+    <event value="92" version="0" opcode="1" channel="21" level="4" task="81" keywords="0x400000000400000" message="">
+    </event>
+    <event value="93" version="0" opcode="2" channel="21" level="4" task="81" keywords="0x400000000400000" message="">
+    </event>
+    <event value="94" version="0" opcode="1" channel="21" level="4" task="82" keywords="0x400000000800000" message="">
+    </event>
+    <event value="95" version="0" opcode="2" channel="21" level="4" task="82" keywords="0x400000000800000" message="">
+    </event>
+    <event value="96" version="0" opcode="1" channel="21" level="4" task="83" keywords="0x400000000800000" message="">
+    </event>
+    <event value="97" version="0" opcode="2" channel="21" level="4" task="83" keywords="0x400000000800000" message="">
+    </event>
+    <event value="98" version="0" opcode="1" channel="21" level="4" task="84" keywords="0x400000000800000" message="">
+    </event>
+    <event value="99" version="0" opcode="2" channel="21" level="4" task="84" keywords="0x400000000800000" message="">
+    </event>
+    <event value="100" version="0" opcode="27" channel="21" level="4" task="71" keywords="0x400000000800000" message="">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000002000000" message="">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000002000000" message="">
+    </event>
+    <event value="104" version="0" opcode="1" channel="16" level="4" task="86" keywords="0x8000000000120000" message="">
+    </event>
+    <event value="105" version="0" opcode="2" channel="16" level="4" task="86" keywords="0x8000000000120000" message="">
+    </event>
+    <event value="106" version="0" opcode="0" channel="21" level="4" task="87" keywords="0x400000000800000" message="">
+    </event>
+    <event value="107" version="0" opcode="0" channel="21" level="4" task="88" keywords="0x400000000800000" message="">
+    </event>
+    <event value="108" version="0" opcode="0" channel="21" level="5" task="88" keywords="0x400000000800000" message="">
+    </event>
+    <event value="109" version="0" opcode="1" channel="21" level="4" task="89" keywords="0x400000000800000" message="">
+    </event>
+    <event value="110" version="0" opcode="2" channel="21" level="4" task="89" keywords="0x400000000800000" message="">
+    </event>
+    <event value="111" version="0" opcode="1" channel="21" level="4" task="90" keywords="0x400000000800000" message="">
+    </event>
+    <event value="112" version="0" opcode="2" channel="21" level="4" task="90" keywords="0x400000000800000" message="">
+    </event>
+    <event value="113" version="0" opcode="1" channel="21" level="4" task="90" keywords="0x400000000800000" message="">
+    </event>
+    <event value="114" version="0" opcode="2" channel="21" level="4" task="90" keywords="0x400000000800000" message="">
+    </event>
+    <event value="115" version="0" opcode="1" channel="21" level="4" task="91" keywords="0x400000000800000" message="">
+    </event>
+    <event value="116" version="0" opcode="2" channel="21" level="4" task="91" keywords="0x400000000800000" message="">
+    </event>
+    <event value="117" version="0" opcode="21" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="118" version="0" opcode="0" channel="20" level="4" task="128" keywords="0x800000000100000" message="">
+    </event>
+    <event value="119" version="0" opcode="23" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="120" version="0" opcode="24" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="121" version="0" opcode="25" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="122" version="0" opcode="26" channel="20" level="4" task="39" keywords="0x800000000100000" message="">
+    </event>
+    <event value="123" version="0" opcode="0" channel="16" level="4" task="92" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="124" version="0" opcode="0" channel="16" level="4" task="93" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="125" version="0" opcode="1" channel="21" level="4" task="94" keywords="0x400000000800000" message="">
+    </event>
+    <event value="126" version="0" opcode="2" channel="21" level="4" task="94" keywords="0x400000000800000" message="">
+    </event>
+    <event value="127" version="0" opcode="1" channel="21" level="4" task="90" keywords="0x400000000800000" message="">
+    </event>
+    <event value="128" version="0" opcode="2" channel="21" level="4" task="90" keywords="0x400000000800000" message="">
+    </event>
+    <event value="129" version="0" opcode="1" channel="21" level="4" task="95" keywords="0x400000000800000" message="">
+    </event>
+    <event value="130" version="0" opcode="2" channel="21" level="4" task="95" keywords="0x400000000800000" message="">
+    </event>
+    <event value="131" version="0" opcode="1" channel="21" level="4" task="96" keywords="0x400000004000000" message="">
+    </event>
+    <event value="132" version="0" opcode="2" channel="21" level="4" task="96" keywords="0x400000004000000" message="">
+    </event>
+    <event value="133" version="0" opcode="1" channel="21" level="4" task="97" keywords="0x400000004000000" message="">
+    </event>
+    <event value="134" version="0" opcode="2" channel="21" level="4" task="97" keywords="0x400000004000000" message="">
+    </event>
+    <event value="135" version="0" opcode="1" channel="21" level="4" task="98" keywords="0x400000004000000" message="">
+    </event>
+    <event value="136" version="0" opcode="2" channel="21" level="4" task="98" keywords="0x400000004000000" message="">
+    </event>
+    <event value="137" version="0" opcode="1" channel="21" level="4" task="99" keywords="0x400000004000000" message="">
+    </event>
+    <event value="138" version="0" opcode="2" channel="21" level="4" task="99" keywords="0x400000004000000" message="">
+    </event>
+    <event value="139" version="0" opcode="1" channel="21" level="4" task="112" keywords="0x400000004000000" message="">
+    </event>
+    <event value="140" version="0" opcode="2" channel="21" level="4" task="112" keywords="0x400000004000000" message="">
+    </event>
+    <event value="141" version="0" opcode="1" channel="21" level="4" task="101" keywords="0x400000004000000" message="">
+    </event>
+    <event value="142" version="0" opcode="2" channel="21" level="4" task="101" keywords="0x400000004000000" message="">
+    </event>
+    <event value="143" version="0" opcode="1" channel="21" level="5" task="102" keywords="0x400000004000000" message="">
+    </event>
+    <event value="144" version="0" opcode="2" channel="21" level="5" task="102" keywords="0x400000004000000" message="">
+    </event>
+    <event value="145" version="0" opcode="1" channel="21" level="4" task="103" keywords="0x400000004000000" message="">
+    </event>
+    <event value="146" version="0" opcode="2" channel="21" level="4" task="103" keywords="0x400000004000000" message="">
+    </event>
+    <event value="147" version="0" opcode="1" channel="21" level="5" task="104" keywords="0x400000004000000" message="">
+    </event>
+    <event value="148" version="0" opcode="2" channel="21" level="5" task="104" keywords="0x400000004000000" message="">
+    </event>
+    <event value="149" version="0" opcode="2" channel="21" level="4" task="105" keywords="0x400000000800000" message="">
+    </event>
+    <event value="150" version="0" opcode="2" channel="21" level="4" task="106" keywords="0x400000000800000" message="">
+    </event>
+    <event value="151" version="0" opcode="0" channel="16" level="4" task="107" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="152" version="0" opcode="1" channel="21" level="4" task="108" keywords="0x400000000800000" message="">
+    </event>
+    <event value="153" version="0" opcode="2" channel="21" level="4" task="108" keywords="0x400000000800000" message="">
+    </event>
+    <event value="154" version="0" opcode="1" channel="21" level="4" task="109" keywords="0x400000000800000" message="">
+    </event>
+    <event value="155" version="0" opcode="2" channel="21" level="4" task="109" keywords="0x400000000800000" message="">
+    </event>
+    <event value="156" version="0" opcode="0" channel="21" level="4" task="90" keywords="0x400000000800000" message="">
+    </event>
+    <event value="157" version="0" opcode="1" channel="21" level="4" task="100" keywords="0x400000004000000" message="">
+    </event>
+    <event value="158" version="0" opcode="2" channel="21" level="4" task="100" keywords="0x400000004000000" message="">
+    </event>
+    <event value="159" version="0" opcode="0" channel="21" level="4" task="99" keywords="0x400000004000000" message="">
+    </event>
+    <event value="160" version="0" opcode="1" channel="16" level="4" task="110" keywords="0x8001000008040000" message="">
+    </event>
+    <event value="161" version="0" opcode="2" channel="16" level="4" task="110" keywords="0x8001000008040000" message="">
+    </event>
+    <event value="162" version="0" opcode="0" channel="16" level="4" task="111" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="163" version="0" opcode="1" channel="22" level="4" task="113" keywords="0x200000010000000" message="">
+    </event>
+    <event value="164" version="0" opcode="2" channel="22" level="4" task="113" keywords="0x200000010000000" message="">
+    </event>
+    <event value="165" version="0" opcode="1" channel="22" level="4" task="114" keywords="0x200000010000000" message="">
+    </event>
+    <event value="166" version="0" opcode="2" channel="22" level="4" task="114" keywords="0x200000010000000" message="">
+    </event>
+    <event value="167" version="0" opcode="0" channel="22" level="4" task="115" keywords="0x200000010000000" message="">
+    </event>
+    <event value="168" version="0" opcode="0" channel="21" level="4" task="116" keywords="0x400000000800000" message="">
+    </event>
+    <event value="169" version="0" opcode="0" channel="21" level="4" task="117" keywords="0x400000000800000" message="">
+    </event>
+    <event value="170" version="0" opcode="1" channel="16" level="4" task="118" keywords="0x8000000004020000" message="">
+    </event>
+    <event value="171" version="0" opcode="2" channel="16" level="4" task="118" keywords="0x8000000004020000" message="">
+    </event>
+    <event value="172" version="0" opcode="0" channel="16" level="4" task="119" keywords="0x8001000000040000" message="">
+    </event>
+    <event value="173" version="0" opcode="0" channel="16" level="4" task="120" keywords="0x8001000000040000" message="">
+    </event>
+    <event value="174" version="0" opcode="1" channel="21" level="4" task="121" keywords="0x400000000800000" message="">
+    </event>
+    <event value="175" version="0" opcode="2" channel="21" level="4" task="121" keywords="0x400000000800000" message="">
+    </event>
+    <event value="176" version="0" opcode="1" channel="21" level="4" task="122" keywords="0x400000000800000" message="">
+    </event>
+    <event value="177" version="0" opcode="2" channel="21" level="4" task="122" keywords="0x400000000800000" message="">
+    </event>
+    <event value="178" version="0" opcode="0" channel="16" level="4" task="123" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="179" version="0" opcode="0" channel="16" level="4" task="124" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="180" version="0" opcode="0" channel="16" level="4" task="125" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="181" version="0" opcode="0" channel="16" level="4" task="127" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="182" version="0" opcode="0" channel="16" level="4" task="129" keywords="0x8000000000100000" message="">
+    </event>
+    <event value="183" version="0" opcode="0" channel="16" level="4" task="126" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="184" version="0" opcode="1" channel="21" level="4" task="99" keywords="0x400000004000000" message="">
+    </event>
+    <event value="185" version="0" opcode="2" channel="21" level="4" task="99" keywords="0x400000004000000" message="">
+    </event>
+    <event value="186" version="0" opcode="0" channel="21" level="4" task="99" keywords="0x400000004000000" message="">
+    </event>
+    <event value="187" version="0" opcode="0" channel="16" level="4" task="130" keywords="0x8000000020000000" message="">
+    </event>
+    <event value="188" version="0" opcode="0" channel="16" level="4" task="131" keywords="0x8000000020000000" message="">
+    </event>
+    <event value="189" version="0" opcode="0" channel="16" level="4" task="132" keywords="0x8000000020000000" message="">
+    </event>
+    <event value="190" version="0" opcode="0" channel="16" level="4" task="133" keywords="0x8000000020000000" message="">
+    </event>
+    <event value="191" version="0" opcode="0" channel="16" level="4" task="134" keywords="0x8000000020000000" message="">
+    </event>
+    <event value="192" version="0" opcode="1" channel="16" level="4" task="135" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="193" version="0" opcode="2" channel="16" level="4" task="135" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="194" version="0" opcode="1" channel="16" level="4" task="136" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="195" version="0" opcode="2" channel="16" level="4" task="136" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="196" version="0" opcode="1" channel="21" level="4" task="85" keywords="0x400000000800000" message="">
+    </event>
+    <event value="197" version="0" opcode="2" channel="21" level="4" task="85" keywords="0x400000000800000" message="">
+    </event>
+    <event value="198" version="0" opcode="0" channel="21" level="4" task="137" keywords="0x400000000800000" message="">
+    </event>
+    <event value="199" version="0" opcode="0" channel="21" level="4" task="99" keywords="0x400000004000000" message="">
+    </event>
+    <event value="200" version="0" opcode="0" channel="21" level="4" task="99" keywords="0x400000004000000" message="">
+    </event>
+    <event value="201" version="0" opcode="0" channel="16" level="4" task="138" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="4" task="139" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="203" version="0" opcode="0" channel="21" level="4" task="140" keywords="0x400000000800000" message="">
+    </event>
+    <event value="204" version="0" opcode="0" channel="21" level="4" task="141" keywords="0x400000000800000" message="">
+    </event>
+    <event value="205" version="0" opcode="1" channel="16" level="4" task="208" keywords="0x8001000008040000" message="">
+    </event>
+    <event value="206" version="0" opcode="2" channel="16" level="4" task="208" keywords="0x8001000008040000" message="">
+    </event>
+    <event value="207" version="0" opcode="0" channel="16" level="4" task="209" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="213" version="0" opcode="0" channel="16" level="4" task="86" keywords="0x8000000000120000" message="">
+    </event>
+    <event value="214" version="0" opcode="0" channel="16" level="4" task="210" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="215" version="0" opcode="0" channel="16" level="4" task="211" keywords="0x8000000000020000" message="">
+    </event>
+    <event value="216" version="0" opcode="0" channel="16" level="4" task="212" keywords="0x8000000000020000" message="">
+    </event>
+    <event value="217" version="0" opcode="0" channel="16" level="4" task="213" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="218" version="0" opcode="0" channel="16" level="4" task="218" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="219" version="0" opcode="0" channel="21" level="4" task="214" keywords="0x400000040800000" message="">
+    </event>
+    <event value="220" version="0" opcode="0" channel="21" level="4" task="215" keywords="0x400000040800000" message="">
+    </event>
+    <event value="221" version="0" opcode="1" channel="21" level="4" task="216" keywords="0x400000040800000" message="">
+    </event>
+    <event value="222" version="0" opcode="2" channel="21" level="4" task="216" keywords="0x400000040800000" message="">
+    </event>
+    <event value="223" version="0" opcode="0" channel="21" level="4" task="217" keywords="0x400000040800000" message="">
+    </event>
+    <event value="224" version="0" opcode="0" channel="21" level="4" task="219" keywords="0x400000040800000" message="">
+    </event>
+    <event value="225" version="0" opcode="0" channel="21" level="4" task="220" keywords="0x400000040800000" message="">
+    </event>
+    <event value="226" version="0" opcode="0" channel="21" level="4" task="221" keywords="0x400000040800000" message="">
+    </event>
+    <event value="227" version="0" opcode="0" channel="21" level="4" task="222" keywords="0x400000040800000" message="">
+    </event>
+    <event value="228" version="0" opcode="0" channel="21" level="4" task="223" keywords="0x400000040800000" message="">
+    </event>
+    <event value="229" version="0" opcode="0" channel="21" level="4" task="224" keywords="0x400000040800000" message="">
+    </event>
+    <event value="230" version="0" opcode="0" channel="21" level="4" task="225" keywords="0x400000040800000" message="">
+    </event>
+    <event value="231" version="0" opcode="0" channel="21" level="4" task="226" keywords="0x400000040800000" message="">
+    </event>
+    <event value="232" version="0" opcode="0" channel="21" level="4" task="227" keywords="0x400000040800000" message="">
+    </event>
+    <event value="233" version="0" opcode="0" channel="16" level="4" task="228" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="234" version="0" opcode="0" channel="21" level="4" task="231" keywords="0x400000040800000" message="">
+    </event>
+    <event value="235" version="0" opcode="0" channel="21" level="4" task="232" keywords="0x400000040800000" message="">
+    </event>
+    <event value="236" version="0" opcode="0" channel="16" level="4" task="229" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="237" version="0" opcode="1" channel="16" level="4" task="230" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="238" version="0" opcode="2" channel="16" level="4" task="230" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="239" version="0" opcode="1" channel="16" level="4" task="233" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="240" version="0" opcode="2" channel="16" level="4" task="233" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="241" version="0" opcode="0" channel="16" level="4" task="234" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="242" version="0" opcode="0" channel="16" level="4" task="235" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="243" version="0" opcode="1" channel="16" level="4" task="236" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="244" version="0" opcode="2" channel="16" level="4" task="236" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="245" version="0" opcode="1" channel="16" level="4" task="237" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="246" version="0" opcode="2" channel="16" level="4" task="237" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="247" version="0" opcode="0" channel="16" level="4" task="237" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="248" version="0" opcode="0" channel="16" level="4" task="237" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="249" version="0" opcode="0" channel="16" level="4" task="238" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="250" version="0" opcode="0" channel="16" level="4" task="239" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="251" version="0" opcode="0" channel="16" level="4" task="240" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="252" version="0" opcode="0" channel="16" level="4" task="240" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="253" version="0" opcode="0" channel="16" level="4" task="240" keywords="0x8000000001000000" message="">
+    </event>
+    <event value="254" version="0" opcode="0" channel="16" level="2" task="242" keywords="0x8000000080000000" message="">
+    </event>
+    <event value="255" version="0" opcode="0" channel="16" level="4" task="241" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="256" version="0" opcode="1" channel="21" level="4" task="403" keywords="0x400000040800000" message="">
+    </event>
+    <event value="257" version="0" opcode="2" channel="21" level="4" task="403" keywords="0x400000040800000" message="">
+    </event>
+    <event value="301" version="0" opcode="0" channel="16" level="4" task="301" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="400" version="0" opcode="0" channel="16" level="4" task="400" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="401" version="0" opcode="1" channel="21" level="4" task="401" keywords="0x400000000800000" message="">
+    </event>
+    <event value="402" version="0" opcode="2" channel="21" level="4" task="401" keywords="0x400000000800000" message="">
+    </event>
+    <event value="403" version="0" opcode="1" channel="21" level="4" task="402" keywords="0x400000000800000" message="">
+    </event>
+    <event value="404" version="0" opcode="2" channel="21" level="4" task="402" keywords="0x400000000800000" message="">
+    </event>
+    <event value="405" version="0" opcode="0" channel="21" level="4" task="404" keywords="0x400000000800000" message="">
+    </event>
+    <event value="406" version="0" opcode="1" channel="16" level="4" task="405" keywords="0x8000000000800000" message="">
+    </event>
+    <event value="407" version="0" opcode="2" channel="16" level="4" task="405" keywords="0x8000000000800000" message="">
+    </event>
+    <event value="410" version="0" opcode="1" channel="21" level="4" task="410" keywords="0x400000000000000" message="">
+    </event>
+    <event value="411" version="0" opcode="2" channel="21" level="4" task="410" keywords="0x400000000000000" message="">
+    </event>
+    <event value="412" version="0" opcode="0" channel="16" level="4" task="412" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="413" version="0" opcode="0" channel="16" level="4" task="413" keywords="0x8000000000001000" message="">
+    </event>
+    <event value="10002" version="0" opcode="2" channel="16" level="4" task="10001" keywords="0x8001000000000000" message="">
+    </event>
+  </events>
+</provider>

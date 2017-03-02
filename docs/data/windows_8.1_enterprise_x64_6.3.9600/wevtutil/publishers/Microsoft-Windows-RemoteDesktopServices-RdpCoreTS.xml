@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-RemoteDesktopServices-RdpCoreTS" guid="1139c61b-b549-4251-8ed3-27250a1edec8" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=RdpCoreTS.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\RdpCoreTS.dll" messageFileName="C:\Windows\system32\RdpCoreTS.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin" id="16" flags="0" message="Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin">
+    </channel>
+    <channel name="Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational" id="17" flags="0" message="Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Debug" id="18" flags="0" message="Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="Initialize" value="720896" message="Initialize">
+    </opcode>
+    <opcode name="Terminate" value="786432" message="Terminate">
+    </opcode>
+    <opcode name="RCMProtocolImpl" value="851968" message="RCMProtocolImpl">
+    </opcode>
+    <opcode name="ProtocolExchange" value="917504" message="ProtocolExchange">
+    </opcode>
+    <opcode name="EstablishConnection" value="983040" message="EstablishConnection">
+    </opcode>
+    <opcode name="NetworkDetect" value="1048576" message="NetworkDetect">
+    </opcode>
+    <opcode name="CloseConnection" value="1114112" message="CloseConnection">
+    </opcode>
+    <opcode name="NetworkBinding" value="1179648" message="NetworkBinding">
+    </opcode>
+    <opcode name="Runtime" value="1245184" message="Runtime">
+    </opcode>
+    <opcode name="AdvancedRemoteAppEnabled" value="1310720" message="AdvancedRemoteAppEnabled">
+    </opcode>
+    <opcode name="AdvancedRemoteAppNotEnabled" value="1376256" message="AdvancedRemoteAppNotEnabled">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="UMRDP" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="RDP Stack">
+    </task>
+    <task name="WAPlugin" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="RDP Graphics module">
+    </task>
+    <task name="CAPlugin" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="RemoteFX module">
+    </task>
+    <task name="RemoteFX" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="RemoteFX module">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="11" channel="16" level="3" task="1" keywords="0x8000000000000000" message="The RDP Graphics module failed to initialize. Verify that the server is correctly configured. A restart of the system may be needed. The relevant status error code was %1.">
+    </event>
+    <event value="2" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Remote Desktop Protocol will use the RDP Graphics module to connect to the client computer. The RDP Graphics module is being used based on the server configuration, client configuration, and network connection.">
+    </event>
+    <event value="3" version="0" opcode="11" channel="16" level="3" task="3" keywords="0x8000000000000000" message="The RemoteFX module failed to initialize. Verify that the server is correctly configured. A restart of the system may be needed. The relevant status code was %1.">
+    </event>
+    <event value="4" version="0" opcode="11" channel="16" level="1" task="3" keywords="0x8000000000000000" message="The RemoteFX module failed to initialize. Verify that the server is correctly configured. A restart of the system may be needed. The relevant status code was %1.">
+    </event>
+    <event value="5" version="0" opcode="11" channel="16" level="3" task="3" keywords="0x8000000000000000" message="The client computer does not support RemoteFX. The connection will be made with the RDP Graphics. The relevant status code was %1.">
+    </event>
+    <event value="6" version="0" opcode="11" channel="16" level="3" task="3" keywords="0x8000000000000000" message="The resolution requested by the remote client is not supported by RemoteFX. The connection will be made with RemoteFX using a supported resolution. Resolution requested by the client: Monitors %1: %2. Resolution applied: %3.">
+    </event>
+    <event value="7" version="0" opcode="11" channel="16" level="1" task="3" keywords="0x8000000000000000" message="The resolution requested by the remote client could not be set. The default resolution will be set for the RemoteFX session. The server may be experiencing high load or require a restart.">
+    </event>
+    <event value="8" version="0" opcode="12" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Module terminated.">
+    </event>
+    <event value="33" version="0" opcode="11" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Remote Desktop Protocol will use the RemoteFX guest mode module to connect to the client computer.">
+    </event>
+    <event value="34" version="0" opcode="11" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Remote Desktop Protocol will use the RemoteFX host mode module to connect to the client computer.">
+    </event>
+    <event value="35" version="0" opcode="11" channel="16" level="1" task="4" keywords="0x8000000000000000" message="Unable to initialize the RemoteFX host mode module. Restart the computer to resolve the issue. If the issue is not resolved, verify the computer configuration.. The error code is %1.">
+    </event>
+    <event value="36" version="0" opcode="11" channel="16" level="1" task="4" keywords="0x8000000000000000" message="Unable to initialize the RemoteFX host mode module. Restart the computer to resolve the issue. If the issue is not resolved, verify the computer configuration.. The error code is %1.">
+    </event>
+    <event value="37" version="0" opcode="11" channel="17" level="3" task="4" keywords="0x4000000000000000" message="The display resolution requested by the remote client is not supported by RemoteFX host mode module. The resolution requested by the client: Monitors %1: %2. Resolution applied: %3.">
+    </event>
+    <event value="38" version="0" opcode="11" channel="17" level="3" task="4" keywords="0x4000000000000000" message="The display resolution requested by the remote client could not be enabled. The default resolution will be enabled for the RemoteFX session. The server may be experiencing high load">
+    </event>
+    <event value="65" version="0" opcode="13" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Connection %1 created ">
+    </event>
+    <event value="66" version="0" opcode="13" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The connection %1 was assigned to session %2">
+    </event>
+    <event value="67" version="0" opcode="13" channel="17" level="2" task="4" keywords="0x4000000000000000" message="The RemoteFX protocol connection %1 encountered an error (%2)">
+    </event>
+    <event value="68" version="0" opcode="13" channel="17" level="4" task="4" keywords="0x4000000000000000" message="TMT: ConnectionName=%1, PromptForCredentials=%2, PromptForCredentialsDone=%3, GfxChannelOpened=%4, FirstGraphicsReceived=%5 [ms]">
+    </event>
+    <event value="97" version="0" opcode="14" channel="17" level="3" task="4" keywords="0x4000000000000000" message="The RDP protocol component %1 detected an error (%2) in the protocol stream and the client was disconnected.">
+    </event>
+    <event value="98" version="0" opcode="15" channel="17" level="4" task="4" keywords="0x4000000000000000" message="A TCP connection has been successfully established.">
+    </event>
+    <event value="99" version="0" opcode="15" channel="17" level="3" task="4" keywords="0x4000000000000000" message="The TCP connection has failed with the error code %1.">
+    </event>
+    <event value="100" version="0" opcode="15" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The server has confirmed that the client&apos;s multi-transport capability.">
+    </event>
+    <event value="101" version="0" opcode="16" channel="17" level="3" task="4" keywords="0x4000000000000000" message="The network characteristics detection function has been disabled because of %1.">
+    </event>
+    <event value="102" version="0" opcode="17" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The server has terminated main RDP connection with the client.">
+    </event>
+    <event value="103" version="0" opcode="17" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The disconnect reason is %1">
+    </event>
+    <event value="129" version="0" opcode="18" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The server is using %1 to bind to port %2.">
+    </event>
+    <event value="130" version="0" opcode="15" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The server has initiated a multi-transport request to the client, for tunnel: %1.">
+    </event>
+    <event value="131" version="0" opcode="15" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The server accepted a new %1 connection from client %2.">
+    </event>
+    <event value="132" version="0" opcode="15" channel="17" level="4" task="4" keywords="0x4000000000000000" message="A channel %1 has been connected between the server and the client using transport tunnel: %2.">
+    </event>
+    <event value="133" version="0" opcode="16" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The following network characteristics have been detected for tunnel %1; Link latency : %2 milliseconds and Bandwidth: %3 kbps.">
+    </event>
+    <event value="134" version="0" opcode="16" channel="17" level="3" task="4" keywords="0x4000000000000000" message="Link latency and bandwidth could not be detected for tunnel %2.  The error code is %1. The following default network characteristics will be used;  Link latency: %3 milliseconds and Bandwidth:%4 kbps. ">
+    </event>
+    <event value="135" version="0" opcode="15" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The multi-transport connection finished for tunnel: %1, its transport type set to %2.">
+    </event>
+    <event value="136" version="0" opcode="15" channel="17" level="2" task="4" keywords="0x4000000000000000" message="Unable to establish a multi-transport connection; the connection will use TCP. Consult the product documentation to enable UDP Connections.">
+    </event>
+    <event value="137" version="0" opcode="16" channel="17" level="3" task="4" keywords="0x4000000000000000" message="The following network characteristics have been detected for tunnel %1; Link latency : %2 milliseconds and Bandwidth: %3 kbps. Connections with these network characteristics may impact user experience.">
+    </event>
+    <event value="138" version="0" opcode="15" channel="16" level="3" task="4" keywords="0x8000000000000000" message="The DTLS initialization failed with the error code %1, TLS will be used instead. Audio/Video experience may be impacted.">
+    </event>
+    <event value="139" version="0" opcode="14" channel="17" level="3" task="4" keywords="0x4000000000000000" message="The server security layer detected an error (%1) in the protocol stream and the client (Client IP:%2) has been disconnected.">
+    </event>
+    <event value="140" version="0" opcode="14" channel="17" level="3" task="4" keywords="0x4000000000000000" message="A connection from the client computer with an IP address of %1 failed because the user name or password is not correct.">
+    </event>
+    <event value="141" version="0" opcode="11" channel="17" level="4" task="4" keywords="0x4000000000000000" message="PerfCounter session started with instance ID %1">
+    </event>
+    <event value="161" version="0" opcode="19" channel="17" level="2" task="4" keywords="0x4000000000000000" message="The RemoteFX encoding engine encountered an error (%1).">
+    </event>
+    <event value="162" version="0" opcode="19" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The client supports version %1 of the RDP graphics protocol, client mode: %2, H264 enabled: %3">
+    </event>
+    <event value="163" version="0" opcode="19" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The client suports RDP 7.1 or lower protocol.">
+    </event>
+    <event value="164" version="0" opcode="19" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The client advertized RDP8 protocol configuration is not supported by the server.">
+    </event>
+    <event value="165" version="0" opcode="19" channel="17" level="4" task="4" keywords="0x4000000000000000" message="RemoteFX Encoding for RemoteFX Clients designed for Windows Server 2008 R2 SP1 is enabled and a compatible session was created.">
+    </event>
+    <event value="166" version="0" opcode="19" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The RemoteFX Adaptive Graphics internal configuration changed to optimize for the minimum use of network bandwidth.">
+    </event>
+    <event value="167" version="0" opcode="19" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The RemoteFX Adaptive Graphics internal configuration changed to optimize for experience.">
+    </event>
+    <event value="168" version="0" opcode="11" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The resolution requested by the client: Monitor %1: (%2, %3), origin: (%4, %5).">
+    </event>
+    <event value="169" version="0" opcode="19" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The client operating system type is (%1, %2).">
+    </event>
+    <event value="193" version="0" opcode="19" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The RemoteFX Media Remoting is not supported by the client.">
+    </event>
+    <event value="194" version="0" opcode="19" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The RemoteFX Media Remoting is not supported by the current server configuration.">
+    </event>
+    <event value="195" version="0" opcode="19" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The RemoteFX Media Remoting module encountered an error. The error code is %1.">
+    </event>
+    <event value="225" version="0" opcode="19" channel="18" level="4" task="4" keywords="0x2000000000000000" message="%1: Transitioned successfully from %3 to %5 in response to %7.">
+    </event>
+    <event value="226" version="0" opcode="19" channel="17" level="3" task="4" keywords="0x4000000000000000" message="%1: An error was encountered when transitioning from %3 in response to %7 (error code %8).">
+    </event>
+    <event value="257" version="0" opcode="20" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The connection is using advanced RemoteFX RemoteApp graphics.">
+    </event>
+    <event value="258" version="0" opcode="21" channel="17" level="4" task="4" keywords="0x4000000000000000" message="The connection is not using advanced RemoteFX RemoteApp graphics">
+    </event>
+  </events>
+</provider>

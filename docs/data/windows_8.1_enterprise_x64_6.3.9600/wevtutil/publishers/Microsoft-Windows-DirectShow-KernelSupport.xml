@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DirectShow-KernelSupport" guid="3cc2d4af-da5e-4ed4-bcbe-3cf995940483" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\System32\ksproxy.ax" messageFileName="C:\Windows\System32\ksproxy.ax" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-DirectShow-KernelSupport/Performance" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="Enter" value="655360" message="Enter">
+    </opcode>
+    <opcode name="Exit" value="720896" message="Exit">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="KSProxy_Info" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="KSProxy Info">
+    </task>
+    <task name="KSProxy_Buffer" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="KSProxy Buffer">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="10" channel="16" level="4" task="1" keywords="0x4000000000000000" message="PluginCreation_Start">
+    </event>
+    <event value="2" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x4000000000000000" message="PluginCreation_Complete">
+    </event>
+    <event value="3" version="0" opcode="10" channel="16" level="4" task="1" keywords="0x4000000000000000" message="SetMediaType_Enter">
+    </event>
+    <event value="4" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x4000000000000000" message="SetMediaType_Exit">
+    </event>
+    <event value="5" version="0" opcode="10" channel="16" level="4" task="1" keywords="0x4000000000000000" message="SetFormat_Enter">
+    </event>
+    <event value="6" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x4000000000000000" message="SetFormat_Exit">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x4000000000000000" message="InputPin_Receive: Pointer = %1, Timestamp = %2">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x4000000000000000" message="ProcessInput_Start: Pointer = %1, Timestamp = %2">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x4000000000000000" message="ProcessInput_Complete: Pointer = %1, Timestamp = %2">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x4000000000000000" message="ProcessOutput_Start: Pointer = %1, Timestamp = %2">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x4000000000000000" message="ProcessOutput_Complete: Pointer = %1, Timestamp = %2">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x4000000000000000" message="DeviceIo_Start: Pointer = %1, Timestamp = %2">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x4000000000000000" message="DeviceIo_Complete: Pointer = %1, Timestamp = %2">
+    </event>
+  </events>
+</provider>

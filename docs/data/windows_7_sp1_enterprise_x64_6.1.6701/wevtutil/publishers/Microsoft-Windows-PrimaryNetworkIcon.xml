@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-PrimaryNetworkIcon" guid="8ce93926-bdae-4409-9155-2fe4799ef4d3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7601.17514&amp;FileName=pnidui.dll&amp;FileVer=6.1.7601.17514" resourceFileName="C:\Windows\system32\pnidui.dll" messageFileName="C:\Windows\system32\pnidui.dll" message="Microsoft-Windows-PrimaryNetworkIcon" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-PrimaryNetworkIcon/Performance" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-NetworkLocationWizard/Operational" id="17" flags="0" message="Microsoft-Windows-NetworkLocationWizard/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="NetworkLocationDialog_LocationSelected" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NetworkLocationDialog_Launched" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NetworkLocationStatusDialog_OnSetActive" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_Initialized" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_Resumed" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_Disconnected" value="121" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_Connecting" value="122" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_Limited" value="123" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_LocalConnected" value="124" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_InternetConnected" value="125" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_WirelessAvailable" value="126" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_NetworkSharingCenter_Selected" value="161" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_VANUI_Selected" value="162" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_TroubleShoot_Selected" value="163" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrimaryNetworkIcon_Task_ToolTip_Selected" value="164" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PNIPerf_Task_RightClick" value="201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InterfaceHotspotNotification" value="2001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="NetworkLocationDialog - Location Selected: Category %1 ElevationRequired: %2">
+    </event>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="NetworkLocationDialog - Launched">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000000" message="PrimaryNetworkIcon Initialized">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="4" task="102" keywords="0x8000000000000000" message="PrimaryNetworkIcon Resumed">
+    </event>
+    <event value="121" version="0" opcode="0" channel="16" level="4" task="121" keywords="0x8000000000000000" message="PrimaryNetworkIcon: State changed to Disconnected">
+    </event>
+    <event value="122" version="0" opcode="0" channel="16" level="4" task="122" keywords="0x8000000000000000" message="PrimaryNetworkIcon: State changed to Connecting">
+    </event>
+    <event value="123" version="0" opcode="0" channel="16" level="4" task="123" keywords="0x8000000000000000" message="PrimaryNetworkIcon: State changed to Limited">
+    </event>
+    <event value="124" version="0" opcode="0" channel="16" level="4" task="124" keywords="0x8000000000000000" message="PrimaryNetworkIcon: State changed to LocalConnected">
+    </event>
+    <event value="125" version="0" opcode="0" channel="16" level="4" task="125" keywords="0x8000000000000000" message="PrimaryNetworkIcon: State changed to InternetConnected">
+    </event>
+    <event value="126" version="0" opcode="0" channel="16" level="4" task="126" keywords="0x8000000000000000" message="PrimaryNetworkIcon: State changed to WirelessAvailable">
+    </event>
+    <event value="161" version="0" opcode="0" channel="16" level="4" task="161" keywords="0x8000000000000000" message="PrimaryNetworkIcon: Network and sharing center selected">
+    </event>
+    <event value="162" version="0" opcode="0" channel="16" level="4" task="162" keywords="0x8000000000000000" message="PrimaryNetworkIcon: VAN UI selected">
+    </event>
+    <event value="163" version="0" opcode="0" channel="16" level="4" task="163" keywords="0x8000000000000000" message="PrimaryNetworkIcon: Troubleshoot selected">
+    </event>
+    <event value="164" version="0" opcode="0" channel="16" level="4" task="164" keywords="0x8000000000000000" message="PrimaryNetworkIcon: Tooltip selected">
+    </event>
+    <event value="201" version="0" opcode="1" channel="16" level="4" task="201" keywords="0x8001000000000000" message="PrimaryNetworkIcon: RightClick Start">
+    </event>
+    <event value="202" version="0" opcode="2" channel="16" level="4" task="201" keywords="0x8001000000000000" message="PrimaryNetworkIcon: RightClick Stop">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Network location wizard has been suppressed by a system or user registry key.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Network location wizard has been suppressed by a user through the UI.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Network location wizard has been suppressed because the network is ad-hoc.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="RunNwCategoryWizard failed.  Details: %1">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="XWizard failed to run the wizard.  Details: %1">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="CanRunTask failed.  Details: %1">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Network location has been selected.  Network: %1 Location: %2">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Navigated directly to finish page.  Details: %1">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Network location selection has been canceled at elevation.  Network: %1 Location: %2">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Could not register for UI status events.  Details: %1">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="16" level="4" task="2001" keywords="0x8001000000000000" message="PrimaryNetworkIcon: User notified for interface hotspot">
+    </event>
+  </events>
+</provider>

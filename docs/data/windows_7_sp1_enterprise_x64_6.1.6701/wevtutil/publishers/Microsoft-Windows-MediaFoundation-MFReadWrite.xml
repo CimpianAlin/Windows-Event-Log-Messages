@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MediaFoundation-MFReadWrite" guid="4b7eac67-fc53-448c-a49d-7cc6db524da7" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.7600.16385&amp;FileName=MFReadWrite.dll&amp;FileVer=12.0.7600.16385" resourceFileName="C:\Windows\system32\MFReadWrite.dll" messageFileName="C:\Windows\system32\MFReadWrite.dll" message="Microsoft-Windows-MediaFoundation-MFReadWrite" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-MediaFoundation-MFReadWrite/Transform" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SourceReaderTask" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="SourceReader">
+    </task>
+    <task name="SinkWriterTask" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="SinkWriter">
+    </task>
+    <task name="TransformTask" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Transform">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_SetCurrentMediaType_Begin">
+    </event>
+    <event value="1" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_SetCurrentMediaType_End">
+    </event>
+    <event value="2" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_SetCurrentPosition_Begin">
+    </event>
+    <event value="3" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_SetCurrentPosition_End">
+    </event>
+    <event value="4" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_ReadSample_Begin">
+    </event>
+    <event value="5" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_ReadSample_End">
+    </event>
+    <event value="6" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_Flush_Begin">
+    </event>
+    <event value="7" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_Flush_End">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_RequestSample">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_MediaSourceEvent">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="SourceReader_MediaStreamEvent">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="SourceReader_Error">
+    </event>
+    <event value="100" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_SetInputMediaType_Begin">
+    </event>
+    <event value="101" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_SetInputMediaType_End">
+    </event>
+    <event value="102" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_BeginWriting">
+    </event>
+    <event value="103" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_WriteSample">
+    </event>
+    <event value="104" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_StreamTick">
+    </event>
+    <event value="105" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_Marker_Placed">
+    </event>
+    <event value="106" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_Marker_Fired">
+    </event>
+    <event value="107" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_ProcessSample">
+    </event>
+    <event value="108" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_Finalize_Begin">
+    </event>
+    <event value="109" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_Finalize_End">
+    </event>
+    <event value="110" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_MediaSinkEvent">
+    </event>
+    <event value="111" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_StreamSinkEvent">
+    </event>
+    <event value="112" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_Throttle_Begin">
+    </event>
+    <event value="113" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_Throttle_End">
+    </event>
+    <event value="114" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="SinkWriter_Error">
+    </event>
+    <event value="115" version="0" opcode="0" channel="17" level="2" task="2" keywords="0x4000000000000000" message="SinkWriter_StreamError">
+    </event>
+    <event value="116" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_StateChange">
+    </event>
+    <event value="117" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_EndOfSegment">
+    </event>
+    <event value="118" version="0" opcode="0" channel="17" level="4" task="2" keywords="0x4000000000000000" message="SinkWriter_Flush">
+    </event>
+    <event value="200" version="0" opcode="1" channel="18" level="4" task="3" keywords="0x2000000000000000" message="Transform_ProcessInput">
+    </event>
+    <event value="201" version="0" opcode="0" channel="18" level="4" task="3" keywords="0x2000000000000000" message="Transform_ProcessInputError">
+    </event>
+    <event value="202" version="0" opcode="2" channel="18" level="4" task="3" keywords="0x2000000000000000" message="Transform_ProcessOutput">
+    </event>
+    <event value="203" version="0" opcode="0" channel="18" level="4" task="3" keywords="0x2000000000000000" message="Transform_ProcessOutputError">
+    </event>
+    <event value="204" version="0" opcode="0" channel="18" level="4" task="3" keywords="0x2000000000000000" message="Transform_ProcessMessage">
+    </event>
+    <event value="205" version="0" opcode="0" channel="18" level="4" task="3" keywords="0x2000000000000000" message="Transform_Event">
+    </event>
+  </events>
+</provider>

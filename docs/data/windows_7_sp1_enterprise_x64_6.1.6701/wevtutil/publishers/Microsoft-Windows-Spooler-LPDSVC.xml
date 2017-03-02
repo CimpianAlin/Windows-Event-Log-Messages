@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Spooler-LPDSVC" guid="9f44821f-1fd9-46bf-a09a-c7f751159aaf" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=lpdsvc.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\lpdsvc.dll" messageFileName="C:\Windows\system32\lpdsvc.dll" message="Microsoft-Windows-Spooler-LPDSVC" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2147487650" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1 successfully resumed printer %2. No user action is required.">
+    </event>
+    <event value="3221229475" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Daemon (LPD) service failed to start. This can occur if the LPD service cannot gain access to system resources such as memory or the registry. Check the windows error returned by this event to determine the cause and then restart the LPD service.">
+    </event>
+    <event value="3221229476" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Daemon (LPD) service refused a request from a client because the system is out of resources. This can occur if the LPD service cannot gain access to system resources such as memory or the registry.">
+    </event>
+    <event value="3221229477" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Daemon (LPD) service received an improper sequence of commands from %1 and refused the print job.">
+    </event>
+    <event value="3221229478" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Daemon (LPD) service received a print job from %1 in an unsupported print format. This can occur if the printer driver on the client is configured to use a print data type that is unsupported by this printer. The document may not print correctly as a result.">
+    </event>
+    <event value="3221229479" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1 on %2 could not remove the print job submitted by %3 on %4 because the user does not have the Manage Documents permission.">
+    </event>
+    <event value="3221229480" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Daemon (LPD) service received commands in an invalid format from %1 and refused the print job. This can occur if the Line Printer Remote (LPR) client is incompatible with the Windows LPD service and Request for Comments (RFC) 1179. Try printing using a different LPR client.">
+    </event>
+    <event value="3221229481" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Daemon (LPD) service refused a print job from %2 for printer %1 because the specified printer does not exist on this computer. Retry printing from the client using the correct printer name.">
+    </event>
+    <event value="3221229482" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Daemon (LPD) service could not satisfy the request from %1, most likely because of network problems. Check network connectivity between the two computers.">
+    </event>
+  </events>
+</provider>

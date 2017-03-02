@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ApplicationExperienceInfrastructure" guid="5ec13d8e-4b3f-422e-a7e7-3121a1d90c7a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=apphelp.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\apphelp.dll" messageFileName="C:\Windows\system32\apphelp.dll" message="Microsoft-Windows-ApplicationExperienceInfrastructure" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="2" channel="9" level="3" task="0" keywords="0x8000000000000000" message="The application (%3, from vendor %5) has the following problem: %7">
+    </event>
+    <event value="2" version="0" opcode="0" channel="9" level="1" task="0" keywords="0x8000000000000000" message="The application (%3, from vendor %5) was hard-blocked and raised the following: %7">
+    </event>
+    <event value="3" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="The application (%3, from vendor %5) was detected containing legacy redistributable software.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Forwarding" guid="699e309c-e782-4400-98c8-e21d162d7b7b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=wevtfwd.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\wevtfwd.dll" messageFileName="C:\Windows\system32\wevtfwd.dll" message="Microsoft-Windows-Eventlog-ForwardingPlugin" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Forwarding/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Forwarding/Debug" id="17" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The subscription %1 is created successfully.">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The subscription %1 is created, but one or more channels in the query could not be read at this time.">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="102" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The subscription %1 can not be created. The error code is %3.">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The subscription %1 is unsubscribed.">
+    </event>
+    <event value="104" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="104" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The forwarder has successfully connected to the subscription manager at address %1.">
+    </event>
+    <event value="105" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The forwarder is having a problem communicating with subscription manager at address %1.  Error code is %2 and Error Message is %3.">
+    </event>
+    <event value="106" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Subscription policy has changed.  Forwarder is adjusting its subscriptions according to the subscription manager(s) in the updated policy.">
+    </event>
+    <event value="107" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A subscription policy contains invalid configuration.  Description of policy is %1.">
+    </event>
+  </events>
+</provider>

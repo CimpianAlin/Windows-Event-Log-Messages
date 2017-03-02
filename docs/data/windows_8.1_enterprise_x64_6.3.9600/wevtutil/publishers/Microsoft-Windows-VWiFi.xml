@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-VWiFi" guid="314b2b0d-81ee-4474-b6e0-c2aaec0ddbde" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\vwififlt.sys" messageFileName="C:\Windows\system32\drivers\vwififlt.sys" message="Microsoft-Windows-VWiFi" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-VWiFi/Diagnostic" id="16" flags="0" message="Microsoft-Windows-VWiFi/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="EnableVWiFi" value="24001" eventGUID="00000000-0000-0000-0000-000000000000" message="EnableVWiFi">
+    </task>
+    <task name="DisableVWiFi" value="24002" eventGUID="00000000-0000-0000-0000-000000000000" message="DisableVWiFi">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="25001" version="0" opcode="1" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Received request to enable virtualization. 
+
+	Network Adapter: %2
+	Interface GUID: %1">
+    </event>
+    <event value="25002" version="0" opcode="1" channel="16" level="4" task="24002" keywords="0x8001000000000000" message="Received request to disable virtualization. 
+
+	Network Adapter: %2
+	Interface GUID: %1">
+    </event>
+    <event value="25003" version="0" opcode="2" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Virtual Miniport Started. 
+
+	Network Adapter: %2
+	Interface GUID: %1 Virtual Interface GUID: %3">
+    </event>
+    <event value="25004" version="0" opcode="2" channel="16" level="4" task="24002" keywords="0x8001000000000000" message="Virtual Miniport Stopped. 
+
+	Network Adapter: %2
+	Interface GUID: %1 Virtual Interface GUID: %3">
+    </event>
+  </events>
+</provider>

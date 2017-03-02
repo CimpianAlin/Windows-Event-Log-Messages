@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-WHEA" guid="7b563579-53c8-44e7-8236-0f87b9fe6594" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=PSHED.DLL&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\PSHED.DLL" messageFileName="C:\Windows\system32\PSHED.DLL" message="Microsoft-Windows-Kernel-WHEA" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-WHEA/Errors" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-WHEA/Operational" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="WheaError" mask="800" message="WHEA Error Events">
+    </keyword>
+    <keyword name="win:SQM" mask="8000000000000" message="SQM">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A non-fatal hardware error occurred.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error occurred.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="A non-fatal hardware error occurred.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="A fatal hardware error occurred.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="WHEA successfully initialized.
+   %1 error sources are active
+   Error record format version is %2.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Machine Check Event reported is a fatal memory hierarchy error.
+ Trasaction Type: %1
+ Memory Hierarchy Level: %5
+ Request Type: %3
+ Address: %6">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Machine Check Event reported is a memory hierarchy error.
+ Trasaction Type: %1
+ Memory Hierarchy Level: %5
+ Request Type: %3
+ Address: %6">
+    </event>
+    <event value="8" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Machine Check Event reported is a fatal TLB error.
+ Transaction Type: %1
+ Memory Hierarchy Level: %5
+ Address: %6">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Machine Check Event reported is a TLB error.
+ Transaction Type: %1
+ Memory Hierarchy Level: %5
+ Address: %6">
+    </event>
+    <event value="10" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Machine Check Event reported is a fatal Bus or Interconnect error.
+ Memory Hierarchy Level: %5
+ Participation: %2
+ Request Type: %3
+ Memory/IO: %4
+ Address: %6">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Machine Check Event reported is a Bus or Interconnect error.
+ Memory Hierarchy Level: %5
+ Participation: %2
+ Request Type: %3
+ Memory/IO: %4
+ Address: %6">
+    </event>
+    <event value="12" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Machine Check Event reported is a fatal Bus or Interconnect timeout error.
+ Memory Hierarchy Level: %5
+ Participation: %2
+ Request Type: %3
+ Memory/IO: %4
+ Address: %6">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Machine Check Event reported is a Bus or Interconnect timeout error.
+ Memory Hierarchy Level: %5
+ Participation: %2
+ Request Type: %3
+ Memory/IO: %4
+ Address: %6">
+    </event>
+    <event value="14" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Machine Check Event reported is a fatal internal watchdog timer error.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Machine Check Event reported is a fatal microcode ROM parity error.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Machine Check Event reported is a fatal condition. A processor received an external signal that an unrecoverable error has occurred.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Machine Check Event reported is a fatal functional redundancy check error.">
+    </event>
+    <event value="18" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="PCI Express reported a fatal error.
+ Device Identifier: Bus %1 Device %2 Function %3
+ Uncorrectable Error Status: %4
+ Correctable Error Status: %5
+ Header Log: %6 %7 %8 %9">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="PCI Express reported a non-fatal error.
+ Device Identifier: Bus %1 Device %2 Function %3
+ Uncorrectable Error Status: %4
+ Correctable Error Status: %5
+ Header Log: %6 %7 %8 %9">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000800" message="WHEA Event">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000800" message="The memory page located at physical address %1 %2 %3 %4. %5">
+    </event>
+    <event value="32" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="33" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="34" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="35" version="0" opcode="2" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="36" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="37" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="38" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="39" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="40" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="41" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000800" message="A processs was terminated due to an uncorrected hardware error.
+ Process ID: %1
+ Image name: %2">
+    </event>
+  </events>
+</provider>

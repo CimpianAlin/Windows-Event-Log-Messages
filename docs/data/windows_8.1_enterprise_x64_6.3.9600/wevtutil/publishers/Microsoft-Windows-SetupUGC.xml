@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SetupUGC" guid="75ebc33e-0870-49e5-bdce-9d7028279489" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=SetupUGC.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\SetupUGC.exe" messageFileName="C:\Windows\system32\SetupUGC.exe" message="Microsoft-Windows-SetupUGC" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SetupUGC/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Setup" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tskRunSetupUGC" value="1000" eventGUID="f1ba38a8-e276-4b7a-ba69-d363a0fb0ab8" message="Run SetupUGC">
+    </task>
+    <task name="tskRunProcessorsForPass" value="2000" eventGUID="2e4f4e87-0f58-417e-b4cd-df8d7b4b113e" message="Running Processors for Pass">
+    </task>
+    <task name="tskRunProcessor" value="3000" eventGUID="17c69a28-e08b-4dc2-87a7-8b3f77687aab" message="Running Processor">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="keyPerformance" mask="1" message="Performance">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="1000" keywords="0x8000000000000001" message="SetupUGC.exe running with command line &quot;%1&quot;.">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="16" level="4" task="1000" keywords="0x8000000000000001" message="SetupUGC.exe exiting with status %1.">
+    </event>
+    <event value="2001" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000001" message="Running Processors for pass &quot;%1&quot;.">
+    </event>
+    <event value="2002" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000001" message="Finished running processors for pass with status %1.">
+    </event>
+    <event value="3001" version="0" opcode="1" channel="16" level="4" task="3000" keywords="0x8000000000000001" message="Running Processor &quot;%1&quot;.">
+    </event>
+    <event value="3002" version="0" opcode="2" channel="16" level="4" task="3000" keywords="0x8000000000000001" message="Finished running processor with status %1.">
+    </event>
+  </events>
+</provider>

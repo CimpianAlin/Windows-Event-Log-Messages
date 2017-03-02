@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-InstallUX" guid="93b4ff2e-42a9-431f-876c-3c70a84560fe" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=InstallEventRes.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\oobe\InstallEventRes.dll" messageFileName="C:\Windows\system32\oobe\InstallEventRes.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="InstallUXPerformance-Analytic" id="16" flags="0" message="This is the analytic channel for Windows Install UX Performance.">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="InstallWindows" value="1" eventGUID="e89399f3-eda0-4e02-a265-e99b8ee95b87" message="Install Windows Task">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The pidgen validation started">
+    </event>
+    <event value="1" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The pidgen validation stopped">
+    </event>
+    <event value="2" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The product key validation started">
+    </event>
+    <event value="3" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The product key validation stopped">
+    </event>
+    <event value="4" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The search and download of setup DU started">
+    </event>
+    <event value="5" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The search and download of setup DU stopped">
+    </event>
+    <event value="6" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The search and download of compat DU started">
+    </event>
+    <event value="7" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The search and download of compat DU stopped">
+    </event>
+    <event value="8" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The search and download of component and driver DU started">
+    </event>
+    <event value="9" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The search and download of component and driver DU stopped">
+    </event>
+    <event value="10" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="Applying Windows image started">
+    </event>
+    <event value="11" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="Applying Windows image stopped">
+    </event>
+    <event value="12" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The downlevel gather started">
+    </event>
+    <event value="13" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The downlevel gather stopped">
+    </event>
+    <event value="14" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The driver migration started">
+    </event>
+    <event value="15" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The driver migration stopped">
+    </event>
+    <event value="16" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="Copying setup files started">
+    </event>
+    <event value="17" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="Copying setup files stopped">
+    </event>
+    <event value="18" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The firstboot apply started">
+    </event>
+    <event value="19" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The firstboot apply stopped">
+    </event>
+    <event value="20" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The secondboot apply started">
+    </event>
+    <event value="21" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000000000" message="The secondboot apply stopped">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="8" level="4" task="1" keywords="0x4000000000000000" message="New Setup information">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Disk" guid="6b4db0bc-9a3d-467d-81b9-a84c6f2f3d40" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\disk.sys" messageFileName="C:\Windows\system32\drivers\disk.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Disk/Operational" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="OpCodeDiskCacheInfo" value="720896" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TaskDiskCacheInfo" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Disk Cache Information">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="DiskCache" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Disk Cache Information">
+    </event>
+  </events>
+</provider>

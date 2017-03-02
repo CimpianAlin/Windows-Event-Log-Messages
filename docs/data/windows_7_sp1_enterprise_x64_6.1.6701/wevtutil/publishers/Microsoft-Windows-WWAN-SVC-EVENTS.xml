@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WWAN-SVC-EVENTS" guid="3cb40aaa-1145-4fb8-b27b-7e30f0454316" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=8.1.2.0&amp;FileName=wwansvc.dll&amp;FileVer=8.1.2.0" resourceFileName="C:\Windows\system32\wwansvc.dll" messageFileName="C:\Windows\system32\wwansvc.dll" message="Microsoft-Windows-WWAN-SVC-EVENTS" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WWAN-SVC-Events/Diagnostic" id="16" flags="0" message="WWAN Diagnostic Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TaskSvcStartup" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="WWAN Service Startup">
+    </task>
+    <task name="TaskSvcShutdown" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="WWAN Service Shutdown">
+    </task>
+    <task name="TaskIntfInit" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Interface Initialization Task">
+    </task>
+    <task name="TaskRegister" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Register Task">
+    </task>
+    <task name="TaskAttach" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Attach Task">
+    </task>
+    <task name="TaskActivate" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Activate Task">
+    </task>
+    <task name="TaskConnect" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Connect Task">
+    </task>
+    <task name="TaskScan" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Scan Task">
+    </task>
+    <task name="TaskSvcResume" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="WWAN Service Startup">
+    </task>
+    <task name="TaskSvcSuspend" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="WWAN Service Suspend">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="WWAN Service event: WWAN error">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="WWAN Service event: WWAN warning">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="WWAN Service event: WWAN Service startup">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="WWAN Service event: WWAN Service shutdown">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="WWAN Service event: WWAN Interface arrived">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000000" message="WWAN Service event: WWAN Interface removed">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000800000000" message="WWAN Service event: WWAN Interface discarded">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: WWAN Interface information">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000004800000000" message="WWAN Service event: WWAN API Request">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="WWAN Service event: Register happened. Either automatically or by some request">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000800000000" message="WWAN Service event: Register request failed">
+    </event>
+    <event value="3003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000000" message="WWAN Service event: Deregister happened">
+    </event>
+    <event value="3004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="WWAN Service event: Packet attach happened. Either automatically or by some request">
+    </event>
+    <event value="3006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000000" message="WWAN Service event: Packet Detach happened. Either automatically or by some request">
+    </event>
+    <event value="3008" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="WWAN Service event: Context Activate happened. Either automatically or by some request">
+    </event>
+    <event value="3010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000000" message="WWAN Service event: Context Deactivate happened. Either automatically or by some request">
+    </event>
+    <event value="3012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="WWAN Service event: Connect happened. Either automatically or by some request">
+    </event>
+    <event value="3013" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000800000000" message="WWAN Service event: Connect request failed">
+    </event>
+    <event value="3014" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000000" message="WWAN Service event: Disconnect happened. Either automatically or by some request">
+    </event>
+    <event value="3015" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000001000000000" message="WWAN Service event: Disconnect request failed">
+    </event>
+    <event value="4001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: Signal Notification recieved">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: Radio state change Notification recieved">
+    </event>
+    <event value="4003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: Profile Update Notification recieved">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000004000000000" message="WWAN Service event: Pin Information Notification recieved">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: Pin List Notification recieved">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000000" message="WWAN Service event: Pin Action Completion Notification recieved">
+    </event>
+    <event value="10001" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001200000000000" message="WWAN Service event: Start WWAN Service Startup">
+    </event>
+    <event value="10002" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001200000000000" message="WWAN Service event: Complete WWAN Service Startup">
+    </event>
+    <event value="10011" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8001200000000000" message="WWAN Service event: Start Service Shutdown">
+    </event>
+    <event value="10012" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8001200000000000" message="WWAN Service event: Complete Service Shutdown">
+    </event>
+    <event value="10021" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8001200000000000" message="WWAN Service event: Start Interface Initialization">
+    </event>
+    <event value="10022" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8001200000000000" message="WWAN Service event: Complete Interface Initialization">
+    </event>
+    <event value="10031" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001200800000000" message="WWAN Service event: Start Registering">
+    </event>
+    <event value="10032" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001200800000000" message="WWAN Service event: Complete Registering">
+    </event>
+    <event value="10061" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8001200800000000" message="WWAN Service event: Start Connecting">
+    </event>
+    <event value="10062" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8001200800000000" message="WWAN Service event: Complete Connecting">
+    </event>
+    <event value="10071" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8001200000000000" message="WWAN Service event: Start Scanning">
+    </event>
+    <event value="10072" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8001200000000000" message="WWAN Service event: Complete Scanning">
+    </event>
+    <event value="10081" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8001200000000000" message="WWAN Service event: Start Service Resume">
+    </event>
+    <event value="10082" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8001200000000000" message="WWAN Service event: Complete Service Resume">
+    </event>
+    <event value="10091" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8001200000000000" message="WWAN Service event: Start Service Suspend">
+    </event>
+    <event value="10092" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8001200000000000" message="WWAN Service event: Complete Service Suspend">
+    </event>
+  </events>
+</provider>

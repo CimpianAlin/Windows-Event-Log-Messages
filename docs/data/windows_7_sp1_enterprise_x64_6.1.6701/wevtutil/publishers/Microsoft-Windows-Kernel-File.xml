@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-File" guid="edd08927-9cc4-4e65-b970-c2560fb5c289" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=advapi32.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\advapi32.dll" messageFileName="C:\Windows\system32\advapi32.dll" message="Microsoft-Windows-Kernel-File" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Kernel-File/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="NameCreate" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NameDelete" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Create" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Cleanup" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Close" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Read" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Write" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetInformation" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetDelete" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Rename" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DirEnum" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Flush" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryInformation" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FSCTL" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="OperationEnd" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DirNotify" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeletePath" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RenamePath" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetLinkPath" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetLink" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CreateNewFile" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="KERNEL_FILE_KEYWORD_FILENAME" mask="10" message="">
+    </keyword>
+    <keyword name="KERNEL_FILE_KEYWORD_FILEIO" mask="20" message="">
+    </keyword>
+    <keyword name="KERNEL_FILE_KEYWORD_OP_END" mask="40" message="">
+    </keyword>
+    <keyword name="KERNEL_FILE_KEYWORD_CREATE" mask="80" message="">
+    </keyword>
+    <keyword name="KERNEL_FILE_KEYWORD_READ" mask="100" message="">
+    </keyword>
+    <keyword name="KERNEL_FILE_KEYWORD_WRITE" mask="200" message="">
+    </keyword>
+    <keyword name="KERNEL_FILE_KEYWORD_DELETE_PATH" mask="400" message="">
+    </keyword>
+    <keyword name="KERNEL_FILE_KEYWORD_RENAME_SETLINK_PATH" mask="800" message="">
+    </keyword>
+    <keyword name="KERNEL_FILE_KEYWORD_CREATE_NEW_FILE" mask="1000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="10" keywords="0x8000000000000010" message="File name %2 was associated with key %1.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000000010" message="File name %2 was disassociated with key %1.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x80000000000000a0" message="File Create was requested (%1) for file object %3 with name %7.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="13" keywords="0x8000000000000020" message="File Cleanup was requested (%1) for file object %3 with key %4.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="14" keywords="0x8000000000000020" message="File Close was requested (%1) for file object %3 with key %4.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="15" keywords="0x8000000000000120" message="File Read was requested (%2) for file object %4 with key %5 at offset %1 for %6 bytes.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="4" task="16" keywords="0x8000000000000220" message="File Write was requested (%2) for file object %4 with key %5 at offset %1 for %6 bytes.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="4" task="17" keywords="0x8000000000000020" message="File Set Information was requested (%1) for file object %3 with key %4 for type %6 with %5 as extra information.">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="18" keywords="0x8000000000000020" message="File Delete status update was requested (%1) for file object %3 with key %4: delete status %5.">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="4" task="19" keywords="0x8000000000000020" message="File Rename was requested (%1) for file object %3 with key %4.">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="4" task="20" keywords="0x8000000000000020" message="File Directory Enumeration was requested (%1) for file object %3 with key %4 for pattern %8.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="4" task="21" keywords="0x8000000000000020" message="File Flush was requested (%1) for file object %3 with key %4.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="4" task="22" keywords="0x8000000000000020" message="File Query Information was requested (%1) for file object %3 with key %4 for type %6.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="4" task="23" keywords="0x8000000000000020" message="File FSCTL was requested (%1) for file object %3 with key %4 for type %6 with %5 as extra information.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="16" level="4" task="24" keywords="0x8000000000000060" message="File operation request %1 completed with status %3 and extra information %2.">
+    </event>
+    <event value="25" version="0" opcode="0" channel="16" level="4" task="25" keywords="0x8000000000000020" message="File Directory Change Notification was requested (%1) for file object %3 with key %4.">
+    </event>
+    <event value="26" version="0" opcode="0" channel="16" level="4" task="26" keywords="0x8000000000000400" message="File Delete was requested (%1) for file object %3 with path %7.">
+    </event>
+    <event value="27" version="0" opcode="0" channel="16" level="4" task="27" keywords="0x8000000000000800" message="File Rename was requested (%1) for file object %3 with new path %7.">
+    </event>
+    <event value="28" version="0" opcode="0" channel="16" level="4" task="28" keywords="0x8000000000000800" message="File Link was requested (%1) for file object %3 to path %7.">
+    </event>
+    <event value="29" version="0" opcode="0" channel="16" level="4" task="19" keywords="0x8000000000000020" message="File SetLink was requested (%1) for file object %3 with key %4.">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="4" task="30" keywords="0x8000000000001000" message="New File Creation was requested (%1) for file object %3 with name %7.">
+    </event>
+  </events>
+</provider>

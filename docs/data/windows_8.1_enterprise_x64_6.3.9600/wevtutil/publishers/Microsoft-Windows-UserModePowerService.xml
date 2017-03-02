@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-UserModePowerService" guid="ce8dee0b-d539-4000-b0f8-77bed049c590" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=umpo.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\umpo.dll" messageFileName="C:\Windows\system32\umpo.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-UserModePowerService/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="RundownPlatformRole" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RundownPowerScheme" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RundownAcPowerSetting" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RundownDcPowerSetting" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AdaptiveDimTimeout" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RundownBatteryInformation" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RundownBatteryStatus" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RundownBrightnessCapability" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RundownPowerSource" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerSchemeChanged" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerMeterData" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerMeterMetaData" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="PowerMeter" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="7" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="8" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="12" version="0" opcode="0" channel="8" level="4" task="10" keywords="0x4000000000000000" message="Process %1 (process ID:%2) reset policy scheme from %3 to %4">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000000000000001" message="">
+    </event>
+  </events>
+</provider>

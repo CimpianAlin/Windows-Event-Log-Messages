@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Firewall-CPL" guid="546549be-9d63-46aa-9154-4f6eb9526378" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=FirewallControlPanel.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\FirewallControlPanel.dll" parameterFileName="C:\Windows\system32\FirewallControlPanel.dll" messageFileName="C:\Windows\system32\FirewallControlPanel.dll" message="Microsoft-Windows-Firewall-CPL" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Firewall-CPL/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="FwCplInitialize" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LoadExceptionsInitialize" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetFirewallOn" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetFirewallOff" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AddAppException" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AddPortException" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QUInitialize" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QUUnblock" value="115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QUAskLater" value="117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="FirewallCpl" mask="10000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="103" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="104" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="105" version="0" opcode="1" channel="16" level="4" task="105" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="106" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="107" version="0" opcode="1" channel="16" level="4" task="107" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="108" version="0" opcode="2" channel="16" level="4" task="107" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="109" version="0" opcode="1" channel="16" level="4" task="109" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="110" version="0" opcode="2" channel="16" level="4" task="109" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="111" version="0" opcode="1" channel="16" level="4" task="111" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="112" version="0" opcode="2" channel="16" level="4" task="111" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="113" version="0" opcode="1" channel="16" level="4" task="113" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="114" version="0" opcode="2" channel="16" level="4" task="113" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="115" version="0" opcode="1" channel="16" level="4" task="115" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="116" version="0" opcode="2" channel="16" level="4" task="115" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="117" version="0" opcode="1" channel="16" level="4" task="117" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="118" version="0" opcode="2" channel="16" level="4" task="117" keywords="0x8000000000010000" message="">
+    </event>
+  </events>
+</provider>

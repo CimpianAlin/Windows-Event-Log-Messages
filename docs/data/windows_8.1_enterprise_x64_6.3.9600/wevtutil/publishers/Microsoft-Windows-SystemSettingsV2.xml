@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SystemSettingsV2" guid="558f177b-fe7a-4e1b-99f1-2025db740d02" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=SystemSettingsDatabase.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\SystemSettingsDatabase.dll" messageFileName="C:\Windows\system32\SystemSettingsDatabase.dll" message="Microsoft-Windows-SystemSettingsV2" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SystemSettingsV2/Informational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-SystemSettingsV2/Performance" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-SystemSettingsV2/Diagnostic" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SystemSettingsV2_FindSettingById" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemSettingsV2_CreateSettingHandler" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemSettingsV2_GetSettingValue" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemSettingsV2_SetSettingValue" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemSettingsV2_EvaluateSettingIsEnabled" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemSettingsV2_InvokeSettingAction" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemSettingsV2_GetDescriptionText" value="70" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="10" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8000000000000000" message="Starting operation to find and create setting object with id: %1">
+    </event>
+    <event value="11" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8000000000000000" message="Finished operation to find and create setting object with id: %1">
+    </event>
+    <event value="20" version="0" opcode="1" channel="16" level="4" task="20" keywords="0x8000000000000000" message="Starting operation to create setting handler instance for setting with id: %1">
+    </event>
+    <event value="21" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000000" message="Finished operation to create setting handler instance for setting with id: %1">
+    </event>
+    <event value="30" version="0" opcode="1" channel="16" level="4" task="30" keywords="0x8000000000000000" message="Starting operation to get synchronous value for setting with id: %1">
+    </event>
+    <event value="31" version="0" opcode="2" channel="16" level="4" task="30" keywords="0x8000000000000000" message="Finished operation to get synchronous value for setting with id: %1">
+    </event>
+    <event value="40" version="0" opcode="1" channel="16" level="4" task="40" keywords="0x8000000000000000" message="Starting operation to set synchronous value for setting with id: %1">
+    </event>
+    <event value="41" version="0" opcode="2" channel="16" level="4" task="40" keywords="0x8000000000000000" message="Finished operation to set synchronous value for setting with id: %1">
+    </event>
+    <event value="50" version="0" opcode="1" channel="16" level="4" task="50" keywords="0x8000000000000000" message="Starting operation to evaluate IsEnabled for setting with id: %1">
+    </event>
+    <event value="51" version="0" opcode="2" channel="16" level="4" task="50" keywords="0x8000000000000000" message="Finished operation to evaluate IsEnabled for setting with id: %1">
+    </event>
+    <event value="60" version="0" opcode="1" channel="16" level="4" task="60" keywords="0x8000000000000000" message="Starting operation to invoke an action for setting with id: %1">
+    </event>
+    <event value="61" version="0" opcode="2" channel="16" level="4" task="60" keywords="0x8000000000000000" message="Finished operation to invoke an action for setting with id: %1">
+    </event>
+    <event value="70" version="0" opcode="1" channel="16" level="4" task="70" keywords="0x8000000000000000" message="Starting operation to get description text for setting with id: %1">
+    </event>
+    <event value="71" version="0" opcode="2" channel="16" level="4" task="70" keywords="0x8000000000000000" message="Finished operation to get description text for setting with id: %1">
+    </event>
+  </events>
+</provider>

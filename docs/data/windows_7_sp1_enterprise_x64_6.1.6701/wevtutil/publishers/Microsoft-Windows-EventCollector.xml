@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-EventCollector" guid="b977cf02-76f6-df84-cc1a-6a4b232322b6" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=wecsvc.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\wecsvc.dll" messageFileName="C:\Windows\system32\wecsvc.dll" message="Microsoft-Windows-EventCollector" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="ForwardedEvents" id="16" flags="0" message="Forwarded Events">
+    </channel>
+    <channel name="HardwareEvents" id="17" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-EventCollector/Operational" id="18" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-EventCollector/Debug" id="19" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x800000000000000" message="The Subscription %1 could not be activated on target machine %2 due to communication error.  Error Code is %3.  All retries have been performed before reaching this point and so the subscription will remain inactive on this target until subscription is resubmitted / reset. Additional fault message:%4">
+    </event>
+    <event value="2" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x800000000000000" message="The Subscription %1 could not be activated on machine %2 due to an error. Error Code is %3. Subscription will remain inactive on this target until subscription is resubmitted / reset.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x800000000000000" message="The Subscription %1 has expired and will no longer be serviced.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x800000000000000" message="The Subscription %1 could not be activated on target machine %2 due to communication error.  Error Code is %3.  The subscription will be in retrying state until the subscription becomes active or all retries have been performed. Additional fault message:%4">
+    </event>
+    <event value="5" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x800000000000000" message="The Subscription %1 was activated successfully on target machine %2.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x800000000000000" message="The Subscription %1 could not publisher events from target machine %2 to the log file of this subscription.  Error Code is %3.  All retries have been performed before reaching this point and so the subscription will remain inactive on this target until subscription is resubmitted / reset.">
+    </event>
+    <event value="501" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x800000000000000" message="The Subscription %1 has a lost event. An event from target machine %2 is lost and could not be delivered. Error Code is %3. Event data is:%4">
+    </event>
+    <event value="502" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x800000000000000" message="The Subscription %1 detects dropped events. Some events are dropped during transmission from target machine %2. The number of dropped events are %3.">
+    </event>
+  </events>
+</provider>

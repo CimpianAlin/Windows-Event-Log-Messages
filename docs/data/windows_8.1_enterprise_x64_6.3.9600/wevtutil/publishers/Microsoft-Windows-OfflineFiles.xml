@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-OfflineFiles" guid="95353826-4fbe-41d4-9c42-f521c6e86360" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=cscsvc.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\cscsvc.dll" messageFileName="C:\Windows\system32\cscsvc.dll" message="Microsoft-Windows-OfflineFiles" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-OfflineFiles/Operational" id="16" flags="0" message="Microsoft-Windows-OfflineFiles/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-OfflineFiles/Analytic" id="17" flags="0" message="Microsoft-Windows-OfflineFiles/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-OfflineFiles/Debug" id="18" flags="0" message="Microsoft-Windows-OfflineFiles/Debug">
+    </channel>
+    <channel name="Microsoft-Windows-OfflineFiles/SyncLog" id="19" flags="0" message="Microsoft-Windows-OfflineFiles/SyncLog">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="CscEvtKeywd_Agent" mask="1" message="Background agent">
+    </keyword>
+    <keyword name="CscEvtKeywd_Transition" mask="2" message="Online/offline transitions">
+    </keyword>
+    <keyword name="CscEvtKeywd_ItemStateChange" mask="4" message="Cached item state changes">
+    </keyword>
+    <keyword name="CscEvtKeywd_UserSessionChange" mask="8" message="User logon/logoff">
+    </keyword>
+    <keyword name="CscEvtKeywd_StartupShutdown" mask="10" message="Service startup/shutdown">
+    </keyword>
+    <keyword name="CscEvtKeywd_Setting" mask="20" message="Settings activity">
+    </keyword>
+    <keyword name="CscEvtKeywd_Sync" mask="40" message="Cache item sync">
+    </keyword>
+    <keyword name="CscEvtKeywd_SyncConflict" mask="80" message="Cache item sync conflicts">
+    </keyword>
+    <keyword name="CscEvtKeywd_Encrypt" mask="100" message="Encryption/unencryption of cache">
+    </keyword>
+    <keyword name="CscEvtKeywd_BGSync" mask="200" message="Background sync">
+    </keyword>
+    <keyword name="CscEvtKeywd_ExcludedFileType" mask="400" message="Blocked excluded file extensions">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000010" message="The Offline Files service started successfully.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000010" message="The Offline Files service is terminating.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000010" message="The Offline Files service is waiting for all running tasks to complete.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000010" message="The Offline Files service has terminated.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000010" message="The Offline Files service received a STOP or SHUTDOWN control from the Service Control Manager.  The service will now stop.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The Offline Files driver (csc.sys) is not running.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000008" message="User logon detected
+Account: %1
+Session: %2">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000008" message="User logoff detected
+Account: %1
+Session: %2">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000002" message="Path disconnected.
+%1">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000002" message="Path reconnected.
+%1">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000020" message="Offline Files configuration is being controlled by Group Policy.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000020" message="Offline Files configuration is being controlled by WMI configuration classes Win32_OfflineFilesUserConfiguration and Win32_OfflineFilesMachineConfiguration.">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000001" message="Background agent failed startup, error = %1">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000200" message="Background Synchronization failed on 
+
+%1
+
+">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000200" message="Background Synchronization executed successfully.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000200" message="Background Synchronization has started on 
+
+%1
+
+ as client has not synced for %2 minutes.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000002" message="Path %1 transitioned to slow link with latency = %2 and bandwidth = %3
+">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000002" message="Path %1 transitioned to online with latency = %2
+">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000200" message="Background Synchronization failed for %2 files on 
+
+%1
+
+">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000002" message="Path %1 transitioned to slow link mode so the user will work offline with background synchronization of the data to the file server. The administrator has configured this path to work offline regardless of the network performance.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000002" message="Path %1 failed to transition to slow link mode due to an open handle on %2.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000002" message="Path %1 failed to transition to slow link mode due to an open handle.">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x800000000000000" message="Sync info for %1
+Only the server copy exists.
+%10
+See details for more information.">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x800000000000000" message="Sync info for %1
+Only the client copy exists.
+%12
+See details for more information.">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x800000000000000" message="Sync info for %1
+Both client and server copies exist.
+%17
+See details for more information.">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x800000000000000" message="Sync info for %1
+Server copy exists, client copy deleted.
+%13
+See details for more information.">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x800000000000000" message="Sync info for %1
+Server copy exists, client copy replaced then deleted.
+%10\
+See details for more information.">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x800000000000000" message="Sync succeeded.
+
+%1
+
+Operation: %2">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="19" level="3" task="0" keywords="0x800000000000000" message="Sync failed.
+
+%1
+
+Operation: %2
+Result: %4">
+    </event>
+    <event value="2010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000400" message="Creation of new excluded file type 
+%1 was blocked.">
+    </event>
+    <event value="2011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000400" message="Rename of file %1 to file %2 was blocked. The source and/or target file name is an excluded file type.">
+    </event>
+  </events>
+</provider>

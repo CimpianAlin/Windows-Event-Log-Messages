@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-HealthCenterCPL" guid="959f1fac-7ca8-4ed1-89dc-cdfa7e093cb0" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=actioncentercpl.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\actioncentercpl.dll" messageFileName="C:\Windows\system32\actioncentercpl.dll" message="Microsoft-Windows-HealthCenterCPL" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-HealthCenterCPL/Performance" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WHC_ControlPanelLaunch" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WHC_ControlPanel_Data" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WHC_ControlPanel_Fix" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WHC_ControlPanel_Check_Change" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WHC_ControlPanel_TaskLink_LaunchUAC" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perftrack_HealthCenter_OpenUsingIconFlyout" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WHC_ControlPanel_TaskLink_LaunchSmartScreen" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="HealthCenterCPL" mask="10000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="101" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="102" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="103" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="104" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="105" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="106" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="107" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="108" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="109" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="110" version="0" opcode="1" channel="16" level="4" task="106" keywords="0x8000000000010000" message="">
+    </event>
+  </events>
+</provider>

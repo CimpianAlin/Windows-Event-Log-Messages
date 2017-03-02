@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-StorPort" guid="c4636a1e-7986-4646-bf10-7bc3b4a76e8e" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\storport.sys" messageFileName="C:\Windows\system32\drivers\storport.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-StorPort/Operational" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="OpCodeLUReset" value="720896" message="">
+    </opcode>
+    <opcode name="OpCodeTargetReset" value="786432" message="">
+    </opcode>
+    <opcode name="OpCodeBusReset" value="851968" message="">
+    </opcode>
+    <opcode name="OpCodeResetDetected" value="917504" message="">
+    </opcode>
+    <opcode name="OpCodeLinkDown" value="983040" message="">
+    </opcode>
+    <opcode name="OpCodeLinkUp" value="1048576" message="">
+    </opcode>
+    <opcode name="OpCodeRequestTimerCall" value="1114112" message="">
+    </opcode>
+    <opcode name="OpCodePortPause" value="1179648" message="">
+    </opcode>
+    <opcode name="OpCodePortResume" value="1245184" message="">
+    </opcode>
+    <opcode name="OpCodePortPauseDevice" value="1310720" message="">
+    </opcode>
+    <opcode name="OpCodePortResumeDevice" value="1376256" message="">
+    </opcode>
+    <opcode name="OpCodeBusChangeDetected" value="1441792" message="">
+    </opcode>
+    <opcode name="OpCodeMiniportIORequestServiceTime" value="1507328" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TaskLUReset" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Logical Unit reset">
+    </task>
+    <task name="TaskTargetReset" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Target reset">
+    </task>
+    <task name="TaskBusReset" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Bus reset">
+    </task>
+    <task name="TaskResetDetected" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Reset detected notification">
+    </task>
+    <task name="TaskLinkDown" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Link down notification">
+    </task>
+    <task name="TaskLinkUp" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Link Up notification">
+    </task>
+    <task name="TaskRequestTimerCall" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Request Timer notification">
+    </task>
+    <task name="TaskPortPause" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Port pause">
+    </task>
+    <task name="TaskPortResume" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Port resume">
+    </task>
+    <task name="TaskPortPauseDevice" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Port pause device">
+    </task>
+    <task name="TaskPortResumeDevice" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="Port resume device">
+    </task>
+    <task name="TaskBusChangeDetected" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="Bus change detect notification">
+    </task>
+    <task name="TaskMiniportIORequestServiceTime" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="Miniport IO Request Service Time">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Reset" mask="1" message="">
+    </keyword>
+    <keyword name="PortNotification" mask="2" message="">
+    </keyword>
+    <keyword name="PauseResume" mask="4" message="">
+    </keyword>
+    <keyword name="IoPerfNotification" mask="8" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="11" channel="16" level="2" task="1" keywords="0x8000000000000001" message="Logical Unit reset">
+    </event>
+    <event value="2" version="1" opcode="12" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Target reset">
+    </event>
+    <event value="3" version="1" opcode="13" channel="16" level="2" task="3" keywords="0x8000000000000001" message="Bus reset">
+    </event>
+    <event value="4" version="1" opcode="14" channel="16" level="4" task="4" keywords="0x8000000000000002" message="Reset detected notification">
+    </event>
+    <event value="5" version="1" opcode="15" channel="16" level="4" task="5" keywords="0x8000000000000002" message="Link down notification">
+    </event>
+    <event value="6" version="1" opcode="16" channel="16" level="4" task="6" keywords="0x8000000000000002" message="Link Up notification">
+    </event>
+    <event value="7" version="1" opcode="17" channel="16" level="4" task="7" keywords="0x8000000000000002" message="Request Timer notification">
+    </event>
+    <event value="8" version="1" opcode="18" channel="16" level="4" task="8" keywords="0x8000000000000004" message="Port pause">
+    </event>
+    <event value="9" version="1" opcode="19" channel="16" level="4" task="9" keywords="0x8000000000000004" message="Port resume">
+    </event>
+    <event value="10" version="1" opcode="20" channel="16" level="4" task="10" keywords="0x8000000000000004" message="Port pause device">
+    </event>
+    <event value="11" version="1" opcode="21" channel="16" level="4" task="11" keywords="0x8000000000000004" message="Port resume device">
+    </event>
+    <event value="12" version="1" opcode="22" channel="16" level="4" task="12" keywords="0x8000000000000002" message="Bus change detect notification">
+    </event>
+    <event value="13" version="1" opcode="23" channel="16" level="4" task="13" keywords="0x8000000000000008" message="Miniport IO Request Service Time">
+    </event>
+  </events>
+</provider>

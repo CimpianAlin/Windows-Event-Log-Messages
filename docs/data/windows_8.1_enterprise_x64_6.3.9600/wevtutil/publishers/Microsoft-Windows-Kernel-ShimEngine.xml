@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-ShimEngine" guid="0bf2fb94-7b60-4b4d-9766-e82f658df540" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="Microsoft-Windows-Kernel-ShimEngine" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Kernel-ShimEngine/Debug" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-ShimEngine/Operational" id="17" flags="0" message="Microsoft-Windows-Kernel-ShimEngine/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-ShimEngine/Diagnostic" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="ShimEngineEvents" mask="1" message="">
+    </keyword>
+    <keyword name="ShimEngineMessages" mask="2" message="">
+    </keyword>
+    <keyword name="DriverScopeGeneral" mask="100" message="">
+    </keyword>
+    <keyword name="DriverScopePnp" mask="200" message="">
+    </keyword>
+    <keyword name="DriverScopePower" mask="400" message="">
+    </keyword>
+    <keyword name="DriverScopeIrps" mask="800" message="">
+    </keyword>
+    <keyword name="DriverScopePool" mask="1000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="%3 shim(s) were applied to driver [%1].
+
+Shim(s) source: %2.
+
+Shim GUID(s): %4.">
+    </event>
+    <event value="4" version="1" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Flags [%4] were applied to device [%1] - class [%2].
+
+Flags source: %3.">
+    </event>
+    <event value="10" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="11" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="12" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="13" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000001000" message="">
+    </event>
+    <event value="14" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000001000" message="">
+    </event>
+    <event value="15" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000800" message="">
+    </event>
+    <event value="16" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000100" message="">
+    </event>
+    <event value="17" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000800" message="">
+    </event>
+    <event value="18" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000200" message="">
+    </event>
+    <event value="19" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000200" message="">
+    </event>
+    <event value="20" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000200" message="">
+    </event>
+    <event value="21" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000400" message="">
+    </event>
+    <event value="22" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000400" message="">
+    </event>
+    <event value="23" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000400" message="">
+    </event>
+    <event value="24" version="1" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000400" message="">
+    </event>
+  </events>
+</provider>

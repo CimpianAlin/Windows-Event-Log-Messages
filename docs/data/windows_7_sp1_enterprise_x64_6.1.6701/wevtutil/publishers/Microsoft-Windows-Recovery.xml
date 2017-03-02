@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Recovery" guid="9e95e4d0-4cb4-4b5d-a936-c972d7d08d90" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=recovery.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\recovery.dll" messageFileName="C:\Windows\system32\recovery.dll" message="Microsoft-Windows-Recovery" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Recovery/Operational" id="16" flags="0" message="Microsoft-Windows-Recovery/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="RECOVERY_CENTER_OPCODE_LIFECYCLE_START" value="720896" message="Event is logged when Recovery (in Control Panel) is started.">
+    </opcode>
+    <opcode name="RECOVERY_CENTER_OPCODE_LIFECYCLE_STOP" value="786432" message="Event is logged when Recovery (in Control Panel) is shut down.">
+    </opcode>
+    <opcode name="RECOVERY_CENTER_OPCODE_RECOVERYACTION_START" value="1376256" message="Event is logged before a recovery operation is performed.">
+    </opcode>
+    <opcode name="RECOVERY_CENTER_OPCODE_RECOVERYACTION_STOP" value="1441792" message="Event is logged after a recovery operation is completed.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="RECOVERY_CENTER_TASK_LIFECYCLE" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Lifecycle Events">
+    </task>
+    <task name="RECOVERY_CENTER_TASK_RECOVERYACTION" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Recovery operation event">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="RECOVERY_CENTER_KEYWORD_LIFECYCLE" mask="10000000" message="Lifecycle events for Recovery.">
+    </keyword>
+    <keyword name="RECOVERY_CENTER_KEYWORD_RECOVERYACTION" mask="20000000" message="Recovery operation performed.">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x4000000010000000" message="Recovery (in Control Panel) started successfully.">
+    </event>
+    <event value="1002" version="0" opcode="12" channel="16" level="4" task="1" keywords="0x4000000010000000" message="Recovery (in Control Panel) closed successfully.">
+    </event>
+    <event value="1003" version="0" opcode="21" channel="16" level="4" task="2" keywords="0x4000000020000000" message="Recovery (in Control Panel) has initiated a recovery operation.">
+    </event>
+    <event value="1004" version="0" opcode="22" channel="16" level="4" task="2" keywords="0x4000000020000000" message="The recovery operation initiated by Recovery (in Control Panel) has completed successfully.">
+    </event>
+    <event value="1005" version="0" opcode="22" channel="16" level="2" task="2" keywords="0x4000000020000000" message="The recovery operation initiated by Recovery (in Control Panel) failed to complete.">
+    </event>
+    <event value="1006" version="0" opcode="11" channel="16" level="2" task="1" keywords="0x4000000010000000" message="Recovery (in Control Panel) failed to open because of an error.">
+    </event>
+  </events>
+</provider>

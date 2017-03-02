@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-WS-Licensing" guid="ed76d77f-7fb5-4ee4-8268-ee46212cb2d3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=WSService.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\WSService.dll" messageFileName="C:\Windows\system32\WSService.dll" message="Microsoft-Windows-Store-Licensing" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-WS-Licensing/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-WS-Licensing/Debug" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-WS-Licensing/Admin" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Service_Init" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Service_Stop" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Service_Init_LicenseStore" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Service_Init_HwidCollect" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Service_Call" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Sync_Call" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Sync_Network_Call" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LicenseStore" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TLR" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="SERVICE_KEYWORD" mask="1" message="Service Keyword">
+    </keyword>
+    <keyword name="CLIENT_KEYWORD" mask="2" message="Client Keyword">
+    </keyword>
+    <keyword name="SYNC_KEYWORD" mask="4" message="Sync Keyword">
+    </keyword>
+    <keyword name="PERFINSTRUMENTATION_KEYWORD" mask="8" message="Perf Instrumentation Keyword">
+    </keyword>
+    <keyword name="LICENSESTORE_KEYWORD" mask="10" message="License Store Keyword">
+    </keyword>
+    <keyword name="TLR_KEYWORD" mask="20" message="TLR Keyword">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000001" message="[Service] Inititialize started">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000001" message="[Service] Initialize complete">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000001" message="[Service] Shutdown started">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000001" message="[Service] Shutdown complete">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] Service Call initiated for %1 [Session ID]">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] Service Call complete for %1 [Session ID]">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000004" message="[Sync] Acquire License started">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000001" message="[Sync] Acquire License complete">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000004" message="[Sync] License started">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000004" message="[Sync] License complete">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Init started">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Init complete">
+    </event>
+    <event value="13" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Add License started">
+    </event>
+    <event value="14" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Add License complete">
+    </event>
+    <event value="15" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get One License started">
+    </event>
+    <event value="16" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get One License complete">
+    </event>
+    <event value="17" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get All License started">
+    </event>
+    <event value="18" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get All License complete">
+    </event>
+    <event value="19" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get Licenses started">
+    </event>
+    <event value="20" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get Licenses complete">
+    </event>
+    <event value="21" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Delete License started">
+    </event>
+    <event value="22" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Delete License complete">
+    </event>
+    <event value="23" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Update License started">
+    </event>
+    <event value="24" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Update License complete">
+    </event>
+    <event value="25" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Set Last Sync Time started">
+    </event>
+    <event value="26" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Set Last Sync Time complete">
+    </event>
+    <event value="27" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get Last Sync Time started">
+    </event>
+    <event value="28" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get Last Sync Time complete">
+    </event>
+    <event value="29" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000004" message="[Sync] Network Call started">
+    </event>
+    <event value="30" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000004" message="[Sync] Network Call complete">
+    </event>
+    <event value="31" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000004" message="[Sync] License Network Call started">
+    </event>
+    <event value="32" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000004" message="[Sync] License Network Call complete">
+    </event>
+    <event value="33" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000004" message="[Sync] Dev License Network Call started">
+    </event>
+    <event value="34" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000004" message="[Sync] Dev License Network Call complete">
+    </event>
+    <event value="35" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000004" message="[Sync] Acquire Dev License started">
+    </event>
+    <event value="36" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000004" message="[Sync] Acquire Dev License complete">
+    </event>
+    <event value="37" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] DALFPS">
+    </event>
+    <event value="38" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] DALFPD">
+    </event>
+    <event value="39" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] DALOOTFLS">
+    </event>
+    <event value="40" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] DALOOTFLD">
+    </event>
+    <event value="41" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GAALFLS">
+    </event>
+    <event value="42" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GAALFLD">
+    </event>
+    <event value="43" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GILFLS">
+    </event>
+    <event value="44" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GILFLD">
+    </event>
+    <event value="45" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GAPFGUS">
+    </event>
+    <event value="46" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GAPFGUD">
+    </event>
+    <event value="47" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GAFLS">
+    </event>
+    <event value="48" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GAFLD">
+    </event>
+    <event value="49" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] SMBS">
+    </event>
+    <event value="50" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] SMBD">
+    </event>
+    <event value="51" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GMBS">
+    </event>
+    <event value="52" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GMBD">
+    </event>
+    <event value="53" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] SSIS">
+    </event>
+    <event value="54" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] SSID">
+    </event>
+    <event value="55" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GSIS">
+    </event>
+    <event value="56" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GSID">
+    </event>
+    <event value="57" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] SSDLDS">
+    </event>
+    <event value="58" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] SSDLDD">
+    </event>
+    <event value="59" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GSDLDS">
+    </event>
+    <event value="60" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GSDLDD">
+    </event>
+    <event value="61" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] STSSNS">
+    </event>
+    <event value="62" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] STSSND">
+    </event>
+    <event value="63" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GTSSNS">
+    </event>
+    <event value="64" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GTSSND">
+    </event>
+    <event value="65" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] IDLS">
+    </event>
+    <event value="66" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] IDLD">
+    </event>
+    <event value="67" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] RDLS">
+    </event>
+    <event value="68" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] RDLD">
+    </event>
+    <event value="69" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GDLS">
+    </event>
+    <event value="70" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GDLD">
+    </event>
+    <event value="71" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] SBALS">
+    </event>
+    <event value="72" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] SBALD">
+    </event>
+    <event value="73" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GBALS">
+    </event>
+    <event value="74" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[LS] GBALD">
+    </event>
+    <event value="75" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="76" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="77" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="78" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="79" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="80" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="81" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="82" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="83" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="84" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="85" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="86" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="87" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="88" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="89" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="90" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="91" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="92" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="93" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="94" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="95" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="96" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="97" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="98" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="99" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="100" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="103" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="104" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="105" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="106" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="107" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="108" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="109" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="110" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="111" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="112" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="113" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="114" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="115" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="116" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="117" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="118" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="119" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="120" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="121" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="122" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="123" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="124" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="125" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="126" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="127" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="128" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="129" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="130" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="131" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="132" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="133" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="134" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="135" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="136" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="137" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="138" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="139" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="140" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="141" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="142" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="143" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="144" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="145" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="146" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="147" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="148" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="149" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="150" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="151" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="152" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="153" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="154" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="155" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="156" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="157" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="158" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="159" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="160" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="161" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000002" message="Windows Store ignored the server Info. Client nonce is: %1, server nonce is: %2">
+    </event>
+    <event value="162" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[ServiceCall] IFS">
+    </event>
+    <event value="163" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[ServiceCall] IFD">
+    </event>
+    <event value="164" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[ServiceCall] IFS">
+    </event>
+    <event value="165" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[ServiceCall] IFD">
+    </event>
+    <event value="166" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[ServiceCall] IFS">
+    </event>
+    <event value="167" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[ServiceCall] IFD">
+    </event>
+    <event value="168" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="169" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="170" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000004" message="[ServiceCall] IFS">
+    </event>
+    <event value="171" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000004" message="[ServiceCall] IFD">
+    </event>
+    <event value="172" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000004" message="[Sync] Network Call started">
+    </event>
+    <event value="173" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000004" message="[Sync] Network Call complete">
+    </event>
+    <event value="174" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="175" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="176" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="177" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="180" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="[Service] Service initialization failed - result code: %1">
+    </event>
+    <event value="181" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="[Service] WSService was restarted while there is a pending rearm reboot required.  Caller: %1">
+    </event>
+    <event value="182" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="[Service] WSService attempted to reenable the background license check task while there were no packages">
+    </event>
+    <event value="183" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="[Service] WSService has reenabled the background license check task">
+    </event>
+    <event value="184" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000002" message="Windows Store Developer License OAuth Failed. HR = %1, ErrorId = %2, ErrorDescription = %3">
+    </event>
+    <event value="185" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000002" message="Windows Store Developer License OAuth Succeeded.">
+    </event>
+    <event value="186" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="WSService failed to get license for a product. productID: %1. Error code: %2">
+    </event>
+    <event value="187" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="WSClient failed to get licenses on update request. Error code: %1">
+    </event>
+    <event value="188" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="There is no valid license present for productID: %1">
+    </event>
+    <event value="189" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="Licenses were requested for %1 product categories and valid licenses were found for %2 categories">
+    </event>
+    <event value="190" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000002" message="Windows Store simulated license initialized for %1">
+    </event>
+    <event value="191" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="WSService reported that the hardware changed.">
+    </event>
+    <event value="192" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="WSService failed to collect hardware data. Stage: %1. Error code: %2">
+    </event>
+    <event value="193" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="194" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="195" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="196" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="197" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFS">
+    </event>
+    <event value="198" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000001" message="[ServiceCall] IFD">
+    </event>
+    <event value="200" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8000000000000008" message="[TLR] Full TLR started">
+    </event>
+    <event value="201" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8000000000000008" message="[TLR] Full TLR complete">
+    </event>
+    <event value="202" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000020" message="[TLR] Success: %2 [Result Code]. TLR completed evaluation for package family %1 [Package Family] and %3 [Related Packages Count] full packages">
+    </event>
+    <event value="203" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000020" message="[TLR] Error: %2 [Error Code]. TLR failed to evalute package family %1 [Package Family] and %3 [Related Packages Count] full packages">
+    </event>
+    <event value="204" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000020" message="[TLR] TLR began evaluating %2 [package count] packages with level %1 [TLR level]">
+    </event>
+    <event value="205" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000020" message="[TLR] TLR completed evaluating all packages with level %1 [TLR level], with %2 [success count], %3 [failure count], and %4 [canceled count]">
+    </event>
+    <event value="206" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000020" message="[TLR] A TLR with level %2 [TLR level] has been rescheduled for %1 [Restart time]">
+    </event>
+    <event value="210" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8000000000000008" message="[TLR] Get Package started">
+    </event>
+    <event value="211" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8000000000000008" message="[TLR] Get Package complete">
+    </event>
+    <event value="212" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8000000000000008" message="[TLR] Set Package started">
+    </event>
+    <event value="213" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8000000000000008" message="[TLR] Set Package complete">
+    </event>
+    <event value="254" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store has reported that the package origin for %1 has changed from %2 to %3.">
+    </event>
+    <event value="255" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000020" message="Windows Store has reported that the package origin for %1 has changed from %2 to %3.  This may indicate the package has been altered and you may need to re-install the package.">
+    </event>
+    <event value="256" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000020" message="Windows Store has reported one or more files in package %1 appear to be altered starting with file %2.  Please re-install the package.">
+    </event>
+    <event value="257" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000020" message="Windows Store has reported that the block map for package %1 appears to be altered.  Please re-install the package.">
+    </event>
+    <event value="258" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="The acquisition of the developer license failed. The error was: %1. Result code %2">
+    </event>
+    <event value="259" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="The acquisition of the developer license failed. Result code %1">
+    </event>
+    <event value="260" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000001" message="Windows Store was unable to load the previous package list.
+Result code: %1">
+    </event>
+    <event value="261" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000001" message="Windows Store was unable to load the latest package list.
+Result code: %1">
+    </event>
+    <event value="262" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000001" message="Windows Store was unable to load the package list.
+Result code: %1">
+    </event>
+    <event value="263" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000001" message="Windows Store was unable to load the full package list from AppX.
+Result code: %1">
+    </event>
+    <event value="264" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000020" message="Windows Store was unable to update the remediation state for package %1.
+Result code: %2">
+    </event>
+    <event value="270" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store reported AppX failed to return a valid path for a package.
+ Package: %1
+Error: %2">
+    </event>
+    <event value="271" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store reported AppX returned an empty path for package %1">
+    </event>
+    <event value="280" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store reported that the developer license has been updated and is active.
+Status: %2
+Expiration date: %3
+Result code: %1">
+    </event>
+    <event value="281" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000020" message="Windows Store reported that the developer license is no longer active.
+Status: %2.
+Expiration date: %3
+Result code: %1">
+    </event>
+    <event value="290" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store reported that the product license for %1 has been updated and is active.
+Status: %3
+Expiration date: %4
+Product Id: %5
+License Type: %6
+Result code: %2">
+    </event>
+    <event value="291" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000020" message="Windows Store reported that the product license for %1 is no longer active.
+Status: %3
+Expiration date: %4
+Product Id: %5
+License Type: %6
+Result code: %2">
+    </event>
+    <event value="300" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store has successfully evaluated package %1 - the package appears correct and licensed.
+Result code: %2">
+    </event>
+    <event value="301" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store detected a change to package %1 - the package appears correct and licensed.
+Result code: %2">
+    </event>
+    <event value="302" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store reported that the package %1 was not found and cannot be verified - the package was likely uninstalled since the last check.
+Result code: %2">
+    </event>
+    <event value="310" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000020" message="Windows Store detected a package health issue with package %1 - the package must be repaired before you can use it.
+Result code: %2">
+    </event>
+    <event value="311" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000020" message="Windows Store detected a license issue with package %1 - the package must be licensed before you can use it.
+Result code: %2">
+    </event>
+    <event value="312" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store detected that package %1 is being installed without a valid AppStore license.
+This may be expected for some packages, but the package itself cannot be run.
+Result code: %2">
+    </event>
+    <event value="315" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store has begun evaluating files for package %1.">
+    </event>
+    <event value="316" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="Windows Store has completed evaluating files for package %1.
+Evaluated file count: %2
+Result code: %3">
+    </event>
+    <event value="500" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Install User Token started">
+    </event>
+    <event value="501" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Install User Token complete">
+    </event>
+    <event value="502" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Delete User Token started">
+    </event>
+    <event value="503" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Delete User Token complete">
+    </event>
+    <event value="504" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get User Token started">
+    </event>
+    <event value="505" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get User Token complete">
+    </event>
+    <event value="506" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get All User Tokens started">
+    </event>
+    <event value="507" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get All User Tokens complete">
+    </event>
+    <event value="508" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000004" message="[Machine Sync] License started">
+    </event>
+    <event value="509" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000004" message="[Machine Sync] License complete">
+    </event>
+    <event value="510" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get all users Last Sync Time started">
+    </event>
+    <event value="511" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000010" message="[License Store] Get all users Last Sync Time complete">
+    </event>
+    <event value="512" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000001" message="Windows Store failed to sync machine licenses. Result code %1">
+    </event>
+    <event value="513" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="Windows Store successfully synced machine licenses">
+    </event>
+    <event value="514" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000001" message="Windows Store failed to recreate trusted store. Result code %1">
+    </event>
+    <event value="515" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000001" message="Windows Store recreated trusted store successfully.">
+    </event>
+  </events>
+</provider>

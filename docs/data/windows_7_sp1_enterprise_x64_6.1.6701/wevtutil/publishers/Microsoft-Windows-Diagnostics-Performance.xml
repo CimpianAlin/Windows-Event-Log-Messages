@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Diagnostics-Performance" guid="cfc18ec0-96b1-4eba-961b-622caee05b0a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=diagperf.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\diagperf.dll" messageFileName="C:\Windows\system32\diagperf.dll" message="Microsoft-Windows-Diagnostics-Performance" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Diagnostics-Performance/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Diagnostics-Performance/Diagnostic" id="17" flags="0" message="Diagnostic">
+    </channel>
+    <channel name="Microsoft-Windows-Diagnostics-Performance/Diagnostic/Loopback" id="18" flags="0" message="Diagnostic-Loopback">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Boot_Degradation" value="2162688" message="Boot Degradation">
+    </opcode>
+    <opcode name="Boot_Info" value="2228224" message="Boot Information">
+    </opcode>
+    <opcode name="Standby_Degradation" value="2293760" message="Standby Degradation">
+    </opcode>
+    <opcode name="Standby_Info" value="2359296" message="Standby Information">
+    </opcode>
+    <opcode name="Shell_Info" value="2424832" message="Shell Information">
+    </opcode>
+    <opcode name="Shell_Degradation" value="2490368" message="Shell Degradation">
+    </opcode>
+    <opcode name="VidMem_Degradation" value="2555904" message="Video Memory Degradation">
+    </opcode>
+    <opcode name="Shutdown_Info" value="2621440" message="Shutdown Information">
+    </opcode>
+    <opcode name="Shutdown_Degradation" value="2686976" message="Shutdown Degradation">
+    </opcode>
+    <opcode name="VidMem_Responsiveness" value="2752512" message="Video Memory Responsiveness">
+    </opcode>
+    <opcode name="StepUp" value="13172736" message="">
+    </opcode>
+    <opcode name="StepDown" value="13238272" message="">
+    </opcode>
+    <opcode name="GradualUp" value="13303808" message="">
+    </opcode>
+    <opcode name="GradualDown" value="13369344" message="">
+    </opcode>
+    <opcode name="Failed" value="13762560" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Boot_DMConfig" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot_UnexpectedEvent" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot_ChangedState" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot_CapturedDCL" value="1005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot_DetectedMultipleLogons" value="1006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot_ReceivedEvent" value="1007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot_Troubleshooting" value="1010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot_ProcessingSystem" value="1012" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot_ProcessingUser" value="1014" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot_ArchiveCorrupt" value="1020" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot_CancelledAnalysisViaRegistry" value="1022" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shell_DegradationDetected" value="2001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scenario_CapturedCKCL" value="2005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scenario_CapturedDCL" value="2006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scenario_SimpleEvent" value="2007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scenario_StartEvent" value="2009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scenario_StopEvent" value="2011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scenario_ProblemDetection" value="2013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scenario_TroubleShoot" value="2015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Boot" value="4002" eventGUID="00000000-0000-0000-0000-000000000000" message="Boot Performance Monitoring">
+    </task>
+    <task name="Standby" value="4003" eventGUID="00000000-0000-0000-0000-000000000000" message="Standby Performance Monitoring">
+    </task>
+    <task name="Shell" value="4005" eventGUID="00000000-0000-0000-0000-000000000000" message="System Performance Monitoring">
+    </task>
+    <task name="VidMem" value="4006" eventGUID="00000000-0000-0000-0000-000000000000" message="Desktop Window Manager Monitoring">
+    </task>
+    <task name="Shutdown" value="4007" eventGUID="00000000-0000-0000-0000-000000000000" message="Shutdown Performance Monitoring">
+    </task>
+    <task name="Boot_Loopback_SnapshotKMScenario" value="7001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootApps_ResolverLoopback" value="7101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BootDrivers_ResolverLoopback" value="7102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShutdownApps_ResolverLoopback" value="7103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SuspendApps_ResolverLoopback" value="7104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SuspendDrivers_ResolverLoopback" value="7105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ResumeDrivers_ResolverLoopback" value="7106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_ArchiveCorrupt" value="8001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_ThreadCreateFailed" value="8002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_Troubleshooting" value="8003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_WaitingForBoot" value="8005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_LocatedCKCL" value="8006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_LocatedPossibleDCL" value="8007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_RestoringConfig" value="8008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_LoadConfig" value="8009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_ProxyCallback" value="8010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_StartCKCL" value="8011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Shutdown_CancelledAnalysisViaRegistry" value="8013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="EventLog" mask="10000" message="Event Log">
+    </keyword>
+    <keyword name="BootStatus" mask="20000" message="">
+    </keyword>
+    <keyword name="ShellStatus" mask="40000" message="">
+    </keyword>
+    <keyword name="ScenarioStatus" mask="100000" message="">
+    </keyword>
+    <keyword name="BootLoopback" mask="200000" message="">
+    </keyword>
+    <keyword name="ShutdownStatus" mask="400000" message="">
+    </keyword>
+    <keyword name="ResolverLoopback" mask="800000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="1" opcode="34" channel="16" level="4" task="4002" keywords="0x8000000000010000" message="Windows has started up: 
+     Boot Duration		:	%6ms
+     IsDegradation		:	%26
+     Incident Time (UTC)	:	%2">
+    </event>
+    <event value="100" version="2" opcode="34" channel="16" level="4" task="4002" keywords="0x8000000000010000" message="Windows has started up: 
+     Boot Duration		:	%6ms
+     IsDegradation		:	%26
+     Incident Time (UTC)	:	%2">
+    </event>
+    <event value="101" version="1" opcode="33" channel="16" level="3" task="4002" keywords="0x8000000000010000" message="This application took longer than usual to start up, resulting in a performance degradation in the system startup process: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Total Time		:	%8ms
+     Degradation Time	:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="102" version="1" opcode="33" channel="16" level="3" task="4002" keywords="0x8000000000010000" message="This driver took longer to initialize, resulting in a performance degradation in the system start up process: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Total Time		:	%8ms
+     Degradation Time	:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="103" version="1" opcode="33" channel="16" level="3" task="4002" keywords="0x8000000000010000" message="This startup service took longer than expected to startup, resulting in a performance degradation in the system start up process: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Total Time		:	%8ms
+     Degradation Time	:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="104" version="1" opcode="33" channel="16" level="3" task="4002" keywords="0x8000000000010000" message="Core system took longer to initialize, resulting in a performance degradation in the system start up process: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="105" version="1" opcode="33" channel="16" level="3" task="4002" keywords="0x8000000000010000" message="Foreground optimizations (prefetching) took longer to complete, resulting in a performance degradation in the system start up process: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="106" version="1" opcode="33" channel="16" level="3" task="4002" keywords="0x8000000000010000" message="Background optimizations (prefetching) took longer to complete, resulting in a performance degradation in the system start up process: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="107" version="1" opcode="33" channel="16" level="3" task="4002" keywords="0x8000000000010000" message="Application of machine policy caused a slow down in the system start up process: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="108" version="1" opcode="33" channel="16" level="3" task="4002" keywords="0x8000000000010000" message="Application of user policy caused a slow down in the system start up process: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="109" version="1" opcode="33" channel="16" level="3" task="4002" keywords="0x8000000000010000" message="This device took longer to initialize, resulting in a performance degradation in the system start up process: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Total Time		:	%8ms
+     Degradation Time	:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="110" version="1" opcode="33" channel="16" level="3" task="4002" keywords="0x8000000000010000" message="Session manager initialization caused a slow down in the startup process: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="200" version="1" opcode="40" channel="16" level="4" task="4007" keywords="0x8000000000010000" message="Windows has shutdown: 
+     Shutdown Duration	:	%4ms
+     IsDegradation		:	%16
+     Incident Time (UTC)	:	%2">
+    </event>
+    <event value="201" version="1" opcode="41" channel="16" level="3" task="4007" keywords="0x8000000000010000" message="This application caused a delay in the system shutdown process: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Total Time		:	%8ms
+     Degradation Time	:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="202" version="1" opcode="41" channel="16" level="3" task="4007" keywords="0x8000000000010000" message="This device caused a delay in the system shutdown process: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Total Time		:	%8ms
+     Degradation Time	:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="203" version="1" opcode="41" channel="16" level="3" task="4007" keywords="0x8000000000010000" message="This service caused a delay in the system shutdown process: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Total Time		:	%8ms
+     Degradation Time	:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="300" version="1" opcode="36" channel="16" level="4" task="4003" keywords="0x8000000000010000" message="Windows has resumed from standby: 
+     Standby Duration		:	%7ms
+     Standby Incident Time (UTC)	:	%5
+     Resume  Duration		:	%39ms
+     Resume  Incident Time (UTC)	:	%37
+     IsDegradation			:	%51">
+    </event>
+    <event value="301" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="This application caused a delay during standby: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Total Time		:	%8ms
+     Degradation Time	:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="302" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="This driver caused a delay during standby while servicing a device:
+     Driver File Name		:	%3
+     Driver Friendly Name		:	%5
+     Driver Version			:	%7
+     Driver Total Time		:	%8ms
+     Driver Degradation Time	:	%9ms
+     Incident Time (UTC)		:	%1
+     Device Name			:	%17
+     Device Friendly Name		:	%19
+     Device Total Time		:	%20ms
+     Device Degradation Time	:	%21ms">
+    </event>
+    <event value="303" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="This service caused a delay during hybrid-sleep: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Total Time		:	%8ms
+     Degradation Time	:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="304" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="Creation of the hiber-file was slower than expected: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="305" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="Persisting disk caches was slower than expected: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="306" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="Preparing the video subsystem for sleep was slower than expected: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="307" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="Preparing Winlogon for sleep was slower than expected: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="308" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="Preparing system memory for sleep was slower than expected: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="309" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="Preparing core system for sleep was slower than expected: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="310" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="Preparing system worker threads for sleep was slower than expected: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="350" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="Bios initialization time was greater than 250ms (logo requirement) during system resume: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="351" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="This driver responded slower than expected to the resume request while servicing this device: 
+     Driver File Name		:	%3
+     Driver Friendly Name		:	%5
+     Driver Version			:	%7
+     Driver Total Time		:	%8ms
+     Driver Degradation Time	:	%9ms
+     Incident Time (UTC)		:	%1
+     Device Name			:	%17
+     Device Friendly Name		:	%19
+     Device Total Time		:	%20ms
+     Device Degradation Time	:	%21ms">
+    </event>
+    <event value="352" version="1" opcode="35" channel="16" level="3" task="4003" keywords="0x8000000000010000" message="Reading the hiber-file was slower than expected: 
+     Name		:	%3
+     Total Time		:	%4ms
+     Degradation Time	:	%5ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="400" version="1" opcode="37" channel="16" level="4" task="4005" keywords="0x8000000000010000" message="Information about the system performance monitoring event: 
+     Scenario		:	%3
+     Analysis result		:	%6
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="401" version="1" opcode="38" channel="16" level="3" task="4005" keywords="0x8000000000010000" message="This process is using up processor time and is impacting the performance of Windows: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Thread time		:	%8ms
+     Blocked Time		:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="402" version="1" opcode="38" channel="16" level="3" task="4005" keywords="0x8000000000010000" message="This process is doing excessive disk activities and is impacting the performance of Windows: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Thread time		:	%8ms
+     Blocked Time		:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="403" version="1" opcode="38" channel="16" level="3" task="4005" keywords="0x8000000000010000" message="This driver is using up too many resources and is impacting the performance of Windows: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Thread time		:	%8ms
+     Blocked Time		:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="404" version="1" opcode="38" channel="16" level="3" task="4005" keywords="0x8000000000010000" message="This driver is waiting longer than expected on a device: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Thread time		:	%8ms
+     Blocked Time		:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="405" version="1" opcode="38" channel="16" level="3" task="4005" keywords="0x8000000000010000" message="This file is fragmented and is impacting the performance of Windows: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Thread time		:	%8ms
+     Blocked Time		:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="406" version="1" opcode="38" channel="16" level="3" task="4005" keywords="0x8000000000010000" message="Disk IO to this file is taking longer than expected: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Thread time		:	%8ms
+     Blocked Time		:	%9ms
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="407" version="1" opcode="38" channel="16" level="3" task="4005" keywords="0x8000000000010000" message="This process is using up too much system memory: 
+     File Name		:	%3
+     Friendly Name		:	%5
+     Version		:	%7
+     Workingset size	:	%8Kb
+     Percent memory	:	%11
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="408" version="1" opcode="38" channel="16" level="3" task="4005" keywords="0x8000000000010000" message="Many processes are using too much system memory: 
+     Workingset size	:	%2Kb
+     Percent memory	:	%3
+     Incident Time (UTC)	:	%1">
+    </event>
+    <event value="500" version="1" opcode="39" channel="16" level="3" task="4006" keywords="0x8000000000010000" message="The Desktop Window Manager is experiencing heavy resource contention. 
+     Scenario	:	%5">
+    </event>
+    <event value="501" version="1" opcode="42" channel="16" level="3" task="4006" keywords="0x8000000000010000" message="The Desktop Window Manager is experiencing heavy resource contention.
+     Reason	:	%1
+     Diagnosis	:	%2">
+    </event>
+    <event value="1001" version="0" opcode="210" channel="17" level="5" task="1001" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="17" level="5" task="1002" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="17" level="5" task="1003" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="17" level="5" task="1005" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="17" level="5" task="1006" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="17" level="5" task="1007" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1010" version="0" opcode="1" channel="17" level="5" task="1010" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1011" version="0" opcode="2" channel="17" level="5" task="1010" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1012" version="0" opcode="1" channel="17" level="5" task="1012" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1013" version="0" opcode="2" channel="17" level="5" task="1012" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1014" version="0" opcode="1" channel="17" level="5" task="1014" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1015" version="0" opcode="2" channel="17" level="5" task="1014" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="17" level="5" task="1020" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="17" level="5" task="1022" keywords="0x4000000000020000" message="Status">
+    </event>
+    <event value="2001" version="0" opcode="201" channel="17" level="5" task="2001" keywords="0x4000000000040000" message="Status">
+    </event>
+    <event value="2002" version="0" opcode="202" channel="17" level="5" task="2001" keywords="0x4000000000040000" message="Status">
+    </event>
+    <event value="2003" version="0" opcode="203" channel="17" level="5" task="2001" keywords="0x4000000000040000" message="Status">
+    </event>
+    <event value="2004" version="0" opcode="204" channel="17" level="5" task="2001" keywords="0x4000000000040000" message="Status">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="17" level="5" task="2005" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="17" level="5" task="2006" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2007" version="0" opcode="1" channel="17" level="5" task="2007" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2008" version="0" opcode="2" channel="17" level="5" task="2007" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2009" version="0" opcode="1" channel="17" level="5" task="2009" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2010" version="0" opcode="2" channel="17" level="5" task="2009" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2011" version="0" opcode="1" channel="17" level="5" task="2011" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2012" version="0" opcode="2" channel="17" level="5" task="2011" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2013" version="0" opcode="1" channel="17" level="5" task="2013" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2014" version="0" opcode="2" channel="17" level="5" task="2013" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2015" version="0" opcode="1" channel="17" level="5" task="2015" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="2016" version="0" opcode="2" channel="17" level="5" task="2015" keywords="0x4000000000100000" message="Status">
+    </event>
+    <event value="7001" version="0" opcode="0" channel="18" level="4" task="7001" keywords="0x2000000000200000" message="Status">
+    </event>
+    <event value="7101" version="0" opcode="0" channel="18" level="4" task="7101" keywords="0x2000000000800000" message="Status">
+    </event>
+    <event value="7102" version="0" opcode="0" channel="18" level="4" task="7102" keywords="0x2000000000800000" message="Status">
+    </event>
+    <event value="7103" version="0" opcode="0" channel="18" level="4" task="7103" keywords="0x2000000000800000" message="Status">
+    </event>
+    <event value="7104" version="0" opcode="0" channel="18" level="4" task="7104" keywords="0x2000000000800000" message="Status">
+    </event>
+    <event value="7105" version="0" opcode="0" channel="18" level="4" task="7105" keywords="0x2000000000800000" message="Status">
+    </event>
+    <event value="7106" version="0" opcode="0" channel="18" level="4" task="7106" keywords="0x2000000000800000" message="Status">
+    </event>
+    <event value="8001" version="0" opcode="0" channel="17" level="5" task="8001" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8002" version="0" opcode="210" channel="17" level="5" task="8002" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8003" version="0" opcode="1" channel="17" level="5" task="8003" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8004" version="0" opcode="2" channel="17" level="5" task="8003" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8005" version="0" opcode="0" channel="17" level="5" task="8005" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8006" version="0" opcode="0" channel="17" level="5" task="8006" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8007" version="0" opcode="0" channel="17" level="5" task="8007" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8008" version="0" opcode="0" channel="17" level="5" task="8008" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8009" version="0" opcode="210" channel="17" level="5" task="8009" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8010" version="0" opcode="0" channel="17" level="5" task="8010" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8011" version="0" opcode="1" channel="17" level="5" task="8011" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8012" version="0" opcode="2" channel="17" level="5" task="8011" keywords="0x4000000000400000" message="Status">
+    </event>
+    <event value="8013" version="0" opcode="0" channel="17" level="5" task="8013" keywords="0x4000000000400000" message="Status">
+    </event>
+  </events>
+</provider>

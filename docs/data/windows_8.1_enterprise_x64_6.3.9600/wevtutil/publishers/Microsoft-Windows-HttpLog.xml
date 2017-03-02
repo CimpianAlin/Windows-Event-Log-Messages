@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-HttpLog" guid="c42a2738-2333-40a5-a32f-6acc36449dcc" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=HTTP.SYS&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\drivers\HTTP.SYS" parameterFileName="C:\Windows\system32\drivers\HTTP.SYS" messageFileName="C:\Windows\system32\drivers\HTTP.SYS" message="Microsoft-Windows-HttpLog" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-HttpService/Log" id="16" flags="0" message="HTTP Log Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="HTTP_KEYWORD_LOG_RESPONSE" mask="1" message="Flagged on all HTTP transactions">
+    </keyword>
+    <keyword name="HTTP_KEYWORD_LOG_PII_PRESENT" mask="20000000000" message="Flagged on all HTTP events dealing with potential personally identifiable information">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000001" message="HTTP transaction log">
+    </event>
+  </events>
+</provider>

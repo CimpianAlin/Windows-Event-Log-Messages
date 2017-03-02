@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-PowerCpl" guid="b1f90b27-4551-49d6-b2bd-dfc6453762a6" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=powercpl.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\System32\powercpl.dll" messageFileName="C:\Windows\System32\powercpl.dll" message="Microsoft-Windows-PowerCpl" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-PowerCpl/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PowerCpl_InitializePage" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerCpl_Initialize" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerCpl_SwitchPowerScheme" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerCpl_SavePowerSettings" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerCpl_RestoreDefaults" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerCpl_DeletePlan" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerCpl_InitPlanList" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerCpl_InitBrightness" value="115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerCpl_UpdatePage" value="117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="PowerCpl" mask="10000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="103" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="104" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="105" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="106" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="107" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="108" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="109" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="110" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="111" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="112" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="113" version="0" opcode="1" channel="16" level="4" task="113" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="114" version="0" opcode="2" channel="16" level="4" task="113" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="115" version="0" opcode="1" channel="16" level="4" task="115" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="116" version="0" opcode="2" channel="16" level="4" task="115" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="117" version="0" opcode="1" channel="16" level="4" task="117" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="118" version="0" opcode="2" channel="16" level="4" task="117" keywords="0x8000000000010000" message="">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-FileHistory-Core" guid="b447b4db-7780-11e0-ada3-18a90531a85a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=fhsvc.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\fhsvc.dll" messageFileName="C:\Windows\System32\fhsvc.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-FileHistory-Core/Debug" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-FileHistory-Core/Analytic" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-FileHistory-Core/WHC" id="18" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-FileHistory-Engine/BackupLog" id="19" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="File History operational state has changed">
+    </event>
+    <event value="200" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x1000000000000000" message="Unable to start a backup cycle for configuration %3">
+    </event>
+    <event value="201" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x1000000000000000" message="Unable to scan user libraries for changes and perform backup of modified files for configuration %2">
+    </event>
+    <event value="202" version="0" opcode="0" channel="19" level="3" task="0" keywords="0x1000000000000000" message="Unusual condition was encountered during scanning user libraries for changes and performing backup of modified files for configuration %2">
+    </event>
+    <event value="203" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x1000000000000000" message="Unable to finish a backup cycle for configuration %2">
+    </event>
+    <event value="204" version="0" opcode="0" channel="19" level="3" task="0" keywords="0x1000000000000000" message="Unusual condition was encountered during finalization of a backup cycle for configuration %2">
+    </event>
+    <event value="205" version="0" opcode="0" channel="19" level="0" task="0" keywords="0x1000000000000000" message="Some files could not be restored. Please manually restore them using File History (%1).">
+    </event>
+  </events>
+</provider>

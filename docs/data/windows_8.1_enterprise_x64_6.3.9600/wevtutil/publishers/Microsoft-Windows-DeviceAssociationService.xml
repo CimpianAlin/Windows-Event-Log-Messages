@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DeviceAssociationService" guid="56c71c31-cfbd-4cdd-8559-505e042bbbe1" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=das.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\das.dll" messageFileName="C:\Windows\system32\das.dll" message="Microsoft-Windows-DeviceAssociationService" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DeviceAssociationService/Performance" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="das_Query" value="5000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="das_Association" value="7000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="PerfTrackContext" mask="1" message="">
+    </keyword>
+    <keyword name="DeviceAssociationService" mask="2" message="">
+    </keyword>
+    <keyword name="query" mask="4" message="">
+    </keyword>
+    <keyword name="association" mask="8" message="">
+    </keyword>
+    <keyword name="DeviceAssociationClient" mask="100" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="5500" version="0" opcode="1" channel="16" level="4" task="5000" keywords="0x8000000000000006" message="Device Association Service RPC create query has started.">
+    </event>
+    <event value="5501" version="0" opcode="2" channel="16" level="4" task="5000" keywords="0x8000000000000006" message="Device Association Service RPC create query has exited.">
+    </event>
+    <event value="5502" version="0" opcode="1" channel="16" level="4" task="5000" keywords="0x8000000000000006" message="Device Association Service create query has started (provider queries inclusive).">
+    </event>
+    <event value="5503" version="0" opcode="2" channel="16" level="4" task="5000" keywords="0x8000000000000006" message="Device Association Service create query has exited (provider queries inclusive).">
+    </event>
+    <event value="5504" version="0" opcode="1" channel="16" level="4" task="5000" keywords="0x8000000000000006" message="Device Association provider create query has started.">
+    </event>
+    <event value="5505" version="0" opcode="2" channel="16" level="4" task="5000" keywords="0x8000000000000006" message="Device Association provider create query has exited.">
+    </event>
+    <event value="5700" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service create association context has started (provider inclusive).">
+    </event>
+    <event value="5701" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service create association context has exited (provider inclusive).">
+    </event>
+    <event value="5702" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service create association context has started (provider only).">
+    </event>
+    <event value="5703" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service create association context has exited (provider only).">
+    </event>
+    <event value="5704" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service enum association ceremonies has started (provider inclusive).">
+    </event>
+    <event value="5705" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service enum association ceremonies has exited (provider inclusive).">
+    </event>
+    <event value="5706" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service enum association ceremonies has started (provider only).">
+    </event>
+    <event value="5707" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service enum association ceremonies has exited (provider only).">
+    </event>
+    <event value="5708" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service select ceremony has started (provider inclusive).">
+    </event>
+    <event value="5709" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service select ceremony has exited (provider inclusive).">
+    </event>
+    <event value="5710" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service select ceremony ceremonies has started (provider only).">
+    </event>
+    <event value="5711" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service select ceremony has exited (provider only).">
+    </event>
+    <event value="5712" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service read ceremony data has started (provider inclusive).">
+    </event>
+    <event value="5713" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service read ceremony data has exited (provider inclusive).">
+    </event>
+    <event value="5714" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service read ceremony data ceremonies has started (provider only).">
+    </event>
+    <event value="5715" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service read ceremony data has exited (provider only).">
+    </event>
+    <event value="5716" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service write ceremony data has started (provider inclusive).">
+    </event>
+    <event value="5717" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service write ceremony data has exited (provider inclusive).">
+    </event>
+    <event value="5718" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service write ceremony data ceremonies has started (provider only).">
+    </event>
+    <event value="5719" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service write ceremony data has exited (provider only).">
+    </event>
+    <event value="5720" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service finalize ceremony has started (provider inclusive).">
+    </event>
+    <event value="5721" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service finalize ceremony has exited (provider inclusive).">
+    </event>
+    <event value="5722" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service finalize ceremony ceremonies has started (provider only).">
+    </event>
+    <event value="5723" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service finalize ceremony has exited (provider only).">
+    </event>
+    <event value="5724" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service finalize ceremony has started (provider inclusive).">
+    </event>
+    <event value="5725" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service finalize ceremony has exited (provider inclusive).">
+    </event>
+    <event value="5726" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service finalize ceremony ceremonies has started (provider only).">
+    </event>
+    <event value="5727" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service finalize ceremony has exited (provider only).">
+    </event>
+    <event value="5728" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service remove association has started (provider inclusive).">
+    </event>
+    <event value="5729" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service remove association has exited (provider inclusive).">
+    </event>
+    <event value="5730" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service remove association ceremonies has started (provider only).">
+    </event>
+    <event value="5731" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service remove association has exited (provider only).">
+    </event>
+    <event value="5732" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service close association has started (provider inclusive).">
+    </event>
+    <event value="5733" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service close association has exited (provider inclusive).">
+    </event>
+    <event value="5734" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service close association ceremonies has started (provider only).">
+    </event>
+    <event value="5735" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service close association has exited (provider only).">
+    </event>
+    <event value="5736" version="0" opcode="1" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service association has started (provider inclusive, entire association).">
+    </event>
+    <event value="5737" version="0" opcode="2" channel="16" level="4" task="7000" keywords="0x800000000000000a" message="Device Association Service association has exited (provider inclusive, entire association).">
+    </event>
+  </events>
+</provider>

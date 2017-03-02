@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Security-Audit-Configuration-Client" guid="08466062-aed4-4834-8b04-cddb414504e5" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=auditcse.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\auditcse.dll" messageFileName="C:\Windows\system32\auditcse.dll" message="Microsoft-Windows-Security-Audit-Configuration-Client" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Security-Audit-Configuration-Client/Operational" id="16" flags="0" message="Microsoft-Windows-Security-Audit-Configuration-Client/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Security-Audit-Configuration-Client/Diagnostic" id="17" flags="0" message="Microsoft-Windows-Security-Audit-Configuration-Client/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Group policy processing for audit settings initiated.">
+    </event>
+    <event value="101" version="0" opcode="2" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Group policy processing for audit settings could not be started. Error: %1">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="List of applicable GPOs:
+%1">
+    </event>
+    <event value="103" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Group policy processing for audit settings started.">
+    </event>
+    <event value="104" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to create local directory for downloading audit settings. Error: %1">
+    </event>
+    <event value="105" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Processing audit settings from the following GPO.
+Display Name: %1
+GPO ID: %2
+SYSVOL Path: %3">
+    </event>
+    <event value="106" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully downloaded the audit settings file as follows.
+Remote File: %1
+Local File: %2
+GPO Name: %3">
+    </event>
+    <event value="107" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to downloaded the audit settings file as follows.
+Remote File: %1
+Local File: %2
+GPO Name: %3
+Error: %4">
+    </event>
+    <event value="108" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully configured the audit settings on the system.">
+    </event>
+    <event value="109" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to configure the audit settings on the system.
+Error: %1">
+    </event>
+    <event value="110" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully generated RSoP data in WMI.">
+    </event>
+    <event value="111" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to generate RSoP data in WMI. Error:%1">
+    </event>
+    <event value="112" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Group policy processing for audit settings finished successfully.">
+    </event>
+    <event value="113" version="0" opcode="2" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Group policy processing for audit settings finished with error. Error: %1">
+    </event>
+    <event value="114" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Successfully communicated the results of the operation to group policy engine.">
+    </event>
+    <event value="115" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to communicate the results of the operation to group policy engine. Error: %1">
+    </event>
+  </events>
+</provider>

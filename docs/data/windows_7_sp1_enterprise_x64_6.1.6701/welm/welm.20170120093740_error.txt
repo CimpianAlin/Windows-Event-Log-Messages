@@ -1,0 +1,17 @@
+ERROR WelmLibrary.EventProviderData Event provider 'Microsoft-Windows-SNMP-Evntagnt-Extension-Agent' threw a generic event log exception while accessing the event provider Levels field: The system cannot find the file specified
+   at System.Diagnostics.Eventing.Reader.EventLogException.Throw(Int32 errorCode)
+   at System.Diagnostics.Eventing.Reader.NativeWrapper.EvtGetObjectArraySize(EventLogHandle objectArray)
+   at System.Diagnostics.Eventing.Reader.ProviderMetadata.GetProviderListProperty(EventLogHandle providerHandle, EvtPublisherMetadataPropertyId metadataProperty)
+   at System.Diagnostics.Eventing.Reader.ProviderMetadata.get_Levels()
+   at WelmLibrary.EventProviderData.GetProviderEventLevels(ProviderMetadata providerMetadata)
+ERROR WelmLibrary.EventProviderData Event provider 'Microsoft-Windows-SNMP-Evntagnt-Extension-Agent' threw a generic event log exception while accessing the event provider Events field: The system cannot find the file specified
+   at System.Diagnostics.Eventing.Reader.EventLogException.Throw(Int32 errorCode)
+   at System.Diagnostics.Eventing.Reader.NativeWrapper.EvtOpenEventMetadataEnum(EventLogHandle ProviderMetadata, Int32 flags)
+   at System.Diagnostics.Eventing.Reader.ProviderMetadata.get_Events()
+   at WelmLibrary.EventProviderData.GetProviders()
+ERROR WelmLibrary.EventProviderData Event provider 'Microsoft-Windows-SNMP-Evntagnt-Extension-Agent' threw a generic event log exception while accessing the event provider Keywords field: The system cannot find the file specified
+   at System.Diagnostics.Eventing.Reader.EventLogException.Throw(Int32 errorCode)
+   at System.Diagnostics.Eventing.Reader.NativeWrapper.EvtGetObjectArraySize(EventLogHandle objectArray)
+   at System.Diagnostics.Eventing.Reader.ProviderMetadata.GetProviderListProperty(EventLogHandle providerHandle, EvtPublisherMetadataPropertyId metadataProperty)
+   at System.Diagnostics.Eventing.Reader.ProviderMetadata.get_Keywords()
+   at WelmLibrary.EventProviderData.GetProviders()

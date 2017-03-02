@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-KeyboardFilter" guid="84de80eb-86e8-4ff6-85a6-9319abd578a4" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=KeyboardFilterSvc.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\KeyboardFilterSvc.dll" messageFileName="C:\Windows\system32\KeyboardFilterSvc.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-KeyboardFilter/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-KeyboardFilter/Admin" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-KeyboardFilter/Performance" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="ReadRegistry" value="6554600" message="Read Registry">
+    </opcode>
+    <opcode name="WriteDriver" value="6620136" message="Write Driver">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tskService" value="1000" eventGUID="0063f949-7837-4fa4-b4f1-223c60e9644f" message="Microsoft KeyboardFilter Service">
+    </task>
+    <task name="tskFilter" value="1001" eventGUID="087bc848-a4c1-4c6f-a518-70dbb64d9fb4" message="KeyboardFilter Configuration">
+    </task>
+    <task name="KeyboardFilter_HwInput" value="1002" eventGUID="0a186991-5e89-4a2f-9f56-cde7fb96ed0a" message="">
+    </task>
+    <task name="KeyboardFilter_SwInput" value="1003" eventGUID="0b61675c-1441-4557-9304-c69fa45c9429" message="">
+    </task>
+    <task name="KeyboardFilter_LoadConfig" value="1004" eventGUID="48567b39-1bf2-46d7-a052-34e8dd3bb2f9" message="">
+    </task>
+    <task name="KeyboardFilter_LayoutChg" value="1005" eventGUID="2f898db2-2dd9-47c2-9649-22c1fd7f35cb" message="">
+    </task>
+    <task name="KeyboardFilter_DesktopChg" value="1006" eventGUID="6354a48d-f5c1-4b23-a310-1415534aacda" message="">
+    </task>
+    <task name="KeyboardFilter_Login" value="1007" eventGUID="000d62c4-7cb3-467b-9177-722481a025c4" message="">
+    </task>
+    <task name="KeyboardFilter_Logout" value="1008" eventGUID="f6e8a96b-94e0-4a92-87c0-ee3c6bf57a09" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="10001" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="The Keyboard Filter Service was unable to obtain the session token from the session id: %1 (%2).   Please verify that Terminal Services client is installed and the service is running under the LocalSystem user.">
+    </event>
+    <event value="10002" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="The Keyboard Filter Service was unable to obtain access to Terminal Services: %1 (%2). Please verify that the Terminal Services client is installed and the service is running under the LocalSystem user.">
+    </event>
+    <event value="10003" version="0" opcode="0" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Could not obtain a lock on local policy settings for update detection, %1 (%2).">
+    </event>
+    <event value="10004" version="0" opcode="0" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Could not update keyboard filter subsystem, %1 (%2).">
+    </event>
+    <event value="10005" version="0" opcode="0" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="The Keyboard Filter Service could not start session monitor. The session monitor ensures keyboard layout changes are reflected within the service and that on-screen keyboards work correctly.  Check to make sure system permissions are set up correctly.  Reason, %1 (%2).">
+    </event>
+    <event value="10006" version="0" opcode="0" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Session Manager handle to Keyboard Filter process was abandoned. Handle will be removed from the session list.">
+    </event>
+    <event value="10007" version="0" opcode="0" channel="17" level="3" task="1000" keywords="0x4000000000000000" message="The Keyboard Filter Service failed to launch hook process.  Reason: %1">
+    </event>
+    <event value="10008" version="0" opcode="0" channel="17" level="3" task="1000" keywords="0x4000000000000000" message="&apos;sdbinst -q (%1)&apos; has probably failed, exit code of (%2).">
+    </event>
+    <event value="10009" version="0" opcode="0" channel="17" level="3" task="1000" keywords="0x4000000000000000" message="Unsupported (e.g. remote) session was disconnected by Keyboard Filter Service.">
+    </event>
+    <event value="10010" version="0" opcode="0" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Keyboard Filter Driver could not start and has unloaded.  Reason, %1 (%2).">
+    </event>
+    <event value="10011" version="0" opcode="0" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="The Keyboard Filter Driver could not attach to keyboard.  Reason, %1 (%2).">
+    </event>
+    <event value="10012" version="0" opcode="0" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="The Keyboard Filter Driver could not properly filter keystroke information.  Reason, %1 (%2).">
+    </event>
+    <event value="10013" version="0" opcode="0" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="The Keyboard Filter Driver could not update filter configuration.  Reason, %1 (%2).">
+    </event>
+    <event value="10014" version="0" opcode="0" channel="17" level="3" task="1000" keywords="0x4000000000000000" message="A non-empty list of keyboard filter rules resulted in an empty scancode list.">
+    </event>
+    <event value="10015" version="0" opcode="0" channel="17" level="3" task="1000" keywords="0x4000000000000000" message="Error was returned when trying to transform a keyboard filter rule to a scancode.">
+    </event>
+    <event value="10016" version="0" opcode="0" channel="16" level="3" task="1000" keywords="0x8000000000000000" message="Attempting to launch the keyboard filter hook process.">
+    </event>
+    <event value="10101" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="The Keyboard Filter Service has Started">
+    </event>
+    <event value="10102" version="0" opcode="2" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="The Keyboard Filter Service has stopped">
+    </event>
+    <event value="10103" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="Generic Keyboard Filter Service message: %1">
+    </event>
+    <event value="10104" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="&apos;sdbinst -q (%1)&apos; executed, exit code (%2)">
+    </event>
+    <event value="10201" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="Administrator user %1 is now logged on, keyboard filtering is disabled for this session.">
+    </event>
+    <event value="10202" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="User %1 logged off. Keyboard filtering is disabled for the Windows Logon Screen.">
+    </event>
+    <event value="10203" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="User %1 logged off. Keyboard filtering is disabled.">
+    </event>
+    <event value="10204" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="User %1 is now logged on. Keyboard filtering is now in effect.">
+    </event>
+    <event value="10205" version="0" opcode="100" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="The Keyboard Filter Service has detected Policy changes and is reloading them">
+    </event>
+    <event value="10206" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="The Keyboard Filter Service has detected a layout change to %1.">
+    </event>
+    <event value="10207" version="0" opcode="100" channel="16" level="5" task="1000" keywords="0x8000000000000000" message="The Keyboard Filter Service has found the following enabled policies.">
+    </event>
+    <event value="10208" version="0" opcode="101" channel="16" level="4" task="1000" keywords="0x8000000000000000" message="The Keyboard Filter Service is sending scancodes to the Filter Driver.">
+    </event>
+    <event value="10301" version="0" opcode="0" channel="17" level="3" task="1001" keywords="0x4000000000000000" message="A custom filter (%1) appears to have an invalid modifier (system) key. Valid modifiers include Ctrl or Control, Alt, Shift, and Win or Windows. Each key must be separated from the one that follows with a plus (+).">
+    </event>
+    <event value="10302" version="0" opcode="0" channel="17" level="3" task="1001" keywords="0x4000000000000000" message="A custom filter (%1) appears to have an invalid key. Keys can be any character on the system&apos;s keyboard or it&apos;s name. Please see documentation for the names of all valid keys.">
+    </event>
+    <event value="10303" version="0" opcode="0" channel="17" level="3" task="1001" keywords="0x4000000000000000" message="A custom filter (%1) appears to be invalid.  A valid filter has zero or more modifiers, and a single key.  Each modifier and key must be separated by (+).">
+    </event>
+    <event value="10304" version="0" opcode="0" channel="17" level="3" task="1001" keywords="0x4000000000000000" message="Too many custom filters have been enabled.  No more than %1 custom and fixed filters may be defined.">
+    </event>
+    <event value="11000" version="0" opcode="1" channel="18" level="4" task="1002" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11001" version="0" opcode="2" channel="18" level="4" task="1002" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11002" version="0" opcode="1" channel="18" level="4" task="1003" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11003" version="0" opcode="2" channel="18" level="4" task="1003" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11004" version="0" opcode="1" channel="18" level="4" task="1004" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11005" version="0" opcode="2" channel="18" level="4" task="1004" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11006" version="0" opcode="1" channel="18" level="4" task="1005" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11007" version="0" opcode="2" channel="18" level="4" task="1005" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11008" version="0" opcode="1" channel="18" level="4" task="1006" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11009" version="0" opcode="2" channel="18" level="4" task="1006" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11010" version="0" opcode="1" channel="18" level="4" task="1007" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11011" version="0" opcode="2" channel="18" level="4" task="1007" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11012" version="0" opcode="1" channel="18" level="4" task="1008" keywords="0x2000000000000000" message="">
+    </event>
+    <event value="11013" version="0" opcode="2" channel="18" level="4" task="1008" keywords="0x2000000000000000" message="">
+    </event>
+  </events>
+</provider>

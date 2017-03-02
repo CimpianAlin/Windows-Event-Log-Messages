@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NetworkAccessProtection" guid="4ef850d8-bf30-4e64-a917-ee21b9be1f0a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=qagentrt.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\qagentrt.dll" messageFileName="C:\Windows\system32\qagentrt.dll" message="Microsoft-Windows-Network Access Protection" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NetworkAccessProtection/Operational" id="16" flags="0" message="Microsoft-Windows-NetworkAccessProtection/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-NetworkAccessProtection/WHC" id="17" flags="0" message="Microsoft-Windows-NetworkAccessProtection/WHC">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The System Health Agent %1 is installed but not registered with the NAP agent.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The System Health Agent %1 attempted to initialize, but failed because it has initialized already.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The System Health Agent %1 attempted to uninitialize but failed because it was not initialized.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The System Health Agent %1 successfully initialized.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The System Health Agent %1 successfully uninitialized.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The enforcement client %1 attempted to initialize but failed because it is not registered with the NAP agent.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The enforcement client %1 attempted to initialize but failed because it has already initialized.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The enforcement client %1 attempted to uninitialize but failed because it was not initialized.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The enforcement client %1 successfully initialized.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The enforcement client %1 successfully uninitialized.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Call to %2 on System Health Agent %1 failed with error %3.
+Contact the administrator for more information.
+">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The enforcement client %1 failed the call to %2.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent failed to load the peripheral component %1. The error code was %2.
+Contact the administrator for more information.
+">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A Statement of Health with correlation ID %1 could not be created because the maximum size of the connection is too small.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="A Statement of Health Request with correlation ID %1 could not include the following System Health Agents in the statement of Health: %2">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A packet has been received with an unexpected correlation of %1 instead of %2.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Statement of Health Response received configuration for the following SHAs that are not installed on this computer: %1">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="System Isolation State Change.
+ Previous : 
+    State          : %1 (%2)
+    Probation Time : %3
+    Help URL       : %4
+ Current : 
+    State          : %5 (%6)
+    Probation Time : %7
+    Help URL       : %8
+">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The server was not available to service the request (%3). This server will not be tried again for %4 minutes.
+Contact the HRA administrator for more information.
+">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The server denied access to the request (%3). This server will not be tried again for %4 minutes.
+Contact the HRA administrator for more information.
+">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The request failed with the error code (%3). This server will not be tried again for %4 minutes.
+Contact the HRA administrator for more information.
+">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent successfully acquired a certificate for the request with the correlation-id %2 from %1.
+The certificate can be identified by its thumbprint of %3
+">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent successfully deleted the certificate with the thumbprint of %1.
+The certificate has expired or the health state of the client has changed or a replacement certificate has been acquired.
+Contact the administrator for more information.
+">
+    </event>
+    <event value="24" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent failed to delete the certificate with the thumbprint of %1.
+The certificate could not be found or the Network Access Protection Agent has insufficient privileges to delete the certificate (%2).
+Contact the administrator for more information.
+">
+    </event>
+    <event value="25" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The client loaded NAP group policy.
+">
+    </event>
+    <event value="26" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The NAP service has started.
+NAP has the following information for this computer:
+ Computer name is %1.
+Domain status is: %2.
+The OS SKU is: %4.
+The service pack version is: %6.
+The processor type is: %5.
+">
+    </event>
+    <event value="26" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The NAP service has started.
+NAP has the following information for this computer:
+ Computer name is %1.
+Domain status is: %2.
+The build number is: %3.
+The OS SKU is: %4.
+The service pack version is: %5.
+The processor type is: %6.
+">
+    </event>
+    <event value="27" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Statement of Health with correlation ID %1 was received from the System Health Agent %2. 
+ The duration to check the client&apos;s health was %3 ms.">
+    </event>
+    <event value="28" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Statement of Health with correlation ID %1 was sent to the enforcment client %2.">
+    </event>
+    <event value="29" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Statement of Health Response with correlation ID %1 was received from the enforcement client %2.
+The current client state is %3. 
+ The following SHAs report this client non-compliant: %4
+ The following error categories were encountered: %5
+ The probation expiration time is: %6
+ The help URL is: %7
+ The duration of health check was %8 ms.
+">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The System Health Agent %1 has returned an error code %2.">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection agent failed to initialize the following enrollment configuration.
+    HRA Group           : %1
+    CSP Name            : %2
+    Key Specification   : %3
+    Key Length          : %4
+    Signature Algorithm : %5
+The intialization failed with the error code (%6).
+Contact the HRA administrator for more information.
+">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The server was not available to service the request (%3).
+Contact the HRA administrator for more information.
+">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The server denied access to the request (%3).
+Contact the HRA administrator for more information.
+">
+    </event>
+    <event value="34" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The request failed with the error code (%3).
+Contact the HRA administrator for more information.
+">
+    </event>
+    <event value="35" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection agent failed to get a certificate for the request with correlation-id %2 from %1.
+The server presented a certificate that is not trusted for Enterprise authentication. This server will not be tried again for %4 minutes.
+Contact the HRA administrator for more information.">
+    </event>
+    <event value="36" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection agent failed to get a certificate for the request with correlation-id %2 from %1.
+The validation of the server certificate for SSL resulted in an error %3, the certificate is not appropriate for SSL. This server will not be tried again for %4 minutes.
+Contact the HRA administrator for more information.">
+    </event>
+    <event value="37" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection agent failed to get a certificate for the request with correlation-id %2 from %1.
+The server presented a certificate that is not trusted for Enterprise authentication.
+Contact the HRA administrator for more information.">
+    </event>
+    <event value="38" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection agent failed to get a certificate for the request with correlation-id %2 from %1.
+The validation of the server certificate for SSL resulted in an error %3, the certificate is not appropriate for SSL.
+Contact the HRA administrator for more information.">
+    </event>
+    <event value="39" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent was unable to determine which HRAs to request a health certificate from.
+A network change or if GP is configured, a configuration change will prompt further attempts to acquire a health certificate. Otherwise no further attempts will be made.
+Contact the HRA administrator for more information.">
+    </event>
+    <event value="40" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent has dynamically discovered the following HRAs for this network (using the query %1):
+%2
+The DNS servers in your configuration at the time this discovery took place included:
+%3">
+    </event>
+    <event value="41" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="System Isolation State Change. Extended State details:
+ Previous : 
+    Extended State          : %1 (%2)
+ Current : 
+    Extended State          : %3 (%4)
+">
+    </event>
+    <event value="42" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Statement of Health Response with correlation ID %1 was just received from the enforcement client %2.
+The extended state in that Statement of Health Response was %3.
+">
+    </event>
+    <event value="43" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent failed to deposit a certificate for the request with the correlation-id %2 from %1.
+ValidityPeriod of the certificate is below threshold (%3).
+Contact the HRA administrator for more information.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Network Access Protection Agent received a Statement of Health Response with correlation ID %1, that specified a probation end time of %2. The probation end time is in the past, which indicates improper synchronization of the clocks on this machine and the server.">
+    </event>
+    <event value="100" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Sending Health Information to WHC: %2(%1)">
+    </event>
+  </events>
+</provider>

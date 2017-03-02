@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Search-ProfileNotify" guid="fc6f77dd-769a-470e-bcf9-1b6555a118be" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Windows%c2%ae%20Search&amp;ProdVer=7.0.9600.16384&amp;FileName=wsepno.dll&amp;FileVer=7.0.9600.16384" resourceFileName="C:\Windows\system32\wsepno.dll" messageFileName="C:\Windows\system32\wsepno.dll" message="Microsoft-Windows-Search-ProfileNotify" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1073741825" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Search Service indexed data for user &apos;%1&apos; successfully removed in response to user profile deletion.
+">
+    </event>
+    <event value="3221225474" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Unable to remove Windows Search Service indexed data for user &apos;%1&apos; in response to user profile deletion.  Error code %2.
+
+%3.">
+    </event>
+    <event value="1073741827" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Search Service indexed data for user &apos;%1&apos; successfully migrated to user &apos;%2&apos; in response to user profile migration.
+">
+    </event>
+    <event value="3221225476" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Unable to migrate Windows Search Service indexed data for user &apos;%1&apos; to user &apos;%2&apos; in response to user profile migration.  Error code %3.
+
+%4.">
+    </event>
+    <event value="1073741829" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Search Service has created default configuration for new user &apos;%1&apos; .
+">
+    </event>
+    <event value="3221225478" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Search Service failed to create default configuration for new user &apos;%1&apos; in response to user profile creation.  Error code %2.
+
+%3.">
+    </event>
+  </events>
+</provider>

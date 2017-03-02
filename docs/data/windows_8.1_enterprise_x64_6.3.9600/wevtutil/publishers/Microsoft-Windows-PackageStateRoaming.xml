@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-PackageStateRoaming" guid="5b5ab841-7d2e-4a95-bb4f-095cdf66d8f0" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=PackageStateRoaming.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\PackageStateRoaming.dll" messageFileName="C:\Windows\system32\PackageStateRoaming.dll" message="Microsoft-Windows-PackageStateRoaming" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-PackageStateRoaming/Operational" id="16" flags="0" message="Microsoft-Windows-PackageStateRoaming/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-PackageStateRoaming/Debug" id="17" flags="0" message="Microsoft-Windows-PackageStateRoaming/Debug">
+    </channel>
+    <channel name="Microsoft-Windows-PackageStateRoaming/Analytic" id="18" flags="0" message="Microsoft-Windows-PackageStateRoaming/Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Debug_PackageStateConsistencyMonitor_BeginQuiescentPeriod" value="6101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Debug_PackageStateConsistencyMonitor_EndQuiescentPeriod" value="6103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Debug_PackageActivityMonitor_BeginQuiescentPeriod" value="6105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Debug_PackageActivityMonitor_EndQuiescentPeriod" value="6107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Debug_PLMMonitor_BeginQuiescentPeriod" value="6109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Debug_PLMMonitor_EndQuiescentPeriod" value="6111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_PackageState_Register" value="7001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_PackageState_Unregister" value="7003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_PackageState_GetStorageQuota" value="7005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_GetUnit" value="7009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_ApplyUnit" value="7011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_StructuredState_MergeUnit" value="7013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_ProcessStructuredStateChange" value="7015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_LocalSyncSession" value="7017" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_ProcessHighPrioritySettingChange" value="7019" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_OpenFastPathConnection" value="7021" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_FastPathWrite" value="7023" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_FastPathSession" value="7025" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perf_FolderChangedCallback" value="7027" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="PackageStateRoaming" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="5001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Registering package collection %1 for roaming failed. (Result %2)">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unregistering package collection %1 for roaming failed. (Result %2)">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Obtaining storage quota for collection %1 failed. (Result %2)">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Processing a state change event failed for %1. (Result %2)">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Package state version changed. Unregistering %1 and registering %2.">
+    </event>
+    <event value="5007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A sync was requested for collection %1 as a change was detected in its %2 state. (Result %3)">
+    </event>
+    <event value="5008" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Setting unit with id %1 for package family name %2 was enumerated with invalid timestamp %4 (hr=%3) which is more recent than the collection&apos;s consistency timestamp %5.">
+    </event>
+    <event value="5009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Forced quiesce for package family name %1. (Result %2)">
+    </event>
+    <event value="5010" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Quirk check for package family name %1. (Result %2)">
+    </event>
+    <event value="6001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A change to %1 folder in the file system was ignored it was not in structured or unstructured state. (Result %2)">
+    </event>
+    <event value="6002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Processing an update to the high priority setting of %1.">
+    </event>
+    <event value="6003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A Fast Path write attempted for %1. (Result %2)">
+    </event>
+    <event value="6005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="%1 Fast Path requests converted to proper sync for reason %2.">
+    </event>
+    <event value="6006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Fast Path requests from %1 satisfied throttling.">
+    </event>
+    <event value="6008" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="%1 requests are still outstanding when Fast Path shuts down.">
+    </event>
+    <event value="6009" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Package family %1 notifying consistency monitor for its local %2 state, type %3. (Result %4)">
+    </event>
+    <event value="6010" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Backup state for package family %1 is being updated to %2. (Result %3)">
+    </event>
+    <event value="6011" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Processed a Backup or Restore event for %1, operation %2. (Result %3)">
+    </event>
+    <event value="6012" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Consistency monitor started for package family name %1.">
+    </event>
+    <event value="6013" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Consistency monitor received inconsistent backup setting change notification for package family name %1.">
+    </event>
+    <event value="6014" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Consistency monitor deferred start for package family name %1.">
+    </event>
+    <event value="6015" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Consistency monitor quiesced for package family name %1.">
+    </event>
+    <event value="6016" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Consistency monitor stopped for package family name %1.">
+    </event>
+    <event value="6017" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Consistency monitor stopped for all packages.">
+    </event>
+    <event value="6018" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Package activity monitor started for package family name %1 with consistency hypothesis %2.">
+    </event>
+    <event value="6019" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Package activity monitor start for package family name %1 deferred for %2 ms.">
+    </event>
+    <event value="6020" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Package activity monitor quiesced for package family name %1 with consistency hypothesis %2.">
+    </event>
+    <event value="6021" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Package activity monitor stopped for package family name %1.">
+    </event>
+    <event value="6022" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="PLM monitor started for package full name %1 with consistency hypothesis %2.">
+    </event>
+    <event value="6023" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="PLM monitor quiesced for package full name %1 with consistency hypothesis %2.">
+    </event>
+    <event value="6024" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="PLM monitor stopped for package full name %1.">
+    </event>
+    <event value="6025" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Background task monitor started for package full name %1 with consistency hypothesis %2.">
+    </event>
+    <event value="6026" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Background task monitor quiesced for package full name %1 with consistency hypothesis %2.">
+    </event>
+    <event value="6027" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Background task monitor stopped for package full name %1.">
+    </event>
+    <event value="6028" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Start monitoring %2 type state changes for package family name %1. (Result %3)">
+    </event>
+    <event value="6029" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Stop monitoring %2 type state changes for package family name %1.">
+    </event>
+    <event value="6030" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Starting package state monitoring.">
+    </event>
+    <event value="6031" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Stopping package state monitoring.">
+    </event>
+    <event value="6032" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Package activity monitor failed to initialize for package family name %1 since no packages from that family are registered on the system.">
+    </event>
+    <event value="6101" version="0" opcode="1" channel="17" level="4" task="6101" keywords="0x4000000000000000" message="Beginning quiescent period for package family name %1.">
+    </event>
+    <event value="6102" version="0" opcode="2" channel="17" level="4" task="6101" keywords="0x4000000000000000" message="Began quiescent period for package family name %1. (Result %2)">
+    </event>
+    <event value="6103" version="0" opcode="1" channel="17" level="4" task="6103" keywords="0x4000000000000000" message="Ending quiescent period for package family name %1.">
+    </event>
+    <event value="6104" version="0" opcode="2" channel="17" level="4" task="6103" keywords="0x4000000000000000" message="Ended quiescent period for package family name %1.">
+    </event>
+    <event value="6105" version="0" opcode="1" channel="17" level="4" task="6105" keywords="0x4000000000000000" message="Beginning quiescent period for package family name %1.">
+    </event>
+    <event value="6106" version="0" opcode="2" channel="17" level="4" task="6105" keywords="0x4000000000000000" message="Began quiescent period for package family name %1. (Result %2)">
+    </event>
+    <event value="6107" version="0" opcode="1" channel="17" level="4" task="6107" keywords="0x4000000000000000" message="Ending quiescent period for package family name %1.">
+    </event>
+    <event value="6108" version="0" opcode="2" channel="17" level="4" task="6107" keywords="0x4000000000000000" message="Ended quiescent period for package family name %1.">
+    </event>
+    <event value="6109" version="0" opcode="1" channel="17" level="4" task="6109" keywords="0x4000000000000000" message="Beginning quiescent period for package full name %1.">
+    </event>
+    <event value="6110" version="0" opcode="2" channel="17" level="4" task="6109" keywords="0x4000000000000000" message="Began quiescent period for package full name %1. (Result %2)">
+    </event>
+    <event value="6111" version="0" opcode="1" channel="17" level="4" task="6111" keywords="0x4000000000000000" message="Ending quiescent period for package full name %1.">
+    </event>
+    <event value="6112" version="0" opcode="2" channel="17" level="4" task="6111" keywords="0x4000000000000000" message="Ended quiescent period for package full name %1.">
+    </event>
+    <event value="7001" version="0" opcode="1" channel="18" level="4" task="7001" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7002" version="0" opcode="2" channel="18" level="4" task="7001" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7003" version="0" opcode="1" channel="18" level="4" task="7003" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7004" version="0" opcode="2" channel="18" level="4" task="7003" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7005" version="0" opcode="1" channel="18" level="4" task="7005" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7006" version="0" opcode="2" channel="18" level="4" task="7005" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7009" version="0" opcode="1" channel="18" level="4" task="7009" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7010" version="0" opcode="2" channel="18" level="4" task="7009" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7011" version="0" opcode="1" channel="18" level="4" task="7011" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7012" version="0" opcode="2" channel="18" level="4" task="7011" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7013" version="0" opcode="1" channel="18" level="4" task="7013" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7014" version="0" opcode="2" channel="18" level="4" task="7013" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7015" version="0" opcode="1" channel="18" level="4" task="7015" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7016" version="0" opcode="2" channel="18" level="4" task="7015" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7017" version="0" opcode="1" channel="18" level="4" task="7017" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7018" version="0" opcode="2" channel="18" level="4" task="7017" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7019" version="0" opcode="1" channel="18" level="4" task="7019" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7020" version="0" opcode="2" channel="18" level="4" task="7019" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7021" version="0" opcode="1" channel="18" level="4" task="7021" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7022" version="0" opcode="2" channel="18" level="4" task="7021" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7023" version="0" opcode="1" channel="18" level="4" task="7023" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7024" version="0" opcode="2" channel="18" level="4" task="7023" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7025" version="0" opcode="1" channel="18" level="4" task="7025" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7026" version="0" opcode="2" channel="18" level="4" task="7025" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7027" version="0" opcode="1" channel="18" level="4" task="7027" keywords="0x2000000000000001" message="">
+    </event>
+    <event value="7028" version="0" opcode="2" channel="18" level="4" task="7027" keywords="0x2000000000000001" message="">
+    </event>
+  </events>
+</provider>

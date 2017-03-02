@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IME-TIP" guid="bdd4b92e-19ef-4497-9c4a-e10e7fd2e227" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\IME\shared\imetip.dll" messageFileName="C:\Windows\system32\IME\shared\imetip.dll" message="Microsoft-Windows-IME-TIP" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IME-TIP/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="IME_KeyHandling" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: Processing incoming key">
+    </task>
+    <task name="IME_Activate" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: Activate IME">
+    </task>
+    <task name="IME_Deactivate" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: Deactivate IME">
+    </task>
+    <task name="IME_CandOpen" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Candidate Open">
+    </task>
+    <task name="IME_CandClose" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Candidate Close">
+    </task>
+    <task name="IME_SetText" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME SetText">
+    </task>
+    <task name="IME_SUGGESTION" value="120" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME_SUGGESTION">
+    </task>
+    <task name="IME_ModeIndicator" value="130" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME Mode Indicator">
+    </task>
+    <task name="PerfTrack_IME_CHS_HWKBD_KeyProcess" value="140" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME_CHS_HWKBD_KeyProcess">
+    </task>
+    <task name="PerfTrack_IME_CHT_HWKBD_KeyProcess" value="141" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME_CHT_HWKBD_KeyProcess">
+    </task>
+    <task name="PerfTrack_IME_JPN_HWKBD_KeyProcess" value="142" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME_JPN_HWKBD_KeyProcess">
+    </task>
+    <task name="PerfTrack_IME_KOR_HWKBD_KeyProcess" value="143" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: IME_KOR_HWKBD_KeyProcess">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000000" message="EAIME_ActivateStart">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000000" message="EAIME_ActivateEnd">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000000" message="EAIME_DeactivateStart">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000000" message="EAIME_DeactivateEnd">
+    </event>
+    <event value="21" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000000000" message="EAIME_CandOpenStart">
+    </event>
+    <event value="22" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000000000" message="EAIME_CandOpenEnd">
+    </event>
+    <event value="23" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000000" message="EAIME_CandCloseStart">
+    </event>
+    <event value="24" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000000" message="EAIME_CandCloseEnd">
+    </event>
+    <event value="25" version="0" opcode="1" channel="16" level="4" task="105" keywords="0x8000000000000000" message="EAIME_SetTextStart">
+    </event>
+    <event value="26" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8000000000000000" message="EAIME_SetTextEnd">
+    </event>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_OnKeyDownStart">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_OnKeyDownEnd">
+    </event>
+    <event value="120" version="0" opcode="1" channel="16" level="4" task="120" keywords="0x8000000000000000" message="EAIME_SG_APISVCStart">
+    </event>
+    <event value="121" version="0" opcode="2" channel="16" level="4" task="120" keywords="0x8000000000000000" message="EAIME_SG_APISVCEnd">
+    </event>
+    <event value="122" version="0" opcode="1" channel="16" level="4" task="120" keywords="0x8000000000000000" message="EAIME_SG_APIConvStart">
+    </event>
+    <event value="123" version="0" opcode="2" channel="16" level="4" task="120" keywords="0x8000000000000000" message="EAIME_SG_APIConvEnd">
+    </event>
+    <event value="124" version="0" opcode="1" channel="16" level="4" task="120" keywords="0x8000000000000000" message="EAIME_SG_APIPHConvStart">
+    </event>
+    <event value="125" version="0" opcode="2" channel="16" level="4" task="120" keywords="0x8000000000000000" message="EAIME_SG_APIPHConvEnd">
+    </event>
+    <event value="126" version="0" opcode="1" channel="16" level="4" task="120" keywords="0x8000000000000000" message="EAIME_SG_APINxWordStart">
+    </event>
+    <event value="127" version="0" opcode="2" channel="16" level="4" task="120" keywords="0x8000000000000000" message="EAIME_SG_APINxWordEnd">
+    </event>
+    <event value="130" version="0" opcode="1" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_ModeUIUpdateRequestStart">
+    </event>
+    <event value="131" version="0" opcode="2" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_ModeUIUpdateRequestEnd">
+    </event>
+    <event value="132" version="0" opcode="1" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_SystrayModeIconUpdateStart">
+    </event>
+    <event value="133" version="0" opcode="2" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_SystrayModeIconUpdateEnd">
+    </event>
+    <event value="134" version="0" opcode="1" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_FloatingModeIconUpdateStart">
+    </event>
+    <event value="135" version="0" opcode="2" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_FloatingModeIconUpdateEnd">
+    </event>
+    <event value="136" version="0" opcode="1" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_ModeSwitchRequestStart">
+    </event>
+    <event value="137" version="0" opcode="2" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_ModeSwitchRequestEnd">
+    </event>
+    <event value="138" version="0" opcode="1" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_MenuOpenRequestStart">
+    </event>
+    <event value="139" version="0" opcode="2" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_MenuOpenRequestEnd">
+    </event>
+    <event value="140" version="0" opcode="1" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_MenuOpenStart">
+    </event>
+    <event value="141" version="0" opcode="2" channel="16" level="4" task="130" keywords="0x8000000000000000" message="EAIME_MI_MenuOpenEnd">
+    </event>
+    <event value="142" version="0" opcode="0" channel="16" level="4" task="140" keywords="0x8001000000000000" message="EAIME_IME_CHS_HWKBD_KeyProcess_Info">
+    </event>
+    <event value="143" version="0" opcode="0" channel="16" level="4" task="141" keywords="0x8001000000000000" message="EAIME_IME_CHT_HWKBD_KeyProcess_Info">
+    </event>
+    <event value="144" version="0" opcode="0" channel="16" level="4" task="142" keywords="0x8001000000000000" message="EAIME_IME_JPN_HWKBD_KeyProcess_Info">
+    </event>
+    <event value="145" version="0" opcode="0" channel="16" level="4" task="143" keywords="0x8001000000000000" message="EAIME_IME_KOR_HWKBD_KeyProcess_Info">
+    </event>
+  </events>
+</provider>

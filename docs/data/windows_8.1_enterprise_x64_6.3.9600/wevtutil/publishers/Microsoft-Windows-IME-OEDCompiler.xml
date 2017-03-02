@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IME-OEDCompiler" guid="fd44a6e7-580f-4a9c-83d9-d820b7d3a033" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\IME\shared\imewdbld.exe" messageFileName="C:\Windows\system32\IME\shared\imewdbld.exe" message="Microsoft-Windows-IME-OEDCompiler" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IME-OEDCompiler/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="IME_OEDCompiler" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: OED Compiler">
+    </task>
+    <task name="IME_OEDProcessHeader" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: OED Compiler Process Header">
+    </task>
+    <task name="IME_OEDBuild" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: OED Compiler Build Dictionary">
+    </task>
+    <task name="IME_OEDRegister" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: OED Compiler Regsister Dictionary">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_OEDCompilerStart">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_OEDCompilerEnd">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000000" message="EAIME_OEDProcessHeaderStart">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000000" message="EAIME_OEDProcessHeaderEnd">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000000" message="EAIME_OEDBuildStart">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000000" message="EAIME_OEDBuildEnd">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000000000" message="EAIME_OEDRegisterStart">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000000000" message="EAIME_OEDRegisterEnd">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000000000" message="EAIME_OEDUnregisterStart">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000000000" message="EAIME_OEDUnregisterEnd">
+    </event>
+  </events>
+</provider>

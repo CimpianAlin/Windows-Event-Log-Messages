@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-StickyNotes" guid="ee4f43b5-03eb-41d2-a28c-ba8bee529247" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=StikyNot.exe&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\StikyNot.exe" messageFileName="C:\Windows\system32\StikyNot.exe" message="Microsoft-Windows-StickyNotes" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-StickyNotes/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-StickyNotes/Debug" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-StickyNotes/Admin" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="NewNote" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeleteNote" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NavigateNote" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NoteFormatting" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MinimizeAll" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestoreAll" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CloseNote" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PeelNote" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Launch" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Exit" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DWMThumbnailBitmap" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="StickyNotes" mask="10000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Opening Sticky Notes Storage">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Creating Sticky Notes Storage">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Opening Meta File Storage">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Creating Sticky Notes Metafile">
+    </event>
+    <event value="5" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Opening Note">
+    </event>
+    <event value="6" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Creating New Note">
+    </event>
+    <event value="7" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to free RPC String">
+    </event>
+    <event value="8" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to generate GUID">
+    </event>
+    <event value="9" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Opening Stream">
+    </event>
+    <event value="10" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Creating Stream">
+    </event>
+    <event value="11" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000010000" message="Unable to create Ink Data Structure">
+    </event>
+    <event value="12" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Ink Stream Not Found">
+    </event>
+    <event value="13" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error Opening Stream">
+    </event>
+    <event value="14" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error Creating Stream">
+    </event>
+    <event value="15" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Error Deleting Note">
+    </event>
+    <event value="16" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error Copying Memory">
+    </event>
+    <event value="17" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error Acquring Write Lock">
+    </event>
+    <event value="18" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error Acquring Write Lock">
+    </event>
+    <event value="19" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error Renaming File">
+    </event>
+    <event value="20" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error Streaming Text From RichEdit">
+    </event>
+    <event value="21" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Writing To Stream">
+    </event>
+    <event value="22" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Reading From Stream">
+    </event>
+    <event value="23" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to Regiter Recovery Fucntion">
+    </event>
+    <event value="24" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to Load String from Resource">
+    </event>
+    <event value="25" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to Initialize">
+    </event>
+    <event value="26" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to Create Object">
+    </event>
+    <event value="27" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to Initialize Global Variables">
+    </event>
+    <event value="28" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable Write text to NoteModel">
+    </event>
+    <event value="29" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable Load text From NoteModel">
+    </event>
+    <event value="30" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to Load the Note">
+    </event>
+    <event value="31" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to Get Note Model">
+    </event>
+    <event value="32" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to Create Window">
+    </event>
+    <event value="33" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Intializing current instance of the application">
+    </event>
+    <event value="34" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Intializing globals variables">
+    </event>
+    <event value="35" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="An Instance of the application is already running">
+    </event>
+    <event value="36" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Destroying global variables">
+    </event>
+    <event value="37" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Exiting current Instance of the application">
+    </event>
+    <event value="38" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error Loading Note Model From Disk for Note">
+    </event>
+    <event value="39" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to create and load Note Model for Note">
+    </event>
+    <event value="40" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to retive storage for Note">
+    </event>
+    <event value="41" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to Delete The Note">
+    </event>
+    <event value="42" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to Delete The Note">
+    </event>
+    <event value="43" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error reading Meta Data">
+    </event>
+    <event value="44" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Meta Data restored Successfully">
+    </event>
+    <event value="45" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to Restore Meta Data">
+    </event>
+    <event value="46" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to Write Meta Data to the File">
+    </event>
+    <event value="47" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unalbe to Save Note Model to Disk">
+    </event>
+    <event value="48" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to get Meta Data storage">
+    </event>
+    <event value="49" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to Create Directory for Sticky Notes Storage">
+    </event>
+    <event value="50" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error enabling/disabling RTS">
+    </event>
+    <event value="51" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Error setting Ink Reference">
+    </event>
+    <event value="52" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Ink Strokes Were Deleted">
+    </event>
+    <event value="53" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to load msftedit.dll">
+    </event>
+    <event value="54" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Opening SNT File">
+    </event>
+    <event value="55" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Successfully Opened Persistence">
+    </event>
+    <event value="56" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to open Persistence">
+    </event>
+    <event value="57" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Creating URL Accessor">
+    </event>
+    <event value="58" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="BindStream successful">
+    </event>
+    <event value="59" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="BindStream failed">
+    </event>
+    <event value="60" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Count of Notes = ">
+    </event>
+    <event value="61" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Get Value Failed">
+    </event>
+    <event value="62" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="OpenStream failed">
+    </event>
+    <event value="63" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Open Title Stream failed">
+    </event>
+    <event value="64" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Read Title Value Failed">
+    </event>
+    <event value="65" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Get Path To User Appdata Folder failed">
+    </event>
+    <event value="66" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="AddHierarchicalScope failed">
+    </event>
+    <event value="67" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="AddRoot failed">
+    </event>
+    <event value="68" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="put_FollowDirectories failed">
+    </event>
+    <event value="69" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="put_IsHierarchical failed">
+    </event>
+    <event value="70" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="put_ProvidesNotifications failed">
+    </event>
+    <event value="71" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="put_RootURL failed">
+    </event>
+    <event value="72" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="CoSetProxyBlanket failed">
+    </event>
+    <event value="73" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="CreateSearchRoot failed">
+    </event>
+    <event value="74" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000010000" message="New Note Start">
+    </event>
+    <event value="75" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000010000" message="New Note Stop">
+    </event>
+    <event value="76" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8001000000010000" message="Delete Note Start">
+    </event>
+    <event value="77" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8001000000010000" message="Delete Note Stop">
+    </event>
+    <event value="78" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8001000000010000" message="Close Note Start">
+    </event>
+    <event value="79" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8001000000010000" message="Close Note Stop">
+    </event>
+    <event value="80" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8001000000010000" message="Peel Note Start">
+    </event>
+    <event value="81" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8001000000010000" message="Peel Note Stop">
+    </event>
+    <event value="82" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8001000000010000" message="Navigate Note Start">
+    </event>
+    <event value="83" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8001000000010000" message="Navigate Note Stop">
+    </event>
+    <event value="84" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="Bold Start">
+    </event>
+    <event value="85" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="Bold Stop">
+    </event>
+    <event value="86" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="Bullet Start">
+    </event>
+    <event value="87" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="Bullet Stop">
+    </event>
+    <event value="88" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8001000000010000" message="MinimizeAll Start">
+    </event>
+    <event value="89" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8001000000010000" message="MinimizeAll Stop">
+    </event>
+    <event value="90" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8001000000010000" message="RestoreAll Start">
+    </event>
+    <event value="91" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8001000000010000" message="RestoreAll Stop">
+    </event>
+    <event value="92" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Failed to Register Search Root and Default Scope">
+    </event>
+    <event value="93" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Failed to notify Desktop Search to reindex">
+    </event>
+    <event value="94" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Notify Desktop Search to Reindex">
+    </event>
+    <event value="95" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Register search root and default scope">
+    </event>
+    <event value="96" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Delete search root and default scope">
+    </event>
+    <event value="97" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Storage of the Sticky Notes is corrupted">
+    </event>
+    <event value="98" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Failed to delete Sticky Notes storage">
+    </event>
+    <event value="99" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Failed to create Sticky Notes storage">
+    </event>
+    <event value="100" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000010000" message="Creating new Sticky Notes storage">
+    </event>
+    <event value="101" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000010000" message="Deleting Sticky Notes storage">
+    </event>
+    <event value="102" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Failer to register the Sticky Notes application for restart">
+    </event>
+    <event value="103" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Creating Version File">
+    </event>
+    <event value="104" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Opening Stream">
+    </event>
+    <event value="105" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Cannot Create new notes, Maximum number of notes have already been created">
+    </event>
+    <event value="106" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="An Erorr occured while saved the NoteModel, Queueing it to save it after some time">
+    </event>
+    <event value="107" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to save NoteModel from the Save Queue">
+    </event>
+    <event value="108" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000010000" message="Validating all the notes that are present with in the storage">
+    </event>
+    <event value="109" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000010000" message="Deleting all the Corrupt Notes">
+    </event>
+    <event value="110" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000010000" message="Error occured while reading from storage, prompting user for recovery">
+    </event>
+    <event value="111" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000010000" message="Error Recovery cancelled by the user">
+    </event>
+    <event value="112" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Unexpected Error has occured, Application is going to Quit">
+    </event>
+    <event value="113" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8001000000010000" message="Open Note Start">
+    </event>
+    <event value="114" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8001000000010000" message="Open Note Stop">
+    </event>
+    <event value="115" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Version Stream is not Present in the Storage">
+    </event>
+    <event value="116" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="MetaData Stream is not Present in the Storage">
+    </event>
+    <event value="117" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Version of the storage is not a valid One">
+    </event>
+    <event value="118" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Error There are not notes present in the storage">
+    </event>
+    <event value="119" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Application Meta Data is ocrrupt">
+    </event>
+    <event value="120" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Meta Data of the Note is corrupt">
+    </event>
+    <event value="121" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to create parser">
+    </event>
+    <event value="122" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Upgrade Failed">
+    </event>
+    <event value="123" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to create ICustomDestinationList interface object">
+    </event>
+    <event value="124" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed Being List Transaction">
+    </event>
+    <event value="125" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to Create Destination List">
+    </event>
+    <event value="126" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to create parser">
+    </event>
+    <event value="127" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Sticky Note Destination List Task&apos;s added Successfully">
+    </event>
+    <event value="128" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Failed to load resource string">
+    </event>
+    <event value="129" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to set restart key">
+    </event>
+    <event value="130" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to set restart key">
+    </event>
+    <event value="131" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8001000000010000" message="App Launch Start">
+    </event>
+    <event value="132" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8001000000010000" message="App Launch End">
+    </event>
+    <event value="133" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8001000000010000" message="App Exit Start">
+    </event>
+    <event value="134" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8001000000010000" message="App Exit Stop">
+    </event>
+    <event value="135" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to create preview shadow">
+    </event>
+    <event value="136" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unable to create 32 bit Bitmap">
+    </event>
+    <event value="137" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to set DWM thumbnail preview">
+    </event>
+    <event value="138" version="0" opcode="1" channel="16" level="4" task="11" keywords="0x8001000000010000" message="DWM get thumbnail image start">
+    </event>
+    <event value="139" version="0" opcode="2" channel="16" level="4" task="11" keywords="0x8001000000010000" message="DWM get thumbnail image stop">
+    </event>
+    <event value="140" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Error setting Live Preview Bitmap">
+    </event>
+    <event value="141" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Error Creating Live Preview Bitmap">
+    </event>
+    <event value="142" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to create thread">
+    </event>
+    <event value="143" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Failed to create mutex">
+    </event>
+  </events>
+</provider>

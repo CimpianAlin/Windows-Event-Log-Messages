@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Windows Firewall With Advanced Security" guid="d1bc9aff-2abf-4d71-9146-ecb2a986eb85" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=mpssvc.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\mpssvc.dll" parameterFileName="C:\Windows\system32\mpssvc.dll" messageFileName="C:\Windows\system32\mpssvc.dll" message="Microsoft-Windows-Windows Firewall With Advanced Security" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Windows Firewall With Advanced Security/Firewall" id="16" flags="0" message="Microsoft-Windows-Windows Firewall With Advanced Security/Firewall">
+    </channel>
+    <channel name="Microsoft-Windows-Windows Firewall With Advanced Security/ConnectionSecurity" id="17" flags="0" message="Microsoft-Windows-Windows Firewall With Advanced Security/ConnectionSecurity">
+    </channel>
+    <channel name="Microsoft-Windows-Windows Firewall With Advanced Security/FirewallVerbose" id="18" flags="0" message="Microsoft-Windows-Windows Firewall With Advanced Security/FirewallVerbose">
+    </channel>
+    <channel name="Microsoft-Windows-Windows Firewall With Advanced Security/ConnectionSecurityVerbose" id="19" flags="0" message="Microsoft-Windows-Windows Firewall With Advanced Security/ConnectionSecurityVerbose">
+    </channel>
+    <channel name="Network Isolation Operational" id="20" flags="0" message="Network Isolation Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="ut:AOAC" mask="10" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2000" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="The following settings were applied to the Windows Firewall at startup
+
+	Current Profile:	%1
+	IPsec SA Idle time:	%2
+	IPsec preshared key encoding:	%3
+	IPsec Exempt:	%4
+	IPsec CRL Check:	%5
+	IPsec Through NAT:	%6
+	Policy Version Supported:	%7
+	Policy Version:	%8
+	Binary Version Supported:	%9
+	Stateful FTP:	%10
+	Group Policy Applied:	%11
+	Remote Machine Authorization List:	%12
+	Remote UserAuthorization List:	%13">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="The following per profile settings were applied by Windows Firewall 
+
+	Profile:	%1
+	Operational Mode:	%2
+	Stealth Mode:	%3
+	Block all Incoming Connections:	%4
+	Unicast response to multicast broadcast:	%5
+	Log dropped packets:	%6
+	Log successful connections:	%7
+	Log ignored rules:	%8
+	Inbound Notifications:	%9
+	Allow Local Policy Merge:	%12
+	Allow Local IPsec Policy Merge:	%13
+	Default Outbound Action:	%14
+	Default Inbound Action:	%15
+	Remote Administration:	%16
+	Stealth Mode IPsec Secured Packet Exemption:	%21
+	Maximum Log file size:	%17
+	Log File path:	%18
+	Allow User preferred merge of Authorized Applications:	%10
+	Allow User preferred merge of Globally open ports:	%11">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Windows Firewall setting has changed.
+
+New Setting:
+	Type:	%1
+	Value:	%4
+	Modifying User:	%6
+	Modifying Application:	%7">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A Windows Firewall setting in the %1 profile has changed.
+New Setting:
+	Type:	%2
+	Value:	%5
+	Modifying User:	%7
+	Modifying Application:	%8">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="A rule has been added to the Windows Firewall exception list.
+
+Added Rule:
+	Rule ID:	%1
+	Rule Name:	%2
+	Origin:	%3
+	Active:	%18
+	Direction:	%6
+	Profiles:	%11
+	Action:	%10
+	Application Path:	%4
+	Service Name:	%5
+	Protocol:	%7
+	Security Options:	%21
+	Edge Traversal:	%19
+	Modifying User:	%22
+	Modifying Application:	%23">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="A rule has been modified in the Windows Firewall exception list.
+
+Modified Rule:
+	Rule ID:	%1
+	Rule Name:	%2
+	Origin:	%3
+	Active:	%18
+	Direction:	%6
+	Profiles:	%11
+	Action:	%10
+	Application Path:	%4
+	Service Name:	%5
+	Protocol:	%7
+	Security Options:	%21
+	Edge Traversal:	%19
+	Modifying User:	%22
+	Modifying Application:	%23">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000020000000000" message="A rule has been deleted in the Windows Firewall exception list.
+
+Deleted Rule:
+	Rule ID:	%1
+	Rule Name:	%2
+	Modifying User:	%3
+	Modifying Application:	%4">
+    </event>
+    <event value="2007" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="A rule has been listed when the Windows Firewall started.
+
+Added Rule:
+	Rule ID:	%1
+	Rule Name:	%2
+	Origin:	%3
+	Active:	%18
+	Direction:	%6
+	Profiles:	%11
+	Action:	%10
+	Application Path:	%4
+	Service Name:	%5
+	Protocol:	%7
+	Security Options:	%21
+	Edge Traversal:	%19">
+    </event>
+    <event value="2008" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Firewall Group Policy settings have changed. The new settings have been applied">
+    </event>
+    <event value="2009" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows Firewall service failed to load Group Policy.
+Error:	%1">
+    </event>
+    <event value="2010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Network profile changed on an interface.
+
+Adapter GUID:	%1
+Adapter Name:	%2
+Old Profile:	%3
+New Profile:	%4">
+    </event>
+    <event value="2011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Firewall was unable to notify the user that it blocked an application from accepting incoming connections on the network.
+
+Reason:		%1
+Application Path:	%2
+IP Version:	%3
+Protocol:	%4
+Port:		%5
+Process Id:	%6
+User:		%7">
+    </event>
+    <event value="2012" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A connection security rule was added to IPsec settings.
+
+	Rule ID:	%1
+	Rule Name:	%2
+	Origin:	%3
+	Active:	%4
+	Protocol:	%5
+	EndPoint1Ports:	%6
+	EndPoint2Ports:	%7
+	LocalTunnelEndpointV4:	%8
+	LocalTunnelEndpointV6:	%9
+	RemoteTunnelEndpointV4:	%10
+	RemoteTunnelEndpointV6:	%11
+	Phase1AuthSetId:	%12
+	Phase2AuthSetId:	%13
+	Phase2CryptoSetId:	%14
+	Action:	%15
+	Profiles:	%16
+	LocalAddresses:	%17
+	RemoteAddresses:	%18
+	EmbeddedContext:	%20
+	IsDTM:	%22
+	ApplyAuthZ:	%23
+	BypassTunnelIfEncrypted:	%24
+	NoIPSecOnOutbound:	%25
+	ModifyingUser:	%26
+	ModifyingApplication:	%27">
+    </event>
+    <event value="2013" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A connection security rule was modified in IPsec settings.
+
+	Rule ID:	%1
+	Rule Name:	%2
+	Origin:	%3
+	Active:	%4
+	Protocol:	%5
+	EndPoint1Ports:	%6
+	EndPoint2Ports:	%7
+	LocalTunnelEndpointV4:	%8
+	LocalTunnelEndpointV6:	%9
+	RemoteTunnelEndpointV4:	%10
+	RemoteTunnelEndpointV6:	%11
+	Phase1AuthSetId:	%12
+	Phase2AuthSetId:	%13
+	Phase2CryptoSetId:	%14
+	Action:	%15
+	Profiles:	%16
+	LocalAddresses:	%17
+	RemoteAddresses:	%18
+	EmbeddedContext:	%20
+	IsDTM:	%22
+	ApplyAuthZ:	%23
+	BypassTunnelIfEncrypted:	%24
+	NoIPSecOnOutbound:	%25
+	ModifyingUser:	%26
+	ModifyingApplication:	%27">
+    </event>
+    <event value="2014" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A connection security rule was deleted from IPsec settings.
+
+Deleted Rule:
+	Rule ID:	%1
+	Rule Name:	%2
+	Modifying User:	%3
+	Modifying Application:	%4">
+    </event>
+    <event value="2015" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="A connection security rule was added to IPsec settings when Windows Firewall started.
+
+	Rule ID:	%1
+	Rule Name:	%2
+	Origin:	%3
+	Active:	%4
+	Protocol:	%5
+	EndPoint1Ports:	%6
+	EndPoint2Ports:	%7
+	LocalTunnelEndpointV4:	%8
+	LocalTunnelEndpointV6:	%9
+	RemoteTunnelEndpointV4:	%10
+	RemoteTunnelEndpointV6:	%11
+	Phase1AuthSetId:	%12
+	Phase2AuthSetId:	%13
+	Phase2CryptoSetId:	%14
+	Action:	%15
+	Profiles:	%16
+	LocalAddresses:	%17
+	RemoteAddresses:	%18
+	EmbeddedContext:	%20
+	IsDTM:	%22
+	ApplyAuthZ:	%23
+	BypassTunnelIfEncrypted:	%24
+	NoIPSecOnOutbound:	%25
+	ModifyingUser:	%26
+	ModifyingApplication:	%27">
+    </event>
+    <event value="2016" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A main mode rule has been added in the IPsec settings.
+
+	Rule ID:	%1
+	Rule Name:	%2
+	Profiles:	%3
+	Endpoint1:	%4
+	Endpoint2:	%5
+	Phase1AuthSetId:	%6
+	Phase1CryptoSetId:	%7
+	Flags:	%8
+	Active:	%9
+	EmbeddedContext:	%10
+	Origin:	%11
+	ModifyingUser:	%12
+	ModifyingApplication:	%13">
+    </event>
+    <event value="2017" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A main mode rule has been modified in the IPsec settings.
+
+	Rule ID:	%1
+	Rule Name:	%2
+	Profiles:	%3
+	Endpoint1:	%4
+	Endpoint2:	%5
+	Phase1AuthSetId:	%6
+	Phase1CryptoSetId:	%7
+	Flags:	%8
+	Active:	%9
+	EmbeddedContext:	%10
+	Origin:	%11
+	ModifyingUser:	%12
+	ModifyingApplication:	%13">
+    </event>
+    <event value="2018" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A main mode rule has been deleted in the IPsec settings.
+
+Deleted Rule:
+	Rule ID:	%1
+	Rule Name:	%2
+	Modifying User:	%3
+	Modifying Application:	%4">
+    </event>
+    <event value="2019" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="A main mode rule was added to the IPsec settings when Windows Firewall started.
+
+	Rule ID:	%1
+	Rule Name:	%2
+	Profiles:	%3
+	Endpoint1:	%4
+	Endpoint2:	%5
+	Phase1AuthSetId:	%6
+	Phase1CryptoSetId:	%7
+	Flags:	%8
+	Active:	%9
+	EmbeddedContext:	%10
+	Origin:	%11
+	ModifyingUser:	%12
+	ModifyingApplication:	%13">
+    </event>
+    <event value="2020" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A phase 1 crypto set was added to IPsec settings.
+
+	Set ID:	%1
+	Set Name:	%2
+	Origin:	%4
+	Flags:	%6
+	NumSuites:	%7
+	TimeOutMinutes:	%10
+	TimeOutSessions:	%11
+	ModifyingUser:	%12
+	ModifyingApplication:	%13">
+    </event>
+    <event value="2021" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A phase 1 crypto set was modified in IPsec settings.
+
+	Set ID:	%1
+	Set Name:	%2
+	Origin:	%4
+	Flags:	%6
+	NumSuites:	%7
+	TimeOutMinutes:	%10
+	TimeOutSessions:	%11
+	ModifyingUser:	%12
+	ModifyingApplication:	%13">
+    </event>
+    <event value="2022" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A phase 1 crypto set was deleted from IPsec settings.
+
+Deleted Rule:
+	Rule ID:	%1
+	Rule Name:	%2
+	Modifying User:	%3
+	Modifying Application:	%4">
+    </event>
+    <event value="2023" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="A phase 1 crypto set was added to IPsec settings when Windows Firewall started.
+
+	Set ID:	%1
+	Set Name:	%2
+	Origin:	%4
+	Flags:	%6
+	NumSuites:	%7
+	TimeOutMinutes:	%10
+	TimeOutSessions:	%11
+	ModifyingUser:	%12
+	ModifyingApplication:	%13">
+    </event>
+    <event value="2024" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A phase 2 crypto set was added to IPsec settings.
+
+	Set ID:	%1
+	Set Name:	%2
+	Origin:	%4
+	Pfs:	%6
+	NumSuites:	%7
+	ModifyingUser:	%10
+	ModifyingApplication:	%11">
+    </event>
+    <event value="2025" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A phase 2 crypto set was modified in IPsec settings.
+
+	Set ID:	%1
+	Set Name:	%2
+	Origin:	%4
+	Pfs:	%6
+	NumSuites:	%7
+	ModifyingUser:	%10
+	ModifyingApplication:	%11">
+    </event>
+    <event value="2026" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A phase 2 crypto set was deleted from IPsec settings.
+
+Deleted Rule:
+	Rule ID:	%1
+	Rule Name:	%2
+	Modifying User:	%3
+	Modifying Application:	%4">
+    </event>
+    <event value="2027" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="A phase 2 crypto set was added to IPsec settings when Windows Firewall started.
+
+	Set ID:	%1
+	Set Name:	%2
+	Origin:	%4
+	Pfs:	%6
+	NumSuites:	%7
+	ModifyingUser:	%10
+	ModifyingApplication:	%11">
+    </event>
+    <event value="2028" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="An authentication set has been added to IPsec settings.
+
+	Set ID:	%1
+	Set Name:	%2
+	IPsec Phase:	%3
+	Origin:	%5
+	NumSuites:	%7
+	ModifyingUser:	%10
+	ModifyingApplication:	%11">
+    </event>
+    <event value="2029" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="An authentication set has been modified in IPsec settings.
+
+	Set ID:	%1
+	Set Name:	%2
+	IPsec Phase:	%3
+	Origin:	%5
+	NumSuites:	%7
+	ModifyingUser:	%10
+	ModifyingApplication:	%11">
+    </event>
+    <event value="2030" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="An authentication set has been deleted from IPsec settings.
+
+Deleted Rule:
+	Rule ID:	%1
+	Rule Name:	%2
+	Modifying User:	%3
+	Modifying Application:	%4">
+    </event>
+    <event value="2031" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="An authentication set has been added to IPsec settings when Windows Firewall started.
+
+	Set ID:	%1
+	Set Name:	%2
+	IPsec Phase:	%3
+	Origin:	%5
+	NumSuites:	%7
+	ModifyingUser:	%10
+	ModifyingApplication:	%11">
+    </event>
+    <event value="2032" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Firewall has been reset to its default configuration.
+
+	ModifyingUser:	%1
+	ModifyingApplication:	%2">
+    </event>
+    <event value="2033" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="All rules have been deleted from the Windows Firewall configuration on this computer.
+
+	Store Type:	%1
+	ModifyingUser:	%2
+	ModifyingApplication:	%3">
+    </event>
+    <event value="2034" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="All connection security rules have been deleted from the IPsec configuration on this computer.
+
+	Store Type:	%1
+	ModifyingUser:	%2
+	ModifyingApplication:	%3">
+    </event>
+    <event value="2035" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="All main mode rules have been deleted from the IPsec configuration on this computer.
+
+	Store Type:	%1
+	ModifyingUser:	%2
+	ModifyingApplication:	%3">
+    </event>
+    <event value="2036" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="All authentication sets have been deleted from the IPsec configuration on this computer.
+
+	IPsec Phase:	%1
+	Store Type:	%2
+	ModifyingUser:	%3
+	ModifyingApplication:	%4">
+    </event>
+    <event value="2037" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="All crypto sets have been deleted from the IPsec configuration on this computer.
+
+	IPsec Phase:	%1
+	Store Type:	%2
+	ModifyingUser:	%3
+	ModifyingApplication:	%4">
+    </event>
+    <event value="2038" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Windows Firewall did not apply the following rule because the rule was not properly configured on this computer:
+
+Rule Information:
+	ID:	%1
+	Name:	%2
+
+Error Information:
+	Reason:	%3">
+    </event>
+    <event value="2039" version="0" opcode="0" channel="20" level="4" task="0" keywords="0x800000000000010" message="Http Proxies Changed
+
+Reason: 	%1
+
+All Proxies:	%2
+
+All Domain Proxies:	%3
+
+Group Policy Configured Domain Proxies:	%4
+
+Group Policy Configured Local Proxies:	%5
+
+All DA Nat64 Domain Proxies:	%6
+
+Group Policy is authoritative:	%7
+">
+    </event>
+    <event value="2040" version="0" opcode="0" channel="20" level="4" task="0" keywords="0x800000000000010" message="Corp Subnets Changed
+
+Reason: 	%1
+
+All Domain Subnets:	%2
+
+Group Policy Configured Domain Subnets:	%3
+
+All DA Nat64 Domain Subnets:	%4
+
+Group Policy is authoritative:	%5
+">
+    </event>
+    <event value="2041" version="0" opcode="0" channel="20" level="4" task="0" keywords="0x800000000000010" message="Capability Changed
+
+Reason: 	%1
+
+Capability:	%2
+Profile:	%3
+IP Range Definition:	%4">
+    </event>
+  </events>
+</provider>

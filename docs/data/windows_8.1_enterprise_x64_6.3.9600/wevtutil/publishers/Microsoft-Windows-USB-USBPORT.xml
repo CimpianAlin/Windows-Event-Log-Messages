@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-USB-USBPORT" guid="c88a4ef5-d048-4013-9408-e04b7db2814a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=usbport.sys&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\drivers\usbport.sys" messageFileName="C:\Windows\system32\drivers\usbport.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-USB-USBPORT/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="ADD" value="655360" message="Add">
+    </opcode>
+    <opcode name="CREATE" value="720896" message="Create">
+    </opcode>
+    <opcode name="INITIALIZE" value="786432" message="Initialize">
+    </opcode>
+    <opcode name="REMOVAL" value="851968" message="Removal">
+    </opcode>
+    <opcode name="INFORMATION" value="917504" message="Information">
+    </opcode>
+    <opcode name="START" value="983040" message="Start">
+    </opcode>
+    <opcode name="STOP" value="1048576" message="Stop">
+    </opcode>
+    <opcode name="SUSPEND" value="1114112" message="Suspend">
+    </opcode>
+    <opcode name="RESUME" value="1179648" message="Resume">
+    </opcode>
+    <opcode name="ENABLE" value="1245184" message="Enable">
+    </opcode>
+    <opcode name="DISABLE" value="1310720" message="Disable">
+    </opcode>
+    <opcode name="SET" value="1376256" message="Set">
+    </opcode>
+    <opcode name="CLEAR" value="1441792" message="Clear">
+    </opcode>
+    <opcode name="OPEN" value="1507328" message="Open">
+    </opcode>
+    <opcode name="CLOSE" value="1572864" message="Close">
+    </opcode>
+    <opcode name="DISPATCH" value="1638400" message="Dispatch">
+    </opcode>
+    <opcode name="COMPLETE" value="1703936" message="Complete">
+    </opcode>
+    <opcode name="COMPLETE_DATA" value="1769472" message="Complete with Data">
+    </opcode>
+    <opcode name="DISPATCH_INTERNAL" value="1835008" message="Dispatch Internal">
+    </opcode>
+    <opcode name="COMPLETE_INTERNAL" value="1900544" message="Complete Internal">
+    </opcode>
+    <opcode name="COMPLETE_INTERNAL_DATA" value="1966080" message="Complete Internal with Data">
+    </opcode>
+    <opcode name="CANCEL" value="2031616" message="Cancel">
+    </opcode>
+    <opcode name="DISPATCH_DATA" value="2097152" message="Dispatch with Data">
+    </opcode>
+    <opcode name="STATUS" value="2162688" message="Status">
+    </opcode>
+    <opcode name="COMPLETE_ERROR" value="2228224" message="Complete with Error">
+    </opcode>
+    <opcode name="RUNTIME_PM_TRANSITION" value="2293760" message="RunTime PM Transition">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="USBPORT_HOST_CONTROLLER" value="1" eventGUID="7d29c4ab-2275-479c-a3eb-7efc64d3a1ca" message="Host Controller">
+    </task>
+    <task name="USBPORT_HOST_CONTROLLER_ASYNC_SCHEDULE" value="2" eventGUID="0b138b68-d43f-4327-9c42-278b7342b3f4" message="Host Controller Async Schedule">
+    </task>
+    <task name="USBPORT_HOST_CONTROLLER_PERIODIC_SCHEDULE" value="3" eventGUID="249d511f-1207-4ffd-b4d0-7bf1f8c64e68" message="Host Controller Periodic Schedule">
+    </task>
+    <task name="USBPORT_DEVICE" value="4" eventGUID="b5093191-14d9-4b17-9bda-0266a475a862" message="Device">
+    </task>
+    <task name="USBPORT_DEVICE_IDLE_STATE" value="5" eventGUID="cdbee403-f6ab-4977-8917-67d3014dd50e" message="Device Idle State">
+    </task>
+    <task name="USBPORT_ENDPOINT" value="6" eventGUID="8e5c7572-baec-4fea-9033-00e336b53e19" message="Endpoint">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SELECT_CONFIGURATION" value="7" eventGUID="c4b8fd80-448c-4a76-b776-8aa803edcead" message="URB_FUNCTION_SELECT_CONFIGURATION">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SELECT_INTERFACE" value="8" eventGUID="5d53c78d-244c-4bda-a150-ce2f47e2f804" message="URB_FUNCTION_SELECT_INTERFACE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_CURRENT_FRAME_NUMBER" value="9" eventGUID="6c2c34b4-91c6-4ead-a182-eba9d4af006a" message="URB_FUNCTION_GET_CURRENT_FRAME_NUMBER">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_CONTROL_TRANSFER" value="10" eventGUID="33497498-aed3-4432-a41a-a30a4f8c2677" message="URB_FUNCTION_CONTROL_TRANSFER">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_CONTROL_TRANSFER_EX" value="11" eventGUID="b79ff1e1-710d-4bef-b60d-05e8d2a5ac57" message="URB_FUNCTION_CONTROL_TRANSFER_EX">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" value="12" eventGUID="a822cc93-e821-4264-8fe2-04cd34daae3a" message="URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_ISOCH_TRANSFER" value="13" eventGUID="07a721d0-7521-4c23-84c7-dd03626caabe" message="URB_FUNCTION_ISOCH_TRANSFER">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE" value="14" eventGUID="2a17b889-b780-45bf-be0c-cf90a11e73e4" message="URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE" value="15" eventGUID="cdbf8947-8ebb-4caf-8e6f-c9a9a68f0830" message="URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT" value="16" eventGUID="d3d3c803-fdf7-4bcc-b588-592a614b7cd7" message="URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT" value="17" eventGUID="31c2f7d3-7d7f-4cec-8981-ab22ff722a2f" message="URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE" value="18" eventGUID="fac2754c-b106-4500-84c4-d4b264d7c5b2" message="URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE" value="19" eventGUID="ea22276d-6127-40b3-a6c5-abba61c60d96" message="URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SET_FEATURE_TO_DEVICE" value="20" eventGUID="1b213ddb-48d3-4af7-9841-b33930a00acf" message="URB_FUNCTION_SET_FEATURE_TO_DEVICE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SET_FEATURE_TO_INTERFACE" value="21" eventGUID="141b47ad-5f85-48f2-b95d-24dce373c52c" message="URB_FUNCTION_SET_FEATURE_TO_INTERFACE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SET_FEATURE_TO_ENDPOINT" value="22" eventGUID="20f20d88-9812-4673-aaf4-4c5e5dbdace1" message="URB_FUNCTION_SET_FEATURE_TO_ENDPOINT">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE" value="23" eventGUID="d69571a2-963e-4707-96a4-70d248b8471a" message="URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE" value="24" eventGUID="4c5a4425-4009-4b1a-9b79-356c8e2c5c9e" message="URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT" value="25" eventGUID="92b41e62-4bba-432c-83ab-e8c3cc806e8e" message="URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_OTHER" value="26" eventGUID="b3f6a69b-c9cd-49d0-bb97-178f1db494a5" message="URB_FUNCTION_CLEAR_FEATURE_TO_OTHER">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SET_FEATURE_TO_OTHER" value="27" eventGUID="45a06927-bc34-4a29-97cb-d3256eab2124" message="URB_FUNCTION_SET_FEATURE_TO_OTHER">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_STATUS_FROM_DEVICE" value="28" eventGUID="7c09ec46-a898-4e34-a6aa-1d9a78500d82" message="URB_FUNCTION_GET_STATUS_FROM_DEVICE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_STATUS_FROM_INTERFACE" value="29" eventGUID="d5d5b6e6-0823-401b-b5f6-6ad798d01e56" message="URB_FUNCTION_GET_STATUS_FROM_INTERFACE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_STATUS_FROM_ENDPOINT" value="30" eventGUID="60b5911a-aeaa-4091-a673-46f2cd56709a" message="URB_FUNCTION_GET_STATUS_FROM_ENDPOINT">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_STATUS_FROM_OTHER" value="31" eventGUID="89b8bb8b-cb5d-4ab6-a62f-4495807155fa" message="URB_FUNCTION_GET_STATUS_FROM_OTHER">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_VENDOR_DEVICE" value="32" eventGUID="e15502d9-e19c-41c2-b82e-fa3013ee8de8" message="URB_FUNCTION_VENDOR_DEVICE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_VENDOR_INTERFACE" value="33" eventGUID="87dbc22f-cdbe-418d-b233-d373c29f22b9" message="URB_FUNCTION_VENDOR_INTERFACE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_VENDOR_ENDPOINT" value="34" eventGUID="068fc094-98ff-4dbd-b5d7-0be57732d0af" message="URB_FUNCTION_VENDOR_ENDPOINT">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_CLASS_DEVICE" value="35" eventGUID="983bc322-3ef4-474c-9520-ab59d15d9dbb" message="URB_FUNCTION_CLASS_DEVICE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_CLASS_INTERFACE" value="36" eventGUID="4b7388ef-7647-4d63-a645-7cdbf7cd0620" message="URB_FUNCTION_CLASS_INTERFACE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_CLASS_ENDPOINT" value="37" eventGUID="7179c7b2-17be-4398-9c8b-ce77baebc92e" message="URB_FUNCTION_CLASS_ENDPOINT">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_CLASS_OTHER" value="38" eventGUID="bcaf7028-4b8a-4655-ae3c-09a10ac161ad" message="URB_FUNCTION_CLASS_OTHER">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_VENDOR_OTHER" value="39" eventGUID="38b62a28-8ab7-4dcd-b244-8d4f00b40bd1" message="URB_FUNCTION_VENDOR_OTHER">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_ABORT_PIPE" value="40" eventGUID="f51deba5-238f-4c76-b885-c6e70832fb19" message="URB_FUNCTION_ABORT_PIPE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL" value="41" eventGUID="267a649f-8a24-415d-ad11-8a58edd2ce82" message="URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SYNC_RESET_PIPE" value="42" eventGUID="8310e273-e23b-46e7-aeee-53148e7dfbd8" message="URB_FUNCTION_SYNC_RESET_PIPE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SYNC_CLEAR_STALL" value="43" eventGUID="4ba647e7-5c9d-47a2-aefd-4ed31176438d" message="URB_FUNCTION_SYNC_CLEAR_STALL">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_CONFIGURATION" value="44" eventGUID="cd9cbca2-c867-4a41-8b8d-3b360a3fc111" message="URB_FUNCTION_GET_CONFIGURATION">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_INTERFACE" value="45" eventGUID="27abba92-ec70-45af-9813-da1fad75c4af" message="URB_FUNCTION_GET_INTERFACE">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR" value="46" eventGUID="8430554f-b2ac-43fe-a404-0c71539adcc0" message="URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL" value="47" eventGUID="66eab37a-4483-4657-ad30-049a16594556" message="URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_RELEASE_FRAME_LENGTH_CONTROL" value="48" eventGUID="83fe5acd-728a-4342-a282-3bea804be7fa" message="URB_FUNCTION_RELEASE_FRAME_LENGTH_CONTROL">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_GET_FRAME_LENGTH" value="49" eventGUID="7689dbbd-8762-4e54-8a0e-a4327b0f5865" message="URB_FUNCTION_GET_FRAME_LENGTH">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_SET_FRAME_LENGTH" value="50" eventGUID="7087251d-7510-43e9-86ca-048e2a8f23d7" message="URB_FUNCTION_SET_FRAME_LENGTH">
+    </task>
+    <task name="USBPORT_URB_FUNCTION_RESERVED" value="51" eventGUID="d7def725-bbc3-4aa4-8981-d3370f15af04" message="URB_FUNCTION_RESERVED">
+    </task>
+    <task name="USBPORT_URB_INVALID_HEADER_LENGTH_WARNING" value="52" eventGUID="ebbee62c-e408-4736-9863-74bb6f2ec09b" message="USBPORT_URB_INVALID_HEADER_LENGTH_WARNING">
+    </task>
+    <task name="USBPORT_URB_INVALID_FUNCTION" value="53" eventGUID="d73f1705-5545-4fb9-827e-a934adbf22b9" message="USBPORT_URB_INVALID_FUNCTION">
+    </task>
+    <task name="USBPORT_URB_INVALID_HEADER_LENGTH" value="54" eventGUID="c88b108c-0c93-4462-a0e4-2d85949ccabc" message="USBPORT_URB_INVALID_HEADER_LENGTH">
+    </task>
+    <task name="USBPORT_URB_INVALID_DEVICE_HANDLE" value="55" eventGUID="14ff8ce7-7555-45aa-a938-c08ba44966b2" message="USBPORT_URB_INVALID_DEVICE_HANDLE">
+    </task>
+    <task name="USBPORT_URB_INVALID_FUNCTION_NOT_SUPPORTED" value="56" eventGUID="f868b742-bed1-4c5a-9b66-11d113f2d765" message="USBPORT_URB_INVALID_FUNCTION_NOT_SUPPORTED">
+    </task>
+    <task name="USBPORT_URB_INVALID_FUNCTION_RESERVED" value="57" eventGUID="19e8a295-edd0-4960-b02c-98156161c688" message="USBPORT_URB_INVALID_FUNCTION_RESERVED">
+    </task>
+    <task name="USBPORT_URB_INVALID_DUE_TO_HC_SUSPEND" value="58" eventGUID="0cca0538-c9b1-4366-a145-a3742a6fd8ca" message="USBPORT_URB_INVALID_DUE_TO_HC_SUSPEND">
+    </task>
+    <task name="USBPORT_URB_INVALID_URB_LINK" value="59" eventGUID="23b48a84-f3a4-49ad-89dd-f428dacdc38c" message="USBPORT_URB_INVALID_URB_LINK">
+    </task>
+    <task name="USBPORT_URB_INVALID_PIPE_HANDLE" value="60" eventGUID="14a661aa-e785-4a5b-9ded-d3f262e572bb" message="USBPORT_URB_INVALID_PIPE_HANDLE">
+    </task>
+    <task name="USBPORT_URB_INVALID_ZERO_BW_PIPE_HANDLE" value="61" eventGUID="c4977a68-17c5-4d53-be3b-deb73611ef8a" message="USBPORT_URB_INVALID_ZERO_BW_PIPE_HANDLE">
+    </task>
+    <task name="USBPORT_URB_NOP_ZERO_BW_PIPE_HANDLE_REQUEST" value="62" eventGUID="b4adfbb4-8b5e-4d7a-94de-2e0f486431e4" message="USBPORT_URB_NOP_ZERO_BW_PIPE_HANDLE_REQUEST">
+    </task>
+    <task name="USBPORT_URB_INVALID_CONTROL_TRANSFER_ENDPOINT" value="63" eventGUID="ccbc0578-09da-4884-945c-c8fc269f8ee0" message="USBPORT_URB_INVALID_CONTROL_TRANSFER_ENDPOINT">
+    </task>
+    <task name="USBPORT_URB_INVALID_CONTROL_TRANSFER_BUFFER_LENGTH" value="64" eventGUID="1e0db3c1-ff03-4787-86b1-fdf74272f7e9" message="USBPORT_URB_INVALID_CONTROL_TRANSFER_BUFFER_LENGTH">
+    </task>
+    <task name="USBPORT_URB_INVALID_BULK_OR_INTERRUPT_TRANSFER_ENDPOINT" value="65" eventGUID="ff874a71-42e7-4acb-aa9c-0b001303badf" message="USBPORT_URB_INVALID_BULK_OR_INTERRUPT_TRANSFER_ENDPOINT">
+    </task>
+    <task name="USBPORT_URB_INVALID_BULK_OR_INTERRUPT_TRANSFER_BUFFER_LENGTH" value="66" eventGUID="db415a2c-ac4a-4465-92f9-0b21fa36f9c8" message="USBPORT_URB_INVALID_BULK_OR_INTERRUPT_TRANSFER_BUFFER_LENGTH">
+    </task>
+    <task name="USBPORT_URB_INVALID_ISOCHRONOUS_TRANSFER_ENDPOINT" value="67" eventGUID="913b11a1-3962-4abd-a6bb-39e44c5bb08a" message="USBPORT_URB_INVALID_ISOCHRONOUS_TRANSFER_ENDPOINT">
+    </task>
+    <task name="USBPORT_URB_INVALID_NULL_TRANSFER_BUFFER_AND_MDL" value="68" eventGUID="3983bc87-b86a-4297-b177-8f3e37c75f04" message="USBPORT_URB_INVALID_NULL_TRANSFER_BUFFER_AND_MDL">
+    </task>
+    <task name="USBPORT_URB_INVALID_NON_NULL_TRANSFER_BUFFER_MDL" value="69" eventGUID="d19558f5-0293-47f9-8a8e-6d5795758066" message="USBPORT_URB_INVALID_NON_NULL_TRANSFER_BUFFER_MDL">
+    </task>
+    <task name="USBPORT_URB_ALLOCATE_MDL_FAILURE" value="70" eventGUID="6dbfd591-71c5-4210-bd51-1211eeb9cea0" message="USBPORT_URB_ALLOCATE_MDL_FAILURE">
+    </task>
+    <task name="USBPORT_URB_ALLOCATE_TRANSFER_CONTEXT_FAILURE" value="71" eventGUID="78de766a-f31c-41f1-b778-b439f54996fe" message="USBPORT_URB_ALLOCATE_TRANSFER_CONTEXT_FAILURE">
+    </task>
+    <task name="USBPORT_URB_NOP_ROOTHUB_PIPE_HANDLE_REQUEST" value="72" eventGUID="7d532050-5c50-4d77-bf8a-a51767366f4b" message="USBPORT_URB_NOP_ROOTHUB_PIPE_HANDLE_REQUEST">
+    </task>
+    <task name="USBPORT_URB_INVALID_ISOCHRONOUS_ZERO_LENGTH" value="73" eventGUID="7d805f9f-3e35-494d-bda3-6db35082b725" message="USBPORT_URB_INVALID_ISOCHRONOUS_ZERO_LENGTH">
+    </task>
+    <task name="USBPORT_URB_INVALID_ISOCHRONOUS_NUM_PACKETS" value="74" eventGUID="11a4e685-e604-4322-b1a7-dc75517e191e" message="USBPORT_URB_INVALID_ISOCHRONOUS_NUM_PACKETS">
+    </task>
+    <task name="USBPORT_URB_INVALID_ISOCHRONOUS_START_FRAME" value="75" eventGUID="4691c73b-f17d-4da7-b395-921fa118daf3" message="USBPORT_URB_INVALID_ISOCHRONOUS_START_FRAME">
+    </task>
+    <task name="USBPORT_IRP" value="76" eventGUID="e374e36f-5a67-465a-9f3e-3115ecf6c9f6" message="Irp">
+    </task>
+    <task name="USBPORT_USBUSER_OP_RAW_RESET_PORT" value="77" eventGUID="d0b96af4-9dfa-48dc-a67a-c6f4ed89367b" message="USBUSER_OP_RAW_RESET_PORT">
+    </task>
+    <task name="USBPORT_USBUSER_OP_SEND_ONE_PACKET" value="78" eventGUID="7c4a7f44-0b12-4578-b997-e73bd206aff0" message="USBUSER_OP_SEND_ONE_PACKET">
+    </task>
+    <task name="USBPORT_HOST_CONTROLLER_MINIPORT_START" value="79" eventGUID="64f92fad-46a7-49c5-b1cc-520ef85d721e" message="Miniport Start">
+    </task>
+    <task name="USBPORT_HOST_CONTROLLER_MINIPORT_STOP" value="80" eventGUID="b0dcd1fb-822b-4cae-a3da-5f3786ec1476" message="Miniport Stop">
+    </task>
+    <task name="USBPORT_HOST_CONTROLLER_MINIPORT_SUSPEND" value="81" eventGUID="ae8ceab0-f09c-4950-8673-db302ca9f5dd" message="Miniport Suspend">
+    </task>
+    <task name="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" value="82" eventGUID="babc1119-1afc-40ea-a98d-b6d30e305f76" message="Miniport Resume">
+    </task>
+    <task name="USBPORT_CODE_EXECUTION_TIME" value="83" eventGUID="f8729f0e-278e-46bb-b735-224363ad0a34" message="Code Performance">
+    </task>
+    <task name="USBPORT_PUT_SGLIST_EXECUTION_TIME" value="84" eventGUID="ebb5dea6-33f3-48cb-8c15-3e50c1501dd0" message="Code Performance PutScatterGatherList">
+    </task>
+    <task name="USBPORT_BUILD_SGLIST_EXECUTION_TIME" value="85" eventGUID="a445ebed-ac4c-4677-84f1-a05d67a2d2fc" message="Code Performance BuildScatterGatherList">
+    </task>
+    <task name="USBPORT_RUNTIME_PM" value="86" eventGUID="b3eb8c8c-45d1-4922-a43e-99c89b08373c" message="RunTime Power Management">
+    </task>
+    <task name="USBPORT_ARM_FOR_WAKE" value="87" eventGUID="21ab0aa2-31b4-4491-b9ec-cc3a7b069800" message="Arm controller for wake">
+    </task>
+    <task name="USBPORT_HOST_CONTROLLER_DEVICE_DATA" value="88" eventGUID="7a35e867-d467-475e-8d06-1a23b9e84e92" message="Host Controller Device Data">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Diagnostic" mask="1" message="">
+    </keyword>
+    <keyword name="PowerDiagnostics" mask="2" message="">
+    </keyword>
+    <keyword name="PerfDiagnostics" mask="4" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="10" channel="16" level="4" task="1" keywords="0x8000000000000003" message="Host Controller Add">
+    </event>
+    <event value="2" version="0" opcode="13" channel="16" level="4" task="1" keywords="0x8000000000000003" message="Host Controller Removal">
+    </event>
+    <event value="3" version="0" opcode="14" channel="16" level="4" task="1" keywords="0x8000000000000003" message="Host Controller Information">
+    </event>
+    <event value="4" version="0" opcode="15" channel="16" level="4" task="1" keywords="0x8000000000000003" message="Host Controller Start">
+    </event>
+    <event value="5" version="0" opcode="16" channel="16" level="4" task="1" keywords="0x8000000000000003" message="Host Controller Stop">
+    </event>
+    <event value="6" version="0" opcode="17" channel="16" level="4" task="1" keywords="0x8000000000000003" message="Host Controller Suspend">
+    </event>
+    <event value="7" version="0" opcode="18" channel="16" level="4" task="1" keywords="0x8000000000000003" message="Host Controller Resume">
+    </event>
+    <event value="8" version="0" opcode="19" channel="16" level="5" task="2" keywords="0x8000000000000003" message="Host Controller Async Schedule Enable">
+    </event>
+    <event value="9" version="0" opcode="20" channel="16" level="5" task="2" keywords="0x8000000000000003" message="Host Controller Async Schedule Disable">
+    </event>
+    <event value="10" version="0" opcode="19" channel="16" level="4" task="3" keywords="0x8000000000000003" message="Host Controller Periodic Schedule Enable">
+    </event>
+    <event value="11" version="0" opcode="20" channel="16" level="4" task="3" keywords="0x8000000000000003" message="Host Controller Periodic Schedule Disable">
+    </event>
+    <event value="12" version="0" opcode="11" channel="16" level="4" task="4" keywords="0x8000000000000003" message="Device Create">
+    </event>
+    <event value="13" version="0" opcode="12" channel="16" level="4" task="4" keywords="0x8000000000000003" message="Device Initialize">
+    </event>
+    <event value="14" version="0" opcode="13" channel="16" level="4" task="4" keywords="0x8000000000000003" message="Device Removal">
+    </event>
+    <event value="15" version="0" opcode="14" channel="16" level="4" task="4" keywords="0x8000000000000003" message="Device Information">
+    </event>
+    <event value="16" version="0" opcode="21" channel="16" level="4" task="5" keywords="0x8000000000000003" message="Device Idle State Set">
+    </event>
+    <event value="17" version="0" opcode="22" channel="16" level="4" task="5" keywords="0x8000000000000003" message="Device Idle State Clear">
+    </event>
+    <event value="18" version="0" opcode="23" channel="16" level="4" task="6" keywords="0x8000000000000003" message="Endpoint Open">
+    </event>
+    <event value="19" version="0" opcode="24" channel="16" level="4" task="6" keywords="0x8000000000000003" message="Endpoint Close">
+    </event>
+    <event value="20" version="0" opcode="14" channel="16" level="4" task="6" keywords="0x8000000000000003" message="Endpoint Information">
+    </event>
+    <event value="21" version="0" opcode="25" channel="16" level="4" task="7" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SELECT_CONFIGURATION">
+    </event>
+    <event value="22" version="0" opcode="25" channel="16" level="4" task="8" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SELECT_INTERFACE">
+    </event>
+    <event value="23" version="0" opcode="25" channel="16" level="4" task="9" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_CURRENT_FRAME_NUMBER">
+    </event>
+    <event value="24" version="0" opcode="25" channel="16" level="4" task="10" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_CONTROL_TRANSFER">
+    </event>
+    <event value="25" version="0" opcode="25" channel="16" level="4" task="11" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_CONTROL_TRANSFER_EX">
+    </event>
+    <event value="26" version="0" opcode="25" channel="16" level="4" task="12" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER">
+    </event>
+    <event value="27" version="0" opcode="25" channel="16" level="4" task="13" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_ISOCH_TRANSFER">
+    </event>
+    <event value="28" version="0" opcode="25" channel="16" level="4" task="14" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE">
+    </event>
+    <event value="29" version="0" opcode="25" channel="16" level="4" task="15" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE">
+    </event>
+    <event value="30" version="0" opcode="25" channel="16" level="4" task="16" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT">
+    </event>
+    <event value="31" version="0" opcode="25" channel="16" level="4" task="17" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT">
+    </event>
+    <event value="32" version="0" opcode="25" channel="16" level="4" task="18" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE">
+    </event>
+    <event value="33" version="0" opcode="25" channel="16" level="4" task="19" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE">
+    </event>
+    <event value="34" version="0" opcode="25" channel="16" level="4" task="20" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SET_FEATURE_TO_DEVICE">
+    </event>
+    <event value="35" version="0" opcode="25" channel="16" level="4" task="21" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SET_FEATURE_TO_INTERFACE">
+    </event>
+    <event value="36" version="0" opcode="25" channel="16" level="4" task="22" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SET_FEATURE_TO_ENDPOINT">
+    </event>
+    <event value="37" version="0" opcode="25" channel="16" level="4" task="23" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE">
+    </event>
+    <event value="38" version="0" opcode="25" channel="16" level="4" task="24" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE">
+    </event>
+    <event value="39" version="0" opcode="25" channel="16" level="4" task="25" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT">
+    </event>
+    <event value="40" version="0" opcode="25" channel="16" level="4" task="26" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_OTHER">
+    </event>
+    <event value="41" version="0" opcode="25" channel="16" level="4" task="27" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SET_FEATURE_TO_OTHER">
+    </event>
+    <event value="42" version="0" opcode="25" channel="16" level="4" task="28" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_STATUS_FROM_DEVICE">
+    </event>
+    <event value="43" version="0" opcode="25" channel="16" level="4" task="29" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_STATUS_FROM_INTERFACE">
+    </event>
+    <event value="44" version="0" opcode="25" channel="16" level="4" task="30" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_STATUS_FROM_ENDPOINT">
+    </event>
+    <event value="45" version="0" opcode="25" channel="16" level="4" task="31" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_STATUS_FROM_OTHER">
+    </event>
+    <event value="46" version="0" opcode="25" channel="16" level="4" task="32" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_VENDOR_DEVICE">
+    </event>
+    <event value="47" version="0" opcode="25" channel="16" level="4" task="33" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_VENDOR_INTERFACE">
+    </event>
+    <event value="48" version="0" opcode="25" channel="16" level="4" task="34" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_VENDOR_ENDPOINT">
+    </event>
+    <event value="49" version="0" opcode="25" channel="16" level="4" task="35" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_CLASS_DEVICE">
+    </event>
+    <event value="50" version="0" opcode="25" channel="16" level="4" task="36" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_CLASS_INTERFACE">
+    </event>
+    <event value="51" version="0" opcode="25" channel="16" level="4" task="37" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_CLASS_ENDPOINT">
+    </event>
+    <event value="52" version="0" opcode="25" channel="16" level="4" task="38" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_CLASS_OTHER">
+    </event>
+    <event value="53" version="0" opcode="25" channel="16" level="4" task="39" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_VENDOR_OTHER">
+    </event>
+    <event value="54" version="0" opcode="25" channel="16" level="4" task="40" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_ABORT_PIPE">
+    </event>
+    <event value="55" version="0" opcode="25" channel="16" level="4" task="41" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL">
+    </event>
+    <event value="56" version="0" opcode="25" channel="16" level="4" task="42" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SYNC_RESET_PIPE">
+    </event>
+    <event value="57" version="0" opcode="25" channel="16" level="4" task="43" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SYNC_CLEAR_STALL">
+    </event>
+    <event value="58" version="0" opcode="25" channel="16" level="4" task="44" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_CONFIGURATION">
+    </event>
+    <event value="59" version="0" opcode="25" channel="16" level="4" task="45" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_INTERFACE">
+    </event>
+    <event value="60" version="0" opcode="25" channel="16" level="4" task="46" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR">
+    </event>
+    <event value="61" version="0" opcode="25" channel="16" level="4" task="47" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL">
+    </event>
+    <event value="62" version="0" opcode="25" channel="16" level="4" task="48" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_RELEASE_FRAME_LENGTH_CONTROL">
+    </event>
+    <event value="63" version="0" opcode="25" channel="16" level="4" task="49" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_GET_FRAME_LENGTH">
+    </event>
+    <event value="64" version="0" opcode="25" channel="16" level="4" task="50" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_SET_FRAME_LENGTH">
+    </event>
+    <event value="65" version="0" opcode="25" channel="16" level="4" task="51" keywords="0x8000000000000001" message="Dispatch URB_FUNCTION_RESERVED">
+    </event>
+    <event value="66" version="0" opcode="26" channel="16" level="4" task="10" keywords="0x8000000000000001" message="Complete URB_FUNCTION_CONTROL_TRANSFER">
+    </event>
+    <event value="67" version="0" opcode="26" channel="16" level="4" task="11" keywords="0x8000000000000001" message="Complete URB_FUNCTION_CONTROL_TRANSFER_EX">
+    </event>
+    <event value="68" version="0" opcode="27" channel="16" level="4" task="10" keywords="0x8000000000000001" message="Complete URB_FUNCTION_CONTROL_TRANSFER with Data">
+    </event>
+    <event value="69" version="0" opcode="27" channel="16" level="4" task="11" keywords="0x8000000000000001" message="Complete URB_FUNCTION_CONTROL_TRANSFER_EX with Data">
+    </event>
+    <event value="70" version="0" opcode="26" channel="16" level="4" task="12" keywords="0x8000000000000001" message="Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER">
+    </event>
+    <event value="71" version="0" opcode="27" channel="16" level="4" task="12" keywords="0x8000000000000001" message="Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with Data">
+    </event>
+    <event value="72" version="0" opcode="26" channel="16" level="4" task="13" keywords="0x8000000000000001" message="Complete COMPLETE_URB_FUNCTION_ISOCH_TRANSFER">
+    </event>
+    <event value="73" version="0" opcode="27" channel="16" level="4" task="13" keywords="0x8000000000000001" message="Complete COMPLETE_URB_FUNCTION_ISOCH_TRANSFER with Data">
+    </event>
+    <event value="74" version="0" opcode="28" channel="16" level="4" task="10" keywords="0x8000000000000001" message="Internal URB_FUNCTION_CONTROL_TRANSFER">
+    </event>
+    <event value="75" version="0" opcode="29" channel="16" level="4" task="10" keywords="0x8000000000000001" message="Complete Internal URB_FUNCTION_CONTROL_TRANSFER">
+    </event>
+    <event value="76" version="0" opcode="30" channel="16" level="4" task="10" keywords="0x8000000000000001" message="Complete Internal URB_FUNCTION_CONTROL_TRANSFER with Data">
+    </event>
+    <event value="77" version="0" opcode="26" channel="16" level="4" task="40" keywords="0x8000000000000001" message="Complete URB_FUNCTION_ABORT_PIPE">
+    </event>
+    <event value="78" version="0" opcode="25" channel="16" level="4" task="52" keywords="0x8000000000000001" message="Dispatch URB INVALID_HEADER_LENGTH_WARNING">
+    </event>
+    <event value="79" version="0" opcode="25" channel="16" level="4" task="53" keywords="0x8000000000000001" message="Dispatch URB INVALID_FUNCTION">
+    </event>
+    <event value="80" version="0" opcode="25" channel="16" level="4" task="54" keywords="0x8000000000000001" message="Dispatch URB INVALID_HEADER_LENGTH">
+    </event>
+    <event value="81" version="0" opcode="25" channel="16" level="4" task="55" keywords="0x8000000000000001" message="Dispatch URB INVALID_DEVICE_HANDLE">
+    </event>
+    <event value="82" version="0" opcode="25" channel="16" level="4" task="56" keywords="0x8000000000000001" message="Dispatch URB INVALID_FUNCTION_NOT_SUPPORTED">
+    </event>
+    <event value="83" version="0" opcode="25" channel="16" level="4" task="57" keywords="0x8000000000000001" message="Dispatch URB INVALID_FUNCTION_RESERVED">
+    </event>
+    <event value="84" version="0" opcode="25" channel="16" level="4" task="58" keywords="0x8000000000000001" message="Dispatch URB INVALID_DUE_TO_HC_SUSPEND">
+    </event>
+    <event value="85" version="0" opcode="25" channel="16" level="4" task="59" keywords="0x8000000000000001" message="Dispatch URB INVALID_URB_LINK">
+    </event>
+    <event value="86" version="0" opcode="25" channel="16" level="4" task="60" keywords="0x8000000000000001" message="Dispatch URB INVALID_PIPE_HANDLE">
+    </event>
+    <event value="87" version="0" opcode="25" channel="16" level="4" task="61" keywords="0x8000000000000001" message="Dispatch URB INVALID_ZERO_BW_PIPE_HANDLE">
+    </event>
+    <event value="88" version="0" opcode="25" channel="16" level="4" task="62" keywords="0x8000000000000001" message="Dispatch URB NOP_ZERO_BW_PIPE_HANDLE_REQUEST">
+    </event>
+    <event value="89" version="0" opcode="25" channel="16" level="4" task="63" keywords="0x8000000000000001" message="Dispatch URB INVALID_CONTROL_TRANSFER_ENDPOINT">
+    </event>
+    <event value="90" version="0" opcode="25" channel="16" level="4" task="64" keywords="0x8000000000000001" message="Dispatch URB INVALID_CONTROL_TRANSFER_BUFFER_LENGTH">
+    </event>
+    <event value="91" version="0" opcode="25" channel="16" level="4" task="65" keywords="0x8000000000000001" message="Dispatch URB INVALID_BULK_OR_INTERRUPT_TRANSFER_ENDPOINT">
+    </event>
+    <event value="92" version="0" opcode="25" channel="16" level="4" task="66" keywords="0x8000000000000001" message="Dispatch URB INVALID_BULK_OR_INTERRUPT_TRANSFER_BUFFER_LENGTH">
+    </event>
+    <event value="93" version="0" opcode="25" channel="16" level="4" task="67" keywords="0x8000000000000001" message="Dispatch URB INVALID_ISOCHRONOUS_TRANSFER_ENDPOINT">
+    </event>
+    <event value="94" version="0" opcode="25" channel="16" level="4" task="68" keywords="0x8000000000000001" message="Dispatch URB INVALID_NULL_TRANSFER_BUFFER_AND_MDL">
+    </event>
+    <event value="95" version="0" opcode="25" channel="16" level="4" task="69" keywords="0x8000000000000001" message="Dispatch URB INVALID_NON_NULL_TRANSFER_BUFFER_MDL">
+    </event>
+    <event value="96" version="0" opcode="25" channel="16" level="4" task="70" keywords="0x8000000000000001" message="Dispatch URB ALLOCATE_MDL_FAILURE">
+    </event>
+    <event value="97" version="0" opcode="25" channel="16" level="4" task="71" keywords="0x8000000000000001" message="Dispatch URB ALLOCATE_TRANSFER_CONTEXT_FAILURE">
+    </event>
+    <event value="98" version="0" opcode="25" channel="16" level="4" task="72" keywords="0x8000000000000001" message="Dispatch URB NOP_ROOTHUB_PIPE_HANDLE_REQUEST">
+    </event>
+    <event value="99" version="0" opcode="25" channel="16" level="4" task="73" keywords="0x8000000000000001" message="Dispatch URB INVALID_ISOCHRONOUS_ZERO_LENGTH">
+    </event>
+    <event value="100" version="0" opcode="25" channel="16" level="4" task="74" keywords="0x8000000000000001" message="Dispatch URB INVALID_ISOCHRONOUS_NUM_PACKETS">
+    </event>
+    <event value="101" version="0" opcode="25" channel="16" level="4" task="75" keywords="0x8000000000000001" message="Dispatch URB INVALID_ISOCHRONOUS_START_FRAME">
+    </event>
+    <event value="102" version="0" opcode="31" channel="16" level="4" task="76" keywords="0x8000000000000001" message="Irp Cancel">
+    </event>
+    <event value="103" version="0" opcode="25" channel="16" level="4" task="77" keywords="0x8000000000000001" message="USBUSER_OP_RAW_RESET_PORT Dispatch">
+    </event>
+    <event value="104" version="0" opcode="33" channel="16" level="4" task="77" keywords="0x8000000000000001" message="USBUSER_OP_RAW_RESET_PORT GetPortStatus after SetFeaturePortPower">
+    </event>
+    <event value="105" version="0" opcode="33" channel="16" level="4" task="77" keywords="0x8000000000000001" message="USBUSER_OP_RAW_RESET_PORT GetPortStatus after SetFeaturePortReset">
+    </event>
+    <event value="106" version="0" opcode="33" channel="16" level="4" task="77" keywords="0x8000000000000001" message="USBUSER_OP_RAW_RESET_PORT GetPortStatus after ClearFeaturePortResetChange">
+    </event>
+    <event value="107" version="0" opcode="26" channel="16" level="4" task="77" keywords="0x8000000000000001" message="USBUSER_OP_RAW_RESET_PORT Complete">
+    </event>
+    <event value="108" version="0" opcode="25" channel="16" level="4" task="78" keywords="0x8000000000000001" message="USBUSER_OP_SEND_ONE_PACKET Dispatch">
+    </event>
+    <event value="109" version="0" opcode="32" channel="16" level="4" task="78" keywords="0x8000000000000001" message="USBUSER_OP_SEND_ONE_PACKET Dispatch with Data">
+    </event>
+    <event value="110" version="0" opcode="33" channel="16" level="4" task="78" keywords="0x8000000000000001" message="USBUSER_OP_SEND_ONE_PACKET Timeout">
+    </event>
+    <event value="111" version="0" opcode="26" channel="16" level="4" task="78" keywords="0x8000000000000001" message="USBUSER_OP_SEND_ONE_PACKET Complete">
+    </event>
+    <event value="112" version="0" opcode="27" channel="16" level="4" task="78" keywords="0x8000000000000001" message="USBUSER_OP_SEND_ONE_PACKET Complete with Data">
+    </event>
+    <event value="113" version="0" opcode="14" channel="16" level="5" task="83" keywords="0x8000000000000004" message="Code Execution time in Micro Seconds">
+    </event>
+    <event value="114" version="0" opcode="14" channel="16" level="5" task="84" keywords="0x8000000000000004" message="Code Execution time for PutScatterGatherList in Micro Seconds">
+    </event>
+    <event value="115" version="0" opcode="14" channel="16" level="5" task="85" keywords="0x8000000000000004" message="Code Execution time for BuildScatterGatherList in Micro Seconds">
+    </event>
+    <event value="1024" version="0" opcode="25" channel="16" level="4" task="79" keywords="0x8000000000000001" message="EHCI Miniport Start Dispatch">
+    </event>
+    <event value="1025" version="0" opcode="26" channel="16" level="4" task="79" keywords="0x8000000000000001" message="EHCI Miniport Start Complete">
+    </event>
+    <event value="1026" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="EHCI Miniport Start Complete Error - Invalid Resources">
+    </event>
+    <event value="1027" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="EHCI Miniport Start Complete Error - Hardware Gone">
+    </event>
+    <event value="1028" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="EHCI Miniport Start Complete Error - Stop BIOS">
+    </event>
+    <event value="1029" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="EHCI Miniport Start Complete Error - Initialize Hardware">
+    </event>
+    <event value="1030" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="EHCI Miniport Start Complete Error - Initialize Schedule">
+    </event>
+    <event value="1031" version="0" opcode="25" channel="16" level="4" task="80" keywords="0x8000000000000001" message="EHCI Miniport Stop Dispatch">
+    </event>
+    <event value="1032" version="0" opcode="26" channel="16" level="4" task="80" keywords="0x8000000000000001" message="EHCI Miniport Stop Complete">
+    </event>
+    <event value="1033" version="0" opcode="25" channel="16" level="4" task="81" keywords="0x8000000000000001" message="EHCI Miniport Suspend Dispatch">
+    </event>
+    <event value="1034" version="0" opcode="26" channel="16" level="4" task="81" keywords="0x8000000000000001" message="EHCI Miniport Suspend Complete">
+    </event>
+    <event value="1035" version="0" opcode="25" channel="16" level="4" task="82" keywords="0x8000000000000001" message="EHCI Miniport Resume Dispatch">
+    </event>
+    <event value="1036" version="0" opcode="26" channel="16" level="4" task="82" keywords="0x8000000000000001" message="EHCI Miniport Resume Complete">
+    </event>
+    <event value="1037" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="EHCI Miniport Resume Complete Error - Hardware Gone">
+    </event>
+    <event value="1038" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="EHCI Miniport Resume Complete Error - HcHalted">
+    </event>
+    <event value="1039" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="EHCI Miniport Resume Complete Error - ConfigFlag">
+    </event>
+    <event value="1040" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="EHCI Miniport Resume Complete Error - PortPower">
+    </event>
+    <event value="1041" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="EHCI Miniport Resume Complete Error - PortOwnedByCC">
+    </event>
+    <event value="1042" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="EHCI Miniport Resume Complete Error - OvercurrentChange">
+    </event>
+    <event value="1043" version="0" opcode="14" channel="16" level="4" task="88" keywords="0x8000000000000001" message="EHCI Miniport Device Data">
+    </event>
+    <event value="2048" version="0" opcode="25" channel="16" level="4" task="79" keywords="0x8000000000000001" message="OHCI Miniport Start Dispatch">
+    </event>
+    <event value="2049" version="0" opcode="26" channel="16" level="4" task="79" keywords="0x8000000000000001" message="OHCI Miniport Start Complete">
+    </event>
+    <event value="2050" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="OHCI Miniport Start Complete Error - Invalid Resources">
+    </event>
+    <event value="2051" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="OHCI Miniport Start Complete Error - Hardware Gone">
+    </event>
+    <event value="2052" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="OHCI Miniport Start Complete Error - Stop BIOS">
+    </event>
+    <event value="2053" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="OHCI Miniport Start Complete Error - Initialize Schedule">
+    </event>
+    <event value="2054" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="OHCI Miniport Start Complete Error - Initialize Hardware">
+    </event>
+    <event value="2055" version="0" opcode="25" channel="16" level="4" task="80" keywords="0x8000000000000001" message="OHCI Miniport Stop Dispatch">
+    </event>
+    <event value="2056" version="0" opcode="26" channel="16" level="4" task="80" keywords="0x8000000000000001" message="OHCI Miniport Stop Complete">
+    </event>
+    <event value="2057" version="0" opcode="25" channel="16" level="4" task="81" keywords="0x8000000000000001" message="OHCI Miniport Suspend Dispatch">
+    </event>
+    <event value="2058" version="0" opcode="26" channel="16" level="4" task="81" keywords="0x8000000000000001" message="OHCI Miniport Suspend Complete">
+    </event>
+    <event value="2059" version="0" opcode="25" channel="16" level="4" task="82" keywords="0x8000000000000001" message="OHCI Miniport Resume Dispatch">
+    </event>
+    <event value="2060" version="0" opcode="26" channel="16" level="4" task="82" keywords="0x8000000000000001" message="OHCI Miniport Resume Complete">
+    </event>
+    <event value="2061" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="OHCI Miniport Resume Complete Error - Hardware Gone">
+    </event>
+    <event value="2062" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="OHCI Miniport Resume Complete Error - HcControl">
+    </event>
+    <event value="2063" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="OHCI Miniport Resume Complete Error - HcHCCA">
+    </event>
+    <event value="2064" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="OHCI Miniport Resume Complete Error - HcRhS_OverCurrentIndicatorChange">
+    </event>
+    <event value="2065" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="OHCI Miniport Resume Complete Error - HcRhPS_OverCurrentIndicatorChange">
+    </event>
+    <event value="3072" version="0" opcode="25" channel="16" level="4" task="79" keywords="0x8000000000000001" message="UHCI Miniport Start Dispatch">
+    </event>
+    <event value="3073" version="0" opcode="26" channel="16" level="4" task="79" keywords="0x8000000000000001" message="UHCI Miniport Start Complete">
+    </event>
+    <event value="3074" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="UHCI Miniport Start Complete Error - Invalid Resources">
+    </event>
+    <event value="3075" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="UHCI Miniport Start Complete Error - Stop BIOS">
+    </event>
+    <event value="3076" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="UHCI Miniport Start Complete Error - Initialize Hardware">
+    </event>
+    <event value="3077" version="0" opcode="34" channel="16" level="4" task="79" keywords="0x8000000000000001" message="UHCI Miniport Start Complete Error - Initialize Schedule">
+    </event>
+    <event value="3078" version="0" opcode="25" channel="16" level="4" task="80" keywords="0x8000000000000001" message="UHCI Miniport Stop Dispatch">
+    </event>
+    <event value="3079" version="0" opcode="26" channel="16" level="4" task="80" keywords="0x8000000000000001" message="UHCI Miniport Stop Complete">
+    </event>
+    <event value="3080" version="0" opcode="25" channel="16" level="4" task="81" keywords="0x8000000000000001" message="UHCI Miniport Suspend Dispatch">
+    </event>
+    <event value="3081" version="0" opcode="26" channel="16" level="4" task="81" keywords="0x8000000000000001" message="UHCI Miniport Suspend Complete">
+    </event>
+    <event value="3082" version="0" opcode="25" channel="16" level="4" task="82" keywords="0x8000000000000001" message="UHCI Miniport Resume Dispatch">
+    </event>
+    <event value="3083" version="0" opcode="26" channel="16" level="4" task="82" keywords="0x8000000000000001" message="UHCI Miniport Resume Complete">
+    </event>
+    <event value="3084" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="UHCI Miniport Resume Complete Error - Hardware Gone">
+    </event>
+    <event value="3085" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="UHCI Miniport Resume Complete Error - EnterGlobalSuspendMode">
+    </event>
+    <event value="3086" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="UHCI Miniport Resume Complete Error - ForceGlobalResume">
+    </event>
+    <event value="3087" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="UHCI Miniport Resume Complete Error - FrameNumber">
+    </event>
+    <event value="3088" version="0" opcode="34" channel="16" level="4" task="82" keywords="0x8000000000000001" message="UHCI Miniport Resume Complete Error - OvercurrentChange">
+    </event>
+    <event value="3089" version="0" opcode="35" channel="16" level="4" task="86" keywords="0x8000000000000001" message="Run Time Power Management Transition">
+    </event>
+    <event value="3090" version="0" opcode="25" channel="16" level="4" task="87" keywords="0x8000000000000001" message="Dispatch IRP_MN_WAIT_WAKE">
+    </event>
+    <event value="3091" version="0" opcode="26" channel="16" level="4" task="87" keywords="0x8000000000000001" message="Complete IRP_MN_WAIT_WAKE">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-EmbeddedAppLauncher" guid="56285391-9b96-4696-9ead-2d17f98fbdb2" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=EmbeddedAppLauncher.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\EmbeddedAppLauncher.exe" messageFileName="C:\Windows\system32\EmbeddedAppLauncher.exe" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-EmbeddedAppLauncher/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-EmbeddedAppLauncher/Admin" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tskShLaunch" value="1000" eventGUID="07c5fcef-9a3a-47d9-92b1-6109ddf1baee" message="Embedded App Launcher">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="10001" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Failed to get the current process handle: %4">
+    </event>
+    <event value="10002" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to get process token: %4">
+    </event>
+    <event value="10003" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to get privilege (%1) luid: %4">
+    </event>
+    <event value="10004" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to set elevated privilege: %4">
+    </event>
+    <event value="10005" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to exit system (%3): %4">
+    </event>
+    <event value="10006" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="System exit successful (%3)">
+    </event>
+    <event value="10007" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="CurrentProcess running in an elevated context: %1">
+    </event>
+    <event value="10008" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to get token information (%1) for current process: %4">
+    </event>
+    <event value="10009" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to get the current process token">
+    </event>
+    <event value="10010" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to create ApplicationActivationManager %4">
+    </event>
+    <event value="10011" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to enable launcher to set foreground window: %4">
+    </event>
+    <event value="10012" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to activate application (%1): %4">
+    </event>
+    <event value="10013" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to get ApplicationActivationManager: %4">
+    </event>
+    <event value="10014" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to get opened application process (%3): %4">
+    </event>
+    <event value="10015" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to wait for application to exit: %4">
+    </event>
+    <event value="10016" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Elevated context detected, calling Activation Manager surrogate server in DllHost to launch the app from Medium-IL">
+    </event>
+    <event value="10017" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Key (%1) was not opened: %4">
+    </event>
+    <event value="10018" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Key (%1\%2) was not opened: %4">
+    </event>
+    <event value="10019" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Key (%1\%2) was longer than maximum allowed (%3): %4">
+    </event>
+    <event value="10020" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Key (%1) was not opened for enumeration: %4">
+    </event>
+    <event value="10021" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="AppId was retrieved from registry: %1">
+    </event>
+    <event value="10022" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Return code (%3) was mapped to action code (%4)">
+    </event>
+    <event value="10023" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to retrieve application (%3) return code: %4">
+    </event>
+    <event value="10024" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to set process shutdown parameters: %1">
+    </event>
+    <event value="10025" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to create the launcher: %1">
+    </event>
+    <event value="10026" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Launcher exit code: %1">
+    </event>
+    <event value="10027" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="GetExitCodeProcess for processs id %3 failed with error code: %4">
+    </event>
+    <event value="10028" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Unable to create HSTRING using WindowsCreateString API for processs id %3. API failed with error code: %4">
+    </event>
+    <event value="10029" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Cannot get package family name for process id:%3 error code: %4">
+    </event>
+    <event value="10030" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Cannot get application data manager for the package family name %1 . Process id:%3 Error code: %4">
+    </event>
+    <event value="10031" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Process id %3 exited with exit code %4">
+    </event>
+    <event value="10032" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Process id %3 exited with a custom exit code %4">
+    </event>
+    <event value="10033" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Process id %3 crashed.">
+    </event>
+    <event value="10034" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Return code string found in registry is invalid: %1">
+    </event>
+    <event value="10035" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="SID for account (%1) was not found: %4">
+    </event>
+    <event value="10036" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to get current user name: %4">
+    </event>
+    <event value="10037" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Read settings for SID: %1">
+    </event>
+    <event value="10038" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Read global settings">
+    </event>
+    <event value="10039" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to get SID (Group #: %3): %4">
+    </event>
+    <event value="10040" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="The current user is a member of Administrators.  Exiting app launcher.">
+    </event>
+    <event value="10041" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to get Administrators SID: %4">
+    </event>
+    <event value="10042" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to check token membership (%1): %4">
+    </event>
+    <event value="10043" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Default Strategy was retrieved from registry: %4">
+    </event>
+    <event value="10044" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Skipping the Custom Exit Code Logic. Cannot get package family name for Process id %3. API Return Code %4.">
+    </event>
+    <event value="10045" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Default Strategy found in registry (%3) was not valid: %4.">
+    </event>
+    <event value="10046" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Valid configuration not found in registry.  Check registry settings (%1) : %4">
+    </event>
+    <event value="10047" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to register for shell hook messages.  Launcher responsiveness will be reduced : %1">
+    </event>
+    <event value="10048" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to prepare the foreground for application launch (%1): %4">
+    </event>
+    <event value="10049" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Non-configured users cannot run the Embedded App Launcher.">
+    </event>
+    <event value="10050" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Settings were read from override (Application: %1, Default return code action %3)">
+    </event>
+    <event value="10051" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="App launcher is disabled.">
+    </event>
+    <event value="10052" version="0" opcode="1" channel="17" level="4" task="1000" keywords="0x4000000000000000" message="Failed to override appkey (%3) in registry (%1).">
+    </event>
+    <event value="10053" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Timed out waiting for ShellLauncherReadyEvent.">
+    </event>
+    <event value="10054" version="0" opcode="1" channel="17" level="2" task="1000" keywords="0x4000000000000000" message="Failed to wait for ShellLauncherReadyEvent: %1">
+    </event>
+  </events>
+</provider>

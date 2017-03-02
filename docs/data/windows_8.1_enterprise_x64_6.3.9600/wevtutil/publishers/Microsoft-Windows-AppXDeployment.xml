@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-AppXDeployment" guid="8127f6d4-59f9-4abf-8952-3e3a02073d5f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=AppXDeploymentClient.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\AppXDeploymentClient.dll" messageFileName="C:\Windows\system32\AppXDeploymentClient.dll" message="Microsoft-Windows-AppXDeployment" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-AppXDeployment/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-AppXDeployment/Operational" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="AppXDeployment.Task.Client.ServiceStartup" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppXDeployment.Task.Client.AddPackage" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppXDeployment.Task.Client.RemovePackage" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppXDeployment.Task.Client.Deployment" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppXDeployment.Task.Client.EnumAPI" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AppXSysprep.Task.Generalize" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="APPXDEPLOYMENT_KEYWORD" mask="1" message="AppXDeployment">
+    </keyword>
+    <keyword name="APPMODEL_RUNTIME_DMR_KEYWORD" mask="2" message="DMR">
+    </keyword>
+    <keyword name="AppXDeployment" mask="10000" message="">
+    </keyword>
+    <keyword name="DMR" mask="20000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="301" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000010000" message="The calling process is %1">
+    </event>
+    <event value="302" version="0" opcode="0" channel="17" level="2" task="4" keywords="0x4000000000010000" message="Failed to start system service: %1 with error: %2.">
+    </event>
+    <event value="303" version="0" opcode="0" channel="17" level="3" task="4" keywords="0x4000000000010000" message="Failed to start system service: %1 with error: %2.">
+    </event>
+    <event value="304" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000010000" message="Starting recovery of package repository during a %1.">
+    </event>
+    <event value="305" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000010000" message="Finished recovery of package repository with result code %1.">
+    </event>
+    <event value="306" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000010000" message="Skipping recovery of package %1 because it is already installed.">
+    </event>
+    <event value="307" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000010000" message="Recovery has completed for package %2 with result code %1.">
+    </event>
+    <event value="308" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000010000" message="Starting staged package recovery.">
+    </event>
+    <event value="309" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000010000" message="Finished staged package recovery with result code %1.">
+    </event>
+    <event value="310" version="0" opcode="0" channel="17" level="4" task="4" keywords="0x4000000000010000" message="Skipping recovery of package %1 because of error %2.">
+    </event>
+    <event value="311" version="0" opcode="0" channel="17" level="2" task="4" keywords="0x4000000000010000" message="Failed to bind to the APPXSVC RPC server with error: %1.">
+    </event>
+    <event value="312" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="%2: Package runtime information %1 is corrupted (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.">
+    </event>
+    <event value="313" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="%2: Package runtime information %1 is missing expected data (address=%4, size=%3, section=%5, processid=%6). Reinstall the package to fix this issue.">
+    </event>
+    <event value="314" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="%2: Package runtime information %1 contains conflicting data (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.">
+    </event>
+    <event value="315" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="%2: Package runtime information %1 contains unexpected data (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.">
+    </event>
+    <event value="316" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="%2: Package runtime information %1 failed to load (processid=%3).">
+    </event>
+    <event value="317" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="Package runtime information %1 failed to load because exception %2 occurred.">
+    </event>
+    <event value="318" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="%2: Package runtime information %1 is missing expected data (address=%4, size=%3, section=%5, processid=%6). Reinstall the package to fix this issue.">
+    </event>
+    <event value="319" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000002" message="%2: Application identity not accessible while loading package runtime information %1 (address=%4, size=%3, processid=%5).">
+    </event>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1003" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1004" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1005" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1006" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1007" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1008" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1009" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1010" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1011" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1012" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1013" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1014" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1015" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1016" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1017" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1018" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1019" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1020" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1021" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1022" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1023" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1024" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1025" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1026" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1027" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1028" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1029" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1030" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1031" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1032" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1033" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1034" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1035" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1036" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+    <event value="1037" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="">
+    </event>
+  </events>
+</provider>

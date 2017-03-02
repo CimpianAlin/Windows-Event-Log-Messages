@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-TCPIP" guid="2f07e2ee-15db-40f1-90ef-9d7ba282188a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=tcpip.sys&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\drivers\tcpip.sys" messageFileName="C:\Windows\system32\drivers\tcpip.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-TCPIP/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TcpEndpointCreation" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpRequestConnect" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpInspectConnectComplete" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpTcbSynSend" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpBindEndpointResolutionFailure" value="1005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpBindEndpointPortFailure" value="1006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpBindEndpointInspectionFailure" value="1007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpBindEndpointComplete" value="1008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCloseEndpoint" value="1009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCreateEndpointAfFailure" value="1010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCreateEndpointCompartmentFailure" value="1011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCreateEndpointInspectionFailure" value="1012" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCreateEndpointComplete" value="1013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAccpetListenerRouteLookupFailure" value="1014" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAcceptListenerInsertionFailure" value="1015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAcceptListenerRejected" value="1016" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAcceptListenerComplete" value="1017" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailedAf" value="1018" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailedCompartment" value="1019" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailedInspect" value="1020" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailedRoute" value="1021" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbSkipRateLimit" value="1022" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbPassRateLimit" value="1023" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbCheckRateLimit" value="1024" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSecurityRateLimit" value="1025" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpRateLimitPathRelease" value="1026" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbRateLimitRelease" value="1027" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpRateLimitPathCancel" value="1028" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbCancel" value="1029" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailInsertion" value="1030" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbProceeding" value="1031" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbRateLimitCancel" value="1032" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbComplete" value="1033" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailure" value="1034" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailInspectConnectComplete" value="1035" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailSessionState" value="1036" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailDontFragment" value="1037" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCloseTcbRequest" value="1038" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAbortTcbRequest" value="1039" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAbortTcbComplete" value="1040" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDisconnectTcbInjectFailed" value="1041" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDisconnectTcbRequest" value="1042" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDisconnectTcbComplete" value="1043" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpShutdownTcb" value="1044" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbTimeout" value="1045" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDisconnectTcbRtoTimeout" value="1046" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDisconnectTcbKeepaliveTimeout" value="1047" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDisconnectTcbTimeout" value="1048" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbEstatsFailed" value="1049" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectFailedPortAcquire" value="1050" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpTcbStateChange" value="1051" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpEndpointAcquirePortReservation" value="1052" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpEndpointFailedPortReservation" value="1053" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalPortReservation" value="1054" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalSynAttackEntry" value="1055" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalReassemblyLimitViolation" value="1056" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalConnectionRateLimitViolation" value="1057" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalLandAttackSegmentDrop" value="1058" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalIsbBeginThrottle" value="1059" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalIsbEndThrottle" value="1060" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalAddInterface" value="1061" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalDeleteInterface" value="1062" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalSynAttackExit" value="1063" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpTcbStartTimer" value="1064" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpTcbStopTimer" value="1065" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpTcbExpireTimer" value="1066" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpTcbChangeIsb" value="1067" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpRssTableChange" value="1068" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDataTransferTimeout" value="1069" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDataTransferRttSample" value="1070" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDataTransferCumAck" value="1071" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDataTransferDupAck" value="1072" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDataTransferSend" value="1073" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDataTransferReceive" value="1074" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDataTransferEcn" value="1075" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDataTransferSpuriousTimeout" value="1076" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDataTransferRetransmitRound" value="1077" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCtcpDataTransferTimeout" value="1150" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCtcpDataTransferCumAck" value="1151" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCtcpDataTransferDupAck" value="1152" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCtcpDataTransferSend" value="1153" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCtcpDataTransferEcn" value="1154" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCtcpDataTransferSpuriousTimeout" value="1155" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpLossRecoveryEntry" value="1078" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpLossRecoveryExit" value="1079" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpLossRecoverySackEntry" value="1080" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpLossRecoverySackExit" value="1081" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSlowStartToCongestionAvoidance" value="1082" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpBlackHoleDetectionEntry" value="1084" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpBlackHoleDetectionExit" value="1085" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpBlackHoleDetectionFailed" value="1086" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSpuriousRtoDetectionBegin" value="1087" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSpuriousRtoDetectionEnd" value="1088" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailedActiveConnect" value="1089" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpReleaseIndication" value="1090" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAppSendBufferSize" value="1091" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAutoTuningBegin" value="1092" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAutoTuningEnd" value="1093" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAutoTuningFailedRttEstimation" value="1094" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAutoTuningFailedBandwidthEstimation" value="1095" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAutoTuningFailedAllocationFailure" value="1096" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAutoTuningChangeRcvBufferSize" value="1097" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpRttResiliencyDetection" value="1098" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectionOffloadStateChange" value="1099" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSwsAvoidanceBegin" value="1100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSwsAvoidanceEnd" value="1101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpZeroWindowProbingBegin" value="1102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpZeroWindowProbingEnd" value="1103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSetTcpOption" value="1104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSetTcpSoOption" value="1105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpMediaDisconnect" value="1106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpModuleStarted" value="1107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpModuleStopped" value="1108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpMemoryFailures" value="1109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpGlobalParameters" value="1110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpLso" value="1111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectionOffloadStatus" value="1112" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectionOffloadPmax" value="1113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpDadSuccessful" value="1114" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpDadFailed" value="1115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpDadStarted" value="1116" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpListenerActivationFailedAf" value="1117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpListenerActivationFailedCompartment" value="1118" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpListenerActivationFailedInspection1" value="1119" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpListenerActivationFailedInspection2" value="1120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpListenerBindFailedResolution" value="1121" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpListenerBindFailedPort" value="1122" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpListenerActivated" value="1123" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpListenerUnbound" value="1124" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpAddressAdded" value="1127" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpAddressDeleted" value="1128" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FramingIfOperStatus" value="1130" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FramingNdisPause" value="1136" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FramingNdisRestart" value="1137" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpAddressStatePreferred" value="1138" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpAddressStateNonPreferred" value="1139" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpInterfacePropertyChange" value="1144" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpRouteCreated" value="1145" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpRouteDeleted" value="1146" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpRoutePropertyChange" value="1147" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpNeighborUnreachable" value="1148" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpNeighborReachable" value="1149" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpReceiveRequest" value="1156" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDeliveryIndicated" value="1157" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDeliverySatisfied" value="1158" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSendPosted" value="1159" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSendTransmitted" value="1160" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSendAdvance" value="1161" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCTcpDelayWndwInactive" value="1162" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCTcpAssignedBlocks" value="1163" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCTcpCongestionWndw" value="1164" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpCTcpGamma" value="1165" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSrttMeasurementStarted" value="1166" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSrttMeasurementComplete" value="1167" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpSrttMeasurementCancelled" value="1168" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UdpEndpointSendMessages" value="1169" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UdpEndpointReceiveMessages" value="1170" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectionRundown" value="1300" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDeliveryFlush" value="1171" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpTcbInjectRcvFailure" value="1172" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDeliveryInjectingData" value="1173" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpTcbInjectFinFailure" value="1174" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDeliveryAccept" value="1175" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDeliveryFin" value="1176" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDeliveryPush" value="1178" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpTcbInjectFinComplete" value="1180" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDeliveryCompleting" value="1181" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpInitiateSynRstValidation" value="1182" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectTcbFailedRcvdRst" value="1183" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectionTerminatedRcvdRst" value="1184" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectionTerminatedRcvdSyn" value="1185" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectRestransmit" value="1186" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDataTransferRestransmit" value="1187" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpConnectionKeepAlive" value="1188" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDeliveryStateChange" value="1189" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDeliveryDataDropped" value="1190" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAcquirePort" value="1191" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAcquireWeakRefPort" value="1192" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpReleasePort" value="1193" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpReplacePort" value="1194" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpAssignedWeakReferencePort" value="1195" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpBhDetectFullSizeAck" value="1196" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpFlushSack" value="1197" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpReassemblyEntry" value="1198" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpReassemblyExit" value="1199" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDisconnectTcbZeroWindowTimeout" value="1200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpDisconnectTcbFinWait2Timeout" value="1201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpInterfaceRundown" value="1202" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IpInterfaceSpeedChange" value="1203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpReassemblyFlush" value="1204" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpipReceiveSlowPath" value="1205" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpipSendSlowPath" value="1206" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpWsdInitializationErrors" value="1207" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpWsdInitializationInformation" value="1208" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpWsdWsRestrictedProfile" value="1209" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpWsdWsRestrictedDestination" value="1210" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpWsdCacheEntryStateChange" value="1211" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpWsdProfileStateChange" value="1212" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpWsdStateChange" value="1213" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpipTransportPacketDrops" value="1214" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpipNetworkPacketDrops" value="1215" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpMppNppEvaluation" value="1216" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpMppStartEpisode" value="1217" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpMppStopEpisode" value="1218" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpMppStartEpoch" value="1219" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TcpMppStopEpoch" value="1220" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ut:TcpipEndpoint" mask="1" message="">
+    </keyword>
+    <keyword name="ut:TcpipListener" mask="2" message="">
+    </keyword>
+    <keyword name="ut:TcpipTcb" mask="4" message="">
+    </keyword>
+    <keyword name="ut:TcpipBind" mask="8" message="">
+    </keyword>
+    <keyword name="ut:TcpipInterface" mask="10" message="">
+    </keyword>
+    <keyword name="ut:TcpipRoute" mask="20" message="">
+    </keyword>
+    <keyword name="ut:TcpipCtcp" mask="40" message="">
+    </keyword>
+    <keyword name="ut:TcpipDiagnosis" mask="80" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:ProcessIdHint" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Endpoint" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:Transfer" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="400000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="1001" keywords="0x8000080000000000" message="TCP: endpoint %2 (Family=%3, PID=%4) created with status = %1.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="1002" keywords="0x8000080400000080" message="TCP: Tcb %1 (local=%3 remote=%5) requested to connect.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="1003" keywords="0x8000080400000080" message="TCP: Inspect Connect has been completed on Tcb %1 with status = %2.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="1004" keywords="0x8000000500000080" message="TCP: Tcb %1 is going to output SYN with ISN = %2, RcvWnd = %3, RcvWndScale = %4.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="1005" keywords="0x8000080000000009" message="TCP: endpoint bind failed: address %2 cannot be resolved (%3).">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="4" task="1006" keywords="0x8000080000000009" message="TCP: endpoint (sockaddr=%2) bind failed: port-acquisition status = %3.">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="4" task="1007" keywords="0x8000080000000009" message="TCP: endpoint (sockaddr=%2) bind failed: inspection status = %3.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="4" task="1008" keywords="0x8000080000000009" message="TCP: endpoint (sockaddr=%2) bound.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="1009" keywords="0x8000080800000001" message="TCP: endpoint (sockaddr=%2) closed.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="1010" keywords="0x8000080000000001" message="TCP: endpoint (Family=%6 PID=%4) create failed: address family not attached.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="4" task="1011" keywords="0x8000080000000001" message="TCP: endpoint (Family=%6 PID=%4) create failed: compartment %5 not found.">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="4" task="1012" keywords="0x8000080000000001" message="TCP: endpoint (Family=%6 PID=%4) create failed: inspection status %3.">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="4" task="1013" keywords="0x8000080000000001" message="TCP: endpoint (Family=%6 PID=%4) created.">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="4" task="1014" keywords="0x8000080400000086" message="TCP: listener (local=%2 remote=%4) accept failed: Route lookup status = %5, TCB = %8.">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="1015" keywords="0x8000080400000086" message="TCP: listener (local=%3 remote=%5) accept failed: connection insertion. Duplicate TCB = %1.">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="4" task="1016" keywords="0x8000080400000086" message="TCP: listener (local=%2 remote=%4) accept failed: client rejection status = %5.">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="4" task="1017" keywords="0x8000080400000086" message="TCP: listener (local=%2 remote=%4) accept completed. TCB = %8. PID = %6.">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="4" task="1018" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4 PID=%6) connect failed: address family not attached.">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4 PID=%6) connect failed: compartment %7 not found.">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="16" level="4" task="1020" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4 PID=%6) connect failed: inspection status = %5.">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="16" level="4" task="1021" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) connect failed: route lookup status = %5.">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="16" level="4" task="1022" keywords="0x8000080400000084" message="TCP: Bypass rate limiting since flag is set on path %5 (local=%2 remote=%4) ">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="16" level="4" task="1023" keywords="0x8000080400000084" message="TCP: Charge rate limiting quota and set rate limiting flag for path %5 (local=%2 remote=%4) ">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="4" task="1024" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) deferred.">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="16" level="4" task="1025" keywords="0x8000080400000084" message="TCP: %6 rate-limiting paths %3 backlogged connections.">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="16" level="4" task="1026" keywords="0x8000080400000084" message="TCP: Release and set rate limiting flag on path %5 (local=%2 remote=%4) ">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="16" level="4" task="1027" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) released.">
+    </event>
+    <event value="1028" version="0" opcode="0" channel="16" level="4" task="1028" keywords="0x8000080400000084" message="TCP: Clear rate limiting flag on path %5 (local=%2 remote=%4) since connection is cancelled.">
+    </event>
+    <event value="1029" version="0" opcode="0" channel="16" level="4" task="1029" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) connect failed: connection cancelled.">
+    </event>
+    <event value="1030" version="0" opcode="0" channel="16" level="4" task="1030" keywords="0x8000080400000084" message="TCP: connection (local=%2 remote=%4) connect failed: connection insertion status = %5.">
+    </event>
+    <event value="1031" version="0" opcode="0" channel="16" level="4" task="1031" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) connect proceeding.">
+    </event>
+    <event value="1032" version="0" opcode="0" channel="16" level="4" task="1032" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) released due to cancel.">
+    </event>
+    <event value="1033" version="0" opcode="0" channel="16" level="4" task="1033" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) connect completed. PID = %6.">
+    </event>
+    <event value="1034" version="0" opcode="0" channel="16" level="4" task="1034" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) connect attempt failed with status = %5.">
+    </event>
+    <event value="1035" version="0" opcode="0" channel="16" level="4" task="1035" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) connect failed: connect-complete inspect status = %5.">
+    </event>
+    <event value="1036" version="0" opcode="0" channel="16" level="4" task="1036" keywords="0x8000080400000084" message="TCP: ApplySynOptions, failed to create session state with status = %5, TCB = %8.">
+    </event>
+    <event value="1037" version="0" opcode="0" channel="16" level="4" task="1037" keywords="0x8000080400000084" message="TCP: ApplySynOptions, failed to update DF with status = %5, TCB = %8.">
+    </event>
+    <event value="1038" version="0" opcode="0" channel="16" level="4" task="1038" keywords="0x8000080800000004" message="TCP: connection %8 (local=%2 remote=%4) close issued.">
+    </event>
+    <event value="1039" version="0" opcode="0" channel="16" level="4" task="1039" keywords="0x8000080800000084" message="TCP: connection %8 (local=%2 remote=%4) abort issued.">
+    </event>
+    <event value="1040" version="0" opcode="0" channel="16" level="4" task="1040" keywords="0x8000080800000084" message="TCP: connection %8 (local=%2 remote=%4) abort completed.">
+    </event>
+    <event value="1041" version="0" opcode="0" channel="16" level="4" task="1041" keywords="0x8000080800000084" message="TCP: Injecting disconnect on a shutdown TCB failed. TCB = %1.">
+    </event>
+    <event value="1042" version="0" opcode="0" channel="16" level="4" task="1042" keywords="0x8000080800000084" message="TCP: connection disconnect %3, length=%1.">
+    </event>
+    <event value="1043" version="0" opcode="0" channel="16" level="4" task="1043" keywords="0x8000080800000084" message="TCP: connection %8 (local=%2 remote=%4) disconnect completed.">
+    </event>
+    <event value="1044" version="0" opcode="0" channel="16" level="4" task="1044" keywords="0x8000080800000084" message="TCP: connection %8 (local=%2 remote=%4) shutdown initiated (%5). PID = %6.">
+    </event>
+    <event value="1045" version="0" opcode="0" channel="16" level="4" task="1045" keywords="0x8000080800000084" message="TCP: connection %8 (local=%2 remote=%4) connect failed: connect-request timeout expired.">
+    </event>
+    <event value="1046" version="0" opcode="0" channel="16" level="4" task="1046" keywords="0x8000080800000084" message="TCP: connection %8 (local=%2 remote=%4) terminating: retransmission timeout expired.">
+    </event>
+    <event value="1047" version="0" opcode="0" channel="16" level="4" task="1047" keywords="0x8000080800000084" message="TCP: connection %8 (local=%2 remote=%4) terminating: keep-alive timeout expired.">
+    </event>
+    <event value="1048" version="0" opcode="0" channel="16" level="4" task="1048" keywords="0x8000080800000084" message="TCP: connection %8 (local=%2 remote=%4) terminating: disconnect timeout expired.">
+    </event>
+    <event value="1049" version="0" opcode="0" channel="16" level="4" task="1049" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) connect failed: extended statistics status = %5.">
+    </event>
+    <event value="1050" version="0" opcode="0" channel="16" level="4" task="1050" keywords="0x8000080400000084" message="TCP: connection %8 (local=%2 remote=%4) connect failed: port-acquisition status = %5.">
+    </event>
+    <event value="1051" version="0" opcode="0" channel="16" level="4" task="1051" keywords="0x8000080000000004" message="TCP: connection %4 transition from %1 to %2, SndNxt = %3.">
+    </event>
+    <event value="1052" version="0" opcode="0" channel="16" level="4" task="1052" keywords="0x8000080000000009" message="TCP: Process with PID = %1 reserved %4 ports starting at %3.">
+    </event>
+    <event value="1053" version="0" opcode="0" channel="16" level="4" task="1053" keywords="0x8000080000000009" message="TCP: Process with PID = %1 failed to reserve %4 ports starting at %3 with status = %2.">
+    </event>
+    <event value="1054" version="0" opcode="0" channel="16" level="4" task="1054" keywords="0x8000004000000080" message="TCP: Process with PID = %1 completed global port reservation of %4 ports starting at %3 with status = %2.">
+    </event>
+    <event value="1055" version="0" opcode="0" channel="16" level="3" task="1055" keywords="0x8000004000000080" message="TCP: entering SYN attack resistance mode, Syn Attacks Detected = %1.">
+    </event>
+    <event value="1056" version="0" opcode="0" channel="16" level="3" task="1056" keywords="0x8000004000000080" message="TCP: reasembly rate-limiting violated %2 times since boot.">
+    </event>
+    <event value="1057" version="0" opcode="0" channel="16" level="3" task="1057" keywords="0x8000004000000080" message="TCP: connection rate-limiting violated %4 times since boot.">
+    </event>
+    <event value="1058" version="0" opcode="0" channel="16" level="3" task="1058" keywords="0x8000004000000080" message="TCP: land attack has dropped %5 packets since boot.">
+    </event>
+    <event value="1059" version="0" opcode="0" channel="16" level="3" task="1059" keywords="0x8000004000000080" message="TCP: low memory state detected. LowMemoryEvent =%3 LowPagedPoolEvent = %4.">
+    </event>
+    <event value="1060" version="0" opcode="0" channel="16" level="4" task="1060" keywords="0x8000004000000080" message="TCP: leaving low memory state. HighMemoryEvent = %1 HighPagedPoolEvent = %2.">
+    </event>
+    <event value="1061" version="0" opcode="0" channel="16" level="4" task="1061" keywords="0x8000004000000010" message="TCP: address family %2 added to interface %1.">
+    </event>
+    <event value="1062" version="0" opcode="0" channel="16" level="4" task="1062" keywords="0x8000004000000010" message="TCP: address family %2 removed from interface %1.">
+    </event>
+    <event value="1063" version="0" opcode="0" channel="16" level="4" task="1063" keywords="0x8000004000000080" message="TCP: leaving SYN attack resistance mode, Syn Attacks Detected = %1.">
+    </event>
+    <event value="1064" version="0" opcode="0" channel="16" level="5" task="1064" keywords="0x8000080000000004" message="TCP: Connection %1 %2 timer started. Scheduled to expire in %3 ms.">
+    </event>
+    <event value="1065" version="0" opcode="0" channel="16" level="5" task="1065" keywords="0x8000080000000004" message="TCP: Connection %1 stopping %2 timer. ">
+    </event>
+    <event value="1066" version="0" opcode="0" channel="16" level="5" task="1066" keywords="0x8000080000000004" message="TCP: Connection %1 %2 timer has expired.">
+    </event>
+    <event value="1067" version="0" opcode="0" channel="16" level="4" task="1067" keywords="0x8000080000000084" message="TCP: ISB changed to %1. CWnd = %2 SndWnd = %3 SendAvailable = %4 SSThresh = %5.">
+    </event>
+    <event value="1068" version="0" opcode="0" channel="16" level="4" task="1068" keywords="0x8000004000000080" message="TCP: moving RSS indirection table index %6 from processor %1 to processor %3.">
+    </event>
+    <event value="1069" version="0" opcode="0" channel="16" level="5" task="1069" keywords="0x8000000100000080" message="TCP: connection %1: Timeout Event updated cwnd = %2 and updated ssthresh = %3.">
+    </event>
+    <event value="1070" version="0" opcode="0" channel="16" level="5" task="1070" keywords="0x8000000100000000" message="TCP: connection %1:  Rtt sample recorded %4.">
+    </event>
+    <event value="1071" version="0" opcode="0" channel="16" level="4" task="1071" keywords="0x8000000100000000" message="TCP: connection %1: Cumulative ACK updated cwnd = %2.">
+    </event>
+    <event value="1072" version="0" opcode="0" channel="16" level="4" task="1072" keywords="0x8000000200000000" message="TCP: connection %1: Duplicate ACK updated cwnd = %2 and updated ssthresh = %3.">
+    </event>
+    <event value="1073" version="0" opcode="0" channel="16" level="4" task="1073" keywords="0x8000000100000000" message="TCP: connection %1: Sent data with number of bytes = %5 and Sequence number = %6.">
+    </event>
+    <event value="1074" version="0" opcode="0" channel="16" level="4" task="1074" keywords="0x8000000200000000" message="TCP: connection %1: Received data with number of bytes = %2. ThSeq = %3.">
+    </event>
+    <event value="1075" version="0" opcode="0" channel="16" level="4" task="1075" keywords="0x8000000200000000" message="TCP: connection %1: ECN Echo updated cwnd = %2 and updated ssthresh = %3. SndUna = %4, Mss = %5, ThAck = %6.">
+    </event>
+    <event value="1076" version="0" opcode="0" channel="16" level="4" task="1076" keywords="0x8000000100000080" message="TCP: connection %1: Spurious timeout with SndUna = %7.">
+    </event>
+    <event value="1077" version="0" opcode="0" channel="16" level="4" task="1077" keywords="0x8000000100000080" message="TCP: connection %1: Send Retransmit round with SndUna = %6, Round = %8, SRTT = %9, RTO = %10.">
+    </event>
+    <event value="1078" version="0" opcode="0" channel="16" level="4" task="1078" keywords="0x8000000200000080" message="TCP: connection %1: Entered loss recovery phase with SndUna = %2 and SndMax = %3.">
+    </event>
+    <event value="1079" version="0" opcode="0" channel="16" level="4" task="1079" keywords="0x8000000200000080" message="TCP: connection %1: Leaving loss recovery phase with SndUna = %2 and SndMax = %3.">
+    </event>
+    <event value="1080" version="0" opcode="0" channel="16" level="4" task="1080" keywords="0x8000000200000080" message="TCP: connection %1 entering SACK mode with SndUna = %2.">
+    </event>
+    <event value="1081" version="0" opcode="0" channel="16" level="4" task="1081" keywords="0x8000000200000080" message="TCP: connection %1 leaving SACK mode with SndUna = %2.">
+    </event>
+    <event value="1082" version="0" opcode="0" channel="16" level="4" task="1082" keywords="0x8000000200000080" message="TCP: connection %1 entering Congestion Avoidance Phase with cwnd = %2 and ssthresh = %3.">
+    </event>
+    <event value="1084" version="0" opcode="0" channel="16" level="4" task="1084" keywords="0x8000004000000080" message="TCP: connection %1 entered BH, BH MSS %2, original MSS %3.">
+    </event>
+    <event value="1085" version="0" opcode="0" channel="16" level="4" task="1085" keywords="0x8000004000000080" message="TCP: connection %1 Exiting BH due to %4, BH mss %2, Original MSS %3.">
+    </event>
+    <event value="1086" version="0" opcode="0" channel="16" level="4" task="1086" keywords="0x8000004000000080" message="TCP: connection %1 not entering BH due to %4.">
+    </event>
+    <event value="1087" version="0" opcode="0" channel="16" level="4" task="1087" keywords="0x8000000100000080" message="TCP: connection %1 spurious RTO detection initiated at %7.">
+    </event>
+    <event value="1088" version="0" opcode="0" channel="16" level="4" task="1088" keywords="0x8000000100000080" message="TCP: connection %1 spurious RTO detection terminated at %7.">
+    </event>
+    <event value="1089" version="0" opcode="0" channel="16" level="4" task="1089" keywords="0x8000080400000084" message="TCP: active connect failed (family=%2) connect-complete inspection failed: status = %3.">
+    </event>
+    <event value="1090" version="0" opcode="0" channel="16" level="5" task="1090" keywords="0x8000000200000000" message="TCP: TcpReleaseIndicationList: Nbl = %1.">
+    </event>
+    <event value="1091" version="0" opcode="0" channel="16" level="4" task="1091" keywords="0x8000000100000000" message="TCP: connection %1 posted an average of %5 bytes per send.">
+    </event>
+    <event value="1092" version="0" opcode="0" channel="16" level="5" task="1092" keywords="0x8000000200000000" message="TCP: connection (local=%2 remote=%4) starting receive window auto-tuning.">
+    </event>
+    <event value="1093" version="0" opcode="0" channel="16" level="5" task="1093" keywords="0x8000000200000000" message="TCP: connection (local=%2 remote=%4) ending receive window auto-tuning.">
+    </event>
+    <event value="1094" version="0" opcode="0" channel="16" level="4" task="1094" keywords="0x8000000200000080" message="TCP: connection (local=%2 remote=%4) failed to enter auto-tuning because fine-grained RTT estimation could not be started.">
+    </event>
+    <event value="1095" version="0" opcode="0" channel="16" level="4" task="1095" keywords="0x8000000200000080" message="TCP: connection (local=%2 remote=%4) failed to enter auto-tuning because receiver bandwidth estimation could not be started.">
+    </event>
+    <event value="1096" version="0" opcode="0" channel="16" level="4" task="1096" keywords="0x8000000200000080" message="TCP: connection (local=%2 remote=%4) failed to enter auto-tuning because of receive window tuning allocation failure.">
+    </event>
+    <event value="1097" version="0" opcode="0" channel="16" level="4" task="1097" keywords="0x8000000200000000" message="TCP: connection (local=%2 remote=%4) auto-tuner adjusted receive buffer size to %5 bytes.">
+    </event>
+    <event value="1098" version="0" opcode="0" channel="16" level="4" task="1098" keywords="0x8000004000000000" message="TCP: connection %1: Rtt resiliency detection complete with Rtt sample = %4 and new SRTT = %9.">
+    </event>
+    <event value="1099" version="0" opcode="0" channel="16" level="4" task="1099" keywords="0x8000080000000084" message="TCP: connection %5: Connection State = %1, Offload State = %2. SndNxt = %3, RcvNxt = %4. NdisStatus = %6.">
+    </event>
+    <event value="1100" version="0" opcode="0" channel="16" level="4" task="1100" keywords="0x8000000100000080" message="TCP: SWS avoidance began on connection %1. Timer set for %2 ms. BytesToSend = %3, SendAvailable = %4, Cwnd = %5, MaxSndWnd = %6.">
+    </event>
+    <event value="1101" version="0" opcode="0" channel="16" level="5" task="1101" keywords="0x8000000100000080" message="TCP: SWS avoidance ended on connection %1.">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="16" level="4" task="1102" keywords="0x8000000100000080" message="TCP: connection %1 send: Beginning zero-window probing with SndUna = %2.">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="16" level="4" task="1103" keywords="0x8000000100000080" message="TCP: connection %1 send: Leaving zero-window probing with SndUna = %2.">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="16" level="4" task="1104" keywords="0x8000082000000004" message="TCP: Option %2 is going to be set for connection %1.">
+    </event>
+    <event value="1105" version="0" opcode="0" channel="16" level="4" task="1105" keywords="0x8000082000000004" message="TCP: Socket Option %3 is going to be set for connection %1.">
+    </event>
+    <event value="1106" version="0" opcode="0" channel="16" level="4" task="1106" keywords="0x8000004000000090" message="IP: Disconnecting interface %1, trace = %2.">
+    </event>
+    <event value="1107" version="0" opcode="0" channel="16" level="4" task="1107" keywords="0x8000004000000000" message="TCPIP: Module %1 started.">
+    </event>
+    <event value="1108" version="0" opcode="0" channel="16" level="4" task="1108" keywords="0x8000004000000000" message="TCPIP: Module %1 stopped.">
+    </event>
+    <event value="1109" version="0" opcode="0" channel="16" level="2" task="1109" keywords="0x8000004000000080" message="TCPIP: Failure allocating %1.">
+    </event>
+    <event value="1110" version="0" opcode="0" channel="16" level="4" task="1110" keywords="0x8000006000000080" message="TCP: Global parameters updated for Address Family %1: EnablePMtuDiscovery = %2, UseRfc1122UrgentPointer = %3, DisableTaskOffload = %4, DisableTcpChimneyOffload = %5, DisableRss = %6, EnablePMtuBHDetect = %7, EcnCapability = %8, MaxDataRetransmissions = %9, KeepAliveTime = %10, KeepAliveInterval = %11, TimedWaitDelay = %12, SillyWindowTimeout = %13, FinWait2Timeout = %14, CongestionAlgorithm = %15, UseRfc1323Timestamps = %16, AutoTuningLevelLocal = %17, AutoTuningLevelGroupPolicy = %18.">
+    </event>
+    <event value="1111" version="0" opcode="0" channel="16" level="5" task="1111" keywords="0x8000000100000000" message="TCP: Connection %1 Large Send Offload, Bytes in segment = %2 and Bytes remaining = %3.">
+    </event>
+    <event value="1112" version="0" opcode="0" channel="16" level="4" task="1112" keywords="0x8000002000000004" message="TCP: Connection %1 status changed to %2.">
+    </event>
+    <event value="1113" version="0" opcode="0" channel="16" level="5" task="1113" keywords="0x8000006000000004" message="TCP: Connection %1 status = %2, Interface = %3, PMax = %4.">
+    </event>
+    <event value="1114" version="0" opcode="0" channel="16" level="4" task="1114" keywords="0x8000104000000000" message="IP: DAD successful for IP address = %7 %9 %8 on interface = %1, protocol = %2.">
+    </event>
+    <event value="1115" version="0" opcode="0" channel="16" level="3" task="1115" keywords="0x8000104000000000" message="IP: DAD failed for IP address = %7 %9 %8 on interface = %1, protocol = %2, DL address of packet = %5.">
+    </event>
+    <event value="1116" version="0" opcode="0" channel="16" level="4" task="1116" keywords="0x8000104000000000" message="IP: DAD started for IP address = %7 %9 %8 on interface = %1, protocol = %2.">
+    </event>
+    <event value="1117" version="0" opcode="0" channel="16" level="4" task="1117" keywords="0x8000000400000002" message="TCP: listener (sockaddr=%3 PID=%5) activation failed: address family not attached.">
+    </event>
+    <event value="1118" version="0" opcode="0" channel="16" level="4" task="1118" keywords="0x8000000400000002" message="TCP: listener %1 (family=%7 PID=%5) activation failed: compartment %6 not found. Status=%4.">
+    </event>
+    <event value="1119" version="0" opcode="0" channel="16" level="4" task="1119" keywords="0x8000000400000002" message="TCP: listener %1 (family=%7 PID=%5) activation failed: inspection status=%4.">
+    </event>
+    <event value="1120" version="0" opcode="0" channel="16" level="4" task="1120" keywords="0x8000000400000002" message="TCP: listener %1 (sockaddr=%3) activation failed: inspection status=%4.">
+    </event>
+    <event value="1121" version="0" opcode="0" channel="16" level="4" task="1121" keywords="0x8000000400000002" message="TCP: listener %1 (sockaddr=%3) bind failed: port-acquisition status=%4.">
+    </event>
+    <event value="1122" version="0" opcode="0" channel="16" level="4" task="1122" keywords="0x8000000400000002" message="TCP: listener %1 (family=%7 PID=%5) bind failed: address %3 cannot be resolved (Status=%4).">
+    </event>
+    <event value="1123" version="0" opcode="0" channel="16" level="4" task="1123" keywords="0x8000000400000002" message="TCP: listener %1 (sockaddr=%3) activated.">
+    </event>
+    <event value="1124" version="0" opcode="0" channel="16" level="4" task="1124" keywords="0x8000000400000002" message="TCP: listener %1 (sockaddr=%3) unbound.">
+    </event>
+    <event value="1127" version="0" opcode="0" channel="16" level="4" task="1127" keywords="0x8000104000000080" message="IP: IP address = %7 %9 %8 added on interface = %1, Protocol = %2.">
+    </event>
+    <event value="1128" version="0" opcode="0" channel="16" level="4" task="1128" keywords="0x8000104000000080" message="IP: IP address = %7 %9 %8 deleted on interface = %1, Protocol = %2.">
+    </event>
+    <event value="1130" version="0" opcode="0" channel="16" level="4" task="1130" keywords="0x8000004000000010" message="Framing: Interface %1 Operational Status = %2, Operational Status Flags = %3.">
+    </event>
+    <event value="1136" version="0" opcode="0" channel="16" level="4" task="1136" keywords="0x8000004000000010" message="Framing: NDIS pause event on interface %1.">
+    </event>
+    <event value="1137" version="0" opcode="0" channel="16" level="4" task="1137" keywords="0x8000004000000010" message="Framing: NDIS restart event on interface %1.">
+    </event>
+    <event value="1138" version="0" opcode="0" channel="16" level="4" task="1138" keywords="0x8000104000000000" message="IP: IP address = %7 %9 %8 state changed to Preferred. Interface = %1.">
+    </event>
+    <event value="1139" version="0" opcode="0" channel="16" level="4" task="1139" keywords="0x8000104000000000" message="IP: IP address = %7 %9 %8 state changed to Non-preferred. Interface = %1. DadState = %3.">
+    </event>
+    <event value="1144" version="0" opcode="0" channel="16" level="4" task="1144" keywords="0x8000002000000010" message="IP: Interface %1 property change. Advertise= %2, AdvertiseDefaultRoute = %3, Forward = %4, ForwardMulticast = %5, UseNud = %6, AdvertisingEnabled = %7.">
+    </event>
+    <event value="1145" version="0" opcode="0" channel="16" level="4" task="1145" keywords="0x80000000000000a0" message="IP: Route %1 created on interface %2. Protocol = %5, DestinationPrefix = %16 %18 %7 /%6, Nexthop = %17 %18 %8.">
+    </event>
+    <event value="1146" version="0" opcode="0" channel="16" level="4" task="1146" keywords="0x80000000000000a0" message="IP: Route %1 deleted on interface %2, Protocol = %5, DestinationPrefix = %16 %18 %7 /%6, Nexthop = %17 %18 %8.">
+    </event>
+    <event value="1147" version="0" opcode="0" channel="16" level="4" task="1147" keywords="0x80000020000000a0" message="IP: Route %1 property change. Interface = %2, Protocol = %5, DestinationPrefix = %16 %18 %7 /%6, Nexthop = %17 %18 %8. Properties: ValidLifetime = %9, PreferredLifetime = %10, Metric = %11, Loopback = %12, AutoconfigureAddress = %13, Publish = %14, Immortal = %15.">
+    </event>
+    <event value="1148" version="0" opcode="0" channel="16" level="5" task="1148" keywords="0x80000000000000a0" message="IP: Neighbor unreachable. Interface %1, IP address = %5 %7 %6.">
+    </event>
+    <event value="1149" version="0" opcode="0" channel="16" level="5" task="1149" keywords="0x8000000000000020" message="IP: Neighbor reachable. Interface %1, IP address = %5 %7 %6, DlAddress = %3.">
+    </event>
+    <event value="1150" version="0" opcode="0" channel="16" level="4" task="1150" keywords="0x8000000100000080" message="TCP: CTCP DataTransferTimeout event. Connection %1, CWnd = %2, SsThresh = %3.">
+    </event>
+    <event value="1151" version="0" opcode="0" channel="16" level="4" task="1151" keywords="0x8000000100000000" message="TCP: CTCP Cumulative Ack event Connection %1, sequence = %6, CWnd = %2, DWnd = %11, BaseRtt = %12.">
+    </event>
+    <event value="1152" version="0" opcode="0" channel="16" level="4" task="1152" keywords="0x8000000200000000" message="TCP: CTCP Duplicate Ack event. Connection %1, sequence = %6, SndUna = %7, CWnd = %2, DWnd = %11, BaseRtt = %12, DupAckCount = %13.">
+    </event>
+    <event value="1153" version="0" opcode="0" channel="16" level="5" task="1153" keywords="0x8000000100000000" message="TCP: CTCP Send event. Connection %1, sequence = %6, length = %5.">
+    </event>
+    <event value="1154" version="0" opcode="0" channel="16" level="4" task="1154" keywords="0x8000000200000000" message="TCP: CTCP ECN event. Connection %1, CWnd %2, SndUna = %4, Mss = %5, DWnd = %7, BaseRtt = %8.">
+    </event>
+    <event value="1155" version="0" opcode="0" channel="16" level="5" task="1155" keywords="0x8000000100000080" message="TCP: CTCP Spurious timeout event. Connection %1, CWnd = %2, SsThresh = %3.">
+    </event>
+    <event value="1156" version="0" opcode="0" channel="16" level="4" task="1156" keywords="0x8000000200000000" message="TCP: connection %1, delivery %2, Request %3  posted for %4 bytes, flags = %5. RcvNxt = %10.">
+    </event>
+    <event value="1157" version="0" opcode="0" channel="16" level="4" task="1157" keywords="0x8000000200000000" message="TCP: connection %1 delivery %2 indicated %4 bytes accepted %6 bytes, status = %7. RcvNxt = %10.">
+    </event>
+    <event value="1158" version="0" opcode="0" channel="16" level="4" task="1158" keywords="0x8000000200000000" message="TCP: connection %1 delivery %2 satisfied %4 bytes %6 requested. IsFullySatisfied = %9. RcvNxt = %10.">
+    </event>
+    <event value="1159" version="0" opcode="0" channel="16" level="4" task="1159" keywords="0x8000000100000000" message="TCP: connection %1 send %2 posted %3 bytes at %4.">
+    </event>
+    <event value="1160" version="0" opcode="0" channel="16" level="5" task="1160" keywords="0x8000000100000000" message="TCP: connection %1 send transmitted %3 bytes at %4.">
+    </event>
+    <event value="1161" version="0" opcode="0" channel="16" level="5" task="1161" keywords="0x8000000100000000" message="TCP: connection %1 send advance %3 bytes at %4.">
+    </event>
+    <event value="1162" version="0" opcode="0" channel="16" level="5" task="1162" keywords="0x8000000100000040" message="TCP: CTcp: Connection %1 Delay window has not kicked in.">
+    </event>
+    <event value="1163" version="0" opcode="0" channel="16" level="5" task="1163" keywords="0x8000000100000040" message="TCP: CTcp: Allocated blocks: %1; Assigned blocks: %2.">
+    </event>
+    <event value="1164" version="0" opcode="0" channel="16" level="5" task="1164" keywords="0x8000000100000040" message="TCP: CTcp: Connection %1, DWnd = %2 (Prev = %3), BaseRtt = %4, AverageRtt = %5, CWnd =%6, DiffWnd = %7, DWnd increment = %8.">
+    </event>
+    <event value="1165" version="0" opcode="0" channel="16" level="5" task="1165" keywords="0x8000000100000040" message="TCP: CTcp: Gamma Autotuning: Connection %1 Updated Gamma %2, Average backlog %3, Average backlog across LFPs %4.">
+    </event>
+    <event value="1166" version="0" opcode="0" channel="16" level="5" task="1166" keywords="0x8000000100000000" message="TCP: connection %1 SRTT measurement started (seq = %2, tick = %3).">
+    </event>
+    <event value="1167" version="0" opcode="0" channel="16" level="5" task="1167" keywords="0x8000000100000000" message="TCP: connection %1 SRTT measurement complete (tick = %3, sample = %4 ms, new srtt = %5 ms).">
+    </event>
+    <event value="1168" version="0" opcode="0" channel="16" level="5" task="1168" keywords="0x8000000100000000" message="TCP: connection %1: SRTT measurement cancelled.">
+    </event>
+    <event value="1169" version="0" opcode="0" channel="16" level="4" task="1169" keywords="0x8000000100000000" message="UDP: endpoint %1 (LocalAddress = %5, RemoteAddress = %7) sending %2 messages and a total of %3 bytes. PID = %8.">
+    </event>
+    <event value="1170" version="0" opcode="0" channel="16" level="4" task="1170" keywords="0x8000000200000000" message="UDP: endpoint %1 (LocalAddress = %5, RemoteAddress = %7) delivering %3 bytes. PID = %8.">
+    </event>
+    <event value="1171" version="0" opcode="0" channel="16" level="5" task="1171" keywords="0x8000000200000000" message="TCP: connection %1 delivery %2 flushing %4 bytes %6 requested status = %7.">
+    </event>
+    <event value="1172" version="0" opcode="0" channel="16" level="3" task="1172" keywords="0x8000000200000000" message="TCP: Injecting receive on a shutdown TCB failed. TCB = %1.">
+    </event>
+    <event value="1173" version="0" opcode="0" channel="16" level="5" task="1173" keywords="0x8000000200000000" message="TCP: connection %1 delivery %2 injecting %4 bytes delta %6, IsUrgentDelivery = %8.">
+    </event>
+    <event value="1174" version="0" opcode="0" channel="16" level="3" task="1174" keywords="0x8000000200000000" message="TCP: Injecting fin on a shutdown TCB failed. TCB = %1.">
+    </event>
+    <event value="1175" version="0" opcode="0" channel="16" level="5" task="1175" keywords="0x8000000200000000" message="TCP: connection %1 delivery %2 accepting %4 bytes. RcvNxt = %10.">
+    </event>
+    <event value="1176" version="0" opcode="0" channel="16" level="4" task="1176" keywords="0x8000000200000000" message="TCP: connection %1 delivery %2 delivering FIN. RcvNxt = %10.">
+    </event>
+    <event value="1178" version="0" opcode="0" channel="16" level="5" task="1178" keywords="0x8000000200000000" message="TCP: connection %1 delivery %2 pushing %4 bytes %6 requested. Delayed push = %9.">
+    </event>
+    <event value="1180" version="0" opcode="0" channel="16" level="5" task="1180" keywords="0x8000000200000000" message="TCP: Injecting fin on TCB completed. TCB = %1, Processor = %4.">
+    </event>
+    <event value="1181" version="0" opcode="0" channel="16" level="5" task="1181" keywords="0x8000000200000000" message="TCP: connection %1 delivery %2 urgent boundary completing %4 bytes %6 requested.">
+    </event>
+    <event value="1182" version="0" opcode="0" channel="16" level="4" task="1182" keywords="0x8000000400000080" message="TCP: connection %1 (local=%3 remote=%5): initiating SYN/RST validation.">
+    </event>
+    <event value="1183" version="0" opcode="0" channel="16" level="4" task="1183" keywords="0x8000000600000080" message="TCP: connection %1 (local=%3 remote=%5) connect failed: received RST.">
+    </event>
+    <event value="1184" version="0" opcode="0" channel="16" level="4" task="1184" keywords="0x8000000600000080" message="TCP: connection %1 (local=%3 remote=%5) connection terminated: received RST.">
+    </event>
+    <event value="1185" version="0" opcode="0" channel="16" level="4" task="1185" keywords="0x8000000600000080" message="TCP: connection %1 (local=%3 remote=%5) connection terminated: received SYN in state %6.">
+    </event>
+    <event value="1186" version="0" opcode="0" channel="16" level="4" task="1186" keywords="0x8000000500000080" message="TCP: connection %1 (local=%3 remote=%5) retransmitting connect attempt, RexmitCount = %7.">
+    </event>
+    <event value="1187" version="0" opcode="0" channel="16" level="4" task="1187" keywords="0x8000000500000080" message="TCP: connection %1 (local=%3 remote=%5) retransmitting data, RexmitCount = %7.">
+    </event>
+    <event value="1188" version="0" opcode="0" channel="16" level="4" task="1188" keywords="0x8000000500000080" message="TCP: connection %1 send keep-alive at SndUna = %2.">
+    </event>
+    <event value="1189" version="0" opcode="0" channel="16" level="5" task="1189" keywords="0x8000000200000000" message="TCP: connection %1, delivery %2: delivery state changed from %3 to %4.">
+    </event>
+    <event value="1190" version="0" opcode="0" channel="16" level="4" task="1190" keywords="0x8000000200000080" message="TCP: connection %1 delivery %2 dropping data. TotalBytesEnqueued = %4. Length = %6. RcvNxt = %10.">
+    </event>
+    <event value="1191" version="0" opcode="0" channel="16" level="4" task="1191" keywords="0x8000000400000000" message="TCP: endpoint/connection %1 acquired port number %2.">
+    </event>
+    <event value="1192" version="0" opcode="0" channel="16" level="4" task="1192" keywords="0x8000000400000000" message="TCP: connection %1 attempted to acquire weak reference on port number %2 inherited from endpoint %4. Successful = %3.">
+    </event>
+    <event value="1193" version="0" opcode="0" channel="16" level="4" task="1193" keywords="0x8000000400000000" message="TCP: endpoint/connection %1 released port number %2. WeakReference = %3.">
+    </event>
+    <event value="1194" version="0" opcode="0" channel="16" level="4" task="1194" keywords="0x8000000400000000" message="TCP: endpoint/connection %1 replaced base endpoint %4 and acquired reference to port number %2.">
+    </event>
+    <event value="1195" version="0" opcode="0" channel="16" level="4" task="1195" keywords="0x8000000400000080" message="TCP: Portpool assigned port number %2 with weak references due to port exhaustion.">
+    </event>
+    <event value="1196" version="0" opcode="0" channel="16" level="4" task="1196" keywords="0x8000000100000000" message="TCP: connection %1 BH receive ACK for full size seq. Seq = %2. IsSack = %5.">
+    </event>
+    <event value="1197" version="0" opcode="0" channel="16" level="4" task="1197" keywords="0x8000000100000000" message="TCP: connection %1 flushed SACK state at SndUna = %2. Reason: %4.">
+    </event>
+    <event value="1198" version="0" opcode="0" channel="16" level="5" task="1198" keywords="0x8000000200000000" message="TCP: Connection %1 entering reassembly at RcvNxt = %2.">
+    </event>
+    <event value="1199" version="0" opcode="0" channel="16" level="5" task="1199" keywords="0x8000000200000000" message="TCP: Connection %1 leaving reassembly at RcvNxt = %2.">
+    </event>
+    <event value="1200" version="0" opcode="0" channel="16" level="4" task="1200" keywords="0x8000080800000084" message="TCP: connection %8 (local=%2 remote=%4) terminating: Zero window probe timeout expired.">
+    </event>
+    <event value="1201" version="0" opcode="0" channel="16" level="4" task="1201" keywords="0x8000080800000084" message="TCP: connection %8 (local=%2 remote=%4) terminating: FIN-WAIT-2 timeout expired.">
+    </event>
+    <event value="1202" version="0" opcode="0" channel="16" level="4" task="1202" keywords="0x8000004000000090" message="IP: Interface rundown: Index = %1, Linkspeed = %2 bps, PhysicalMediumType = %7, IP Address = %4 %3 %6.">
+    </event>
+    <event value="1203" version="0" opcode="0" channel="16" level="4" task="1203" keywords="0x8000004000000090" message="IP: Interface Index = %1, Linkspeed changed to %2 bps, PhysicalMediumType = %7.">
+    </event>
+    <event value="1204" version="0" opcode="0" channel="16" level="4" task="1204" keywords="0x8000000200000000" message="TCP: Connection %1 flushing reassembly state at RcvNxt = %2. Reason = %4.">
+    </event>
+    <event value="1205" version="0" opcode="0" channel="16" level="5" task="1205" keywords="0x8000000200000000" message="TCPIP: NBL %1 fell off the receive fast path, Reason: %10. Protocol = %2, Family = %3, Number of NBLs = %11. SourceAddress = %4 %12 %7. DestAddress = %5 %12 %9.">
+    </event>
+    <event value="1206" version="0" opcode="0" channel="16" level="5" task="1206" keywords="0x8000000100000000" message="TCPIP: SendDatagram %1 fell off the send fast path, Reason: %10. Protocol = %2, Family = %3, Number of NBLs = %11. SourceAddress = %4 %12 %7. DestAddress = %5 %12 %9.">
+    </event>
+    <event value="1207" version="0" opcode="0" channel="16" level="2" task="1207" keywords="0x8000004000000000" message="TCP: WSD - %1 Status: %2.">
+    </event>
+    <event value="1208" version="0" opcode="0" channel="16" level="4" task="1208" keywords="0x8000004000000000" message="TCP: WSD - %1 Status: %2.">
+    </event>
+    <event value="1209" version="0" opcode="0" channel="16" level="4" task="1209" keywords="0x8000004000000000" message="TCP: WSD - TCB %2 will use a highly restricted window scale factor due to a %1.">
+    </event>
+    <event value="1210" version="0" opcode="0" channel="16" level="4" task="1210" keywords="0x8000004000000000" message="TCP: WSD - TCB %2 will use a highly restricted window scale factor due to a %1.">
+    </event>
+    <event value="1211" version="0" opcode="0" channel="16" level="4" task="1211" keywords="0x8000004000000000" message="TCP: WSD - Entry (%2, %3) moved from %4 to %5 due to %1.">
+    </event>
+    <event value="1212" version="0" opcode="0" channel="16" level="4" task="1212" keywords="0x8000004000000000" message="TCP: WSD - Profile: %1 State: %2 Qualified: %3 EreQualified: %4.">
+    </event>
+    <event value="1213" version="0" opcode="0" channel="16" level="4" task="1213" keywords="0x8000004000000000" message="TCP: WSD - Enabled moved from %1 to %2. Threshold moved from  %3 to %4.">
+    </event>
+    <event value="1214" version="0" opcode="0" channel="16" level="5" task="1214" keywords="0x8000004200000000" message="TCPIP: Transport (Protocol %1, AddressFamily = %2) dropped %8 packet(s) with Source = %4, Destination = %6. Reason = %7.">
+    </event>
+    <event value="1215" version="0" opcode="0" channel="16" level="5" task="1215" keywords="0x8000004200000000" message="TCPIP: Network layer (Protocol %1, AddressFamily = %2) dropped %10 packet(s). SourceAddress = %3 %11 %6. DestAddress = %4 %11 %8. Reason = %9.">
+    </event>
+    <event value="1216" version="0" opcode="0" channel="16" level="5" task="1216" keywords="0x8000004000000000" message="TCP: MPP NPP Evaluation PhysicalPages = %1 NonPagedPoolPages = %2 Current = %3 Peak = %4 Low = %5 High = %6.">
+    </event>
+    <event value="1217" version="0" opcode="0" channel="16" level="4" task="1217" keywords="0x8000004000000000" message="TCP: MPP: Episode started. LowNppEventState = %1 HighNppEventState = %2 EpisodeStartTick = %3 EpisodeStopTick = %4 Current = %5 Low = %6 Reentry = %7.">
+    </event>
+    <event value="1218" version="0" opcode="0" channel="16" level="4" task="1218" keywords="0x8000004000000000" message="TCP: MPP: Episode ended. LowNppEventState = %1 HighNppEventState = %2 EpisodeStartTick = %3 EpisodeStopTick = %4 Reentry = %5.">
+    </event>
+    <event value="1219" version="0" opcode="0" channel="16" level="4" task="1219" keywords="0x8000004000000000" message="TCP: MPP: Epoch %1 started. LowNppEventState = %2 HighNppEventState = %3 EpochStartTick = %4 EpochStopTick = %5 SynDropRate = %6 -&gt; %7 TcbKillRate = %8 -&gt; %9 CurrentWatermark = %10.">
+    </event>
+    <event value="1220" version="0" opcode="0" channel="16" level="4" task="1220" keywords="0x8000004000000000" message="TCP: MPP: Epoch %1 ended. LowNppEventState = %2 HighNppEventState = %3 EpochStartTick = %4 EpochStopTick = %5 SynDropRate = %6 TcbKillRate = %7 Current = %8.">
+    </event>
+    <event value="1300" version="0" opcode="0" channel="16" level="4" task="1300" keywords="0x8000080400000084" message="TCP: connection %1 (local=%3 remote=%5) exists. State = %6. PID = %7.">
+    </event>
+  </events>
+</provider>

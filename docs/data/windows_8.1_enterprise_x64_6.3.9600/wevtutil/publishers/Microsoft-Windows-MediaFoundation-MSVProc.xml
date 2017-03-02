@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MediaFoundation-MSVProc" guid="a4112d1a-6dfa-476e-bb75-e350d24934e1" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.9600.16384&amp;FileName=msvproc.dll&amp;FileVer=12.0.9600.16384" resourceFileName="C:\Windows\system32\msvproc.dll" messageFileName="C:\Windows\system32\msvproc.dll" message="Microsoft-Windows-MediaFoundation-MSVProc" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="MedaFoundationVideoProc" id="16" flags="0" message="MS Video Processor MFT">
+    </channel>
+    <channel name="MedaFoundationVideoProcD3D" id="17" flags="0" message="MS Video Processor MFT (D3D11)">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="D3DCreateVideoProcessor" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT (D3D11) - Create Video Processor">
+    </task>
+    <task name="D3DCreateVPInputView" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT (D3D11) - Create Input View">
+    </task>
+    <task name="D3DCreateVPOutputView" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT (D3D11) - Create Output View">
+    </task>
+    <task name="D3DVideoProcessorBlt" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT (D3D11) - VideoProcessorBlt">
+    </task>
+    <task name="MFT" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT - Create/Destroy MFT">
+    </task>
+    <task name="ProcessInput" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT - ProcessInput">
+    </task>
+    <task name="ProcessOutput" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT - ProcessOutput">
+    </task>
+    <task name="ColorConv" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT - ColorConv">
+    </task>
+    <task name="Resizer" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT - Resizer">
+    </task>
+    <task name="Rotation" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT - Rotation">
+    </task>
+    <task name="Mirror" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video Processoft MFT - Mirror">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="17" level="5" task="10" keywords="0x4000000000000000" message="CreateVideoProcessor Device %1, VP %2 , Rate Conversion Index %3, PastFrames %4">
+    </event>
+    <event value="101" version="0" opcode="0" channel="17" level="5" task="11" keywords="0x4000000000000000" message="CreateView Sample %1, BufferIndex %2, hr %3, View %4">
+    </event>
+    <event value="102" version="0" opcode="0" channel="17" level="5" task="12" keywords="0x4000000000000000" message="CreateView Sample %1, BufferIndex %2, hr %3, View %4">
+    </event>
+    <event value="103" version="0" opcode="1" channel="17" level="5" task="13" keywords="0x4000000000000000" message="VPBlt Start Input Sample %1, Input Index %2, Output Sample %3, FrameOrField %4, OutputIndex %5, OutputFrame %6">
+    </event>
+    <event value="104" version="0" opcode="2" channel="17" level="5" task="13" keywords="0x4000000000000000" message="VPBlt Stop Output Sample %1, hr %2">
+    </event>
+    <event value="105" version="0" opcode="1" channel="16" level="5" task="14" keywords="0x8000000000000000" message="MFT_Start XVPMFT = %1">
+    </event>
+    <event value="106" version="0" opcode="2" channel="16" level="5" task="14" keywords="0x8000000000000000" message="MFT_Stop XVPMFT = %1">
+    </event>
+    <event value="107" version="0" opcode="1" channel="16" level="5" task="15" keywords="0x8000000000000000" message="ProcessInput_Start XVPMFT = %1">
+    </event>
+    <event value="108" version="0" opcode="2" channel="16" level="5" task="15" keywords="0x8000000000000000" message="ProcessInput_Stop  XVPMFT = %1 hr = %2">
+    </event>
+    <event value="109" version="0" opcode="1" channel="16" level="5" task="16" keywords="0x8000000000000000" message="ProcessOutput_Start XVPMFT = %1">
+    </event>
+    <event value="110" version="0" opcode="2" channel="16" level="5" task="16" keywords="0x8000000000000000" message="ProcessOutput_Stop  XVPMFT = %1 hr = %2">
+    </event>
+    <event value="111" version="0" opcode="1" channel="16" level="5" task="17" keywords="0x8000000000000000" message="ColorConv_Start fourCCSrc = %1, fourCCDst = %2">
+    </event>
+    <event value="112" version="0" opcode="2" channel="16" level="5" task="17" keywords="0x8000000000000000" message="ColorConv_Stop">
+    </event>
+    <event value="113" version="0" opcode="1" channel="16" level="5" task="18" keywords="0x8000000000000000" message="Resizer_Start fourCC = %1, srcWidth = %2, srcHeight = %3, dstWidth = %4, dstHeight = %5">
+    </event>
+    <event value="114" version="0" opcode="2" channel="16" level="5" task="18" keywords="0x8000000000000000" message="Resizer_Stop">
+    </event>
+    <event value="115" version="0" opcode="1" channel="16" level="5" task="19" keywords="0x8000000000000000" message="Rotation_Start fourCC = %1, Rotation = %2">
+    </event>
+    <event value="116" version="0" opcode="2" channel="16" level="5" task="19" keywords="0x8000000000000000" message="Rotation_Stop">
+    </event>
+    <event value="117" version="0" opcode="1" channel="16" level="5" task="20" keywords="0x8000000000000000" message="Mirror_Start fourCC = %1, Mirror = %2">
+    </event>
+    <event value="118" version="0" opcode="2" channel="16" level="5" task="20" keywords="0x8000000000000000" message="Mirror_Stop">
+    </event>
+  </events>
+</provider>

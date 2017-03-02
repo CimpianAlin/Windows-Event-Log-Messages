@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-AppHost" guid="98e0765d-8c42-44a3-a57b-760d7f93225a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=wwahost.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\wwahost.exe" messageFileName="C:\Windows\system32\wwahost.exe" message="Microsoft-Windows-AppHost" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-AppHost/Admin" id="16" flags="0" message="Admin">
+    </channel>
+    <channel name="Microsoft-Windows-AppHost/Internal" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-AppHost/Diagnostic" id="18" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-AppHost/ApplicationTracing" id="19" flags="0" message="AppTracing">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="WWAHOST_OPCODE_SUCCEEDED" value="720896" message="AppHost Operation Succeeded">
+    </opcode>
+    <opcode name="WWAHOST_OPCODE_FAILED" value="786432" message="AppHost Operation Failed">
+    </opcode>
+    <opcode name="WWAHOST_OPCODE_WARNING" value="851968" message="AppHost Warning">
+    </opcode>
+    <opcode name="WWAHOST_OPCODE_INFORMATION" value="917504" message="AppHost Information">
+    </opcode>
+    <opcode name="WWAHOST_OPCODE_APPLICATION_ERROR" value="983040" message="AppHost Application Error">
+    </opcode>
+    <opcode name="WWAHOST_OPCODE_APPLICATION_WARNING" value="1048576" message="AppHost Application Warning">
+    </opcode>
+    <opcode name="WWAHOST_OPCODE_APPLICATION_INFORMATION" value="1114112" message="AppHost Application Information">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Initialize" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Navigation.NavigationDomain.Decision" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MswwaProtocol.PackageToFileUri" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Activation.ModuleInitialization" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Infrastructure.Host.Setup" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Infrastructure.Lifecycle" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Telemetry.WERReporting" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Infrastructure.Host.Uptime" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Navigation" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ApplicationActivateEvent" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ApplicationTermination" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Suspending" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Resuming" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Infrastructure.WebInstance.Setup" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InputPanelShow" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InputPanelHide" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinRTIntegration" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TerminateApp" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MswwaProtocol.AppDataToFileUri" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EvaluatePackage" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ApplicationTracing.Error" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ApplicationTracing.Warning" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ApplicationTracing.Informational" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SuspendingSubDownloads" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Resize" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ViewState" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InputPanelResizeViewport" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SuspendingGarbageCollection" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThreadMrtInitialization" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Infrastructure.Host.HostModulesInitialization" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Infrastructure.Host.HostRun" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Infrastructure.WebInstance.Initialize" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Infrastructure.WebInstance.Dispatch" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Infrastructure.WebInstance.Run" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinRTAsyncCall" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MemoryStatsOnSuspend" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LayoutChanged" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SuspendingInternalPlmTimeoutExpration" value="44" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="WWAHOST_KEYWORD" mask="1" message="AppHost">
+    </keyword>
+    <keyword name="WWAHOST_APPLICATION_KEYWORD" mask="2" message="AppHostApplication">
+    </keyword>
+    <keyword name="WwaHost" mask="10000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="12" channel="16" level="2" task="1" keywords="0x8000000000000001" message="The App Host failed to launch because a problem occurred while loading the app files and settings. Ensure that the app is properly installed or try reinstalling the app.">
+    </event>
+    <event value="102" version="0" opcode="12" channel="16" level="2" task="1" keywords="0x8000000000000001" message="The App Host has encountered an unexpected error and will terminate. The error is  %1.">
+    </event>
+    <event value="112" version="0" opcode="14" channel="16" level="4" task="8" keywords="0x8000000000000001" message="WWAJSE report submitted with parameters 1: &lt;%1&gt; 2: &lt;%2&gt; 3: &lt;%3&gt; 4: &lt;%4&gt; 5: &lt;%5&gt; 6: &lt;%6&gt;. (PID: &lt;%7&gt;. Process Creation Time: &lt;%8&gt;. App Binary Path: &lt;%9&gt;.) Report Id: &lt;%10&gt;">
+    </event>
+    <event value="121" version="0" opcode="12" channel="16" level="2" task="23" keywords="0x8000000000000001" message="The App Host failed to enumerate WinRT namespaces due to an issue with a winmd file. If you have third party winmd files ensure they are not corrupt and that their filenames match their corresponding namespace names.">
+    </event>
+    <event value="122" version="0" opcode="12" channel="16" level="2" task="23" keywords="0x8000000000000001" message="The App Host failed to enumerate WinRT namespaces due to unknown error. (%1)">
+    </event>
+    <event value="126" version="0" opcode="12" channel="16" level="2" task="8" keywords="0x8000000000000001" message="App &lt;%2&gt; crashed with an unhandled Javascript exception. App details are as follows: Display Name:&lt;%1&gt;, AppUserModelId: &lt;%3&gt; Package Identity:&lt;%4&gt; PID:&lt;%5&gt;. The details of the JavaScript exception are as follows Exception Name:&lt;%6&gt;, Description:&lt;%7&gt;, HTML Document Path:&lt;%8&gt;, Source File Name:&lt;%9&gt;, Source Line Number:&lt;%10&gt;, Source Column Number:&lt;%11&gt;, and Stack Trace: %12.">
+    </event>
+    <event value="127" version="0" opcode="12" channel="16" level="2" task="8" keywords="0x8000000000000001" message="App &lt;%2&gt; terminated itself by calling terminateApp API. App details are as follows:  Display Name:&lt;%1&gt;, AppUserModelId: &lt;%3&gt; Package Identity:&lt;%4&gt; PID:&lt;%5&gt;. The API was called from the context of the following HTML document:  &lt;%7&gt;. Error object passed to terminateApp carried the following details Description:&lt;%6&gt;, and Stack Trace:- %8.">
+    </event>
+    <event value="128" version="0" opcode="14" channel="16" level="2" task="8" keywords="0x8000000000000001" message="This app was closed because of a critical infrastructure failure.">
+    </event>
+    <event value="129" version="0" opcode="14" channel="16" level="2" task="8" keywords="0x8000000000000001" message="This app was closed because one or more packages were modified. Please reinstall the app.">
+    </event>
+    <event value="131" version="0" opcode="12" channel="16" level="2" task="8" keywords="0x8000000000000001" message="App &lt;%2&gt; terminated itself by window.close() API, which is not recommended. App details are as follows:  Display Name:&lt;%1&gt;, AppUserModelId: &lt;%3&gt; Package Identity:&lt;%4&gt; PID:&lt;%5&gt;. The API was called from the context of the following HTML document:  &lt;%6&gt;">
+    </event>
+    <event value="132" version="0" opcode="12" channel="16" level="2" task="8" keywords="0x8000000000000001" message="App &lt;%2&gt; was terminated due to a navigation error with target url &lt;%7&gt; and error code &lt;%8&gt;. App details are as follows: Display Name:&lt;%1&gt;, AppUserModelId: &lt;%3&gt; Package Identity:&lt;%4&gt; PID:&lt;%5&gt;. The Navigation was initiated from the context of the following HTML document:  &lt;%6&gt;">
+    </event>
+    <event value="133" version="0" opcode="12" channel="16" level="2" task="6" keywords="0x8000000000000001" message="The App Host could not start because the host module %2::%1 failed with %3.">
+    </event>
+    <event value="134" version="0" opcode="12" channel="16" level="2" task="6" keywords="0x8000000000000001" message="The App Host could not start because the web module %3::%2::%1 failed with %4.">
+    </event>
+    <event value="135" version="0" opcode="12" channel="16" level="2" task="6" keywords="0x8000000000000001" message="The App Host could not start because the platform (%1) failed with %2.">
+    </event>
+    <event value="136" version="0" opcode="12" channel="16" level="2" task="6" keywords="0x8000000000000001" message="The App Host could not start because WinRT failed to initialize with %1.">
+    </event>
+    <event value="137" version="0" opcode="14" channel="16" level="4" task="6" keywords="0x8000000000000001" message="Pending resume event was signaled to the Host.">
+    </event>
+    <event value="500" version="0" opcode="11" channel="17" level="4" task="6" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="502" version="0" opcode="11" channel="17" level="4" task="6" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="504" version="0" opcode="11" channel="17" level="4" task="6" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="506" version="0" opcode="14" channel="17" level="4" task="18" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="507" version="0" opcode="14" channel="17" level="4" task="18" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="508" version="0" opcode="14" channel="17" level="4" task="18" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="509" version="0" opcode="14" channel="17" level="4" task="18" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="511" version="0" opcode="14" channel="17" level="4" task="18" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="512" version="0" opcode="14" channel="17" level="4" task="18" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="513" version="0" opcode="14" channel="17" level="4" task="18" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="514" version="0" opcode="14" channel="17" level="4" task="4" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="515" version="0" opcode="14" channel="17" level="4" task="6" keywords="0x4000000000000001" message="The App has subdownloads remaining to complete during suspension. Host has requested the system for more time.">
+    </event>
+    <event value="516" version="0" opcode="14" channel="17" level="4" task="44" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="517" version="0" opcode="14" channel="17" level="4" task="30" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="518" version="0" opcode="14" channel="17" level="4" task="34" keywords="0x4000000000000001" message="">
+    </event>
+    <event value="1001" version="0" opcode="1" channel="18" level="4" task="2" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="18" level="4" task="2" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1003" version="0" opcode="1" channel="18" level="4" task="3" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1004" version="0" opcode="2" channel="18" level="4" task="3" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1007" version="0" opcode="1" channel="18" level="4" task="4" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1008" version="0" opcode="2" channel="18" level="4" task="4" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1009" version="0" opcode="1" channel="18" level="4" task="5" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1010" version="0" opcode="2" channel="18" level="4" task="5" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1011" version="0" opcode="1" channel="18" level="4" task="12" keywords="0x2001000000010000" message="">
+    </event>
+    <event value="1012" version="0" opcode="2" channel="18" level="4" task="12" keywords="0x2001000000010000" message="">
+    </event>
+    <event value="1015" version="0" opcode="1" channel="18" level="4" task="8" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1016" version="0" opcode="2" channel="18" level="4" task="8" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1017" version="0" opcode="1" channel="18" level="4" task="9" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1018" version="0" opcode="2" channel="18" level="4" task="9" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1019" version="0" opcode="1" channel="18" level="4" task="14" keywords="0x2001000000010000" message="">
+    </event>
+    <event value="1020" version="0" opcode="2" channel="18" level="4" task="14" keywords="0x2001000000010000" message="">
+    </event>
+    <event value="1021" version="0" opcode="1" channel="18" level="4" task="15" keywords="0x2001000000010000" message="">
+    </event>
+    <event value="1022" version="0" opcode="2" channel="18" level="4" task="15" keywords="0x2001000000010000" message="">
+    </event>
+    <event value="1023" version="0" opcode="1" channel="18" level="4" task="18" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1024" version="0" opcode="2" channel="18" level="4" task="18" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1025" version="0" opcode="1" channel="18" level="4" task="19" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1026" version="0" opcode="2" channel="18" level="4" task="19" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1027" version="0" opcode="1" channel="18" level="4" task="20" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1028" version="0" opcode="2" channel="18" level="4" task="20" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1029" version="0" opcode="1" channel="18" level="4" task="21" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1030" version="0" opcode="2" channel="18" level="4" task="21" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1031" version="0" opcode="1" channel="18" level="4" task="22" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1032" version="0" opcode="2" channel="18" level="4" task="22" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1033" version="0" opcode="1" channel="18" level="4" task="30" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1034" version="0" opcode="2" channel="18" level="4" task="30" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1035" version="0" opcode="1" channel="18" level="4" task="24" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1036" version="0" opcode="2" channel="18" level="4" task="24" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1037" version="0" opcode="1" channel="18" level="4" task="25" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1038" version="0" opcode="2" channel="18" level="4" task="25" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1039" version="0" opcode="1" channel="18" level="4" task="26" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1040" version="0" opcode="2" channel="18" level="4" task="26" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1041" version="0" opcode="1" channel="18" level="4" task="31" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1042" version="0" opcode="2" channel="18" level="4" task="31" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1043" version="0" opcode="1" channel="18" level="4" task="32" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1044" version="0" opcode="2" channel="18" level="4" task="32" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1045" version="0" opcode="1" channel="18" level="4" task="33" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1046" version="0" opcode="2" channel="18" level="4" task="33" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1047" version="0" opcode="1" channel="18" level="4" task="34" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1048" version="0" opcode="2" channel="18" level="4" task="34" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1049" version="0" opcode="1" channel="18" level="4" task="35" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1050" version="0" opcode="2" channel="18" level="4" task="35" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1051" version="0" opcode="1" channel="18" level="4" task="36" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1052" version="0" opcode="2" channel="18" level="4" task="36" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1053" version="0" opcode="1" channel="18" level="4" task="37" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1054" version="0" opcode="2" channel="18" level="4" task="37" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1055" version="0" opcode="1" channel="18" level="4" task="38" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1056" version="0" opcode="2" channel="18" level="4" task="38" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1057" version="0" opcode="1" channel="18" level="4" task="39" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1058" version="0" opcode="2" channel="18" level="4" task="39" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1059" version="0" opcode="1" channel="18" level="4" task="40" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1060" version="0" opcode="2" channel="18" level="4" task="40" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1061" version="0" opcode="1" channel="18" level="4" task="41" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1062" version="0" opcode="2" channel="18" level="4" task="41" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1063" version="0" opcode="0" channel="18" level="4" task="42" keywords="0x2001000000010000" message="">
+    </event>
+    <event value="1064" version="0" opcode="1" channel="18" level="4" task="43" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1065" version="0" opcode="2" channel="18" level="4" task="43" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="1066" version="0" opcode="0" channel="18" level="4" task="14" keywords="0x2000000000010000" message="">
+    </event>
+    <event value="10000" version="0" opcode="15" channel="19" level="2" task="27" keywords="0x1000000000000002" message="%6%10 : %11">
+    </event>
+    <event value="10001" version="0" opcode="16" channel="19" level="3" task="28" keywords="0x1000000000000002" message="%6%10 : %11">
+    </event>
+    <event value="10002" version="0" opcode="17" channel="19" level="4" task="29" keywords="0x1000000000000002" message="%6%10 : %11">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NCSI" guid="314de49f-ce63-4779-ba2b-d616f6963a88" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=ncsi.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\ncsi.dll" messageFileName="C:\Windows\system32\ncsi.dll" message="Microsoft-Windows-NCSI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NCSI/Analytic" id="16" flags="0" message="Microsoft-Windows-NCSI/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-NCSI/Operational" id="17" flags="0" message="Microsoft-Windows-NCSI/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WaitForNetReady" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Wait for NetReady">
+    </task>
+    <task name="WaitForLocal" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Wait for Local Connectivity">
+    </task>
+    <task name="WaitForInternet" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Wait for Internet Connectivity">
+    </task>
+    <task name="WaitForCorporate" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Wait for Corporate Connectivity">
+    </task>
+    <task name="CorporateLocationCheck" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Check Corporate Inside/outside Location">
+    </task>
+    <task name="InternetConnectivityDetection" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Internet Connectivity Detection">
+    </task>
+    <task name="CorporateConnectivityDetection" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Corporate Connectivity Detection">
+    </task>
+    <task name="ProxyDetection" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Proxy Detection">
+    </task>
+    <task name="InsideOutsideDetectionVerification" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Inside/Outside detection verification">
+    </task>
+    <task name="SuspectState" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Suspect state">
+    </task>
+    <task name="CorporateSuspectState" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="Corporate Suspect state">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="NlaDiagnostics" mask="1" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2001" version="0" opcode="0" channel="16" level="3" task="4" keywords="0x8000000400000000" message="Corporate connectivity check will be skipped. Reason: %1">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000400000000" message="Corporate connectivity check is enabled">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="16" level="3" task="5" keywords="0x8000000400000000" message="Corporate inside/outside location check will be skipped. Reason: %1">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000400000000" message="Corporate inside/outside location check is enabled">
+    </event>
+    <event value="4001" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000200000000000" message="Entered State: %2 Interface Luid: %3">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8001200000000000" message="Transitioning to State: %2 Interface Luid: %3">
+    </event>
+    <event value="4003" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000200000000000" message="Entered State: %2 Interface Luid: %3">
+    </event>
+    <event value="4004" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000200000000000" message="Transitioning to State: %2 Interface Luid: %3">
+    </event>
+    <event value="4005" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000200000000000" message="Entered State: %2 Interface Luid: %3">
+    </event>
+    <event value="4006" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8001200000000000" message="Transitioning to State: %2 Interface Luid: %3">
+    </event>
+    <event value="4007" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000200000000000" message="Entered State: %2 Interface Luid: %3">
+    </event>
+    <event value="4008" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000200000000000" message="Transitioning to State: %2 Interface Luid: %3">
+    </event>
+    <event value="4009" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4001200000000000" message="Inside/Outside detection started for interface %3.">
+    </event>
+    <event value="4010" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4001200000000000" message="Inside/Outside detection finished for interface %3 (%4).">
+    </event>
+    <event value="4011" version="0" opcode="0" channel="17" level="4" task="5" keywords="0x4000000400000000" message="Windows Firewall Group Policy settings have been updated. Triggering another inside/outside location detection">
+    </event>
+    <event value="4012" version="0" opcode="0" channel="17" level="3" task="5" keywords="0x4000000400000000" message="Inside/Outside probe failed for interface %1.
+
+Error: %6 (%5)
+Host: %3/%4
+Next retry: %7 second(s).">
+    </event>
+    <event value="4013" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000200000000000" message="Active Internet Probe started on interface %1">
+    </event>
+    <event value="4014" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000200000000000" message="Active Internet Probe finished on interface %1 (%2)">
+    </event>
+    <event value="4015" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000200000000000" message="Active Internet Probe (DNS) started on interface %1">
+    </event>
+    <event value="4016" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000200000000000" message="Active Internet Probe (DNS) finished on interface %1">
+    </event>
+    <event value="4017" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000200000000000" message="Active Internet Probe (HTTP) started on interface %1">
+    </event>
+    <event value="4018" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000200000000000" message="Active Internet Probe (HTTP) finished on interface %1">
+    </event>
+    <event value="4019" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000200000000000" message="Active Corp Probe started on interface %1">
+    </event>
+    <event value="4020" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000200000000000" message="Active Corp Probe finished on interface %1 (%2)">
+    </event>
+    <event value="4021" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000200000000000" message="Active Corp Probe (DNS) started on interface %1">
+    </event>
+    <event value="4022" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000200000000000" message="Active Corp Probe (DNS) finished on interface %1">
+    </event>
+    <event value="4023" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000200000000000" message="Active Corp Probe (HTTP) started on interface %1">
+    </event>
+    <event value="4024" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000200000000000" message="Active Corp Probe (HTTP) finished on interface %1">
+    </event>
+    <event value="4025" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000200000000000" message="Proxy Detection started">
+    </event>
+    <event value="4026" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000200000000000" message="Proxy Detection stopped (HasProxy=%1)">
+    </event>
+    <event value="4027" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8001000400000000" message="Opportunistic Internet flag on interface %1 for family %2 marked">
+    </event>
+    <event value="4028" version="0" opcode="0" channel="17" level="3" task="9" keywords="0x4000000000000001" message="Inside/Outside detection is suspect">
+    </event>
+    <event value="4029" version="0" opcode="0" channel="16" level="4" task="10" keywords="0x8000200000000000" message="Entered suspect state on interface %2 (Family: %3 Reason: %4)">
+    </event>
+    <event value="4030" version="0" opcode="0" channel="16" level="4" task="10" keywords="0x8000200000000000" message="Suspect state cancelled on interface %2 (Family: %3)">
+    </event>
+    <event value="4031" version="0" opcode="0" channel="16" level="4" task="10" keywords="0x8000200000000000" message="Suspect state expired on interface %2 (Family: %3)">
+    </event>
+    <event value="4032" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000200000000000" message="Entered corporate suspect state on interface %2">
+    </event>
+    <event value="4033" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000200000000000" message="Corporate suspect state cancelled on interface %2">
+    </event>
+    <event value="4034" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8000200000000000" message="Corporate suspect state expired on interface %2">
+    </event>
+    <event value="4035" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8001200000000000" message="Cancelling hotspot detection scenario for interface %1">
+    </event>
+  </events>
+</provider>

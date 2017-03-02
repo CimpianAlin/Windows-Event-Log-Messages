@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Dism-Cli" guid="2f959466-24d4-4972-8729-0d5e3539ebc3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=Dism.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\Dism.exe" messageFileName="C:\Windows\system32\Dism.exe" message="Deployment Image Servicing And Management CLI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Dism-Cli/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DismCliCloseSession" value="1" eventGUID="c9768f12-f886-4b79-b2c2-8f10987b24cf" message="">
+    </task>
+    <task name="DismCliLoadDism" value="2" eventGUID="3c5413a8-3df4-44ad-a6b5-9e8cdc7a7dec" message="">
+    </task>
+    <task name="DismCliExecuteCmdLine" value="3" eventGUID="a172e422-512d-44b1-a317-51b131778f35" message="">
+    </task>
+    <task name="DismCliLoadImageSession" value="4" eventGUID="e587721c-0b10-4667-8b73-657660339f0a" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="DismCliEvent" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000001" message="">
+    </event>
+  </events>
+</provider>

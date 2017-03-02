@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-IE-JSDumpHeap" guid="7f8e35ca-68e8-41b9-86fe-d6adc5b327e7" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Explorer&amp;ProdVer=11.0.9600.16384&amp;FileName=mshtml.dll&amp;FileVer=11.0.9600.16384" resourceFileName="C:\Windows\system32\mshtml.dll" messageFileName="C:\Windows\system32\mshtml.dll" message="Microsoft-IE-JSDumpHeap" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-JSDumpHeap/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="JSDumpHeapEnvelope" value="321" eventGUID="fff80bb3-0541-4423-b26b-8c4a5af906ff" message="">
+    </task>
+    <task name="JSDumpHeapBulkNode" value="323" eventGUID="89b4a9e6-156f-4ff2-8c93-cd86b1bce9a4" message="">
+    </task>
+    <task name="JSDumpHeapBulkAttribute" value="324" eventGUID="b171ef0b-d1fb-4901-9847-e13d583bfa86" message="">
+    </task>
+    <task name="JSDumpHeapBulkEdge" value="325" eventGUID="ec5809c8-ef06-456c-be69-e8dcdf7554ba" message="">
+    </task>
+    <task name="JSDumpHeapStringTable" value="326" eventGUID="8a019204-6cc0-41f3-8fae-e190ddfd05a7" message="">
+    </task>
+    <task name="JSDumpHeapDoubleTable" value="327" eventGUID="eaa70a14-d1c3-4939-8ca7-393c2f75fa58" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="jsdumpheap" mask="20" message="">
+    </keyword>
+    <keyword name="jsdumpheapEnvelopeOnly" mask="80000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="0" level="0" task="321" keywords="0x80000020" message="">
+    </event>
+    <event value="2" version="1" opcode="2" channel="0" level="0" task="321" keywords="0x80000020" message="">
+    </event>
+    <event value="3" version="0" opcode="0" channel="0" level="0" task="323" keywords="0x20" message="">
+    </event>
+    <event value="4" version="0" opcode="0" channel="0" level="0" task="324" keywords="0x20" message="">
+    </event>
+    <event value="5" version="0" opcode="0" channel="0" level="0" task="325" keywords="0x20" message="">
+    </event>
+    <event value="6" version="0" opcode="0" channel="0" level="0" task="326" keywords="0x20" message="">
+    </event>
+    <event value="7" version="0" opcode="0" channel="0" level="0" task="327" keywords="0x20" message="">
+    </event>
+  </events>
+</provider>

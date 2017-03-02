@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SMBClient" guid="988c59c5-0a1c-45b6-a555-0c62276e327d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=mrxsmb.sys&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\drivers\mrxsmb.sys" messageFileName="C:\Windows\system32\drivers\mrxsmb.sys" message="Microsoft-Windows-SMBClient" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-SMBClient/HelperClassDiagnostic" id="16" flags="0" message="Microsoft-Windows-SMBClient/HelperClassDiagnostic">
+    </channel>
+    <channel name="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" id="17" flags="0" message="Microsoft-Windows-SMBClient/ObjectStateDiagnostic">
+    </channel>
+    <channel name="Microsoft-Windows-SMBClient/Operational" id="18" flags="0" message="Microsoft-Windows-SMBClient/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-SMBClient/Analytic" id="19" flags="0" message="Microsoft-Windows-SMBClient/XPerfAnalytic">
+    </channel>
+    <channel name="Microsoft-Windows-SmbClient/Diagnostic" id="20" flags="0" message="Microsoft-Windows-SMBClient/Diagnostic">
+    </channel>
+    <channel name="Microsoft-Windows-SmbClient/Connectivity" id="21" flags="0" message="Microsoft-Windows-SMBClient/Connectivity">
+    </channel>
+    <channel name="Microsoft-Windows-SmbClient/Security" id="22" flags="0" message="Microsoft-Windows-SMBClient/Security">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="Server" value="720896" message="Server Error">
+    </opcode>
+    <opcode name="Cache" value="786432" message="Cached Error">
+    </opcode>
+    <opcode name="ISC" value="851968" message="Initialize Security Context Error">
+    </opcode>
+    <opcode name="Signing" value="917504" message="Security Signature Error">
+    </opcode>
+    <opcode name="ut:Start" value="11796480" message="Start State">
+    </opcode>
+    <opcode name="ut:End" value="11862016" message="End State">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Smb_Perf" mask="1" message="">
+    </keyword>
+    <keyword name="Networking_Perf" mask="2" message="">
+    </keyword>
+    <keyword name="Smb_Info" mask="4" message="">
+    </keyword>
+    <keyword name="InfoCache_Info" mask="8" message="">
+    </keyword>
+    <keyword name="Smb_TFO" mask="10" message="">
+    </keyword>
+    <keyword name="Smb_MultiChannel" mask="20" message="">
+    </keyword>
+    <keyword name="Smb_Connectivity" mask="40" message="">
+    </keyword>
+    <keyword name="Smb_Authentication" mask="80" message="">
+    </keyword>
+    <keyword name="Smb_Authorization" mask="100" message="">
+    </keyword>
+    <keyword name="Smb_Security" mask="200" message="">
+    </keyword>
+    <keyword name="PacketStart" mask="40000000" message="">
+    </keyword>
+    <keyword name="PacketEnd" mask="80000000" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Diagnostic" mask="400000000000" message="">
+    </keyword>
+    <keyword name="PduFull" mask="800000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000400000000000" message="Create SrvCall Error: %1 Location: %2 Context: %3">
+    </event>
+    <event value="201" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000400000000000" message="Session Setup Error: %1 Location: %2 Context: %3">
+    </event>
+    <event value="301" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000400000000000" message="Tree Connect Error: %1 Location: %2 Context: %3">
+    </event>
+    <event value="401" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000400000000000" message="Create VNetRoot Error: %1 Location: %2 Context: %3">
+    </event>
+    <event value="501" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000400000000000" message="Create File Error: %1 Location: %2 Context: %3">
+    </event>
+    <event value="2000" version="0" opcode="0" channel="20" level="4" task="0" keywords="0x800040000000000" message="Packet Fragment (%2 bytes)">
+    </event>
+    <event value="20001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000400000000000" message="Transitioned to State: %1 Context: %2">
+    </event>
+    <event value="30103" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000001" message="SMB exchange suspended: RxContext %1 Exchange %2 ListHead %3">
+    </event>
+    <event value="30104" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000001" message="SMB exchange resumed: RxContext %1 Exchange %2 ExchangeState %3 ExchangeStatus %4">
+    </event>
+    <event value="30105" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000001" message="SMB buffer context suspended: BufferCtxt %1 Exchange %2 MidCharge %3 Window %4 CurrentWindowLimit %5 ThrottlingWindowLimit %6 CurrentWindowSize %7">
+    </event>
+    <event value="30106" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000001" message="SMB buffer context resumed: BufferCtxt %1 Exchange %2 MidCharge %3 Window %4 CurrentWindowLimit %5 ThrottlingWindowLimit %6 CurrentWindowSize %7">
+    </event>
+    <event value="30108" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x1000000000000005" message="SMB Mid window blocked: Window %1 HungSession %2">
+    </event>
+    <event value="30109" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x1000000000000005" message="SMB rechunk multi-credit request: BufferCtxt %1 Exchange %2 MidCharge %3 Window %4 CurrentWindowLimit %5 ThrottlingWindowLimit %6 CurrentWindowSize %7">
+    </event>
+    <event value="30110" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000001" message="SMB initialize Mid window: Server %2 Window %3">
+    </event>
+    <event value="30111" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000001" message="SMB Mid window state: Window %1 CurrentWindowSize %2 CurrentWindowLimit %3 ThrottlingWindowLimit %4 OldestPendingMid %5 NextAvailableMid %6 CreditsGranted %7">
+    </event>
+    <event value="30112" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000001" message="SMB teardown Mid window: Server %2 Window %3">
+    </event>
+    <event value="30113" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000001" message="SMB copy data completion: Status %1 VcEndpoint %2">
+    </event>
+    <event value="30114" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000001" message="SMB send completion: Status %1 VcEndpoint %2">
+    </event>
+    <event value="30203" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000002" message="WSK connect: SocketAddress %2 VcEndpoint %3 Socket %4">
+    </event>
+    <event value="30204" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000002" message="WSK connect completion: VcEndpoint %1 Socket %2 Status %3">
+    </event>
+    <event value="30205" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000002" message="WSK send: VcEndpoint %1 Socket %2 SendMdl %3 SendLength %4">
+    </event>
+    <event value="30206" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000002" message="WSK send completion: VcEndpoint %1 Socket %2 SendMdl %3 SendLength %4 Status %5">
+    </event>
+    <event value="30207" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000002" message="WSK receive: VcEndpoint %1 Socket %2 ReceiveMdl %3 ReceiveLength %4">
+    </event>
+    <event value="30208" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000002" message="WSK receive completion: VcEndpoint %1 Socket %2 ReceiveMdl %3 ReceiveLength %4 Status %5">
+    </event>
+    <event value="30401" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x1000000000000004" message="SMB session expired: SessionEntry %1 ServerName %3">
+    </event>
+    <event value="30402" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x1000000000000004" message="SMB 3 part SPN reauth: SessionEntry %1 ServiceName %3">
+    </event>
+    <event value="30403" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000004" message="SMB reconnect durable open: Fcb %1 SrvOpen %2">
+    </event>
+    <event value="30404" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000004" message="SMB defer open: Fcb %1 SrvOpen %2">
+    </event>
+    <event value="30405" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000004" message="SMB undefer open: Fcb %1 SrvOpen %2">
+    </event>
+    <event value="30406" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000004" message="SMB send[%1]: [%2] (Mid/Sid/Tid) (%3/%4/%5) MidCharge %6 Creds %7 SendLengh %8 VcEndpoint %9">
+    </event>
+    <event value="30407" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000004" message="SMB receive: [%1] (Mid/Sid/Tid) (%2/%4/%5) Creds %6 Status %7 VcEndpoint %8">
+    </event>
+    <event value="30408" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000004" message="SMB receive interim: [%1] (Mid/AsyncId/Sid/Tid) (%2/%3/%4/%5) Creds %6 Status %7 VcEndpoint %8">
+    </event>
+    <event value="30409" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000004" message="SMB receive async: [%1] (AsyncId/Sid/Tid) (%3/%4/%5) Creds %6 Status %7 VcEndpoint %8">
+    </event>
+    <event value="30410" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000004" message="SMB registry key: %1 = %2">
+    </event>
+    <event value="30501" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000008" message="SMB update file info cache: RxContext %1 Fcb %2 FileName %4">
+    </event>
+    <event value="30502" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000008" message="SMB fetch file info cache: RxContext %1 Fcb %2 FileName %4 Status %5">
+    </event>
+    <event value="30503" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000008" message="SMB invalidate file info cache: RxContext %1 Fcb %2 FileName %4">
+    </event>
+    <event value="30504" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000008" message="SMB update file not found cache: RxContext %1 Fcb %2 FileName %4">
+    </event>
+    <event value="30505" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000008" message="SMB fetch file not found cache: RxContext %1 Fcb %2 FileName %4 Result %5">
+    </event>
+    <event value="30506" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000008" message="SMB invalidate file not found cache: RxContext %1 Fcb %2 FileName %4">
+    </event>
+    <event value="30507" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000008" message="SMB populate dir cache: RxContext %1 Fcb %2 DirName %4">
+    </event>
+    <event value="30508" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000008" message="SMB fetch dir cache: RxContext %1 Fcb %2 FileName %4 Status %5">
+    </event>
+    <event value="30600" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000010" message="Session %1 to %6 transitioned from [%2] to [%3] with Status %4">
+    </event>
+    <event value="30601" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000010" message="Share connection %1 to %6 transitioned from [%2] to [%3] with Status %4">
+    </event>
+    <event value="30603" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000010" message="Open handle %1 to %10%12 transitioned from [%5] to [%6] with Status %7">
+    </event>
+    <event value="30611" version="2" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000010" message="Failed to reconnect a persistent handle.
+
+Error: %7
+
+FileId: %2:%3
+CreateGUID: %4
+Path: %10%12
+
+Reason: %8
+
+Previous reconnect error: %13
+Previous reconnect reason: %14
+
+Guidance:
+A persistent handle allows transparent failover on Windows File Server clusters. This event has many causes and does not always indicate an issue with SMB. Review online documentation for troubleshooting information.">
+    </event>
+    <event value="30612" version="2" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000010" message="Failed to reconnect a resilient handle.
+
+Error: %7
+
+FileId: %2:%3
+Path: %10%12
+
+Reason: %8.
+
+Previous reconnect error: %13
+Previous reconnect reason: %14
+
+Guidance:
+A resilient handle provides guarantees to applications requesting it. This event has many causes and does not always indicate an issue with SMB. Review online documentation for troubleshooting information.">
+    </event>
+    <event value="30613" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000010" message="Failed to open a persistent handle.
+
+Error: %7
+
+FileId: %2:%3
+CreateGUID: %4
+Path: %10%12
+
+Reason: %8
+
+Guidance:
+A persistent handle allows transparent failover on Windows File Server clusters. This event has many causes and does not always indicate an issue with SMB. Review online documentation for troubleshooting information.">
+    </event>
+    <event value="30701" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000020" message="An invalid FSCTL_QUERY_NETWORK_INTERFACE_INFO response was sent by the server %2">
+    </event>
+    <event value="30702" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000020" message="The client failed to connect to the server %2 from the local IP address %4 to the remote IP address %6 over TCP transport. Error: %7">
+    </event>
+    <event value="30703" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000020" message="The client failed to connect to the server %2 from the local IP address %4 to the remote IP address %6 over RDMA transport. Error: %7">
+    </event>
+    <event value="30704" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000020" message="The client connected to the server %2 from the local IP address %4 to the remote IP address %6 over TCP transport successfully">
+    </event>
+    <event value="30705" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000020" message="The client connected to the server %2 from the local IP address %4 to the remote IP address %6 over RDMA transport successfully">
+    </event>
+    <event value="30800" version="0" opcode="0" channel="21" level="2" task="0" keywords="0x400000000000040" message="The server name cannot be resolved.
+
+Error: %2
+
+Server name: %4
+
+Guidance:
+The client cannot resolve the server address in DNS or WINS. This issue often manifests immediately after joining a computer to the domain, when the client&apos;s DNS registration may not yet have propagated to all DNS servers. You should also expect this event at system startup on a DNS server (such as a domain controller) that points to itself for the primary DNS. You should validate the DNS client settings on this computer using IPCONFIG /ALL and NSLOOKUP.">
+    </event>
+    <event value="30801" version="0" opcode="0" channel="21" level="2" task="0" keywords="0x400000000000040" message="%1.
+
+Error: %2
+
+Server name: %4">
+    </event>
+    <event value="30802" version="0" opcode="0" channel="21" level="2" task="0" keywords="0x400000000000040" message="%1.
+
+Error: %2
+
+Server name: %4">
+    </event>
+    <event value="30803" version="0" opcode="0" channel="21" level="2" task="0" keywords="0x400000000000040" message="The network connection failed.
+
+Error: %2
+
+Server name: %4
+Server address: %6
+Connection type: %7
+
+Guidance:
+This indicates a problem with the underlying network or transport, such as with TCP/IP, and not with SMB. A firewall that blocks port 445 or 5445 can also cause this issue.">
+    </event>
+    <event value="30804" version="0" opcode="0" channel="21" level="2" task="0" keywords="0x400000000000040" message="The network connection failed.
+
+Error: %2
+
+Server name: %4
+Server address: %6
+Connection type: %7
+
+Guidance:
+This indicates a problem with the underlying network or transport, such as with TCP/IP, and not with SMB. A firewall that blocks port 445 or 5445 can also cause this issue.">
+    </event>
+    <event value="30805" version="2" opcode="0" channel="21" level="3" task="0" keywords="0x400000000000040" message="The client lost its session to the server.
+
+Error: %1
+
+Server name: %5
+Session ID: %2
+
+Guidance:
+If the server is a Windows Failover Cluster file server, then this message occurs when the file share moves between cluster nodes. There should also be an anti-event 30806 indicating the session to the server was re-established. If the server is not a failover cluster, it is likely that the server was previously online, but it is now inaccessible over the network.">
+    </event>
+    <event value="30806" version="2" opcode="0" channel="21" level="4" task="0" keywords="0x400000000000040" message="The client re-established its session to the server.
+
+Server name: %5
+Server address: %7
+Session ID: %2
+
+Guidance:
+You should expect this event if there was a previous event 30805, but the client successfully resumed the cached connection before the timeout expired.">
+    </event>
+    <event value="30807" version="2" opcode="0" channel="21" level="3" task="0" keywords="0x400000000000040" message="The connection to the share was lost.
+
+Error: %1
+
+Share name: %5
+Session ID: %2
+Tree ID: %3
+
+Guidance:
+If the server is a Windows Failover Cluster file server, then this message occurs when the file share moves between cluster nodes. There should also be an anti-event 30808 indicating the session to the server was re-established. If the server is not a failover cluster, it is likely that the server was previously online, but it is now inaccessible over the network.">
+    </event>
+    <event value="30808" version="2" opcode="0" channel="21" level="4" task="0" keywords="0x400000000000040" message="The connection to the share was re-established.
+
+Share name: %5
+Server address: %7
+Session ID: %2
+Tree ID: %3
+
+Guidance:
+You should expect this event if there was a previous event 30807, but the client successfully resumed the cached connection before the timeout expired.">
+    </event>
+    <event value="30809" version="0" opcode="0" channel="21" level="2" task="0" keywords="0x400000000000040" message="A request timed out because there was no response from the server.
+
+Server name: %6
+Session ID:%3
+Tree ID:%4
+Message ID:%2
+Command: %1
+
+Guidance:
+The server is responding over TCP but not over SMB. Ensure the Server service is running and responsive, and the disks do not have high per-IO latency, which makes the disks appear unresponsive to SMB. Also, ensure the server is responsive overall and not paused; for instance, make sure you can log on to it.">
+    </event>
+    <event value="30810" version="0" opcode="0" channel="21" level="4" task="0" keywords="0x400000000000040" message="Added a TCP/IP transport interface.
+
+Name: %2
+InterfaceIndex: %3
+
+Guidance:
+A TCP/IP binding was added to the specified network adapter for the SMB client. The SMB client can now send and receive SMB traffic on this network adapter using TCP/IP. You should expect this event when a computer restarts or when a previously disabled network adaptor is re-enabled. No user action is required.">
+    </event>
+    <event value="30811" version="0" opcode="0" channel="21" level="4" task="0" keywords="0x400000000000040" message="Deleted a TCP/IP transport interface.
+
+Name: %2
+InterfaceIndex: %3
+
+Guidance:
+A TCP/IP binding was removed from the specified network adapter for the SMB client. You should expect this event when a computer shuts down or when a previously enabled network adaptor is disabled. No user action is required.">
+    </event>
+    <event value="30812" version="0" opcode="0" channel="21" level="4" task="0" keywords="0x400000000000040" message="Added a TDI transport interface.
+
+Name: %2
+
+Guidance:
+A TDI (NetBIOS) binding was added to the specified network adapter for the SMB client. The SMB client can now send and receive SMB traffic on this network adapter using TDI. You should expect this event when a computer restarts or when a previously disabled network adaptor is re-enabled. No user action is required.">
+    </event>
+    <event value="30813" version="0" opcode="0" channel="21" level="4" task="0" keywords="0x400000000000040" message="Deleted a TDI transport interface.
+
+Name: %2
+
+Guidance:
+A TDI (NetBIOS) binding was removed from the specified network adapter for the SMB client. You should expect this event when a computer shuts down or when a previously enabled network adaptor is disabled. No user action is required.">
+    </event>
+    <event value="30814" version="0" opcode="0" channel="21" level="4" task="0" keywords="0x400000000000040" message="Witness registration has completed.
+
+Status: %1
+
+Cluster share name: %4
+Cluster share type: %2
+File server cluster address: %6
+
+Guidance:
+The client successfully registered with the SMB Witness through RPC using TCP (port 135, then an endpoint port above 1023). No action is required.">
+    </event>
+    <event value="30815" version="0" opcode="0" channel="21" level="4" task="0" keywords="0x400000000000040" message="Witness deregistration has completed.
+
+Status: %1
+
+Cluster share name: %4
+Cluster share type: %2
+
+Guidance:
+The client successfully de-registered with the SMB Witness through RPC using TCP (port 135, then an endpoint port above 1023). No action is required.">
+    </event>
+    <event value="30816" version="0" opcode="0" channel="21" level="2" task="0" keywords="0x400000000000040" message="The server failed the negotiate request.
+
+Error: %2
+
+Server name: %4
+
+Guidance:
+The server does not support any dialect that the client is trying to negotiate, such as the client has SMB2/SMB3 disabled and the server has SMB1 disabled.">
+    </event>
+    <event value="30817" version="0" opcode="0" channel="21" level="2" task="0" keywords="0x400000000000040" message="Close request failed.
+
+Error: %2
+
+Path: %4%6
+
+Guidance:
+A persistent handle (Continuous Availability) or a resilient handle failed to close.">
+    </event>
+    <event value="30818" version="0" opcode="0" channel="21" level="3" task="0" keywords="0x400000000000040" message="RDMA interfaces are available but the client failed to connect to the server over RDMA transport.
+
+Server name: %2
+
+Guidance:
+Both client and server have RDMA (SMB Direct) adaptors but there was a problem with the connection and the client had to fall back to using TCP/IP SMB (non-RDMA).">
+    </event>
+    <event value="30819" version="2" opcode="0" channel="21" level="4" task="0" keywords="0x400000000000010" message="The SMB client received a request to move to a different node on a file server cluster.
+
+File server cluster name: %4
+New file server cluster address: %6
+
+Guidance:
+Continuous Availability (Transparent Failover) is in use and the client computer is going to move to a different node after an SMB witness request over RPC using TCP (first contacting port 135, then contacting an endpoint port above 1023). No user action is required.">
+    </event>
+    <event value="30820" version="2" opcode="0" channel="21" level="4" task="0" keywords="0x400000000000010" message="The SMB client successfully moved to a different node on a file server cluster.
+
+File server cluster name: %4
+ New file server cluster address: %6
+
+Guidance:
+Continuous Availability (Transparent Failover) is in use and the client computer successfully moved to a different node after an SMB witness request over RPC using TCP (first contacting port 135, then contacting an endpoint port above 1023). No user action is required.">
+    </event>
+    <event value="30821" version="2" opcode="0" channel="21" level="2" task="0" keywords="0x400000000000010" message="The SMB client failed to move to a different node on a file server cluster.
+
+Error: %1
+
+File server cluster name: %4
+
+Guidance:
+Continuous Availability (Transparent Failover) is in use and the client computer failed to move to a different node after an SMB witness request over RPC using TCP (first contacting port 135, then contacting an endpoint port above 1023). The attempt to connect to the destination server failed, which is typically due to a network configuration issue. For example, this issue may occur if the destination node&apos;s IP address cannot be resolved, if the destination node is behind a firewall, or if there is no network route from the client to the node.">
+    </event>
+    <event value="30900" version="2" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000010" message="The handle was created without persistence.
+
+File ID: %2:%3
+CreateGUID: %4
+Path: %10%12
+
+Guidance:
+The server supports Continuous Availability (persistent handles) and the request to create the handle succeeded. However, the server did not grant persistence. You should verify that the Resume Key Filter is running on the server and is attached to the target volume.">
+    </event>
+    <event value="30904" version="2" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000020" message="The server does not support multichannel.
+
+Server name: %2
+
+Guidance:
+The client attempted to use SMB Multichannel, but an administrator has disabled multichannel support on the server. This may also be a non-Microsoft file server that does not support multichannel or has multichannel disabled. You can enable SMB Multichannel on the server using this Windows PowerShell cmdlet: Set-SmbServerConfiguration -EnableMultiChannel:$true. This event does not apply to the multichannel settings of SMB client, which are controlled by the Set-SmbClientConfiguration Windows PowerShell cmdlet. Enabling or disabling client multichannel support does not affect server multichannel support.">
+    </event>
+    <event value="30905" version="2" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000020" message="The client cannot connect to the server due to a multichannel constraint registry setting.
+
+Server name: %2
+
+Guidance:
+The client attempted to use SMB Multichannel, but an administrator has configured multichannel support to prevent multichannel on the client. You can configure SMB Multichannel on the client using the Windows PowerShell cmdlets: New-SmbMultichannelConstraint and Remove-SmbMultichannelConstraint.">
+    </event>
+    <event value="30906" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000010" message="A request on persistent/resilient handle failed because the handle was invalid or it exceeded the timeout.
+
+Status: %7
+
+Type: %1
+Path: %4%6
+Restart count: %2
+
+Guidance:
+After retrying a request on a Continuously Available (Persistent) handle or a Resilient handle, the client was unable to reconnect the handle. This event is the result of a handle recovery failure. Review other events for more details.">
+    </event>
+    <event value="30907" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000020" message="The SMB Multichannel registry value is not configured with default settings.
+
+Default Registry Value:
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+&quot;DisableMultiChannel&quot;=dword:0
+Configured Registry Value:
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+&quot;DisableMultiChannel&quot;=dword:%2
+
+Guidance:
+You can configure SMB Multichannel on the client using the Windows PowerShell cmdlet Set-SmbClientConfiguration. Disabling SMB client multichannel support is not a recommended configuration, as it can lead to degraded performance and decreased reliability if one channel or network path fails.">
+    </event>
+    <event value="30908" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000000004" message="The SMB 3 and SMB 2 driver is not configured with the default start type.
+
+Default Start Type: DEMAND_START
+Configured Start Type: DISABLED
+
+Guidance:
+You should expect this event when disabling SMB2/SMB3 for the client using SC.EXE or editing the Windows registry. Microsoft does not recommend disabling SMB2/SMB3. Disabling SMB2/SMB3 prevents use of features such as SMB Transparent Failover, SMB Scale Out, SMB Multichannel, SMB Direct (RDMA), SMB Encryption, VSS for SMB file shares, and SMB Directory Leasing. SMB provides alternative troubleshooting workarounds to disabling SMB2/SMB3 in most cases.">
+    </event>
+    <event value="30909" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000004" message="The client supports SMB Direct (RDMA) and SMB Signing is in use.
+
+Share name: %2
+
+Guidance:
+For optimal SMB Direct performance, you can disable SMB Signing. This configuration is less secure and you should only consider this configuration on trustworthy private networks with strict access control.">
+    </event>
+    <event value="30910" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000004" message="The client supports SMB Direct (RDMA) and SMB Encryption is in use.
+
+Share name: %2
+
+Guidance:
+For optimal SMB Direct performance, you can disable SMB Encryption on the server for shares accessed by this client. This configuration is less secure and you should only consider this configuration on trustworthy private networks with strict access control.">
+    </event>
+    <event value="31000" version="0" opcode="0" channel="22" level="2" task="0" keywords="0x200000000000080" message="%1.
+
+Error: %2
+
+Security status: %3
+User name: %10
+Logon ID: %4
+Serrver name: %6">
+    </event>
+    <event value="31001" version="0" opcode="0" channel="22" level="2" task="0" keywords="0x200000000000080" message="%1.
+
+Error: %2
+
+Security status: %3
+User name: %10
+Logon ID: %4
+Server name: %6
+Principal name: %8">
+    </event>
+    <event value="31002" version="0" opcode="0" channel="22" level="2" task="0" keywords="0x200000000000080" message="The outbound authentication failed using a network token.
+
+Error: %2
+
+Server name: %4
+
+Guidance:
+This typically indicates that delegation must be configured for a Kerberos double-hop scenario. If delegation is configured, confirm that the services are configured correctly on the middle-tier server.">
+    </event>
+    <event value="31003" version="0" opcode="0" channel="22" level="3" task="0" keywords="0x200000000000080" message="The LmCompatibilityLevel value is different from the default.
+
+Configured LM Compatibility Level: %2
+Default LM Compatibility Level: 3
+
+Guidance:
+LAN Manager (LM) authentication is the protocol used to authenticate Windows clients for network operations. This includes joining a domain, accessing network resources, and authenticating users or computers. This determines which challenge/response authentication protocol is negotiated between the client and the server computers. Specifically, the LM authentication level determines which authentication protocols the client will try to negotiate or the server will accept. The value set for LmCompatibilityLevel determines which challenge/response authentication protocol is used for network logons. This value affects the level of authentication protocol that clients use, the level of session security negotiated, and the level of authentication accepted by servers.
+
+Value (Setting) - Description
+
+0 (Send LM &amp; NTLM responses) - Clients use LM and NTLM authentication and never use NTLMv2 session security. Domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+1 (Send LM &amp; NTLM - use NTLMv2 session security if negotiated) - Clients use LM and NTLM authentication, and use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+2 (Send NTLM response only) - Clients use NTLM authentication only and use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+3 (Send NTLM v2 response only) - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+4 (Send NTLMv2 response only/refuse LM) - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it. Domain controllers refuse LM and accept only NTLM and NTLMv2 authentication.
+
+5 (Send NTLM v2 response only/refuse LM &amp; NTLM) - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it. Domain controllers refuse LM and NTLM and accept only NTLMv2 authentication.
+
+Incompatibly configured  LmCompatibility levels between a client and server (such as 0 on a client and 5 on a server) prevent access to the server. Non-Microsoft clients and servers also provide these configuration settings.">
+    </event>
+    <event value="31010" version="0" opcode="0" channel="22" level="2" task="0" keywords="0x200000000000100" message="The SMB client failed to connect to the share.
+
+Error: %2
+
+Path: %4%6">
+    </event>
+    <event value="31012" version="0" opcode="0" channel="22" level="2" task="0" keywords="0x200000000000200" message="The negotiate validation failed.
+
+From negotiate response:
+Dialect: %1
+SecurityMode: %2
+Capabilities: %3
+ServerGuid: %4
+
+From FSCTL_VALIDATE_NEGOTIATE_INFO response:
+Dialect: %5
+SecurityMode: %6
+Capabilities: %7
+ServerGuid: %8
+
+Guidance:
+The client successfully negotiated SMB dialect, security mode, capabilities and server GUID with the server, but the validation of these values then failed after connecting to a share. This may be due to a &quot;man-in-the-middle&quot; compromise attempt.">
+    </event>
+    <event value="31013" version="0" opcode="0" channel="22" level="2" task="0" keywords="0x200000000000200" message="The signing validation failed.
+
+Error:%7
+
+Server name: %6
+Session ID:%3
+Tree ID:%4
+Message ID:%2
+Command: %1
+
+Guidance:
+This error indicates that SMB messages are being modified in transit across the network from the server to the client. This may be due to the session ending on the server, a problem with the network, a problem with a third-party SMB server, or a &quot;man-in-the-middle&quot; compromise attempt.">
+    </event>
+    <event value="31014" version="0" opcode="0" channel="22" level="2" task="0" keywords="0x200000000000200" message="The client received an unencrypted message when encryption was expected.
+
+Server name: %6
+Session ID:%3
+Tree ID:%4
+Message ID:%2
+Command: %1
+
+Guidance:
+This error indicates that SMB messages are being modified in transit across the network from the server to the client. This may be due to the session ending on the server, a problem with the network, a problem with a third-party SMB server, or a &quot;man-in-the-middle&quot; compromise attempt.">
+    </event>
+    <event value="31015" version="0" opcode="0" channel="22" level="2" task="0" keywords="0x200000000000200" message="Failed to decrypt an encrypted SMB message.
+
+Error:%7
+
+Server name: %6
+Session ID:%3
+
+Guidance:
+The client received an encrypted SMB message but cannot decrypt the data. This typically means that the communication came from a previous session that no longer exists. The encryption header may also have been damaged or tampered with on the network between the client and server.">
+    </event>
+    <event value="31016" version="0" opcode="0" channel="22" level="3" task="0" keywords="0x200000000000200" message="The SMB Signing registry value is not configured with default settings.
+
+Default Registry Value:
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+&quot;EnableSecuritySignature&quot;=dword:1
+Configured Registry Value:
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+&quot;EnableSecuritySignature&quot;=dword:0
+
+Guidance:
+Even though you can disable, enable, or require SMB Signing, the negotiation rules changed starting with SMB2 and not all combinations operate like SMB1.
+
+The effective behavior for SMB2/SMB3 is:
+Client Required and Server Required = Signed
+Client Not Required and Server Required = Signed
+Server Required and Client Not Required = Signed
+Server Not Required and Client Not Required = Not Signed
+
+When requiring SMB Encryption, SMB Signing is not used, regardless of settings. SMB Encryption implicitly provides the same integrity guarantees as SMB Signing.">
+    </event>
+    <event value="40000" version="0" opcode="0" channel="20" level="4" task="0" keywords="0x800040000000000" message="Packet (%4 bytes)">
+    </event>
+  </events>
+</provider>

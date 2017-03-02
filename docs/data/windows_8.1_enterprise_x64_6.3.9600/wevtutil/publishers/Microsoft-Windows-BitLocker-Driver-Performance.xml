@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-BitLocker-Driver-Performance" guid="1de130e1-c026-4cbf-ba0f-ab608e40aeea" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\fvevol.sys" messageFileName="C:\Windows\system32\drivers\fvevol.sys" message="Microsoft-Windows-BitLocker-Driver-Performance" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-BitLocker-Driver-Performance/Operational" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="fve:ReadRequest" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:WriteRequest" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:ReadSubRequest" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:WriteSubRequest" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:VolumeStackCreate" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:VolumeStackDelete" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:VolumeDiscovery" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:MetadataWrite" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:FveIoctl" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:FveAction" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:Conversion" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:ConversionStep" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:SliderMove" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:IoEncryptRequest" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:IoDecryptRequest" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:BCryptEncryptRequest" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="fve:BCryptDecryptRequest" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="fve:Performance" mask="20" message="">
+    </keyword>
+    <keyword name="fve:CryptoPerformance" mask="40" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="5" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="13" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="14" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="15" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="16" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="17" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="18" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="19" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="20" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="21" version="0" opcode="1" channel="16" level="4" task="11" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="22" version="0" opcode="2" channel="16" level="4" task="11" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="23" version="0" opcode="1" channel="16" level="4" task="12" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="24" version="0" opcode="2" channel="16" level="4" task="12" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="25" version="0" opcode="1" channel="16" level="4" task="13" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="26" version="0" opcode="2" channel="16" level="4" task="13" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="27" version="0" opcode="1" channel="16" level="4" task="15" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="28" version="0" opcode="2" channel="16" level="4" task="15" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="29" version="0" opcode="1" channel="16" level="4" task="14" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="30" version="0" opcode="2" channel="16" level="4" task="14" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="31" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="32" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="33" version="0" opcode="1" channel="16" level="4" task="17" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="34" version="0" opcode="2" channel="16" level="4" task="17" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="35" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="36" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="37" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="38" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="39" version="0" opcode="1" channel="16" level="4" task="17" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="40" version="0" opcode="2" channel="16" level="4" task="17" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="41" version="0" opcode="1" channel="16" level="4" task="17" keywords="0x8000000000000040" message="">
+    </event>
+    <event value="42" version="0" opcode="2" channel="16" level="4" task="17" keywords="0x8000000000000040" message="">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SUA-Psxss" guid="10ab3154-c36a-4f24-9d91-efb5bcd331ef" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%20Windows%20Subsystem%20for%20UNIX-based%20Applications&amp;ProdVer=6.1.7600.16385&amp;FileName=psxss.exe&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\psxss.exe" messageFileName="C:\Windows\system32\psxss.exe" message="Microsoft-Windows-Subsystem for Unix based Applications-Psxss" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Subsystem for UNIX-based Applications started.">
+    </event>
+    <event value="3221226474" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Subsystem for UNIX-based Applications status: %1">
+    </event>
+    <event value="3221226475" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Unusable PsxOffset %1 from domain SID %2 with domain name %3. See Knowledge Base article Q306552 for more information.">
+    </event>
+    <event value="3221226476" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="PSXSS has encountered a user or group ID with a value that requires careful POSIX offset management.  See Knowledge Base article Q306552 for more information. The internal UID is 0x%1%2.">
+    </event>
+    <event value="3221226477" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="PSXSS has encountered a user or group ID with a value too large to convert to a uid_t, and converted it to a reserved UID value. See Knowledge Base article Q306552 for more information. The internal UID is 0x%1%2.">
+    </event>
+    <event value="1073742830" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Domain Cache sweep interval set to %1">
+    </event>
+    <event value="1073742832" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The domain cache is full; recycling older entry. If this event occurs frequently, contact your system administrator; however, occasional occurrences are normal.">
+    </event>
+    <event value="1073742833" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Synthesized POSIX offset for SID %1, computer %2. For more information about the compatibility of this operation with your configuration, see Knowledge Base article Q306552.">
+    </event>
+    <event value="3221226482" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="There are too many internal POSIX offset values. See Knowledge Base article Q306552 for more information.">
+    </event>
+    <event value="3221226483" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The status value %1 was converted to EACCES.  While this is an informational message only, your system administrator should be informed that this event occurred.">
+    </event>
+    <event value="1073742836" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Connected to Mapping Server at host %1 (%2)">
+    </event>
+    <event value="3221226485" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Could not connect to Mapping Server at host %1:while connecting %2">
+    </event>
+    <event value="3221226486" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Could not open registry key %1: NtStatus %2">
+    </event>
+    <event value="3221226487" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Internal Error: TLS Client not as expected at %1 line %2">
+    </event>
+    <event value="3221226488" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Unexpected Exception pid=%1 cid=%2.%3 code=%4 fc=%5">
+    </event>
+    <event value="3221226489" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The POSIX offset for domain %1 is %2, which is invalid.  The domain will be ignored and inaccessible. See Knowledge Base article Q306552 for more information.">
+    </event>
+    <event value="3221226490" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Subsystem for UNIX-based Applications is unable to load a DLL, pid=%1 cid=%2.%3 code=%4 fc=%5">
+    </event>
+    <event value="3221226491" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Subsystem for UNIX-based Applications detected a hard error. The exception vector contains: %1">
+    </event>
+    <event value="1073742844" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Subsystem for UNIX-based Applications has detected that the network or server is operating incorrectly.  Certain functions might not operate correctly until this is corrected.  (This problem might be self-correcting over time.)">
+    </event>
+    <event value="3221226493" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Connection to port %1 failed; Subsystem for UNIX-based Applications terminated during startup.">
+    </event>
+    <event value="3221226494" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An internal error in the Subsystem for UNIX-based Applications tape drive driver has occurred; you might need to reboot to continue using the tape drive.  Inform your computing support representatives.">
+    </event>
+    <event value="3221226495" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Could not connect to Mapping Server at host  %1:while connecting: Hostname Resolution failed.">
+    </event>
+    <event value="3221226496" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A fatal condition has occurred during subsystem startup. The condition is %1 and the status code is %2">
+    </event>
+    <event value="3221226497" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The security file was damaged, and has been recreated. This will cause existing device special files to be rejected; these files must be recreated. See the makedev -f command to restore default special files.">
+    </event>
+    <event value="3221226498" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Subsystem for UNIX-based Applications was started in Safe Mode. This functionality in not available in Safe Mode.">
+    </event>
+    <event value="3221226499" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Subsystem for UNIX-based Applications is not available in this edition of Windows..">
+    </event>
+  </events>
+</provider>

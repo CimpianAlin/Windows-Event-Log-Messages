@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-All-User-Install-Agent" guid="d2e990da-8504-4702-a5e5-367fc2f823bf" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=RDSAppXHelper.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\RDSAppXHelper.dll" messageFileName="C:\Windows\system32\RDSAppXHelper.dll" message="Microsoft-Windows-All-User-Install-Agent" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-All-User-Install-Agent/Admin" id="16" flags="0" message="Admin">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1287" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A profile deletion triggered the Windows All-User Install Agent to uninstall all packages for the user profile %1.">
+    </event>
+    <event value="1288" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows All-User Install Agent could not remove %1 packages during the profile deletion of the user profile %2. The error code is %3.">
+    </event>
+    <event value="1300" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows All-User Install Agent could not delete the registered packages after the profile was deleted for user SID %1. Error code: %2.  Additional information: %3.">
+    </event>
+    <event value="1301" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows All-User Install Agent detected an attempt to delete a temporary or mandatory profile for user SID %1. Package information for the user will be reset.">
+    </event>
+    <event value="1302" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows All-User Install Agent will delete %1 packages for user SID %2 because the profile was deleted.">
+    </event>
+    <event value="1303" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Windows All-User Install Agent could not retrieve a list of packages for user SID %1. The error code is %2.">
+    </event>
+    <event value="1304" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Windows All-User Install Agent will delete package %1 for user SID %2 because the profile was deleted.">
+    </event>
+    <event value="1305" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="GetApplicability API failed to determine status of package %1. The error code is %2.">
+    </event>
+    <event value="1306" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GetApplicability API has determined that package %1 is either NotInstallable or RequiresReinstall. The detail code is %2.">
+    </event>
+    <event value="1307" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Dependent Package %1 is already installed, registration will be skipped.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Diagnosis-WDI" guid="e01b1a7c-c5c9-4e67-99a9-5e85acfb2e10" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=dps.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\dps.dll" messageFileName="C:\Windows\system32\dps.dll" message="Microsoft-Windows-Diagnosis-WDI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Diagnosis-WDI/Debug" id="16" flags="0" message="Microsoft-Windows-Diagnosis-WDI/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="WDI_LIBRARY_OPCODE_DEBUG" value="655360" message="Debug event">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WDI_LIBRARY_TASK_DEBUG" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Debug task">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="memory" mask="200" message="Memory tracing events">
+    </keyword>
+    <keyword name="debug" mask="400000000" message="Debug events">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="140" version="0" opcode="10" channel="16" level="2" task="2" keywords="0x8000000400000000" message="The Diagnostic Policy Service encountered an error in file %1, function %2, line %3: %4.">
+    </event>
+    <event value="5016" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x200" message="The Diagnostic Infrastructure just made a heap allocation">
+    </event>
+    <event value="5017" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x200" message="The Diagnostic Infrastructure just freed a previously made heap allocation">
+    </event>
+  </events>
+</provider>

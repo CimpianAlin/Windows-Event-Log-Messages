@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="WINSATAPI_ETW_PROVIDER" guid="617853d6-728b-4b59-8a78-c3a9a5eade92" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=WinSATAPI.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\WinSATAPI.dll" messageFileName="C:\Windows\system32\WinSATAPI.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:LogAlways" value="0" message="Log Always">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Application" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x0" message="%1 %2 %3 %4">
+    </event>
+    <event value="1" version="0" opcode="1" channel="0" level="0" task="1" keywords="0x0" message="WinSAT Application Start: %1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="0" task="1" keywords="0x0" message="WinSAT Application Command Line %2">
+    </event>
+    <event value="3" version="0" opcode="2" channel="0" level="0" task="1" keywords="0x0" message="WinSAT Application Stop: %1">
+    </event>
+    <event value="4" version="0" opcode="0" channel="0" level="0" task="1" keywords="0x0" message="ERROR: %3">
+    </event>
+    <event value="5" version="0" opcode="0" channel="0" level="0" task="1" keywords="0x0" message="COM ERROR: %4 %6">
+    </event>
+    <event value="6" version="0" opcode="0" channel="0" level="0" task="1" keywords="0x0" message="ERROR: %2">
+    </event>
+    <event value="7" version="0" opcode="0" channel="0" level="0" task="1" keywords="0x0" message="ERROR: %1 %3">
+    </event>
+    <event value="8" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x0" message="%2">
+    </event>
+    <event value="9" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x0" message="%1:%3">
+    </event>
+    <event value="10" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x0" message="%1">
+    </event>
+  </events>
+</provider>

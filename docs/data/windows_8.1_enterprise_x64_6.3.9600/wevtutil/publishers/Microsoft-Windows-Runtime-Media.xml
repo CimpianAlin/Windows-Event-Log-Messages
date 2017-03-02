@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Runtime-Media" guid="8f0db3a8-299b-4d64-a4ed-907b409d4584" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=Windows.Media.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\Windows.Media.dll" messageFileName="C:\Windows\system32\Windows.Media.dll" message="Microsoft Windows Runtime Media ETW Provider" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Runtime-Windows-Media/WinRTMediaStreamSource" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WinRTCaptureEngine-Task" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Capture Engine ETW event">
+    </task>
+    <task name="WinRTCaptureEngine-Initialization-Task" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Capture Engine Initialization Task">
+    </task>
+    <task name="WinRTCaptureEngine-TakePhoto-Task" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Capture Engine TakePhoto Task">
+    </task>
+    <task name="WinRTCaptureEngine-StartPreview-Task" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Capture Engine Start Preview Task">
+    </task>
+    <task name="WinRTCaptureEngine-StartRecord-Task" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Capture Engine Start Record Task">
+    </task>
+    <task name="WinRTTranscode-Task" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Transcode Task">
+    </task>
+    <task name="WinRTCaptureEngine-PreviewSourceDispatchSample-Task" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Preview Source Dispatch Sample">
+    </task>
+    <task name="WinRTCaptureEngine-StopPreview-Task" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Capture Engine Stop Preview Task">
+    </task>
+    <task name="WinRTCaptureEngine-StopRecord-Task" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Capture Engine Stop Record Task">
+    </task>
+    <task name="WinRTTranscode-Stage1-Task" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Transcode Stage1 Task">
+    </task>
+    <task name="WinRTTranscode-Stage2-Task" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Transcode Stage2 Task">
+    </task>
+    <task name="WinRTTranscode-Stage3-Task" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Transcode Stage3 Task">
+    </task>
+    <task name="WinRTTranscode-PrepareTranscode-Task" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="Microsoft Windows Runtime Transcode PrepareTranscode Task">
+    </task>
+    <task name="WinRTCaptureEngine-SetStreamMediaTypeAsync-Task" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="WinRTCaptureEngine SetStreamMediaTypeAsync Task">
+    </task>
+    <task name="WinRTCaptureEngine-PhotoSequence-Prepare-Task" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture PhotoSequence Prepare operation">
+    </task>
+    <task name="WinRTCaptureEngine-PhotoSequence-Start-Task" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture PhotoSequence Start operation">
+    </task>
+    <task name="WinRTCaptureEngine-PhotoSequence-Stop-Task" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture PhotoSequence Stop operation">
+    </task>
+    <task name="WinRTCaptureEngine-PhotoSequence-Finish-Task" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture PhotoSequence Finish operation">
+    </task>
+    <task name="WinRTCaptureEngine-PhotoSequence-Photo-Available-Task" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture PhotoSequence photo available">
+    </task>
+    <task name="WinRTCaptureEngine-TrySetEncodingProperties-Task" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture TrySetEncodingProperties operation">
+    </task>
+    <task name="WinRTCaptureEngine-LowLagPhoto-Prepare-Task" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture LowLagPhoto Prepare operation">
+    </task>
+    <task name="WinRTCaptureEngine-LowLagPhoto-Capture-Task" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture LowLagPhoto Capture operation">
+    </task>
+    <task name="WinRTCaptureEngine-LowLagPhoto-Finish-Task" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture LowLagPhoto Finish operation">
+    </task>
+    <task name="WinRTCaptureEngine-SetRegionsAsync-Task" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture SetRegionsAsync operation">
+    </task>
+    <task name="WinRTCaptureEngine-ClearRegionsAsync-Task" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture ClearRegionsAsync operation">
+    </task>
+    <task name="WinRTCaptureEngine-LowLagRecord-Prepare-Task" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture LowLagRecord Prepare operation">
+    </task>
+    <task name="WinRTCaptureEngine-LowLagRecord-Start-Task" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture LowLagRecord Start operation">
+    </task>
+    <task name="WinRTCaptureEngine-LowLagRecord-Stop-Task" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture LowLagRecord Stop operation">
+    </task>
+    <task name="WinRTCaptureEngine-LowLagRecord-Finish-Task" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture LowLagRecord Finish operation">
+    </task>
+    <task name="WinRTCaptureEngine-Lifetime-Task" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="MediaCapture Lifetime">
+    </task>
+    <task name="WinRTMediaStreamSource-Event-Task" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="WinRTMediaStreamSource Event Task">
+    </task>
+    <task name="WinRTMediaStreamSource-SampleRequest-Task" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="WinRTMediaStreamSource SampleRequest Task">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="200" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine Begin Initialization">
+    </event>
+    <event value="201" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine End Initialization">
+    </event>
+    <event value="202" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine Begin Take Photo">
+    </event>
+    <event value="203" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine End Take Photo">
+    </event>
+    <event value="204" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine Begin StartRecord">
+    </event>
+    <event value="205" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine End StartRecord">
+    </event>
+    <event value="206" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine Begin StopRecord">
+    </event>
+    <event value="207" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine End StopRecord">
+    </event>
+    <event value="208" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine Begin StartPreview">
+    </event>
+    <event value="209" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine End StartPreview">
+    </event>
+    <event value="210" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine Begin StopPreview">
+    </event>
+    <event value="211" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine End StopPreview">
+    </event>
+    <event value="212" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Microsoft Windows Runtime Capture Engine Error Received">
+    </event>
+    <event value="213" version="0" opcode="0" channel="16" level="4" task="7" keywords="0x8000000000000000" message="Microsoft Windows Runtime Preview Source Dispatch Sample">
+    </event>
+    <event value="214" version="0" opcode="1" channel="16" level="4" task="15" keywords="0x8000000000000000" message="MediaCapture %1 PhotoSequence Prepare operation %2 started">
+    </event>
+    <event value="215" version="0" opcode="2" channel="16" level="4" task="15" keywords="0x8000000000000000" message="MediaCapture %1 PhotoSequence Prepare operation %2 ended with status %3">
+    </event>
+    <event value="216" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x8000000000000000" message="MediaCapture %1 PhotoSequence Start operation %2 started">
+    </event>
+    <event value="217" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x8000000000000000" message="MediaCapture %1 PhotoSequence Start operation %2 ended with status %3">
+    </event>
+    <event value="218" version="0" opcode="1" channel="16" level="4" task="17" keywords="0x8000000000000000" message="MediaCapture %1 PhotoSequence Stop operation %2 started">
+    </event>
+    <event value="219" version="0" opcode="2" channel="16" level="4" task="17" keywords="0x8000000000000000" message="MediaCapture %1 PhotoSequence Stop operation %2 ended with status %3">
+    </event>
+    <event value="220" version="0" opcode="1" channel="16" level="4" task="18" keywords="0x8000000000000000" message="MediaCapture %1 PhotoSequence Finish operation %2 started">
+    </event>
+    <event value="221" version="0" opcode="2" channel="16" level="4" task="18" keywords="0x8000000000000000" message="MediaCapture %1 PhotoSequence Finish operation %2 ended with status %3">
+    </event>
+    <event value="222" version="0" opcode="0" channel="16" level="4" task="19" keywords="0x8000000000000000" message="MediaCapture %1 PhotoSequence photo available (start time: %2, capture time: %3)">
+    </event>
+    <event value="223" version="0" opcode="1" channel="16" level="4" task="20" keywords="0x8000000000000000" message="MediaCapture %1 TrySetEncodingProperties operation %2 started">
+    </event>
+    <event value="224" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000000" message="MediaCapture %1 TrySetEncodingProperties operation %2 ended with status %3">
+    </event>
+    <event value="225" version="0" opcode="1" channel="16" level="4" task="21" keywords="0x8000000000000000" message="MediaCapture %1 LowLagPhoto Prepare operation %2 started">
+    </event>
+    <event value="226" version="0" opcode="2" channel="16" level="4" task="21" keywords="0x8000000000000000" message="MediaCapture %1 LowLagPhoto Prepare operation %2 ended with status %3">
+    </event>
+    <event value="227" version="0" opcode="1" channel="16" level="4" task="22" keywords="0x8000000000000000" message="MediaCapture %1 LowLagPhoto Capture operation %2 started">
+    </event>
+    <event value="228" version="0" opcode="2" channel="16" level="4" task="22" keywords="0x8000000000000000" message="MediaCapture %1 LowLagPhoto Capture operation %2 ended with status %3">
+    </event>
+    <event value="229" version="0" opcode="1" channel="16" level="4" task="23" keywords="0x8000000000000000" message="MediaCapture %1 LowLagPhoto Finish operation %2 started">
+    </event>
+    <event value="230" version="0" opcode="2" channel="16" level="4" task="23" keywords="0x8000000000000000" message="MediaCapture %1 LowLagPhoto Finish operation %2 ended with status %3">
+    </event>
+    <event value="231" version="0" opcode="1" channel="16" level="4" task="24" keywords="0x8000000000000000" message="MediaCapture %1 SetRegionsAsync operation %2 started">
+    </event>
+    <event value="232" version="0" opcode="2" channel="16" level="4" task="24" keywords="0x8000000000000000" message="MediaCapture %1 SetRegionsAsync operation %2 ended with status %3">
+    </event>
+    <event value="233" version="0" opcode="1" channel="16" level="4" task="25" keywords="0x8000000000000000" message="MediaCapture %1 ClearRegionsAsync operation %2 started">
+    </event>
+    <event value="234" version="0" opcode="2" channel="16" level="4" task="25" keywords="0x8000000000000000" message="MediaCapture %1 ClearRegionsAsync operation %2 ended with status %3">
+    </event>
+    <event value="235" version="0" opcode="1" channel="16" level="4" task="26" keywords="0x8000000000000000" message="MediaCapture %1 LowLagRecord Prepare operation %2 started">
+    </event>
+    <event value="236" version="0" opcode="2" channel="16" level="4" task="26" keywords="0x8000000000000000" message="MediaCapture %1 LowLagRecord Prepare operation %2 ended with status %3">
+    </event>
+    <event value="237" version="0" opcode="1" channel="16" level="4" task="27" keywords="0x8000000000000000" message="MediaCapture %1 LowLagRecord Start operation %2 started">
+    </event>
+    <event value="238" version="0" opcode="2" channel="16" level="4" task="27" keywords="0x8000000000000000" message="MediaCapture %1 LowLagRecord Start operation %2 ended with status %3">
+    </event>
+    <event value="239" version="0" opcode="1" channel="16" level="4" task="28" keywords="0x8000000000000000" message="MediaCapture %1 LowLagRecord Stop operation %2 started">
+    </event>
+    <event value="240" version="0" opcode="2" channel="16" level="4" task="28" keywords="0x8000000000000000" message="MediaCapture %1 LowLagRecord Stop operation %2 ended with status %3">
+    </event>
+    <event value="241" version="0" opcode="1" channel="16" level="4" task="29" keywords="0x8000000000000000" message="MediaCapture %1 LowLagRecord Finish operation %2 started">
+    </event>
+    <event value="242" version="0" opcode="2" channel="16" level="4" task="29" keywords="0x8000000000000000" message="MediaCapture %1 LowLagRecord Finish operation %2 ended with status %3">
+    </event>
+    <event value="243" version="0" opcode="1" channel="16" level="4" task="30" keywords="0x8000000000000000" message="MediaCapture %1 Lifetime started (Executable path: %2)">
+    </event>
+    <event value="244" version="0" opcode="2" channel="16" level="4" task="30" keywords="0x8000000000000000" message="MediaCapture %1 Lifetime ended">
+    </event>
+    <event value="300" version="0" opcode="0" channel="17" level="4" task="6" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode Engine Used">
+    </event>
+    <event value="301" version="0" opcode="1" channel="17" level="4" task="10" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode Smart Remux Begin Stage 1">
+    </event>
+    <event value="302" version="0" opcode="2" channel="17" level="4" task="10" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode Smart Remux End Stage 1">
+    </event>
+    <event value="303" version="0" opcode="1" channel="17" level="4" task="11" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode Smart Remux Begin Stage 2">
+    </event>
+    <event value="304" version="0" opcode="2" channel="17" level="4" task="11" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode Smart Remux End Stage 2">
+    </event>
+    <event value="305" version="0" opcode="1" channel="17" level="4" task="12" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode Smart Remux Begin Stage 3">
+    </event>
+    <event value="306" version="0" opcode="2" channel="17" level="4" task="12" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode Smart Remux End Stage 3">
+    </event>
+    <event value="307" version="0" opcode="1" channel="17" level="4" task="6" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode Begin Transcode">
+    </event>
+    <event value="308" version="0" opcode="2" channel="17" level="4" task="6" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode End Transcode">
+    </event>
+    <event value="309" version="0" opcode="1" channel="17" level="4" task="13" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode Begin Prepare Transcode">
+    </event>
+    <event value="310" version="0" opcode="2" channel="17" level="4" task="13" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode End Prepare Transcode">
+    </event>
+    <event value="311" version="0" opcode="0" channel="17" level="4" task="6" keywords="0x4000000000000000" message="Microsoft Windows Runtime Transcode Remuxing">
+    </event>
+    <event value="312" version="0" opcode="1" channel="16" level="4" task="14" keywords="0x8000000000000000" message="WinRTCaptureEngine Begin SetStreamMediaTypeAsync">
+    </event>
+    <event value="313" version="0" opcode="2" channel="16" level="4" task="14" keywords="0x8000000000000000" message="WinRTCaptureEngine End SetStreamMediaTypeAsync">
+    </event>
+    <event value="500" version="0" opcode="1" channel="18" level="4" task="31" keywords="0x2000000000000000" message="WinRTMediaStreamSource Event Fired">
+    </event>
+    <event value="501" version="0" opcode="0" channel="18" level="4" task="31" keywords="0x2000000000000000" message="WinRTMediaStreamSource Event Deferred">
+    </event>
+    <event value="502" version="0" opcode="2" channel="18" level="4" task="31" keywords="0x2000000000000000" message="WinRTMediaStreamSource Event Completed">
+    </event>
+    <event value="503" version="0" opcode="1" channel="18" level="4" task="32" keywords="0x2000000000000000" message="WinRTMediaStreamSource SampleRequest Fired">
+    </event>
+    <event value="504" version="0" opcode="0" channel="18" level="4" task="32" keywords="0x2000000000000000" message="WinRTMediaStreamSource SampleRequest Deferred">
+    </event>
+    <event value="505" version="0" opcode="2" channel="18" level="4" task="32" keywords="0x2000000000000000" message="WinRTMediaStreamSource SampleRequest Completed">
+    </event>
+  </events>
+</provider>

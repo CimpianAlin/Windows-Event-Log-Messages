@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Spooler-LPRMON" guid="dc82da8e-2290-449d-9062-21ef70d36e22" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=lprmon.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\lprmon.dll" messageFileName="C:\Windows\system32\lprmon.dll" message="Microsoft-Windows-Spooler-LPRMON" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1073743824" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="LPR Print Monitor started successfully.">
+    </event>
+    <event value="2147485649" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Printer %1 on host %2 is unreachable.  The print job has been cancelled.">
+    </event>
+    <event value="3221227474" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error was reported while attempting to initialize the printer port monitor with the list of port information from the following registry key: SYSTEM\CurrentControlSet\Control\Print\Monitors\LPR Print Monitor. The Line Printer Remote (LPR) service could not read or write registry settings. This is usually a result of a more significant system problem such as running out of memory or not having the appropriate registry permissions. The LPR printer port monitor may not be correctly configured until the problem is resolved.">
+    </event>
+    <event value="2147485651" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while de-spooling the file %1.  The print job has been cancelled.">
+    </event>
+    <event value="2147485652" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Remote (LPR) service could not submit the print job to the Line Printer Daemon (LPD) printer %1 on host %2 because the LPD service on the remote host or printer is rejecting the print job. This can occur if the LPD service is processing other print jobs. The LPR service will retry printing until the job prints successfully or the user cancels the print job.">
+    </event>
+    <event value="3221227477" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Remote (LPR) print monitor failed to open a temporary file while spooling output for port %1. This can occur if the system is low on disk space, if the spool folder is write-protected, or if the LPR service does not have write permissions to the spool folder.">
+    </event>
+    <event value="3221227478" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Remote (LPR) service could not delete the LPR port information stored in registry key %1. This is usually the result of a more significant system problem. LPR may not be correctly configured until the problem is resolved.">
+    </event>
+    <event value="3221227479" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Remote (LPR) print monitor failed to open the port named %1.  This can occur if the server name for this port is incorrect. Printing to this port will fail until the problem is resolved.">
+    </event>
+    <event value="3221227480" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Line Printer Remote (LPR) print monitor failed to start because it reported an error while attempting to initialize the LPR Helper DLL.">
+    </event>
+  </events>
+</provider>

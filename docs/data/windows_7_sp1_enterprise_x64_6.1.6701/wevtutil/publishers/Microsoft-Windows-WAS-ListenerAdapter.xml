@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WAS-ListenerAdapter" guid="d60acc81-2608-4617-bfb7-2452bf002430" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Information%20Services&amp;ProdVer=7.5.7600.16385&amp;FileName=iisres.dll&amp;FileVer=7.5.7600.16385" resourceFileName="C:\Windows\system32\inetsrv\iisres.dll" messageFileName="C:\Windows\system32\inetsrv\iisres.dll" message="Microsoft-Windows-WAS-ListenerAdapter" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2147490649" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Listener Adapter protocol &apos;%1&apos; failed to connect to Windows Process Activation Service due to identity permissions mismatch.  Cause: Configured Identity for protocol &apos;%1&apos; in applicationHost.config does not match identity of process &apos;%2&apos; hosting Listener Adapter.  Fix: Ensure that the identity for protocol &apos;%1&apos; is configured correctly in applicationHost.config.">
+    </event>
+    <event value="1073748826" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Listener Adapter protocol &apos;%1&apos; is waiting to connect to Windows Process Activation Service.  This event will only be logged once.  Cause: This could be caused by either Windows Process Activation Service not being started, the protocol not being configured in &lt;listenerAdapters&gt; section, or another process already connected as Listener Adapter for that protocol.  Fix: Ensure that Windows Process Activation Service is running, the protocol is configured in the &lt;listenerAdapters&gt; section, and that another process has not already connected as the Listener Adapter for that protocol.">
+    </event>
+    <event value="1073748827" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Listener Adapter protocol &apos;%1&apos; successfully connected to Windows Process Activation Service.">
+    </event>
+    <event value="3221232476" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Listener Adapter protocol &apos;%1&apos; is unable to connect to Windows Process Activation Service because it has been disabled.  Cause: Listener Adapter protocol &apos;%1&apos; has been marked as disabled by Windows Process Activation Service due catastrophic failure.  Fix: To fix this condition, stop Listener Adapter then Windows Process Activation Service, restart Windows Process Activation Service, and finally restart Listener Adapter.">
+    </event>
+    <event value="3221232477" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Listener Adapter protocol &apos;%1&apos; attempted to communicate to Windows Process Activation Service and failed. The Listener Adapter is now in a bad state.  Cause: This is caused by Out of Memory issues or failures between Windows Process Activation Service and Listener Adapter.  Fix: To fix this condition, stop Listener Adapter then Windows Process Activation Service, restart Windows Process Activation Service, and finally restart Listener Adapter.">
+    </event>
+    <event value="3221232478" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Listener Adapter protocol &apos;%1&apos; received bad data from Windows Process Activation Service and is shutting itself down.  Cause: Listener Adapter received bad data from Windows Process Activation Service. Fix: To fix this condition, stop Listener Adapter then Windows Process Activation Service, restart Windows Process Activation Service, and finally restart Listener Adapter.">
+    </event>
+  </events>
+</provider>

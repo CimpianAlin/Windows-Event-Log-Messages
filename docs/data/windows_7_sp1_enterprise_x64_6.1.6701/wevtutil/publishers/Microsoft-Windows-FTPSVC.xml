@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-FTPSVC" guid="de0d3420-9914-43db-8917-7e0c98465891" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=FTP%20Service%207.5%20for%20IIS%207.0&amp;ProdVer=7.5.7600.14294&amp;FileName=ftpres.dll&amp;FileVer=7.5.7600.14294" resourceFileName="C:\Windows\system32\inetsrv\ftpres.dll" messageFileName="C:\Windows\system32\inetsrv\ftpres.dll" message="Microsoft-Windows-FTPSVC" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2147483649" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The server did not create a data channel connection to a client on local interface: %1. The FTP data port %2 may be in use by another service or application.">
+    </event>
+    <event value="3221225474" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service configuration for the passive port range is invalid. The range is set to: %1-%2. A subset of 1025-65535 range or 0-0 is expected. Check the &apos;lowDataChannelPort&apos; and &apos;highDataChannelPort&apos; attributes under the &apos;system.ftpServer\firewallSupport&apos; section in configuration file &apos;%3&apos; around line &apos;%4&apos;.">
+    </event>
+    <event value="2147483651" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The server certificate for instance &apos;%1&apos; has expired or is not yet valid.">
+    </event>
+    <event value="2147483652" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The server certificate for instance &apos;%1&apos; has been revoked.">
+    </event>
+    <event value="2147483653" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The server certificate chain does not include a trusted root certificate.">
+    </event>
+    <event value="2147483654" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A certificate in the server certificate chain has an invalid signature.">
+    </event>
+    <event value="2147483655" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service did not retrieve the server certificate for instance &apos;%1&apos; because the certificate could not be found in a certificate store. The error is &apos;%2&apos;.">
+    </event>
+    <event value="2147483656" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service did not create logging directory &apos;%3&apos;. No logs will be generated until this condition is corrected. The problem occurred at least %1 times in the last %2 minutes. The data field contains the error number.">
+    </event>
+    <event value="2147483657" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Virtual site &apos;%1&apos; is configured to truncate its log every &apos;%2&apos; bytes. Since this value must be at least 1048576 bytes ( 1 megabyte ), 1048576 bytes will be used.">
+    </event>
+    <event value="2147483658" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The &apos;%1&apos; &apos;%2&apos; failed range validation for property &apos;%3&apos;.  The configured value &apos;%4&apos; is outside of the range &apos;%5&apos; to &apos;%6&apos;.  The value will default to &apos;%7&apos;.">
+    </event>
+    <event value="2147483659" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The virtual site &apos;%3&apos; is invalid because the site binding &apos;%4&apos; could not be configured. The problem occurred at least %1 times in the last %2 minutes. The data field contains the error number.">
+    </event>
+    <event value="2147483660" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service did not create or write to the log file &apos;%3&apos;. The problem occurred at least %1 times in the last %2 minutes. The data field contains the error number.">
+    </event>
+    <event value="2147483661" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The virtual site &apos;%3&apos; is invalid because the site binding &apos;%4&apos; is already being used by another virtual site. The problem occurred at least %1 times in the last %2 minutes. The data field contains the error number.">
+    </event>
+    <event value="3221225495" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service received a change notification, but was unable to process it correctly.  The data field contains the error number.">
+    </event>
+    <event value="2147483672" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Centralized logging is configured to truncate its log every &apos;%1&apos; bytes. Since this value must be at least 1048576 bytes ( 1 megabyte ), 1048576 bytes will be used.">
+    </event>
+    <event value="3221225497" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service encountered an error attempting to configure centralized logging. It is not configured as expected. The data field contains the error number.">
+    </event>
+    <event value="2147483674" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service property &apos;%1&apos; failed range validation. The configured value, &apos;%2&apos; is outside of the range &apos;%3&apos; to &apos;%4&apos;. The default value, &apos;%5&apos;, will be used.">
+    </event>
+    <event value="3221225499" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="FTP Service  did not create site %1. The data field contains the error number.">
+    </event>
+    <event value="3221225500" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Publishing Service did not delete site &apos;%1&apos;.  The data field contains the error number.">
+    </event>
+    <event value="3221225501" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service did not modify site &apos;%1&apos;.  The data field contains the error number.">
+    </event>
+    <event value="3221225502" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service encountered an error trying to read configuration data from file %3, line number %4. The error message is: %5. The problem occurred at least %1 times in the last %2 minutes. The data field contains the error number.">
+    </event>
+    <event value="3221225503" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service encountered an error trying to read configuration data for config section &apos;%1&apos; from file &apos;%2&apos;, line number &apos;%3&apos;.  The error message is: &apos;%4&apos;.  The data field contains the error number.">
+    </event>
+    <event value="3221225504" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The &apos;%1&apos; &apos;%2&apos; has an invalid value for property &apos;%3&apos;.  The configured value &apos;%4&apos; is invalid.  The value will default to &apos;%5&apos;.">
+    </event>
+    <event value="3221225505" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The config node &apos;%1&apos; has an invalid value for property &apos;%2&apos;.  The configured value &apos;%3&apos; is invalid.  The value will default to &apos;%4&apos;.">
+    </event>
+    <event value="3221225506" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The config node &apos;%1&apos; has an invalid value for property &apos;%2&apos;.  The configured value &apos;%3&apos; is invalid.  The value will default to &apos;%4&apos;.  Valid values are: &apos;%5&apos;.">
+    </event>
+    <event value="2147483683" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP Service did not configure logging for site %1. The data field contains the error number.">
+    </event>
+    <event value="3221225508" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The COM Application &apos;%1&apos; at &apos;%2&apos; did not activate out of process.">
+    </event>
+    <event value="2147483685" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="ETW Tracing support did not intialize. Execution of IIS will continue although ETW Tracing support (or parts of it) will not be available. The data field contains the error number.">
+    </event>
+    <event value="3221225510" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The FTP service requires that the Configuration APIs from the Windows Process Activation Service feature be installed on this server. Open Server Manager and install the Windows Process Activation Service feature.The data field contains the error number.">
+    </event>
+    <event value="3221225511" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Configuration APIs required by FTP Service did not intialize. The data field contains the error number.">
+    </event>
+  </events>
+</provider>

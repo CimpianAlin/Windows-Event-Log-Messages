@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-CertPolEng" guid="af9cc194-e9a8-42bd-b0d1-834e9cfab799" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=CertPolEng.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\System32\CertPolEng.dll" messageFileName="C:\Windows\System32\CertPolEng.dll" message="CertPolEng" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-CertPoleEng/Operational" id="16" flags="0" message="Operation log">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="GetTrustAnchors" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GetCertificates" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ValidateCertificate" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MapCertificate" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AcquirePrivateKey" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GetUserNameForCertificate" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Entering Function %1">
+    </event>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Exiting Function %1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="%1 failed with return code %2">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="%1 returned %2">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Not running inside LSA">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Running inside LSA">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Cert Store changes are detected">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="No online providers are installed">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="There are no trust anchors for the providers">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Total number of TrustRoot Found %1">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Target name is %1, HostName is %2">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="PSTGetCertificate called, number of select criteria are %1, bIsClient parameter is %2">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Opening Machine Store? Value: %1">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Expired cert found">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Unable to find Provider From Certificate: Error %1">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Calling LRPC cert renewal Interface %1">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Expired Certificate were found, will call CertSelectCertificateChains again">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="No matching Certificate were found">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Will Special case for Homegroup self sign certificates">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="GetCertificates returning %1 certificates">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="RequestIssuancePolicy Is Specified">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Certificate is Self Signed">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Certificate found in HomeGroup Container">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Checking if the Certificate is from one of the Providers">
+    </event>
+    <event value="24" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Cert Subject name is %1">
+    </event>
+    <event value="25" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="UserName is %1">
+    </event>
+    <event value="26" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to Connect to %1 ">
+    </event>
+    <event value="27" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="CProviderEntry::ReadInfoFromRegistry LRPC Entrypoint is missing for provider %1. Error code %2">
+    </event>
+    <event value="28" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to Open Provider Root Key %1">
+    </event>
+    <event value="29" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to Query Provider Root Key %1">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Failed to Query SubKey %1, Error %2">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Invalid Provider GUID %1. %2">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="CertVerifyCertificateChainPolicy Failed Status is %1, ChainIndex %2, lElementIndex %3">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to open LSA Registry Root Key %1">
+    </event>
+    <event value="34" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Pku2u is disabled by policy">
+    </event>
+    <event value="35" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to open %1 certificate store. Error %2">
+    </event>
+    <event value="36" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to validate certificate. Hash length doesn&apos;t match. Source hash Length %1, calculated hash length %2">
+    </event>
+    <event value="37" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to validate certificate. The hash comparison failed">
+    </event>
+    <event value="38" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="UPN and client RDN are missing">
+    </event>
+    <event value="39" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The client name doesn&apos;t match the UPN. UPN is %1, client name is %2">
+    </event>
+    <event value="40" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The client name is %1">
+    </event>
+    <event value="41" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The client name matched the UPN. UPN is %1, client name is %2">
+    </event>
+    <event value="42" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Certificate validation succeeded as the hash comparison succeeded">
+    </event>
+    <event value="43" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to find the certificate in the HomeGroup Container">
+    </event>
+  </events>
+</provider>

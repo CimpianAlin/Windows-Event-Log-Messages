@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MSDTC Client 2" guid="155cb334-3d7f-4ff1-b107-df8afc3c0363" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=msdtcVSp1res.dll&amp;FileVer=2001.12.10530.16384" resourceFileName="C:\Windows\system32\msdtcVSp1res.dll" messageFileName="C:\Windows\system32\msdtcVSp1res.dll" message="Microsoft-Windows-MSDTC Client 2" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="ID_CAT_DTC_UTIL_CLIENT" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="DTC Shared Utility">
+    </task>
+    <task name="ID_CAT_TM_CLIENT" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="TM">
+    </task>
+    <task name="ID_CAT_CM_CLIENT" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="CM">
+    </task>
+    <task name="ID_CAT_XATM_CLIENT" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="XATM">
+    </task>
+    <task name="ID_CAT_MSDTCPRX_CLIENT2" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="MSDTC Proxy">
+    </task>
+    <task name="ID_CAT_DTC_CLUSTER_CLIENT" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="Cluster">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1073745921" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed to clean up the default DTC cluster resource setting. The default DTC cluster resource setting might be invalid. The error code returned: %1">
+    </event>
+    <event value="1073745922" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Contact = %1 was deleted successfully. Attempt to copy the new contact = %2 over it failed. The DTC configuration may be corrupted. The operation that failed must be retried. The error code returned: %3">
+    </event>
+    <event value="1073745923" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed to create DTC cluster resource. DTC cluster resource GUID specified = %1. The error code returned: %2">
+    </event>
+    <event value="1073745924" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Attempt to find the drive letter or Volume Guid corresponding to the cluster DTC&apos;s dependent disk resource has failed. If the dependent disk resource does not support Volume Guid information, please configure at least one dependent disk partition with a drive letter. The error code returned: %1">
+    </event>
+    <event value="1073745925" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Attempting to change the DTC cluster resource&apos;s log file path to %1 has failed. Please verify if log path is configured to a valid dependent disk partition. The error code returned: %2">
+    </event>
+    <event value="1073745926" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Application specified a cluster resource ID: %1, but no DTC cluster resource could be returned. Instead, the local DTC instance was returned">
+    </event>
+    <event value="1073745927" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Service: %1 is still running. Attempt to cleanup the service has failed">
+    </event>
+    <event value="1073745928" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed trying to get the state of the cluster node: %1.The error code returned: %2">
+    </event>
+    <event value="2147488520" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A caller has attempted to register an XA resource while XA transactions are disabled. Please review the MSDTC configuration settings.">
+    </event>
+    <event value="2147488521" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An XA transaction manager has attempted to open the MSDTC XA resource while XA transactions are disabled. Please review the MSDTC configuration settings.">
+    </event>
+    <event value="2147488522" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A caller has attempted to propagate a transaction to a remote system, but MSDTC network DTC access is currently disabled on machine &apos;%1&apos;. Please review the MS DTC configuration settings.">
+    </event>
+    <event value="2147488523" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A caller has attempted to import a transaction from a remote system, but MSDTC is currently configured to disallow inbound transaction manager communication on machine &apos;%1&apos;. Please review the MS DTC configuration settings.">
+    </event>
+    <event value="2147488524" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A caller has attempted to export a transaction to a remote system, but MSDTC is currently configured to disallow outbound transaction manager communication on machine &apos;%1&apos;. Please review the MS DTC configuration settings.">
+    </event>
+    <event value="2147488526" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="MSDTC encountered an error (HR=0x%1) while attempting to authenticate an incoming connection from system &apos;%2&apos;. The principal name is %3.">
+    </event>
+    <event value="2147488527" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="MSDTC encountered an error (HR=0x%1) while attempting to establish a secure connection with system %2.">
+    </event>
+    <event value="2147488529" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A caller has attempted to connect to a remote MSDTC on machine &apos;%1&apos;.  The attempt failed because the remote machine is configured to disallow remote clients.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ComDlg32" guid="7f912b92-21ad-496e-b97a-88622a72bc42" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=comdlg32.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\ComDlg32.dll" messageFileName="C:\Windows\system32\comdlg32.dll" message="Microsoft-Windows-ComDlg32" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ComDlg32/Debug" id="16" flags="0" message="Debug">
+    </channel>
+    <channel name="Microsoft-Windows-ComDlg32/Analytic" id="17" flags="0" message="Analytical">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Operation" value="13107200" message="ComDlg32 Operation">
+    </opcode>
+    <opcode name="ChooseFontEnter" value="13172736" message="ChooseFont Entered">
+    </opcode>
+    <opcode name="ChooseFontExit" value="13303808" message="ChooseFont Exited">
+    </opcode>
+    <opcode name="ChooseFontInitEnumeratorStart" value="13369344" message="ChooseFont start building enumerator">
+    </opcode>
+    <opcode name="ChooseFontInitEnumeratorEnd" value="13434880" message="ChooseFont finished building enumerator">
+    </opcode>
+    <opcode name="ChooseFontCreateDialog" value="13500416" message="ChooseFont create dialog">
+    </opcode>
+    <opcode name="ChooseFontWmInitDialogStart" value="13565952" message="ChooseFont start WM_INITDIALOG">
+    </opcode>
+    <opcode name="ChooseFontWmInitDialogEnd" value="13631488" message="ChooseFont end WM_INITDIALOG">
+    </opcode>
+    <opcode name="ChooseFontGetFamilies1Start" value="13697024" message="ChooseFont get families 1 start">
+    </opcode>
+    <opcode name="ChooseFontGetFamilies1End" value="13762560" message="ChooseFont get families 1 end">
+    </opcode>
+    <opcode name="ChooseFontGetFamilies2Start" value="13828096" message="ChooseFont get families 2 start">
+    </opcode>
+    <opcode name="ChooseFontGetFamilies2End" value="13893632" message="ChooseFont get families 2 end">
+    </opcode>
+    <opcode name="ChooseFontInsertFamilyStart" value="13959168" message="ChooseFont insert family start">
+    </opcode>
+    <opcode name="ChooseFontInsertFamilyEnd" value="14024704" message="ChooseFont insert family end">
+    </opcode>
+    <opcode name="ChooseFontGetFontStylesAndSizesEnter" value="14090240" message="ChooseFont GetFontStylesAndSizes start">
+    </opcode>
+    <opcode name="ChooseFontGetFontStylesAndSizesExit" value="14155776" message="ChooseFont GetFontStylesAndSizes end">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PerfTrack_DisplayChooseFont" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChooseFont" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="Font Chooser Common Dialog">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="30000" version="0" opcode="1" channel="17" level="4" task="30" keywords="0x4001000000000000" message="">
+    </event>
+    <event value="30001" version="0" opcode="2" channel="17" level="4" task="30" keywords="0x4001000000000000" message="">
+    </event>
+    <event value="40000" version="0" opcode="201" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40010" version="0" opcode="203" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40020" version="0" opcode="204" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40030" version="0" opcode="205" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40040" version="0" opcode="206" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40050" version="0" opcode="207" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40060" version="0" opcode="208" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40070" version="0" opcode="209" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40080" version="0" opcode="210" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40090" version="0" opcode="211" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40100" version="0" opcode="212" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40110" version="0" opcode="213" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40120" version="0" opcode="214" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40130" version="0" opcode="215" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="40140" version="0" opcode="216" channel="16" level="4" task="31" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

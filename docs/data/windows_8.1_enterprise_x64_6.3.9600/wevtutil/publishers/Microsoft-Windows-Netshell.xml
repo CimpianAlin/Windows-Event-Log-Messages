@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Netshell" guid="af2e340c-0743-4f5a-b2d3-2f7225d215de" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=netshell.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\netshell.dll" messageFileName="C:\Windows\system32\netshell.dll" message="Microsoft-Windows-NetShell" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NetShell/Performance" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ShowNetShell" value="3001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="8001" version="0" opcode="2" channel="16" level="4" task="3001" keywords="0x8001000000000000" message="NetShell: folder displayed">
+    </event>
+  </events>
+</provider>

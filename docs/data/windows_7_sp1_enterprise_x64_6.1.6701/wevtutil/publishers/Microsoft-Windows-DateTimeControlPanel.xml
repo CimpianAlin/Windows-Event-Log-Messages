@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DateTimeControlPanel" guid="741fc222-44ed-4ba7-98e3-f405b2d2c4b4" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=timedate.cpl&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\timedate.cpl" messageFileName="C:\Windows\system32\timedate.cpl" message="Microsoft-Windows-DateTimeControlPanel" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DateTimeControlPanel/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-DateTimeControlPanel/Analytic" id="17" flags="0" message="Analytical">
+    </channel>
+    <channel name="Microsoft-Windows-DateTimeControlPanel/Debug" id="18" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="DataTable" value="1966080" message="Date/Time Control Panel Applet data table operations">
+    </opcode>
+    <opcode name="Initialize" value="2031616" message="Date/Time Control Panel Applet initialization">
+    </opcode>
+    <opcode name="ConfigurationChange" value="2097152" message="Date/Time Control Panel Applet configuration changes">
+    </opcode>
+    <opcode name="Operation" value="2162688" message="Date/Time Control Panel Applet operations">
+    </opcode>
+    <opcode name="Cleanup" value="2228224" message="Date/Time Control Panel Applet cleanup operations">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DateTime" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="Date/Time Control Panel Applet date/time functionality">
+    </task>
+    <task name="TimeZone" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="Date/Time Control Panel Applet time zone functionality">
+    </task>
+    <task name="AdditionalClocks" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="Date/Time Control Panel Applet extra clocks functionality">
+    </task>
+    <task name="PerfTrack_DisplayClockFlyout" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_DisplayClockTooltip" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="Time zone operation failed because the required time zone names are missing or corrupt. To correct this error, you will need to update the &quot;%1&quot; to have correct values in one of the following subkeys: &quot;%2&quot; or &quot;%3&quot;.">
+    </event>
+    <event value="1002" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="Time zone operation failed because the required time zone data is missing or corrupt. To correct this error, you will need to update the values of the &quot;%1&quot; to have a correct value in the &quot;%2&quot; subkey.">
+    </event>
+    <event value="1003" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="The attempt to set the system time failed with the following parameters: wYear: %1, wMonth: %2, wDayOfWeek: %3, wDay: %4, wHour: %5, wMinute: %6, wSecond: %7, wMilliseconds: %8. SetLocalTime () returned error. Error code is %9.  Error message is: &quot;%10&quot;.">
+    </event>
+    <event value="1004" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="The attempt to set the time zone with the following parameters failed. Bias: %1 minute(s), Standard name: &quot;%2&quot;, StandardDate.wYear: %3, StandardDate.wMonth: %4, StandardDate.wDayOfWeek: %5, StandardDate.wDay: %6, StandardDate.wHour: %7, StandardDate.wMinute: %8, StandardDate.wSecond: %9, StandardDate.wMilliseconds: %10, Standard bias: %11 minute(s), Daylight saving name: &quot;%12&quot;, DaylightDate.wYear: %13, DaylightDate.wMonth: %14, DaylightDate.wDayOfWeek: %15, DaylightDate.wDay: %16, DaylightDate.wHour: %17, DaylightDate.wMinute: %18, DaylightDate.wSecond: %19, DaylightDate.wMilliseconds: %20, Daylight saving bias: %21 minute(s). SetTimeZoneInformation() returned error.  Error code is %22. Error message is: &quot;%23&quot;.">
+    </event>
+    <event value="1004" version="1" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="The attempt to set the system time zone to &quot;%1&quot; returned error. Error code is %2. Error message is: &quot;%3&quot;.">
+    </event>
+    <event value="1005" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="The attempt to set the system time zone to &quot;%1&quot; returned error. Error code is %2. The time zone has been made obsolete.">
+    </event>
+    <event value="1006" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="The attempt to set the system time zone to &quot;%1&quot; returned error. Error code is %2. The time zone is unrecognized.">
+    </event>
+    <event value="1007" version="0" opcode="33" channel="16" level="2" task="31" keywords="0x8000000000000000" message="The attempt to set the system time zone to &quot;%1&quot; returned error. Error code is %2. The time zone data is unreadable.">
+    </event>
+    <event value="20000" version="0" opcode="33" channel="16" level="4" task="31" keywords="0x8000000000000000" message="The system time was set successfully with the following parameters: wYear: %1, wMonth: %2, wDayOfWeek: %3, wDay: %4, wHour: %5, wMinute: %6, wSecond: %7, wMilliseconds: %8.">
+    </event>
+    <event value="20001" version="0" opcode="33" channel="16" level="4" task="31" keywords="0x8000000000000000" message="The system time zone was set successfully to &quot;%1&quot;.">
+    </event>
+    <event value="30001" version="0" opcode="33" channel="17" level="4" task="31" keywords="0x4000000000000000" message="The system time was set successfully with the following parameters: wYear: %1, wMonth: %2, wDayOfWeek: %3, wDay: %4, wHour: %5, wMinute: %6, wSecond: %7, wMilliseconds: %8.">
+    </event>
+    <event value="30002" version="0" opcode="33" channel="17" level="4" task="31" keywords="0x4000000000000000" message="The time zone was set successfully with the following parameters. Bias: %1 minute(s), Standard name: &quot;%2&quot;, StandardDate.wYear: %3, StandardDate.wMonth: %4, StandardDate.wDayOfWeek: %5, StandardDate.wDay: %6, StandardDate.wHour: %7, StandardDate.wMinute: %8, StandardDate.wSecond: %9, StandardDate.wMilliseconds: %10, Standard bias: %11 minute(s), Daylight saving name: &quot;%12&quot;, DaylightDate.wYear: %13, DaylightDate.wMonth: %14, DaylightDate.wDayOfWeek: %15, DaylightDate.wDay: %16, DaylightDate.wHour: %17, DaylightDate.wMinute: %18, DaylightDate.wSecond: %19, DaylightDate.wMilliseconds: %20, Daylight saving bias: %21 minute(s).">
+    </event>
+    <event value="30010" version="0" opcode="1" channel="17" level="4" task="33" keywords="0x4001000000000000" message="">
+    </event>
+    <event value="30011" version="0" opcode="2" channel="17" level="4" task="33" keywords="0x4001000000000000" message="">
+    </event>
+    <event value="30012" version="0" opcode="1" channel="17" level="4" task="34" keywords="0x4001000000000000" message="">
+    </event>
+    <event value="30013" version="0" opcode="2" channel="17" level="4" task="34" keywords="0x4001000000000000" message="">
+    </event>
+  </events>
+</provider>

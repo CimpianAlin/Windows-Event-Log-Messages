@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WinHttp" guid="7d44233d-3055-4b9c-ba64-0d47ca40a232" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=winhttp.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\winhttp.dll" messageFileName="C:\Windows\system32\winhttp.dll" message="Microsoft-Windows-WinHttp" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WinHttp/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WinHTTP-NDF/Diagnostic" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Opcode.NoOp" value="655360" message="NOOP">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Task.API" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="API">
+    </task>
+    <task name="Task.Debug" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="Debug">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Keyword.API" mask="1" message="API">
+    </keyword>
+    <keyword name="Keyword.SEND" mask="100000000" message="SEND">
+    </keyword>
+    <keyword name="Keyword.RECEIVE" mask="200000000" message="RECEIVE">
+    </keyword>
+    <keyword name="Keyword.L3_CONNECT" mask="400000000" message="L3_CONNECT">
+    </keyword>
+    <keyword name="Keyword.CLOSE" mask="1000000000" message="CLOSE">
+    </keyword>
+    <keyword name="Keyword.SECURITY" mask="2000000000" message="SECURITY">
+    </keyword>
+    <keyword name="Keyword.CONFIGURATION" mask="4000000000" message="CONFIGURATION">
+    </keyword>
+    <keyword name="Keyword.GLOBAL" mask="8000000000" message="GLOBAL">
+    </keyword>
+    <keyword name="Keyword.DROPPED" mask="10000000000" message="DROPPED">
+    </keyword>
+    <keyword name="Keyword.PII_PRESENT" mask="20000000000" message="PII_PRESENT">
+    </keyword>
+    <keyword name="Keyword.PACKET" mask="40000000000" message="PACKET">
+    </keyword>
+    <keyword name="Keyword.ADDRESS" mask="80000000000" message="ADDRESS">
+    </keyword>
+    <keyword name="Keyword.CONTEXT_EVENT" mask="100000000000" message="CONTEXT_EVENT">
+    </keyword>
+    <keyword name="Keyword.STATE_TRANSITION" mask="200000000000" message="STATE_TRANSITION">
+    </keyword>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1">
+    </event>
+    <event value="4" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API called.">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API returned successfully.">
+    </event>
+    <event value="11" version="0" opcode="2" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API failed with an error = %3.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API pending completion.">
+    </event>
+    <event value="13" version="0" opcode="2" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API completed.">
+    </event>
+    <event value="14" version="0" opcode="2" channel="16" level="5" task="109" keywords="0x8000000000000001" message="%2(%1) API completed with an error = %3.">
+    </event>
+    <event value="100" version="0" opcode="0" channel="16" level="5" task="109" keywords="0x8000020000000001" message="%1: WinHttpSetCredentials Details: Target (%2) Schemes (%3) UserName (%4) Password (%5)">
+    </event>
+    <event value="12501" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service detected an internal data corruption.">
+    </event>
+    <event value="12503" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service has been idle for %1 minutes, it will be shut down.">
+    </event>
+    <event value="12506" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service encountered a system error from %1: (Error Code = %3) %2">
+    </event>
+    <event value="12507" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service failed to allocate a critical resource. The system may be running low on physical memory.">
+    </event>
+    <event value="12509" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service detected a non- local RPC request (Transport Type = %1); Access Denied. There may have been an rogue attempt to gain access to the service through the network.">
+    </event>
+    <event value="12511" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service failed to abort all pending requests in %1 seconds.  The system WinHTTP Services may have been under stress and slow to respond to cancel requests.">
+    </event>
+    <event value="12512" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service failed parameter validation of a client request.  This may be due to an unexpected error from the system WinHTTP Services.">
+    </event>
+    <event value="12513" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service is shutting down and not accepting client requests.">
+    </event>
+    <event value="12514" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service detected an unexpected exception from the system WinHTTP Services. (Exception Code = %1)">
+    </event>
+    <event value="12516" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service discarded and is re-attempting a request after a critical power event.">
+    </event>
+    <event value="12517" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service suspended operation.">
+    </event>
+    <event value="12518" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The WinHTTP Web Proxy Auto-Discovery Service resumed operation.">
+    </event>
+    <event value="58999" version="0" opcode="0" channel="16" level="5" task="110" keywords="0x8000000000000000" message="%1">
+    </event>
+    <event value="59995" version="0" opcode="2" channel="16" level="5" task="110" keywords="0x8000000000000000" message="Canceling %2 Thread Action (Context: %1)">
+    </event>
+    <event value="59996" version="0" opcode="1" channel="16" level="5" task="110" keywords="0x8000000000000000" message="Queue %2 Thread Action (Context: %1)">
+    </event>
+    <event value="59997" version="0" opcode="2" channel="16" level="5" task="110" keywords="0x8000000000000000" message="Stopping %2 Thread Action (Context: %1)">
+    </event>
+    <event value="59998" version="0" opcode="1" channel="16" level="5" task="110" keywords="0x8000000000000000" message="Starting %2 Thread Action (Context: %1)">
+    </event>
+    <event value="59999" version="0" opcode="0" channel="16" level="5" task="110" keywords="0x8000000000000000" message="(%1:%2) %4">
+    </event>
+  </events>
+</provider>

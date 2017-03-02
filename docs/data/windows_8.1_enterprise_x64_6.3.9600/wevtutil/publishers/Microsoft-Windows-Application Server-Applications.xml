@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Application Server-Applications" guid="c651f5f6-1c0d-492e-8ae1-b4efd7c9d503" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20.NET%20Framework&amp;ProdVer=4.0.30319.33440&amp;FileName=Microsoft.Windows.ApplicationServer.Applications.dll&amp;FileVer=4.0.30319.33440" resourceFileName="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Windows.ApplicationServer.Applications.dll" messageFileName="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Windows.ApplicationServer.Applications.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Application Server-Applications/Admin" id="16" flags="0" message="Admin">
+    </channel>
+    <channel name="Microsoft-Windows-Application Server-Applications/Operational" id="17" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Application Server-Applications/Analytic" id="18" flags="0" message="Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-Application Server-Applications/Debug" id="19" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:LogAlways" value="0" message="Log Always">
+    </level>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="win:Resume" value="458752" message="Resume">
+    </opcode>
+    <opcode name="win:Suspend" value="524288" message="Suspend">
+    </opcode>
+    <opcode name="win:Send" value="589824" message="Send">
+    </opcode>
+    <opcode name="NoBookmark" value="657868" message="NoBookmark">
+    </opcode>
+    <opcode name="NoInstance" value="723404" message="NoInstance">
+    </opcode>
+    <opcode name="Begin" value="723432" message="Begin">
+    </opcode>
+    <opcode name="Allocate" value="788941" message="Allocate">
+    </opcode>
+    <opcode name="Tune" value="854477" message="Tune">
+    </opcode>
+    <opcode name="ClientChannelOpenStart" value="920018" message="ClientChannelOpenStart">
+    </opcode>
+    <opcode name="ClientChannelOpenStop" value="985554" message="ClientChannelOpenStop">
+    </opcode>
+    <opcode name="ClientMessageInspectorAfterReceiveInvoked" value="1051090" message="ClientMessageInspectorAfterReceiveInvoked">
+    </opcode>
+    <opcode name="ClientMessageInspectorBeforeSendInvoked" value="1116626" message="ClientMessageInspectorBeforeSendInvoked">
+    </opcode>
+    <opcode name="ClientParameterInspectorStart" value="1182162" message="ClientParameterInspectorStart">
+    </opcode>
+    <opcode name="ClientParameterInspectorStop" value="1247698" message="ClientParameterInspectorStop">
+    </opcode>
+    <opcode name="OperationPrepared" value="1313234" message="OperationPrepared">
+    </opcode>
+    <opcode name="CompleteBookmark" value="1378774" message="CompleteBookmark">
+    </opcode>
+    <opcode name="CompleteCancelActivity" value="1444310" message="CompleteCancelActivity">
+    </opcode>
+    <opcode name="CompleteCompletion" value="1509846" message="CompleteCompletion">
+    </opcode>
+    <opcode name="CompleteExecuteActivity" value="1575382" message="CompleteExecuteActivity">
+    </opcode>
+    <opcode name="CompleteFault" value="1640918" message="CompleteFault">
+    </opcode>
+    <opcode name="CompleteRuntime" value="1706454" message="CompleteRuntime">
+    </opcode>
+    <opcode name="CompleteTransactionContext" value="1771990" message="CompleteTransactionContext">
+    </opcode>
+    <opcode name="DuplicateQuery" value="1837531" message="DuplicateQuery">
+    </opcode>
+    <opcode name="ExceptionSuppressed" value="1903073" message="ExceptionSuppressed">
+    </opcode>
+    <opcode name="FailedToClose" value="1968609" message="FailedToClose">
+    </opcode>
+    <opcode name="ReceivedMulticastSuppression" value="2034145" message="ReceivedMulticastSuppression">
+    </opcode>
+    <opcode name="CreationFailed" value="2099682" message="CreationFailed">
+    </opcode>
+    <opcode name="FindInitiated" value="2165218" message="FindInitiated">
+    </opcode>
+    <opcode name="OpenFailed" value="2230754" message="OpenFailed">
+    </opcode>
+    <opcode name="OpenSucceeded" value="2296290" message="OpenSucceeded">
+    </opcode>
+    <opcode name="Duplicate" value="2361827" message="Duplicate">
+    </opcode>
+    <opcode name="InvalidContent" value="2427363" message="InvalidContent">
+    </opcode>
+    <opcode name="InvalidRelatesToOrOperationCompleted" value="2492899" message="InvalidRelatesToOrOperationCompleted">
+    </opcode>
+    <opcode name="InvalidReplyTo" value="2558435" message="InvalidReplyTo">
+    </opcode>
+    <opcode name="NoContent" value="2623971" message="NoContent">
+    </opcode>
+    <opcode name="NullMessageId" value="2689507" message="NullMessageId">
+    </opcode>
+    <opcode name="NullMessageSequence" value="2755043" message="NullMessageSequence">
+    </opcode>
+    <opcode name="NullRelatesTo" value="2820579" message="NullRelatesTo">
+    </opcode>
+    <opcode name="NullReplyTo" value="2886115" message="NullReplyTo">
+    </opcode>
+    <opcode name="ReceivedAfterOperationCompleted" value="2951651" message="ReceivedAfterOperationCompleted">
+    </opcode>
+    <opcode name="Reset" value="3017188" message="Reset">
+    </opcode>
+    <opcode name="SetToNull" value="3082724" message="SetToNull">
+    </opcode>
+    <opcode name="BeforeAuthorization" value="3148261" message="BeforeAuthorization">
+    </opcode>
+    <opcode name="DispatchStart" value="3213797" message="DispatchStart">
+    </opcode>
+    <opcode name="DispatchStop" value="3279333" message="DispatchStop">
+    </opcode>
+    <opcode name="DispathMessageInspectorAfterReceiveInvoked" value="3344869" message="DispathMessageInspectorAfterReceiveInvoked">
+    </opcode>
+    <opcode name="DispathMessageInspectorBeforeSendInvoked" value="3410405" message="DispathMessageInspectorBeforeSendInvoked">
+    </opcode>
+    <opcode name="OperationInvokerStart" value="3475941" message="OperationInvokerStart">
+    </opcode>
+    <opcode name="OperationInvokerStop" value="3541477" message="OperationInvokerStop">
+    </opcode>
+    <opcode name="ParameterInspectorStart" value="3607013" message="ParameterInspectorStart">
+    </opcode>
+    <opcode name="ParameterInspectorStop" value="3672549" message="ParameterInspectorStop">
+    </opcode>
+    <opcode name="TransactionScopeCreate" value="3738085" message="TransactionScopeCreate">
+    </opcode>
+    <opcode name="Disabled" value="3803622" message="Disabled">
+    </opcode>
+    <opcode name="Enabled" value="3869158" message="Enabled">
+    </opcode>
+    <opcode name="Empty" value="3934696" message="Empty">
+    </opcode>
+    <opcode name="NextNull" value="4000232" message="NextNull">
+    </opcode>
+    <opcode name="SwitchCase" value="4065768" message="SwitchCase">
+    </opcode>
+    <opcode name="SwitchCaseNotFound" value="4131304" message="SwitchCaseNotFound">
+    </opcode>
+    <opcode name="SwitchDefault" value="4196840" message="SwitchDefault">
+    </opcode>
+    <opcode name="ArrayItemValue" value="4262378" message="ArrayItemValue">
+    </opcode>
+    <opcode name="Binary" value="4327914" message="Binary">
+    </opcode>
+    <opcode name="MemberAccess" value="4393450" message="MemberAccess">
+    </opcode>
+    <opcode name="Unary" value="4458986" message="Unary">
+    </opcode>
+    <opcode name="Contract" value="4524532" message="Contract">
+    </opcode>
+    <opcode name="Operation" value="4590068" message="Operation">
+    </opcode>
+    <opcode name="DoesNotUseAsyncPattern" value="4655607" message="DoesNotUseAsyncPattern">
+    </opcode>
+    <opcode name="IsNotStatic" value="4721143" message="IsNotStatic">
+    </opcode>
+    <opcode name="IsStatic" value="4786679" message="IsStatic">
+    </opcode>
+    <opcode name="ThrewException" value="4852215" message="ThrewException">
+    </opcode>
+    <opcode name="UseAsyncPattern" value="4917751" message="UseAsyncPattern">
+    </opcode>
+    <opcode name="Missed" value="4983290" message="Missed">
+    </opcode>
+    <opcode name="Faulted" value="5048833" message="Faulted">
+    </opcode>
+    <opcode name="Reconnect" value="5114369" message="Reconnect">
+    </opcode>
+    <opcode name="SequenceAck" value="5179905" message="SequenceAck">
+    </opcode>
+    <opcode name="AbortingChannel" value="5245442" message="AbortingChannel">
+    </opcode>
+    <opcode name="CloseFailed" value="5310978" message="CloseFailed">
+    </opcode>
+    <opcode name="ConfigurationApplied" value="5376514" message="ConfigurationApplied">
+    </opcode>
+    <opcode name="DuplexCallbackException" value="5442050" message="DuplexCallbackException">
+    </opcode>
+    <opcode name="HandledException" value="5507586" message="HandledException">
+    </opcode>
+    <opcode name="TransmitFailed" value="5573122" message="TransmitFailed">
+    </opcode>
+    <opcode name="ChannelFaulted" value="5638659" message="ChannelFaulted">
+    </opcode>
+    <opcode name="Closing" value="5704195" message="Closing">
+    </opcode>
+    <opcode name="CreatingForEndpoint" value="5769731" message="CreatingForEndpoint">
+    </opcode>
+    <opcode name="CompletingOneWay" value="5835269" message="CompletingOneWay">
+    </opcode>
+    <opcode name="CompletingTwoWay" value="5900805" message="CompletingTwoWay">
+    </opcode>
+    <opcode name="MovedToBackup" value="5966341" message="MovedToBackup">
+    </opcode>
+    <opcode name="ProcessingFailure" value="6031877" message="ProcessingFailure">
+    </opcode>
+    <opcode name="ProcessingMessage" value="6097413" message="ProcessingMessage">
+    </opcode>
+    <opcode name="RoutedToEndpoints" value="6162949" message="RoutedToEndpoints">
+    </opcode>
+    <opcode name="SendingFaultResponse" value="6228485" message="SendingFaultResponse">
+    </opcode>
+    <opcode name="SendingResponse" value="6294021" message="SendingResponse">
+    </opcode>
+    <opcode name="TransmitSucceeded" value="6359557" message="TransmitSucceeded">
+    </opcode>
+    <opcode name="TransmittingMessage" value="6425093" message="TransmittingMessage">
+    </opcode>
+    <opcode name="Abandoning" value="6490630" message="Abandoning">
+    </opcode>
+    <opcode name="Completing" value="6556166" message="Completing">
+    </opcode>
+    <opcode name="CommittingTransaction" value="6621703" message="CommittingTransaction">
+    </opcode>
+    <opcode name="Creating" value="6687239" message="Creating">
+    </opcode>
+    <opcode name="UsingExisting" value="6752775" message="UsingExisting">
+    </opcode>
+    <opcode name="Complete" value="6818312" message="Complete">
+    </opcode>
+    <opcode name="CompletionRequested" value="6883848" message="CompletionRequested">
+    </opcode>
+    <opcode name="Set" value="6949384" message="Set">
+    </opcode>
+    <opcode name="ScheduleBookmark" value="7014922" message="ScheduleBookmark">
+    </opcode>
+    <opcode name="ScheduleCancelActivity" value="7080458" message="ScheduleCancelActivity">
+    </opcode>
+    <opcode name="ScheduleCompletion" value="7145994" message="ScheduleCompletion">
+    </opcode>
+    <opcode name="ScheduleExecuteActivity" value="7211530" message="ScheduleExecuteActivity">
+    </opcode>
+    <opcode name="ScheduleFault" value="7277066" message="ScheduleFault">
+    </opcode>
+    <opcode name="ScheduleRuntime" value="7342602" message="ScheduleRuntime">
+    </opcode>
+    <opcode name="ScheduleTransactionContext" value="7408138" message="ScheduleTransactionContext">
+    </opcode>
+    <opcode name="Accept" value="7473691" message="Accept">
+    </opcode>
+    <opcode name="Initiate" value="7539227" message="Initiate">
+    </opcode>
+    <opcode name="suspend" value="7604764" message="suspend">
+    </opcode>
+    <opcode name="StartBookmark" value="7670302" message="StartBookmark">
+    </opcode>
+    <opcode name="StartCancelActivity" value="7735838" message="StartCancelActivity">
+    </opcode>
+    <opcode name="StartCompletion" value="7801374" message="StartCompletion">
+    </opcode>
+    <opcode name="StartExecuteActivity" value="7866910" message="StartExecuteActivity">
+    </opcode>
+    <opcode name="StartFault" value="7932446" message="StartFault">
+    </opcode>
+    <opcode name="StartRuntime" value="7997982" message="StartRuntime">
+    </opcode>
+    <opcode name="StartTransactionContext" value="8063518" message="StartTransactionContext">
+    </opcode>
+    <opcode name="NotFound" value="8129061" message="NotFound">
+    </opcode>
+    <opcode name="Dropped" value="8194598" message="Dropped">
+    </opcode>
+    <opcode name="Raised" value="8260134" message="Raised">
+    </opcode>
+    <opcode name="Truncated" value="8325670" message="Truncated">
+    </opcode>
+    <opcode name="BeforeAuthentication" value="8391207" message="BeforeAuthentication">
+    </opcode>
+    <opcode name="DuringCancelation" value="8456745" message="DuringCancelation">
+    </opcode>
+    <opcode name="FromCatchOrFinally" value="8522281" message="FromCatchOrFinally">
+    </opcode>
+    <opcode name="FromTry" value="8587817" message="FromTry">
+    </opcode>
+    <opcode name="Connected" value="8653355" message="Connected">
+    </opcode>
+    <opcode name="Disconnect" value="8718891" message="Disconnect">
+    </opcode>
+    <opcode name="Completed" value="8784429" message="Completed">
+    </opcode>
+    <opcode name="Idled" value="8849965" message="Idled">
+    </opcode>
+    <opcode name="InstanceAborted" value="8915501" message="InstanceAborted">
+    </opcode>
+    <opcode name="InstanceCanceled" value="8981037" message="InstanceCanceled">
+    </opcode>
+    <opcode name="PersistableIdle" value="9046573" message="PersistableIdle">
+    </opcode>
+    <opcode name="Persisted" value="9112109" message="Persisted">
+    </opcode>
+    <opcode name="Terminated" value="9177645" message="Terminated">
+    </opcode>
+    <opcode name="UnhandledException" value="9243181" message="UnhandledException">
+    </opcode>
+    <opcode name="Unloaded" value="9308717" message="Unloaded">
+    </opcode>
+    <opcode name="suspend" value="9374255" message="suspend">
+    </opcode>
+    <opcode name="AbortedRecord" value="9439792" message="AbortedRecord">
+    </opcode>
+    <opcode name="AbortedWithId" value="9505328" message="AbortedWithId">
+    </opcode>
+    <opcode name="SuspendedRecord" value="9570864" message="SuspendedRecord">
+    </opcode>
+    <opcode name="SuspendedWithId" value="9636400" message="SuspendedWithId">
+    </opcode>
+    <opcode name="TerminatedRecord" value="9701936" message="TerminatedRecord">
+    </opcode>
+    <opcode name="TerminatedWithId" value="9767472" message="TerminatedWithId">
+    </opcode>
+    <opcode name="UnhandledExceptionRecord" value="9833008" message="UnhandledExceptionRecord">
+    </opcode>
+    <opcode name="UnhandledExceptionWithId" value="9898544" message="UnhandledExceptionWithId">
+    </opcode>
+    <opcode name="UpdatedRecord" value="9964080" message="UpdatedRecord">
+    </opcode>
+    <opcode name="win:Receive" value="15728640" message="Receive">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ActivationDispatchSession" value="2500" eventGUID="cc62b5a3-2fe1-4546-ae18-2ea42aaf4978" message="ActivationDispatchSession">
+    </task>
+    <task name="ActivationDuplicateSocket" value="2501" eventGUID="a8cea9f0-416c-4631-afbb-bdd785956324" message="ActivationDuplicateSocket">
+    </task>
+    <task name="ActivationListenerOpen" value="2502" eventGUID="2f44781b-94da-4a82-9bfd-2d86c67b6d59" message="ActivationListenerOpen">
+    </task>
+    <task name="ActivationPipeListenerListening" value="2503" eventGUID="290d600c-9ac4-4e3f-808f-5ae8c05ba99b" message="ActivationPipeListenerListening">
+    </task>
+    <task name="ActivationRoutingTableLookup" value="2504" eventGUID="a3fe4600-2cbb-4ac2-8f97-1f49f555e40d" message="ActivationRoutingTableLookup">
+    </task>
+    <task name="ActivationServiceStart" value="2505" eventGUID="258510de-eff7-440b-87e0-fef9bf740264" message="ActivationServiceStart">
+    </task>
+    <task name="ActivationTcpListenerListening" value="2506" eventGUID="7050cd38-ffce-4626-a04b-e338e1a5abbe" message="ActivationTcpListenerListening">
+    </task>
+    <task name="AddServiceEndpoint" value="2507" eventGUID="f102a07a-2a6a-4e97-98cb-3bb3a7160db6" message="AddServiceEndpoint">
+    </task>
+    <task name="BufferOutOfOrder" value="2508" eventGUID="b47455d1-7962-45da-9805-db7cc7930383" message="BufferOutOfOrder">
+    </task>
+    <task name="BufferPooling" value="2509" eventGUID="6f83b987-9660-4211-af87-22994065d03b" message="BufferPooling">
+    </task>
+    <task name="CacheRootMetadata" value="2510" eventGUID="a2c991a1-a330-4f57-ac54-41f0997ce72e" message="CacheRootMetadata">
+    </task>
+    <task name="ChannelFactoryCaching" value="2511" eventGUID="643d11c2-6eee-4388-965e-8beac2b6c705" message="ChannelFactoryCaching">
+    </task>
+    <task name="ChannelFactoryCreate" value="2512" eventGUID="8b16dba4-17cb-451f-9dce-2b6a0a61d230" message="ChannelFactoryCreate">
+    </task>
+    <task name="ChannelReceive" value="2513" eventGUID="bdaeec18-49e2-46da-bd4c-b32f3e955cfb" message="ChannelReceive">
+    </task>
+    <task name="ClientRuntime" value="2514" eventGUID="2a726cd5-610e-4a23-b411-61f1d8ab244d" message="ClientRuntime">
+    </task>
+    <task name="ClientSendPreamble" value="2515" eventGUID="00830c8d-78eb-4ea3-bcae-cf5fe60ffd71" message="ClientSendPreamble">
+    </task>
+    <task name="CompensationState" value="2516" eventGUID="0da1bff2-411e-430f-8a5d-c956543c5c97" message="CompensationState">
+    </task>
+    <task name="CompleteActivity" value="2517" eventGUID="f2ff22dd-397c-467b-9812-0a79e8c5a12b" message="CompleteActivity">
+    </task>
+    <task name="CompleteWorkItem" value="2518" eventGUID="63680005-ee91-4154-ae7a-240942510b98" message="CompleteWorkItem">
+    </task>
+    <task name="Connect" value="2519" eventGUID="7386e51a-8418-4599-b82f-d1d08925c8d6" message="Connect">
+    </task>
+    <task name="ConnectionAbort" value="2520" eventGUID="d28a7513-7db8-4175-9c38-3ae98e633f75" message="ConnectionAbort">
+    </task>
+    <task name="ConnectionAccept" value="2521" eventGUID="8289b69b-1b48-4160-ae03-50a6ea893e61" message="ConnectionAccept">
+    </task>
+    <task name="ConnectionPooling" value="2522" eventGUID="bc25d06d-a60a-4769-a3f2-3858b0e7c5db" message="ConnectionPooling">
+    </task>
+    <task name="Correlation" value="2523" eventGUID="a945f7d1-4dba-4537-b8de-a2db621e2ade" message="Correlation">
+    </task>
+    <task name="CreateBookmark" value="2524" eventGUID="d156f187-f5c0-4213-b859-87c761616702" message="CreateBookmark">
+    </task>
+    <task name="CreateHttpMessageHandler" value="2525" eventGUID="4c4e08dd-6602-4cbe-b338-d42fd19ac90b" message="CreateHttpMessageHandler">
+    </task>
+    <task name="CreateWorkflowServiceHost" value="2526" eventGUID="dc5e2af3-2c21-40d9-8216-6832b11d5796" message="CreateWorkflowServiceHost">
+    </task>
+    <task name="CustomTrackingRecord" value="2527" eventGUID="01132c8e-cb5f-47c8-98c3-67473440cdad" message="CustomTrackingRecord">
+    </task>
+    <task name="DataContractResolver" value="2528" eventGUID="5809dff9-c1eb-469d-9a88-d1e708225c03" message="DataContractResolver">
+    </task>
+    <task name="DiscoveryClient" value="2529" eventGUID="3419e18e-ab9c-495f-8853-4fd253fee742" message="DiscoveryClient">
+    </task>
+    <task name="DiscoveryClientChannel" value="2530" eventGUID="1733b7bf-beb5-4f77-9ca4-fb4e47b8ba92" message="DiscoveryClientChannel">
+    </task>
+    <task name="DiscoveryMessage" value="2531" eventGUID="6718f681-ceb8-418b-aa29-2d4b1762fcdc" message="DiscoveryMessage">
+    </task>
+    <task name="DiscoverySynchronizationContext" value="2532" eventGUID="6dae34cb-a41e-4f83-9215-36a6d99b920f" message="DiscoverySynchronizationContext">
+    </task>
+    <task name="DispatchMessage" value="2533" eventGUID="cfa3eff0-bf4d-48ba-948e-7d747d4c3c29" message="DispatchMessage">
+    </task>
+    <task name="EndpointDiscoverability" value="2534" eventGUID="3a550486-6e72-409a-af80-2bdd33d95de7" message="EndpointDiscoverability">
+    </task>
+    <task name="ExecuteActivity" value="2535" eventGUID="e36d0c20-32cb-4568-9897-663f382a02e5" message="ExecuteActivity">
+    </task>
+    <task name="ExecuteFlowchart" value="2536" eventGUID="4a46e34a-6765-4bdd-b81d-7c7738ad6c3f" message="ExecuteFlowchart">
+    </task>
+    <task name="ExecuteWorkItem" value="2537" eventGUID="6d072edb-429e-4046-9397-aff005752eb2" message="ExecuteWorkItem">
+    </task>
+    <task name="ExpressionResult" value="2538" eventGUID="046c6554-41aa-4e98-ba6c-2ed457c42eb9" message="ExpressionResult">
+    </task>
+    <task name="FormatterDeserializeReply" value="2539" eventGUID="1383449f-3231-4a82-b08f-a67b5df71c6f" message="FormatterDeserializeReply">
+    </task>
+    <task name="FormatterDeserializeRequest" value="2540" eventGUID="a6034273-e068-4663-a5bb-a3bbc13b1953" message="FormatterDeserializeRequest">
+    </task>
+    <task name="FormatterSerializeReply" value="2541" eventGUID="cbf0fa02-6964-4298-9bf7-2f0379f83608" message="FormatterSerializeReply">
+    </task>
+    <task name="FormatterSerializeRequest" value="2542" eventGUID="150fd34c-30d9-41c0-bcd0-86784a36be3b" message="FormatterSerializeRequest">
+    </task>
+    <task name="GenerateDeserializer" value="2543" eventGUID="0a195d68-ee49-4a4b-b311-36717ad8e842" message="GenerateDeserializer">
+    </task>
+    <task name="GenerateSerializer" value="2544" eventGUID="2eac2877-e183-4280-847e-dbb44baf6429" message="GenerateSerializer">
+    </task>
+    <task name="GenerateXmlSerializable" value="2545" eventGUID="2bd9d243-9e23-4a78-9ada-600cc128f7ff" message="GenerateXmlSerializable">
+    </task>
+    <task name="HostedTransportConfigurationManagerConfigInit" value="2546" eventGUID="209e9d89-3301-4132-b12e-cb03b4c908d1" message="HostedTransportConfigurationManagerConfigInit">
+    </task>
+    <task name="ImportKnownType" value="2547" eventGUID="751739d0-0aff-4f56-b878-c270c58a17a1" message="ImportKnownType">
+    </task>
+    <task name="InferDescription" value="2548" eventGUID="11efeeee-6ca2-484c-9f52-3996d40e3973" message="InferDescription">
+    </task>
+    <task name="InitializeBookmarkScope" value="2549" eventGUID="19b94d63-4a80-4eed-afc7-4813f2c3d317" message="InitializeBookmarkScope">
+    </task>
+    <task name="InternalCacheMetadata" value="2550" eventGUID="b7c65e88-50b2-49c8-9c5f-5679eb06635a" message="InternalCacheMetadata">
+    </task>
+    <task name="InvokeMethod" value="2551" eventGUID="281c1dc8-ac41-4170-a7ef-13d216ff5873" message="InvokeMethod">
+    </task>
+    <task name="ListenerOpen" value="2552" eventGUID="db4cadc2-970c-46b3-9995-74f399e57d25" message="ListenerOpen">
+    </task>
+    <task name="LockWorkflowInstance" value="2553" eventGUID="c9dec4a9-2a27-48ae-9b76-073a60aa1bdf" message="LockWorkflowInstance">
+    </task>
+    <task name="MessageChannelCache" value="2554" eventGUID="09bf4c8a-579b-44ea-8cd9-2490ac2e640f" message="MessageChannelCache">
+    </task>
+    <task name="MessageDecoding" value="2555" eventGUID="3c7bb03f-cb27-4ac7-88b3-74996c38d00f" message="MessageDecoding">
+    </task>
+    <task name="MessageEncoding" value="2556" eventGUID="7d9dc4bc-cf40-494d-9e9d-ab00e9d95628" message="MessageEncoding">
+    </task>
+    <task name="MessageQueueRegister" value="2557" eventGUID="18c94a0d-c90c-4045-ad31-07bb222e6dbf" message="MessageQueueRegister">
+    </task>
+    <task name="MsmqQuotas" value="2558" eventGUID="01b57294-49fc-4a9d-b46d-42589e86328d" message="MsmqQuotas">
+    </task>
+    <task name="NoPersistBlock" value="2559" eventGUID="42a1f6b2-f9c5-4dc4-a7da-1892a83046ab" message="NoPersistBlock">
+    </task>
+    <task name="Quotas" value="2560" eventGUID="3b3023ac-e7bf-4d11-896b-7810ba5b43f5" message="Quotas">
+    </task>
+    <task name="ReliableSession" value="2561" eventGUID="f105d9e4-3bee-44f3-9e34-176c4c36966b" message="ReliableSession">
+    </task>
+    <task name="RoutingService" value="2562" eventGUID="29e2a04c-aaed-4439-a34d-884050317c37" message="RoutingService">
+    </task>
+    <task name="RoutingServiceClient" value="2563" eventGUID="854a57e9-7fc3-49be-bfb1-a4dfe1319d6e" message="RoutingServiceClient">
+    </task>
+    <task name="RoutingServiceFilterTableMatch" value="2564" eventGUID="8d9dab05-283c-4e06-820d-1a86512a6fae" message="RoutingServiceFilterTableMatch">
+    </task>
+    <task name="RoutingServiceMessage" value="2565" eventGUID="7604f4c2-da79-4b5c-8927-890006a43a3a" message="RoutingServiceMessage">
+    </task>
+    <task name="RoutingServiceReceiveContext" value="2566" eventGUID="d051f201-c391-438c-ba86-c4b36ad43354" message="RoutingServiceReceiveContext">
+    </task>
+    <task name="RoutingServiceTransaction" value="2567" eventGUID="39b697ed-79b9-4172-a62f-c19e1d807e32" message="RoutingServiceTransaction">
+    </task>
+    <task name="RuntimeTransaction" value="2568" eventGUID="e71036aa-4d1e-4acb-8f5b-d1ab148ddc5e" message="RuntimeTransaction">
+    </task>
+    <task name="ScheduleActivity" value="2569" eventGUID="75bfa87e-b64f-4e34-b6c9-bf315bab5268" message="ScheduleActivity">
+    </task>
+    <task name="ScheduleWorkItem" value="2570" eventGUID="e55a99e9-adf3-4da2-b812-376c682ad991" message="ScheduleWorkItem">
+    </task>
+    <task name="SecureMessage" value="2571" eventGUID="4a44e657-bb88-40e6-b4b6-7c4bade8645c" message="SecureMessage">
+    </task>
+    <task name="SecurityImpersonation" value="2572" eventGUID="215c2b1c-bcc4-406b-928f-53c5af9ab8ce" message="SecurityImpersonation">
+    </task>
+    <task name="SecurityNegotiation" value="2573" eventGUID="906923a1-1501-456b-ad24-dc6e6e7a7e0e" message="SecurityNegotiation">
+    </task>
+    <task name="SecurityVerification" value="2574" eventGUID="a18a4968-a0fe-4218-a2c6-41bc9804ae40" message="SecurityVerification">
+    </task>
+    <task name="ServiceActivation" value="2575" eventGUID="495cdd67-1051-4a73-8671-f55cd4f8262a" message="ServiceActivation">
+    </task>
+    <task name="ServiceChannelCall" value="2576" eventGUID="e0bc1bbf-dc44-4bfe-8248-c13547471de5" message="ServiceChannelCall">
+    </task>
+    <task name="ServiceChannelOpen" value="2577" eventGUID="3a4d4500-a5ff-48e8-98f3-031e37c75c46" message="ServiceChannelOpen">
+    </task>
+    <task name="ServiceHostActivation" value="2578" eventGUID="889b37e9-86e8-4394-b9cf-51a9f86151f3" message="ServiceHostActivation">
+    </task>
+    <task name="ServiceHostCompilation" value="2579" eventGUID="b89a8822-f97f-4dc6-a85f-82a18558e8fc" message="ServiceHostCompilation">
+    </task>
+    <task name="ServiceHostCreate" value="2580" eventGUID="6b129f40-fc49-4032-8ec4-0b1396a47d5d" message="ServiceHostCreate">
+    </task>
+    <task name="ServiceHostFactoryCreation" value="2581" eventGUID="9c411076-9eb0-4579-8741-f8037e9140dc" message="ServiceHostFactoryCreation">
+    </task>
+    <task name="ServiceHostFault" value="2582" eventGUID="a3276f7a-bf2b-4e74-b4d5-2329b0b19620" message="ServiceHostFault">
+    </task>
+    <task name="ServiceHostOpen" value="2583" eventGUID="0a0d5fc5-939d-4f85-9c73-6b10be96faea" message="ServiceHostOpen">
+    </task>
+    <task name="ServiceInstance" value="2584" eventGUID="b0cd6c86-90b8-4382-b8e0-40f77a70584a" message="ServiceInstance">
+    </task>
+    <task name="ServiceShutdown" value="2585" eventGUID="aa2e18aa-3618-4be9-b938-5a04ffc0d232" message="ServiceShutdown">
+    </task>
+    <task name="SessionStart" value="2586" eventGUID="5fab4482-260c-4280-a670-72cb40a6d38c" message="SessionStart">
+    </task>
+    <task name="SessionUpgrade" value="2587" eventGUID="29f551a4-5a53-4ce2-b708-38983b5f68cc" message="SessionUpgrade">
+    </task>
+    <task name="Signpost" value="2588" eventGUID="467f2eed-797f-4a5b-aa77-f60e8174d287" message="Signpost">
+    </task>
+    <task name="SqlCommandExecute" value="2589" eventGUID="837f6564-75a0-4ca1-8087-23069935efa4" message="SqlCommandExecute">
+    </task>
+    <task name="StartWorkItem" value="2590" eventGUID="8931a237-d6c2-42c7-9438-83ee5d3a24c1" message="StartWorkItem">
+    </task>
+    <task name="SurrogateDeserialize" value="2591" eventGUID="fd67d29d-3b67-4138-853f-02febdb1bb3c" message="SurrogateDeserialize">
+    </task>
+    <task name="SurrogateSerialize" value="2592" eventGUID="48379681-20f4-4ba2-9259-f797949b3172" message="SurrogateSerialize">
+    </task>
+    <task name="ThreadScheduling" value="2593" eventGUID="8ab777e0-9d97-498f-bec6-eed9f9732e1a" message="ThreadScheduling">
+    </task>
+    <task name="Throttles" value="2594" eventGUID="f71d9f5c-8697-457f-acaa-7848c7f71c33" message="Throttles">
+    </task>
+    <task name="Timeout" value="2595" eventGUID="cbb66a44-9a0d-498c-ba30-f52f9b11d734" message="Timeout">
+    </task>
+    <task name="TimeoutException" value="2596" eventGUID="a2b6a84c-3e36-4847-b63a-046bb4ffb0fc" message="TimeoutException">
+    </task>
+    <task name="TrackingProfile" value="2597" eventGUID="b8405407-f1c7-436b-9cc7-d141cad8a9a1" message="TrackingProfile">
+    </task>
+    <task name="TrackingRecord" value="2598" eventGUID="b92f3124-6b3b-41ca-8970-a01951fc871a" message="TrackingRecord">
+    </task>
+    <task name="TransportReceive" value="2599" eventGUID="32dc9a79-b143-42c0-847e-1a0d8158fa82" message="TransportReceive">
+    </task>
+    <task name="TransportSend" value="2600" eventGUID="21222074-fec4-4a37-a502-7d3fa5dd7bbd" message="TransportSend">
+    </task>
+    <task name="TryCatchException" value="2601" eventGUID="f1a89c01-0cd8-425e-8baa-2020998ba202" message="TryCatchException">
+    </task>
+    <task name="VBExpressionCompile" value="2602" eventGUID="56082d31-0408-471b-bd3a-b6060d54aaf6" message="VBExpressionCompile">
+    </task>
+    <task name="WASActivation" value="2603" eventGUID="37cc9fa0-54bc-4e2a-b9f7-3e1381d04f84" message="WASActivation">
+    </task>
+    <task name="WebHostRequest" value="2604" eventGUID="2b36e2cf-ca86-455e-a5d0-c3dc178b45a7" message="WebHostRequest">
+    </task>
+    <task name="WFApplicationStateChange" value="2605" eventGUID="e2f60385-fabc-46ba-b60a-1644a96dda92" message="WFApplicationStateChange">
+    </task>
+    <task name="WFMessage" value="2606" eventGUID="f048298b-e812-42b8-a0fe-399a9417cc12" message="WFMessage">
+    </task>
+    <task name="WorkflowActivity" value="2607" eventGUID="d0c1971f-e415-4b16-927d-4a07102176ff" message="WorkflowActivity">
+    </task>
+    <task name="WorkflowInstanceRecord" value="2608" eventGUID="ba2a6ac8-4687-470a-beb8-0f73a0880bff" message="WorkflowInstanceRecord">
+    </task>
+    <task name="WorkflowTracking" value="2609" eventGUID="4dc544cd-a2dd-47c1-98f8-2dbfd5b2db84" message="WorkflowTracking">
+    </task>
+    <task name="XamlServicesLoad" value="2610" eventGUID="757f24b4-6432-4ad2-a75c-8ae2c31998f1" message="XamlServicesLoad">
+    </task>
+    <task name="SignatureVerification" value="2611" eventGUID="022b7eea-cd11-47d6-80c1-ed30ac7a8a1f" message="SignatureVerification">
+    </task>
+    <task name="TokenValidation" value="2612" eventGUID="f3a96f6f-1af7-4229-9697-6889fd458a97" message="TokenValidation">
+    </task>
+    <task name="GetIssuerName" value="2613" eventGUID="042e133f-f3bd-4fba-b8b7-2a9f727151db" message="GetIssuerName">
+    </task>
+    <task name="WrappedKeyDecryption" value="2614" eventGUID="59725508-d5cc-4c89-8da0-9ad2b8852baa" message="WrappedKeyDecryption">
+    </task>
+    <task name="EncryptedDataProcessing" value="2615" eventGUID="81db23be-6eda-4c2b-b102-6cd881823592" message="EncryptedDataProcessing">
+    </task>
+    <task name="FederationMessageProcessing" value="2616" eventGUID="e8353704-aea1-489f-b833-10dab2913f40" message="FederationMessageProcessing">
+    </task>
+    <task name="FederationMessageCreation" value="2617" eventGUID="b50f0e7d-8cd3-446b-a806-da9bda5ffbaf" message="FederationMessageCreation">
+    </task>
+    <task name="SessionCookieReading" value="2618" eventGUID="bca1e46d-d690-4ca4-930a-4c4c67cc7906" message="SessionCookieReading">
+    </task>
+    <task name="PrincipalSetting" value="2619" eventGUID="70502091-88e2-47e9-9066-a733cf8c4ecd" message="PrincipalSetting">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ServiceHost" mask="1" message="Service Host">
+    </keyword>
+    <keyword name="Serialization" mask="2" message="Serialization">
+    </keyword>
+    <keyword name="ServiceModel" mask="4" message="ServiceModel">
+    </keyword>
+    <keyword name="Transaction" mask="8" message="Transaction">
+    </keyword>
+    <keyword name="Security" mask="10" message="Security">
+    </keyword>
+    <keyword name="WCFMessageLogging" mask="20" message="WCF Message Logging">
+    </keyword>
+    <keyword name="WFTracking" mask="40" message="WF Tracking">
+    </keyword>
+    <keyword name="WebHost" mask="80" message="Web Host">
+    </keyword>
+    <keyword name="HTTP" mask="100" message="HTTP Transport">
+    </keyword>
+    <keyword name="TCP" mask="200" message="TCP Transport">
+    </keyword>
+    <keyword name="TransportGeneral" mask="400" message="Transport General">
+    </keyword>
+    <keyword name="ActivationServices" mask="800" message="Activation Services">
+    </keyword>
+    <keyword name="Channel" mask="1000" message="Channel">
+    </keyword>
+    <keyword name="WebHTTP" mask="2000" message="Web HTTP">
+    </keyword>
+    <keyword name="Discovery" mask="4000" message="Discovery">
+    </keyword>
+    <keyword name="RoutingServices" mask="8000" message="Routing Services">
+    </keyword>
+    <keyword name="Infrastructure" mask="10000" message="Infrastructure">
+    </keyword>
+    <keyword name="EndToEndMonitoring" mask="20000" message="End-to-End Monitoring">
+    </keyword>
+    <keyword name="HealthMonitoring" mask="40000" message="Health Monitoring">
+    </keyword>
+    <keyword name="Troubleshooting" mask="80000" message="Troubleshooting">
+    </keyword>
+    <keyword name="UserEvents" mask="100000" message="User Events">
+    </keyword>
+    <keyword name="Threading" mask="200000" message="Threading">
+    </keyword>
+    <keyword name="Quota" mask="400000" message="Quota">
+    </keyword>
+    <keyword name="WFRuntime" mask="1000000" message="Workflow Runtime">
+    </keyword>
+    <keyword name="WFActivities" mask="2000000" message="Workflow Activities">
+    </keyword>
+    <keyword name="WFServices" mask="4000000" message="Workflow ServiceHost">
+    </keyword>
+    <keyword name="WFInstanceStore" mask="8000000" message="Workflow InstanceStore">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="18" level="4" task="2608" keywords="0x20000000000e0040" message="TrackRecord= WorkflowInstanceRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, State = %5, Annotations = %6, ProfileName = %7">
+    </event>
+    <event value="101" version="0" opcode="150" channel="18" level="2" task="2608" keywords="0x20000000000e0040" message="TrackRecord = WorkflowInstanceUnhandledExceptionRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, SourceName = %5, SourceId = %6, SourceInstanceId = %7, SourceTypeName=%8, Exception=%9, Annotations= %10, ProfileName = %11">
+    </event>
+    <event value="102" version="0" opcode="144" channel="18" level="3" task="2608" keywords="0x20000000000e0040" message="TrackRecord = WorkflowInstanceAbortedRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, Reason = %5, Annotations = %6, ProfileName = %7">
+    </event>
+    <event value="103" version="0" opcode="0" channel="18" level="4" task="2609" keywords="0x20000000000e0040" message="TrackRecord = ActivityStateRecord, InstanceID = %1, RecordNumber=%2, EventTime=%3, State = %4, Name=%5, ActivityId=%6, ActivityInstanceId=%7, ActivityTypeName=%8, Arguments=%9, Variables=%10, Annotations=%11, ProfileName = %12">
+    </event>
+    <event value="104" version="0" opcode="0" channel="18" level="4" task="2609" keywords="0x20000000000e0040" message="TrackRecord = ActivityScheduledRecord, InstanceID = %1,  RecordNumber = %2, EventTime = %3, Name = %4, ActivityId = %5, ActivityInstanceId = %6, ActivityTypeName = %7, ChildActivityName = %8, ChildActivityId = %9, ChildActivityInstanceId = %10, ChildActivityTypeName =%11, Annotations=%12, ProfileName = %13">
+    </event>
+    <event value="105" version="0" opcode="0" channel="18" level="3" task="2609" keywords="0x20000000000e0040" message="TrackRecord = FaultPropagationRecord, InstanceID=%1, RecordNumber=%2, EventTime=%3, FaultSourceActivityName=%4, FaultSourceActivityId=%5, FaultSourceActivityInstanceId=%6, FaultSourceActivityTypeName=%7, FaultHandlerActivityName=%8,  FaultHandlerActivityId = %9, FaultHandlerActivityInstanceId =%10, FaultHandlerActivityTypeName=%11, Fault=%12, IsFaultSource=%13, Annotations=%14, ProfileName = %15">
+    </event>
+    <event value="106" version="0" opcode="0" channel="18" level="4" task="2609" keywords="0x20000000000e0040" message="TrackRecord = CancelRequestedRecord, InstanceID=%1, RecordNumber=%2, EventTime=%3, Name=%4, ActivityId=%5, ActivityInstanceId=%6, ActivityTypeName = %7, ChildActivityName = %8, ChildActivityId = %9, ChildActivityInstanceId = %10, ChildActivityTypeName =%11, Annotations=%12, ProfileName = %13">
+    </event>
+    <event value="107" version="0" opcode="0" channel="18" level="4" task="2609" keywords="0x20000000000e0040" message="TrackRecord = BookmarkResumptionRecord, InstanceID=%1, RecordNumber=%2,EventTime=%3, Name=%4, SubInstanceID=%5,  OwnerActivityName=%6, OwnerActivityId =%7, OwnerActivityInstanceId=%8, OwnerActivityTypeName=%9, Annotations=%10, ProfileName = %11">
+    </event>
+    <event value="108" version="0" opcode="0" channel="18" level="4" task="2527" keywords="0x20000000001e0040" message="TrackRecord = CustomTrackingRecord, InstanceID = %1, RecordNumber=%2, EventTime=%3,  Name=%4, ActivityName=%5, ActivityId=%6, ActivityInstanceId=%7, ActivityTypeName=%8, Data=%9, Annotations=%10, ProfileName = %11">
+    </event>
+    <event value="110" version="0" opcode="0" channel="18" level="3" task="2527" keywords="0x20000000001e0040" message="TrackRecord = CustomTrackingRecord, InstanceID = %1, RecordNumber=%2, EventTime=%3, Name=%4, ActivityName=%5, ActivityId=%6, ActivityInstanceId=%7, ActivityTypeName=%8, Data=%9, Annotations=%10, ProfileName = %11">
+    </event>
+    <event value="111" version="0" opcode="0" channel="18" level="2" task="2527" keywords="0x20000000001e0040" message="TrackRecord = CustomTrackingRecord, InstanceID = %1, RecordNumber=%2, EventTime=%3, Name=%4, ActivityName=%5, ActivityId=%6, ActivityInstanceId=%7, ActivityTypeName=%8, Data=%9, Annotations=%10, ProfileName = %11">
+    </event>
+    <event value="112" version="0" opcode="146" channel="18" level="4" task="2608" keywords="0x2000000000040040" message="TrackRecord = WorkflowInstanceSuspendedRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, Reason = %5, Annotations = %6, ProfileName = %7">
+    </event>
+    <event value="113" version="0" opcode="148" channel="18" level="2" task="2608" keywords="0x20000000000e0040" message="TrackRecord = WorkflowInstanceTerminatedRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, Reason = %5, Annotations = %6, ProfileName = %7">
+    </event>
+    <event value="114" version="0" opcode="0" channel="18" level="4" task="2608" keywords="0x2000000000040040" message="TrackRecord= WorkflowInstanceRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, State = %5, Annotations = %6, ProfileName = %7, WorkflowDefinitionIdentity = %8">
+    </event>
+    <event value="115" version="0" opcode="145" channel="18" level="3" task="2608" keywords="0x2000000000040040" message="TrackRecord = WorkflowInstanceAbortedRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, Reason = %5,  Annotations = %6, ProfileName = %7, WorkflowDefinitionIdentity = %8">
+    </event>
+    <event value="116" version="0" opcode="147" channel="18" level="4" task="2608" keywords="0x2000000000040040" message="TrackRecord = WorkflowInstanceSuspendedRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, Reason = %5, Annotations = %6, ProfileName = %7, WorkflowDefinitionIdentity = %8">
+    </event>
+    <event value="117" version="0" opcode="149" channel="18" level="2" task="2608" keywords="0x2000000000040040" message="TrackRecord = WorkflowInstanceTerminatedRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, Reason = %5,  Annotations = %6, ProfileName = %7, WorkflowDefinitionIdentity = %8">
+    </event>
+    <event value="118" version="0" opcode="151" channel="18" level="2" task="2608" keywords="0x2000000000040040" message="TrackRecord = WorkflowInstanceUnhandledExceptionRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, SourceName = %5, SourceId = %6, SourceInstanceId = %7, SourceTypeName=%8, Exception=%9,  Annotations= %10, ProfileName = %11, WorkflowDefinitionIdentity = %12">
+    </event>
+    <event value="119" version="0" opcode="152" channel="18" level="4" task="2608" keywords="0x2000000000040040" message="TrackRecord= WorkflowInstanceUpdatedRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, State = %5, OriginalDefinitionIdentity = %6, UpdatedDefinitionIdentity = %7, Annotations = %8, ProfileName = %9">
+    </event>
+    <event value="131" version="0" opcode="12" channel="19" level="5" task="2509" keywords="0x1000000000010000" message="Pool allocating %1 Bytes.">
+    </event>
+    <event value="132" version="0" opcode="13" channel="19" level="5" task="2509" keywords="0x1000000000010000" message="BufferPool of size %1, changing quota by %2.">
+    </event>
+    <event value="133" version="0" opcode="1" channel="19" level="5" task="2593" keywords="0x1000000000200000" message="IO Thread scheduler callback invoked.">
+    </event>
+    <event value="134" version="0" opcode="2" channel="19" level="5" task="2593" keywords="0x1000000000200000" message="IO Thread scheduler callback invoked.">
+    </event>
+    <event value="201" version="0" opcode="16" channel="19" level="4" task="2514" keywords="0x1000000000080004" message="The Dispatcher invoked &apos;AfterReceiveReply&apos; on a ClientMessageInspector of type &apos;%1&apos;.">
+    </event>
+    <event value="202" version="0" opcode="17" channel="18" level="4" task="2514" keywords="0x2000000000080004" message="The Dispatcher invoked &apos;BeforeSendRequest&apos; on a ClientMessageInspector of type  &apos;%1&apos;.">
+    </event>
+    <event value="203" version="0" opcode="19" channel="18" level="4" task="2514" keywords="0x2000000000080004" message="The Dispatcher invoked &apos;AfterCall&apos; on a ClientParameterInspector of type &apos;%1&apos;.">
+    </event>
+    <event value="204" version="0" opcode="18" channel="18" level="4" task="2514" keywords="0x2000000000080004" message="The Dispatcher invoked &apos;BeforeCall&apos; on a ClientParameterInspector of type &apos;%1&apos;.">
+    </event>
+    <event value="205" version="0" opcode="53" channel="18" level="4" task="2533" keywords="0x2000000000080004" message="An OperationInvoker invoked the &apos;%1&apos; method. Caller information: &apos;%2&apos;.">
+    </event>
+    <event value="206" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000080004" message="The Dispatcher invoked an ErrorHandler of type  &apos;%1&apos; with an exception of type &apos;%3&apos;.  ErrorHandled == &apos;%2&apos;.">
+    </event>
+    <event value="207" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000080004" message="The Dispatcher invoked a FaultProvider of type &apos;%1&apos; with an exception of type &apos;%2&apos;.">
+    </event>
+    <event value="208" version="0" opcode="51" channel="18" level="4" task="2533" keywords="0x2000000000080004" message="The Dispatcher invoked &apos;AfterReceiveReply&apos; on a MessageInspector of type &apos;%1&apos;.">
+    </event>
+    <event value="209" version="0" opcode="52" channel="18" level="4" task="2533" keywords="0x2000000000080004" message="The Dispatcher invoked &apos;BeforeSendRequest&apos; on a MessageInspector of type &apos;%1&apos;.">
+    </event>
+    <event value="210" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x20000000004e0004" message="The &apos;%1&apos; throttle limit of &apos;%2&apos; was hit.">
+    </event>
+    <event value="211" version="0" opcode="56" channel="18" level="4" task="2533" keywords="0x2000000000080004" message="The Dispatcher invoked &apos;AfterCall&apos; on a ParameterInspector of type &apos;%1&apos;.">
+    </event>
+    <event value="212" version="0" opcode="55" channel="18" level="4" task="2533" keywords="0x2000000000080004" message="The Dispatcher invoked &apos;BeforeCall&apos; on a ParameterInspector of type &apos;%1&apos;.">
+    </event>
+    <event value="213" version="0" opcode="1" channel="18" level="0" task="2578" keywords="0x20000000000e0001" message="ServiceHost started: &apos;%1&apos;.">
+    </event>
+    <event value="214" version="0" opcode="54" channel="18" level="4" task="2533" keywords="0x20000000000e0004" message="An OperationInvoker completed the call to the &apos;%1&apos; method.  The method call duration was &apos;%2&apos; ms.">
+    </event>
+    <event value="215" version="0" opcode="2" channel="18" level="4" task="2599" keywords="0x2000000000080400" message="The transport received a message from &apos;%1&apos;.">
+    </event>
+    <event value="216" version="0" opcode="2" channel="18" level="4" task="2600" keywords="0x2000000000080400" message="The transport sent a message to &apos;%1&apos;.">
+    </event>
+    <event value="217" version="0" opcode="20" channel="19" level="4" task="2514" keywords="0x1000000000080004" message="The Client is executing Action &apos;%1&apos; associated with the &apos;%2&apos; contract. The message will be sent to &apos;%3&apos;.">
+    </event>
+    <event value="218" version="0" opcode="2" channel="18" level="4" task="2576" keywords="0x2000000000080004" message="The Client completed executing Action &apos;%1&apos; associated with the &apos;%2&apos; contract. The message was sent to &apos;%3&apos;.">
+    </event>
+    <event value="219" version="0" opcode="0" channel="18" level="2" task="2533" keywords="0x20000000000e0004" message="There was an unhandled exception of type &apos;%2&apos; during message processing.  Full Exception Details: %1.">
+    </event>
+    <event value="220" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x20000000000a0400" message="The Dispatcher sent a message to the transport. Correlation ID == &apos;%1&apos;.">
+    </event>
+    <event value="221" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x20000000000a0400" message="The Dispatcher received a message from the transport. Correlation ID == &apos;%1&apos;.">
+    </event>
+    <event value="222" version="0" opcode="0" channel="18" level="3" task="2533" keywords="0x20000000000e0004" message="The &apos;%1&apos; method threw an unhandled exception when invoked by the OperationInvoker. The method call duration was &apos;%2&apos; ms.">
+    </event>
+    <event value="223" version="0" opcode="0" channel="18" level="3" task="2533" keywords="0x20000000000e0004" message="The &apos;%1&apos; method threw a FaultException when invoked by the OperationInvoker. The method call duration was &apos;%2&apos; ms.">
+    </event>
+    <event value="224" version="0" opcode="0" channel="18" level="3" task="2533" keywords="0x20000000004e0004" message="The &apos;%1&apos; throttle limit of &apos;%2&apos; is at 70%%.">
+    </event>
+    <event value="225" version="0" opcode="0" channel="18" level="4" task="2523" keywords="0x2000000004080000" message="Calculated correlation key &apos;%1&apos; using values &apos;%2&apos; in parent scope &apos;%3&apos;.">
+    </event>
+    <event value="226" version="0" opcode="0" channel="18" level="0" task="2585" keywords="0x2000000000040080" message="%1 idle services out of total %2 activated services closed.">
+    </event>
+    <event value="301" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x20000000001e0004" message="Name:&apos;%1&apos;, Reference:&apos;%2&apos;, Payload:%3">
+    </event>
+    <event value="302" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x20000000001e0004" message="Name:&apos;%1&apos;, Reference:&apos;%2&apos;, Payload:%3">
+    </event>
+    <event value="303" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x20000000001e0004" message="Name:&apos;%1&apos;, Reference:&apos;%2&apos;, Payload:%3">
+    </event>
+    <event value="401" version="0" opcode="2" channel="18" level="4" task="2588" keywords="0x2000000000080004" message="Activity boundary.">
+    </event>
+    <event value="402" version="0" opcode="1" channel="18" level="4" task="2588" keywords="0x2000000000080004" message="Activity boundary.">
+    </event>
+    <event value="403" version="0" opcode="8" channel="18" level="4" task="2588" keywords="0x2000000000080004" message="Activity boundary.">
+    </event>
+    <event value="404" version="0" opcode="7" channel="18" level="4" task="2588" keywords="0x2000000000080004" message="Activity boundary.">
+    </event>
+    <event value="440" version="0" opcode="1" channel="18" level="4" task="2588" keywords="0x2000000004080000" message="Activity boundary.">
+    </event>
+    <event value="441" version="0" opcode="2" channel="18" level="4" task="2588" keywords="0x2000000004080000" message="Activity boundary.">
+    </event>
+    <event value="451" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000080020" message="%1">
+    </event>
+    <event value="452" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000080020" message="%1">
+    </event>
+    <event value="499" version="0" opcode="0" channel="18" level="0" task="0" keywords="0x20000000001a0065" message="Transfer event emitted.">
+    </event>
+    <event value="501" version="0" opcode="1" channel="19" level="4" task="2579" keywords="0x1000000000000080" message="Begin compilation">
+    </event>
+    <event value="502" version="0" opcode="2" channel="19" level="4" task="2579" keywords="0x1000000000000080" message="End compilation">
+    </event>
+    <event value="503" version="0" opcode="1" channel="19" level="4" task="2581" keywords="0x1000000000000080" message="ServiceHostFactory begin creation">
+    </event>
+    <event value="504" version="0" opcode="2" channel="19" level="4" task="2581" keywords="0x1000000000000080" message="ServiceHostFactory end creation">
+    </event>
+    <event value="505" version="0" opcode="1" channel="19" level="4" task="2580" keywords="0x1000000000000080" message="Begin CreateServiceHost">
+    </event>
+    <event value="506" version="0" opcode="2" channel="19" level="4" task="2580" keywords="0x1000000000000080" message="End CreateServiceHost">
+    </event>
+    <event value="507" version="0" opcode="1" channel="19" level="4" task="2546" keywords="0x1000000000000080" message="HostedTransportConfigurationManager begin configuration initialization">
+    </event>
+    <event value="508" version="0" opcode="2" channel="19" level="4" task="2546" keywords="0x1000000000000080" message="HostedTransportConfigurationManager end configuration initialization">
+    </event>
+    <event value="509" version="0" opcode="1" channel="18" level="4" task="2583" keywords="0x2000000000000001" message="ServiceHost Open started.">
+    </event>
+    <event value="510" version="0" opcode="2" channel="18" level="4" task="2583" keywords="0x2000000000000001" message="ServiceHost Open completed.">
+    </event>
+    <event value="513" version="0" opcode="1" channel="19" level="4" task="2604" keywords="0x1000000000000080" message="Received request with virtual path &apos;%2&apos; from the AppDomain &apos;%1&apos;.">
+    </event>
+    <event value="514" version="0" opcode="2" channel="19" level="4" task="2604" keywords="0x1000000000000080" message="WebHostRequest stop.">
+    </event>
+    <event value="601" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="Processed ServiceActivation Element Relative Address:&apos;%1&apos;, Normalized Relative Address &apos;%2&apos; .">
+    </event>
+    <event value="602" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="Incoming request matches a ServiceActivation element with address &apos;%1&apos;. ">
+    </event>
+    <event value="603" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000008000" message="Incoming request matches a WCF Service defined in Asp.Net route with address %1.  ">
+    </event>
+    <event value="604" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000008000" message="A new Asp.Net route &apos;%1&apos; with serviceType &apos;%2&apos; and serviceHostFactoryType &apos;%3&apos; is added.">
+    </event>
+    <event value="605" version="0" opcode="0" channel="19" level="5" task="2604" keywords="0x1000000000000080" message="IncrementBusyCount called. Source : %1">
+    </event>
+    <event value="606" version="0" opcode="2" channel="19" level="5" task="2604" keywords="0x1000000000000080" message="DecrementBusyCount called. Source : %1">
+    </event>
+    <event value="701" version="0" opcode="1" channel="18" level="4" task="2577" keywords="0x2000000000000004" message="ServiceChannelOpen started.">
+    </event>
+    <event value="702" version="0" opcode="2" channel="18" level="4" task="2577" keywords="0x2000000000000004" message="ServiceChannelOpen completed.">
+    </event>
+    <event value="703" version="0" opcode="1" channel="18" level="4" task="2576" keywords="0x2000000000000004" message="ServiceChannelCall started.">
+    </event>
+    <event value="704" version="0" opcode="1" channel="18" level="4" task="2576" keywords="0x2000000000000004" message="ServiceChannel asynchronous calls started.">
+    </event>
+    <event value="706" version="0" opcode="1" channel="19" level="5" task="2600" keywords="0x1000000000000100" message="Http Send Request Start.">
+    </event>
+    <event value="707" version="0" opcode="2" channel="19" level="5" task="2600" keywords="0x1000000000000100" message="Http Send Request Stop.">
+    </event>
+    <event value="708" version="0" opcode="1" channel="18" level="5" task="2599" keywords="0x2000000000000100" message="Message received from http transport.">
+    </event>
+    <event value="709" version="0" opcode="49" channel="18" level="4" task="2533" keywords="0x2000000000000004" message="Message dispatching started.">
+    </event>
+    <event value="710" version="0" opcode="128" channel="18" level="5" task="2599" keywords="0x2000000000000004" message="Start authentication for message dispatching">
+    </event>
+    <event value="711" version="0" opcode="48" channel="18" level="5" task="2533" keywords="0x2000000000000004" message="Start authorization for message dispatching">
+    </event>
+    <event value="712" version="0" opcode="50" channel="18" level="4" task="2533" keywords="0x2000000000000004" message="Message dispatching completed">
+    </event>
+    <event value="715" version="0" opcode="14" channel="18" level="4" task="2514" keywords="0x2000000000000004" message="ServiceChannel Open Start.">
+    </event>
+    <event value="716" version="0" opcode="15" channel="18" level="4" task="2514" keywords="0x2000000000000004" message="ServiceChannel Open Stop.">
+    </event>
+    <event value="717" version="0" opcode="1" channel="18" level="4" task="2600" keywords="0x2000000000000100" message="Http Send streamed message started.">
+    </event>
+    <event value="1001" version="0" opcode="134" channel="19" level="4" task="2605" keywords="0x1000000001000000" message="WorkflowInstance Id: &apos;%1&apos; has completed in the Closed state.">
+    </event>
+    <event value="1002" version="0" opcode="140" channel="19" level="4" task="2605" keywords="0x1000000001000000" message="WorkflowApplication Id: &apos;%1&apos; was terminated. It has completed in the Faulted state with an exception.">
+    </event>
+    <event value="1003" version="0" opcode="137" channel="19" level="4" task="2605" keywords="0x1000000001000000" message="WorkflowInstance Id: &apos;%1&apos; has completed in the Canceled state.">
+    </event>
+    <event value="1004" version="0" opcode="136" channel="19" level="4" task="2605" keywords="0x1000000001000000" message="WorkflowInstance Id: &apos;%1&apos; was aborted with an exception.">
+    </event>
+    <event value="1005" version="0" opcode="135" channel="19" level="4" task="2605" keywords="0x1000000001000000" message="WorkflowApplication Id: &apos;%1&apos; went idle.">
+    </event>
+    <event value="1006" version="0" opcode="141" channel="19" level="2" task="2605" keywords="0x1000000001000000" message="WorkflowInstance Id: &apos;%1&apos; has encountered an unhandled exception.  The exception originated from Activity &apos;%2&apos;, DisplayName: &apos;%3&apos;.  The following action will be taken: %4.">
+    </event>
+    <event value="1007" version="0" opcode="139" channel="19" level="4" task="2605" keywords="0x1000000001000000" message="WorkflowApplication Id: &apos;%1&apos; was Persisted.">
+    </event>
+    <event value="1008" version="0" opcode="142" channel="19" level="4" task="2605" keywords="0x1000000001000000" message="WorkflowInstance Id: &apos;%1&apos; was Unloaded.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="19" level="4" task="2569" keywords="0x1000000001000000" message="Parent Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos; scheduled child Activity &apos;%4&apos;, DisplayName: &apos;%5&apos;, InstanceId: &apos;%6&apos;.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="19" level="4" task="2517" keywords="0x1000000001000000" message="Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos; has completed in the &apos;%4&apos; state.">
+    </event>
+    <event value="1011" version="0" opcode="110" channel="19" level="5" task="2570" keywords="0x1000000001000000" message="An ExecuteActivityWorkItem has been scheduled for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1012" version="0" opcode="120" channel="19" level="5" task="2590" keywords="0x1000000001000000" message="Starting execution of an ExecuteActivityWorkItem for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1013" version="0" opcode="24" channel="19" level="5" task="2518" keywords="0x1000000001000000" message="An ExecuteActivityWorkItem has completed for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1014" version="0" opcode="109" channel="19" level="5" task="2570" keywords="0x1000000001000000" message="A CompletionWorkItem has been scheduled for parent Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.  Completed Activity &apos;%4&apos;, DisplayName: &apos;%5&apos;, InstanceId: &apos;%6&apos;.">
+    </event>
+    <event value="1015" version="0" opcode="119" channel="19" level="5" task="2590" keywords="0x1000000001000000" message="Starting execution of a CompletionWorkItem for parent Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;. Completed Activity &apos;%4&apos;, DisplayName: &apos;%5&apos;, InstanceId: &apos;%6&apos;.">
+    </event>
+    <event value="1016" version="0" opcode="23" channel="19" level="5" task="2518" keywords="0x1000000001000000" message="A CompletionWorkItem has completed for parent Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;. Completed Activity &apos;%4&apos;, DisplayName: &apos;%5&apos;, InstanceId: &apos;%6&apos;.">
+    </event>
+    <event value="1017" version="0" opcode="108" channel="19" level="5" task="2570" keywords="0x1000000001000000" message="A CancelActivityWorkItem has been scheduled for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1018" version="0" opcode="118" channel="19" level="5" task="2590" keywords="0x1000000001000000" message="Starting execution of a CancelActivityWorkItem for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1019" version="0" opcode="22" channel="19" level="5" task="2518" keywords="0x1000000001000000" message="A CancelActivityWorkItem has completed for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="19" level="5" task="2524" keywords="0x1000000001000000" message="A Bookmark has been created for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.  BookmarkName: %4, BookmarkScope: %5.">
+    </event>
+    <event value="1021" version="0" opcode="107" channel="19" level="5" task="2570" keywords="0x1000000001000000" message="A BookmarkWorkItem has been scheduled for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.  BookmarkName: %4, BookmarkScope: %5.">
+    </event>
+    <event value="1022" version="0" opcode="117" channel="19" level="5" task="2590" keywords="0x1000000001000000" message="Starting execution of a BookmarkWorkItem for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.  BookmarkName: %4, BookmarkScope: %5.">
+    </event>
+    <event value="1023" version="0" opcode="21" channel="19" level="5" task="2518" keywords="0x1000000001000000" message="A BookmarkWorkItem has completed for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;. BookmarkName: %4, BookmarkScope: %5.">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="19" level="5" task="2524" keywords="0x1000000001000000" message="A BookmarkScope has been created: %1.">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="19" level="5" task="2549" keywords="0x1000000001000000" message="The BookmarkScope that had TemporaryId: &apos;%1&apos; has been initialized with Id: &apos;%2&apos;.">
+    </event>
+    <event value="1026" version="0" opcode="113" channel="19" level="5" task="2570" keywords="0x1000000001000000" message="A TransactionContextWorkItem has been scheduled for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1027" version="0" opcode="123" channel="19" level="5" task="2590" keywords="0x1000000001000000" message="Starting execution of a TransactionContextWorkItem for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1028" version="0" opcode="27" channel="19" level="5" task="2518" keywords="0x1000000001000000" message="A TransactionContextWorkItem has completed for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1029" version="0" opcode="111" channel="19" level="5" task="2570" keywords="0x1000000001000000" message="A FaultWorkItem has been scheduled for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.  The exception was propagated from Activity &apos;%4&apos;, DisplayName: &apos;%5&apos;, InstanceId: &apos;%6&apos;.">
+    </event>
+    <event value="1030" version="0" opcode="121" channel="19" level="5" task="2590" keywords="0x1000000001000000" message="Starting execution of a FaultWorkItem for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.  The exception was propagated from Activity &apos;%4&apos;, DisplayName: &apos;%5&apos;, InstanceId: &apos;%6&apos;.">
+    </event>
+    <event value="1031" version="0" opcode="25" channel="19" level="5" task="2518" keywords="0x1000000001000000" message="A FaultWorkItem has completed for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;. The exception was propagated from Activity &apos;%4&apos;, DisplayName: &apos;%5&apos;, InstanceId: &apos;%6&apos;.">
+    </event>
+    <event value="1032" version="0" opcode="112" channel="19" level="5" task="2570" keywords="0x1000000001000000" message="A runtime work item has been scheduled for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1033" version="0" opcode="122" channel="19" level="5" task="2590" keywords="0x1000000001000000" message="Starting execution of a runtime work item for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1034" version="0" opcode="26" channel="19" level="5" task="2518" keywords="0x1000000001000000" message="A runtime work item has completed for Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.">
+    </event>
+    <event value="1035" version="0" opcode="106" channel="19" level="5" task="2568" keywords="0x1000000004000000" message="The runtime transaction has been set by Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos;.  Execution isolated to Activity &apos;%4&apos;, DisplayName: &apos;%5&apos;, InstanceId: &apos;%6&apos;.">
+    </event>
+    <event value="1036" version="0" opcode="105" channel="19" level="5" task="2568" keywords="0x1000000004000000" message="Activity &apos;%1&apos;, DisplayName: &apos;%2&apos;, InstanceId: &apos;%3&apos; has scheduled completion of the runtime transaction.">
+    </event>
+    <event value="1037" version="0" opcode="104" channel="19" level="5" task="2568" keywords="0x1000000004000000" message="The runtime transaction has completed with the state &apos;%1&apos;.">
+    </event>
+    <event value="1038" version="0" opcode="0" channel="19" level="5" task="2559" keywords="0x1000000001000000" message="Entering a no persist block.">
+    </event>
+    <event value="1039" version="0" opcode="0" channel="19" level="5" task="2559" keywords="0x1000000001000000" message="Exiting a no persist block.">
+    </event>
+    <event value="1040" version="0" opcode="0" channel="19" level="5" task="2535" keywords="0x1000000002000000" message="In argument &apos;%1&apos; on Activity &apos;%2&apos;, DisplayName: &apos;%3&apos;, InstanceId: &apos;%4&apos; has been bound with value: %5.">
+    </event>
+    <event value="1041" version="0" opcode="138" channel="19" level="4" task="2605" keywords="0x1000000001000000" message="WorkflowApplication Id: &apos;%1&apos; is idle and persistable.  The following action will be taken: %2.">
+    </event>
+    <event value="1101" version="0" opcode="1" channel="19" level="4" task="2607" keywords="0x1000000001000000" message="WorkflowInstance Id: &apos;%1&apos; E2E Activity">
+    </event>
+    <event value="1102" version="0" opcode="2" channel="19" level="4" task="2607" keywords="0x1000000001000000" message="WorkflowInstance Id: &apos;%1&apos; E2E Activity">
+    </event>
+    <event value="1103" version="0" opcode="8" channel="19" level="4" task="2607" keywords="0x1000000001000000" message="WorkflowInstance Id: &apos;%1&apos; E2E Activity">
+    </event>
+    <event value="1104" version="0" opcode="7" channel="19" level="4" task="2607" keywords="0x1000000001000000" message="WorkflowInstance Id: &apos;%1&apos; E2E Activity">
+    </event>
+    <event value="1124" version="0" opcode="73" channel="19" level="4" task="2551" keywords="0x1000000001000000" message="InvokeMethod &apos;%1&apos; - method is Static.">
+    </event>
+    <event value="1125" version="0" opcode="72" channel="19" level="4" task="2551" keywords="0x1000000001000000" message="InvokeMethod &apos;%1&apos; - method is not Static.">
+    </event>
+    <event value="1126" version="0" opcode="74" channel="19" level="4" task="2551" keywords="0x1000000001000000" message="An exception was thrown in the method called by the activity &apos;%1&apos;. %2">
+    </event>
+    <event value="1131" version="0" opcode="75" channel="19" level="4" task="2551" keywords="0x1000000001000000" message="InvokeMethod &apos;%1&apos; - method uses asynchronous pattern of &apos;%2&apos; and &apos;%3&apos;.">
+    </event>
+    <event value="1132" version="0" opcode="71" channel="19" level="4" task="2551" keywords="0x1000000001000000" message="InvokeMethod &apos;%1&apos; - method does not use asynchronous pattern.">
+    </event>
+    <event value="1140" version="0" opcode="11" channel="19" level="4" task="2536" keywords="0x1000000002000000" message="Flowchart &apos;%1&apos; - Start has been scheduled.">
+    </event>
+    <event value="1141" version="0" opcode="60" channel="19" level="3" task="2536" keywords="0x1000000002000000" message="Flowchart &apos;%1&apos; - was executed with no Nodes.">
+    </event>
+    <event value="1143" version="0" opcode="61" channel="19" level="4" task="2536" keywords="0x1000000002000000" message="Flowchart &apos;%1&apos;/FlowStep - Next node is null. Flowchart execution will end.">
+    </event>
+    <event value="1146" version="0" opcode="62" channel="19" level="4" task="2536" keywords="0x1000000002000000" message="Flowchart &apos;%1&apos;/FlowSwitch - Case &apos;%2&apos; was selected.">
+    </event>
+    <event value="1147" version="0" opcode="64" channel="19" level="4" task="2536" keywords="0x1000000002000000" message="Flowchart &apos;%1&apos;/FlowSwitch - Default Case was selected.">
+    </event>
+    <event value="1148" version="0" opcode="63" channel="19" level="4" task="2536" keywords="0x1000000002000000" message="Flowchart &apos;%1&apos;/FlowSwitch - could find neither a Case activity nor a Default Case matching the Expression result. Flowchart execution will end.">
+    </event>
+    <event value="1150" version="0" opcode="0" channel="19" level="4" task="2516" keywords="0x1000000002000000" message="CompensableActivity &apos;%1&apos; is in the &apos;%2&apos; state.">
+    </event>
+    <event value="1223" version="0" opcode="0" channel="19" level="4" task="2535" keywords="0x1000000002000000" message="The Switch activity &apos;%1&apos; could not find a Case activity matching the Expression result.">
+    </event>
+    <event value="1400" version="0" opcode="0" channel="18" level="2" task="2596" keywords="0x2000000000000004" message="%1">
+    </event>
+    <event value="1401" version="0" opcode="0" channel="18" level="2" task="2596" keywords="0x2000000000000004" message="%1">
+    </event>
+    <event value="1402" version="0" opcode="0" channel="18" level="2" task="2596" keywords="0x2000000000000004" message="%1 Connection pool key: %2">
+    </event>
+    <event value="1403" version="0" opcode="0" channel="18" level="4" task="2596" keywords="0x2000000000000004" message="%1 Connection pool key: %2">
+    </event>
+    <event value="1405" version="0" opcode="0" channel="18" level="2" task="2596" keywords="0x2000000000000004" message="%1">
+    </event>
+    <event value="1406" version="0" opcode="0" channel="18" level="2" task="2596" keywords="0x2000000000000004" message="%1">
+    </event>
+    <event value="1407" version="0" opcode="0" channel="18" level="2" task="2596" keywords="0x2000000000000004" message="%1">
+    </event>
+    <event value="1409" version="0" opcode="0" channel="18" level="4" task="2596" keywords="0x2000000000000004" message="%1">
+    </event>
+    <event value="1416" version="0" opcode="0" channel="18" level="2" task="2560" keywords="0x2000000000400000" message="%1">
+    </event>
+    <event value="1417" version="0" opcode="0" channel="18" level="2" task="2560" keywords="0x2000000000400000" message="%1">
+    </event>
+    <event value="1418" version="0" opcode="0" channel="19" level="4" task="2560" keywords="0x1000000000400000" message="%1">
+    </event>
+    <event value="1419" version="0" opcode="0" channel="19" level="4" task="2560" keywords="0x1000000000400000" message="%1">
+    </event>
+    <event value="1420" version="0" opcode="0" channel="18" level="2" task="2560" keywords="0x2000000000400000" message="%1">
+    </event>
+    <event value="1422" version="0" opcode="0" channel="18" level="2" task="2560" keywords="0x2000000000400000" message="%1">
+    </event>
+    <event value="1423" version="0" opcode="0" channel="19" level="5" task="2560" keywords="0x1000000000400000" message="Negotiate token authenticator state cache ratio: %1/%2">
+    </event>
+    <event value="1424" version="0" opcode="0" channel="19" level="5" task="2560" keywords="0x1000000000400000" message="Security session ratio: %1/%2">
+    </event>
+    <event value="1430" version="0" opcode="0" channel="18" level="5" task="2560" keywords="0x2000000000400000" message="Pending connections ratio: %1/%2">
+    </event>
+    <event value="1431" version="0" opcode="0" channel="18" level="5" task="2560" keywords="0x2000000000400000" message="Concurrent calls ratio: %1/%2">
+    </event>
+    <event value="1432" version="0" opcode="0" channel="18" level="5" task="2560" keywords="0x2000000000400000" message="Concurrent sessions ratio: %1/%2">
+    </event>
+    <event value="1433" version="0" opcode="0" channel="18" level="5" task="2560" keywords="0x2000000000400000" message="Outbound connections per endpoint ratio: %1/%2">
+    </event>
+    <event value="1436" version="0" opcode="0" channel="18" level="5" task="2560" keywords="0x2000000000400000" message="Pending messages per channel ratio: %1/%2">
+    </event>
+    <event value="1438" version="0" opcode="0" channel="18" level="5" task="2560" keywords="0x2000000000400000" message="Concurrent instances ratio: %1/%2">
+    </event>
+    <event value="1439" version="0" opcode="0" channel="19" level="4" task="2560" keywords="0x1000000000400000" message="Zero pending accepts left">
+    </event>
+    <event value="1441" version="0" opcode="0" channel="18" level="3" task="2560" keywords="0x2000000000400000" message="%1">
+    </event>
+    <event value="1442" version="0" opcode="0" channel="18" level="3" task="2558" keywords="0x2000000000400000" message="Receive retry count reached on MSMQ message with id &apos;%1&apos;">
+    </event>
+    <event value="1443" version="0" opcode="0" channel="18" level="2" task="2558" keywords="0x2000000000400000" message="Max retry cycles exceeded on MSMQ message with id &apos;%1&apos;">
+    </event>
+    <event value="1445" version="0" opcode="0" channel="18" level="5" task="2560" keywords="0x2000000000400000" message="Created new &apos;%1&apos;">
+    </event>
+    <event value="1446" version="0" opcode="0" channel="18" level="5" task="2560" keywords="0x2000000000400000" message="Created new &apos;%1&apos;">
+    </event>
+    <event value="1449" version="0" opcode="240" channel="19" level="4" task="2606" keywords="0x1000000004000000" message="Message received by workflow">
+    </event>
+    <event value="1450" version="0" opcode="9" channel="19" level="4" task="2606" keywords="0x1000000004000000" message="Message sent from workflow">
+    </event>
+    <event value="1451" version="0" opcode="0" channel="18" level="2" task="2560" keywords="0x2000000000400000" message="%1">
+    </event>
+    <event value="2021" version="0" opcode="1" channel="19" level="5" task="2537" keywords="0x1000000001000000" message="Execute work item start">
+    </event>
+    <event value="2022" version="0" opcode="2" channel="19" level="5" task="2537" keywords="0x1000000001000000" message="Execute work item stop">
+    </event>
+    <event value="2023" version="0" opcode="76" channel="19" level="5" task="2554" keywords="0x1000000001000000" message="SendMessageChannelCache miss">
+    </event>
+    <event value="2024" version="0" opcode="1" channel="19" level="5" task="2550" keywords="0x1000000001000000" message="InternalCacheMetadata started on activity &apos;%1&apos;.">
+    </event>
+    <event value="2025" version="0" opcode="2" channel="19" level="5" task="2550" keywords="0x1000000001000000" message="InternalCacheMetadata stopped on activity &apos;%1&apos;.">
+    </event>
+    <event value="2026" version="0" opcode="1" channel="19" level="5" task="2602" keywords="0x1000000001000000" message="Compiling VB expression &apos;%1&apos;">
+    </event>
+    <event value="2027" version="0" opcode="1" channel="19" level="5" task="2510" keywords="0x1000000001000000" message="CacheRootMetadata started on activity &apos;%1&apos;">
+    </event>
+    <event value="2028" version="0" opcode="2" channel="19" level="5" task="2510" keywords="0x1000000001000000" message="CacheRootMetadata stopped on activity %1.">
+    </event>
+    <event value="2029" version="0" opcode="2" channel="19" level="5" task="2602" keywords="0x1000000001000000" message="Finished compiling VB expression.">
+    </event>
+    <event value="2576" version="0" opcode="131" channel="19" level="4" task="2601" keywords="0x1000000002000000" message="The TryCatch activity &apos;%1&apos; has caught an exception of type &apos;%2&apos;.">
+    </event>
+    <event value="2577" version="0" opcode="129" channel="19" level="3" task="2601" keywords="0x1000000002000000" message="A child activity of the TryCatch activity &apos;%1&apos; has thrown an exception during cancelation.">
+    </event>
+    <event value="2578" version="0" opcode="130" channel="19" level="3" task="2601" keywords="0x1000000002000000" message="A Catch or Finally activity that is associated with the TryCatch activity &apos;%1&apos; has thrown an exception.">
+    </event>
+    <event value="3300" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000001000" message="Failed to Complete %1.">
+    </event>
+    <event value="3301" version="0" opcode="0" channel="19" level="3" task="0" keywords="0x1000000000001000" message="Failed to Abandon %1.">
+    </event>
+    <event value="3302" version="0" opcode="0" channel="18" level="3" task="2533" keywords="0x2000000000000004" message="Receive Context faulted.">
+    </event>
+    <event value="3303" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000001000" message="%1 was Abandoned with exception %2.">
+    </event>
+    <event value="3305" version="0" opcode="0" channel="19" level="4" task="2511" keywords="0x1000000000000004" message="Number of cached channel factories is: &apos;%1&apos;.  At most &apos;%2&apos; channel factories can be cached.">
+    </event>
+    <event value="3306" version="0" opcode="0" channel="19" level="4" task="2511" keywords="0x1000000000000004" message="A channel factory has been aged out of the cache because the cache has reached its limit of &apos;%1&apos;.">
+    </event>
+    <event value="3307" version="0" opcode="0" channel="19" level="4" task="2511" keywords="0x1000000000000004" message="Used matching channel factory found in cache.">
+    </event>
+    <event value="3308" version="0" opcode="0" channel="19" level="4" task="2511" keywords="0x1000000000000004" message="Not using channel factory from cache, i.e. caching disabled for instance.">
+    </event>
+    <event value="3309" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000004" message="Query composition using &apos;%1&apos; was executed on the Request Uri: &apos;%2&apos;.">
+    </event>
+    <event value="3310" version="0" opcode="0" channel="18" level="2" task="2533" keywords="0x2000000000000004" message="The &apos;%1&apos; operation was dispatched with errors.">
+    </event>
+    <event value="3311" version="0" opcode="2" channel="18" level="4" task="2533" keywords="0x2000000000000004" message="The &apos;%1&apos; operation was dispatched successfully.">
+    </event>
+    <event value="3312" version="0" opcode="2" channel="19" level="4" task="2555" keywords="0x1000000000001000" message="A message with size &apos;%1&apos; bytes was read by the encoder.">
+    </event>
+    <event value="3313" version="0" opcode="2" channel="19" level="4" task="2556" keywords="0x1000000000001000" message="A message with size &apos;%1&apos; bytes was written by the encoder.">
+    </event>
+    <event value="3314" version="0" opcode="0" channel="18" level="2" task="2595" keywords="0x2000000000000004" message="Session aborting for idle channel to uri:&apos;%1&apos;.">
+    </event>
+    <event value="3319" version="0" opcode="1" channel="19" level="5" task="2521" keywords="0x1000000000000200" message="Connection accept started.">
+    </event>
+    <event value="3320" version="0" opcode="2" channel="19" level="5" task="2521" keywords="0x1000000000000200" message="ListenerId:%1 accepted SocketId:%2.">
+    </event>
+    <event value="3321" version="0" opcode="0" channel="19" level="5" task="2522" keywords="0x1000000000001000" message="Pool for %1 has no available connection and %2 busy connections.">
+    </event>
+    <event value="3322" version="0" opcode="1" channel="19" level="5" task="2540" keywords="0x1000000000000004" message="Dispatcher started deserialization the request message.">
+    </event>
+    <event value="3323" version="0" opcode="2" channel="19" level="5" task="2540" keywords="0x1000000000000004" message="Dispatcher completed deserialization the request message.">
+    </event>
+    <event value="3324" version="0" opcode="1" channel="19" level="5" task="2541" keywords="0x1000000000000004" message="Dispatcher started serialization of the reply message.">
+    </event>
+    <event value="3325" version="0" opcode="2" channel="19" level="5" task="2541" keywords="0x1000000000000004" message="Dispatcher completed serialization of the reply message.">
+    </event>
+    <event value="3326" version="0" opcode="1" channel="19" level="5" task="2542" keywords="0x1000000000000004" message="Client request serialization started.">
+    </event>
+    <event value="3327" version="0" opcode="2" channel="19" level="5" task="2542" keywords="0x1000000000000004" message="Client completed serialization of the request message.">
+    </event>
+    <event value="3328" version="0" opcode="1" channel="19" level="5" task="2539" keywords="0x1000000000000004" message="Client started deserializing the reply message.">
+    </event>
+    <event value="3329" version="0" opcode="2" channel="19" level="5" task="2539" keywords="0x1000000000000004" message="Client completed deserializing the reply message.">
+    </event>
+    <event value="3330" version="0" opcode="1" channel="19" level="5" task="2573" keywords="0x1000000000000010" message="Security negotiation started.">
+    </event>
+    <event value="3331" version="0" opcode="2" channel="19" level="5" task="2573" keywords="0x1000000000000010" message="Security negotiation completed.">
+    </event>
+    <event value="3332" version="0" opcode="1" channel="19" level="5" task="2571" keywords="0x1000000000000010" message="SecurityTokenProvider opening completed.">
+    </event>
+    <event value="3333" version="0" opcode="2" channel="19" level="5" task="2571" keywords="0x1000000000000010" message="Outgoing message has been secured.">
+    </event>
+    <event value="3334" version="0" opcode="0" channel="19" level="5" task="2574" keywords="0x1000000000000014" message="Incoming message has been verified.">
+    </event>
+    <event value="3335" version="0" opcode="1" channel="19" level="5" task="2584" keywords="0x1000000000000004" message="Service instance retrieval started.">
+    </event>
+    <event value="3336" version="0" opcode="2" channel="19" level="5" task="2584" keywords="0x1000000000000004" message="Service instance retrieved.">
+    </event>
+    <event value="3337" version="0" opcode="1" channel="19" level="5" task="2513" keywords="0x1000000000001000" message="ChannelHandlerId:%1 - Message receive loop started.">
+    </event>
+    <event value="3338" version="0" opcode="2" channel="19" level="5" task="2513" keywords="0x1000000000001000" message="ChannelHandlerId:%1 - Message receive loop stopped.">
+    </event>
+    <event value="3339" version="0" opcode="0" channel="19" level="5" task="2512" keywords="0x1000000000000004" message="ChannelFactory created .">
+    </event>
+    <event value="3340" version="0" opcode="1" channel="19" level="5" task="2521" keywords="0x1000000000001000" message="Pipe connection accept started on %1 .">
+    </event>
+    <event value="3341" version="0" opcode="2" channel="19" level="5" task="2521" keywords="0x1000000000001000" message="Pipe connection accepted.">
+    </event>
+    <event value="3342" version="0" opcode="1" channel="19" level="5" task="2519" keywords="0x1000000000001000" message="Connection establishment started for %1.">
+    </event>
+    <event value="3343" version="0" opcode="2" channel="19" level="5" task="2519" keywords="0x1000000000001000" message="Connection established.">
+    </event>
+    <event value="3345" version="0" opcode="0" channel="19" level="5" task="2519" keywords="0x1000000000001000" message="Session preamble for &apos;%1&apos; understood.">
+    </event>
+    <event value="3346" version="0" opcode="0" channel="19" level="2" task="2519" keywords="0x1000000000001000" message="Connection reader sending fault &apos;%1&apos;. ">
+    </event>
+    <event value="3347" version="0" opcode="2" channel="19" level="5" task="2521" keywords="0x1000000000000200" message="Socket accept closed.">
+    </event>
+    <event value="3348" version="0" opcode="0" channel="18" level="1" task="2582" keywords="0x2000000000000200" message="Service host faulted.">
+    </event>
+    <event value="3349" version="0" opcode="1" channel="19" level="5" task="2552" keywords="0x1000000000001000" message="Listener opening for &apos;%1&apos;.">
+    </event>
+    <event value="3350" version="0" opcode="2" channel="19" level="5" task="2552" keywords="0x1000000000001000" message="Listener open completed.">
+    </event>
+    <event value="3351" version="0" opcode="0" channel="18" level="5" task="2560" keywords="0x2000000000400000" message="Server max pooled connections quota reached.">
+    </event>
+    <event value="3352" version="0" opcode="0" channel="18" level="2" task="2519" keywords="0x2000000000000200" message="SocketId:%1 to remote address %2 timed out.">
+    </event>
+    <event value="3353" version="0" opcode="0" channel="18" level="3" task="2519" keywords="0x2000000000000200" message="SocketId:%1 to remote address %2 had a connection reset error.">
+    </event>
+    <event value="3354" version="0" opcode="0" channel="19" level="5" task="2573" keywords="0x1000000000000010" message="Service security negotiation completed.">
+    </event>
+    <event value="3355" version="0" opcode="0" channel="18" level="2" task="2573" keywords="0x2000000000000010" message="Security negotiation processing failed.">
+    </event>
+    <event value="3356" version="0" opcode="0" channel="19" level="5" task="2574" keywords="0x1000000000000010" message="Security verification succeeded.">
+    </event>
+    <event value="3357" version="0" opcode="0" channel="18" level="2" task="2574" keywords="0x2000000000000010" message="Security verification failed.">
+    </event>
+    <event value="3358" version="0" opcode="0" channel="19" level="5" task="2501" keywords="0x1000000000000800" message="Socket duplicated for %1.">
+    </event>
+    <event value="3359" version="0" opcode="0" channel="19" level="5" task="2572" keywords="0x1000000000000010" message="Security impersonation succeeded.">
+    </event>
+    <event value="3360" version="0" opcode="0" channel="18" level="3" task="2572" keywords="0x2000000000000010" message="Security impersonation failed.">
+    </event>
+    <event value="3361" version="0" opcode="0" channel="18" level="3" task="2599" keywords="0x2000000000000100" message="Http channel request aborted.">
+    </event>
+    <event value="3362" version="0" opcode="0" channel="18" level="3" task="2600" keywords="0x2000000000000100" message="Http channel response aborted.">
+    </event>
+    <event value="3363" version="0" opcode="0" channel="18" level="3" task="2574" keywords="0x2000000000000100" message="Http authentication failed.">
+    </event>
+    <event value="3364" version="0" opcode="1" channel="18" level="5" task="2502" keywords="0x2000000000000800" message="SharedListenerProxy registration started for uri &apos;%1&apos;.">
+    </event>
+    <event value="3365" version="0" opcode="2" channel="18" level="5" task="2502" keywords="0x2000000000000800" message="SharedListenerProxy Register Stop.">
+    </event>
+    <event value="3366" version="0" opcode="0" channel="18" level="2" task="2502" keywords="0x2000000000000800" message="SharedListenerProxy register failed with status &apos;%1&apos;.">
+    </event>
+    <event value="3367" version="0" opcode="0" channel="18" level="2" task="2586" keywords="0x2000000000001000" message="ConnectionPoolPreambleFailed.">
+    </event>
+    <event value="3368" version="0" opcode="115" channel="18" level="5" task="2587" keywords="0x2000000000000010" message="SslOnAcceptUpgradeStart">
+    </event>
+    <event value="3369" version="0" opcode="114" channel="18" level="5" task="2587" keywords="0x2000000000000010" message="SslOnAcceptUpgradeStop">
+    </event>
+    <event value="3370" version="0" opcode="1" channel="19" level="5" task="2556" keywords="0x1000000000001000" message="BinaryMessageEncoder started encoding the message.">
+    </event>
+    <event value="3371" version="0" opcode="1" channel="19" level="5" task="2556" keywords="0x1000000000001000" message="MtomMessageEncoder started encoding the message.">
+    </event>
+    <event value="3372" version="0" opcode="1" channel="19" level="5" task="2556" keywords="0x1000000000001000" message="TextMessageEncoder started encoding the message.">
+    </event>
+    <event value="3373" version="0" opcode="1" channel="19" level="5" task="2555" keywords="0x1000000000001000" message="BinaryMessageEncoder started decoding the message.">
+    </event>
+    <event value="3374" version="0" opcode="1" channel="19" level="5" task="2555" keywords="0x1000000000001000" message="MtomMessageEncoder started decoding  the message.">
+    </event>
+    <event value="3375" version="0" opcode="1" channel="19" level="5" task="2555" keywords="0x1000000000001000" message="TextMessageEncoder started decoding the message.">
+    </event>
+    <event value="3376" version="0" opcode="1" channel="19" level="4" task="2599" keywords="0x1000000000000100" message="Http transport started receiving a message.">
+    </event>
+    <event value="3377" version="0" opcode="2" channel="19" level="5" task="2599" keywords="0x1000000000000200" message="SocketId:%1 read &apos;%2&apos; bytes read from &apos;%3&apos;.">
+    </event>
+    <event value="3378" version="0" opcode="2" channel="19" level="5" task="2599" keywords="0x1000000000000200" message="SocketId:%1 read &apos;%2&apos; bytes read from &apos;%3&apos;.">
+    </event>
+    <event value="3379" version="0" opcode="1" channel="19" level="5" task="2600" keywords="0x1000000000000200" message="SocketId:%1 writing &apos;%2&apos; bytes to &apos;%3&apos;.">
+    </event>
+    <event value="3380" version="0" opcode="1" channel="19" level="5" task="2600" keywords="0x1000000000000200" message="SocketId:%1 writing &apos;%2&apos; bytes to &apos;%3&apos;.">
+    </event>
+    <event value="3381" version="0" opcode="79" channel="19" level="5" task="2561" keywords="0x1000000000001000" message="SessionId:%1 acknowledgement sent.">
+    </event>
+    <event value="3382" version="0" opcode="78" channel="19" level="4" task="2561" keywords="0x1000000000001000" message="SessionId:%1 reconnecting.">
+    </event>
+    <event value="3383" version="0" opcode="77" channel="19" level="4" task="2561" keywords="0x1000000000001000" message="SessionId:%1 faulted.">
+    </event>
+    <event value="3384" version="0" opcode="115" channel="18" level="5" task="2587" keywords="0x2000000000000010" message="WindowsStreamSecurity initiating security upgrade.">
+    </event>
+    <event value="3385" version="0" opcode="114" channel="18" level="5" task="2587" keywords="0x2000000000000010" message="Windows streaming security on accepting upgrade.">
+    </event>
+    <event value="3386" version="0" opcode="0" channel="18" level="3" task="2520" keywords="0x2000000000000200" message="SocketId:%1 is aborting.">
+    </event>
+    <event value="3388" version="0" opcode="1" channel="18" level="5" task="2599" keywords="0x2000000000000100" message="HttpGetContext start.">
+    </event>
+    <event value="3389" version="0" opcode="1" channel="19" level="5" task="2515" keywords="0x1000000000001000" message="Client sending preamble start.">
+    </event>
+    <event value="3390" version="0" opcode="2" channel="19" level="5" task="2515" keywords="0x1000000000001000" message="Client sending preamble stop.">
+    </event>
+    <event value="3391" version="0" opcode="1" channel="18" level="3" task="2599" keywords="0x2000000000000100" message="Http Message receive failed.">
+    </event>
+    <event value="3392" version="0" opcode="57" channel="19" level="4" task="2533" keywords="0x1000000000000004" message="TransactionScope is being created with LocalIdentifier:&apos;%1&apos; and DistributedIdentifier:&apos;%2&apos;.">
+    </event>
+    <event value="3393" version="0" opcode="2" channel="19" level="4" task="2555" keywords="0x1000000000001000" message="A streamed message was read by the encoder.">
+    </event>
+    <event value="3394" version="0" opcode="2" channel="19" level="4" task="2556" keywords="0x1000000000001000" message="A streamed message was written by the encoder.">
+    </event>
+    <event value="3395" version="0" opcode="2" channel="19" level="4" task="2556" keywords="0x1000000000001000" message="A message was written asynchronously by the encoder.">
+    </event>
+    <event value="3396" version="0" opcode="1" channel="19" level="4" task="2600" keywords="0x1000000000001000" message="BufferId:%1 completed writing &apos;%2&apos; bytes to underlying stream.">
+    </event>
+    <event value="3397" version="0" opcode="2" channel="19" level="4" task="2600" keywords="0x1000000000001000" message="A message was written asynchronously by the encoder.">
+    </event>
+    <event value="3398" version="0" opcode="0" channel="19" level="5" task="2552" keywords="0x1000000000001000" message="Pipe shared memory created at &apos;%1&apos; .">
+    </event>
+    <event value="3399" version="0" opcode="0" channel="19" level="5" task="2552" keywords="0x1000000000001000" message="NamedPipe &apos;%1&apos; created.">
+    </event>
+    <event value="3401" version="0" opcode="1" channel="19" level="5" task="2611" keywords="0x1000000000000010" message="Signature verification started.">
+    </event>
+    <event value="3402" version="0" opcode="0" channel="19" level="5" task="2611" keywords="0x1000000000000010" message="Signature verification succeeded">
+    </event>
+    <event value="3403" version="0" opcode="0" channel="19" level="5" task="2614" keywords="0x1000000000000010" message="Wrapped key decryption started.">
+    </event>
+    <event value="3404" version="0" opcode="0" channel="19" level="5" task="2614" keywords="0x1000000000000010" message="Wrapped key decryption succeeded.">
+    </event>
+    <event value="3405" version="0" opcode="0" channel="19" level="5" task="2615" keywords="0x1000000000000010" message="Encrypted data processing started.">
+    </event>
+    <event value="3406" version="0" opcode="0" channel="19" level="5" task="2615" keywords="0x1000000000000010" message="Encrypted data processing succeeded.">
+    </event>
+    <event value="3407" version="0" opcode="1" channel="19" level="5" task="2599" keywords="0x1000000000000100" message="Http message handler started processing the inbound request.">
+    </event>
+    <event value="3408" version="0" opcode="1" channel="19" level="5" task="2599" keywords="0x1000000000000100" message="Http message handler started processing the inbound request asynchronously.">
+    </event>
+    <event value="3409" version="0" opcode="2" channel="19" level="5" task="2599" keywords="0x1000000000000100" message="Http message handler completed processing an inbound request.">
+    </event>
+    <event value="3410" version="0" opcode="0" channel="18" level="3" task="2599" keywords="0x2000000000000100" message="Http message handler is faulted.">
+    </event>
+    <event value="3411" version="0" opcode="0" channel="18" level="2" task="2519" keywords="0x2000000000000100" message="WebSocket connection timed out.">
+    </event>
+    <event value="3412" version="0" opcode="1" channel="19" level="5" task="2600" keywords="0x1000000000000100" message="Http message handler started processing the response.">
+    </event>
+    <event value="3413" version="0" opcode="1" channel="19" level="5" task="2600" keywords="0x1000000000000100" message="Http message handler started processing the response asynchronously.">
+    </event>
+    <event value="3414" version="0" opcode="2" channel="19" level="5" task="2600" keywords="0x1000000000000100" message="Http message handler completed processing the response.">
+    </event>
+    <event value="3415" version="0" opcode="1" channel="19" level="5" task="2519" keywords="0x1000000000000100" message="WebSocket connection request to &apos;%1&apos; send start.">
+    </event>
+    <event value="3416" version="0" opcode="2" channel="19" level="5" task="2519" keywords="0x1000000000000100" message="WebSocketId:%1 connection request sent.">
+    </event>
+    <event value="3417" version="0" opcode="1" channel="19" level="5" task="2519" keywords="0x1000000000000100" message="WebSocket connection accept start.">
+    </event>
+    <event value="3418" version="0" opcode="2" channel="19" level="5" task="2519" keywords="0x1000000000000100" message="WebSocketId:%1 connection accepted.">
+    </event>
+    <event value="3419" version="0" opcode="0" channel="18" level="2" task="2519" keywords="0x2000000000000100" message="WebSocket connection declined with status code &apos;%1&apos;">
+    </event>
+    <event value="3420" version="0" opcode="0" channel="18" level="2" task="2519" keywords="0x2000000000000100" message="WebSocket connection request failed: &apos;%1&apos;">
+    </event>
+    <event value="3421" version="0" opcode="0" channel="18" level="2" task="2519" keywords="0x2000000000000100" message="WebSocketId:%1 connection is aborted.">
+    </event>
+    <event value="3422" version="0" opcode="1" channel="19" level="5" task="2600" keywords="0x1000000000000100" message="WebSocketId:%1 writing &apos;%2&apos; bytes to &apos;%3&apos;.">
+    </event>
+    <event value="3423" version="0" opcode="2" channel="19" level="5" task="2600" keywords="0x1000000000000100" message="WebSocketId:%1 asynchronous write stop.">
+    </event>
+    <event value="3424" version="0" opcode="1" channel="19" level="5" task="2599" keywords="0x1000000000000100" message="WebSocketId:%1 read start.">
+    </event>
+    <event value="3425" version="0" opcode="2" channel="19" level="5" task="2599" keywords="0x1000000000000100" message="WebSocketId:%1 read &apos;%2&apos; bytes from &apos;%3&apos;.">
+    </event>
+    <event value="3426" version="0" opcode="0" channel="19" level="5" task="2519" keywords="0x1000000000000100" message="WebSocketId:%1 sending close message to &apos;%2&apos; with close status &apos;%3&apos;.">
+    </event>
+    <event value="3427" version="0" opcode="0" channel="19" level="5" task="2519" keywords="0x1000000000000100" message="WebSocketId:%1 sending close output message to &apos;%2&apos; with close status &apos;%3&apos;.">
+    </event>
+    <event value="3428" version="0" opcode="0" channel="19" level="5" task="2519" keywords="0x1000000000000100" message="WebSocketId:%1 connection closed.">
+    </event>
+    <event value="3429" version="0" opcode="0" channel="19" level="5" task="2519" keywords="0x1000000000000100" message="WebSocketId:%1 connection close message received with status &apos;%2&apos;.">
+    </event>
+    <event value="3430" version="0" opcode="0" channel="19" level="5" task="2519" keywords="0x1000000000000100" message="Using the WebSocketVersion from a client WebSocket factory of type &apos;%1&apos;.">
+    </event>
+    <event value="3431" version="0" opcode="0" channel="19" level="5" task="2519" keywords="0x1000000000000100" message="Creating the client WebSocket with a factory of type &apos;%1&apos;.">
+    </event>
+    <event value="3501" version="0" opcode="69" channel="18" level="4" task="2548" keywords="0x2000000004000000" message="ContractDescription with Name=&apos;%1&apos; and Namespace=&apos;%2&apos; has been inferred from WorkflowService.">
+    </event>
+    <event value="3502" version="0" opcode="70" channel="18" level="4" task="2548" keywords="0x2000000004000000" message="OperationDescription with Name=&apos;%1&apos; in contract &apos;%2&apos; has been inferred from WorkflowService. IsOneWay=%3.">
+    </event>
+    <event value="3503" version="0" opcode="28" channel="18" level="3" task="2523" keywords="0x2000000004000000" message="A duplicate CorrelationQuery was found with Where=&apos;%1&apos;. This duplicate query will not be used when calculating correlation.">
+    </event>
+    <event value="3507" version="0" opcode="0" channel="18" level="4" task="2507" keywords="0x2000000004000000" message="A service endpoint has been added for address &apos;%1&apos;, binding &apos;%2&apos;, and contract &apos;%3&apos;.">
+    </event>
+    <event value="3508" version="0" opcode="124" channel="18" level="5" task="2597" keywords="0x2000000004000000" message="TrackingProfile &apos;%1&apos; for the ActivityDefinitionId &apos;%2&apos; not found. Either the TrackingProfile is not found in the config file or the ActivityDefinitionId does not match.">
+    </event>
+    <event value="3550" version="0" opcode="11" channel="18" level="4" task="2508" keywords="0x2000000004000000" message="Operation &apos;%1&apos; cannot be performed at this time. Another attempt will be made when the service instance is ready to process this particular operation.">
+    </event>
+    <event value="3551" version="0" opcode="10" channel="18" level="4" task="2508" keywords="0x2000000004000000" message="Operation &apos;%2&apos; on service instance &apos;%1&apos; cannot be performed at this time. Another attempt will be made when the service instance is ready to process this particular operation.">
+    </event>
+    <event value="3552" version="0" opcode="0" channel="18" level="3" task="2560" keywords="0x2000000004400000" message="The throttle &apos;MaxPendingMessagesPerChannel&apos; limit of  &apos;%1&apos; was hit. To increase this limit, adjust the MaxPendingMessagesPerChannel property on BufferedReceiveServiceBehavior.">
+    </event>
+    <event value="3553" version="0" opcode="1" channel="19" level="4" task="2610" keywords="0x1000000000000080" message="XamlServicesLoad start">
+    </event>
+    <event value="3554" version="0" opcode="2" channel="19" level="4" task="2610" keywords="0x1000000000000080" message="XamlServicesLoad Stop">
+    </event>
+    <event value="3555" version="0" opcode="1" channel="19" level="4" task="2526" keywords="0x1000000000000080" message="CreateWorkflowServiceHost start">
+    </event>
+    <event value="3556" version="0" opcode="2" channel="19" level="4" task="2526" keywords="0x1000000000000080" message="CreateWorkflowServiceHost Stop">
+    </event>
+    <event value="3557" version="0" opcode="0" channel="18" level="4" task="2568" keywords="0x2000000004000000" message="The call to EndCommit on the CommittableTransaction with id = &apos;%1&apos; threw a TransactionException with the following message: &apos;%2&apos;.">
+    </event>
+    <event value="3558" version="0" opcode="1" channel="18" level="4" task="2575" keywords="0x2000000000000080" message="Service activation start">
+    </event>
+    <event value="3559" version="0" opcode="2" channel="18" level="4" task="2575" keywords="0x2000000000000080" message="Service activation Stop">
+    </event>
+    <event value="3560" version="0" opcode="0" channel="18" level="5" task="2560" keywords="0x2000000000400000" message="Available memory (bytes): %1">
+    </event>
+    <event value="3561" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000080" message="The service could not be activated. Exception details: %1">
+    </event>
+    <event value="3800" version="0" opcode="87" channel="19" level="4" task="2563" keywords="0x1000000000008000" message="The Routing Service is closing client &apos;%1&apos;.">
+    </event>
+    <event value="3801" version="0" opcode="86" channel="19" level="3" task="2563" keywords="0x1000000000008000" message="Routing Service client &apos;%1&apos; has faulted.">
+    </event>
+    <event value="3802" version="0" opcode="89" channel="19" level="4" task="2565" keywords="0x1000000000008000" message="A Routing Service one way message is completing.">
+    </event>
+    <event value="3803" version="0" opcode="92" channel="19" level="2" task="2565" keywords="0x1000000000008000" message="The Routing Service failed while processing a message on the endpoint with address &apos;%1&apos;.">
+    </event>
+    <event value="3804" version="0" opcode="88" channel="19" level="4" task="2563" keywords="0x1000000000008000" message="The Routing Service is creating a client for endpoint: &apos;%1&apos;.">
+    </event>
+    <event value="3805" version="0" opcode="0" channel="19" level="5" task="2565" keywords="0x1000000000008000" message="The Routing Service is configured with RouteOnHeadersOnly: %1, SoapProcessingEnabled: %2, EnsureOrderedDispatch: %3.">
+    </event>
+    <event value="3807" version="0" opcode="90" channel="19" level="4" task="2565" keywords="0x1000000000008000" message="A Routing Service request reply message is completing.">
+    </event>
+    <event value="3809" version="0" opcode="94" channel="19" level="5" task="2565" keywords="0x1000000000008000" message="The Routing Service routed message with ID: &apos;%1&apos; to %2 endpoint lists.">
+    </event>
+    <event value="3810" version="0" opcode="82" channel="19" level="4" task="2562" keywords="0x1000000000008000" message="A new RoutingConfiguration has been applied to the Routing Service.">
+    </event>
+    <event value="3815" version="0" opcode="93" channel="19" level="4" task="2565" keywords="0x1000000000008000" message="The Routing Service is processing a message with ID: &apos;%1&apos;, Action: &apos;%2&apos;, Inbound URL: &apos;%3&apos; Received in Transaction: %4.">
+    </event>
+    <event value="3816" version="0" opcode="98" channel="19" level="4" task="2565" keywords="0x1000000000008000" message="The Routing Service is transmitting the message with ID: &apos;%1&apos; [operation %2] to &apos;%3&apos;.">
+    </event>
+    <event value="3817" version="0" opcode="101" channel="19" level="4" task="2567" keywords="0x1000000000008000" message="The Routing Service is committing a transaction with id: &apos;%1&apos;.">
+    </event>
+    <event value="3818" version="0" opcode="83" channel="19" level="2" task="2562" keywords="0x1000000000008000" message="Routing Service component %1 encountered a duplex callback exception.">
+    </event>
+    <event value="3819" version="0" opcode="91" channel="19" level="4" task="2565" keywords="0x1000000000008000" message="Routing Service message with ID: &apos;%1&apos; [operation %2] moved to backup endpoint &apos;%3&apos;.">
+    </event>
+    <event value="3820" version="0" opcode="102" channel="19" level="4" task="2567" keywords="0x1000000000008000" message="The Routing Service created a new Transaction with id &apos;%1&apos; for processing message(s).">
+    </event>
+    <event value="3821" version="0" opcode="81" channel="19" level="3" task="2562" keywords="0x1000000000008000" message="The Routing Service failed while closing outbound client &apos;%1&apos;.">
+    </event>
+    <event value="3822" version="0" opcode="96" channel="19" level="4" task="2565" keywords="0x1000000000008000" message="The Routing Service is sending back a response message with Action &apos;%1&apos;.">
+    </event>
+    <event value="3823" version="0" opcode="95" channel="19" level="3" task="2565" keywords="0x1000000000008000" message="The Routing Service is sending back a Fault response message with Action &apos;%1&apos;.">
+    </event>
+    <event value="3824" version="0" opcode="100" channel="19" level="5" task="2566" keywords="0x1000000000008000" message="The Routing Service is calling ReceiveContext.Complete for Message with ID: &apos;%1&apos;.">
+    </event>
+    <event value="3825" version="0" opcode="99" channel="19" level="3" task="2566" keywords="0x1000000000008000" message="The Routing Service is calling ReceiveContext.Abandon for Message with ID: &apos;%1&apos;.">
+    </event>
+    <event value="3826" version="0" opcode="103" channel="19" level="5" task="2567" keywords="0x1000000000008000" message="The Routing Service will send messages using existing transaction &apos;%1&apos;.">
+    </event>
+    <event value="3827" version="0" opcode="85" channel="19" level="3" task="2562" keywords="0x1000000000008000" message="The Routing Service failed while sending to &apos;%1&apos;.">
+    </event>
+    <event value="3828" version="0" opcode="1" channel="18" level="4" task="2564" keywords="0x2000000000008000" message="Routing Service MessageFilterTable Match Start.">
+    </event>
+    <event value="3829" version="0" opcode="2" channel="18" level="4" task="2564" keywords="0x2000000000008000" message="Routing Service MessageFilterTable Match Stop.">
+    </event>
+    <event value="3830" version="0" opcode="80" channel="19" level="5" task="2562" keywords="0x1000000000008000" message="The Routing Service is calling abort on channel: &apos;%1&apos;.">
+    </event>
+    <event value="3831" version="0" opcode="84" channel="19" level="5" task="2562" keywords="0x1000000000008000" message="The Routing Service has handled an exception.">
+    </event>
+    <event value="3832" version="0" opcode="97" channel="19" level="4" task="2565" keywords="0x1000000000008000" message="The Routing Service successfully transmitted Message with ID: &apos;%1 [operation %2] to &apos;%3&apos;.">
+    </event>
+    <event value="4001" version="0" opcode="240" channel="18" level="5" task="2500" keywords="0x2000000000000800" message="Transport listener session received with via &apos;%1&apos;">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="18" level="1" task="2603" keywords="0x2000000000000800" message="FailFastException.">
+    </event>
+    <event value="4003" version="0" opcode="0" channel="18" level="2" task="2505" keywords="0x2000000000000800" message="Service start pipe error.">
+    </event>
+    <event value="4008" version="0" opcode="1" channel="18" level="5" task="2500" keywords="0x2000000000000800" message="Session dispatch started.">
+    </event>
+    <event value="4010" version="0" opcode="0" channel="18" level="3" task="2500" keywords="0x2000000000000800" message="Session dispatch for &apos;%1&apos; failed since pending session queue is full with &apos;%2&apos; pending items.">
+    </event>
+    <event value="4011" version="0" opcode="1" channel="18" level="5" task="2557" keywords="0x2000000000000800" message="Message queue register start.">
+    </event>
+    <event value="4012" version="0" opcode="0" channel="18" level="2" task="2557" keywords="0x2000000000000800" message="Message queue registration aborted with status:&apos;%1&apos; for uri:&apos;%2&apos;.">
+    </event>
+    <event value="4013" version="0" opcode="2" channel="18" level="5" task="2557" keywords="0x2000000000000800" message="Message queue unregister succeeded for uri:&apos;%1&apos;.">
+    </event>
+    <event value="4014" version="0" opcode="0" channel="18" level="2" task="2557" keywords="0x2000000000000800" message="Message queue registration for uri:&apos;%1&apos; failed with status:&apos;%2&apos;.">
+    </event>
+    <event value="4015" version="0" opcode="0" channel="18" level="4" task="2557" keywords="0x2000000000000800" message="Message queue registration completed for uri &apos;%1&apos;.">
+    </event>
+    <event value="4016" version="0" opcode="0" channel="18" level="2" task="2500" keywords="0x2000000000000800" message="Message queue failed duplicating socket.">
+    </event>
+    <event value="4019" version="0" opcode="2" channel="18" level="5" task="2500" keywords="0x2000000000000800" message="MessageQueueDuplicatedSocketComplete">
+    </event>
+    <event value="4020" version="0" opcode="1" channel="18" level="5" task="2506" keywords="0x2000000000000800" message="Tcp transport listener starting to listen on uri:&apos;%1&apos;.">
+    </event>
+    <event value="4021" version="0" opcode="2" channel="18" level="5" task="2506" keywords="0x2000000000000800" message="Tcp transport listener listening.">
+    </event>
+    <event value="4022" version="0" opcode="0" channel="18" level="2" task="2603" keywords="0x2000000000000800" message="Error Code:%1">
+    </event>
+    <event value="4023" version="0" opcode="2" channel="18" level="4" task="2603" keywords="0x2000000000000800" message="Was closing all listener channel instances completed.">
+    </event>
+    <event value="4024" version="0" opcode="2" channel="18" level="2" task="2603" keywords="0x2000000000000800" message="Error Code:%1">
+    </event>
+    <event value="4025" version="0" opcode="0" channel="18" level="2" task="2603" keywords="0x2000000000000800" message="Error Code:%1">
+    </event>
+    <event value="4026" version="0" opcode="132" channel="18" level="5" task="2603" keywords="0x2000000000000800" message="WAS Connected.">
+    </event>
+    <event value="4027" version="0" opcode="133" channel="18" level="5" task="2603" keywords="0x2000000000000800" message="WAS Disconnected.">
+    </event>
+    <event value="4028" version="0" opcode="1" channel="18" level="5" task="2503" keywords="0x2000000000000800" message="Pipe transport listener listening start on uri:%1.">
+    </event>
+    <event value="4029" version="0" opcode="2" channel="18" level="5" task="2503" keywords="0x2000000000000800" message="Pipe transport listener listening stop.">
+    </event>
+    <event value="4030" version="0" opcode="2" channel="18" level="4" task="2500" keywords="0x2000000000000800" message="Session dispatch succeeded.">
+    </event>
+    <event value="4031" version="0" opcode="0" channel="18" level="2" task="2500" keywords="0x2000000000000800" message="Session dispatch failed.">
+    </event>
+    <event value="4032" version="0" opcode="0" channel="18" level="1" task="2603" keywords="0x2000000000000800" message="WAS connection timed out.">
+    </event>
+    <event value="4033" version="0" opcode="1" channel="19" level="5" task="2504" keywords="0x1000000000000800" message="Routing table lookup started.">
+    </event>
+    <event value="4034" version="0" opcode="2" channel="19" level="5" task="2504" keywords="0x1000000000000800" message="Routing table lookup completed.">
+    </event>
+    <event value="4035" version="0" opcode="0" channel="19" level="5" task="2560" keywords="0x1000000000400000" message="Pending session queue ratio: %1/%2">
+    </event>
+    <event value="4201" version="0" opcode="2" channel="19" level="5" task="2589" keywords="0x1000000008000000" message="End SQL command execution: %1">
+    </event>
+    <event value="4202" version="0" opcode="1" channel="19" level="5" task="2589" keywords="0x1000000008000000" message="Starting SQL command execution: %1">
+    </event>
+    <event value="4203" version="0" opcode="0" channel="19" level="2" task="2553" keywords="0x1000000008000000" message="Failed to extend lock expiration, lock expiration already passed or the lock owner was deleted. Aborting SqlWorkflowInstanceStore.">
+    </event>
+    <event value="4205" version="0" opcode="0" channel="19" level="2" task="2589" keywords="0x1000000008000000" message="Command failed: %1">
+    </event>
+    <event value="4206" version="0" opcode="0" channel="19" level="2" task="2553" keywords="0x1000000008000000" message="Encountered exception %1 while attempting to unlock instance.">
+    </event>
+    <event value="4207" version="0" opcode="0" channel="19" level="4" task="2589" keywords="0x1000000008400000" message="Giving up retrying a SQL command as the maximum number of retries have been performed.">
+    </event>
+    <event value="4208" version="0" opcode="0" channel="19" level="4" task="2589" keywords="0x1000000008000000" message="Retrying a SQL command due to SQL error number %1.">
+    </event>
+    <event value="4209" version="0" opcode="0" channel="19" level="2" task="2589" keywords="0x1000000008000000" message="Timeout trying to open a SQL connection. The operation did not complete within the allotted timeout of %1. The time allotted to this operation may have been a portion of a longer timeout.">
+    </event>
+    <event value="4210" version="0" opcode="0" channel="19" level="3" task="2589" keywords="0x1000000008000000" message="Caught SQL Exception number %1 message %2.">
+    </event>
+    <event value="4211" version="0" opcode="0" channel="19" level="3" task="2553" keywords="0x1000000008000000" message="Queuing SQL retry with delay %1 milliseconds.">
+    </event>
+    <event value="4212" version="0" opcode="0" channel="19" level="3" task="2589" keywords="0x1000000008000000" message="Timeout trying to acquire the instance lock.  The operation did not complete within the allotted timeout of %1. The time allotted to this operation may have been a portion of a longer timeout.">
+    </event>
+    <event value="4213" version="0" opcode="0" channel="19" level="2" task="2553" keywords="0x1000000008000000" message="Detection of runnable instances failed due to the following exception">
+    </event>
+    <event value="4214" version="0" opcode="0" channel="19" level="2" task="2553" keywords="0x1000000008000000" message="Recovering instance locks failed due to the following exception">
+    </event>
+    <event value="4600" version="0" opcode="0" channel="19" level="3" task="0" keywords="0x1000000000000020" message="Message could not be logged as it exceeds the ETW event size">
+    </event>
+    <event value="4801" version="0" opcode="30" channel="19" level="3" task="2529" keywords="0x1000000000004000" message="The DiscoveryClient created inside DiscoveryClientChannel failed to close and hence has been aborted.">
+    </event>
+    <event value="4802" version="0" opcode="29" channel="19" level="4" task="2529" keywords="0x1000000000004000" message="A ProtocolException was suppressed while closing the DiscoveryClient. This could be because a DiscoveryService is still trying to send response to the DiscoveryClient.">
+    </event>
+    <event value="4803" version="0" opcode="31" channel="19" level="4" task="2529" keywords="0x1000000000004000" message="The DiscoveryClient received a multicast suppression message from a DiscoveryProxy.">
+    </event>
+    <event value="4804" version="0" opcode="45" channel="19" level="4" task="2531" keywords="0x1000000000004000" message="A %1 message with messageId=&apos;%2&apos; was dropped by the DiscoveryClient because the corresponding %3 operation was completed.">
+    </event>
+    <event value="4805" version="0" opcode="37" channel="19" level="3" task="2531" keywords="0x1000000000004000" message="A %1 message with messageId=&apos;%2&apos; was dropped because it had invalid content.">
+    </event>
+    <event value="4806" version="0" opcode="38" channel="19" level="3" task="2531" keywords="0x1000000000004000" message="A %1 message with messageId=&apos;%2&apos; and relatesTo=&apos;%3&apos; was dropped by the DiscoveryClient because either the corresponding %4 operation was completed or the relatesTo value is invalid.">
+    </event>
+    <event value="4807" version="0" opcode="39" channel="19" level="3" task="2531" keywords="0x1000000000004000" message="A discovery request message with messageId=&apos;%1&apos; was dropped because it had an invalid ReplyTo address.">
+    </event>
+    <event value="4808" version="0" opcode="40" channel="19" level="3" task="2531" keywords="0x1000000000004000" message="A %1 message was dropped because it did not have any content.">
+    </event>
+    <event value="4809" version="0" opcode="41" channel="19" level="3" task="2531" keywords="0x1000000000004000" message="A %1 message was dropped because the message header did not contain the required MessageId property.">
+    </event>
+    <event value="4810" version="0" opcode="42" channel="19" level="3" task="2531" keywords="0x1000000000004000" message="A %1 message with messageId=&apos;%2&apos; was dropped by the DiscoveryClient because it did not have the DiscoveryMessageSequence property.">
+    </event>
+    <event value="4811" version="0" opcode="43" channel="19" level="3" task="2531" keywords="0x1000000000004000" message="A %1 message with messageId=&apos;%2&apos; was dropped by the DiscoveryClient because the message header did not contain the required RelatesTo property.">
+    </event>
+    <event value="4812" version="0" opcode="44" channel="19" level="3" task="2531" keywords="0x1000000000004000" message="A discovery request message with messageId=&apos;%1&apos; was dropped because it did not have a ReplyTo address.">
+    </event>
+    <event value="4813" version="0" opcode="36" channel="19" level="3" task="2531" keywords="0x1000000000004000" message="A %1 message with messageId=&apos;%2&apos; was dropped because it was a duplicate.">
+    </event>
+    <event value="4814" version="0" opcode="58" channel="19" level="4" task="2534" keywords="0x1000000000004000" message="The discoverability of endpoint with EndpointAddress=&apos;%1&apos; and ListenUri=&apos;%2&apos; has been disabled.">
+    </event>
+    <event value="4815" version="0" opcode="59" channel="19" level="4" task="2534" keywords="0x1000000000004000" message="The discoverability of endpoint with EndpointAddress=&apos;%1&apos; and ListenUri=&apos;%2&apos; has been enabled.">
+    </event>
+    <event value="4816" version="0" opcode="33" channel="19" level="5" task="2530" keywords="0x1000000000004000" message="A Find operation was initiated in the DiscoveryClientChannel to discover endpoint(s).">
+    </event>
+    <event value="4817" version="0" opcode="32" channel="19" level="3" task="2530" keywords="0x1000000000004000" message="The DiscoveryClientChannel failed to create the channel with a discovered endpoint with EndpointAddress=&apos;%1&apos; and Via=&apos;%2&apos;. The DiscoveryClientChannel will now attempt to use the next available discovered endpoint.">
+    </event>
+    <event value="4818" version="0" opcode="34" channel="19" level="3" task="2530" keywords="0x1000000000004000" message="The DiscoveryClientChannel failed to open the channel with a discovered endpoint with EndpointAddress=&apos;%1&apos; and Via=&apos;%2&apos;. The DiscoveryClientChannel will now attempt to use the next available discovered endpoint.">
+    </event>
+    <event value="4819" version="0" opcode="35" channel="19" level="4" task="2530" keywords="0x1000000000004000" message="The DiscoveryClientChannel successfully discovered an endpoint and opened the channel using it. The client is connected to a service using EndpointAddress=&apos;%1&apos; and Via=&apos;%2&apos;.">
+    </event>
+    <event value="4820" version="0" opcode="46" channel="19" level="4" task="2532" keywords="0x1000000000004000" message="The SynchronizationContext has been reset to its original value of %1 by DiscoveryClientChannel.">
+    </event>
+    <event value="4821" version="0" opcode="47" channel="19" level="4" task="2532" keywords="0x1000000000004000" message="The SynchronizationContext has been set to null by DiscoveryClientChannel before initiating the Find operation.">
+    </event>
+    <event value="5001" version="0" opcode="1" channel="19" level="5" task="2592" keywords="0x1000000000000002" message="DataContract serialize %1 with surrogates start.">
+    </event>
+    <event value="5002" version="0" opcode="2" channel="19" level="5" task="2592" keywords="0x1000000000000002" message="DataContract serialize with surrogates stop.">
+    </event>
+    <event value="5003" version="0" opcode="1" channel="19" level="5" task="2591" keywords="0x1000000000000002" message="DataContract deserialize %1 with surrogates start.">
+    </event>
+    <event value="5004" version="0" opcode="2" channel="19" level="5" task="2591" keywords="0x1000000000000002" message="DataContract deserialize with surrogates stop.">
+    </event>
+    <event value="5005" version="0" opcode="1" channel="19" level="5" task="2547" keywords="0x1000000000000002" message="ImportKnownTypes start.">
+    </event>
+    <event value="5006" version="0" opcode="2" channel="19" level="5" task="2547" keywords="0x1000000000000002" message="ImportKnownTypes stop.">
+    </event>
+    <event value="5007" version="0" opcode="1" channel="19" level="5" task="2528" keywords="0x1000000000000002" message="DataContract resolver resolving %1 start.">
+    </event>
+    <event value="5008" version="0" opcode="1" channel="19" level="5" task="2544" keywords="0x1000000000000002" message="DataContract generate %1 writer for %2 start.">
+    </event>
+    <event value="5009" version="0" opcode="2" channel="19" level="5" task="2544" keywords="0x1000000000000002" message="DataContract generate writer stop.">
+    </event>
+    <event value="5010" version="0" opcode="1" channel="19" level="5" task="2543" keywords="0x1000000000000002" message="DataContract generate %1 reader for %2 start.">
+    </event>
+    <event value="5011" version="0" opcode="2" channel="19" level="5" task="2543" keywords="0x1000000000000002" message="DataContract generation stop.">
+    </event>
+    <event value="5012" version="0" opcode="1" channel="19" level="5" task="2543" keywords="0x1000000000000002" message="Json generate %1 reader for %2 start.">
+    </event>
+    <event value="5013" version="0" opcode="2" channel="19" level="5" task="2543" keywords="0x1000000000000002" message="Json reader generation stop.">
+    </event>
+    <event value="5014" version="0" opcode="1" channel="19" level="5" task="2544" keywords="0x1000000000000002" message="Json generate %1 writer for %2 start.">
+    </event>
+    <event value="5015" version="0" opcode="2" channel="19" level="5" task="2544" keywords="0x1000000000000002" message="Json generate writer stop.">
+    </event>
+    <event value="5016" version="0" opcode="1" channel="19" level="5" task="2545" keywords="0x1000000000000002" message="Generate Xml serializable for &apos;%1&apos; start.">
+    </event>
+    <event value="5017" version="0" opcode="2" channel="19" level="5" task="2545" keywords="0x1000000000000002" message="Generate Xml serializable stop.">
+    </event>
+    <event value="5203" version="0" opcode="1" channel="19" level="5" task="2555" keywords="0x1000000000001000" message="JsonMessageEncoder started decoding the message.">
+    </event>
+    <event value="5204" version="0" opcode="1" channel="19" level="5" task="2556" keywords="0x1000000000001000" message="JsonMessageEncoder started encoding the message.">
+    </event>
+    <event value="5402" version="0" opcode="0" channel="19" level="5" task="2612" keywords="0x1000000000000010" message="SecurityToken (type &apos;%1&apos; and id &apos;%2&apos;) validation started.">
+    </event>
+    <event value="5403" version="0" opcode="0" channel="19" level="5" task="2612" keywords="0x1000000000000010" message="SecurityToken (type &apos;%1&apos; and id &apos;%2&apos;) validation succeeded.">
+    </event>
+    <event value="5404" version="0" opcode="0" channel="19" level="2" task="2612" keywords="0x1000000000000010" message="SecurityToken (type &apos;%1&apos; and id &apos;%2&apos;) validation failed. %3">
+    </event>
+    <event value="5405" version="0" opcode="0" channel="19" level="5" task="2613" keywords="0x1000000000000010" message="Retrieval of issuer name:%1 from tokenId:%2 succeeded.">
+    </event>
+    <event value="5406" version="0" opcode="0" channel="19" level="2" task="2613" keywords="0x1000000000000010" message="Retrieval of issuer name from tokenId:%1 failed.">
+    </event>
+    <event value="5600" version="0" opcode="0" channel="19" level="5" task="2616" keywords="0x1000000000000010" message="Federation message processing started.">
+    </event>
+    <event value="5601" version="0" opcode="0" channel="19" level="5" task="2616" keywords="0x1000000000000010" message="Federation message processing succeeded.">
+    </event>
+    <event value="5602" version="0" opcode="0" channel="19" level="5" task="2617" keywords="0x1000000000000010" message="Creating federation message from form post started.">
+    </event>
+    <event value="5603" version="0" opcode="0" channel="19" level="5" task="2617" keywords="0x1000000000000010" message="Creating federation message from form post succeeded.">
+    </event>
+    <event value="5604" version="0" opcode="0" channel="19" level="5" task="2618" keywords="0x1000000000000010" message="Reading session token from session cookie started.">
+    </event>
+    <event value="5605" version="0" opcode="0" channel="19" level="5" task="2618" keywords="0x1000000000000010" message="Reading session token from session cookie succeeded.">
+    </event>
+    <event value="5606" version="0" opcode="0" channel="19" level="5" task="2619" keywords="0x1000000000000010" message="Principal setting from session token started.">
+    </event>
+    <event value="5607" version="0" opcode="0" channel="19" level="5" task="2619" keywords="0x1000000000000010" message="Principal setting from session token succeeded.">
+    </event>
+    <event value="39456" version="0" opcode="125" channel="19" level="3" task="2598" keywords="0x1000000000000040" message="Size of tracking record %1 exceeds maximum allowed by the ETW session for provider %2">
+    </event>
+    <event value="39457" version="0" opcode="126" channel="19" level="4" task="2598" keywords="0x1000000001000000" message="Tracking Record %1 raised to %2.">
+    </event>
+    <event value="39458" version="0" opcode="127" channel="19" level="3" task="2598" keywords="0x1000000000000040" message="Truncated tracking record %1 written to ETW session with provider %2. Variables/annotations/user data have been removed">
+    </event>
+    <event value="39459" version="0" opcode="0" channel="19" level="5" task="2597" keywords="0x1000000001000000" message="Tracking data %1 extracted in activity %2.">
+    </event>
+    <event value="39460" version="0" opcode="0" channel="19" level="3" task="2597" keywords="0x1000000000000040" message="The extracted argument/variable &apos;%1&apos; is not serializable.">
+    </event>
+    <event value="57393" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000010000" message="AppDomain unloading. AppDomain.FriendlyName %1, ProcessName %2, ProcessId %3.">
+    </event>
+    <event value="57394" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000010000" message="Handling an exception.  Exception details: %1">
+    </event>
+    <event value="57395" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="An unexpected failure occurred. Applications should not attempt to handle this error. For diagnostic purposes, this English message is associated with the failure: %1.">
+    </event>
+    <event value="57396" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000010000" message="Throwing an exception. Source: %1. Exception details: %2">
+    </event>
+    <event value="57397" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000010000" message="Unhandled exception.  Exception details: %1">
+    </event>
+    <event value="57398" version="0" opcode="0" channel="18" level="3" task="2594" keywords="0x2000000004000000" message="The system hit the limit set for throttle &apos;MaxConcurrentInstances&apos;. Limit for this throttle was set to %1. Throttle value can be changed by modifying attribute &apos;maxConcurrentInstances&apos; in serviceThrottle element or by modifying &apos;MaxConcurrentInstances&apos; property on behavior ServiceThrottlingBehavior.">
+    </event>
+    <event value="57399" version="0" opcode="0" channel="19" level="1" task="0" keywords="0x1000000000010000" message="Wrote to the EventLog.">
+    </event>
+    <event value="57400" version="0" opcode="0" channel="19" level="2" task="0" keywords="0x1000000000010000" message="Wrote to the EventLog.">
+    </event>
+    <event value="57401" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000010000" message="Wrote to the EventLog.">
+    </event>
+    <event value="57402" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000010000" message="Wrote to the EventLog.">
+    </event>
+    <event value="57403" version="0" opcode="0" channel="19" level="3" task="0" keywords="0x1000000000010000" message="Wrote to the EventLog.">
+    </event>
+    <event value="57404" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000010000" message="Handling an exception. Exception details: %1">
+    </event>
+    <event value="57405" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Handling an exception. Exception details: %1">
+    </event>
+    <event value="57406" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000010000" message="Handling an exception  Exception details: %1">
+    </event>
+    <event value="57407" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000010000" message="Throwing an exception. Source: %1. Exception details: %2">
+    </event>
+    <event value="57408" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000010000" message="Unhandled exception. Exception details: %1">
+    </event>
+    <event value="57409" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000010000" message="Throwing an exception. Source: %1. Exception details: %2">
+    </event>
+    <event value="57410" version="0" opcode="0" channel="18" level="3" task="0" keywords="0x2000000000010000" message="Throwing an exception. Source: %1. Exception details: %2">
+    </event>
+    <event value="62326" version="0" opcode="0" channel="19" level="4" task="2526" keywords="0x1000000000000080" message="The url &apos;%1&apos; hosts XAML document with root element type &apos;%2&apos;. The HTTP handler type &apos;%3&apos; is picked to serve all the requests made to this url.">
+    </event>
+  </events>
+</provider>
