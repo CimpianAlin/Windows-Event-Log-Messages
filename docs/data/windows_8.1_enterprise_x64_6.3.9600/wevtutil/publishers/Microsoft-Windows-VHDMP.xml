@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-VHDMP" guid="e2816346-87f4-4f85-95c3-0c79409aa89d" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\vhdmp.sys" messageFileName="C:\Windows\system32\drivers\vhdmp.sys" message="Microsoft-Windows-VHDMP" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-VHDMP/Operational" id="16" flags="0" message="Microsoft-Windows-VHDMP/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:SQM" mask="8000000000000" message="SQM">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The VHD %1 has come online (surfaced) as disk number %2.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The VHD %1 has been removed (unsurfaced) as disk number %2.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to surface VHD %1. Error status %2.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to surface VHD %1. Surface attempt was cancelled.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to %1 VHD %2. Error status %3.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Operation failed on VHD %2. %1 Error status %3.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Change Tracking has been enabled for the VHD %1 (%2) with log file %3.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Change Tracking has been disabled for the VHD %1 (%2).">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Change Tracking for the VHD %1 to the log file %2 has been stopped due to the error %3.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Flushing of the header of the log file %1 has failed due to error %2.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Flushing of the buffers to the log file %1 has failed due to error %2.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Opening the log file %1 for tracking has failed due to error %2.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Offline changes are detected for VHD %2. Log file: %1, VHD time: %4, Log file time: %5">
+    </event>
+  </events>
+</provider>

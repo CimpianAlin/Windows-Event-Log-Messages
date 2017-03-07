@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Reliability-Analysis-Engine" guid="4ba32972-6fc5-488a-8368-5da620d05127" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=racengn.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\racengn.dll" messageFileName="C:\Windows\system32\racengn.dll" message="Microsoft-Windows-Reliability-Analysis-Engine" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ReliabilityAnalysisComponent/Operational" id="16" flags="0" message="Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="RAC_ENGINE_KEYWORD_RELIABILITY" mask="1000" message="Reliability">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000001000" message="Reliability Analysis processed %1 sessions.">
+    </event>
+    <event value="2002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000001000" message="Reliability Analysis created %1 sessions of type %2.">
+    </event>
+    <event value="2003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000001000" message="Reliability Analysis SQM upload duration is %1 seconds.">
+    </event>
+    <event value="2004" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000001000" message="Reliability Analysis encountered an error. Reliability Analysis error code is %1. Windows error code is %2.">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000001000" message="Reliability Analysis calculated system stability of %1 for the one-day period starting at %2.">
+    </event>
+  </events>
+</provider>

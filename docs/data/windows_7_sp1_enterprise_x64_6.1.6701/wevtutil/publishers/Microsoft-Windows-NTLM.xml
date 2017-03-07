@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NTLM" guid="ac43300d-5fcc-4800-8e99-1bd3f85f0320" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=msv1_0.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\System32\msv1_0.dll" messageFileName="C:\Windows\System32\msv1_0.dll" message="Microsoft-Windows-NTLM" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NTLM/Operational" id="16" flags="0" message="Microsoft-Windows-NTLM/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="CATEGORY_BLOCKNTLM" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Blocking NTLM">
+    </task>
+    <task name="CATEGORY_AUDITNTLM" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Auditing NTLM">
+    </task>
+    <task name="CATEGORY_MAX_CATEGORY" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Max">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="4001" version="0" opcode="0" channel="16" level="3" task="1" keywords="0x8000000000000000" message="NTLM client blocked: Outgoing NTLM authentication traffic to remote servers that is blocked.
+Target server: %1
+Supplied user: %2
+Supplied domain: %3
+PID of client process: %4
+Name of client process: %5
+LUID of client process: %6
+User identity of client process: %7
+Domain name of user identity of client process: %8
+Mechanism OID: %9
+
+NTLM authentication requests from this computer are blocked.
+
+If you want to allow this computer to use NTLM authentication, set the security policy Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers to Allow all.
+
+If you want only the target server %1 to accept NTLM authentication requests from this computer, set the security policy Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers to Deny all and then set the security policy Network Security: Restrict NTLM: Add remote server exceptions and list the target server %1 as an exception to use NTLM authentication.">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="16" level="3" task="1" keywords="0x8000000000000000" message="NTLM server blocked: Incoming NTLM traffic to servers that is blocked
+Calling process PID: %1
+Calling process name: %2
+Calling process LUID: %3
+Calling process user identity: %4
+Calling process domain identity: %5
+Mechanism OID: %6
+
+NTLM authentication requests to this server have been blocked.
+
+If you want this server to allow NTLM authentication, set the security policy Network Security: Restrict NTLM: Incoming NTLM Traffic to Allow all.">
+    </event>
+    <event value="4003" version="0" opcode="0" channel="16" level="3" task="1" keywords="0x8000000000000000" message="NTLM server blocked in the domain: NTLM authentication in this domain that is blocked
+User: %1
+Domain: %2
+Workstation: %3
+PID: %4
+Process: %5
+Logon type: %6
+InProc: %7
+Mechanism: %8
+
+NTLM authentication within the domain %2 is blocked.
+
+If you want to allow NTLM authentication requests in the domain %1, set the security policy Network Security: Restrict NTLM: NTLM authentication in this domain to Disabled.
+
+If you want to allow NTLM authentication requests only to specific servers in the domain %1, set the security policy Network Security: Restrict NTLM: NTLM authentication in this domain to Deny for domain servers or Deny domain accounts to domain servers, and then set the security policy Network Security: Restrict NTLM: Add server exceptions in this domain to define a list of servers in this domain as an exception to use NTLM authentication.">
+    </event>
+    <event value="4010" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="NTLM Minimum Client Security Block:
+Calling process PID: %1
+Calling Process Name: %2
+Negotiated Security Flags: %3
+Minimum Security Flags: %4">
+    </event>
+    <event value="4011" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="NTLM Minimum Server Security Block:
+Calling process PID: %1
+Calling Process Name: %2
+Negotiated Security Flags: %3
+Minimum Security Flags: %4">
+    </event>
+    <event value="8001" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="NTLM client blocked audit: Audit outgoing NTLM authentication traffic that would be blocked.
+Target server: %1
+Supplied user: %2
+Supplied domain: %3
+PID of client process: %4
+Name of client process: %5
+LUID of client process: %6
+User identity of client process: %7
+Domain name of user identity of client process: %8
+Mechanism OID: %9
+
+Audit the NTLM authentication requests from this computer that would be blocked by the target server %1 if the security policy Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers is set to Deny all.
+
+If you want all servers to accept NTLM authentication requests from this computer, set the security policy Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers to Allow all.
+
+If you want only the target server %1 to accept NTLM authentication requests from this computer, set the security policy Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers to Deny all, and then set the security policy Network Security: Restrict NTLM: Add remote server exceptions and list the target server %1 as an exception to use NTLM authentication.">
+    </event>
+    <event value="8002" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="NTLM server blocked audit: Audit Incoming NTLM Traffic that would be blocked
+Calling process PID: %1
+Calling process name: %2
+Calling process LUID: %3
+Calling process user identity: %4
+Calling process domain identity: %5
+Mechanism OID: %6
+
+Audit NTLM authentication requests to this server that would be blocked if the security policy Network Security: Restrict NTLM: Incoming NTLM Traffic is set to Deny all accounts or Deny all domain accounts.
+
+If you want this server to allow NTLM authentication, set the security policy Network Security: Restrict NTLM: Incoming NTLM Traffic to Allow all.">
+    </event>
+    <event value="8003" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="NTLM server blocked in the domain audit: Audit NTLM authentication in this domain
+User: %1
+Domain: %2
+Workstation: %3
+PID: %4
+Process: %5
+Logon type: %6
+InProc: %7
+Mechanism: %8
+
+Audit NTLM authentication requests within this domain that would be blocked if the security policy Network Security: Restrict NTLM: NTLM authentication in this domain is set to Deny for domain servers or Deny domain accounts to domain servers.
+
+If you want to allow NTLM authentication requests in the domain %1, set the security policy Network Security: Restrict NTLM: NTLM authentication in this domain to Disabled.
+
+If you want to allow NTLM authentication requests to specific servers in the domain %1, set the security policy Network Security: Restrict NTLM: NTLM authentication in this domain to Deny for domain servers or Deny domain accounts to domain servers, and then set the security policy Network Security: Restrict NTLM: Add server exceptions in this domain to define a list of servers in this domain to use NTLM authentication.">
+    </event>
+  </events>
+</provider>

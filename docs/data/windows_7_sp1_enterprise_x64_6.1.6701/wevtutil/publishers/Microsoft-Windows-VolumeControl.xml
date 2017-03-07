@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-VolumeControl" guid="07de7879-1c96-41ce-afbd-c659a0e8e643" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=sndvolsso.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\System32\sndvolsso.dll" messageFileName="C:\Windows\System32\sndvolsso.dll" message="Microsoft-Windows-AudioUI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-VolumeControl/Performance" id="16" flags="0" message="Performance">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="AudioPerf_Task_LaunchFlyout" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="102" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="103" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8001000000000000" message="">
+    </event>
+  </events>
+</provider>

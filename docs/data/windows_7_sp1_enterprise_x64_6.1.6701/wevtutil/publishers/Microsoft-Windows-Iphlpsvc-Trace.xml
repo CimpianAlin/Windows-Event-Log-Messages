@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Iphlpsvc-Trace" guid="6600e712-c3b6-44a2-8a48-935c511f28c8" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=iphlpsvc.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\iphlpsvc.dll" parameterFileName="C:\Windows\system32\iphlpsvc.dll" messageFileName="C:\Windows\system32\iphlpsvc.dll" message="Microsoft-Windows-Iphlpsvc-Trace" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Iphlpsvc/Trace" id="16" flags="0" message="Iphlpsvc Etw Channel">
+    </channel>
+    <channel name="Microsoft-Windows-Iphlpsvc/Debug" id="17" flags="0" message="Iphlpsvc Etw Debug Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="isatap" mask="1" message="">
+    </keyword>
+    <keyword name="sixto4" mask="2" message="">
+    </keyword>
+    <keyword name="iphttps" mask="4" message="">
+    </keyword>
+    <keyword name="teredo" mask="8" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="4051" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo %2: Forwarding %3 packet from %4 to %5.">
+    </event>
+    <event value="4052" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo server: Received %2 from %3 , Sending %4 to %5.">
+    </event>
+    <event value="4053" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo %2 received %3, Mapping to %4.
+ source: %5, destination: %6, target: %7.">
+    </event>
+    <event value="4054" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo client in state %1,received bad or invalid packet with %2.">
+    </event>
+    <event value="4055" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo client state change: Previous state %1, Current state %2.">
+    </event>
+    <event value="4056" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo client Sending %1 packet.">
+    </event>
+    <event value="4057" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Starting Teredo Offload with: 
+LocalV6:%3 RemoteV6:%4 
+LocalV4:%5 RemoteV4:%6 
+LocalPort:%7 RemotePort:%8.">
+    </event>
+    <event value="4058" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="%1">
+    </event>
+    <event value="4059" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo server received bad or invalid packet with %1.">
+    </event>
+    <event value="4060" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="%2 %3 mapping: %4.">
+    </event>
+    <event value="4061" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo %2 transmitting packet to %3.">
+    </event>
+    <event value="4062" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo %2 received %3 packet from %4.">
+    </event>
+    <event value="4063" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo %2 received %3, sending %4 to %5.">
+    </event>
+    <event value="4064" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo %2 received %3, sending %4 to %5.">
+    </event>
+    <event value="4065" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo %2 received packet from %3.">
+    </event>
+    <event value="4066" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo %2 received packet type %3;
+ with source %4 destination %5 target %6.">
+    </event>
+    <event value="4067" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo %2 transmitting %3 packet to %4.">
+    </event>
+    <event value="4150" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000003" message="%1 interface %2 %3.">
+    </event>
+    <event value="4151" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="ISATAP link local address for interface %2 was %3, is %4.">
+    </event>
+    <event value="4152" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="ISATAP potential router interface list has changed.">
+    </event>
+    <event value="4153" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000003" message="%2: Found route to %3 from interface %4.
+Source = %5, Next Hop = %6.">
+    </event>
+    <event value="4154" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000001" message="%2: For %3, router %4 is %5.">
+    </event>
+    <event value="4155" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000001" message="For %2, router name: %3, is %4. %5.">
+    </event>
+    <event value="4157" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000003" message="%1 protocol started.">
+    </event>
+    <event value="4158" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000003" message="%1 protocol stopped.">
+    </event>
+    <event value="4159" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000003" message="%1 protocol initialized.">
+    </event>
+    <event value="4160" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000003" message="%1 protocol uninitialized.">
+    </event>
+    <event value="4161" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="ISATAP found interface %1 to reuse.">
+    </event>
+    <event value="4162" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000003" message="%2: interface %5 address %4 %3.">
+    </event>
+    <event value="4163" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="6to4: Updating route %2/%3 interface %4 metric %5 lifetime %6/%7 publish %8.">
+    </event>
+    <event value="4164" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="6to4: Configuring interface %1 with following parameters:
+ICS PrivateInterface = %2 AdvertiseDefaultRoute = %3 Advertises = %4 Forwards = %5 NTStatus = %6.">
+    </event>
+    <event value="4165" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="6to4: Routing State changed to %1 from %2.">
+    </event>
+    <event value="4166" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="6to4: For interface %1, IPv4 address %2 was chosen for link layer address.">
+    </event>
+    <event value="4167" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="%1:Change notification for compartment %2, HaveGlobalIPv6Address = %3, ICS Enabled =  %4, GlobalIPv4AddressCount = %5.">
+    </event>
+    <event value="4168" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="6to4: Configuring interface %1 in compartment %2 with routing state %3.">
+    </event>
+    <event value="4169" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000003" message="Configuring interface %2 with address %3, lifetime %4, prefix %5 suffix %6.">
+    </event>
+    <event value="4170" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x800000000000000b" message="%1 Callback for %2.">
+    </event>
+    <event value="4171" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo Client failed to start due to the following reason: %1.">
+    </event>
+    <event value="4172" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="Teredo Client stopped due to the following reason: %1.">
+    </event>
+    <event value="4173" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="6TO4 failed to start due to the following reason: %1.">
+    </event>
+    <event value="4174" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="ISATAP router address %1 was set with status %2.">
+    </event>
+    <event value="4175" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="NLM found that the network is %1.">
+    </event>
+    <event value="5000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: InterfaceName:%1 InterfaceType:%2 RegistryState:%3 CurrentState:%4 URL:%5 AuthenticationMode:%6">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 installation failed. Status = %2">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 update link address. Status = %2">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Client interface %1 configured to use certificate %2 with preference = %3">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 cleanup complete">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 firewall exception added. Status = %2">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 performance counters added. Status = %2">
+    </event>
+    <event value="5007" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 Memory allocation failed">
+    </event>
+    <event value="5008" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 Tunnel device IO failed: %2">
+    </event>
+    <event value="5009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 reusing an previously installed interface">
+    </event>
+    <event value="5010" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 deleted">
+    </event>
+    <event value="5011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 media connect indication: Status= %2">
+    </event>
+    <event value="5012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 media disconnect indication: Status= %2">
+    </event>
+    <event value="5013" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 deactivated.">
+    </event>
+    <event value="5014" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Adapter %1 uninstalled as it does not have associated registry configuration.Status = %2">
+    </event>
+    <event value="5015" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: V6 Address change callback. Address = %2 Added = %3 LimitedConnectivity = %4">
+    </event>
+    <event value="5016" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Global connectivity state change. GlobalAddressCount = %1 Ipv4Connectivity = %2 Ipv6Connectivity = %3 CorpConnectivity = %4">
+    </event>
+    <event value="5017" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface callback. Index = %1 Added = %3 LimitedConnectivity = %4">
+    </event>
+    <event value="5018" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Interface %1 activated.">
+    </event>
+    <event value="5019" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Corp connectivity timer started. Due time = %1 (100ns units).">
+    </event>
+    <event value="5020" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Corp connectivity timeout.">
+    </event>
+    <event value="5021" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Network change. Network GUID = %1 Added = %2">
+    </event>
+    <event value="5022" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: Teredo dormancy change. New State = %1">
+    </event>
+    <event value="5023" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000004" message="IPHTTPS: Initialization failed. Status = %1">
+    </event>
+    <event value="5024" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: ND Packet. Packet type = %1, Target Address = %2, Prefix = %3, Default Router = %4.">
+    </event>
+    <event value="5025" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: Client interface is being shutdown.">
+    </event>
+    <event value="5026" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: Client IO Reference %1.">
+    </event>
+    <event value="5027" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: Client IO Dereference %1.">
+    </event>
+    <event value="5028" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Client Send Http Request: Status = %2.">
+    </event>
+    <event value="5029" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Client Send Receive Response: Status = %2.">
+    </event>
+    <event value="5030" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Client Send Http Status Code = %2.">
+    </event>
+    <event value="5031" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Client Receive Entity Completion Status = %2.">
+    </event>
+    <event value="5032" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Client Send Entity Completion Status = %2.">
+    </event>
+    <event value="5033" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Client Scheduling a reconnect after %2 seconds.">
+    </event>
+    <event value="5034" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Client restarting.">
+    </event>
+    <event value="5035" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Client restarting due to internet connectivity.">
+    </event>
+    <event value="5036" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Adding Client address mapping for address %2.">
+    </event>
+    <event value="5037" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Removing Client address mapping for address %2.">
+    </event>
+    <event value="5038" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Adding Pending packet for address %2.">
+    </event>
+    <event value="5039" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Removing Pending packet for address %2.">
+    </event>
+    <event value="5040" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Receive client certificate completed. Status = %2.">
+    </event>
+    <event value="5041" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Send HTTP response completed. Status = %2.">
+    </event>
+    <event value="5042" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Receive request completed. Status = %2.">
+    </event>
+    <event value="5043" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Receive entity completed. Status = %2.">
+    </event>
+    <event value="5044" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Send entity completed. Status = %2.">
+    </event>
+    <event value="5045" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Dropped packet destined to %2 due to neighbor discovery timeout.">
+    </event>
+    <event value="5046" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: %1 Sending neighbor solicitation for %2.">
+    </event>
+    <event value="5047" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: IPHTTPS Interface Reference %1">
+    </event>
+    <event value="5048" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: IPHTTPS Interface Dereference %1">
+    </event>
+    <event value="5049" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: IPHTTPS Client Interface Reference %1">
+    </event>
+    <event value="5050" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: IPHTTPS Client Interface Dereference %1">
+    </event>
+    <event value="5051" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: IPHTTPS Server Interface Reference %1">
+    </event>
+    <event value="5052" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: IPHTTPS Server Interface Dereference %1">
+    </event>
+    <event value="5053" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: IPHTTPS Client Context Reference %1">
+    </event>
+    <event value="5054" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000004" message="IPHTTPS: IPHTTPS Client Context Dereference %1">
+    </event>
+  </events>
+</provider>

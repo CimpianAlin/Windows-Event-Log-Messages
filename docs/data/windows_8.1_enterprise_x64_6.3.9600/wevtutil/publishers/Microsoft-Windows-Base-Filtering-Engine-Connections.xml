@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Base-Filtering-Engine-Connections" guid="121d3da8-baf1-4dcb-929f-2d4c9a47f7ab" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=bfe.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\bfe.dll" parameterFileName="C:\Windows\system32\bfe.dll" messageFileName="C:\Windows\system32\bfe.dll" message="BFE IPsec Connections" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Base-Filtering-Engine-Connections/Operational" id="16" flags="0" message="BFE IPsec Connections Operational Log">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="New Connection">
+    </event>
+    <event value="2001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Connection Closed">
+    </event>
+  </events>
+</provider>

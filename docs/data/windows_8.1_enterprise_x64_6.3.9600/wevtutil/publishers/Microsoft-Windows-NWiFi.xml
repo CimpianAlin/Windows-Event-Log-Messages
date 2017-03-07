@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NWiFi" guid="0bd3506a-9030-4f76-9b88-3e8fe1f7cfb6" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=nwifi.sys&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\drivers\nwifi.sys" messageFileName="C:\Windows\system32\drivers\nwifi.sys" message="Microsoft-Windows-NWiFi" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NWiFi/Diagnostic" id="16" flags="0" message="Microsoft-Windows-NWiFi/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="ut:Start" value="11796480" message="Start State">
+    </opcode>
+    <opcode name="ut:End" value="11862016" message="End State">
+    </opcode>
+    <opcode name="ut:Closed" value="11927552" message="Closed State">
+    </opcode>
+    <opcode name="ut:Open" value="11993088" message="Open State">
+    </opcode>
+    <opcode name="ut:Connect" value="12058624" message="Connect State">
+    </opcode>
+    <opcode name="ut:Listen" value="12124160" message="Listen State">
+    </opcode>
+    <opcode name="ut:Association" value="12189696" message="Association State">
+    </opcode>
+    <opcode name="ut:Authentication" value="12255232" message="Authentication State">
+    </opcode>
+    <opcode name="ut:Established" value="12320768" message="Established State">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Init" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Init">
+    </task>
+    <task name="Ioctls" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Ioctls">
+    </task>
+    <task name="RSNA" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="RSNA">
+    </task>
+    <task name="AuthUpcall" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="AuthUpcall">
+    </task>
+    <task name="IODisp" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="IODisp">
+    </task>
+    <task name="NDISReq" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="NDISReq">
+    </task>
+    <task name="TKIPSec" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="TKIPSec">
+    </task>
+    <task name="Reset" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Reset">
+    </task>
+    <task name="AssocMgr" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="AssocMgr">
+    </task>
+    <task name="LWF" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="LWF">
+    </task>
+    <task name="Perftrack-RoamOnResume" value="24000" eventGUID="00000000-0000-0000-0000-000000000000" message="Connect to same network on resume">
+    </task>
+    <task name="Perftrack-ReconnectOnResume" value="24001" eventGUID="00000000-0000-0000-0000-000000000000" message="Connect to network on resume after intervening disconnect">
+    </task>
+    <task name="EnterLowPowerState" value="24002" eventGUID="00000000-0000-0000-0000-000000000000" message="EnterLowPowerState">
+    </task>
+    <task name="LeaveLowPowerState" value="24003" eventGUID="00000000-0000-0000-0000-000000000000" message="LeaveLowPowerState">
+    </task>
+    <task name="Perftrack-IMSoftAPStart" value="24004" eventGUID="00000000-0000-0000-0000-000000000000" message="Starting device network at IM driver">
+    </task>
+    <task name="Perftrack-IMSoftAPStop" value="24005" eventGUID="00000000-0000-0000-0000-000000000000" message="Stopping device network at IM driver">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Init" mask="1" message="">
+    </keyword>
+    <keyword name="Ioctls" mask="2" message="">
+    </keyword>
+    <keyword name="RSNA" mask="4" message="">
+    </keyword>
+    <keyword name="AuthUpcall" mask="8" message="">
+    </keyword>
+    <keyword name="IODisp" mask="10" message="">
+    </keyword>
+    <keyword name="NDISReq" mask="20" message="">
+    </keyword>
+    <keyword name="TKIPSec" mask="40" message="">
+    </keyword>
+    <keyword name="Reset" mask="80" message="">
+    </keyword>
+    <keyword name="AssocMgr" mask="100" message="">
+    </keyword>
+    <keyword name="LWF" mask="200" message="">
+    </keyword>
+    <keyword name="SOFTAP" mask="400" message="">
+    </keyword>
+    <keyword name="PowerMgmt" mask="800" message="">
+    </keyword>
+    <keyword name="SleepResume" mask="1000" message="">
+    </keyword>
+    <keyword name="LwtDiagnostic" mask="2000" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="10000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="OID_DOT11_RESET_REQUEST Complete %3 ResetConfirmStatus=%4">
+    </event>
+    <event value="10001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000002" message="IOCTL function=%3 Status=%4 Length=%5 bytes">
+    </event>
+    <event value="10002" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000002" message="Reject Scan Request: %3">
+    </event>
+    <event value="10003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000002" message="IOCTL_DOT11_WEP_DEFAULT_KEY_VALUE: There is no association">
+    </event>
+    <event value="10004" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000002" message="Unsupported Mcast cipher algorithm %3">
+    </event>
+    <event value="10005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000002" message="Desired SSID List %3 entries">
+    </event>
+    <event value="10006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000004000000002" message="SetDesiredSSIDList failed, status = %3">
+    </event>
+    <event value="10007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000002" message="Set DesiredBSSType: %3">
+    </event>
+    <event value="10008" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000002" message="Desired BSSID List %3 entries">
+    </event>
+    <event value="10009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000002" message="Enabled AuthList %3 entries">
+    </event>
+    <event value="10010" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000002" message="Set ExcludeUnencrypted (%3): %4">
+    </event>
+    <event value="10011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000002" message="Set HiddenNetworkEnabled (%3): %4">
+    </event>
+    <event value="10012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002200002004" message="Drop cached M1: there is a pending 802.1x exchange">
+    </event>
+    <event value="10013" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000012200000004" message="Replay detected (our counter %3, received %4), dropping the packet">
+    </event>
+    <event value="10014" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000002200002004" message="Version number %3 not supported, Expecting %4">
+    </event>
+    <event value="10015" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002200002004" message="Receive 1X packet G1: FrameSeq# %3: %4 ==&gt; %5">
+    </event>
+    <event value="10016" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002200002004" message="Receive 1X packet M1 (4 way handshake rekey - secure bit set): FrameSeq# %3: %4 ==&gt; %5">
+    </event>
+    <event value="10017" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002200002004" message="Receive 1X packet M1: FrameSeq# %3: %4 ==&gt; %5">
+    </event>
+    <event value="10018" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002200002004" message="Receive 1X packet M3: FrameSeq# %3: %4 ==&gt; %5">
+    </event>
+    <event value="10019" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002100002004" message="Send 1X packet G2: %3 ==&gt; %4">
+    </event>
+    <event value="10020" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002200002004" message="Dot11ReceiveM1: aborted since the connection has changed">
+    </event>
+    <event value="10021" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002100002004" message="Send 1X packet M2: %3 ==&gt; %4">
+    </event>
+    <event value="10022" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000002200002004" message="Dot11ReceiveM1 failed with status %3">
+    </event>
+    <event value="10023" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000012200002004" message="Dot11ReceiveM3 failed with status %3">
+    </event>
+    <event value="10024" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002200002004" message="Dot11ReceiveM3: aborted since the connection has changed">
+    </event>
+    <event value="10025" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002100002004" message="Send 1X packet M4: %3 ==&gt; %4">
+    </event>
+    <event value="10026" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000004000002004" message="Reject request of setting PMK since the caller is not current security endpoint">
+    </event>
+    <event value="10027" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002200000008" message="Receive 1X packet: FrameSeq#%1: %2 ==&gt; %3, Status %4">
+    </event>
+    <event value="10028" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002100000010" message="Send 1X packet: %3 ==&gt; %4">
+    </event>
+    <event value="10029" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000004000000020" message="Abort OID request %2 (low power state): PowerState=%3">
+    </event>
+    <event value="10030" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000004000000020" message="QueryAdapterSync Error: %3 OID %2">
+    </event>
+    <event value="10031" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000020" message="RequestAdapterSync Error: %3 OID %2">
+    </event>
+    <event value="10032" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000020" message="CallAdapterSync Error: %3 OID %2">
+    </event>
+    <event value="10033" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000002040" message="All MIC failure reports are sent. Notify miniport to disassociate from %3">
+    </event>
+    <event value="10034" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000002" message="Security endpoint type = %3">
+    </event>
+    <event value="10035" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000002" message="IHV Serialization Enabled: %3">
+    </event>
+    <event value="10036" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000002" message="Safe mode = %3">
+    </event>
+    <event value="10037" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000080" message="Reset %3 New MAC address %4 SetDefaultMIB=%5">
+    </event>
+    <event value="10038" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000080" message="Reset %3 SetDefaultMIB=%5">
+    </event>
+    <event value="10039" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000004000000080" message="Reject Reset Request: %3">
+    </event>
+    <event value="10040" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8000000800000100" message="Association Start: %3">
+    </event>
+    <event value="10041" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8000000800000100" message="Association Completion: %3 AssocStatus=%4">
+    </event>
+    <event value="10042" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000100" message="DisAssoc: %3 Reason: %4">
+    </event>
+    <event value="10043" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000100" message="Defer roaming timer until system wakeup">
+    </event>
+    <event value="10044" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000100" message="Mismatched session ID">
+    </event>
+    <event value="10045" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000002000000100" message="PortState: Auth Failed: %4">
+    </event>
+    <event value="10046" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000100" message="SetPortState: %4: Controlled=%5 Authorized=%6">
+    </event>
+    <event value="10047" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000100" message="Post Virtual PortDown Notification (MAC=%4) to Security Module">
+    </event>
+    <event value="10048" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000004000000100" message="Unable to set OID_DOT11_PRIVACY_EXEMPTION_LIST Status = %3">
+    </event>
+    <event value="10049" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000100" message="Cancel IOCTL_DOT11_CONNECT">
+    </event>
+    <event value="10050" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000100" message="OID_DOT11_CONNECT_REQUEST completes %3">
+    </event>
+    <event value="10051" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000800000100" message="Fail Connect Request: Radio is off">
+    </event>
+    <event value="10052" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000800000100" message="Fail Connect Request in low power state: %3">
+    </event>
+    <event value="10053" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000100" message="IOCTL_DOT11_CONNECT">
+    </event>
+    <event value="10054" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000100" message="IOCTL_DOT11_DISCONNECT">
+    </event>
+    <event value="10055" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000100" message="OID_DOT11_DISCONNECT_REQUEST Status = %3">
+    </event>
+    <event value="10056" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000100" message="OID_DOT11_NIC_POWER_STATE Status = %3">
+    </event>
+    <event value="10057" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000004000000200" message="Old PowerState=%3, New PowerState=%4">
+    </event>
+    <event value="10058" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000004000000200" message="Change OpMode Failed: Capability is not supported (Configured = %3, IM supported = %4, MiniPort supported = %5)">
+    </event>
+    <event value="10059" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000040" message="Terminate the connection: too many TKIP-MIC countermeasures.">
+    </event>
+    <event value="10060" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000000" message="Pairwise Key (%1): Algo %2, Direction= %3, Len %4">
+    </event>
+    <event value="10061" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000000" message="Default Key: Idx %1, Algo %2, Direction= %3, Len %4">
+    </event>
+    <event value="10062" version="0" opcode="1" channel="16" level="4" task="0" keywords="0x8000000800000100" message="Connection Started">
+    </event>
+    <event value="10063" version="0" opcode="2" channel="16" level="4" task="0" keywords="0x8000000800000100" message="Connection Completion Status=%2">
+    </event>
+    <event value="10064" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000001000000100" message="OID_DOT11_NIC_POWER_STATE Request">
+    </event>
+    <event value="10066" version="0" opcode="1" channel="16" level="4" task="24004" keywords="0x8001000000000400" message="802.11 IM driver has begun to start the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4">
+    </event>
+    <event value="10067" version="0" opcode="2" channel="16" level="4" task="24004" keywords="0x8001000000000400" message="802.11 IM driver has finished starting the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4">
+    </event>
+    <event value="10068" version="0" opcode="2" channel="16" level="2" task="24004" keywords="0x8001000000000400" message="802.11 IM driver has failed to start the device network, error code = %2, adapter guid = %1, Local MAC addr = %4, SSID = %5">
+    </event>
+    <event value="10069" version="0" opcode="1" channel="16" level="4" task="24005" keywords="0x8001000000000400" message="802.11 IM driver has begun to stop the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4">
+    </event>
+    <event value="10070" version="0" opcode="2" channel="16" level="4" task="24005" keywords="0x8001000000000400" message="802.11 IM driver has finished stopping the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4">
+    </event>
+    <event value="10071" version="0" opcode="2" channel="16" level="4" task="24005" keywords="0x8001000000000400" message="802.11 IM driver has failed to stop the device network, error code = %2, adapter guid = %1, local MAC addr = %4, SSID = %5">
+    </event>
+    <event value="10072" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000800" message="Results of querying power management mode: current power management mode = %1, power management mode supported by AP = %2, adapter guid = %3, AP MAC addr = %4, AP SSID = %5">
+    </event>
+    <event value="10073" version="0" opcode="0" channel="16" level="4" task="24002" keywords="0x8000000000001000" message="Adapter going to sleep, adapter guid = %1, halted = %2">
+    </event>
+    <event value="10074" version="0" opcode="0" channel="16" level="4" task="24003" keywords="0x8000000000001000" message="Adapter resumed from sleep, adapter guid = %1">
+    </event>
+    <event value="20000" version="0" opcode="1" channel="16" level="4" task="24000" keywords="0x8001000000000000" message="Resume from low power 1">
+    </event>
+    <event value="20001" version="0" opcode="1" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Resume from low power 2">
+    </event>
+    <event value="20002" version="0" opcode="2" channel="16" level="4" task="24000" keywords="0x8001000000000000" message="Port authorized 1">
+    </event>
+    <event value="20003" version="0" opcode="2" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Port authorized 2">
+    </event>
+    <event value="20004" version="0" opcode="2" channel="16" level="4" task="24000" keywords="0x8001000000000000" message="Resume from low power (End trailing scenario) 1">
+    </event>
+    <event value="20005" version="0" opcode="2" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Resume from low power (End trailing scenario) 2">
+    </event>
+    <event value="20006" version="0" opcode="1" channel="16" level="4" task="24000" keywords="0x8001000000000000" message="Resume from low power 3">
+    </event>
+    <event value="20007" version="0" opcode="1" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Resume from low power 4">
+    </event>
+    <event value="20008" version="0" opcode="2" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Port authorized 3">
+    </event>
+    <event value="20009" version="0" opcode="2" channel="16" level="4" task="24000" keywords="0x8001000000000000" message="Resume from low power (End trailing scenario) 3">
+    </event>
+    <event value="20010" version="0" opcode="2" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Resume from low power (End trailing scenario) 4">
+    </event>
+    <event value="20011" version="0" opcode="1" channel="16" level="4" task="24000" keywords="0x8001000000000000" message="Resume from low power 5">
+    </event>
+    <event value="20012" version="0" opcode="1" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Resume from low power 6">
+    </event>
+    <event value="20013" version="0" opcode="2" channel="16" level="4" task="24000" keywords="0x8001000000000000" message="Resume from low power (End trailing scenario) 5">
+    </event>
+    <event value="20014" version="0" opcode="2" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Resume from low power (End trailing scenario) 6">
+    </event>
+    <event value="20015" version="0" opcode="2" channel="16" level="4" task="24001" keywords="0x8001000000000000" message="Port authorized 4">
+    </event>
+    <event value="20016" version="0" opcode="1" channel="16" level="4" task="24000" keywords="0x8001000000000000" message="Resume Reconnect to Same/Different netwkr scenario">
+    </event>
+    <event value="20017" version="0" opcode="1" channel="16" level="4" task="24000" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="60001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Error: %1 Location: %2 Context: %3">
+    </event>
+    <event value="60002" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Warning: %1 Location: %2 Context: %3">
+    </event>
+    <event value="60003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000200000000000" message="Transitioned to State: %1 Context: %2">
+    </event>
+    <event value="60004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Updated Context: %1 Update Reason: %2">
+    </event>
+    <event value="60101" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6">
+    </event>
+    <event value="60102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6">
+    </event>
+    <event value="60103" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Interface Guid: %1 IfIndex: %2 Interface Luid: %3 ReferenceContext: %4">
+    </event>
+  </events>
+</provider>

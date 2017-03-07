@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Diagnostics-Networking" guid="36c23e18-0e66-11d9-bbeb-505054503030" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=netdiagfx.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\netdiagfx.dll" messageFileName="C:\Windows\system32\netdiagfx.dll" message="Microsoft-Windows-Diagnostics-Networking" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Diagnostics-Networking/Operational" id="16" flags="0" message="Microsoft-Windows-Diagnostics-Networking/Operational">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Diagnostics-Networking/Debug" id="17" flags="0" message="Microsoft-Windows-Diagnostics-Networking/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="op_NDFFailInFramework" value="1310720" message="The failure occurred in the Framework code.">
+    </opcode>
+    <opcode name="op_NDFFailInHelper" value="1376256" message="The failure occurred in the Helper class code.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="NDF.Start" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Start">
+    </task>
+    <task name="NDF.Stop" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Stop">
+    </task>
+    <task name="NDF.Fail" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Fail">
+    </task>
+    <task name="NDF.DiagSuccess" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Diagnosis Success">
+    </task>
+    <task name="NDF.DiagFail" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Diagnosis Failure">
+    </task>
+    <task name="NDF.ValidationSuccess" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Validation Success">
+    </task>
+    <task name="NDF.ValidationFail" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Validation Failure">
+    </task>
+    <task name="NDF.RepairOptFail" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Repair Option Failure">
+    </task>
+    <task name="NDF.RepairFail" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Repair Failure">
+    </task>
+    <task name="NDF.Debug" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="Debug">
+    </task>
+    <task name="NDF.HelperClassInfo" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="Helper Class Info">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ndf:NDFCoreEvents" mask="1" message="Core Events">
+    </keyword>
+    <keyword name="ndf:NDFHelperClassEvents" mask="2" message="Helper Class Events">
+    </keyword>
+    <keyword name="ndf:Performance" mask="4" message="Performance Events">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ut:Diagnostic" mask="400000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000400000000001" message="Network Diagnostics Framework started because the user requested a diagnostics session. 
+
+Helper Class Name: %1 
+
+Number of parameters: %2 
+
+Attributes passed to helper class: 
+%3">
+    </event>
+    <event value="2000" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000400000000001" message="Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Success, no problems found. [%1]">
+    </event>
+    <event value="2100" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000400000000001" message="Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Success, problems repaired. [%1]">
+    </event>
+    <event value="2200" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000400000000001" message="Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Failed during diagnosis. [%1]">
+    </event>
+    <event value="2300" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000400000000001" message="Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Failed during repair. [%1]">
+    </event>
+    <event value="2400" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000400000000001" message="Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Cancelled during diagnosis. [%1]">
+    </event>
+    <event value="2500" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000400000000001" message="Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Cancelled during repair. [%1]">
+    </event>
+    <event value="3000" version="0" opcode="20" channel="16" level="2" task="3" keywords="0x8000400000000001" message="An error occurred. The Network Diagnostics Framework failed to complete operation. A Windows Error Report was generated. [%1].">
+    </event>
+    <event value="3100" version="0" opcode="21" channel="16" level="2" task="3" keywords="0x8000400000000001" message="An error occurred. The Network Diagnostics Framework failed to complete operation. A Windows Error Report was generated. [%1].">
+    </event>
+    <event value="4000" version="0" opcode="0" channel="8" level="4" task="4" keywords="0x4000000000000001" message="This event is not emitted, it remains manifested for AppCompat">
+    </event>
+    <event value="4000" version="1" opcode="0" channel="8" level="4" task="4" keywords="0x4000400000000001" message="The Network Diagnostics Framework has completed the diagnosis phase of operation. The following repair option was offered: 
+
+Helper Class Name: %7
+
+Root Cause: %1 
+
+Root Cause Guid: %2 
+
+Repair option: %3 
+
+RepairGuid: %4 
+
+Seconds required for repair: %5 
+
+Security context required for repair: %6
+
+Interface: %8 (%9)">
+    </event>
+    <event value="4100" version="0" opcode="0" channel="8" level="4" task="4" keywords="0x4000400000000001" message="The Network Diagnostics Framework has completed the diagnosis phase of operation, but no network problem was identified.">
+    </event>
+    <event value="4200" version="0" opcode="0" channel="8" level="2" task="5" keywords="0x4000400000000001" message="An error occurred. The Network Diagnostics Framework failed to complete the diagnosis phase of operation. A Windows Error Report was generated. [%1]">
+    </event>
+    <event value="5000" version="0" opcode="0" channel="8" level="4" task="6" keywords="0x4000000000000001" message="This event is not emitted, it remains manifested for AppCompat">
+    </event>
+    <event value="5000" version="1" opcode="0" channel="8" level="4" task="6" keywords="0x4000400000000001" message="The Network Diagnostics Framework has completed the repair phase of operation. The following repair option or work-around was executed: 
+
+Helper Class Name: %7 
+
+Repair option: %3 
+
+RepairGuid: %4 
+
+The repair option appears to have successfully fixed the diagnosed problem.">
+    </event>
+    <event value="5100" version="0" opcode="0" channel="8" level="4" task="7" keywords="0x4000000000000001" message="This event is not emitted, it remains manifested for AppCompat">
+    </event>
+    <event value="5100" version="1" opcode="0" channel="8" level="4" task="7" keywords="0x4000400000000001" message="The Network Diagnostics Framework (NDF) has completed the repair phase of operation. The following repair option or work-around was executed: 
+
+Helper Class Name: %7 
+
+Repair option: %3 
+
+RepairGuid: %4 
+
+The repair option appears to have successfully fixed the diagnosed problem. But NDF has detected the existence of other network problems. NDF should be re-run to diagnose these problems.">
+    </event>
+    <event value="5200" version="0" opcode="0" channel="8" level="4" task="9" keywords="0x4000000000000001" message="This event is not emitted, it remains manifested for AppCompat">
+    </event>
+    <event value="5200" version="1" opcode="0" channel="8" level="4" task="9" keywords="0x4000400000000001" message="The Network Diagnostics Framework failed to execute the following repair: 
+
+Repair option: %3 
+
+RepairGuid: %4">
+    </event>
+    <event value="5300" version="0" opcode="0" channel="8" level="2" task="10" keywords="0x4000400000000001" message="An error occurred. The Network Diagnostics Framework failed to complete the repair phase of operation. A Windows Error Report was generated. [%1]">
+    </event>
+    <event value="6000" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8000400000000002" message="Details about %1 diagnosis: 
+
+%2">
+    </event>
+    <event value="6100" version="0" opcode="0" channel="8" level="4" task="12" keywords="0x4000400000000002" message="Details about %1 diagnosis: 
+
+%2">
+    </event>
+    <event value="6200" version="0" opcode="0" channel="17" level="4" task="12" keywords="0x2000400000000002" message="Details about %1 diagnosis: 
+
+%2">
+    </event>
+    <event value="7000" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x2000400000000001" message="%1">
+    </event>
+    <event value="7010" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x2000400000000001" message="%1">
+    </event>
+    <event value="7020" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x2000400000000001" message="%1">
+    </event>
+    <event value="7030" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x2000400000000001" message="%1">
+    </event>
+    <event value="7040" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x2000400000000001" message="%1">
+    </event>
+    <event value="7050" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x2000400000000001" message="%1">
+    </event>
+    <event value="7100" version="0" opcode="0" channel="17" level="4" task="11" keywords="0x2000400000000001" message="%1">
+    </event>
+    <event value="8001" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x2000000000000004" message="Start NDF Incident">
+    </event>
+    <event value="8002" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x2000000000000004" message="Stop NDF Incident">
+    </event>
+    <event value="8003" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x2001000000000004" message="Start NDF Diagnose">
+    </event>
+    <event value="8004" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x2001000000000004" message="Stop NDF Diagnose">
+    </event>
+    <event value="8005" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x2001000000000004" message="Start NDF Repair">
+    </event>
+    <event value="8006" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x2001000000000004" message="Stop NDF Repair">
+    </event>
+    <event value="8007" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x2001000000000004" message="Start NDF Validate">
+    </event>
+    <event value="8008" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x2001000000000004" message="Stop NDF Validate">
+    </event>
+    <event value="8009" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x2001000000000004" message="Start NDF Reproduce Failure">
+    </event>
+    <event value="8010" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x2001000000000004" message="Stop NDF Reproduce Failure">
+    </event>
+    <event value="8103" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x2000000000000004" message="Start NDF Helper Class &apos;%1&apos; Diagnose">
+    </event>
+    <event value="8104" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x2000000000000004" message="Stop NDF Helper Class &apos;%1&apos; Diagnose">
+    </event>
+    <event value="8107" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x2000000000000004" message="Start NDF Helper Class &apos;%1&apos; Validate">
+    </event>
+    <event value="8108" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x2000000000000004" message="Stop NDF Helper Class &apos;%1&apos; Validate">
+    </event>
+  </events>
+</provider>

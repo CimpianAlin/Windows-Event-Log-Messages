@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Servicing" guid="bd12f3b8-fc40-4a61-a307-b7a013a069c1" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=cbsmsg.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\servicing\cbsmsg.dll" messageFileName="C:\Windows\servicing\cbsmsg.dll" message="Microsoft-Windows-Servicing" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Setup" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Servicing/Debug" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Generic_Task" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Initiating changes for package %1. Current state is %2. Target state is %4. Client id: %6.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Package %1 was successfully changed to the %2 state.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Package %1 failed to be changed to the %2 state. Status: %4.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="A reboot is necessary before package %1 can be changed to the %2 state.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="The servicing request received for package %1 cannot be satisfied since the package is not applicable.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Package %1 failed to be changed to the %2 state and is now partially installed. Status: %4.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Initiating changes to turn on update %1 of package %2. Client id: %4.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Initiating changes to turn off update %1 of package %2. Client id: %4.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Selectable update %1 of package %2 was successfully turned on.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Selectable update %1 of package %2 was successfully turned off.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Update %1 of package %2 failed to be turned on. Status: %3.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Update %1 of package %2 failed to be turned off. Status: %3.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="A reboot is necessary before the selectable update %1 of package %2 can be turned on.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="A reboot is necessary before the selectable update %1 of package %2 can be turned off.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Selectable update %1 of package %2 was successfully turned off with its payload removed.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="0" task="1" keywords="0x8000000000000000" message="Update %1 of package %2 failed to be turned off. Payload removal was requested. Status: %3.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="Report:[%1]">
+    </event>
+    <event value="18" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Resolve]:[%1]">
+    </event>
+    <event value="20" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Resolve]:[%1]">
+    </event>
+    <event value="21" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Execute]:[%1]">
+    </event>
+    <event value="23" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Execute]:[%1]">
+    </event>
+    <event value="24" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Stage]:[%1]">
+    </event>
+    <event value="26" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Stage]:[%1]">
+    </event>
+    <event value="33" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [DPX Expansion]:[%1]">
+    </event>
+    <event value="34" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [DPX Expansion]:[%1]">
+    </event>
+    <event value="35" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Doq Stage]:[%1]">
+    </event>
+    <event value="37" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Doq Stage]:[%1]">
+    </event>
+    <event value="38" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Doq Unstage]:[%1]">
+    </event>
+    <event value="39" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Doq Unstage]:[%1]">
+    </event>
+    <event value="40" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Doq Critical Install]:[%1]">
+    </event>
+    <event value="41" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Doq Critical Install]:[%1]">
+    </event>
+    <event value="42" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Doq Install]:[%1]">
+    </event>
+    <event value="43" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Doq Install]:[%1]">
+    </event>
+    <event value="44" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="STARt [Doq Critical Uninstall]:[%1]">
+    </event>
+    <event value="45" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Doq Critical Uninstall]:[%1]">
+    </event>
+    <event value="46" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Doq Uninstall]:[%1]">
+    </event>
+    <event value="47" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Doq Uninstall]:[%1]">
+    </event>
+    <event value="48" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Doq Device Install]:[%1]">
+    </event>
+    <event value="49" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Doq Device Install]:[%1]">
+    </event>
+    <event value="50" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [InstallUninstall]:[%1]">
+    </event>
+    <event value="51" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [InstallUninstall]:[%1]">
+    </event>
+    <event value="52" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Poqexec]:[%1]">
+    </event>
+    <event value="53" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Poqexec]:[%1]">
+    </event>
+    <event value="54" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Shutdown Processing]:[%1]">
+    </event>
+    <event value="55" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Shutdown Processing]:[%1]">
+    </event>
+    <event value="56" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Non-Critical Doq]:[%1]">
+    </event>
+    <event value="57" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Non-Critical Doq]:[%1]">
+    </event>
+    <event value="58" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Critical Doq]:[%1]">
+    </event>
+    <event value="59" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Critical Doq]:[%1]">
+    </event>
+    <event value="60" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Plan Package]:[%1]">
+    </event>
+    <event value="61" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Plan Package]:[%1]">
+    </event>
+    <event value="62" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="TrustedInstaller Finalize Event Report:[%1]">
+    </event>
+    <event value="63" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="TrustedInstaller Initialize Event Report:[%1]">
+    </event>
+    <event value="64" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="Doq Stage Progress Event Report:[%1]">
+    </event>
+    <event value="65" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="Doq Unstage Progress Event Report:[%1]">
+    </event>
+    <event value="66" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="Doq Install Progress Event Report:[%1]">
+    </event>
+    <event value="67" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="Doq Uninstall Progress Event Report:[%1]">
+    </event>
+    <event value="68" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="Startup Complete Event Report:[%1]">
+    </event>
+    <event value="69" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [AI Queue Processing]:[%1]">
+    </event>
+    <event value="70" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [AI Queue Processing]:[%1]">
+    </event>
+    <event value="71" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [AI Install]:[Description = [%1], Phase = [%2], Mode = [%3], PrevComponent=[%4], NewComponent=[%5]]">
+    </event>
+    <event value="72" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [AI Install]:[Status=[%1]]">
+    </event>
+    <event value="73" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="Report: [%1]">
+    </event>
+    <event value="74" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="CSI INSTALL Deployment Event Report: [%1]">
+    </event>
+    <event value="75" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="CSI UNINSTALL Deployment Event Report: [%1]">
+    </event>
+    <event value="76" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [KTM Transaction]:[%1]">
+    </event>
+    <event value="77" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [KTM Transaction]:[%1]">
+    </event>
+    <event value="78" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="CSI COMPRESS Event Report: [%1]">
+    </event>
+    <event value="79" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="CSI Stage Component Event Report: [%1]">
+    </event>
+    <event value="80" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="CSI AI Completion Event Report: [%1]">
+    </event>
+    <event value="82" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [CSI SMIPI]:[%1]">
+    </event>
+    <event value="83" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [CSI SMIPI]:[%1]">
+    </event>
+    <event value="84" version="0" opcode="0" channel="17" level="0" task="1" keywords="0x4000000000000000" message="CSI SMIPI INSTALL Event Report: [%1]">
+    </event>
+    <event value="85" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="CSI Transaction Start Event Report: [%1]">
+    </event>
+    <event value="86" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="CSI Transaction End Event Report: [%1]">
+    </event>
+    <event value="87" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [CSI Corruption Detection Event]:[%1]">
+    </event>
+    <event value="88" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [CSI Corruption Detection Event]:[%1]">
+    </event>
+    <event value="89" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [CSI Corruption Repair Event]:[%1]">
+    </event>
+    <event value="90" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [CSI Corruption Repair Event]:[%1]">
+    </event>
+    <event value="91" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [CSI Scavenge]:[%1]">
+    </event>
+    <event value="92" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [CSI Scavenge]:[%1]">
+    </event>
+    <event value="93" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [CBS Scavenge]:[%1]">
+    </event>
+    <event value="94" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [CBS Scavenge]:[%1]">
+    </event>
+    <event value="95" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Archive Logs]:[%1]">
+    </event>
+    <event value="96" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Archive Logs]:[%1]">
+    </event>
+    <event value="97" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Drain Catalogs]:[%1]">
+    </event>
+    <event value="98" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Drain Catalogs]:[%1]">
+    </event>
+    <event value="99" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Automatic Deepclean]:[%1]">
+    </event>
+    <event value="100" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Automatic Deepclean]:[%1]">
+    </event>
+    <event value="101" version="0" opcode="1" channel="17" level="0" task="1" keywords="0x4000000000000000" message="START [Manual Deepclean]:[%1]">
+    </event>
+    <event value="102" version="0" opcode="2" channel="17" level="0" task="1" keywords="0x4000000000000000" message="END [Manual Deepclean]:[%1]">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing is processing hotpatch package %1(%2).">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing disabled hotpatching for package %2(%3) because update %1 is not enabled for hotpatching.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing disabled hotpatching for package %1(%2) because servicing is being performed offline.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing disabled hotpatching for package %1(%2) because a reboot is required to complete a prior operation.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing successfully installed hotpatching package %1(%2).">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing has required a reboot to complete the installation of hotpatching package %1(%2).">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing disabled hotpatching for package %1(%2) because a file could not be replaced immediately.">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing disabled hotpatching for package %1(%2) because required files or custom actions are incompatible with hotpatching.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing failed to perform hotpatching for package %1(%2) because the hotpatch installer required a reboot.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing failed to perform hotpatching for package %1(%2) because of an error (%8).">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing disabled hotpatching for package %2(%3) because update %1 is being set to state %4(%5).">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing disabled hotpatching for package %2(%3) because hotpatch update %1 will not be installed.">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Windows Servicing disabled hotpatching for package %2(%3) to process regular update %1.">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="Initiating system store corruption detection and repair. Detection Only: %1, Automatically Triggered: %2.">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="0" task="0" keywords="0x8000000000000000" message="System store corruption detection and repair has completed. Status: %1, Total instances of corruption found: %3, total instances of corruption repaired: %2.">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="%2 of %3 instances of system store corruption have been repaired. Unrepaired corruptions may lead to failures in future system servicing.">
+    </event>
+    <event value="1073746195" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing started a process of changing package %1(%2) state from %3(%4) to %5(%6)">
+    </event>
+    <event value="1073746196" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing is setting package %1(%2) state to %3(%4)">
+    </event>
+    <event value="1073746197" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing successfully set package %1(%2) state to %3(%4)">
+    </event>
+    <event value="2147488022" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing identified that package %1(%2) is not applicable for this system">
+    </event>
+    <event value="3221229847" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing failed to complete the process of setting package %1 (%2) into %3(%4) state">
+    </event>
+    <event value="2147488024" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Servicing has required reboot to complete the operation of setting package %1(%2) into %3(%4) state">
+    </event>
+    <event value="1073746207" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing completed the process of changing update %1 from package %2 (%3) into %4(%5) state">
+    </event>
+    <event value="3221229857" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing failed to complete the process of changing update %1 from package %2(%3) into %4(%5) state">
+    </event>
+    <event value="2147488034" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing required reboot to complete the process of changing update %1 from package %2(%3) into %4(%5) state">
+    </event>
+    <event value="1073746224" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing is processing hotpatch package %1(%2).">
+    </event>
+    <event value="1073746225" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing disabled hotpatching for package %2(%3) because update %1 is not enabled for hotpatching.">
+    </event>
+    <event value="1073746226" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing disabled hotpatching for package %1(%2) because servicing is being performed offline.">
+    </event>
+    <event value="1073746227" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing disabled hotpatching for package %1(%2) because a reboot is required to complete a prior operation.">
+    </event>
+    <event value="1073746228" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing successfully installed hotpatching package %1(%2).">
+    </event>
+    <event value="1073746229" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing has required a reboot to complete the installation of hotpatching package %1(%2).">
+    </event>
+    <event value="2147488054" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing disabled hotpatching for package %1(%2) because a file could not be replaced immediately.">
+    </event>
+    <event value="2147488055" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing disabled hotpatching for package %1(%2) because required files or custom actions are incompatible with hotpatching.">
+    </event>
+    <event value="2147488056" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing failed to perform hotpatching for package %1(%2) because the hotpatch installer required a reboot.">
+    </event>
+    <event value="2147488057" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing failed to perform hotpatching for package %1(%2) because of an error (%8).">
+    </event>
+    <event value="1073746240" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing disabled hotpatching for package %2(%3) because update %1 is being set to state %4(%5).">
+    </event>
+    <event value="2147488065" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing disabled hotpatching for package %2(%3) because hotpatch update %1 will not be installed.">
+    </event>
+    <event value="2147488066" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows Servicing disabled hotpatching for package %2(%3) to process regular update %1.">
+    </event>
+  </events>
+</provider>

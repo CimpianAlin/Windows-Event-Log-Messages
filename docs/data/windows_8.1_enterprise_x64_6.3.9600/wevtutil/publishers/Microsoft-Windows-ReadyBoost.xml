@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ReadyBoost" guid="e6307a09-292c-497e-aad6-498f68e2b619" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=sysmain.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\sysmain.dll" messageFileName="C:\Windows\system32\sysmain.dll" message="Microsoft-Windows-ReadyBoost" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ReadyBoost/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-ReadyBoost/Analytic" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ReadyBoot" value="1016" eventGUID="00000000-0000-0000-0000-000000000000" message="ReadyBoot">
+    </task>
+    <task name="ReadyBoost" value="1019" eventGUID="00000000-0000-0000-0000-000000000000" message="ReadyBoost">
+    </task>
+    <task name="HybridDrive" value="1020" eventGUID="00000000-0000-0000-0000-000000000000" message="HybridDrive">
+    </task>
+    <task name="ReadyBootSummary" value="1015" eventGUID="00000000-0000-0000-0000-000000000000" message="ReadyBoot">
+    </task>
+    <task name="ReadyBootDefragCompleted" value="1017" eventGUID="00000000-0000-0000-0000-000000000000" message="ReadyBoot">
+    </task>
+    <task name="ReadyBootDiskAssessment" value="1018" eventGUID="00000000-0000-0000-0000-000000000000" message="ReadyBoot">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Diag" mask="1000" message="">
+    </keyword>
+    <keyword name="ReadyBoot" mask="2000" message="">
+    </keyword>
+    <keyword name="ReadyBoost" mask="4000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) is suitable for a ReadyBoost cache.  The random read speed is %3 KB/sec.  The random write speed is %4 KB/sec.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it is not attached to a supported interface.
+     For USB devices, ReadyBoost requires that the device be connected to a USB 2.0 interface.
+">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The device (%1) will not be used for a ReadyBoost cache because it does not have enough free space. Free Space: %2 MB">
+    </event>
+    <event value="1003" version="1" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it does not have enough free space. Free Space %2 MB, required %3 MB.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it has insufficient write performance: %2 KB/sec.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it has insufficient read performance: %2 KB/sec.">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="16" level="2" task="1019" keywords="0x8000000000004000" message="The ReadyBoost service encountered an error during the analysis of the new device (%1). Error code: %2">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The device (%1) will not be used for a ReadyBoost cache because it is not formatted with FAT, FAT32, or NTFS. Current Format:%2">
+    </event>
+    <event value="1007" version="1" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it is not formatted with FAT, FAT32, exFAT, or NTFS.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it does not exhibit uniform performance across the device.  Size of fast region: %2 MB.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because the device is too small. Size: %2 MB.  Minimum Size: %3 MB">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="A ReadyBoost cache was successfully created on the device (%1) of size %2 MB.">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Caching was enabled for device (%1).">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The device (%1) will not be used for a ReadyBoost cache because a ReadyBoost cache already exists (on device %2) and only one cache is supported at a given time.">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="A ReadyBoost cache was successfully deleted on the device (%1).">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Caching was disabled for device (%1).">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="1016" keywords="0x8000000000001000" message="Summary of ReadyBoot Performance:
+     Io Read Count: %12
+     Io Read KB: %3
+     Cache Hit Count: %13
+     Cache Hit KB: %4
+     Cache Hit Percentage: %9
+     Cache Fragmentation: %10
+     Compressed Data Size KB: %5
+     Raw Data Size KB: %6
+     Compression Ratio: %11
+     Cache Size KB: %14
+     Boot Prefetch Time us: %7
+     Boot Prefetch Bytes Read: %8
+     Boot Timestamp (UTC): %1
+     Last Boot Plan Timestamp (UTC): %2
+     Last Boot Plan Timestamp (Local): %16">
+    </event>
+    <event value="1015" version="1" opcode="0" channel="16" level="4" task="1016" keywords="0x8000000000002000" message="Summary of ReadyBoot Performance:
+     Io Read Count: %5
+     Io Read Bytes: %1
+     Cache Hit Count: %6
+     Cache Hit Bytes: %2
+     Cache Hit Percentage: %4
+     Boot Prefetch Time (us): %8
+     Boot Prefetch Bytes: %3
+     Boot Prefetch Read Count: %7
+">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="16" level="4" task="1016" keywords="0x8000000000001000" message="Boot plan calculation completed.
+     Boot Plan Timestamp (UTC): %1
+     Valid Boot Plan Obtained: %2">
+    </event>
+    <event value="1016" version="1" opcode="0" channel="16" level="4" task="1016" keywords="0x8000000000002000" message="Boot plan calculation completed in %3 ms.
+     Boot Plan Timestamp: %1
+     Reason: %4
+     Result: %2">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="16" level="4" task="1017" keywords="0x8000000000001000" message="A defrag. operation has completed.  A boot plan will be calculated soon.  Defrag. Timestamp (UTC): %1">
+    </event>
+    <event value="1017" version="1" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it incurs seek penalties.">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="16" level="4" task="1018" keywords="0x8000000000001000" message="ReadyBoot disk assessment completed.
+     Disk Assessment Timestamp (UTC): %1
+     Success: %2">
+    </event>
+    <event value="1018" version="1" opcode="0" channel="16" level="4" task="1016" keywords="0x8000000000002000" message="ReadyBoot disk assessment completed in %3 ms.
+     Disk Assessment Timestamp: %1
+     Result: %2">
+    </event>
+    <event value="1019" version="1" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it is remote, read-only, virtual, or otherwise unsupported.">
+    </event>
+    <event value="1020" version="1" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it contains a system volume.">
+    </event>
+    <event value="1021" version="1" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it contains a configuration file which explicitly prohibits this.">
+    </event>
+    <event value="1022" version="1" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because the ReadyBoost driver is attached to its volume stack.">
+    </event>
+    <event value="1023" version="1" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it is mounted read-only.
+
+ This is usually caused by one of the following reasons:
+ * Write-protected devices/media
+ * BitLocker group policy settings prohibit write access to non-encrypted removable devices">
+    </event>
+    <event value="1024" version="1" opcode="0" channel="17" level="4" task="1016" keywords="0x4000000000002000" message="">
+    </event>
+    <event value="1024" version="2" opcode="0" channel="17" level="4" task="1016" keywords="0x4000000000002000" message="">
+    </event>
+    <event value="1025" version="1" opcode="0" channel="16" level="4" task="1019" keywords="0x8000000000004000" message="The device (%1) will not be used for a ReadyBoost cache because it is a VHD (virtual hard disk).">
+    </event>
+    <event value="1026" version="1" opcode="0" channel="16" level="4" task="1016" keywords="0x8000000000002000" message="The attach state for volume %6 (Unique Id: %1) has changed.
+     Old ReadyBoost State: %2
+     New ReadyBoost State: %3
+
+     Old Hybrid Drive State: %4
+     New Hybrid Drive State: %5
+">
+    </event>
+    <event value="1027" version="1" opcode="0" channel="16" level="4" task="1016" keywords="0x8000000000002000" message="ReadyBoot has updated the system volume unique ID: %3
+ ErrorCode: %1">
+    </event>
+    <event value="1028" version="1" opcode="0" channel="16" level="3" task="1020" keywords="0x8000000000004000" message="Caching on the solid state hybrid disk (Disk number: %1) has been disabled due to insufficient device performance.">
+    </event>
+    <event value="1029" version="1" opcode="0" channel="16" level="4" task="1020" keywords="0x8000000000004000" message="A speed test was performed on the Hybrid Disk.
+Test result: %1
+ErrorCode: %7">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WLAN-AutoConfig" guid="9580d7dd-0379-4658-9870-d5be7d52d6de" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=wlansvc.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\wlansvc.dll" messageFileName="C:\Windows\system32\wlansvc.dll" message="Microsoft-Windows-WLAN-AutoConfig" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WLAN-AutoConfig/Operational" id="16" flags="0" message="Microsoft-Windows-WLAN-AutoConfig/Operational">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" id="17" flags="0" message="Microsoft-Windows-WLAN-AutoConfig/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="ut:Start" value="11796480" message="Start State">
+    </opcode>
+    <opcode name="ut:End" value="11862016" message="End State">
+    </opcode>
+    <opcode name="ut:Closed" value="11927552" message="Closed State">
+    </opcode>
+    <opcode name="ut:Open" value="11993088" message="Open State">
+    </opcode>
+    <opcode name="ut:Connect" value="12058624" message="Connect State">
+    </opcode>
+    <opcode name="ut:Listen" value="12124160" message="Listen State">
+    </opcode>
+    <opcode name="ut:Association" value="12189696" message="Association State">
+    </opcode>
+    <opcode name="ut:Authentication" value="12255232" message="Authentication State">
+    </opcode>
+    <opcode name="ut:Established" value="12320768" message="Established State">
+    </opcode>
+    <opcode name="WLAN_OPCODE_ACM_CONNECTION_START" value="12386304" message="Start">
+    </opcode>
+    <opcode name="WLAN_OPCODE_ACM_CONNECTION_SUCCEED" value="12451840" message="Success">
+    </opcode>
+    <opcode name="WLAN_OPCODE_ACM_CONNECTION_FAIL" value="12517376" message="Failure">
+    </opcode>
+    <opcode name="WLAN_OPCODE_ACM_DISCONNECTED" value="12582912" message="Disconnect">
+    </opcode>
+    <opcode name="WLAN_OPCODE_MSM_ASSOCIATION_START" value="12648448" message="Start">
+    </opcode>
+    <opcode name="WLAN_OPCODE_MSM_ASSOCIATION_SUCCESS" value="12713984" message="Success">
+    </opcode>
+    <opcode name="WLAN_OPCODE_MSM_ASSOCIATION_FAILURE" value="12779520" message="Failure">
+    </opcode>
+    <opcode name="WLAN_OPCODE_MSM_SECURITY_START" value="12845056" message="Start">
+    </opcode>
+    <opcode name="WLAN_OPCODE_MSM_SECURITY_STOP" value="12910592" message="Stop">
+    </opcode>
+    <opcode name="WLAN_OPCODE_MSM_SECURITY_SUCCESS" value="12976128" message="Success">
+    </opcode>
+    <opcode name="WLAN_OPCODE_MSM_SECURITY_FAILURE" value="13041664" message="Failure">
+    </opcode>
+    <opcode name="WLAN_OPCODE_MSM_SECURITY_START_SP1" value="13107200" message="Start">
+    </opcode>
+    <opcode name="WLAN_OPCODE_IHV_SECURITY_SUCCESS" value="13172736" message="Success">
+    </opcode>
+    <opcode name="WLAN_OPCODE_IHV_SECURITY_FAILURE" value="13238272" message="Failure">
+    </opcode>
+    <opcode name="WLAN_OPCODE_ONEX_SECURITY_START" value="13303808" message="Start">
+    </opcode>
+    <opcode name="WLAN_OPCODE_ONEX_SECURITY_SUCCESS" value="13369344" message="Success">
+    </opcode>
+    <opcode name="WLAN_OPCODE_ONEX_SECURITY_FAILURE" value="13434880" message="Failure">
+    </opcode>
+    <opcode name="WLAN_OPCODE_ONEX_SECURITY_RESTART" value="13500416" message="Restart">
+    </opcode>
+    <opcode name="ut:ActivityContext" value="13762560" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Perftrack-RoamOnResume" value="24000" eventGUID="00000000-0000-0000-0000-000000000000" message="Connect to same network on resume">
+    </task>
+    <task name="Perftrack-ReconnectOnResume" value="24001" eventGUID="00000000-0000-0000-0000-000000000000" message="Connect to network on resume after intervening disconnect">
+    </task>
+    <task name="TaskWlanResumeReconnect" value="24002" eventGUID="00000000-0000-0000-0000-000000000000" message="WLAN Connect to network">
+    </task>
+    <task name="WLAN_TASK_ACM_CONNECTION" value="24010" eventGUID="00000000-0000-0000-0000-000000000000" message="AcmConnection">
+    </task>
+    <task name="WLAN_TASK_MSM_ASSOCIATION" value="24011" eventGUID="00000000-0000-0000-0000-000000000000" message="MsmAssociation">
+    </task>
+    <task name="WLAN_TASK_MSM_SECURITY" value="24012" eventGUID="00000000-0000-0000-0000-000000000000" message="MsmSecurity">
+    </task>
+    <task name="WLAN_TASK_IHV_SECURITY" value="24013" eventGUID="00000000-0000-0000-0000-000000000000" message="IhvSecurity">
+    </task>
+    <task name="WLAN_TASK_ONEX_SECURITY" value="24014" eventGUID="00000000-0000-0000-0000-000000000000" message="OneXAuthentication">
+    </task>
+    <task name="Perftrack-SoftAPStart" value="24015" eventGUID="00000000-0000-0000-0000-000000000000" message="Start the device network">
+    </task>
+    <task name="Perftrack-SoftAPStop" value="24016" eventGUID="00000000-0000-0000-0000-000000000000" message="Stop the device network">
+    </task>
+    <task name="Perftrack-MSAMAuthentication" value="24017" eventGUID="00000000-0000-0000-0000-000000000000" message="Authenticate the peers associated to the hosted network">
+    </task>
+    <task name="Perftrack-WfdDiscover" value="24018" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Perftrack-WfdPair" value="24019" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WLAN_TASK_COST" value="24100" eventGUID="00000000-0000-0000-0000-000000000000" message="Connection Cost">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="IntfContext" mask="1" message="">
+    </keyword>
+    <keyword name="IntfMgr" mask="2" message="">
+    </keyword>
+    <keyword name="State" mask="4" message="">
+    </keyword>
+    <keyword name="Session" mask="8" message="">
+    </keyword>
+    <keyword name="API" mask="10" message="">
+    </keyword>
+    <keyword name="MSM" mask="20" message="">
+    </keyword>
+    <keyword name="MSMSEC" mask="40" message="">
+    </keyword>
+    <keyword name="SOFTAP" mask="80" message="">
+    </keyword>
+    <keyword name="MSAM" mask="100" message="">
+    </keyword>
+    <keyword name="WlanConnect" mask="200" message="">
+    </keyword>
+    <keyword name="LwtDiagnostic" mask="400" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+    <keyword name="ut:Scan" mask="400000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="4000" version="0" opcode="1" channel="8" level="4" task="0" keywords="0x4000000000000000" message="WLAN AutoConfig service has successfully started.
+">
+    </event>
+    <event value="4001" version="0" opcode="2" channel="8" level="4" task="0" keywords="0x4000000000000000" message="WLAN AutoConfig service has successfully stopped.
+">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x4000000000000000" message="WLAN AutoConfig service has failed to start.
+
+Error Code: %1
+">
+    </event>
+    <event value="8000" version="0" opcode="189" channel="16" level="4" task="24010" keywords="0x8000000000000600" message="WLAN AutoConfig service started a connection to a wireless network.
+
+Network Adapter: %2
+Interface GUID: %1
+Connection Mode: %3
+Profile Name: %4
+SSID: %5
+BSS Type: %6
+">
+    </event>
+    <event value="8001" version="0" opcode="190" channel="16" level="4" task="24010" keywords="0x8000000000000600" message="WLAN AutoConfig service has successfully connected to a wireless network.
+
+Network Adapter: %2
+Interface GUID: %1
+Connection Mode: %3
+Profile Name: %4
+SSID: %5
+BSS Type: %6
+PHY Type: %7
+Authentication: %8
+Encryption: %9
+802.1x Enabled: %10
+Hidden: %12
+">
+    </event>
+    <event value="8002" version="0" opcode="191" channel="16" level="2" task="24010" keywords="0x8000000000000600" message="WLAN AutoConfig service failed to connect to a wireless network.
+
+Network Adapter: %2
+Interface GUID: %1
+Connection Mode: %3
+Profile Name: %4
+SSID: %5
+BSS Type: %6
+Failure Reason:%7
+RSSI: %10
+">
+    </event>
+    <event value="8003" version="0" opcode="192" channel="16" level="4" task="24010" keywords="0x8000000000000600" message="WLAN AutoConfig service has successfully disconnected from a wireless network.
+
+Network Adapter: %2
+Interface GUID: %1
+Connection Mode: %3
+Profile Name: %4
+SSID: %5
+BSS Type: %6
+Reason: %7
+">
+    </event>
+    <event value="8004" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000400" message="Wireless network is blocked due to connection failure.
+
+Network Adapter: %1
+Interface GUID: %2
+Connection Mode: %5
+Profile Name: %4
+SSID(s): %3
+BSS Type: %6
+Failure Reason:%7
+Length of block timer (minutes): %8
+">
+    </event>
+    <event value="8005" version="0" opcode="1" channel="16" level="4" task="24015" keywords="0x8001000000000080" message="WLAN AutoConfig service has begun starting the hosted network.
+
+Interface GUID: %1
+SSID: %2
+">
+    </event>
+    <event value="8006" version="0" opcode="2" channel="16" level="4" task="24015" keywords="0x8001000000000080" message="WLAN AutoConfig service has finished starting the hosted network.
+
+Interface GUID: %1
+SSID: %2
+">
+    </event>
+    <event value="8007" version="0" opcode="2" channel="16" level="2" task="24015" keywords="0x8001000000000080" message="WLAN AutoConfig service has failed to start the hosted network.
+
+Error Code: %2
+Error Message: %3
+Interface GUID: %1
+SSID: %4
+">
+    </event>
+    <event value="8008" version="0" opcode="1" channel="16" level="4" task="24016" keywords="0x8001000000000080" message="AutoConfig service has begun to stop the hosted network.
+
+Interface GUID: %1
+SSID: %2
+">
+    </event>
+    <event value="8009" version="0" opcode="2" channel="16" level="4" task="24016" keywords="0x8001000000000080" message="WLAN AutoConfig service has finished stopping the hosted network.
+
+Interface GUID: %1
+SSID: %2
+">
+    </event>
+    <event value="8010" version="0" opcode="2" channel="16" level="2" task="24016" keywords="0x8001000000000080" message="WLAN AutoConfig service has failed to stop the hosted network.
+
+Error Code: %2
+Error Message: %3
+Interface GUID: %1
+SSID: %4
+">
+    </event>
+    <event value="8011" version="0" opcode="0" channel="16" level="4" task="24010" keywords="0x8000000000000200" message="Connect to last good network 
+
+Network Adapter: %2
+Interface GUID: %1
+ Profile Name: %3
+SSID: %4
+BSS type: %5
+">
+    </event>
+    <event value="8012" version="0" opcode="0" channel="16" level="4" task="24010" keywords="0x8000000000000200" message="NLO discovery Network Adapter: Interface GUID: %1 %2">
+    </event>
+    <event value="10000" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x4000000000000000" message="WLAN Extensibility Module has failed to start.
+
+Module Path: %1
+Error Code: %2
+">
+    </event>
+    <event value="10001" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x4000000000000000" message="WLAN Extensibility Module has successfully started.
+
+Module Path: %1
+">
+    </event>
+    <event value="10002" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x4000000000000000" message="WLAN Extensibility Module has stopped.
+
+Module Path: %1
+">
+    </event>
+    <event value="10003" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x4000000000000000" message="WLAN Extensibility Module has stopped unexpectedly.
+
+Module Path: %1
+">
+    </event>
+    <event value="10004" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x4000000000000000" message="WLAN Extensibility Module has timed out.
+
+Module Path: %1
+">
+    </event>
+    <event value="11000" version="0" opcode="193" channel="16" level="4" task="24011" keywords="0x8000000000000600" message="Wireless network association started.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Authentication: %6
+Encryption: %7
+802.1X Enabled: %8
+">
+    </event>
+    <event value="11001" version="0" opcode="194" channel="16" level="4" task="24011" keywords="0x8000000000000600" message="Wireless network association succeeded.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Management Frame Protection Enabled: %6
+">
+    </event>
+    <event value="11002" version="0" opcode="195" channel="16" level="2" task="24011" keywords="0x8000000000000600" message="Wireless network association failed.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Failure Reason: %6
+Dot11 Status Code: %8
+RSSI: %10
+">
+    </event>
+    <event value="11003" version="0" opcode="196" channel="16" level="4" task="24012" keywords="0x8000000000000600" message="Wireless security started.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Authentication: %6
+Encryption: %8
+802.1x Enabled: %10
+">
+    </event>
+    <event value="11004" version="0" opcode="197" channel="16" level="4" task="24012" keywords="0x8000000000000600" message="Wireless security stopped.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Security Hint: %6
+">
+    </event>
+    <event value="11005" version="0" opcode="198" channel="16" level="4" task="24012" keywords="0x8000000000000600" message="Wireless security succeeded.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+">
+    </event>
+    <event value="11006" version="0" opcode="199" channel="16" level="2" task="24012" keywords="0x8000000000000600" message="Wireless security failed.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Reason: %7
+Error: %9
+">
+    </event>
+    <event value="11007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000400" message="Wireless IHV security started.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+">
+    </event>
+    <event value="11008" version="0" opcode="201" channel="16" level="4" task="24013" keywords="0x8000000000000600" message="Wireless IHV security succeeded.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+">
+    </event>
+    <event value="11009" version="0" opcode="202" channel="16" level="2" task="24013" keywords="0x8000000000000600" message="Wireless IHV security failed.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Reason: %7
+Additional Data Length: %8
+">
+    </event>
+    <event value="11010" version="0" opcode="200" channel="16" level="4" task="24012" keywords="0x8000000000000600" message="Wireless security started.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Authentication: %6
+Encryption: %8
+FIPS Mode: %10
+802.1x Enabled: %11
+">
+    </event>
+    <event value="12011" version="0" opcode="203" channel="16" level="4" task="24014" keywords="0x8000000000000600" message="Wireless 802.1x authentication started.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Eap Information: Type %6, Vendor ID %7, Vendor Type %8, Author ID %9
+">
+    </event>
+    <event value="12012" version="0" opcode="204" channel="16" level="4" task="24014" keywords="0x8000000000000600" message="Wireless 802.1x authentication succeeded.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Identity: %6
+User: %8
+Domain: %8
+">
+    </event>
+    <event value="12013" version="0" opcode="205" channel="16" level="2" task="24014" keywords="0x8000000000000600" message="Wireless 802.1x authentication failed.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Identity: %7
+User: %8
+Domain: %9
+Reason: %10
+Error: %12
+EAP Reason: %13
+EAP Root cause String: %14
+EAP Error: %15
+">
+    </event>
+    <event value="12014" version="0" opcode="206" channel="16" level="4" task="24014" keywords="0x8000000000000600" message="Wireless 802.1x authentication was restarted.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Eap Information: Type %6, Vendor ID %7, Vendor Type %8, Author ID %9
+Restart Reason: %10
+">
+    </event>
+    <event value="13001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000400" message="A pre-logon connection was not attempted.
+
+Result: %1
+Reason: %2
+">
+    </event>
+    <event value="13002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000400" message="A pre-logon connection was attempted.
+
+Result: %1
+Interface GUID: %2
+Profile Name: %3
+Requested Fields: %4
+">
+    </event>
+    <event value="13011" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="A post-logon connection was not attempted.
+
+Result: %1
+Reason: %2
+">
+    </event>
+    <event value="13012" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000400" message="A post-logon connection was attempted.
+
+Result: %1
+Interface GUID: %2
+Profile Name: %3
+">
+    </event>
+    <event value="13013" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The post-logon connection attempt is complete.
+
+Network connection attempt result: %1
+Reason: %2
+Interface GUID: %3
+Profile Name: %4
+">
+    </event>
+    <event value="13014" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000400" message="A post-logon connection was attempted.
+
+Result: %1
+Interface GUID: %2
+Profile Name: %3
+">
+    </event>
+    <event value="13100" version="0" opcode="0" channel="16" level="4" task="24100" keywords="0x8000000000000400" message="%1 Cost is changed to %2 for profile %4 on interface %3">
+    </event>
+    <event value="13101" version="0" opcode="0" channel="16" level="4" task="24100" keywords="0x8000000000000400" message="Group Policy Cost is changed to %1">
+    </event>
+    <event value="13102" version="0" opcode="0" channel="16" level="4" task="24100" keywords="0x8000000000000400" message="%1 Cost is cleared for profile %3 on interface %2">
+    </event>
+    <event value="13103" version="0" opcode="0" channel="16" level="4" task="24100" keywords="0x8000000000000400" message="Group Policy Cost is cleared">
+    </event>
+    <event value="14000" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000401" message="Media notification received. Interface = %2, Connected = %3.">
+    </event>
+    <event value="14001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Peer notification received. Interface = %2, Joined = %3.">
+    </event>
+    <event value="14002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000001" message="Enable AutoConfig. Interface = %2, Enabled = %3.">
+    </event>
+    <event value="14003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000001" message="Set media streaming mode. Interface = %2, Enable = %3, Result = %4.">
+    </event>
+    <event value="14004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000001" message="Set BSS type. Interface = %2, BSS type = %3.">
+    </event>
+    <event value="14005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000401" message="Set radio state. Interface = %2, PHY = %3, State = %4, Result = %5.">
+    </event>
+    <event value="14006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Start auto config. Interface = %2.">
+    </event>
+    <event value="14007" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Stop auto config. Interface = %2.">
+    </event>
+    <event value="14008" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000401" message="Power setting = %3. Interface = %2.">
+    </event>
+    <event value="14009" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000401" message="Change session to %3. Interface = %2.">
+    </event>
+    <event value="14010" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000401" message="Radio is off. Interface = %2.">
+    </event>
+    <event value="14011" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000401" message="Change radio state for interface = %2 :  PHY = %3, software state = %4, hardware state = %5)">
+    </event>
+    <event value="14012" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="The connection is not healthy. Pending profile update is ignored. Interface = %2">
+    </event>
+    <event value="14013" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000001" message="Profile %3 is updated. Interface = %2">
+    </event>
+    <event value="14014" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="%3, need to disconnect. Interface = %2">
+    </event>
+    <event value="14015" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000001" message="Set current operation mode. Interface = %2, OpMode = %3, Result = %4.">
+    </event>
+    <event value="14016" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000800000001" message="Got connection request, mode = %3, flags = %4, profile name = %5, session = %6. Interface = %2">
+    </event>
+    <event value="14017" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000800000001" message="Connection cancelled by user. Interface = %2.">
+    </event>
+    <event value="14018" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000800000001" message="Connection failed. Interface = %5, Reason code = %1.">
+    </event>
+    <event value="14019" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000800000001" message="Stop all connection attempts for interface %2.">
+    </event>
+    <event value="14020" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000800000001" message="Connection succeeded on interface %2.">
+    </event>
+    <event value="14021" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000001800000001" message="Connection complete on interface %2, session = %3, status = %4, ad hoc network formed = %5">
+    </event>
+    <event value="14022" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000001000000001" message="Got disconnect request. Interface = %2.">
+    </event>
+    <event value="14023" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000001000000001" message="Set profile %3 to manual temporarily.">
+    </event>
+    <event value="14024" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000001000000001" message="Disconnecting. Interface = %2.">
+    </event>
+    <event value="14025" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Interface %2 state is set to %3.">
+    </event>
+    <event value="14026" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="UI request for interface %2 result = %3.">
+    </event>
+    <event value="14027" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Profile %3 %4.">
+    </event>
+    <event value="14028" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000001" message="Profile name change. Interface = %2, old profile name = %3, new profile name = %4">
+    </event>
+    <event value="14029" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="Interface %1 (%2) is successfully initialized.">
+    </event>
+    <event value="14030" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="The current operation mode for interface %2 is %3.">
+    </event>
+    <event value="14031" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="Interface %1 type = %2.">
+    </event>
+    <event value="14032" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000002" message="Interface %4 cannot be queried, error %1.">
+    </event>
+    <event value="14033" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000002" message="Failed to query physical medium for interface %1, because the device is not ready. Need to retry.">
+    </event>
+    <event value="14034" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="Found name %2 for interface %1">
+    </event>
+    <event value="14035" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="Network %1 is not permitted.">
+    </event>
+    <event value="14036" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000002" message="Power setting = %1.">
+    </event>
+    <event value="14037" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000001000000004" message="Disconnect the temporary connection %3 for interface %2, Reason = %4.">
+    </event>
+    <event value="14038" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000001000000004" message="Clear runtime state because the user who initiated the manual connection logged off.">
+    </event>
+    <event value="14039" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="WTS session change. Type = %1, session id = %2.">
+    </event>
+    <event value="14040" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="Scan for networks. Interface = %2, scan type = %3, flush BSS list = %4">
+    </event>
+    <event value="14041" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="Scan request is ignored because radio is off. Interface = %2.">
+    </event>
+    <event value="14042" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="Scan results are not queried because raido is off. Interface = %2.">
+    </event>
+    <event value="14043" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="The scan state machine is stopped.">
+    </event>
+    <event value="14044" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="No auto switch for the current connection (%3).">
+    </event>
+    <event value="14045" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000800000004" message="Connection (auto = %4) to %5 (multiple=%6) using profile %3.">
+    </event>
+    <event value="14046" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000008" message="The session id=%1, active=%2, console=%3 is added.">
+    </event>
+    <event value="14047" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000008" message="The state of session id=%1 is refreshed to active=%2, console=%3.">
+    </event>
+    <event value="14048" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000008" message="Active Console User state = %1">
+    </event>
+    <event value="14049" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000008" message="The session id=%1 is removed.">
+    </event>
+    <event value="14050" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000010" message="Discovery module has taken care of the UI request.">
+    </event>
+    <event value="14051" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000010" message="UI request not sent because the network is suppressed and the UI request is notification type.">
+    </event>
+    <event value="14052" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000010" message="IntfCompleteTimely failed, error %1">
+    </event>
+    <event value="14053" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000010" message="Session %1, Network suppressed status for %2 is %3.">
+    </event>
+    <event value="14054" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000004000000001" message="Enable AutoConfig background scan. Interface = %2, Enabled = %3.">
+    </event>
+    <event value="14055" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="Discard this round of background scan because a connection process is in progress. Interface = %2">
+    </event>
+    <event value="14056" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="Discard this round of background scan because the current connection does not allow auto switch. Interface = %2">
+    </event>
+    <event value="14057" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000004" message="Discard this round of background scan because the current connection is the most preferred auto connection. Interface = %2">
+    </event>
+    <event value="14058" version="0" opcode="210" channel="17" level="4" task="24010" keywords="0x2000000000000004" message="Connect to %2 with profile %1">
+    </event>
+    <event value="20000" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000800000020" message="Begin Connect API">
+    </event>
+    <event value="20001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000001000000020" message="Begin Disconnect API">
+    </event>
+    <event value="20002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000020" message="Calling MSMSecPerformPreAssociateSecurity">
+    </event>
+    <event value="20003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000020" message="Calling MSMSecStopSecurity">
+    </event>
+    <event value="20004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000800000020" message="Connect completion reason %1, session %2, adhoc formed %3">
+    </event>
+    <event value="20005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000020" message="Received CONNECT COMPLETION, status %3, assocStatus %4">
+    </event>
+    <event value="20006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000020" message="FSM Current state %3, event %4">
+    </event>
+    <event value="20007" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000020" message="FSM Transition from State: %3 to State: %4">
+    </event>
+    <event value="20008" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000800000020" message="Phy Type not compatible">
+    </event>
+    <event value="20009" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000020" message="Link Quality: %3">
+    </event>
+    <event value="20010" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000020" message="Received IHV PORT DOWN, peer %3">
+    </event>
+    <event value="20011" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000020" message="Received IHV PORT UP, peer %3">
+    </event>
+    <event value="20012" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000020" message="Post Connect Security has Completed Successfully">
+    </event>
+    <event value="20013" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000002000000020" message="Post Connect Security has FAILED with reason code: %1">
+    </event>
+    <event value="20014" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000020" message="Received Security Packet: %3">
+    </event>
+    <event value="20015" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000020" message="Security PreConnect Completion, security reason: %1, error %2">
+    </event>
+    <event value="20016" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000020" message="Send Security Packet Length = %3 and Completion Handle = %4">
+    </event>
+    <event value="20017" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000020" message="Send Security Packet Length = %3 and Completion Handle = %4">
+    </event>
+    <event value="20018" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000800000020" message="SSID = %3 BSSIDCount = %4">
+    </event>
+    <event value="20019" version="0" opcode="1" channel="16" level="4" task="24017" keywords="0x8001002000000180" message="A client has associated with the hosted network. 
+
+Interface GUID: %1
+Interface description:%2
+Network SSID: %3
+Local MAC address: %4
+Peer MAC address: %5
+">
+    </event>
+    <event value="20020" version="0" opcode="2" channel="16" level="4" task="24017" keywords="0x8001002000000180" message="A client has successfully authenticated with the hosted network. 
+
+Interface GUID: %1
+Interface description:%2
+Network SSID: %3
+Local MAC address: %4
+Peer MAC address: %5
+">
+    </event>
+    <event value="20021" version="0" opcode="2" channel="16" level="2" task="24017" keywords="0x8001002000000180" message="A client has failed to authenticate with the hosted network. 
+
+Error code: %2
+Error Message: %3
+Interface GUID: %1
+Interface description:%4
+Network SSID: %5
+Local MAC address: %6
+">
+    </event>
+    <event value="20022" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000400000000020" message="Begin Scan">
+    </event>
+    <event value="20023" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000400000000020" message="Scan completion Status %1">
+    </event>
+    <event value="21001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%2) New Adapter %4 (%5)">
+    </event>
+    <event value="21002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%2) IntfSecState Transition %3 --&gt; %4">
+    </event>
+    <event value="21003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%2) Received StopSecurity">
+    </event>
+    <event value="21004" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000002000000040" message="Pre-Associate Failure Auth %3, Cipher %4, OneX Enabled(%5), UICancelled(%6)">
+    </event>
+    <event value="21005" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000002000000040" message="Received MSMSec UI Response, but already have key material!">
+    </event>
+    <event value="21006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Received UI response %3">
+    </event>
+    <event value="21007" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="TIMING OUT 802.1x Authentication">
+    </event>
+    <event value="21008" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="NOT TIMING OUT 802.1x authentication, next timer in %6 msec">
+    </event>
+    <event value="21009" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000002000000040" message="802.1x veto-ed FAST ROAMING (Error %1), performing full authentication">
+    </event>
+    <event value="21010" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Port (%4) Peer %6 AuthMgr Transition %7 --&gt; %8">
+    </event>
+    <event value="21011" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Sending UI response to 802.1x">
+    </event>
+    <event value="21012" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="KeyExt Transition %2 --&gt; %3">
+    </event>
+    <event value="21013" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000002000000040" message="Explicit failure from 802.1x, (Reason %2, Error %3)">
+    </event>
+    <event value="21014" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="802.1x success">
+    </event>
+    <event value="21015" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Port(%4) Peer %6 KeyMgr transition %7 --&gt; %8">
+    </event>
+    <event value="21016" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="Auth sent M1(%4), self %5, peer %6">
+    </event>
+    <event value="21017" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="Auth sent M3(%4), self %5, peer %6">
+    </event>
+    <event value="21018" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="Auth sent G1(%4), self %5, peer %6">
+    </event>
+    <event value="21019" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Port(%4) Peer %6 KeyMgrAuth Transition %7 --&gt; %8">
+    </event>
+    <event value="21020" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="CONNECTION SECURED by OFFLOADED key exchange">
+    </event>
+    <event value="21021" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Port(%4) Notify Key Exchange Status: Authenticator(%7) reason %8 , self %5, peer %6">
+    </event>
+    <event value="21022" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x200000a000000040" message="Default Key: Idx %1, Algo %2, Direction= %3, Len %4">
+    </event>
+    <event value="21023" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x200000a000000040" message="Pairwise Key (%1): Algo %2, Direction= %3, Len %4">
+    </event>
+    <event value="21024" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%1) Connect Completion, Reason %2, Error %3">
+    </event>
+    <event value="21025" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Port(%1) Indicate Security Result, Peer %2, Reason %3 Error %4">
+    </event>
+    <event value="21026" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="Adapter(%4) Tx to %1, Ethertype %2, size %3">
+    </event>
+    <event value="21027" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Sending UI request to MSM (%1)">
+    </event>
+    <event value="21028" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%2) MSM Connect notification, Network &quot;%4&quot;">
+    </event>
+    <event value="21029" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%2) MSM Disconnect notification">
+    </event>
+    <event value="21030" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%2) Port up for peer %3">
+    </event>
+    <event value="21031" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%2) Port down for peer %3">
+    </event>
+    <event value="21032" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="Adapter(%2) Rx from %3, Ethertype %4, size %5">
+    </event>
+    <event value="21033" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%2) UI Response, request type %3, response type %4, cancelled = %5">
+    </event>
+    <event value="21034" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%2) Create discovery profiles, SSID %3, BSS type %4, secure %5">
+    </event>
+    <event value="21035" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Tx pkt completion, pkt %3">
+    </event>
+    <event value="21036" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Adapter(%2) MSM Redo security request">
+    </event>
+    <event value="21037" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Connection health status is %1 (%2), HealthyHint %3">
+    </event>
+    <event value="21038" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x200000a000000040" message="Transition network suspected">
+    </event>
+    <event value="21039" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x200000a000000040" message="UI Response - Valid = %1, Cancelled = %2">
+    </event>
+    <event value="21040" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000002000000040" message="Port(%3) MSMSendPacket failed, Error %1">
+    </event>
+    <event value="21041" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x200000a000000040" message="Can&apos;t do fast roaming when PMK Cache is not valid">
+    </event>
+    <event value="21042" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="PreAuthMgr Transition %4 --&gt; %5">
+    </event>
+    <event value="21043" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="PreAuth: 802.1X Success, Received keys by Pre-Authentication for %6">
+    </event>
+    <event value="21044" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000002000000040" message="PreAuth: Explicit failure from 802.1x, (Reason %2, Error %3)">
+    </event>
+    <event value="21045" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="PreAuth: 802.1x success">
+    </event>
+    <event value="21046" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x200000a000000040" message="Received unicast key material in EAPOL-Key (Rapid rekey %7)">
+    </event>
+    <event value="21047" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="CONNECTION SECURED by RC4 key exchange">
+    </event>
+    <event value="21048" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="CONNECTION SECURED by RSN key exchange">
+    </event>
+    <event value="21049" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="RSN Key Receive: Key Message M1">
+    </event>
+    <event value="21050" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="RSN Key Receive: Key Message M3">
+    </event>
+    <event value="21051" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="RSN Key Receive: Key Message M2">
+    </event>
+    <event value="21052" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="RSN Key Receive: Key Message M4">
+    </event>
+    <event value="21053" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="RSN Key Receive: Key Message G1">
+    </event>
+    <event value="21054" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="RSN Key Receive: Key Message G2">
+    </event>
+    <event value="21055" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="FAST ROAMING is %1">
+    </event>
+    <event value="21056" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000002000000040" message="Unknown transition into Failure, EventType %3">
+    </event>
+    <event value="21057" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="Port(%4) Peer %6 SecMgr Transition %7 --&gt; %8">
+    </event>
+    <event value="21058" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="CONNECTION SECURED by WPA key exchange">
+    </event>
+    <event value="21059" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="WPA Key Receive: Key Message M1">
+    </event>
+    <event value="21060" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="WPA Key Receive: Key Message M3">
+    </event>
+    <event value="21061" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000042000000040" message="WPA Key Receive: Key Message G1">
+    </event>
+    <event value="21062" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000002000000040" message="Eapol Key packet cache OVERFLOW">
+    </event>
+    <event value="21063" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000002000000040" message="PMK Cache overflowed, current %4, limit %5">
+    </event>
+    <event value="21064" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000002000000040" message="WLAN Security Settings: BSS Type %1, Authentication %2, Encryption %3, OneX Enabled %4, Eap Information - Type %5, Vendor ID %6, Vendor Type %7, Author ID %8">
+    </event>
+    <event value="21065" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x200000a000000040" message="Received multicast key material in EAPOL-Key (Rapid rekey %7)">
+    </event>
+    <event value="21066" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x200000a000000040" message="Default Key ID set to Index %1">
+    </event>
+    <event value="30000" version="0" opcode="2" channel="17" level="4" task="24000" keywords="0x2001000000000000" message="Connection started 1">
+    </event>
+    <event value="30001" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Connection timeout threshold reached 1">
+    </event>
+    <event value="30002" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Connection succeeded">
+    </event>
+    <event value="30003" version="0" opcode="2" channel="17" level="4" task="24000" keywords="0x2001000000000000" message="Connection started 2">
+    </event>
+    <event value="30004" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Connection timeout threshold reached 2">
+    </event>
+    <event value="30005" version="0" opcode="2" channel="17" level="4" task="24000" keywords="0x2001000000000000" message="Connection started 3">
+    </event>
+    <event value="30006" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Connection timeout threshold reached 3">
+    </event>
+    <event value="30007" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Manual connect initiated, end running reconnect scenarios">
+    </event>
+    <event value="30008" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Manual connect initiated, end running reconnect scenarios">
+    </event>
+    <event value="30009" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Manual connect initiated, end running reconnect scenarios">
+    </event>
+    <event value="30010" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="UI interaction requested 1">
+    </event>
+    <event value="30011" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="UI interaction requested 2">
+    </event>
+    <event value="30012" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="UI interaction requested 3">
+    </event>
+    <event value="30013" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Connection succeeded - Hidden network 1">
+    </event>
+    <event value="30014" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Connection succeeded - Hidden network 2">
+    </event>
+    <event value="30015" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Connection succeeded - Hidden network 3">
+    </event>
+    <event value="30016" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Selection list exhausted 1">
+    </event>
+    <event value="30017" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Selection list exhausted 2">
+    </event>
+    <event value="30018" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Selection list exhausted 3">
+    </event>
+    <event value="30019" version="0" opcode="2" channel="17" level="4" task="24001" keywords="0x2001000000000000" message="Connection succeeded to previous network - expected roaming">
+    </event>
+    <event value="30020" version="0" opcode="1" channel="17" level="4" task="0" keywords="0x2001000000000000" message="">
+    </event>
+    <event value="30021" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x2001000000000000" message="">
+    </event>
+    <event value="30022" version="0" opcode="2" channel="17" level="4" task="0" keywords="0x2001000000000000" message="">
+    </event>
+    <event value="30100" version="0" opcode="1" channel="17" level="4" task="24018" keywords="0x2001000000000000" message="">
+    </event>
+    <event value="30101" version="0" opcode="2" channel="17" level="4" task="24018" keywords="0x2001000000000000" message="">
+    </event>
+    <event value="30102" version="0" opcode="1" channel="17" level="4" task="24019" keywords="0x2001000000000000" message="">
+    </event>
+    <event value="30103" version="0" opcode="2" channel="17" level="4" task="24019" keywords="0x2001000000000000" message="">
+    </event>
+    <event value="30104" version="0" opcode="2" channel="17" level="4" task="24002" keywords="0x2001000000000000" message="Cancel WLAN Resume-Reconnect Interface GUID: %1">
+    </event>
+    <event value="40001" version="0" opcode="0" channel="17" level="4" task="24010" keywords="0x2000000000000400" message="Connect Diagnostic Information
+Interface GUID: %1
+Network Adapter: %2
+Connection Mode: %3
+SSID: %4
+BSS Type: %5
+Authentication: %6
+Encryption: %7
+802.1X Enabled: %8
+IHV Bitmap: %9
+Hidden: %10
+Peer MAC: %11
+WLAN Status Code: %12
+Dot11 Status Code: %13
+Assoc Time: %14
+Assoc Restart Count: %15
+Auth Time: %16
+Auth Restart Count: %17
+Device ID: %18
+Driver Version: %19
+RSSI: %20
+Signal Quality: %21%%
+Channel: %22
+Interfering AP Count: %23
+Total Visible AP Count: %24
+">
+    </event>
+    <event value="60001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Error: %1 Location: %2 Context: %3">
+    </event>
+    <event value="60002" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Warning: %1 Location: %2 Context: %3">
+    </event>
+    <event value="60003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000200000000000" message="Transitioned to State: %1 Context: %2">
+    </event>
+    <event value="60004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Updated Context: %1 Update Reason: %2">
+    </event>
+    <event value="60101" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6">
+    </event>
+    <event value="60102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6">
+    </event>
+    <event value="60103" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Interface Guid: %1 IfIndex: %2 Interface Luid: %3 ReferenceContext: %4">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="NisDrvWFP Provider" guid="49d6ad7b-52c4-4f79-a164-4dcd908391e4" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=4.3.9600.16384&amp;FileName=wdnisdrv.sys&amp;FileVer=4.3.9600.16384" resourceFileName="C:\Windows\system32\drivers\wdnisdrv.sys" messageFileName="C:\Windows\system32\drivers\wdnisdrv.sys" message="Microsoft-Antimalware-WdNisDrv" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="NIS-Driver-WFP/Diagnostic" id="16" flags="0" message="NIS-Driver-WFP/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WfpReinjection" value="2001" eventGUID="00000000-0000-0000-0000-000000000000" message="WFP Reinjection">
+    </task>
+    <task name="DeferredAction" value="2002" eventGUID="00000000-0000-0000-0000-000000000000" message="DPC Deferred Action">
+    </task>
+    <task name="StalledAction" value="2003" eventGUID="00000000-0000-0000-0000-000000000000" message="Stalled Actions">
+    </task>
+    <task name="InterceptedPacket" value="2004" eventGUID="00000000-0000-0000-0000-000000000000" message="Intercepted Packet">
+    </task>
+    <task name="FlowEstablished" value="2005" eventGUID="00000000-0000-0000-0000-000000000000" message="Flow Established">
+    </task>
+    <task name="FlowFiltered" value="2006" eventGUID="00000000-0000-0000-0000-000000000000" message="Flow Filtered">
+    </task>
+    <task name="FlowCancelInterception" value="2007" eventGUID="00000000-0000-0000-0000-000000000000" message="Flow Canceled">
+    </task>
+    <task name="StreamIrpsExhausted" value="2008" eventGUID="00000000-0000-0000-0000-000000000000" message="Stream Irps Exhausted">
+    </task>
+    <task name="AllIrpsExhausted" value="2009" eventGUID="00000000-0000-0000-0000-000000000000" message="All Irps Exhausted">
+    </task>
+    <task name="DynamicExclusion" value="2010" eventGUID="00000000-0000-0000-0000-000000000000" message="Dynamic Exclusion">
+    </task>
+    <task name="Flow" value="2011" eventGUID="00000000-0000-0000-0000-000000000000" message="Flow">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="WfpReinjection" mask="1" message="">
+    </keyword>
+    <keyword name="DeferredAction" mask="2" message="">
+    </keyword>
+    <keyword name="StalledAction" mask="4" message="">
+    </keyword>
+    <keyword name="InterceptedPacket" mask="8" message="">
+    </keyword>
+    <keyword name="FlowEstablished" mask="10" message="">
+    </keyword>
+    <keyword name="FlowFiltered" mask="20" message="">
+    </keyword>
+    <keyword name="FlowCancelInterception" mask="40" message="">
+    </keyword>
+    <keyword name="StreamIrpsExhausted" mask="80" message="">
+    </keyword>
+    <keyword name="AllIrpsExhausted" mask="100" message="">
+    </keyword>
+    <keyword name="DynamicExclusion" mask="200" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="2001" keywords="0x8000000000000001" message="Begin WFP Reinjection">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="16" level="4" task="2001" keywords="0x8000000000000001" message="End WFP Reinjection">
+    </event>
+    <event value="1003" version="0" opcode="1" channel="16" level="4" task="2002" keywords="0x8000000000000002" message="Begin DPC Deferred Action">
+    </event>
+    <event value="1004" version="0" opcode="2" channel="16" level="4" task="2002" keywords="0x8000000000000002" message="End DPC Deferred Action">
+    </event>
+    <event value="1005" version="0" opcode="1" channel="16" level="4" task="2003" keywords="0x8000000000000004" message="Begin Stalled Action">
+    </event>
+    <event value="1006" version="0" opcode="2" channel="16" level="4" task="2003" keywords="0x8000000000000004" message="End Stalled Action">
+    </event>
+    <event value="1007" version="0" opcode="1" channel="16" level="4" task="2004" keywords="0x8000000000000008" message="Begin Intercepted Packet">
+    </event>
+    <event value="1008" version="0" opcode="2" channel="16" level="4" task="2004" keywords="0x8000000000000008" message="End Intercepted Packet">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="2005" keywords="0x8000000000000010" message="Flow Established">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="16" level="4" task="2006" keywords="0x8000000000000020" message="Flow Filtered">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="16" level="4" task="2007" keywords="0x8000000000000040" message="Flow Canceled">
+    </event>
+    <event value="1012" version="0" opcode="0" channel="16" level="4" task="2008" keywords="0x8000000000000080" message="Stream Irps Exhausted">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="16" level="4" task="2009" keywords="0x8000000000000100" message="All Irps Exhausted">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="16" level="4" task="2010" keywords="0x8000000000000200" message="Dynamic Exclusion">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="16" level="4" task="2011" keywords="0x8000000000000000" message="Flow">
+    </event>
+  </events>
+</provider>

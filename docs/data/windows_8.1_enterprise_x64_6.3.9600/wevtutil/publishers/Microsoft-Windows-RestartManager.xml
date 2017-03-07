@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-RestartManager" guid="0888e5ef-9b98-4695-979d-e92ce4247224" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=RstrtMgr.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\RstrtMgr.dll" messageFileName="C:\Windows\System32\RstrtMgr.dll" message="Microsoft-Windows-RestartManager" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-RestartManager/Operational" id="16" flags="0" message="Microsoft-Windows-RestartManager/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="10000" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Starting session %1 - %2.">
+    </event>
+    <event value="10001" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Ending session %1 started %2.">
+    </event>
+    <event value="10002" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Shutting down application or service &apos;%3&apos;.">
+    </event>
+    <event value="10003" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Restarting application or service &apos;%3&apos;.">
+    </event>
+    <event value="10004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Registering %2 file(s), %3 process(es), %4 service(s).">
+    </event>
+    <event value="10005" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Machine restart is required.">
+    </event>
+    <event value="10006" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Application or service &apos;%3&apos; could not be shut down.">
+    </event>
+    <event value="10007" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Application or service &apos;%3&apos; could not be restarted.">
+    </event>
+    <event value="10008" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Restart Manager encountered an internal error.">
+    </event>
+    <event value="10009" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Service tagging failed to find target service in process %2.">
+    </event>
+    <event value="10010" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Application &apos;%3&apos; (pid %2) cannot be restarted - %9.">
+    </event>
+  </events>
+</provider>

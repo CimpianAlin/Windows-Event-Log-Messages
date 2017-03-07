@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-RTWorkQueue-Extended" guid="83faaa86-63c8-4dd8-a2da-fbadddfc0655" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.9600.16384&amp;FileName=rtworkq.dll&amp;FileVer=12.0.9600.16384" resourceFileName="C:\Windows\system32\rtworkq.dll" messageFileName="C:\Windows\system32\rtworkq.dll" message="Microsoft-Windows-RTWorkQueue-Extended" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="RTWorkQueueExtended" id="16" flags="0" message="RTWorkQueue Extended">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WorkQueue_Queue_Extended" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="WorkQueue: Queue Extended">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="100" keywords="0x8000000000000000" message="WorkQueue Queue extended: AsyncResult=%1 AsyncResultVTable=%2">
+    </event>
+  </events>
+</provider>

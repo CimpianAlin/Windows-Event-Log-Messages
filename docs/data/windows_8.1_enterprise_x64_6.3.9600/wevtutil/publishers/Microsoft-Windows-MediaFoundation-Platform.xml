@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MediaFoundation-Platform" guid="bc97b970-d001-482f-8745-b8d7d5759f99" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.9600.16384&amp;FileName=mfplat.dll&amp;FileVer=12.0.9600.16384" resourceFileName="C:\Windows\system32\mfplat.dll" messageFileName="C:\Windows\system32\mfplat.dll" message="Microsoft-Windows-MediaFoundation-Platform" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="MediaFoundationDeviceProxy" id="16" flags="0" message="">
+    </channel>
+    <channel name="MediaFoundationPlatform" id="17" flags="0" message="Media Foundation Platform">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PluginTask" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="Plugin Manager">
+    </task>
+    <task name="MF_MFT_Hardware_Enumeration" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlatformTask" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Foundation Platform">
+    </task>
+    <task name="SourceResolverTask" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Foundation SourceResolver">
+    </task>
+    <task name="MFTEnumTask" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Foundation MFTEnum">
+    </task>
+    <task name="OptimizationFlags_PlatformTask" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="Optimization Flags">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="3" task="42" keywords="0x4000000000000000" message="Attempt to use MFT clsid %1 marked as do not use.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="3" task="42" keywords="0x4000000000000000" message="Attempt to use Media Source clsid %1 marked as do not use.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Mark MFT clsid %1 do not use = %2.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Mark Media Source clsid %1 do not use = %2.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Choosing preferred MFT clsid %1 for subtype %2.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Registering preferred MFT clsid %1 for subtype %2.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Choosing preferred Media Source clsid %1 for %2.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Registering preferred Media Soure clsid %1 for %2.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Found preferred MFT clsid %1 for media subtype %2.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Did not find preferred MFT for media subtype %1.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Query MFT clsid %1 do not use: %2.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Found preferred Media Source clsid %1 for %2.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Did not find preferred Media Source for %1.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Query Media Source clsid %1 do not use: %2.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Registering local MFT(%1).">
+    </event>
+    <event value="16" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Unregistering local MFT(%1).">
+    </event>
+    <event value="17" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000000000" message="Enumerating local MFT(%1).">
+    </event>
+    <event value="18" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="20" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="21" version="0" opcode="1" channel="17" level="4" task="103" keywords="0x4000000000000000" message="Configuration: dwType = %1 dwConfig=%2">
+    </event>
+    <event value="100" version="0" opcode="1" channel="17" level="4" task="100" keywords="0x4000000000000000" message="MFStartup returned %1">
+    </event>
+    <event value="101" version="0" opcode="0" channel="17" level="4" task="100" keywords="0x4000000000000000" message="Start MFShutdown">
+    </event>
+    <event value="102" version="0" opcode="2" channel="17" level="4" task="100" keywords="0x4000000000000000" message="End MFShutdown - return code %1">
+    </event>
+    <event value="200" version="0" opcode="1" channel="17" level="4" task="101" keywords="0x4000000000000000" message="Source Resolver Context(%1) Resolve %2 flags %3">
+    </event>
+    <event value="201" version="0" opcode="1" channel="17" level="4" task="101" keywords="0x4000000000000000" message="Source Resolver Context(%1) Trying Scheme Handler %2">
+    </event>
+    <event value="202" version="0" opcode="0" channel="17" level="4" task="101" keywords="0x4000000000000000" message="Source Resolver Context(%1) Trying Byte Scheme Handler CLSID(%2)">
+    </event>
+    <event value="203" version="0" opcode="0" channel="17" level="4" task="101" keywords="0x4000000000000000" message="Source Resolver Context(%1) SchemeHandler Result %2">
+    </event>
+    <event value="204" version="0" opcode="0" channel="17" level="4" task="101" keywords="0x4000000000000000" message="Source Resolver Context(%1) Byte stream Handler Result %2">
+    </event>
+    <event value="205" version="0" opcode="2" channel="17" level="4" task="101" keywords="0x4000000000000000" message="Source Resolver Context(%1) Resolving %2 returned %3">
+    </event>
+    <event value="300" version="0" opcode="1" channel="17" level="4" task="102" keywords="0x4000000000000000" message="MFTEnumEx flags %1, category %2 for input type (%3,%4), output type (%5,%6) ">
+    </event>
+    <event value="301" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x4000000000000000" message="Found matching software MFT %1">
+    </event>
+    <event value="302" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x4000000000000000" message="Found Local MFT %1">
+    </event>
+    <event value="303" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x4000000000000000" message="Found Hardware MFT %1">
+    </event>
+    <event value="304" version="0" opcode="2" channel="17" level="4" task="102" keywords="0x4000000000000000" message="MFTEnumEx returned code %1, found %2 local MFTs, %3 hardware MFTs and %4 MFT CLSIDs">
+    </event>
+    <event value="2500" version="0" opcode="1" channel="17" level="4" task="102" keywords="0x4000000000000000" message="MFGetMFTMerit Enter">
+    </event>
+    <event value="2501" version="0" opcode="2" channel="17" level="4" task="102" keywords="0x4000000000000000" message="MFGetMFTMerit Leave Merit(%1) Return Code(%2)">
+    </event>
+    <event value="2502" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x4000000000000000" message="MFGetMFTMerit:  StartInitialization returned %1">
+    </event>
+    <event value="2503" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x4000000000000000" message="MFGetMFTMerit:  Validate Certificate returned %1">
+    </event>
+    <event value="2504" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x4000000000000000" message="MFGetMFTMerit:  EndInitialization returned %1">
+    </event>
+    <event value="2505" version="0" opcode="0" channel="17" level="4" task="102" keywords="0x4000000000000000" message="MFGetMFTMerit:  GetInformation returned %1">
+    </event>
+  </events>
+</provider>

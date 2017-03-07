@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WWAN-UI-EVENTS" guid="78168022-eca5-41e8-9e17-e8c7fd77aae1" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=8.1.2.0&amp;FileName=wwansvc.dll&amp;FileVer=8.1.2.0" resourceFileName="C:\Windows\system32\Wwanadvui.dll" messageFileName="C:\Windows\system32\wwansvc.dll" message="Microsoft-Windows-WWAN-UI-EVENTS" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WWAN-UI-Events/Diagnostic" id="16" flags="0" message="Mobile Broadband UI Event Diagnostics Channel">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TaskUIConnect" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Connect Task">
+    </task>
+    <task name="TaskUIDisconnect" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Disconnect Task">
+    </task>
+    <task name="TaskDisplayConnectionUI" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Display Connection UI task">
+    </task>
+    <task name="TaskDisplayConnectionTab" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Display Connection Tab task">
+    </task>
+    <task name="TaskDisplayRoamingTab" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Display Roaming Tab task">
+    </task>
+    <task name="TaskDisplayRoamingTabDynData" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Display Roaming Tab dynamic data task">
+    </task>
+    <task name="TaskDisplaySecurityTab" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Display Security Tab task">
+    </task>
+    <task name="TaskDisplaySecurityTabDynData" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="Display Security Tab Dynamic data task">
+    </task>
+    <task name="TaskDisplayAdvancedTab" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="Display Advanced Tab task">
+    </task>
+    <task name="TaskDisplayProfileUI" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="Display Profile UI task">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Mobile Broadband UI generic error">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Mobile Broadband UI notification Event">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Show new network in UI">
+    </event>
+    <event value="10011" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001200800000000" message="Start Connecting">
+    </event>
+    <event value="10012" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001200800000000" message="Complete Connecting">
+    </event>
+    <event value="10021" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8001200000000000" message="Display of Connection UI started">
+    </event>
+    <event value="10022" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8001200000000000" message="Display of Connection UI completed">
+    </event>
+    <event value="10031" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001200000000000" message="Display of Connection Tab started">
+    </event>
+    <event value="10032" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001200000000000" message="Display of Connection Tab completed">
+    </event>
+    <event value="10041" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8001200000000000" message="Display of Roaming Tab started">
+    </event>
+    <event value="10042" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8001200000000000" message="Display of Roaming Tab completed">
+    </event>
+    <event value="10043" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8001200000000000" message="Display of Roaming Tab with data started">
+    </event>
+    <event value="10044" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8001200000000000" message="Display of Roaming Tab with data completed">
+    </event>
+    <event value="10051" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8001200000000000" message="Display of Security Tab started">
+    </event>
+    <event value="10052" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8001200000000000" message="Display of Security Tab completed">
+    </event>
+    <event value="10053" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8001200000000000" message="Display of Security Tab with Dynamic data started">
+    </event>
+    <event value="10054" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8001200000000000" message="Display of Security Tab with Dynamic data completed">
+    </event>
+    <event value="10061" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8001200000000000" message="Display of Advanced Tab started">
+    </event>
+    <event value="10062" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8001200000000000" message="Display of Advanced Tab completed">
+    </event>
+    <event value="10071" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8001200000000000" message="Display of Profile UI started">
+    </event>
+    <event value="10072" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8001200000000000" message="Display of Profile UI completed">
+    </event>
+  </events>
+</provider>

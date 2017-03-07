@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-Network" guid="7dd42a49-5329-4832-8dfd-43d979153a88" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=advapi32.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\advapi32.dll" messageFileName="C:\Windows\system32\advapi32.dll" message="Microsoft-Windows-Kernel-Network" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Kernel-Network/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="KERNEL_NETWORK_OPCODE_SEND" value="655360" message="Data sent.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_RECV" value="720896" message="Data received.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_CONNECT" value="786432" message="Connection attempted.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_DISCONNECT" value="851968" message="Disconnect issued.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_RETRANSMIT" value="917504" message="Data retransmitted.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_ACCEPT" value="983040" message="Connection accepted.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_RECONNECT" value="1048576" message="Reconnect attempted.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_FAIL" value="1114112" message="TCP connection attempt failed.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_TCPCOPY" value="1179648" message="Protocol copied data on behalf of user.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_SENDUDP" value="2752512" message="Data sent over UDP protocol.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_RECVUDP" value="2818048" message="Data received over UDP protocol.">
+    </opcode>
+    <opcode name="KERNEL_NETWORK_OPCODE_FAILUDP" value="3211264" message="UDP connection attempt failed.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="KERNEL_NETWORK_TASK_TCPIP" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KERNEL_NETWORK_TASK_UDPIP" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="KERNEL_NETWORK_KEYWORD_IPV4" mask="10" message="">
+    </keyword>
+    <keyword name="KERNEL_NETWORK_KEYWORD_IPV6" mask="20" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="10" version="0" opcode="10" channel="16" level="4" task="10" keywords="0x8000000000000010" message="TCPv4: %2 bytes transmitted from %4:%6 to %3:%5.">
+    </event>
+    <event value="11" version="0" opcode="11" channel="16" level="4" task="10" keywords="0x8000000000000010" message="TCPv4: %2 bytes received from %4:%6 to %3:%5.">
+    </event>
+    <event value="12" version="0" opcode="12" channel="16" level="4" task="10" keywords="0x8000000000000010" message="TCPv4: Connection attempted between %4:%6 and %3:%5.">
+    </event>
+    <event value="13" version="0" opcode="13" channel="16" level="4" task="10" keywords="0x8000000000000010" message="TCPv4: Connection closed between %4:%6 and %3:%5.">
+    </event>
+    <event value="14" version="0" opcode="14" channel="16" level="4" task="10" keywords="0x8000000000000010" message="TCPv4: %2 bytes retransmitted from %4:%6 to %3:%5.">
+    </event>
+    <event value="15" version="0" opcode="15" channel="16" level="4" task="10" keywords="0x8000000000000010" message="TCPv4: Connection established between %4:%6 and %3:%5.">
+    </event>
+    <event value="16" version="0" opcode="16" channel="16" level="4" task="10" keywords="0x8000000000000010" message="TCPv4: Reconnect attempt between %4:%6 and %3:%5.">
+    </event>
+    <event value="17" version="0" opcode="17" channel="16" level="4" task="10" keywords="0x8000000000000030" message="TCPv4: Connection attempt failed with error code %2.">
+    </event>
+    <event value="18" version="0" opcode="18" channel="16" level="4" task="10" keywords="0x8000000000000010" message="TCPv4: %2 bytes copied in protocol on behalf of user for connection between %4:%6 and %3:%5.">
+    </event>
+    <event value="26" version="0" opcode="10" channel="16" level="4" task="10" keywords="0x8000000000000020" message="TCPv6: %2 bytes transmitted from %4:%6 to %3:%5.">
+    </event>
+    <event value="27" version="0" opcode="11" channel="16" level="4" task="10" keywords="0x8000000000000020" message="TCPv6: %2 bytes received from %4:%6 to %3:%5.">
+    </event>
+    <event value="28" version="0" opcode="12" channel="16" level="4" task="10" keywords="0x8000000000000020" message="TCPv6: Connection attempted between %4:%6 and %3:%5.">
+    </event>
+    <event value="29" version="0" opcode="13" channel="16" level="4" task="10" keywords="0x8000000000000020" message="TCPv6: Connection closed between %4:%6 and %3:%5.">
+    </event>
+    <event value="30" version="0" opcode="14" channel="16" level="4" task="10" keywords="0x8000000000000020" message="TCPv6: %2 bytes retransmitted from %4:%6 to %3:%5.">
+    </event>
+    <event value="31" version="0" opcode="15" channel="16" level="4" task="10" keywords="0x8000000000000020" message="TCPv6: Connection established between %4:%6 and %3:%5.">
+    </event>
+    <event value="32" version="0" opcode="16" channel="16" level="4" task="10" keywords="0x8000000000000020" message="TCPv6: Reconnect attempt between %4:%6 and %3:%5.">
+    </event>
+    <event value="34" version="0" opcode="18" channel="16" level="4" task="10" keywords="0x8000000000000020" message="TCPv6: %2 bytes copied in protocol on behalf of user for connection between %4:%6 and %3:%5.">
+    </event>
+    <event value="42" version="0" opcode="42" channel="16" level="4" task="11" keywords="0x8000000000000010" message="UDPv4: %2 bytes transmitted from %4:%6 to %3:%5.">
+    </event>
+    <event value="43" version="0" opcode="43" channel="16" level="4" task="11" keywords="0x8000000000000010" message="UDPv4: %2 bytes received from %4:%6 to %3:%5.">
+    </event>
+    <event value="49" version="0" opcode="49" channel="16" level="4" task="11" keywords="0x8000000000000030" message="UDPv4: Connection attempt failed with error code %2.">
+    </event>
+    <event value="58" version="0" opcode="42" channel="16" level="4" task="11" keywords="0x8000000000000020" message="UDPv6: %2 bytes transmitted from %4:%6 to %3:%5.">
+    </event>
+    <event value="59" version="0" opcode="43" channel="16" level="4" task="11" keywords="0x8000000000000020" message="UDPv6: %2 bytes received from %4:%6 to %3:%5.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-User Profiles Service" guid="89b1e9f0-5aff-44a6-9b44-0a07a7ce5845" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=profsvc.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\profsvc.dll" messageFileName="C:\Windows\System32\profsvc.dll" message="Microsoft-Windows-User Profile Service" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-User Profile Service/Operational" id="16" flags="0" message="Microsoft-Windows-User Profile Service/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-User Profile Service/Diagnostic" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ProfSvc_CreateNewProfile" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Recieved user logon notification on session %1.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Finished processing user logon notification on session %1.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Recieved user logoff notification on session %1.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Finished processing user logoff notification on session %1.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Registry file %1 is loaded at HKU\%2.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Starting synchronize profile from %1 to %2.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Finished synchronize profile from %1 to %2. 
+
+Result: %3">
+    </event>
+    <event value="50" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Background hive upload for user %1 started.">
+    </event>
+    <event value="51" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Background hive upload for user %1 succeeded.">
+    </event>
+    <event value="52" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Background hive upload for user %1 failed.
+
+ Error: %2">
+    </event>
+    <event value="53" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Cannot delete file %1.
+
+ Error: %2">
+    </event>
+    <event value="54" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Open user regisry root key for %1 failed.
+
+ Error: %2">
+    </event>
+    <event value="55" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Save user hive to file %1 failed.
+
+ Error: %2">
+    </event>
+    <event value="56" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Save user hive to file %1 succeeded.">
+    </event>
+    <event value="57" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Enable background user hive upload task succeeded.">
+    </event>
+    <event value="58" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Failed to enable background user hive upload task.
+
+ Error: %1">
+    </event>
+    <event value="59" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Disable background user hive upload task succeeded.">
+    </event>
+    <event value="60" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Failed to disable background user hive upload task.
+
+ Error: %1">
+    </event>
+    <event value="61" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Slow network connection detected, abort background user hive upload task.">
+    </event>
+    <event value="62" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Windows was unable to successfully evaluate whether this computer is a primary computer for this user. This may be due to failing to access the Active Directory server at this time. The user&apos;s roaming profile will be applied as configured. Contact the Administrator for more assistance. Error: %1">
+    </event>
+    <event value="63" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="This computer %1 a primary computer for this user.">
+    </event>
+    <event value="64" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="The primary computer relationship for this computer and this user was not evaluated due to %1.">
+    </event>
+    <event value="65" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="The attempt to create or open the profile key for the user failed with error %1.">
+    </event>
+    <event value="66" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Creating the local profile for the user failed with error %1.">
+    </event>
+    <event value="67" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Logon type: %1 
+Local profile location: %2 
+Profile type: %3">
+    </event>
+    <event value="68" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="LastDownloadTime: %1 
+LastUploadTime: %2">
+    </event>
+    <event value="70" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Waiting on network arrivals. Max wait time %1 ms.">
+    </event>
+    <event value="71" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="After waiting %1 ms, a network with the necessary capabilities was not ready for use. Allowing profile load to proceed.">
+    </event>
+    <event value="72" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Terminating wait due to unexpected failure %1.">
+    </event>
+    <event value="73" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Wait complete due to connectivity event but network not ready.">
+    </event>
+    <event value="74" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Wait completed due to network connectivity or determination that no viable network connection is likely to become available. Allowing profile load to proceed.">
+    </event>
+    <event value="75" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Roaming Profiles configuration is being controlled by Group Policy.">
+    </event>
+    <event value="76" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Roaming Profiles configuration is being controlled by WMI configuration classes Win32_RoamingProfileUserConfiguration and Win32_RoamingProfileMachineConfiguration.">
+    </event>
+    <event value="1001" version="0" opcode="1" channel="17" level="4" task="1001" keywords="0x2001000000000000" message="Begin new user profile creation.">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="17" level="4" task="1001" keywords="0x2001000000000000" message="New user profile creation complete.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="A network latency of %1 milliseconds has been detected.  Maximum latency to synchronize a roaming profile is set at %2 milliseconds.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="A network bandwidth of %1 kilobits per second has been detected.  Minimum bandwidth to synchronize a roaming profile is set at %2 kilobits per second.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Delete cached profile %1 since it is older than %2 days.">
+    </event>
+    <event value="1500" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot log you on because your profile cannot be loaded. Check that you are connected to the network, and that your network is functioning correctly. 
+
+ DETAIL - %1">
+    </event>
+    <event value="1501" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot create a temporary profile directory. This problem may be caused by insufficient security rights. 
+
+ DETAIL - %1">
+    </event>
+    <event value="1502" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot load the locally stored profile. Possible causes of this error include insufficient security rights or a corrupt local profile. 
+
+ DETAIL - %1">
+    </event>
+    <event value="1503" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot set security on your registry. 
+
+ DETAIL - %1">
+    </event>
+    <event value="1504" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot update your roaming profile completely. Check previous events for more details. 
+
+">
+    </event>
+    <event value="1505" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot load the user&apos;s profile but has logged you on with the default profile for the system. 
+
+ DETAIL - %1">
+    </event>
+    <event value="1506" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Your roaming profile is not available. You are logged on with the locally stored profile. Changes to the profile will not be copied to the server. Possible causes of this error include network problems or insufficient security rights.  
+
+ DETAIL - %1">
+    </event>
+    <event value="1508" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows was unable to load the registry. This problem is often caused by insufficient memory or insufficient security rights. 
+
+ DETAIL - %1 for %2">
+    </event>
+    <event value="1509" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Windows was unable to load %1.">
+    </event>
+    <event value="1510" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot load your profile because it appears to be corrupted.">
+    </event>
+    <event value="1511" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot find the local profile and is logging you on with a temporary profile. Changes you make to this profile will be lost when you log off.">
+    </event>
+    <event value="1512" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot unload your registry file. The memory used by the registry has not been freed. This problem is often caused by services running as a user account. Try configuring services to run in either the LocalService or NetworkService account. 
+
+ DETAIL - %1">
+    </event>
+    <event value="1513" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot copy your profile because it contains encrypted files or directories. The keys to decrypt the files or directories are also stored in the profile and are not available now. Decrypt the files and try again.">
+    </event>
+    <event value="1514" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="The roaming profile path %1 is too long. Windows is logging you on with a default profile.">
+    </event>
+    <event value="1515" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows has backed up this user profile. Windows will automatically try to use the backup profile the next time this user logs on.">
+    </event>
+    <event value="1517" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Windows saved user %1 registry while an application or service was still using the registry when the user logged off. The memory used by the user registry has not been freed. The registry will be unloaded when it is no longer in use. 
+
+ This error may be caused by services running as a user account. Try configuring services to run in either the LocalService or NetworkService account.">
+    </event>
+    <event value="1518" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot create a local profile and is logging you on with a temporary profile. This profile will be deleted when you log off. This problem may be caused by incorrect file system permissions or network problems.">
+    </event>
+    <event value="1519" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot locate your roaming mandatory profile and is attempting to log you on with your local profile. This error may be caused by incorrect file system permissions or network problems. 
+
+ DETAIL - %1">
+    </event>
+    <event value="1520" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot log you on because your roaming mandatory profile is not available. This error may be caused by incorrect file system permissions or network problems. 
+
+ DETAIL - %1">
+    </event>
+    <event value="1521" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot locate the server copy of your roaming profile and is attempting to log you on with your local profile. Changes to the profile will not be copied to the server when you log off. This error may be caused by network problems or insufficient security rights. 
+
+ DETAIL - %1">
+    </event>
+    <event value="1522" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot locate your roaming profile (read only) and is attempting to log you on with your local profile. This error may be caused by network problems or insufficient security rights. 
+
+ DETAIL - %1">
+    </event>
+    <event value="1523" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Your roaming profile (read only) is not available. You are logged on with the locally stored profile. This error may be caused by incorrect file system permissions or network problems.  
+
+ DETAIL - %1">
+    </event>
+    <event value="1524" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows cannot unload your classes registry file - it is still in use by other applications or services. The file will be unloaded when it is no longer in use.  
+
+">
+    </event>
+    <event value="1525" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows has detected that Automatic Offline Caching is enabled on the Roaming Profile share - to avoid potential profile corruption, Offline Caching must be set to manual or disabled on shares where roaming user profiles are stored. 
+
+">
+    </event>
+    <event value="1526" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows could not load your roaming profile and is attempting to log you on with your local profile. Changes to the profile will not be copied to the server when you log off. Windows could not load your profile because a server copy of the profile folder already exists that does not have the correct security. Either the current user or the Administrators group must be the owner of the folder. 
+
+">
+    </event>
+    <event value="1527" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows failed to initialize user profiles. Non-console users will be unable to log on.">
+    </event>
+    <event value="1529" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Roaming user profiles across forests are disabled. Windows did not load your roaming profile and is logging you on with a local profile. Changes to the profile will not be copied to the server when you log off.">
+    </event>
+    <event value="1530" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Windows detected your registry file is still in use by other applications or services. The file will be unloaded now. The applications or services that hold your registry file may not function properly afterwards. No user action is required.  
+
+ DETAIL - 
+ %1">
+    </event>
+    <event value="1531" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="The User Profile Service has started successfully.  
+
+">
+    </event>
+    <event value="1532" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="The User Profile Service has stopped.  
+
+">
+    </event>
+    <event value="1533" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot delete the profile directory %1. This error may be caused by files in this directory being used by another program. 
+
+ DETAIL - %2">
+    </event>
+    <event value="1534" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Profile notification of event %1 for component %2 failed, error code is %3. 
+
+">
+    </event>
+    <event value="1535" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successfully suspended folder &quot;%1&quot;">
+    </event>
+    <event value="1536" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Successfully unsuspended folder &quot;%1&quot;">
+    </event>
+    <event value="1537" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to suspend folder &quot;%1&quot;
+ DETAIL - %2">
+    </event>
+    <event value="1538" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to unsuspend folder &quot;%1&quot;
+ DETAIL - %2">
+    </event>
+    <event value="1539" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to sync folder &quot;%1&quot;
+ DETAIL - %2">
+    </event>
+    <event value="1540" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Your roaming profile is not synchronized correctly with the server. Windows will load your previously-saved local profile instead. See the previous events for details.">
+    </event>
+    <event value="1541" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Failed to apply CSC suspend policy. Cannot connect to CSC service.
+ DETAIL - %1">
+    </event>
+    <event value="1542" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="Windows cannot load classes registry file.
+ DETAIL - %1">
+    </event>
+    <event value="1543" version="0" opcode="0" channel="9" level="2" task="0" keywords="0x8000000000000000" message="A slow network connection is detected for the roaming profile %1. It will not be synchronized with the profile on this computer.">
+    </event>
+  </events>
+</provider>

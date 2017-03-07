@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DeviceUx" guid="ded165cf-485d-4770-a3e7-9c5f0320e80c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=DeviceUxRes.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\DeviceUxRes.dll" messageFileName="C:\Windows\system32\DeviceUxRes.dll" message="Microsoft-Windows-DeviceUx" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DeviceUx/Informational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-DeviceUx/Performance" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DeviceUx_DeviceCenter_StorageHandler_Initialize" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceUx_DeviceCenter_StorageHandler_CollectShellItems" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BWContextHandler_PopulateProperties" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BWContextHandler_RequeryFI" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BWContextHandler_RemovePairingStandard" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BWContextHandler_RemovePairingElevated" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevicePairing_Wizard" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevicePairing_FirstDeviceDiscovery" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevicePairing_DeviceDiscovery" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevicePairing_PairDevice" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevicePairing_CeremonyDiscover" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevicePairing_PostPairing" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DevicePairing_RemovePairing" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceCenter_FDQuery" value="44" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceCenter_EndQuery" value="45" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceEnumeration" value="46" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RemoveDevice" value="47" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BWContextHandler_UninstallError" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="DeviceUX" mask="1" message="">
+    </keyword>
+    <keyword name="DeviceUX-Performance" mask="10" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000001" message="BEGIN: DeviceDisplayObject Storage Context Menu Handler Initialization.">
+    </event>
+    <event value="2" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000001" message="END: DeviceDisplayObject Storage Context Menu Handler Initialization.">
+    </event>
+    <event value="3" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000001" message="BEGIN: DeviceDisplayObject Storage Context Menu Handler Collection.">
+    </event>
+    <event value="4" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000001" message="END: DeviceDisplayObject Storage Context Menu Handler Collection.">
+    </event>
+    <event value="20" version="0" opcode="1" channel="17" level="4" task="20" keywords="0x4000000000000001" message="Started collecting Add a device Wizard properties for page">
+    </event>
+    <event value="21" version="0" opcode="2" channel="17" level="4" task="20" keywords="0x4000000000000001" message="Finished collecting Add a device Wizard properties for page">
+    </event>
+    <event value="22" version="0" opcode="1" channel="17" level="4" task="21" keywords="0x4000000000000001" message="Query provider for elevated instance">
+    </event>
+    <event value="23" version="0" opcode="2" channel="17" level="4" task="21" keywords="0x4000000000000001" message="Provider responded to instance query">
+    </event>
+    <event value="24" version="0" opcode="1" channel="17" level="4" task="22" keywords="0x4000000000000001" message="E2E Standard remove pairing started">
+    </event>
+    <event value="25" version="0" opcode="2" channel="17" level="4" task="22" keywords="0x4000000000000001" message="E2E Standard remove pairing finished">
+    </event>
+    <event value="26" version="0" opcode="1" channel="17" level="4" task="23" keywords="0x4000000000000001" message="E2E Elevated remove pairing started">
+    </event>
+    <event value="27" version="0" opcode="2" channel="17" level="4" task="23" keywords="0x4000000000000001" message="E2E Elevated remove pairing finished">
+    </event>
+    <event value="30" version="0" opcode="1" channel="17" level="4" task="30" keywords="0x4000000000000010" message="Add a device Wizard is being started">
+    </event>
+    <event value="31" version="0" opcode="2" channel="17" level="4" task="30" keywords="0x4000000000000010" message="Add a device Wizard has started">
+    </event>
+    <event value="32" version="0" opcode="1" channel="17" level="4" task="31" keywords="0x4000000000000010" message="Device discovery has started">
+    </event>
+    <event value="33" version="0" opcode="2" channel="17" level="4" task="31" keywords="0x4000000000000010" message="Device discovery has found the first device">
+    </event>
+    <event value="34" version="0" opcode="1" channel="17" level="4" task="32" keywords="0x4000000000000010" message="Device discovery has found a new device">
+    </event>
+    <event value="35" version="0" opcode="2" channel="17" level="4" task="32" keywords="0x4000000000000010" message="Device discovery has updated a new device">
+    </event>
+    <event value="50" version="0" opcode="1" channel="17" level="4" task="40" keywords="0x4001000000000000" message="Add a device Wizard Device pairing started">
+    </event>
+    <event value="51" version="0" opcode="2" channel="17" level="4" task="40" keywords="0x4001000000000000" message="Add a device Wizard Device pairing finished. Transport is %1, result error is %2">
+    </event>
+    <event value="52" version="0" opcode="1" channel="17" level="4" task="41" keywords="0x4001000000000000" message="Add a device Wizard Discovery ceremony started">
+    </event>
+    <event value="53" version="0" opcode="2" channel="17" level="4" task="41" keywords="0x4001000000000000" message="Add a device Wizard Discovery ceremony finished">
+    </event>
+    <event value="54" version="0" opcode="1" channel="17" level="4" task="42" keywords="0x4000000000000001" message="Add a device Wizard Post pairing started">
+    </event>
+    <event value="55" version="0" opcode="2" channel="17" level="4" task="42" keywords="0x4000000000000001" message="Add a device Wizard Post pairing finished. Transport is %1, result error is %2">
+    </event>
+    <event value="56" version="0" opcode="1" channel="17" level="4" task="43" keywords="0x4001000000000000" message="Add a device Wizard Remove pairing started">
+    </event>
+    <event value="57" version="0" opcode="2" channel="17" level="4" task="43" keywords="0x4001000000000000" message="Add a device Wizard Remove pairing finished">
+    </event>
+    <event value="80" version="0" opcode="1" channel="17" level="4" task="44" keywords="0x4001000000000000" message="FD query for display objects started">
+    </event>
+    <event value="81" version="0" opcode="2" channel="17" level="4" task="44" keywords="0x4001000000000000" message="FD query for display objects finished">
+    </event>
+    <event value="82" version="0" opcode="1" channel="17" level="4" task="45" keywords="0x4001000000000000" message="Cleanup of FD queries started">
+    </event>
+    <event value="83" version="0" opcode="2" channel="17" level="4" task="45" keywords="0x4001000000000000" message="Cleanup of FD queries finished">
+    </event>
+    <event value="84" version="0" opcode="1" channel="17" level="4" task="46" keywords="0x4000000000000010" message="DeviceItem Enumeration Started">
+    </event>
+    <event value="85" version="0" opcode="2" channel="17" level="4" task="46" keywords="0x4000000000000010" message="DeviceItem Enumeration Finished">
+    </event>
+    <event value="86" version="0" opcode="1" channel="17" level="4" task="47" keywords="0x4000000000000010" message="Stardard User Remove Device Started">
+    </event>
+    <event value="87" version="0" opcode="2" channel="17" level="4" task="47" keywords="0x4000000000000010" message="Stardard User Remove Device Stopped">
+    </event>
+    <event value="88" version="0" opcode="1" channel="17" level="4" task="47" keywords="0x4000000000000010" message="Admin User Remove Device Started">
+    </event>
+    <event value="89" version="0" opcode="2" channel="17" level="4" task="47" keywords="0x4000000000000010" message="Admin User Remove Device Stopped">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="3" task="101" keywords="0x8000000000000001" message="The uninstallation of this device failed with error code (HRESULT): %1">
+    </event>
+  </events>
+</provider>

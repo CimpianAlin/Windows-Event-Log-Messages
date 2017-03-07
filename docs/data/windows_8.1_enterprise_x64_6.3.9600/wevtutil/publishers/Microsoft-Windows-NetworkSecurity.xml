@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NetworkSecurity" guid="7b702970-90bc-4584-8b20-c0799086ee5a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=fwpuclnt.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\fwpuclnt.dll" messageFileName="C:\Windows\System32\fwpuclnt.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NetworkSecurity/Debug" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SaContextOperation" value="901" eventGUID="e0554d8d-818e-4491-9c8c-fceb9cb8b621" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="801" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="SA Context %1 was created">
+    </event>
+    <event value="802" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="SA Context %1: Result=%2">
+    </event>
+    <event value="803" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="SA Context %1:\nLocal Address: %2:%4\nRemote Address: %3:%5\nProtocol: %6">
+    </event>
+    <event value="804" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="SA Context %1 was deleted">
+    </event>
+    <event value="805" version="0" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000000" message="SA Context %1: SPI=%2">
+    </event>
+    <event value="806" version="0" opcode="1" channel="16" level="5" task="901" keywords="0x8000000000000000" message="----- BEGIN BFE_SA_CONTEXT processing -----">
+    </event>
+    <event value="807" version="0" opcode="2" channel="16" level="5" task="901" keywords="0x8000000000000000" message="----- END BFE_SA_CONTEXT processing -----">
+    </event>
+    <event value="808" version="0" opcode="0" channel="16" level="5" task="901" keywords="0x8000000000000000" message="----- BFE SA CONTEXT ID: (%1) -----">
+    </event>
+  </events>
+</provider>

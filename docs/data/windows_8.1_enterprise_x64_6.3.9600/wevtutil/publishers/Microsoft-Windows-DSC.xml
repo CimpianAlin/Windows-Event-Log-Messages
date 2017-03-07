@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DSC" guid="50df9e12-a8c4-4939-b281-47e1325ba63e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=DscCoreR.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\dsc\DscCoreR.dll" messageFileName="C:\Windows\system32\dsc\DscCoreR.dll" message="Microsoft-Windows-Desired State Configuration" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DSC/Operational" id="16" flags="0" message="Microsoft-Windows-Desired State Configuration/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-DSC/Analytic" id="17" flags="0" message="Microsoft-Windows-Desired State Configuration/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-DSC/Debug" id="18" flags="0" message="Microsoft-Windows-Desired State Configuration/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SendConfigurationTaskinLCM" value="1" eventGUID="9e5d646e-1d83-4190-9384-715c38e68e8b" message="Send configuration scenario for Local configuration manager">
+    </task>
+    <task name="GetConfigurationTaskinLCM" value="2" eventGUID="5466a7ca-8cbc-4394-a5c4-27aa9707a079" message="Get configuration scenario for Local configuration manager">
+    </task>
+    <task name="TestConfigurationTaskinLCM" value="3" eventGUID="45721d0f-5473-4bcc-b9c7-a32bb7201ed0" message="Get configuration scenario for Local configuration manager">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="GenericMessage" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="4097" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Job %1 : 
+This event indicates that failure happens when %2 is processing the configuration. ErrorId is %3. ErrorDetail is %4. ResourceId is %5 and SourceInfo is %6. ErrorMessage is %7.">
+    </event>
+    <event value="4098" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Displaying messages from built-in providers:
+	 WMI channel %2 
+	 ResourceID: %3 
+	 Message : %4">
+    </event>
+    <event value="4099" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Method %2 started.">
+    </event>
+    <event value="4100" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Displaying messages from the engine:
+	 WMI channel %2 
+	 ResourceID: %3 
+	 Message : %4">
+    </event>
+    <event value="4101" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000001" message="Job %1 : 
+From %2, message is %3">
+    </event>
+    <event value="4102" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Job %1 : 
+Configuration is sent from computer %2 by user sid %3.">
+    </event>
+    <event value="4103" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Job %1 : 
+This event indicates that a non-terminating error was thrown when %2 was executing %3 on %4 provider. FullyQualifiedErrorId is %5. ErrorMessage is %6.">
+    </event>
+    <event value="4104" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Job %1 : 
+This event indicates that failure happens when %2 is trying to get the configuration from pull server using download manager %3. ErrorId is %4. ErrorDetail is %5">
+    </event>
+    <event value="4105" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Attempting to get the configuration from pull server using Download Manager %2.Configuration Id is %3.">
+    </event>
+    <event value="4106" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Attempting to get the modules from pull server using Download Manager %2. Configuration Id is %3. Modules are %4.">
+    </event>
+    <event value="4107" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Attempting to get the action from pull server using Download Manager %2. Configuration Id is %3. Checksum is %4. Compliance status is %5.">
+    </event>
+    <event value="4108" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Successfully got the configuration from pull server using Download Manager %2.">
+    </event>
+    <event value="4109" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Successfully got the modules from pull server using Download Manager %2.">
+    </event>
+    <event value="4110" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Successfully got the action %2 from pull server using Download Manager %3.">
+    </event>
+    <event value="4111" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Successfully installed the certificate %2 from %3.">
+    </event>
+    <event value="4112" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Skipping installing certificate %2 as it is already installed.">
+    </event>
+    <event value="4113" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Successfully deleted certificate file %2.">
+    </event>
+    <event value="4114" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Running consistency engine.">
+    </event>
+    <event value="4115" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Consistency engine was run successfully.">
+    </event>
+    <event value="4116" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Job %1 : 
+This event indicates that failure happened while trying to run consistency engine. ErrorId is %2. ErrorDetail is %3">
+    </event>
+    <event value="4117" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Displaying verbose messages from Powershell provider:
+	 ResourceID : %2 
+	 Message : %3">
+    </event>
+    <event value="4118" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Displaying debug messages from Powershell provider:
+	 ResourceID : %2 
+	 Message : %3">
+    </event>
+    <event value="4119" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Method %2 started with parameters 
+ 	 Class name: %3 
+ 	 Resource ID: %4 
+ 	 Flags: %5 
+ 	 Execution Mode: %6 
+ 	 Provider Namespace: %7 ">
+    </event>
+    <event value="4120" version="0" opcode="2" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Method %2 ended successfully">
+    </event>
+    <event value="4121" version="0" opcode="0" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Job %1 : 
+Current configuration is cancelled. %3 out of %2 resources are not configured.">
+    </event>
+    <event value="4128" version="0" opcode="0" channel="16" level="3" task="1" keywords="0x8000000000000000" message="Job %1 : 
+Configuration is stopped when Powershell provider is executing.">
+    </event>
+    <event value="4129" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="Job %1 : 
+Write progress failed with error code %2. The current configuration will be stopped.">
+    </event>
+    <event value="4130" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Current configuration is forcely stopped.">
+    </event>
+    <event value="4131" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Job %1 : 
+DSC Engine Error : 
+	 Error Message %2 
+	Error Code : %3 ">
+    </event>
+    <event value="4132" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Getting a registration instance for %2">
+    </event>
+    <event value="4133" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Module manager is loading instance document from location %2">
+    </event>
+    <event value="4134" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Validating instance document.">
+    </event>
+    <event value="4135" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Deleting instance document from location %2 since it is invalid.">
+    </event>
+    <event value="4136" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Parsing the configuration to apply.">
+    </event>
+    <event value="4137" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Resolving Dependencies inside the configuration document.">
+    </event>
+    <event value="4144" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Setting resources in order. Number of resources: %2">
+    </event>
+    <event value="4145" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Processing resource index %2, name %3">
+    </event>
+    <event value="4146" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Getting Metaconfiguration details.">
+    </event>
+    <event value="4147" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Moving the resource %2 of class %3 to desired state.">
+    </event>
+    <event value="4148" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Setting Metaconfiguration instance.">
+    </event>
+    <event value="4149" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Saving configuration instance into %2.">
+    </event>
+    <event value="4150" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Copying configuration file from %2 to %3.">
+    </event>
+    <event value="4151" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Applying configuration from %2.">
+    </event>
+    <event value="4152" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Waiting for the current configuration to stop">
+    </event>
+    <event value="4153" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Deleting file from %2">
+    </event>
+    <event value="4160" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Registering the task with task scheduler after rebooting the machine">
+    </event>
+    <event value="4161" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Scheduling a restart of the machine">
+    </event>
+    <event value="4162" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Executing operations for PS Provider %2 with resource name %3">
+    </event>
+    <event value="4163" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Executing operations for WMIv2 Provider %2 with resource name %3">
+    </event>
+    <event value="4164" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Executing GET for PS Provider %2 with resource name %3">
+    </event>
+    <event value="4165" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Executing GET for WMIv2 Provider %2 with resource name %3">
+    </event>
+    <event value="4166" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+Invoking session and getting result for namespace %2, classname %3 for method %4">
+    </event>
+    <event value="4167" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Getting PS provider schema path and registration information">
+    </event>
+    <event value="4168" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Function %2 started with parameters 
+ 	 Class name: %3 
+ 	 Method Name: %4 
+ 	 Namespace: %5 ">
+    </event>
+    <event value="4169" version="0" opcode="1" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Function %2 started with parameters 
+ 	 DataSize: %3 
+ 	 Flags: %4 
+ 	 Execution Mode: %5 ">
+    </event>
+    <event value="4176" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Validating infrastructure schema">
+    </event>
+    <event value="4177" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Validating provider registration against schema 
+	 Number of classes: %2 
+	 Number of Registrations: %3 ">
+    </event>
+    <event value="4178" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Validating DSC Provider schema against a class array of size %2">
+    </event>
+    <event value="4179" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Validating Schema of class %2 which is class index %3 in an array of classes of size %4">
+    </event>
+    <event value="4180" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Validating DSC Document instance with instance array size of %2 and flags %3">
+    </event>
+    <event value="4181" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Validating DSC Provider registration instance for class : %2">
+    </event>
+    <event value="4182" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Validating Class property %2 for class %3">
+    </event>
+    <event value="4183" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Job %1 : Failed attempt number %2 : Couldn&apos;t delete file  %3 . The error code is %4. The error message is: %5">
+    </event>
+    <event value="4184" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Job %1 : 
+The current metaconfiguration is not registered for Pull configuration mode">
+    </event>
+    <event value="4185" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Failed to register the Pull Server Task for the current metaconfiguration">
+    </event>
+    <event value="4192" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Failed to register the Consistency Task for the current metaconfiguration">
+    </event>
+    <event value="4193" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Failed to copy the configuration from location %2 to location %3">
+    </event>
+    <event value="4194" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Failed to delete the current configuration file">
+    </event>
+    <event value="4195" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Machine was restarted as needed by one or more providers.">
+    </event>
+    <event value="4196" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Restoring the configuration to previous configuration">
+    </event>
+    <event value="4197" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Job %1 : 
+Reading the file content from %2">
+    </event>
+    <event value="4198" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Consistency Engine did not find a current or pending configuration to apply">
+    </event>
+    <event value="4199" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+The checksum validation for module %2 completed with status code %3.">
+    </event>
+    <event value="4200" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+The content validation for module %2 completed with status code %3.">
+    </event>
+    <event value="4201" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+The modules %2 were downloaded to the location %3.">
+    </event>
+    <event value="4208" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+The modules %2 were installed at the location %3.">
+    </event>
+    <event value="4209" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Attempting to get the modules %2 from pull server with Server Url %3 using Web Download Manager.">
+    </event>
+    <event value="4210" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Attempting to get the configuration %2 from pull server with Server Url %3 using Web Download Manager.">
+    </event>
+    <event value="4211" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+The checksum validation for configuration %2 completed with status code %3.">
+    </event>
+    <event value="4212" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+The configuration %2 has an invalid format. The configuration name should be a UUID.">
+    </event>
+    <event value="4213" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+The module %2 has an invalid version format %3.">
+    </event>
+    <event value="4214" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Skipping pulling module %2 with version %3 as it already exists in this location %4.">
+    </event>
+    <event value="4215" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Extraction for module %2 failed since module path %3 already exists.">
+    </event>
+    <event value="4216" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Skipping pulling of modules since all modules specified in configuration %2 are available.">
+    </event>
+    <event value="4217" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command using certificate id: %3.">
+    </event>
+    <event value="4224" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager processed certificate: %2 %3.">
+    </event>
+    <event value="4225" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command, Http Client failed: %3.">
+    </event>
+    <event value="4226" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command, GET Url: %3.">
+    </event>
+    <event value="4227" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command, GET call result: %3.">
+    </event>
+    <event value="4228" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command, Checksum validation failed: %3.">
+    </event>
+    <event value="4229" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command, File save result: %3.">
+    </event>
+    <event value="4230" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager Get-DscModule command, module %2 using certificate id: %3.">
+    </event>
+    <event value="4231" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager Get-DscModule command, module %2, Http Client failed: %3.">
+    </event>
+    <event value="4232" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager Get-DscModule command, module %2, GET Url: %3.">
+    </event>
+    <event value="4233" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager Get-DscModule command, module %2, GET call result: %3.">
+    </event>
+    <event value="4240" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager Get-DscModule command, module %2, Checksum validation failed: %3.">
+    </event>
+    <event value="4241" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager Get-DscModule command, module %2, File save result: %3.">
+    </event>
+    <event value="4242" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Do-DscAction command with server url: %3.">
+    </event>
+    <event value="4243" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Do-DscAction command using certificate id: %3.">
+    </event>
+    <event value="4244" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Do-DscAction command, Http Client failed: %3.">
+    </event>
+    <event value="4245" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Do-DscAction command, GET Url: %3.">
+    </event>
+    <event value="4246" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+WebDownloadManager for configuration %2 Do-DscAction command, GET call result: %3.">
+    </event>
+    <event value="4247" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Module %2 is over written with the downloaded module %3.">
+    </event>
+    <event value="4248" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Job %1 : 
+Cannot download configuration from %2. Downloading over HTTP is not allowed.">
+    </event>
+    <event value="4249" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Job %1 : 
+From %2, message is %3">
+    </event>
+  </events>
+</provider>

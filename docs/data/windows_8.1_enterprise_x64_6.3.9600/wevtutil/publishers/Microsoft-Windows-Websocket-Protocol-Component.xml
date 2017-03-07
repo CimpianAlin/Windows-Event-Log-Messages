@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Websocket-Protocol-Component" guid="cba5f63c-e2cf-4b36-8305-bde1311924fc" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=websocket.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\websocket.dll" messageFileName="C:\Windows\system32\websocket.dll" message="Microsoft-Windows-Websocket-Protocol-Component" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Websocket-Protocol-Component/Tracing" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tasks.Parser" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Parser">
+    </task>
+    <task name="tasks.ActionQueue" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Action queue">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="keywords.KW_ALL" mask="1" message="KW_ALL">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000001" message="%1">
+    </event>
+    <event value="2" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation of &apos;%2&apos; type queued with ID &apos;%1&apos;.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation &apos;%1&apos; is executing action &apos;%2&apos;.">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation &apos;%1&apos; finished.">
+    </event>
+  </events>
+</provider>

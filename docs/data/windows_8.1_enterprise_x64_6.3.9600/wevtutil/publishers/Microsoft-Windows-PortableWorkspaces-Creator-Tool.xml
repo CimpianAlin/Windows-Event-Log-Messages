@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-PortableWorkspaces-Creator-Tool" guid="42d5f8cb-0d2b-4522-8059-c35a37c94a77" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=pwcreator.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\pwcreator.exe" messageFileName="C:\Windows\System32\pwcreator.exe" message="Portable Workspaces Creator Tool" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WelcomePageToDevicePage" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation from Welcome Page to the Device Page.">
+    </task>
+    <task name="DevicePageToInstallSourcePage" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation from Device Page to the Install Source Page.">
+    </task>
+    <task name="InstallSourcePageToReadyToCreatePage" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation from Install Source Page to the Ready to Create Page.">
+    </task>
+    <task name="StartProvisioning" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="User pressed Create Workspace to provisioning progress bar is moving.">
+    </task>
+    <task name="WindowsImageValidation" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="User pressed select folder to Next Button is updated, either enabled or disabled.">
+    </task>
+    <task name="DriveListPopulation" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="The list of drives is populated and responsive to selection.">
+    </task>
+    <task name="Provision" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Provisioning of a portable workspace.">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="0" level="0" task="1" keywords="0x1000000000000" message="User pressed the Next button on the Welcome Page.">
+    </event>
+    <event value="2" version="0" opcode="2" channel="0" level="0" task="1" keywords="0x1000000000000" message="Device Page is now displayed.">
+    </event>
+    <event value="3" version="0" opcode="1" channel="0" level="0" task="2" keywords="0x1000000000000" message="User pressed the Next button on the Device Page.">
+    </event>
+    <event value="4" version="0" opcode="2" channel="0" level="0" task="2" keywords="0x1000000000000" message="Install Source Page is now displayed.">
+    </event>
+    <event value="5" version="0" opcode="1" channel="0" level="0" task="3" keywords="0x1000000000000" message="User pressed the Next button on the Install Source Page.">
+    </event>
+    <event value="6" version="0" opcode="2" channel="0" level="0" task="3" keywords="0x1000000000000" message="Ready To Create Page is now displayed.">
+    </event>
+    <event value="7" version="0" opcode="1" channel="0" level="0" task="4" keywords="0x1000000000000" message="User pressed the Create Workspace button on the Ready to Create Page.">
+    </event>
+    <event value="8" version="0" opcode="2" channel="0" level="0" task="4" keywords="0x1000000000000" message="Provisioning Progress bar is now moving.">
+    </event>
+    <event value="9" version="0" opcode="1" channel="0" level="0" task="5" keywords="0x1000000000000" message="User pressed Select Folder.">
+    </event>
+    <event value="10" version="0" opcode="2" channel="0" level="0" task="5" keywords="0x1000000000000" message="Install Source Page Windows Image validation is completed.">
+    </event>
+    <event value="11" version="0" opcode="1" channel="0" level="0" task="6" keywords="0x1000000000000" message="Started populating the list of drives.">
+    </event>
+    <event value="12" version="0" opcode="2" channel="0" level="0" task="6" keywords="0x1000000000000" message="Finished populating the list of drives.">
+    </event>
+    <event value="13" version="0" opcode="1" channel="0" level="0" task="7" keywords="0x1000000000000" message="Started provisioning a portable workspace.">
+    </event>
+    <event value="14" version="0" opcode="2" channel="0" level="0" task="7" keywords="0x1000000000000" message="Finished provisioning a portable workspace.">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="Selected device details: Friendly Name = %1, Name = %2, Drive Letters = %3, Size = %4, MediaType = %5.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="Selected image details: Path = %1, Architecture = %2, IsEnterprise = %3.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="Provision completed successfully.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="Provision failed (HRESULT = %1).">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="The selected disk size is too small.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="The selected disk does not report itself as a fixed media.">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="The WIM file was not found at: %1.">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="The selected WIM file is NOT supported.">
+    </event>
+    <event value="1008" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="The selected disk is too small to contain a 64 bit version of Windows.">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="Shutdown has been initiated while provisioning.">
+    </event>
+    <event value="1010" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="Validation of the WIM file failed (HRESULT: %1)">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="The Ready to Provision page is now active.">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="The Completed Page is now active.">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x0" message="The image search has completed">
+    </event>
+  </events>
+</provider>

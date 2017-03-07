@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-PDFReader" guid="dfa86faa-2c55-4140-bff9-5cc586217a7b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=glcndFilter.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\glcndFilter.dll" messageFileName="C:\Windows\System32\glcndFilter.dll" message="Microsoft-Windows-glcnd" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-glcnd/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-glcnd/Debug" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-glcnd/Admin" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="LoadFile" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RenderView" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LoadImage" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EmbededColorProfile" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ApplyDecodeArray" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ApplyDctDecodeArray" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetImagePixels" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CreateMaskArray" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Exception" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PageBuild" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FontResourceLoad" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TriggerChangeLayout" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChangeLayout" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StepZoom" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SmoothZoom" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Resize" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PageRender" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CommandBarShow" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CommandBarHide" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RotatePages" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Find.Action" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Scroll" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TileRender" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LaunchURI" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PopulateSummaryPane" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PageAsyncPrint" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Save" value="44" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="HighlightCreate" value="45" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="HighlightDelete" value="46" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ManipulateView" value="47" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LoadFormFields" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ApplicationLaunch" value="49" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ApplicationRehydrate" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelectionRendering" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WordSelection" value="52" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PageAsyncPrintPreview" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DocumentPrintCurrentCopy" value="54" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ScrollToDestination" value="55" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="HighlightRender" value="56" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WindowsSearch.Show" value="57" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThumbnailHandler.Show" value="58" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DocSummary" value="59" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DocumentPrintJob" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PreviewHandler" value="61" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SemanticZoom" value="62" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PageResourceUpdate" value="63" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ManipulationDelta" value="64" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DocumentViewCopy" value="65" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InkRendering" value="68" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InkUpdate" value="69" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DrawingsurfaceDrawEvent" value="70" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UpdateViewState" value="71" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AsyncRenderViewRequest" value="72" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DocViewAnimation" value="73" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FileAccessed" value="74" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IncrementalRender" value="75" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PageView" value="76" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SemanticZoomViewChanging" value="77" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PickerFileSelected" value="78" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InteractiveControl" value="79" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PrintPreview" value="80" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Flyout" value="81" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="JumpToDestination" value="82" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TextCopy" value="83" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GoToUIShow" value="84" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GoToUIHide" value="85" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InteractiveControlRender" value="86" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PanWithMouse" value="87" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SwitchTo" value="88" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ExecuteJavascript" value="89" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="VerifySignature" value="90" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="VerifyCertificate" value="91" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ZoomBoxShow" value="92" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DocumentNavBarShow" value="93" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DocumentNavBarHide" value="94" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CreateWindow" value="95" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CloseDocument" value="96" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CloseWindow" value="97" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Reader" mask="10000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Loading File">
+    </event>
+    <event value="2" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="Unhandled Exception">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000010000" message="Starting File Load">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000010000" message="Done With File Load">
+    </event>
+    <event value="15" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8001000000010000" message="Start Image Loding">
+    </event>
+    <event value="16" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8001000000010000" message="Done with the Image Loding">
+    </event>
+    <event value="17" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8001000000010000" message="Start Embedding Profile on Image">
+    </event>
+    <event value="18" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8001000000010000" message="Done with Embedding Profile on Image">
+    </event>
+    <event value="19" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8001000000010000" message="Start Applying Decoded Array on Image Stream">
+    </event>
+    <event value="20" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8001000000010000" message="Done with the Applying Decoded Array on Image Stream">
+    </event>
+    <event value="21" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8001000000010000" message="Start Applying dct Decoded Array on DCT Image Stream">
+    </event>
+    <event value="22" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8001000000010000" message="Done with Applying dct Decoded Array on DCT Image Stream">
+    </event>
+    <event value="31" version="0" opcode="1" channel="16" level="4" task="15" keywords="0x8001000000010000" message="Start Setting Image Pixels">
+    </event>
+    <event value="32" version="0" opcode="2" channel="16" level="4" task="15" keywords="0x8001000000010000" message="Done with Setting Image Pixels">
+    </event>
+    <event value="33" version="0" opcode="1" channel="16" level="4" task="16" keywords="0x8001000000010000" message="Start Creating Mask Array">
+    </event>
+    <event value="34" version="0" opcode="2" channel="16" level="4" task="16" keywords="0x8001000000010000" message="Done with Creation of Mask Array">
+    </event>
+    <event value="35" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Exception Information">
+    </event>
+    <event value="44" version="0" opcode="1" channel="16" level="4" task="22" keywords="0x8001000000010000" message="Building page">
+    </event>
+    <event value="45" version="0" opcode="2" channel="16" level="4" task="22" keywords="0x8001000000010000" message="Page building completed">
+    </event>
+    <event value="46" version="0" opcode="1" channel="16" level="4" task="23" keywords="0x8001000000010000" message="Loading font resource">
+    </event>
+    <event value="47" version="0" opcode="2" channel="16" level="4" task="23" keywords="0x8001000000010000" message="Font resource loaded">
+    </event>
+    <event value="58" version="0" opcode="1" channel="16" level="4" task="26" keywords="0x8001000000010000" message="Trigger Change Layout: Start">
+    </event>
+    <event value="59" version="0" opcode="2" channel="16" level="4" task="26" keywords="0x8001000000010000" message="Trigger Change Layout: Stop">
+    </event>
+    <event value="60" version="0" opcode="1" channel="16" level="4" task="27" keywords="0x8001000000010000" message="CHange Layout: Start">
+    </event>
+    <event value="61" version="0" opcode="2" channel="16" level="4" task="27" keywords="0x8001000000010000" message="Change Layout: Stop">
+    </event>
+    <event value="62" version="0" opcode="1" channel="16" level="4" task="28" keywords="0x8001000000010000" message="Step Zoom: Start">
+    </event>
+    <event value="63" version="0" opcode="2" channel="16" level="4" task="28" keywords="0x8001000000010000" message="Step Zoom: Stop">
+    </event>
+    <event value="64" version="0" opcode="1" channel="16" level="4" task="29" keywords="0x8001000000010000" message="Smooth Zoom: Start">
+    </event>
+    <event value="65" version="0" opcode="2" channel="16" level="4" task="29" keywords="0x8001000000010000" message="Smooth Zoom: Stop">
+    </event>
+    <event value="66" version="0" opcode="1" channel="16" level="4" task="30" keywords="0x8001000000010000" message="Resize: Start">
+    </event>
+    <event value="67" version="0" opcode="2" channel="16" level="4" task="30" keywords="0x8001000000010000" message="Resize: Stop">
+    </event>
+    <event value="68" version="0" opcode="1" channel="16" level="4" task="40" keywords="0x8001000000010000" message="Normal Tile Render: Start">
+    </event>
+    <event value="69" version="0" opcode="2" channel="16" level="4" task="40" keywords="0x8001000000010000" message="Normal Tile Render: Stop">
+    </event>
+    <event value="70" version="0" opcode="1" channel="16" level="4" task="32" keywords="0x8001000000010000" message="CommandBar : Show Start">
+    </event>
+    <event value="71" version="0" opcode="2" channel="16" level="4" task="32" keywords="0x8001000000010000" message="CommandBar : Show Stop">
+    </event>
+    <event value="72" version="0" opcode="1" channel="16" level="4" task="33" keywords="0x8001000000010000" message="CommandBar : Hide Start">
+    </event>
+    <event value="73" version="0" opcode="2" channel="16" level="4" task="33" keywords="0x8001000000010000" message="CommandBar : Hide Stop">
+    </event>
+    <event value="74" version="0" opcode="0" channel="17" level="5" task="34" keywords="0x4000000000010000" message="Rotate Pages Start">
+    </event>
+    <event value="75" version="0" opcode="0" channel="17" level="5" task="34" keywords="0x4000000000010000" message="Rotate Pages Stop">
+    </event>
+    <event value="76" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Showing Find Bar">
+    </event>
+    <event value="77" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Hiding Find Bar">
+    </event>
+    <event value="78" version="0" opcode="1" channel="16" level="4" task="35" keywords="0x8001000000010000" message="Finding operation started">
+    </event>
+    <event value="79" version="0" opcode="2" channel="16" level="4" task="35" keywords="0x8001000000010000" message="Find operation completed">
+    </event>
+    <event value="87" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Zoom updated">
+    </event>
+    <event value="88" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Zoom Range Updated">
+    </event>
+    <event value="89" version="0" opcode="1" channel="16" level="4" task="39" keywords="0x8001000000010000" message="Scroll: Start">
+    </event>
+    <event value="90" version="0" opcode="2" channel="16" level="4" task="39" keywords="0x8001000000010000" message="Scroll: Stop">
+    </event>
+    <event value="91" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Unexpected content in Type 1 non-CFF font">
+    </event>
+    <event value="92" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unsupported feature">
+    </event>
+    <event value="93" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Encountered duplicate value in CFF Font Stream">
+    </event>
+    <event value="94" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="ToUnicodeCMap Error">
+    </event>
+    <event value="95" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Form Control Creation">
+    </event>
+    <event value="96" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Type3 Parse Error skipped">
+    </event>
+    <event value="97" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="App Mode Entered">
+    </event>
+    <event value="98" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="App Mode Exited">
+    </event>
+    <event value="99" version="0" opcode="1" channel="16" level="4" task="31" keywords="0x8001000000010000" message="PageRender: Start">
+    </event>
+    <event value="100" version="0" opcode="2" channel="16" level="4" task="31" keywords="0x8001000000010000" message="PageRender: Stop">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="4" task="41" keywords="0x8001000000010000" message="Launched URI">
+    </event>
+    <event value="102" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Inputs logged for Type4 Function evaluation">
+    </event>
+    <event value="103" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Outputs logged for Type4 Function evaluation">
+    </event>
+    <event value="104" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Property not found in digital certificate">
+    </event>
+    <event value="105" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Error occurred in digital signatures intialization">
+    </event>
+    <event value="106" version="0" opcode="0" channel="17" level="4" task="42" keywords="0x4000000000010000" message="Add summary pane item">
+    </event>
+    <event value="107" version="0" opcode="1" channel="16" level="4" task="43" keywords="0x8001000000010000" message="Page Async Print: Start">
+    </event>
+    <event value="108" version="0" opcode="2" channel="16" level="4" task="43" keywords="0x8001000000010000" message="Page Async Print: Stop">
+    </event>
+    <event value="109" version="0" opcode="1" channel="16" level="4" task="44" keywords="0x8001000000010000" message="Save/SaveAs Entered">
+    </event>
+    <event value="110" version="0" opcode="2" channel="16" level="4" task="44" keywords="0x8001000000010000" message="Save/SaveAs Exited">
+    </event>
+    <event value="111" version="0" opcode="0" channel="16" level="4" task="45" keywords="0x8001000000010000" message="Initiating Highlight Create">
+    </event>
+    <event value="112" version="0" opcode="0" channel="16" level="4" task="46" keywords="0x8001000000010000" message="Initiating Highlight Delete">
+    </event>
+    <event value="113" version="0" opcode="0" channel="17" level="5" task="47" keywords="0x4000000000010000" message="View Manipulation Start">
+    </event>
+    <event value="114" version="0" opcode="0" channel="17" level="5" task="47" keywords="0x4000000000010000" message="View Manipulation Stop">
+    </event>
+    <event value="115" version="0" opcode="0" channel="17" level="5" task="81" keywords="0x4000000000010000" message="Reader Flyout Show">
+    </event>
+    <event value="116" version="0" opcode="0" channel="17" level="5" task="81" keywords="0x4000000000010000" message="Reader Flyout Hide">
+    </event>
+    <event value="117" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Glyph Name does not conform to specification">
+    </event>
+    <event value="118" version="0" opcode="1" channel="16" level="4" task="48" keywords="0x8001000000010000" message="Start loading form fields information from file">
+    </event>
+    <event value="119" version="0" opcode="2" channel="16" level="4" task="48" keywords="0x8001000000010000" message="Stop loading form fields information from file">
+    </event>
+    <event value="120" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Exception Handled Gracefully">
+    </event>
+    <event value="121" version="0" opcode="0" channel="16" level="4" task="41" keywords="0x8001000000010000" message="Launching URI">
+    </event>
+    <event value="124" version="0" opcode="1" channel="16" level="4" task="49" keywords="0x8001000000010000" message="Start: Application Launch">
+    </event>
+    <event value="125" version="0" opcode="2" channel="16" level="4" task="49" keywords="0x8001000000010000" message="Stop: Application Launch">
+    </event>
+    <event value="126" version="0" opcode="1" channel="16" level="4" task="50" keywords="0x8001000000010000" message="Start: Application Rehydrate">
+    </event>
+    <event value="127" version="0" opcode="2" channel="16" level="4" task="50" keywords="0x8001000000010000" message="Stop: Application Rehydrate">
+    </event>
+    <event value="128" version="0" opcode="1" channel="16" level="4" task="51" keywords="0x8001000000010000" message="Start Selection Rendering">
+    </event>
+    <event value="129" version="0" opcode="2" channel="16" level="4" task="51" keywords="0x8001000000010000" message="Stop Selection Rendering">
+    </event>
+    <event value="130" version="0" opcode="1" channel="16" level="4" task="52" keywords="0x8001000000010000" message="Start Word Selection">
+    </event>
+    <event value="131" version="0" opcode="2" channel="16" level="4" task="52" keywords="0x8001000000010000" message="Start Word Selection">
+    </event>
+    <event value="133" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Find Summary Results Restored">
+    </event>
+    <event value="134" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Embedded font zero ascent and descent values are handled">
+    </event>
+    <event value="135" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Ascent and Descent values of font descriptor are zeroes">
+    </event>
+    <event value="136" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Descent value in the font descriptor is positive">
+    </event>
+    <event value="137" version="0" opcode="1" channel="16" level="4" task="53" keywords="0x8001000000010000" message="Page Async Print Preview: Start">
+    </event>
+    <event value="138" version="0" opcode="2" channel="16" level="4" task="53" keywords="0x8001000000010000" message="Page Async Print Preview: Stop">
+    </event>
+    <event value="139" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Font Descriptor Flags are invalid">
+    </event>
+    <event value="140" version="0" opcode="1" channel="16" level="4" task="55" keywords="0x8001000000010000" message="Starting scrolling to destination">
+    </event>
+    <event value="141" version="0" opcode="2" channel="16" level="4" task="55" keywords="0x8001000000010000" message="Done with scrolling to destination">
+    </event>
+    <event value="142" version="0" opcode="0" channel="16" level="4" task="45" keywords="0x8001000000010000" message="Highlight Created">
+    </event>
+    <event value="143" version="0" opcode="0" channel="16" level="4" task="46" keywords="0x8001000000010000" message="Highlight Deleted">
+    </event>
+    <event value="144" version="0" opcode="0" channel="16" level="4" task="56" keywords="0x8001000000010000" message="Highlight Rendering started!">
+    </event>
+    <event value="145" version="0" opcode="0" channel="16" level="4" task="56" keywords="0x8001000000010000" message="Highlight Rendering done!">
+    </event>
+    <event value="146" version="0" opcode="1" channel="16" level="4" task="57" keywords="0x8001000000010000" message="Windows SearchHandler: Begin">
+    </event>
+    <event value="147" version="0" opcode="2" channel="16" level="4" task="57" keywords="0x8001000000010000" message="Windows SearchHandler: End">
+    </event>
+    <event value="148" version="0" opcode="1" channel="16" level="4" task="58" keywords="0x8001000000010000" message="ThumbnailHandler: Begin">
+    </event>
+    <event value="149" version="0" opcode="2" channel="16" level="4" task="58" keywords="0x8001000000010000" message="ThumbnailHandler: End">
+    </event>
+    <event value="150" version="0" opcode="0" channel="16" level="4" task="59" keywords="0x8001000000010000" message="Document Summary: Begin">
+    </event>
+    <event value="151" version="0" opcode="2" channel="16" level="4" task="59" keywords="0x8001000000010000" message="Document Summary: End">
+    </event>
+    <event value="152" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Reader Password Submit clicked">
+    </event>
+    <event value="153" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Content ignored in Type 1 non-CFF font">
+    </event>
+    <event value="154" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Invalid Width Information present">
+    </event>
+    <event value="155" version="0" opcode="1" channel="16" level="4" task="60" keywords="0x8001000000010000" message="Document Print: Job Start">
+    </event>
+    <event value="156" version="0" opcode="2" channel="16" level="4" task="60" keywords="0x8001000000010000" message="Document Print: Job Finished">
+    </event>
+    <event value="157" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Unsupported Page Element Block">
+    </event>
+    <event value="158" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Embedded Font Stream type is invalid in FontDictionary of subtype: ">
+    </event>
+    <event value="159" version="0" opcode="1" channel="16" level="4" task="61" keywords="0x8001000000010000" message="Windows PreviewHandler: Begin">
+    </event>
+    <event value="160" version="0" opcode="2" channel="16" level="4" task="61" keywords="0x8001000000010000" message="Windows PreviewHandler: End">
+    </event>
+    <event value="161" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000010000" message="DocView Render : Begin">
+    </event>
+    <event value="162" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000010000" message="DocView Render : End">
+    </event>
+    <event value="163" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="PageView Info: ">
+    </event>
+    <event value="164" version="0" opcode="1" channel="16" level="4" task="62" keywords="0x8000000000010000" message="Enter Semantic Zoom">
+    </event>
+    <event value="165" version="0" opcode="2" channel="16" level="4" task="62" keywords="0x8000000000010000" message="Exit Semantic Zoom">
+    </event>
+    <event value="166" version="0" opcode="1" channel="16" level="4" task="63" keywords="0x8001000000010000" message="Page Resources Update : Start">
+    </event>
+    <event value="167" version="0" opcode="2" channel="16" level="4" task="63" keywords="0x8001000000010000" message="Page Resources Update : Stop">
+    </event>
+    <event value="170" version="0" opcode="1" channel="16" level="4" task="65" keywords="0x8001000000010000" message="Start copying rendered content to Drawing Surface">
+    </event>
+    <event value="171" version="0" opcode="2" channel="16" level="4" task="65" keywords="0x8001000000010000" message="Stop copying rendered content to Drawing Surface">
+    </event>
+    <event value="172" version="0" opcode="0" channel="17" level="5" task="64" keywords="0x4000000000010000" message="Received manipulation delta">
+    </event>
+    <event value="177" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Showing Result Pane">
+    </event>
+    <event value="178" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Hiding Result Pane">
+    </event>
+    <event value="179" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Reader Dialog Show">
+    </event>
+    <event value="180" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Reader Dialog Hide">
+    </event>
+    <event value="181" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Stylus Down Event">
+    </event>
+    <event value="182" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Stylus Move Event">
+    </event>
+    <event value="183" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Stylus Up Event">
+    </event>
+    <event value="184" version="0" opcode="1" channel="16" level="4" task="68" keywords="0x8001000000010000" message="Ink Rendering: Start">
+    </event>
+    <event value="185" version="0" opcode="2" channel="16" level="4" task="68" keywords="0x8001000000010000" message="Ink Rendering: Stop">
+    </event>
+    <event value="186" version="0" opcode="1" channel="16" level="4" task="69" keywords="0x8001000000010000" message="Ink Resource Updation: Start">
+    </event>
+    <event value="187" version="0" opcode="2" channel="16" level="4" task="69" keywords="0x8001000000010000" message="Ink Resource Updation: Stop">
+    </event>
+    <event value="188" version="0" opcode="1" channel="16" level="4" task="71" keywords="0x8001000000010000" message="Update ViewState: Start">
+    </event>
+    <event value="189" version="0" opcode="2" channel="16" level="4" task="71" keywords="0x8001000000010000" message="Update ViewState: Stop">
+    </event>
+    <event value="190" version="0" opcode="0" channel="17" level="5" task="72" keywords="0x4000000000010000" message="Requesting a View Update">
+    </event>
+    <event value="191" version="0" opcode="0" channel="17" level="5" task="72" keywords="0x4000000000010000" message="Started processing View Update request">
+    </event>
+    <event value="192" version="0" opcode="1" channel="16" level="4" task="70" keywords="0x8001000000010000" message="Start Drawingsurface render callback">
+    </event>
+    <event value="193" version="0" opcode="2" channel="16" level="4" task="70" keywords="0x8001000000010000" message="Stop Drawingsurface render callback">
+    </event>
+    <event value="194" version="0" opcode="0" channel="16" level="4" task="73" keywords="0x8000000000010000" message="View Animation Start">
+    </event>
+    <event value="195" version="0" opcode="0" channel="16" level="4" task="73" keywords="0x8000000000010000" message="View Animation Stop">
+    </event>
+    <event value="196" version="0" opcode="1" channel="16" level="4" task="74" keywords="0x8001000000010000" message="File Accessed">
+    </event>
+    <event value="197" version="0" opcode="0" channel="17" level="4" task="75" keywords="0x4000000000010000" message="Incremental Render Triggered">
+    </event>
+    <event value="198" version="0" opcode="1" channel="16" level="4" task="59" keywords="0x8001000000010000" message="Document Summary: Submit">
+    </event>
+    <event value="199" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000010000" message="XAML Unhandled Exception">
+    </event>
+    <event value="200" version="0" opcode="0" channel="17" level="4" task="76" keywords="0x4000000000010000" message="PageView data context has been initialized">
+    </event>
+    <event value="201" version="0" opcode="1" channel="16" level="4" task="77" keywords="0x8001000000010000" message="Semantic zoom view change started">
+    </event>
+    <event value="202" version="0" opcode="2" channel="16" level="4" task="77" keywords="0x8001000000010000" message="Semantic zoom view change completed">
+    </event>
+    <event value="203" version="0" opcode="0" channel="17" level="4" task="78" keywords="0x4000000000010000" message="Selected a file in the open picker">
+    </event>
+    <event value="204" version="0" opcode="0" channel="17" level="4" task="78" keywords="0x4000000000010000" message="Selected a file in the save as picker">
+    </event>
+    <event value="206" version="0" opcode="0" channel="17" level="4" task="79" keywords="0x4000000000010000" message="Form, ink or highlight control deleted">
+    </event>
+    <event value="207" version="0" opcode="1" channel="16" level="4" task="80" keywords="0x8001000000010000" message="Print preview started">
+    </event>
+    <event value="208" version="0" opcode="2" channel="16" level="4" task="80" keywords="0x8001000000010000" message="Print preview completed">
+    </event>
+    <event value="209" version="0" opcode="0" channel="17" level="4" task="82" keywords="0x4000000000010000" message="A jump to a destination has been triggered">
+    </event>
+    <event value="210" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Zoom updated">
+    </event>
+    <event value="211" version="0" opcode="1" channel="16" level="4" task="83" keywords="0x8000000000010000" message="Text Copy Started">
+    </event>
+    <event value="212" version="0" opcode="2" channel="16" level="4" task="83" keywords="0x8000000000010000" message="Text Copy Completed">
+    </event>
+    <event value="213" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Document unloaded">
+    </event>
+    <event value="214" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="Go To UI Show">
+    </event>
+    <event value="215" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="Go To UI Hidden">
+    </event>
+    <event value="216" version="0" opcode="1" channel="16" level="4" task="86" keywords="0x8001000000010000" message="Form, ink or highlight control render start">
+    </event>
+    <event value="217" version="0" opcode="2" channel="16" level="4" task="86" keywords="0x8001000000010000" message="Form, ink or highlight control render stop">
+    </event>
+    <event value="218" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8001000000010000" message="Render Tile Request Created">
+    </event>
+    <event value="219" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="Sezo Static Thumbnail Cached">
+    </event>
+    <event value="220" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="Sezo Static Thumbnail Deleted">
+    </event>
+    <event value="221" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="Sezo Thumbnail Cached">
+    </event>
+    <event value="222" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="Sezo Thumbnail Deleted">
+    </event>
+    <event value="223" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="Pan With Mouse Completed">
+    </event>
+    <event value="224" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="A view has been pushed to view backstack">
+    </event>
+    <event value="225" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8001000000010000" message="Page Element Render Tile Request Created">
+    </event>
+    <event value="226" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Unsupported DOM object accessed in javascript code: ">
+    </event>
+    <event value="227" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Document Layout updated from Javascript">
+    </event>
+    <event value="228" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Mouse Enter trigger event">
+    </event>
+    <event value="229" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Mouse Exit trigger event">
+    </event>
+    <event value="230" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Mouse Up trigger event">
+    </event>
+    <event value="231" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Mouse Down trigger event">
+    </event>
+    <event value="232" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Field Validate trigger event">
+    </event>
+    <event value="233" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Field Calculate trigger event">
+    </event>
+    <event value="234" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Field Keystroke trigger event">
+    </event>
+    <event value="235" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Field Format trigger event">
+    </event>
+    <event value="236" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Focus trigger event">
+    </event>
+    <event value="237" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Blur trigger event">
+    </event>
+    <event value="238" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Page Open trigger event">
+    </event>
+    <event value="239" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Page Close trigger event">
+    </event>
+    <event value="240" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="SeZo Thumbnail Request Created">
+    </event>
+    <event value="241" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="SeZo Tile Render Request in progress">
+    </event>
+    <event value="242" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Will Save trigger event">
+    </event>
+    <event value="245" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Will Print trigger event">
+    </event>
+    <event value="246" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Did Print trigger event">
+    </event>
+    <event value="247" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="Invalid write on Readonly property in javascript code: ">
+    </event>
+    <event value="248" version="0" opcode="1" channel="16" level="4" task="40" keywords="0x8000000000010000" message="Flat Tile Render: Start">
+    </event>
+    <event value="249" version="0" opcode="2" channel="16" level="4" task="40" keywords="0x8000000000010000" message="Flat Tile Render: Stop">
+    </event>
+    <event value="250" version="0" opcode="0" channel="16" level="4" task="88" keywords="0x8000000000010000" message="Switching To Document: ">
+    </event>
+    <event value="251" version="0" opcode="1" channel="16" level="4" task="88" keywords="0x8000000000010000" message="SwitchTo Document: Start">
+    </event>
+    <event value="252" version="0" opcode="2" channel="16" level="4" task="88" keywords="0x8000000000010000" message="SwitchTo Document: Stop">
+    </event>
+    <event value="253" version="0" opcode="0" channel="16" level="4" task="40" keywords="0x8000000000010000" message="Tile Request Cancelled">
+    </event>
+    <event value="254" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="Visible Rect for a page in docview">
+    </event>
+    <event value="255" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="Scroll Viewer ViewChangeCompleted">
+    </event>
+    <event value="256" version="0" opcode="1" channel="16" level="4" task="89" keywords="0x8001000000010000" message="Javascript Execution started">
+    </event>
+    <event value="257" version="0" opcode="2" channel="16" level="4" task="89" keywords="0x8001000000010000" message="Javascript Execution finished">
+    </event>
+    <event value="258" version="0" opcode="1" channel="16" level="4" task="90" keywords="0x8001000000010000" message="Signature verification started">
+    </event>
+    <event value="259" version="0" opcode="2" channel="16" level="4" task="90" keywords="0x8001000000010000" message="Signature verification completed">
+    </event>
+    <event value="260" version="0" opcode="1" channel="16" level="4" task="91" keywords="0x8001000000010000" message="Certificate verification started">
+    </event>
+    <event value="261" version="0" opcode="2" channel="16" level="4" task="91" keywords="0x8001000000010000" message="Certificate verification completed">
+    </event>
+    <event value="262" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Digital Signatures and Certificates verifications are now completed">
+    </event>
+    <event value="263" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000010000" message="Digital Signature Message Box is visible now">
+    </event>
+    <event value="264" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000010000" message="MailDoc invoked via document javascript">
+    </event>
+    <event value="265" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="Zoom Box show">
+    </event>
+    <event value="266" version="0" opcode="1" channel="16" level="4" task="93" keywords="0x8001000000010000" message="DocumentNavBar : Show Start">
+    </event>
+    <event value="267" version="0" opcode="2" channel="16" level="4" task="93" keywords="0x8001000000010000" message="DocumentNavBar : Show Stop">
+    </event>
+    <event value="268" version="0" opcode="1" channel="16" level="4" task="94" keywords="0x8001000000010000" message="DocumentNavBar : Hide Start">
+    </event>
+    <event value="269" version="0" opcode="2" channel="16" level="4" task="94" keywords="0x8001000000010000" message="DocumentNavBar : Hide Stop">
+    </event>
+    <event value="270" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000010000" message="An animation for word snapping has been triggered">
+    </event>
+    <event value="272" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8001000000010000" message="VSIS UpdatesNeeded Callback">
+    </event>
+    <event value="273" version="0" opcode="1" channel="16" level="4" task="95" keywords="0x8001000000010000" message="New Window Creation Started">
+    </event>
+    <event value="274" version="0" opcode="2" channel="16" level="4" task="95" keywords="0x8001000000010000" message="New Window Created">
+    </event>
+    <event value="275" version="0" opcode="0" channel="16" level="4" task="95" keywords="0x8001000000010000" message="Document move to new window">
+    </event>
+    <event value="276" version="0" opcode="1" channel="16" level="4" task="96" keywords="0x8001000000010000" message="Document Close started">
+    </event>
+    <event value="277" version="0" opcode="2" channel="16" level="4" task="96" keywords="0x8001000000010000" message="Document closed">
+    </event>
+    <event value="278" version="0" opcode="1" channel="16" level="4" task="97" keywords="0x8001000000010000" message="Window Close started">
+    </event>
+    <event value="279" version="0" opcode="2" channel="16" level="4" task="97" keywords="0x8001000000010000" message="Window closed">
+    </event>
+  </events>
+</provider>

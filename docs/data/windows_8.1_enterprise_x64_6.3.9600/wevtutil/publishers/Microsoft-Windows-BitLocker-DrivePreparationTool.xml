@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-BitLocker-DrivePreparationTool" guid="632f767e-0ec3-47b9-ba1c-a0e62a74728a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=BdeHdCfgLib.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\BdeHdCfgLib.dll" messageFileName="C:\Windows\system32\BdeHdCfgLib.dll" message="Microsoft-Windows-BitLocker-DrivePreparationTool" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-BitLocker-DrivePreparationTool/Admin" id="16" flags="0" message="Microsoft-Windows-BitLocker-DrivePreparationTool/Admin">
+    </channel>
+    <channel name="Microsoft-Windows-BitLocker-DrivePreparationTool/Operational" id="17" flags="0" message="Microsoft-Windows-BitLocker-DrivePreparationTool/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="bdecfg:Initialization" value="655360" message="Initialization">
+    </opcode>
+    <opcode name="bdecfg:ShrinkDrive" value="720896" message="Shrink">
+    </opcode>
+    <opcode name="bdecfg:CreateDrive" value="786432" message="Create">
+    </opcode>
+    <opcode name="bdecfg:PrepareDrive" value="851968" message="Prepare">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="10" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A problem occurred while running the BitLocker Drive Preparation Tool.
+Error Code: %1
+Error Text: %2">
+    </event>
+    <event value="2" version="1" opcode="11" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A problem occurred while running the BitLocker Drive Preparation Tool.
+Error Code: %1
+Error Text: %2">
+    </event>
+    <event value="3" version="1" opcode="12" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A problem occurred while running the BitLocker Drive Preparation Tool.
+Error Code: %1
+Error Text: %2">
+    </event>
+    <event value="4" version="1" opcode="13" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A problem occurred while running the BitLocker Drive Preparation Tool.
+Error Code: %1
+Error Text: %2">
+    </event>
+    <event value="5" version="1" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="A problem occurred while running the BitLocker Drive Preparation Tool.
+Error Code: %1
+Error Text: %2">
+    </event>
+    <event value="256" version="1" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Warning Code: %1
+Warning Text: %2">
+    </event>
+    <event value="512" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The BitLocker Drive Configuration Tool successfully completed. The target hard disk is ready for BitLocker.">
+    </event>
+    <event value="4096" version="1" opcode="10" channel="17" level="5" task="0" keywords="0x4000000000000000" message="Found a candidate volume for shrink or merge.
+Shrinkable: %1
+Candidate Volume Name: %3">
+    </event>
+    <event value="4097" version="1" opcode="10" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Found an unallocated extent large enough for the requested size.
+Offset: %3
+Size: %4">
+    </event>
+    <event value="4098" version="1" opcode="10" channel="17" level="5" task="0" keywords="0x4000000000000000" message="Disk extent located on the hard disk containing the System Drive.
+Offset: %3
+Size: %4">
+    </event>
+    <event value="4099" version="1" opcode="10" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Command-line parameters for the BitLocker Drive Preparation Tool:
+   %1">
+    </event>
+    <event value="4100" version="1" opcode="10" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Drive will shrink and new active drive %6 will be created. 
+Volume Name: %1
+Shrink Size: %5 Bytes">
+    </event>
+    <event value="4101" version="1" opcode="10" channel="17" level="4" task="0" keywords="0x4000000000000000" message="New drive %3 will be created from unallocated space
+Unallocated extent offset: %1
+New partition size: %2 Bytes">
+    </event>
+    <event value="4102" version="1" opcode="10" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Drive will be set as the new system drive
+Volume Name: %1">
+    </event>
+    <event value="4103" version="1" opcode="10" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Detected Windows Recovery Environment volume
+Volume Path: %1">
+    </event>
+    <event value="4104" version="1" opcode="10" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A volume failed to meet the requirements for a target volume.
+Volume Name: %3
+Reason: %2">
+    </event>
+  </events>
+</provider>

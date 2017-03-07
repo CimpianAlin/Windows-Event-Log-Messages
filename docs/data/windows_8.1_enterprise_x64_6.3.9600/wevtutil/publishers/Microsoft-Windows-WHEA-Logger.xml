@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WHEA-Logger" guid="c26c4f3c-3f66-4e99-8f8a-39405cfed220" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=whealogr.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\whealogr.dll" messageFileName="C:\Windows\system32\whealogr.dll" message="Microsoft-Windows-WHEA-Logger" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Init" mask="1" message="WHEA Logging Service Initialization">
+    </keyword>
+    <keyword name="Errlog" mask="2" message="WHEA Error Event Logs">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000002" message="A fatal hardware error has occurred. A record describing the condition is contained in the data section of this event.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000002" message="A corrected hardware error has occurred. A record describing the condition is contained in the data section of this event.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000002" message="A hardware event has occurred. An informational record describing the condition is contained in the data section of this event.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error has occurred.
+
+Component: %5
+Error Source: %1
+
+Bus:Device:Function: %9:%10:%11
+Vendor ID:Device ID: %15:%16
+Class Code: %17
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A corrected hardware error has occurred.
+
+Component: %5
+Error Source: %1
+
+Bus:Device:Function: %9:%10:%11
+Vendor ID:Device ID: %15:%16
+Class Code: %17
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="18" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error has occurred.
+
+Reported by component: Processor Core
+Error Source: %1
+Error Type: %7
+Processor APIC ID: %2
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="19" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A corrected hardware error has occurred.
+
+Reported by component: Processor Core
+Error Source: %1
+Error Type: %7
+Processor APIC ID: %2
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="20" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error has occurred.
+
+Component: AMD Northbridge
+Error Source: %1
+Error Type: %7
+Processor APIC ID: %2
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A corrected hardware error has occurred.
+
+Component: AMD Northbridge
+Error Source: %1
+Error Type: %7
+Processor APIC ID: %2
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="22" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error has occurred.
+
+Component: Memory
+Error Source: %1
+Error Type: %19
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A corrected hardware error has occurred.
+
+Component: Memory
+Error Source: %1
+Error Type: %19
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error has occurred.
+
+Component: PCI/PCI-X Bus
+Error Source: %1
+Error Type: %5
+Segment:Bus: %7:%6
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="25" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A corrected hardware error has occurred.
+
+Component: PCI/PCI-X Bus
+Error Source: %1
+Error Type: %5
+Segment:Bus: %7:%6
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="26" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error has occurred.
+
+Component: PCI/PCI-X Device
+Error Source: %1
+Error Type: %5
+
+Segment:Bus:Device:Function: %12:%11:%10:%9
+Vendor ID:Device ID: %6:%7
+Class Code: %8
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="27" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A corrected hardware error has occurred.
+
+Component: PCI/PCI-X Device
+Error Source: %1
+Error Type: %5
+
+Segment:Bus:Device:Function: %12:%11:%10:%9
+Vendor ID:Device ID: %6:%7
+Class Code: %8
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="40" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error has occurred.
+
+Component: %5
+Error Source: %1
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="41" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A corrected hardware error has occurred.
+
+Component: %5
+Error Source: %1
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error has occurred.
+
+Component: PCI/PCI-X Bus
+Error Source: %1
+Error Type: %5
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="43" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A corrected hardware error has occurred.
+
+Component: PCI/PCI-X Bus
+Error Source: %1
+Error Type: %5
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error has occurred.
+
+Component: PCI/PCI-X Device
+Error Source: %1
+Error Type: %5
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="45" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A corrected hardware error has occurred.
+
+Component: PCI/PCI-X Device
+Error Source: %1
+Error Type: %5
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="46" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A fatal hardware error has occurred.
+
+Component: Memory
+Error Source: %1
+
+The details view of this entry contains further information.">
+    </event>
+    <event value="47" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A corrected hardware error has occurred.
+
+Component: Memory
+Error Source: %1
+
+The details view of this entry contains further information.">
+    </event>
+  </events>
+</provider>

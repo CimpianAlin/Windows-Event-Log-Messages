@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Security-SPP" guid="e23b33b0-c8c9-472c-a5f9-f2bdfea0f156" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=sppsvc.exe&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\sppsvc.exe" messageFileName="C:\Windows\system32\sppsvc.exe" message="Microsoft-Windows-Security-SPP" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Security-SPP/Perf" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SLSvcInit_PhaseOne" value="301" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SLSvcInit_PhaseTwo" value="302" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SLSvcInit_TokenStore" value="303" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SLSvcInit_ConsumeRight" value="304" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SLSvcInit_ExternalCallDuringInit" value="305" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="PerfInstrumentation" mask="10000" message="">
+    </keyword>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="301" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="301" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="302" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="302" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="303" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="303" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="304" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="304" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="305" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="1073742724" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Software Protection service is starting.
+">
+    </event>
+    <event value="1073742725" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Software Protection service is stopping.
+">
+    </event>
+    <event value="1073742726" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Software Protection service has started.
+%1">
+    </event>
+    <event value="1073742727" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Software Protection service has stopped.
+">
+    </event>
+    <event value="3221226473" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Software Protection service failed to start. %1
+%2">
+    </event>
+    <event value="1073742827" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Software Protection service has completed licensing status check.
+Application Id=%1
+Licensing Status=%2">
+    </event>
+    <event value="1073742828" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Software Protection service has successfully installed the license.
+License Title=%1
+License Id=%2">
+    </event>
+    <event value="1073742829" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The result of Windows Right consumption is: %1
+">
+    </event>
+    <event value="1073742830" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The status of binding evaluation is: 
+%1">
+    </event>
+    <event value="1073742831" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Acquisition of Secure Processor Certificate was successful.
+">
+    </event>
+    <event value="3221226480" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Acquisition of Secure Processor Certificate failed. %1">
+    </event>
+    <event value="1073742833" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Acquisition of Rights Account Certificate was successful.
+">
+    </event>
+    <event value="3221226482" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Acquisition of Rights Account Certificate failed. %1">
+    </event>
+    <event value="1073742835" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Acquisition of Product Certificate was successful.
+Sku Id=%1">
+    </event>
+    <event value="3221226484" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Acquisition of Product Certificate failed. %1
+Sku Id=%2">
+    </event>
+    <event value="1073742837" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Acquisition of End User License was successful.
+Sku Id=%1">
+    </event>
+    <event value="3221226486" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Acquisition of End User License failed. %1
+Sku Id=%2">
+    </event>
+    <event value="2147484663" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Detailed HRESULT. Returned hr=%1, Original hr=%2">
+    </event>
+    <event value="1073742840" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Proof of Purchase installed successfully. 
+ACID=%1
+PKeyId=%2">
+    </event>
+    <event value="2147484665" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Installation of the Proof of Purchase failed. %1
+Partial Pkey=%2
+ACID=%3
+Detailed Error[%4]
+">
+    </event>
+    <event value="1073742842" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Proof of Purchase removed successfully. 
+ACID=%1
+PKeyId=%2
+">
+    </event>
+    <event value="2147484667" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Removal of the Proof of Purchase failed. %1
+ACID=%2
+PKeyId=%3">
+    </event>
+    <event value="2147484668" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Proxy Execution Key has failed to load. %1
+Proxy Execution Policy=%2">
+    </event>
+    <event value="2147484669" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="sppuinotify service has failed to start. %1">
+    </event>
+    <event value="2147484670" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The system has been tampered. %1">
+    </event>
+    <event value="2147484671" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The RAC or SPC license is invalid. %1">
+    </event>
+    <event value="2147484672" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The hardware has changed.">
+    </event>
+    <event value="1073742849" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Grace period has been started. Grace days=%1  Grace type=%2.">
+    </event>
+    <event value="3221226498" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="License missing during right consumption. License Id = %1.">
+    </event>
+    <event value="3221226499" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Information missing during right consumption. %1, License Id = %2, Data name = %3.">
+    </event>
+    <event value="3221226500" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="There are %1 invalid license(s).">
+    </event>
+    <event value="2147484677" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Unable to get detailed error information during license consumption. Last error %1.">
+    </event>
+    <event value="2147484678" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The license consumption has failed. %1.">
+    </event>
+    <event value="2147484679" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Registration of PidConfiguration data failed. %1, OOB License Id=%2.">
+    </event>
+    <event value="2147484680" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Kernel policy cache update failed. %1.">
+    </event>
+    <event value="1073742857" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="These policies are being excluded since they are only defined with override-only attribute.
+Policy Names=%1
+App Id=%2
+Sku Id=%3">
+    </event>
+    <event value="1073742858" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Duplicate definition of policy found. Policy name=%1  Priority=%2">
+    </event>
+    <event value="1073742859" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A higher priority policy without override-only attribute found. Policy name=%1  Current priority=%2  Previous priority=%3">
+    </event>
+    <event value="1073742860" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Validity period has been started. Validity minutes=%1  Grace type=%2.">
+    </event>
+    <event value="2147484685" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Time-based license remaining %1 time %2 minutes.">
+    </event>
+    <event value="1073742864" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Hardware has changed from previous boot.
+ AppId=%1, SkuId=%2.">
+    </event>
+    <event value="3221226514" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Software Protection service has failed to start.
+%1">
+    </event>
+    <event value="3221226515" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The following error was generated:
+%1">
+    </event>
+    <event value="2147484692" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The following errors occurred during license evaluation:
+%1
+">
+    </event>
+    <event value="2147484694" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Buffer validated. %1
+">
+    </event>
+    <event value="1073742871" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Your hardware changed since last license acquisition.
+Following devices were added:
+%1
+">
+    </event>
+    <event value="1073742872" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Your hardware changed since last license acquisition.
+Following devices were removed:
+%2
+">
+    </event>
+    <event value="1073742873" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Your hardware changed since last license acquisition.
+Following devices were added:
+%1
+Following devices were removed:
+%2
+">
+    </event>
+    <event value="1073742874" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Your hardware changed since last license acquisition.
+Following devices were changed:
+%3
+">
+    </event>
+    <event value="1073742875" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Your hardware changed since last license acquisition.
+Following devices were added:
+%1
+Following devices were changed:
+%3
+">
+    </event>
+    <event value="1073742876" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Your hardware changed since last license acquisition.
+Following devices were removed:
+%2
+Following devices were changed:
+%3
+">
+    </event>
+    <event value="1073742877" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Your hardware changed since last license acquisition.
+Following devices were added:
+%1
+Following devices were removed:
+%2
+Following devices were changed:
+%3
+">
+    </event>
+    <event value="2147484702" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Component error. %1
+">
+    </event>
+    <event value="2147484703" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Proof of Purchase installation succeeded, but generated a warning. 
+%1,%2.">
+    </event>
+    <event value="2147484704" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Some data has been reset. %1 [%2].">
+    </event>
+    <event value="2147484705" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Unable to update Windows PID information in the registry: %1
+">
+    </event>
+    <event value="2147484706" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="sppuinotify service has failed to stop. %1">
+    </event>
+    <event value="2147484707" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Add-on policy for base license or family policy for add-on license not allowed. %1">
+    </event>
+    <event value="1073742884" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Kernel policy cache has not been updated after Windows Right consumption. This is OK in certain situations.
+">
+    </event>
+    <event value="3221226534" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Deposition of Confirmation ID failed. %1
+Sku Id=%2">
+    </event>
+    <event value="3221226535" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed to collect hardware information. %1
+">
+    </event>
+    <event value="1073742888" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Activation is required to recover from tampering of Software Protection service trusted store.">
+    </event>
+    <event value="2147484713" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="SAM System Id has changed due to changes in the hardware configuration.">
+    </event>
+    <event value="1073742890" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Initialization status for service objects.
+%1">
+    </event>
+    <event value="2147484715" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Genuine information set for application. %1, %2, %3.
+">
+    </event>
+    <event value="1073742896" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Successfully matched deposited Installation ID with Confirmation ID.
+Sku Id=%1">
+    </event>
+    <event value="3221233664" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Application failed to launch. %1
+Application name:
+%2">
+    </event>
+    <event value="3221233665" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="License Activation Scheduler (sppuinotify.dll) failed with the following error code:
+%1">
+    </event>
+    <event value="3221233666" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="License Activation Scheduler (sppuinotify.dll) failed with error code:
+%1
+Failure occurred at:
+%2
+Context:
+%3">
+    </event>
+    <event value="3221233667" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="License Activation Scheduler (sppuinotify.dll) failed during automatic activation with error code:
+%1">
+    </event>
+    <event value="1073750020" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="License Activation Scheduler (sppuinotify.dll) was not able to automatically activate.  Error code:
+%1">
+    </event>
+    <event value="1073750021" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="License Activation Scheduler (sppuinotify.dll) logged the following information:
+%1
+%2">
+    </event>
+    <event value="3221233670" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="License Activation (slui.exe) failed with the following error code:
+%1">
+    </event>
+    <event value="3221233672" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="License acquisition failure details. 
+%1">
+    </event>
+    <event value="3221233674" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%3 Token Store &apos;%2&apos; failed with error %1.
+">
+    </event>
+    <event value="3221233676" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%3 Token Store &apos;%2&apos; failed with error %1.
+Info: %4">
+    </event>
+    <event value="3221233677" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Token Store found to be corrupt. Recreating empty Token Store.
+">
+    </event>
+    <event value="1073750030" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Token Store not found. Recreating empty Token Store.
+">
+    </event>
+    <event value="3221233680" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Acquisition of genuine ticket failed (%1) for template Id %2">
+    </event>
+    <event value="3221233681" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Genuine state set to non-genuine (%1) for application Id %2">
+    </event>
+    <event value="3221233682" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Update current edition product key id failed with %1">
+    </event>
+    <event value="3221233683" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Update Windows license and product key tokens failed with %1. 
+%2">
+    </event>
+    <event value="3221233684" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Rearm failed for AppId = %2, SkuId = %3 - %4 Rearms Remaining.  Error Code: %1">
+    </event>
+    <event value="1073754112" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The client has sent an activation request to the key management service machine.
+Info:
+%1">
+    </event>
+    <event value="1073754113" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The client has processed an activation response from the key management service machine.
+Info:
+%1">
+    </event>
+    <event value="1073754114" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An activation request has been processed.
+Info:
+%1">
+    </event>
+    <event value="1073754115" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Key Management Service (KMS) failed to start.
+Info:
+%1">
+    </event>
+    <event value="1073754116" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Volume-licensed client was unable to initialize the Key Management Service (KMS) renewal timer.
+Info:
+%1">
+    </event>
+    <event value="1073754117" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Publishing the Key Management Service (KMS) to DNS in the &apos;%2&apos; domain failed.
+Info:
+%1">
+    </event>
+    <event value="1073754118" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Publishing the Key Management Service (KMS) to DNS in the &apos;%1&apos; domain is successful.
+">
+    </event>
+    <event value="1073754128" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Successfully acquired genuine ticket for template Id %1">
+    </event>
+    <event value="1073754129" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Genuine state set to genuine for application Id %1">
+    </event>
+    <event value="1073754130" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Rearm successful for AppId = %1, SkuId = %2 - %3 Rearms Remaining.">
+    </event>
+    <event value="1073754131" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Skipped Rearm for AppId = %1, SkuId = %2.">
+    </event>
+    <event value="1073754144" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Token-based Activation has succeeded.
+Sku Id=%1">
+    </event>
+    <event value="2147495969" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="License Activation Scheduler (sppuinotify.dll) was unable to perform silent Token-based Activation.  Error code:
+%1">
+    </event>
+    <event value="3221237794" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed to deposit Token-based Activation response. %1
+Sku Id=%2">
+    </event>
+    <event value="1073758208" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Successfully scheduled Software Protection service for re-start at %1. Reason: %2.">
+    </event>
+    <event value="3221241857" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed to schedule Software Protection service for re-start at %2. Error Code: %1.">
+    </event>
+  </events>
+</provider>

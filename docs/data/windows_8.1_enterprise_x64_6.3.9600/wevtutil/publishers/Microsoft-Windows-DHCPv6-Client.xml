@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DHCPv6-Client" guid="6a1f2b00-6a90-4c38-95a5-5cab3b056778" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=dhcpcore6.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\dhcpcore6.dll" parameterFileName="C:\Windows\System32\kernelbase.dll" messageFileName="C:\Windows\system32\dhcpcore6.dll" message="Microsoft-Windows-DHCPv6-Client" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Dhcpv6-Client/Admin" id="16" flags="0" message="Microsoft-Windows-DHCPv6 Client Events/Admin">
+    </channel>
+    <channel name="Microsoft-Windows-Dhcpv6-Client/Operational" id="17" flags="0" message="Microsoft-Windows-DHCP Client Events/Operational">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="DHCPV6_OPCODE_MEDIA_CONNECT" value="720896" message="MediaConnect">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_MEDIA_DISCONNECT" value="786432" message="MediaDisconnect">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_RA_CHANGED" value="851968" message="RAChanged">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_PERFTRACK_MEDIA_CONNECT" value="917504" message="PerfTrackMediaConnect">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_PERFTRACK_MEDIA_CONNECT_END" value="983040" message="PerfTrackMediaConnectEnd">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INTERFACE_ADDED" value="1048576" message="InterfaceAdded">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INIT_SARR" value="1114112" message="InitSARR">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INIT_CONFIRM_REPLY" value="1179648" message="InitConfirmReply">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_SOLICIT_SENT" value="1245184" message="SolicitSent">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ADVERTISE_RECEIVED" value="1310720" message="AdvertiseReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ADVERTISE_DISCARDED" value="1376256" message="AdvertiseDiscarded">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_REQUEST_SENT" value="1441792" message="RequestSent">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_REPLY_FOR_REQUEST_RECEIVED" value="1507328" message="ReplyForRequestReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INVALID_REPLY_FOR_REQUEST_RECEIVED" value="1572864" message="InvalidReplyForRequestReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_RENEW_SENT" value="1638400" message="RenewSent">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_REPLY_FOR_RENEW_RECEIVED" value="1703936" message="ReplyForRenewReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INVALID_REPLY_FOR_RENEW_RECEIVED" value="1769472" message="InvalidReplyForRenewReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_REBIND_SENT" value="1835008" message="RebindSent">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_REPLY_FOR_REBIND_RECEIVED" value="1900544" message="ReplyForRebindReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INVALID_REPLY_FOR_REBIND_RECEIVED" value="1966080" message="InvalidReplyForRebindReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_CONFIRM_SENT" value="2031616" message="ConfirmSent">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_REPLY_FOR_CONFIRM_RECEIVED" value="2097152" message="ReplyForConfirmReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INVALID_REPLY_FOR_CONFIRM_RECEIVED" value="2162688" message="InvalidReplyForConfirmReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_DECLINE_SENT" value="2228224" message="DeclineSent">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_REPLY_FOR_DECLINE_RECEIVED" value="2293760" message="ReplyForDeclineReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INVALID_REPLY_FOR_DECLINE_RECEIVED" value="2359296" message="InvalidReplyForDeclineReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_RELEASE_SENT" value="2424832" message="ReleaseSent">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INFOREQUEST_SENT" value="2490368" message="InfoRequestSent">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_REPLY_FOR_INFOREQUEST_RECEIVED" value="2555904" message="ReplyForInfoRequestReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INVALID_REPLY_FOR_INFOREQUEST_RECEIVED" value="2621440" message="InvalidReplyForInfoRequestReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ERROR_CREATING_PACKET" value="2752512" message="ErrorCreatingPacket">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ERROR_EXTRACTING_OPTIONS" value="2818048" message="ErrorExtractingOptions">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ERROR_IN_PARSING" value="2883584" message="ErrorInParsing">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INFORMATION_REFRESH_TIME_OPTION_RECEIVED" value="2949120" message="InformationRefreshTimeOptionReceived">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INFORMATION_REFRESH_TIME_EXPIRED" value="3014656" message="InformationRefreshTimeExpired">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_PERFTRACK_SARR" value="3080192" message="PerfTrackSARR">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_PERFTRACK_INFOREQUEST" value="3145728" message="PerfTrackInfoRequest">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_STATEFUL_TO_STATELESS" value="3211264" message="StatefulToStateless">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_STATELESS_TO_STATEFUL" value="3276800" message="StatelessToStateful">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NONDHCP_TO_STATEFUL" value="3342336" message="NonDhcpToStateful">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NONDHCP_TO_STATELESS" value="3407872" message="NonDhcpToStateless">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_STATIC_MODE" value="3473408" message="StaticMode">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ADDRESS_PLUMBED" value="3538944" message="AddressPlumbed">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ADDRESS_UNPLUMBED" value="3604480" message="AddressUnplumbed">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_IP_CONFLICT" value="3670016" message="IPConflict">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_LEASE_EXPIRED" value="3735552" message="LeaseExpired">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INIT_NETWORK_INTERFACE_FAILED" value="3801088" message="InitNetworkInterfaceFailed">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ERROR_PLUMBING_PARAMETERS" value="3866624" message="ErrorPlumbingParameters">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ERROR_OPENING_SOCKET" value="3932160" message="ErrorOpeningSocket">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ERROR_CLOSING_SOCKET" value="3997696" message="ErrorClosingSocket">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_SERVICE_START" value="4063232" message="ServiceStart">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_SERVICE_STOP" value="4128768" message="ServiceStop">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ERROR_INIT_SERVICE" value="4194304" message="ErrorInitService">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_DNS_REGISTRATION_DONE" value="4259840" message="DnsRegistrationDone">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_DNS_DEREGISTRATION_DONE" value="4325376" message="dnsDeregistrationDone">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ERROR_INITIALIZING_INTERFACE" value="4390912" message="ErrorInitializingInterface">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NETWORK_ERROR" value="4456448" message="NetworkError">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_STATEFUL_TO_STATEFUL" value="4521984" message="StatefulToStateful">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INVALID_MESSAGE_DISCARDED" value="4587520" message="InvalidMessageDiscarded">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ADDRESS_ALREADY_EXISTS" value="4653056" message="AddressAlreadyExists">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_LOST_IP_ADDRESS" value="4718592" message="LostIpAddress">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_SET_CLASS_ID" value="4784128" message="SetClassID">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_FAILED_TO_OBTAIN_LEASE" value="4849664" message="FailedToObtainLease">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_LEASE_RENEWAL_FAILED" value="4915200" message="LeaseRenewalFailed">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ERROR_SERVICE_STOP" value="4980736" message="ErrorServiceStop">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_FIREWALL_PORT_EXEMPTED" value="5046272" message="FirewallPortExempted">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_FIREWALL_PORT_CLOSED" value="5111808" message="FirewallPortClosed">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_INTERFACE_MODE_CHANGING" value="5177344" message="ModeChanging">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_AGGRESSIVE_RETRY_ON" value="5242880" message="AggressiveRetryOn">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_DONT_START_SOLICIT_IN_CS" value="5308416" message="DontStartSolicitInCSSinceV4Plumbed">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_START_SOLICIT_IN_CS_NO_V4" value="5373952" message="StartSolicitInCSSinceV4Unplumbed">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ABANDON_SOLICIT_IN_CS_DHCP" value="5439488" message="AbandonSolicitInCSSinceDhcp">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_START_SOLICIT_IN_CS_COMPULSORY" value="5505024" message="StartSolicitInCSAtCompulsoryTime">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NIC_REFERENCE_ACQUIRE" value="5570560" message="AcquireNICReference">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NIC_REFERENCE_RELEASE" value="5636096" message="ReleaseNICReference">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_FIREWALL_PORT_EXEMPTION_TRIGGERED" value="5701632" message="FirewallPortExemptionTriggered">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_FIREWALL_PORT_CLOSE_TRIGGERED" value="5767168" message="FirewallPortCloseTriggered">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_CS_ENTRY_NOTIFICATION" value="5832704" message="NotifyCSEntry">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_CS_EXIT_NOTIFICATION" value="5898240" message="NotifyCSExit">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ABANDON_SOLICIT_IN_CS_STATIC" value="5963776" message="AbandonSolicitInCSSinceStatic">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ENABLE_DHCPV6" value="6029312" message="EnableDhcpV6">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_DISABLE_DHCPV6" value="6094848" message="DisableDhcpV6">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NO_PROC_SINCE_DHCPV6_DISABLED" value="6160384" message="NoProcessingSinceDhcpV6Disabled">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ABANDON_SOLICIT_IN_CS_V6_STATIC" value="6225920" message="AbandonSolicitInCSSinceV6Static">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ABANDON_SOLICIT_IN_CS_V6_STATELESS" value="6291456" message="AbandonSolicitInCSSinceV6Stateless">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_ABANDON_SOLICIT_NON_MULTICAST" value="6356992" message="AbandonSolicitSinceNonMulticast">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_DUID_VALIDATION_FAILED" value="6422528" message="DHCPv6DUIDValidationFailed">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NETWORK_HINT_MATCH_FOUND" value="6488064" message="DHCPv6NetworkHintMatch">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NETWORK_HINT_STATEFULL_CONFIG" value="6553600" message="DHCPv6NetworkHintStatefullConfig">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NETWORK_HINT_STATELESS_CONFIG" value="6619136" message="DHCPv6NetworkHintStatelessConfig">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NETWORK_HINT_CONFIG_EXPIRED" value="6684672" message="DHCPv6NetworkHintConfigExpired">
+    </opcode>
+    <opcode name="DHCPV6_OPCODE_NOTE_FLAG_VALUES" value="6750208" message="NoteFlagValues">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DHCPV6_TASK_MEDIA_STATE" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Media State Event">
+    </task>
+    <task name="DHCPV6_TASK_PROTOCOL_STATE" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Protocol State Event">
+    </task>
+    <task name="DHCPV6_TASK_ADDRESS_CONFIGURATION_STATE" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Address Configuration State Event">
+    </task>
+    <task name="DHCPV6_TASK_SERVICE_STATE" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Service State Event">
+    </task>
+    <task name="DHCPV6_TASK_WINSOCK_STATE" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Winsock State Event">
+    </task>
+    <task name="DHCPV6_TASK_DNS_STATE" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="DNS State Event">
+    </task>
+    <task name="DHCPV6_TASK_PARAMETER_STATE" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="Network Parameter State Event">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="DHCPV6_AOAC" mask="1" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="72" channel="16" level="2" task="3" keywords="0x8000000000000000" message="Your computer has lost the lease to its IP address %1 on the Network Card with network address %3.">
+    </event>
+    <event value="1003" version="0" opcode="75" channel="16" level="2" task="3" keywords="0x8000000000000001" message="Your computer was not able to renew its address from the network (from the DHCP Server) for the Network Card with network address %2.  The following error occurred: %3. Your computer will continue to try and obtain an address on its own from the network address (DHCP) server.">
+    </event>
+    <event value="1004" version="0" opcode="76" channel="8" level="2" task="4" keywords="0x2000000000000000" message="Error occurred in stopping the Dhcpv6 client service. ErrorCode is %1.ShutDown Flag value is %2.">
+    </event>
+    <event value="1005" version="0" opcode="56" channel="16" level="3" task="3" keywords="0x8000000000000000" message="Your computer has detected that the IP address %1 for the Network Card with network address %3 is already in use on the network. Your computer will automatically attempt to obtain a different address.">
+    </event>
+    <event value="1006" version="0" opcode="13" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Router Advertisement settings have been changed on the network adapter %1. The current M - Managed Address Configuration flag is %2 and the O - Other Stateful Configuration flag is %3. User Action: If you are seeing this event frequently, then it could be due to frequent change in M and O flag settings on the router in the network. Please contact your network administrator to have it resolved.">
+    </event>
+    <event value="1008" version="0" opcode="58" channel="16" level="2" task="3" keywords="0x8000000000000000" message="An error occurred in initializing the interface. The error code is: %1.">
+    </event>
+    <event value="1009" version="0" opcode="98" channel="16" level="4" task="4" keywords="0x8000000000000000" message="MAC Address %2 in DUID %4 could not be found in the system. Generated new DUID %8 based on MAC address %6.">
+    </event>
+    <event value="1010" version="0" opcode="99" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCPv6 has found SSID %1 in the cached networks for interface %4.">
+    </event>
+    <event value="1011" version="0" opcode="100" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCPv6 found a valid IPv6 address %1 and options in the cache for network SSID %2 under interface %4. DHCPv6 will use this cached configuration.">
+    </event>
+    <event value="1012" version="0" opcode="101" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCPv6 found options in the cache for network %1 under interface %4. DHCPv6 will use this cached configuration.">
+    </event>
+    <event value="1013" version="0" opcode="102" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCPv6 client found expired cached configuration for network %1 under interface %3. DHCPv6 client will discard the expired configuration and obtain new configuration from DHCPv6 server.">
+    </event>
+    <event value="50057" version="0" opcode="68" channel="17" level="2" task="2" keywords="0x4000000000000000" message="A network error occurred when trying to send a message. The error code is: %1.">
+    </event>
+    <event value="50071" version="0" opcode="85" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Attempting to acquire a reference for interface %1. Error code is %2.">
+    </event>
+    <event value="50072" version="0" opcode="86" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Attempting to release the reference for interface %1. Error code is %2.">
+    </event>
+    <event value="51001" version="0" opcode="11" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Media Connect notification has been received on interface with interface id %1">
+    </event>
+    <event value="51002" version="0" opcode="12" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Media Disconnect notification has been received on interface with interface id %1">
+    </event>
+    <event value="51004" version="0" opcode="18" channel="17" level="4" task="2" keywords="0x4000000000000001" message="Confirm-Reply is initiated on the interface with Interface Id %1">
+    </event>
+    <event value="51005" version="0" opcode="17" channel="17" level="4" task="2" keywords="0x4000000000000001" message="Solicit-Advertise-Request-Reply is initiated on the interface with Interface Id %1. Managed Flag value %2 OtherConfig Flag value %3.">
+    </event>
+    <event value="51006" version="0" opcode="19" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Solicit is sent from the interface %1. Status code is %2">
+    </event>
+    <event value="51007" version="0" opcode="20" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Advertise is received from the interface %1. Status code is %2. Offered Address is %3">
+    </event>
+    <event value="51008" version="0" opcode="21" channel="17" level="2" task="2" keywords="0x4000000000000000" message="Advertise is discarded from the interface %1. Status code is %2">
+    </event>
+    <event value="51009" version="0" opcode="22" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Request is sent from the interface %1. Status code is %2">
+    </event>
+    <event value="51010" version="0" opcode="23" channel="17" level="4" task="2" keywords="0x4000000000000000" message="A valid reply is received for request from the interface %1. Status code is %2. Received address is %3">
+    </event>
+    <event value="51011" version="0" opcode="24" channel="17" level="2" task="2" keywords="0x4000000000000000" message="Incorrect reply is received for request from the interface %1. Status code is %2">
+    </event>
+    <event value="51012" version="0" opcode="25" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Renew is sent on the interface %1. Status code is %2">
+    </event>
+    <event value="51013" version="0" opcode="26" channel="17" level="4" task="2" keywords="0x4000000000000000" message="A valid reply is received for renew from the interface %1. Status code is %2">
+    </event>
+    <event value="51014" version="0" opcode="27" channel="17" level="2" task="2" keywords="0x4000000000000000" message="An invalid reply is received for renew from the interface %1. Status code is %2">
+    </event>
+    <event value="51015" version="0" opcode="28" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Rebind is sent on the interface %1. Status code is %2">
+    </event>
+    <event value="51016" version="0" opcode="29" channel="17" level="4" task="2" keywords="0x4000000000000000" message="A valid reply is received for rebind from the interface %1. Status code is %2">
+    </event>
+    <event value="51017" version="0" opcode="30" channel="17" level="2" task="2" keywords="0x4000000000000000" message="An invalid reply is received for rebind from the interface %1. Status code is %2">
+    </event>
+    <event value="51018" version="0" opcode="37" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Release is sent on the interface %1. Status code is %2">
+    </event>
+    <event value="51019" version="0" opcode="34" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Decline is sent on the interface %1. Status code is %2">
+    </event>
+    <event value="51020" version="0" opcode="35" channel="17" level="4" task="2" keywords="0x4000000000000000" message="A valid reply is received for decline on the interface %1. Status code is %2">
+    </event>
+    <event value="51021" version="0" opcode="36" channel="17" level="2" task="2" keywords="0x4000000000000000" message="An invalid reply is received for decline on the interface %1. Status code is %2">
+    </event>
+    <event value="51022" version="0" opcode="31" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Confirm is sent on the interface %1. Status code is %2">
+    </event>
+    <event value="51023" version="0" opcode="32" channel="17" level="4" task="2" keywords="0x4000000000000000" message="A valid reply is received for confirm on the interface %1. Status code is %2">
+    </event>
+    <event value="51024" version="0" opcode="33" channel="17" level="2" task="2" keywords="0x4000000000000000" message="An invalid reply is received for confirm on the interface %1. Status code is %2">
+    </event>
+    <event value="51025" version="0" opcode="38" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Info-request is sent on the interface %1. Status code is %2">
+    </event>
+    <event value="51026" version="0" opcode="39" channel="17" level="4" task="2" keywords="0x4000000000000000" message="A valid reply is received for Info-request on the interface %1. Status code is %2">
+    </event>
+    <event value="51027" version="0" opcode="40" channel="17" level="2" task="2" keywords="0x4000000000000000" message="An invalid reply is received for Info-request on the interface %1. Status code is %2">
+    </event>
+    <event value="51029" version="0" opcode="42" channel="17" level="2" task="2" keywords="0x4000000000000000" message="An error occurred in creation of packet on the interface %1. Error code is %2">
+    </event>
+    <event value="51030" version="0" opcode="43" channel="17" level="2" task="2" keywords="0x4000000000000000" message="An error occurred in extracting options from the message received on the interface %1. Status code is %2">
+    </event>
+    <event value="51031" version="0" opcode="49" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCP is changed from stateful to stateless mode on the interface %1. Status Code is %2. Managed Flag value %3 OtherConfig Flag value %4.">
+    </event>
+    <event value="51032" version="0" opcode="50" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCP is changed from stateless to stateful mode on the interface %1. Status Code is %2.">
+    </event>
+    <event value="51033" version="0" opcode="51" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCP is changed from nondhcp to stateful mode on the interface %1. Status Code is %2.">
+    </event>
+    <event value="51034" version="0" opcode="52" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCP is changed from nondhcp to stateless mode on the interface %1. Status Code is %2. Managed Flag value %3 OtherConfig Flag value %4.">
+    </event>
+    <event value="51035" version="0" opcode="53" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCP is converted to static mode on the interface %1. Status Code is %2.">
+    </event>
+    <event value="51036" version="0" opcode="44" channel="17" level="2" task="2" keywords="0x4000000000000000" message="Error occurred in parsing the DHCP message received on the interface id %1">
+    </event>
+    <event value="51037" version="0" opcode="45" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Information refresh time option is received in the interface %1 with a refresh time value of %2">
+    </event>
+    <event value="51038" version="0" opcode="46" channel="17" level="4" task="2" keywords="0x4000000000000000" message="The information refresh time has expired, hence triggering a new inform packet on the interface %1.">
+    </event>
+    <event value="51039" version="0" opcode="54" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Address %1 is plumbed on the interface %2. Status Code is %3.">
+    </event>
+    <event value="51040" version="0" opcode="55" channel="17" level="4" task="3" keywords="0x4000000000000001" message="Address %1 is unplumbed on the interface %2. Status Code is %3.">
+    </event>
+    <event value="51043" version="0" opcode="16" channel="17" level="4" task="1" keywords="0x4000000000000000" message="An interface is added whose interface index is %1. Status Code is %2.">
+    </event>
+    <event value="51044" version="0" opcode="67" channel="16" level="2" task="3" keywords="0x8000000000000000" message="An error occurred in initializing the interface %1. Status Code is %2.">
+    </event>
+    <event value="51045" version="0" opcode="59" channel="17" level="2" task="3" keywords="0x4000000000000000" message="An error occurred in plumbing the parameters into stack. Status Code is %1.">
+    </event>
+    <event value="51046" version="0" opcode="62" channel="8" level="4" task="4" keywords="0x2000000000000000" message="DHCPv6 client service is started">
+    </event>
+    <event value="51047" version="0" opcode="63" channel="8" level="4" task="4" keywords="0x2000000000000000" message="DHCPv6 client service is stopped. ShutDown Flag value is %1">
+    </event>
+    <event value="51048" version="0" opcode="60" channel="17" level="2" task="5" keywords="0x4000000000000000" message="An error has occurred in opening the socket on the interface %1. Error Code is %2.">
+    </event>
+    <event value="51049" version="0" opcode="61" channel="17" level="2" task="5" keywords="0x4000000000000000" message="An error has occurred in closing the socket on the interface %1. Error Code is %2.">
+    </event>
+    <event value="51050" version="0" opcode="65" channel="17" level="4" task="6" keywords="0x4000000000000000" message="DNS registration has happened for the interface %1. Status Code is %2.DNS Flag settings is %3.">
+    </event>
+    <event value="51051" version="0" opcode="66" channel="17" level="4" task="6" keywords="0x4000000000000000" message="DNS deregistration has happened for the interface %1. Status Code is %2.">
+    </event>
+    <event value="51058" version="0" opcode="69" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCP is changed from stateful to stateful mode on the interface %1. Status Code is %2.">
+    </event>
+    <event value="51059" version="0" opcode="70" channel="17" level="2" task="2" keywords="0x4000000000000000" message="Message is Invalid and it is discarded.">
+    </event>
+    <event value="51060" version="0" opcode="73" channel="16" level="4" task="3" keywords="0x8000000000000000" message="The Class ID %1 was set for the interface %3.">
+    </event>
+    <event value="51061" version="0" opcode="71" channel="16" level="2" task="3" keywords="0x8000000000000000" message="Address %1 being plumbed for adapter %2 already exists">
+    </event>
+    <event value="51062" version="0" opcode="74" channel="17" level="2" task="3" keywords="0x4000000000000001" message="Your computer was not assigned an address from the network (by the DHCP Server) for the Network Card with network address %2.  The following error occurred: %3. Your computer will continue to try and obtain an address on its own from the network address (DHCP) server.">
+    </event>
+    <event value="51063" version="0" opcode="77" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Firewall port %1 is exempted on interface %2. Error code is %3.">
+    </event>
+    <event value="51064" version="0" opcode="78" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Firewall port %1 is closed on interface %2. Error code is %3.">
+    </event>
+    <event value="51065" version="0" opcode="79" channel="17" level="4" task="3" keywords="0x4000000000000000" message="DHCP is changing mode to %2 on the interface %1.">
+    </event>
+    <event value="51066" version="0" opcode="80" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Regular address acquisition will be done on interface %1 because aggressive address acquisition is turned ON.">
+    </event>
+    <event value="51067" version="0" opcode="83" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP has cancelled IPv6 address acquisition cycle after %1 SOLICIT transmissions on interface %2 because the machine is in Connected Standby state and the interface has the DHCP IPv4 address %3. Managed Flag value %4 OtherConfig Flag value %5.">
+    </event>
+    <event value="51068" version="0" opcode="91" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP has cancelled IPv6 address acquisition cycle after %1 SOLICIT transmissions on interface %2 because the machine is in Connected Standby state and the interface has the static IPv4 address %3. Managed Flag value %4 OtherConfig Flag value %5.">
+    </event>
+    <event value="51069" version="0" opcode="81" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP will not try regular IPv6 address acquisition on interface %1 since the machine is in Connected Standby state and the interface has the IPv4 address %2. Managed Flag value %3 OtherConfig Flag value %4.">
+    </event>
+    <event value="51070" version="0" opcode="82" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP will try regular IPv6 address acquisition on interface %1 even though the machine is in Connected Standby state since the interface has no IPv4 or IPv6 address. Managed Flag value %2 OtherConfig Flag value %3.">
+    </event>
+    <event value="51073" version="0" opcode="87" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Firewall port %2 exemption triggered on interface %1.">
+    </event>
+    <event value="51074" version="0" opcode="88" channel="17" level="4" task="2" keywords="0x4000000000000000" message="Firewall port %2 close triggered on interface %1.">
+    </event>
+    <event value="51075" version="0" opcode="89" channel="17" level="4" task="7" keywords="0x4000000000000000" message="The DHCPv6 client received connected standby entry notification.">
+    </event>
+    <event value="51076" version="0" opcode="90" channel="17" level="4" task="7" keywords="0x4000000000000000" message="The DHCPv6 client received connected standby exit notification.">
+    </event>
+    <event value="51077" version="0" opcode="84" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP will try regular IPv6 address acquisition on interface %1 due to registry settings even though the machine is in Connected Standby state and the interface has an IPv4 address. Managed Flag value %2 OtherConfig Flag value %3.">
+    </event>
+    <event value="51078" version="0" opcode="92" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP is enabled on the interface %1. Status code is %2.">
+    </event>
+    <event value="51079" version="0" opcode="93" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP is disabled on the interface %1. Status code is %2.">
+    </event>
+    <event value="51080" version="0" opcode="94" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP transaction will not be attempted on interface %1 because DHCP is disabled on it.">
+    </event>
+    <event value="51081" version="0" opcode="95" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP has cancelled IPv6 address acquisition cycle after %1 SOLICIT transmissions on interface %2 because the machine is in Connected Standby state and the interface has the static IPv6 address %3. Managed Flag value %4 OtherConfig Flag value %5.">
+    </event>
+    <event value="51082" version="0" opcode="96" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP has cancelled IPv6 address acquisition cycle after %1 SOLICIT transmissions on interface %2 because the machine is in Connected Standby state and the interface has the stateless IPv6 address %3. Managed Flag value %4 OtherConfig Flag value %5.">
+    </event>
+    <event value="51083" version="0" opcode="97" channel="17" level="4" task="2" keywords="0x4000000000000000" message="DHCP has cancelled IPv6 address acquisition on interface %1 because the interface is not multicast enabled.">
+    </event>
+    <event value="51084" version="0" opcode="103" channel="17" level="4" task="2" keywords="0x4000000000000000" message="The values of flags received on interface %1 are: Managed Flag value %2 OtherConfig Flag value %3.">
+    </event>
+    <event value="60000" version="0" opcode="47" channel="17" level="4" task="2" keywords="0x4001000000000000" message="PERFTRACK (DHCPSOLICIT): Offer is accepted on the IPv6 interface %2. Offered Address is %3.">
+    </event>
+    <event value="60001" version="0" opcode="48" channel="17" level="4" task="2" keywords="0x4001000000000000" message="PERFTRACK (DHCINFORMATIONREQUEST): Options received on the IPv6 interface %2. ">
+    </event>
+    <event value="60002" version="0" opcode="14" channel="17" level="4" task="1" keywords="0x4001000000000000" message="PERFTRACK (DHCPv6): Media Connect on interface %2">
+    </event>
+    <event value="60003" version="0" opcode="15" channel="17" level="4" task="1" keywords="0x4001000000000000" message="PERFTRACK (DHCPv6): End of Media Connect on interface %2">
+    </event>
+  </events>
+</provider>

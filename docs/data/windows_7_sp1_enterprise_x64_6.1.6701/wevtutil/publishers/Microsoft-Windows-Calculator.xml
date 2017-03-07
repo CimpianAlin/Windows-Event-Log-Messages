@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Calculator" guid="75f48521-4131-4ac3-9887-65473224fcb2" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=calc.exe&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\calc.exe" messageFileName="C:\Windows\system32\calc.exe" message="Microsoft-Windows-Calculator" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Calculator/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Calculator/Debug" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="HistoryToggle" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModeChange" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CalcCommand" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StatisticsCalculation" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Recalculation" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LaunchingApp" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ClosingApp" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TemplateRead" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TemplateLoad" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TemplateInit" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TemplateLookUp" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GetCategories" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Calculator" mask="10000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000010000" message="HistoryToggle has started">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000010000" message="History toggle has been closed">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8001000000010000" message="Calculator Command has started">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8001000000010000" message="Calculator Command has been completed">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8001000000010000" message="Launching of app has started">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8001000000010000" message="Launching of app has been closed">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8001000000010000" message="Closing of app has started">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8001000000010000" message="App has been closed">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="8" keywords="0x8001000000010000" message="Reading templates: Start">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="8" keywords="0x8001000000010000" message="Reading templates: Stop">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8001000000010000" message="Loading templates: Start">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8001000000010000" message="Loading templates: Stop">
+    </event>
+    <event value="13" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8001000000010000" message="Initing template manager: Start">
+    </event>
+    <event value="14" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8001000000010000" message="Initing template manager: Stop">
+    </event>
+    <event value="15" version="0" opcode="1" channel="16" level="4" task="11" keywords="0x8001000000010000" message="Template formula lookup: Start">
+    </event>
+    <event value="16" version="0" opcode="2" channel="16" level="4" task="11" keywords="0x8001000000010000" message="Template formula lookup: Stop">
+    </event>
+    <event value="17" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Template parsing error">
+    </event>
+    <event value="18" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Template validation error">
+    </event>
+    <event value="19" version="0" opcode="1" channel="16" level="4" task="12" keywords="0x8001000000010000" message="GetCategories: Start">
+    </event>
+    <event value="20" version="0" opcode="2" channel="16" level="4" task="12" keywords="0x8001000000010000" message="GetCategories: Stop">
+    </event>
+    <event value="21" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000010000" message="Unit Conversion error">
+    </event>
+    <event value="22" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000010000" message="Statistics Calculation has started">
+    </event>
+    <event value="23" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000010000" message="Statistics Calculation has been completed">
+    </event>
+    <event value="24" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8001000000010000" message="Recalculation has started">
+    </event>
+    <event value="25" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8001000000010000" message="Recalculation has been completed">
+    </event>
+    <event value="26" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8001000000010000" message="Mode change event has started">
+    </event>
+    <event value="27" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8001000000010000" message="Mode change has been completed">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,42 @@
+ERROR WelmLibrary.EventData Event provider 'Microsoft-Windows-Globalization' threw a generic event log exception while processing events: The data is invalid
+   at System.Diagnostics.Eventing.Reader.EventLogException.Throw(Int32 errorCode)
+   at System.Diagnostics.Eventing.Reader.NativeWrapper.EvtNextEventMetadata(EventLogHandle eventMetadataEnum, Int32 flags)
+   at System.Diagnostics.Eventing.Reader.ProviderMetadata.get_Events()
+   at WelmLibrary.EventData.GetEvents()
+ERROR WelmLibrary.EventData Event provider 'Microsoft-Windows-DirectoryServices-DSROLE-Server' not found while processing events: The specified channel could not be found. Check channel configuration
+   at System.Diagnostics.Eventing.Reader.EventLogException.Throw(Int32 errorCode)
+   at System.Diagnostics.Eventing.Reader.NativeWrapper.EvtOpenChannelConfig(EventLogHandle session, String channelPath, Int32 flags)
+   at System.Diagnostics.Eventing.Reader.EventLogConfiguration..ctor(String logName, EventLogSession session)
+   at WelmLibrary.EventLogData..ctor(String logName)
+   at WelmLibrary.EventData..ctor(String providerName, EventMetadata metadata)
+   at WelmLibrary.EventData.<>c__DisplayClass7.<GetEvents>b__2(EventMetadata eventMetadata)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at WelmLibrary.EventData.GetEvents()
+ERROR WelmLibrary.EventData Event provider 'Microsoft-Windows-Hyper-V-VMMS' not found while processing events: The specified channel could not be found. Check channel configuration
+   at System.Diagnostics.Eventing.Reader.EventLogException.Throw(Int32 errorCode)
+   at System.Diagnostics.Eventing.Reader.NativeWrapper.EvtOpenChannelConfig(EventLogHandle session, String channelPath, Int32 flags)
+   at System.Diagnostics.Eventing.Reader.EventLogConfiguration..ctor(String logName, EventLogSession session)
+   at WelmLibrary.EventLogData..ctor(String logName)
+   at WelmLibrary.EventData..ctor(String providerName, EventMetadata metadata)
+   at WelmLibrary.EventData.<>c__DisplayClass7.<GetEvents>b__2(EventMetadata eventMetadata)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at WelmLibrary.EventData.GetEvents()
+ERROR WelmLibrary.EventData Event provider 'Microsoft-Windows-ActiveDirectory_LightweightDirectoryService' not found while processing events: The system cannot find the file specified
+   at System.Diagnostics.Eventing.Reader.EventLogException.Throw(Int32 errorCode)
+   at System.Diagnostics.Eventing.Reader.NativeWrapper.EvtOpenEventMetadataEnum(EventLogHandle ProviderMetadata, Int32 flags)
+   at System.Diagnostics.Eventing.Reader.ProviderMetadata.get_Events()
+   at WelmLibrary.EventData.GetEvents()
+ERROR WelmLibrary.EventData Event provider 'Microsoft-Windows-GPIOButtons' threw a generic event log exception while processing events: The specified resource type cannot be found in the image file
+   at System.Diagnostics.Eventing.Reader.EventLogException.Throw(Int32 errorCode)
+   at System.Diagnostics.Eventing.Reader.NativeWrapper.EvtOpenEventMetadataEnum(EventLogHandle ProviderMetadata, Int32 flags)
+   at System.Diagnostics.Eventing.Reader.ProviderMetadata.get_Events()
+   at WelmLibrary.EventData.GetEvents()
+ERROR WelmLibrary.EventData Event provider 'Microsoft-Windows-SNMP-Evntagnt-Extension-Agent' not found while processing events: The system cannot find the file specified
+   at System.Diagnostics.Eventing.Reader.EventLogException.Throw(Int32 errorCode)
+   at System.Diagnostics.Eventing.Reader.NativeWrapper.EvtOpenEventMetadataEnum(EventLogHandle ProviderMetadata, Int32 flags)
+   at System.Diagnostics.Eventing.Reader.ProviderMetadata.get_Events()
+   at WelmLibrary.EventData.GetEvents()
+ERROR WelmLibrary.Classic.EventMessageFile Unable to load c:\windows\system32\icardres.dll due to error code 2: The system cannot find the file specified. Log: Application Source: CardSpace 4.0.0.0
+ERROR WelmLibrary.Classic.EventMessageFile Unable to load c:\c7d58acddf57ef8e701eb0d365fb28f6\dw\dw20.exe due to error code 2: The system cannot find the file specified. Log: Application Source: VSSetup

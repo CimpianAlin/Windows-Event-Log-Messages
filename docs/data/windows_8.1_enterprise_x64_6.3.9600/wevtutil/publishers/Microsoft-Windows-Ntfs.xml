@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Ntfs" guid="3ff37a1c-a68d-4d6e-8c9b-f79e8b16c482" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=ntfs.sys&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\drivers\ntfs.sys" parameterFileName="C:\Windows\system32\drivers\ntfs.sys" messageFileName="C:\Windows\system32\drivers\ntfs.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Ntfs/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Ntfs/WHC" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Ntfs/Performance" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Checkpoint" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MftRecordRead" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MftRecordWrite" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogFileFull" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Rundown" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="VolumeMount" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WorkItem" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="GlobalCorruptionActionStateChange" mask="1" message="">
+    </keyword>
+    <keyword name="VolumeCorruptionActionStateChange" mask="2" message="">
+    </keyword>
+    <keyword name="SdsCompaction" mask="4" message="">
+    </keyword>
+    <keyword name="LogFlushFailed" mask="8" message="">
+    </keyword>
+    <keyword name="Rundown" mask="10" message="">
+    </keyword>
+    <keyword name="VolumeMount" mask="20" message="">
+    </keyword>
+    <keyword name="LogFileFull" mask="100" message="">
+    </keyword>
+    <keyword name="Checkpoint" mask="200" message="">
+    </keyword>
+    <keyword name="CleanCheckpoint" mask="400" message="">
+    </keyword>
+    <keyword name="PeriodicCheckpoint" mask="800" message="">
+    </keyword>
+    <keyword name="MftRecordRead" mask="1000" message="">
+    </keyword>
+    <keyword name="MftRecordWrite" mask="2000" message="">
+    </keyword>
+    <keyword name="WorkItem" mask="10000" message="">
+    </keyword>
+    <keyword name="DirectoryStream" mask="100000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="18" level="4" task="5" keywords="0x1000000000000010" message="RundownStart">
+    </event>
+    <event value="2" version="0" opcode="2" channel="18" level="4" task="5" keywords="0x1000000000000010" message="RundownComplete">
+    </event>
+    <event value="3" version="0" opcode="0" channel="18" level="4" task="5" keywords="0x1000000000000010" message="RundownVolumeInformation VolumeId: %1, DeviceName: %3">
+    </event>
+    <event value="4" version="0" opcode="0" channel="18" level="4" task="6" keywords="0x1000000000000020" message="VolumeMount VolumeId: %1, DeviceName: %3">
+    </event>
+    <event value="98" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000002" message="Volume %1 (%2) %3">
+    </event>
+    <event value="100" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000001" message="NTFS global corruption action state is now %1.">
+    </event>
+    <event value="139" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000004" message="The file system structure that maintains security information on volume %1 (%2) has grown excessively large and fragmented.  The structure has reached %3%% of its maximum fragmentation limit.  If the structure continues to grow and reaches this limit, it may not be possible to create new files on this volume.  It is strongly recommended that the volume be taken offline for preventative maintenance.">
+    </event>
+    <event value="140" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000008" message="The system failed to flush data to the transaction log. Corruption may occur in VolumeId: %1, DeviceName: %2.
+(%3)">
+    </event>
+    <event value="201" version="0" opcode="0" channel="18" level="4" task="4" keywords="0x1000000000000100" message="NtfsLogFileFull VolumeId: %1, Reason: %2">
+    </event>
+    <event value="202" version="0" opcode="1" channel="18" level="4" task="1" keywords="0x1000000000000a00" message="PeriodicCheckpointStart VolumeId: %1, Reason: %2, Usage: %3%">
+    </event>
+    <event value="203" version="0" opcode="2" channel="18" level="4" task="1" keywords="0x1000000000000a00" message="PeriodicCheckpointComplete VolumeId: %1, DirtyMetaDataPages: %2">
+    </event>
+    <event value="204" version="0" opcode="1" channel="18" level="4" task="1" keywords="0x1000000000000600" message="CleanCheckpointStart VolumeId: %1, Reason: %2, Usage: %3%">
+    </event>
+    <event value="205" version="0" opcode="2" channel="18" level="4" task="1" keywords="0x1000000000000600" message="CleanCheckpointComplete VolumeId: %1, DirtyMetaDataPages: %2">
+    </event>
+    <event value="206" version="0" opcode="0" channel="18" level="4" task="2" keywords="0x1000000000001000" message="MftRecordRead VolumeId: %1, BaseFileId: %2, FileId: %3, CacheHit: %4">
+    </event>
+    <event value="208" version="0" opcode="0" channel="18" level="4" task="3" keywords="0x1000000000002000" message="MftRecordRead VolumeId: %1, BaseFileId: %2, FileId: %3">
+    </event>
+    <event value="230" version="0" opcode="0" channel="18" level="4" task="7" keywords="0x1000000000010000" message="WorkItem queued, WorkItem: %1, Reason: %2">
+    </event>
+    <event value="231" version="0" opcode="0" channel="18" level="2" task="7" keywords="0x1000000000010000" message="WorkItem queue failed, WorkItem: %1, Reason: %2, Error: %3">
+    </event>
+    <event value="232" version="0" opcode="1" channel="18" level="4" task="7" keywords="0x1000000000010000" message="WorkItem started, WorkItem: %1, Reason: %2">
+    </event>
+    <event value="233" version="0" opcode="2" channel="18" level="4" task="7" keywords="0x1000000000010000" message="WorkItem completed, WorkItem: %1, Reason: %2">
+    </event>
+  </events>
+</provider>

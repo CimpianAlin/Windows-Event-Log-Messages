@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MSMQ" guid="ce18af71-5efd-4f5a-9bd5-635e34632f69" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=mqutil.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\mqutil.dll" messageFileName="C:\Windows\system32\mqutil.dll" message="Microsoft-Windows-MSMQ" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-MSMQ/End2End" id="16" flags="0" message="Microsoft-Windows-MSMQ/End2End">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="msmqe2emessage" mask="1" message="Tracking MSMQ Messages">
+    </keyword>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000001" message="Message with ID %1\%2 was put into queue %3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000001" message="Message received">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000001" message="Message sent over network">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000001" message="Message came over network">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000001" message="Message with ID %1\%2 was sent to queue %3">
+    </event>
+    <event value="3221227472" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start. The registry value &apos;\HKLM\SOFTWARE\Microsoft\MSMQ\Parameters\%3&apos; cannot be retrieved from the local Windows Registry. Error %1: %2">
+    </event>
+    <event value="3221227473" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start. The registry value &apos;\HKLM\SOFTWARE\Microsoft\MSMQ\Parameters\%3&apos; cannot be written to the local Windows Registry. Error %1: %2">
+    </event>
+    <event value="3221227487" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service is not online with Active Directory Domain Services. The MSMQ Configuration object (msmq) ID stored in the registry value &apos;\HKLM\SOFTWARE\Microsoft\MSMQ\Parameters\MachineCache\QMId&apos; was found under the computer name &apos;%1&apos; in Active Directory Domain Services. Please relocate this MSMQ Configuration object under the local computer name in Active Directory Domain Services. The service attempts to locate a matching MSMQ Configuration object every few minutes.">
+    </event>
+    <event value="3221227488" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service is not online with Active Directory Domain Services, since the service properties cannot be retrieved or set. The service will attempt to retrieve and set its properties in a few minutes. Error %1: %2">
+    </event>
+    <event value="3221227492" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start. The internal private queue &apos;%3&apos; cannot be initialized. If the problem persists, reinstall Message Queuing. Error %1: %2">
+    </event>
+    <event value="3221227495" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start. The message store cannot be reloaded. Error %1: %2">
+    </event>
+    <event value="1073743848" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing serivce performance counter data are not available. The performance counter module failed to initialize. Please run &apos;lodctr.exe mqperf.ini&apos; from the command console and restart the service, or contact Microsoft support. Error %1: %2">
+    </event>
+    <event value="1073743852" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service started.">
+    </event>
+    <event value="3221227507" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start. The Active Directory Domain Services interface cannot be initialized. Error %1: %2">
+    </event>
+    <event value="2147485691" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service deleted message &apos;%1&apos;. The message cannot be restored because the queue &apos;%2&apos; does not exist.">
+    </event>
+    <event value="2147485692" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service has insufficient privileges to create audit log messages.">
+    </event>
+    <event value="2147485693" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing down-level client support service has insufficient privileges to create audit log messages.">
+    </event>
+    <event value="3221227519" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start. A connection with the Distributed Transaction Coordinator cannot be established. Error %1: %2">
+    </event>
+    <event value="3221227520" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The server cannot support the automatic recognition of sites and connected networks for down-level clients.  The problem might be caused by Active Directory Domain Services replication delay. Please restart MQDS service after replication completed.">
+    </event>
+    <event value="3221227525" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The incoming sequences checkpoint file failed to initialize. The file MQInSeqs.lg1 or MQInSeqs.lg2 in the Msmq\Storage folder is corrupted or absent. Error %1: %2">
+    </event>
+    <event value="2147485707" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot communicate with other computers, because the RPC interface cannot use the TCP/IP protocol. Error %1: %2">
+    </event>
+    <event value="1073743884" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service is online with Active Directory Domain Services and fully operational.">
+    </event>
+    <event value="3221227533" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start. The local RPC interface cannot be initialized. Error %1: %2">
+    </event>
+    <event value="3221227536" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The transactions checkpoint file failed to initialize. The file MQTrans.lg1 or MQTrans.lg2 in the Msmq\Storage folder are corrupted or absent. Error %1: %2">
+    </event>
+    <event value="3221227540" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The list of Message Queuing servers with directory service functionality in the Windows registry is empty.">
+    </event>
+    <event value="3221227548" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The logger files cannot be initialized. The file QMLog in the Msmq\Storage folder is corrupted or absent. Error %1: %2">
+    </event>
+    <event value="3221227550" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start. The checkpoint files cannot be recovered. To start the Message Queuing service without losing consistency, you must correct or recover corrupted checkpoint and log files. To start the service for emergency use (with a potential loss of data consistency), delete the files QMLog, MQTrans.lg1, MQTrans.lg2, MQInSeqs.lg1, and MQInSeqs.lg2 from the Msmq\Storage folder and add the DWORD registry key HKLM\Software\Microsoft\MSMQ\Parameters\LogDataCreated with a value of 0. Error %1: %2">
+    </event>
+    <event value="3221227551" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start. The log file cannot be recovered. To start the Message Queuing service without losing consistency, you must correct or recover corrupted checkpoint and log files. To start the service for emergency use (with a potential loss of data consistency), delete the files QMLog, MQTrans.lg1, MQTrans.lg2, MQInSeqs.lg1, and MQInSeqs.lg2 from the Msmq\Storage folder and add the DWORD registry key HKLM\Software\Microsoft\MSMQ\Parameters\LogDataCreated with a value of 0. Error %1: %2">
+    </event>
+    <event value="3221227555" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start. The message file &apos;%3&apos; and the log file &apos;%4&apos; cannot be reloaded. Error %1: %2">
+    </event>
+    <event value="3221227556" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot start because a queue is in an inconsistent state. For more information, see Microsoft Knowledge Base article 827493 at support.microsoft.com.">
+    </event>
+    <event value="3221227557" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The message file &apos;%1&apos; cannot be created. There is insufficient disk space or memory.">
+    </event>
+    <event value="1073743910" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The message file &apos;%1&apos; was successfully created.">
+    </event>
+    <event value="2147485735" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Client Access License (CAL) limit was reached. This server is unable to serve more clients. This may lead to messaging performance degradation. See the Windows documentation for information on how to increase your client license limit. This event is logged no more than once per %1 seconds.">
+    </event>
+    <event value="3221227567" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Since an MSMQ 1.0 primary site controller owns the queue, you must manually delete the queue from the MSMQ 1.0 site (use MSMQ Explorer running on an applicable the site controller).">
+    </event>
+    <event value="3221227568" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing folder cannot be created.">
+    </event>
+    <event value="3221227569" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing registry values cannot be read (the registry is probably corrupted).">
+    </event>
+    <event value="3221227588" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing was unable to create the msmq (MSMQ Configuration) object in Active Directory Domain Services. Error %1: %2">
+    </event>
+    <event value="3221227589" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing was unable to load Mqupgrd.dll. Error %1: %2">
+    </event>
+    <event value="3221227590" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing was unable to find the address of MqCreateMsmqObj in Mqupgrd.dll. Error %1: %2">
+    </event>
+    <event value="3221227591" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Setup cannot be completed.">
+    </event>
+    <event value="3221227592" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service was unable to obtain the properties of the msmq (MSMQ Configuration) object from Active Directory Domain Services. This may be caused by an Active Directory Domain Services replication delay. Please wait several minutes and then restart the Message Queuing service. Error %1: %2">
+    </event>
+    <event value="3221227594" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="This domain controller is not trusted for delegation. Therefore, the Message Queuing server cannot run. See Help and Support Center for information about how to enable the &quot;This computer is trusted for delegation&quot; property.">
+    </event>
+    <event value="2147485771" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing server cannot determine if the local domain controller is trusted for delegation. This may indicate a serious problem. For more information, see Help and Support Center.">
+    </event>
+    <event value="3221227596" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service failed to join the computer&apos;s domain &apos;%3&apos;. Error %1: %2">
+    </event>
+    <event value="1073743949" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service successfully joined the computer&apos;s domain &apos;%1&apos;.">
+    </event>
+    <event value="1073743950" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing left the domain and is now operating in workgroup mode.">
+    </event>
+    <event value="3221227599" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing objects cannot move automatically between domains (%1). You must either run the MoveTree utility or first uninstall Message Queuing and then reinstall it in the new domain.">
+    </event>
+    <event value="1073743958" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing successfully moved to the %1 domain.">
+    </event>
+    <event value="1073743959" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The computer belongs to the %1 domain. It is recommended that you use the MoveTree utility to move the msmq (MSMQ Configuration) object of this computer from the %2 domain (its previous domain) to the current domain.">
+    </event>
+    <event value="2147485787" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing detected a problem with the local domain controller. Until the problem is resolved, Message Queuing will function unpredictably. Using Event Viewer, inspect the directory service, File Replication Service, and system logs to help identify the problem.">
+    </event>
+    <event value="2147485788" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="This server was unable to resolve the IP addresses of other routing servers. Please check that all computers are registered in DNS.">
+    </event>
+    <event value="3221227613" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The properties of the queue %3 cannot be set. Copying the queue file %4 to the temporary file %5 returned error %1: %2">
+    </event>
+    <event value="3221227614" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The properties of the queue %3 cannot be set. Replacing the queue file %4 with the temporary file %5 returned error %1: %2">
+    </event>
+    <event value="3221227615" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Microsoft Distributed Transaction Coordinator (DTC) failed. The Message Queuing service cannot continue. Please restart the DTC and the Message Queuing service.">
+    </event>
+    <event value="2147485792" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="There is an inconsistency between the actual network addresses and the addresses that are listed on other Message Queuing servers for this computer. If this computer belongs to an MSMQ 1.0 site, you should use MSMQ Explorer on the local primary site controller (PSC) to manually update the addresses listed for this computer.">
+    </event>
+    <event value="3221227617" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The computer object for this computer was not found in Active Directory Domain Services, possibly because of Active Directory Domain Services replication delays.">
+    </event>
+    <event value="3221227619" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The service cannot start due to insufficient disk space or memory.">
+    </event>
+    <event value="3221227620" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The service cannot start due to its failure to connect to its device driver.">
+    </event>
+    <event value="3221227621" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing directory service failed to update the directory service flag in Active Directory Domain Services at the end of the domain controller demotion process.">
+    </event>
+    <event value="3221227622" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing directory service failed to update the directory service flag in Active Directory Domain Services during the domain controller promotion process.">
+    </event>
+    <event value="3221227623" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Obsolete, kept for backward compatibility">
+    </event>
+    <event value="2147485800" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing directory service is not running as a local system. To get the directory service functionality, you need to run as a local system.">
+    </event>
+    <event value="2147485801" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Down-level Client Support cannot start. This service can operate only on a domain controller. The service can be disabled by using Computer Management to change its startup type in the Properties dialog box from Automatic to Manual or Disabled.">
+    </event>
+    <event value="3221227626" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A multicast listener initialization failed. The file &apos;%3&apos; may be corrupted. Error %1: %2">
+    </event>
+    <event value="3221227627" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service stopped monitoring the mapping folder %3. Error %1: %2">
+    </event>
+    <event value="3221227628" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The mapping file %3 was ignored. Its content cannot be read. Error %1: %2">
+    </event>
+    <event value="2147485805" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The mapping of the URL %1 to the queue %2 was ignored. This URL is already mapped to another queue.">
+    </event>
+    <event value="3221227630" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The mapping file %1 was ignored because it was improperly formatted.">
+    </event>
+    <event value="1073743983" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Down-level Client Support started.">
+    </event>
+    <event value="3221227632" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The queue cannot listen/bind to the multicast address %3. Error %1: %2">
+    </event>
+    <event value="2147485809" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The mapping of the URL %1 to the queue %2 is ignored. This queue name is not a valid URL-style queue name.">
+    </event>
+    <event value="2147485810" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Down-level Client Support failed to create the MSMQ Configuration (msmq) object with a given GUID for computer %1. Creating MSMQ Configuration objects with given GUIDs may be required for Message Queuing clients during the setup of Windows NT 4.0 or Windows 9x computers and when a Windows 2000 computer joins a Windows Server 2003 (or later) domain. By default, an Active Directory Domain Services forest does not support adding an object with a supplied GUID. You can solve this problem by upgrading Message Queuing on the client computer to a version that does not require creating an object with a given GUID. There are also alternative solutions.">
+    </event>
+    <event value="1073743987" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service stopped.">
+    </event>
+    <event value="3221227636" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service will not join the %1 domain. An MSMQ Configuration (msmq) object exists in the new domain with an ID differing from the service ID. Please delete the MSMQ Configuration object in the new domain, restart the Message Queuing service, and log on again.">
+    </event>
+    <event value="2147485813" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The sites where the computer resides cannot be resolved. Check that the subnets in your network are configured correctly in Active Directory Domain Services and that each site is configured with the appropriate subnet.">
+    </event>
+    <event value="3221227638" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot join the &apos;%1&apos; Windows NT 4.0 domain. The Active Directory Domain Services Integration subcomponent was therefore removed.">
+    </event>
+    <event value="1073743991" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing is operating in Hardened mode.">
+    </event>
+    <event value="3221227640" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service resource cannot bind to the cluster IP address. This prevents the Message Queuing resource from coming online on this node. One possible reason is that the Message Queuing service running on the physical node was started before the computer became a member of the server cluster. As a result, the Message Queuing service running on the physical node listens on all IP addresses of the computer and prevents the Message Queuing resource from listening on the cluster IP address. To solve this problem, restart the Message Queuing service on the physical node. Error %1: %2">
+    </event>
+    <event value="3221227641" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The local computer is a Message Queuing routing server that formerly belonged to the &apos;%1&apos; domain and is now operating in workgroup mode. Other Message Queuing clients still regard this computer as a routing server and will try to route messages through this computer. To solve this problem, you need to manually delete the Message Queuing objects for this computer in Active Directory Domain Services. Please delete the following two objects: 1) The msmq object under the computer object of this computer in the Computers container in the Active Directory Users and Computers snap-in: &apos;CN=msmq,CN=%2,CN=computers,DC=%1,DC=...&apos; 2) The MSMQ Settings object under the server object for this computer in the Active Directory Sites and Services snap-in: &apos;CN=MSMQ Settings,CN=%2,CN=Servers,CN=&lt;SiteName&gt;,CN=Sites,CN=Configuration,DC=...&apos; You also need to uninstall Routing Support and Down-level Client Support by using Server Role Manager.">
+    </event>
+    <event value="3221227642" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing failed to bind to port 1801. The port may already be bound to another process. Make sure that the port is free and try to start Message Queuing again. If this problem arises during setup, you must free the port and run setup again.">
+    </event>
+    <event value="2147485819" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing cannot bind to UDP port 3527. Message Queuing&apos;s internal ping mechanism uses this port to establish network connections. Another process may be using this port. Message Queuing can continue to operate without using this port, but connection times will not be optimal. To optimize the establishment of connections, free this port and restart Message Queuing.">
+    </event>
+    <event value="1073743996" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MsmqServices object is configured with weakened security to support MSMQ 1.0 clients. With weakened security, the Message Queuing Down-level Client Support service will use its own rights (under the LocalSystem account on a domain controller) to view object properties, but it will not bypass the security restrictions on creating Message Queuing objects and setting their properties.">
+    </event>
+    <event value="1073743997" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MsmqServices object is configured with default security. MSMQ 1.0 clients will not be able to query Active Directory Domain Services in this configuration.">
+    </event>
+    <event value="3221227646" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Down-level Client Support cannot operate in mixed mode. Mixed mode is a transient mode in which Message Queuing deployment is in the middle of migration from MQIS (for MSMQ 1.0) to Active Directory Domain Services. In this mode, some sites are still Windows NT 4.0 sites and are mastered by the PEC and PSCs. Mixed mode might require creating/deleting/updating objects that belong to Windows NT 4.0 sites. These operations are not supported by Message Queuing Down-level Client Support. After completing the migration of all Windows NT 4.0 sites to Active Directory Domain Services (migration of the PEC and all PSCs in Windows NT 4.0 sites), Message Queuing will no longer be in mixed mode.">
+    </event>
+    <event value="2147485823" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing will use an encryption key with an effective length of 40 bits when sending messages encrypted with the RC2 encryption algorithm. To restore strong encryption, remove the registry value HKLM\Software\Microsoft\MSMQ\Parameters\Security\SendEnhRC2With40.">
+    </event>
+    <event value="1073744000" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing found multiple IP addresses for the local computer. Message Queuing will use the default IP address determined by the PGM driver for multicast messages. To use a different IP address, set the \HKLM\Software\Microsoft\MSMQ\Parameters\%1 registry value to one of the following valid IP addresses: %2!S!.">
+    </event>
+    <event value="3221227649" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service rejects incoming messages when it is unable to check whether the sender is allowed access to the queue for sending messages. In this case, the queue affected is %1, but note that an event might not be issued every time this problem occurs.
+ To perform this access check, Message Queuing needs access to the TokenGroupsGlobalAndUniversal attribute of the sender&apos;s user object. Only users with domain administration permissions can add members to the Windows Authorization Access Group, which is allowed access to the TokenGroupsGlobalAndUniversal attribute, in one of two ways:
+ 1) For best security practice, add only the computer accounts that need access to the TokenGroupsGlobalAndUniversal attribute to the Windows Authorization Access Group. The domain administrator will repeat this operation for other Message Queuing computers that require the permission, manually adding the relevant accounts to the Windows Authorization Access Group.
+ 2) As a less secure practice, add the Authenticated Users group to the Windows Authorization Access group. This grants every authenticated user, including the Message Queuing service on any computer, access to the TokenGroupsGlobalAndUniversal attribute for all users, and requires no further manual administration.">
+    </event>
+    <event value="2147485829" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing cannot establish new connections to this computer because connection limit was reached.  There are too many computers attempting to send messages to or receive from this computer. This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2181 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485830" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Storage quota exceeded for MSMQ queue %1. No more messages can be stored in the queue.  You can increase a queue&apos;s storage quota by editing queue properties in Computer Management console. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2182 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485831" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Machine MSMQ storage quota was exceeded or there is insufficient disk space. No more messages can be stored in user queues.  You can increase Message Queuing storage quota or purge unneeded messages by using Computer Management console. This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2183 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485832" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing could not resolve the name &apos;%1&apos; to an IP address. Try to ping the recipient computer, and check this computer&apos;s DNS settings.  This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2184 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485833" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A socket operation failed with error %1. Next hop address is %2!S!. Message Queuing cannot send the message now, but it will retry to send the message. This event is logged at most once per %3 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2185 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485834" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing could not establish connection to %1, because the connection limit for this computer was reached. There too many computers trying to send to or receive messages from this computer. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2186 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485835" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing could not establish connection to %1, because connection was refused by the recipient computer.  It is possible that Client Access Licenses (CALs) are exhausted (if the recipient is a Windows Server), or connection limit has been reached (if the recipient is a Windows workstation). This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2187 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485836" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing could not access Active Directory Domain Services and failed to compute routing path for messages sent to queue %3. Messages will wait in the outgoing queue until connection with Active Directory Domain Services is restored.  This event is logged at most once per %4 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2188 registry value to desired time in seconds. Error %1: %2">
+    </event>
+    <event value="2147485837" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing failed to send a message due to low memory. Message Queuing will retry to send the message. This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2189 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485838" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing could not complete SSL negotiation with the remote computer. It is possible that the server certificate is not properly installed, or that remote computer is not listening on port 443 (SSL). This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2190 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485839" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing could not validate server certificate in HTTPS scenario because the certificate was found in disallowed store. This means the certificate cannot be trusted. This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2191 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485840" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing could not establish SSL connection with the recipient computer because a trust chain from the server certificate to a trusted Certificate Authority certificate could not be established. This event is logged at most once per %3 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2192 registry value to desired time in seconds. Error %1: %2">
+    </event>
+    <event value="2147485841" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing could not establish SSL connection with the recipient computer because the computer name specified in the HTTP queue format name does not match the name of the recipient server certificate. This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2193 registry value to desired time in seconds.">
+    </event>
+    <event value="3221227666" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Message Queuing service cannot communicate with other computers, because the select API for socket failed. Error %1: %2">
+    </event>
+    <event value="2147485843" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing could not authenticate a message sent to queue %1. The message was rejected because the queue only accepts authenticated messages. It is possible that sender did not sign the message, or signed it with a self-signed certificate. A negative arrival acknowledgement will be sent if requested by the sender. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2195 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485844" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing failed to verify digital signature of a message sent to queue %1. The message was rejected. A negative arrival acknowledgement will be sent if requested by the sender. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2196 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485845" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing failed to listen on the IPv6 protocol. Messages will not be accepted on IPv6.  If you want Message Queuing to accept messages on IPv6 protocol, please verify that the IPv6 protocol is installed and operational (Restarting the machine is required). Error %1: %2">
+    </event>
+    <event value="2147485846" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing failed to listen on the IPv4 protocol. Messages will not be accepted on IPv4.  If you want Message Queuing to accept messages on IPv4 protocol, please verify that the IPv4 protocol is installed and operational (Restarting the machine is required). Error %1: %2">
+    </event>
+    <event value="3221227671" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing Service failed to listen on both IPv4 and IPv6 protocol. Messages will not be accepted from the network through TCP/IP protocols.  Messages addressed to this machine using TCP/IP protocols will not arrive but will accumulate in sender&apos;s outgoing queues.   Please fix the TCP/IP protocols issue and restart the computer.">
+    </event>
+    <event value="3221227692" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The IP address %1 specified in the \HKLM\Software\Microsoft\MSMQ\Parameters\%2 registry value is not a valid IP address for this computer. The Message Queuing service will use the IP address %3!S! instead. Please remove this registry value or set it to one of the following valid IP addresses: %4!S!.">
+    </event>
+    <event value="1073744045" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing will use the IP address %1. To use a different IP address, set the \HKLM\Software\Microsoft\MSMQ\Parameters\%2 registry value to one of the following valid IP addresses: %3!S!.">
+    </event>
+    <event value="2147485898" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing will not be able to accept messages temporarily because system paged pool is low. During this period, machine quota will be set to 0. No manual intervention is required at this stage. Once memory utilization has normalized, Message Queuing will automatically resume accepting messages.">
+    </event>
+    <event value="2147485899" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing will not be able to accept messages temporarily because system commit is low. During this period, machine quota will be set to 0. No manual intervention is required at this stage. Once memory utilization has normalized, Message Queuing will automatically resume accepting messages.">
+    </event>
+    <event value="1073744076" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Message Queuing is resuming accepting messages because the system memory usage has normalized.">
+    </event>
+    <event value="2147485901" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The message could not be moved to deadletter queue %3. Check that queue exists and users have permissions to send. The message was moved to the system transactional dead letter queue. This event is logged at most once per %4 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2253 registry value to desired time in seconds. Error %1: %2">
+    </event>
+    <event value="2147485902" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The message could not be moved to deadletter queue %1. The deadletter queue is authenticated and the authenticity of the message could not be verified. The message will be moved to the system transactional dead letter queue. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2254 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485903" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The message could not be moved to deadletter queue %1. Deadletter queues should not require privacy of messages. The message will be moved to the system transactional dead letter queue. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2255 registry value to desired time in seconds.">
+    </event>
+    <event value="2147485904" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The message could not be moved to deadletter queue %1. The deadletter queue needs to be transactional. The message will be moved to the system transactional dead letter queue. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2256 registry value to desired time in seconds.">
+    </event>
+  </events>
+</provider>

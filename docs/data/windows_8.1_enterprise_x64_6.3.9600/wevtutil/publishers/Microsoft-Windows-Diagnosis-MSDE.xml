@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Diagnosis-MSDE" guid="a50b09f8-93eb-4396-84c9-dc921259f952" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=msdt.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\msdt.exe" messageFileName="C:\Windows\System32\msdt.exe" message="Microsoft-Windows-Diagnosis-MSDE" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Diagnosis-MSDE/Debug" id="16" flags="0" message="Microsoft-Windows-Diagnosis-MSDE/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PerfTrack_MSDT_Initialize_Application" value="1000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfTrack_MSDT_Escalation" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="1" channel="16" level="4" task="1000" keywords="0x8001000000000000" message="Begin application initialization.">
+    </event>
+    <event value="1001" version="0" opcode="2" channel="16" level="4" task="1000" keywords="0x8001000000000000" message="End application initialization.">
+    </event>
+    <event value="1002" version="0" opcode="1" channel="16" level="4" task="1002" keywords="0x8001000000000000" message="Begin escalation.">
+    </event>
+    <event value="1003" version="0" opcode="2" channel="16" level="4" task="1002" keywords="0x8001000000000000" message="End escalation.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-Boot" guid="15ca44ff-4d7a-4baa-bba5-0998955e531e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=advapi32.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\advapi32.dll" messageFileName="C:\Windows\system32\advapi32.dll" message="Microsoft-Windows-Kernel-Boot" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-Boot/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="System was booted in %1x%2@%3bpp.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="BootUX screen was displayed in %1x%2@%3bpp.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Video bit transfer rate is %1 bytes per ms.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Boot library accessed file %2 on Device %1. Read %3 bytes and wrote %4 bytes.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="File IO for boot application %1: Total Bytes Read = %2, Total Bytes Written = %3.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Image %1 failed IntegrityCheck reason is %3. Image flags are %2. Error ignored due to debugger %4.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Bootmgr duration is %1 milliseconds.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="Image %1 is not self-signed.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="A device (%1) that was enumerated by the BIOS was inaccessible to the boot environment.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The system firmware has allocated a memory region previously determined to be unreliable. This has the potential to cause system instability and/or data corruption.">
+    </event>
+  </events>
+</provider>

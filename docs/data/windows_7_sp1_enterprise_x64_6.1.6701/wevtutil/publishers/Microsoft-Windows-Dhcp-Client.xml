@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Dhcp-Client" guid="15a7a4f8-0072-4eab-abad-f98a4d666aed" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7601.17514&amp;FileName=dhcpcore.dll&amp;FileVer=6.1.7601.17514" resourceFileName="C:\Windows\system32\dhcpcore.dll" parameterFileName="C:\Windows\System32\kernelbase.dll" messageFileName="C:\Windows\system32\dhcpcore.dll" message="Microsoft-Windows-Dhcp-Client" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Dhcp-Client/Operational" id="16" flags="0" message="Microsoft-Windows-DHCP Client Events/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-Dhcp-Client/Admin" id="17" flags="0" message="Microsoft-Windows-DHCP Client Events/Admin">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="DHCP_OPCODE_MEDIA_CONNECT" value="720896" message="MediaConnect">
+    </opcode>
+    <opcode name="DHCP_OPCODE_MEDIA_DISCONNECT" value="786432" message="MediaDisconnect">
+    </opcode>
+    <opcode name="DHCP_OPCODE_MEDIA_RECONNECT" value="851968" message="MediaReconnect">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_MEDIA_CONNECT" value="917504" message="PerfTrackMediaConnect">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_MEDIA_CONNECT_END" value="983040" message="PerfTrackMediaConnectEnd">
+    </opcode>
+    <opcode name="DHCP_OPCODE_INIT_REQUEST_ACK" value="1048576" message="InitRequestAck">
+    </opcode>
+    <opcode name="DHCP_OPCODE_INIT_DORA" value="1114112" message="InitDORA">
+    </opcode>
+    <opcode name="DHCP_OPCODE_DISCOVER_SENT" value="1179648" message="DiscoverSent">
+    </opcode>
+    <opcode name="DHCP_OPCODE_OFFER_RECEIVED" value="1245184" message="OfferReceived">
+    </opcode>
+    <opcode name="DHCP_OPCODE_OFFER_DISCARDED" value="1310720" message="OfferDiscarded">
+    </opcode>
+    <opcode name="DHCP_OPCODE_REQUEST_SENT" value="1376256" message="RequestSent">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ACK_RECEIVED" value="1441792" message="AckReceived">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ACK_DISCARDED" value="1507328" message="AckDiscarded">
+    </opcode>
+    <opcode name="DHCP_OPCODE_NACK_RECEIVED" value="1572864" message="NackReceived">
+    </opcode>
+    <opcode name="DHCP_OPCODE_UNKNOWN_MESSAGE_DISCARDED" value="1638400" message="UnknownMessageDiscarded">
+    </opcode>
+    <opcode name="DHCP_OPCODE_DECLINE_SENT" value="1703936" message="DeclineSent">
+    </opcode>
+    <opcode name="DHCP_OPCODE_INFORM_SENT" value="1769472" message="InformSent">
+    </opcode>
+    <opcode name="DHCP_OPCODE_RELEASE_SENT" value="1835008" message="ReleaseSent">
+    </opcode>
+    <opcode name="DHCP_OPCODE_BROADCASTBIT_TOGGLED" value="1900544" message="BroadcastbitToggled">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ERROR_EXTRACTING_OPTIONS" value="1966080" message="ErrorExtractingOptions">
+    </opcode>
+    <opcode name="DHCP_OPCODE_OFFER_RECIEVE_TIMEOUT" value="2031616" message="OfferReceiveTimeout">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ACK_RECEIVE_TIMEOUT" value="2097152" message="AckReceiveTimeout">
+    </opcode>
+    <opcode name="DHCP_OPCODE_CANCEL_RENEWAL" value="2162688" message="CancelRenewal">
+    </opcode>
+    <opcode name="DHCP_OPCODE_INFORM_ACK_RECEIVED" value="2228224" message="InformAckReceived">
+    </opcode>
+    <opcode name="DHCP_OPCODE_DHCP_ENABLED" value="2293760" message="DhcpEnabled">
+    </opcode>
+    <opcode name="DHCP_OPCODE_DHCP_DISABLED" value="2359296" message="DhcpDisabled">
+    </opcode>
+    <opcode name="DHCP_OPCODE_STATIC_TO_DHCP" value="2424832" message="StaticToDhcp">
+    </opcode>
+    <opcode name="DHCP_OPCODE_FALLBACK_CONFIG_SET" value="2490368" message="FallbackConfigSet">
+    </opcode>
+    <opcode name="DHCP_OPCODE_GATEWAY_REACHABLE" value="2555904" message="GatewayReachable">
+    </opcode>
+    <opcode name="DHCP_OPCODE_GATEWAY_UNREACHABLE" value="2621440" message="GatewayUnreachable">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ADDRESS_PLUMBED" value="2686976" message="AddressPlumbed">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ADDRESS_UNPLUMBED" value="2752512" message="AddressUnplumbed">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PLUMBING_ERROR" value="2818048" message="PlumbingError">
+    </opcode>
+    <opcode name="DHCP_OPCODE_IP_CONFLICT" value="2883584" message="IPConflict">
+    </opcode>
+    <opcode name="DHCP_OPCODE_LEASE_EXPIRED" value="2949120" message="LeaseExpired">
+    </opcode>
+    <opcode name="DHCP_OPCODE_INTERFACE_ADDED" value="3014656" message="InterfaceAdded">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ERROR_INITIALIZE_INTERFACE" value="3080192" message="ErrorInitializeInterface">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ROUTE_UPDATED" value="3145728" message="RouteUpdated">
+    </opcode>
+    <opcode name="DHCP_OPCODE_SUCCESSFUL_LEASE" value="3211264" message="SuccessfulLease">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ROUTE_ADDED" value="3276800" message="RouteAdded">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ROUTE_DELETED" value="3342336" message="RouteDeleted">
+    </opcode>
+    <opcode name="DHCP_OPCODE_START_GATEWAY_REACHABILITY_TEST" value="3407872" message="StartGatewayReachabilityTest">
+    </opcode>
+    <opcode name="DHCP_OPCODE_NLA_NOTIFIED" value="3473408" message="NLANotified">
+    </opcode>
+    <opcode name="DHCP_OPCODE_CACHE_SCAVENGER_RUN" value="3538944" message="CacheScavengerRun">
+    </opcode>
+    <opcode name="DHCP_OPCODE_NETWORK_HINT_MATCH_FOUND" value="3604480" message="NetworkHintMatchFound">
+    </opcode>
+    <opcode name="DHCP_OPCODE_MATCHED_ADDRESS_PLUMBED" value="3670016" message="MatchedAddressPlumbed">
+    </opcode>
+    <opcode name="DHCP_OPCODE_NETWORK_HINT_RECIEVED" value="3735552" message="NetworkHintReceived">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_ACK_CONFIRM" value="3801088" message="PerfTrackAckConfirm">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_ACK_DORA" value="3866624" message="PerfTrackAckDORA">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_GATEWAY_REACHABLE" value="3932160" message="PerfTrackGatewayReachable">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_STATIC" value="3997696" message="PerfTrackStatic">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_FALLBACK_ADDRESS_SET" value="4063232" message="PerfTrackFallbackAddressSet">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_TOGGLE_REQUEST_ACK" value="4128768" message="PerfTrackToggleRequestAck">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_TOGGLE_DORA_ACK" value="4194304" message="PerfTrackToggleDORAAck">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_TOGGLE_INIT_DORA" value="4259840" message="PerfTrackToggleInitDORA">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ERROR_OPENING_SOCKET" value="4325376" message="ErrorOpeningSocket">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ERROR_CLOSING_SOCKET" value="4390912" message="ErrorClosingSocket">
+    </opcode>
+    <opcode name="DHCP_OPCODE_SERVICE_START" value="4456448" message="ServiceStart">
+    </opcode>
+    <opcode name="DHCP_OPCODE_SERVICE_STOP" value="4521984" message="ServiceStop">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ERROR_INIT_SERVICE" value="4587520" message="ErrorInitService">
+    </opcode>
+    <opcode name="DHCP_OPCODE_DOMAIN_CHANGE_NOTIFICATION" value="4653056" message="DomainChangeNotification">
+    </opcode>
+    <opcode name="DHCP_OPCODE_DNS_REGISTRATION_DONE" value="4718592" message="DnsRegistrationDone">
+    </opcode>
+    <opcode name="DHCP_OPCODE_DNS_DEREGISTRATION_DONE" value="4784128" message="DnsDeregistrationDone">
+    </opcode>
+    <opcode name="DHCP_OPCODE_LOST_IP_ADDRESS" value="4849664" message="LostIpAddress">
+    </opcode>
+    <opcode name="DHCP_OPCODE_IP_ADDRESS_NOT_ASSIGNED" value="4915200" message="IpAddressNotAssigned">
+    </opcode>
+    <opcode name="DHCP_OPCODE_IP_LEASE_DENIED" value="4980736" message="IpLeaseDenied">
+    </opcode>
+    <opcode name="DHCP_OPCODE_IP_LEASE_RENEWAL_FAILED" value="5046272" message="IpLeaseRenewalFailed">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ERROR_SERVICE_STOP" value="5111808" message="ErrorServiceStop">
+    </opcode>
+    <opcode name="DHCP_OPCODE_AUTOCONFIGURATION_FAILED" value="5177344" message="AutoconfigurationFailed">
+    </opcode>
+    <opcode name="DHCP_OPCODE_AUTOCONFIGURATION_SUCCESS" value="5242880" message="AutoconfigurationSuccess">
+    </opcode>
+    <opcode name="DHCP_OPCODE_INIT_NETWORK_INTERFACE_FAILED" value="5308416" message="InitNetworkInterfaceFailed">
+    </opcode>
+    <opcode name="DHCP_OPCODE_DHCPV6_INIT_FAILED" value="5373952" message="Dhcpv6InitFailed">
+    </opcode>
+    <opcode name="DHCP_OPCODE_NETWORK_ERROR" value="5439488" message="NetworkError">
+    </opcode>
+    <opcode name="DHCP_OPCODE_RECEIVED_OFFER_FOR_DIAGNOSTICS" value="5505024" message="OfferReceivedForDiagnostics">
+    </opcode>
+    <opcode name="DHCP_OPCODE_ADDRESS_ALREADY_EXISTS" value="5570560" message="AddressAlreadyExists">
+    </opcode>
+    <opcode name="DHCP_OPCODE_PERFTRACK_MEDIA_RECONNECT" value="5636096" message="PerfTrackMediaReconnect">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DHCP_TASK_MEDIA_STATE" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Media State Event">
+    </task>
+    <task name="DHCP_TASK_PROTOCOL_STATE" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Protocol State Event">
+    </task>
+    <task name="DHCP_TASK_ADDRESS_CONFIGURATION_STATE" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Address Configuration State Event">
+    </task>
+    <task name="DHCP_TASK_SERVICE_STATE" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Service State Event">
+    </task>
+    <task name="DHCP_TASK_WINSOCK_STATE" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Winsock State Event">
+    </task>
+    <task name="DHCP_TASK_DNS_STATE" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="DNS State Event">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="74" channel="17" level="3" task="3" keywords="0x4000000000000000" message="Your computer has lost the lease to its IP address %1 on the Network Card with network address %3.">
+    </event>
+    <event value="1001" version="0" opcode="75" channel="17" level="2" task="3" keywords="0x4000000000000000" message="Your computer was not assigned an address from the network (by the DHCP Server) for the Network Card with network address %2.  The following error occurred: %3. Your computer will continue to try and obtain an address on its own from the network address (DHCP) server.">
+    </event>
+    <event value="1002" version="0" opcode="76" channel="17" level="2" task="3" keywords="0x4000000000000000" message="The IP address lease %1 for the Network Card with network address %3 has been denied by the DHCP server %4 (The DHCP Server sent a DHCPNACK message).">
+    </event>
+    <event value="1003" version="0" opcode="77" channel="17" level="3" task="3" keywords="0x4000000000000000" message="Your computer was not able to renew its address from the network (from the DHCP Server) for the Network Card with network address %2.  The following error occurred: %3. Your computer will continue to try and obtain an address on its own from the network address (DHCP) server.">
+    </event>
+    <event value="1004" version="0" opcode="78" channel="8" level="2" task="4" keywords="0x2000000000000000" message="Error occurred in stopping the Dhcpv4 Client service. Error code is %1. ShutDown Flag value is %2">
+    </event>
+    <event value="1005" version="0" opcode="44" channel="17" level="3" task="3" keywords="0x4000000000000000" message="Your computer has detected that the IP address %1 for the Network Card with network address %3 is already in use on the network. Your computer will automatically attempt to obtain a different address.">
+    </event>
+    <event value="1006" version="0" opcode="79" channel="17" level="3" task="3" keywords="0x4000000000000000" message="Your computer was unable to automatically configure the IP parameters for the Network Card with the network address %2.  The following error occurred during configuration: %3.">
+    </event>
+    <event value="1007" version="0" opcode="80" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Your computer has automatically configured the IP address for the Network Card with network address %2.  The IP address being used is %3.">
+    </event>
+    <event value="1008" version="0" opcode="81" channel="17" level="2" task="3" keywords="0x4000000000000000" message="Your computer was unable to initialize a Network Interface attached to the system. The error code is: %1.">
+    </event>
+    <event value="1018" version="0" opcode="82" channel="8" level="2" task="3" keywords="0x2000000000000000" message="Dhcpv6 Initialization has failed on the computer with the error code %1. Dhcp service will start with IPv4 only.">
+    </event>
+    <event value="50001" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Media Connect notification received with Interface Id %1">
+    </event>
+    <event value="50002" version="0" opcode="12" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Media Disconnect notification received with Interface Id %1">
+    </event>
+    <event value="50003" version="0" opcode="13" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Media Reconnect notification received with Interface Id %1">
+    </event>
+    <event value="50004" version="0" opcode="35" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Dhcp is enabled on the adapter with Interface Id %1">
+    </event>
+    <event value="50005" version="0" opcode="36" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Dhcp is disabled on the adapter with Interface Id %1">
+    </event>
+    <event value="50006" version="0" opcode="16" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Request-Ack is initiated on the adapter with Interface Id %1">
+    </event>
+    <event value="50007" version="0" opcode="17" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Discover-Offer-Request-Ack is initiated on the adapter with Interface Id %1">
+    </event>
+    <event value="50008" version="0" opcode="37" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Interface is converted from static to dhcp on the adapter with Interface Id %1">
+    </event>
+    <event value="50009" version="0" opcode="18" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Discover is sent from the adapter %1.Status code is %2">
+    </event>
+    <event value="50010" version="0" opcode="19" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Offer is accepted in the adapter %1.Offered Address is %2.Server address is %3">
+    </event>
+    <event value="50011" version="0" opcode="20" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Offer is discarded in the adapter %1. Error code is %2">
+    </event>
+    <event value="50012" version="0" opcode="21" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Request is sent from the adapter %1. Status code is %2">
+    </event>
+    <event value="50013" version="0" opcode="22" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Ack is accepted in the adapter %1. Received Address is %2.Server address is %3">
+    </event>
+    <event value="50014" version="0" opcode="23" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Ack is discarded in the adapter %1. Error code is %2">
+    </event>
+    <event value="50015" version="0" opcode="24" channel="17" level="2" task="2" keywords="0x4000000000000000" message="Nack is received in the adapter %1">
+    </event>
+    <event value="50016" version="0" opcode="25" channel="16" level="3" task="2" keywords="0x8000000000000000" message="Unknown message is discarded in the adapter %1.">
+    </event>
+    <event value="50017" version="0" opcode="26" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Decline is sent in the adapter %1. Status code is %2">
+    </event>
+    <event value="50018" version="0" opcode="27" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Inform is sent in the adapter %1. Status code is %2">
+    </event>
+    <event value="50019" version="0" opcode="28" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Release is sent in the adapter %1. Status code is %2">
+    </event>
+    <event value="50020" version="0" opcode="29" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Broadcast bit is toggled in the adapter %1. Broadcast bit after toggling is %2">
+    </event>
+    <event value="50021" version="0" opcode="30" channel="16" level="2" task="2" keywords="0x8000000000000000" message="Error occurred in extracting the options in the adapter %1. Status code is %2">
+    </event>
+    <event value="50022" version="0" opcode="38" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Setting up Fallback configuration in the adapter %1. Status code is %2">
+    </event>
+    <event value="50023" version="0" opcode="31" channel="16" level="3" task="2" keywords="0x8000000000000000" message="Offer Receive Timeout has happened in the Interface Id %1">
+    </event>
+    <event value="50024" version="0" opcode="32" channel="16" level="3" task="2" keywords="0x8000000000000000" message="Ack Receive Timeout has happened in the Interface Id %1">
+    </event>
+    <event value="50025" version="0" opcode="33" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Cancelling pending renewals on the adapter in the Interface Id %1">
+    </event>
+    <event value="50028" version="0" opcode="41" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Address %1 is plumbed to the adapter %2. Status code is %3">
+    </event>
+    <event value="50029" version="0" opcode="42" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Address %1 is unplumbed from  the adapter %2. Status code is %3">
+    </event>
+    <event value="50030" version="0" opcode="43" channel="16" level="2" task="3" keywords="0x8000000000000000" message="Plumbing error has occurred in the adapter %1. Status Code is %2">
+    </event>
+    <event value="50032" version="0" opcode="45" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Lease is expired in the adapter %1. Expired address is %2">
+    </event>
+    <event value="50033" version="0" opcode="46" channel="16" level="4" task="1" keywords="0x8000000000000000" message="An interface is added whose interface index is %1 and Status Code is %2.">
+    </event>
+    <event value="50034" version="0" opcode="47" channel="17" level="2" task="3" keywords="0x4000000000000000" message="An error has occurred in initializing the adapter %1. Error Code is %2">
+    </event>
+    <event value="50035" version="0" opcode="48" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Routes are updated in the adapter %1. Status Code is %2">
+    </event>
+    <event value="50036" version="0" opcode="68" channel="8" level="4" task="4" keywords="0x2000000000000000" message="DHCPv4 client service is started">
+    </event>
+    <event value="50037" version="0" opcode="69" channel="8" level="4" task="4" keywords="0x2000000000000000" message="DHCPv4 client service is stopped. ShutDown Flag value is %1">
+    </event>
+    <event value="50038" version="0" opcode="70" channel="8" level="2" task="4" keywords="0x2000000000000000" message="An error occurred in initializing DHCPv4. Error Code is %1">
+    </event>
+    <event value="50039" version="0" opcode="66" channel="16" level="2" task="5" keywords="0x8000000000000000" message="An error has occurred in opening the socket in the adapter %1. Error Code is %2">
+    </event>
+    <event value="50040" version="0" opcode="67" channel="16" level="2" task="5" keywords="0x8000000000000000" message="An error has occurred in closing the socket in the adapter %1. Error Code is %2">
+    </event>
+    <event value="50041" version="0" opcode="71" channel="17" level="4" task="6" keywords="0x4000000000000000" message="Domain change notification is received from DNS">
+    </event>
+    <event value="50042" version="0" opcode="72" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Dns registration has happened for the adapter %1. Status Code is %2. DNS Flag settings is %3.">
+    </event>
+    <event value="50043" version="0" opcode="73" channel="16" level="4" task="6" keywords="0x8000000000000000" message="Dns Deregistration has happened for the adapter %1. Status Code is %2">
+    </event>
+    <event value="50044" version="0" opcode="34" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Inform ack is received in the adapter %1.">
+    </event>
+    <event value="50053" version="0" opcode="83" channel="16" level="2" task="2" keywords="0x8000000000000000" message="A network error occurred when trying to send a message. The error code is: %1.">
+    </event>
+    <event value="50055" version="0" opcode="39" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Gateway is reachable in the adapter %1">
+    </event>
+    <event value="50056" version="0" opcode="40" channel="16" level="2" task="3" keywords="0x8000000000000000" message="Gateway is not reachable in the adapter %1">
+    </event>
+    <event value="50058" version="0" opcode="49" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Your computer was successfully assigned an address from the network, and it can now connect to other computers.">
+    </event>
+    <event value="50059" version="0" opcode="50" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Route is added with the values Dest = %1, DestMask = %2, NextHop = %3, Address = %4">
+    </event>
+    <event value="50060" version="0" opcode="51" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Route is deleted with the values Dest = %1, DestMask = %2, NextHop = %3, Address = %4">
+    </event>
+    <event value="50061" version="0" opcode="84" channel="16" level="4" task="2" keywords="0x8000000000000000" message="An offer is received for the dummy discovers that are sent for Diagnostics in the adapter %1.">
+    </event>
+    <event value="50062" version="0" opcode="52" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Checking reachability of gateway %1 on the the interface %2">
+    </event>
+    <event value="50063" version="0" opcode="53" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Dhcp has notified NLA for the configuration changes for the interface %1">
+    </event>
+    <event value="50064" version="0" opcode="54" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Dhcp has run the cache scavenger for the Network Card with the network address %2">
+    </event>
+    <event value="50065" version="0" opcode="55" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Dhcp has found match in cache for network hint %1 for the Network Card with the network address %3">
+    </event>
+    <event value="50066" version="0" opcode="56" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Dhcp has plumbed address using network hint %1 for the Network Card with the network address %3">
+    </event>
+    <event value="50067" version="0" opcode="57" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Dhcp has received network hint %1 for the Network Card with the network address %3">
+    </event>
+    <event value="50068" version="0" opcode="85" channel="17" level="2" task="3" keywords="0x4000000000000000" message="Address %1 being plumbed for adapter %2 already exists">
+    </event>
+    <event value="60000" version="0" opcode="58" channel="16" level="4" task="2" keywords="0x8001000000000000" message="PERFTRACK (Request-Ack): Address confirmed for the adapter %2.Confirmed Address is %3.Server address is %4">
+    </event>
+    <event value="60001" version="0" opcode="59" channel="16" level="4" task="2" keywords="0x8001000000000000" message="PERFTRACK (DORA): Offer is accepted in the adapter %2.Offered Address is %3.Server address is %4">
+    </event>
+    <event value="60002" version="0" opcode="60" channel="16" level="4" task="3" keywords="0x8001000000000000" message="PERFTRACK: Gateway is reachable in the adapter %2">
+    </event>
+    <event value="60003" version="0" opcode="61" channel="16" level="4" task="3" keywords="0x8001000000000000" message="PERFTRACK: DHCP not enabled in the adapter %2">
+    </event>
+    <event value="60004" version="0" opcode="62" channel="16" level="4" task="3" keywords="0x8001000000000000" message="PERFTRACK: Setting up Fallback configuration in the adapter %2. Status code is %3">
+    </event>
+    <event value="60005" version="0" opcode="63" channel="16" level="4" task="2" keywords="0x8001000000000000" message="PERFTRACK (Request-Ack): Address confirmed for the adapter %2 after toggling the broadcast bit in INIT-REBOOT. Confirmed address is %3. Server address is %4">
+    </event>
+    <event value="60006" version="0" opcode="64" channel="16" level="4" task="3" keywords="0x8001000000000000" message="PERFTRACK (Request-Nack-Dora): Offer is accepted in the adapter %2 after toggling the broadcast bit in INIT-REBOOT. Offered Address is %3. Server address is %4">
+    </event>
+    <event value="60007" version="0" opcode="65" channel="16" level="4" task="3" keywords="0x8001000000000000" message="PERFTRACK (Init-Dora): Offer is accepted in the adapter %2 after toggling the broadcast bit in INIT. Offered Address is %3. Server address is %4">
+    </event>
+    <event value="60010" version="0" opcode="58" channel="16" level="4" task="2" keywords="0x8001000000000000" message="PERFTRACK (Request-Ack): Address confirmed for the adapter %2.Confirmed Address is %3.Server address is %4">
+    </event>
+    <event value="60011" version="0" opcode="59" channel="16" level="4" task="2" keywords="0x8001000000000000" message="PERFTRACK (DORA): Offer is accepted in the adapter %2.Offered Address is %3.Server address is %4">
+    </event>
+    <event value="60012" version="0" opcode="60" channel="16" level="4" task="3" keywords="0x8001000000000000" message="PERFTRACK: Gateway is reachable in the adapter %2">
+    </event>
+    <event value="60013" version="0" opcode="61" channel="16" level="4" task="3" keywords="0x8001000000000000" message="PERFTRACK: DHCP not enabled in the adapter %2">
+    </event>
+    <event value="60014" version="0" opcode="62" channel="16" level="4" task="3" keywords="0x8001000000000000" message="PERFTRACK: Setting up Fallback configuration in the adapter %2. Status code is %3">
+    </event>
+    <event value="60015" version="0" opcode="63" channel="16" level="4" task="2" keywords="0x8001000000000000" message="PERFTRACK (Request-Ack): Address confirmed for the adapter %2 after toggling the broadcast bit in INIT-REBOOT. Confirmed address is %3. Server address is %4">
+    </event>
+    <event value="60016" version="0" opcode="64" channel="16" level="4" task="3" keywords="0x8001000000000000" message="PERFTRACK (Request-Nack-Dora): Offer is accepted in the adapter %2 after toggling the broadcast bit in INIT-REBOOT. Offered Address is %3. Server address is %4">
+    </event>
+    <event value="60017" version="0" opcode="65" channel="16" level="4" task="3" keywords="0x8001000000000000" message="PERFTRACK (Init-Dora): Offer is accepted in the adapter %2 after toggling the broadcast bit in INIT. Offered Address is %3. Server address is %4">
+    </event>
+    <event value="60018" version="0" opcode="14" channel="16" level="4" task="1" keywords="0x8001000000000000" message="PERFTRACK (DHCPv4): Media Connect on adapter %2">
+    </event>
+    <event value="60019" version="0" opcode="15" channel="16" level="4" task="1" keywords="0x8001000000000000" message="PERFTRACK (DHCPv4): End of Media Connect on adapter %2">
+    </event>
+    <event value="60020" version="0" opcode="86" channel="16" level="4" task="1" keywords="0x8001000000000000" message="PERFTRACK (Media Reconnect): Media reconnect notification was received on adapter %2">
+    </event>
+  </events>
+</provider>

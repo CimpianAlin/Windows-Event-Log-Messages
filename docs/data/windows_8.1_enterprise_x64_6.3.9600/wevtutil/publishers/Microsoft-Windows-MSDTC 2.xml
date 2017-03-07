@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MSDTC 2" guid="5d9e0020-3761-4f36-90c8-38ce6511bd12" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=msdtcVSp1res.dll&amp;FileVer=2001.12.10530.16384" resourceFileName="C:\Windows\system32\msdtcVSp1res.dll" messageFileName="C:\Windows\system32\msdtcVSp1res.dll" message="Microsoft-Windows-MSDTC 2" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="ID_CAT_DTC_UTIL" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="DTC Shared Utility">
+    </task>
+    <task name="ID_CAT_TM" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="TM">
+    </task>
+    <task name="ID_CAT_CM" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="CM">
+    </task>
+    <task name="ID_CAT_DTC_CLUSTER" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="Cluster">
+    </task>
+    <task name="ID_CAT_XATM" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="XATM">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1073745921" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed to clean up the default DTC cluster resource setting. The default DTC cluster resource setting might be invalid. The error code returned: %1">
+    </event>
+    <event value="1073745922" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Contact = %1 was deleted successfully. Attempt to copy the new contact = %2 over it failed. The DTC configuration may be corrupted. The operation that failed must be retried. The error code returned: %3">
+    </event>
+    <event value="1073745923" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed to create DTC cluster resource. DTC cluster resource GUID specified = %1. The error code returned: %2">
+    </event>
+    <event value="1073745924" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Attempt to find the drive letter or Volume Guid corresponding to the cluster DTC&apos;s dependent disk resource has failed. If the dependent disk resource does not support Volume Guid information, please configure at least one dependent disk partition with a drive letter. The error code returned: %1">
+    </event>
+    <event value="1073745925" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Attempting to change the DTC cluster resource&apos;s log file path to %1 has failed. Please verify if log path is configured to a valid dependent disk partition. The error code returned: %2">
+    </event>
+    <event value="1073745926" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Application specified a cluster resource ID: %1, but no DTC cluster resource could be returned. Instead, the local DTC instance was returned">
+    </event>
+    <event value="1073745927" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Service: %1 is still running. Attempt to cleanup the service has failed">
+    </event>
+    <event value="1073745928" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Failed trying to get the state of the cluster node: %1.The error code returned: %2">
+    </event>
+    <event value="1073746026" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="MSDTC started with the following settings: Security Configuration (OFF = 0 and ON = 1): Allow Remote Administrator = %1, Network Clients = %2, Transaction Manager Communication:  Allow Inbound Transactions = %3, Allow Outbound Transactions = %4, Transaction Internet Protocol (TIP) = %5,  Enable XA Transactions = %6,  Enable SNA LU 6.2 Transactions = %12,  MSDTC Communications Security = %8, Account = %9,  Firewall Exclusion Detected = %10 Transaction Bridge Installed = %11 Filtering Duplicate Events = %7">
+    </event>
+    <event value="2147488520" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A caller has attempted to register an XA resource while XA transactions are disabled. Please review the MSDTC configuration settings.">
+    </event>
+    <event value="2147488523" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A caller has attempted to import a transaction from a remote system, but MSDTC is currently configured to disallow inbound transaction manager communication on machine &apos;%1&apos;. Please review the MS DTC configuration settings.">
+    </event>
+    <event value="2147488524" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A caller has attempted to export a transaction to a remote system, but MSDTC is currently configured to disallow outbound transaction manager communication on machine &apos;%1&apos;. Please review the MS DTC configuration settings.">
+    </event>
+    <event value="2147488526" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="MSDTC encountered an error (HR=0x%1) while attempting to authenticate an incoming connection from system &apos;%2&apos;. The principal name is %3.">
+    </event>
+    <event value="2147488527" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="MSDTC encountered an error (HR=0x%1) while attempting to establish a secure connection with system %2.">
+    </event>
+    <event value="2147488528" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="MS DTC encountered an error while attempting to process a message from a connection with system &apos;%1&apos;. The incoming message should be from another MSDTC, but has not been authenticated as such. The principal name is &apos;%2&apos;.">
+    </event>
+    <event value="2147536971" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_rollback function for XA resource manager &apos;%1&apos;. This call failed with an unexpected return code (%2): File=%3 Line=%4.">
+    </event>
+    <event value="2147536972" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_commit function for XA resource manager &apos;%1&apos;. This call failed with an unexpected return code (%2): File=%3 Line=%4.">
+    </event>
+    <event value="2147536973" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_open function for XA resource manager &apos;%1&apos;. This call failed with an unexpected return code (%2): File=%3 Line=%4.">
+    </event>
+    <event value="2147536975" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the &apos;GetXaSwitch&apos; function in the XA resource manager DLL &apos;%1&apos;. The call to the &apos;GetXaSwitch&apos; function failed with error %2: File=%3 Line=%4.">
+    </event>
+    <event value="2147536976" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager attempted to perform recovery with the XA resource manager DLL &apos;%1&apos;. The XA resource manager reported that recovery was unsuccessful (XA return code=%2).">
+    </event>
+    <event value="2147536977" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_open function in the XA resource manager DLL &apos;%1&apos;. This call failed with a user exception: File=%2 Line=%3.">
+    </event>
+    <event value="2147536978" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_close function in the XA resource manager DLL &apos;%1&apos;. This call failed with a user exception: File=%2 Line=%3.">
+    </event>
+    <event value="2147536979" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_recover function in the XA resource manager DLL &apos;%1&apos;. This call failed with a user exception: File=%2 Line=%3.">
+    </event>
+    <event value="2147536980" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_commit function in the XA resource manager DLL &apos;%1&apos;. This call failed with a user exception: File=%2 Line=%3.">
+    </event>
+    <event value="2147536981" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_rollback function in the XA resource manager DLL &apos;%1&apos;. This call failed with a user exception: File=%2 Line=%3.">
+    </event>
+    <event value="2147536982" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_prepare function in the XA resource manager DLL &apos;%1&apos;. This call failed with a user exception: File=%2 Line=%3.">
+    </event>
+    <event value="2147536983" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the GetXaSwitch function in the XA resource manager DLL &apos;%1&apos;. This call failed with a user exception: File=%2 Line=%3.">
+    </event>
+    <event value="2147536984" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_prepare function for XA resource manager &apos;%1&apos;. This call failed with an unexpected return code (%2): File=%3 Line=%4.">
+    </event>
+    <event value="2147536985" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager called the xa_commit function with the TMONEPHASE flag set for the XA resource manager &apos;%1&apos;. The call to the xa_commit function failed with an unexpected return code (%2): File=%3 Line=%4.">
+    </event>
+    <event value="2147536986" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MSDTC XA Transaction Manager attempted to locate the &apos;GetXaSwitch&apos; function in the XA resource manager DLL. The &apos;GetXaSwitch&apos; function is missing from the XA resource manager DLL %1 : Error=%2 File=%3 Line=%4.">
+    </event>
+    <event value="2147536987" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The MS DTC XA Transaction Manager called the xa_close function for XA resource manager &apos;%1&apos;. This call failed with an unexpected return code (%2): File=%3 Line=%4.">
+    </event>
+  </events>
+</provider>

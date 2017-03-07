@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-CDROM" guid="9b6123dc-9af6-4430-80d7-7d36f054fb9f" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\cdrom.sys" messageFileName="C:\Windows\system32\drivers\cdrom.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-CDROM/Operational" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CDROM_DRIVER" value="1" eventGUID="9125eb0f-b65b-44ad-b490-ed2e42b0b506" message="">
+    </task>
+    <task name="ZeroPowerODDSetPower" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Setting device power for Zero Power ODD.">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="0" level="4" task="1" keywords="0x1000000000000" message="">
+    </event>
+    <event value="103" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Zero Power ODD power on start.">
+    </event>
+    <event value="104" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Zero Power ODD power on stop.">
+    </event>
+  </events>
+</provider>

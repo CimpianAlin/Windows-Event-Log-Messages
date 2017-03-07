@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Runtime-Networking-BackgroundTransfer" guid="b9d5b35d-bbb8-4625-9450-f71a5d414f4f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=Windows.Networking.BackgroundTransfer.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\Windows.Networking.BackgroundTransfer.dll" messageFileName="C:\Windows\system32\Windows.Networking.BackgroundTransfer.dll" message="Microsoft-Windows-Runtime-Networking-BackgroundTransfer" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Runtime-Networking-BackgroundTransfer/Tracing" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tasks.BackgroundTransfer" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Background Transfer">
+    </task>
+    <task name="tasks.BackgroundTransferOperation" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Background Transfer Operation">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="keywords.KW_ALL" mask="1" message="KW_ALL">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation %1: Start %2: %3 %4 (%5), Group: &apos;%6&apos;">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation %1: Continue %2: %3 %4 (%5), Group: &apos;%6&apos;">
+    </event>
+    <event value="3" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation %1: Complete %2: %3">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Operation %1: Error %3 [%2]">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000001" message="General error: %2 [%1]">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation %1: %2">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="%1">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Operation %2: Task instance %1: Error %4 [%3]">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation %2: Task instance %1: %3">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Request for unconstrained transfers for process %1 completed: %2 [%3]">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Request for unconstrained transfers for process %1 was canceled">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000001" message="Request for unconstrained transfers for process %1 failed: %2">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation %1: Cost policy changed to &apos;%2&apos;">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation %1: Priority changed to &apos;%2&apos;">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Current network cost: Internet available: %1, Type: %2, Roaming: %3, Over data limit: %4, Data limit [MB]: %5, Used [MB]: %6">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation %1: Core transfer: operation is resuming: %2">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000001" message="Group &apos;%1&apos;: Error %3 [%2]">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Group &apos;%1&apos;: Transfer behavior changed to %2">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Notification %1: %2">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000001" message="Notification %1: Error %3 [%2]">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation %1: Associated with notification %2">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000001" message="Notification %1: %2, Type: %3, Notification information available: %4">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Operation %1: Current response transfer stats: Elapsed Time [sec]: %2, Remaining [bytes]: %3, Transfer Speed [bytes/sec]: %4, ETA [sec]: %5">
+    </event>
+  </events>
+</provider>

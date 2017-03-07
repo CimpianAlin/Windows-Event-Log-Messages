@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-LanguagePackSetup" guid="7237fff9-a08a-4804-9c79-4a8704b70b87" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=lpksetup.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\lpksetup.exe" messageFileName="C:\Windows\system32\lpksetup.exe" message="Microsoft-Windows-LanguagePackSetup" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-LanguagePackSetup/Operational" id="16" flags="0" message="Microsoft-Windows-LanguagePackSetup/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-LanguagePackSetup/Analytic" id="17" flags="0" message="Microsoft-Windows-LanguagePackSetup/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-LanguagePackSetup/Debug" id="18" flags="0" message="Microsoft-Windows-LanguagePackSetup/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Initialize" value="2031616" message="Language Pack Setup initialization operation">
+    </opcode>
+    <opcode name="Operation" value="2162688" message="Language Pack Setup standard operation">
+    </opcode>
+    <opcode name="ValidateParameters" value="2293760" message="Validate unattended parameters">
+    </opcode>
+    <opcode name="ValidateUserPermission" value="2359296" message="Validate user&apos;s permission">
+    </opcode>
+    <opcode name="CallNotifyUILanguageChange" value="2424832" message="Notify the system that a language has been installed or removed">
+    </opcode>
+    <opcode name="ChangeUserUILanguage" value="2490368" message="Change the User UI language setting to selected language">
+    </opcode>
+    <opcode name="CallNotifyUILanguageChangeUserUILanguage" value="2555904" message="Notify the system that the current User&apos;s User UI language setting has been changed by calling the NotifyUILanguage">
+    </opcode>
+    <opcode name="ChangeSystemUILanguage" value="2621440" message="Change the System UI language setting to selected language">
+    </opcode>
+    <opcode name="CallNotifyUILanguageChangeSystemUILanguage" value="2686976" message="Notify the system that the system UI language setting has been changed by calling the NotifyUILanguage">
+    </opcode>
+    <opcode name="Logoff" value="2752512" message="Log off the current user">
+    </opcode>
+    <opcode name="ValidatePath" value="2818048" message="Validate specified path">
+    </opcode>
+    <opcode name="GetLangPack" value="2883584" message="Retrieve language packs in specified path">
+    </opcode>
+    <opcode name="ValidateLangPackForInstall" value="2949120" message="Validate that language pack can be installed">
+    </opcode>
+    <opcode name="VerifyDiskSpace" value="3014656" message="Verify if the machine has sufficient disk space for the installation">
+    </opcode>
+    <opcode name="CallCBSInstallLangPack" value="3080192" message="Pass control to CBS to install the language pack">
+    </opcode>
+    <opcode name="ValidateLangPackForRemoval" value="3145728" message="Validate that language pack can be removed">
+    </opcode>
+    <opcode name="CallCBSRemoveLangPack" value="3211264" message="Pass control to CBS to remove the language pack">
+    </opcode>
+    <opcode name="InitWizard" value="3276800" message="Initialize the LpkSetup wizard">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="RunWizard" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="Running the lpksetup Wizard">
+    </task>
+    <task name="LanguagePackCleanup" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="Language Pack cleanup functionality">
+    </task>
+    <task name="TestTask" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="Task to test NotifyUILanguage callback dll.">
+    </task>
+    <task name="ProcessCommandLine" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="Processing lpksetup unattended execution from the command line">
+    </task>
+    <task name="LanguagePackInstallation" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="Installing language pack">
+    </task>
+    <task name="LanguagePackRemoval" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="Removing language pack">
+    </task>
+    <task name="WorkerClass" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="Language Pack Setup WorkerClass functionality">
+    </task>
+    <task name="LanguagePack" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="Language Pack Setup LanguagePack related functionality">
+    </task>
+    <task name="CbsClient" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="Language Pack Setup CbsClient functionality">
+    </task>
+    <task name="Utility" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="Language Pack Setup Utility functionality">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="31" channel="8" level="2" task="33" keywords="0x8000000000000000" message="CBS Client initialization failed. Last error: %1">
+    </event>
+    <event value="1000" version="1" opcode="0" channel="8" level="2" task="30" keywords="0x8000000000000000" message="CBS Client initialization failed. Last error: %1">
+    </event>
+    <event value="1001" version="0" opcode="31" channel="8" level="2" task="30" keywords="0x8000000000000000" message="Application initialization failed. Last error: %1">
+    </event>
+    <event value="1001" version="1" opcode="50" channel="8" level="2" task="30" keywords="0x8000000000000000" message="Failed to start language pack setup wizard. Please restart the system and try running the wizard again.">
+    </event>
+    <event value="1002" version="0" opcode="31" channel="8" level="3" task="32" keywords="0x8000000000000000" message="The Language Pack for %1 has been disabled. Reason: %2">
+    </event>
+    <event value="1003" version="0" opcode="33" channel="8" level="2" task="33" keywords="0x8000000000000000" message="CBS error %1 reported while operating on UI Language Pack for %2">
+    </event>
+    <event value="1003" version="1" opcode="0" channel="8" level="2" task="30" keywords="0x8000000000000000" message="CBS error %1 &apos;%2&apos; reported while operating on UI Language Pack for %3">
+    </event>
+    <event value="1004" version="0" opcode="31" channel="8" level="2" task="31" keywords="0x8000000000000000" message="The command line argument %1 is not valid">
+    </event>
+    <event value="1004" version="1" opcode="35" channel="8" level="2" task="37" keywords="0x8000000000000000" message="The command line argument %1 is not valid. Please run lpksetup /? for help content.">
+    </event>
+    <event value="1005" version="0" opcode="31" channel="8" level="2" task="31" keywords="0x8000000000000000" message="The command line argument %1 is missing one or more required parameters">
+    </event>
+    <event value="1005" version="1" opcode="35" channel="8" level="2" task="37" keywords="0x8000000000000000" message="The command line argument %1 is missing one or more required parameters">
+    </event>
+    <event value="1006" version="0" opcode="31" channel="8" level="2" task="31" keywords="0x8000000000000000" message="Invalid language %1 specified as command line argument">
+    </event>
+    <event value="1006" version="1" opcode="35" channel="8" level="2" task="37" keywords="0x8000000000000000" message="The language name %1 is invalid, or does not correspond to a supported language.  Please specify the language pack to install using a valid language name format, such as en-US, and ensure that the specifier corresponds to a supported language.">
+    </event>
+    <event value="1007" version="0" opcode="31" channel="8" level="2" task="31" keywords="0x8000000000000000" message="No languages found or invalid path: %1">
+    </event>
+    <event value="1007" version="1" opcode="43" channel="8" level="2" task="37" keywords="0x8000000000000000" message="Path %1 is invalid, not accessible, or does not include any language packs.">
+    </event>
+    <event value="1008" version="0" opcode="31" channel="8" level="3" task="32" keywords="0x8000000000000000" message="The file %1 is not a valid Language Pack. Last error: %2">
+    </event>
+    <event value="1008" version="1" opcode="45" channel="8" level="2" task="38" keywords="0x8000000000000000" message="The file %1 is not a valid Language Pack. The language pack might be corrupted. Last error: %2. Please download the language pack file again.">
+    </event>
+    <event value="1009" version="0" opcode="31" channel="8" level="2" task="31" keywords="0x8000000000000000" message="Could not find language %1. It&apos;s either not installed or not in the provided path.">
+    </event>
+    <event value="1009" version="1" opcode="43" channel="8" level="2" task="37" keywords="0x8000000000000000" message="Cannot find language pack for %1 in the provided path %2.">
+    </event>
+    <event value="1010" version="0" opcode="31" channel="8" level="2" task="30" keywords="0x8000000000000000" message="Error message suppressed from UI: %1">
+    </event>
+    <event value="1011" version="0" opcode="31" channel="8" level="2" task="30" keywords="0x8000000000000000" message="This computer must be restarted before attempting to install or remove languages">
+    </event>
+    <event value="1011" version="1" opcode="50" channel="8" level="2" task="30" keywords="0x8000000000000000" message="Failed to start language pack setup wizard because the system is pending reboot. Please restart the system and try running lpksetup again.">
+    </event>
+    <event value="1012" version="0" opcode="36" channel="8" level="2" task="37" keywords="0x8000000000000000" message="The user does not have admin privilege. Please run this command using a user account with admin privilege.">
+    </event>
+    <event value="1013" version="0" opcode="45" channel="8" level="2" task="38" keywords="0x8000000000000000" message="The language pack for %1 cannot be installed because it is already installed.">
+    </event>
+    <event value="1014" version="0" opcode="45" channel="8" level="2" task="38" keywords="0x8000000000000000" message="The language pack for %1 is not applicable for this system. Please download the appropriate language pack that targets your system&apos;s architecture and SKU.">
+    </event>
+    <event value="1015" version="0" opcode="45" channel="8" level="2" task="38" keywords="0x8000000000000000" message="The language pack version for %1 does not match your current system. Please download the appropriate language pack that matches the version of your system.">
+    </event>
+    <event value="1016" version="0" opcode="45" channel="8" level="2" task="38" keywords="0x8000000000000000" message="The language pack for %1 cannot be installed because its parent language %2 is not installed. Please install the parent language pack before installing this language pack.">
+    </event>
+    <event value="1017" version="0" opcode="46" channel="8" level="2" task="38" keywords="0x8000000000000000" message="The disk space needed to install language pack %1 exceeds the available free disk space. Please free up some space before trying to install again.">
+    </event>
+    <event value="1018" version="0" opcode="47" channel="8" level="2" task="38" keywords="0x8000000000000000" message="CBS failed to install the language pack for %1. Returned CBS error code %2.">
+    </event>
+    <event value="1040" version="0" opcode="48" channel="8" level="2" task="39" keywords="0x8000000000000000" message="Cannot uninstall language pack for %1 because it&apos;s not installed.">
+    </event>
+    <event value="1041" version="0" opcode="48" channel="8" level="2" task="39" keywords="0x8000000000000000" message="You cannot uninstall language %1 because the language is the parent language of language %2. Please uninstall the dependent language first.">
+    </event>
+    <event value="1042" version="0" opcode="48" channel="8" level="2" task="39" keywords="0x8000000000000000" message="You cannot uninstall language %1 because the language is the system installed UI language.">
+    </event>
+    <event value="1043" version="0" opcode="49" channel="8" level="2" task="39" keywords="0x8000000000000000" message="CBS failed to remove the language pack for %1. Returned CBS error code %2.">
+    </event>
+    <event value="1060" version="0" opcode="38" channel="8" level="2" task="30" keywords="0x8000000000000000" message="Failed to change user UI language from %1 to %2. Please go to Regional and Language options control panel to change the user UI language.">
+    </event>
+    <event value="1061" version="0" opcode="40" channel="8" level="2" task="30" keywords="0x8000000000000000" message="Failed to change system UI language from %1 to %2. Please go to Regional and Language options control panel to change the system UI language.">
+    </event>
+    <event value="2000" version="0" opcode="33" channel="16" level="4" task="32" keywords="0x4000000000000000" message="Install of UI Language Pack for %1 succeeded">
+    </event>
+    <event value="2000" version="1" opcode="2" channel="16" level="4" task="38" keywords="0x4000000000000000" message="Install of UI Language Pack for %1 succeeded">
+    </event>
+    <event value="2001" version="0" opcode="33" channel="16" level="4" task="32" keywords="0x4000000000000000" message="Removal of UI Language Pack for %1 succeeded">
+    </event>
+    <event value="2001" version="1" opcode="2" channel="16" level="4" task="39" keywords="0x4000000000000000" message="Removal of UI Language Pack for %1 succeeded">
+    </event>
+    <event value="2002" version="0" opcode="33" channel="16" level="4" task="34" keywords="0x4000000000000000" message="The call to NotifyUILanguageChange for language %1 has failed with error %2">
+    </event>
+    <event value="2002" version="1" opcode="37" channel="16" level="3" task="39" keywords="0x4000000000000000" message="The call to NotifyUILanguageChange for language %1 has failed with error %2">
+    </event>
+    <event value="2003" version="0" opcode="33" channel="16" level="4" task="34" keywords="0x4000000000000000" message="The call to NotifyUILanguageChange to change Machine UI language from %1 to %2 failed with error %3">
+    </event>
+    <event value="2003" version="1" opcode="40" channel="16" level="3" task="30" keywords="0x4000000000000000" message="The call to notify NotifyUILanguageChange that system UI language is changed from %1 to %2 failed with error %3.  To manually evoke the callback, please use the Regional and Language options control panel to change the system UI language back to its original value and then change it to the desired value again.">
+    </event>
+    <event value="2004" version="0" opcode="33" channel="16" level="4" task="34" keywords="0x4000000000000000" message="Failed to change Machine UI language from %1 to %2 failed with error %3">
+    </event>
+    <event value="2005" version="0" opcode="0" channel="16" level="4" task="30" keywords="0x4000000000000000" message="UI Language Pack cleanup operation completed successfully">
+    </event>
+    <event value="2006" version="0" opcode="0" channel="16" level="4" task="30" keywords="0x4000000000000000" message="UI Language Pack cleanup operation failed">
+    </event>
+    <event value="2007" version="0" opcode="2" channel="16" level="3" task="38" keywords="0x4000000000000000" message="Install of UI Language Pack for %1 failed">
+    </event>
+    <event value="2008" version="0" opcode="2" channel="16" level="3" task="39" keywords="0x4000000000000000" message="Removal of UI Language Pack for %1 failed">
+    </event>
+    <event value="2009" version="0" opcode="47" channel="16" level="4" task="38" keywords="0x4000000000000000" message="CBS installed language pack for %1 successfully.">
+    </event>
+    <event value="2010" version="0" opcode="49" channel="16" level="4" task="39" keywords="0x4000000000000000" message="CBS removed language pack for %1 successfully.">
+    </event>
+    <event value="2011" version="0" opcode="37" channel="16" level="3" task="38" keywords="0x4000000000000000" message="The call to notify NotifyUILanguageChange that a new language %1 has been installed has failed with error %2. To manually evoke the callback, you have to uninstall the language pack and reinstall it again.">
+    </event>
+    <event value="2012" version="0" opcode="38" channel="16" level="4" task="30" keywords="0x4000000000000000" message="User UI language has been successfully changed from %1 to %2.">
+    </event>
+    <event value="2013" version="0" opcode="40" channel="16" level="4" task="30" keywords="0x4000000000000000" message="System UI language has been successfully changed from %1 to %2.">
+    </event>
+    <event value="2014" version="0" opcode="0" channel="16" level="2" task="30" keywords="0x4000000000000000" message="LpkSetup wizard operation has failed with error: %1">
+    </event>
+    <event value="2015" version="0" opcode="45" channel="17" level="2" task="38" keywords="0x2000000000000000" message="Validation for install of language %1 has failed with error: %2">
+    </event>
+    <event value="2016" version="0" opcode="48" channel="17" level="2" task="39" keywords="0x2000000000000000" message="Validation for removal of language %1 has failed with error: %2">
+    </event>
+    <event value="3000" version="0" opcode="33" channel="17" level="4" task="32" keywords="0x2000000000000000" message="Install of UI Language Pack for %1 started">
+    </event>
+    <event value="3000" version="1" opcode="1" channel="17" level="4" task="38" keywords="0x2000000000000000" message="Install of UI Language Pack for %1 started">
+    </event>
+    <event value="3001" version="0" opcode="33" channel="17" level="4" task="32" keywords="0x2000000000000000" message="Removal of UI Language Pack for %1 started">
+    </event>
+    <event value="3001" version="1" opcode="1" channel="17" level="4" task="39" keywords="0x2000000000000000" message="Removal of UI Language Pack for %1 started">
+    </event>
+    <event value="3002" version="0" opcode="33" channel="17" level="4" task="31" keywords="0x2000000000000000" message="Actions for UI Language Pack for %1 finished">
+    </event>
+    <event value="3003" version="0" opcode="1" channel="17" level="4" task="30" keywords="0x2000000000000000" message="Lpksetup wizard starts">
+    </event>
+    <event value="3004" version="0" opcode="2" channel="17" level="4" task="30" keywords="0x2000000000000000" message="Lpksetup wizard exits">
+    </event>
+    <event value="3005" version="0" opcode="1" channel="17" level="4" task="37" keywords="0x2000000000000000" message="Starts processing lpksetup command line">
+    </event>
+    <event value="3006" version="0" opcode="2" channel="17" level="4" task="37" keywords="0x2000000000000000" message="Finish processing lpksetup command line">
+    </event>
+    <event value="4000" version="0" opcode="1" channel="16" level="4" task="35" keywords="0x4000000000000000" message="LPRemove launched.">
+    </event>
+    <event value="4001" version="0" opcode="2" channel="16" level="4" task="35" keywords="0x4000000000000000" message="LPRemove terminating.">
+    </event>
+    <event value="4002" version="0" opcode="33" channel="16" level="4" task="39" keywords="0x4000000000000000" message="Running in new boot (this is %1 th boot lpremove tries to run)">
+    </event>
+    <event value="4003" version="0" opcode="0" channel="16" level="4" task="39" keywords="0x4000000000000000" message="Run number %1 across the boot %2">
+    </event>
+    <event value="4004" version="0" opcode="0" channel="16" level="4" task="39" keywords="0x4000000000000000" message="Resetting run-time data due to new boot">
+    </event>
+    <event value="4005" version="0" opcode="0" channel="16" level="4" task="39" keywords="0x4000000000000000" message="Maximum run attempt limit for a session (boot) reached. Next run will be attempted on after machine reboots.">
+    </event>
+    <event value="4006" version="0" opcode="0" channel="16" level="4" task="39" keywords="0x4000000000000000" message="Maximum run attempt limit for overall amoutn of machine boots reached. Lpremove won&apos;t run again. This is error situation meaning all prior runs have failed">
+    </event>
+    <event value="4007" version="0" opcode="0" channel="16" level="4" task="35" keywords="0x4000000000000000" message="LanguageCommitted value isn&apos;t set under System\CurrentControlSet\Control\MUI\UILanguages.(lpremove is terminating)">
+    </event>
+    <event value="4008" version="0" opcode="0" channel="16" level="4" task="35" keywords="0x4000000000000000" message="lpremove failed launching lpksetup failed">
+    </event>
+    <event value="4009" version="0" opcode="0" channel="16" level="4" task="35" keywords="0x4000000000000000" message="lpremove successfully launched lpksetup">
+    </event>
+    <event value="4010" version="0" opcode="0" channel="16" level="4" task="39" keywords="0x4000000000000000" message="LPRemove failed to obtain run data from registry. Unscheduling LpRemove.">
+    </event>
+    <event value="4011" version="0" opcode="0" channel="16" level="4" task="39" keywords="0x4000000000000000" message="LPRemove failed to incement run-data in registry. Unscheduling LpRemove.">
+    </event>
+    <event value="4012" version="0" opcode="0" channel="16" level="4" task="35" keywords="0x4000000000000000" message="LPRemove task failed to complete. Next scheduled run will try to complete the task.">
+    </event>
+    <event value="4013" version="0" opcode="0" channel="16" level="4" task="35" keywords="0x4000000000000000" message="LPRemove encountered internal error.">
+    </event>
+    <event value="4014" version="0" opcode="0" channel="16" level="4" task="35" keywords="0x4000000000000000" message="LPRemove failed to create a scheduled task for itself.">
+    </event>
+    <event value="4015" version="0" opcode="33" channel="16" level="4" task="35" keywords="0x4000000000000000" message="LPRemove executed in audit mode. No tasks were performed.">
+    </event>
+    <event value="5000" version="0" opcode="0" channel="18" level="4" task="36" keywords="0x1000000000000000" message="The OnUILanguageAdd callback was called with new language %1, previous language %2 and flags %3. Return value: %4.">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="18" level="4" task="36" keywords="0x1000000000000000" message="The OnUILanguageRemove callback was called with new language %1, previous language %2 and flags %3. Return value: %4.">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="18" level="4" task="36" keywords="0x1000000000000000" message="The OnUILanguageClear callback was called with new language %1, previous language %2 and flags %3. Return value: %4.">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="18" level="4" task="36" keywords="0x1000000000000000" message="The OnMachineUILanguageInit callback was called with new language %1, previous language %2 and flags %3. Return value: %4.">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="18" level="4" task="36" keywords="0x1000000000000000" message="The OnMachineUILanguageSwitch callback was called with new language %1, previous language %2 and flags %3. Return value: %4.">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="18" level="2" task="36" keywords="0x1000000000000000" message="The test callback API %1 failed with status %2.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Audio" guid="ae4bd3be-f36f-45b6-8d21-bdd6fb832853" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=audioses.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\audioses.dll" messageFileName="C:\Windows\System32\audioses.dll" message="Microsoft-Windows-Audio" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-Audio/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Audio/CaptureMonitor" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Audio/Performance" id="18" flags="0" message="Performance">
+    </channel>
+    <channel name="Microsoft-Windows-Audio/PlaybackManager" id="19" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Audio/GlitchDetection" id="20" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Audio/Informational" id="21" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="op_EVT_AUDIOSRV_PdcActivationClientRegister" value="720896" message="AudioSrv calls PdcActivationClientRegister">
+    </opcode>
+    <opcode name="op_EVT_AUDIOSRV_PdcActivationClientUnregister" value="786432" message="AudioSrv calls PdcActivationClientUnregister">
+    </opcode>
+    <opcode name="op_EVT_AUDIOSRV_PdcActivationClientTakeTimerReference" value="851968" message="AudioSrv calls PdcActivationClientTakeTimerReference">
+    </opcode>
+    <opcode name="op_EVT_AUDIOSRV_PdcActivationClientReleaseTimerReference" value="917504" message="AudioSrv calls PdcActivationClientReleaseTimerReference">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_CM_RENDER" value="983040" message="Capture Monitor Render Glitch">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_CM_CAPTURE" value="1048576" message="Capture Monitor Capture Glitch">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_APO_FORMAT_CONVERT" value="1114112" message="APO Glitch: Format Converter INF detected">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_CP_CLIENT_INPUT_NO_MESSAGES" value="1179648" message="Engine Glitch: CP Client Input Endpoint - No Messages in queue">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_CP_CLIENT_INPUT_SIZE_MISMATCH" value="1245184" message="Engine Glitch: CP Client Input Endpoint - Queue item does not match requested size">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_CP_CLIENT_OUTPUT_SERVER_OVERREAD" value="1310720" message="Engine Glitch: CP Client Output Endpoint - Server Overread">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_CP_CLIENT_OUTPUT_READ_POINTER_OVERWRITE" value="1376256" message="Engine Glitch: CP Client Output Endpoint - Read Pointer Overwrite">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_CP_SERVER_INPUT_STARVATION" value="1441792" message="Engine Glitch: CP Server Input Endpoint - Starvation">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_CP_SERVER_OUTPUT_QUEUE_FULL_PACKET_DROP" value="1507328" message="Engine Glitch: CP Server Output Endpoint - Queue Full Packet Drop">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_CP_SERVER_OUTPUT_READ_POINTER_OVERWRITE" value="1572864" message="Engine Glitch: CP Server Output Endpoint - Read Pointer Overwrite">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_IOMGR_NO_OUTSTANDING_PACKETS" value="1638400" message="KS Endpoint Glitch: IOMGR No Outstanding Packets">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_IOMGR_MAX_IOCTL_TIME" value="1703936" message="KS Endpoint Glitch: IOMGR Ioctl Time Limit Exceeded">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_BASE_OUTPUT_UNEXPECTED_BUFFER_COMPLETED" value="1769472" message="KS Endpoint Glitch: BASE Output Unexpected Buffer Completed">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_BASE_INPUT_LAST_BUFFER_NULL_BAD_LOCKED_DATA" value="1835008" message="KS Endpoint Glitch: BASE Input Null Last Buffer with LockedData != LoopedBuffer">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_BASE_INPUT_BUFFER_INDEX" value="1900544" message="KS Endpoint Glitch: BASE Input Buffer Index Mismatch">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_BASE_END_GLITCH" value="1966080" message="KS Endpoint Glitch: BASE End Glitch">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_RTCAP_STREAM_POS_AHEAD_OF_HW_POS" value="2031616" message="KS Endpoint Glitch: RTCAP StreamPos Ahead of HW Pos">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_RTCAP_STREAM_POS_TOO_FAR_BEHIND" value="2097152" message="KS Endpoint Glitch: RTCAP StreamPos Too Far Behind">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_RTREN_WRITE_POS_EXCEEDS_TOTAL_POS" value="2162688" message="KS Endpoint Glitch: RTREN WritePos Exceeds TotalPos">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_STCAP_CAPTURE_AHEAD" value="2228224" message="KS Endpoint Glitch: STCAP Capture Ahead">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_STCAP_CAPTURE_BEHIND" value="2293760" message="KS Endpoint Glitch: STCAP Capture Behind">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_STCAP_DEVICE_STARVED" value="2359296" message="KS Endpoint Glitch: STCAP Device Starved">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_STREN_DEVICE_STARVED" value="2424832" message="KS Endpoint Glitch: STREN Device Starved">
+    </opcode>
+    <opcode name="op_EVT_GLITCH_KSENDPOINT_STREN_EXCL_PULL_INVALID_BUFFER_COUNT" value="2490368" message="KS Endpoint Glitch: STREN EXCL PULL Invalid Buffer Count">
+    </opcode>
+    <opcode name="op_EVT_MMDEVAPI_TRIGGER_DEFAULT_DEVICE_CHANGED" value="2555904" message="MMDevAPI: Default device changed triggered">
+    </opcode>
+    <opcode name="op_EVT_MMDEVAPI_ON_MEDIA_NOTIFICATION_DeviceStateChanged" value="2621440" message="MMDevAPI: DeviceStateChanged callback">
+    </opcode>
+    <opcode name="op_EVT_MMDEVAPI_ON_MEDIA_NOTIFICATION_DeviceAdded" value="2686976" message="MMDevAPI: DeviceAdded callback">
+    </opcode>
+    <opcode name="op_EVT_MMDEVAPI_ON_MEDIA_NOTIFICATION_DeviceRemoved" value="2752512" message="MMDevAPI: DeviceRemoved callback">
+    </opcode>
+    <opcode name="op_EVT_MMDEVAPI_ON_MEDIA_NOTIFICATION_DefaultDeviceChanged" value="2818048" message="MMDevAPI: DefaultDeviceChanged callback">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="AudioPerf_Task_LaunchAudioDG" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioPerf_Task_EndpointVolume" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioPerf_Task_SessionAPI" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioPerf_Task_GlitchCounter" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioServer_Fail_Service_Device" value="108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioServer_Fail_Device_Event_Worker" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioServer_Fail_Set_Service_Status" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioServer_Fail_Subsystem_Startup" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioServer_Fail_AudioDG_Crashed" value="112" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioServer_Fail_AudioDG_Failed_Startup" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CaptureMonitor_Monitor_Restart_Limit_Hit" value="114" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioServer_Stream_Flags" value="115" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioSession_Stream_Resource_Type" value="116" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioServer_Sound_Level_Changed" value="117" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioSession_Client_Suspended" value="118" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioSession_Release_Client_Resource" value="119" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PBM_StreamStarted" value="120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioDG_Glitch_Threshold_Exceeded" value="121" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PBM_StreamStopped" value="122" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Audio_Glitch_Detection" value="123" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="System_Effect_APO_Initialized" value="124" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioSrv_EVT_VOLUME_LIMIT_CHANGED_ENTER" value="125" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioSrv_EVT_VOLUME_LIMIT_CHANGED_EXIT" value="126" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioSrv_EVT_VOLUME_LIMIT_PUBLISH_WNF_AVLC_STATE" value="127" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioSrv_EVT_AUDIOSRV_PdcActivation" value="128" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AudioCore_EVT_MMDevAPI" value="129" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="0" channel="16" level="3" task="108" keywords="0x4000000000000000" message="Windows Audio encountered an error while processing a device event.
+                    Event ID     : 0x%1 (%2) 
+                    Failure Code : 0x%3">
+    </event>
+    <event value="1" version="0" opcode="0" channel="16" level="3" task="109" keywords="0x4000000000000000" message="Windows Audio encountered an error while processing a device event.
+                    DeviceEventType : 0x%1 (%2) 
+                    Failure Code    : 0x%3">
+    </event>
+    <event value="2" version="0" opcode="0" channel="9" level="2" task="110" keywords="0x8000000000000000" message="Windows Audio failed during a call to SetServiceStatus.
+                    Service Type               : 0x%1 
+                    Current State              : 0x%2 
+                    Controls Accepted          : 0x%3 
+                    Win32 Exit Code            : 0x%4 
+                    Service Specific Exit Code : 0x%5 
+                    Check Point                : 0x%6 
+                    Wait Hint                  : 0x%7">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="2" task="111" keywords="0x4000000000000000" message="Windows Audio failed to start the %1 subsystem.
+                    Subsystem Failure Code     : 0x%2 
+">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="2" task="112" keywords="0x4000000000000000" message="The Windows Audio Device Graph Isolation process (audiodg.exe) has terminated unexpectedly.
+                    Process Exit Code     : 0x%1 
+">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="2" task="113" keywords="0x4000000000000000" message="The Windows Audio Device Graph Isolation process (audiodg.exe) could not be started.
+                    Error Code     : 0x%1 
+">
+    </event>
+    <event value="10" version="0" opcode="0" channel="17" level="2" task="114" keywords="0x2000000000000000" message="The Capture Monitor has failed to restart the capture monitor between %2 and %3  %1 times.  
+                The capture monitor will no longer attempt to start this monitor.
+">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="115" keywords="0x4000000000000000" message="StreamFlags %1">
+    </event>
+    <event value="12" version="0" opcode="1" channel="18" level="4" task="100" keywords="0x1001000000000000" message="">
+    </event>
+    <event value="13" version="0" opcode="2" channel="18" level="4" task="100" keywords="0x1001000000000000" message="">
+    </event>
+    <event value="14" version="0" opcode="1" channel="18" level="4" task="101" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="15" version="0" opcode="2" channel="18" level="4" task="101" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="16" version="0" opcode="1" channel="18" level="4" task="102" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="17" version="0" opcode="2" channel="18" level="4" task="102" keywords="0x1000000000000000" message="">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="3" task="121" keywords="0x4000000000000000" message="Windows Audio Device Graph glitch threshold count exceeded 
+                              Count   : 0x%1">
+    </event>
+    <event value="19" version="0" opcode="0" channel="18" level="4" task="107" keywords="0x1000000000000000" message="Windows Audio Device Graph glitch threshold count exceeded 
+                              Count   : 0x%1">
+    </event>
+    <event value="20" version="0" opcode="0" channel="19" level="4" task="116" keywords="0x800000000000000" message="Format: %1
+Sampling rate: %2Hz
+Offloaded: %3">
+    </event>
+    <event value="21" version="0" opcode="0" channel="19" level="4" task="117" keywords="0x800000000000000" message="Sound level for application [%1] changed to [%2]">
+    </event>
+    <event value="22" version="0" opcode="0" channel="19" level="4" task="118" keywords="0x800000000000000" message="Suspended: %1">
+    </event>
+    <event value="23" version="0" opcode="0" channel="19" level="4" task="119" keywords="0x800000000000000" message="Released exclusive mode resource %1
+Released offload mode resource %2">
+    </event>
+    <event value="24" version="0" opcode="0" channel="19" level="4" task="120" keywords="0x800000000000000" message="Stream started.
+App Id: %1
+PID: %2
+Audio Stream Category: %3">
+    </event>
+    <event value="25" version="0" opcode="0" channel="19" level="4" task="122" keywords="0x800000000000000" message="Stream stopped.
+App Id: %1
+PID: %2
+Audio Stream Category: %3">
+    </event>
+    <event value="26" version="0" opcode="15" channel="20" level="4" task="123" keywords="0x400000000000000" message="Capture Monitor Render Glitch: pCMonitor=[%1], DevicePosition=[%2], QPCPosition=[%3]">
+    </event>
+    <event value="27" version="0" opcode="16" channel="20" level="4" task="123" keywords="0x400000000000000" message="Capture Monitor Capture Glitch: pCMonitor=[%1], DevicePosition=[%2], QPCPosition=[%3]">
+    </event>
+    <event value="28" version="0" opcode="17" channel="20" level="4" task="123" keywords="0x400000000000000" message="APO Glitch: Format Converter INF detected: pCAudioFormatConvert=[%1], [%2]">
+    </event>
+    <event value="29" version="0" opcode="18" channel="20" level="4" task="123" keywords="0x400000000000000" message="Engine Glitch: CP Client Input Endpoint - pCCrossProcessClientInputEndpoint=[%1] No Messages in queue">
+    </event>
+    <event value="30" version="0" opcode="19" channel="20" level="4" task="123" keywords="0x400000000000000" message="Engine Glitch: CP Client Input Endpoint - pCCrossProcessClientInputEndpoint=[%1] Queue item does not match requested size">
+    </event>
+    <event value="31" version="0" opcode="20" channel="20" level="4" task="123" keywords="0x400000000000000" message="Engine Glitch: CP Client Output Endpoint - Server Overread: pCCrossProcessClientOutputEndpoint=[%1] WritePos=[%2] ReadPos=[%3] BytesToWrite=[%4]">
+    </event>
+    <event value="32" version="0" opcode="21" channel="20" level="4" task="123" keywords="0x400000000000000" message="Engine Glitch: CP Client Output Endpoint - Read Pointer Overwrite: pCCrossProcessClientOutputEndpoint=[%1] WriteOffset=[%2] ReadOffset=[%3] BytesToWrite=[%4] EndOfDataOffset=[%5]">
+    </event>
+    <event value="33" version="0" opcode="22" channel="20" level="4" task="123" keywords="0x400000000000000" message="Engine Glitch: CP Server Input Endpoint - Starvation: pCCrossProcessServerInputEndpoint=[%1] WriteOffset=[%2] ReadOffset=[%3] BufferSize=[%4] BytesAvail=[%5]">
+    </event>
+    <event value="34" version="0" opcode="23" channel="20" level="4" task="123" keywords="0x400000000000000" message="Engine Glitch: CP Server Output Endpoint - Queue Full Packet Drop: pCCrossProcessServerOutputEndpoint=[%1] WritePos=[%2] DroppedBytes=[%3] ReadPos=[%4] BytesToWrite=[%5]">
+    </event>
+    <event value="35" version="0" opcode="24" channel="20" level="4" task="123" keywords="0x400000000000000" message="Engine Glitch: CP Server Output Endpoint - Read Pointer Overwrite: pCCrossProcessServerOutputEndpoint=[%1] WriteOffset=[%2] ReadOffset=[%3] BytesToWrite=[%4]">
+    </event>
+    <event value="36" version="0" opcode="25" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: IOMGR No Outstanding Packets: pOwner=[%1] NextStreamingPacketToComplete=[%2] MaxPacketCount=[%3]">
+    </event>
+    <event value="37" version="0" opcode="26" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: IOMGR Ioctl Time Limit Exceeded: pOwner=[%1] DeltaHNS=[%2]">
+    </event>
+    <event value="38" version="0" opcode="27" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: BASE Output Unexpected Buffer Completed: pCAudioBasePin=[%1] LockedDataPointer=[%2] bLockedEqualsUnrolled=[%3]">
+    </event>
+    <event value="39" version="0" opcode="28" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: BASE Input Null Last Buffer with LockedData != LoopedBuffer: pCAudioBasePin=[%1] LockedDataPointer=[%2]">
+    </event>
+    <event value="40" version="0" opcode="29" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: BASE Input Buffer Index Mismatch: pCAudioBasePin=[%1] LockedDataPointer=[%2]">
+    </event>
+    <event value="41" version="0" opcode="30" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: BASE End Glitch: pCAudioBasePin=[%1] StreamPosition=[%2] GlitchDuration=[%3]">
+    </event>
+    <event value="42" version="0" opcode="31" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: RTCAP StreamPos Ahead of HW Pos: pCAudioCapturePinRealtimeStreaming=[%1] WritePos=[%2] PlayPos=[%3] StreamPos=[%4] StreamPosMinusReadPos=[%5]">
+    </event>
+    <event value="43" version="0" opcode="32" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: RTCAP StreamPos Too Far Behind: pCAudioCapturePinRealtimeStreaming=[%1] WritePos=[%2] PlayPos=[%3] StreamPos=[%4] ReadPosMinusStreamPos=[%5]">
+    </event>
+    <event value="44" version="0" opcode="33" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: RTREN WritePos Exceeds TotalPos: pCAudioRenderPinRealtimeStreaming=[%1] WritePos=[%2] PlayPos=[%3] TotalPos=[%4] WritePosMinusTotalPos=[%5]">
+    </event>
+    <event value="45" version="0" opcode="34" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: STCAP Capture Ahead: pCAudioCapturePinStandardStreaming=[%1] ValidPosEnd=[%2] ValidPosStart=[%3] StreamPos=[%4] StreamPosMinusValidPosEnd=[%5]">
+    </event>
+    <event value="46" version="0" opcode="35" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: STCAP Capture Behind: pCAudioCapturePinStandardStreaming=[%1] ValidPosEnd=[%2] ValidPosStart=[%3] StreamPos=[%4] ValidPosStartMinusStreamPos=[%5]">
+    </event>
+    <event value="47" version="0" opcode="36" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: STCAP Device Starved: pCAudioCapturePinStandardStreaming=[%1] StreamPos=[%2] FrameCount=[%3]">
+    </event>
+    <event value="48" version="0" opcode="37" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: STREN Device Starved: pCAudioRenderPinStandardStreaming=[%1] DevicePos=[%2] StreamPos=[%3] AvailFrames=[%4]">
+    </event>
+    <event value="49" version="0" opcode="38" channel="20" level="4" task="123" keywords="0x400000000000000" message="KS Endpoint Glitch: STREN EXCL PULL Invalid Buffer Count: pCAudioRenderPinStandardStreaming=[%1] DevicePos=[%2] StreamPos=[%3] AvailFrames=[%4]">
+    </event>
+    <event value="50" version="0" opcode="0" channel="21" level="4" task="124" keywords="0x200000000000000" message="System effect initialized: CLSID=[%1] AudioSignalProcessingMode=[%2] InitializeForDiscoveryOnly=[%3]">
+    </event>
+    <event value="51" version="0" opcode="0" channel="21" level="4" task="125" keywords="0x200000000000000" message="Volume limit event signalled to audiosrv enter">
+    </event>
+    <event value="52" version="0" opcode="0" channel="21" level="4" task="126" keywords="0x200000000000000" message="Volume limit event signalled to audiosrv exit">
+    </event>
+    <event value="53" version="0" opcode="0" channel="21" level="4" task="127" keywords="0x200000000000000" message="AudioSrv published AVLC state">
+    </event>
+    <event value="54" version="0" opcode="11" channel="21" level="4" task="128" keywords="0x200000000000000" message="AudioSrv calls PdcActivationClientRegister">
+    </event>
+    <event value="55" version="0" opcode="12" channel="21" level="4" task="128" keywords="0x200000000000000" message="AudioSrv calls PdcActivationClientUnregister">
+    </event>
+    <event value="56" version="0" opcode="13" channel="21" level="4" task="128" keywords="0x200000000000000" message="AudioSrv calls PdcActivationClientTakeTimerReference">
+    </event>
+    <event value="57" version="0" opcode="14" channel="21" level="4" task="128" keywords="0x200000000000000" message="AudioSrv calls PdcActivationClientReleaseTimerReference">
+    </event>
+    <event value="58" version="0" opcode="39" channel="21" level="4" task="129" keywords="0x200000000000000" message="MMDevAPI: Default device changed triggered">
+    </event>
+    <event value="59" version="0" opcode="1" channel="21" level="4" task="129" keywords="0x200000000000000" message="MMDevAPI: OnMediaNotification Enter">
+    </event>
+    <event value="60" version="0" opcode="2" channel="21" level="4" task="129" keywords="0x200000000000000" message="MMDevAPI: OnMediaNotification Exit">
+    </event>
+    <event value="61" version="0" opcode="40" channel="21" level="4" task="129" keywords="0x200000000000000" message="MMDevAPI: DeviceStateChanged callback">
+    </event>
+    <event value="62" version="0" opcode="41" channel="21" level="4" task="129" keywords="0x200000000000000" message="MMDevAPI: DeviceAdded callback">
+    </event>
+    <event value="63" version="0" opcode="42" channel="21" level="4" task="129" keywords="0x200000000000000" message="MMDevAPI: DeviceRemoved callback">
+    </event>
+    <event value="64" version="0" opcode="43" channel="21" level="4" task="129" keywords="0x200000000000000" message="MMDevAPI: DefaultDeviceChanged callback">
+    </event>
+  </events>
+</provider>

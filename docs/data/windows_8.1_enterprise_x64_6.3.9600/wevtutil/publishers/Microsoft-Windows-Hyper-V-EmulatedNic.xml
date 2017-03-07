@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-EmulatedNic" guid="09242393-1349-4f4d-9fd7-59cc79f553ce" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=EmulatedNic.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\EmulatedNic.dll" messageFileName="C:\Windows\system32\EmulatedNic.dll" message="Microsoft-Windows-Hyper-V-EmulatedNic" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-EmulatedNic-Admin" id="16" flags="0" message="Microsoft-Windows-Hyper-V-EmulatedNic-Admin">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-EmulatedNic-Debug" id="17" flags="0" message="Microsoft-Windows-Hyper-V-EmulatedNic-Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="VMT_VF_OPERATION_ALLOCATE" value="1047" eventGUID="00000000-0000-0000-0000-000000000000" message="Virtual Function - Allocate">
+    </task>
+    <task name="VMT_VF_OPERATION_FREE" value="1048" eventGUID="00000000-0000-0000-0000-000000000000" message="Virtual Function - Free">
+    </task>
+    <task name="VMT_VF_OPERATION_ASSIGN" value="1049" eventGUID="00000000-0000-0000-0000-000000000000" message="Virtual Function - Assign">
+    </task>
+    <task name="VMT_VF_OPERATION_UNASSIGN" value="1050" eventGUID="00000000-0000-0000-0000-000000000000" message="Virtual Function - Unassign">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="VMK_HYPERV_PERF_OUTER" mask="1" message="Hyper-V performance traces (outer operations)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_INNER" mask="2" message="Hyper-V performance traces (inner operations)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_VERBOSE" mask="4" message="Hyper-V performance traces (verbose)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF" mask="1000" message="Hyper-V performance traces">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WPD-CompositeClassDriver" guid="355c44fe-0c8e-4bf8-be28-8bc7b5a42720" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=wpd_ci.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\System32\wpd_ci.dll" messageFileName="C:\Windows\System32\wpd_ci.dll" message="Microsoft-Windows-WPD-CompositeClassDriver" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WPD-CompositeClassDriver/Operational" id="16" flags="0" message="Operational">
+    </channel>
+    <channel name="Microsoft-Windows-WPD-CompositeClassDriver/Analytic" id="17" flags="0" message="Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DriverPerformance" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Performance">
+    </task>
+    <task name="DriverInitialization" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Initialization">
+    </task>
+    <task name="TransportManagement" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="Transport Management">
+    </task>
+    <task name="DriverFailure" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Failure">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Transport Arrival Begin: %1">
+    </event>
+    <event value="101" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Transport Arrival End: %1">
+    </event>
+    <event value="102" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Transport Departure Begin: %1">
+    </event>
+    <event value="103" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Transport Departure End: %1">
+    </event>
+    <event value="104" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="OnCreateFile Begin: %1">
+    </event>
+    <event value="105" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="OnCreateFile End: %1">
+    </event>
+    <event value="106" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="DeviceIoControl Begin">
+    </event>
+    <event value="107" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="DeviceIoControl End">
+    </event>
+    <event value="108" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Transport Look-Up Begin">
+    </event>
+    <event value="109" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Transport Look-Up End">
+    </event>
+    <event value="110" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Custom Event Relay Begin">
+    </event>
+    <event value="111" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Custom Event Relay End">
+    </event>
+    <event value="112" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Commit Transport Interface States Begin">
+    </event>
+    <event value="113" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="Commit Transport Interface States End">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="4" task="32" keywords="0x8000000000000000" message="Transport Arrival: %1">
+    </event>
+    <event value="201" version="0" opcode="0" channel="16" level="4" task="32" keywords="0x8000000000000000" message="Transport Departure: %1">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="4" task="32" keywords="0x8000000000000000" message="Enabled Interface GUID: %1, ReferenceString: %2">
+    </event>
+    <event value="203" version="0" opcode="0" channel="16" level="4" task="32" keywords="0x8000000000000000" message="Disabled Interface GUID: %1, ReferenceString: %2">
+    </event>
+    <event value="300" version="0" opcode="0" channel="16" level="1" task="48" keywords="0x8000000000000000" message="No Multi-Transport support with the current version of the User Mode Driver Framework">
+    </event>
+    <event value="301" version="0" opcode="0" channel="16" level="1" task="48" keywords="0x8000000000000000" message="Unable to create remote interface for transport: %1">
+    </event>
+    <event value="302" version="0" opcode="0" channel="16" level="1" task="48" keywords="0x8000000000000000" message="Unable to open IoTarget for transport: %1">
+    </event>
+    <event value="303" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="Transport driver returned an incorrect MULTI_TRANSPORT_BANDWIDTH structure.
+Expected Size: %1, Actual Size: %2">
+    </event>
+    <event value="304" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="Transport driver returned an incorrect MULTI_TRANSPORT_INTERFACE_STATE structure.
+Expected Size: &gt;= %1, Actual Size: %2">
+    </event>
+    <event value="305" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="Transport driver returned an incorrect MULTI_TRANSPORT_HDR structure.
+Expected Size: &gt;= %1, Actual Size: %2">
+    </event>
+    <event value="306" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="MULTI_TRANSPORT_INTERFACE_STATE structure too short for provided reference string, or reference string not NULL-terminated">
+    </event>
+    <event value="307" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="Reference string not expected for specified action (MULTI_TRANSPORT_INTERFACE_STATE)">
+    </event>
+    <event value="308" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="Unexpected function for MULTI_TRANSPORT_INTERFACE_STATE: %1
+
+Must be one of:
+  FUNCTION_MULTI_TRANSPORT_BANDWIDTH
+  FUNCTION_MULTI_TRANSPORT_INTERFACE_STATE">
+    </event>
+    <event value="309" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="Unexpected action for MULTI_TRANSPORT_INTERFACE_STATE: %1
+
+Must be one of:
+  ACTION_MULTI_TRANSPORT_ENABLE
+  ACTION_MULTI_TRANSPORT_DISABLE
+  ACTION_MULTI_TRANSPORT_ENDOFSET
+  ACTION_MULTI_TRANSPORT_DISABLEALL">
+    </event>
+    <event value="310" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="Unexpected HRESULT for IOCTL_TRANSPORT_REQUEST initiation: %1
+Interface state discovery has stopped.">
+    </event>
+    <event value="311" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="Unexpected HRESULT for IOCTL_TRANSPORT_REQUEST completion: %1
+Interface state discovery has stopped.">
+    </event>
+    <event value="312" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="Transport driver returned an incorrect MULTI_TRANSPORT_STATE structure.
+Expected Size: &gt;= %1, Actual Size: %2">
+    </event>
+    <event value="313" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="Transport driver returned an incorrect MULTI_TRANSPORT_FRIENDLYNAME structure.
+Expected Size: &gt;= %1, Actual Size: %2">
+    </event>
+    <event value="314" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="MULTI_TRANSPORT_FRIENDLYNAME structure too short for provided string, or string not NULL-terminated">
+    </event>
+    <event value="315" version="0" opcode="0" channel="16" level="2" task="32" keywords="0x8000000000000000" message="MULTI_TRANSPORT_FRIENDLYNAME structure must provide a NULL-terminated string">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Fault-Tolerant-Heap" guid="6b93bf66-a922-4c11-a617-cf60d95c133d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=fthsvc.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\fthsvc.dll" messageFileName="C:\Windows\system32\fthsvc.dll" message="Microsoft-Windows-Fault-Tolerant-Heap" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Fault-Tolerant-Heap/Operational" id="16" flags="0" message="Microsoft-Windows-Fault-Tolerant-Heap/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="FTH_EVENT_OPCODE_LIFECYCLE_START" value="720896" message="Events logged when the FTH (fault tolerant heap) service is started.">
+    </opcode>
+    <opcode name="FTH_EVENT_OPCODE_LIFECYCLE_STOP" value="786432" message="Events logged when the FTH (fault tolerant heap) service is stopped.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="FTH_EVENT_TASK_LIFECYCLE" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Lifecycle Events">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="FTH_EVENT_KEYWORD_LIFECYCLE" mask="10000000" message="Events related to lifecycle of FTH (Fault tolerant heap) service.">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x4000000010000000" message="The Fault Tolerant Heap service started.">
+    </event>
+    <event value="1002" version="0" opcode="12" channel="16" level="4" task="1" keywords="0x4000000010000000" message="The Fault Tolerant Heap service stopped.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000010000000" message="FaultTolerantHeap Enabled">
+    </event>
+  </events>
+</provider>

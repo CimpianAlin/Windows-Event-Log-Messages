@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-Processor-Power" guid="0f67e49f-fe51-4e9f-b490-6f2948cc6027" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=microsoft-windows-kernel-processor-power-events.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\microsoft-windows-kernel-processor-power-events.dll" messageFileName="C:\Windows\system32\microsoft-windows-kernel-processor-power-events.dll" message="Microsoft-Windows-Kernel-Processor-Power" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-Processor-Power/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="Makeup" value="2162688" message="">
+    </opcode>
+    <opcode name="FailedStart" value="2228224" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="IdleStatesError" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfStatesError" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThrottleStatesError" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Summary" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IdleStatesErrata" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfStatesErrata" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LongCapInfo" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QuickCapInfo" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DomainPerfStateChange" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessorPerfStateChange" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfCheck" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RecordedUtility" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ExpectedUtility" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ParkCore" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UnparkCore" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IdleAccountingRundown" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessorFirmwareRundown" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CStateDomainFirmwareRundown" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PTStateDomainFirmwareRundown" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThrottleStatesErrata" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PccSummary" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PccErrata" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PccError" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NotifyPStates" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NotifyCStates" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NotifyTStates" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PerfStatesRundown" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BiosPStatesRundown" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BiosCStatesRundown" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BiosTStatesRundown" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PccCapChange" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BiosCapChange" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThermalCapChange" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogicalProcessorIdlingCorePark" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogicalProcessorIdlingRundown" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LatencySensitivityHint" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ParkNodeRecordedStats" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CpcError" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PepGetIdleStates" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PepQueryCapabilities" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PepPerfConstraintChange" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PepPerfCapabilities" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessorPerformanceRundown" value="44" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ParkNodeRundown" value="45" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ParkNodeCapChange" value="46" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Summary2" value="47" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessorIdleRundown" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessorIdRundown" value="49" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PepGetPlatformIdleStates" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlatformIdleAccountingRundown" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlatformParkingPreference" value="52" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LowPowerScenarioChange" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LowPowerScenarioRundown" value="54" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LowPowerScenarioInformationRundown" value="55" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PepGetIdleStatesV2" value="56" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PepGetIdleStatesV2Rundown" value="57" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PepGetPlatformIdleState" value="58" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PepGetPlatformIdleStateRundown" value="59" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DripsAccountingSnapshot" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlatformAccountingBucketIntervalsRundown" value="61" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlatformIdleVetoIncrement" value="62" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlatformIdleVetoDecrement" value="63" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessorIdleVetoIncrement" value="64" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessorIdleVetoDecrement" value="65" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PlatformIdleVetoRundown" value="66" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ProcessorIdleVetoRundown" value="67" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Perf" mask="1" message="">
+    </keyword>
+    <keyword name="Diag" mask="2" message="">
+    </keyword>
+    <keyword name="PowerDiagnostics" mask="4" message="">
+    </keyword>
+    <keyword name="Lpi" mask="8" message="">
+    </keyword>
+    <keyword name="SleepStudy" mask="10" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Idle power management features on processor %1 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="8" level="2" task="2" keywords="0x8000000000000000" message="Performance power management features on processor %1 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="8" level="2" task="3" keywords="0x8000000000000000" message="Throttle power management features on processor %1 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="8" level="4" task="4" keywords="0x8000000000000000" message="Processor %1 exposes the following:
+
+%2 idle state(s)
+%3 performance state(s)
+%4 throttle state(s)">
+    </event>
+    <event value="5" version="0" opcode="0" channel="8" level="2" task="5" keywords="0x8000000000000000" message="Some processor idle power management features have been disabled due to a known firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="8" level="2" task="6" keywords="0x8000000000000000" message="Some processor performance power management features have been disabled due to a known firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="8" level="3" task="7" keywords="0x8000000000000000" message="The speed of processor %1 is being limited by system firmware. The processor has been in this reduced performance state for %2 seconds since the last report.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="3" task="8" keywords="0x4000000000000000" message="The speed of processor %1 is being limited by system firmware. The processor has been in this reduced performance state for %2 seconds since the last report.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="0" level="4" task="9" keywords="0x1" message="">
+    </event>
+    <event value="9" version="1" opcode="0" channel="0" level="4" task="9" keywords="0x1" message="">
+    </event>
+    <event value="10" version="0" opcode="0" channel="0" level="4" task="10" keywords="0x1" message="">
+    </event>
+    <event value="10" version="1" opcode="0" channel="0" level="4" task="10" keywords="0x1" message="">
+    </event>
+    <event value="10" version="2" opcode="0" channel="0" level="4" task="10" keywords="0x1" message="">
+    </event>
+    <event value="11" version="0" opcode="1" channel="0" level="5" task="11" keywords="0x2" message="">
+    </event>
+    <event value="11" version="1" opcode="1" channel="0" level="5" task="11" keywords="0x2" message="">
+    </event>
+    <event value="12" version="0" opcode="0" channel="0" level="4" task="12" keywords="0x2" message="">
+    </event>
+    <event value="12" version="1" opcode="0" channel="0" level="4" task="12" keywords="0x2" message="">
+    </event>
+    <event value="13" version="0" opcode="0" channel="0" level="4" task="13" keywords="0x2" message="">
+    </event>
+    <event value="14" version="0" opcode="0" channel="0" level="4" task="14" keywords="0x3" message="">
+    </event>
+    <event value="15" version="0" opcode="0" channel="0" level="4" task="15" keywords="0x3" message="">
+    </event>
+    <event value="16" version="0" opcode="2" channel="0" level="5" task="11" keywords="0x2" message="">
+    </event>
+    <event value="18" version="0" opcode="0" channel="0" level="4" task="10" keywords="0x1" message="">
+    </event>
+    <event value="18" version="1" opcode="0" channel="0" level="4" task="10" keywords="0x1" message="">
+    </event>
+    <event value="18" version="2" opcode="0" channel="0" level="4" task="10" keywords="0x1" message="">
+    </event>
+    <event value="19" version="0" opcode="0" channel="0" level="4" task="17" keywords="0x6" message="">
+    </event>
+    <event value="19" version="1" opcode="0" channel="0" level="4" task="17" keywords="0x6" message="">
+    </event>
+    <event value="19" version="2" opcode="0" channel="0" level="4" task="17" keywords="0x6" message="">
+    </event>
+    <event value="20" version="0" opcode="0" channel="0" level="4" task="18" keywords="0x6" message="">
+    </event>
+    <event value="21" version="0" opcode="0" channel="0" level="4" task="19" keywords="0x6" message="">
+    </event>
+    <event value="22" version="0" opcode="0" channel="0" level="4" task="20" keywords="0x6" message="">
+    </event>
+    <event value="23" version="0" opcode="0" channel="0" level="4" task="4" keywords="0x6" message="">
+    </event>
+    <event value="24" version="0" opcode="0" channel="0" level="2" task="5" keywords="0x6" message="">
+    </event>
+    <event value="25" version="0" opcode="0" channel="0" level="2" task="6" keywords="0x6" message="">
+    </event>
+    <event value="26" version="0" opcode="0" channel="8" level="4" task="4" keywords="0x8000000000000000" message="Processor %2 in group %1 exposes the following:
+
+%3 idle state(s)
+%4 performance state(s)
+%5 throttle state(s)">
+    </event>
+    <event value="26" version="1" opcode="0" channel="8" level="4" task="4" keywords="0x8000000000000000" message="Hyper-V logical processor %2 exposes the following:
+
+%3 idle state(s)
+%4 performance state(s)
+%5 throttle state(s)">
+    </event>
+    <event value="27" version="0" opcode="0" channel="8" level="2" task="21" keywords="0x8000000000000000" message="Some processor power management features have been disabled due to a known firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="28" version="0" opcode="0" channel="0" level="2" task="21" keywords="0x6" message="">
+    </event>
+    <event value="29" version="0" opcode="0" channel="8" level="4" task="22" keywords="0x8000000000000000" message="The platform implements processor performance and throttle state control.
+
+Minimum performance frequency percentage: %3
+
+Minimum throttled frequency percentage: %4">
+    </event>
+    <event value="30" version="0" opcode="0" channel="0" level="4" task="22" keywords="0x6" message="">
+    </event>
+    <event value="31" version="0" opcode="0" channel="8" level="2" task="23" keywords="0x8000000000000000" message="Some processor power management features have been disabled due to a known firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="32" version="0" opcode="0" channel="0" level="2" task="23" keywords="0x6" message="">
+    </event>
+    <event value="33" version="0" opcode="0" channel="8" level="2" task="24" keywords="0x8000000000000000" message="Platform based performance and throttle power management features on processor %2 in group %1 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="34" version="0" opcode="0" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Idle power management features on processor %2 in group %1 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="34" version="1" opcode="0" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Idle power management features on Hyper-V logical processor %2 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="35" version="0" opcode="0" channel="8" level="2" task="2" keywords="0x8000000000000000" message="Performance power management features on processor %2 in group %1 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="35" version="1" opcode="0" channel="8" level="2" task="2" keywords="0x8000000000000000" message="Performance power management features on Hyper-V logical processor %2 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="36" version="0" opcode="0" channel="8" level="2" task="3" keywords="0x8000000000000000" message="Throttle power management features on processor %2 in group %1 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="36" version="1" opcode="0" channel="8" level="2" task="3" keywords="0x8000000000000000" message="Throttle power management features on Hyper-V logical processor %2 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="37" version="0" opcode="0" channel="8" level="3" task="7" keywords="0x8000000000000000" message="The speed of processor %2 in group %1 is being limited by system firmware. The processor has been in this reduced performance state for %3 seconds since the last report.">
+    </event>
+    <event value="37" version="1" opcode="0" channel="8" level="3" task="7" keywords="0x8000000000000000" message="The speed of Hyper-V logical processor %2 is being limited by system firmware. The processor has been in this reduced performance state for %3 seconds since the last report.">
+    </event>
+    <event value="38" version="0" opcode="0" channel="16" level="3" task="8" keywords="0x4000000000000000" message="The speed of processor %2 in group %1 is being limited by system firmware. The processor has been in this reduced performance state for %3 seconds since the last report.">
+    </event>
+    <event value="39" version="0" opcode="0" channel="0" level="4" task="25" keywords="0x2" message="">
+    </event>
+    <event value="40" version="0" opcode="0" channel="0" level="4" task="26" keywords="0x2" message="">
+    </event>
+    <event value="41" version="0" opcode="0" channel="0" level="4" task="27" keywords="0x2" message="">
+    </event>
+    <event value="42" version="0" opcode="0" channel="0" level="4" task="28" keywords="0x6" message="">
+    </event>
+    <event value="43" version="0" opcode="0" channel="0" level="4" task="29" keywords="0x6" message="">
+    </event>
+    <event value="44" version="0" opcode="0" channel="0" level="4" task="30" keywords="0x6" message="">
+    </event>
+    <event value="45" version="0" opcode="0" channel="0" level="4" task="31" keywords="0x6" message="">
+    </event>
+    <event value="46" version="0" opcode="0" channel="0" level="4" task="32" keywords="0x2" message="">
+    </event>
+    <event value="47" version="0" opcode="0" channel="0" level="4" task="33" keywords="0x2" message="">
+    </event>
+    <event value="48" version="0" opcode="0" channel="0" level="4" task="34" keywords="0x2" message="">
+    </event>
+    <event value="49" version="0" opcode="33" channel="0" level="5" task="11" keywords="0x2" message="">
+    </event>
+    <event value="50" version="0" opcode="0" channel="0" level="4" task="35" keywords="0xa" message="">
+    </event>
+    <event value="51" version="0" opcode="0" channel="0" level="4" task="36" keywords="0xa" message="">
+    </event>
+    <event value="52" version="0" opcode="0" channel="0" level="4" task="37" keywords="0x2" message="">
+    </event>
+    <event value="53" version="0" opcode="0" channel="0" level="5" task="38" keywords="0x2" message="">
+    </event>
+    <event value="54" version="0" opcode="0" channel="8" level="2" task="39" keywords="0x8000000000000000" message="Collaborative processor power controls on processor %2 in group %1 are disabled due to a firmware problem. Check with the computer manufacturer for updated firmware.">
+    </event>
+    <event value="55" version="0" opcode="0" channel="8" level="4" task="47" keywords="0x8000000000000000" message="Processor %2 in group %1 exposes the following power management capabilities:
+
+Idle state type: %4 (%3 state(s))
+
+Performance state type: %9
+Nominal Frequency (MHz): %5
+Maximum performance percentage: %6
+Minimum performance percentage: %7
+Minimum throttle percentage: %8">
+    </event>
+    <event value="55" version="1" opcode="0" channel="8" level="4" task="47" keywords="0x8000000000000000" message="Hyper-V logical processor %2 exposes the following power management capabilities:
+
+Idle state type: %4 (%3 state(s))
+
+Performance state type: %9
+Nominal Frequency (MHz): %5
+Maximum performance percentage: %6
+Minimum performance percentage: %7
+Minimum throttle percentage: %8">
+    </event>
+    <event value="56" version="0" opcode="0" channel="0" level="4" task="47" keywords="0x6" message="">
+    </event>
+    <event value="57" version="0" opcode="0" channel="0" level="4" task="40" keywords="0x2" message="">
+    </event>
+    <event value="58" version="0" opcode="0" channel="0" level="4" task="40" keywords="0x2" message="">
+    </event>
+    <event value="59" version="0" opcode="0" channel="0" level="4" task="41" keywords="0x2" message="">
+    </event>
+    <event value="60" version="0" opcode="0" channel="0" level="4" task="41" keywords="0x2" message="">
+    </event>
+    <event value="61" version="0" opcode="0" channel="0" level="4" task="42" keywords="0x2" message="">
+    </event>
+    <event value="62" version="0" opcode="0" channel="0" level="4" task="43" keywords="0x2" message="">
+    </event>
+    <event value="63" version="0" opcode="0" channel="0" level="4" task="43" keywords="0x2" message="">
+    </event>
+    <event value="64" version="0" opcode="0" channel="0" level="4" task="44" keywords="0x2" message="">
+    </event>
+    <event value="65" version="0" opcode="0" channel="0" level="4" task="45" keywords="0x2" message="">
+    </event>
+    <event value="65" version="1" opcode="0" channel="0" level="4" task="45" keywords="0x2" message="">
+    </event>
+    <event value="66" version="0" opcode="0" channel="0" level="4" task="46" keywords="0x2" message="">
+    </event>
+    <event value="66" version="1" opcode="0" channel="0" level="4" task="46" keywords="0x2" message="">
+    </event>
+    <event value="67" version="0" opcode="0" channel="0" level="4" task="48" keywords="0x2" message="">
+    </event>
+    <event value="68" version="0" opcode="0" channel="0" level="4" task="49" keywords="0x2" message="">
+    </event>
+    <event value="69" version="0" opcode="0" channel="0" level="4" task="50" keywords="0x2" message="">
+    </event>
+    <event value="70" version="0" opcode="0" channel="0" level="4" task="50" keywords="0x12" message="">
+    </event>
+    <event value="71" version="0" opcode="34" channel="0" level="5" task="11" keywords="0x2" message="">
+    </event>
+    <event value="72" version="0" opcode="0" channel="0" level="4" task="51" keywords="0x2" message="">
+    </event>
+    <event value="72" version="1" opcode="0" channel="0" level="4" task="51" keywords="0x2" message="">
+    </event>
+    <event value="73" version="0" opcode="0" channel="0" level="4" task="52" keywords="0x2" message="">
+    </event>
+    <event value="74" version="0" opcode="0" channel="0" level="4" task="53" keywords="0x3" message="">
+    </event>
+    <event value="75" version="0" opcode="0" channel="0" level="4" task="54" keywords="0x3" message="">
+    </event>
+    <event value="76" version="0" opcode="0" channel="0" level="4" task="55" keywords="0x3" message="">
+    </event>
+    <event value="77" version="0" opcode="0" channel="0" level="4" task="56" keywords="0x2" message="">
+    </event>
+    <event value="78" version="0" opcode="0" channel="0" level="4" task="57" keywords="0x2" message="">
+    </event>
+    <event value="79" version="0" opcode="0" channel="0" level="4" task="58" keywords="0x2" message="">
+    </event>
+    <event value="80" version="0" opcode="0" channel="0" level="4" task="59" keywords="0x2" message="">
+    </event>
+    <event value="81" version="0" opcode="0" channel="0" level="4" task="60" keywords="0x10" message="">
+    </event>
+    <event value="82" version="0" opcode="0" channel="0" level="4" task="61" keywords="0x10" message="">
+    </event>
+    <event value="83" version="0" opcode="0" channel="0" level="4" task="62" keywords="0x2" message="">
+    </event>
+    <event value="84" version="0" opcode="0" channel="0" level="4" task="63" keywords="0x2" message="">
+    </event>
+    <event value="85" version="0" opcode="0" channel="0" level="4" task="64" keywords="0x2" message="">
+    </event>
+    <event value="86" version="0" opcode="0" channel="0" level="4" task="65" keywords="0x2" message="">
+    </event>
+    <event value="87" version="0" opcode="0" channel="0" level="4" task="66" keywords="0x2" message="">
+    </event>
+    <event value="88" version="0" opcode="0" channel="0" level="4" task="67" keywords="0x2" message="">
+    </event>
+  </events>
+</provider>

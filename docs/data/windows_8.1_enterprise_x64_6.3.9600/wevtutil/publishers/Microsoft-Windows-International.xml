@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-International" guid="3aa52b8b-6357-4c18-a92e-b53fb177853b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="Microsoft-Windows-International" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-International/Operational" id="16" flags="0" message="Microsoft-Windows-International/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="DataTable" value="1966080" message="NLS data table operations">
+    </opcode>
+    <opcode name="Initialize" value="2031616" message="NLS initialization">
+    </opcode>
+    <opcode name="ConfigurationChange" value="2097152" message="NLS configuration changes">
+    </opcode>
+    <opcode name="Operation" value="2162688" message="NLS operations">
+    </opcode>
+    <opcode name="Cleanup" value="2228224" message="NLS clean-up operations">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CharacterEncoding" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="NLS code page functions">
+    </task>
+    <task name="DateTimeCalendar" value="32" eventGUID="00000000-0000-0000-0000-000000000000" message="NLS date/time functions">
+    </task>
+    <task name="CME" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="NLS Unattended Regional and Language Options">
+    </task>
+    <task name="GroupPolicy" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="NLS group policy">
+    </task>
+    <task name="Locale" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="NLS locale functions">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="31" channel="16" level="1" task="35" keywords="0x8000000000000000" message="The NLS operation failed because the registry key %1 cannot be opened. Error code is %2. Error message: %3">
+    </event>
+    <event value="1002" version="0" opcode="31" channel="16" level="1" task="35" keywords="0x8000000000000000" message="The NLS operation failed because the registry key %1 cannot be opened. Status code is %2.">
+    </event>
+    <event value="1003" version="0" opcode="30" channel="16" level="1" task="30" keywords="0x8000000000000000" message="NLS codepage operation failed for the codepage %1 because the file %2 is missing.  To correct this error, replace this file or repair your Windows installation.">
+    </event>
+    <event value="1004" version="0" opcode="30" channel="16" level="1" task="30" keywords="0x8000000000000000" message="NLS codepage operation failed for the codepage %1 because the file %2 is corrupted. To correct this error, replace this file or repair your Windows installation.">
+    </event>
+    <event value="1005" version="0" opcode="30" channel="16" level="1" task="35" keywords="0x8000000000000000" message="NLS operation failed for %1 locale because the file %2\globalization\%1.nlp is missing.  To fix this problem, reinstall this custom locale.">
+    </event>
+    <event value="1006" version="0" opcode="30" channel="16" level="1" task="35" keywords="0x8000000000000000" message="NLS operation failed for %1 locale because the file %2\globalization\%1.nlp is corrupted.  To fix this problem, reinstall this custom locale.">
+    </event>
+    <event value="1500" version="0" opcode="33" channel="16" level="3" task="34" keywords="0x8000000000000000" message="Group Policy has prevented process number %1 (%2) from changing the standards and format information for the user.">
+    </event>
+    <event value="1501" version="0" opcode="33" channel="16" level="3" task="34" keywords="0x8000000000000000" message="Group Policy has prevented the geographical location from being changed.">
+    </event>
+    <event value="1502" version="0" opcode="33" channel="16" level="3" task="34" keywords="0x8000000000000000" message="Group Policy has prevented the user from changing their user locale to &quot;%1&quot;.">
+    </event>
+    <event value="1503" version="0" opcode="33" channel="16" level="3" task="34" keywords="0x8000000000000000" message="Group Policy does not allow custom user locales for standards and formats. The user was unable to select &quot;%1&quot; as their user locale.">
+    </event>
+    <event value="2000" version="0" opcode="31" channel="16" level="3" task="35" keywords="0x8000000000000000" message="NLS operation recreated the registry key %1.">
+    </event>
+    <event value="2500" version="0" opcode="31" channel="16" level="5" task="35" keywords="0x8000000000000000" message="Windows has detected inconsistencies in NLS internal data. To correct this problem, log off of Windows and log on again.">
+    </event>
+    <event value="3000" version="0" opcode="33" channel="16" level="4" task="35" keywords="0x8000000000000000" message="Process number %1 (%2) called SetLocaleInfo(%3, %4, &quot;%5&quot;)  successfully.">
+    </event>
+    <event value="3001" version="0" opcode="33" channel="16" level="4" task="32" keywords="0x8000000000000000" message="Process number %1 (%2) called SetCalendarInfo(%3, %4, %5, &quot;%6&quot;)  successfully.">
+    </event>
+    <event value="3002" version="0" opcode="33" channel="16" level="4" task="35" keywords="0x8000000000000000" message="Process number %1 (%2) called SetUserGeoID(%3) successfully.">
+    </event>
+    <event value="3003" version="0" opcode="33" channel="16" level="4" task="35" keywords="0x8000000000000000" message="The system updated the locale &quot;%1&quot; with flag %2. Process number %3 (%4). Return code is %5.">
+    </event>
+    <event value="10000" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The user tried to apply an unattended XML file (%1) in an unsupported format. Reason: %3 (Line %2). The system has not been changed.">
+    </event>
+    <event value="10001" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="Unsupported XML in function.">
+    </event>
+    <event value="10003" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The user locale &quot;%1&quot; (specified by the UserLocale element) is not a supported locale name or is not installed on the system. The user locale was not changed.">
+    </event>
+    <event value="10004" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="Unsupported alternate sort &quot;%1&quot;.">
+    </event>
+    <event value="10005" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="&quot;%1&quot; is not a supported sort order for locale &quot;%2&quot;.">
+    </event>
+    <event value="10006" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The selected system locale (specified by the SystemLocale element) is not installed on the system. The system locale was not changed.">
+    </event>
+    <event value="10007" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="Internal error while changing System locale (specified by the SystemLocale element).">
+    </event>
+    <event value="10008" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="Error while changing keyboard/input method for &quot;%1&quot;.">
+    </event>
+    <event value="10009" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="Error while changing location preference (geoid): %1. This error may be caused by an unsupported location preference (geoid) or a Group Policy restriction. Error code is %2. Error message: %3">
+    </event>
+    <event value="10010" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="Failed to change UI Language to &quot;%1&quot;. Status code is: %2.">
+    </event>
+    <event value="10011" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="Failed to change UI Language fallback order to &quot;%1&quot;. Status code is: %2.">
+    </event>
+    <event value="10012" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The user tried to apply an unattended XML file %1, but the file does not exist.">
+    </event>
+    <event value="10013" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="Error while the user changed setting &quot;%1&quot; with value &quot;%2&quot; for the current user locale. Error code is: %3. Error message: %4">
+    </event>
+    <event value="10014" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The selected calendar &quot;%1;&quot; (specified by the Calendar element) is not a supported calendar. The user locale was not changed.">
+    </event>
+    <event value="10015" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The selected TwoDigitYearMax &quot;%1;&quot; (specified by the TwoDigitYearMax element) is not a supported value. The user locale was not changed.">
+    </event>
+    <event value="10111" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The user does not have permission to change the TwoDigitYearMax setting">
+    </event>
+    <event value="10112" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The user does not have permission to copy current settings to the Default and/or System Account">
+    </event>
+    <event value="10113" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The user does not have permission to change the system locale (specified by the SystemLocale element).">
+    </event>
+    <event value="10115" version="0" opcode="33" channel="16" level="2" task="33" keywords="0x8000000000000000" message="The user does not have permission to change the calendar.">
+    </event>
+    <event value="10216" version="0" opcode="33" channel="16" level="5" task="33" keywords="0x8000000000000000" message="Unexpected failure. Stack overflow">
+    </event>
+    <event value="10218" version="0" opcode="33" channel="16" level="5" task="33" keywords="0x8000000000000000" message="Unexpected failure. Unsupported flag">
+    </event>
+    <event value="10219" version="0" opcode="33" channel="16" level="5" task="33" keywords="0x8000000000000000" message="Unexpected failure. Unsupported parameter">
+    </event>
+    <event value="10220" version="0" opcode="33" channel="16" level="5" task="33" keywords="0x8000000000000000" message="Unexpected failure. Unrecoverable error.">
+    </event>
+    <event value="10221" version="0" opcode="33" channel="16" level="5" task="33" keywords="0x8000000000000000" message="Failed when calling internal function. Error code is: %1">
+    </event>
+    <event value="10222" version="0" opcode="33" channel="16" level="5" task="33" keywords="0x8000000000000000" message="The operation timed out.">
+    </event>
+    <event value="10300" version="0" opcode="33" channel="16" level="3" task="33" keywords="0x8000000000000000" message="Group Policy has prevented the user from changing the system locale (specified by the SystemLocale element).">
+    </event>
+    <event value="13000" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The user changed their user locale (specified by the UserLocale element) to &quot;%1&quot;.">
+    </event>
+    <event value="13001" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The user reset all customizations for their user locale &quot;%1&quot; (specified by the UserLocale element) to the system default.">
+    </event>
+    <event value="13002" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The user changed their user locale setting &quot;%1&quot; (specified by the UserLocale element) to &quot;%2&quot;.">
+    </event>
+    <event value="13003" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The locale has to be changed to the current locale in order to make customizations.">
+    </event>
+    <event value="13004" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The user changed their alternate sort to &quot;%1&quot;.">
+    </event>
+    <event value="13005" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The user changed their calendar to &quot;%1&quot;.">
+    </event>
+    <event value="13006" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The user changed their TwoDigitYearMax to %1.">
+    </event>
+    <event value="13007" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The user changed their location preference (geoid) to %1.">
+    </event>
+    <event value="13008" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The system locale (specified by the SystemLocale element) was changed to &quot;%1&quot;.">
+    </event>
+    <event value="13009" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The current user settings were copied to the default user account.">
+    </event>
+    <event value="13010" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The current user settings were copied to the system accounts.">
+    </event>
+    <event value="13011" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The user has changed their UI Language to &quot;%1&quot;.">
+    </event>
+    <event value="13012" version="0" opcode="33" channel="16" level="4" task="33" keywords="0x8000000000000000" message="The user has changed their UI Language fallback order to &quot;%1&quot;.">
+    </event>
+  </events>
+</provider>

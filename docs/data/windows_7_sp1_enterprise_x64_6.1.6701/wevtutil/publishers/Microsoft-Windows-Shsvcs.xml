@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Shsvcs" guid="059c3e04-5535-4929-85e1-93030e78f47b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=shsvcs.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\shsvcs.dll" messageFileName="C:\Windows\system32\shsvcs.dll" message="Microsoft-Windows-Shell-Services" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Shsvcs/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="HDSrv_Service_Start" value="11501" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="HDSrv_Service_Stop" value="11503" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="11501" version="0" opcode="1" channel="16" level="4" task="11501" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11502" version="0" opcode="2" channel="16" level="4" task="11501" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11503" version="0" opcode="1" channel="16" level="4" task="11503" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11504" version="0" opcode="2" channel="16" level="4" task="11503" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

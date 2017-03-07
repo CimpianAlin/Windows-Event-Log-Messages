@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Bluetooth-MTPEnum" guid="04268430-d489-424d-b914-0cff741d6684" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=wpd_ci.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\wpd_ci.dll" messageFileName="C:\Windows\System32\wpd_ci.dll" message="Microsoft-Windows-Bluetooth-MTPEnum" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Bluetooth-MTPEnum/Operational" id="16" flags="0" message="Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="MtpBtDriver" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Driver Health">
+    </task>
+    <task name="MtpBtLink" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Link State">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="MTP Bluetooth enumerator driver is operational with status code (%1).">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="MTP Bluetooth enumerator driver has failed to operate with error code (%1).">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="MTP Bluetooth enumerator driver has created a device object with status code (%1).">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="MTP Bluetooth enumerator driver has failed to create a device object with error code (%1).">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="An MTP Bluetooth Link between PC and an MTP Bluetooth device has been established (%1).">
+    </event>
+    <event value="201" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="An MTP Bluetooth Link between PC and an MTP Bluetooth device has been disassociated (%1).">
+    </event>
+    <event value="202" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="An MTP Bluetooth Link connection is being initiated by (%1).">
+    </event>
+    <event value="203" version="0" opcode="0" channel="16" level="4" task="2" keywords="0x8000000000000000" message="An MTP Bluetooth Link connection is being disassociated by (%1).">
+    </event>
+    <event value="204" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="An MTP Bluetooth Link between PC and an MTP Bluetooth device has been disassociated (%1).">
+    </event>
+  </events>
+</provider>

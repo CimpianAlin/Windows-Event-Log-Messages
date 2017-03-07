@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-Netvsc" guid="152fbe4b-c7ad-4f68-bada-a4fcc1464f6c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=netvsc63.sys&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\drivers\netvsc63.sys" messageFileName="C:\Windows\system32\drivers\netvsc63.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-NETVSC/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="ProtocolNegotiate" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RndisMPInit" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RndisStatusChange" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MicroportInit" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="4" task="1001" keywords="0x8000000000000000" message="The VM and host networking components successfully negotiated protocol version &apos;%2&apos;">
+    </event>
+    <event value="2" version="0" opcode="0" channel="8" level="2" task="1001" keywords="0x8000000000000000" message="The VM and host networking components failed to negotiate protocol version &apos;%2&apos;">
+    </event>
+    <event value="3" version="0" opcode="0" channel="8" level="4" task="1002" keywords="0x8000000000000000" message="The miniport &apos;%2&apos; was successfully initialized">
+    </event>
+    <event value="4" version="0" opcode="0" channel="8" level="2" task="1002" keywords="0x8000000000000000" message="Failed to initialize miniport &apos;%2&apos;, Status = &apos;%3&apos;">
+    </event>
+    <event value="5" version="0" opcode="0" channel="8" level="2" task="1002" keywords="0x8000000000000000" message="Failed to set config parameters on miniport NIC &apos;%2&apos;, Status = &apos;%5&apos;">
+    </event>
+    <event value="6" version="0" opcode="0" channel="8" level="4" task="1003" keywords="0x8000000000000000" message="Miniport NIC &apos;%2&apos; is halting">
+    </event>
+    <event value="7" version="0" opcode="0" channel="8" level="4" task="1003" keywords="0x8000000000000000" message="Miniport NIC &apos;%2&apos; reset">
+    </event>
+    <event value="8" version="0" opcode="0" channel="8" level="3" task="1003" keywords="0x8000000000000000" message="Miniport NIC &apos;%2&apos; hung">
+    </event>
+    <event value="9" version="0" opcode="0" channel="8" level="3" task="1003" keywords="0x8000000000000000" message="Miniport NIC &apos;%2&apos; halted">
+    </event>
+    <event value="10" version="0" opcode="0" channel="8" level="4" task="1003" keywords="0x8000000000000000" message="Miniport NIC &apos;%2&apos; paused">
+    </event>
+    <event value="11" version="0" opcode="0" channel="8" level="4" task="1003" keywords="0x8000000000000000" message="Miniport NIC &apos;%2&apos; restarted">
+    </event>
+    <event value="12" version="0" opcode="0" channel="8" level="4" task="1003" keywords="0x8000000000000000" message="Miniport NIC &apos;%2&apos; connected">
+    </event>
+    <event value="13" version="0" opcode="0" channel="8" level="4" task="1003" keywords="0x8000000000000000" message="Miniport NIC &apos;%2&apos; disconnected">
+    </event>
+    <event value="14" version="0" opcode="0" channel="8" level="4" task="1003" keywords="0x8000000000000000" message="Miniport NIC &apos;%2&apos; network has changed">
+    </event>
+    <event value="15" version="0" opcode="0" channel="8" level="2" task="1004" keywords="0x8000000000000000" message="Microport initialization failed, reason = %1">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="NBL %2 miniport NIC &apos;%5&apos; is dropped. Reason: %3. Status - %1. ">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Failed to send packet at the microport. Reason: %2. Status - %1. ">
+    </event>
+  </events>
+</provider>

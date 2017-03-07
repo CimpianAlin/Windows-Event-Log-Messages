@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-System-Restore" guid="126cdb97-d346-4894-8a34-658da5eea1b6" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=SrEvents.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\SrEvents.dll" parameterFileName="C:\Windows\system32\SrEvents.dll" messageFileName="C:\Windows\system32\SrEvents.dll" message="System-Restore" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Performance" mask="1" message="Performance">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="8300" version="0" opcode="1" channel="9" level="4" task="0" keywords="0x8001000000000001" message="Scoping started for shadowcopy %1.">
+    </event>
+    <event value="8301" version="0" opcode="2" channel="9" level="4" task="0" keywords="0x8001000000000001" message="Scoping completed for shadowcopy %1.">
+    </event>
+    <event value="8302" version="0" opcode="0" channel="9" level="4" task="0" keywords="0x8000000000000000" message="Scoping successfully completed for shadowcopy %1.">
+    </event>
+    <event value="8303" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Scoping unsuccessful for shadowcopy %1 with error %2.">
+    </event>
+  </events>
+</provider>

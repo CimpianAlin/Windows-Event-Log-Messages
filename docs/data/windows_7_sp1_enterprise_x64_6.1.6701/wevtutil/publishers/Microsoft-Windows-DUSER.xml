@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DUSER" guid="8429e243-345b-47c1-8a91-2c94caf0daab" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=duser.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\duser.dll" messageFileName="C:\Windows\system32\duser.dll" message="Microsoft-Windows-DUSER" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DUSER/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DUser_Paint" value="1" eventGUID="3b7011d3-e78e-4f92-99a6-6197e2e4825a" message="">
+    </task>
+    <task name="DUser_SyncAdaptors" value="2" eventGUID="ec28a145-ada5-44b0-9e9a-921bc988101a" message="">
+    </task>
+    <task name="DUser_EndDrawBitBlt" value="3" eventGUID="e4fc3f76-9e11-40c6-808e-24bb031548c4" message="">
+    </task>
+    <task name="DUser_ResetInvalid" value="4" eventGUID="22b72392-9510-4f80-a244-9b35e9eefdea" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Default" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000001" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000000001" message="">
+    </event>
+  </events>
+</provider>

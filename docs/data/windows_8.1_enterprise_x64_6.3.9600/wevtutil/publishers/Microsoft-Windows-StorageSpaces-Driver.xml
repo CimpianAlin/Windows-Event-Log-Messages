@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-StorageSpaces-Driver" guid="595f7f52-c90a-4026-a125-8eb5e083f15e" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\drivers\spaceport.sys" messageFileName="C:\Windows\system32\drivers\spaceport.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-StorageSpaces-Driver/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-StorageSpaces-Driver/Operational" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PoolRecord" value="1000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DriveRecord" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SpaceRecord" value="1002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TierRecord" value="1003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TierRegionInfo" value="1004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SpacePacketInit" value="1100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DrivePacketInit" value="1101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PacketCompletion" value="1200" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogUsage" value="1300" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Config" mask="1" message="">
+    </keyword>
+    <keyword name="Init" mask="2" message="">
+    </keyword>
+    <keyword name="Completion" mask="4" message="">
+    </keyword>
+    <keyword name="Log" mask="8" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Physical drive %1 failed to read the configuration or returned corrupt data for storage pool %2. As a result the in-memory configuration may not be the most recent copy of configuration. Return Code: %3">
+    </event>
+    <event value="101" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="All physical drives failed to read the configuration or returned corrupt data for storage pool %1. As a result the pool will be inaccessible. Return Code: %2">
+    </event>
+    <event value="102" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Majority of the physical drives of storage pool %1 failed a configuration update, which caused the pool to go into a failed state. Return Code: %2">
+    </event>
+    <event value="103" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The capacity consumption of the storage pool %1 has exceeded the threshold limit set on the pool. Return Code: %2">
+    </event>
+    <event value="104" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="The capacity consumption of the storage pool %1 is now below the threshold limit set on the pool. Return Code: %2">
+    </event>
+    <event value="200" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Windows was unable to read the drive header for physical drive %1. If you know the drive is still usable, then resetting the drive health by using command line or GUI may clear this failure condition and enable you to reassign the drive to its storage pool. Return Code: %2">
+    </event>
+    <event value="201" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Physical drive %1 has invalid meta-data. Resetting the health status, using command line or GUI, might bring the physical drive to the primordial pool. Return Code: %2">
+    </event>
+    <event value="202" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Physical drive %1 has invalid meta-data. Resetting the health status, using command line or GUI, might resolve the issue. Return Code: %2">
+    </event>
+    <event value="203" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Physical drive %1 failed an IO operation. Return Code: %2. Additional related events may be found in the System event log for Disk %3.                  
+                  
+This drive may need to be replaced. To view its reliability counters, run this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-StorageReliabilityCounter                  
+                  
+This drive may be located using the following information:                  
+                  
+Drive Manufacturer: %4                  
+Drive Model Number: %5                  
+Drive Serial Number: %6                  
+                  
+More information can be obtained using this PowerShell command:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; }                  
+                  
+If this drive is in an enclosure, it may be located using the following information:                  
+                  
+Enclosure Manufacturer: %7                  
+Enclosure Model Number: %8                  
+Enclosure Serial Number: %9                  
+Enclosure Slot: %10                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Enable-PhysicalDiskIndication">
+    </event>
+    <event value="204" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Physical drive %1 is reporting an impending failure. Sense Code (KEY ASC/ASCQ): %2 %3/%4. Additional related events may be found in the System event log for Disk %5.                  
+                  
+This drive may need to be replaced. To view its reliability counters, run this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Get-StorageReliabilityCounter                  
+                  
+This drive may be located using the following information:                  
+                  
+Drive Manufacturer: %6                  
+Drive Model Number: %7                  
+Drive Serial Number: %8                  
+                  
+More information can be obtained using this PowerShell command:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; }                  
+                  
+If this drive is in an enclosure, it may be located using the following information:                  
+                  
+Enclosure Manufacturer: %9                  
+Enclosure Model Number: %10                  
+Enclosure Serial Number: %11                  
+Enclosure Slot: %12                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match &quot;%1&quot; } | Enable-PhysicalDiskIndication">
+    </event>
+    <event value="300" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Physical drive %1 failed to read the configuration or returned corrupt data for storage space %2. As a result the in-memory configuration may not be the most recent copy of configuration. Return Code: %3">
+    </event>
+    <event value="301" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="All pool drives failed to read the configuration or returned corrupt data for storage space %1. As a result the storage space will not attach. Return Code: %2">
+    </event>
+    <event value="302" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Majority of the pool drives hosting space meta-data for storage space %1 failed a space meta-data update, which caused the storage pool to go in failed state. Return Code: %2">
+    </event>
+    <event value="303" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Drives hosting data for storage space %1 have failed or are missing. As a result, no copy of data is available. Return Code: %2">
+    </event>
+    <event value="304" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="One or more drives hosting data for storage space %1 have failed or are missing. As a result, at least one copy of data is not available. However, at least one copy of data is still available. Return Code: %2">
+    </event>
+    <event value="306" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The attempt to map, or allocate more storage for, the storage space %1 has failed. This is because there was a write failure involved in the updating the storage space metadata. Return Code: %2">
+    </event>
+    <event value="307" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="The attempt to unmap or trim the storage space %1 has failed. Return Code: %2">
+    </event>
+    <event value="308" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="A repair attempt for storage space %1 was initiated by the driver. Return Code: %2">
+    </event>
+    <event value="309" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="Storage space %1 was detached due to an unexpected error. Return Code: %2">
+    </event>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="1000" keywords="0x8000000000000001" message="%1 %2 %3 %4 %5 %6 %7 %8">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="1001" keywords="0x8000000000000001" message="%1 %2 %3 %4 %5 %6 %7">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="1002" keywords="0x8000000000000001" message="%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="1003" keywords="0x8000000000000001" message="%1 %2 %3 %4 %5 %6">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="1004" keywords="0x8000000000000001" message="%1 %2 %3 %4">
+    </event>
+    <event value="1100" version="0" opcode="0" channel="16" level="4" task="1100" keywords="0x8000000000000002" message="%1 %2 %3 %4 %5 %6 %7 %8">
+    </event>
+    <event value="1101" version="0" opcode="0" channel="16" level="4" task="1101" keywords="0x8000000000000002" message="%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13">
+    </event>
+    <event value="1200" version="0" opcode="0" channel="16" level="4" task="1200" keywords="0x8000000000000004" message="%1 %2 %3">
+    </event>
+    <event value="1300" version="0" opcode="0" channel="16" level="4" task="1300" keywords="0x8000000000000008" message="%1 %2 %3">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MF" guid="a7364e1a-894f-4b3d-a930-2ed9c8c4c811" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.7600.16385&amp;FileName=mf.dll&amp;FileVer=12.0.7600.16385" resourceFileName="C:\Windows\system32\mf.dll" messageFileName="C:\Windows\system32\mf.dll" message="Microsoft-Windows-MediaFoundation" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="MF_MediaFoundationDeviceProxy" id="16" flags="0" message="">
+    </channel>
+    <channel name="MediaFoundationPipeline" id="17" flags="0" message="Media Foundation Pipeline">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="METransformHaveOutput" value="720896" message="">
+    </opcode>
+    <opcode name="ProcessOutput" value="786432" message="">
+    </opcode>
+    <opcode name="D3DAllocatorCreated" value="851968" message="D3D Allocator Created">
+    </opcode>
+    <opcode name="D3DAllocatorReleased" value="917504" message="D3D Allocator Released">
+    </opcode>
+    <opcode name="Load" value="983040" message="Devproxy loaded">
+    </opcode>
+    <opcode name="Unload" value="1048576" message="Devproxy MFT unloaded">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="MF_Devproxy_QueueBuffersToDevice" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_SendBuffersToDevice" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_ProcessInput" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_Output" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_SetInputType" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_SetOutputType" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_Flush" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_KSPinStateChange" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_VideoPlugin_Load" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_VideoPlugin_ProcessInput" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_VideoPlugin_ProcessOutput" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_D3DAllocator" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_MFT" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_MFT_DynamicFormatChange" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MF_Devproxy_MFT_StreamState" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LoadTopologyTask" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="Media Foundation LoadTopology">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="5" version="0" opcode="11" channel="16" level="4" task="4" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6" version="0" opcode="12" channel="16" level="4" task="4" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="7" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="8" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="13" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="14" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="15" version="0" opcode="1" channel="16" level="4" task="10" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="16" version="0" opcode="2" channel="16" level="4" task="10" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="17" version="0" opcode="1" channel="16" level="4" task="11" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="18" version="0" opcode="2" channel="16" level="4" task="11" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="19" version="0" opcode="13" channel="16" level="4" task="12" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="20" version="0" opcode="14" channel="16" level="4" task="12" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="21" version="0" opcode="15" channel="16" level="4" task="13" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="22" version="0" opcode="16" channel="16" level="4" task="13" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="23" version="0" opcode="1" channel="16" level="4" task="14" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="24" version="0" opcode="2" channel="16" level="4" task="14" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="25" version="0" opcode="1" channel="16" level="4" task="15" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="26" version="0" opcode="2" channel="16" level="4" task="15" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="1000" version="0" opcode="1" channel="17" level="4" task="103" keywords="0x4000000000000000" message="IMFTopoLoader::Load start">
+    </event>
+    <event value="1001" version="0" opcode="2" channel="17" level="4" task="103" keywords="0x4000000000000000" message="IMFTopoLoader::Load returned %1">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="17" level="4" task="103" keywords="0x4000000000000000" message="Creating Transform %1 returned %2">
+    </event>
+  </events>
+</provider>

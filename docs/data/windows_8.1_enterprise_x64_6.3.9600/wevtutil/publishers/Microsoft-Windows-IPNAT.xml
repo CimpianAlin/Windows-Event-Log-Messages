@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IPNAT" guid="a67075c2-3e39-4109-b6cd-6d750058a732" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=ipnat.sys&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\drivers\ipnat.sys" messageFileName="C:\Windows\system32\drivers\ipnat.sys" message="IPNAT" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IPNAT/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="OpcodeDebugTrace" value="655360" message="DebugTrace">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="TaskDebugTrace" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="DebugTrace">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="KeywordDebugTrace" mask="1" message="DebugTrace">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2001" version="0" opcode="10" channel="16" level="4" task="1001" keywords="0x8000000000000001" message="%1">
+    </event>
+  </events>
+</provider>

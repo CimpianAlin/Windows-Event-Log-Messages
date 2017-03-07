@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-IoTrace" guid="a103cabd-8242-4a93-8df5-1cdf3b3f26a6" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Kernel-IoTrace/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="UserInitiatedIo" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KernelIo" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ActivityIdTransfer" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="1" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="5" task="2" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="3" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

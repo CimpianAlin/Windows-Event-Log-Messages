@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-User Profiles General" guid="db00dfb6-29f9-4a9c-9b3b-1f4f9e7d9770" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=userenv.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\userenv.dll" messageFileName="C:\Windows\System32\userenv.dll" message="Microsoft-Windows-User Profile General" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+    <channel name="Microsoft-Windows-User Profile Service/Operational" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-User Profile Service/Diagnostic" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="69" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x4000000000000000" message="%1 which has timestamp %2 was not copied to %3 which has timestamp %4 since it is older than the file it would be overwriting.">
+    </event>
+    <event value="77" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="File %1 of size %2 kilobytes copied from %3 to %4 in %5 seconds.">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x2000000000000000" message="%1 which has timestamp %2 was not copied to %3 which has timestamp %4 since it is older than the file it would be overwriting.">
+    </event>
+    <event value="1509" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows cannot copy file %1 to location %2. This error may be caused by network problems or insufficient security rights. 
+
+ DETAIL - %3">
+    </event>
+    <event value="1534" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="There are too many profile copy errors. Refer to the previous events for details. Windows will not log any additional copy errors for this copy process. 
+
+">
+    </event>
+    <event value="1600" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows cannot copy profile from %1 to %2, you do not have enough disk space.
+
+">
+    </event>
+    <event value="1601" version="0" opcode="0" channel="9" level="3" task="0" keywords="0x8000000000000000" message="Windows cannot copy profile from %1 to %2, you have exceeded the profile quota.
+
+">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IPBusEnum" guid="cd032e15-15ad-4da4-afc6-03bf83516195" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=ipbusenum.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\ipbusenum.dll" parameterFileName="C:\Windows\system32\ipbusenum.dll" messageFileName="C:\Windows\system32\ipbusenum.dll" message="Microsoft-Windows-IPBusEnum" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IPBusEnum/Tracing" id="16" flags="0" message="">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="IPBusEnum" mask="10" message="IPBusEnum Event">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="The network device %1 was successfully added to this computer.">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="The network device %1 was successfully removed from this computer.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="The parent network device %1 was successfully added to this computer.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="The child network device %1 was successfully added to this computer.">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000010" message="The parent network device %1 was successfully removed from this computer.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x4000000000000010" message="Network device %1 was not successfully added to the system. The system limit of Physical Device Objects has been reached for this bus enumerator. No additional devices can be installed on the system.">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x4000000000000010" message="Network device %1 was not successfully added to the system. The system limit of child Physical Device Objects has been reached for this device. No additional child devices can be installed for this device.">
+    </event>
+  </events>
+</provider>

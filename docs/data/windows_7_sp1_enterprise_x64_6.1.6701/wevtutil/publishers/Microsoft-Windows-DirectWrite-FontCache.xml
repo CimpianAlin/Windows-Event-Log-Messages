@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DirectWrite-FontCache" guid="e856c26a-e105-4683-a948-6920dcc42e45" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=FntCache.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\FntCache.dll" parameterFileName="C:\Windows\system32\FntCache.dll" messageFileName="C:\Windows\system32\FntCache.dll" message="Microsoft-Windows-DirectWrite-FontCache" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DirectWrite-FontCache/Tracing" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="core" mask="40" message="Event originating from the FontCache service.">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="100" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="Successfully constructed font cache element.">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="Failed to construct a font cache element.">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="Could not construct a font cache element due to a malformed key.">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="ALPC message has been received.">
+    </event>
+    <event value="104" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="Prefetch file has been written to disk.">
+    </event>
+    <event value="105" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="Prefetch file has been loaded from disk.">
+    </event>
+    <event value="106" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000040" message="The prefetch file is corrupt and will be recreated.">
+    </event>
+  </events>
+</provider>

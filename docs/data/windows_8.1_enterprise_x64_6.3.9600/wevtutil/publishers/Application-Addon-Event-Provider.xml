@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Application-Addon-Event-Provider" guid="a83fa99f-c356-4ded-9fd6-5a5eb8546d68" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Explorer&amp;ProdVer=11.0.9600.16384&amp;FileName=ieframe.dll&amp;FileVer=11.0.9600.16384" resourceFileName="C:\Windows\system32\ieframe.dll" messageFileName="C:\Windows\system32\ieframe.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="Application">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Enable" value="1" eventGUID="453484c3-300d-48d0-95fe-ddbe9f26c3f0" message="Enable Add-on">
+    </task>
+    <task name="Disable" value="2" eventGUID="2f1e7897-bb10-44c7-a6a4-fdb2a456e6b9" message="Disable Add-on">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="1" channel="9" level="4" task="1" keywords="0x8000000000000000" message="An add-on has been enabled. Application: %1. Add-on: %2. Publisher: %3. Version:%4">
+    </event>
+    <event value="2" version="1" opcode="2" channel="9" level="4" task="2" keywords="0x8000000000000000" message="An add-on has been disabled. Application: %1. Add-on: %2. Publisher: %3. Version:%4">
+    </event>
+  </events>
+</provider>

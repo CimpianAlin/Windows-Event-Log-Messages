@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IIS-Configuration" guid="dc0b8e51-4863-407a-bc3c-1b479b2978ac" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Information%20Services&amp;ProdVer=8.5.9600.16384&amp;FileName=iisres.dll&amp;FileVer=8.5.9600.16384" resourceFileName="C:\Windows\system32\inetsrv\iisres.dll" messageFileName="C:\Windows\system32\inetsrv\iisres.dll" message="Microsoft-Windows-IIS-Configuration" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-IIS-Configuration/Administrative" id="16" flags="0" message="Microsoft-Windows-IIS-Configuration/Administrative">
+    </channel>
+    <channel name="Microsoft-IIS-Configuration/Operational" id="17" flags="0" message="Microsoft-Windows-IIS-Configuration/Operational">
+    </channel>
+    <channel name="Microsoft-IIS-Configuration/Analytic" id="18" flags="0" message="Microsoft-Windows-IIS-Configuration/Analytic">
+    </channel>
+    <channel name="Microsoft-IIS-Configuration/Debug" id="19" flags="0" message="Microsoft-Windows-IIS-Configuration/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Read" mask="1" message="">
+    </keyword>
+    <keyword name="Write" mask="2" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="3" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="A cache node for &apos;%3&apos; has been added to cache.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000000" message="Configuration cache is handling change notification for &apos;%1&apos;.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000000" message="Configuration cache is polling for changes at &apos;%1&apos;.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="Configuration cache is discarding all config files whose configuration path is equal to or a subpath of &apos;%1&apos;.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="An error has occurred: %4">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Unable to find schema for config section &apos;%4&apos;. This section will be ignored.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000000" message="Parsing config file &apos;%2&apos;.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="MACHINE/WEBROOT/APPHOST configuration redirection has been enabled. The redirected physical path is &apos;%1&apos;.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="Attempting to open file or directory &apos;%2&apos;.">
+    </event>
+    <event value="16" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="An impersonation token with handle &apos;%4&apos; for the credentials of &apos;%1\%2&apos; has been created.">
+    </event>
+    <event value="17" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="File change notification monitor that watches for changes in &apos;%3&apos; has been created.">
+    </event>
+    <event value="18" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="File change notification monitor that watches for changes in &apos;%3&apos; has blocked waiting for file changes.">
+    </event>
+    <event value="19" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="File change notification monitor that watches for changes in &apos;%3&apos; received a change notification.">
+    </event>
+    <event value="20" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000000" message="File change notification monitor that watches for changes in &apos;%3&apos; is processing notified changes.">
+    </event>
+    <event value="21" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="File change notification monitor that watches for changes in &apos;%3&apos; has been destroyed.">
+    </event>
+    <event value="23" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="A change listener of type &apos;%2&apos; is being informed about a configuration change at &apos;%3&apos;.">
+    </event>
+    <event value="24" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="During schema file enumeration, the file &apos;%1&apos; was detected in the schema directory.">
+    </event>
+    <event value="25" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000000" message="The virtual path &apos;%1&apos; has been mapped to the physical path &apos;%2&apos;.">
+    </event>
+    <event value="27" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="The &apos;%6&apos; metadata of a configuration system object was set to &apos;%7&apos;.">
+    </event>
+    <event value="28" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="Thread is impersonating an access token belonging to handle &apos;%2&apos;.">
+    </event>
+    <event value="29" version="0" opcode="0" channel="17" level="5" task="0" keywords="0x4000000000000000" message="Changes to &apos;%4&apos; at &apos;%2&apos; have successfully been committed.">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to commit changes to &apos;%4&apos; at &apos;%2&apos;.">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Unable to locate IIS_Schema.xml in &apos;%1&apos;.">
+    </event>
+    <event value="36" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="Handle &apos;%2&apos; duplicated to &apos;%3&apos;">
+    </event>
+    <event value="37" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Unable to locate a site with SiteName &apos;%1&apos;.">
+    </event>
+    <event value="38" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Unable to locate a site with SiteId &apos;%1&apos;.">
+    </event>
+    <event value="39" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The SiteId &apos;%1&apos; has been assigned to more than one site. Please change your configuration such that each site is assigned a unique SiteId.">
+    </event>
+    <event value="40" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The SiteName &apos;%1&apos; has been assigned to more than one site. Please change your configuration such that each site is assigned a unique SiteName.">
+    </event>
+    <event value="41" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to instantiate &apos;%3&apos; when attempting to populate dynamic configuration for &apos;%1&apos;. This COM component may not be registered.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to initialize the &apos;%3&apos; encryption provider in &apos;%1&apos;. Please check your configuration.">
+    </event>
+    <event value="43" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to encrypt attribute &apos;%4&apos;.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to decrypt attribute &apos;%4&apos;.">
+    </event>
+    <event value="45" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Unable to map &apos;%1&apos; to the subpath of any known virtual directory.">
+    </event>
+    <event value="46" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000000" message="Virtual directory mapping from &apos;%4&apos; to &apos;%5&apos; created.">
+    </event>
+    <event value="47" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000000" message="The location of the configuration file whose config path is &apos;%1&apos; was mapped to &apos;%2&apos;.">
+    </event>
+    <event value="49" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Config/child source file for configuration &apos;%6&apos; specified in &apos;%2&apos; is being loaded.">
+    </event>
+    <event value="50" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Changes have successfully been committed to &apos;%1&apos;.">
+    </event>
+    <event value="51" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to commit changes to &apos;%2&apos; because file on the disk has been changed.">
+    </event>
+    <event value="52" version="0" opcode="0" channel="18" level="5" task="0" keywords="0x2000000000000000" message="Checking whether file &apos;%2&apos; has changed on the disk returned &apos;%9&apos;.">
+    </event>
+    <event value="53" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Unable to create a path mapping for the virtual directory, /system.applicationHost/sites/site[@name=&apos;%1&apos;]/application[@path=&apos;%2&apos;]/virtualDirectory[@path=&apos;%3&apos;] because the mapping with the relative virtual path, &apos;%5&apos; was already created for another virtual directory.">
+    </event>
+    <event value="54" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="A commit operation has been initiated.">
+    </event>
+    <event value="55" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="A commit operation has completed. The status code is: &apos;%1&apos;.">
+    </event>
+    <event value="56" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="A kernel transaction for a commit operation has been created.">
+    </event>
+    <event value="57" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Failed to create a kernel transaction for the commit operation. The commit operation will proceed without a kernel transaction.">
+    </event>
+    <event value="58" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="Changes have successfully been committed with a kernel transaction.">
+    </event>
+    <event value="59" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Failed to commit the changes with a kernel transaction. The changes will be reverted.">
+    </event>
+    <event value="60" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="A file write operation in a commit operation has been initiated.">
+    </event>
+    <event value="61" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="The contents of the file &apos;%2&apos; could not be erased. The operation will be tried &apos;%4&apos; more time(s).">
+    </event>
+    <event value="62" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="The contents of the file &apos;%2&apos; have successfully been erased. The size of the file is now zero.">
+    </event>
+    <event value="63" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="The new contents of the file &apos;%2&apos; could not be written to.">
+    </event>
+    <event value="64" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000000000000" message="A file write operation in a commit operation has completed. The status code is: &apos;%1&apos;.">
+    </event>
+    <event value="65" version="0" opcode="0" channel="19" level="5" task="0" keywords="0x1000000000000000" message="A change listener of type &apos;%2&apos; has been informed about a configuration change at &apos;%3&apos;.">
+    </event>
+  </events>
+</provider>

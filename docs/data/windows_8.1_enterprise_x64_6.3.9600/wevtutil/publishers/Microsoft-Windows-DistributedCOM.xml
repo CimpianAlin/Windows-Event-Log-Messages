@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DistributedCOM" guid="1b562e86-b7aa-4131-badc-b6f3a001407e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=combase.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\combase.dll" messageFileName="C:\Windows\system32\combase.dll" message="Microsoft-Windows-DistributedCOM" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="10000" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="Unable to start a DCOM Server: %3. The error:
+&quot;%2&quot;
+Happened while starting this command:
+%1">
+    </event>
+    <event value="10001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="Unable to start a DCOM Server: %3 as %4/%5. The error:
+&quot;%2&quot;
+Happened while starting this command:
+%1">
+    </event>
+    <event value="3221235474" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Access denied attempting to launch a DCOM Server. The server is:
+%1
+The user is %2/%3, SID=%4.">
+    </event>
+    <event value="3221235475" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Access denied attempting to launch a DCOM Server using DefaultLaunchPermssion. The server is:
+%1
+The user is %2/%3, SID=%4.">
+    </event>
+    <event value="10004" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="DCOM got error &quot;%1&quot; and was unable to logon %2\%3 in order to run the server:
+%4">
+    </event>
+    <event value="10005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="DCOM got error &quot;%1&quot; attempting to start the service %2 with arguments &quot;%3&quot; in order to run the server:
+%4">
+    </event>
+    <event value="10006" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="DCOM got error &quot;%1&quot; from the computer %2 when attempting to activate the server:
+%3">
+    </event>
+    <event value="3221235479" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="DCOM got error &quot;%1&quot; when attempting to activate the server:
+%2">
+    </event>
+    <event value="10008" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="DCOM got error &quot;%1&quot; from the computer %2 when attempting to the server:
+%3 with file %4.">
+    </event>
+    <event value="3221235481" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="DCOM was unable to communicate with the computer %1 using any of the configured protocols.">
+    </event>
+    <event value="10010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The server %1 did not register with DCOM within the required timeout.">
+    </event>
+    <event value="3221235483" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The server %1 could not be contacted to establish the connection to the client">
+    </event>
+    <event value="3221235484" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="There is an assertion failure in DCOM.  Context follows: %1 %2 %3">
+    </event>
+    <event value="10014" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The activation for CLSID %1 failed because remote activations for COM+ are disabled. To enable this functionality use Server Manager to install the COM+ Network Access feature in the Application Server role.">
+    </event>
+    <event value="10015" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The machine wide limit settings do not grant %1 %2 permission for the COM Server application with CLSID 
+%3
+ and APPID 
+%4
+ to the user %5\%6 SID (%7) from address %8 running in the application container %9 SID (%10). This security permission can be modified using the Component Services administrative tool.">
+    </event>
+    <event value="10016" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The %1 permission settings do not grant %2 %3 permission for the COM Server application with CLSID 
+%4
+ and APPID 
+%5
+ to the user %6\%7 SID (%8) from address %9 running in the application container %10 SID (%11). This security permission can be modified using the Component Services administrative tool.">
+    </event>
+    <event value="10017" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The %1 permission settings do not grant %2 access permission to the COM Server application %3 with APPID 
+%4
+ to the user %5\%6 SID (%7) from address %8 running in the application container %9 SID (%10). This security permission can be modified using the Component Services administrative tool.">
+    </event>
+    <event value="10018" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The application-specific permission settings do not grant %1 access permission to the COM Server application %2 with APPID 
+%3
+ to the user %4\%5 SID (%6) from address %7 running in the application container %8 SID (%9). The application set this security permission programmatically; to modify this security permission contact the application vendor.">
+    </event>
+    <event value="10019" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The machine wide limit settings do not grant %1 access permission to the COM Server application %2 with APPID 
+%3
+ to the user %4\%5 SID (%6) from address %7 running in the application container %8 SID (%9). This security permission can be modified using the Component Services administrative tool.">
+    </event>
+    <event value="10020" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The machine wide %1 %2 security descriptor is invalid. It contains Access Control Entries with permissions that are invalid. The requested action was therefore not performed. This security permission can be corrected using the Component Services administrative tool.">
+    </event>
+    <event value="10021" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The launch and activation security descriptor for the COM Server application with APPID 
+%1
+ is invalid. It contains Access Control Entries with permissions that are invalid. The requested action was therefore not performed. This security permission can be corrected using the Component Services administrative tool.">
+    </event>
+    <event value="10022" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The %1 access security descriptor for the COM Server application %2 with APPID 
+%3
+ is invalid. It contains Access Control Entries with permissions that are invalid. The requested action was therefore not performed. This security permission can be corrected using the Component Services administrative tool.">
+    </event>
+    <event value="10023" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The application-specific access security descriptor for the COM Server application %1 with APPID 
+%2
+ is invalid. It contains Access Control Entries with permissions that are invalid. The requested action was therefore not performed.  The application set this security permission programmatically; to modify this security permission contact the application vendor.">
+    </event>
+    <event value="10024" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The machine wide group policy %1 Limits security descriptor is invalid. The security descriptor is defined as an invalid Security Descriptor Definitions Language (SDDL) string. The requested action was therefore not performed. Please contact your administrator to get the security descriptor corrected in the Group Policy settings.">
+    </event>
+    <event value="1073751850" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The COM sub system is suppressing duplicate event log entries for a duration of %1 seconds.  The suppression timeout can be controlled by a REG_DWORD value named %2 under the following registry key: HKLM\%3.">
+    </event>
+    <event value="10027" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The machine wide limit settings do not grant %1 %2 permission for COM Server applications to the user %3\%4 SID (%5) from address %6 running in the application container %7 SID (%8). This security permission can be modified using the Component Services administrative tool.">
+    </event>
+    <event value="10028" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="DCOM was unable to communicate with the computer %1 using any of the configured protocols; requested by PID %2 (%3).">
+    </event>
+    <event value="10029" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="The activation of the CLSID %1 timed out waiting for the service %2 to stop.">
+    </event>
+    <event value="10030" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="Unable to start a COM Server for debugging: %3. The error:
+&quot;%2&quot;
+Happened while starting this command:
+%1">
+    </event>
+    <event value="10031" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="An unmarshaling policy check was performed when unmarshaling a custom marshaled object and the class %1 was rejected">
+    </event>
+    <event value="10032" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="An unmarshaling policy check was performed when unmarshaling a custom inproc handler and the class %1 was rejected">
+    </event>
+    <event value="10033" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="An unmarshaling policy check was performed when unmarshaling a COM+ envoy context property and the class %1 was rejected">
+    </event>
+    <event value="10034" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x80000000000000" message="An unmarshaling policy check was performed due to CLSCTX_NO_CUSTOM_MARSHAL and the class %1 was rejected">
+    </event>
+  </events>
+</provider>

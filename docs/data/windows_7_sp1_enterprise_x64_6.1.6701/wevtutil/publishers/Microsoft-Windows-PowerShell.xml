@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-PowerShell" guid="a0c1853b-5c40-4b15-8766-3cf1c58f985a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=PSEvents.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\WindowsPowerShell\v1.0\PSEvents.dll" messageFileName="C:\Windows\system32\WindowsPowerShell\v1.0\PSEvents.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-PowerShell/Operational" id="16" flags="0" message="Microsoft-Windows-PowerShell/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-PowerShell/Analytic" id="17" flags="0" message="Microsoft-Windows-PowerShell/Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+    <level name="Debug" value="20" message="Debug level defined by PowerShell (which is above Informational defined by system)">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="Open" value="655360" message="Open (async)">
+    </opcode>
+    <opcode name="Close" value="720896" message="Close (Async)">
+    </opcode>
+    <opcode name="Connect" value="786432" message="connect">
+    </opcode>
+    <opcode name="Disconnect" value="851968" message="Disconnect">
+    </opcode>
+    <opcode name="Negotiate" value="917504" message="Negotiate">
+    </opcode>
+    <opcode name="Create" value="983040" message="On create calls">
+    </opcode>
+    <opcode name="Constructor" value="1048576" message="to be used when an object is constructed">
+    </opcode>
+    <opcode name="Dispose" value="1114112" message="To be used when an object is disposed">
+    </opcode>
+    <opcode name="EventHandler" value="1179648" message="To be used when an event handler is raised">
+    </opcode>
+    <opcode name="Exception" value="1245184" message="To be used when an exception is raised">
+    </opcode>
+    <opcode name="Method" value="1310720" message="To be used when operation is just executing a method">
+    </opcode>
+    <opcode name="Send" value="1376256" message="Send (Async)">
+    </opcode>
+    <opcode name="Receive" value="1441792" message="Receive (Async)">
+    </opcode>
+    <opcode name="Rehydration" value="1507328" message="Rehydration">
+    </opcode>
+    <opcode name="SerializationSettings" value="1572864" message="Serialization settings">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CreateRunspace" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Connect">
+    </task>
+    <task name="ExecuteCommand" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Execute a Remote Command">
+    </task>
+    <task name="Serialization" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Serialize or deserialize remoting payload">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Runspace" mask="1" message="PowerShell Runspace">
+    </keyword>
+    <keyword name="Pipeline" mask="2" message="Pipeline of Commands">
+    </keyword>
+    <keyword name="Protocol" mask="4" message="PowerShell remoting protocol">
+    </keyword>
+    <keyword name="Transport" mask="8" message="PowerShell remoting transport">
+    </keyword>
+    <keyword name="Host" mask="10" message="PowerShell remoting host proxy calls">
+    </keyword>
+    <keyword name="Cmdlets" mask="20" message="All remoting cmdlets">
+    </keyword>
+    <keyword name="Serializer" mask="40" message="The serialization layer">
+    </keyword>
+    <keyword name="Session" mask="80" message="All session layer">
+    </keyword>
+    <keyword name="Plugin" mask="100" message="The managed powershell plugin worker">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="4097" version="1" opcode="20" channel="0" level="5" task="1" keywords="0x20" message="Computer Name $null or . resolve to LocalHost">
+    </event>
+    <event value="4098" version="1" opcode="20" channel="0" level="5" task="1" keywords="0x20" message="Resolving to default scheme http">
+    </event>
+    <event value="4099" version="1" opcode="20" channel="0" level="5" task="1" keywords="0x20" message="Remote shell name resolved to default Microsoft.PowerShell">
+    </event>
+    <event value="8193" version="1" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000001" message="Creating Runspace object 
+ 	 Instance Id: %1">
+    </event>
+    <event value="8194" version="1" opcode="16" channel="16" level="5" task="1" keywords="0x8000000000000001" message="Creating RunspacePool object 
+ 	 InstanceId %1 
+ 	 MinRunspaces %2 
+ 	 MaxRunspaces %3">
+    </event>
+    <event value="8195" version="1" opcode="10" channel="16" level="5" task="1" keywords="0x8000000000000001" message="Opening RunspacePool">
+    </event>
+    <event value="8196" version="1" opcode="10" channel="16" level="5" task="1" keywords="0x8000000000000001" message="Modifying activity Id and correlating">
+    </event>
+    <event value="12033" version="1" opcode="20" channel="17" level="5" task="1" keywords="0x4000000000000001" message="Port resolved to %1">
+    </event>
+    <event value="12034" version="1" opcode="20" channel="17" level="5" task="1" keywords="0x4000000000000001" message="AppName resolved to %1">
+    </event>
+    <event value="12035" version="1" opcode="20" channel="17" level="5" task="1" keywords="0x4000000000000001" message="ComputerName resolved to %1">
+    </event>
+    <event value="12036" version="1" opcode="20" channel="17" level="5" task="1" keywords="0x4000000000000001" message="Scheme is %1">
+    </event>
+    <event value="12037" version="1" opcode="20" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Test analytic message">
+    </event>
+    <event value="12038" version="1" opcode="20" channel="17" level="4" task="1" keywords="0x4000000000000001" message="Connection Paramters are 
+ Connection URI: %1 
+ Resource URI: %2 
+ User: %3 
+ OpenTimeout: %4 
+ IdleTimeout: %5 
+ CancelTimeout: %6 
+ AuthenticationMechanism: %7 
+ Thumb Print: %8 
+ MaxUriRedirectionCount: %9 
+ MaxReceivedDataSizePerCommand: %10 
+ MaxReceivedObjectSize: %11">
+    </event>
+    <event value="12039" version="1" opcode="10" channel="16" level="5" task="1" keywords="0x8000000000000001" message="Modifying activity Id and correlating">
+    </event>
+    <event value="28673" version="1" opcode="23" channel="17" level="5" task="3" keywords="0x4000000000000040" message="Successfully rehydrated an object. 
+ 	 Deserialized type name: %1 
+ 	 Rehydrated by casting to type: %2 
+ 	 Rehydrated object is of type: %3">
+    </event>
+    <event value="28674" version="1" opcode="23" channel="17" level="2" task="3" keywords="0x4000000000000040" message="Failed to rehydrated an object. 
+ 	 Deserialized type name: %1 
+ 	 Rehydrated by casting to type: %2 
+ 	 Type cast exception: %3 
+ 	 Type cast inner exception: %4">
+    </event>
+    <event value="28675" version="1" opcode="24" channel="17" level="5" task="3" keywords="0x4000000000000040" message="Serialization depth has been overriden. 
+ 	 Serialized type name: %1 
+ 	 Original depth: %2 
+ 	 Overriden depth: %3 
+ 	 Current depth below top level: %4">
+    </event>
+    <event value="28676" version="1" opcode="24" channel="17" level="5" task="3" keywords="0x4000000000000040" message="Serialization mode has been overriden. 
+ 	 Serialized type name: %1 
+ 	 Overriden mode: %2">
+    </event>
+    <event value="28677" version="1" opcode="19" channel="17" level="3" task="3" keywords="0x4000000000000040" message="Serialization of a script property has been skipped, because there is no runspace to use for evaluation of the property. 
+ 	 Property name: %1 
+ 	 Property owner&apos;s type name: %2 
+ 	 Getter script: %3">
+    </event>
+    <event value="28678" version="1" opcode="19" channel="17" level="3" task="3" keywords="0x4000000000000040" message="Serialization of a property has been skipped, because property getter failed. 
+ 	 Property name: %1 
+ 	 Property owner&apos;s type name: %2 
+ 	 Exception from property getter: %3 
+ 	 Inner exception from property getter: %4">
+    </event>
+    <event value="28679" version="1" opcode="19" channel="17" level="3" task="3" keywords="0x4000000000000040" message="Serialization of an enumerable object might not be complete, because object being enumerated threw an exception. 
+ 	 Type of object being enumerated: %1 
+ 	 Exception: %2">
+    </event>
+    <event value="28680" version="1" opcode="19" channel="17" level="3" task="3" keywords="0x4000000000000040" message="Serialization called object&apos;s ToString method which failed. 
+ 	 Type of object: %1 
+ 	 Exception: %2">
+    </event>
+    <event value="28682" version="1" opcode="19" channel="17" level="2" task="3" keywords="0x4000000000000040" message="Maximum depth below top level has been reached, forcing object to be serialized as strings. 
+ 	 Object type at max depth: %1 
+ 	 Property name at max depth: %2 
+ 	 Depth: %3">
+    </event>
+    <event value="28683" version="1" opcode="19" channel="17" level="2" task="3" keywords="0x4000000000000040" message="XmlException has been thrown by the deserializer (most likely indicating incorrect clixml format). 
+ 	 Line number: %1 Line position: %2 
+ 	 Exception: %3">
+    </event>
+    <event value="28684" version="1" opcode="19" channel="17" level="3" task="3" keywords="0x4000000000000040" message="Serialization of specified properties failed, because one of the specified properties was missing.  
+ 	 Type of object: %1 
+ 	 Property name: %2">
+    </event>
+    <event value="32769" version="1" opcode="22" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Received object with Runspace Id: %1 Command Id: %2 Destination: %3 DataType: %4 TargetInterface: %5">
+    </event>
+    <event value="32775" version="1" opcode="10" channel="17" level="2" task="0" keywords="0x4000000000000008" message="An unhandled exception occurred in the appdomain. 
+Exception Type: %1 
+Exception Message: %2 
+Exception StackTrace: %3">
+    </event>
+    <event value="32776" version="1" opcode="10" channel="17" level="2" task="0" keywords="0x4000000000000008" message="Runspace Id: %1 Pipeline Id: %2. WSMan reported an error with error code: %3. 
+ Error message: %4 
+ StackTrace: %5">
+    </event>
+    <event value="32777" version="1" opcode="10" channel="16" level="2" task="0" keywords="0x8000000000000008" message="An unhandled exception occurred in the appdomain. 
+Exception Type: %1 
+Exception Message: %2 
+Exception StackTrace: %3">
+    </event>
+    <event value="32784" version="1" opcode="10" channel="16" level="2" task="0" keywords="0x8000000000000008" message="Runspace Id: %1 Pipeline Id: %2. WSMan reported an error with error code: %3. 
+ Error message: %4 
+ StackTrace: %5">
+    </event>
+    <event value="32785" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id %1. Establishing a connection using WSMan Create Shell">
+    </event>
+    <event value="32786" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id %1. Callback received for WSMan Create Shell">
+    </event>
+    <event value="32787" version="1" opcode="13" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1. Closing shell using WSManCloseShell">
+    </event>
+    <event value="32788" version="1" opcode="13" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1. Callback received for WSManCloseShell">
+    </event>
+    <event value="32789" version="1" opcode="21" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1 Pipeline Id: %2. Sending data of size %3">
+    </event>
+    <event value="32790" version="1" opcode="21" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1 Pipeline Id: %2. Callback received for WSManSendShellInputEx">
+    </event>
+    <event value="32791" version="1" opcode="22" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1 Pipeline Id: %2. Placing Receive request using WSManReceiveShellOutputEx">
+    </event>
+    <event value="32792" version="1" opcode="22" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1 Pipeline Id: %2. Received Data of size %3.">
+    </event>
+    <event value="32793" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id %1 Pipeline Id %2. Establishing a command connection using WSManRunShellCommandEx">
+    </event>
+    <event value="32800" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id %1 Pipeline Id %2. Callback received for command connection">
+    </event>
+    <event value="32801" version="1" opcode="13" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1 Pipeline Id %2. Closing transport for command">
+    </event>
+    <event value="32802" version="1" opcode="13" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1 Pipeline Id %2. Callback received for command close">
+    </event>
+    <event value="32803" version="1" opcode="13" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1 Pipeline Id %2. Sending signal with code %3 using WSManSignalShellEx">
+    </event>
+    <event value="32804" version="1" opcode="13" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1 Pipeline Id %2. Callback received for WSManSignalShellEx">
+    </event>
+    <event value="32805" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1. Connection is getting redirected to Uri: %2">
+    </event>
+    <event value="32849" version="1" opcode="21" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Runspace Id: %1 Pipeline Id: %2. Server is sending data of size %3 to client. DataType: %4 TargetInterface: %5">
+    </event>
+    <event value="32850" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Request %1. Creating a server remote session. UserName: %2 Custome Shell Id: %3">
+    </event>
+    <event value="32851" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Reporting context for request: %1 Context Reported: %1">
+    </event>
+    <event value="32852" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Reporting operation complete for request: %1 
+ Error Code: %2 
+ Error Message: %3 
+ StackTrace: %4">
+    </event>
+    <event value="32853" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Shell Context %1. Request Id %2. Creating a commonad session for running a command.">
+    </event>
+    <event value="32854" version="1" opcode="13" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Shell Context %1 Command Context %2 Request Id %3. Stopping command.">
+    </event>
+    <event value="32855" version="1" opcode="10" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Shell Context %1 Command Context %2 Request Id %3. Received data from client.">
+    </event>
+    <event value="32856" version="1" opcode="10" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Shell Context %1 Command Context %2 Request Id %3. Client sent a receive request so that server can send data.">
+    </event>
+    <event value="32857" version="1" opcode="13" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Shell Context %1 Command Context %2 IsReceiveOperation %3. Got close operation request.">
+    </event>
+    <event value="32865" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Loading assembly %1 for custom shell with shell Id %2">
+    </event>
+    <event value="32866" version="1" opcode="12" channel="17" level="4" task="0" keywords="0x4000000000000008" message="Loading type %1 for custom shell with shell Id %2">
+    </event>
+    <event value="32867" version="1" opcode="22" channel="17" level="5" task="0" keywords="0x4000000000000008" message="Received remoting fragment. 
+ 	 Object Id: %1 
+ 	 Fragment Id: %2 
+ 	 Start Flag: %3 
+ 	 End Flag: %4 
+ 	 Payload Length: %5 
+ 	 Payload Data: %6">
+    </event>
+    <event value="32868" version="1" opcode="21" channel="17" level="5" task="0" keywords="0x4000000000000008" message="Sent remoting fragment. 
+ 	 Object Id: %1 
+ 	 Fragment Id: %2 
+ 	 Start Flag: %3 
+ 	 End Flag: %4 
+ 	 Payload Length: %5 
+ 	 Payload Data: %6">
+    </event>
+  </events>
+</provider>

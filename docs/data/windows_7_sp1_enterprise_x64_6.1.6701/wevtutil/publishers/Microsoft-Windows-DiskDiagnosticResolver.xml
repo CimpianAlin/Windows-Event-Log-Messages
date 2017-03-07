@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DiskDiagnosticResolver" guid="6b1ffe48-5b1e-4793-9f7f-ae926454499d" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=dfdts.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\dfdwiz.exe" messageFileName="C:\Windows\system32\dfdts.dll" message="Microsoft-Windows-DiskDiagnosticResolver" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-DiskDiagnosticResolver/Operational" id="16" flags="0" message="Microsoft-Windows-DiskDiagnosticResolver/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic Resolver started with administrative privileges.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic Resolver started without administrative privileges.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic is exiting silently because it is disabled by Group Policy.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic Resolver is exiting because the user requested suppression of any S.M.A.R.T. faults that were detected.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic Resolver is exiting because no S.M.A.R.T. faults were detected on this computer.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic Resolver was disabled successfully.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic Resolver could not be disabled.  The error code was %1.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic Resolver launched backup at the user&apos;s request.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic Resolver deleted stale entries from the S.M.A.R.T. fault cache.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Windows Disk Diagnostic Resolver suppressed all active S.M.A.R.T. faults at the user&apos;s request.">
+    </event>
+  </events>
+</provider>

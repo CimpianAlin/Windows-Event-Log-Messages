@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-AppCompat" guid="16a1adc1-9b7f-4cd9-94b3-d8296ab1b130" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="Microsoft-Windows-Kernel-AppCompat" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Kernel-AppCompat/General" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-AppCompat/Performance" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="CompatCacheInit" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CompatCacheQuery" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CompatCdbQuery" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CompatMapQuirks" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CompatCacheUpdate" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CompatUserModeQuery" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CompatSdbQuery" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="RegWrpAccessDenied" mask="8" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000008" message="The executable %2 received an access denied error when trying to modify the registry key %4.">
+    </event>
+    <event value="2" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="3" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="4" version="0" opcode="1" channel="17" level="4" task="5" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="5" version="0" opcode="2" channel="17" level="4" task="5" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="8" version="0" opcode="1" channel="17" level="4" task="3" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="9" version="0" opcode="2" channel="17" level="4" task="3" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="10" version="0" opcode="1" channel="17" level="4" task="4" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="11" version="0" opcode="2" channel="17" level="4" task="4" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="12" version="0" opcode="1" channel="17" level="4" task="6" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="13" version="0" opcode="2" channel="17" level="4" task="6" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="14" version="0" opcode="1" channel="17" level="4" task="7" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="15" version="0" opcode="2" channel="17" level="4" task="7" keywords="0x4000000000000000" message="">
+    </event>
+  </events>
+</provider>

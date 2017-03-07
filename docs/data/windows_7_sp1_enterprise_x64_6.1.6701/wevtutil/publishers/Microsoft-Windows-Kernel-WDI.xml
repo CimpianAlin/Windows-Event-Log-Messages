@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-WDI" guid="2ff3e6b7-cb90-4700-9621-443f389734ed" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=advapi32.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\advapi32.dll" messageFileName="C:\Windows\system32\advapi32.dll" message="Microsoft-Windows-Kernel-WDI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Kernel-WDI/Analytic" id="16" flags="0" message="Microsoft-Windows-Kernel-WDI/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-WDI/Debug" id="17" flags="0" message="Microsoft-Windows-Kernel-WDI/Debug">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-WDI/Operational" id="18" flags="0" message="Microsoft-Windows-Kernel-WDI/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="WDI_SEM_TASK_SCENARIO_OPCODE_START" value="655360" message="Scenario start enables context providers to the WDI context logger.">
+    </opcode>
+    <opcode name="WDI_SEM_TASK_SCENARIO_OPCODE_END" value="720896" message="Scenario end disables context providers to the WDI context logger.">
+    </opcode>
+    <opcode name="WDI_SEM_TASK_SCENARIO_OPCODE_TIMEOUT" value="786432" message="When a scenario has remained in-flight beyond the maximum time window it is automatically terminated by the SEM.">
+    </opcode>
+    <opcode name="WDI_SEM_TASK_SCENARIO_OPCODE_START_FAILED" value="851968" message="A scenario start attempt failed in the SEM.">
+    </opcode>
+    <opcode name="WDI_SEM_TASK_SCENARIO_OPCODE_END_FAILED" value="917504" message="A scenario end attempt failed in the SEM.">
+    </opcode>
+    <opcode name="WDI_SEM_TASK_SCENARIO_OPCODE_INFLIGHT_MAX" value="983040" message="The SEM received a request to start a new scenario, but the maximum number of scenarios were already in-flight.">
+    </opcode>
+    <opcode name="WDI_SEM_TASK_INIT_OPCODE_MISCONFIG" value="1048576" message="There is an invalid configuration parameter in the SEM registry namespace.">
+    </opcode>
+    <opcode name="WDI_SEM_TASK_INIT_OPCODE_SCENARIO_MAX" value="1114112" message="The SEM is configured with more scenarios than the maximum allowed count.">
+    </opcode>
+    <opcode name="WDI_SEM_TASK_INIT_OPCODE_SCENARIO_CONTEXT_PROVIDER_MAX" value="1179648" message="The SEM is configured with a scenario with too many context providers.">
+    </opcode>
+    <opcode name="WDI_SEM_TASK_INIT_OPCODE_SCENARIO_END_EVENT_MAX" value="1245184" message="The SEM is configured with a scenario that has too many end events.">
+    </opcode>
+    <opcode name="WDI_SEM_TASK_INIT_OPCODE_PROVIDER_MAX" value="1310720" message="The number of providers specified across all scenarios is above the maximum allowed amount.">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WDI_SEM_TASK_SCENARIO" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="SEM Scenario Lifecycle">
+    </task>
+    <task name="WDI_SEM_TASK_INIT" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="SEM Initialization">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="context" mask="100000000" message="Verbose context events">
+    </keyword>
+    <keyword name="diag" mask="200000000" message="Scenario trigger events">
+    </keyword>
+    <keyword name="win:SQM" mask="8000000000000" message="SQM">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="32" version="0" opcode="10" channel="16" level="4" task="9" keywords="0x8000000100000000" message="The Scenario Event Mapper started a scenario for provider %1 (event ID %2) with %4 context providers.  The context logger dropped event count was %3.">
+    </event>
+    <event value="33" version="0" opcode="11" channel="16" level="4" task="9" keywords="0x8000000100000000" message="The Scenario Event Mapper stopped a scenario for provider %1 (event ID %2) with %4 context providers.  The context logger dropped event count was %3.">
+    </event>
+    <event value="34" version="0" opcode="12" channel="16" level="3" task="9" keywords="0x8000000200000000" message="An in-flight scenario from provider %1 (event ID %2) timed out and was stopped automatically by the Scenario Event Mapper.">
+    </event>
+    <event value="35" version="0" opcode="15" channel="17" level="3" task="9" keywords="0x4000000000000000" message="The Scenario Event Mapper was unable to start a new scenario for provider %1 (event ID %2) because the maximum number of scenarios are already in flight.">
+    </event>
+    <event value="36" version="0" opcode="13" channel="17" level="3" task="9" keywords="0x4000000000000000" message="The Scenario Event Mapper was unable to start a scenario for provider %1 (event ID %2).  The error code was %3.">
+    </event>
+    <event value="37" version="0" opcode="14" channel="17" level="3" task="9" keywords="0x4000000000000000" message="The Scenario Event Mapper was unable to stop a scenario for provider %1 (event ID %2).  The error code was %3.">
+    </event>
+    <event value="38" version="0" opcode="17" channel="18" level="2" task="10" keywords="0x2000000000000000" message="The Scenario Event Mapper is configured with more than the maximum number of scenarios.  The scenario for provider %1 (event ID %2) will be ignored.">
+    </event>
+    <event value="39" version="0" opcode="18" channel="18" level="2" task="10" keywords="0x2000000000000000" message="The Scenario Event Mapper is configured with more than the maximum number of context providers for the scenario with provider %1 (event ID %2).  The scenario will be ignored.">
+    </event>
+    <event value="40" version="0" opcode="19" channel="18" level="2" task="10" keywords="0x2000000000000000" message="The Scenario Event Mapper is configured with more than the maximum number of end events for the scenario with provider %1 (event ID %2).  The scenario will be ignored.">
+    </event>
+    <event value="41" version="0" opcode="20" channel="18" level="2" task="10" keywords="0x2000000000000000" message="The Scenario Event Mapper is configured with more than the maximum number of providers.  The provider %1 will be ignored.">
+    </event>
+    <event value="42" version="0" opcode="16" channel="18" level="2" task="10" keywords="0x2000000000000000" message="The Scenario Event Mapper is configured with an unsupported scenario. The scenario for provider %1 (event ID %2) encountered error code %3 and will be ignored.">
+    </event>
+    <event value="43" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="44" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="45" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+  </events>
+</provider>

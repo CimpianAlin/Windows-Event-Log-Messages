@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Display" guid="6ece3302-fee1-4ea9-8b88-086d459ed976" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=display.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\display.dll" messageFileName="C:\Windows\System32\display.dll" message="Microsoft-Windows-DisplayCpl" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="PreviewImageUpdate" value="1966080" message="Update preview image">
+    </opcode>
+    <opcode name="PreviewImageHide" value="2031616" message="Hide preview image">
+    </opcode>
+    <opcode name="PreviewImageShow" value="2097152" message="Show preview image">
+    </opcode>
+    <opcode name="DPISelectionChange" value="2162688" message="DPI Selection change">
+    </opcode>
+    <opcode name="RestartPromptShow" value="2228224" message="Show restart prompt">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="DisplayCpl_InitializePage" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_Initialize" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_OpenCustomDPIDialog" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_SelectionChange" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_ApplyButtonClicked" value="113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_SettingsPage_Initialize" value="116" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_SettingsPage_ApplyButtonClicked" value="118" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_SettingsPage_EnumAllDisplays" value="120" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_SettingsPage_LayoutMonitorElement" value="122" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_ResolutionControl" value="124" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_ResolutionSlider" value="127" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayCpl_EnumerateStereo3DModes" value="129" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="DisplayCPL" mask="10000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="101" version="0" opcode="1" channel="0" level="4" task="101" keywords="0x1000000000000" message="Initializing Display CPL Page - Start">
+    </event>
+    <event value="102" version="0" opcode="2" channel="0" level="4" task="101" keywords="0x1000000000000" message="Initializing Display CPL Page - Finish">
+    </event>
+    <event value="103" version="0" opcode="1" channel="0" level="4" task="103" keywords="0x10000" message="Initializing Display CPL - Start">
+    </event>
+    <event value="104" version="0" opcode="2" channel="0" level="4" task="103" keywords="0x10000" message="Initializing Display CPL - Finish">
+    </event>
+    <event value="105" version="0" opcode="1" channel="0" level="4" task="105" keywords="0x10000" message="Opening Custom DPI Dialog - Start">
+    </event>
+    <event value="106" version="0" opcode="2" channel="0" level="4" task="105" keywords="0x10000" message="Opening Custom DPI Dialog - Finish">
+    </event>
+    <event value="107" version="0" opcode="1" channel="0" level="4" task="107" keywords="0x10000" message="Changing Selection - Start">
+    </event>
+    <event value="108" version="0" opcode="30" channel="0" level="4" task="107" keywords="0x10000" message="Updating the Preview Image">
+    </event>
+    <event value="109" version="0" opcode="31" channel="0" level="4" task="107" keywords="0x10000" message="Hiding the Preview Image">
+    </event>
+    <event value="110" version="0" opcode="32" channel="0" level="4" task="107" keywords="0x10000" message="Showing the preview image">
+    </event>
+    <event value="111" version="0" opcode="2" channel="0" level="4" task="107" keywords="0x10000" message="Changing Selection - Finish">
+    </event>
+    <event value="113" version="0" opcode="1" channel="0" level="4" task="113" keywords="0x10000" message="Apply Button Clicked - Start">
+    </event>
+    <event value="114" version="0" opcode="34" channel="0" level="4" task="113" keywords="0x10000" message="Apply Button Clicked - Show the Restart prompt">
+    </event>
+    <event value="115" version="0" opcode="2" channel="0" level="4" task="113" keywords="0x10000" message="Apply Button Clicked - Finish">
+    </event>
+    <event value="116" version="0" opcode="1" channel="0" level="4" task="116" keywords="0x1000000000000" message="Display Settings Page Initializing - Start">
+    </event>
+    <event value="117" version="0" opcode="2" channel="0" level="4" task="116" keywords="0x1000000000000" message="Display Settings Page Initializing - Finish">
+    </event>
+    <event value="118" version="0" opcode="1" channel="0" level="4" task="118" keywords="0x10000" message="Display Settings Page Applying Settings - Start">
+    </event>
+    <event value="119" version="0" opcode="2" channel="0" level="4" task="118" keywords="0x10000" message="Display Settings Page Applying Settings - Finish">
+    </event>
+    <event value="120" version="0" opcode="1" channel="0" level="4" task="120" keywords="0x10000" message="Display Settings Page Enumerating Displays - Start">
+    </event>
+    <event value="121" version="0" opcode="2" channel="0" level="4" task="120" keywords="0x10000" message="Display Settings Page Enumerating Displays - Finish">
+    </event>
+    <event value="122" version="0" opcode="1" channel="0" level="4" task="122" keywords="0x10000" message="Display Settings Page Layout - Start">
+    </event>
+    <event value="123" version="0" opcode="2" channel="0" level="4" task="122" keywords="0x10000" message="Display Settings Page Layout - Stop">
+    </event>
+    <event value="124" version="0" opcode="0" channel="0" level="4" task="124" keywords="0x10000" message="Resolution Control Clicked">
+    </event>
+    <event value="125" version="0" opcode="0" channel="0" level="4" task="124" keywords="0x10000" message="Resolution Control - Item Added">
+    </event>
+    <event value="126" version="0" opcode="0" channel="0" level="4" task="124" keywords="0x10000" message="Resolution Control - Selection Changed">
+    </event>
+    <event value="127" version="0" opcode="0" channel="0" level="4" task="127" keywords="0x10000" message="Resolution Slider - Created">
+    </event>
+    <event value="128" version="0" opcode="0" channel="0" level="4" task="127" keywords="0x10000" message="Resolution Slider - Closed">
+    </event>
+    <event value="129" version="0" opcode="1" channel="0" level="4" task="129" keywords="0x10000" message="Enumerate Stereoscopic 3D Modes - Start">
+    </event>
+    <event value="130" version="0" opcode="2" channel="0" level="4" task="129" keywords="0x10000" message="Enumerate Stereoscopic 3D Modes - Finish">
+    </event>
+  </events>
+</provider>

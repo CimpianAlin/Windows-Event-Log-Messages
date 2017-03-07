@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-Hypervisor" guid="52fc89f8-995e-434c-a91e-199986449890" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=hvservice.sys&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\drivers\hvservice.sys" messageFileName="C:\Windows\system32\drivers\hvservice.sys" message="Microsoft-Windows-Hyper-V-Hypervisor" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Hypervisor-Admin" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Hypervisor-Operational" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-Hypervisor-Analytic" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="Hypervisor successfully started.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor Eventlog for global system events could not be created!">
+    </event>
+    <event value="5" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Hypervisor launch has been disabled through the hypervisorlaunchtype bcdedit setting.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Hypervisor Eventlog creation failed!">
+    </event>
+    <event value="11" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Hypervisor Eventlog deletion failed!">
+    </event>
+    <event value="12" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Hypervisor SPT Resizing policy failed to initialize.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Hypervisor fails to start ETW tracing session.">
+    </event>
+    <event value="20" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; sleep and hibernate could not be disabled (status %1).">
+    </event>
+    <event value="26" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; the hypervisor boot loader&apos;s internal logic failed (BalStatus %1, sub-status %2).">
+    </event>
+    <event value="27" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; the hypervisor boot loader was unable to allocate sufficient resources to perform the launch.">
+    </event>
+    <event value="28" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; the hypervisor boot loader does not support the vendor of at least one of the processors in the system.">
+    </event>
+    <event value="29" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; at least one of the processors in the system does not appear to support the features required by the hypervisor.  (leaf: %1, required features: %2, features available: %3)">
+    </event>
+    <event value="31" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hyper-V launch failed; the system does not appear to have a sufficient level of ACPI support to launch the hypervisor.">
+    </event>
+    <event value="32" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; at least one of the processors in the system does not appear to provide a virtualization platform supported by the hypervisor.">
+    </event>
+    <event value="33" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hyper-V launch failed; the image %1 could not be accessed (status %2).">
+    </event>
+    <event value="34" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hyper-V launch failed; the image %1 could not be loaded (status %2).">
+    </event>
+    <event value="35" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hyper-V launch failed; the image %1 could not be read (status %2).">
+    </event>
+    <event value="36" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; the image %1 failed code integrity checks, and cannot be used.">
+    </event>
+    <event value="37" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; the image %1 does not contain the image description datastructures, and cannot be used.">
+    </event>
+    <event value="38" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hyper-V launch failed; at least one of the processors in the system was unable to launch the hypervisor (status %1).">
+    </event>
+    <event value="39" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Hypervisor System Start Options!">
+    </event>
+    <event value="40" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; the hypervisor image is revision %1, but the currently installed virtualization software only supports launching revision %2 hypervisor images.">
+    </event>
+    <event value="41" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Either VMX not present or not enabled in BIOS.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Either SVM not present or not enabled in BIOS.">
+    </event>
+    <event value="44" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Either No Execute feature (NX) not present or not enabled in BIOS.">
+    </event>
+    <event value="45" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; at least one of the processors in the system is incompatible with the others.">
+    </event>
+    <event value="46" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Processor does not support the minimum features required to run the hypervisor (MSR index %1, allowed bits %2, required bits %3).">
+    </event>
+    <event value="47" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Processor does not provide the features necessary to run the hypervisor (BalStatus %1, leaf1 EAX %2, VMCR MS EAX %3, SVM CPUID features %4, has working SMM %5).">
+    </event>
+    <event value="48" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Processor does not provide the features necessary to run the hypervisor (leaf %1, register %2: features needed %3, features supported %4).">
+    </event>
+    <event value="54" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Hypervisor image does not match the platform being run on.">
+    </event>
+    <event value="55" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Required firmware table not found.">
+    </event>
+    <event value="56" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Encountered invalid firmware information.">
+    </event>
+    <event value="57" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Incompatible SVM features present.">
+    </event>
+    <event value="58" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Incompatible VMX features present.">
+    </event>
+    <event value="59" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Second Level Address Translation is required to launch the hypervisor on client SKUs.">
+    </event>
+    <event value="60" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Secure Mode Extensions have been enabled by the BIOS. Please disable Secure Mode Extensions in the BIOS to launch Hyper-V.">
+    </event>
+    <event value="61" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; Minimum CPUID leaves required by the hypervisor are not supported on the system.">
+    </event>
+    <event value="62" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; The physical address limit supported has been exceeded.">
+    </event>
+    <event value="63" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; The hypervisor was unable to initialize successfully (phase %1), and was not started.  This initialization failure may be the result of a platform configuration or firmware issue.  Contact your system vendor for more information or updated firmware.">
+    </event>
+    <event value="80" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; The operating systems boot loader failed with error %1.">
+    </event>
+    <event value="81" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; The operating system boot loader was unable to locate a required resource.">
+    </event>
+    <event value="82" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; The operating system boot loader detected a persistent memory failure.">
+    </event>
+    <event value="83" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; The operating system boot loader was unable to allocate sufficient memory to complete the operation.">
+    </event>
+    <event value="84" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; The operating system boot loader was unable to allocate sufficient resources to complete the operation.">
+    </event>
+    <event value="85" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor launch failed; The operating system boot loader detected a memory map conflict.">
+    </event>
+    <event value="96" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor processor startup failed (APIC ID %1, status %2). Further processors in the system were not started.">
+    </event>
+    <event value="97" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Hypervisor processor startup failed (APIC ID %1) due to CPUID feature validation error. Further processors in the system were not started. Leaf %2, register %3 feature mismatch: BSP has features %5; AP has features %4">
+    </event>
+    <event value="129" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The hypervisor enabled I/O remapping. IOV may be available if the system hardware and BIOS support it.">
+    </event>
+    <event value="130" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The hypervisor disabled I/O remapping because of policy. IOV will not be available.
+
+The HYPERVISORIOMMUPOLICY BCD option is set to Disable.">
+    </event>
+    <event value="131" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The hypervisor disabled I/O remapping because it is not supported by the system hardware and BIOS. IOV will not be available.
+
+An I/O remapping unit does not support all capabilities required for interrupt remapping.">
+    </event>
+    <event value="132" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The hypervisor disabled I/O remapping because it is not supported by the system hardware and BIOS. IOV will not be available.
+
+There is no I/O remapping unit that supports all capabilities required for DMA remapping.">
+    </event>
+    <event value="133" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The hypervisor disabled I/O remapping because it is not supported by the system hardware and BIOS. IOV will not be available.
+
+The CPU does not support Second Level Address Translation (SLAT).">
+    </event>
+    <event value="134" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The hypervisor disabled I/O remapping because of a problem with the system BIOS. IOV will not be available.
+
+An ACPI table cannot be parsed.
+
+Table signature: %1
+Byte offset: %2">
+    </event>
+    <event value="135" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The hypervisor disabled I/O remapping because an internal error occurred. IOV will not be available.
+
+Error information: %1 %2 %3 %4">
+    </event>
+    <event value="136" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The hypervisor disabled I/O remapping because of a problem with the system BIOS. IOV will not be available.
+
+The I/O remapping table reports multiple instances of an IOAPIC.
+
+IOAPIC ID: %1">
+    </event>
+    <event value="137" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The hypervisor disabled I/O remapping because of a problem with the system BIOS. IOV will not be available.
+
+The I/O remapping table does not report an IOAPIC reported by the MADT.
+
+IOAPIC ID: %1">
+    </event>
+    <event value="138" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The hypervisor disabled I/O remapping because of a problem with the system BIOS. IOV will not be available.
+
+An I/O remapping unit is not responding.
+
+Base address: %1">
+    </event>
+    <event value="139" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The hypervisor enabled I/O remapping, but a problem with the system BIOS may cause some devices to operate with reduced performance. IOV may be available if the system hardware and BIOS support it.
+
+A device is reported under the scope of more than one I/O remapping unit.
+
+Source ID: %1">
+    </event>
+    <event value="140" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The hypervisor enabled I/O remapping, but a problem with the system hardware or BIOS may prevent some devices from being used for IOV. IOV may be available for other devices if the system hardware and BIOS support it.
+
+An I/O remapping unit does not support all capabilities required for DMA remapping.
+
+Base address: %1">
+    </event>
+    <event value="141" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The hypervisor enabled I/O remapping, but a problem with the system BIOS may cause some devices to not work correctly. IOV may be available if the system hardware and BIOS support it.
+
+An ACPI table cannot be parsed.
+
+Table signature: %1
+Byte offset: %2">
+    </event>
+    <event value="142" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The hypervisor enabled I/O remapping, but a problem with the system BIOS may cause some devices to not work correctly. IOV may be available if the system hardware and BIOS support it.
+
+The I/O remapping table reports multiple instances of an IOAPIC.
+
+IOAPIC ID: %1">
+    </event>
+    <event value="143" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The hypervisor enabled I/O remapping, but a problem with the system BIOS may cause some devices to not work correctly. IOV may be available if the system hardware and BIOS support it.
+
+The I/O remapping table does not report an IOAPIC reported by the MADT.
+
+IOAPIC ID: %1">
+    </event>
+    <event value="144" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A device is operating with reduced performance because of a problem with the system BIOS.
+
+The device is not reported under the scope of a unique I/O remapping unit.
+
+Device ID: %1
+Partition ID: %2">
+    </event>
+    <event value="145" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A device will not work correctly because of a problem with the system BIOS.
+
+The Requester IDs reported for the device overlap with those reported for another device.
+
+Device ID: %1
+Partition ID: %2">
+    </event>
+    <event value="146" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A device will not work correctly because the hypervisor does not have enough resources.
+
+Device ID: %1
+Partition ID: %2">
+    </event>
+    <event value="147" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A device will not work correctly because of a problem with the system BIOS.
+
+An IOAPIC is not correctly reported.
+
+IOAPIC ID: %1">
+    </event>
+    <event value="148" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A device could not be used for IOV because of a limitation of the system hardware and BIOS.
+
+The I/O remapping unit that controls the device does not support all capabilities required for DMA remapping.
+
+Device ID: %1
+I/O remapping unit base address: %2
+Partition ID: %3">
+    </event>
+    <event value="149" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="A device could not be used for IOV because of a limitation of the system hardware and BIOS.
+
+The device cannot be securely used by a child partition.
+
+Device ID: %1
+Partition ID: %2">
+    </event>
+    <event value="8451" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x2000000000000000" message="Hyper-V failed creating a new partition (status %1)!">
+    </event>
+    <event value="16641" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Hyper-V successfully created a new partition (partition %1).">
+    </event>
+    <event value="16642" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x2000000000000000" message="Hyper-V successfully deleted a partition (partition %1).">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-TimeBroker" guid="0657adc1-9ae8-4e18-932d-e6079cda5ab3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=TimeBrokerServer.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\TimeBrokerServer.dll" messageFileName="C:\Windows\system32\TimeBrokerServer.dll" message="Microsoft-Windows-TimeBroker" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="TimeBroker" id="16" flags="0" message="Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Api" mask="1" message="API">
+    </keyword>
+    <keyword name="EventState" mask="2" message="EventState">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000002" message="Event ID %1 changed state from %2 to %3">
+    </event>
+    <event value="2" version="1" opcode="0" channel="16" level="5" task="0" keywords="0x8000000000000002" message="Event ID %1 is set to fire between %2 and %3">
+    </event>
+    <event value="3" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="TimeBroker CreateEvent called for Event ID %1 with Event Type %2 returned %3">
+    </event>
+    <event value="4" version="1" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="TimeBroker DeleteEvent called for Event ID %1 and returned %2">
+    </event>
+  </events>
+</provider>

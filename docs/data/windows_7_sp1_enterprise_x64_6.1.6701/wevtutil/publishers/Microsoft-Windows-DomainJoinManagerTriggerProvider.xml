@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DomainJoinManagerTriggerProvider" guid="5b004607-1087-4f16-b10e-979685a8d131" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7601.17514&amp;FileName=lsasrv.dll&amp;FileVer=6.1.7601.17514" resourceFileName="C:\Windows\system32\lsasrv.dll" messageFileName="C:\Windows\System32\lsasrv.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="Opcode_DomainJoinEvent" value="6553600" message="">
+    </opcode>
+    <opcode name="Opcode_DomainUnjoinEvent" value="6619136" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Keyword_DomainJoinEvent" mask="1" message="">
+    </keyword>
+    <keyword name="Keyword_DomainUnjoinEvent" mask="2" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="100" channel="0" level="4" task="0" keywords="0x1" message="">
+    </event>
+    <event value="2" version="0" opcode="101" channel="0" level="4" task="0" keywords="0x2" message="">
+    </event>
+  </events>
+</provider>

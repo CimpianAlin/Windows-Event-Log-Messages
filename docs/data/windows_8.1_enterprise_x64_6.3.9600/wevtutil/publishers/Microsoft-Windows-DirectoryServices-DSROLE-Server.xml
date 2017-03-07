@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DirectoryServices-DSROLE-Server" guid="2876b2fb-2dad-4f51-abbc-56e73dd0cf4c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=dsrolesrv.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\dsrolesrv.dll" messageFileName="C:\Windows\System32\dsrolesrv.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Directory Service" id="16" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="29186" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Moving the existing logon scripts from %1 to %2 failed.  The return code is the data.">
+    </event>
+    <event value="29187" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Running the Security Configuration Editor over the Domain Controller encountered a non-fatal error.  Further details can be obtained by examining the log file %1.  The return code is the data.">
+    </event>
+    <event value="29188" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="An existing, incompatible trust object was found on the parent server for domain %1.  It has been removed and replaced with an updated trust.">
+    </event>
+    <event value="29216" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to disable auto logon following the successful upgrade of a domain controller.  Unable to delete registry key %1.  The return code is the data.">
+    </event>
+    <event value="29217" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Failed to set the default logon domain to %1.  The return code is the data.">
+    </event>
+    <event value="29218" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning failed. The cloning operation could not be completed and the cloned domain controller was rebooted into Directory Services Restore Mode (DSRM).
+
+Please check previously logged events and %systemroot%\debug\dcpromo.log for more information on errors that correspond to the virtual domain controller cloning attempt and whether or not this clone image can be reused.
+
+If one or more log entries indicate that the cloning process cannot be retried, the image must be securely destroyed.
+
+Otherwise you may fix the errors, clear the DSRM boot flag, and reboot normally; upon reboot, the cloning operation will be retried.
+
+Details on virtual domain controller clone errors can be found at http://go.microsoft.com/fwlink/?LinkId=208030.">
+    </event>
+    <event value="29219" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning succeeded.">
+    </event>
+    <event value="29221" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="During the demotion operation, the trust object on %1 could not be removed.">
+    </event>
+    <event value="29222" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="During the demotion operation, the File Replication Service reported a non critical error.">
+    </event>
+    <event value="29223" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="This server is now a Domain Controller.">
+    </event>
+    <event value="29224" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="This server is no longer a Domain Controller.">
+    </event>
+    <event value="29239" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="This server was force demoted.  It is no longer a Domain Controller.">
+    </event>
+    <event value="29240" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The Netlogon service could not be stopped during force demotion.">
+    </event>
+    <event value="29241" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Dcpromo failed to configure the new starttype of %1 for the service %2 during forced demotion.">
+    </event>
+    <event value="29242" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="Dcpromo failed to remove the dependency of %1 on %2 during forced demotion.">
+    </event>
+    <event value="29248" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning failed to obtain Winlogon Notification.
+The returned error code is %1 (%2).
+
+For more information on this error, please review %systemroot%\debug\dcpromo.log for errors that correspond to the virtual domain controller cloning attempt. 
+
+Details on virtual domain controller cloning can be found at http://go.microsoft.com/fwlink/?LinkId=208030">
+    </event>
+    <event value="29249" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning failed to parse virtual domain controller configuration file.
+The returned HRESULT code is %1.
+The configuration file is:
+%2
+
+Please fix the errors in the configuration file and retry the cloning operation. For more information about this error, please see %systemroot%\debug\dcpromo.log.
+
+Details on virtual domain controller clone configuration file can be found at http://go.microsoft.com/fwlink/?LinkId=208030">
+    </event>
+    <event value="29250" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message=" Virtual domain controller cloning failed. There are software or services currently enabled on the cloned virtual domain controller that are not present in the allowed application list for virtual domain controller cloning. Following are the missing entries:
+%2
+%1 (if any) was used as the defined inclusion list.
+
+The cloning operation cannot be completed if there are non-cloneable applications installed.
+Please run Active Directory Powershell Cmdlet Get-ADDCCloningExcludedApplicationList to check which applications are installed on the cloned machine, but not included in the allow list, and add them to the allow list if they are compatible with virtual domain controller cloning. If any of these applications are not compatible with virtual domain controller cloning, please uninstall them before re-trying the cloning operation.
+
+The virtual domain controller cloning process searches for the allowed application list file, CustomDCCloneAllowList.xml, based on the following search order; the first file found is used and all others are ignored:
+    1. The registry value name: HKey_Local_Machine\System\CurrentControlSet\Services\NTDS\Parameters\AllowListFolder
+    2. The same directory where the DSA Working Directory folder resides
+    3. %windir%\NTDS
+    4. Removable read/write media in order of drive letter at the root of the drive
+
+Details on virtual domain controller clone allow list can be found at http://go.microsoft.com/fwlink/?LinkId=208030">
+    </event>
+    <event value="29251" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning failed to reset the IP addresses of the clone machine.
+The returned error code is %1 (%2).
+This error might be caused by misconfiguration in network configuration sections in the virtual domain controller configuration file. Please see %systemroot%\debug\dcpromo.log for more information about errors that correspond to IP addresses resetting during virtual domain controller cloning attempts.
+
+Details on resetting machine IP addresses on the cloned machine can be found at http://go.microsoft.com/fwlink/?LinkId=208030">
+    </event>
+    <event value="29253" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning failed. The clone domain controller was unable to locate the primary domain controller (PDC) operations master in the cloned computer&apos;s home domain of the cloned machine.
+The returned error code is %1 (%2).
+ Please verify that the primary domain controller in the home domain of the cloned machine is assigned to a live domain controller, is online, and is operational. Verify that the cloned machine has LDAP/RPC connectivity to the primary domain controller over the required ports and protocols. 
+
+Details on virtual domain controller cloning can be found at http://go.microsoft.com/fwlink/?LinkId=208030">
+    </event>
+    <event value="29254" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning failed to bind to the primary domain controller %1.
+The returned error code is %2 (%3). 
+ Please verify that the primary domain controller %1 is online and is operational. Verify that the cloned machine has LDAP/RPC connectivity to the primary domain controller over the required ports and protocols.
+
+Details on virtual domain controller cloning can be found at http://go.microsoft.com/fwlink/?LinkId=208030">
+    </event>
+    <event value="29255" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning failed. An attempt to create objects on the primary domain controller %1 required for the image being cloned returned error %2 (%3).
+Please verify that the cloned domain controller has privilege to clone itself. Check for related events in the Directory Service event log on primary domain controller %1.
+
+Details on virtual domain controller cloning can be found at http://go.microsoft.com/fwlink/?LinkId=208030">
+    </event>
+    <event value="29256" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="An attempt to set the Boot into Directory Services Restore Mode flag failed with error code %1.
+Please see %systemroot%\debug\dcpromo.log for more information about errors.">
+    </event>
+    <event value="29257" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning has done. An attempt to reboot the machine failed with error code %1.
+Please reboot the machine to finish the cloning operation.">
+    </event>
+    <event value="29264" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="An attempt to clear the Boot into Directory Services Restore Mode flag failed with error code %1.
+Please see %systemroot%\debug\dcpromo.log for more information about errors.">
+    </event>
+    <event value="29265" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning succeeded. The virtual domain controller cloning configuration file %1 has been renamed to %2.">
+    </event>
+    <event value="29266" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning succeeded. The attempt to rename virtual domain controller cloning configuration file %1 failed with error code %2 (%3).">
+    </event>
+    <event value="29267" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x4000000000000000" message="Virtual domain controller cloning failed to check the virtual domain controller cloning allowed application list.
+The returned error code is %1 (%2).
+This error might be caused by a syntax error in the clone allow list file (The currently being checked file is: %3). For more information about this error, please see %systemroot%\debug\dcpromo.log.
+
+Details on virtual domain controller clone allow list can be found at http://go.microsoft.com/fwlink/?LinkId=208030">
+    </event>
+  </events>
+</provider>

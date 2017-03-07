@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-HomeGroup-ControlPanel" guid="134ea407-755d-4a93-b8a6-f290cd155023" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=hgcpl.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\hgcpl.dll" messageFileName="C:\Windows\system32\hgcpl.dll" message="Microsoft-Windows-HomeGroup Control Panel" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-HomeGroup Control Panel/Operational" id="16" flags="0" message="Microsoft-Windows-HomeGroup Control Panel/Operational">
+    </channel>
+    <channel name="Microsoft-Windows-HomeGroup Control Panel Performance/Diagnostic" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Initialization_Core" value="6001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_Page" value="6002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_HomeGroupPage" value="6003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_AdvancedPage" value="6004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_CreateElevatedObjects" value="6005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_HomeGroupPageRetrieve" value="6006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_HomeGroupPageCommit" value="6007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_AdvancedPageRetrieve" value="6008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Settings_AdvancedPageCommit" value="6009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Notification_AvailableToJoin_Event" value="6010" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Notification_PasskeyChangeRequired_Event" value="6011" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Notification_MergeRequired_Event" value="6012" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Notification_AvailableToJoin_Balloon" value="6013" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Notification_PasskeyChangeRequired_Balloon" value="6014" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Notification_MergeRequired_Balloon" value="6015" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Action_LaunchCreateJoin" value="6017" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_BeginPage" value="7001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_PasskeyPage" value="7002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_FinishedPage" value="7003" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_ConfirmPage" value="7004" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Action_PasswordGeneration" value="7005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Action_DoCreateJoinChange" value="7006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_SharingPage" value="7009" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="HomeGroup" mask="10000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="5001" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Core initialization failed.  Details: %1">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Page initialization failed.  Details: %1 Page: %2">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="GetHomeGroupStatus failed.  Details: %1">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="GetSharingFlags failed.  Details: %1">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="PopulateSharedFolderList failed.  Details: %1">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Retrieve network discovery failed.  Details: %1">
+    </event>
+    <event value="5007" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Retrieve file sharing failed.  Details: %1">
+    </event>
+    <event value="5008" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Retrieve public folder failed.  Details: %1">
+    </event>
+    <event value="5009" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Retrieve printer sharing failed.  Details: %1">
+    </event>
+    <event value="5010" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Retrieve media sharing failed.  Details: %1">
+    </event>
+    <event value="5011" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Commit network discovery failed.  Details: %1  Context: %2">
+    </event>
+    <event value="5012" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Commit file sharing failed.  Details: %1  Context: %2">
+    </event>
+    <event value="5013" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Commit public folder failed.  Details: %1  Context: %2">
+    </event>
+    <event value="5014" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Commit printer sharing failed.  Details: %1  Context: %2">
+    </event>
+    <event value="5015" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Commit media sharing failed.  Details: %1  Context: %2">
+    </event>
+    <event value="5016" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Share folder failed.  Details: %1  FolderId: %2  Context: %3">
+    </event>
+    <event value="5017" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Retrieve printer sharing failed.  Details: %1">
+    </event>
+    <event value="5018" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Commit password protection failed.  Details: %1  Context: %2">
+    </event>
+    <event value="5020" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Commit public folder failed.  Details: %1  Context: %2">
+    </event>
+    <event value="5021" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Retrieving UI status from SSO failed.  Details: %1">
+    </event>
+    <event value="5022" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to initialize homegroup printer monitor.  Details: %1">
+    </event>
+    <event value="5023" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Successfully installed homegroup printer">
+    </event>
+    <event value="5024" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Successfully removed homegroup printer">
+    </event>
+    <event value="5025" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to install homegroup printer. Details: %1">
+    </event>
+    <event value="5026" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Starting printer monitor">
+    </event>
+    <event value="5027" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Stopping printer monitor">
+    </event>
+    <event value="5028" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Shared printer message received. Attempting to install.">
+    </event>
+    <event value="5029" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Shared printer message removed. Attempting to uninstall.">
+    </event>
+    <event value="5030" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Failed to install printer.  Notifying user.">
+    </event>
+    <event value="6001" version="0" opcode="1" channel="17" level="4" task="6001" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6002" version="0" opcode="2" channel="17" level="4" task="6001" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6003" version="0" opcode="1" channel="17" level="4" task="6002" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6004" version="0" opcode="2" channel="17" level="4" task="6002" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6005" version="0" opcode="1" channel="17" level="4" task="6003" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6006" version="0" opcode="2" channel="17" level="4" task="6003" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6007" version="0" opcode="1" channel="17" level="4" task="6004" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6008" version="0" opcode="2" channel="17" level="4" task="6004" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6009" version="0" opcode="1" channel="17" level="4" task="6005" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6010" version="0" opcode="2" channel="17" level="4" task="6005" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6011" version="0" opcode="1" channel="17" level="4" task="6006" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6012" version="0" opcode="2" channel="17" level="4" task="6006" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6013" version="0" opcode="1" channel="17" level="4" task="6007" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6014" version="0" opcode="2" channel="17" level="4" task="6007" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6015" version="0" opcode="1" channel="17" level="4" task="6008" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6016" version="0" opcode="2" channel="17" level="4" task="6008" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6017" version="0" opcode="1" channel="17" level="4" task="6009" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6018" version="0" opcode="2" channel="17" level="4" task="6009" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6019" version="0" opcode="1" channel="17" level="4" task="6010" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6020" version="0" opcode="2" channel="17" level="4" task="6010" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6021" version="0" opcode="1" channel="17" level="4" task="6011" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6022" version="0" opcode="2" channel="17" level="4" task="6011" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6023" version="0" opcode="1" channel="17" level="4" task="6012" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6024" version="0" opcode="2" channel="17" level="4" task="6012" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6025" version="0" opcode="1" channel="17" level="4" task="6013" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6026" version="0" opcode="2" channel="17" level="4" task="6013" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6027" version="0" opcode="1" channel="17" level="4" task="6014" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6028" version="0" opcode="2" channel="17" level="4" task="6014" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6029" version="0" opcode="1" channel="17" level="4" task="6015" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6030" version="0" opcode="2" channel="17" level="4" task="6015" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6031" version="0" opcode="1" channel="17" level="4" task="6017" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="6032" version="0" opcode="2" channel="17" level="4" task="6017" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="7001" version="0" opcode="1" channel="17" level="4" task="7001" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7002" version="0" opcode="2" channel="17" level="4" task="7001" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7003" version="0" opcode="1" channel="17" level="4" task="7002" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7004" version="0" opcode="2" channel="17" level="4" task="7002" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7005" version="0" opcode="1" channel="17" level="4" task="7003" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7006" version="0" opcode="2" channel="17" level="4" task="7003" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7007" version="0" opcode="1" channel="17" level="4" task="7004" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7008" version="0" opcode="2" channel="17" level="4" task="7004" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7009" version="0" opcode="1" channel="17" level="4" task="7005" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7010" version="0" opcode="2" channel="17" level="4" task="7005" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7011" version="0" opcode="1" channel="17" level="4" task="7006" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7012" version="0" opcode="2" channel="17" level="4" task="7006" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7017" version="0" opcode="1" channel="17" level="4" task="7009" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="7018" version="0" opcode="2" channel="17" level="4" task="7009" keywords="0x4000000000010000" message="">
+    </event>
+    <event value="8001" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The homegroup state has changed. Old state: %2. New state: %3.">
+    </event>
+  </events>
+</provider>

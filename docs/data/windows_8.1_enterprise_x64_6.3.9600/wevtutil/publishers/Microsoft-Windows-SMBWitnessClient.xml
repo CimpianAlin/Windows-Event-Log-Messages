@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-SMBWitnessClient" guid="32254f6c-aa33-46f0-a5e3-1cbcc74bf683" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=wkssvc.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\wkssvc.dll" messageFileName="C:\Windows\system32\wkssvc.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="WitnessClientAdmin" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client initialization failed with error (%1)">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client received registration request for \\%1\%2 with IP address %3">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed to obtain the list of Witness Servers from IP address %1 with error (%2)">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client is waiting to receive list of Witness Servers from IP address %1">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client selected %1 as the Witness Server for NetName \\%2">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="Witness Client failed to find a Witness Server for NetName \\%1 with error (%2). Retrying in (%3) seconds.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client successfully registered with Witness Server %1 for notification on NetName \\%2 with IP address %3">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed to register with Witness Server %1 for notification on NetName \\%2 with error (%3)">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client received error (%1) from Witness Server %2 for NetName \\%3">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client received resource notification %1 for NetName \\%2 from Witness Server %3">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed resource notification for NetName \\%1 with error (%2)">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client received a request to move to a different file server node for NetName \\%1 from Witness Server %2">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed the move request for NetName \\%1 with error (%2)">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client received unregister request for \\%1\%2">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client successfully unregistered from Witness Server %1 for NetName \\%2">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed to unregister from Witness Server %1 for NetName \\%2 with error (%3)">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client is already registered with Witness Server %1 for notification on NetName \\%2 and IP address %3">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client is already registered with Witness Server %1 for notification on \\%2\%3 and IP address %4">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client received an IP notification for NetName \\%1 from Witness Server %2">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client received an IP notification for \\%1\%2 from Witness Server %3">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed the IP notification for NetName \\%1 with error (%2)">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed the IP notification for \\%1\%2 with error (%3)">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client received a share move request for \\%1\%2 from Witness Server %3">
+    </event>
+    <event value="24" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed the share move request for \\%1\%2 with error (%3)">
+    </event>
+    <event value="25" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed to unregister for NetName \\%1 because it is currently not registered">
+    </event>
+    <event value="26" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed to unregister for \\%1\%2 because it is currently not registered">
+    </event>
+    <event value="27" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client selected %1 as the Witness Server for \\%2\%3">
+    </event>
+    <event value="28" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000000000000" message="Witness Client failed to find a Witness Server for \\%1\%2 with error (%3). Retrying in (%4) seconds.">
+    </event>
+    <event value="29" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client successfully registered with Witness Server %1 for notification on \\%2\%3 with IP address %4">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed to register with Witness Server %1 for notification on \\%2\%3 with error (%4)">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client received error (%1) from Witness Server %2 for \\%3\%4">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client received resource notification %1 for \\%2\%3 from Witness Server %4">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed resource notification for \\%1\%2 with error (%3)">
+    </event>
+    <event value="34" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client received a request to move to a different file server node for \\%1\%2 from Witness Server %3">
+    </event>
+    <event value="35" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed the move request for \\%1\%2 with error (%3)">
+    </event>
+    <event value="36" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="Witness Client successfully unregistered from Witness Server %1 for \\%2\%3">
+    </event>
+    <event value="37" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed to unregister from Witness Server %1 for \\%2\%3 with error (%4)">
+    </event>
+    <event value="38" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed to unregister notification for NetName \\%1 with error (%2)">
+    </event>
+    <event value="39" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed to unregister notification for \\%1\%2 with error (%3)">
+    </event>
+    <event value="40" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Witness Client failed registration request for \\%1\%2 with error (%3)">
+    </event>
+    <event value="41" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Witness Client obtained the list of Witness Servers from IP address %1 with error (%2)">
+    </event>
+  </events>
+</provider>

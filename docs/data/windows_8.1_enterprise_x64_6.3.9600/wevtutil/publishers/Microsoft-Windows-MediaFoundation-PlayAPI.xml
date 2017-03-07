@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MediaFoundation-PlayAPI" guid="b65471e1-019d-436f-bc38-e15fa8e87f53" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.9600.16384&amp;FileName=MFPlay.dll&amp;FileVer=12.0.9600.16384" resourceFileName="C:\Windows\system32\MFPlay.dll" messageFileName="C:\Windows\system32\MFPlay.dll" message="Microsoft-Windows-MediaFoundation-PlayAPI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-MediaFoundation-PlayAPI/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="ObjConstruction" value="655360" message="Object constructed">
+    </opcode>
+    <opcode name="ObjDestruction" value="720896" message="Object destroyed">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Play" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="MFPlay">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="0" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000000" message="MFPlay_MFPCreateMediaPlayer_Enter">
+    </event>
+    <event value="1" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000000000" message="MFPlay_MFPCreateMediaPlayer_Leave">
+    </event>
+    <event value="2" version="0" opcode="10" channel="16" level="4" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Construct">
+    </event>
+    <event value="3" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Destruct">
+    </event>
+    <event value="4" version="0" opcode="10" channel="16" level="4" task="1" keywords="0x8000000000000000" message="MFPlay_Item_Construct">
+    </event>
+    <event value="5" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000000000" message="MFPlay_Item_Destruct">
+    </event>
+    <event value="6" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Play_Enter">
+    </event>
+    <event value="7" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Play_Leave">
+    </event>
+    <event value="8" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Pause_Enter">
+    </event>
+    <event value="9" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Pause_Leave">
+    </event>
+    <event value="10" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Stop_Enter">
+    </event>
+    <event value="11" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Stop_Leave">
+    </event>
+    <event value="12" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_FrameStep_Enter">
+    </event>
+    <event value="13" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_FrameStep_Leave">
+    </event>
+    <event value="14" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetPosition_Enter">
+    </event>
+    <event value="15" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetPosition_Leave">
+    </event>
+    <event value="16" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetPosition_Enter">
+    </event>
+    <event value="17" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetPosition_Leave">
+    </event>
+    <event value="18" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetDuration_Enter">
+    </event>
+    <event value="19" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetDuration_Leave">
+    </event>
+    <event value="20" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetRate_Enter">
+    </event>
+    <event value="20" version="1" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetRateEx_Enter">
+    </event>
+    <event value="21" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetRate_Leave">
+    </event>
+    <event value="22" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetRate_Enter">
+    </event>
+    <event value="23" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetRate_Leave">
+    </event>
+    <event value="24" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetState_Enter">
+    </event>
+    <event value="25" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetState_Leave">
+    </event>
+    <event value="26" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetTimer_Enter">
+    </event>
+    <event value="27" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetTimer_Leave">
+    </event>
+    <event value="28" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_CreateMediaItemFromURL_Enter">
+    </event>
+    <event value="29" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_CreateMediaItemFromURL_Leave">
+    </event>
+    <event value="30" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_CreateMediaItemFromObject_Enter">
+    </event>
+    <event value="31" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_CreateMediaItemFromObject_Leave">
+    </event>
+    <event value="32" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetMediaItem_Enter">
+    </event>
+    <event value="33" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetMediaItem_Leave">
+    </event>
+    <event value="34" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_ClearMediaItem_Enter">
+    </event>
+    <event value="35" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_ClearMediaItem_Leave">
+    </event>
+    <event value="36" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetMediaItem_Enter">
+    </event>
+    <event value="37" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetMediaItem_Leave">
+    </event>
+    <event value="38" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetVolume_Enter">
+    </event>
+    <event value="39" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetVolume_Leave">
+    </event>
+    <event value="40" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetVolume_Enter">
+    </event>
+    <event value="41" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetVolume_Leave">
+    </event>
+    <event value="42" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetBalance_Enter">
+    </event>
+    <event value="43" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetBalance_Leave">
+    </event>
+    <event value="44" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetBalance_Enter">
+    </event>
+    <event value="45" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetBalance_Leave">
+    </event>
+    <event value="46" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetNativeVideoSize_Enter">
+    </event>
+    <event value="47" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetNativeVideoSize_Leave">
+    </event>
+    <event value="48" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetIdealVideoSize_Enter">
+    </event>
+    <event value="49" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetIdealVideoSize_Leave">
+    </event>
+    <event value="50" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetVideoSourceRect_Enter">
+    </event>
+    <event value="51" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetVideoSourceRect_Leave">
+    </event>
+    <event value="52" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetVideoSourceRect_Enter">
+    </event>
+    <event value="53" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetVideoSourceRect_Leave">
+    </event>
+    <event value="54" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetAspectRatioMode_Enter">
+    </event>
+    <event value="55" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetAspectRatioMode_Leave">
+    </event>
+    <event value="56" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetAspectRatioMode_Enter">
+    </event>
+    <event value="57" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetAspectRatioMode_Leave">
+    </event>
+    <event value="58" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetVideoWindow_Enter">
+    </event>
+    <event value="59" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetVideoWindow_Leave">
+    </event>
+    <event value="60" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_UpdateVideo_Enter">
+    </event>
+    <event value="61" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_UpdateVideo_Leave">
+    </event>
+    <event value="62" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetBorderColor_Enter">
+    </event>
+    <event value="63" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetBorderColor_Leave">
+    </event>
+    <event value="64" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetBorderColor_Enter">
+    </event>
+    <event value="65" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetBorderColor_Leave">
+    </event>
+    <event value="66" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_InsertEffect_Enter">
+    </event>
+    <event value="67" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_InsertEffect_Leave">
+    </event>
+    <event value="68" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_RemoveEffect_Enter">
+    </event>
+    <event value="69" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_RemoveEffect_Leave">
+    </event>
+    <event value="70" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_RemoveAllEffects_Enter">
+    </event>
+    <event value="71" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_RemoveAllEffects_Leave">
+    </event>
+    <event value="72" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Shutdown_Enter">
+    </event>
+    <event value="73" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Shutdown_Leave">
+    </event>
+    <event value="74" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Item_SetStartStopPosition_Enter">
+    </event>
+    <event value="75" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Item_SetStartStopPosition_Leave">
+    </event>
+    <event value="76" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Item_SetStreamSelection_Enter">
+    </event>
+    <event value="77" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Item_SetStreamSelection_Leave">
+    </event>
+    <event value="78" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_CancelTimer_Enter">
+    </event>
+    <event value="79" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_CancelTimer_Leave">
+    </event>
+    <event value="80" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetMute_Enter">
+    </event>
+    <event value="81" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetMute_Leave">
+    </event>
+    <event value="82" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetMute_Enter">
+    </event>
+    <event value="83" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_SetMute_Leave">
+    </event>
+    <event value="84" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetSupportedRates_Enter">
+    </event>
+    <event value="85" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_GetSupportedRates_Leave">
+    </event>
+    <event value="500" version="0" opcode="0" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Callback_Fired">
+    </event>
+    <event value="501" version="0" opcode="1" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Callback_Enter">
+    </event>
+    <event value="502" version="0" opcode="2" channel="16" level="5" task="1" keywords="0x8000000000000000" message="MFPlay_Player_Callback_Leave">
+    </event>
+  </events>
+</provider>

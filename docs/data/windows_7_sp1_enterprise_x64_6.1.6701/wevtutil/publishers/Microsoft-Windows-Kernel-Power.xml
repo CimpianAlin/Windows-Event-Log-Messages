@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-Power" guid="331c3b3a-2005-44c2-ac5e-77220c37d6b4" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=microsoft-windows-kernel-power-events.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\microsoft-windows-kernel-power-events.dll" messageFileName="C:\Windows\system32\microsoft-windows-kernel-power-events.dll" message="Microsoft-Windows-Kernel-Power" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-Power/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-Power/Thermal-Diagnostic" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Kernel-Power/Thermal-Operational" id="18" flags="0" message="Thermal-Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="PhaseStart" value="2162688" message="">
+    </opcode>
+    <opcode name="PhaseStop" value="2228224" message="">
+    </opcode>
+    <opcode name="Veto" value="2293760" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="PowerTransition" value="33" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryApps" value="34" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryServices" value="35" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryDrivers" value="36" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SuspendApps" value="37" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SuspendServices" value="38" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Irp" value="39" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Driver" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SuspendDevices" value="41" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WakeDevices" value="42" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ResumeServices" value="43" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ResumeApps" value="44" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Hibernate" value="45" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ZeroHiberFile" value="46" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FlushVolumes" value="47" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="GracefulShutdown" value="48" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ZeroPageFile" value="49" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IoShutdownSystem" value="50" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WaitForProcesses" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CmShutdownSystem" value="52" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShowUI" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Superfetch" value="54" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Winlogon" value="55" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PreSleepCallbacks" value="56" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="HideUI" value="57" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IrpWaiting" value="58" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryFailedApps" value="59" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryFailedServices" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryFailedApp" value="61" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="QueryFailedService" value="62" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DirtyTransition" value="63" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PreSleepNotification" value="64" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AwayMode" value="65" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UserQueryAllowed" value="66" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="KernelQueryAllowed" value="67" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetExecutionState" value="68" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemTimeResolutionChange" value="69" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IdleCheck" value="70" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SetSystemState" value="71" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RegisterSystemState" value="72" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceIdle" value="73" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DeviceIdleCheck" value="74" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DiskIdleCheck" value="75" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SkipTick" value="76" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CoolingModeChange" value="77" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PassiveCoolingDiagnostic" value="78" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PassiveCoolingOperational" value="79" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ActiveCoolingDiagnostic" value="80" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ActiveCoolingOperational" value="81" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CriticalTripPointExceededDiagnostic" value="82" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CriticalTripPointExceededSystem" value="83" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="S4TripPointExceededDiagnostic" value="84" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="S4TripPointExceededSystem" value="85" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThermalZoneEnumerated" value="86" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IllegalProcessorThrottleDiagnostic" value="87" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IllegalProcessorThrottleOperational" value="88" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CreatePowerRequest" value="89" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ChangePowerRequest" value="90" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ClosePowerRequest" value="91" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemTimeResolutionUpdate" value="92" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemTimeResolutionRundown" value="93" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemTimeResolutionRequestRundown" value="94" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemTimeResolutionKernelChange" value="95" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PowerRequestRundown" value="96" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FlushAllPages" value="97" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BuildNotifyList" value="98" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SleepDisableReasonRundown" value="99" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AcDcStateChange" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="AcDcStateRundown" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PostSleepNotification" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShutdownAction" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemTimerResolutionStackRundown" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="po:Scenario" mask="1" message="">
+    </keyword>
+    <keyword name="po:Simple" mask="2" message="">
+    </keyword>
+    <keyword name="po:Diagnostic" mask="4" message="">
+    </keyword>
+    <keyword name="po:Performance" mask="8" message="">
+    </keyword>
+    <keyword name="po:Idle" mask="10" message="">
+    </keyword>
+    <keyword name="po:Thermal" mask="20" message="">
+    </keyword>
+    <keyword name="po:PerfTrackContext" mask="40" message="">
+    </keyword>
+    <keyword name="win:SQM" mask="8000000000000" message="SQM">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="1" task="33" keywords="0x4000000000000009" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="1" task="33" keywords="0x4000000000000009" message="">
+    </event>
+    <event value="3" version="0" opcode="33" channel="16" level="4" task="34" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="4" version="0" opcode="34" channel="16" level="4" task="34" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="5" version="0" opcode="33" channel="16" level="4" task="35" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="6" version="0" opcode="34" channel="16" level="4" task="35" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="39" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="7" version="1" opcode="1" channel="16" level="4" task="39" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="39" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="9" version="0" opcode="35" channel="8" level="4" task="34" keywords="0x8000000000000004" message="The application %4 stopped the power transition.">
+    </event>
+    <event value="10" version="0" opcode="35" channel="8" level="4" task="35" keywords="0x8000000000000004" message="The service %3 stopped the power transition.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="58" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="12" version="0" opcode="1" channel="16" level="4" task="34" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="13" version="0" opcode="2" channel="16" level="4" task="34" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="14" version="0" opcode="1" channel="16" level="4" task="35" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="15" version="0" opcode="2" channel="16" level="4" task="35" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="16" version="0" opcode="1" channel="16" level="4" task="37" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="17" version="0" opcode="2" channel="16" level="4" task="37" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="18" version="0" opcode="1" channel="16" level="4" task="38" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="19" version="0" opcode="2" channel="16" level="4" task="38" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="20" version="0" opcode="1" channel="16" level="4" task="40" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="21" version="0" opcode="2" channel="16" level="4" task="40" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="22" version="0" opcode="33" channel="16" level="4" task="37" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="23" version="0" opcode="34" channel="16" level="4" task="37" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="24" version="0" opcode="33" channel="16" level="4" task="38" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="25" version="0" opcode="34" channel="16" level="4" task="38" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="26" version="0" opcode="33" channel="16" level="4" task="44" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="27" version="0" opcode="33" channel="16" level="4" task="43" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="28" version="0" opcode="1" channel="16" level="4" task="44" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="29" version="0" opcode="1" channel="16" level="4" task="43" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="30" version="0" opcode="0" channel="16" level="4" task="59" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="31" version="0" opcode="0" channel="16" level="4" task="60" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="32" version="0" opcode="0" channel="16" level="4" task="61" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="33" version="0" opcode="0" channel="16" level="4" task="62" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="34" version="0" opcode="0" channel="16" level="4" task="45" keywords="0x400000000000000c" message="">
+    </event>
+    <event value="35" version="0" opcode="33" channel="16" level="4" task="41" keywords="0x400000000000000c" message="">
+    </event>
+    <event value="36" version="0" opcode="34" channel="16" level="4" task="41" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="37" version="0" opcode="33" channel="16" level="4" task="42" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="38" version="0" opcode="34" channel="16" level="4" task="42" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="39" version="0" opcode="0" channel="16" level="4" task="33" keywords="0x400000000000000c" message="">
+    </event>
+    <event value="40" version="0" opcode="35" channel="8" level="4" task="36" keywords="0x8000000000000004" message="The driver %2 for device %4 stopped the power transition.">
+    </event>
+    <event value="41" version="0" opcode="0" channel="8" level="1" task="63" keywords="0x8000000000000002" message="The last sleep transition was unsuccessful. This error could be caused if the system stopped responding, failed, or lost power during the sleep transition.">
+    </event>
+    <event value="41" version="1" opcode="0" channel="8" level="1" task="63" keywords="0x8000000000000002" message="The last sleep transition was unsuccessful. This error could be caused if the system stopped responding, failed, or lost power during the sleep transition.">
+    </event>
+    <event value="41" version="2" opcode="0" channel="8" level="1" task="63" keywords="0x8000000000000002" message="The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly.">
+    </event>
+    <event value="42" version="0" opcode="0" channel="8" level="4" task="64" keywords="0x8000000000000004" message="The system is entering sleep.">
+    </event>
+    <event value="42" version="2" opcode="0" channel="8" level="4" task="64" keywords="0x8000000000000004" message="The system is entering sleep.
+
+Sleep Reason: %3">
+    </event>
+    <event value="43" version="0" opcode="1" channel="16" level="4" task="46" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="44" version="0" opcode="2" channel="16" level="4" task="46" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="45" version="0" opcode="1" channel="16" level="4" task="47" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="46" version="0" opcode="2" channel="16" level="4" task="47" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="47" version="0" opcode="1" channel="16" level="4" task="48" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="48" version="0" opcode="2" channel="16" level="4" task="48" keywords="0x4000000000000009" message="">
+    </event>
+    <event value="49" version="0" opcode="1" channel="16" level="4" task="49" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="50" version="0" opcode="2" channel="16" level="4" task="49" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="51" version="0" opcode="1" channel="16" level="4" task="50" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="52" version="0" opcode="2" channel="16" level="4" task="50" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="53" version="0" opcode="1" channel="16" level="4" task="51" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="54" version="0" opcode="2" channel="16" level="4" task="51" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="55" version="0" opcode="1" channel="16" level="4" task="52" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="56" version="0" opcode="2" channel="16" level="4" task="52" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="57" version="0" opcode="33" channel="16" level="4" task="53" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="58" version="0" opcode="34" channel="16" level="4" task="53" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="59" version="0" opcode="0" channel="8" level="4" task="65" keywords="0x8000000000000004" message="The system is entering Away Mode.">
+    </event>
+    <event value="60" version="0" opcode="0" channel="16" level="4" task="66" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="61" version="0" opcode="0" channel="16" level="4" task="67" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="62" version="0" opcode="0" channel="16" level="4" task="68" keywords="0x4000000000000004" message="The application or service %3 has overridden user power management settings with a code of %1.">
+    </event>
+    <event value="62" version="1" opcode="0" channel="16" level="4" task="68" keywords="0x4000000000000004" message="The application or service %3 has overridden user power management settings with a code of %1.">
+    </event>
+    <event value="63" version="0" opcode="0" channel="16" level="4" task="69" keywords="0x4000000000000004" message="The application or service %3 is attempting to update the system timer resolution to a value of %1.">
+    </event>
+    <event value="63" version="1" opcode="0" channel="16" level="4" task="69" keywords="0x4000000000000004" message="The application or service %5 is attempting to update the system timer resolution to a value of %1.">
+    </event>
+    <event value="64" version="0" opcode="33" channel="16" level="4" task="54" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="65" version="0" opcode="34" channel="16" level="4" task="54" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="66" version="0" opcode="33" channel="16" level="4" task="55" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="67" version="0" opcode="34" channel="16" level="4" task="55" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="68" version="0" opcode="33" channel="16" level="4" task="56" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="69" version="0" opcode="34" channel="16" level="4" task="56" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="70" version="0" opcode="33" channel="16" level="4" task="57" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="71" version="0" opcode="34" channel="16" level="4" task="57" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="72" version="0" opcode="0" channel="16" level="4" task="70" keywords="0x4000000000000010" message="">
+    </event>
+    <event value="73" version="0" opcode="0" channel="16" level="5" task="71" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="74" version="0" opcode="0" channel="16" level="4" task="72" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="75" version="0" opcode="1" channel="16" level="4" task="73" keywords="0x4000000000000010" message="">
+    </event>
+    <event value="76" version="0" opcode="2" channel="16" level="4" task="73" keywords="0x4000000000000010" message="">
+    </event>
+    <event value="77" version="0" opcode="0" channel="16" level="4" task="74" keywords="0x4000000000000010" message="">
+    </event>
+    <event value="78" version="0" opcode="0" channel="16" level="4" task="75" keywords="0x4000000000000010" message="">
+    </event>
+    <event value="79" version="0" opcode="0" channel="16" level="4" task="76" keywords="0x400000000000000c" message="Timer tick distribution policy:             
+             
+Disabled: %1             
+Overridden: %2">
+    </event>
+    <event value="80" version="0" opcode="0" channel="17" level="4" task="77" keywords="0x2000000000000020" message="ACPI thermal zone %2 has changed to %4 cooling.">
+    </event>
+    <event value="81" version="0" opcode="0" channel="17" level="4" task="78" keywords="0x2000000000000020" message="ACPI thermal zone %2 has %5 passive cooling.             
+EventTime = %3             
+_PSV = %7K             
+_TMP = %8K             
+_TC1 = %9             
+_TC2 = %10             
+_TSP = %11ms             
+Delta P = %12             
+_PSL - see event data.">
+    </event>
+    <event value="82" version="0" opcode="0" channel="18" level="4" task="79" keywords="0x1000000000000020" message="ACPI thermal zone %2 has %5 passive cooling.             
+EventTime = %3             
+_PSV = %7K             
+_TMP = %8K             
+_TC1 = %9             
+_TC2 = %10             
+_TSP = %11ms             
+Delta P = %12             
+_PSL - see event data.">
+    </event>
+    <event value="83" version="0" opcode="0" channel="17" level="4" task="80" keywords="0x2000000000000020" message="ACPI thermal zone %2 has %5 active cooling.             
+EventTime = %3             
+_AC0 = %6K             
+_AC1 = %7K             
+_AC2 = %8K             
+_AC3 = %9K             
+_AC4 = %10K             
+_AC5 = %11K             
+_AC6 = %12K             
+_AC7 = %13K             
+_AC8 = %14K             
+_AC9 = %15K             
+_TMP = %16K">
+    </event>
+    <event value="84" version="0" opcode="0" channel="18" level="4" task="81" keywords="0x1000000000000020" message="ACPI thermal zone %2 has %5 active cooling.             
+EventTime = %3             
+_AC0 = %6K             
+_AC1 = %7K             
+_AC2 = %8K             
+_AC3 = %9K             
+_AC4 = %10K             
+_AC5 = %11K             
+_AC6 = %12K             
+_AC7 = %13K             
+_AC8 = %14K             
+_AC9 = %15K             
+_TMP = %16K">
+    </event>
+    <event value="85" version="0" opcode="0" channel="17" level="2" task="82" keywords="0x2000000000000020" message="The system was shut down due to a critical thermal event.             
+Shutdown Time = %3             
+ACPI Thermal Zone = %2             
+_CRT = %4K">
+    </event>
+    <event value="86" version="0" opcode="0" channel="8" level="2" task="83" keywords="0x8000000000000020" message="The system was shut down due to a critical thermal event.             
+Shutdown Time = %3             
+ACPI Thermal Zone = %2             
+_CRT = %4K">
+    </event>
+    <event value="87" version="0" opcode="0" channel="17" level="2" task="84" keywords="0x2000000000000020" message="The system was hibernated due to a critical thermal event.
+Hibernate Time = %3             
+ACPI Thermal Zone = %2             
+_HOT = %4K">
+    </event>
+    <event value="88" version="0" opcode="0" channel="8" level="2" task="85" keywords="0x8000000000000020" message="The system was hibernated due to a critical thermal event.
+Hibernate Time = %3             
+ACPI Thermal Zone = %2             
+_HOT = %4K">
+    </event>
+    <event value="89" version="0" opcode="0" channel="8" level="4" task="86" keywords="0x8000000000000020" message="ACPI thermal zone %2 has been enumerated.             
+_PSV = %4K             
+_TC1 = %5             
+_TC2 = %6             
+_TSP = %7ms             
+_AC0 = %8K             
+_AC1 = %9K             
+_AC2 = %10K             
+_AC3 = %11K             
+_AC4 = %12K             
+_AC5 = %13K             
+_AC6 = %14K             
+_AC7 = %15K             
+_AC8 = %16K             
+_AC9 = %17K             
+_CRT = %18K             
+_HOT = %19K             
+_PSL - see event data.">
+    </event>
+    <event value="90" version="0" opcode="0" channel="17" level="3" task="87" keywords="0x2000000000000020" message="Processor %1 was throttled by an entity other than the kernel power manager. 
+IA32_CLOCK_MODULATION MSR = %2. 
+Elapsed time since last event logged = %3s. 
+Log interval = %4 events.">
+    </event>
+    <event value="91" version="0" opcode="0" channel="18" level="3" task="88" keywords="0x1000000000000020" message="Processor %1 was throttled by an entity other than the kernel power manager. 
+IA32_CLOCK_MODULATION MSR = %2. 
+Elapsed time since last event logged = %3s. 
+Log interval = %4 events.">
+    </event>
+    <event value="92" version="0" opcode="0" channel="16" level="4" task="89" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="93" version="0" opcode="0" channel="16" level="4" task="90" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="94" version="0" opcode="0" channel="16" level="4" task="91" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="95" version="0" opcode="0" channel="16" level="4" task="92" keywords="0x4000000000000004" message="The system timer resolution has changed to a value of %1.">
+    </event>
+    <event value="96" version="0" opcode="0" channel="16" level="4" task="93" keywords="0x4000000000000004" message="The system timer resolution currently has a value of %1.">
+    </event>
+    <event value="97" version="0" opcode="0" channel="16" level="4" task="94" keywords="0x4000000000000004" message="The system timer resolution currently has a value of %1.">
+    </event>
+    <event value="98" version="0" opcode="0" channel="16" level="4" task="95" keywords="0x4000000000000004" message="A driver is attempting to update the system timer resolution to a value of %1.">
+    </event>
+    <event value="99" version="0" opcode="0" channel="16" level="4" task="96" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="100" version="0" opcode="33" channel="16" level="4" task="97" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="101" version="0" opcode="34" channel="16" level="4" task="97" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="102" version="0" opcode="33" channel="16" level="4" task="98" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="103" version="0" opcode="34" channel="16" level="4" task="98" keywords="0x4000000000000008" message="">
+    </event>
+    <event value="104" version="0" opcode="0" channel="16" level="4" task="99" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="105" version="0" opcode="0" channel="16" level="4" task="100" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="106" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="107" version="0" opcode="0" channel="16" level="4" task="102" keywords="0x4000000000000044" message="">
+    </event>
+    <event value="108" version="0" opcode="0" channel="16" level="4" task="33" keywords="0x400000000000000c" message="">
+    </event>
+    <event value="109" version="0" opcode="0" channel="8" level="4" task="103" keywords="0x8000000000000004" message="The kernel power manager has initiated a shutdown transition.">
+    </event>
+    <event value="110" version="0" opcode="0" channel="16" level="4" task="104" keywords="0x4000000000000004" message="">
+    </event>
+    <event value="200" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="201" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="202" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="203" version="0" opcode="2" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="204" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="205" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="206" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="207" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+    <event value="208" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8000000000000" message="">
+    </event>
+  </events>
+</provider>

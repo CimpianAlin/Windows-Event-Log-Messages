@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-ServiceReportingApi" guid="606a6a38-70ec-4309-b3a3-82ff86f73329" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=osbaseln.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\osbaseln.dll" messageFileName="C:\Windows\system32\osbaseln.dll" message="Microsoft-Windows-Service Reporting API" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-ServiceReportingApi/Debug" id="16" flags="0" message="Microsoft-Windows-Service Reporting API/Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="SVCAPI_BASELINE_OPCODE_DEBUG" value="655360" message="Debug message">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="SVCAPI_BASELINE_TASK_DEBUG" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Debug task">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="SVCAPI_BASELINE_KEYWORD_DEBUG" mask="1" message="This keyword is for debug messages">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="10" channel="16" level="2" task="1" keywords="0x8000000000000001" message="The Service Reporting API encountered an error in file %1, function %2, line %3: %4">
+    </event>
+  </events>
+</provider>

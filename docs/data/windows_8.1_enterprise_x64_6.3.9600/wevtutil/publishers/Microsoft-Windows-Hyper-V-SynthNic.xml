@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Hyper-V-SynthNic" guid="c29c4fb7-b60e-4fff-9af9-cf21f9b09a34" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=SynthNic.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\SynthNic.dll" messageFileName="C:\Windows\system32\SynthNic.dll" message="Microsoft-Windows-Hyper-V-SynthNic" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Hyper-V-SynthNic-Admin" id="16" flags="0" message="Microsoft-Windows-Hyper-V-SynthNic-Admin">
+    </channel>
+    <channel name="Microsoft-Windows-Hyper-V-SynthNic-Debug" id="17" flags="0" message="Microsoft-Windows-Hyper-V-SynthNic-Debug">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="VMT_VF_OPERATION_ALLOCATE" value="1047" eventGUID="00000000-0000-0000-0000-000000000000" message="Virtual Function - Allocate">
+    </task>
+    <task name="VMT_VF_OPERATION_FREE" value="1048" eventGUID="00000000-0000-0000-0000-000000000000" message="Virtual Function - Free">
+    </task>
+    <task name="VMT_VF_OPERATION_ASSIGN" value="1049" eventGUID="00000000-0000-0000-0000-000000000000" message="Virtual Function - Assign">
+    </task>
+    <task name="VMT_VF_OPERATION_UNASSIGN" value="1050" eventGUID="00000000-0000-0000-0000-000000000000" message="Virtual Function - Unassign">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="VMK_HYPERV_PERF_OUTER" mask="1" message="Hyper-V performance traces (outer operations)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_INNER" mask="2" message="Hyper-V performance traces (inner operations)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF_VERBOSE" mask="4" message="Hyper-V performance traces (verbose)">
+    </keyword>
+    <keyword name="VMK_HYPERV_PERF" mask="1000" message="Hyper-V performance traces">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="2" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="3" version="0" opcode="0" channel="17" level="2" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="4" version="0" opcode="0" channel="17" level="1" task="0" keywords="0x4000000000000000" message="[VMID %2] %1">
+    </event>
+    <event value="12560" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; Static MAC address %5 for &quot;%4&quot; (%3) is invalid.">
+    </event>
+    <event value="12562" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; Static MAC address %5 for &quot;%4&quot; (%3) conflicts with another adapter.">
+    </event>
+    <event value="12564" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; No available MAC address for &quot;%4&quot;.">
+    </event>
+    <event value="12566" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; The %3 property cannot be modified because the virtual machine is running.">
+    </event>
+    <event value="12572" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; Dynamic MAC address for &quot;%4&quot; (%3) was not assigned.  The virtual machine will not have network connectivity until this problem is resolved. To assign a new MAC address, restart the virtual machine.">
+    </event>
+    <event value="12580" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; Dynamic MAC address %5 for %4 (%3) is invalid.">
+    </event>
+    <event value="12581" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Dynamic MAC address %5 for %4 (%3) is invalid.">
+    </event>
+    <event value="12582" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) started successfully. (Virtual Machine ID %2)">
+    </event>
+    <event value="12583" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) started successfully. (Virtual Machine ID %2)">
+    </event>
+    <event value="12584" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) allocated a virtual function. (Virtual Function ID %5 LUID %6 Virtual Machine ID %2)">
+    </event>
+    <event value="12585" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) failed to allocate a virtual function: %7 (%8): IOV networking might be incompatible with other configured networking features. (Virtual Machine ID %2)">
+    </event>
+    <event value="12586" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) freed a virtual function. (Virtual Function ID %5 Virtual Machine ID %2)">
+    </event>
+    <event value="12587" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) failed to free a virtual function: %7 (%8) (Virtual Function ID %5 Virtual Machine ID %2)">
+    </event>
+    <event value="12588" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) assigned a virtual function. (Virtual Function ID %5 LUID %6) (Virtual Machine ID %2)">
+    </event>
+    <event value="12589" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) failed to assign a virtual function: %7 (%8) (Virtual Function ID %5 LUID %6) (Virtual Machine ID %2)">
+    </event>
+    <event value="12590" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) unassigned a virtual function. (Virtual Function ID %5 Virtual Machine ID %2)">
+    </event>
+    <event value="12594" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) failed to un-assign virtual function: %7 (%8) (Virtual Function ID %5 Virtual Machine ID %2)">
+    </event>
+    <event value="12597" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) Connected to virtual network. (Virtual Machine ID %2)">
+    </event>
+    <event value="12598" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) Disconnected from virtual network. (Virtual Machine ID %2)">
+    </event>
+    <event value="12603" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) Smart Paging now inactive. (Virtual Machine ID %2)">
+    </event>
+    <event value="12604" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) Smart Paging now active. (Virtual Machine ID %2)">
+    </event>
+    <event value="12605" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) is configured to use SR-IOV but that capability is not supported on this version of Windows. (Virtual Machine ID %2)">
+    </event>
+    <event value="12606" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) is configured to use SR-IOV but this system does not have an IOMMU or the IOMMU is currently disabled. (Virtual Machine ID %2)">
+    </event>
+    <event value="12607" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) is configured to use SR-IOV but that capability is disabled by policy on this machine. (Virtual Machine ID %2)">
+    </event>
+    <event value="12608" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) failed to allocate a virtual function because the switch to which the virtual NIC is connected to is not in SR-IOV mode. (Virtual Machine ID %2)">
+    </event>
+    <event value="12609" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) failed to allocate a virtual function because the physical NIC does not support SR-IOV. (Virtual Machine ID %2)">
+    </event>
+    <event value="12612" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) unassigning a virtual function because of an invalid DMA operation by the guest operating system. (Virtual Machine ID %2)">
+    </event>
+    <event value="12613" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) The number of queue pairs allocated to the virtual function (%5) were less than requested (%6). (Virtual Machine ID %2)">
+    </event>
+    <event value="12614" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; %4 (%3) The number of queue pairs to be allocated (%5) were limited because of the number of virtual processors (%6) for the VM. (Virtual Machine ID %2)">
+    </event>
+    <event value="12670" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; failed to allocate resources while connecting to a virtual network: %4 (%5) (Virtual Machine ID %2)">
+    </event>
+    <event value="12671" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failed to allocate resources while connecting to a virtual network.">
+    </event>
+    <event value="12680" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; The VirtualSystemIdentifier %2 for &quot;%4&quot; (%3) conflicts with another adapter.">
+    </event>
+    <event value="12681" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The VirtualSystemIdentifier %2 for &quot;%4&quot; (%3) conflicts with another adapter.">
+    </event>
+    <event value="12690" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="&apos;%1&apos; failed to query the running network adapter&apos;s sent and received values: &quot;%4&quot; (%5). Metric values for this adapter will not include the data since the virtual machine started. (Virtual Machine ID %2)">
+    </event>
+    <event value="12691" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Failure while querying the running network adapter&apos;s sent and received values.">
+    </event>
+    <event value="12692" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Bytes sent or received by &apos;%1&apos; is larger than what can fit inside of a 64-bit integer. Record and then reset the metric value in order to continue measuring the number of bytes send or received. (Virtual Machine ID %2)">
+    </event>
+    <event value="12693" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="Bytes send or received is larger than what can fit inside of an unsigned 64-bit integer.">
+    </event>
+    <event value="25400" version="0" opcode="1" channel="17" level="4" task="1047" keywords="0x4001000000001002" message="Started Allocating VF on Nic (Name: %2). (Virtual machine ID %1)">
+    </event>
+    <event value="25401" version="0" opcode="2" channel="17" level="4" task="1047" keywords="0x4001000000001002" message="Finished Allocating VF (VFID: %4) on Nic (Name: %3), time %2 s. (Virtual machine ID %1)">
+    </event>
+    <event value="25402" version="0" opcode="1" channel="17" level="4" task="1048" keywords="0x4001000000001002" message="Started Deallocating VF (VFID: %3) on Nic (Name: %2). (Virtual machine ID %1)">
+    </event>
+    <event value="25403" version="0" opcode="2" channel="17" level="4" task="1048" keywords="0x4001000000001002" message="Finished Deallocating VF (VFID: %4) on Nic (Name: %3), time %2 s. (Virtual machine ID %1)">
+    </event>
+    <event value="25410" version="0" opcode="1" channel="17" level="4" task="1049" keywords="0x4001000000001002" message="Started Assigning VF (VFID: %3) on Nic (Name: %2). (Virtual machine ID %1)">
+    </event>
+    <event value="25411" version="0" opcode="2" channel="17" level="4" task="1049" keywords="0x4001000000001002" message="Finished Assigning VF (VFID: %4) on Nic (Name: %3), time %2 s. (Virtual machine ID %1)">
+    </event>
+    <event value="25412" version="0" opcode="1" channel="17" level="4" task="1050" keywords="0x4001000000001002" message="Started Unassigning VF (VFID: %3) on Nic (Name: %2). (Virtual machine ID %1)">
+    </event>
+    <event value="25413" version="0" opcode="2" channel="17" level="4" task="1050" keywords="0x4001000000001002" message="Finished Unassigning VF (VFID: %4) on Nic (Name: %3), time %2 s. (Virtual machine ID %1)">
+    </event>
+    <event value="33000" version="0" opcode="0" channel="17" level="3" task="0" keywords="0x4000000000000000" message="Invalid Ethernet connection settings: %1 (%2)">
+    </event>
+    <event value="33010" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Could not find an Ethernet connection resource pool with ID &apos;%1&apos;.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-TBS" guid="51480c1a-90aa-416e-98fd-4c11f735349b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=tbssvc.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\tbssvc.dll" messageFileName="C:\Windows\system32\tbssvc.dll" message="Microsoft-Windows-TBS" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="514" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The specified context handle is invalid.">
+    </event>
+    <event value="515" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="An invalid context parameter was specified.">
+    </event>
+    <event value="516" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="An error occurred while communicating with the TPM.  The driver returned %1.">
+    </event>
+    <event value="518" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The specified virtual handle matches a virtual handle already in use.">
+    </event>
+    <event value="521" version="0" opcode="0" channel="8" level="1" task="0" keywords="0x8000000000000000" message="The RPC subsystem could not be initialized.  The error returned was %1.">
+    </event>
+    <event value="531" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="The requested resource is no longer available.">
+    </event>
+    <event value="532" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="No matching resource was found.">
+    </event>
+    <event value="533" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="No resources can be unloaded.">
+    </event>
+    <event value="535" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A new TBS context could not be created because there are too many open contexts.">
+    </event>
+    <event value="536" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A new virtual resource could not be created because there are too many open virtual resources.">
+    </event>
+    <event value="537" version="0" opcode="0" channel="8" level="4" task="0" keywords="0x8000000000000000" message="A compatible Trusted Platform Module (TPM) Security Device cannot be found on this computer.  TBS could not be started.">
+    </event>
+    <event value="538" version="0" opcode="0" channel="8" level="1" task="0" keywords="0x8000000000000000" message="A compatible TPM is not found.  TBS requires TPM version %1 or greater, but the version of the TPM on the computer is %2.">
+    </event>
+    <event value="541" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="An operation in progress was interrupted by a power management event.">
+    </event>
+    <event value="16385" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="An internal TBS error was detected.  The error code was %1.  This is usually caused by unexpected TPM or driver behavior and may be transient.">
+    </event>
+    <event value="16386" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="An error occurred while TBS was processing power management event.  The power management event was %1, and the error code was %2.">
+    </event>
+    <event value="16392" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="An error occurred while starting the TBS.  The error code was %1.">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WebAuth" guid="db6972b6-dddf-4820-84b1-2ed6ac0b96e5" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=AuthHost.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\AuthHost.exe" messageFileName="C:\Windows\system32\AuthHost.exe" message="Microsoft-Windows-WebAuth" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WebAuth/Operational" id="16" flags="0" message="Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="NavigationStart" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation Start">
+    </task>
+    <task name="NavigationComplete" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation Complete">
+    </task>
+    <task name="NavigationRedirect" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation Redirect">
+    </task>
+    <task name="NavigationNewWindow" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation New Window">
+    </task>
+    <task name="NavigationDelegate" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation Delegate">
+    </task>
+    <task name="NavigationNewScriptEngine" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation New Script Engine">
+    </task>
+    <task name="NavigationTerminate" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation Terminate">
+    </task>
+    <task name="NavigationError" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="Navigation Error">
+    </task>
+    <task name="SecurityProblem" value="30" eventGUID="00000000-0000-0000-0000-000000000000" message="Security Problem">
+    </task>
+    <task name="SecurityManager" value="31" eventGUID="00000000-0000-0000-0000-000000000000" message="Security Manager">
+    </task>
+    <task name="MetaTag" value="40" eventGUID="00000000-0000-0000-0000-000000000000" message="Meta Tag">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="AuthHost" mask="1" message="AuthHost">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000001" message="AuthHost started at URL: &lt;%1&gt; until matching termination URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000001" message="AuthHost started over at URL: &lt;%1&gt;.">
+    </event>
+    <event value="1002" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000001" message="AuthHost about to navigate (HTTP GET) to URL: &lt;%1&gt;.">
+    </event>
+    <event value="1003" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000000001" message="AuthHost about to navigate (HTTP POST) to URL: &lt;%1&gt;.">
+    </event>
+    <event value="1010" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000001" message="AuthHost completed navigation to URL: &lt;%1&gt;.">
+    </event>
+    <event value="1011" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000000000000001" message="AuthHost completed document from URL: &lt;%1&gt;.">
+    </event>
+    <event value="1020" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000000001" message="AuthHost redirected to URL: &lt;%1&gt; from URL: &lt;%2!S!&gt; with HttpStatusCode: %3.">
+    </event>
+    <event value="1021" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8000000000000001" message="AuthHost about to navigate (new window) to URL: &lt;%1&gt; from URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1022" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000000001" message="AuthHost about to navigate with delegation to URL: &lt;%1&gt;.">
+    </event>
+    <event value="1023" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8000000000000001" message="AuthHost created new script engine at URL: &lt;%1&gt;.">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="16" level="4" task="4" keywords="0x8000000000000001" message="AuthHost about to launch URL: &lt;%1&gt; in browser from URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1040" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000001" message="AuthHost terminated navigation at URL: &lt;%1&gt; matching termination URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1041" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000001" message="AuthHost terminated navigation with title: &lt;%1&gt; at URL: &lt;%2!S!&gt; matching termination URL: &lt;%3!S!&gt;.">
+    </event>
+    <event value="1042" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000001" message="Navigation cancelled by user.">
+    </event>
+    <event value="1043" version="0" opcode="2" channel="16" level="4" task="20" keywords="0x8000000000000001" message="AuthHost terminated navigation with HTTP POST data: &lt;%1&gt; at URL: &lt;%2!S!&gt; matching termination URL: &lt;%3!S!&gt;.">
+    </event>
+    <event value="1050" version="0" opcode="2" channel="16" level="2" task="21" keywords="0x8000000000000001" message="AuthHost encountered a navigation error at URL: &lt;%1&gt; with StatusCode: %2.">
+    </event>
+    <event value="1051" version="0" opcode="2" channel="16" level="2" task="21" keywords="0x8000000000000001" message="AuthHost encountered a navigation error at URL: &lt;%1&gt; with HttpStatusCode: %2.">
+    </event>
+    <event value="1100" version="0" opcode="0" channel="16" level="3" task="30" keywords="0x8000000000000001" message="AuthHost encountered a security problem: %1 and will retry the navigation.">
+    </event>
+    <event value="1101" version="0" opcode="2" channel="16" level="2" task="30" keywords="0x8000000000000001" message="AuthHost encountered a security problem: %1 and will abort the navigation">
+    </event>
+    <event value="1200" version="0" opcode="0" channel="16" level="5" task="31" keywords="0x8000000000000001" message="AuthHost allowed UrlAction: %1 for URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1201" version="0" opcode="0" channel="16" level="5" task="31" keywords="0x8000000000000001" message="AuthHost disallowed UrlAction: %1 for URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1202" version="0" opcode="0" channel="16" level="3" task="31" keywords="0x8000000000000001" message="AuthHost used default for UrlAction: %1 for URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1203" version="0" opcode="0" channel="16" level="5" task="31" keywords="0x8000000000000001" message="AuthHost prohibited UrlAction of Java permissions for URL: &lt;%1&gt;.">
+    </event>
+    <event value="1204" version="0" opcode="0" channel="16" level="4" task="31" keywords="0x8000000000000001" message="AuthHost blocked credential prompt for URL: &lt;%1&gt;.">
+    </event>
+    <event value="1205" version="0" opcode="0" channel="16" level="4" task="31" keywords="0x8000000000000001" message="AuthHost allowed credential silent logon for URL: &lt;%1&gt;.">
+    </event>
+    <event value="1206" version="0" opcode="0" channel="16" level="4" task="31" keywords="0x8000000000000001" message="AuthHost allowed credential user prompt for URL: &lt;%1&gt;.">
+    </event>
+    <event value="1300" version="0" opcode="0" channel="16" level="4" task="31" keywords="0x8000000000000001" message="AuthHost allowed UrlAction for ActiveX object: %1 for URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1301" version="0" opcode="0" channel="16" level="3" task="31" keywords="0x8000000000000001" message="AuthHost disallowed UrlAction for ActiveX object: %1 for URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1310" version="0" opcode="0" channel="16" level="4" task="31" keywords="0x8000000000000001" message="AuthHost allowed UrlAction for ActiveX object: %1 for URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1311" version="0" opcode="0" channel="16" level="3" task="31" keywords="0x8000000000000001" message="AuthHost disallowed UrlAction for ActiveX object: %1 for URL: &lt;%2!S!&gt;.">
+    </event>
+    <event value="1400" version="0" opcode="0" channel="16" level="4" task="40" keywords="0x8000000000000001" message="AuthHost encountered Meta Tag: mswebdialog-title with content: &lt;%1&gt;.">
+    </event>
+    <event value="1401" version="0" opcode="0" channel="16" level="4" task="40" keywords="0x8000000000000001" message="AuthHost resolved Meta Tag: mswebdialog-logo to URL: &lt;%1&gt;.">
+    </event>
+    <event value="1402" version="0" opcode="0" channel="16" level="4" task="40" keywords="0x8000000000000001" message="AuthHost converted Meta Tag: mswebdialog-header-color with content: &lt;%1&gt; to value: %2.">
+    </event>
+    <event value="1403" version="0" opcode="0" channel="16" level="3" task="40" keywords="0x8000000000000001" message="AuthHost unable to convert Meta Tag: mswebdialog-header-color with content: &lt;%1&gt;.">
+    </event>
+    <event value="1404" version="0" opcode="0" channel="16" level="4" task="40" keywords="0x8000000000000001" message="AuthHost resolved Meta Tag: mswebdialog-newwindowurl to URL: &lt;%1&gt;.">
+    </event>
+    <event value="1405" version="0" opcode="0" channel="16" level="4" task="40" keywords="0x8000000000000001" message="AuthHost downloaded logo image from URL: &lt;%1&gt;.">
+    </event>
+    <event value="1406" version="0" opcode="0" channel="16" level="2" task="40" keywords="0x8000000000000001" message="AuthHost encountered an error downloading logo image from URL: &lt;%1&gt; with Error: %2.">
+    </event>
+  </events>
+</provider>

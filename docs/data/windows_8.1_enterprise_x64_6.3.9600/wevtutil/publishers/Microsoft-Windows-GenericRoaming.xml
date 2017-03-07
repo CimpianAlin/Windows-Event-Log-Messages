@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-GenericRoaming" guid="4eacb4d0-263b-4b93-8cd6-778a278e5642" helpLink="" resourceFileName="C:\Windows\System32\vaultRoaming.dll" messageFileName="C:\Windows\System32\vaultRoaming.dll" message="Microsoft-Windows-GenericRoaming" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-GenericRoaming/Admin" id="16" flags="0" message="Microsoft-Windows-GenericRoaming/Admin">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="SettingHandlerTask" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="SettingHandlerTask">
+    </task>
+    <task name="TriggerSyncTask" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="TriggerSyncTask">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="3" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="There was an error while applying setting unit %2 for roaming collection %1. %3">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="There was an error while getting setting unit %2 for roaming collection %1. %3">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="There was an error while removing setting unit %2 for roaming collection %1. %3">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="2" task="1" keywords="0x8000000000000000" message="There was an error while getting settings unit for roaming collection %1. %2">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="2" task="2" keywords="0x8000000000000000" message="There was an error while scheduling a retry sync task for user %1. %2">
+    </event>
+  </events>
+</provider>

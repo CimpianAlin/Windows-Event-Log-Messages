@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-BrokerInfrastructure" guid="e6835967-e0d2-41fb-bcec-58387404e25a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=bisrv.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\bisrv.dll" messageFileName="C:\Windows\system32\bisrv.dll" message="Microsoft-Windows-BackgroundTaskInfrastructure" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-BackgroundTaskInfrastructure/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-BackgroundTaskInfrastructure/Operational" id="17" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="win:DC_Stop" value="262144" message="DCStop">
+    </opcode>
+    <opcode name="TaskThrottledCpu" value="6553600" message="">
+    </opcode>
+    <opcode name="TaskThrottledNet" value="6619136" message="">
+    </opcode>
+    <opcode name="TaskForcedCompletion" value="6684672" message="">
+    </opcode>
+    <opcode name="TaskLatched" value="6750208" message="">
+    </opcode>
+    <opcode name="TaskUnlatched" value="6815744" message="">
+    </opcode>
+    <opcode name="TaskDropped" value="6881280" message="">
+    </opcode>
+    <opcode name="TaskBufferedPolicy" value="6946816" message="">
+    </opcode>
+    <opcode name="TaskBufferedPackageState" value="7012352" message="">
+    </opcode>
+    <opcode name="TaskUnbuffered" value="7077888" message="">
+    </opcode>
+    <opcode name="TaskCanceled" value="7143424" message="">
+    </opcode>
+    <opcode name="TaskUnregistered" value="7208960" message="">
+    </opcode>
+    <opcode name="Acquire" value="7274496" message="">
+    </opcode>
+    <opcode name="Release" value="7340032" message="">
+    </opcode>
+    <opcode name="TaskActivationFailed" value="7405568" message="">
+    </opcode>
+    <opcode name="PackageWatchdog" value="7471104" message="">
+    </opcode>
+    <opcode name="WatchdogIteration" value="7536640" message="">
+    </opcode>
+    <opcode name="TaskWatchdog" value="7602176" message="">
+    </opcode>
+    <opcode name="SessionStateTransition" value="7667712" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="BackgroundTask" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackgroundTaskProxy" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TriggerSignal" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConditionChange" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PackageStateChange" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PdcReference" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackgroundTaskPerfTrack" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="BackgroundTaskInstance" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Package" value="108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WatchdogIteration" value="109" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WatchdogIterationPerfTrack" value="110" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SessionStateTransition" value="111" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="BackgroundTask" mask="1" message="">
+    </keyword>
+    <keyword name="PDC" mask="2" message="">
+    </keyword>
+    <keyword name="LowOverheadDiag" mask="4" message="">
+    </keyword>
+    <keyword name="Package" mask="8" message="">
+    </keyword>
+    <keyword name="Watchdog" mask="10" message="">
+    </keyword>
+    <keyword name="Session" mask="20" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000000000000005" message="An instance of a background task with entry point %2 and name %4 has been created in session %5 and given an ID of %6.">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000005" message="An instance of the background task with entry point %9 running for user %6 in session %3 returned with error code %5.">
+    </event>
+    <event value="2" version="1" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000005" message="An instance of the background task with entry point %9 running for user %6 in session %3 returned with error code %5.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="101" keywords="0x8000000000000001" message="The background infrastructure service issued a proxy activation for the background task with ID %1.">
+    </event>
+    <event value="4" version="0" opcode="100" channel="17" level="4" task="100" keywords="0x4000000000000005" message="Background task for package %1 with entry point %3 was suspended due to CPU resource management policy.">
+    </event>
+    <event value="5" version="0" opcode="101" channel="17" level="4" task="100" keywords="0x4000000000000005" message="Background task for package %1 with entry point %3 was suspended due to Network resource management policy.">
+    </event>
+    <event value="6" version="0" opcode="102" channel="17" level="4" task="100" keywords="0x4000000000000001" message="Background task for package %1 with entry point %3 did not complete in response to a cancel notification.">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000001" message="A signal request for the trigger with ID %1 and type %2 has begun.">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000001" message="The signal request for the trigger with ID %1 and type %2 has completed.">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000000001" message="The condition with ID %1 and type %2 is changing state from %3 to %4.">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000000001" message="The condition with ID %1 and type %2 has changed state from %3 to %4.">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000001" message="The application package %1 running for user %2 in session %3 is changing state to %4.">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000001" message="The application package %1 running for user %2 in session %3 has changed to state %4.">
+    </event>
+    <event value="13" version="0" opcode="103" channel="16" level="4" task="100" keywords="0x8000000000000001" message="A background task with entry point %2 and name %4 has been latched because its condition of type %5 has value %6 but value %7 was desired.">
+    </event>
+    <event value="14" version="0" opcode="104" channel="16" level="4" task="100" keywords="0x8000000000000001" message="A background task with entry point %2 and name %4 has been unlatched.">
+    </event>
+    <event value="15" version="0" opcode="105" channel="16" level="4" task="100" keywords="0x8000000000000001" message="A background task with entry point %2 and name %4 has not been activated because an instance of the task is already running.">
+    </event>
+    <event value="16" version="0" opcode="106" channel="16" level="4" task="100" keywords="0x8000000000000001" message="An activation of a background task with entry point %2 and name %4 has been buffered because an instance of the task is already running.">
+    </event>
+    <event value="17" version="0" opcode="107" channel="16" level="4" task="100" keywords="0x8000000000000001" message="An activation of a background task with entry point %2 and name %4 has been buffered because %5.">
+    </event>
+    <event value="18" version="0" opcode="108" channel="16" level="4" task="100" keywords="0x8000000000000001" message="An activation of a background task with entry point %2 and name %4 that was buffered because %5 has been unbuffered.">
+    </event>
+    <event value="19" version="0" opcode="109" channel="16" level="4" task="100" keywords="0x8000000000000001" message="An instance with ID %5 of a background task with entry point %2 and name %4 has been canceled in session %6.">
+    </event>
+    <event value="20" version="0" opcode="110" channel="16" level="4" task="100" keywords="0x8000000000000001" message="A background task with entry point %2 and name %4 has been unregistered because %5.">
+    </event>
+    <event value="21" version="0" opcode="113" channel="17" level="4" task="100" keywords="0x4000000000000001" message="The background task with entry point %2 and name %4 failed to activate with error code %5.">
+    </event>
+    <event value="22" version="0" opcode="4" channel="0" level="4" task="107" keywords="0x1" message="">
+    </event>
+    <event value="23" version="0" opcode="4" channel="0" level="4" task="100" keywords="0x1" message="">
+    </event>
+    <event value="24" version="0" opcode="4" channel="0" level="4" task="108" keywords="0x8" message="">
+    </event>
+    <event value="25" version="0" opcode="114" channel="17" level="2" task="108" keywords="0x4000000000000010" message="The application package %5 was terminated due to inactivity. The following %3 background task(s) were running %7.">
+    </event>
+    <event value="26" version="0" opcode="115" channel="0" level="4" task="109" keywords="0x10" message="">
+    </event>
+    <event value="26" version="1" opcode="115" channel="0" level="4" task="109" keywords="0x10" message="">
+    </event>
+    <event value="27" version="0" opcode="116" channel="17" level="2" task="100" keywords="0x4000000000000010" message="A background task with entry point %2 and name %4 in package %5 is being canceled because it has an inactive instance running in session %7.">
+    </event>
+    <event value="28" version="0" opcode="117" channel="16" level="4" task="111" keywords="0x8000000000000020" message="">
+    </event>
+    <event value="100" version="0" opcode="2" channel="0" level="4" task="106" keywords="0x1000000000000" message="">
+    </event>
+    <event value="101" version="0" opcode="115" channel="0" level="4" task="110" keywords="0x1000000000000" message="">
+    </event>
+    <event value="200" version="0" opcode="111" channel="0" level="4" task="105" keywords="0x2" message="">
+    </event>
+    <event value="201" version="0" opcode="112" channel="0" level="4" task="105" keywords="0x2" message="">
+    </event>
+  </events>
+</provider>

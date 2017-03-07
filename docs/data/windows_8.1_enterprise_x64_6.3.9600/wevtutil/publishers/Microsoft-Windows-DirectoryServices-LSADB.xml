@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-DirectoryServices-LSADB" guid="30974659-5cab-45cf-8237-0dcfdcfa0d26" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=lsadb.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\lsadb.dll" messageFileName="C:\Windows\System32\lsadb.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="6025" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="Could not upgrade the Trusted domain object for domain %1. Please recreate the trust manually.">
+    </event>
+    <event value="6029" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="LSA could not update domain information in the registry to match the DS. Error=%1.">
+    </event>
+    <event value="6031" version="0" opcode="0" channel="8" level="2" task="0" keywords="0x8000000000000000" message="The database contains invalid information for trusted domain %1.">
+    </event>
+    <event value="6034" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The new top level name, %1, has been added to the forest %2. Name suffix routing for this new name is disabled because it is not within any currently routed namespace. Objects can not be resolved from this new namespace until name suffix routing is enabled for the namespace. To enable name suffix routing, open Domains and Trusts and see help under Name Suffix Routing and Forest Trusts.">
+    </event>
+    <event value="32768" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The interdomain trust account for the domain %1 could not be deleted. The return code is the data.">
+    </event>
+    <event value="32772" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The interdomain trust account for the domain %1 could not be created. The return code is the data.">
+    </event>
+    <event value="32776" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="A lookup request was made that required a Global Catalog. The LSA was unable to either contact or authenticate to a Global Catalog and thus failed the lookup request. Please check the connectivity and authentication of this domain controller to a Global Catalog.">
+    </event>
+    <event value="32778" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x8000000000000000" message="The name %1 was translated to SID %2 from the trusted forest %3. The domain portion of the SID is not in the list of acceptable SID&apos;s found on the trusted domain object, thus this name to SID translation has been ignored.">
+    </event>
+  </events>
+</provider>

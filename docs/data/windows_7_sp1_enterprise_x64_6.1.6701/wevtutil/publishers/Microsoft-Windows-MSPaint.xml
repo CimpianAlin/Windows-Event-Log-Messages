@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MSPaint" guid="1d75856d-36a7-4ecb-a3f5-b13152222d29" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=mspaint.exe&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\mspaint.exe" messageFileName="C:\Windows\system32\mspaint.exe" message="Microsoft-Windows-MSPaint" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-MSPaint/Admin" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-MSPaint/Diagnostic" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-MSPaint/Debug" id="18" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="MSPaint_Launch" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MSPaint_Exit" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Select_Tool" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Commit_Tool" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Undo" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="MeasurePaintLag" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SaveDrawing" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="OpenImage" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="FlipOperation" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RotateOperation" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CropOperation" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InvertColorOperation" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ResizeSkewOperation" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Intializing current instance of the application">
+    </event>
+    <event value="2" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000000000000000" message="Exiting current Instance of the application">
+    </event>
+    <event value="3" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000000000000000" message="MSPaint Launch Start">
+    </event>
+    <event value="4" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4000000000000000" message="MSPaint Launch End">
+    </event>
+    <event value="5" version="0" opcode="1" channel="17" level="4" task="2" keywords="0x4000000000000000" message="MSPaint Exit Start">
+    </event>
+    <event value="6" version="0" opcode="2" channel="17" level="4" task="2" keywords="0x4000000000000000" message="MSPaint Exit End">
+    </event>
+    <event value="7" version="0" opcode="1" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Select Tool(ID: %1) Start">
+    </event>
+    <event value="8" version="0" opcode="2" channel="17" level="4" task="3" keywords="0x4000000000000000" message="Select Tool End">
+    </event>
+    <event value="9" version="0" opcode="1" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Commit Tool(ID: %1)b Start">
+    </event>
+    <event value="10" version="0" opcode="2" channel="17" level="4" task="4" keywords="0x4000000000000000" message="Commit Tool End">
+    </event>
+    <event value="11" version="0" opcode="1" channel="17" level="4" task="5" keywords="0x4000000000000000" message="Undo Start">
+    </event>
+    <event value="12" version="0" opcode="2" channel="17" level="4" task="5" keywords="0x4000000000000000" message="Undo End">
+    </event>
+    <event value="13" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Change Tool(ID: %1) Thickness(%2)">
+    </event>
+    <event value="14" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Change Stroke Color(RGB: %1)">
+    </event>
+    <event value="15" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Change Fill Color(RGB: %1)">
+    </event>
+    <event value="16" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Change DrawMode(%1)">
+    </event>
+    <event value="17" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Change Brush CrossSection(%1)">
+    </event>
+    <event value="18" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Change Caligraphic Brush CrossSection(%1)">
+    </event>
+    <event value="19" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000000000000000" message="Change Glitter Color(%1)">
+    </event>
+    <event value="20" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000000" message="Error enabling/disabling RTS">
+    </event>
+    <event value="21" version="0" opcode="0" channel="18" level="2" task="0" keywords="0x2000000000000000" message="Failed to load msftedit.dll">
+    </event>
+    <event value="22" version="0" opcode="1" channel="17" level="4" task="6" keywords="0x4000000000000000" message="Start measure paint lag">
+    </event>
+    <event value="23" version="0" opcode="2" channel="17" level="4" task="6" keywords="0x4000000000000000" message="Stop measure paint lag">
+    </event>
+    <event value="24" version="0" opcode="0" channel="17" level="4" task="6" keywords="0x4000000000000000" message="Recieved RTS Packet">
+    </event>
+    <event value="25" version="0" opcode="1" channel="17" level="4" task="7" keywords="0x4000000000000000" message="Start save drawing">
+    </event>
+    <event value="26" version="0" opcode="2" channel="17" level="4" task="7" keywords="0x4000000000000000" message="Stop save drawing">
+    </event>
+    <event value="27" version="0" opcode="1" channel="17" level="4" task="8" keywords="0x4000000000000000" message="Start open image">
+    </event>
+    <event value="28" version="0" opcode="2" channel="17" level="4" task="8" keywords="0x4000000000000000" message="Stop open image">
+    </event>
+    <event value="29" version="0" opcode="1" channel="17" level="4" task="9" keywords="0x4000000000000000" message="Start flip operation">
+    </event>
+    <event value="30" version="0" opcode="2" channel="17" level="4" task="9" keywords="0x4000000000000000" message="Stop flip operation">
+    </event>
+    <event value="31" version="0" opcode="1" channel="17" level="4" task="10" keywords="0x4000000000000000" message="Start rotate operation">
+    </event>
+    <event value="32" version="0" opcode="2" channel="17" level="4" task="10" keywords="0x4000000000000000" message="Stop rotate operation">
+    </event>
+    <event value="33" version="0" opcode="1" channel="17" level="4" task="11" keywords="0x4000000000000000" message="Start crop operation">
+    </event>
+    <event value="34" version="0" opcode="2" channel="17" level="4" task="11" keywords="0x4000000000000000" message="Stop crop operation">
+    </event>
+    <event value="35" version="0" opcode="1" channel="17" level="4" task="12" keywords="0x4000000000000000" message="Start invert color operation">
+    </event>
+    <event value="36" version="0" opcode="2" channel="17" level="4" task="12" keywords="0x4000000000000000" message="Stop invert color operation">
+    </event>
+    <event value="37" version="0" opcode="1" channel="17" level="4" task="13" keywords="0x4000000000000000" message="Start resize skew operation">
+    </event>
+    <event value="38" version="0" opcode="2" channel="17" level="4" task="13" keywords="0x4000000000000000" message="Stop resize skew operation">
+    </event>
+  </events>
+</provider>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Windeploy" guid="75ebc33e-c8ae-4f93-9ca1-683a53e20cb6" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=windeploy.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\oobe\windeploy.exe" messageFileName="C:\Windows\system32\oobe\windeploy.exe" message="Microsoft-Windows-Windeploy" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Windeploy/Analytic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Setup" id="17" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="tskRunWindeploy" value="1000" eventGUID="4081fd79-e0cf-4565-9064-5f11a4d682c7" message="Run Windeploy">
+    </task>
+    <task name="tskLaunchAndWaitFor" value="2000" eventGUID="07dc4e47-7c5c-40b5-a20d-c86e54fb1e19" message="Launch and wait for external process">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="keyPerformance" mask="1" message="Performance">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="1000" keywords="0x8000000000000001" message="Windeploy.exe is running.">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="16" level="4" task="1000" keywords="0x8000000000000001" message="Windeploy.exe exiting with status %1.">
+    </event>
+    <event value="2001" version="0" opcode="1" channel="16" level="4" task="2000" keywords="0x8000000000000001" message="Launching &quot;%1&quot;.">
+    </event>
+    <event value="2002" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000001" message="External process exited with status %1.">
+    </event>
+    <event value="2003" version="0" opcode="2" channel="16" level="4" task="2000" keywords="0x8000000000000001" message="Failed to start external process with status %1.">
+    </event>
+  </events>
+</provider>

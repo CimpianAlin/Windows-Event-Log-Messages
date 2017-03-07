@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-LiveId" guid="05f02597-fe85-4e67-8542-69567ab8fd4f" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=wlidres.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\wlidres.dll" messageFileName="C:\Windows\system32\wlidres.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-LiveId/Analytic" id="16" flags="0" message="Microsoft-Windows-LiveId/Analytic">
+    </channel>
+    <channel name="Microsoft-Windows-LiveId/Operational" id="17" flags="0" message="Microsoft-Windows-LiveId/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WLIDService" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="WLID Service Operation">
+    </task>
+    <task name="LiveSsp" value="102" eventGUID="00000000-0000-0000-0000-000000000000" message="LiveSsp Operation">
+    </task>
+    <task name="IdentityProvider" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="Identity Provider Operation">
+    </task>
+    <task name="LiveIdModernApi" value="104" eventGUID="00000000-0000-0000-0000-000000000000" message="LiveId Modern API Operation">
+    </task>
+    <task name="WLIDCredProv" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="WLIDCredProv Operation">
+    </task>
+    <task name="TokenProvider" value="106" eventGUID="00000000-0000-0000-0000-000000000000" message="TokenProvider Operation">
+    </task>
+    <task name="FunctionCall" value="200" eventGUID="00000000-0000-0000-0000-000000000000" message="Function Call">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Telemetry" mask="1" message="Telemetry trigger events">
+    </keyword>
+    <keyword name="Error" mask="2" message="Error">
+    </keyword>
+    <keyword name="Analytic" mask="4" message="Analytic">
+    </keyword>
+    <keyword name="Function" mask="8" message="Function">
+    </keyword>
+    <keyword name="Operational" mask="10" message="Operational">
+    </keyword>
+    <keyword name="LiveSsp" mask="100" message="livessp">
+    </keyword>
+    <keyword name="CredProv" mask="200" message="wlidcredprov">
+    </keyword>
+    <keyword name="WlidNsp" mask="400" message="wlidnsp">
+    </keyword>
+    <keyword name="WlidSvc" mask="800" message="wlidsvc">
+    </keyword>
+    <keyword name="WlidModern" mask="1000" message="wlidmodern">
+    </keyword>
+    <keyword name="WlidCli" mask="2000" message="wlidcli">
+    </keyword>
+    <keyword name="WlidProv" mask="4000" message="wlidprov">
+    </keyword>
+    <keyword name="WlidBho" mask="8000" message="wlidbho">
+    </keyword>
+    <keyword name="TokenProvider" mask="10000" message="TokenProvider">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000004" message="LsaApLogonUserEx2_Start">
+    </event>
+    <event value="1002" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000004" message="LsaApLogonUserEx2_Stop.
+Status: %1">
+    </event>
+    <event value="1003" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000004" message="SpOnProfileLoaded_Start">
+    </event>
+    <event value="1004" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000004" message="SpOnProfileLoaded_Stop.
+ServiceCalled: %1
+	Status: %2">
+    </event>
+    <event value="1005" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000000004" message="ConnectIdentity_Start">
+    </event>
+    <event value="1006" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000000004" message="ConnectIdentity_Stop.
+Status: %1">
+    </event>
+    <event value="1007" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000000004" message="DisconnectIdentity_Start">
+    </event>
+    <event value="1008" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000000004" message="DisconnectIdentity_Stop.
+Status: %1">
+    </event>
+    <event value="1009" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000004" message="LiveDoCachedLogon_Start">
+    </event>
+    <event value="1010" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000004" message="LiveDoCachedLogon_Stop.
+Status: %1">
+    </event>
+    <event value="1011" version="0" opcode="1" channel="16" level="4" task="102" keywords="0x8000000000000004" message="LiveAuthenticate_Start">
+    </event>
+    <event value="1012" version="0" opcode="2" channel="16" level="4" task="102" keywords="0x8000000000000004" message="LiveAuthenticate_Stop.
+Status: %1">
+    </event>
+    <event value="1013" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="NetworkCall_Start">
+    </event>
+    <event value="1014" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000000004" message="NetworkCall_Stop.
+Status: %1">
+    </event>
+    <event value="1015" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000004" message="DeviceAuth_Start">
+    </event>
+    <event value="1016" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000004" message="DeviceAuth_Stop.
+Status: %1">
+    </event>
+    <event value="1017" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000004" message="UserAuth_Start">
+    </event>
+    <event value="1018" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000004" message="UserAuth_Stop.
+Status: %1">
+    </event>
+    <event value="1019" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000004" message="PromptForCredentials_Start">
+    </event>
+    <event value="1020" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000004" message="PromptForCredentials_Stop.
+Status: %1">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="17" level="2" task="104" keywords="0x4000000000000012" message="SignOutUser_RegistryOpenOrReadFailure. 
+RegistryLocation: %1. 
+Status: %2">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="17" level="2" task="104" keywords="0x4000000000000012" message="SignOutUser_RegistryWriteFailure. 
+RegistryLocation: %1. 
+Status: %2">
+    </event>
+    <event value="2008" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000004" message="DeviceAuthAsync_Start">
+    </event>
+    <event value="2009" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000004" message="DeviceAuthAsync_Stop">
+    </event>
+    <event value="2010" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000004" message="UserAuthAsync_Start">
+    </event>
+    <event value="2011" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000004" message="UserAuthAsync_Stop">
+    </event>
+    <event value="2012" version="0" opcode="1" channel="16" level="4" task="104" keywords="0x8000000000000004" message="SignOutUser_Start">
+    </event>
+    <event value="2013" version="0" opcode="2" channel="16" level="4" task="104" keywords="0x8000000000000004" message="SignOutUser_Stop">
+    </event>
+    <event value="2014" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000000004" message="WLIDSvcReady">
+    </event>
+    <event value="2015" version="0" opcode="1" channel="16" level="4" task="105" keywords="0x8000000000000004" message="CommandLinkClicked_Start">
+    </event>
+    <event value="2016" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8000000000000004" message="CommandLinkClicked_Stop.
+Status: %1">
+    </event>
+    <event value="2017" version="0" opcode="1" channel="16" level="4" task="105" keywords="0x8000000000000004" message="UserImageGetBitmapValue_Start">
+    </event>
+    <event value="2018" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8000000000000004" message="UserImageGetBitmapValue_Stop.
+Status: %1">
+    </event>
+    <event value="2019" version="0" opcode="1" channel="16" level="4" task="105" keywords="0x8000000000000004" message="CredProvSetSerialization_Start">
+    </event>
+    <event value="2020" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8000000000000004" message="CredProvSetSerialization_Stop.
+Status: %1">
+    </event>
+    <event value="2021" version="0" opcode="1" channel="16" level="4" task="105" keywords="0x8000000000000004" message="CredProvGetSerialization_Start">
+    </event>
+    <event value="2022" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8000000000000004" message="CredProvGetSerialization_Stop.
+Status: %1">
+    </event>
+    <event value="2023" version="0" opcode="0" channel="17" level="4" task="101" keywords="0x4000000000000010" message="Operation: %1
+Details: %2
+Status: %3
+">
+    </event>
+    <event value="2024" version="0" opcode="0" channel="17" level="4" task="101" keywords="0x4000000000000010" message="Operation: %1
+Details: %2
+Status: %3
+">
+    </event>
+    <event value="2025" version="0" opcode="0" channel="17" level="2" task="101" keywords="0x4000000000000012" message="WLIDSvc service failed to start.
+Function: %1
+Reason: %2
+Status: %3
+">
+    </event>
+    <event value="2026" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="Generic telemetry trigger event.
+PointType: %1
+AppName: %2
+ModuleName: %3
+ModuleVersion: %4
+FileName: %5
+FunctionName: %6
+LineNumber: %7
+ErrorCode: %8
+">
+    </event>
+    <event value="2027" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000001" message="User specific telemetry trigger event for CID %1.">
+    </event>
+    <event value="3000" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x100" message="%3 @%1_%2">
+    </event>
+    <event value="3001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x102" message="%3 @%1_%2">
+    </event>
+    <event value="3002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x100" message="%3 @%1_%2">
+    </event>
+    <event value="3003" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x100" message="%3 @%1_%2">
+    </event>
+    <event value="3004" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x100" message="%3 @%1_%2">
+    </event>
+    <event value="3005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x102" message="%3 @%1_%2">
+    </event>
+    <event value="3006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x100" message="%3 @%1_%2">
+    </event>
+    <event value="3007" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x100" message="%3 @%1_%2">
+    </event>
+    <event value="3008" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x108" message="+%2@%1_%3">
+    </event>
+    <event value="3009" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x108" message="-%1=%2">
+    </event>
+    <event value="3010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x102" message="-%1=%2">
+    </event>
+    <event value="3011" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x108" message="-%1=%2">
+    </event>
+    <event value="3012" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x100" message="Process name %1">
+    </event>
+    <event value="3013" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x102" message="IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3">
+    </event>
+    <event value="4000" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x200" message="%3 @%1_%2">
+    </event>
+    <event value="4001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x202" message="%3 @%1_%2">
+    </event>
+    <event value="4002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x200" message="%3 @%1_%2">
+    </event>
+    <event value="4003" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x200" message="%3 @%1_%2">
+    </event>
+    <event value="4004" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x200" message="%3 @%1_%2">
+    </event>
+    <event value="4005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x202" message="%3 @%1_%2">
+    </event>
+    <event value="4006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x200" message="%3 @%1_%2">
+    </event>
+    <event value="4007" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x200" message="%3 @%1_%2">
+    </event>
+    <event value="4008" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208" message="+%2@%1_%3">
+    </event>
+    <event value="4009" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208" message="-%1=%2">
+    </event>
+    <event value="4010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x202" message="-%1=%2">
+    </event>
+    <event value="4011" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x208" message="-%1=%2">
+    </event>
+    <event value="4012" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x200" message="Process name %1">
+    </event>
+    <event value="4013" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x202" message="IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3">
+    </event>
+    <event value="5000" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x400" message="%3 @%1_%2">
+    </event>
+    <event value="5001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x402" message="%3 @%1_%2">
+    </event>
+    <event value="5002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x400" message="%3 @%1_%2">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x400" message="%3 @%1_%2">
+    </event>
+    <event value="5004" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x400" message="%3 @%1_%2">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x402" message="%3 @%1_%2">
+    </event>
+    <event value="5006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x400" message="%3 @%1_%2">
+    </event>
+    <event value="5007" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x400" message="%3 @%1_%2">
+    </event>
+    <event value="5008" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x408" message="+%2@%1_%3">
+    </event>
+    <event value="5009" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x408" message="-%1=%2">
+    </event>
+    <event value="5010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x402" message="-%1=%2">
+    </event>
+    <event value="5011" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x408" message="-%1=%2">
+    </event>
+    <event value="5012" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x400" message="Process name %1">
+    </event>
+    <event value="5013" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x402" message="IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3">
+    </event>
+    <event value="6000" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x800" message="%3 @%1_%2">
+    </event>
+    <event value="6001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x802" message="%3 @%1_%2">
+    </event>
+    <event value="6002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x800" message="%3 @%1_%2">
+    </event>
+    <event value="6003" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x800" message="%3 @%1_%2">
+    </event>
+    <event value="6004" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x800" message="%3 @%1_%2">
+    </event>
+    <event value="6005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x802" message="%3 @%1_%2">
+    </event>
+    <event value="6006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x800" message="%3 @%1_%2">
+    </event>
+    <event value="6007" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x800" message="%3 @%1_%2">
+    </event>
+    <event value="6008" version="0" opcode="1" channel="0" level="4" task="200" keywords="0x808" message="+%2@%1_%3">
+    </event>
+    <event value="6009" version="0" opcode="2" channel="0" level="4" task="200" keywords="0x808" message="-%1=%2">
+    </event>
+    <event value="6010" version="0" opcode="2" channel="0" level="2" task="200" keywords="0x802" message="-%1=%2">
+    </event>
+    <event value="6011" version="0" opcode="2" channel="0" level="4" task="200" keywords="0x808" message="-%1=%2">
+    </event>
+    <event value="6012" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x800" message="Process name %1">
+    </event>
+    <event value="6013" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x802" message="IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3">
+    </event>
+    <event value="7000" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x1000" message="%3 @%1_%2">
+    </event>
+    <event value="7001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1002" message="%3 @%1_%2">
+    </event>
+    <event value="7002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000" message="%3 @%1_%2">
+    </event>
+    <event value="7003" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="%3 @%1_%2">
+    </event>
+    <event value="7004" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x1000" message="%3 @%1_%2">
+    </event>
+    <event value="7005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1002" message="%3 @%1_%2">
+    </event>
+    <event value="7006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x1000" message="%3 @%1_%2">
+    </event>
+    <event value="7007" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x1000" message="%3 @%1_%2">
+    </event>
+    <event value="7008" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1008" message="+%2@%1_%3">
+    </event>
+    <event value="7009" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1008" message="-%1=%2">
+    </event>
+    <event value="7010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1002" message="-%1=%2">
+    </event>
+    <event value="7011" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x1008" message="-%1=%2">
+    </event>
+    <event value="7012" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1000" message="Process name %1">
+    </event>
+    <event value="7013" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x1002" message="IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3">
+    </event>
+    <event value="8000" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x2000" message="%3 @%1_%2">
+    </event>
+    <event value="8001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x2002" message="%3 @%1_%2">
+    </event>
+    <event value="8002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x2000" message="%3 @%1_%2">
+    </event>
+    <event value="8003" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x2000" message="%3 @%1_%2">
+    </event>
+    <event value="8004" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x2000" message="%3 @%1_%2">
+    </event>
+    <event value="8005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x2002" message="%3 @%1_%2">
+    </event>
+    <event value="8006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x2000" message="%3 @%1_%2">
+    </event>
+    <event value="8007" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x2000" message="%3 @%1_%2">
+    </event>
+    <event value="8008" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2008" message="+%2@%1_%3">
+    </event>
+    <event value="8009" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2008" message="-%1=%2">
+    </event>
+    <event value="8010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x2002" message="-%1=%2">
+    </event>
+    <event value="8011" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x2008" message="-%1=%2">
+    </event>
+    <event value="8012" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x2000" message="Process name %1">
+    </event>
+    <event value="8013" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x2002" message="IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3">
+    </event>
+    <event value="9000" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x4000" message="%3 @%1_%2">
+    </event>
+    <event value="9001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4002" message="%3 @%1_%2">
+    </event>
+    <event value="9002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000" message="%3 @%1_%2">
+    </event>
+    <event value="9003" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x4000" message="%3 @%1_%2">
+    </event>
+    <event value="9004" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x4000" message="%3 @%1_%2">
+    </event>
+    <event value="9005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4002" message="%3 @%1_%2">
+    </event>
+    <event value="9006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x4000" message="%3 @%1_%2">
+    </event>
+    <event value="9007" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x4000" message="%3 @%1_%2">
+    </event>
+    <event value="9008" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4008" message="+%2@%1_%3">
+    </event>
+    <event value="9009" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4008" message="-%1=%2">
+    </event>
+    <event value="9010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4002" message="-%1=%2">
+    </event>
+    <event value="9011" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x4008" message="-%1=%2">
+    </event>
+    <event value="9012" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4000" message="Process name %1">
+    </event>
+    <event value="9013" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x4002" message="IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3">
+    </event>
+    <event value="10000" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x8000" message="%3 @%1_%2">
+    </event>
+    <event value="10001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x8002" message="%3 @%1_%2">
+    </event>
+    <event value="10002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x8000" message="%3 @%1_%2">
+    </event>
+    <event value="10003" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x8000" message="%3 @%1_%2">
+    </event>
+    <event value="10004" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x8000" message="%3 @%1_%2">
+    </event>
+    <event value="10005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x8002" message="%3 @%1_%2">
+    </event>
+    <event value="10006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x8000" message="%3 @%1_%2">
+    </event>
+    <event value="10007" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x8000" message="%3 @%1_%2">
+    </event>
+    <event value="10008" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8008" message="+%2@%1_%3">
+    </event>
+    <event value="10009" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8008" message="-%1=%2">
+    </event>
+    <event value="10010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x8002" message="-%1=%2">
+    </event>
+    <event value="10011" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x8008" message="-%1=%2">
+    </event>
+    <event value="10012" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x8000" message="Process name %1">
+    </event>
+    <event value="10013" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x8002" message="IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3">
+    </event>
+    <event value="11000" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x10000" message="%3 @%1_%2">
+    </event>
+    <event value="11001" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x10002" message="%3 @%1_%2">
+    </event>
+    <event value="11002" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x10000" message="%3 @%1_%2">
+    </event>
+    <event value="11003" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x10000" message="%3 @%1_%2">
+    </event>
+    <event value="11004" version="0" opcode="0" channel="0" level="1" task="0" keywords="0x10000" message="%3 @%1_%2">
+    </event>
+    <event value="11005" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x10002" message="%3 @%1_%2">
+    </event>
+    <event value="11006" version="0" opcode="0" channel="0" level="3" task="0" keywords="0x10000" message="%3 @%1_%2">
+    </event>
+    <event value="11007" version="0" opcode="0" channel="0" level="5" task="0" keywords="0x10000" message="%3 @%1_%2">
+    </event>
+    <event value="11008" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10008" message="+%2@%1_%3">
+    </event>
+    <event value="11009" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10008" message="-%1=%2">
+    </event>
+    <event value="11010" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x10002" message="-%1=%2">
+    </event>
+    <event value="11011" version="0" opcode="0" channel="0" level="4" task="0" keywords="0x10008" message="-%1=%2">
+    </event>
+    <event value="11012" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x10000" message="Process name %1">
+    </event>
+    <event value="11013" version="0" opcode="0" channel="0" level="2" task="0" keywords="0x10002" message="IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3">
+    </event>
+  </events>
+</provider>

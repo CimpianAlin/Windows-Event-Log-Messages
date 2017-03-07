@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WFP" guid="0c478c5b-0351-41b1-8c58-4a6737da32e3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=bfe.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\bfe.dll" messageFileName="C:\Windows\system32\bfe.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IKE/Operational" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WFP/Operational" id="17" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-WFP/Analytic" id="18" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-IKEDBG/Debug" id="19" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="ut:Transfer" mask="1" message="">
+    </keyword>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1001" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000010000000000" message="WFP: Packet Dropped - Filter Run-Time ID: %14, Layer Run-Time ID: %15">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000010000000000" message="IPsec: Packet Dropped - Error Code: %9, Filter Run-Time ID: %12, Layer Run-Time ID: %13">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000000" message="IPsec: Main Mode Failure">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="IPsec: Quick Mode Failure">
+    </event>
+    <event value="1009" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000000" message="IPsec: Extended Mode Failure">
+    </event>
+    <event value="1011" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000010000000000" message="IPsec DoS Protection: Packet Dropped">
+    </event>
+    <event value="1013" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000002000000000" message="IPsec: Main Mode SA Terminated">
+    </event>
+    <event value="1014" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000002000000000" message="IPsec: Main Mode SA Established">
+    </event>
+    <event value="1015" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000002000000000" message="IPsec: Main Mode SA Established">
+    </event>
+    <event value="1016" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000002000000000" message="IPsec: Extended Mode and Main Mode SAs Established">
+    </event>
+    <event value="1017" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000002000000000" message="IPsec: Extended Mode and Main Mode SAs Established">
+    </event>
+    <event value="1018" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000002000000000" message="IPsec: Extended Mode and Main Mode SAs Established">
+    </event>
+    <event value="1019" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000002000000000" message="IPsec: Extended Mode and Main Mode SAs Established">
+    </event>
+    <event value="1020" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000004000000000" message="IPsec DoS Protection Enabled">
+    </event>
+    <event value="1021" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000004000000000" message="IPsec DoS Protection Disabled">
+    </event>
+    <event value="1022" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000004000000000" message="IPsec DoS Protection failed to create state because the maximum number of entries allowed by policy has been reached">
+    </event>
+    <event value="1023" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000100000000" message="IPsec: Negotiation Request Initiated">
+    </event>
+    <event value="1024" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000100000000" message="IPsec: Send ISAKMP Packet">
+    </event>
+    <event value="1025" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000000200000000" message="IPsec: Receive ISAKMP Packet">
+    </event>
+    <event value="1026" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000008000000000" message="WFP: User Mode Error">
+    </event>
+    <event value="1027" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000002000000000" message="An IPsec quick mode security association ended.">
+    </event>
+    <event value="1028" version="0" opcode="0" channel="19" level="4" task="0" keywords="0x1000002000000000" message="An IPsec quick mode security association was established.">
+    </event>
+    <event value="1029" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000010000000000" message="WFP: Packet Dropped - Filter Run-Time ID: %10, Layer Run-Time ID: %11">
+    </event>
+  </events>
+</provider>

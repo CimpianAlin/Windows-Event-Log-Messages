@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Winlogon" guid="dbe9b383-7cf3-4331-91cc-a3cb16a3b538" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=winlogon.exe&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\winlogon.exe" messageFileName="C:\Windows\system32\winlogon.exe" message="Microsoft-Windows-Winlogon" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Winlogon/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Winlogon/Operational" id="17" flags="0" message="">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+    <opcode name="NotificationPended" value="13172736" message="">
+    </opcode>
+    <opcode name="NotificationFailed" value="13238272" message="">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="AuthenticateUser" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UpdatePerUserSystemParameters" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CheckWindowsLicenseStatus" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RestoringNetConnections" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ExecuteShellCommandList" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThemesOnLogonPre" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThemesOnLogonPost" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThemesOnLogoff" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DwmpCreateSessionProcess" value="60" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DwmpTerminateSessionProcess" value="63" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DwmpNotifyUserLogon" value="66" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThemesOnEarlyCreateSession" value="69" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DwmpNotifyUserLogoff" value="72" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CreatePrimaryTerminal" value="101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="StartLogonUI" value="103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RunStateMachine" value="105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WaitForLSM" value="107" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="DisplayWelcomeScreen" value="201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="RequestCredentials" value="203" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThemesOnCreateSession" value="205" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ThemesOnTerminateSession" value="207" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReceivedLogoffRequest" value="301" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShutdownWindows" value="401" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InitiateShutdown" value="403" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WluiServerStartup" value="501" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WluiServerShutdown" value="503" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WluiServerStartupFailure" value="505" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NotifyExecute" value="801" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NotifyServices" value="803" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NotifySubscriber" value="805" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ConnectToSubscriber" value="809" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="CallSubscriber" value="811" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UserBoot" value="5001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="UserShellLaunch" value="5005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SystemBoot" value="5007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShutdownDiagnostics" value="6001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogoffRequestToUserFeedback" value="6101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogoffAppsTerminationToSessionEnd" value="6103" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Unlock" value="6105" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Logon" value="6108" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Lock" value="6113" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Logoff" value="6114" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="LogonHours" value="1001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinSqmUserLogin" value="1101" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WinSqmUserLogoff" value="1102" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="EAS" value="1201" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="PerfInstrumentation" mask="10000" message="">
+    </keyword>
+    <keyword name="PerfDiagnostics" mask="20000" message="">
+    </keyword>
+    <keyword name="NotificationEvents" mask="40000" message="">
+    </keyword>
+    <keyword name="PerfTrackContext" mask="80000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8000000000030000" message="">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="11" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="11" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="13" version="0" opcode="1" channel="16" level="4" task="13" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="14" version="0" opcode="2" channel="16" level="4" task="13" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="51" version="0" opcode="1" channel="16" level="4" task="51" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="52" version="0" opcode="2" channel="16" level="4" task="51" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="61" version="0" opcode="1" channel="16" level="4" task="60" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="62" version="0" opcode="2" channel="16" level="4" task="60" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="64" version="0" opcode="1" channel="16" level="4" task="63" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="65" version="0" opcode="2" channel="16" level="4" task="63" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="67" version="0" opcode="1" channel="16" level="4" task="66" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="68" version="0" opcode="2" channel="16" level="4" task="66" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="70" version="0" opcode="1" channel="16" level="4" task="69" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="71" version="0" opcode="2" channel="16" level="4" task="69" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="72" version="0" opcode="1" channel="16" level="4" task="72" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="73" version="0" opcode="2" channel="16" level="4" task="72" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="101" version="0" opcode="1" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="102" version="0" opcode="2" channel="16" level="4" task="101" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="103" version="0" opcode="1" channel="16" level="4" task="103" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="104" version="0" opcode="2" channel="16" level="4" task="103" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="105" version="0" opcode="1" channel="16" level="4" task="105" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="106" version="0" opcode="2" channel="16" level="4" task="105" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="107" version="0" opcode="1" channel="16" level="4" task="107" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="108" version="0" opcode="2" channel="16" level="4" task="107" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="201" version="0" opcode="1" channel="16" level="4" task="201" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="202" version="0" opcode="2" channel="16" level="4" task="201" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="203" version="0" opcode="1" channel="16" level="4" task="203" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="204" version="0" opcode="2" channel="16" level="4" task="203" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="205" version="0" opcode="1" channel="16" level="4" task="205" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="206" version="0" opcode="2" channel="16" level="4" task="205" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="207" version="0" opcode="1" channel="16" level="4" task="207" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="208" version="0" opcode="2" channel="16" level="4" task="207" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="301" version="0" opcode="0" channel="16" level="4" task="301" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="401" version="0" opcode="1" channel="16" level="4" task="401" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="402" version="0" opcode="2" channel="16" level="4" task="401" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="403" version="0" opcode="1" channel="16" level="4" task="403" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="404" version="0" opcode="2" channel="16" level="4" task="403" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="501" version="0" opcode="1" channel="16" level="4" task="501" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="502" version="0" opcode="2" channel="16" level="4" task="501" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="503" version="0" opcode="1" channel="16" level="4" task="503" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="504" version="0" opcode="2" channel="16" level="4" task="503" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="505" version="0" opcode="0" channel="17" level="2" task="501" keywords="0x4000000000000000" message="">
+    </event>
+    <event value="801" version="0" opcode="1" channel="16" level="4" task="801" keywords="0x8000000000090000" message="">
+    </event>
+    <event value="802" version="0" opcode="2" channel="16" level="4" task="801" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="803" version="0" opcode="1" channel="16" level="4" task="803" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="804" version="0" opcode="2" channel="16" level="4" task="803" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="805" version="0" opcode="1" channel="16" level="4" task="805" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="806" version="0" opcode="2" channel="16" level="4" task="805" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="807" version="0" opcode="201" channel="16" level="4" task="805" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="808" version="0" opcode="202" channel="16" level="4" task="805" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="809" version="0" opcode="1" channel="16" level="4" task="809" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="810" version="0" opcode="2" channel="16" level="4" task="809" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="811" version="0" opcode="1" channel="16" level="4" task="811" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="812" version="0" opcode="2" channel="16" level="4" task="811" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="17" level="4" task="1001" keywords="0x4000000000040000" message="Logon hours expiration warning.">
+    </event>
+    <event value="1073742826" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The shell stopped unexpectedly and %1 was restarted.">
+    </event>
+    <event value="1101" version="0" opcode="0" channel="17" level="3" task="1201" keywords="0x4000000000000000" message="The computer will be locked because the user has exceeded the maximum number of failed logon attempts allowed on this computer. A recovery key is required to unlock the device.
+UserSid: %1 
+UserName: %2 
+UserDomain: %3">
+    </event>
+    <event value="1102" version="0" opcode="0" channel="17" level="3" task="1201" keywords="0x4000000000000000" message="The computer will be rebooted because the user has exceeded the maximum number of failed logon attempts allowed on this computer.
+UserSid: %1 
+UserName: %2 
+UserDomain: %3">
+    </event>
+    <event value="1103" version="0" opcode="0" channel="17" level="3" task="1201" keywords="0x4000000000000000" message="The user is approaching the threshold for maximum number of failed logon attempts. Once the maximum limit is reached the computer will be locked or rebooted.
+UserSid: %1 
+UserName: %2 
+UserDomain: %3">
+    </event>
+    <event value="1104" version="0" opcode="0" channel="17" level="3" task="1201" keywords="0x4000000000000000" message="Encryption Provider initialization failed. Error %1">
+    </event>
+    <event value="1073745826" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The logon hours restriction policy is applied to the logged on user. The user&apos;s session has been locked, disconnected or logged off depending on the policy setting. User Name: %1 Domain Name: %2">
+    </event>
+    <event value="3221229475" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows logon process has failed to switch the desktop.">
+    </event>
+    <event value="3221229476" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows logon process has failed to terminate the currently logged on user&apos;s processes.">
+    </event>
+    <event value="3221229477" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows logon process has unexpectedly terminated.">
+    </event>
+    <event value="2147487654" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows logon process has failed to spawn a user application. Application name: %1. Command line parameters: %2.">
+    </event>
+    <event value="2147487655" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Windows logon process has failed to disconnect the user session.">
+    </event>
+    <event value="1073745925" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows license validated.">
+    </event>
+    <event value="3221229574" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows license is invalid. Error %1. Policy Value %2.">
+    </event>
+    <event value="3221229575" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows license activation failed. Error %1.">
+    </event>
+    <event value="1073745928" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Accessing Windows in Notification period.">
+    </event>
+    <event value="2147487753" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows is in Notification period.">
+    </event>
+    <event value="5001" version="0" opcode="1" channel="16" level="4" task="5001" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="5002" version="0" opcode="2" channel="16" level="4" task="5001" keywords="0x8000000000020000" message="">
+    </event>
+    <event value="5003" version="0" opcode="0" channel="16" level="4" task="5001" keywords="0x8000000000020000" message="">
+    </event>
+    <event value="5005" version="0" opcode="0" channel="16" level="4" task="5005" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="5007" version="0" opcode="2" channel="16" level="4" task="5007" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="2147489648" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The winlogon notification subscriber &lt;%1&gt; was unavailable to handle a notification event.">
+    </event>
+    <event value="6001" version="0" opcode="1" channel="16" level="4" task="6001" keywords="0x8000000000030000" message="">
+    </event>
+    <event value="2147489649" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The winlogon notification subscriber &lt;%1&gt; failed a notification event.">
+    </event>
+    <event value="2147489650" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The winlogon notification subscriber registration database cannot be loaded. Reason: &lt;%1&gt;.">
+    </event>
+    <event value="2147489651" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The winlogon notification subscriber &lt;%1&gt; was unavailable to handle a critical notification event.">
+    </event>
+    <event value="2147489652" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The winlogon notification subscriber &lt;%1&gt; failed a critical notification event.">
+    </event>
+    <event value="2147489653" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The winlogon notification subscriber &lt;%1&gt; is taking long time to handle the notification event (%2).">
+    </event>
+    <event value="2147489654" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The winlogon notification subscriber &lt;%1&gt; took %2 second(s) to handle the notification event (%3).">
+    </event>
+    <event value="6101" version="0" opcode="1" channel="16" level="4" task="6101" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6102" version="0" opcode="2" channel="16" level="4" task="6101" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6103" version="0" opcode="1" channel="16" level="4" task="6103" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6104" version="0" opcode="2" channel="16" level="4" task="6103" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6105" version="0" opcode="1" channel="16" level="4" task="6105" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6106" version="0" opcode="2" channel="16" level="4" task="6105" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6107" version="0" opcode="2" channel="16" level="4" task="6105" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6108" version="0" opcode="1" channel="16" level="4" task="6108" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6109" version="0" opcode="2" channel="16" level="4" task="6108" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6110" version="0" opcode="2" channel="16" level="4" task="6108" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6111" version="0" opcode="2" channel="16" level="4" task="6108" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6112" version="0" opcode="2" channel="16" level="4" task="6108" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6113" version="0" opcode="1" channel="16" level="4" task="6113" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6114" version="0" opcode="2" channel="16" level="4" task="6113" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6115" version="0" opcode="2" channel="16" level="4" task="6113" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="6116" version="0" opcode="0" channel="16" level="4" task="6114" keywords="0x8001000000020000" message="">
+    </event>
+    <event value="7001" version="0" opcode="0" channel="8" level="4" task="1101" keywords="0x2000000000000000" message="User Logon Notification for Customer Experience Improvement Program">
+    </event>
+    <event value="7002" version="0" opcode="0" channel="8" level="4" task="1102" keywords="0x2000000000000000" message="User Logoff Notification for Customer Experience Improvement Program">
+    </event>
+  </events>
+</provider>

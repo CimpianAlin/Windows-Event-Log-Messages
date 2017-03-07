@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Kernel-LiveDump" guid="bef2aa8e-81cd-11e2-a7bb-5eac6188709b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" messageFileName="C:\Windows\system32\Microsoft-Windows-System-Events.dll" message="Microsoft-Windows-Kernel-LiveDump" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Kernel-LiveDump/Analytic" id="16" flags="0" message="Microsoft-Windows-Kernel-LiveDump/Analytic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="APIStart" value="655360" message="API Start">
+    </opcode>
+    <opcode name="APIEnd" value="720896" message="API End">
+    </opcode>
+    <opcode name="WriteDumpDataToFileStart" value="786432" message="Dump File Write Start">
+    </opcode>
+    <opcode name="WriteDumpDataToFileEnd" value="851968" message="Dump File Write End">
+    </opcode>
+    <opcode name="MirroringStart" value="917504" message="Mirroring Start">
+    </opcode>
+    <opcode name="MirroringPhase0End" value="983040" message="Mirroring Phase 0 End">
+    </opcode>
+    <opcode name="MirroringPhase1End" value="1048576" message="Mirroring Phase 1 End">
+    </opcode>
+    <opcode name="SystemQuiesceStart" value="1114112" message="System Quiesce Start">
+    </opcode>
+    <opcode name="SystemQuiesceEnd" value="1179648" message="System Quiesce End">
+    </opcode>
+    <opcode name="PageBufferingStart" value="1245184" message="Copying Memory Pages Start">
+    </opcode>
+    <opcode name="PageBufferingEnd" value="1310720" message="Copying Memory Pages End">
+    </opcode>
+    <opcode name="BufferEstimation" value="1376256" message="Buffer Estimation Data">
+    </opcode>
+    <opcode name="BufferAllocation" value="1441792" message="Buffer Allocation Data">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="LIVEDUMP_TASK_CAPTURE_API" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Live Dump Capture Dump Data API">
+    </task>
+    <task name="LIVEDUMP_TASK_SIZING_WORKFLOW" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Sizing Workflow">
+    </task>
+    <task name="LIVEDUMP_TASK_CAPTURE_PAGES_WORKFLOW" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="Capture Pages Workflow">
+    </task>
+    <task name="LIVEDUMP_TASK_WRITE_DEFERRED_DATA_API" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="Live Dump Write Deferred Dump Data API">
+    </task>
+    <task name="LIVEDUMP_TASK_DISCARD_DEFERRED_DATA_API" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="Live Dump Discard Deferred Dump Data API">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="10" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Live Dump Capture Dump Data API started.">
+    </event>
+    <event value="2" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Live Dump Capture Dump Data API ended. NT Status: %1.">
+    </event>
+    <event value="3" version="0" opcode="12" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Writing dump file started.">
+    </event>
+    <event value="4" version="0" opcode="13" channel="16" level="4" task="1" keywords="0x8000000000000000" message="Writing dump file ended. NT Status: %1. Total %2 bytes (Header|Primary|Secondary: %3|%4|%5 bytes).">
+    </event>
+    <event value="101" version="0" opcode="14" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Sizing Workflow: Mirroring started.">
+    </event>
+    <event value="102" version="0" opcode="15" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Sizing Workflow: Mirroring Phase 0 ended.">
+    </event>
+    <event value="103" version="0" opcode="16" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Sizing Workflow: Mirroring Phase 1 ended.">
+    </event>
+    <event value="104" version="0" opcode="17" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Sizing Workflow: System Quiesce started.">
+    </event>
+    <event value="105" version="0" opcode="18" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Sizing Workflow: System Quiesce ended.">
+    </event>
+    <event value="106" version="0" opcode="21" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Sizing Workflow: Estimation. NT: %2 bytes (Minimum %1 bytes). Hypervisor: Primary %3 bytes. Secondary %4 bytes.">
+    </event>
+    <event value="107" version="0" opcode="22" channel="16" level="4" task="2" keywords="0x8000000000000000" message="Sizing Workflow: Allocation. NT: %1 bytes. Hypervisor: Primary %2 bytes. Secondary %3 bytes.">
+    </event>
+    <event value="151" version="0" opcode="14" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Capture Pages Workflow: Mirroring started.">
+    </event>
+    <event value="152" version="0" opcode="15" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Capture Pages Workflow: Mirroring Phase 0 ended.">
+    </event>
+    <event value="153" version="0" opcode="16" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Capture Pages Workflow: Mirroring Phase 1 ended.">
+    </event>
+    <event value="154" version="0" opcode="17" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Capture Pages Workflow: System Quiesce started.">
+    </event>
+    <event value="155" version="0" opcode="18" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Capture Pages Workflow: System Quiesce ended.">
+    </event>
+    <event value="156" version="0" opcode="19" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Capture Pages Workflow: Copy memory pages started.">
+    </event>
+    <event value="157" version="0" opcode="20" channel="16" level="4" task="3" keywords="0x8000000000000000" message="Capture Pages Workflow: Copy memory pages ended.">
+    </event>
+    <event value="201" version="0" opcode="10" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Live Dump Write Deferred Dump Data API started.">
+    </event>
+    <event value="202" version="0" opcode="11" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Live Dump Write Deferred Dump Data API ended. NT Status: %1.">
+    </event>
+    <event value="203" version="0" opcode="12" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Write deferred dump data to file started.">
+    </event>
+    <event value="204" version="0" opcode="13" channel="16" level="4" task="4" keywords="0x8000000000000000" message="Write deferred dump data to file ended. NT Status: %1. Total %2 bytes (Header|Primary|Secondary: %3|%4|%5 bytes).">
+    </event>
+    <event value="251" version="0" opcode="10" channel="16" level="4" task="5" keywords="0x8000000000000000" message="Live Dump Discard Deferred Dump Data API started.">
+    </event>
+    <event value="252" version="0" opcode="11" channel="16" level="4" task="5" keywords="0x8000000000000000" message="Live Dump Discard Deferred Dump Data API ended. NT Status: %1.">
+    </event>
+  </events>
+</provider>

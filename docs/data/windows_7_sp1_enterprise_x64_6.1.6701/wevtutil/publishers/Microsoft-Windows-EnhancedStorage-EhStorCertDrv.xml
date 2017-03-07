@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-EnhancedStorage-EhStorCertDrv" guid="bd2d1dae-d678-4e10-9667-21cba2aa70c3" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=EhStorAuthn.exe&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\System32\EhStorAuthn.exe" messageFileName="C:\Windows\System32\EhStorAuthn.exe" message="Microsoft-Windows-EnhancedStorage-EhStorCertDrv" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="ESCert.OpDeviceAuthn" value="1310720" message="Device Authentication">
+    </opcode>
+    <opcode name="ESCert.OpHostAuthn" value="1376256" message="Host Authentication">
+    </opcode>
+    <opcode name="ESCert.OpAdminAuthn" value="1441792" message="Administrator Authentication">
+    </opcode>
+    <opcode name="ESCert.OpGroupPolicy" value="1507328" message="Group Policy">
+    </opcode>
+    <opcode name="ESCert.OpInitialization" value="1572864" message="Initialization">
+    </opcode>
+    <opcode name="ESCert.OpGeneral" value="1638400" message="General">
+    </opcode>
+    <opcode name="ESPwd.OpPwdEvent" value="1703936" message="Password silo driver event">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ESCert.Init" value="1" eventGUID="cdeac622-d984-4e2d-9868-fb0bf0929f99" message="">
+    </task>
+    <task name="ESCert.GP" value="2" eventGUID="a1f71b8f-c8f0-4aaa-bfc8-46239f1563e8" message="">
+    </task>
+    <task name="ESCert.DeviceAuthn" value="3" eventGUID="76311d1b-752a-45e6-8d35-7a56f025d67b" message="">
+    </task>
+    <task name="ESCert.HostAuthn" value="4" eventGUID="2e8f25ed-507d-4bb3-9f00-08c2f0a391a5" message="">
+    </task>
+    <task name="ESCert.AdminAuthn" value="5" eventGUID="29c34b2e-6132-40f3-994e-1a060878ecd4" message="">
+    </task>
+    <task name="ESCert.General" value="6" eventGUID="cad37a8d-6124-4957-9726-c5a75e494136" message="">
+    </task>
+    <task name="ESPwd.PasswordEvent" value="7" eventGUID="3e917692-3f8d-4da4-98a8-af94974a43dc" message="">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="10" version="0" opcode="24" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Internal driver error">
+    </event>
+    <event value="11" version="0" opcode="24" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Device command error">
+    </event>
+    <event value="12" version="0" opcode="24" channel="8" level="2" task="1" keywords="0x8000000000000000" message="Driver initialization failed due to unsupported device.">
+    </event>
+    <event value="20" version="0" opcode="23" channel="8" level="2" task="2" keywords="0x8000000000000000" message="Use forbidden by policy setting. Contact your administrator for information on how to resolve this issue.">
+    </event>
+    <event value="21" version="0" opcode="23" channel="8" level="2" task="2" keywords="0x8000000000000000" message="Operation forbidden by policy setting. Contact your administrator for information on how to resolve this issue.">
+    </event>
+    <event value="30" version="0" opcode="20" channel="8" level="2" task="3" keywords="0x8000000000000000" message="Invalid data error">
+    </event>
+    <event value="31" version="0" opcode="20" channel="8" level="2" task="3" keywords="0x8000000000000000" message="Configuration error. Verify the device is configured correctly and the required certificates are available on the system.">
+    </event>
+    <event value="32" version="0" opcode="20" channel="8" level="2" task="3" keywords="0x8000000000000000" message="Internal driver error">
+    </event>
+    <event value="33" version="0" opcode="20" channel="8" level="2" task="3" keywords="0x8000000000000000" message="Invalid device response">
+    </event>
+    <event value="34" version="0" opcode="20" channel="8" level="2" task="3" keywords="0x8000000000000000" message="Device command error">
+    </event>
+    <event value="35" version="0" opcode="20" channel="8" level="4" task="3" keywords="0x8000000000000000" message="Device authentication successful">
+    </event>
+    <event value="40" version="0" opcode="21" channel="8" level="2" task="4" keywords="0x8000000000000000" message="Invalid data error">
+    </event>
+    <event value="41" version="0" opcode="21" channel="8" level="2" task="4" keywords="0x8000000000000000" message="Configuration error. Verify the device is configured correctly and the required certificates are available on the system.">
+    </event>
+    <event value="42" version="0" opcode="21" channel="8" level="2" task="4" keywords="0x8000000000000000" message="Internal driver error">
+    </event>
+    <event value="43" version="0" opcode="21" channel="8" level="2" task="4" keywords="0x8000000000000000" message="Feature is not supported">
+    </event>
+    <event value="44" version="0" opcode="21" channel="8" level="2" task="4" keywords="0x8000000000000000" message="Device command error">
+    </event>
+    <event value="45" version="0" opcode="21" channel="8" level="2" task="4" keywords="0x8000000000000000" message="Host authentication is disabled when the system is in the locked state.">
+    </event>
+    <event value="46" version="0" opcode="21" channel="8" level="4" task="4" keywords="0x8000000000000000" message="Host authentication successful">
+    </event>
+    <event value="50" version="0" opcode="22" channel="8" level="2" task="5" keywords="0x8000000000000000" message="Configuration error. Verify the device is configured correctly and the required certificates are available on the system.">
+    </event>
+    <event value="51" version="0" opcode="22" channel="8" level="2" task="5" keywords="0x8000000000000000" message="Internal driver error">
+    </event>
+    <event value="52" version="0" opcode="22" channel="8" level="2" task="5" keywords="0x8000000000000000" message="Feature is not supported">
+    </event>
+    <event value="53" version="0" opcode="22" channel="8" level="2" task="5" keywords="0x8000000000000000" message="Device command error">
+    </event>
+    <event value="54" version="0" opcode="22" channel="8" level="2" task="5" keywords="0x8000000000000000" message="Invalid device response">
+    </event>
+    <event value="55" version="0" opcode="22" channel="8" level="4" task="5" keywords="0x8000000000000000" message="Administrator authentication successful">
+    </event>
+    <event value="60" version="0" opcode="25" channel="8" level="4" task="6" keywords="0x8000000000000000" message="Device initialize to manufacturer state successful">
+    </event>
+    <event value="61" version="0" opcode="25" channel="8" level="2" task="6" keywords="0x8000000000000000" message="Device initialize to manufacturer state fail">
+    </event>
+    <event value="62" version="0" opcode="25" channel="8" level="2" task="6" keywords="0x8000000000000000" message="Hardware failure detected. Contact the device manufacturer for more information about the failure.">
+    </event>
+    <event value="80" version="0" opcode="26" channel="8" level="2" task="7" keywords="0x8000000000000000" message="Password device is not compatible with Windows.">
+    </event>
+    <event value="81" version="0" opcode="26" channel="8" level="2" task="7" keywords="0x8000000000000000" message="Password silo internal error.">
+    </event>
+    <event value="82" version="0" opcode="26" channel="8" level="2" task="7" keywords="0x8000000000000000" message="Password silo returned invalid data.">
+    </event>
+    <event value="83" version="0" opcode="26" channel="8" level="2" task="7" keywords="0x8000000000000000" message="Unexpected password silo authentication state.">
+    </event>
+    <event value="84" version="0" opcode="26" channel="8" level="2" task="7" keywords="0x8000000000000000" message="Password silo reported an error on a password silo command.">
+    </event>
+  </events>
+</provider>

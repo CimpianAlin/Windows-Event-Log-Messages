@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Diagnosis-Scheduled" guid="40ab57c2-1c53-4df9-9324-ff7cf898a02c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=sdiagschd.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\sdiagschd.dll" messageFileName="C:\Windows\system32\sdiagschd.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Diagnosis-Scheduled/Operational" id="16" flags="0" message="Microsoft-Windows-Diagnosis-Scheduled/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="notification" mask="400000000" message="WHC Notification Keyword">
+    </keyword>
+    <keyword name="lifecycle" mask="800000000" message="Lifecycle Keyword">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000400000000" message="The scheduled diagnostic task has detected a change in state for a check registered in the Action Center.">
+    </event>
+    <event value="2" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="Scheduled diagnostics have started.">
+    </event>
+    <event value="3" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="Scheduled diagnostics have been completed.">
+    </event>
+    <event value="4" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="Scheduled diagnostics have been disabled.">
+    </event>
+    <event value="5" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has started initializing a diagnostic package.">
+    </event>
+    <event value="6" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has completed initialization of a diagnostic package.">
+    </event>
+    <event value="7" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has started troubleshooting a diagnostic package.">
+    </event>
+    <event value="8" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has completed troubleshooting a diagnostic package.">
+    </event>
+    <event value="9" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has detected a root cause.">
+    </event>
+    <event value="10" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has started resolving a detected root cause.">
+    </event>
+    <event value="11" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has completed resolving a detected root cause.">
+    </event>
+    <event value="12" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has started verifying the fix applied for a detected root cause.">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has determined that the root cause no longer exists.">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has determined that the root cause continues to exist.">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000800000000" message="The scheduled diagnostic task has encountered an error.">
+    </event>
+    <event value="96" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000400000000" message="TEST: One or more rootcauses were detected and a package wide notification was raised.">
+    </event>
+    <event value="97" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000400000000" message="TEST: No rootcauses were detected and a package wide reset notification was raised.">
+    </event>
+    <event value="98" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000400000000" message="TEST: A rootcause was detected and a rootcause wide notification was raised.">
+    </event>
+    <event value="99" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000400000000" message="TEST: A root cause does not exist and a root cause reset notification was raised.">
+    </event>
+    <event value="100" version="0" opcode="0" channel="16" level="1" task="0" keywords="0x8000000400000000" message="System maintenance detected issues requiring your attention. A notification was sent to the Action Center.">
+    </event>
+  </events>
+</provider>

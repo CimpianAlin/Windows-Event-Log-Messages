@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Wininit" guid="206f6dea-d3c5-4d10-bc72-989f03c8b84b" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=wininit.exe&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\wininit.exe" messageFileName="C:\Windows\system32\wininit.exe" message="Microsoft-Windows-Wininit" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Wininit/Diagnostic" id="16" flags="0" message="">
+    </channel>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WaitForWinstationShutdown" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="PreShutdownNotification" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="WaitForSystemProcesses" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShutdownSystemRestore" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShutdownWindows" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="NtShutdownSystem" value="51" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SentLogoffRequest" value="53" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ReceivedShutdownRequest" value="55" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShutdownDiagnostics" value="6001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="PerfInstrumentation" mask="10000" message="">
+    </keyword>
+    <keyword name="PerfDiagnostics" mask="20000" message="">
+    </keyword>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="7" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="7" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="9" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="9" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="11" version="0" opcode="0" channel="8" level="3" task="0" keywords="0x4000000000000000" message="Custom dynamic link libraries are being loaded for every application. The system administrator should review the list of libraries to ensure they are related to trusted applications.">
+    </event>
+    <event value="51" version="0" opcode="0" channel="16" level="4" task="51" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="53" version="0" opcode="0" channel="16" level="4" task="53" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="55" version="0" opcode="0" channel="16" level="4" task="55" keywords="0x8000000000010000" message="">
+    </event>
+    <event value="1073742825" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="%1">
+    </event>
+    <event value="3221226487" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A critical system process, %1, failed with status code %2.  The machine must now be restarted.">
+    </event>
+    <event value="3221228474" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows start-up process has unexpectedly terminated.">
+    </event>
+    <event value="2147486651" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows start-up process has failed to start the remote shutdown server.">
+    </event>
+    <event value="2147486652" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows start-up process has failed to synchronize with the local security subsystem during setup.">
+    </event>
+    <event value="3221228477" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Windows start-up process has failed to terminate system processes.">
+    </event>
+    <event value="6001" version="0" opcode="1" channel="16" level="4" task="6001" keywords="0x8000000000030000" message="">
+    </event>
+  </events>
+</provider>

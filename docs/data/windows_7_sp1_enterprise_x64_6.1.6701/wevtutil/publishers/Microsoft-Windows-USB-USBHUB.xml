@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-USB-USBHUB" guid="7426a56b-e2d5-4b30-bdef-b31815c1a74a" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=usbhub.sys&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\drivers\usbhub.sys" messageFileName="C:\Windows\system32\drivers\usbhub.sys" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-USB-USBHUB/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Critical" value="1" message="Critical">
+    </level>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="START" value="655360" message="Start">
+    </opcode>
+    <opcode name="ERROR" value="720896" message="Error">
+    </opcode>
+    <opcode name="COMPLETE" value="786432" message="Complete">
+    </opcode>
+    <opcode name="DISPATCH" value="851968" message="Dispatch">
+    </opcode>
+    <opcode name="ADD" value="917504" message="Add">
+    </opcode>
+    <opcode name="REMOVE" value="983040" message="Remove">
+    </opcode>
+    <opcode name="INFORMATION" value="1048576" message="Information">
+    </opcode>
+    <opcode name="EXCEPTION" value="1114112" message="Exception">
+    </opcode>
+    <opcode name="QUEUE" value="1179648" message="Queue">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="USBHUB_HUB" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub">
+    </task>
+    <task name="USBHUB_HUB_ENUMERATE" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Enumerate">
+    </task>
+    <task name="USBHUB_HUB_SUSPEND" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Suspend">
+    </task>
+    <task name="USBHUB_HUB_RESUME" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Resume">
+    </task>
+    <task name="USBHUB_HUB_HARD_RESET" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Reset Recovery">
+    </task>
+    <task name="USBHUB_HUB_QUERY_BUSRELATIONS" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Query Device Relations IRP - BusRelations">
+    </task>
+    <task name="USBHUB_HUB_WAIT_WAKE" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Wait Wake">
+    </task>
+    <task name="USBHUB_HUB_POWER" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Power">
+    </task>
+    <task name="USBHUB_PORT_INFORMATION" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Port Information">
+    </task>
+    <task name="USBHUB_DEVICE" value="20" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Device">
+    </task>
+    <task name="USBHUB_DEVICE_START" value="21" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Device Start">
+    </task>
+    <task name="USBHUB_DEVICE_POWER" value="22" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Device Set Power">
+    </task>
+    <task name="USBHUB_DEVICE_IDLE_NOTIFICATION" value="23" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Device Idle Notification">
+    </task>
+    <task name="USBHUB_DEVICE_WAIT_WAKE" value="24" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Device WaitWake">
+    </task>
+    <task name="USBHUB_HUB_EXCEPTION" value="25" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Exception">
+    </task>
+    <task name="USBHUB_HUB_PORT_STATUS" value="26" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Port Status">
+    </task>
+    <task name="USBHUB_DEVICE_SYNC_RESET_DEVICE_INTERNAL" value="27" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Device Internal Reset">
+    </task>
+    <task name="USBHUB_HUB_PAST_EXCEPTION" value="28" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Hub Past Exception">
+    </task>
+    <task name="USBHUB_DEVICE_IOCTL_INTERNAL_USB_RESET_PORT" value="29" eventGUID="00000000-0000-0000-0000-000000000000" message="USB Device IOCTL_INTERNAL_USB_RESET_PORT">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Diagnostics" mask="1" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="14" channel="16" level="4" task="1" keywords="0x8000000000000001" message="USB Hub Added">
+    </event>
+    <event value="2" version="0" opcode="15" channel="16" level="4" task="1" keywords="0x8000000000000001" message="USB Hub Removed">
+    </event>
+    <event value="3" version="0" opcode="16" channel="16" level="4" task="1" keywords="0x8000000000000001" message="USB Hub Information">
+    </event>
+    <event value="10" version="0" opcode="10" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Start Enumeration of Port">
+    </event>
+    <event value="11" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Enumeration Port Debounce Failed">
+    </event>
+    <event value="12" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Create PDO Failed">
+    </event>
+    <event value="13" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="IoCreateDevice Failed">
+    </event>
+    <event value="14" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Create PnP ID Failed">
+    </event>
+    <event value="15" version="0" opcode="16" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Enumeration Port Reset Failure">
+    </event>
+    <event value="16" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Port Enabled but not Connected After First Reset">
+    </event>
+    <event value="17" version="0" opcode="11" channel="16" level="4" task="2" keywords="0x8000000000000001" message="First Enumeration Port Reset Timed Out">
+    </event>
+    <event value="18" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Create Device Failed">
+    </event>
+    <event value="19" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Initialize Device Failed">
+    </event>
+    <event value="20" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Get Descriptors Request Failed">
+    </event>
+    <event value="21" version="0" opcode="10" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Valdiation of USB Configuration Descriptor Failed">
+    </event>
+    <event value="22" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Validation of USB Device Descriptor Failed">
+    </event>
+    <event value="23" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Request for Microsoft OS Descriptor Failed">
+    </event>
+    <event value="24" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Request for Serial Number String Descriptor Failed">
+    </event>
+    <event value="25" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Build PnP ID failed">
+    </event>
+    <event value="26" version="0" opcode="11" channel="0" level="2" task="2" keywords="0x1" message="Duplicate Serial Number Detected">
+    </event>
+    <event value="27" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Enumeration Timed Out Waiting for Previous Instance of USB Device to be Removed">
+    </event>
+    <event value="28" version="0" opcode="11" channel="16" level="2" task="2" keywords="0x8000000000000001" message="Enumeration Failed Due to Registry Failure">
+    </event>
+    <event value="29" version="0" opcode="16" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Retrying Enumeration of Port">
+    </event>
+    <event value="30" version="0" opcode="11" channel="16" level="1" task="2" keywords="0x8000000000000001" message="Hub Disconnected During Enumeration of Port">
+    </event>
+    <event value="31" version="0" opcode="16" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Enumeration Debounce Completed">
+    </event>
+    <event value="32" version="0" opcode="16" channel="16" level="4" task="2" keywords="0x8000000000000001" message="PDO Created for Enumeration">
+    </event>
+    <event value="33" version="0" opcode="16" channel="16" level="4" task="2" keywords="0x8000000000000001" message="First Enumeration Port Reset Complete">
+    </event>
+    <event value="34" version="0" opcode="16" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Enumeration - CreateDevice Complete">
+    </event>
+    <event value="35" version="0" opcode="16" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Second Enumeration Port Reset Complete">
+    </event>
+    <event value="36" version="0" opcode="16" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Enumeration - InitializeDevice Complete">
+    </event>
+    <event value="37" version="0" opcode="16" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Enumeration - SetupDevice Complete">
+    </event>
+    <event value="39" version="0" opcode="12" channel="16" level="4" task="2" keywords="0x8000000000000001" message="Enumeration of Port Completed">
+    </event>
+    <event value="40" version="0" opcode="10" channel="16" level="4" task="5" keywords="0x8000000000000001" message="Reset Recovery of Hub Started">
+    </event>
+    <event value="41" version="0" opcode="18" channel="16" level="3" task="5" keywords="0x8000000000000001" message="Reset Recovery of Hub Queued">
+    </event>
+    <event value="49" version="0" opcode="12" channel="16" level="4" task="5" keywords="0x8000000000000001" message="Reset Recovery of Hub Completed">
+    </event>
+    <event value="50" version="0" opcode="10" channel="16" level="4" task="3" keywords="0x8000000000000001" message="Started Selective Suspend of Hub">
+    </event>
+    <event value="51" version="0" opcode="16" channel="16" level="4" task="3" keywords="0x8000000000000001" message="Selective Suspend of Hub Failed to Pause Bus">
+    </event>
+    <event value="59" version="0" opcode="12" channel="16" level="4" task="3" keywords="0x8000000000000001" message="Completed Selective Suspend of Hub">
+    </event>
+    <event value="60" version="0" opcode="10" channel="16" level="4" task="4" keywords="0x8000000000000001" message="Started Resume of Hub from Selective Suspend">
+    </event>
+    <event value="61" version="0" opcode="12" channel="16" level="4" task="4" keywords="0x8000000000000001" message="Resume of Hub Completed">
+    </event>
+    <event value="62" version="0" opcode="16" channel="16" level="4" task="4" keywords="0x8000000000000001" message="Propagated Resume of Hub Downstream">
+    </event>
+    <event value="63" version="0" opcode="16" channel="16" level="4" task="4" keywords="0x8000000000000001" message="Resumed Port for Hub Resume">
+    </event>
+    <event value="64" version="0" opcode="16" channel="16" level="4" task="4" keywords="0x8000000000000001" message="Propagated Resume of Hub Upstream">
+    </event>
+    <event value="70" version="0" opcode="13" channel="0" level="4" task="6" keywords="0x1" message="USB Hub Query Device Relations (BusRelations) IRP Dispatched">
+    </event>
+    <event value="71" version="0" opcode="12" channel="16" level="4" task="6" keywords="0x8000000000000001" message="USB Hub Query Device Relations IRP Completed">
+    </event>
+    <event value="80" version="0" opcode="16" channel="16" level="4" task="9" keywords="0x8000000000000001" message="USB Hub Port Attributes">
+    </event>
+    <event value="81" version="0" opcode="16" channel="16" level="4" task="9" keywords="0x8000000000000001" message="ACPI USB Port Capabilities (_UPC)">
+    </event>
+    <event value="82" version="0" opcode="16" channel="16" level="4" task="9" keywords="0x8000000000000001" message="ACPI Physical Device Location (_PLD)">
+    </event>
+    <event value="83" version="0" opcode="16" channel="16" level="4" task="9" keywords="0x8000000000000001" message="Query for ACPI USB Port Capabilities (_UPC) Failed">
+    </event>
+    <event value="84" version="0" opcode="16" channel="16" level="4" task="9" keywords="0x8000000000000001" message="Query for ACPI Physical Device Location (_PLD) Failed">
+    </event>
+    <event value="100" version="0" opcode="14" channel="16" level="4" task="20" keywords="0x8000000000000001" message="USB Device Added">
+    </event>
+    <event value="101" version="0" opcode="15" channel="16" level="4" task="20" keywords="0x8000000000000000" message="USB Device Removed">
+    </event>
+    <event value="102" version="0" opcode="16" channel="16" level="4" task="20" keywords="0x8000000000000001" message="USB Device Information">
+    </event>
+    <event value="110" version="0" opcode="13" channel="16" level="4" task="21" keywords="0x8000000000000001" message="USB Device Start IRP Dispatched">
+    </event>
+    <event value="111" version="0" opcode="11" channel="16" level="2" task="21" keywords="0x8000000000000001" message="Restart of USB Device Failed Due to Device Reset Failure">
+    </event>
+    <event value="112" version="0" opcode="11" channel="16" level="2" task="21" keywords="0x8000000000000001" message="Start Device Failed for USB Device Due to Registry Failure">
+    </event>
+    <event value="113" version="0" opcode="11" channel="16" level="2" task="21" keywords="0x8000000000000001" message="Unable to Create Symbolic Link for USB Device">
+    </event>
+    <event value="119" version="0" opcode="12" channel="16" level="4" task="21" keywords="0x8000000000000001" message="USB Device Start IRP Completed">
+    </event>
+    <event value="120" version="0" opcode="13" channel="16" level="4" task="22" keywords="0x8000000000000001" message="USB Device Set D0 Device Power IRP Dispatched">
+    </event>
+    <event value="121" version="0" opcode="12" channel="16" level="4" task="22" keywords="0x8000000000000001" message="USB Device Set D0 Device Power IRP Completed">
+    </event>
+    <event value="122" version="0" opcode="13" channel="16" level="4" task="22" keywords="0x8000000000000001" message="USB Device Set Dx Device Power IRP Dispatched">
+    </event>
+    <event value="123" version="0" opcode="12" channel="16" level="4" task="22" keywords="0x8000000000000001" message="USB Device Set Dx Device Power IRP Completed">
+    </event>
+    <event value="130" version="0" opcode="13" channel="16" level="4" task="23" keywords="0x8000000000000001" message="USB Device IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION Dispatched">
+    </event>
+    <event value="139" version="0" opcode="12" channel="16" level="4" task="23" keywords="0x8000000000000001" message="USB Device IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION Completed">
+    </event>
+    <event value="140" version="0" opcode="13" channel="16" level="4" task="24" keywords="0x8000000000000001" message="USB Device Wait Wake IRP Dispatched">
+    </event>
+    <event value="149" version="0" opcode="12" channel="16" level="4" task="24" keywords="0x8000000000000001" message="USB Device Wait Wake IRP Completed">
+    </event>
+    <event value="150" version="0" opcode="10" channel="16" level="4" task="7" keywords="0x8000000000000001" message="USB Hub Wait Wake IRP Started">
+    </event>
+    <event value="151" version="0" opcode="13" channel="16" level="4" task="7" keywords="0x8000000000000001" message="USB Hub Wait Wake IRP Dispatched">
+    </event>
+    <event value="159" version="0" opcode="12" channel="16" level="4" task="7" keywords="0x8000000000000001" message="USB Hub Wait Wake IRP Completed">
+    </event>
+    <event value="160" version="0" opcode="10" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Set Dx Device Power IRP Started">
+    </event>
+    <event value="161" version="0" opcode="13" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Set Dx Device Power IRP Dispatched">
+    </event>
+    <event value="169" version="0" opcode="12" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Set Dx Device Power IRP Completed">
+    </event>
+    <event value="170" version="0" opcode="10" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Set D0 Device Power IRP Started">
+    </event>
+    <event value="171" version="0" opcode="13" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Set D0 Device Power IRP Dispatched">
+    </event>
+    <event value="172" version="0" opcode="10" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Cold Start">
+    </event>
+    <event value="173" version="0" opcode="16" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Disconnected During Cold Start">
+    </event>
+    <event value="174" version="0" opcode="16" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Device Disconnected During Cold Start of Hub">
+    </event>
+    <event value="175" version="0" opcode="16" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Device Connected During Cold Start of Hub">
+    </event>
+    <event value="176" version="0" opcode="16" channel="16" level="4" task="8" keywords="0x8000000000000001" message="Device Lost Power During Cold Start of Hub">
+    </event>
+    <event value="177" version="0" opcode="16" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Device Needs to be Reset During Cold Start of Hub">
+    </event>
+    <event value="178" version="0" opcode="12" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Cold Start Completed">
+    </event>
+    <event value="179" version="0" opcode="10" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Warm Start">
+    </event>
+    <event value="180" version="0" opcode="11" channel="16" level="2" task="8" keywords="0x8000000000000001" message="USB Device Failed to Resume During Warm Start of Hub">
+    </event>
+    <event value="181" version="0" opcode="16" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Device Requires Reset During Warm Start of Hub">
+    </event>
+    <event value="183" version="0" opcode="12" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Warm Start Completed">
+    </event>
+    <event value="184" version="0" opcode="11" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Lost Power During System Suspend">
+    </event>
+    <event value="185" version="0" opcode="16" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Was Disconnected During System Suspend">
+    </event>
+    <event value="189" version="0" opcode="12" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Set D0 Device Power IRP Completed">
+    </event>
+    <event value="190" version="0" opcode="13" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Set Sx System Power IRP Dispatched">
+    </event>
+    <event value="199" version="0" opcode="12" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Set Sx System Power IRP Completed">
+    </event>
+    <event value="200" version="0" opcode="13" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Set S0 System Power IRP Dispatched">
+    </event>
+    <event value="209" version="0" opcode="12" channel="16" level="4" task="8" keywords="0x8000000000000001" message="USB Hub Set S0 System Power IRP Complete">
+    </event>
+    <event value="210" version="0" opcode="17" channel="16" level="4" task="25" keywords="0x8000000000000001" message="USB Hub Exception Logged">
+    </event>
+    <event value="211" version="0" opcode="16" channel="16" level="4" task="26" keywords="0x8000000000000001" message="USB Hub Port Status Change">
+    </event>
+    <event value="220" version="0" opcode="10" channel="16" level="4" task="27" keywords="0x8000000000000001" message="USB Device Internal Reset Started">
+    </event>
+    <event value="229" version="0" opcode="12" channel="16" level="4" task="27" keywords="0x8000000000000001" message="USB Device Internal Reset Completed">
+    </event>
+    <event value="230" version="0" opcode="17" channel="16" level="4" task="28" keywords="0x8000000000000001" message="USB Hub Past Exception Logged">
+    </event>
+    <event value="231" version="0" opcode="10" channel="16" level="4" task="29" keywords="0x8000000000000001" message="Start IOCTL_INTERNAL_USB_RESET_PORT">
+    </event>
+    <event value="232" version="0" opcode="12" channel="16" level="4" task="29" keywords="0x8000000000000001" message="Complete IOCTL_INTERNAL_USB_RESET_PORT">
+    </event>
+  </events>
+</provider>

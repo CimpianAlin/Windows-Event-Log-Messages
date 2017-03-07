@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-InputSwitch" guid="bb8e7234-bbf4-48a7-8741-339206ed1dfb" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=InputSwitch.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\InputSwitch.dll" messageFileName="C:\Windows\system32\InputSwitch.dll" message="" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-InputSwitch/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="InitializeBackend" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShutdownBackend" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ShowInputSwitch" value="3" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="HideInputSwitch" value="4" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelectInputMethod" value="5" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="SelectInputModality" value="6" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ClickOrTouchOrEnterReceived" value="7" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModalitySelectedStandard" value="8" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModalitySelectedSplit" value="9" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModalitySelectedHandwriting" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModalitySelectedClassic" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModalitySelectedHide" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModeIconUpdate" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModeIconClear" value="14" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModeIconLeftClick" value="15" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="ModeIconRightClick" value="16" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="TkbManualInvoke" value="17" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IMEConsentUXFlyoutShow" value="18" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="IMEConsentUXFlyoutDismiss" value="19" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="Status" mask="10000" message="">
+    </keyword>
+    <keyword name="Perf" mask="20000" message="">
+    </keyword>
+    <keyword name="InputSwitch_Keyword" mask="40000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="1" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="1" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="3" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="4" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="5" version="0" opcode="1" channel="16" level="4" task="3" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="6" version="0" opcode="2" channel="16" level="4" task="3" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="7" version="0" opcode="1" channel="16" level="4" task="4" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="8" version="0" opcode="2" channel="16" level="4" task="4" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="9" version="0" opcode="1" channel="16" level="4" task="5" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="10" version="0" opcode="2" channel="16" level="4" task="5" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="11" version="0" opcode="1" channel="16" level="4" task="6" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="12" version="0" opcode="2" channel="16" level="4" task="6" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="13" version="0" opcode="0" channel="16" level="4" task="6" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="14" version="0" opcode="0" channel="16" level="4" task="7" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="15" version="0" opcode="0" channel="16" level="4" task="8" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="16" version="0" opcode="0" channel="16" level="4" task="9" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="17" version="0" opcode="0" channel="16" level="4" task="10" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="18" version="0" opcode="0" channel="16" level="4" task="11" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="19" version="0" opcode="0" channel="16" level="4" task="12" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="20" version="0" opcode="0" channel="16" level="4" task="13" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="21" version="0" opcode="0" channel="16" level="4" task="14" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="22" version="0" opcode="0" channel="16" level="4" task="15" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="23" version="0" opcode="0" channel="16" level="4" task="16" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="24" version="0" opcode="1" channel="16" level="4" task="17" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="25" version="0" opcode="2" channel="16" level="4" task="17" keywords="0x8001000000060000" message="">
+    </event>
+    <event value="26" version="0" opcode="1" channel="16" level="4" task="18" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="27" version="0" opcode="2" channel="16" level="4" task="18" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="28" version="0" opcode="1" channel="16" level="4" task="19" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="29" version="0" opcode="2" channel="16" level="4" task="19" keywords="0x8000000000000000" message="">
+    </event>
+  </events>
+</provider>

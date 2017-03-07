@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Network-and-Sharing-Center" guid="6a502821-ab44-40c8-b32f-37315d9d52e0" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=netcenter.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\netcenter.dll" messageFileName="C:\Windows\system32\netcenter.dll" message="Microsoft-Windows-Network and Sharing Center" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Info" value="0" message="Info">
+    </opcode>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Info_PageRefresh" value="6000" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_Core" value="6001" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="Initialization_Page" value="6002" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InvokeUI_SetUpNewNetwork" value="6005" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InvokeUI_FixNetworkProblem" value="6006" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InvokeUI_ManageWirelessNetworks" value="6007" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+    <task name="InvokeUI_ChangeAdapterSettings" value="6008" eventGUID="00000000-0000-0000-0000-000000000000" message="">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="6000" version="0" opcode="0" channel="16" level="4" task="6000" keywords="0x8000000000000000" message="Network and Sharing Center active networks list updated.">
+    </event>
+    <event value="6001" version="0" opcode="1" channel="16" level="4" task="6001" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6002" version="0" opcode="2" channel="16" level="4" task="6001" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6003" version="0" opcode="1" channel="16" level="4" task="6002" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6004" version="0" opcode="2" channel="16" level="4" task="6002" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6007" version="0" opcode="1" channel="16" level="4" task="6005" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6008" version="0" opcode="1" channel="16" level="4" task="6006" keywords="0x8000000000000000" message="">
+    </event>
+    <event value="6009" version="0" opcode="1" channel="16" level="4" task="6007" keywords="0x8001000000000000" message="">
+    </event>
+    <event value="6010" version="0" opcode="1" channel="16" level="4" task="6008" keywords="0x8001000000000000" message="">
+    </event>
+  </events>
+</provider>

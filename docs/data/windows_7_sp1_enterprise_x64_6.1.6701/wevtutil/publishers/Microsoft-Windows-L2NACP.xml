@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-L2NACP" guid="85fe7609-ff4a-48e9-9d50-12918e43e1da" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=l2nacp.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\l2nacp.dll" messageFileName="C:\Windows\system32\l2nacp.dll" message="Microsoft-Windows-L2NACP" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-WLAN-AutoConfig/Operational" id="16" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-Wired-AutoConfig/Operational" id="17" flags="1" message="">
+    </channel>
+    <channel name="Microsoft-Windows-L2NA/Diagnostic" id="18" flags="0" message="Microsoft-Windows-L2NACP/Diagnostic">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="Credential" mask="1" message="">
+    </keyword>
+    <keyword name="Filter" mask="2" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="13003" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000001" message="The pre-logon connection attempt is complete.
+
+Network connection attempt result: %1
+Reason: %2
+Interface GUID: %3
+Profile Name: %4
+">
+    </event>
+    <event value="13004" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000002000000001" message="The pre-logon connection attempt is complete.
+
+Windows authentication result: %1
+Interface GUID: %2
+Profile Name: %3
+">
+    </event>
+    <event value="13023" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000002000000001" message="The pre-logon connection attempt is complete.
+
+Network connection attempt result: %1
+Reason: %2
+Interface GUID: %3
+">
+    </event>
+    <event value="13024" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000002000000001" message="The pre-logon connection attempt is complete.
+
+Windows authentication result: %1
+Interface GUID: %2
+">
+    </event>
+    <event value="14000" version="0" opcode="0" channel="18" level="4" task="0" keywords="0x2000002000000002" message="Plap Enabled = %1">
+    </event>
+  </events>
+</provider>

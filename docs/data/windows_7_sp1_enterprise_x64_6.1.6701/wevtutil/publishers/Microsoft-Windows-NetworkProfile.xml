@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-NetworkProfile" guid="fbcfac3f-8459-419f-8e48-1f0b49cdb85e" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=netprofm.dll&amp;FileVer=6.1.7600.16385" resourceFileName="C:\Windows\system32\netprofm.dll" messageFileName="C:\Windows\system32\netprofm.dll" message="Microsoft-Windows-NetworkProfile" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-NetworkProfile/Diagnostic" id="16" flags="0" message="Microsoft-Windows-NetworkProfile/Diagnostic">
+    </channel>
+    <channel name="Microsoft-Windows-NetworkProfile/Operational" id="17" flags="0" message="Microsoft-Windows-NetworkProfile/Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="WaitForIdentification" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Wait for Identification">
+    </task>
+    <task name="NotifyClients" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Notify Clients">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="ut:SendPath" mask="100000000" message="">
+    </keyword>
+    <keyword name="ut:ReceivePath" mask="200000000" message="">
+    </keyword>
+    <keyword name="ut:L3ConnectPath" mask="400000000" message="">
+    </keyword>
+    <keyword name="ut:L2ConnectPath" mask="800000000" message="">
+    </keyword>
+    <keyword name="ut:ClosePath" mask="1000000000" message="">
+    </keyword>
+    <keyword name="ut:Authentication" mask="2000000000" message="">
+    </keyword>
+    <keyword name="ut:Configuration" mask="4000000000" message="">
+    </keyword>
+    <keyword name="ut:Global" mask="8000000000" message="">
+    </keyword>
+    <keyword name="ut:Dropped" mask="10000000000" message="">
+    </keyword>
+    <keyword name="ut:PiiPresent" mask="20000000000" message="">
+    </keyword>
+    <keyword name="ut:Packet" mask="40000000000" message="">
+    </keyword>
+    <keyword name="ut:Address" mask="80000000000" message="">
+    </keyword>
+    <keyword name="ut:StdTemplateHint" mask="100000000000" message="">
+    </keyword>
+    <keyword name="ut:StateTransition" mask="200000000000" message="">
+    </keyword>
+    <keyword name="win:ResponseTime" mask="1000000000000" message="Response Time">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="4001" version="0" opcode="1" channel="17" level="4" task="1" keywords="0x4000200000000000" message="Entered State: %2 Interface Guid: %1">
+    </event>
+    <event value="4002" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4001200000000000" message="Transitioning to State: %2 Interface Guid: %1">
+    </event>
+    <event value="4003" version="0" opcode="2" channel="17" level="4" task="1" keywords="0x4001200000000000" message="Transitioning to State: %2 Interface Guid: %1">
+    </event>
+    <event value="10000" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000200000000000" message="Network Connected
+	Name: %1
+	Desc: %2
+	Type: %4
+	State: %5
+	Category: %6
+">
+    </event>
+    <event value="10001" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000200000000000" message="Network Disconnected
+	Name: %1
+	Desc: %2
+	Type: %4
+	State: %5
+	Category: %6
+">
+    </event>
+    <event value="10002" version="0" opcode="0" channel="17" level="4" task="0" keywords="0x4000200000000000" message="Network Category Changed
+	Name: %1
+	Desc: %2
+	Type: %4
+	State: %5
+	Category: %6
+">
+    </event>
+    <event value="10003" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000200000000000" message="Posting Network Connected Event Type: %1
+	ProfileID: %2
+">
+    </event>
+    <event value="10004" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000200000000000" message="Posted Network Connected Event Type: %1
+	ProfileID: %2
+">
+    </event>
+    <event value="10005" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000200000000000" message="Posting Network Profile Event Type: %1
+	ProfileID: %2
+">
+    </event>
+    <event value="10006" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000200000000000" message="Posted Network Profile Event Type: %1
+	ProfileID: %2
+">
+    </event>
+    <event value="10007" version="0" opcode="1" channel="16" level="4" task="2" keywords="0x8000200000000000" message="Posting Network Disconnected Event Type: %1
+	ProfileID: %2
+">
+    </event>
+    <event value="10008" version="0" opcode="2" channel="16" level="4" task="2" keywords="0x8000200000000000" message="Posted Network Disconnected Event Type: %1
+	ProfileID: %2
+">
+    </event>
+  </events>
+</provider>

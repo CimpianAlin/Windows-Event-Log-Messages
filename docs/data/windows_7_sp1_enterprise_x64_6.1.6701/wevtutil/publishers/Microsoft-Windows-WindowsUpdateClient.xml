@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-WindowsUpdateClient" guid="945a8954-c147-4acd-923f-40c45405a658" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=7.5.7601.17514&amp;FileName=wuaueng.dll&amp;FileVer=7.5.7601.17514" resourceFileName="C:\Windows\system32\wuaueng.dll" parameterFileName="C:\Windows\system32\wuaueng.dll" messageFileName="C:\Windows\system32\wuaueng.dll" message="Microsoft-Windows-WindowsUpdateClient" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="System" id="8" flags="1" message="System">
+    </channel>
+    <channel name="Microsoft-Windows-WindowsUpdateClient/Operational" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="selfupdate" value="655360" message="SelfUpdate">
+    </opcode>
+    <opcode name="detect" value="720896" message="Check for Updates">
+    </opcode>
+    <opcode name="download" value="786432" message="Download">
+    </opcode>
+    <opcode name="install" value="851968" message="Installation">
+    </opcode>
+    <opcode name="uninstall" value="917504" message="Uninstallation">
+    </opcode>
+    <opcode name="reboot" value="983040" message="Reboot">
+    </opcode>
+    <opcode name="AUStateChange" value="1048576" message="State Change">
+    </opcode>
+    <opcode name="AgentStateChange" value="1114112" message="State Change">
+    </opcode>
+    <opcode name="other" value="1179648" message="Other">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="Agent" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Windows Update Agent">
+    </task>
+    <task name="AU" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Automatic Updates">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="connection" mask="1" message="Connection">
+    </keyword>
+    <keyword name="detect" mask="2" message="Check for Updates">
+    </keyword>
+    <keyword name="download" mask="4" message="Download">
+    </keyword>
+    <keyword name="install" mask="8" message="Installation">
+    </keyword>
+    <keyword name="success" mask="10" message="Success">
+    </keyword>
+    <keyword name="failure" mask="20" message="Failure">
+    </keyword>
+    <keyword name="reboot" mask="40" message="Reboot">
+    </keyword>
+    <keyword name="state" mask="80" message="State">
+    </keyword>
+    <keyword name="selfupdate" mask="100" message="SelfUpdate">
+    </keyword>
+    <keyword name="service" mask="200" message="Service">
+    </keyword>
+    <keyword name="health" mask="400" message="Health">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="16" version="0" opcode="11" channel="8" level="3" task="2" keywords="0x8000000000000001" message="Unable to Connect: Windows is unable to connect to the automatic updates service and therefore cannot download and install updates according to the set schedule. Windows will continue to try to establish a connection.">
+    </event>
+    <event value="17" version="0" opcode="12" channel="8" level="4" task="2" keywords="0x8000000000000014" message="Installation Ready: The following updates are downloaded and ready for installation. To install the updates, an administrator should log on to this computer and Windows will prompt with further instructions: %1">
+    </event>
+    <event value="18" version="0" opcode="12" channel="8" level="4" task="2" keywords="0x8000000000000014" message="Installation Ready: The following updates are downloaded and ready for installation. This computer is currently scheduled to install these updates on %1 at %2: %3">
+    </event>
+    <event value="19" version="0" opcode="13" channel="8" level="4" task="1" keywords="0x8000000000000018" message="Installation Successful: Windows successfully installed the following update: %1">
+    </event>
+    <event value="20" version="0" opcode="13" channel="8" level="2" task="1" keywords="0x8000000000000028" message="Installation Failure: Windows failed to install the following update with error %1: %2.">
+    </event>
+    <event value="21" version="0" opcode="15" channel="8" level="4" task="2" keywords="0x8000000000000040" message="Restart Required: To complete the installation of the following updates, the computer must be restarted. Until this computer has been restarted, Windows cannot search for or download new updates: %1">
+    </event>
+    <event value="22" version="0" opcode="15" channel="8" level="4" task="2" keywords="0x8000000000000040" message="Restart Required: To complete the installation of the following updates, the computer will be restarted within %1 minutes: %2">
+    </event>
+    <event value="23" version="0" opcode="14" channel="8" level="4" task="1" keywords="0x8000000000000018" message="Uninstallation Successful: Windows successfully uninstalled the following update: %1">
+    </event>
+    <event value="24" version="0" opcode="14" channel="8" level="2" task="1" keywords="0x8000000000000028" message="Uninstallation Failure: Windows failed to uninstall the following update with error %1: %2">
+    </event>
+    <event value="25" version="0" opcode="11" channel="16" level="2" task="1" keywords="0x4000000000000022" message="Windows Update failed to check for updates with error %1.">
+    </event>
+    <event value="26" version="0" opcode="11" channel="16" level="4" task="1" keywords="0x4000000000000012" message="Windows Update sucessfully found %1 updates.">
+    </event>
+    <event value="27" version="0" opcode="16" channel="8" level="4" task="1" keywords="0x8000000000000080" message="Automatic Updates is now paused.">
+    </event>
+    <event value="28" version="0" opcode="16" channel="8" level="4" task="1" keywords="0x8000000000000080" message="Automatic Updates is now resumed.">
+    </event>
+    <event value="29" version="0" opcode="17" channel="16" level="3" task="1" keywords="0x4000000000000001" message="Windows Update lost connectivity.">
+    </event>
+    <event value="30" version="0" opcode="17" channel="16" level="4" task="1" keywords="0x4000000000000001" message="Windows Update established connectivity.">
+    </event>
+    <event value="31" version="0" opcode="12" channel="16" level="2" task="1" keywords="0x4000000000000024" message="Windows Update failed to download an update.">
+    </event>
+    <event value="32" version="0" opcode="17" channel="8" level="4" task="1" keywords="0x8000000000000001" message="Windows Update cannot connect to the server. Please check the connection to server %1.">
+    </event>
+    <event value="33" version="0" opcode="17" channel="8" level="4" task="1" keywords="0x8000000000000001" message="Windows Update was unable to connect to proxy server %1 because valid credentials (user name and password) were required, but were either not available or were incorrect. Please check your proxy credentials, and then try searching again for updates.">
+    </event>
+    <event value="34" version="0" opcode="10" channel="16" level="3" task="1" keywords="0x4000000000000120" message="The Windows Update Client Core component failed to install a self-update with error %1.">
+    </event>
+    <event value="35" version="0" opcode="10" channel="16" level="3" task="1" keywords="0x4000000000000120" message="The Windows Update Client Auxillary component failed to install a self-update with error %1.">
+    </event>
+    <event value="36" version="0" opcode="10" channel="16" level="4" task="1" keywords="0x4000000000000110" message="The Windows Update Client Core component was successfully updated from version %1 to version %2.">
+    </event>
+    <event value="37" version="0" opcode="10" channel="16" level="4" task="1" keywords="0x4000000000000110" message="The Windows Update Client Auxillary was successfully updated from version %1 to version %2.">
+    </event>
+    <event value="38" version="0" opcode="17" channel="16" level="4" task="1" keywords="0x4000000000000280" message="Windows Update received a service stop request.">
+    </event>
+    <event value="39" version="0" opcode="17" channel="16" level="4" task="1" keywords="0x4000000000000280" message="Windows Update received a service shutdown request.">
+    </event>
+    <event value="40" version="0" opcode="17" channel="16" level="4" task="1" keywords="0x4000000000000002" message="An update was detected.">
+    </event>
+    <event value="41" version="0" opcode="12" channel="16" level="4" task="1" keywords="0x4000000000000014" message="An update was downloaded.">
+    </event>
+    <event value="42" version="0" opcode="18" channel="16" level="4" task="2" keywords="0x4000000000000480" message="There has been a change in the health of Windows Update.">
+    </event>
+  </events>
+</provider>

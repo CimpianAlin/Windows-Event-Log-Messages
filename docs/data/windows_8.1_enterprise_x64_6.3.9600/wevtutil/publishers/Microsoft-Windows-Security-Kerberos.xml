@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-Security-Kerberos" guid="98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=kerberos.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\System32\kerberos.dll" messageFileName="C:\Windows\System32\kerberos.dll" message="Microsoft-Windows-Security-Kerberos" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-Kerberos/Operational" id="16" flags="0" message="Operational">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Error" value="2" message="Error">
+    </level>
+    <level name="win:Warning" value="3" message="Warning">
+    </level>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+    <task name="CATEGORY_KERBEROS" value="1" eventGUID="00000000-0000-0000-0000-000000000000" message="Kerberos">
+    </task>
+    <task name="CATEGORY_MAX_CATEGORY" value="2" eventGUID="00000000-0000-0000-0000-000000000000" message="Max">
+    </task>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="2147483651" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="A Kerberos error message was received:
+ on logon session %1
+ Client Time: %2
+ Server Time: %3
+ Error Code: %4 %5
+ Extended Error: %6
+ Client Realm: %7
+ Client Name: %8
+ Server Realm: %9
+ Server Name: %10
+ Target Name: %11
+ Error Text: %12
+ File: %13
+ Line: %14
+ Error Data is in record data.">
+    </event>
+    <event value="1073741828" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Kerberos client received a KRB_AP_ERR_MODIFIED error from the server %1. The target name used was %3. This indicates that the target server failed to decrypt the ticket provided by the client. This can occur when the target server principal name (SPN) is registered on an account other than the account the target service is using. Ensure that the target SPN is only registered on the account used by the server. This error can also happen if the target service account password is different than what is configured on the Kerberos Key Distribution Center for that target service. Ensure that the service on the server and the KDC are both configured to use the same password. If the server name is not fully qualified, and the target domain (%2) is different from the client domain (%4), check if there are identically named server accounts in these two domains, or use the fully-qualified name to identify the server.">
+    </event>
+    <event value="1073741829" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Kerberos client received a KRB_AP_ERR_TKT_NYV error from the server %1. This indicates that the ticket presented to that server is not yet valid (due to a discrepancy between ticket and server time. Contact your system administrator to make sure the client and server times are synchronized, and that the time for the Key Distribution Center Service (KDC) in realm %2 is synchronized with the KDC in the client realm.">
+    </event>
+    <event value="65541" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while retrieving a digital certificate from the inserted smart card. %1">
+    </event>
+    <event value="2147483654" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Kerberos SSPI package generated an output token of size %1 bytes, which was too large to fit in the token buffer of size %2 bytes, provided by process id %3.
+ 
+ The output SSPI token size is probably the result of the user %4 being a member of a large number of groups.
+ 
+ It is recommended to minimize the number of groups a user belongs to. If the problem can not be corrected by reducing the group memberships of this user, contact your system administrator to increase the maximum token size, which is configured on each computer individually using the registry value: HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters\MaxTokenSize.">
+    </event>
+    <event value="65542" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred in while attempting to verify the inserted smart card: %1">
+    </event>
+    <event value="3221225479" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The digitally signed Privilege Attribute Certificate (PAC) that contains the authorization information for client %1 in realm %2 could not be validated.
+ 
+ This error is usually caused by domain trust failures; Contact your system administrator.">
+    </event>
+    <event value="65543" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while signing a message using the inserted smart card: %1">
+    </event>
+    <event value="3221225480" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The domain controller rejected the client certificate of user %2, used for smart card logon. The following error was returned from the certificate validation process: %1.">
+    </event>
+    <event value="65544" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while verifying a signed message using the inserted smart card: %1">
+    </event>
+    <event value="3221225481" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The client has failed to validate the domain controller certificate for %2. The following error was returned from the certificate validation process: %1.">
+    </event>
+    <event value="65545" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while verifying the digital certificate retrieved from the inserted smart card: %1">
+    </event>
+    <event value="2147483658" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Kerberos subsystem currently cannot retrieve tickets from your domain controller using the UDP network protocol. This is typically due to network problems. Contact your system administrator.">
+    </event>
+    <event value="65546" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while encrypting a message using the inserted smart card: %1">
+    </event>
+    <event value="3221225483" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Distinguished Name in the subject field of your smart card logon certificate does not contain enough information to identify the appropriate domain on an non-domain joined computer. Contact your system administrator.">
+    </event>
+    <event value="65547" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while decrypting a message using the inserted smart card: %1">
+    </event>
+    <event value="2147483660" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="While using your smart card over a VPN connection, the Kerberos subsystem encountered an error. Typically, this indicates the card has been pulled from the card reader during the VPN session. One possible solution is to close the VPN connection, reinsert the card, and establish the connection again.">
+    </event>
+    <event value="65548" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while building a certificate context: %1">
+    </event>
+    <event value="13" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while initializing the smart card logon library: %1">
+    </event>
+    <event value="2147483661" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The smart card PIN stored in Credential Manager is missing or invalid. The smart card PIN is stored in memory only for the current interactive logon session, and is deleted if the card is removed from the card reader or when the user logs off. To resolve this error, keep the card in the reader, open Credential Manager in Control Panel, and reenter the PIN for the credential %1.">
+    </event>
+    <event value="2147483662" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The password stored in Credential Manager is invalid. This might be caused by the logged on user changing the password from this computer or a different computer. To resolve this error, open Credential Manager in Control Panel, and reenter the password for the credential %1.">
+    </event>
+    <event value="65550" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while signing a message: %1">
+    </event>
+    <event value="2147483663" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Kerberos SSPI package generated an output token of size %1 bytes, which was too large to fit in the token buffer of size %2 bytes, provided by process id %3.
+ 
+ The application needs to be modified to supply a token buffer of size at least %4 bytes.">
+    </event>
+    <event value="65551" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while verifying a signed message: %1">
+    </event>
+    <event value="3221225488" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Kerberos SSPI package failed to find the smart card certificate in the certificate store. To remedy this failure, logon as user %1 and insert the smart card into the smart card reader, then use the Certificates snap-in to verify that the smart card certificate is in the user&apos;s personal certificate store.">
+    </event>
+    <event value="65552" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while encrypting a message: %1">
+    </event>
+    <event value="3221225489" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The Kerberos SSPI package failed to locate the forest or domain %1 to search.  Ensure that the Use forest search order Group Policy is correctly configured, and that this forest or domain is available.">
+    </event>
+    <event value="65553" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while decrypting a message: %1">
+    </event>
+    <event value="2147483666" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The delegated TGT for the user (%2) has expired. A renewal was attempted and failed with error %8. The server logon session (%1) has stopped delegating the user&apos;s credential. For future unconstrained delegation to succeed, the user needs to authenticate again to the server. 
+
+TGT Details:
+    Client: %2
+    Server: %3
+    Flags: %4
+    Start Time: %5
+    End Time: %6
+    Renew Until: %7">
+    </event>
+    <event value="65554" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while retrieving some provider parameter: %1">
+    </event>
+    <event value="2147483667" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The KDC certificate for the domain controller does not contain the KDC Extended Key Usage (EKU): 1.3.6.1.5.2.3.5: Error Code %1. The domain administrator will need to obtain a certificate with the KDC EKU for the domain controller to resolve this error. When using Windows Server Certificate Services create a certificated based on the Kerberos Authentication Template.">
+    </event>
+    <event value="65555" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="An error occurred while generating a random number: %1">
+    </event>
+    <event value="2147483668" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="The KDC certificate for the domain controller does not have the DNS name of domain %1 in the Subject Alternative Name (SAN) attribute: Error Code %2. The domain administrator will need to obtain a KDC certificate with the DNS domain name in the SAN attribute for the domain controller to resolve this error. When using Windows Server Certificate Services create a certificated based on the Kerberos Authentication Template.">
+    </event>
+    <event value="100" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The service principal name (SPN) %1 is not registered, which caused Kerberos authentication to fail: %2. Use the setspn command-line tool to register the SPN.">
+    </event>
+    <event value="101" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The service principal name (SPN) %1 is registered on multiple accounts which caused Kerberos authentication to fail: %2. Use the setspn command-line tool to identify the accounts and remove the duplicate registrations.">
+    </event>
+    <event value="102" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Trust validation of the certificate for the Kerberos Key Distribution Center (KDC) %1 failed: %2. Use the CAPI2 diagnostic traces to identify the reason for the validation failure.">
+    </event>
+    <event value="103" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="Trust validation of the client certificate for %1 failed: %2 on KDC. Use the CAPI2 diagnostic traces to identify the reason for the validation failure.">
+    </event>
+    <event value="104" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Kerberos Key Distribution Center (KDC) for the domain %1 does not have a certificate installed or does not support logon using certificates: %2">
+    </event>
+    <event value="105" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Kerberos client could not retrieve passwords for the group managed service account.
+
+LogonId: %1:%2
+DomainName: %3
+UserName: %4
+Refresh: %5
+Current File Time: %6
+Error Code: %7
+">
+    </event>
+    <event value="106" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Kerberos client received a KDC certificate that does not have KDC EKU (not based on Kerberos Authentication Template).
+
+Error Code: %1
+">
+    </event>
+    <event value="107" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Kerberos client received a KDC certificate that does not have a matched domain name.
+
+Expected Domain Name: %1
+Error Code: %2
+">
+    </event>
+    <event value="108" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Kerberos client could not send a Kerberos proxy request.
+
+ProxyServer:
+  ServerName: %1
+  ServerPort: %2
+  ServerVdir:  %3
+Error Code: %4
+Status Code: %5
+">
+    </event>
+    <event value="109" version="0" opcode="0" channel="16" level="2" task="0" keywords="0x8000000000000000" message="The Kerberos client could not find a suitable credential to use with the authentication proxy:
+
+AuthProxy:
+  Proxy: %1
+  ProxyBypass: %2
+  Epoch: %3
+  Supported Schemes: %4
+  First Scheme: %5
+Digest Credential:
+  Initialized: %6
+  DomainAndUserName: %7
+  Epoch: %8
+Basic Credential:
+  Initialized: %9
+  DomainAndUserName: %10
+  Epoch: %11
+">
+    </event>
+    <event value="200" version="0" opcode="0" channel="16" level="3" task="0" keywords="0x8000000000000000" message="The Kerberos client could not locate a domain controller for domain %1: %2. Kerberos authentication requires communicating with a domain controller.">
+    </event>
+    <event value="300" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Kerberos client discovered domain controller %1 for the domain %2.">
+    </event>
+    <event value="301" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Kerberos client used credentials from the Credential Manager for the target: &apos;%1&apos;.">
+    </event>
+    <event value="302" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Kerberos client was bound to domain controller %1 for the domain %2 but could not access this domain controller at the time.
+
+    DesiredFlags: %3
+    CacheFlags: %4
+    ErrorCode: %5">
+    </event>
+    <event value="303" version="0" opcode="0" channel="16" level="4" task="0" keywords="0x8000000000000000" message="The Kerberos client updated passwords for the group managed service account.
+
+LogonId: %1:%2
+DomainName: %3
+UserName: %4
+Update Current Passwords: %5
+Update Old Passwords: %6
+Refresh: %7
+Previous File Time: %8
+Current File Time: %9
+">
+    </event>
+  </events>
+</provider>

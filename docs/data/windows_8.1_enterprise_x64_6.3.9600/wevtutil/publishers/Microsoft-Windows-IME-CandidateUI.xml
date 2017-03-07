@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-IME-CandidateUI" guid="7c4117b1-ed82-4f47-b2ca-29e4e25719c7" helpLink="http://go.microsoft.com/fwlink/events.asp" resourceFileName="C:\Windows\system32\IME\shared\mscand20.dll" messageFileName="C:\Windows\system32\IME\shared\mscand20.dll" message="Microsoft-Windows-IME-CandidateUI" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Microsoft-Windows-IME-CandidateUI/Analytic" id="16" flags="0" message="">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Informational" value="4" message="Information">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="IME_KeyHandling" value="100" eventGUID="00000000-0000-0000-0000-000000000000" message="Task ID: Processing incoming key">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="1" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_CANDUI_OnKeyDownStart">
+    </event>
+    <event value="2" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_CANDUI_OnKeyDownEnd">
+    </event>
+    <event value="120" version="0" opcode="1" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_CANDUI_MovePageStart">
+    </event>
+    <event value="121" version="0" opcode="2" channel="16" level="4" task="100" keywords="0x8000000000000000" message="EAIME_CANDUI_MovePageEnd">
+    </event>
+  </events>
+</provider>

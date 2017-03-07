@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-propsys" guid="9485fa1e-23cd-49a1-84e3-11d8bc550cb7" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Windows%c2%ae%20Search&amp;ProdVer=7.0.9600.16384&amp;FileName=propsys.dll&amp;FileVer=7.0.9600.16384" resourceFileName="C:\Windows\system32\propsys.dll" messageFileName="C:\Windows\system32\propsys.dll" message="Microsoft-Windows-Property System" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="Application" id="9" flags="1" message="">
+    </channel>
+  </channels>
+  <levels>
+  </levels>
+  <opcodes>
+  </opcodes>
+  <tasks>
+  </tasks>
+  <keywords>
+    <keyword name="win:EventlogClassic" mask="80000000000000" message="Classic">
+    </keyword>
+  </keywords>
+  <events>
+    <event value="1000" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Omitted invalid property schema &apos;%1&apos;: version=&apos;%2&apos;  namespace=&apos;%3&apos;">
+    </event>
+    <event value="1001" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Error parsing property schema &apos;%1&apos;: Invalid value &apos;%4&apos; for attribute &apos;%3&apos; of property &apos;%2&apos;.">
+    </event>
+    <event value="1002" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Error parsing property schema &apos;%1&apos;: Invalid enumerated type list for property &apos;%2&apos;.">
+    </event>
+    <event value="1003" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Error parsing property schema &apos;%1&apos;: Invalid property key for property &apos;%2&apos; (fmtid=&apos;%3&apos; pid=&apos;%4&apos;).">
+    </event>
+    <event value="1004" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Error parsing property schema &apos;%1&apos;: Invalid canonical name &apos;%2&apos;.">
+    </event>
+    <event value="1005" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Omitted invalid property from schema &apos;%1&apos;: &apos;%2&apos; (fmtid=&apos;%3&apos; pid=&apos;%4&apos;)  Publisher: &apos;%5&apos;  Product: &apos;%6&apos;  URL: &apos;%7&apos;">
+    </event>
+    <event value="1006" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Omitted duplicate property.
+Keeping: &apos;%1&apos; (%2)  Publisher: &apos;%3&apos;  Product: &apos;%4&apos;  URL: &apos;%5&apos;
+Omitting: &apos;%6&apos; (%7)  Publisher: &apos;%8&apos;  Product: &apos;%9&apos;  URL: &apos;%10&apos;">
+    </event>
+    <event value="1007" version="0" opcode="0" channel="0" level="0" task="0" keywords="0x80000000000000" message="Omitted invalid semantic type from schema &apos;%1&apos;: &apos;%2&apos;  Publisher: &apos;%3&apos;  Product: &apos;%4&apos;  URL: &apos;%5&apos;">
+    </event>
+  </events>
+</provider>

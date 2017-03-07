@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider name="Microsoft-Windows-MediaFoundation-MSVideoDSP" guid="f6b0b1ad-cee4-46e5-9311-9d5ad957722c" helpLink="http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=msvideodsp.dll&amp;FileVer=6.3.9600.16384" resourceFileName="C:\Windows\system32\msvideodsp.dll" messageFileName="C:\Windows\system32\msvideodsp.dll" message="Microsoft-Windows-MediaFoundation-MSVideoDSP" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <channels>
+    <channel name="MedaFoundationMSVideoDSP" id="16" flags="0" message="MS Video DSP">
+    </channel>
+  </channels>
+  <levels>
+    <level name="win:Verbose" value="5" message="Verbose">
+    </level>
+  </levels>
+  <opcodes>
+    <opcode name="win:Start" value="65536" message="Start">
+    </opcode>
+    <opcode name="win:Stop" value="131072" message="Stop">
+    </opcode>
+  </opcodes>
+  <tasks>
+    <task name="ProcessInputMap" value="10" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video DSP - ProcessInput Map">
+    </task>
+    <task name="CPUSpatialMotion" value="11" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video DSP - CPU Spatial Motion Calculation">
+    </task>
+    <task name="DynamicModeChange" value="12" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video DSP - Dynamic Mode Change">
+    </task>
+    <task name="CPUTemporalMotion" value="13" eventGUID="00000000-0000-0000-0000-000000000000" message="MS Video DSP - CPU Temporal Motion Calculation">
+    </task>
+  </tasks>
+  <keywords>
+  </keywords>
+  <events>
+    <event value="103" version="0" opcode="1" channel="16" level="5" task="10" keywords="0x8000000000000000" message="MS Video DSP - ProcessInput Map Start">
+    </event>
+    <event value="104" version="0" opcode="2" channel="16" level="5" task="10" keywords="0x8000000000000000" message="MS Video DSP - ProcessInput Map Stop">
+    </event>
+    <event value="105" version="0" opcode="1" channel="16" level="5" task="12" keywords="0x8000000000000000" message="MS Video DSP - Dynamic Mode Change Start">
+    </event>
+    <event value="106" version="0" opcode="2" channel="16" level="5" task="12" keywords="0x8000000000000000" message="MS Video DSP - Dynamic Mode Change Stop">
+    </event>
+    <event value="107" version="0" opcode="1" channel="16" level="5" task="11" keywords="0x8000000000000000" message="MS Video DSP - CPU Spatial Motion Calculation Start">
+    </event>
+    <event value="108" version="0" opcode="2" channel="16" level="5" task="11" keywords="0x8000000000000000" message="MS Video DSP - CPU Spatial Motion Calculation Stop">
+    </event>
+    <event value="109" version="0" opcode="1" channel="16" level="5" task="13" keywords="0x8000000000000000" message="MS Video DSP - CPU Temporal Motion Calculation Start">
+    </event>
+    <event value="110" version="0" opcode="2" channel="16" level="5" task="13" keywords="0x8000000000000000" message="MS Video DSP - CPU Temporal Motion Calculation Stop">
+    </event>
+  </events>
+</provider>
